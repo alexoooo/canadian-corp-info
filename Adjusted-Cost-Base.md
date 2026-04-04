@@ -31,8 +31,10 @@ Trading fees to buy a security increase your ACB (i.e. they are "capitalized", n
 Trading fees to sell a security are treated as "Outlays and expense from disposition" in T2 Schedule 6.  
 When selling, the fee does not reduce your ACB (instead it reduces your "Proceeds of disposition").
 
-Securities are priced at the Weighted Average Cost (WAC, not FIFO or LIFO), because of this there is not a single canonical date of acquisition.  
-If you need a single acquision date (e.g. for electronic filing of T2 Schedule 6) for pooled securities with averaged ACB, you can use the date of the very first purchase that contributed to the current pool of units being sold.  
+ACB uses pooled average cost across all identical properties (not FIFO or LIFO).  
+When you sell, receive a T5008, and file T2 Schedule 6, you will need to specify a "Date of acquisition".  
+Because you can buy and sell pooled securities over time, there might not a single obvious date of acquisition.  
+You can use the date of the very first purchase that contributed to the current pool of units being sold.  
 Using the earliest date of continuous holding of a security is conservative in the absense of specific CRA guidence.  
 
 If you hold USD or other foreign assets, you will need to convert to CAD when calculating ACB.  
