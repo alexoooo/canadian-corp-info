@@ -24,10 +24,10 @@ For the purposes of the superficial loss rules, you and a corporation that you c
 
 ACB cannot be negative, if ROC would reduce it below zero then the negative amount instead becomes an immediate capital gain.  
 
-If you hold a security in a personal account, as well as in a corporation account, they are considered 
-If you hold the security in more than one account (non-registered accounts only, which is all corporate investment accounts, you are required to calculate the ACB across all of the accounts.  
+If you hold a security in a personal account, as well as in your corporation's account, they are considered assets of two distinct legal entities.  
+You track the ACB for each entity separately, even if they hold the identical security.  
 
-Trading fees to buy a security increase your ACB.  
+Trading fees to buy a security increase your ACB (i.e. they are "capitalized", not counted as an expense).  
 Trading fees to sell a security are treated as "Outlays and expense from disposition" in T2 Schedule 6.  
 When selling, the fee does not reduce your ACB (instead it reduces your "Proceeds of disposition").
 
@@ -36,7 +36,7 @@ If you need a single acquision date (e.g. for electronic filing of T2 Schedule 6
 Using the earliest date of continuous holding of a security is conservative in the absense of specific CRA guidence.  
 
 If you hold USD or other foreign assets, you will need to convert to CAD when calculating ACB.  
-The conversion takes place on the exact settlement date of every buy, sell, or distribution transaction using the Bank of Canada exchange rate for that day.  
+The conversion takes place on the settlement date of every buy, sell, or distribution transaction using the Bank of Canada daily exchange rate.  
 
 
 Things that can affect your ACB:
