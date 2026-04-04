@@ -1,8 +1,40 @@
+STATUS: WORK In PROGRESS
+
 # Adjusted Cost Base (ACB)
 
-Adjusted Cost Base (ACB): official tax term used by the Canada Revenue Agency (CRA) to calculate capital gains or losses when you sell an asset.  
-Book Cost (Book Value): amount shown on your investment statements and brokerage website, it typically includes your initial investment and increases when you buy and decreases when you sell.  
+Who this is for: owners of Canadian-controlled private corporation (CCPC) who hold investments in a corproate trading account.  
+
+Tax information can change over time (e.g. the capital gains inclusion rate was going to increase to 2/3, before the proposal was cancelled), the below is my understanding as of 2026.  
+
+Using a Dividend Reinvestment Plan (DRIP) significantly increases paperwork and complexity, it's recommended to avoid DRIP in corporate investment accounts.  
+
+
+# Definitions
+
+Adjusted Cost Base (ACB) is used to calculate capital gains or losses when you sell an asset:  
+- ACB = cost of the property + acquisition costs + specific adjustments over time
+- Cost is typically the purchase price that you paid to acquire the asset (but can sometimes be different, e.g. gifts, transfers, rollover, etc.)
+- Acquisition costs are fees paid to buy the asset (e.g. brokerage trading commission)
+- ACB can change from certain distributions (re-invested dividends, non-cash portion of capital gains distribution, return of capital) 
+- ACB can change from certain corporate actions (stock split, spinoff, etc.)
 You are responsible for maintaining your own ACB records and using those to calculate capital gains or losses (i.e. do not blindly report the T5008 box 20 amount).  
+
+
+Book Cost (also know as Book Value) is calculated by your brokerage
+amount shown on your investment statements and brokerage website, it typically includes your initial investment and increases when you buy and decreases when you sell.  
+
+
+Things that can affect your ACB:
+- Increase: purchasing a security  
+- Decrease: Selling a security (T5008)  
+- Decrease: T3 box 42: amount resulting in cost base adjustment, typically Return of Capital (ROC)  
+- Increase: T3 box 21: capital gains distribution, phantom (non-cash) portion
+
+ACB is connected to the following:
+- T5008
+- T3 box 21 and ROC
+
+# Book Cost vs ACB
 
 Ideally Book Cost would equal ACB, but in practice you might see brokerage-dependent differences with the following:
 - Phantom distributions: non-cash portion of T3 box 21
@@ -22,6 +54,8 @@ Capital losses can be carried forward indefinitely to offset future capital gain
 However if you sell at a loss and repurchase the same security within 30 days (before or after), it is a "superficial loss" which is added back to the ACB of the substituted property (the newly repurchased shares that triggered the superficial loss).  
 For the purposes of the superficial loss rules, you and a corporation that you control are considered "affiliated persons", and you can't use your corporate account to harvest tax losses for your personal account (or vice versa).
 
+# Details
+
 ACB cannot be negative, if ROC would reduce it below zero then the negative amount instead becomes an immediate capital gain.  
 
 If you hold a security in a personal account, as well as in your corporation's account, they are considered assets of two distinct legal entities.  
@@ -39,13 +73,6 @@ Using the earliest date of continuous holding of a security is conservative in t
 
 If you hold USD or other foreign assets, you will need to convert to CAD when calculating ACB.  
 The conversion takes place on the settlement date of every buy, sell, or distribution transaction using the Bank of Canada daily exchange rate.  
-
-
-Things that can affect your ACB:
-- Increase: purchasing a security  
-- Decrease: Selling a security (T5008)  
-- Decrease: T3 box 42: amount resulting in cost base adjustment, typically Return of Capital (ROC)  
-- Increase: T3 box 21: capital gains distribution, phantom (non-cash) portion
 
 
 Links:
