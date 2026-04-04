@@ -18,13 +18,25 @@ Depending on your brokerage, you might see:
 - The behaviour can appear inconsistent  
 - It might be possible raise a discrepancy with your broker and they could re-issue T3 or T5008 slips  
 
-Superficial loss: if you sell at a loss and repurchase the same security within 30 days (before or after), the loss is denied and added back to the ACB.  
-Note that the ACB cannot be negative, so if ROC would reduce it below zero then the negative amount instead becomes an immediate capital gain.  
-Trading fees reduce the cost base, they are not tracked independently for tax purposes.  
+Capital losses can be carried forward indefinitely to offset future capital gains, and they can be carried back 3 years.  
+However if you sell at a loss and repurchase the same security within 30 days (before or after), it is a "superficial loss" which is added back to the ACB of the substituted property (the newly repurchased shares that triggered the superficial loss).  
+For the purposes of the superficial loss rules, you and a corporation that you control are considered "affiliated persons", and you can't use your corporate account to harvest tax losses for your personal account (or vice versa).
+
+ACB cannot be negative, if ROC would reduce it below zero then the negative amount instead becomes an immediate capital gain.  
+
+If you hold a security in a personal account, as well as in a corporation account, they are considered 
+If you hold the security in more than one account (non-registered accounts only, which is all corporate investment accounts, you are required to calculate the ACB across all of the accounts.  
+
+Trading fees to buy a security increase your ACB.  
+Trading fees to sell a security are treated as "Outlays and expense from disposition" in T2 Schedule 6.  
+When selling, the fee does not reduce your ACB (instead it reduces your "Proceeds of disposition").
 
 Securities are priced at the Weighted Average Cost (WAC, not FIFO or LIFO), because of this there is not a single canonical date of acquisition.  
-If you need a single acquision date for pooled securities with averaged ACB, you can use the date of the very first purchase that contributed to the current pool of units being sold.  
+If you need a single acquision date (e.g. for electronic filing of T2 Schedule 6) for pooled securities with averaged ACB, you can use the date of the very first purchase that contributed to the current pool of units being sold.  
 Using the earliest date of continuous holding of a security is conservative in the absense of specific CRA guidence.  
+
+If you hold USD or other foreign assets, you will need to convert to CAD when calculating ACB.  
+The conversion takes place on the exact settlement date of every buy, sell, or distribution transaction using the Bank of Canada exchange rate for that day.  
 
 
 Things that can affect your ACB:
@@ -33,3 +45,7 @@ Things that can affect your ACB:
 - Decrease: T3 box 42: amount resulting in cost base adjustment, typically Return of Capital (ROC)  
 - Increase: T3 box 21: capital gains distribution, phantom (non-cash) portion
 
+
+Links:
+- https://www.finiki.org/wiki/Adjusted_cost_base
+- https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4037/capital-gains.html
