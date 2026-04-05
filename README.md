@@ -15,5 +15,9 @@ Disclaimer: I am not an accountant, this is not finanical or tax advice.
 - [Capital Dividend Account](Capital-Dividend-Account.md)
 - [T3](T3.md)
 - [T5008](T5008.md)
+
+Work in progress:
+- [Foreign-Currency](Foreign-Currency.md)
+- [HST](HST.md)
 - [Payment](Payment.md)
 
