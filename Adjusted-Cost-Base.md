@@ -4,7 +4,7 @@
 This document only covers stocks and ETFs, other types of investments (real estate, etc.) are out of scope and might have different or additional rules.   
 
 The ACB is used when you sell a security, this results in a T5008 and needs to be reported on the T2 in Schedule 6.  
-You are responsible for maintaining your own ACB records and using those to calculate capital gains or losses (i.e. do not just report the T5008 box 20 amount).  
+You are responsible for maintaining your own ACB records and using those to calculate capital gains or losses (i.e. do not just report the T5008 box 20 amount, which is the Book Cost rather than the ACB).  
 
 Tax information can change over time (e.g. the capital gains inclusion rate was going to increase to 2/3, before the proposal was cancelled), the below is my understanding as of 2026.  
 
@@ -30,9 +30,9 @@ Market Value:
 ## What changes the ACB
 
 Things that increase your ACB:
-- Purchasing a security  
-- Reinvested distributions  
-- T3 box 21 (not necessarily the full amount, see T3 page): phantom (non-cash) portion of capital gains distribution  
+- Purchasing a security
+- DRIP (reinvested distribution): the fund pays you cash and you immediately use it to buy more units, the automatic purchase increases your ACB like any other purchase
+- Phantom (non-cash) distribution: the fund reports a capital gains distribution on T3 Box 21 but some or all of it is not paid out in cash (and it's not reinvested); you owe tax on it but received nothing, so you increase ACB by that phantom amount to prevent double-taxation on sale  
 
 Selling a security results in a T5008 which decreases the ACB (although the per-share/per-unit ACB doesn't change).  
 
@@ -42,7 +42,9 @@ T3 box 42 (amount resulting in cost base adjustment) typically decreases your AC
 
 ACB cannot be negative, if ROC would reduce it below zero then the negative amount instead becomes an immediate capital gain.  
 
-Corporate actions (e.g. stock split, spin off) can increase or decrease your ACB.
+Corporate actions can increase or decrease your ACB:
+- Stock split: total ACB stays the same, per-share/per-unit ACB decreases proportionally  
+- Spin-off: you must allocate the original ACB between the parent company and the new entity, typically based on the relative fair market values on the effective date  
 
 
 ## Book Cost vs ACB
@@ -86,9 +88,21 @@ If you hold USD or other foreign assets, you must convert to CAD when calculatin
 Capital losses can be carried forward indefinitely to offset future capital gains, and they can be carried back 3 years.  
 However if you (or an affiliated person) sell at a loss and repurchase the same (or identical) property within 30 days (before or after), it is a "superficial loss" which can be denied and added back to the ACB of the substituted property (the newly repurchased shares that triggered the superficial loss).  
 At the end of that 30-day period, you or an affiliated person must still own the property (if you sell, rebuy, and then sell again before the window closes, the superficial loss rule may not apply).  
+To carry back a capital loss you submit Form T2A (Request for Loss Carryback), which triggers a reassessment of the prior-year T2.  
 For the purposes of the superficial loss rules, you and a corporation that you control (or a corporation controlled by your spouse/common-law partner) are considered "affiliated persons", and you can't use your corporate account to harvest tax losses for your personal account (or vice versa).  
 
 
+## Capital Dividend Account
+
+Running total of all capital gains and losses, to be used for a tax efficient capital dividend.  
+Track the non-taxable portion (50%) of the "Disposition of capital property" (GIFI 8211) amount in the Capital Dividend Account (CDA).  
+This is a spreadsheet that is not part of the ledger, it can be reconciled via Schedule 89.  
+The CDA is a cumulative account that counts running net of capital gains and losses.  
+The CDA can be used to pay the tax-free portion of the cumulative net capital gain from the corporation to the shareholders with a capital dividend.  
+It requires first verifying the CDA amount (using physical mail or specialized software), which can be done once in a few years.  
+
+
 ## Links
+
 - Related to personal taxes, but still relevant: https://www.finiki.org/wiki/Adjusted_cost_base
 - https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4037/capital-gains.html
