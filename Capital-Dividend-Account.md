@@ -15,3 +15,10 @@ This is a spreadsheet that is not part of the ledger, it can be reconciled via S
 The CDA is a cumulative account that counts running net of capital gains and losses.  
 The CDA can be used to pay the tax-free portion of the cumulative net capital gain from the corporation to the shareholders with a capital dividend.  
 It requires first verifying the CDA amount (using physical mail or specialized software), which can be done once in a few years.  
+
+
+## Related
+
+- [Adjusted Cost Base](Adjusted-Cost-Base.md)
+- [T3](T3.md)
+- [T5008](T5008.md)
