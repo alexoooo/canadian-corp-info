@@ -1,6 +1,6 @@
 # Adjusted Cost Base (ACB)
 
-**Who this is for**: owners of Canadian-controlled private corporation (CCPC) who hold investments in a corproate trading account.  
+**Who this is for**: owners of Canadian-controlled private corporation (CCPC) who hold investments in a corporate trading account.  
 This document only covers stocks and ETFs, other types of investments (real estate, etc.) are out of scope and might have different or additional rules.   
 
 The ACB is used when you sell a security, this results in a T5008 and needs to be reported on the T2 in Schedule 6.  
@@ -19,7 +19,7 @@ Adjusted Cost Base (ACB) is used to calculate capital gains or losses when you s
 
 Book Cost (also know as Book Value) is calculated by your brokerage (not a CRA definition):
 - Amount shown on your investment statements and brokerage website
-- May not exactly refect the ACB, or might be delayed
+- May not exactly reflect the ACB, or might be delayed
 - Can have brokerage-specific behaviour that is inconsistent over time
 
 Market Value:
@@ -30,13 +30,15 @@ Market Value:
 ## What changes the ACB
 
 Things that increase your ACB:
-- Purchasing a security
-- Reinvested distributions
-- Phantom (non-cash) portion of capital gains distribution - T3 box 21 (not necessarily the full amount, see T3 page)  
+- Purchasing a security  
+- Reinvested distributions  
+- T3 box 21 (not necessarily the full amount, see T3 page): phantom (non-cash) portion of capital gains distribution  
 
-Things that decrease your ACB:
-- Return of capital - T3 box 42
-- Selling a security, although the per-share (or per-unit) ACB doesn't change - T5008
+Selling a security results in a T5008 which decreases the ACB (although the per-share/per-unit ACB doesn't change).  
+
+T3 box 42 (amount resulting in cost base adjustment) typically decreases your ACB but sometimes can increase it:
+- Positive amount decreases your ACB, typically this is Return of Capital
+- Negative amount increases your ACB, this is rare but can happen (e.g. an over-distribution correction), always follow the sign  
 
 ACB cannot be negative, if ROC would reduce it below zero then the negative amount instead becomes an immediate capital gain.  
 
@@ -73,7 +75,7 @@ ACB uses pooled average cost across all identical properties (not FIFO or LIFO).
 When you sell, receive a T5008, and fill out the corresponding T2 Schedule 6 entry, you will need to specify a "Date of acquisition".  
 Because you can buy and sell pooled securities over time, there might not a single obvious date of acquisition.  
 You can use the date of the very first purchase that contributed to the current pool of units being sold.  
-Using the earliest date of continuous holding of a security is a conservative bookkeeping convention in the absense of specific CRA guidence.  
+Using the earliest date of continuous holding of a security is a conservative bookkeeping convention in the absence of specific CRA guidance.  
 
 If you hold USD or other foreign assets, you must convert to CAD when calculating ACB (using the Bank of Canada daily exchange rate):  
 - Purchases and sales: use the exchange rate for the trade date (not settlement date)  
@@ -83,6 +85,7 @@ If you hold USD or other foreign assets, you must convert to CAD when calculatin
 
 Capital losses can be carried forward indefinitely to offset future capital gains, and they can be carried back 3 years.  
 However if you (or an affiliated person) sell at a loss and repurchase the same (or identical) property within 30 days (before or after), it is a "superficial loss" which can be denied and added back to the ACB of the substituted property (the newly repurchased shares that triggered the superficial loss).  
+At the end of that 30-day period, you or an affiliated person must still own the property (if you sell, rebuy, and then sell again before the window closes, the superficial loss rule may not apply).  
 For the purposes of the superficial loss rules, you and a corporation that you control (or a corporation controlled by your spouse/common-law partner) are considered "affiliated persons", and you can't use your corporate account to harvest tax losses for your personal account (or vice versa).  
 
 
