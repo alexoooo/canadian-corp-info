@@ -1,13 +1,12 @@
-STATUS: WORK In PROGRESS
-
 # Adjusted Cost Base (ACB)
 
 Who this is for: owners of Canadian-controlled private corporation (CCPC) who hold investments in a corproate trading account.  
-Capital gains tax filing (T2 Schedule 6) for selling securities (e.g. stocks or ETFs).
+This document only covers stocks and ETFs, other types of investments (real estate, etc.) are out of scope and might have different or additional rules.   
+
+The ACB is used when you sell a security, this results in a T5008 and needs to be reported on the T2 in Schedule 6.  
+You are responsible for maintaining your own ACB records and using those to calculate capital gains or losses (i.e. do not just report the T5008 box 20 amount).  
 
 Tax information can change over time (e.g. the capital gains inclusion rate was going to increase to 2/3, before the proposal was cancelled), the below is my understanding as of 2026.  
-
-Using a Dividend Reinvestment Plan (DRIP) significantly increases paperwork and complexity, it's recommended to avoid DRIP in corporate investment accounts.  
 
 
 ## Definitions
@@ -16,27 +15,19 @@ Adjusted Cost Base (ACB) is used to calculate capital gains or losses when you s
 - ACB = cost of the property + acquisition costs + specific adjustments over time
 - Cost is typically the purchase price that you paid to acquire the asset (but can sometimes be different, e.g. gifts, transfers, rollover, etc.)
 - Acquisition costs are fees paid to buy the asset (e.g. brokerage trading commission)
-- ACB can change from certain distributions (re-invested dividends, non-cash portion of capital gains distribution, return of capital) 
-- ACB can change from certain corporate actions (stock split, spinoff, etc.)
-You are responsible for maintaining your own ACB records and using those to calculate capital gains or losses (i.e. do not blindly report the T5008 box 20 amount).  
+- ACB chages over time:
+  - distributions: re-invested dividends, non-cash portion of capital gains distribution, return of capital  
+  - corporate actions: stock split, spinoff, etc.
 
+Book Cost (also know as Book Value) is calculated by your brokerage:
+- Amount shown on your investment statements and brokerage website
+- May not exactly refect the ACB, or might be delayed
+- Can have brokerage-specific behaviour that is not consistent over time
 
-Book Cost (also know as Book Value) is calculated by your brokerage
-amount shown on your investment statements and brokerage website, it typically includes your initial investment and increases when you buy and decreases when you sell.  
+Market Value:
+- Current price of an asset x number of shares or units
+- Not used for any tax calculations
 
-## Ledger entries
-
-## Related items
-
-Things that can affect your ACB:
-- Increase: purchasing a security  
-- Decrease: Selling a security (T5008)  
-- Decrease: T3 box 42: amount resulting in cost base adjustment, typically Return of Capital (ROC)  
-- Increase: T3 box 21: capital gains distribution, phantom (non-cash) portion
-
-ACB is connected to the following:
-- T5008
-- T3 box 21 and ROC
 
 ## Book Cost vs ACB
 
@@ -54,20 +45,31 @@ Depending on your brokerage, you might see:
 - The behaviour can appear inconsistent  
 - It might be possible raise a discrepancy with your broker and they could re-issue T3 or T5008 slips  
 
-Capital losses can be carried forward indefinitely to offset future capital gains, and they can be carried back 3 years.  
-However if you sell at a loss and repurchase the same security within 30 days (before or after), it is a "superficial loss" which is added back to the ACB of the substituted property (the newly repurchased shares that triggered the superficial loss).  
-For the purposes of the superficial loss rules, you and a corporation that you control are considered "affiliated persons", and you can't use your corporate account to harvest tax losses for your personal account (or vice versa).
 
-## Details
+## What does and doesn't change ACB
+
+Things that increase your ACB:
+- Purchasing a security
+- Reinvested distributions
+- Phantom (non-cash) portion of capital gains distribution - T3 box 21 (not necessarily the full amount, see T3 page)  
+
+Things that decrease your ACB:
+- Return of capital - T3 box 42
+- Selling a security, although the per-share (or per-unit) ACB doesn't change - T5008
 
 ACB cannot be negative, if ROC would reduce it below zero then the negative amount instead becomes an immediate capital gain.  
 
-If you hold a security in a personal account, as well as in your corporation's account, they are considered assets of two distinct legal entities.  
-You track the ACB for each entity separately, even if they hold the identical security.  
+Corporate actions (e.g. stock split, spin off) can increase or decrease your ACB.
+
+
+## Details
 
 Trading fees to buy a security increase your ACB (i.e. they are "capitalized", not counted as an expense).  
 Trading fees to sell a security are treated as "Outlays and expense from disposition" in T2 Schedule 6.  
-When selling, the fee does not reduce your ACB (instead it reduces your "Proceeds of disposition").
+When selling, the fee does not reduce your ACB (instead it reduces your "Proceeds of disposition").  
+
+If you hold a security in a personal account, as well as in your corporation's account, they are considered assets of two distinct legal entities.  
+You track the ACB for each entity separately, even if they hold the identical security.  
 
 ACB uses pooled average cost across all identical properties (not FIFO or LIFO).  
 When you sell, receive a T5008, and file T2 Schedule 6, you will need to specify a "Date of acquisition".  
@@ -77,6 +79,11 @@ Using the earliest date of continuous holding of a security is conservative in t
 
 If you hold USD or other foreign assets, you will need to convert to CAD when calculating ACB.  
 The conversion takes place on the settlement date of every buy, sell, or distribution transaction using the Bank of Canada daily exchange rate.  
+
+Capital losses can be carried forward indefinitely to offset future capital gains, and they can be carried back 3 years.  
+However if you sell at a loss and repurchase the same security within 30 days (before or after), it is a "superficial loss" which is added back to the ACB of the substituted property (the newly repurchased shares that triggered the superficial loss).  
+For the purposes of the superficial loss rules, you and a corporation that you control are considered "affiliated persons", and you can't use your corporate account to harvest tax losses for your personal account (or vice versa).
+
 
 ## Links
 - https://www.finiki.org/wiki/Adjusted_cost_base
