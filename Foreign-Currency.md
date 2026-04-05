@@ -1,3 +1,6 @@
+STATUS: WORK IN PROGRESS
+
+
 # Foreign Currency book keeping and tax filing
 
 # Getting Paid in USD
