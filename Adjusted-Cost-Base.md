@@ -12,18 +12,18 @@ Tax information can change over time (e.g. the capital gains inclusion rate was 
 ## Definitions
 
 Adjusted Cost Base (ACB) is used to calculate capital gains or losses when you sell an asset:  
-- ACB = cost of the property + acquisition costs + specific adjustments over time
-- Cost is typically the purchase price that you paid to acquire the asset (but can sometimes be different, e.g. gifts, transfers, rollover, etc.)
-- Acquisition costs are fees paid to buy the asset (e.g. brokerage trading commission)
-- ACB adjustments over time: ROC, phantom (non-cash) portion of capital gains distribution, stock splits, etc.
+- ACB = cost of the property + acquisition costs + adjustments over time
+- Cost of the property: typically the purchase price that you paid to acquire the asset, but can sometimes be different (e.g. gifts, transfers, rollover, etc.)
+- Acquisition costs: fees paid to buy the asset (e.g. brokerage trading commission)
+- Adjustments over time: ROC, phantom (non-cash) portion of capital gains distribution, stock splits, etc.
 
-Book Cost (also know as Book Value) is calculated by your brokerage:
+Book Cost (also know as Book Value) is calculated by your brokerage (not a CRA definition):
 - Amount shown on your investment statements and brokerage website
 - May not exactly refect the ACB, or might be delayed
 - Can have brokerage-specific behaviour that is inconsistent over time
 
 Market Value:
-- Current price of an asset x number of shares or units
+- Current price of an asset (national last sale price) x number of shares or units
 - Not used for any tax calculations
 
 
@@ -75,8 +75,11 @@ Because you can buy and sell pooled securities over time, there might not a sing
 You can use the date of the very first purchase that contributed to the current pool of units being sold.  
 Using the earliest date of continuous holding of a security is a conservative bookkeeping convention in the absense of specific CRA guidence.  
 
-If you hold USD or other foreign assets, you will need to convert to CAD when calculating ACB.  
-The conversion takes place on the settlement date of every buy, sell, or distribution transaction using the Bank of Canada daily exchange rate.  
+If you hold USD or other foreign assets, you must convert to CAD when calculating ACB (using the Bank of Canada daily exchange rate):  
+- Purchases and sales: use the exchange rate for the trade date (not settlement date)  
+- Distributions (including ROC and reinvested/phantom amounts such as the non-cash portion of T3 box 21): use exchange rate on payment/distribution date (not when distribution is declared)  
+- Outlays and expenses (e.g. commissions): use exchange rate on trade date (not settlement date)  
+- The income statement uses average annual exchange rate, your balance sheet uses the end-of-year rate, but these are not applicable to transactions that affect ACB (which must always use the daily exchange rate)  
 
 Capital losses can be carried forward indefinitely to offset future capital gains, and they can be carried back 3 years.  
 However if you (or an affiliated person) sell at a loss and repurchase the same (or identical) property within 30 days (before or after), it is a "superficial loss" which can be denied and added back to the ACB of the substituted property (the newly repurchased shares that triggered the superficial loss).  
