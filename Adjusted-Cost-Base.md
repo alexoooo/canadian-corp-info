@@ -1,6 +1,6 @@
 # Adjusted Cost Base (ACB)
 
-Who this is for: owners of Canadian-controlled private corporation (CCPC) who hold investments in a corproate trading account.  
+**Who this is for**: owners of Canadian-controlled private corporation (CCPC) who hold investments in a corproate trading account.  
 This document only covers stocks and ETFs, other types of investments (real estate, etc.) are out of scope and might have different or additional rules.   
 
 The ACB is used when you sell a security, this results in a T5008 and needs to be reported on the T2 in Schedule 6.  
@@ -15,12 +15,12 @@ Adjusted Cost Base (ACB) is used to calculate capital gains or losses when you s
 - ACB = cost of the property + acquisition costs + specific adjustments over time
 - Cost is typically the purchase price that you paid to acquire the asset (but can sometimes be different, e.g. gifts, transfers, rollover, etc.)
 - Acquisition costs are fees paid to buy the asset (e.g. brokerage trading commission)
-- ACB chages over time:
+- ACB adjustments over time: ROC, phantom (non-cash) portion of capital gains distribution, stock splits, etc.
 
 Book Cost (also know as Book Value) is calculated by your brokerage:
 - Amount shown on your investment statements and brokerage website
 - May not exactly refect the ACB, or might be delayed
-- Can have brokerage-specific behaviour that is not consistent over time
+- Can have brokerage-specific behaviour that is inconsistent over time
 
 Market Value:
 - Current price of an asset x number of shares or units
@@ -70,19 +70,19 @@ If you hold a security in a personal account, as well as in your corporation's a
 You track the ACB for each entity separately, even if they hold the identical security.  
 
 ACB uses pooled average cost across all identical properties (not FIFO or LIFO).  
-When you sell, receive a T5008, and file T2 Schedule 6, you will need to specify a "Date of acquisition".  
+When you sell, receive a T5008, and fill out the corresponding T2 Schedule 6 entry, you will need to specify a "Date of acquisition".  
 Because you can buy and sell pooled securities over time, there might not a single obvious date of acquisition.  
 You can use the date of the very first purchase that contributed to the current pool of units being sold.  
-Using the earliest date of continuous holding of a security is conservative in the absense of specific CRA guidence.  
+Using the earliest date of continuous holding of a security is a conservative bookkeeping convention in the absense of specific CRA guidence.  
 
 If you hold USD or other foreign assets, you will need to convert to CAD when calculating ACB.  
 The conversion takes place on the settlement date of every buy, sell, or distribution transaction using the Bank of Canada daily exchange rate.  
 
 Capital losses can be carried forward indefinitely to offset future capital gains, and they can be carried back 3 years.  
-However if you sell at a loss and repurchase the same security within 30 days (before or after), it is a "superficial loss" which is added back to the ACB of the substituted property (the newly repurchased shares that triggered the superficial loss).  
-For the purposes of the superficial loss rules, you and a corporation that you control are considered "affiliated persons", and you can't use your corporate account to harvest tax losses for your personal account (or vice versa).  
+However if you (or an affiliated person) sell at a loss and repurchase the same (or identical) property within 30 days (before or after), it is a "superficial loss" which can be denied and added back to the ACB of the substituted property (the newly repurchased shares that triggered the superficial loss).  
+For the purposes of the superficial loss rules, you and a corporation that you control (or a corporation controlled by your spouse/common-law partner) are considered "affiliated persons", and you can't use your corporate account to harvest tax losses for your personal account (or vice versa).  
 
 
 ## Links
-- https://www.finiki.org/wiki/Adjusted_cost_base
+- Related to personal taxes, but still relevant: https://www.finiki.org/wiki/Adjusted_cost_base
 - https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4037/capital-gains.html
