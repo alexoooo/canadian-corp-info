@@ -1,11 +1,11 @@
 # Adjusted Cost Base (ACB)
 
 **Who this is for**: owners of Canadian-controlled private corporation (CCPC) who hold investments in a corporate trading account.  
-This document only covers stocks and ETFs, other types of investments (real estate, etc.) are out of scope and might have different or additional rules.   
 
 The ACB is used when you sell a security, this results in a T5008 and needs to be reported on the T2 in Schedule 6.  
 You are responsible for maintaining your own ACB records and using those to calculate capital gains or losses (i.e. do not just report the T5008 box 20 amount, which is the Book Cost rather than the ACB).  
 
+This document only covers stocks and ETFs, other types of investments (real estate, etc.) are out of scope and might have different or additional rules.   
 Tax information can change over time (e.g. the capital gains inclusion rate was going to increase to 2/3, before the proposal was cancelled), the below is my understanding as of 2026.  
 
 
@@ -92,14 +92,11 @@ To carry back a capital loss you submit Form T2A (Request for Loss Carryback), w
 For the purposes of the superficial loss rules, you and a corporation that you control (or a corporation controlled by your spouse/common-law partner) are considered "affiliated persons", and you can't use your corporate account to harvest tax losses for your personal account (or vice versa).  
 
 
-## Capital Dividend Account
+## Related
 
-Running total of all capital gains and losses, to be used for a tax efficient capital dividend.  
-Track the non-taxable portion (50%) of the "Disposition of capital property" (GIFI 8211) amount in the Capital Dividend Account (CDA).  
-This is a spreadsheet that is not part of the ledger, it can be reconciled via Schedule 89.  
-The CDA is a cumulative account that counts running net of capital gains and losses.  
-The CDA can be used to pay the tax-free portion of the cumulative net capital gain from the corporation to the shareholders with a capital dividend.  
-It requires first verifying the CDA amount (using physical mail or specialized software), which can be done once in a few years.  
+- [Capital Dividend Account](Capital-Dividend-Account.md)
+- [T3](T3.md)
+- [T5008](T5008.md)
 
 
 ## Links
