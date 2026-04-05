@@ -16,8 +16,6 @@ Adjusted Cost Base (ACB) is used to calculate capital gains or losses when you s
 - Cost is typically the purchase price that you paid to acquire the asset (but can sometimes be different, e.g. gifts, transfers, rollover, etc.)
 - Acquisition costs are fees paid to buy the asset (e.g. brokerage trading commission)
 - ACB chages over time:
-  - distributions: re-invested dividends, non-cash portion of capital gains distribution, return of capital  
-  - corporate actions: stock split, spinoff, etc.
 
 Book Cost (also know as Book Value) is calculated by your brokerage:
 - Amount shown on your investment statements and brokerage website
@@ -27,6 +25,22 @@ Book Cost (also know as Book Value) is calculated by your brokerage:
 Market Value:
 - Current price of an asset x number of shares or units
 - Not used for any tax calculations
+
+
+## What changes the ACB
+
+Things that increase your ACB:
+- Purchasing a security
+- Reinvested distributions
+- Phantom (non-cash) portion of capital gains distribution - T3 box 21 (not necessarily the full amount, see T3 page)  
+
+Things that decrease your ACB:
+- Return of capital - T3 box 42
+- Selling a security, although the per-share (or per-unit) ACB doesn't change - T5008
+
+ACB cannot be negative, if ROC would reduce it below zero then the negative amount instead becomes an immediate capital gain.  
+
+Corporate actions (e.g. stock split, spin off) can increase or decrease your ACB.
 
 
 ## Book Cost vs ACB
@@ -44,22 +58,6 @@ Depending on your brokerage, you might see:
 - All brokerages might occasionally miss adjusting the Book Cost and sometimes report the wrong amount  
 - The behaviour can appear inconsistent  
 - It might be possible raise a discrepancy with your broker and they could re-issue T3 or T5008 slips  
-
-
-## What does and doesn't change ACB
-
-Things that increase your ACB:
-- Purchasing a security
-- Reinvested distributions
-- Phantom (non-cash) portion of capital gains distribution - T3 box 21 (not necessarily the full amount, see T3 page)  
-
-Things that decrease your ACB:
-- Return of capital - T3 box 42
-- Selling a security, although the per-share (or per-unit) ACB doesn't change - T5008
-
-ACB cannot be negative, if ROC would reduce it below zero then the negative amount instead becomes an immediate capital gain.  
-
-Corporate actions (e.g. stock split, spin off) can increase or decrease your ACB.
 
 
 ## Details
@@ -82,7 +80,7 @@ The conversion takes place on the settlement date of every buy, sell, or distrib
 
 Capital losses can be carried forward indefinitely to offset future capital gains, and they can be carried back 3 years.  
 However if you sell at a loss and repurchase the same security within 30 days (before or after), it is a "superficial loss" which is added back to the ACB of the substituted property (the newly repurchased shares that triggered the superficial loss).  
-For the purposes of the superficial loss rules, you and a corporation that you control are considered "affiliated persons", and you can't use your corporate account to harvest tax losses for your personal account (or vice versa).
+For the purposes of the superficial loss rules, you and a corporation that you control are considered "affiliated persons", and you can't use your corporate account to harvest tax losses for your personal account (or vice versa).  
 
 
 ## Links
