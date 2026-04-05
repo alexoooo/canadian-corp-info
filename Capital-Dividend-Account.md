@@ -1,7 +1,7 @@
 # Capital Dividend Account (CDA)
 
 **Who this is for**: owners of Canadian-controlled private corporation (CCPC) who hold investments in a corporate trading account.  
-**TL;DR**: capital gains can be used for a tax efficient capital dividend.
+**TLDR**: capital gains can be used for a tax efficient capital dividend.
 
 This document only covers stocks and ETFs, other types of investments (real estate, etc.) are out of scope and might have different or additional rules.   
 Tax information can change over time (e.g. the capital gains inclusion rate was going to increase to 2/3, before the proposal was cancelled), the below is my understanding as of 2026.  
