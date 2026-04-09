@@ -46,3 +46,10 @@ If a shareholder is a non-resident, the capital dividend is subject to a Part XI
 - [Adjusted Cost Base](Adjusted-Cost-Base.md)
 - [T3](T3.md)
 - [T5008](T5008.md)
+
+
+# TODO:
+
+- Step-by-step instructions for submitting Schedule 89 and Form T2054 with screenshots
+- Include template for resolution to declare capital dividend  
+- Include spreadsheet to be used as template for CDA calculation  
