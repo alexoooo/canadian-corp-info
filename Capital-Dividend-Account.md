@@ -66,6 +66,5 @@ To do it with CRA My Business Account:
 
 # TODO:
 
-- Step-by-step instructions for submitting Schedule 89 and Form T2054 with screenshots
 - Include template for resolution to declare capital dividend  
 - Include spreadsheet to be used as template for CDA calculation  

@@ -85,6 +85,9 @@ If you hold USD or other foreign assets, you must convert to CAD when calculatin
 - Outlays and expenses (e.g. commissions): use exchange rate on trade date (not settlement date)  
 - The income statement uses average annual exchange rate, your balance sheet uses the end-of-year rate, but these are not applicable to transactions that affect ACB (which must always use the daily exchange rate)  
 
+
+# Capital loss carry forward / back / superficial loss
+
 Capital losses can be carried forward indefinitely to offset future capital gains, and they can be carried back 3 years.  
 However if you (or an affiliated person) sell at a loss and repurchase the same (or identical) property within 30 days (before or after), it is a "superficial loss" which can be denied and added back to the ACB of the substituted property (the newly repurchased shares that triggered the superficial loss).  
 At the end of that 30-day period, you or an affiliated person must still own the property (if you sell, rebuy, and then sell again before the window closes, the superficial loss rule may not apply).  
