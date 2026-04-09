@@ -29,16 +29,32 @@ Capital Dividend Account election process:
   - Certification means the Secretary or a Director signs a statement on the resolution saying: "I hereby certify this to be a true copy of the resolution passed by the board..." 
 - Reporting: enter the dividend on T2 Schedule 3 (issuing T5 slip is not required for a 100% capital dividend)
 
-Submitting Schedule 89:
-- CRA My Business account currently doesn't support it in Web Forms
-- Schedule 89 can be submitted using physical mail or specialized software (e.g. TaxCycle)
-- **To be confirmed**: it might be possible to uploaded as a PDF via the "Submit Documents" feature in My Business Account (under the "Capital Dividend Account" topic)
-
 Note that CDA is a "point-in-time" calculation, if you sell an investment at a loss after your calculation but before the dividend is technically payable, you could inadvertently overdraw the account and incur a penalty.  
 You may elect to pay less than the calculated CDA balance, e.g. by leaving a $1000 buffer.
 
 Since this is a tax-free amount for Canadian residents, the shareholder recipients do not report this income on their T1 or anywhere else.  
 If a shareholder is a non-resident, the capital dividend is subject to a Part XIII withholding tax (usually 25%, potentially reduced by a treaty), so it isn't "tax-free" for them.  
+
+
+# Submitting Schedule 89 and Form T2054
+
+CRA allows Schedule 89 and Form T2054 to be submitted by:
+- CRA My Business Account using "Submit documents"
+- Specialized software (e.g. TaxCycle)
+- Physical mail
+
+To do it with CRA My Business Account:
+- Log in to CRA My Account and select My Business Account (you will need to set up your login first)
+- On the left navigation panel, go to "Submit documents" (under "Correspondence")
+- On the "Submitted documents" screen, click "Submit documents"
+- On the "Submit documents" screen:
+  - Click "Start"
+  - Select "Topic" = "Special Elections and Returns (SERs)"
+  - Select "Indicate the reason for your submission" as one of:
+    - "T2054 Election for a Capital Dividend Under Subsection 83(2)"
+    - "Schedule 089 Request for Capital Dividend Account Balance Verification"
+
+![Screenshot of submitting CRA documents in CRA My Business Account](media/CRA-My-Business-Account_Submit-documents_Capital-Dividend.png)
 
 
 # Related
