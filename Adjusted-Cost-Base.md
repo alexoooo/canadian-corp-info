@@ -9,7 +9,7 @@ This document only covers stocks and ETFs, other types of investments (real esta
 Tax information can change over time (e.g. the capital gains inclusion rate was going to increase to 2/3, before the proposal was cancelled), the below is my understanding as of 2026.  
 
 
-## Definitions
+# Definitions
 
 Adjusted Cost Base (ACB) is used to calculate capital gains or losses when you sell an asset:  
 - ACB = cost of the property + acquisition costs + adjustments over time
@@ -17,7 +17,7 @@ Adjusted Cost Base (ACB) is used to calculate capital gains or losses when you s
 - Acquisition costs: fees paid to buy the asset (e.g. brokerage trading commission)
 - Adjustments over time: ROC, phantom (non-cash) portion of capital gains distribution, stock splits, etc.
 
-Book Cost (also know as Book Value) is calculated by your brokerage (not a CRA definition):
+Book Cost (also known as Book Value) is calculated by your brokerage (not a CRA definition):
 - Amount shown on your investment statements and brokerage website
 - May not exactly reflect the ACB, or might be delayed
 - Can have brokerage-specific behaviour that is inconsistent over time
@@ -27,7 +27,7 @@ Market Value:
 - Not used for any tax calculations
 
 
-## What changes the ACB
+# What changes the ACB
 
 Things that increase your ACB:
 - Purchasing a security
@@ -47,7 +47,7 @@ Corporate actions can increase or decrease your ACB:
 - Spin-off: you must allocate the original ACB between the parent company and the new entity, typically based on the relative fair market values on the effective date  
 
 
-## Book Cost vs ACB
+# Book Cost vs ACB
 
 Ideally Book Cost would equal ACB, but in practice you might see brokerage-dependent differences with the following:
 - Phantom distributions: non-cash portion of T3 box 21
@@ -64,7 +64,7 @@ Depending on your brokerage, you might see:
 - It might be possible raise a discrepancy with your broker and they could re-issue T3 or T5008 slips  
 
 
-## Details
+# Details
 
 Trading fees to buy a security increase your ACB (i.e. they are "capitalized", not counted as an expense).  
 Trading fees to sell a security are treated as "Outlays and expense from disposition" in T2 Schedule 6.  
@@ -92,14 +92,21 @@ To carry back a capital loss you submit Form T2A (Request for Loss Carryback), w
 For the purposes of the superficial loss rules, you and a corporation that you control (or a corporation controlled by your spouse/common-law partner) are considered "affiliated persons", and you can't use your corporate account to harvest tax losses for your personal account (or vice versa).  
 
 
-## Related
+# Related
 
 - [Capital Dividend Account](Capital-Dividend-Account.md)
 - [T3](T3.md)
 - [T5008](T5008.md)
+- [Foreign-Currency](Foreign-Currency.md)
 
 
-## Links
+# Links
 
 - Related to personal taxes, but still relevant: https://www.finiki.org/wiki/Adjusted_cost_base
 - https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4037/capital-gains.html
+
+
+# TODO:
+
+- Elaborate on foreign currency conversion, cross-reference with Foreign-Currency.md  
+- Explain ACB adjustment calculations, and include spreadsheet to be used as template for ACB calculation  
