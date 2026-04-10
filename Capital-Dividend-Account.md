@@ -11,6 +11,7 @@ Tax information can change over time (e.g. the capital gains inclusion rate was 
 
 The Capital Dividend Account is not part of the ledger, it can be tracked separately (e.g. in a spreadsheet).  
 The CDA can be used to pay the tax-free portion of the cumulative net capital gain from the corporation to the shareholders with a capital dividend.  
+Note: the CDA can also include other amounts such as the tax-free portion of life-insurance proceeds received by the corporation (s.89(1)(d) ITA), but that is outside the scope of this document.  
 
 Maintain a running total of capital gain or loss:
 - Realized Gains/Losses: when you sell a security, calculate: Box 21 (Proceeds) - ACB (tracked separately)
@@ -27,7 +28,7 @@ Capital Dividend Account election process:
 - Resolution: directors must pass a resolution to pay a dividend and elect for it to be a Capital Dividend under s.83(2)
 - Filing: submit Form T2054 ("Election for a Capital Dividend Under Subsection 83(2)") along with a certified copy of the resolution on or before the payment date
   - Certification means the Secretary or a Director signs a statement on the resolution saying: "I hereby certify this to be a true copy of the resolution passed by the board..." 
-- Reporting: enter the dividend on T2 Schedule 3 (issuing T5 slip is not required for a 100% capital dividend)
+- Reporting: enter the dividend on T2 Schedule 3 (a T5 slip with the capital dividend in Box 23 should also be issued to each shareholder, though some practitioners omit it for a sole-shareholder CCPC paying a 100% capital dividend)
 
 Note that CDA is a "point-in-time" calculation, if you sell an investment at a loss after your calculation but before the dividend is technically payable, you could inadvertently overdraw the account and incur a penalty.  
 You may elect to pay less than the calculated CDA balance, e.g. by leaving a $1000 buffer.
@@ -62,6 +63,17 @@ To do it with CRA My Business Account:
 - [Adjusted Cost Base](Adjusted-Cost-Base.md)
 - [T3](T3.md)
 - [T5008](T5008.md)
+
+
+# Citations
+
+- Income Tax Act (R.S.C., 1985, c. 1 (5th Supp.)):
+  - [s.83(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/page-52.html#h-291793) — capital dividend election: corporation elects that dividend be treated as a capital dividend; must file on or before the dividend payment date
+  - [s.89(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/page-55.html#h-291885) — definition of "capital dividend account" (includes non-taxable portion of capital gains, life-insurance proceeds, and capital dividends received from other corporations)
+  - [s.184](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/page-126.html#h-296321) — Part III tax: penalty for electing a capital dividend in excess of the CDA balance
+  - [s.212(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/page-143.html#h-297263) — Part XIII withholding tax on dividends paid to non-residents (including capital dividends)
+- CRA Form T2054 — Election for a Capital Dividend Under Subsection 83(2): https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2054.html
+- CRA T2 Schedule 89 — Request for Capital Dividend Account Balance Verification: https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2sch89.html
 
 
 # TODO:

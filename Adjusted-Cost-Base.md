@@ -31,7 +31,7 @@ Market Value:
 
 Things that increase your ACB:
 - Purchasing a security
-- DRIP (reinvested distribution): the fund pays you cash and you immediately use it to buy more units, the automatic purchase increases your ACB like any other purchase
+- DRIP (reinvested distribution): the fund declares a distribution and the DRIP program automatically acquires additional units on your behalf; for tax purposes you are treated as having received the cash and reinvested it, so the reinvested amount increases your ACB like any other purchase
 - Phantom (non-cash) distribution: the fund reports a capital gains distribution on T3 Box 21 but some or all of it is not paid out in cash (and it's not reinvested); you owe tax on it but received nothing, so you increase ACB by that phantom amount to prevent double-taxation on sale  
 
 Selling a security results in a T5008 which decreases the ACB (although the per-share/per-unit ACB doesn't change).  
@@ -90,7 +90,7 @@ If you hold USD or other foreign assets, you must convert to CAD when calculatin
 
 Capital losses can be carried forward indefinitely to offset future capital gains, and they can be carried back 3 years.  
 
-To carry back a capital loss you submit Form T2A (Request for Loss Carryback), which triggers a reassessment of the prior-year T2.  
+To carry back a capital loss, a corporation uses T2 Schedule 4 (Corporation Loss Continuity and Application), which triggers a reassessment of the prior-year T2.  
 
 Tax loss harvesting is the technique of realizing a loss, and then potentially investing in a similar security.  
 There are limitations on losses that can be claimed, make sure you don't get a "superficial loss":  
@@ -110,6 +110,18 @@ There are limitations on losses that can be claimed, make sure you don't get a "
 - [T3](T3.md)
 - [T5008](T5008.md)
 - [Foreign-Currency](Foreign-Currency.md)
+
+
+# Citations
+
+- Income Tax Act (R.S.C., 1985, c. 1 (5th Supp.)):
+  - [s.47(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/page-30.html#h-290251) — identical properties acquired as part of a group: cost is average of the group (pooled average cost rule)
+  - [s.53(1), s.53(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/page-33.html#h-290343) — adjustments to cost base (additions and deductions, including ROC and superficial-loss ACB bump)
+  - [s.54](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/page-34.html#h-290437) — definitions of "adjusted cost base", "superficial loss", "proceeds of disposition"
+  - [s.251.1](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/page-166.html#h-298523) — definition of "affiliated persons" (relevant to superficial loss)
+  - [s.40(2)(g)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/page-25.html#h-289901) — superficial loss is nil for the seller; denied amount added to ACB of substituted property
+- CRA T4037 "Capital Gains" guide: https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4037/capital-gains.html
+- Bank of Canada daily exchange rates: https://www.bankofcanada.ca/rates/exchange/daily-exchange-rates/
 
 
 # Links
