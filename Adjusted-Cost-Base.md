@@ -96,7 +96,7 @@ Tax loss harvesting is the technique of realizing a loss, and then potentially i
 There are limitations on losses that can be claimed, make sure you don't get a Superficial Loss:  
 - Time window: during the 61-day period that begins 30 days before and ends 30 days after a sale at a loss  
 - Who it applies to: you or an "affiliated person", including a corporation that you control (or a corporation controlled by your spouse/common-law partner)  
-- What is the action: acquisition of an identical property (e.g. same ETF, or different ETF following the same index)  
+- What is the action: acquisition of an identical property (e.g. same ETF / same share class / same security, whether two different ETFs are identical is fact-specific)  
 - Condition at end of period: you or an affiliated person still owns that substituted property (or has the right to acquire it)  
 - What happens: loss is denied for now and is generally added to the ACB of the substituted property instead of being claimed immediately  
 - Example: if your corporation sells XEI at a loss, and you buy XEI in your personal account within the 30-day window and still hold it at the end of the window,
@@ -115,6 +115,7 @@ There are limitations on losses that can be claimed, make sure you don't get a S
 
 - Related to personal taxes, but still relevant: https://www.finiki.org/wiki/Adjusted_cost_base
 - https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4037/capital-gains.html
+- https://www.cifinancial.com/ci-gam/ca/en/expert-insights/articles/etf-taxation--tax-loss-selling-and-identical-property.html
 
 
 # TODO:
