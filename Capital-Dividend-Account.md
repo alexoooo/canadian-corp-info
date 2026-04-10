@@ -68,12 +68,12 @@ To do it with CRA My Business Account:
 # Citations
 
 - Income Tax Act (R.S.C., 1985, c. 1 (5th Supp.)):
-  - [s.83(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/page-52.html#h-291793) — capital dividend election: corporation elects that dividend be treated as a capital dividend; must file on or before the dividend payment date
-  - [s.89(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/page-55.html#h-291885) — definition of "capital dividend account" (includes non-taxable portion of capital gains, life-insurance proceeds, and capital dividends received from other corporations)
-  - [s.184](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/page-126.html#h-296321) — Part III tax: penalty for electing a capital dividend in excess of the CDA balance
-  - [s.212(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/page-143.html#h-297263) — Part XIII withholding tax on dividends paid to non-residents (including capital dividends)
-- CRA Form T2054 — Election for a Capital Dividend Under Subsection 83(2): https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2054.html
-- CRA T2 Schedule 89 — Request for Capital Dividend Account Balance Verification: https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2sch89.html
+  - [s.83(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/page-52.html#h-291793) - capital dividend election: corporation elects that dividend be treated as a capital dividend; must file on or before the dividend payment date
+  - [s.89(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/page-55.html#h-291885) - definition of "capital dividend account" (includes non-taxable portion of capital gains, life-insurance proceeds, and capital dividends received from other corporations)
+  - [s.184](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/page-126.html#h-296321) - Part III tax: penalty for electing a capital dividend in excess of the CDA balance
+  - [s.212(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/page-143.html#h-297263) - Part XIII withholding tax on dividends paid to non-residents (including capital dividends)
+- CRA Form T2054 - Election for a Capital Dividend Under Subsection 83(2): https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2054.html
+- CRA T2 Schedule 89 - Request for Capital Dividend Account Balance Verification: https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2sch89.html
 
 
 # TODO:

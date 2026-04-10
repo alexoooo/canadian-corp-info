@@ -115,11 +115,11 @@ There are limitations on losses that can be claimed, make sure you don't get a "
 # Citations
 
 - Income Tax Act (R.S.C., 1985, c. 1 (5th Supp.)):
-  - [s.47(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/page-30.html#h-290251) — identical properties acquired as part of a group: cost is average of the group (pooled average cost rule)
-  - [s.53(1), s.53(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/page-33.html#h-290343) — adjustments to cost base (additions and deductions, including ROC and superficial-loss ACB bump)
-  - [s.54](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/page-34.html#h-290437) — definitions of "adjusted cost base", "superficial loss", "proceeds of disposition"
-  - [s.251.1](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/page-166.html#h-298523) — definition of "affiliated persons" (relevant to superficial loss)
-  - [s.40(2)(g)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/page-25.html#h-289901) — superficial loss is nil for the seller; denied amount added to ACB of substituted property
+  - [s.47(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/page-30.html#h-290251) - identical properties acquired as part of a group: cost is average of the group (pooled average cost rule)
+  - [s.53(1), s.53(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/page-33.html#h-290343) - adjustments to cost base (additions and deductions, including ROC and superficial-loss ACB bump)
+  - [s.54](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/page-34.html#h-290437) - definitions of "adjusted cost base", "superficial loss", "proceeds of disposition"
+  - [s.251.1](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/page-166.html#h-298523) - definition of "affiliated persons" (relevant to superficial loss)
+  - [s.40(2)(g)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/page-25.html#h-289901) - superficial loss is nil for the seller; denied amount added to ACB of substituted property
 - CRA T4037 "Capital Gains" guide: https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4037/capital-gains.html
 - Bank of Canada daily exchange rates: https://www.bankofcanada.ca/rates/exchange/daily-exchange-rates/
 
