@@ -28,7 +28,7 @@ Capital Dividend Account election process:
 - Resolution: directors must pass a resolution to pay a dividend and elect for it to be a Capital Dividend under s.83(2)
 - Filing: submit Form T2054 ("Election for a Capital Dividend Under Subsection 83(2)") along with a certified copy of the resolution on or before the payment date
   - Certification means the Secretary or a Director signs a statement on the resolution saying: "I hereby certify this to be a true copy of the resolution passed by the board..." 
-- Reporting: enter the dividend on T2 Schedule 3 (a T5 slip with the capital dividend in Box 23 should also be issued to each shareholder, though some practitioners omit it for a sole-shareholder CCPC paying a 100% capital dividend)
+- Reporting: enter the dividend on T2 Schedule 3 and issue a T5 information slip to each shareholder
 
 Note that CDA is a "point-in-time" calculation, if you sell an investment at a loss after your calculation but before the dividend is technically payable, you could inadvertently overdraw the account and incur a penalty.  
 You may elect to pay less than the calculated CDA balance, e.g. by leaving a $1000 buffer.
@@ -68,12 +68,14 @@ To do it with CRA My Business Account:
 # Citations
 
 - Income Tax Act (R.S.C., 1985, c. 1 (5th Supp.)):
-  - [s.83(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/page-52.html#h-291793) - capital dividend election: corporation elects that dividend be treated as a capital dividend; must file on or before the dividend payment date
-  - [s.89(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/page-55.html#h-291885) - definition of "capital dividend account" (includes non-taxable portion of capital gains, life-insurance proceeds, and capital dividends received from other corporations)
-  - [s.184](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/page-126.html#h-296321) - Part III tax: penalty for electing a capital dividend in excess of the CDA balance
-  - [s.212(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/page-143.html#h-297263) - Part XIII withholding tax on dividends paid to non-residents (including capital dividends)
+  - [s.83(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-83.html) - capital dividend election: the corporation elects in prescribed form and at or before the payment date
+  - [s.89(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-89.html) - definition of "capital dividend account" (including the non-taxable portion of capital gains and certain life-insurance proceeds)
+  - [s.184](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-184.html) - Part III tax on excessive capital-dividend elections
+  - [s.212(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-212.html) - Part XIII withholding tax on taxable dividends and capital dividends paid to non-residents
 - CRA Form T2054 - Election for a Capital Dividend Under Subsection 83(2): https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2054.html
 - CRA T2 Schedule 89 - Request for Capital Dividend Account Balance Verification: https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2sch89.html
+- CRA T2 Schedule 3: https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2sch3.html
+- CRA Form T5: https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t5.html
 
 
 # TODO:
