@@ -58,10 +58,10 @@ Depending on your brokerage, you might see:
 - Every change to the ACB could be correctly reflected in the Book Cost, this is ideal  
 - ACB changes might be reflected but delayed (e.g. until following April)  
 - Some ACB changes might be missing entirely  
-- Superficial Loss rules and external holdings (same security in different account) typically require tracking yourself  
+- Superficial loss rules and external holdings (same security in different account) typically require tracking yourself  
 - All brokerages might occasionally miss adjusting the Book Cost and sometimes report the wrong amount  
 - The behaviour can appear inconsistent  
-- It might be possible raise a discrepancy with your broker and they could re-issue T3 or T5008 slips  
+- It might be possible raise a discrepancy with your broker, and they could re-issue T3 or T5008 slips  
 
 
 # Details
@@ -104,6 +104,32 @@ There are limitations on losses that can be claimed, make sure you don't get a "
     the corporate loss can be a superficial loss even though the repurchase happened in a different account
 
 
+# ACB Tracking Template
+
+The simplest way to track ACB is using a single spreadsheet (one transaction per row).
+
+Inputs (from investment confirmations and T3):
+- Date: YYYY-MM-DD
+- Symbol: ETF or stock ticker
+- Action: Buy, Sell, ROC, Phantom
+- Quantity: shares or units
+- Gross Amount: before commission
+- Commission: fee charged by brokerage
+- FX CAD Rate: conversion from local transaction currency to CAD (1.0 if already in CAD)
+
+Outputs (cumulative per symbol):
+- Remaining Quantity: shares or units remaining after the current transaction
+- ACB Change: amount by which ACB increased (positive) or decreased (negative)
+- ACB: remaining ACB after the current transaction
+
+Formulas:
+- `Direction` = IF(OR(`Action` = `Buy`, `Action` = `Phantom`), 1, -1)
+- `Net Amount` = `Gross Amount` - `Commission`
+- `ACB Change` = IF(`Action` = `Buy`, `Gross Amount`, `Net Amount`)
+- `Remaining Quantity` = TODO
+- `ACB` = TODO
+
+
 # Related
 
 - [Capital Dividend Account](Capital-Dividend-Account.md)
@@ -135,4 +161,4 @@ There are limitations on losses that can be claimed, make sure you don't get a "
 # TODO:
 
 - Elaborate on foreign currency conversion, cross-reference with Foreign-Currency.md  
-- Explain ACB adjustment calculations, and include spreadsheet to be used as template for ACB calculation  
+- Import `ACB-Template.xlsx` into Google Sheets and publish the view-only template  
