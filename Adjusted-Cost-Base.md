@@ -117,6 +117,13 @@ Inputs (from investment confirmations and T3):
 - `Commission`: fee charged by brokerage
 - `FX CAD Rate`: conversion from local transaction currency to CAD (1.0 if already in CAD)
 
+Outputs (cumulative per symbol):
+- `Remaining Quantity` = `Previous Remaining Quantity` + `Quantity Change`
+- `ACB Change` = `ACB Change - Buy` + `ACB Change - Sell` + `ACB Change - ROC` + `ACB Change - Phantom`
+- `ACB` = `Previous ACB + ACB Change`
+- `Immediate Capital Gain` = IF(`Action` = "ROC", MAX(0, `Gross Amount CAD` - `Previous ACB`), 0)
+- `Realized Gain/Loss` = IF(`Action` = "Sell", `Net Proceeds CAD` - `Removed ACB`, 0)
+
 Calculations:
 - `Previous Row for Symbol` =  
   &ensp; IFERROR(  
@@ -125,36 +132,28 @@ Calculations:
   &ensp; &ensp; &ensp; OFFSET(`Symbol`\$1, 0, 0, ROW() - 1, 1),  
   &ensp; &ensp; &ensp; 0, -1),  
   &ensp; &ensp; "")
-- `Quantity Change` = IF(`Action` = "Buy", 1, -1) * `Quantity`
 - `Previous Remaining Quantity` =  
   &ensp; IF(`Previous Row for Symbol` = "", 0,  
   &ensp; &ensp; INDEX(`Remaining Quantity`:column, `Previous Row for Symbol`))
-- `Remaining Quantity` = `Previous Remaining Quantity` + `Quantity Change`
-
-Outputs (cumulative per symbol):
-- Remaining Quantity: shares or units remaining after the current transaction
-- ACB Change: amount by which ACB increased (positive) or decreased (negative)
-- ACB: remaining ACB after the current transaction
-
-Helpful intermediate calculations:
+- `Previous ACB` =  
+  &ensp; IF(`Previous Row for Symbol` = "", 0,  
+  &ensp; &ensp; INDEX(`ACB`:column, `Previous Row for Symbol`))
+- `Previous ACB Per Unit` = IF(`Previous Remaining Quantity` = 0, 0, `Previous ACB` / `Previous Remaining Quantity`)
 - `Gross Amount CAD` = `Gross Amount` * `FX CAD Rate`
 - `Commission CAD` = `Commission` * `FX CAD Rate`
-- `Previous ACB` = `ACB from the previous row for the same Symbol` (or `0` if this is the first row for the Symbol)
-- `Previous ACB Per Unit` = `IF(Previous Remaining Quantity = 0, 0, Previous ACB / Previous Remaining Quantity)`
-- `Removed ACB` = `IF(Action = Sell, Quantity * Previous ACB Per Unit, 0)`
-- `Net Proceeds CAD` = `IF(Action = Sell, Gross Amount CAD - Commission CAD, 0)`
-- `Immediate Capital Gain` = `IF(Action = ROC, MAX(0, Gross Amount CAD - Previous ACB), 0)`
-- `Realized Gain/Loss` = `IF(Action = Sell, Net Proceeds CAD - Removed ACB, 0)`
-
-Formulas:
-- `ACB Change` = `IF(Action = Buy, Gross Amount CAD + Commission CAD, IF(Action = Sell, -Removed ACB, IF(Action = ROC, IF(Gross Amount CAD >= 0, -MIN(Gross Amount CAD, Previous ACB), -Gross Amount CAD), IF(Action = Phantom, Gross Amount CAD, 0))))`
-
-- `ACB` = `Previous ACB + ACB Change`
+- `Quantity Change` = IF(`Action` = "Buy", 1, -1) * `Quantity`
+- `Removed ACB` = IF(`Action` = "Sell", `Quantity` * `Previous ACB Per Unit`, 0)
+- `ACB Change - Buy` = IF(`Action` = "Buy", `Gross Amount CAD`, 0)
+- `ACB Change - Sell` = IF(`Action` = "Sell", -`Removed ACB`, 0)
+- `ACB Change - ROC` = IF(`Action` = "ROC",  
+  &ensp; IF(`Gross Amount CAD` >= 0, -MIN(`Gross Amount CAD`, `Previous ACB`), -`Gross Amount CAD`), 0)
+- `ACB Change - Phantom` = IF(`Action` = "Phantom", `Gross Amount CAD`, 0)
+- `Net Proceeds CAD` = IF(`Action` = "Sell", `Gross Amount CAD` - `Commission CAD`, 0)
 
 Notes:
-- Rows must be entered in transaction order for each Symbol.
-- For `ROC`, keep the sign from the slip: a positive amount reduces ACB, and a negative amount increases ACB.
-- ACB cannot go below zero. If positive `ROC` is larger than `Previous ACB`, the excess is an immediate capital gain and `ACB` becomes zero.
+- Rows must be entered in transaction order for each Symbol
+- For `ROC`, keep the sign from the slip: a positive amount reduces ACB, and a negative amount increases ACB
+- ACB cannot go below zero. If positive `ROC` is larger than `Previous ACB`, the excess is an immediate capital gain and `ACB` becomes zero
 
 
 # Related
