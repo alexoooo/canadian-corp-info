@@ -41,6 +41,7 @@ T3 box 42 (amount resulting in cost base adjustment) typically decreases your AC
 - Negative amount increases your ACB, this is rare but can happen (e.g. an over-distribution correction), always follow the sign  
 
 ACB cannot be negative, if ROC would reduce it below zero then the negative amount instead becomes an immediate capital gain.  
+The immediate capital gain is entered in Schedule 6 with Quantity/ACB/Outlays = 0 and Proceeds = negative ACB portion of ROC (separate line from disposition).
 
 Corporate actions can increase or decrease your ACB:
 - Stock split: total ACB stays the same, per-share/per-unit ACB decreases proportionally  
@@ -121,8 +122,8 @@ Outputs (cumulative per symbol):
 - `Remaining Quantity` = `Previous Remaining Quantity` + `Quantity Change`
 - `ACB Change` = `ACB Change - Buy` + `ACB Change - Sell` + `ACB Change - ROC` + `ACB Change - Phantom`
 - `ACB` = `Previous ACB + ACB Change`
-- `Immediate Capital Gain` = IF(`Action` = "ROC", MAX(0, `Gross Amount CAD` - `Previous ACB`), 0)
 - `Realized Gain/Loss` = IF(`Action` = "Sell", `Net Proceeds CAD` - `Removed ACB`, 0)
+- `Immediate Capital Gain` = IF(`Action` = "ROC", MAX(0, `Gross Amount CAD` - `Previous ACB`), 0)
 
 Calculations:
 - `Previous Row for Symbol` =  
