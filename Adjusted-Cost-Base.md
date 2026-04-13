@@ -65,20 +65,23 @@ Depending on your brokerage, you might see:
 - It might be possible raise a discrepancy with your broker, and they could re-issue T3 or T5008 slips  
 
 
-# Details
+# Trading fees
 
 Trading fees to buy a security increase your ACB (i.e. they are "capitalized", not counted as an expense).  
 Trading fees to sell a security are treated as "Outlays and expense from disposition" in T2 Schedule 6.  
-When selling, the fee does not reduce your ACB (instead it reduces your "Proceeds of disposition").  
+When selling, the fee does not reduce your ACB (instead it reduces your "Proceeds of disposition").
 
-If you hold a security in a personal account, as well as in your corporation's account, they are considered assets of two distinct legal entities.  
-You track the ACB for each entity separately, even if they hold the identical security.  
+
+# Date of acquisition for pooled securities
 
 ACB uses pooled average cost across all identical properties (not FIFO or LIFO).  
 When you sell, receive a T5008, and fill out the corresponding T2 Schedule 6 entry, you will need to specify a "Date of acquisition".  
 Because you can buy and sell pooled securities over time, there might not a single obvious date of acquisition.  
 You can use the date of the very first purchase that contributed to the current pool of units being sold.  
 Using the earliest date of continuous holding of a security is a conservative bookkeeping convention in the absence of specific CRA guidance.  
+
+
+# Foreign assets and FX conversion to CAD
 
 If you hold USD or other foreign assets, you must convert to CAD when calculating ACB (using the Bank of Canada daily exchange rate):  
 - Purchases and sales: use the exchange rate for the trade date (not settlement date)  
@@ -87,14 +90,21 @@ If you hold USD or other foreign assets, you must convert to CAD when calculatin
 - The income statement uses average annual exchange rate, your balance sheet uses the end-of-year rate, but these are not applicable to transactions that affect ACB (which must always use the daily exchange rate)  
 
 
+# Corporate vs personal ACB 
+
+If you hold a security in a personal account, as well as in your corporation's account, they are considered assets of two distinct legal entities.  
+You track the ACB for each entity separately, even if they hold the identical security.  
+
+Note that while ACB is tracked separately, personal and corporate accounts are "affiliated persons" for the purpose of superficial loss (see below).
+
+
 # Capital loss carry forward / back / superficial loss
 
 Capital losses can be carried forward indefinitely to offset future capital gains, and they can be carried back 3 years.  
-
 To carry back a capital loss, a corporation uses T2 Schedule 4 (Corporation Loss Continuity and Application), which triggers a reassessment of the prior-year T2.  
 
 Tax loss harvesting is the technique of realizing a loss, and then potentially investing in a similar security.  
-There are limitations on losses that can be claimed, make sure you don't get a "superficial loss":  
+There are limitations on which losses can be claimed, make sure you don't get a "superficial loss":  
 - Time window: during the 61-day period that begins 30 days before and ends 30 days after a sale at a loss  
 - Who it applies to: you or an "affiliated person", including a corporation that you control (or a corporation controlled by your spouse/common-law partner)  
 - What is the action: acquisition of an identical property (e.g. same ETF / same share class / same security, whether two different ETFs are identical is fact-specific)  
