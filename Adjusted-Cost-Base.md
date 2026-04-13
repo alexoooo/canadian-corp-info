@@ -129,9 +129,7 @@ Outputs (cumulative per symbol):
 - `Immediate Capital Gain` = IF(`Action` = "ROC", MAX(0, `Gross Amount CAD` - `Previous ACB`), 0)  
   Reported in T2 Schedule 6 (as a separate line)
 - `Date of Acquisition` =  
-  &ensp; IF(AND(`Action` = "Buy", `Previous Remaining Quantity` = 0), `Date`,
-  &ensp; &ensp; IF(AND(`Action` = "Sell", `Remaining Quantity` = 0), "",
-  &ensp; &ensp; &ensp; `Previous Date of Acquisition`))
+  &ensp; IF(AND(`Action` = "Buy", `Previous Remaining Quantity` = 0), `Date`, `Previous Date of Acquisition`)  
   Earliest date of continuous holding for the current pooled position, used in Schedule 6
 
 Calculations:
@@ -172,11 +170,12 @@ Notes:
 - For T3 box 21, only the phantom (non-cash) portion belongs in a Phantom row; the cash portion does not change ACB
 - If a T3 slip aggregates multiple ROC or phantom distributions, split them into separate dated rows whenever possible, especially if there were intervening sales or FX differences
 - Use the trade-date FX rate for Buy, Sell, and their commissions; use the payment/distribution-date FX rate for ROC and Phantom
-- ACB cannot go below zero. If positive ROC is larger than `Previous ACB`, the excess is an immediate capital gain and `ACB` becomes zero
+- ACB cannot go below zero, if positive ROC is larger than `Previous ACB`, the excess is an immediate capital gain and `ACB` becomes zero
 - `Remaining Quantity` should never go negative; if a sale would exceed current holdings, fix the input rather than allowing a negative balance
-- If you fully dispose of a position and later buy it again, the `Continuous Holding Start Date` resets on the new purchase
+- If you fully dispose of a position and later buy it again, the `Date of Acquisition` resets on the new purchase
 - This minimal template does not automate superficial loss, stock splits, or spin-offs; handle those with separate logic or manual adjustments
-- DRIP can be entered as Buy with `Commission` = 0)
+- DRIP can be entered as Buy with `Commission` = 0
+
 
 # Related
 
