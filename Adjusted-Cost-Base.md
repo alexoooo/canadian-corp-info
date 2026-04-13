@@ -218,4 +218,4 @@ Notes:
 # TODO:
 
 - Elaborate on foreign currency conversion, cross-reference with Foreign-Currency.md  
-- Import `ACB-Template.xlsx` into Google Sheets and publish the view-only template  
+- Add Google Sheets template with the view-only template  
