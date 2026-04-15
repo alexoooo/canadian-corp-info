@@ -5,6 +5,9 @@
 The ACB is used when you sell a security, this results in a T5008 and needs to be reported on the T2 in Schedule 6.  
 You are responsible for maintaining your own ACB records and using those to calculate capital gains or losses (i.e. do not just report the T5008 box 20 amount, which is the Book Cost rather than the ACB).  
 
+This document is an overview of ACB concepts, for detailed step-by-step instructions for how to track ACB, see:
+[Adjusted Cost Base Tracking](Adjusted-Cost-Base-Tracking.md)
+
 This document only covers stocks and ETFs, other types of investments (real estate, etc.) are out of scope and might have different or additional rules.   
 Tax information can change over time (e.g. the capital gains inclusion rate was going to increase to 2/3, before the proposal was cancelled), the below is my understanding as of 2026.  
 
@@ -115,80 +118,9 @@ There are limitations on which losses can be claimed, make sure you don't get a 
     the corporate loss can be a superficial loss even though the repurchase happened in a different account
 
 
-# ACB Tracking Template
-
-The simplest way to track ACB is using a single spreadsheet (one transaction per row).
-
-Inputs (from investment confirmations and T3):
-- `Date`: YYYY-MM-DD  
-  Buy / Sell use trade date; ROC / Phantom use payment/distribution date)
-- `Symbol`: ETF or stock ticker
-- `Action`: Buy, Sell, ROC, Phantom
-- `Quantity`: shares or units (use 0 or blank for ROC and Phantom)
-- `Gross Amount`: before commission; for ROC and Phantom, this is the adjustment amount for that specific distribution event
-- `Commission`: fee charged by brokerage
-- `FX CAD Rate`: conversion from local transaction currency to CAD (1.0 if already in CAD)
-
-Outputs (cumulative per symbol):
-- `Remaining Quantity` = `Previous Remaining Quantity` + `Quantity Change`  
-  Can be used to match quantity in investment statements and website
-- `ACB Change` = `ACB Change - Buy` + `ACB Change - Sell` + `ACB Change - ROC` + `ACB Change - Phantom`  
-  Entered in T2 Schedule 6
-- `ACB` = `Previous ACB` + `ACB Change`
-- `Realized Gain/Loss` = IF(`Action` = "Sell", `Net Proceeds CAD` - `Removed ACB`, 0)
-- `Immediate Capital Gain` = IF(`Action` = "ROC", MAX(0, `Gross Amount CAD` - `Previous ACB`), 0)  
-  Reported in T2 Schedule 6 (as a separate line)
-- `Date of Acquisition` =  
-  &ensp; IF(AND(`Action` = "Buy", `Previous Remaining Quantity` = 0), `Date`, `Previous Date of Acquisition`)  
-  Earliest date of continuous holding for the current pooled position, used in Schedule 6
-
-Calculations:
-- `Previous Row for Symbol` =  
-  &ensp; IFERROR(  
-  &ensp; &ensp; XMATCH(  
-  &ensp; &ensp; &ensp; `Symbol`,  
-  &ensp; &ensp; &ensp; OFFSET(`Symbol`\$1, 0, 0, ROW() - 1, 1),  
-  &ensp; &ensp; &ensp; 0, -1),  
-  &ensp; &ensp; "")
-- `Previous Remaining Quantity` =  
-  &ensp; IF(`Previous Row for Symbol` = "", 0,  
-  &ensp; &ensp; INDEX(`Remaining Quantity`:column, `Previous Row for Symbol`))
-- `Previous ACB` =  
-  &ensp; IF(`Previous Row for Symbol` = "", 0,  
-  &ensp; &ensp; INDEX(`ACB`:column, `Previous Row for Symbol`))
-- `Previous Date of Acquisition` =  
-  &ensp; IF(`Previous Row for Symbol` = "", "",  
-  &ensp; &ensp; INDEX(`Date of Acquisition`:column, `Previous Row for Symbol`))
-- `Previous ACB Per Unit` =  
-  &ensp; IF(`Previous Remaining Quantity` = 0, 0, `Previous ACB` / `Previous Remaining Quantity`)
-- `Gross Amount CAD` = `Gross Amount` * `FX CAD Rate`
-- `Commission CAD` = `Commission` * `FX CAD Rate`
-- `Net Cost CAD` = IF(`Action` = "Buy", `Gross Amount CAD` + `Commission CAD`, 0)
-- `Quantity Change` = IF(`Action` = "Buy", `Quantity`, IF(`Action` = "Sell", -`Quantity`, 0))
-- `Removed ACB` = IF(`Action` = "Sell", `Quantity` * `Previous ACB Per Unit`, 0)
-- `Net Proceeds CAD` = IF(`Action` = "Sell", `Gross Amount CAD` - `Commission CAD`, 0)
-- `ACB Change - Buy` = IF(`Action` = "Buy", `Net Cost CAD`, 0)
-- `ACB Change - Sell` = IF(`Action` = "Sell", -`Removed ACB`, 0)
-- `ACB Change - ROC` = IF(`Action` = "ROC",  
-  &ensp; IF(`Gross Amount CAD` >= 0, -MIN(`Gross Amount CAD`, `Previous ACB`), -`Gross Amount CAD`), 0)
-- `ACB Change - Phantom` = IF(`Action` = "Phantom", `Gross Amount CAD`, 0)
-
-Notes:
-- Rows must be entered in transaction order for each Symbol
-- For Buy, the commission increases ACB; for Sell, the commission reduces proceeds and is not part of ACB
-- For ROC, keep the sign from the slip: a positive amount reduces ACB, and a negative amount increases ACB
-- For T3 box 21, only the phantom (non-cash) portion belongs in a Phantom row; the cash portion does not change ACB
-- If a T3 slip aggregates multiple ROC or phantom distributions, split them into separate dated rows whenever possible, especially if there were intervening sales or FX differences
-- Use the trade-date FX rate for Buy, Sell, and their commissions; use the payment/distribution-date FX rate for ROC and Phantom
-- ACB cannot go below zero, if positive ROC is larger than `Previous ACB`, the excess is an immediate capital gain and `ACB` becomes zero
-- `Remaining Quantity` should never go negative; if a sale would exceed current holdings, fix the input rather than allowing a negative balance
-- If you fully dispose of a position and later buy it again, the `Date of Acquisition` resets on the new purchase
-- This minimal template does not automate superficial loss, stock splits, or spin-offs; handle those with separate logic or manual adjustments
-- DRIP can be entered as Buy with `Commission` = 0
-
-
 # Related
 
+- [Adjusted Cost Base Tracking](Adjusted-Cost-Base-Tracking.md)
 - [Capital Dividend Account](Capital-Dividend-Account.md)
 - [T3](T3.md)
 - [T5008](T5008.md)
