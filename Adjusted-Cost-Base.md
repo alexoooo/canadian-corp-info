@@ -147,7 +147,6 @@ There are limitations on which losses can be claimed, make sure you don't get a 
 - https://www.cifinancial.com/ci-gam/ca/en/expert-insights/articles/etf-taxation--tax-loss-selling-and-identical-property.html
 
 
-# TODO:
+# Todo:
 
 - Elaborate on foreign currency conversion, cross-reference with Foreign-Currency.md  
-- Add Google Sheets template with the view-only template  

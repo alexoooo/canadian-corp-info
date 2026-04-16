@@ -15,6 +15,30 @@ Limitations:
 - Tax information can change over time (e.g. the capital gains inclusion rate was going to increase to 2/3, before the proposal was cancelled), the below is my understanding as of 2026  
 
 
+# Investment identification - security master
+
+There are a number of different ways to identify an investment security:
+- Schedule 6 asks for "Name of corporation in which the shares were held" and "Description of property"
+- CDS similarly uses the fund name for the PDFs, but internally also contains "SYMBOL/SYMBOLE"
+- Brokerage confirmations/statements will typically contain the security name, and may contain the symbol
+- Brokerage website typically highlights the symbol, possibly with a listing-specific suffix (e.g. ".TO")
+- There are standardized ways of identifying an investment:
+  - CUSIP is a nine-character alphanumeric code that uniquely identifies a North American financial security
+  - ISIN is a 12 character global standard, it's less commonly used in North America
+  - These might show up on some brokerage confirmations/statements, but they are not emphasized, with their main use being internal to the capital markets system
+
+From time to time, it's possible for company/ETF names and their ticker symbols to change:  
+- For example "Horizons ETFs" rebranded as "Global X" in 2024
+- You might see a transaction line in your brokerage statement, where the old name/symbol is subtracted and the name/symbo is added
+- This is a purely cosmetic change, your ACB is not impacted
+- You are responsible for keeping track of the latest name/symbol, and for correctly continuing the ACB calculation 
+
+In common usage, it's easiest to refer to investments by their ticket symbol (e.g. this is what you'll see in online stock charts).  
+In order to quickly determine the correct symbol and corresponding name, you can maintain a "Security Master".  
+It is only used internally to facilitate consistent reporting, so it can be as minimal as Symbol / Name / Note:
+![Example of Security Master Spreadhseet](media/Security-Master_Example.png)
+
+
 # Spreadsheet template
 
 Any spreadsheet software could be used (Excel, LibreOffice Calc, etc.), the example here uses Google Sheets.  
@@ -29,21 +53,40 @@ Screenshot:
 # Inputs: what information is used
 
 Inputs (from investment confirmations and T3):
-- `Date`: YYYY-MM-DD  
-  Buy / Sell use trade date; ROC / Phantom use payment/distribution date)
+- `Date`:
+  - Buy/Sell: trade date (not settlement date)
+  - ROC/Phantom: payment/distribution date
 - `Symbol`: ETF or stock ticker
 - `Action`: Buy, Sell, ROC, Phantom
-- `Quantity`: shares or units (use 0 or blank for ROC and Phantom)
-- `Gross Amount`: before commission; for ROC and Phantom, this is the adjustment amount for that specific distribution event
-- `Commission`: fee charged by brokerage
-- `FX CAD Rate`: conversion from local transaction currency to CAD (1.0 if already in CAD)
-- `Note`: free-form text to capture any auxiliary information (e.g. if the given entry was audited)
+- `Quantity`:
+  - Shares or units
+  - Use 0 or blank for ROC and Phantom
+- `Gross Amount`:
+  - Transaction currency amount, excluding commission
+  - Buy: purchase amount
+  - Sell: proceeds of disposition
+  - ROC/Phantom: adjustment amount
+- `Commission`:
+  - Transaction currency fee charged by brokerage
+  - Can leave blank if zero, which happens with ROC/Phantom, and sometimes for Buy/Sell depending on brokerage and security
+- `FX CAD Rate`:
+  - Conversion from transaction currency to CAD
+  - If transaction is denominated in CAD, then use 1.0 or leave blank 
+  - Rate greater than 1.0 means that the transaction currency is worth more than CAD (and vice versa if less than 1.0)
+- `Note`:
+  - Free-form text to capture any auxiliary information (e.g. if the given entry was audited)
+  - Can leave blank if there is nothing particularly noteworthy about transaction
 
 
 # Inputs: data entry
 
-- Trade confirmations
-- Other?
+Rows must be entered in transaction order for each Symbol  
+
+Example of Trade Confirmation (Sell, CAD):  
+![Example: Trade-Confirmation (Sell)](media/Trade-Confirmation_Sell_Example.png)
+
+Bank of Canada - Daily exchange rates - Lookup tool:  
+https://www.bankofcanada.ca/rates/exchange/daily-exchange-rates-lookup/
 
 
 # Outputs: where to use them and how are they calculated
@@ -51,11 +94,11 @@ Inputs (from investment confirmations and T3):
 Outputs (cumulative per symbol):
 - `Remaining Quantity` = `Previous Remaining Quantity` + `Quantity Change`  
   Can be used to match quantity in investment statements and brokerage website
-- `ACB Change` = `ACB Change - Buy` + `ACB Change - Sell` + `ACB Change - ROC` + `ACB Change - Phantom`  
-  Entered in T2 Schedule 6
 - `ACB` = `Previous ACB` + `ACB Change`
-- `Realized Gain/Loss` = IF(`Action` = "Sell", `Net Proceeds CAD` - `Removed ACB`, 0)
-- `Immediate Capital Gain` = IF(`Action` = "ROC", MAX(0, `Gross Amount CAD` - `Previous ACB`), 0)  
+- `ACB of Units Sold` = IF(`Action` = "Sell", `Quantity` * `Previous ACB Per Unit`, 0)  
+  Entered in T2 Schedule 6
+- `Capital Gain/Loss` = IF(`Action` = "Sell", `Net Proceeds CAD` - `ACB of Units Sold`, 0)
+- `Deemed Capital Gain` = IF(`Action` = "ROC", MAX(0, `Gross Amount CAD` - `Previous ACB`), 0)  
   Reported in T2 Schedule 6 (as a separate line)
 - `Date of Acquisition` =  
   &ensp; IF(AND(`Action` = "Buy", `Previous Remaining Quantity` = 0), `Date`, `Previous Date of Acquisition`)  
@@ -86,24 +129,23 @@ Outputs (cumulative per symbol):
 - `Commission CAD` = `Commission` * `FX CAD Rate`
 - `Net Cost CAD` = IF(`Action` = "Buy", `Gross Amount CAD` + `Commission CAD`, 0)
 - `Quantity Change` = IF(`Action` = "Buy", `Quantity`, IF(`Action` = "Sell", -`Quantity`, 0))
-- `Removed ACB` = IF(`Action` = "Sell", `Quantity` * `Previous ACB Per Unit`, 0)
 - `Net Proceeds CAD` = IF(`Action` = "Sell", `Gross Amount CAD` - `Commission CAD`, 0)
 - `ACB Change - Buy` = IF(`Action` = "Buy", `Net Cost CAD`, 0)
-- `ACB Change - Sell` = IF(`Action` = "Sell", -`Removed ACB`, 0)
+- `ACB Change - Sell` = IF(`Action` = "Sell", -`ACB of Units Sold`, 0)
 - `ACB Change - ROC` = IF(`Action` = "ROC",  
   &ensp; IF(`Gross Amount CAD` >= 0, -MIN(`Gross Amount CAD`, `Previous ACB`), -`Gross Amount CAD`), 0)
 - `ACB Change - Phantom` = IF(`Action` = "Phantom", `Gross Amount CAD`, 0)
+- `ACB Change` = `ACB Change - Buy` + `ACB Change - Sell` + `ACB Change - ROC` + `ACB Change - Phantom`
 
 
 # Notes
 
-- Rows must be entered in transaction order for each Symbol
 - For Buy, the commission increases ACB; for Sell, the commission reduces proceeds and is not part of ACB
 - For ROC, keep the sign from the slip: a positive amount reduces ACB, and a negative amount increases ACB
 - For T3 box 21, only the phantom (non-cash) portion belongs in a Phantom row; the cash portion does not change ACB
 - If a T3 slip aggregates multiple ROC or phantom distributions, split them into separate dated rows whenever possible, especially if there were intervening sales or FX differences
 - Use the trade-date FX rate for Buy, Sell, and their commissions; use the payment/distribution-date FX rate for ROC and Phantom
-- ACB cannot go below zero, if positive ROC is larger than `Previous ACB`, the excess is an immediate capital gain and `ACB` becomes zero
+- ACB cannot go below zero, if positive ROC is larger than `Previous ACB`, the excess is `Deemed Capital Gain` and `ACB` becomes zero
 - `Remaining Quantity` should never go negative; if a sale would exceed current holdings, fix the input rather than allowing a negative balance
 - If you fully dispose of a position and later buy it again, the `Date of Acquisition` resets on the new purchase
 - This minimal template does not automate superficial loss, stock splits, or spin-offs; handle those with separate logic or manual adjustments
