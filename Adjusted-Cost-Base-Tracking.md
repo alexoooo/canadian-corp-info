@@ -17,6 +17,8 @@ Limitations:
 
 # Investment identification - security master
 
+You need to identify investments for record keeping and T2 reporting.  
+
 There are a number of different ways to identify an investment security:
 - Schedule 6 asks for "Name of corporation in which the shares were held" and "Description of property"
 - CDS similarly uses the fund name for the PDFs, but internally also contains "SYMBOL/SYMBOLE"
@@ -29,7 +31,7 @@ There are a number of different ways to identify an investment security:
 
 From time to time, it's possible for company/ETF names and their ticker symbols to change:  
 - For example "Horizons ETFs" rebranded as "Global X" in 2024
-- You might see a transaction line in your brokerage statement, where the old name/symbol is subtracted and the name/symbo is added
+- You might see a transaction line in your brokerage statement, where the old name/symbol is subtracted and the new name/symbol is added
 - This is a purely cosmetic change, your ACB is not impacted
 - You are responsible for keeping track of the latest name/symbol, and for correctly continuing the ACB calculation 
 
@@ -48,6 +50,8 @@ https://docs.google.com/spreadsheets/d/1AV3RLfGw6l3G_az_2OpUHxRmTm5MwmkwPJHoPyNE
 
 Screenshot:
 ![Screenshot of Adjusted Cost Base Tracker](media/Adjusted-Cost-Base-Traker_Screenshot.png)
+
+You can keep this as a separate workbook, or as a single sheet within a larger workbook (if that is more convenient).  
 
 
 # Inputs: what information is used
@@ -80,13 +84,31 @@ Inputs (from investment confirmations and T3):
 
 # Inputs: data entry
 
-Rows must be entered in transaction order for each Symbol  
+Rows must be entered in transaction order for each Symbol.  
+
+Trading confirmation reporting is brokerage specific, you might see something slightly different.  
+However, the basic elements highlighted (or equivalent variants) are common to all.
 
 Example of Trade Confirmation (Sell, CAD):  
 ![Example: Trade-Confirmation (Sell)](media/Trade-Confirmation_Sell_Example.png)
-
-Bank of Canada - Daily exchange rates - Lookup tool:  
-https://www.bankofcanada.ca/rates/exchange/daily-exchange-rates-lookup/
+- #1 `Date`: trade date; do not use settlement date (crossed out above)
+- #2 `Action`:
+  - "Sell" for the example above (which labels the TRANSACTION TYPE = SOLD)
+  - "Buy" can appear as "Bought" or similar
+  - ROC / Phantom are entered from T3 slips (not trade confirmations)
+- #3 `Quantity`
+- #4 `Symbol`:
+  - Might not be mentioned explicitly (as in above example, where only security name is provided)
+  - Can be looked up (e.g. via Google), or maintained in a "Security Master" spreadsheet
+- #5 `Gross Amount`
+- #6 `Commission`
+- #7 `FX CAD Rate`
+  - Exchange rate might not be shown on trade confirmation
+  - Currency is commonly specified (as in above example, where "C$" means CAD)
+  - If currency is not specified, then CAD can be assumed by default
+  - If currency is CAD, then `FX CAD Rate` can be blank (or equivalently 1.0)
+  - Exchange rate from CAD to the foreign currency is available on the Bank of Canada website:  
+    https://www.bankofcanada.ca/rates/exchange/daily-exchange-rates-lookup/
 
 
 # Outputs: where to use them and how are they calculated
