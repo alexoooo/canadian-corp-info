@@ -1,6 +1,3 @@
-STATUS: work in progress!
-
-
 # Adjusted Cost Base (ACB) - Tracking
 
 **Who this is for**: owners of Canadian-controlled private corporation (CCPC) who hold investments in a corporate trading account.
@@ -35,10 +32,10 @@ From time to time, it's possible for company/ETF names and their ticker symbols 
 - This is a purely cosmetic change, your ACB is not impacted
 - You are responsible for keeping track of the latest name/symbol, and for correctly continuing the ACB calculation 
 
-In common usage, it's easiest to refer to investments by their ticket symbol (e.g. this is what you'll see in online stock charts).  
+In common usage, it's easiest to refer to investments by their ticker symbol (e.g. this is what you'll see in online stock charts).  
 In order to quickly determine the correct symbol and corresponding name, you can maintain a "Security Master".  
 It is only used internally to facilitate consistent reporting, so it can be as minimal as Symbol / Name / Note:
-![Example of Security Master Spreadhseet](media/Security-Master_Example.png)
+![Example of Security Master Spreadsheet](media/Security-Master_Example.png)
 
 
 # Spreadsheet template
@@ -49,7 +46,7 @@ Go to the following, and click "Use Template" (top right) to create your own cop
 https://docs.google.com/spreadsheets/d/1AV3RLfGw6l3G_az_2OpUHxRmTm5MwmkwPJHoPyNEBAM/template/preview
 
 Screenshot:
-![Screenshot of Adjusted Cost Base Tracker](media/Adjusted-Cost-Base-Traker_Screenshot.png)
+![Screenshot of Adjusted Cost Base Tracker](media/Adjusted-Cost-Base-Tracker_Screenshot.png)
 
 You can keep this as a separate workbook, or as a single sheet within a larger workbook (if that is more convenient).  
 

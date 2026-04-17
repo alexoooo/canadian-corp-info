@@ -65,7 +65,7 @@ Depending on your brokerage, you might see:
 - Superficial loss rules and external holdings (same security in different account) typically require tracking yourself  
 - All brokerages might occasionally miss adjusting the Book Cost and sometimes report the wrong amount  
 - The behaviour can appear inconsistent  
-- It might be possible raise a discrepancy with your broker, and they could re-issue T3 or T5008 slips  
+- It might be possible to raise a discrepancy with your brokerage, and they could re-issue T3 or T5008 slips  
 
 
 # Trading fees
@@ -79,7 +79,7 @@ When selling, the fee does not reduce your ACB (instead it reduces your "Proceed
 
 ACB uses pooled average cost across all identical properties (not FIFO or LIFO).  
 When you sell, receive a T5008, and fill out the corresponding T2 Schedule 6 entry, you will need to specify a "Date of acquisition".  
-Because you can buy and sell pooled securities over time, there might not a single obvious date of acquisition.  
+Because you can buy and sell pooled securities over time, there might not be a single obvious date of acquisition.  
 You can use the date of the very first purchase that contributed to the current pool of units being sold.  
 Using the earliest date of continuous holding of a security is a conservative bookkeeping convention in the absence of specific CRA guidance.  
 
@@ -93,7 +93,7 @@ If you hold USD or other foreign assets, you must convert to CAD when calculatin
 - The income statement uses average annual exchange rate, your balance sheet uses the end-of-year rate, but these are not applicable to transactions that affect ACB (which must always use the daily exchange rate)  
 
 
-# Corporate vs personal ACB 
+# Corporate vs personal ACB
 
 If you hold a security in a personal account, as well as in your corporation's account, they are considered assets of two distinct legal entities.  
 You track the ACB for each entity separately, even if they hold the identical security.  
