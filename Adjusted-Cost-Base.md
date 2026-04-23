@@ -3,7 +3,7 @@
 **Who this is for**: owners of Canadian-controlled private corporation (CCPC) who hold investments in a corporate trading account.  
 
 The ACB is used when you sell a security, this results in a T5008 and needs to be reported on the T2 in Schedule 6.  
-You are responsible for maintaining your own ACB records and using those to calculate capital gains or losses (i.e. do not just report the T5008 box 20 amount, which is the Book Cost rather than the ACB).  
+You are responsible for maintaining your own ACB records and using those to calculate capital gains or losses (i.e. do not just report the T5008 Box 20 amount, which is the Book Cost rather than the ACB).  
 
 This document is an overview of ACB concepts, for detailed step-by-step instructions for how to track ACB, see:
 [Adjusted Cost Base Tracking](Adjusted-Cost-Base-Tracking.md)
@@ -54,8 +54,8 @@ Corporate actions can increase or decrease your ACB:
 # Book Cost vs ACB
 
 Ideally Book Cost would equal ACB, but in practice you might see brokerage-dependent differences with the following:
-- Phantom distributions: non-cash portion of T3 box 21
-- Cost base adjustment: T3 box 42, typically Return of Capital (ROC)
+- Phantom distributions: non-cash portion of T3 Box 21
+- Cost base adjustment: T3 Box 42, typically Return of Capital (ROC)
 - T5008 and T3 amounts might be slightly different from what you see in your investment account (typically in pennies and washes out over time)  
 
 Depending on your brokerage, you might see:

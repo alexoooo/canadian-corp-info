@@ -3,8 +3,10 @@
 **Who this is for**: owners of Canadian-controlled private corporation (CCPC) who hold investments in a corporate trading account (resident in Canada).  
 **TLDR**: capital gains can be used for a tax-efficient capital dividend.
 
-This document only covers stocks and ETFs, other types of investments (real estate, etc.) are out of scope and might have different or additional rules.   
-Tax information can change over time (e.g. the capital gains inclusion rate was going to increase to 2/3, before the proposal was cancelled), the below is my understanding as of 2026.  
+Limitations:
+- This document only covers stocks and ETFs, other types of investments (real estate, etc.) are out of scope and might have different or additional rules
+- It is assumed that the shareholder is a Canadian resident, non-residents might have additional reporting rules (e.g. NR4), which are not covered here
+- Tax information can change over time (e.g. the capital gains inclusion rate was going to increase to 2/3, before the proposal was cancelled), the below is my understanding as of 2026
 
 
 # Details
@@ -14,7 +16,8 @@ The CDA can be used to pay the tax-free portion of the cumulative net capital ga
 Note: the CDA can also include other amounts such as the tax-free portion of life-insurance proceeds received by the corporation (s.89(1)(d) ITA), but that is outside the scope of this document.  
 
 Maintain a running total of capital gain or loss:
-- Realized Gains/Losses: when you sell a security, calculate: Box 21 (Proceeds) - ACB (tracked separately)
+- Realized Gains/Losses when you sell a security, calculate: T5008 Box 21 - ACB (tracked separately)  
+  Note: the T5008 Box 21 amount should be net of selling commission/fees (otherwise they need to be subtracted) 
 - Distributions: for T3/T5 slips, add the entire capital gains amount (e.g., T3 Box 21) to your running total
 - Positive and negative: capital gains are positive, and capital losses are negative
 
@@ -28,12 +31,14 @@ Capital Dividend Account election process:
 - Resolution: directors must pass a resolution to pay a dividend and elect for it to be a Capital Dividend under s.83(2)
 - Filing: submit Form T2054 ("Election for a Capital Dividend Under Subsection 83(2)") along with a certified copy of the resolution on or before the payment date
   - Certification means the Secretary or a Director signs a statement on the resolution saying: "I hereby certify this to be a true copy of the resolution passed by the board..." 
-- Reporting: enter the dividend on T2 Schedule 3 and issue a T5 information slip to each shareholder
+- Reporting:
+  - Enter the dividend on T2 Schedule 3
+  - For Canadian residents: do not issue a T5 information slip for this amount (but do notify them, e.g. by email)
 
 Note that CDA is a "point-in-time" calculation, if you sell an investment at a loss after your calculation but before the dividend is technically payable, you could inadvertently overdraw the account and incur a penalty.  
 You may elect to pay less than the calculated CDA balance, e.g. by leaving a $1000 buffer.
 
-Since this is a tax-free amount for Canadian residents, the shareholder recipients do not report this income on their T1 or anywhere else.  
+Since this is a tax-free amount for Canadian residents, the shareholder recipients do not report this income on their T1.  
 If a shareholder is a non-resident, the capital dividend is subject to a Part XIII withholding tax (usually 25%, potentially reduced by a treaty), so it isn't "tax-free" for them.  
 
 
@@ -44,7 +49,7 @@ CRA allows Schedule 89 and Form T2054 to be submitted by:
 - Specialized software (e.g. TaxCycle)
 - Physical mail
 
-To do it with CRA My Business Account:
+The CRA My Business Account website can change over time, here are steps as of 2026:
 - Log in to CRA My Account and select My Business Account (you will need to set up your login first)
 - On the left navigation panel, go to "Submit documents" (under "Correspondence")
 - On the "Submitted documents" screen, click "Submit documents"

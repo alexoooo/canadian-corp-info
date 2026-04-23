@@ -87,7 +87,7 @@ Trading confirmation reporting is brokerage specific, you might see something sl
 However, the basic elements highlighted (or equivalent variants) are common to all.
 
 Example of Trade Confirmation (Sell, CAD):  
-![Example: Trade-Confirmation (Sell)](media/Trade-Confirmation_Sell_Example.png)
+![Example: Trade-Confirmation (Sell)](media/Trade-Confirmation_Sell_Example-for-ACB.png)
 - #1 `Date`: trade date; do not use settlement date (crossed out above)
 - #2 `Action`:
   - "Sell" for the example above (which labels the TRANSACTION TYPE = SOLD)
@@ -161,7 +161,7 @@ Outputs (cumulative per symbol):
 
 - For Buy, the commission increases ACB; for Sell, the commission reduces proceeds and is not part of ACB
 - For ROC, keep the sign from the slip: a positive amount reduces ACB, and a negative amount increases ACB
-- For T3 box 21, only the phantom (non-cash) portion belongs in a Phantom row; the cash portion does not change ACB
+- For T3 Box 21, only the phantom (non-cash) portion belongs in a Phantom row; the cash portion does not change ACB
 - If a T3 slip aggregates multiple ROC or phantom distributions, split them into separate dated rows whenever possible, especially if there were intervening sales or FX differences
 - Use the trade-date FX rate for Buy, Sell, and their commissions; use the payment/distribution-date FX rate for ROC and Phantom
 - ACB cannot go below zero, if positive ROC is larger than `Previous ACB`, the excess is `Deemed Capital Gain` and `ACB` becomes zero
