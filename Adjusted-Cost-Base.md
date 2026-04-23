@@ -86,7 +86,7 @@ Using the earliest date of continuous holding of a security is a conservative bo
 
 # Foreign assets and FX conversion to CAD
 
-If you hold USD or other foreign assets, you must convert to CAD when calculating ACB (using the Bank of Canada daily exchange rate):  
+If you hold USD or other foreign assets, you must convert to CAD when calculating ACB (you can use the Bank of Canada daily exchange rate):  
 - Purchases and sales: use the exchange rate for the trade date (not settlement date)  
 - Distributions (including ROC and reinvested/phantom amounts such as the non-cash portion of T3 box 21): use exchange rate on payment/distribution date (not when distribution is declared)  
 - Outlays and expenses (e.g. commissions): use exchange rate on trade date (not settlement date)  
