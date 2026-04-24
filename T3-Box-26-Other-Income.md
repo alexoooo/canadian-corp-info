@@ -101,7 +101,7 @@ Schedule 7:
 - T2 Schedule 7, Part 1 Box 32: Aggregate investment income / Total income from property
 - Typically performed via a proprietary "Worksheet" provided by T2 filing software
 
-![T2 Schedule 7 - Part 1 - Box 32](media/T3-Box-27_Schedule-7-Box-32.png)
+![T2 Schedule 7 - Part 1 - Box 32](media/T3-Box-26_Schedule-7-Box-32.png)
 
 
 # Software workflow example - FutureTax 2025.2
@@ -113,7 +113,7 @@ If your software has such a worksheet:
 - Put the Box 26 amount in the property-income area rather than in the dividend or foreign area
 
 In FutureTax the worksheet is brought up by double-clicking on the S7 Box 32, and looks like this:  
-![T2 Schedule 7 - Worksheet (FutureTax 2025.2 example)](media/T3-Box-27_Schedule-7-Worksheet_Other-interest-and-property-income.png)
+![T2 Schedule 7 - Worksheet (FutureTax 2025.2 example)](media/T3-Box-26_Schedule-7-Worksheet_Other-interest-and-property-income.png)
 
 
 # Related
