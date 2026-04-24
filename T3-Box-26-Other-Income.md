@@ -13,7 +13,7 @@ T3 Box 26 is `other income` received from Canadian investments:
 
 Property income is tracked in two places:
 - General ledger, where it feeds into the income statement as GIFI 8094 (`Interest from other Canadian sources`)
-- Schedule 7 Box 32, which is typically calculated from a separate worksheet (proprietary to the specific T2 software used)
+- T2 Schedule 7 Box 32, which is typically calculated from a separate worksheet (proprietary to the specific T2 software used)
 
 There can be other downstream consequences for property income, which are outside the scope of this document:
 - Passive-income reduction of the small business limit
@@ -64,6 +64,10 @@ CRA requires accrual accounting, the dividend is recorded:
 - Not on the payment date (when you receive the money)
 - If dividend date and payment date are in the same tax year, then the accrual has no effect and can be skipped
 
+In addition to the ledger, a Schedule 7 Box 32 entry is necessary for the T2 software to apply the correct passive-income treatment.  
+The passive `other income` is taxed at a rate around ~50%, and does not qualify for the Small Business Deduction (SBD).  
+Note that `other income` does not generate RDTOH (Refundable Dividend Tax on Hand).  
+
 
 # Ledger entries
 
@@ -93,9 +97,9 @@ Schedule 100 (Balance sheet):
 - `Dividends receivable` (GIFI 1060) if declared in December but paid in January, or
 - `Deposits - investment` (GIFI 1002, rolls up to 1000) when paid within year
 
-Practical return mapping:
-
-- T2 Schedule 7, Part 1 - Aggregate investment income / Total income from property - Box 32
+Schedule 7:
+- T2 Schedule 7, Part 1 Box 32: Aggregate investment income / Total income from property
+- Typically performed via a proprietary "Worksheet" provided by T2 filing software
 
 ![T2 Schedule 7 - Part 1 - Box 32](media/T3-Box-27_Schedule-7-Box-32.png)
 
