@@ -4,6 +4,18 @@ See parent document: [T3](T3.md)
 **Who this is for**: owners of a Canadian-controlled private corporation (CCPC) who receive a T3 with box 26 amounts.  
 
 
+# What does it look like
+
+![T3 Box 26 example](media/T3-Box-26_T3-Slip.png)
+
+In your tax package (sent by your brokerage) you might find per-distribution details (example from RBC Direct Investing):  
+![T3 Box 26 example](media/T3-Box-26_T3-Details.png)
+
+If you need the details, but you have not received them from your brokerage, you can find them here:  
+https://ctbsext.posttrade.cds.ca/ctbsExt/external-landing  
+You can also use this to calculate expected values to validate the T3 amounts.
+
+
 # Meaning and tax treatment
 
 T3 Box 26 is `other income` received from Canadian investments:
@@ -126,3 +138,4 @@ In FutureTax the worksheet is brought up by double-clicking on the S7 Box 32, an
 # Citations
 
 - CRA T2 Schedule 7: https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2sch7.html
+
