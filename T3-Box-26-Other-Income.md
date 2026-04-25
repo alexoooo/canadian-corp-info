@@ -1,4 +1,4 @@
-# T3 Box 26 - other income
+# T3 Box 26 - Other Income
 
 See parent document: [T3](T3.md)  
 **Who this is for**: owners of a Canadian-controlled private corporation (CCPC) who receive a T3 with box 26 amounts.  
@@ -8,9 +8,9 @@ Presented here is one particular bookkeeping convention which is compatible with
 If you choose a different bookkeeping convention, make sure that it is: consistently applied, logically self-consistent, and is consistent with T2 treatment.  
 
 Limitations:
-- This document only covers ETFs structured as a trust, other types of investments (real estate, etc.) are out of scope and might have different or additional rules
+- This document only covers ETFs structured as a trust; other types of investments (real estate, etc.) are out of scope and might have different or additional rules
 - It is assumed that the corporation is resident in Canada, and the trust which issued the T3 is a vanilla ETF (e.g. VCN)
-- Tax information can change over time, the below is my understanding as of 2026
+- Tax information can change over time, the following is my understanding as of 2026
 
 
 # What does it look like
@@ -50,24 +50,31 @@ There are a few types of income that can show up in T3 Box 26, some examples:
 - Canadian Bonds - Canadian-sourced interest
 - Canadian REITs - Primarily rental/property income
 - Securities Lending - Fee the ETF earns by lending out its shares
-- Active business carried out by the trust (not applicable to ETF structured as a Mutual Fund Trust)
+- Active business carried out by the trust (not applicable to ETF structured as a mutual fund trust)
 
-In general, the T3 Box 26 amount can represent both active and passive income:
-- "Look-through" test:
-  - If the trust earned the Box 26 income as Active Business Income (ABI), the beneficiary corporation can argue it should be classified as its own ABI
-  - To be able to classify Box 26 as ABI, the beneficiary corporation needs to be `associated` with the trust (e.g. communal organizations like Hutterite colonies)
-  - Your CCPC is not associated with a publicly traded ETF set up as Mutual Fund Trusts or REIT from issuers like Blackrock/Vanguard/BMO
-  - To confirm that a given ETF is producing Aggregate Investment Income (AII) in T3 Box 26:
+In general, the T3 Box 26 amount is a residual bucket and can represent both active and passive income:
+- Active Business Income (ABI) vs Aggregate Investment Income (AII) classification has tax implications
+- The T3 Box 26 amount from a publicly traded ETF structured as a trust is typically AII:
+  - There is no easy public "official confirmation" that a particular T3 Box 26 amount is not AII
+  - Some checks you can perform that increase likelihood that the T3 Box 26 amount is AII:
     - Locate the investment in Canadian Tax Breakdown Reporting Service: https://ctbsext.posttrade.cds.ca/ctbsExt/external-landing
     - Download the PDF, and confirm that the T3 Box 26 amount matches what is labelled "Other Income (Investment Income)"
     - You can also locate the prospectus, search for "Income Tax Considerations" or "Taxation of the Fund", and confirm it qualifies as a "mutual fund trust"
-    - By declaring itself a "Mutual Fund Trust" in a legal prospectus, the fund is making a regulatory representation that it does not carry on an active business
-- If the T3 Box 26 amount is reported as AII, but it was arguably AII, then you will pay higher tax than necessary, but it is legal (CRA generally does not penalize taxpayers for over-reporting passive income or overpaying tax)
+    - A mutual fund trust is meant to be an investment vehicle and generally cannot carry on a non-investment business if it wants to maintain that status 
+    - You can look for any T3 slip attachments or issuer tax notes related to T3 Box 26
+  - There is usually no practical basis to treat Box 26 as ABI absent unusually strong issuer-specific facts
+- There can be some specific situations where a "look-through" test can apply:
+  - If the trust earned the Box 26 income as ABI, the beneficiary corporation can argue it should be classified as its own ABI
+  - The amount would need to be shown to be incident to or pertain to an active business carried on by the beneficiary
+  - Your CCPC active business is likely not related to the T3 Box 26 amount from a publicly traded ETF set up a mutual fund trust or REIT from issuers like Blackrock/Vanguard/BMO
+- If the T3 Box 26 amount is reported as AII, but it was arguably ABI, then you will pay higher tax than necessary:
+  - This is legal, the CRA generally does not penalize taxpayers for over-reporting passive income or overpaying tax
+  - For simplicity, in this document we assume the amount is AII, with the risk of overpaying tax
 
 Given the above look-through logic, if your T3 comes from a publicly listed ETF structured as a mutual fund trust, we can say:
 - T3 Box 26 from an ETF represents `passive` investment income from a `trust`
 - It is 100% taxable as `ordinary income` from a `Canadian-source`
-- Other treatment of T3 Box 26 (e.g. from an associated trust) is outside the scope of this document
+- Other treatment of T3 Box 26 (e.g. from a trust with unusual non-plain-vanilla facts) is outside the scope of this document
 
 Note that the slip type depends on the legal structure of the issuer:
 - A trust or mutual fund trust generally reports through a T3
@@ -105,8 +112,8 @@ For the GIFI code:
 - GIFI 8299 (Revenue) is a calculation, CRA does not mandate a specific GIFI code
 - The following could all be consistent with CRA guidelines:
   - GIFI 8090 (Investment revenue)
-  - GIFI 8094 (Interest from other Canadian sources), which rolls up to GIFI 8090
   - GIFI 8230 (Other revenue)
+  - GIFI 8094 (Interest from other Canadian sources), which rolls up to GIFI 8090, but only when the T3 Box 26 amount is actual interest (e.g. bond index ETF like ZAG)
 - This document uses GIFI 8090 (Investment revenue), with a subaccount "Other investment income" (coded 8090-2)
 
 For the Schedule 7 Box 32:
@@ -132,7 +139,7 @@ Accounts typically involved in the T3 Box 26 workflow:
     <tr><td nowrap>&ensp; &ensp; └ Cash and deposits</td><td>1000</td><td></td></tr>
     <tr><td nowrap>&ensp; &ensp; &ensp; └ Deposits - investment</td><td>1002-2</td><td>Cash sitting in investment account</td></tr>
     <tr><td nowrap>&ensp; &ensp; └ Accounts receivable</td><td>1060-parent</td><td></td></tr>
-    <tr><td nowrap>&ensp; &ensp; &ensp; └ Dividends receivable</td><td>1060-1</td><td>Dividends from investments declared in December but paid in January</td></tr>
+    <tr><td nowrap>&ensp; &ensp; &ensp; └ Investment distributions receivable</td><td>1060-1</td><td>Distributions from investments declared in December but paid in January</td></tr>
     <tr><td>Revenue</td><td>8299-valid</td><td></td></tr>
     <tr><td nowrap>&ensp; └ Investment revenue</td><td>8090-parent</td><td></td></tr>
     <tr><td nowrap>&ensp; &ensp; └ Investment revenue - detail accounts</td><td>8090</td><td>Roll up into GIFI 8090</td></tr>
@@ -143,7 +150,7 @@ Accounts typically involved in the T3 Box 26 workflow:
   </tbody>
 </table>
 
-In the ledger account tree, we want to roll up to the GIFI codes, but also add subaccounts where the codes not granular enough (with -&lt;suffix&gt;).  
+In the ledger account tree, we want to roll up to the GIFI codes, but also add subaccounts where the codes are not granular enough (with -&lt;suffix&gt;).  
 When filing GIFI coded financial statements, each code is considered individually, for example: 8090 is standalone from 8094, even though 8094 is under 8090 in the hierarchy.  
 GIFI codes: https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4088/general-index-financial-information-gifi.html
 
@@ -161,11 +168,11 @@ If a distribution is properly receivable before year-end but the cash is paid in
 
 If the amount is receivable before year-end and paid later:
 - On the receivable date:
-  - Debit: `Dividends receivable` (1060-1)
+  - Debit: `Investment distributions receivable` (1060-1)
   - Credit: `TBD investment distributions` (8090-3)
 - When the cash is paid:
   - Debit: `Deposits - investment` (1002-2)
-  - Credit: `Dividends receivable` (1060-1)
+  - Credit: `Investment distributions receivable` (1060-1)
 
 If receipt and final classification are all within the same tax year, a simpler temporary entry can be used:
 - Debit: `Deposits - investment` (1002-2)
@@ -186,7 +193,7 @@ Income statement (Schedule 125) convention:
 - `Other investment income` (GIFI 8090, using ledger subaccount 8090-2)
 
 Balance-sheet (Schedule 100) convention:
-- `Dividends receivable` (GIFI 1060, using ledged subaccount 1060-1) if receivable at year-end; or
+- `Investment distributions receivable` (GIFI 1060, using ledger subaccount 1060-1) if receivable at year-end; or
 - `Deposits - investment` (GIFI 1002, rolling up to 1000, using ledger subaccount 1002-2) once paid
 
 Schedule 7 (assuming the classification is passive property income, as from publicly traded ETF structured as a mutual fund trust):
