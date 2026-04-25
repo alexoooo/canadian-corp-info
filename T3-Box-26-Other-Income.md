@@ -55,11 +55,18 @@ Unlike other boxes on the T3, Box 26 does not receive preferential tax treatment
 - It does not have a dividend tax treatment (Box 49)
 - It does not change the Adjusted Cost Base (Box 42)
 
-Passive income is taxed at a significantly higher rate than active business income (which is eligible for the Small Business Deduction):
-- T3 Box 26 income is subject to Part I tax (unlike dividends, which are subject to Part IV tax)
-- Interest and `other income` are lumped into the general corporate income calculation
-- The combined tax rate on AII can be around 50%, whereas the SBD rate is as lower
-- To prevent double taxation when you eventually pay yourself a dividend, a portion of 50.17% tax is added to your Non-Eligible Refundable Dividend Tax on Hand (NERDTOH) account
+Miscellaneous tax information:
+- T3 Box 26 income is subject to Part I tax
+- Interest and `other income` are part of the corporate income calculation
+- Passive income is generally taxed less favourably than active business income that may qualify for the Small Business Deduction
+- Taxable dividends received by a private corporation use the different Part IV regime
+
+How Box 26 can affect AII and NERDTOH:
+- ITA s.104(13) includes in the beneficiary's income amounts from the trust that became payable
+- ITA s.108(5)(a) generally deems those trust-beneficiary amounts to be income from a property that is an interest in the trust
+- For a vanilla index ETF, Box 26 will usually behave like property income and is commonly treated as part of Aggregate Investment Income (AII)
+- If an amount is part of AII for a CCPC, it can then contribute to Non-Eligible Refundable Dividend Tax on Hand (NERDTOH) through the broader formula in ITA s.129(4)
+- ITA s.129(4) also carves out income that would not have been income from property but for ITA s.108(5)(a), so not every Box 26 amount from every trust necessarily feeds AII and NERDTOH in the same way
 
 In terms of specific tax treatment, there are several concepts:
 - Income Tax Act: the legal rules - what counts as income, dividends, capital gains, property income, etc.
@@ -67,9 +74,9 @@ In terms of specific tax treatment, there are several concepts:
 - Bookkeeping + financial statements: your underlying records and classifications
 - GIFI: CRA standardized coding for filing financial statements (income statement, balance sheet) with the T2
 
-T3 Box 26 tax treatment for a vanilla index ETF (e.g. VCN):
-- Include in corporate income: roll up to GIFI 8299 on "Schedule 125 - Income statement information"
-- Incorporate it as net income from property: Box 32 in Part 1 of Schedule 7 to calculate "Aggregate Investment Income" (AII)
+Practical treatment for T3 Box 26 from a vanilla index ETF (e.g. VCN or XEI):
+- Include it in corporate income: roll up to GIFI 8299 on "Schedule 125 - Income statement information"
+- Enter it as part of net income from property: Box 32 in Part 1 of Schedule 7 to calculate "Aggregate Investment Income" (AII)
 
 When dealing with a T3 that is not from a vanilla index ETF, different AII rules can apply.  
 T3 Box 26 often behaves like property income, but not every Box 26 amount necessarily feeds AII / Schedule 7 Part 1 Box 32 in the same way.
@@ -178,8 +185,11 @@ In FutureTax, the worksheet can be opened by double-clicking the Schedule 7 fiel
 # Citations
 
 - Income Tax Act (R.S.C., 1985, c. 1 (5th Supp.)):
+  - [s.104](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-104.html) - trust income allocations and amounts becoming payable to beneficiaries
+  - [s.108](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-108.html) - trust definitions and the deeming rule in s.108(5) for beneficiary income from a trust interest
   - [s.125](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-125.html) - small business deduction and business-limit framework
   - [s.129](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-129.html) - dividend refund mechanism, aggregate investment income, and non-eligible RDTOH
+- CRA Form T3 - Statement of Trust Income Allocations and Designations: https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t3.html
 - CRA T2 Schedule 7: https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2sch7.html
 - CRA RC4088 - General Index of Financial Information (GIFI): https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4088/general-index-financial-information-gifi.html
 - CDS Canadian Tax Breakdown Reporting Service (CTBS): https://ctbsext.posttrade.cds.ca/ctbsExt/external-landing
