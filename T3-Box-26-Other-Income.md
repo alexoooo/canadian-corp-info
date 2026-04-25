@@ -8,9 +8,9 @@ Presented here is one particular bookkeeping convention which is compatible with
 If you choose a different bookkeeping convention, make sure that it is: consistently applied, logically self-consistent, and is consistent with T2 treatment.  
 
 Limitations:
-- This document only covers ETFs structured as a trust; other types of investments (real estate, etc.) are out of scope and might have different or additional rules
-- It is assumed that the corporation is resident in Canada, and the trust which issued the T3 is a vanilla ETF (e.g. VCN)
-- Tax information can change over time, the following is my understanding as of 2026
+- This document only covers ETFs structured as a trust; other types of investments (e.g. direct real estate holdings or non-ETF trust investments) are out of scope and might have different or additional rules
+- It is assumed that the corporation is resident in Canada, and the trust that issued the T3 is a vanilla ETF (e.g. VCN)
+- Tax information can change over time; the following is my understanding as of 2026
 
 
 # What does it look like
@@ -37,35 +37,35 @@ For example:
 
 In some contexts, `other income` is referred to as `property income`:
 - Real estate rentals can generate T3 Box 26 `other income` (e.g. REIT ETF)
-- However, generally it can come from sources unrelated to real estate, `property income` is a tax term
+- However, it can also come from sources unrelated to real estate; `property income` is a tax term
 
 Broadly speaking, income can be classified in different ways:
-- `active` business, vs `passive` non-business (i.e. investments or property rental)
-- `ordinary` taxed at 100%, vs `preferential` as capital gain (inclusion rate) or dividend (gross-up and credit)
-- `resident` domestic recipient, vs `non-resident` foreign recipient (outside the scope of this document)
-- `Canadian-source` domestic payer, vs `foreign-source` foreign payer
-- `trust` issuer with T3, vs `corporation` that issues T5
+- `active` business vs `passive` non-business (i.e. investments or property rental)
+- `ordinary` income taxed at 100% vs `preferential` treatment as capital gains (inclusion rate) or dividends (gross-up and credit)
+- `resident` domestic recipient vs `non-resident` foreign recipient (outside the scope of this document)
+- `Canadian-source` domestic payer vs `foreign-source` foreign payer
+- `trust` issuer with T3 vs `corporation` that issues T5
 
-There are a few types of income that can show up in T3 Box 26, some examples:
-- Canadian Bonds - Canadian-sourced interest
+Some examples of income that can show up in T3 Box 26:
+- Canadian bonds - Canadian-sourced interest
 - Canadian REITs - Primarily rental/property income
-- Securities Lending - Fee the ETF earns by lending out its shares
-- Active business carried out by the trust (not applicable to ETF structured as a mutual fund trust)
+- Securities lending - Fee the ETF earns by lending out its shares
+- Active business carried on by the trust (not applicable to ETF structured as a mutual fund trust)
 
 In general, the T3 Box 26 amount is a residual bucket and can represent both active and passive income:
-- Active Business Income (ABI) vs Aggregate Investment Income (AII) classification has tax implications
-- The T3 Box 26 amount from a publicly traded ETF structured as a trust is typically AII:
+- Whether the amount is treated as Active Business Income (ABI) or Aggregate Investment Income (AII) has tax consequences
+- For a publicly traded ETF structured as a trust, Box 26 is typically AII:
   - There is no easy public "official confirmation" that a particular T3 Box 26 amount is not AII
-  - Some checks you can perform that increase likelihood that the T3 Box 26 amount is AII:
+  - Some checks you can perform that increase the likelihood that the T3 Box 26 amount is AII:
     - Locate the investment in Canadian Tax Breakdown Reporting Service: https://ctbsext.posttrade.cds.ca/ctbsExt/external-landing
     - Download the PDF, and confirm that the T3 Box 26 amount matches what is labelled "Other Income (Investment Income)"
     - You can also locate the prospectus, search for "Income Tax Considerations" or "Taxation of the Fund", and confirm it qualifies as a "mutual fund trust"
-    - A mutual fund trust is meant to be an investment vehicle and generally cannot carry on a non-investment business if it wants to maintain that status 
+    - A mutual fund trust is meant to be an investment vehicle and generally cannot carry on a non-investment business if it wants to maintain that status
     - You can look for any T3 slip attachments or issuer tax notes related to T3 Box 26
     - These items support the practical filing position for a plain-vanilla ETF, but they are not by themselves a binding CRA determination
   - There is usually no practical basis to treat Box 26 as ABI absent unusually strong issuer-specific facts
-- In rare fact-specific situations, a Box 26 amount may be treated differently if it is shown to relate to the beneficiary's active business, but that is outside the plain-vanilla ETF scope covered here
-- If the T3 Box 26 amount is reported as AII, but it was arguably ABI, then you will pay higher tax than necessary:
+- In rare fact-specific situations, the AII result can be different, but that is outside the plain-vanilla ETF scope covered here
+- If the T3 Box 26 amount is reported as AII, but arguably should have been treated as ABI, then you might pay higher tax than necessary:
   - This is a legally conservative filing position, but it can mean paying more tax than necessary
   - For simplicity, in this document we assume the amount is AII, with the risk of overpaying tax
 
@@ -79,7 +79,7 @@ Note that the slip type depends on the legal structure of the issuer:
 - A corporation may report certain investment income amounts through a T5
 - The same broad economic idea of "ordinary income" does not by itself determine the slip type; the issuer's legal structure is significant
 
-Unlike other boxes on the T3, Box 26 does not receive preferential tax treatment:
+T3 Box 26 does not receive preferential tax treatment:
 - T3 Box 26 income is subject to Part I tax
 - Interest and `other income` are part of the corporate income calculation
 - It does not benefit from the Capital Gains Inclusion Rate (Box 21), dividend tax treatment (Box 49), or change the cost base (Box 42)
@@ -100,7 +100,7 @@ In terms of specific tax treatment, there are several concepts:
 - GIFI: CRA standardized coding for filing financial statements (income statement, balance sheet) with the T2
 
 Practical treatment for T3 Box 26 from a vanilla index ETF (e.g. VCN or XEI):
-- Include it in corporate income: roll up to GIFI 8299 on "Schedule 125 - Income statement information"
+- Include it in corporate income; it rolls up to GIFI 8299 on "Schedule 125 - Income statement information"
 - Enter it as part of net income from property: Box 32 in Part 1 of Schedule 7 to calculate "Aggregate Investment Income" (AII)
 - Note for T3 Box 26 that is not from a vanilla index ETF:
   - Different AII rules can apply, outside the scope of this document
@@ -149,10 +149,10 @@ Accounts typically involved in the T3 Box 26 workflow:
 </table>
 
 In the ledger account tree, we want to roll up to the GIFI codes, but also add subaccounts where the codes are not granular enough (with -&lt;suffix&gt;).  
-When filing GIFI coded financial statements, each code is considered individually, for example: 8090 is standalone from 8094, even though 8094 is under 8090 in the hierarchy.  
+When filing GIFI coded financial statements, each code is considered individually, for example: 8090 is separate from 8094, even though 8094 is under 8090 in the hierarchy.  
 GIFI codes: https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4088/general-index-financial-information-gifi.html
 
-Note that CRA does not mandate specific GIFI account usage, what is presented here is one reasonable convention.  
+Note that CRA does not mandate specific GIFI account usage; what is presented here is one reasonable convention.  
 
 
 # Ledger entries
@@ -194,9 +194,9 @@ Balance-sheet (Schedule 100) convention:
 - `Investment distributions receivable` (GIFI 1060, using ledger subaccount 1060-1) if receivable at year-end; or
 - `Deposits - investment` (GIFI 1002, rolling up to 1000, using ledger subaccount 1002-2) once paid
 
-Schedule 7 (assuming the classification is passive property income, as from publicly traded ETF structured as a mutual fund trust):
+Schedule 7 (assuming the classification is passive property income, as from a publicly traded ETF structured as a mutual fund trust):
 - T2 Schedule 7, Part 1 Box 32: Aggregate investment income / Total income from property
-- Can be performed via a proprietary "Worksheet" provided by T2 filing software
+- This is often done through a proprietary worksheet provided by the T2 software
 
 ![T2 Schedule 7 - Part 1 - Box 32](media/T3-Box-26_Schedule-7-Box-32.png)
 
