@@ -62,16 +62,14 @@ In general, the T3 Box 26 amount is a residual bucket and can represent both act
     - You can also locate the prospectus, search for "Income Tax Considerations" or "Taxation of the Fund", and confirm it qualifies as a "mutual fund trust"
     - A mutual fund trust is meant to be an investment vehicle and generally cannot carry on a non-investment business if it wants to maintain that status 
     - You can look for any T3 slip attachments or issuer tax notes related to T3 Box 26
+    - These items support the practical filing position for a plain-vanilla ETF, but they are not by themselves a binding CRA determination
   - There is usually no practical basis to treat Box 26 as ABI absent unusually strong issuer-specific facts
-- There can be some specific situations where a "look-through" test can apply:
-  - If the trust earned the Box 26 income as ABI, the beneficiary corporation can argue it should be classified as its own ABI
-  - The amount would need to be shown to be incident to or pertain to an active business carried on by the beneficiary
-  - Your CCPC active business is likely not related to the T3 Box 26 amount from a publicly traded ETF set up a mutual fund trust or REIT from issuers like Blackrock/Vanguard/BMO
+- In rare fact-specific situations, a Box 26 amount may be treated differently if it is shown to relate to the beneficiary's active business, but that is outside the plain-vanilla ETF scope covered here
 - If the T3 Box 26 amount is reported as AII, but it was arguably ABI, then you will pay higher tax than necessary:
-  - This is legal, the CRA generally does not penalize taxpayers for over-reporting passive income or overpaying tax
+  - This is a legally conservative filing position, but it can mean paying more tax than necessary
   - For simplicity, in this document we assume the amount is AII, with the risk of overpaying tax
 
-Given the above look-through logic, if your T3 comes from a publicly listed ETF structured as a mutual fund trust, we can say:
+For the plain-vanilla ETF case covered here, we can say:
 - T3 Box 26 from an ETF represents `passive` investment income from a `trust`
 - It is 100% taxable as `ordinary income` from a `Canadian-source`
 - Other treatment of T3 Box 26 (e.g. from a trust with unusual non-plain-vanilla facts) is outside the scope of this document
