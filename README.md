@@ -12,9 +12,10 @@ Disclaimer: I am not an accountant, this is not financial or tax advice.
 # Topics
 
 - [Adjusted Cost Base](Adjusted-Cost-Base.md)
-- [Adjusted Cost Base - Tracking](Adjusted-Cost-Base-Tracking.md)
+  - [Adjusted Cost Base - Tracking](Adjusted-Cost-Base-Tracking.md)
 - [Capital Dividend Account](Capital-Dividend-Account.md)
 - [T3](T3.md)
+  - [T3 - Box 26 Other Income](T3-Box-26-Other-Income.md)
 - [T5008](T5008.md)
 
 Work in progress:
