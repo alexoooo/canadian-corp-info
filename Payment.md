@@ -13,3 +13,10 @@ Deduct other credits / line 840 (Tax instalments paid)
 
 # Payroll remittance
 
+# Payment methods
+
+- Scheduled from CRA My Business Account
+  - Free, but takes 5 business days
+- Some banks provide service to remit business taxes
+  - Typically paid, but processed same-day
+

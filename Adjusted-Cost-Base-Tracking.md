@@ -1,13 +1,13 @@
 # Adjusted Cost Base (ACB) - Tracking
 
-**Who this is for**: owners of Canadian-controlled private corporation (CCPC) who hold investments in a corporate trading account.
+**Who this is for**: owners of a Canadian-controlled private corporation (CCPC) who hold investments in a corporate trading account.
 This document focuses on the mechanics of tracking ACB, for a general overview see: [Adjusted Cost Base](Adjusted-Cost-Base.md)
 
 Tracking the ACB can be done with a single spreadsheet (one transaction per row).  
 The primary place where this information is reported is T2 Schedule 6, but it can also be useful for reconciling brokerage statements.  
 
 Limitations:
-- Template handles transactions for Buy/Sell/ROC/Phantom, you will need to add custom handling for any other transaction types  
+- Template handles transactions for Buy/Sell/ROC/Phantom; you will need to add custom handling for any other transaction types  
 - This document only covers stocks and ETFs, other types of investments (real estate, etc.) are out of scope and might have different or additional rules  
 - Tax information can change over time (e.g. the capital gains inclusion rate was going to increase to 2/3, before the proposal was cancelled), the below is my understanding as of 2026  
 
@@ -101,8 +101,8 @@ Example of Trade Confirmation (Sell, CAD):
 - #6 `Commission`
 - #7 `FX CAD Rate`
   - Exchange rate might not be shown on trade confirmation
-  - Currency is commonly specified (as in above example, where "C$" means CAD)
-  - If currency is not specified, then CAD can be assumed by default
+  - Currency is typically specified (as in above example, where "C$" means CAD)
+  - If currency is not specified and you are not sure what it is, confirm it with your brokerage
   - If currency is CAD, then `FX CAD Rate` can be blank (or equivalently 1.0)
   - Exchange rate from CAD to the foreign currency is available on the Bank of Canada website:  
     https://www.bankofcanada.ca/rates/exchange/daily-exchange-rates-lookup/

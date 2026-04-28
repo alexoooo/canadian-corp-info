@@ -1,6 +1,6 @@
 # Capital Dividend Account (CDA)
 
-**Who this is for**: owners of Canadian-controlled private corporation (CCPC) who hold investments in a corporate trading account (resident in Canada).  
+**Who this is for**: owners of a Canadian-controlled private corporation (CCPC) who hold investments in a corporate trading account (resident in Canada).  
 **TLDR**: capital gains can be used for a tax-efficient capital dividend.
 
 Limitations:
@@ -17,9 +17,11 @@ Note: the CDA can also include other amounts such as the tax-free portion of lif
 
 Maintain a running total of capital gain or loss:
 - Realized Gains/Losses when you sell a security, calculate: T5008 Box 21 - ACB (tracked separately)  
-  Note: the T5008 Box 21 amount should be net of selling commission/fees (otherwise they need to be subtracted) 
+  - This document assumes the T5008 Box 21 amount is net-of-fees
+  - If you're not sure if your statement is net-of-fees, you can compare with the trade confirmation
+  - If you see the gross amount (and the trade confirmation has a commission), then subtract the commission
 - Distributions: for T3/T5 slips, add the entire capital gains amount (e.g., T3 Box 21) to your running total
-- Positive and negative: capital gains are positive, and capital losses are negative
+- Capital gains increase the running total, and capital losses decrease it
 
 Calculate the balance of the Capital Dividend Account:
 - When the running total is negative, the balance is zero until new gains exceed those past losses

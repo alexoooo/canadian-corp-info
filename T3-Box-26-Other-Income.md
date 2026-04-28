@@ -123,8 +123,7 @@ For the Schedule 7 Box 32:
 
 # Relevant general ledger accounts
 
-For the broader ledger tree, see:  
-[T3 Bookkeeping and Brokerage Reconciliation](T3-Bookkeeping-and-Reconciliation.md)  
+For the broader ledger tree, see: [T3](T3.md)  
 
 Accounts typically involved in the T3 Box 26 workflow:
 <table>
@@ -215,10 +214,7 @@ In FutureTax, the worksheet can be opened by double-clicking the Schedule 7 fiel
 
 # Related
 
-- [T3](T3.md)
-- [T3 Bookkeeping and Brokerage Reconciliation](T3-Bookkeeping-and-Reconciliation.md)
-- [T3 Box 49 - Eligible Dividends](T3-Box-49-Eligible-Dividends.md)
-- [T3 Boxes 25 and 34 - Foreign Income](T3-Box-25-and-34-Foreign-Income.md)
+- For the broader ledger tree, see the Relevant general ledger accounts section in [T3](T3.md)
 
 
 # Citations

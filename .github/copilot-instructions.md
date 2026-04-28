@@ -23,7 +23,7 @@ This is a documentation-first repository for Canadian small-business corporate t
 
 ## Codebase-specific conventions
 
-- Keep the audience narrow: the docs are written for owners of Canadian-controlled private corporations (CCPCs), usually dealing with corporate investment accounts holding stocks or ETFs.
+- Keep the audience narrow: the docs are written for owners of a Canadian-controlled private corporations (CCPCs), usually dealing with corporate investment accounts holding stocks or ETFs.
 - Preserve the distinction between **CRA/tax rules**, **bookkeeping conventions**, and **brokerage-specific behavior**. Several documents explicitly separate the official tax treatment from pragmatic ledger conventions used to reconcile broker statements.
 - Cross-link related guides instead of duplicating explanations. The repo relies on topical pages that refer to each other through `Related` sections and inline links.
 - When adding or substantially changing a topic, update `README.md` so the topic index stays current.

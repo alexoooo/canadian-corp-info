@@ -4,7 +4,7 @@ Information about corporate tax, accounting, and other paperwork.
 This info is intended for small business (Canadian-Controlled Private Corporation, CCPC) owners to help with paperwork and tax filing.  
 
 Over the years of bookkeeping and filing taxes, certain questions keep coming up, and there are many conflicting and incomplete answers on the internet.  
-This website is my attempt at consolidating an understanding of how to properly handle these different situations.
+This documentation is an attempt to consolidate an understanding of how to handle these different situations reasonably.  
 
 Disclaimer: I am not an accountant, this is not financial or tax advice.
 

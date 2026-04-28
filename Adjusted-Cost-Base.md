@@ -1,6 +1,6 @@
 # Adjusted Cost Base (ACB)
 
-**Who this is for**: owners of Canadian-controlled private corporation (CCPC) who hold investments in a corporate trading account.  
+**Who this is for**: owners of a Canadian-controlled private corporation (CCPC) who hold investments in a corporate trading account.  
 
 The ACB is used when you sell a security, this results in a T5008 and needs to be reported on the T2 in Schedule 6.  
 You are responsible for maintaining your own ACB records and using those to calculate capital gains or losses (i.e. do not just report the T5008 Box 20 amount, which is the Book Cost rather than the ACB).  
@@ -43,8 +43,10 @@ T3 box 42 (amount resulting in cost base adjustment) typically decreases your AC
 - Positive amount decreases your ACB, typically this is Return of Capital
 - Negative amount increases your ACB, this is rare but can happen (e.g. an over-distribution correction), always follow the sign  
 
-ACB cannot be negative, if ROC would reduce it below zero then the negative amount instead becomes an immediate capital gain.  
-The immediate capital gain is entered in Schedule 6 with Quantity/ACB/Outlays = 0 and Proceeds = negative ACB portion of ROC (separate line from disposition).
+ACB cannot be negative:
+- If ROC would reduce it below zero, the excess becomes an immediate capital gain (`Proceeds` = -MIN(0, `Previous ACB` - `ROC`))
+- Report immediate gain separately in Schedule 6 rather than folding it into a normal disposition line for the security
+- In the Schedule 6 entry, enter Quantity/ACB/Outlays = 0
 
 Corporate actions can increase or decrease your ACB:
 - Stock split: total ACB stays the same, per-share/per-unit ACB decreases proportionally  
@@ -71,8 +73,11 @@ Depending on your brokerage, you might see:
 # Trading fees
 
 Trading fees to buy a security increase your ACB (i.e. they are "capitalized", not counted as an expense).  
-Trading fees to sell a security are treated as "Outlays and expense from disposition" in T2 Schedule 6.  
-When selling, the fee does not reduce your ACB (instead it reduces your "Proceeds of disposition").
+
+Trading fees to sell a security:
+- Do not change the ACB
+- Reduce the "Proceeds of disposition"
+- Are treated as "Outlays and expense from disposition" in T2 Schedule 6
 
 
 # Date of acquisition for pooled securities
