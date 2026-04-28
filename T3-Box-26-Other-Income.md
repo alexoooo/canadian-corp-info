@@ -214,7 +214,7 @@ In FutureTax, the worksheet can be opened by double-clicking the Schedule 7 fiel
 
 # Related
 
-- For the broader ledger tree, see the Relevant general ledger accounts section in [T3](T3.md)
+For the broader ledger tree, see the "Relevant general ledger accounts" section in [T3](T3.md).
 
 
 # Citations

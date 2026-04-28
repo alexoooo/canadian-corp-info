@@ -6,19 +6,20 @@
 Limitations:
 - This document only covers stocks and ETFs, other types of investments (real estate, etc.) are out of scope and might have different or additional rules
 - It is assumed that the shareholder is a Canadian resident, non-residents might have additional reporting rules (e.g. NR4), which are not covered here
-- Tax information can change over time (e.g. the capital gains inclusion rate was going to increase to 2/3, before the proposal was cancelled), the below is my understanding as of 2026
+- Tax information can change over time (e.g. the capital gains inclusion rate was going to increase to 2/3, before the proposal was cancelled)
+- The following is my understanding as of 2026
 
 
 # Details
 
-The Capital Dividend Account is not part of the ledger, it can be tracked separately (e.g. in a spreadsheet).  
+The Capital Dividend Account is not part of the ledger; it can be tracked separately (e.g. in a spreadsheet).  
 The CDA can be used to pay the tax-free portion of the cumulative net capital gain from the corporation to the shareholders with a capital dividend.  
 Note: the CDA can also include other amounts such as the tax-free portion of life-insurance proceeds received by the corporation (s.89(1)(d) ITA), but that is outside the scope of this document.  
 
 Maintain a running total of capital gain or loss:
 - Realized Gains/Losses when you sell a security, calculate: T5008 Box 21 - ACB (tracked separately)  
   - This document assumes the T5008 Box 21 amount is net-of-fees
-  - If you're not sure if your statement is net-of-fees, you can compare with the trade confirmation
+  - If you're not sure whether the amount is net-of-fees, compare it with the trade confirmation
   - If you see the gross amount (and the trade confirmation has a commission), then subtract the commission
 - Distributions: for T3/T5 slips, add the entire capital gains amount (e.g., T3 Box 21) to your running total
 - Capital gains increase the running total, and capital losses decrease it
@@ -37,8 +38,9 @@ Capital Dividend Account election process:
   - Enter the dividend on T2 Schedule 3
   - For Canadian residents: do not issue a T5 information slip for this amount (but do notify them, e.g. by email)
 
-Note that CDA is a "point-in-time" calculation, if you sell an investment at a loss after your calculation but before the dividend is technically payable, you could inadvertently overdraw the account and incur a penalty.  
-You may elect to pay less than the calculated CDA balance, e.g. by leaving a $1000 buffer.
+Note that CDA is a "point-in-time" calculation.  
+If you sell an investment at a loss after your calculation but before the dividend is technically payable, you could inadvertently overdraw the account and incur a penalty.  
+You may elect to pay less than the calculated CDA balance, e.g. by leaving a $1000 buffer.  
 
 Since this is a tax-free amount for Canadian residents, the shareholder recipients do not report this income on their T1.  
 If a shareholder is a non-resident, the capital dividend is subject to a Part XIII withholding tax (usually 25%, potentially reduced by a treaty), so it isn't "tax-free" for them.  

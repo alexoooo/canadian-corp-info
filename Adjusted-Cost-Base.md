@@ -2,14 +2,18 @@
 
 **Who this is for**: owners of a Canadian-controlled private corporation (CCPC) who hold investments in a corporate trading account.  
 
-The ACB is used when you sell a security, this results in a T5008 and needs to be reported on the T2 in Schedule 6.  
+The ACB is used when you sell a security; this results in a T5008 and needs to be reported on the T2 in Schedule 6.  
 You are responsible for maintaining your own ACB records and using those to calculate capital gains or losses (i.e. do not just report the T5008 Box 20 amount, which is the Book Cost rather than the ACB).  
 
-This document is an overview of ACB concepts, for detailed step-by-step instructions for how to track ACB, see:
+This document is an overview of ACB concepts.  
+For detailed step-by-step instructions for how to track ACB, see:
 [Adjusted Cost Base Tracking](Adjusted-Cost-Base-Tracking.md)
 
-This document only covers stocks and ETFs, other types of investments (real estate, etc.) are out of scope and might have different or additional rules.   
-Tax information can change over time (e.g. the capital gains inclusion rate was going to increase to 2/3, before the proposal was cancelled), the below is my understanding as of 2026.  
+This document only covers stocks and ETFs.  
+Other types of investments (real estate, etc.) are out of scope and might have different or additional rules.  
+
+Tax information can change over time (e.g. the capital gains inclusion rate was going to increase to 2/3, before the proposal was cancelled).  
+The following is my understanding as of 2026.  
 
 
 # Definitions
@@ -43,10 +47,9 @@ T3 box 42 (amount resulting in cost base adjustment) typically decreases your AC
 - Positive amount decreases your ACB, typically this is Return of Capital
 - Negative amount increases your ACB, this is rare but can happen (e.g. an over-distribution correction), always follow the sign  
 
-ACB cannot be negative:
-- If ROC would reduce it below zero, the excess becomes an immediate capital gain (`Proceeds` = -MIN(0, `Previous ACB` - `ROC`))
-- Report immediate gain separately in Schedule 6 rather than folding it into a normal disposition line for the security
-- In the Schedule 6 entry, enter Quantity/ACB/Outlays = 0
+ACB cannot be negative.  
+If ROC would reduce it below zero, the excess becomes an immediate capital gain.  
+Report that gain as a separate line in Schedule 6 of your T2 software rather than folding it into a normal disposition line for the security.  
 
 Corporate actions can increase or decrease your ACB:
 - Stock split: total ACB stays the same, per-share/per-unit ACB decreases proportionally  
