@@ -36,12 +36,12 @@ Example (50% inclusion rate):
 - At this point the corporation can elect to pay a capital dividend of up to $1,000, subject to the balance still being available on the election date
 
 Capital Dividend Account election process:
-- Verification: check the CDA balance via Schedule 89 or My Business Account (the balance shown reflects the last assessed T2, so it typically lags by 6–12 weeks after your year-end while CRA processes the return)
+- Verification: check the CDA balance via Schedule 89 (S89) or My Business Account (the balance shown reflects the last assessed T2, so it typically lags by 6–12 weeks after your year-end while CRA processes the return)
 - Resolution: directors must pass a resolution to pay a dividend and elect for it to be a Capital Dividend under s.83(2)
 - Filing: submit Form T2054 ("Election for a Capital Dividend Under Subsection 83(2)") along with a certified copy of the resolution on or before the payment date
   - Certification means the Secretary or a Director signs a statement on the resolution attesting that it is a true copy of the resolution passed by the board
 - Reporting:
-  - Enter the dividend on T2 Schedule 3
+  - Enter the dividend on T2 Schedule 3 (S3)
   - For Canadian residents: do not issue a T5 information slip for this amount (but do notify them, e.g. by email)
   - Keep internal records of the per-shareholder allocation (amount paid to each shareholder); this is not filed with CRA but is needed if the election is ever reviewed
 
@@ -54,9 +54,9 @@ Since this is a tax-free amount for Canadian residents, the shareholder recipien
 If a shareholder is a non-resident, the capital dividend is subject to a Part XIII withholding tax (usually 25%, potentially reduced by a treaty), so it isn't "tax-free" for them.  
 
 
-# Submitting Schedule 89 and Form T2054
+# Submitting S89 and Form T2054
 
-CRA allows Schedule 89 and Form T2054 to be submitted by:
+CRA allows S89 and Form T2054 to be submitted by:
 - CRA My Business Account using "Submit documents"
 - Specialized software (e.g. TaxCycle)
 - Physical mail
@@ -90,8 +90,8 @@ The CRA My Business Account website can change over time, here are steps as of 2
   - [s.184](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-184.html) - Part III tax on excessive capital-dividend elections
   - [s.212(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-212.html) - Part XIII withholding tax on taxable dividends and capital dividends paid to non-residents
 - CRA Form T2054 - Election for a Capital Dividend Under Subsection 83(2): https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2054.html
-- CRA T2 Schedule 89 - Request for Capital Dividend Account Balance Verification: https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2sch89.html
-- CRA T2 Schedule 3: https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2sch3.html
+- CRA T2 S89 - Request for Capital Dividend Account Balance Verification: https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2sch89.html
+- CRA T2 S3: https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2sch3.html
 - CRA Form T5: https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t5.html
 
 

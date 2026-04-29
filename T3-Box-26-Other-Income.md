@@ -103,9 +103,9 @@ In terms of specific tax treatment, there are several concepts:
 - GIFI: CRA standardized coding for filing financial statements (income statement, balance sheet) with the T2
 
 Practical treatment for T3 Box 26 from a vanilla index ETF (e.g. VCN or XEI):
-- Include it in corporate income; it rolls up to GIFI 8299 on "Schedule 125 - Income statement information"
-- Enter it as part of net income from property: Box 32 in Part 1 of Schedule 7 to calculate "Aggregate Investment Income" (AII)
-- For Box 26 from a trust that is not a mutual fund trust (e.g. certain commercial or income trusts), or from a trust with active business income, the AII classification and Schedule 7 treatment may differ — outside the scope of this document
+- Include it in corporate income; it rolls up to GIFI 8299 on "Schedule 125 (S125) - Income statement information"
+- Enter it as part of net income from property: Box 32 in Part 1 of Schedule 7 (S7) to calculate "Aggregate Investment Income" (AII)
+- For Box 26 from a trust that is not a mutual fund trust (e.g. certain commercial or income trusts), or from a trust with active business income, the AII classification and S7 treatment may differ — outside the scope of this document
 
 For the GIFI code:
 - GIFI 8299 (Revenue) is a calculation, CRA does not mandate a specific GIFI code
@@ -116,11 +116,11 @@ For the GIFI code:
 - This document uses GIFI 8090 (Investment revenue), with a subaccount "Other investment income" (coded 8090-2)
 - If the corporation also earns direct interest income (e.g. GIC interest, savings account interest), use GIFI 8094 for that amount and GIFI 8090 (ledger subaccount 8090-2) for the T3 Box 26 amount — keeping them in separate ledger accounts makes the Schedule 125 reconciliation cleaner and avoids mixing T3-sourced income with directly earned interest
 
-For the Schedule 7 Box 32:
+For the S7 Box 32:
 - Your T2 tax software will typically calculate this number
-- CRA does not specify a standardized way to enter the information that goes into calculating Schedule 7 (S7) Box 32
-- T2 software packages will typically have a "Schedule 7 Worksheet", which is proprietary to each T2 software
-- If your software uses a Schedule 7 worksheet, you will need to enter the T3 Box 26 amount there (see example below)
+- CRA does not specify a standardized way to enter the information that goes into calculating S7 Box 32
+- T2 software packages will typically have a "S7 Worksheet", which is proprietary to each T2 software
+- If your software uses a S7 worksheet, you will need to enter the T3 Box 26 amount there (see example below)
 
 
 # Relevant general ledger accounts
@@ -188,30 +188,30 @@ If the investment is generating Canadian interest income, such as a bond ETF, th
 
 # T2 schedule mapping
 
-Income statement (Schedule 125) convention:
+Income statement (S125) convention:
 - `Other investment income` (GIFI 8090, using ledger subaccount 8090-2)
 
-Balance-sheet (Schedule 100) convention:
+Balance-sheet (S100) convention:
 - `Investment distributions receivable` (GIFI 1060, using ledger subaccount 1060-1) if receivable at year-end; or
 - `Deposits - investment` (GIFI 1002, rolling up to 1000, using ledger subaccount 1002-2) once paid
 
-Schedule 7 (assuming the classification is passive property income, as from a publicly traded ETF structured as a mutual fund trust):
-- T2 Schedule 7, Part 1 Box 32: Aggregate investment income / Total income from property
+S7 (assuming the classification is passive property income, as from a publicly traded ETF structured as a mutual fund trust):
+- T2 S7, Part 1 Box 32: Aggregate investment income / Total income from property
 - This is often done through a proprietary worksheet provided by the T2 software
 
-![T2 Schedule 7 - Part 1 - Box 32](media/T3-Box-26_Schedule-7-Box-32.png)
+![T2 S7 - Part 1 - Box 32](media/T3-Box-26_Schedule-7-Box-32.png)
 
 
 # Software workflow example - FutureTax 2025.2
 
-For Schedule 7 Box 32, some T2 software provides a worksheet for other interest and property income.  
+For S7 Box 32, some T2 software provides a worksheet for other interest and property income.  
 
 If your software has such a worksheet:
 - Label the entry clearly (for example "T3 Box 26") so it is easy to trace back to the slip
 - Put the T3 Box 26 amount in the property-income area rather than in the dividend or foreign-income area
 
-In FutureTax, the worksheet can be opened by double-clicking the Schedule 7 field, and looks like this:  
-![T2 Schedule 7 worksheet - FutureTax 2025.2 example](media/T3-Box-26_Schedule-7-Worksheet_Other-interest-and-property-income.png)
+In FutureTax, the worksheet can be opened by double-clicking the S7 field, and looks like this:  
+![T2 S7 worksheet - FutureTax 2025.2 example](media/T3-Box-26_Schedule-7-Worksheet_Other-interest-and-property-income.png)
 
 
 # Related
@@ -228,6 +228,6 @@ For ACB interactions (Box 42 / ROC reducing ACB), see [Adjusted-Cost-Base.md](Ad
   - [s.125](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-125.html) - small business deduction and business-limit framework
   - [s.129](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-129.html) - dividend refund mechanism, aggregate investment income, and non-eligible RDTOH
 - CRA Form T3 - Statement of Trust Income Allocations and Designations: https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t3.html
-- CRA T2 Schedule 7: https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2sch7.html
+- CRA T2 S7: https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2sch7.html
 - CRA RC4088 - General Index of Financial Information (GIFI): https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4088/general-index-financial-information-gifi.html
 - CDS Canadian Tax Breakdown Reporting Service (CTBS): https://ctbsext.posttrade.cds.ca/ctbsExt/external-landing

@@ -2,7 +2,7 @@
 
 **Who this is for**: owners of a Canadian-controlled private corporation (CCPC) who hold investments in a corporate trading account.  
 
-The ACB is used when you sell a security; this results in a T5008 and needs to be reported on the T2 in Schedule 6.  
+The ACB is used when you sell a security; this results in a T5008 and needs to be reported on the T2 in Schedule 6 (S6).  
 You are responsible for maintaining your own ACB records and using those to calculate capital gains or losses (i.e. do not just report the T5008 Box 20 amount, which is the Book Cost rather than the ACB).  
 
 This document is an overview of ACB concepts.  
@@ -51,13 +51,13 @@ T3 box 42 (amount resulting in cost base adjustment) typically decreases your AC
 
 ACB cannot be negative.  
 If ROC would reduce it below zero, the excess becomes an immediate capital gain (ITA [s.40(3)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-40.html)).  
-Report that gain as a separate line in Schedule 6 of your T2 software rather than folding it into a normal disposition line for the security.  
+Report that gain as a separate line in S6 of your T2 software rather than folding it into a normal disposition line for the security.  
 
 Example:
 - Purchase 100 units at $10.00/unit → total ACB: $1,000.00, per-unit ACB: $10.00
 - Year 1 ROC: $2.00/unit × 100 = $200 → total ACB: $800.00, per-unit ACB: $8.00
 - Year 2 ROC: $5.00/unit × 100 = $500 → total ACB: $300.00, per-unit ACB: $3.00
-- Year 3 ROC: $4.00/unit × 100 = $400, but only $300 remaining ACB → ACB reduced to $0, and the $100 excess is an immediate capital gain (ITA s.40(3)); report on Schedule 6
+- Year 3 ROC: $4.00/unit × 100 = $400, but only $300 remaining ACB → ACB reduced to $0, and the $100 excess is an immediate capital gain (ITA s.40(3)); report on S6
 - Per-unit ACB is now $0.00; all future ROC will similarly be immediate capital gains
 
 Corporate actions can increase or decrease your ACB:
@@ -90,13 +90,13 @@ Trading fees to buy a security increase your ACB (i.e. they are "capitalized", n
 Trading fees to sell a security:
 - Do not change the ACB
 - Reduce the "Proceeds of disposition"
-- Are treated as "Outlays and expense from disposition" in T2 Schedule 6
+- Are treated as "Outlays and expense from disposition" in T2 S6
 
 
 # Date of acquisition for pooled securities
 
 ACB uses pooled average cost across all identical properties (not FIFO or LIFO) (ITA [s.47(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-47.html)).  
-When you sell and fill out the T2 Schedule 6 entry, you will need to specify a "Date of acquisition".  
+When you sell and fill out the T2 S6 entry, you will need to specify a "Date of acquisition".  
 For pooled securities, use the date of the very first purchase that contributed to the current pool — this is a conservative convention in the absence of specific CRA guidance.  
 
 
@@ -121,7 +121,7 @@ Note that while ACB is tracked separately, personal and corporate accounts are "
 # Capital loss carry forward / back / superficial loss
 
 Capital losses can be carried forward indefinitely to offset future capital gains, and they can be carried back 3 years.  
-To carry back a capital loss, a corporation uses T2 Schedule 4 (Corporation Loss Continuity and Application), which triggers a reassessment of the prior-year T2.  
+To carry back a capital loss, a corporation uses T2 Schedule 4 (S4, Corporation Loss Continuity and Application), which triggers a reassessment of the prior-year T2.  
 
 Tax loss harvesting is the technique of realizing a loss, and then potentially investing in a similar security.  
 There are limitations on which losses can be claimed, make sure you don't get a *superficial loss* (ITA [s.54](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-54.html)):  
@@ -155,7 +155,7 @@ There are limitations on which losses can be claimed, make sure you don't get a 
   - [s.53](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-53.html) - adjustments to cost base (additions and deductions)
   - [s.54](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-54.html) - definitions of "adjusted cost base", "superficial loss", and "proceeds of disposition"
   - [s.251.1](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-251.1.html) - definition of "affiliated persons" (relevant to superficial loss)
-- CRA T2 Schedule 4 - Corporation Loss Continuity and Application: https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2sch4.html
+- CRA T2 S4 - Corporation Loss Continuity and Application: https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2sch4.html
 - CRA T4037 "Capital Gains" guide: https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4037/capital-gains.html
 - Bank of Canada daily exchange rates: https://www.bankofcanada.ca/rates/exchange/daily-exchange-rates/
 

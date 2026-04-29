@@ -6,7 +6,7 @@ This document focuses on the mechanics of tracking ACB.
 For a general overview see: [Adjusted Cost Base](Adjusted-Cost-Base.md)  
 
 Tracking the ACB can be done with a single spreadsheet (one transaction per row).  
-The primary place where this information is reported is T2 Schedule 6, but it can also be useful for reconciling brokerage statements.  
+The primary place where this information is reported is T2 Schedule 6 (S6), but it can also be useful for reconciling brokerage statements.  
 
 Limitations:
 - Template handles transactions for Buy/Sell/ROC/Phantom
@@ -20,7 +20,7 @@ Limitations:
 You need to identify investments for record keeping and T2 reporting.  
 
 There are a number of different ways to identify an investment security:
-- Schedule 6 asks for "Name of corporation in which the shares were held" and "Description of property"
+- S6 asks for "Name of corporation in which the shares were held" and "Description of property"
 - CDS similarly uses the fund name for the PDFs, but internally also contains "SYMBOL/SYMBOLE"
 - Brokerage confirmations and statements will typically contain the security name, and may also contain the symbol
 - Brokerage website typically highlights the symbol, possibly with a listing-specific suffix (e.g. ".TO")
@@ -119,13 +119,13 @@ Outputs (cumulative per symbol):
   Can be used to match quantity in investment statements and brokerage website
 - `ACB` = `Previous ACB` + `ACB Change`
 - `ACB of Units Sold` = IF(`Action` = "Sell", `Quantity` * `Previous ACB Per Unit`, 0)  
-  Entered in T2 Schedule 6
+  Entered in T2 S6
 - `Capital Gain/Loss` = IF(`Action` = "Sell", `Net Proceeds CAD` - `ACB of Units Sold`, 0)
 - `Deemed Capital Gain` = IF(`Action` = "ROC", MAX(0, `Gross Amount CAD` - `Previous ACB`), 0)  
-  Reported in T2 Schedule 6 (as a separate line)
+  Reported in T2 S6 (as a separate line)
 - `Date of Acquisition` =  
   &ensp; IF(AND(`Action` = "Buy", `Previous Remaining Quantity` = 0), `Date`, `Previous Date of Acquisition`)  
-  Earliest date of continuous holding for the current pooled position, used in Schedule 6
+  Earliest date of continuous holding for the current pooled position, used in S6
 
 
 # Intermediate calculations
