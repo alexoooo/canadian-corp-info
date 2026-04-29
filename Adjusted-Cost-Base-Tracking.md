@@ -133,7 +133,7 @@ Outputs (cumulative per symbol):
   &ensp; IFERROR(  
   &ensp; &ensp; XMATCH(  
   &ensp; &ensp; &ensp; `Symbol`,  
-  &ensp; &ensp; &ensp; OFFSET(`Symbol`\$1, 0, 0, ROW() - 1, 1),  
+  &ensp; &ensp; &ensp; OFFSET(`Symbol`$1, 0, 0, ROW() - 1, 1),  
   &ensp; &ensp; &ensp; 0, -1),  
   &ensp; &ensp; "")
 - `Previous Remaining Quantity` =  
@@ -171,4 +171,4 @@ Outputs (cumulative per symbol):
 - `Remaining Quantity` should never go negative; if a sale would exceed current holdings, fix the input rather than allowing a negative balance
 - If you fully dispose of a position and later buy it again, the `Date of Acquisition` resets on the new purchase
 - This minimal template does not automate superficial loss, stock splits, or spin-offs; handle those with separate logic or manual adjustments
-- DRIP can be entered as Buy with `Commission` = 0
+- DRIP can be entered as Buy with `Commission` = 0; use the payment/reinvestment date (when the units are credited to your account) as `Date`, and the FX rate for that same date

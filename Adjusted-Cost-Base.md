@@ -38,7 +38,8 @@ Market Value:
 
 Things that increase your ACB:
 - Purchasing a security
-- DRIP (reinvested distribution): the fund declares a distribution and the DRIP program automatically acquires additional units on your behalf; for tax purposes you are treated as having received the cash and reinvested it, so the reinvested amount increases your ACB like any other purchase
+- DRIP (reinvested distribution): the fund declares a distribution and the DRIP program automatically acquires additional units on your behalf; for tax purposes you are treated as having received the cash and reinvested it, so the reinvested amount increases your ACB like any other purchase.  
+  Use the payment/reinvestment date (when the units are credited to your account); this also drives the FX rate per the rule for distributions below.
 - Phantom (non-cash) distribution: the fund reports a capital gains distribution on T3 Box 21 but some or all of it is not paid out in cash (and it's not reinvested); you owe tax on it but received nothing, so you increase ACB by that phantom amount to prevent double-taxation on sale  
 
 Selling a security results in a T5008 which decreases the ACB (although the per-share/per-unit ACB doesn't change).  
