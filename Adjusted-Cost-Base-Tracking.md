@@ -9,9 +9,10 @@ Tracking the ACB can be done with a single spreadsheet (one transaction per row)
 The primary place where this information is reported is T2 Schedule 6, but it can also be useful for reconciling brokerage statements.  
 
 Limitations:
-- Template handles transactions for Buy/Sell/ROC/Phantom; you will need to add custom handling for any other transaction types  
+- Template handles transactions for Buy/Sell/ROC/Phantom
+- Any other transaction types require custom handling
 - This document only covers stocks and ETFs, other types of investments (real estate, etc.) are out of scope and might have different or additional rules  
-- Tax information can change over time (e.g. the capital gains inclusion rate was going to increase to 2/3, before the proposal was cancelled).
+- Tax information can change over time (e.g. the capital gains inclusion rate was going to increase to 2/3, before the proposal was cancelled)
 - The following is my understanding as of 2026  
 
 
@@ -22,7 +23,7 @@ You need to identify investments for record keeping and T2 reporting.
 There are a number of different ways to identify an investment security:
 - Schedule 6 asks for "Name of corporation in which the shares were held" and "Description of property"
 - CDS similarly uses the fund name for the PDFs, but internally also contains "SYMBOL/SYMBOLE"
-- Brokerage confirmations/statements will typically contain the security name, and may contain the symbol
+- Brokerage confirmations and statements will typically contain the security name, and may also contain the symbol
 - Brokerage website typically highlights the symbol, possibly with a listing-specific suffix (e.g. ".TO")
 - There are standardized ways of identifying an investment:
   - CUSIP is a nine-character alphanumeric code that uniquely identifies a North American financial security
@@ -30,7 +31,7 @@ There are a number of different ways to identify an investment security:
   - These might show up on some brokerage confirmations/statements, but they are not emphasized, with their main use being internal to the capital markets system
 
 From time to time, it's possible for company/ETF names and their ticker symbols to change:  
-- For example "Horizons ETFs" rebranded as "Global X" in 2024
+- For example *Horizons ETFs* rebranded as *Global X* in 2024
 - You might see a transaction line in your brokerage statement, where the old name/symbol is subtracted and the new name/symbol is added
 - This is a purely cosmetic change, your ACB is not impacted
 - You are responsible for keeping track of the latest name/symbol, and for correctly continuing the ACB calculation 
@@ -107,7 +108,7 @@ Example of Trade Confirmation (Sell, CAD):
   - Currency is typically specified (as in above example, where "C$" means CAD)
   - If currency is not specified and you are not sure what it is, confirm it with your brokerage
   - If currency is CAD, then `FX CAD Rate` can be blank (or equivalently 1.0)
-  - Exchange rate from CAD to the foreign currency is available on the Bank of Canada website:  
+  - Exchange rate from CAD to the foreign currency is available on the Bank of Canada website (see [Adjusted-Cost-Base.md](Adjusted-Cost-Base.md) for the rate convention):  
     https://www.bankofcanada.ca/rates/exchange/daily-exchange-rates-lookup/
 
 
@@ -172,3 +173,19 @@ Outputs (cumulative per symbol):
 - If you fully dispose of a position and later buy it again, the `Date of Acquisition` resets on the new purchase
 - This minimal template does not automate superficial loss, stock splits, or spin-offs; handle those with separate logic or manual adjustments
 - DRIP can be entered as Buy with `Commission` = 0; use the payment/reinvestment date (when the units are credited to your account) as `Date`, and the FX rate for that same date
+
+
+# Related
+
+- [Adjusted-Cost-Base.md](Adjusted-Cost-Base.md) — foundational ACB concepts, FX rate convention, and pooling rules this template implements
+- [Bank of Canada daily exchange rates](https://www.bankofcanada.ca/rates/exchange/daily-exchange-rates-lookup/) — source for FX CAD Rate values
+
+
+# Citations
+
+- ITA [s.47(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-47.html) — pooled average cost (WAC) mandatory for identical properties
+
+
+# TODO
+
+- Add handling guidance for superficial loss, stock splits, and spin-offs

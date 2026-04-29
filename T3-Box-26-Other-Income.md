@@ -35,7 +35,7 @@ For example:
 - When: the company receives a passive income distribution
 - Then: a portion of that could be designated as T3 Box 26
 
-In some contexts, `other income` is referred to as `property income`:
+In some contexts, *other income* is referred to as *property income*:
 - Real estate rentals can generate T3 Box 26 `other income` (e.g. REIT ETF)
 - However, it can also come from sources unrelated to real estate; `property income` is a tax term
 
@@ -55,14 +55,14 @@ Some examples of income that can show up in T3 Box 26:
 In general, the T3 Box 26 amount is a residual bucket and can represent both active and passive income:
 - Whether the amount is treated as Active Business Income (ABI) or Aggregate Investment Income (AII) has tax consequences
 - For a publicly traded ETF structured as a trust, Box 26 is typically AII:
-  - There is no easy public "official confirmation" that a particular T3 Box 26 amount is not AII
+  - There is no easy public official confirmation that a particular T3 Box 26 amount is not AII
   - Some checks you can perform that increase the likelihood that the T3 Box 26 amount is AII:
     - Locate the investment in Canadian Tax Breakdown Reporting Service: https://ctbsext.posttrade.cds.ca/ctbsExt/external-landing
     - Download the PDF, and confirm that the T3 Box 26 amount matches what is labelled "Other Income (Investment Income)"
     - You can also locate the prospectus, search for "Income Tax Considerations" or "Taxation of the Fund", and confirm it qualifies as a "mutual fund trust"
     - A mutual fund trust is meant to be an investment vehicle and generally cannot carry on a non-investment business if it wants to maintain that status
     - You can look for any T3 slip attachments or issuer tax notes related to T3 Box 26
-    - These items support the practical filing position for a plain-vanilla ETF, but they are not by themselves a binding CRA determination
+    - These items support the conservative filing position for a plain-vanilla ETF, but they are not by themselves a binding CRA determination
   - There is usually no practical basis to treat Box 26 as ABI absent unusually strong issuer-specific facts
 - In rare fact-specific situations, the AII result can be different, but that is outside the plain-vanilla ETF scope covered here
 - If the T3 Box 26 amount is reported as AII, but arguably should have been treated as ABI, then you might pay higher tax than necessary:

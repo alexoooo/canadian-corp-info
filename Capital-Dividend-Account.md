@@ -17,7 +17,7 @@ The CDA can be used to pay the tax-free portion of the cumulative net capital ga
 Note: the CDA can also include other amounts such as the tax-free portion of life-insurance proceeds received by the corporation (s.89(1)(d) ITA), but that is outside the scope of this document.  
 
 Maintain a running total of capital gain or loss:
-- Realized Gains/Losses when you sell a security, calculate: T5008 Box 21 - ACB (tracked separately)  
+- Realized Gains/Losses when you sell a security, calculate: T5008 Box 21 - ACB (your independently calculated ACB, not T5008 Box 20)  
   - This document assumes the T5008 Box 21 amount is net-of-fees
   - If you're not sure whether the amount is net-of-fees, compare it with the trade confirmation
   - If you see the gross amount (and the trade confirmation has a commission), then subtract the commission
@@ -27,7 +27,13 @@ Maintain a running total of capital gain or loss:
 Calculate the balance of the Capital Dividend Account:
 - When the running total is negative, the balance is zero until new gains exceed those past losses
 - When the running total is positive, the balance is the non-taxable portion (currently 50%) of the net capital gain
-- When you pay a capital dividend, subtract it from the CDA
+- When you pay a capital dividend, subtract it from the CDA; the balance is read at the time the s.83(2) election is filed, so interim capital losses between your last calculation and the election date reduce the available balance
+
+Example (50% inclusion rate):
+- Year 1: sell a position, gain = $10,000 → taxable gain $5,000 → CDA += $5,000 → CDA balance: $5,000
+- Year 2: sell a position, loss = $8,000 → taxable loss $4,000 → CDA -= $4,000 → CDA balance: $1,000
+- Year 3: sell a position, gain = $12,000 → taxable gain $6,000 → CDA += $6,000 → CDA balance: $7,000
+- At this point the corporation can elect to pay a capital dividend of up to $7,000 tax-free to shareholders
 
 Capital Dividend Account election process:
 - Verification: check the CDA balance via Schedule 89 or My Business Account (allow for assessed year-end lag)
@@ -39,7 +45,8 @@ Capital Dividend Account election process:
   - For Canadian residents: do not issue a T5 information slip for this amount (but do notify them, e.g. by email)
 
 Note that CDA is a "point-in-time" calculation.  
-If you sell an investment at a loss after your calculation but before the dividend is technically payable, you could inadvertently overdraw the account and incur a penalty.  
+If you sell an investment at a loss after your calculation but before the dividend is technically payable, you could inadvertently overdraw the account and incur Part III tax under ITA s.184(2): 60% of the excess amount.  
+(Under s.184(3) the corporation can elect to treat the excess as a separate taxable dividend instead, but that is rarely preferable.)  
 You may elect to pay less than the calculated CDA balance, e.g. by leaving a $1000 buffer.  
 
 Since this is a tax-free amount for Canadian residents, the shareholder recipients do not report this income on their T1.  

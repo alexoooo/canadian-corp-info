@@ -38,9 +38,9 @@ Market Value:
 
 Things that increase your ACB:
 - Purchasing a security
-- DRIP (reinvested distribution): the fund declares a distribution and the DRIP program automatically acquires additional units on your behalf; for tax purposes you are treated as having received the cash and reinvested it, so the reinvested amount increases your ACB like any other purchase.  
-  Use the payment/reinvestment date (when the units are credited to your account); this also drives the FX rate per the rule for distributions below.
-- Phantom (non-cash) distribution: the fund reports a capital gains distribution on T3 Box 21 but some or all of it is not paid out in cash (and it's not reinvested); you owe tax on it but received nothing, so you increase ACB by that phantom amount to prevent double-taxation on sale  
+- DRIP (reinvested distribution): the fund declares a distribution and the DRIP program automatically acquires additional units on your behalf; for tax purposes you are treated as having received the cash and reinvested it, so the reinvested amount increases your ACB like any other purchase
+  - Use the payment/reinvestment date (when the units are credited to your account); this also drives the FX rate per the rule for distributions below
+- Phantom (non-cash) distribution: the fund reports a capital gains distribution on T3 Box 21 but some or all of it is not paid out in cash; you owe tax on it but received nothing, so you increase ACB by that phantom amount to prevent double-taxation on sale  
 
 Selling a security results in a T5008 which decreases the ACB (although the per-share/per-unit ACB doesn't change).  
 
@@ -49,8 +49,15 @@ T3 box 42 (amount resulting in cost base adjustment) typically decreases your AC
 - Negative amount increases your ACB, this is rare but can happen (e.g. an over-distribution correction), always follow the sign  
 
 ACB cannot be negative.  
-If ROC would reduce it below zero, the excess becomes an immediate capital gain.  
+If ROC would reduce it below zero, the excess becomes an immediate capital gain (ITA [s.40(3)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-40.html)).  
 Report that gain as a separate line in Schedule 6 of your T2 software rather than folding it into a normal disposition line for the security.  
+
+Example:
+- Purchase 100 units at $10.00/unit → total ACB: $1,000.00, per-unit ACB: $10.00
+- Year 1 ROC: $2.00/unit × 100 = $200 → total ACB: $800.00, per-unit ACB: $8.00
+- Year 2 ROC: $5.00/unit × 100 = $500 → total ACB: $300.00, per-unit ACB: $3.00
+- Year 3 ROC: $4.00/unit × 100 = $400, but only $300 remaining ACB → ACB reduced to $0, and the $100 excess is an immediate capital gain (ITA s.40(3)); report on Schedule 6
+- Per-unit ACB is now $0.00; all future ROC will similarly be immediate capital gains
 
 Corporate actions can increase or decrease your ACB:
 - Stock split: total ACB stays the same, per-share/per-unit ACB decreases proportionally  
@@ -87,15 +94,13 @@ Trading fees to sell a security:
 # Date of acquisition for pooled securities
 
 ACB uses pooled average cost across all identical properties (not FIFO or LIFO).  
-When you sell, receive a T5008, and fill out the corresponding T2 Schedule 6 entry, you will need to specify a "Date of acquisition".  
-Because you can buy and sell pooled securities over time, there might not be a single obvious date of acquisition.  
-You can use the date of the very first purchase that contributed to the current pool of units being sold.  
-Using the earliest date of continuous holding of a security is a conservative bookkeeping convention in the absence of specific CRA guidance.  
+When you sell and fill out the T2 Schedule 6 entry, you will need to specify a "Date of acquisition".  
+For pooled securities, use the date of the very first purchase that contributed to the current pool — this is a conservative convention in the absence of specific CRA guidance.  
 
 
 # Foreign assets and FX conversion to CAD
 
-If you hold USD or other foreign assets, you must convert to CAD when calculating ACB (you can use the Bank of Canada daily exchange rate):  
+If you hold USD or other foreign assets, you must convert to CAD when calculating ACB (you can use the Bank of Canada daily exchange rate — the indicative midpoint published at approximately 16:30 ET; the legacy noon rate is no longer published):  
 - Purchases and sales: use the exchange rate for the trade date (not settlement date)  
 - Distributions (including ROC and reinvested/phantom amounts such as the non-cash portion of T3 box 21): use exchange rate on payment/distribution date (not when distribution is declared)  
 - Outlays and expenses (e.g. commissions): use exchange rate on trade date (not settlement date)  
@@ -119,7 +124,10 @@ Tax loss harvesting is the technique of realizing a loss, and then potentially i
 There are limitations on which losses can be claimed, make sure you don't get a "superficial loss":  
 - Time window: during the 61-day period that begins 30 days before and ends 30 days after a sale at a loss  
 - Who it applies to: you or an "affiliated person", including a corporation that you control (or a corporation controlled by your spouse/common-law partner)  
-- What is the action: acquisition of an identical property (e.g. same ETF / same share class / same security, whether two different ETFs are identical is fact-specific)  
+- What is the action: acquisition of an identical property —
+    same issuer, same class, same currency of issue
+    (ITA [s.248(12)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-248.html); CRA Folio S3-F3-C1);
+    whether two different ETFs tracking the same index are identical is fact-specific  
 - Condition at end of period: you or an affiliated person still owns that substituted property (or has the right to acquire it)  
 - What happens: loss is denied for now and is generally added to the ACB of the substituted property instead of being claimed immediately  
 - Example: if your corporation sells XEI at a loss,
