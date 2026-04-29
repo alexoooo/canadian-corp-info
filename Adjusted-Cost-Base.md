@@ -42,7 +42,7 @@ Things that increase your ACB:
   - Use the payment/reinvestment date (when the units are credited to your account); this also drives the FX rate per the rule for distributions below
 - Phantom (non-cash) distribution: the fund reports a capital gains distribution on T3 Box 21 but some or all of it is not paid out in cash; you owe tax on it but received nothing, so you increase ACB by that phantom amount to prevent double-taxation on sale  
 
-Selling a security results in a T5008 which decreases the ACB (although the per-share/per-unit ACB doesn't change).  
+Selling a security results in a T5008 which decreases the total ACB (the per-share/per-unit ACB is unchanged).  
 
 T3 box 42 (amount resulting in cost base adjustment) typically decreases your ACB but sometimes can increase it:
 - Positive amount decreases your ACB, typically this is Return of Capital
@@ -61,7 +61,7 @@ Example:
 
 Corporate actions can increase or decrease your ACB:
 - Stock split: total ACB stays the same, per-share/per-unit ACB decreases proportionally  
-- Spin-off: you must allocate the original ACB between the parent company and the new entity, typically based on the relative fair market values on the effective date  
+- Spin-off: you must allocate the original ACB between the parent company and the new entity, typically based on the relative fair market values on the effective date (s.86.1 eligible foreign spin-offs follow the issuer's allocation notice instead — that is a separate path not covered here)  
 
 
 # Book Cost vs ACB

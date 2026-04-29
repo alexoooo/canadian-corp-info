@@ -75,9 +75,10 @@ Inputs (from investment confirmations and T3):
   - Transaction currency fee charged by brokerage
   - Can leave blank if zero, which happens with ROC/Phantom, and sometimes for Buy/Sell depending on brokerage and security
 - `FX CAD Rate`:
-  - Conversion from transaction currency to CAD
-  - If transaction is denominated in CAD, then use 1.0 or leave blank 
-  - Rate greater than 1.0 means that the transaction currency is worth more than CAD (and vice versa if less than 1.0)
+  - CAD per 1 unit of transaction currency (e.g. if 1 USD = 1.36 CAD, enter 1.36)
+  - If transaction is denominated in CAD, use 1.0 or leave blank
+  - Source: Bank of Canada indicative midpoint rate for the trade date (or payment date for ROC/Phantom); see [Adjusted-Cost-Base.md](Adjusted-Cost-Base.md) for the rate convention
+  - If the BoC does not publish a rate for that date (e.g. a US-only trading day), use the rate from the nearest prior business day on which the BoC did publish
 - `Note`:
   - Free-form text to capture any auxiliary information (e.g. if the given entry was audited)
   - Can leave blank if there is nothing particularly noteworthy about transaction
@@ -157,6 +158,7 @@ Outputs (cumulative per symbol):
 - `ACB Change - Sell` = IF(`Action` = "Sell", -`ACB of Units Sold`, 0)
 - `ACB Change - ROC` = IF(`Action` = "ROC",  
   &ensp; IF(`Gross Amount CAD` >= 0, -MIN(`Gross Amount CAD`, `Previous ACB`), -`Gross Amount CAD`), 0)
+  - MIN caps the ACB reduction at the remaining ACB; any ROC that exceeds the remaining ACB is a deemed capital gain (ITA s.40(3)), tracked in the `Deemed Capital Gain` output column
 - `ACB Change - Phantom` = IF(`Action` = "Phantom", `Gross Amount CAD`, 0)
 - `ACB Change` = `ACB Change - Buy` + `ACB Change - Sell` + `ACB Change - ROC` + `ACB Change - Phantom`
 
@@ -171,7 +173,10 @@ Outputs (cumulative per symbol):
 - ACB cannot go below zero, if positive ROC is larger than `Previous ACB`, the excess is `Deemed Capital Gain` and `ACB` becomes zero
 - `Remaining Quantity` should never go negative; if a sale would exceed current holdings, fix the input rather than allowing a negative balance
 - If you fully dispose of a position and later buy it again, the `Date of Acquisition` resets on the new purchase
-- This minimal template does not automate superficial loss, stock splits, or spin-offs; handle those with separate logic or manual adjustments
+- This minimal template does not automate superficial loss, stock splits, or spin-offs; handle those with manual row edits:
+  - Stock split: insert a memo row on the effective date — adjust `Quantity` to the post-split total (ACB unchanged, per-unit ACB recalculates automatically)
+  - Spin-off: close the parent position with a zero-proceeds Sell on the effective date, then open two new Buy rows (one for the parent, one for the new entity) with quantities and ACB allocated based on relative fair market values on that date; see [Adjusted-Cost-Base.md](Adjusted-Cost-Base.md) for the allocation rule
+  - Superficial loss: the denied loss is not deducted; instead add it to the ACB of the substituted property via a manual Buy-like row (no quantity change, ACB increase only)
 - DRIP can be entered as Buy with `Commission` = 0; use the payment/reinvestment date (when the units are credited to your account) as `Date`, and the FX rate for that same date
 
 

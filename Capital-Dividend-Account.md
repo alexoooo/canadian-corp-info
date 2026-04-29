@@ -36,13 +36,14 @@ Example (50% inclusion rate):
 - At this point the corporation can elect to pay a capital dividend of up to $7,000 tax-free to shareholders
 
 Capital Dividend Account election process:
-- Verification: check the CDA balance via Schedule 89 or My Business Account (allow for assessed year-end lag)
+- Verification: check the CDA balance via Schedule 89 or My Business Account (the balance shown reflects the last assessed T2, so it typically lags by 6–12 weeks after your year-end while CRA processes the return)
 - Resolution: directors must pass a resolution to pay a dividend and elect for it to be a Capital Dividend under s.83(2)
 - Filing: submit Form T2054 ("Election for a Capital Dividend Under Subsection 83(2)") along with a certified copy of the resolution on or before the payment date
-  - Certification means the Secretary or a Director signs a statement on the resolution saying: "I hereby certify this to be a true copy of the resolution passed by the board..." 
+  - Certification means the Secretary or a Director signs a statement on the resolution attesting that it is a true copy of the resolution passed by the board
 - Reporting:
   - Enter the dividend on T2 Schedule 3
   - For Canadian residents: do not issue a T5 information slip for this amount (but do notify them, e.g. by email)
+  - Keep internal records of the per-shareholder allocation (amount paid to each shareholder); this is not filed with CRA but is needed if the election is ever reviewed
 
 Note that CDA is a "point-in-time" calculation.  
 If you sell an investment at a loss after your calculation but before the dividend is technically payable, you could inadvertently overdraw the account and incur Part III tax under ITA s.184(2): 60% of the excess amount.  

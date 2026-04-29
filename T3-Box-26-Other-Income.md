@@ -46,11 +46,12 @@ Broadly speaking, income can be classified in different ways:
 - `Canadian-source` domestic payer vs `foreign-source` foreign payer
 - `trust` issuer with T3 vs `corporation` that issues T5
 
-Some examples of income that can show up in T3 Box 26:
+Some examples of income that can show up in T3 Box 26 from a vanilla ETF:
 - Canadian bonds - Canadian-sourced interest
 - Canadian REITs - Primarily rental/property income
 - Securities lending - Fee the ETF earns by lending out its shares
-- Active business carried on by the trust (not applicable to ETF structured as a mutual fund trust)
+
+Active business carried on by the trust can also appear in Box 26, but does not apply to an ETF structured as a mutual fund trust (which cannot carry on a non-investment business without losing that status).
 
 In general, the T3 Box 26 amount is a residual bucket and can represent both active and passive income:
 - Whether the amount is treated as Active Business Income (ABI) or Aggregate Investment Income (AII) has tax consequences
@@ -61,13 +62,13 @@ In general, the T3 Box 26 amount is a residual bucket and can represent both act
     - Download the PDF, and confirm that the T3 Box 26 amount matches what is labelled "Other Income (Investment Income)"
     - You can also locate the prospectus, search for "Income Tax Considerations" or "Taxation of the Fund", and confirm it qualifies as a "mutual fund trust"
     - A mutual fund trust is meant to be an investment vehicle and generally cannot carry on a non-investment business if it wants to maintain that status
-    - You can look for any T3 slip attachments or issuer tax notes related to T3 Box 26
+    - You can look for any T3 slip attachments or issuer tax notes related to T3 Box 26 (typically published on the ETF sponsor's website alongside the annual tax breakdown, e.g. under "Tax Information" or "Distributions")
     - These items support the conservative filing position for a plain-vanilla ETF, but they are not by themselves a binding CRA determination
   - There is usually no practical basis to treat Box 26 as ABI absent unusually strong issuer-specific facts
 - In rare fact-specific situations, the AII result can be different, but that is outside the plain-vanilla ETF scope covered here
 - If the T3 Box 26 amount is reported as AII, but arguably should have been treated as ABI, then you might pay higher tax than necessary:
   - This is a legally conservative filing position, but it can mean paying more tax than necessary
-  - For simplicity, in this document we assume the amount is AII, with the risk of overpaying tax
+  - For simplicity, in this document we assume the amount is AII; this can result in paying slightly more tax than the alternative
 
 For the plain-vanilla ETF case covered here, we can say:
 - T3 Box 26 from an ETF represents `passive` investment income from a `trust`
@@ -104,9 +105,7 @@ In terms of specific tax treatment, there are several concepts:
 Practical treatment for T3 Box 26 from a vanilla index ETF (e.g. VCN or XEI):
 - Include it in corporate income; it rolls up to GIFI 8299 on "Schedule 125 - Income statement information"
 - Enter it as part of net income from property: Box 32 in Part 1 of Schedule 7 to calculate "Aggregate Investment Income" (AII)
-- Note for T3 Box 26 that is not from a vanilla index ETF:
-  - Different AII rules can apply, outside the scope of this document
-  - Not every Box 26 amount necessarily feeds AII / Schedule 7 Part 1 Box 32 in the same way
+- For Box 26 from a trust that is not a mutual fund trust (e.g. certain commercial or income trusts), or from a trust with active business income, the AII classification and Schedule 7 treatment may differ — outside the scope of this document
 
 For the GIFI code:
 - GIFI 8299 (Revenue) is a calculation, CRA does not mandate a specific GIFI code
@@ -115,10 +114,11 @@ For the GIFI code:
   - GIFI 8230 (Other revenue)
   - GIFI 8094 (Interest from other Canadian sources), which rolls up to GIFI 8090, but only when the T3 Box 26 amount is actual interest (e.g. bond index ETF like ZAG)
 - This document uses GIFI 8090 (Investment revenue), with a subaccount "Other investment income" (coded 8090-2)
+- If the corporation also earns direct interest income (e.g. GIC interest, savings account interest), use GIFI 8094 for that amount and GIFI 8090 (ledger subaccount 8090-2) for the T3 Box 26 amount — keeping them in separate ledger accounts makes the Schedule 125 reconciliation cleaner and avoids mixing T3-sourced income with directly earned interest
 
 For the Schedule 7 Box 32:
 - Your T2 tax software will typically calculate this number
-- CRA does not specify a standardized way to enter the information that goes into calculating S7 Box 32
+- CRA does not specify a standardized way to enter the information that goes into calculating Schedule 7 (S7) Box 32
 - T2 software packages will typically have a "Schedule 7 Worksheet", which is proprietary to each T2 software
 - If your software uses a Schedule 7 worksheet, you will need to enter the T3 Box 26 amount there (see example below)
 
@@ -217,6 +217,7 @@ In FutureTax, the worksheet can be opened by double-clicking the Schedule 7 fiel
 # Related
 
 For the broader ledger tree, see the "Relevant general ledger accounts" section in [T3](T3.md).
+For ACB interactions (Box 42 / ROC reducing ACB), see [Adjusted-Cost-Base.md](Adjusted-Cost-Base.md).
 
 
 # Citations
