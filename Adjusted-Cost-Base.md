@@ -38,7 +38,8 @@ Market Value:
 
 Things that increase your ACB:
 - Purchasing a security
-- DRIP (reinvested distribution): the fund declares a distribution and the DRIP program automatically acquires additional units on your behalf; for tax purposes you are treated as having received the cash and reinvested it, so the reinvested amount increases your ACB like any other purchase
+- DRIP (reinvested distribution): the fund automatically acquires additional units on your behalf instead of paying cash
+  - For tax purposes you are treated as having received the cash and reinvested it, so the reinvested amount increases your ACB like any other Buy
   - Use the payment/reinvestment date (when the units are credited to your account); this also drives the FX rate per the rule for distributions below
 - Phantom (non-cash) distribution: the fund reports a capital gains distribution on T3 Box 21 but some or all of it is not paid out in cash; you owe tax on it but received nothing, so you increase ACB by that phantom amount to prevent double-taxation on sale  
 
@@ -122,7 +123,7 @@ Capital losses can be carried forward indefinitely to offset future capital gain
 To carry back a capital loss, a corporation uses T2 Schedule 4 (Corporation Loss Continuity and Application), which triggers a reassessment of the prior-year T2.  
 
 Tax loss harvesting is the technique of realizing a loss, and then potentially investing in a similar security.  
-There are limitations on which losses can be claimed, make sure you don't get a "superficial loss":  
+There are limitations on which losses can be claimed, make sure you don't get a *superficial loss* (ITA [s.54](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-54.html)):  
 - Time window: during the 61-day period that begins 30 days before and ends 30 days after a sale at a loss  
 - Who it applies to: you or an "affiliated person", including a corporation that you control (or a corporation controlled by your spouse/common-law partner)  
 - What is the action: acquisition of an identical property —

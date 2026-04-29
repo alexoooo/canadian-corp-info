@@ -189,7 +189,3 @@ Outputs (cumulative per symbol):
 
 - ITA [s.47(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-47.html) — pooled average cost (WAC) mandatory for identical properties
 
-
-# TODO
-
-- Add handling guidance for superficial loss, stock splits, and spin-offs

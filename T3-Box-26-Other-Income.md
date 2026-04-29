@@ -37,14 +37,14 @@ For example:
 
 In some contexts, *other income* is referred to as *property income*:
 - Real estate rentals can generate T3 Box 26 *other income* (e.g. REIT ETF)
-- However, it can also come from sources unrelated to real estate; `property income` is a tax term
+- However, it can also come from sources unrelated to real estate; *property income* is a tax term
 
 Broadly speaking, income can be classified in different ways:
-- `active` business vs `passive` non-business (i.e. investments or property rental)
-- `ordinary` income taxed at 100% vs `preferential` treatment as capital gains (inclusion rate) or dividends (gross-up and credit)
-- `resident` domestic recipient vs `non-resident` foreign recipient (outside the scope of this document)
-- `Canadian-source` domestic payer vs `foreign-source` foreign payer
-- `trust` issuer with T3 vs `corporation` that issues T5
+- *active* business vs *passive* non-business (i.e. investments or property rental)
+- *ordinary* income taxed at 100% vs *preferential* treatment as capital gains (inclusion rate) or dividends (gross-up and credit)
+- *resident* domestic recipient vs *non-resident* foreign recipient (outside the scope of this document)
+- *Canadian-source* domestic payer vs *foreign-source* foreign payer
+- *trust* issuer with T3 vs *corporation* that issues T5
 
 Some examples of income that can show up in T3 Box 26 from a vanilla ETF:
 - Canadian bonds - Canadian-sourced interest
@@ -71,8 +71,8 @@ In general, the T3 Box 26 amount is a residual bucket and can represent both act
   - For simplicity, in this document we assume the amount is AII; this can result in paying slightly more tax than the alternative
 
 For the plain-vanilla ETF case covered here, we can say:
-- T3 Box 26 from an ETF represents `passive` investment income from a `trust`
-- It is 100% taxable as `ordinary income` from a `Canadian-source`
+- T3 Box 26 from an ETF represents *passive* investment income from a *trust*
+- It is 100% taxable as *ordinary income* from a *Canadian-source*
 - Other treatment of T3 Box 26 (e.g. from a trust with unusual non-plain-vanilla facts) is outside the scope of this document
 
 Note that the slip type depends on the legal structure of the issuer:
@@ -82,7 +82,7 @@ Note that the slip type depends on the legal structure of the issuer:
 
 T3 Box 26 does not receive preferential tax treatment:
 - T3 Box 26 income is subject to Part I tax
-- Interest and `other income` are part of the corporate income calculation
+- Interest and *other income* are part of the corporate income calculation
 - It does not benefit from the Capital Gains Inclusion Rate (Box 21), dividend tax treatment (Box 49), or change the cost base (Box 42)
 
 How Box 26 can affect AII and NERDTOH:
