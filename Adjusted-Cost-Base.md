@@ -61,8 +61,9 @@ Example:
 - Per-unit ACB is now $0.00; all future ROC will similarly be immediate capital gains
 
 Corporate actions can increase or decrease your ACB:
-- Stock split: total ACB stays the same, per-share/per-unit ACB decreases proportionally  
-- Spin-off: you must allocate the original ACB between the parent company and the new entity, typically based on the relative fair market values on the effective date (s.86.1 eligible foreign spin-offs follow the issuer's allocation notice instead — that is a separate path not covered here)  
+- Stock split: total ACB stays the same, but it is spread over more shares/units, so the per-share/per-unit ACB decreases proportionally
+- Spin-off: allocate the original total ACB between the parent company and the new entity based on their relative fair market values on the effective date, then continue
+  tracking them as two separate pooled positions (s.86.1 eligible foreign spin-offs follow the issuer's allocation notice instead; that path is not covered here)
 
 
 # Book Cost vs ACB

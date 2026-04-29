@@ -56,7 +56,7 @@ Active business carried on by the trust can also appear in Box 26, but does not 
 In general, the T3 Box 26 amount is a residual bucket and can represent both active and passive income:
 - Whether the amount is treated as Active Business Income (ABI) or Aggregate Investment Income (AII) has tax consequences
 - For a publicly traded ETF structured as a trust, Box 26 is typically AII:
-  - There is no easy public official confirmation that a particular T3 Box 26 amount is not AII
+  - There is no easy publicly available confirmation that a particular T3 Box 26 amount is not AII
   - Some checks you can perform that increase the likelihood that the T3 Box 26 amount is AII:
     - Locate the investment in Canadian Tax Breakdown Reporting Service: https://ctbsext.posttrade.cds.ca/ctbsExt/external-landing
     - Download the PDF, and confirm that the T3 Box 26 amount matches what is labelled "Other Income (Investment Income)"

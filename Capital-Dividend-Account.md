@@ -30,10 +30,10 @@ Calculate the balance of the Capital Dividend Account:
 - When you pay a capital dividend, subtract it from the CDA; the balance is read at the time the s.83(2) election is filed, so interim capital losses between your last calculation and the election date reduce the available balance
 
 Example (50% inclusion rate):
-- Year 1: sell a position, gain = $10,000 → taxable gain $5,000 → CDA += $5,000 → CDA balance: $5,000
-- Year 2: sell a position, loss = $8,000 → taxable loss $4,000 → CDA -= $4,000 → CDA balance: $1,000
-- Year 3: sell a position, gain = $12,000 → taxable gain $6,000 → CDA += $6,000 → CDA balance: $7,000
-- At this point the corporation can elect to pay a capital dividend of up to $7,000 tax-free to shareholders
+- Year 1: sell a position, gain = $10,000 → non-taxable portion = $5,000 → CDA balance: $5,000
+- Year 2: sell a position, loss = $12,000 → non-taxable portion = $6,000 → cumulative balance would be negative, so CDA balance: $0
+- Year 3: sell a position, gain = $4,000 → non-taxable portion = $2,000 → this first offsets the prior negative balance, leaving CDA balance: $1,000
+- At this point the corporation can elect to pay a capital dividend of up to $1,000, subject to the balance still being available on the election date
 
 Capital Dividend Account election process:
 - Verification: check the CDA balance via Schedule 89 or My Business Account (the balance shown reflects the last assessed T2, so it typically lags by 6–12 weeks after your year-end while CRA processes the return)
