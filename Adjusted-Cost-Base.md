@@ -75,7 +75,7 @@ Depending on your brokerage, you might see:
 - Every change to the ACB could be correctly reflected in the Book Cost, this is ideal  
 - ACB changes might be reflected but delayed (e.g. until following April)  
 - Some ACB changes might be missing entirely  
-- Superficial loss rules and external holdings (same security in different account) typically require tracking yourself  
+- Superficial loss rules and external holdings may not be tracked correctly by your brokerage — see [Capital loss carry forward / back / superficial loss](#capital-loss-carry-forward--back--superficial-loss) below  
 - All brokerages might occasionally miss adjusting the Book Cost and sometimes report the wrong amount  
 - The behaviour can appear inconsistent  
 - It might be possible to raise a discrepancy with your brokerage, and they could re-issue T3 or T5008 slips  
@@ -93,7 +93,7 @@ Trading fees to sell a security:
 
 # Date of acquisition for pooled securities
 
-ACB uses pooled average cost across all identical properties (not FIFO or LIFO).  
+ACB uses pooled average cost across all identical properties (not FIFO or LIFO) (ITA [s.47(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-47.html)).  
 When you sell and fill out the T2 Schedule 6 entry, you will need to specify a "Date of acquisition".  
 For pooled securities, use the date of the very first purchase that contributed to the current pool — this is a conservative convention in the absence of specific CRA guidance.  
 
@@ -104,7 +104,8 @@ If you hold USD or other foreign assets, you must convert to CAD when calculatin
 - Purchases and sales: use the exchange rate for the trade date (not settlement date)  
 - Distributions (including ROC and reinvested/phantom amounts such as the non-cash portion of T3 box 21): use exchange rate on payment/distribution date (not when distribution is declared)  
 - Outlays and expenses (e.g. commissions): use exchange rate on trade date (not settlement date)  
-- The income statement uses average annual exchange rate, your balance sheet uses the end-of-year rate, but these are not applicable to transactions that affect ACB (which must always use the daily exchange rate)  
+- The income statement uses the average annual exchange rate and the balance sheet uses the end-of-year rate; these rates do not apply to ACB calculations
+- For ACB purposes, always use the daily exchange rate as specified above  
 
 
 # Corporate vs personal ACB

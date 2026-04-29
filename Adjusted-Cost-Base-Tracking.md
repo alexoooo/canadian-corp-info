@@ -11,9 +11,8 @@ The primary place where this information is reported is T2 Schedule 6, but it ca
 Limitations:
 - Template handles transactions for Buy/Sell/ROC/Phantom
 - Any other transaction types require custom handling
-- This document only covers stocks and ETFs, other types of investments (real estate, etc.) are out of scope and might have different or additional rules  
-- Tax information can change over time (e.g. the capital gains inclusion rate was going to increase to 2/3, before the proposal was cancelled)
-- The following is my understanding as of 2026  
+- This document only covers stocks and ETFs; other types of investments (real estate, etc.) are out of scope and might have different or additional rules  
+- Tax information can change over time; the following is my understanding as of 2026 (see [Adjusted Cost Base](Adjusted-Cost-Base.md) for background)  
 
 
 # Investment identification - security master

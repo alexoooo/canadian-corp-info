@@ -27,8 +27,8 @@ You can also use this to calculate expected values to validate the T3 amounts.
 
 # Meaning and tax treatment
 
-T3 Box 26 is `other income` allocated to a beneficiary of a trust.  
-`Other income` can sit alongside other T3 income types in a single cash distribution.  
+T3 Box 26 is *other income* allocated to a beneficiary of a trust.  
+*Other income* can sit alongside other T3 income types in a single cash distribution.  
 
 For example:
 - If: your company holds an ETF structured as a trust, such as VCN
@@ -36,7 +36,7 @@ For example:
 - Then: a portion of that could be designated as T3 Box 26
 
 In some contexts, *other income* is referred to as *property income*:
-- Real estate rentals can generate T3 Box 26 `other income` (e.g. REIT ETF)
+- Real estate rentals can generate T3 Box 26 *other income* (e.g. REIT ETF)
 - However, it can also come from sources unrelated to real estate; `property income` is a tax term
 
 Broadly speaking, income can be classified in different ways:
