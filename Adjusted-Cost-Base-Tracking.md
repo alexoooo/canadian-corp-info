@@ -58,7 +58,7 @@ You can keep this as a separate workbook, or as a single sheet within a larger w
 
 Inputs (from investment confirmations and T3):
 - `Date`:
-  - Buy/Sell: trade date (not settlement date)
+  - Buy/Sell: trade date (not settlement date) — for DRIP entered as Buy, see Notes below; payment/reinvestment date is used instead
   - ROC/Phantom: payment/distribution date
 - `Symbol`: ETF or stock ticker
 - `Action`: Buy, Sell, ROC, Phantom
@@ -157,7 +157,7 @@ Outputs (cumulative per symbol):
 - `ACB Change - Sell` = IF(`Action` = "Sell", -`ACB of Units Sold`, 0)
 - `ACB Change - ROC` = IF(`Action` = "ROC",  
   &ensp; IF(`Gross Amount CAD` >= 0, -MIN(`Gross Amount CAD`, `Previous ACB`), -`Gross Amount CAD`), 0)
-  - MIN caps the ACB reduction at the remaining ACB; any ROC that exceeds the remaining ACB is a deemed capital gain (ITA s.40(3)), tracked in the `Deemed Capital Gain` output column
+  - MIN caps the ACB reduction at the remaining ACB; any ROC that exceeds the remaining ACB is a deemed capital gain ([ITA s.40(3)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-40.html)), tracked in the `Deemed Capital Gain` output column
 - `ACB Change - Phantom` = IF(`Action` = "Phantom", `Gross Amount CAD`, 0)
 - `ACB Change` = `ACB Change - Buy` + `ACB Change - Sell` + `ACB Change - ROC` + `ACB Change - Phantom`
 

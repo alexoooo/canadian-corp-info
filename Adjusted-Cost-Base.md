@@ -151,9 +151,11 @@ There are limitations on which losses can be claimed, make sure you don't get a 
 
 - Income Tax Act (R.S.C., 1985, c. 1 (5th Supp.)):
   - [s.40(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-40.html) - capital gain and capital loss formula, including outlays and expenses on disposition
+  - [s.40(3)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-40.html) - deemed capital gain when ACB would be driven below zero (e.g. by excess ROC)
   - [s.47(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-47.html) - identical properties: pooled average cost rather than FIFO or LIFO
   - [s.53](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-53.html) - adjustments to cost base (additions and deductions)
   - [s.54](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-54.html) - definitions of "adjusted cost base", "superficial loss", and "proceeds of disposition"
+  - [s.248(12)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-248.html) - definition of "identical property" (same issuer, class, and currency; relevant to superficial loss)
   - [s.251.1](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-251.1.html) - definition of "affiliated persons" (relevant to superficial loss)
 - CRA T2 S4 - Corporation Loss Continuity and Application: https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2sch4.html
 - CRA T4037 "Capital Gains" guide: https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4037/capital-gains.html
