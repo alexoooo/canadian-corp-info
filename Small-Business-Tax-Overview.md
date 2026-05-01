@@ -4,25 +4,24 @@ STATUS: WORK IN PROGRESS
 
 **Who this is for**:
 - Entrepreneurs who are curious about bookkeeping and taxes  
-- Want a high-level picture of how Canadian small-business corporate tax fits together
+- Anyone who wants a high-level picture of how Canadian small-business corporate tax fits together
 
 This page is a primer for the topics covered in the rest of this knowledge base.
 
 **TLDR**:
-- A *Canadian-Controlled Private Corporation* (CCPC) files an annual *T2* corporate income tax return — separate from the owner's personal *T1*
+- A *Canadian-Controlled Private Corporation* (CCPC) files an annual T2 corporate income tax return — separate from the owner's personal T1
 - Books are kept in *double-entry*; at year-end the chart of accounts is mapped to *GIFI* codes for Schedules 100 and 125
 - Active business income gets a reduced rate (the *Small Business Deduction*, *SBD*) on the first $500,000 per year
   - Investment income (from a corporate brokerage account) is taxed at a much higher rate, but partially refundable when paid out as a dividend
-- The corporation can pay the shareholders using dividends or payroll
+- You can pay yourself either a salary (deductible expense) or dividends (paid out of retained earnings)
 - *Integration* means a dollar earned directly or through a CCPC should be taxed roughly equally
 - The *Income Tax Act* (ITA) is the primary federal source, but several others are relevant: regulations, provincial tax acts, treaties, corporate statutes, CRA administrative guidance
-- *Harmonized Sales Tax* (HST) runs alongside income tax (depending on province)
-- You can pay yourself either a salary (expense) or dividends (retained earnings)
+- *GST/HST* runs alongside income tax — rate and structure vary by province
 
 Limitations:
 - Focus is on a typical owner-managed CCPC operating in Canada; other corporate forms (public corps, non-residents) are out of scope
-- Unincorporated businesses (sole proprietorship, partnership) and personal *T1* mechanics are out of scope
-- The following is my understanding as of 2026
+- Unincorporated businesses (sole proprietorship, partnership) and personal T1 mechanics are out of scope
+- Reflects my understanding as of 2026
 
 
 # What corporate tax is
@@ -30,37 +29,25 @@ Limitations:
 A corporation is a separate legal and tax entity from its shareholders.  
 Corporations can be used to limit liability and for tax planning.
 
-Corporations can make money from doing active business, or passively from non-business investments (e.g. ETF).  
+Corporations can make money from active business, or from passive investments (e.g. an ETF).  
 Net income (or loss) is calculated as: revenue - expenses (tracked separately for active vs passive).  
 For an incorporated consultant who pays themselves a salary, the largest expense is typically that salary plus the employer's share of CPP.  
 If the corporation has a positive net income, it pays *corporate income tax*.  
 
-You are required to keep track of all business transactions in a double-entry journal (debits and credits).  
-Money made by the corporation is called revenue, and money spent is called expenses.  
-Every account on the books is classified as an asset, liability, equity, revenue, or expense. 
-The *accounting equation* Assets = Liabilities + Equity always holds (revenue and expense accounts roll into equity through retained earnings at year-end).  
-You are required to use *accrual accounting*, which means recording an invoice when you send it, not later when the money arrives.  
-Accrual sets *when* a transaction is recorded; the *basis of accounting* sets *how* it's measured — they're orthogonal and combine fine.
-
-The simplest measurement basis is *tax basis*: revenue and expenses are recognized following ITA rules, so the books and the T2 numbers match exactly.
-- At year-end, you need to prepare two financial statements: an *income statement* and a *balance sheet*
-- A *cash flow statement*, *statement of retained earnings*, or full GAAP-compliant set (*ASPE* for private corporations, *IFRS* for public ones) is optional
-  - Required only if a third party (bank, outside shareholder) asks for it, or if your corporate statute's default GAAP requirement (CBCA s.155 / OBCA s.154) hasn't been waived by the shareholders
-
 The annual filing is the *T2 Corporation Income Tax Return*:
 - The T2 is the corporate equivalent of the personal *T1 Income Tax and Benefit Return*
 - It consists of a "jacket" (industry jargon for the main return) plus a list of *Schedules*, each handling a specific calculation
-- For example, Schedule 125 is income statement and Schedule 100 is balance sheet 
+- For example, Schedule 100 is the balance sheet and Schedule 125 is the income statement
 
 After paying corporate income tax:
-- The corporation can distribute after-tax money to shareholders (typically as a dividend)
+- The corporation can distribute after-tax earnings to shareholders (typically as a dividend)
 - Shareholders pay personal tax on the distribution
-- The system is designed so the two layers of tax combine to roughly the personal-tax bill that would have applied if the income had been earned directly (see *Integration* below)
+- The system is designed so the two layers of tax combine to roughly equal the personal-tax bill that would have applied if the income had been earned directly (see *Integration* below)
 
-Sales tax (HST, etc.) is handled separately:
+Sales tax (GST/HST, plus QST in Quebec) is handled separately:
 - Paid when buying most goods and services
 - Collected when selling most goods and services
-- Remitted based on a calculation (regular method or quick method)
+- Remitted periodically (using either the *regular method* or *quick method*)
 
 Most owner-managers prepare the T2 using dedicated software (FutureTax, TaxCycle, ProFile) rather than the paper forms.  
 
@@ -69,15 +56,26 @@ Most owner-managers prepare the T2 using dedicated software (FutureTax, TaxCycle
 
 The T2 doesn't appear from nowhere — every line traces back to the corporation's *books*: the running record of every financial transaction it makes during the year.  
 For a small CCPC, books are typically kept in accounting software (QuickBooks, Wave, Xero) or a structured spreadsheet, and reviewed annually before the T2 is filed.  
+Income earned from operations is *revenue*; costs of operating are *expenses*.  
 
 The basic mental model:
 - *Double-entry* — every transaction posts equal *debits* (Dr) and *credits* (Cr) across two or more accounts; the books always balance
-- *Chart of accounts* — the corporation's own categorization of its activity (cash, accounts receivable, revenue, expenses, retained earnings, etc.); the structure is your choice
+- *Chart of accounts* — the corporation's own list of named accounts (cash, accounts receivable, revenue, expenses, retained earnings, etc.); names and structure are your choice
+- *Account classification* — every account is one of five types: *asset*, *liability*, *equity*, *revenue*, or *expense*; the *accounting equation* Assets = Liabilities + Equity always holds (revenue and expenses roll into equity through retained earnings at year-end)
 - *General ledger* — the running list of every posted entry, grouped by account
-- *Trial balance* — the year-end sum of all account balances; rolls up into the *balance sheet* and *income statement* (the corporation's financial statements)
+- *Trial balance* — the year-end sum of all account balances; rolls up into the two financial statements: the *balance sheet* and the *income statement*
+
+Two further conventions govern how transactions are recorded:
+- *Accrual accounting* (required) determines *when* a transaction is recorded — for revenue, when you send the invoice (not when cash arrives); for expenses, when you receive the vendor bill (not when you pay)
+- *Basis of accounting* determines *how* the amount is measured. The simplest is *tax basis*, where revenue and expenses follow ITA rules so the books and the T2 numbers match exactly
+
+These are independent choices, and the typical small-CCPC setup is *accrual + tax basis*.
+
+A *cash flow statement* and *statement of retained earnings* are not required for the T2.  
+A full set of GAAP-compliant statements (*ASPE* for private corporations, *IFRS* for public ones) is only required if a third party (bank, outside shareholder) asks for it.  
 
 *GIFI* (*General Index of Financial Information*) is CRA's standardized chart-of-accounts coding.  
-Your own chart of accounts can use whatever names and structure you want, but at T2 time each account must be mapped to a GIFI code so that Schedule 100 (balance sheet) and Schedule 125 (income statement) can be filed in a CRA-readable form.  
+At T2 time each account must be mapped to a GIFI code so that Schedule 100 (balance sheet) and Schedule 125 (income statement) can be filed in a CRA-readable form.  
 GIFI codes are four-digit numbers organized by financial-statement section — for example, 1001 cash, 3849 retained earnings end-of-year, 8000-series revenue, 9999 net income.  
 The full list and mapping rules are in CRA's *RC4088 — General Index of Financial Information*.  
 
