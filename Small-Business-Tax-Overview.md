@@ -88,44 +88,7 @@ The bookkeeping convention this repo follows — explicit Dr/Cr postings paired 
 A practical tip: keep the books current during the year (monthly is typical) — reconstructing twelve months of activity at year-end is the most common avoidable cause of T2 filing pain.  
 
 
-# HST and other consumption taxes
-
-The *Goods and Services Tax / Harmonized Sales Tax* (GST/HST) regime is a consumption tax on most goods and services sold in Canada.  
-It's administered by CRA under the *Excise Tax Act* rather than the *Income Tax Act*, and is filed separately from corporate income tax.  
-
-GST/HST comes in two forms:
-- *HST*: a single harmonized system that covers both federal and provincial aspects
-- *GST*: the federal portion only, which applies in provinces and territories that don't use HST
-
-By jurisdiction:
-- HST: Ontario, New Brunswick, Newfoundland and Labrador, Nova Scotia, Prince Edward Island
-- GST + Provincial Sales Tax (PST): British Columbia, Saskatchewan, Manitoba
-- GST + Quebec Sales Tax (QST): Quebec (QST administered separately by Revenu Québec)
-- GST only: Alberta, Yukon, Northwest Territories, Nunavut
-
-This knowledge base focuses on GST/HST; PST and QST follow similar mechanics but are administered separately by each provincial revenue authority and are out of scope here.  
-
-You need to register and file GST/HST once your worldwide *taxable supplies* exceed $30,000 over a rolling 4-quarter window (or in a single quarter) — the *small supplier* threshold.  
-Sales to non-resident customers (e.g. US clients) are *zero-rated*: you charge 0% GST/HST but still claim ITCs on related inputs, and the sale still counts toward the threshold.  
-Below the threshold, voluntary registration is allowed and often worthwhile — it lets you claim ITC refunds even when output tax is small or zero.  
-
-There are two main methods (the *regular method* is the default; the *quick method* requires an election via form GST74, filed through CRA My Business Account):
-- *Regular method*:
-  - Charge GST/HST on sales (the *output tax*)
-  - Claim back the GST/HST paid on inputs (*input tax credits*, ITCs)
-  - Remit the difference to CRA periodically (annually, quarterly, or monthly depending on revenue)
-  - More tax-efficient if you have many inputs (e.g. a physical goods business)
-- *Quick method*:
-  - Charge GST/HST on sales (the *output tax*)
-  - Do not track GST/HST paid on inputs
-  - Remit a portion of the collected amount, and keep the rest as taxable revenue
-  - More tax-efficient if you have few inputs (e.g. consulting service)
-
-It's a separate filing — separate account number, separate set of mechanics.  
-For the practical workflow, see [HST.md](HST.md).  
-
-
-# Why CCPC status matters
+# CCPC status
 
 A *Canadian-Controlled Private Corporation* (CCPC) is a corporation that is:
 - Incorporated in Canada
@@ -134,27 +97,6 @@ A *Canadian-Controlled Private Corporation* (CCPC) is a corporation that is:
 
 CCPC status unlocks several preferential tax treatments most relevant to owner-managers: the *Small Business Deduction* (SBD), the *Lifetime Capital Gains Exemption* (LCGE) on *Qualified Small Business Corporation* (QSBC) shares, and refundable-tax mechanics on investment income.  
 For a corporation incorporated in Canada and directly owned by Canadian-resident individuals with no public listing, CCPC status will usually apply, though control rules — including the *control in fact* test under ITA [s.256(5.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-256.html) — and certain share arrangements (e.g. options or shareholder agreements that give effective control to a non-resident or public corporation) can change the result.  
-
-
-# Personal Service Business (PSB) — a trap for consultants
-
-A *Personal Service Business* (PSB) is a CCPC whose owner-operator would reasonably be considered an *employee* of the client but for the corporation in between.  
-The classic case: a consultant working full-time for a single client, on the client's premises, with the client's equipment, on the client's schedule — indistinguishable from a staff employee except that the corp invoices in between.  
-This is a real risk for IT contractors, engineers, and other specialists who incorporate to invoice a single long-term client.  
-
-PSB classification (ITA [s.125(7)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-125.html)) strips most of the favourable CCPC tax treatments and replaces them with a punitive regime:
-- No SBD — PSB income is excluded from active business income, so it cannot use the small-business rate
-- No *general rate reduction* either — taxed at the base federal 28% rather than the 15% general rate
-- Plus an *additional 5% federal tax* on PSB income under ITA [s.123.5](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-123.5.html), bringing the federal portion to 33% — combined ≈ 44.5% in Ontario
-- Almost no deductions allowed under ITA [s.18(1)(p)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-18.html): only salary and benefits paid to the incorporated employee, plus a few narrow items (legal costs to collect on contracts, certain employment-related expenses) — no rent, supplies, professional fees, software, or office costs
-
-Combined effect: a CCPC reclassified as a PSB pays substantially more tax with substantially fewer deductions than either a regular CCPC or the same individual operating as an unincorporated *sole proprietor* would.  
-
-The PSB determination is fact-based and uses the same multi-factor analysis as the employee-vs-contractor test in personal tax — *control* (does the client direct what, when, and how?), *ownership of tools*, *chance of profit / risk of loss*, and *integration* into the client's organization.  
-There are two statutory safe harbours in the s.125(7) definition: the corporation employs more than *five full-time employees* throughout the year, or the services are provided to an *associated corporation* — but neither typically applies to an owner-managed consulting practice.  
-
-For most owner-managed consulting CCPCs the practical protection is in the working arrangement itself: have multiple clients where possible, set your own hours and methods, use your own tools and equipment, carry your own liability insurance, and document a clear independent-contractor relationship in writing.  
-The more factors that point to an independent business rather than a disguised employment relationship, the lower the PSB risk.  
 
 
 # The two buckets of corporate income
@@ -217,6 +159,99 @@ Note in particular the *TOSI* rules under ITA [s.120.4](https://laws-lois.justic
 For dividend mechanics, see [Shareholder-Dividends.md](Shareholder-Dividends.md); a dedicated payroll page is in progress — see [Payment.md](Payment.md).  
 
 
+# Personal Service Business — a trap for consultants
+
+A *Personal Service Business* (PSB) is a CCPC whose owner-operator would reasonably be considered an *employee* of the client but for the corporation in between.  
+The classic case: a consultant working full-time for a single client, on the client's premises, with the client's equipment, on the client's schedule — indistinguishable from a staff employee except that the corp invoices in between.  
+This is a real risk for IT contractors, engineers, and other specialists who incorporate to invoice a single long-term client.  
+
+PSB classification (ITA [s.125(7)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-125.html)) strips most of the favourable CCPC tax treatments and replaces them with a punitive regime:
+- No SBD — PSB income is excluded from active business income, so it cannot use the small-business rate
+- No *general rate reduction* either — taxed at the base federal 28% rather than the 15% general rate
+- Plus an *additional 5% federal tax* on PSB income under ITA [s.123.5](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-123.5.html), bringing the federal portion to 33% — combined ≈ 44.5% in Ontario
+- Almost no deductions allowed under ITA [s.18(1)(p)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-18.html): only salary and benefits paid to the incorporated employee, plus a few narrow items (legal costs to collect on contracts, certain employment-related expenses) — no rent, supplies, professional fees, software, or office costs
+
+Combined effect: a CCPC reclassified as a PSB pays substantially more tax with substantially fewer deductions than either a regular CCPC or the same individual operating as an unincorporated *sole proprietor* would.  
+
+The PSB determination is fact-based and uses the same multi-factor analysis as the employee-vs-contractor test in personal tax — *control* (does the client direct what, when, and how?), *ownership of tools*, *chance of profit / risk of loss*, and *integration* into the client's organization.  
+There are two statutory safe harbours in the s.125(7) definition: the corporation employs more than *five full-time employees* throughout the year, or the services are provided to an *associated corporation* — but neither typically applies to an owner-managed consulting practice.  
+
+For most owner-managed consulting CCPCs the practical protection is in the working arrangement itself: have multiple clients where possible, set your own hours and methods, use your own tools and equipment, carry your own liability insurance, and document a clear independent-contractor relationship in writing.  
+The more factors that point to an independent business rather than a disguised employment relationship, the lower the PSB risk.  
+
+
+# HST and other consumption taxes
+
+The *Goods and Services Tax / Harmonized Sales Tax* (GST/HST) regime is a consumption tax on most goods and services sold in Canada.  
+It's administered by CRA under the *Excise Tax Act* rather than the *Income Tax Act*, and is filed separately from corporate income tax.  
+
+GST/HST comes in two forms:
+- *HST*: a single harmonized system that covers both federal and provincial aspects
+- *GST*: the federal portion only, which applies in provinces and territories that don't use HST
+
+By jurisdiction:
+- HST: Ontario, New Brunswick, Newfoundland and Labrador, Nova Scotia, Prince Edward Island
+- GST + Provincial Sales Tax (PST): British Columbia, Saskatchewan, Manitoba
+- GST + Quebec Sales Tax (QST): Quebec (QST administered separately by Revenu Québec)
+- GST only: Alberta, Yukon, Northwest Territories, Nunavut
+
+This knowledge base focuses on GST/HST; PST and QST follow similar mechanics but are administered separately by each provincial revenue authority and are out of scope here.  
+
+You need to register and file GST/HST once your worldwide *taxable supplies* exceed $30,000 over a rolling 4-quarter window (or in a single quarter) — the *small supplier* threshold.  
+Sales to non-resident customers (e.g. US clients) are *zero-rated*: you charge 0% GST/HST but still claim ITCs on related inputs, and the sale still counts toward the threshold.  
+Below the threshold, voluntary registration is allowed and often worthwhile — it lets you claim ITC refunds even when output tax is small or zero.  
+
+There are two main methods (the *regular method* is the default; the *quick method* requires an election via form GST74, filed through CRA My Business Account):
+- *Regular method*:
+  - Charge GST/HST on sales (the *output tax*)
+  - Claim back the GST/HST paid on inputs (*input tax credits*, ITCs)
+  - Remit the difference to CRA periodically (annually, quarterly, or monthly depending on revenue)
+  - More tax-efficient if you have many inputs (e.g. a physical goods business)
+- *Quick method*:
+  - Charge GST/HST on sales (the *output tax*)
+  - Do not track GST/HST paid on inputs
+  - Remit a portion of the collected amount, and keep the rest as taxable revenue
+  - More tax-efficient if you have few inputs (e.g. consulting service)
+
+It's a separate filing — separate account number, separate set of mechanics.  
+For the practical workflow, see [HST.md](HST.md).  
+
+
+# Filing deadlines and instalments
+
+The owner-manager calendar clusters around a handful of dates. Missing them triggers interest, penalties, or both — including failure-to-file penalties on slips that apply even when no tax is owed.  
+
+**T2 corporate income tax**:
+- *Return*: 6 months after fiscal year-end (ITA [s.150(1)(a)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-150.html))
+- *Balance due*: 3 months after year-end for SBD-eligible CCPCs; 2 months for all other corporations (ITA [s.157](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-157.html))
+  - Note: balance is due *before* the return is due — calculate and pay the year's tax first, then file the return within the longer window
+- *Instalments*: required when prior-year tax exceeds $3,000; quarterly for eligible CCPCs (last day of each fiscal quarter), monthly otherwise
+
+**Information slips (T4 / T5)**:
+- T4 (salary) and T5 (dividends) slips and summaries are due *Feb 28* of the year following the calendar year covered
+- Late-filing penalties are calculated *per slip* (not per filing), so a single missed slip can carry a meaningful penalty
+
+**Payroll source deductions** (if paying salary):
+- Most owner-managed CCPCs remit *monthly*: income tax + CPP + EI by the 15th of the following month
+- Larger employers move to twice-monthly or weekly remittance based on prior-year *AMWA* (average monthly withholding amount)
+
+**GST/HST** (if registered):
+- *Annual* (≤ $1.5M revenue): return + payment 3 months after fiscal year-end
+- *Quarterly* ($1.5M – $6M): 1 month after each quarter end
+- *Monthly* (> $6M): 1 month after each month end
+- Annual filers with prior-year net tax over $3,000 also pay quarterly instalments
+
+**Corporate registry** (not a tax filing):
+- Federal (CBCA): annual return to Corporations Canada within 60 days of incorporation anniversary
+- Provincial: varies (e.g. Ontario annual return through the Ontario Business Registry)
+- Missing the annual return repeatedly can lead to administrative dissolution
+
+**Personal-side dates** (if you also file your own T1):
+- *T1 return*: April 30 (June 15 for self-employed individuals; balance still due April 30)
+- *T1 instalments*: March 15, June 15, September 15, December 15
+- *RRSP contribution deadline*: 60 days after Dec 31 (typically March 1)
+
+
 # Sources of law
 
 When a question gets specific, several layers of authority can apply:
@@ -272,6 +307,8 @@ Each has its own page or section for the detailed mechanics.
   - [s.120.4](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-120.4.html) — *Tax on Split Income* (TOSI), restricting income splitting through dividends to non-active family members
   - [s.123.5](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-123.5.html) — additional 5% federal tax on PSB income
   - [s.125](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-125.html) — Small Business Deduction; s.125(3) sharing among associated corporations; s.125(5.1) AII grind and large-CCPC reduction of the business limit; s.125(7) definition of *Personal Service Business* and the five-full-time-employees safe harbour
+  - [s.150](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-150.html) — T2 corporate return filing deadline (6 months after fiscal year-end)
+  - [s.157](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-157.html) — balance-due dates and corporate tax instalment rules
   - [s.256(5.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-256.html) — *control in fact* test relevant to CCPC status
 - *Income Tax Regulations* (C.R.C., c.945): https://laws-lois.justice.gc.ca/eng/regulations/C.R.C.,_c._945/
 - *Excise Tax Act* (R.S.C. 1985, c.E-15) — federal statute governing GST/HST: https://laws-lois.justice.gc.ca/eng/acts/E-15/
