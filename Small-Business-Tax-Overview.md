@@ -27,7 +27,12 @@ Limitations:
 # What corporate tax is
 
 A corporation is a separate legal and tax entity from its shareholders.  
-Corporations can be used to limit liability and for tax planning.
+Corporations can be used to limit liability and for tax planning.  
+
+There are two types of corporations, federal and provincial:
+- They are taxed similarly, but have differences in corporate law
+- For a single-province owner-managed CCPC, provincial is usually the simpler and cheaper choice
+- Federal corporations require additional paperwork, which is outside the scope of this knowledge base
 
 Corporations can make money from active business, or from passive investments (e.g. an ETF).  
 Net income (or loss) is calculated as: revenue - expenses (tracked separately for active vs passive).  
@@ -85,11 +90,36 @@ A practical tip: keep the books current during the year (monthly is typical) —
 
 # HST and other consumption taxes
 
-This page (and most of this repo) is about *corporate income tax* — what the corporation owes on its earnings each year via the T2.  
-Running alongside that is the *Goods and Services Tax / Harmonized Sales Tax* (GST/HST) regime: a consumption tax on most goods and services sold in Canada, administered by CRA under the *Excise Tax Act* rather than the *Income Tax Act*.  
+The *Goods and Services Tax / Harmonized Sales Tax* (GST/HST) regime is a consumption tax on most goods and services sold in Canada.  
+It requires a separate filing from corporate income tax because it's administered by CRA under the *Excise Tax Act* rather than the *Income Tax Act*.  
 
-A business that exceeds $30,000 in annual taxable revenue (the *small supplier* threshold) generally must register, charge GST/HST on its sales (the *output tax*), claim back the GST/HST it paid on its inputs (*input tax credits*, ITCs), and remit the difference to CRA on a periodic schedule (annually, quarterly, or monthly depending on revenue).  
-The rate varies by province — 5% federal GST in non-harmonized provinces (e.g. Alberta, BC), 13% HST in Ontario, 15% HST in the Atlantic provinces; Quebec runs a parallel *QST* administered separately by Revenu Québec.  
+There are two versions of the federal-side tax:
+- *HST*: a single harmonized system that covers both federal and provincial aspects
+- *GST*: the federal portion only, which applies in provinces and territories that don't use HST
+
+By jurisdiction:
+- HST: Ontario, New Brunswick, Newfoundland and Labrador, Nova Scotia, Prince Edward Island
+- GST + Provincial Sales Tax (PST): British Columbia, Saskatchewan, Manitoba
+- GST + Quebec Sales Tax (QST): Quebec (QST administered separately by Revenu Québec)
+- GST only: Alberta, Yukon, Northwest Territories, Nunavut
+
+This knowledge base focuses on GST/HST; PST and QST follow similar mechanics but are administered separately by each provincial revenue authority and are out of scope here.  
+
+You need to register and file GST/HST once your worldwide *taxable supplies* exceed $30,000 over a rolling 4-quarter window (or in a single quarter) — the *small supplier* threshold.  
+Sales to non-resident customers (e.g. US clients) are *zero-rated*: you charge 0% GST/HST but still claim ITCs on related inputs, and the sale still counts toward the threshold.  
+Below the threshold, voluntary registration is allowed and often worthwhile — it lets you claim ITC refunds even when output tax is small or zero.  
+
+The two main methods most small businesses use (the *regular method* is the default; the *quick method* requires an election via form GST74, filed through CRA My Business Account):
+- *Regular method*:
+  - Charge GST/HST on sales (the *output tax*)
+  - Claim back the GST/HST paid on inputs (*input tax credits*, ITCs)
+  - Remit the difference to CRA periodically (annually, quarterly, or monthly depending on revenue)
+  - More tax-efficient if you have many inputs (e.g. a physical goods business)
+- *Quick method*:
+  - Charge GST/HST on sales (the *output tax*)
+  - Do not track GST/HST paid on inputs
+  - Remit a portion of the collected amount, and keep the rest as taxable revenue
+  - More tax-efficient if you have few inputs (e.g. consulting service)
 
 GST/HST does not flow through the T2 — it's a separate filing, a separate account number, and a separate set of mechanics.  
 For the practical workflow, see [HST.md](HST.md).  
