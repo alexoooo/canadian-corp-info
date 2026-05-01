@@ -11,7 +11,7 @@ This page is a primer for the topics covered in the rest of this knowledge base.
 **TLDR**:
 - A *Canadian-Controlled Private Corporation* (CCPC) files an annual T2 corporate income tax return — separate from the owner's personal T1
 - Books are kept in *double-entry*; at year-end the chart of accounts is mapped to *GIFI* codes for Schedules 100 and 125
-- Active business income gets a reduced rate (the *Small Business Deduction*, *SBD*) on the first $500,000 per year
+- Active business income gets a reduced rate (the *Small Business Deduction*, SBD) on the first $500,000 per year
   - Investment income (from a corporate brokerage account) is taxed at a much higher rate, but partially refundable when paid out as a dividend
 - You can pay yourself either a salary (deductible expense) or dividends (paid out of retained earnings)
 - *Integration* means a dollar earned directly or through a CCPC should be taxed roughly equally
@@ -30,9 +30,9 @@ A corporation is a separate legal and tax entity from its shareholders.
 Corporations can be used to limit liability and for tax planning.  
 
 There are two types of corporations, federal and provincial:
-- They are taxed similarly, but have differences in corporate law
+- They are taxed the same way; the differences are in corporate law (governing statute, registration jurisdiction, name-protection scope, director rules)
 - For a single-province owner-managed CCPC, provincial is usually the simpler and cheaper choice
-- Federal corporations require additional paperwork, which is outside the scope of this knowledge base
+- Federal corporations require extra-provincial registration in each province where the corp operates, which adds annual filings
 
 Corporations can make money from active business, or from passive investments (e.g. an ETF).  
 Net income (or loss) is calculated as: revenue - expenses (tracked separately for active vs passive).  
@@ -91,9 +91,9 @@ A practical tip: keep the books current during the year (monthly is typical) —
 # HST and other consumption taxes
 
 The *Goods and Services Tax / Harmonized Sales Tax* (GST/HST) regime is a consumption tax on most goods and services sold in Canada.  
-It requires a separate filing from corporate income tax because it's administered by CRA under the *Excise Tax Act* rather than the *Income Tax Act*.  
+It's administered by CRA under the *Excise Tax Act* rather than the *Income Tax Act*, and is filed separately from corporate income tax.  
 
-There are two versions of the federal-side tax:
+GST/HST comes in two forms:
 - *HST*: a single harmonized system that covers both federal and provincial aspects
 - *GST*: the federal portion only, which applies in provinces and territories that don't use HST
 
@@ -109,7 +109,7 @@ You need to register and file GST/HST once your worldwide *taxable supplies* exc
 Sales to non-resident customers (e.g. US clients) are *zero-rated*: you charge 0% GST/HST but still claim ITCs on related inputs, and the sale still counts toward the threshold.  
 Below the threshold, voluntary registration is allowed and often worthwhile — it lets you claim ITC refunds even when output tax is small or zero.  
 
-The two main methods most small businesses use (the *regular method* is the default; the *quick method* requires an election via form GST74, filed through CRA My Business Account):
+There are two main methods (the *regular method* is the default; the *quick method* requires an election via form GST74, filed through CRA My Business Account):
 - *Regular method*:
   - Charge GST/HST on sales (the *output tax*)
   - Claim back the GST/HST paid on inputs (*input tax credits*, ITCs)
@@ -121,7 +121,7 @@ The two main methods most small businesses use (the *regular method* is the defa
   - Remit a portion of the collected amount, and keep the rest as taxable revenue
   - More tax-efficient if you have few inputs (e.g. consulting service)
 
-GST/HST does not flow through the T2 — it's a separate filing, a separate account number, and a separate set of mechanics.  
+It's a separate filing — separate account number, separate set of mechanics.  
 For the practical workflow, see [HST.md](HST.md).  
 
 
