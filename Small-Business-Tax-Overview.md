@@ -59,11 +59,11 @@ Most owner-managers prepare the T2 using dedicated software (FutureTax, TaxCycle
 
 # Bookkeeping, the general ledger, and GIFI
 
-The T2 doesn't appear from nowhere — every line traces back to the corporation's *books*: the running record of every financial transaction it makes during the year.  
+Every line on the T2 traces back to the corporation's *books*: the running record of every financial transaction it makes during the year.  
 For a small CCPC, books are typically kept in accounting software (QuickBooks, Wave, Xero) or a structured spreadsheet, and reviewed annually before the T2 is filed.  
 Income earned from operations is *revenue*; costs of operating are *expenses*.  
 
-The basic mental model:
+In short:
 - *Double-entry* — every transaction posts equal *debits* (Dr) and *credits* (Cr) across two or more accounts; the books always balance
 - *Chart of accounts* — the corporation's own list of named accounts (cash, accounts receivable, revenue, expenses, retained earnings, etc.); names and structure are your choice
 - *Account classification* — every account is one of five types: *asset*, *liability*, *equity*, *revenue*, or *expense*; the *accounting equation* Assets = Liabilities + Equity always holds (revenue and expenses roll into equity through retained earnings at year-end)
@@ -85,7 +85,7 @@ GIFI codes are four-digit numbers organized by financial-statement section — f
 The full list and mapping rules are in CRA's *RC4088 — General Index of Financial Information*.  
 
 The bookkeeping convention this repo follows — explicit Dr/Cr postings paired with specific GIFI codes — appears in worked examples throughout the per-topic pages; see [T3.md](T3.md), [T5008.md](T5008.md), [Shareholder-Dividends.md](Shareholder-Dividends.md), and [Adjusted-Cost-Base.md](Adjusted-Cost-Base.md) for concrete entries.  
-A practical tip: keep the books current during the year (monthly is typical) — reconstructing twelve months of activity at year-end is the most common avoidable cause of T2 filing pain.  
+Keep the books current during the year (monthly is typical) — reconstructing twelve months of activity at year-end is the most common avoidable cause of T2 filing difficulties.  
 
 
 # CCPC status
@@ -95,8 +95,15 @@ A *Canadian-Controlled Private Corporation* (CCPC) is a corporation that is:
 - Private (not listed on a designated stock exchange)
 - Not controlled — directly or indirectly — by non-residents or by public corporations
 
-CCPC status unlocks several preferential tax treatments most relevant to owner-managers: the *Small Business Deduction* (SBD), the *Lifetime Capital Gains Exemption* (LCGE) on *Qualified Small Business Corporation* (QSBC) shares, and refundable-tax mechanics on investment income.  
-For a corporation incorporated in Canada and directly owned by Canadian-resident individuals with no public listing, CCPC status will usually apply, though control rules — including the *control in fact* test under ITA [s.256(5.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-256.html) — and certain share arrangements (e.g. options or shareholder agreements that give effective control to a non-resident or public corporation) can change the result.  
+CCPC status unlocks several preferential tax treatments:
+- The *Small Business Deduction* (SBD)
+- The *Lifetime Capital Gains Exemption* (LCGE) on *Qualified Small Business Corporation* (QSBC) shares
+- Refundable-tax mechanics on investment income
+
+For a corporation incorporated in Canada and directly owned by Canadian-resident individuals with no public listing, CCPC status usually applies.  
+Things that can change the result:
+- The *control in fact* test under ITA [s.256(5.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-256.html)
+- Certain share arrangements (e.g. options or shareholder agreements that give effective control to a non-resident or public corporation)
 
 
 # The two buckets of corporate income
@@ -118,12 +125,12 @@ Note that most Canadian ETFs are *mutual fund trusts* rather than corporations �
 
 # Integration
 
-*Integration* is the principle that ties everything together: the combined corporate + personal tax on a dollar of income that flows through a CCPC and out to the shareholder should roughly equal the personal tax on the same dollar earned directly.  
+*Integration* is the principle linking corporate and personal tax: the combined corporate + personal tax on a dollar of income that flows through a CCPC and out to the shareholder should roughly equal the personal tax on the same dollar earned directly.  
 
 Mechanically, integration is delivered through the *dividend gross-up and tax credit*: when the corporation pays a dividend, the shareholder grosses up the cash amount to a notional pre-corp-tax figure, pays personal tax on the grossed-up amount, and claims a *dividend tax credit* (DTC) calibrated to offset the corporate tax already paid.  
 
 Integration is approximate, not exact — it works best when the actual corporate rate matches the rate the gross-up and DTC are calibrated to; different provinces and income sources produce small over- or under-taxation.  
-The takeaway: paying yourself a dividend isn't "double-taxed" the way corporate dividends are in some other jurisdictions; the system tries hard to make it neutral.  
+So a dividend isn't "double-taxed" the way corporate dividends are in some other jurisdictions — the gross-up + DTC mechanics are designed to make it neutral.  
 For the full integration framework and dividend mechanics, see [Shareholder-Dividends.md](Shareholder-Dividends.md).  
 
 
@@ -219,7 +226,7 @@ For the practical workflow, see [HST.md](HST.md).
 
 # Filing deadlines and instalments
 
-The owner-manager calendar clusters around a handful of dates. Missing them triggers interest, penalties, or both — including failure-to-file penalties on slips that apply even when no tax is owed.  
+These are the dates an owner-manager has to track. Missing them triggers interest, penalties, or both — including failure-to-file penalties on slips that apply even when no tax is owed.  
 
 **T2 corporate income tax**:
 - *Return*: 6 months after fiscal year-end (ITA [s.150(1)(a)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-150.html))
@@ -264,10 +271,10 @@ When a question gets specific, several layers of authority can apply:
 - **Case law** — court decisions interpreting disputed tax provisions; binding, and can change how a section applies even when the statutory text hasn't moved
 - **CRA administrative position** — *Income Tax Folios* (formerly IT bulletins), CRA guides (T4012, T4015, RC4088), advance rulings, and the actual T2 / Schedule 3 / T5 forms; *not law*, but how CRA reads and administers the ITA in practice; CRA's published positions are the practical compliance baseline, though they are not legally binding and have been overturned in court — a taxpayer can challenge an interpretation in Tax Court
 
-A useful mental model:
+The structure:
 - The *ITA* is the primary statement of substantive federal tax law
 - *Regulations* fill in binding operational and substantive detail authorized by the ITA
-- *CRA guidance* describes how CRA interprets and administers the rules in practice — the practical compliance baseline, but not legally binding
+- *CRA guidance* describes how CRA interprets and administers the rules in practice — followed in practice but not legally binding
 - *Corporate statutes* govern whether the underlying corporate action is itself legally valid
 - *Treaties* override the ITA in international situations
 - *Case law* resolves disputed interpretations

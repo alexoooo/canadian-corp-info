@@ -48,10 +48,80 @@ These rules encode actual decisions made across the existing guides. Follow them
 
 ## Style
 
-- **Bullet points**: no trailing period; if a point needs to say more than one thing, use a sub-bullet rather than adding a second clause to the same line
-- **Schedule names**: spell out on first use within a section (e.g. "Schedule 3"), then abbreviate ("S3"); don't mix forms within the same section
-- **Tax-term emphasis**: use *italics* for tax terms being introduced or contrasted; use `code` style only for actual spreadsheet identifiers, formula names, or CRA box labels
-- **Inline citations**: anchor ITA section references at the point the rule first appears (e.g. `(ITA s.47(1))`), not only in the Citations block
+The repo has two registers — keep them consistent within a page.
+
+### Two voices
+
+- **Primer voice** (`Small-Business-Tax-Overview.md`, `README.md`): third-person factual, concept-oriented, no procedure
+- **Operational voice** (per-topic pages: `Adjusted-Cost-Base.md`, `T3.md`, `T5008.md`, `Capital-Dividend-Account.md`): second-person imperative, procedure-oriented, concrete debit/credit and schedule-entry walkthroughs with worked numerical examples
+
+Surface rules below apply to both voices unless noted.
+
+### Section rhythm
+
+- A section is a stack of short stanzas separated by blank lines
+- A stanza is either:
+  - 1–3 short factual sentences, each on its own line ending with two trailing spaces (`  `) so they render as separate lines without a paragraph break
+  - A colon lead-in followed by a bullet group
+- Stanzas appear in sequence without connective tissue ("broadly speaking", "in turn", "in essence", "the takeaway is", "consequently") — let facts stand and trust the reader
+
+### Bullet structure
+
+- No trailing period on bullets
+- One fact per bullet; if a point needs more, use a sub-bullet rather than extending the parent line
+- Each bullet group is preceded by a short lead-in line ending in a colon ("GST/HST comes in two forms:", "By jurisdiction:", "Things that increase your ACB:")
+- Lead-ins are sentence-fragment labels, not narrative ("Here are the…" / "The following lists…")
+
+### Sentences
+
+- Short, declarative, one fact per sentence
+- Avoid multi-clause em-dash chains — break into a lead-in + bullets instead
+- Caveats fold inline as parentheticals or sub-bullets, not as separate "Note in particular X" pointer-sentences
+- State rules as facts (`ACB cannot be negative.`), not as design intent ("the system is designed so…")
+
+### Headings
+
+- Noun phrases or concrete operations: `T3 boxes`, `Trading fees`, `Foreign assets and FX conversion to CAD`, `Sources of law`
+- Never rhetorical or marketing-style: avoid `Why X matters`, `Understanding Y`, `What you need to know about Z`
+- Short — 2–6 words is typical
+
+### Voice and pronouns
+
+- **Primer voice**: third-person factual ("A corporation is…", "Active business income is taxed at…")
+- **Operational voice**: second-person imperative for the reader-as-bookkeeper ("Debit X", "Maintain a running total", "Enter the order…"); first-person plural sparingly for shared bookkeeping conventions ("we want to roll up to GIFI codes")
+- Disclaimers and uncertainty are first-person ("my understanding as of 2026", "I am not an accountant")
+- Avoid hedge stacking ("generally", "typically", "approximately", "for the most part") — use one hedge per claim if any
+
+### Examples and concreteness
+
+- **Primer voice**: small parenthetical groundings (`(e.g. an ETF)`, `(FutureTax, TaxCycle, ProFile)`, `(industry jargon for the main return)`)
+- **Operational voice**: explicit worked examples with concrete dollar values and a `Year 1 / Year 2 / Year 3` progression where state evolves; show debits/credits as labeled ledger lines
+
+### Tax-term emphasis
+
+- *Italics* for tax terms being introduced or contrasted; ITA, CRA, GST, HST, T1, T2, etc. are unitalicized once they are common-noun-like
+- `code` style only for actual spreadsheet identifiers, formula names, GIFI account codes, or CRA box labels
+- Schedule names: spell out on first use within a section ("Schedule 3"), then abbreviate ("S3"); don't mix forms within the same section
+
+### Citations
+
+- Inline parenthetical at the point a rule first appears: `(ITA [s.47(1)](…))`, linked to laws-lois
+- Comprehensive `# Citations` section near the end of every mature page; each entry has a short hyphen-explanation of what the section covers (`s.40(3) - deemed capital gain when ACB would be driven below zero`)
+- Citations are concrete and authoritative — no vague "per CRA guidance" without a pointer
+
+### Page shape
+
+For mature pages:
+1. `**Who this is for**:` line
+2. Optional `**TLDR**:` line or block
+3. `Limitations:` block
+4. Walkthrough sections (the body)
+5. `# Related` — list of sibling pages
+6. `# Citations` — ITA sections, CRA forms, external resources
+7. `# Links` (optional) — informal external references
+8. `# TODO` (optional)
+
+Stub pages keep `STATUS: WORK IN PROGRESS` at the top.
 
 ---
 
