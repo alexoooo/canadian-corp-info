@@ -62,11 +62,10 @@ Most owner-managers prepare the T2 using dedicated software (FutureTax, TaxCycle
 # Bookkeeping, the general ledger, and GIFI
 
 Every line on the T2 traces back to the corporation's *books*: the running record of every financial transaction it makes during the year.  
-For a small CCPC, books are typically kept in accounting software (QuickBooks, Wave, Xero) or a structured spreadsheet, and reviewed annually before the T2 is filed.  
-Income earned from operations is *revenue*; costs of operating are *expenses*.  
+For a small CCPC, books are typically kept in accounting software (GnuCash, QuickBooks, Wave, Xero) or a structured spreadsheet, and reviewed annually before the T2 is filed.  
 
 In short:
-- *Double-entry*: every transaction posts equal *debits* (Dr) and *credits* (Cr) across two or more accounts; the books always balance
+- *Double-entry*: every transaction posts equal *debits* and *credits* across two or more accounts; the books always balance
 - *Chart of accounts*: the corporation's own list of named accounts (cash, accounts receivable, revenue, expenses, retained earnings, etc.); names and structure are your choice
 - *Account classification*: every account is one of five types: *asset*, *liability*, *equity*, *revenue*, or *expense*; the *accounting equation* Assets = Liabilities + Equity always holds (revenue and expenses roll into equity through retained earnings at year-end)
 - *General ledger*: the running list of every posted entry, grouped by account
@@ -76,7 +75,8 @@ Two further conventions govern how transactions are recorded:
 - *Accrual accounting* (required) determines *when* a transaction is recorded:
   - For revenue: when you send the invoice (not when cash arrives)
   - For expenses: when you receive the vendor bill (not when you pay)
-- *Basis of accounting* determines *how* the amount is measured. The simplest is *tax basis*, where revenue and expenses follow ITA rules so the books and the T2 numbers match exactly
+- *Basis of accounting* determines *how* the amount is measured
+  - The simplest is *tax basis*, where revenue and expenses follow ITA rules so the books and the T2 numbers match exactly
 
 These are independent choices, and the typical small-CCPC setup is *accrual + tax basis*.
 
@@ -84,13 +84,13 @@ A *cash flow statement* and *statement of retained earnings* are not required fo
 A full set of GAAP-compliant statements (*ASPE* for private corporations, *IFRS* for public ones) is only required if a third party (bank, outside shareholder) asks for it.  
 
 *GIFI* (*General Index of Financial Information*) is CRA's standardized chart-of-accounts coding.  
-At T2 time each account must be mapped to a GIFI code so that Schedule 100 (balance sheet) and Schedule 125 (income statement) can be filed in a CRA-readable form.  
+Each account must be mapped to a GIFI code in T2 Schedule 100 (balance sheet) and Schedule 125 (income statement).  
 GIFI codes are four-digit numbers organized by financial-statement section — for example, 1001 cash, 3849 retained earnings end-of-year, 8000-series revenue, 9999 net income.  
 The full list and mapping rules are in CRA's *RC4088 - General Index of Financial Information*.  
 
-The bookkeeping convention this repo follows is explicit Dr/Cr postings paired with specific GIFI codes.  
+The bookkeeping convention this repo follows is explicit Debit/Credit postings paired with specific GIFI codes.  
 See [T3.md](T3.md), [T5008.md](T5008.md), [Shareholder-Dividends.md](Shareholder-Dividends.md), and [Adjusted-Cost-Base.md](Adjusted-Cost-Base.md) for concrete worked examples.  
-Keep the books current during the year (monthly is typical) — reconstructing twelve months of activity at year-end is the most common avoidable cause of T2 filing difficulties.  
+Keep the books current during the year (monthly is typical) — reconstructing past months of activity at year-end is difficult.  
 
 
 # CCPC status
