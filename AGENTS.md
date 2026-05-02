@@ -71,6 +71,7 @@ Surface rules below apply to both voices unless noted.
 - One fact per bullet; if a point needs more, use a sub-bullet rather than extending the parent line
 - Each bullet group is preceded by a short lead-in line ending in a colon ("GST/HST comes in two forms:", "By jurisdiction:", "Things that increase your ACB:")
 - Lead-ins are sentence-fragment labels, not narrative ("Here are the…" / "The following lists…")
+- For term-definition bullets (`- *term*: definition`), use a colon, not an em-dash; reserve em-dashes for separating an independent clause from a qualification or example mid-sentence ("`*GST/HST* runs alongside income tax — rate and structure vary by province`")
 
 ### Sentences
 

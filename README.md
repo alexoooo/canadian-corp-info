@@ -11,6 +11,7 @@ Disclaimer: I am not an accountant, this is not financial or tax advice.
 
 # Topics
 
+- [Small-Business-Tax-Overview](Small-Business-Tax-Overview.md)
 - [Adjusted Cost Base](Adjusted-Cost-Base.md)
   - [Adjusted Cost Base - Tracking](Adjusted-Cost-Base-Tracking.md)
 - [Capital Dividend Account](Capital-Dividend-Account.md)
