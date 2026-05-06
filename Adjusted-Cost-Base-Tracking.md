@@ -15,7 +15,7 @@ Limitations:
 - Tax information can change over time; the following is my understanding as of 2026 (see [Adjusted Cost Base](Adjusted-Cost-Base.md) for background)  
 
 
-# Investment identification - security master
+## Investment identification - security master
 
 You need to identify investments for record keeping and T2 reporting.  
 
@@ -41,7 +41,7 @@ It is only used internally to facilitate consistent reporting, so it can be as m
 ![Example of Security Master Spreadsheet](media/Security-Master_Example.png)
 
 
-# Spreadsheet template
+## Spreadsheet template
 
 Any spreadsheet software could be used (Excel, LibreOffice Calc, etc.), the example here uses Google Sheets.  
 
@@ -54,7 +54,7 @@ Screenshot:
 You can keep this as a separate workbook, or as a single sheet within a larger workbook (if that is more convenient).  
 
 
-# Inputs: what information is used
+## Inputs: what information is used
 
 Inputs (from investment confirmations and T3):
 - `Date`:
@@ -83,7 +83,7 @@ Inputs (from investment confirmations and T3):
   - Can leave blank if there is nothing particularly noteworthy about transaction
 
 
-# Inputs: data entry
+## Inputs: data entry
 
 Rows must be entered in transaction order for each Symbol.  
 
@@ -112,7 +112,7 @@ Example of Trade Confirmation (Sell, CAD):
     https://www.bankofcanada.ca/rates/exchange/daily-exchange-rates-lookup/
 
 
-# Outputs: where to use them and how are they calculated
+## Outputs: where to use them and how are they calculated
 
 Outputs (cumulative per symbol):
 - `Remaining Quantity` = `Previous Remaining Quantity` + `Quantity Change`  
@@ -128,7 +128,7 @@ Outputs (cumulative per symbol):
   Earliest date of continuous holding for the current pooled position, used in S6
 
 
-# Intermediate calculations
+## Intermediate calculations
 
 - `Previous Row for Symbol` =  
   &ensp; IFERROR(  
@@ -162,7 +162,7 @@ Outputs (cumulative per symbol):
 - `ACB Change` = `ACB Change - Buy` + `ACB Change - Sell` + `ACB Change - ROC` + `ACB Change - Phantom`
 
 
-# Notes
+## Notes
 
 - For Buy, the commission increases ACB; for Sell, the commission reduces proceeds and is not part of ACB
 - For ROC, keep the sign from the slip: a positive amount reduces ACB, and a negative amount increases ACB
@@ -179,13 +179,13 @@ Outputs (cumulative per symbol):
 - DRIP can be entered as Buy with `Commission` = 0; use the payment/reinvestment date (when the units are credited to your account) as `Date`, and the FX rate for that same date
 
 
-# Related
+## Related
 
 - [Adjusted-Cost-Base.md](Adjusted-Cost-Base.md) — foundational ACB concepts, FX rate convention, and pooling rules this template implements
 - [Bank of Canada daily exchange rates](https://www.bankofcanada.ca/rates/exchange/daily-exchange-rates-lookup/) — source for FX CAD Rate values
 
 
-# Citations
+## Citations
 
 - ITA [s.47(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-47.html) — pooled average cost (WAC) mandatory for identical properties
 

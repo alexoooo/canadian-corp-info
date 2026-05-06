@@ -1,6 +1,8 @@
 STATUS: WORK IN PROGRESS
 
 
-# HST (Quick Method)
+# HST
 
-# HST Input Tax Credit
+## HST (Quick Method)
+
+## HST Input Tax Credit

@@ -4,12 +4,12 @@ Information about corporate tax, accounting, and other paperwork.
 This information is intended for small business (Canadian-Controlled Private Corporation, CCPC) owners to help with paperwork and tax filing.  
 
 Over the years of bookkeeping and tax filing, certain questions recur, and there are many conflicting and incomplete answers on the internet.  
-This knowledge base is an attempt to consolidate practical guidance on how to handle these different situations reasonably.  
+This guide is an attempt to consolidate practical guidance on how to handle these different situations reasonably.  
 
 Disclaimer: I am not an accountant, this is not financial or tax advice.
 
 
-# Topics
+## Topics
 
 - [Small-Business-Tax-Overview](Small-Business-Tax-Overview.md)
 - [Adjusted Cost Base](Adjusted-Cost-Base.md)

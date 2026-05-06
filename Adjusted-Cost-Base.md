@@ -16,7 +16,7 @@ Tax information can change over time (e.g. the capital gains inclusion rate was 
 The following is my understanding as of 2026.  
 
 
-# Definitions
+## Definitions
 
 Adjusted Cost Base (ACB) is used to calculate capital gains or losses when you sell an asset:  
 - ACB = cost of the property + acquisition costs + adjustments over time
@@ -34,7 +34,7 @@ Market Value:
 - Not used for any tax calculations
 
 
-# What changes the ACB
+## What changes the ACB
 
 Things that increase your ACB:
 - Purchasing a security
@@ -66,7 +66,7 @@ Corporate actions can increase or decrease your ACB:
   tracking them as two separate pooled positions (s.86.1 eligible foreign spin-offs follow the issuer's allocation notice instead; that path is not covered here)
 
 
-# Book Cost vs ACB
+## Book Cost vs ACB
 
 Ideally Book Cost would equal ACB, but in practice you might see brokerage-dependent differences with the following:
 - Phantom distributions: non-cash portion of T3 Box 21
@@ -83,7 +83,7 @@ Depending on your brokerage, you might see:
 - It might be possible to raise a discrepancy with your brokerage, and they could re-issue T3 or T5008 slips  
 
 
-# Trading fees
+## Trading fees
 
 Trading fees to buy a security increase your ACB (i.e. they are "capitalized", not counted as an expense).  
 
@@ -93,14 +93,14 @@ Trading fees to sell a security:
 - Are treated as "Outlays and expense from disposition" in T2 S6
 
 
-# Date of acquisition for pooled securities
+## Date of acquisition for pooled securities
 
 ACB uses pooled average cost across all identical properties (not FIFO or LIFO) (ITA [s.47(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-47.html)).  
 When you sell and fill out the T2 S6 entry, you will need to specify a "Date of acquisition".  
 For pooled securities, use the date of the very first purchase that contributed to the current pool — this is a conservative convention in the absence of specific CRA guidance.  
 
 
-# Foreign assets and FX conversion to CAD
+## Foreign assets and FX conversion to CAD
 
 If you hold USD or other foreign assets, you must convert to CAD when calculating ACB (you can use the Bank of Canada daily exchange rate — the indicative midpoint published at approximately 16:30 ET; the legacy noon rate is no longer published):  
 - Purchases and sales: use the exchange rate for the trade date (not settlement date)  
@@ -110,7 +110,7 @@ If you hold USD or other foreign assets, you must convert to CAD when calculatin
 - For ACB purposes, always use the daily exchange rate as specified above  
 
 
-# Corporate vs personal ACB
+## Corporate vs personal ACB
 
 If you hold a security in a personal account, as well as in your corporation's account, they are considered assets of two distinct legal entities.  
 You track the ACB for each entity separately, even if they hold the identical security.  
@@ -118,7 +118,7 @@ You track the ACB for each entity separately, even if they hold the identical se
 Note that while ACB is tracked separately, personal and corporate accounts are "affiliated persons" for the purpose of superficial loss (see below).
 
 
-# Capital loss carry forward / back / superficial loss
+## Capital loss carry forward / back / superficial loss
 
 Capital losses can be carried forward indefinitely to offset future capital gains, and they can be carried back 3 years.  
 To carry back a capital loss, a corporation uses T2 Schedule 4 (S4, Corporation Loss Continuity and Application), which triggers a reassessment of the prior-year T2.  
@@ -138,7 +138,7 @@ There are limitations on which losses can be claimed, make sure you don't get a 
     the corporate loss can be a superficial loss even though the repurchase happened in a different account
 
 
-# Related
+## Related
 
 - [Adjusted Cost Base Tracking](Adjusted-Cost-Base-Tracking.md)
 - [Capital Dividend Account](Capital-Dividend-Account.md)
@@ -147,7 +147,7 @@ There are limitations on which losses can be claimed, make sure you don't get a 
 - [Foreign-Currency](Foreign-Currency.md)
 
 
-# Citations
+## Citations
 
 - Income Tax Act (R.S.C., 1985, c. 1 (5th Supp.)):
   - [s.40(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-40.html) - capital gain and capital loss formula, including outlays and expenses on disposition
@@ -162,13 +162,13 @@ There are limitations on which losses can be claimed, make sure you don't get a 
 - Bank of Canada daily exchange rates: https://www.bankofcanada.ca/rates/exchange/daily-exchange-rates/
 
 
-# Links
+## Links
 
 - Related to personal taxes, but still relevant: https://www.finiki.org/wiki/Adjusted_cost_base
 - https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4037/capital-gains.html
 - https://www.cifinancial.com/ci-gam/ca/en/expert-insights/articles/etf-taxation--tax-loss-selling-and-identical-property.html
 
 
-# Todo:
+## Todo:
 
 - Elaborate on foreign currency conversion, cross-reference with Foreign-Currency.md  

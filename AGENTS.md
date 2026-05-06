@@ -15,7 +15,7 @@ The audience is narrow: owners of a Canadian-controlled private corporation (CCP
 
 ## Document architecture
 
-`README.md` is the topic index. Each top-level `.md` is a standalone guide for one paperwork/tax area, but they form a dependency graph rather than a flat collection:
+`README.md` is the topic index. Each top-level `.md` is a standalone page in the guide, covering one paperwork/tax area; the pages form a dependency graph rather than a flat collection:
 
 - **`Adjusted-Cost-Base.md`** — foundational concepts; other guides assume this vocabulary (ACB, ROC, phantom distributions, Book Cost vs ACB)
 - **`Adjusted-Cost-Base-Tracking.md`** — operational companion to the above; contains the spreadsheet workflow: row-order assumptions, formulas, transaction-type conventions; ACB-related edits elsewhere must stay consistent with this file
@@ -32,7 +32,7 @@ When adding or substantially restructuring a topic, update `README.md` so the in
 
 These rules encode actual decisions made across the existing guides. Follow them when editing or adding content.
 
-- **Three distinct registers — keep them separate**: CRA/tax rules (what the law and forms require), bookkeeping conventions (how this repo posts entries), and brokerage-specific behavior (what statements actually show, often inconsistently); several documents explicitly contrast official tax treatment with the pragmatic ledger conventions used to reconcile broker statements; preserve that separation rather than collapsing it
+- **Three distinct registers — keep them separate**: CRA/tax rules (what the law and forms require), bookkeeping conventions (how this guide posts entries), and brokerage-specific behavior (what statements actually show, often inconsistently); several documents explicitly contrast official tax treatment with the pragmatic ledger conventions used to reconcile broker statements; preserve that separation rather than collapsing it
 - **Cross-link, don't duplicate**: topic pages refer to each other through inline links and a `Related` section near the end; if you find yourself re-explaining ACB inside `T3.md`, link to `Adjusted-Cost-Base.md` instead
 - **Citations are concrete and authoritative**: existing pages cite the Income Tax Act, CRA forms/schedules, CRA guides, and Bank of Canada FX rates directly; match that — no vague "per CRA guidance" without a pointer
 - **Standard page shape** (where the page is mature): audience/scope at the top, walkthrough sections in the middle, then `Related`, `Citations`, and optionally `TODO` near the end
@@ -48,7 +48,7 @@ These rules encode actual decisions made across the existing guides. Follow them
 
 ## Style
 
-The repo has two registers — keep them consistent within a page.
+The guide has two registers — keep them consistent within a page.
 
 ### Two voices
 
@@ -82,6 +82,7 @@ Surface rules below apply to both voices unless noted.
 
 ### Headings
 
+- Heading levels: `#` for the page title (one per file), `##` for section headings, `###` for sub-sections under a section
 - Noun phrases or concrete operations: `T3 boxes`, `Trading fees`, `Foreign assets and FX conversion to CAD`, `Sources of law`
 - Never rhetorical or marketing-style: avoid `Why X matters`, `Understanding Y`, `What you need to know about Z`
 - Short — 2–6 words is typical

@@ -10,7 +10,7 @@ Limitations:
 - The following is my understanding as of 2026
 
 
-# Details
+## Details
 
 The Capital Dividend Account is not part of the ledger; it can be tracked separately (e.g. in a spreadsheet).  
 The CDA can be used to pay the tax-free portion of the cumulative net capital gain from the corporation to the shareholders with a capital dividend.  
@@ -54,7 +54,7 @@ Since this is a tax-free amount for Canadian residents, the shareholder recipien
 If a shareholder is a non-resident, the capital dividend is subject to a Part XIII withholding tax (usually 25%, potentially reduced by a treaty), so it isn't "tax-free" for them.  
 
 
-# Submitting S89 and Form T2054
+## Submitting S89 and Form T2054
 
 CRA allows S89 and Form T2054 to be submitted by:
 - CRA My Business Account using "Submit documents"
@@ -75,14 +75,14 @@ The CRA My Business Account website can change over time, here are steps as of 2
 ![Screenshot of submitting CRA documents in CRA My Business Account](media/CRA-My-Business-Account_Submit-documents_Capital-Dividend.png)
 
 
-# Related
+## Related
 
 - [Adjusted Cost Base](Adjusted-Cost-Base.md)
 - [T3](T3.md)
 - [T5008](T5008.md)
 
 
-# Citations
+## Citations
 
 - Income Tax Act (R.S.C., 1985, c. 1 (5th Supp.)):
   - [s.83(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-83.html) - capital dividend election: the corporation elects in prescribed form and at or before the payment date
@@ -95,7 +95,7 @@ The CRA My Business Account website can change over time, here are steps as of 2
 - CRA Form T5: https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t5.html
 
 
-# TODO:
+## TODO:
 
 - Include template for resolution to declare capital dividend  
 - Include spreadsheet to be used as template for CDA calculation  

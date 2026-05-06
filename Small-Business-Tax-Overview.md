@@ -6,7 +6,7 @@ STATUS: WORK IN PROGRESS
 - Entrepreneurs who are curious about bookkeeping and taxes  
 - Anyone who wants a high-level picture of how Canadian small-business corporate tax fits together
 
-This page is a primer for the topics covered in the rest of this knowledge base.
+This page is a primer for the topics covered in the rest of this guide.
 
 **TLDR**:
 - A *Canadian-Controlled Private Corporation* (CCPC) files an annual T2 corporate income tax return — separate from the owner's personal T1
@@ -26,7 +26,7 @@ Limitations:
 - The following is my understanding as of 2026
 
 
-# What is corporate tax
+## What is corporate tax
 
 A corporation is a separate legal and tax entity from its shareholders.  
 Corporations can be used to limit liability and for tax planning.  
@@ -59,7 +59,7 @@ Sales tax (GST/HST, plus QST in Quebec) is handled separately:
 Most owner-managers prepare the T2 using dedicated software (FutureTax, TaxCycle, ProFile) rather than the paper forms.  
 
 
-# Bookkeeping, the general ledger, and GIFI
+## Bookkeeping, the general ledger, and GIFI
 
 Every line on the T2 traces back to the corporation's *books*: the running record of every financial transaction made during the year.  
 For a small CCPC, books are typically kept in accounting software (GnuCash, QuickBooks, Wave, Xero) or a structured spreadsheet, and reviewed annually before the T2 is filed.  
@@ -79,7 +79,7 @@ Two further conventions govern how transactions are recorded:
 - *Basis of accounting* determines *how* the amount is measured
   - The simplest is *tax basis*, where revenue and expenses follow ITA rules so that books exactly match T2 numbers
 - The typical small owner-managed CCPC is set up as *accrual + tax basis*
-  - Other arrangements are possible, but outside the scope of this knowledge base
+  - Other arrangements are possible, but outside the scope of this guide
 
 A *cash flow statement* and *statement of retained earnings* are not required for the T2.  
 A full set of GAAP-compliant statements (*ASPE* for private corporations, *IFRS* for public ones) is only required if a third party (bank, outside shareholder) asks for it.  
@@ -88,13 +88,13 @@ A full set of GAAP-compliant statements (*ASPE* for private corporations, *IFRS*
 Each account must be mapped to a GIFI code in T2 Schedule 100 (balance sheet) and Schedule 125 (income statement).  
 GIFI codes are four-digit numbers organized by financial-statement section — for example, 1001 cash, 3849 retained earnings end-of-year, 8000-series revenue, 9999 net income.  
 The full list and mapping rules are in CRA's *RC4088 - General Index of Financial Information*.  
-One reasonable account organization convention is presented in this knowledge base.  
+One reasonable account organization convention is presented in this guide.  
 
 See [T3.md](T3.md), [T5008.md](T5008.md), [Shareholder-Dividends.md](Shareholder-Dividends.md), and [Adjusted-Cost-Base.md](Adjusted-Cost-Base.md) for concrete worked examples.  
 It is recommended to keep books current during the year (monthly is typical); reconstructing past months of activity at year-end is difficult.  
 
 
-# CCPC status
+## CCPC status
 
 A *Canadian-Controlled Private Corporation* (CCPC) is a corporation that is:
 - Incorporated in Canada
@@ -113,7 +113,7 @@ Examples of things that can change the determination of CCPC status:
 - Certain share arrangements (e.g. options or shareholder agreements that give effective control to a non-resident or public corporation)
 
 
-# The two buckets of corporate income
+## The two buckets of corporate income
 
 Corporate income for a CCPC sorts into two broad buckets, each taxed differently.  
 The combined rates below use Ontario as an example for illustration; the federal portion is the same nationally, but provincial rates vary — see [CRA's corporation tax rates page](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/corporations/corporation-tax-rates.html) for current rates by province.
@@ -143,7 +143,7 @@ The main T-slips a corporation receives for investment income reporting:
 - *T5008* (Statement of Securities Transactions): summary of sales used to compute capital gains; see [T5008.md](T5008.md)
 
 
-# Integration
+## Integration
 
 *Integration* is the principle linking corporate and personal tax:
 - Combined corporate + personal tax on a dollar of income that flows through a CCPC and out to the shareholder should roughly equal the personal tax on the same dollar earned directly
@@ -158,7 +158,7 @@ Integration is approximate; different provinces and income sources produce small
 For the full integration framework and dividend mechanics, see [Shareholder-Dividends.md](Shareholder-Dividends.md).  
 
 
-# Paying yourself: salary vs dividends
+## Paying yourself: salary vs dividends
 
 A CCPC owner-manager has two main ways to extract money from the corporation: *salary* (employment income) or *dividends* (a distribution to the shareholder).  
 Most owner-managers use a mix; the choice is a tradeoff rather than a tax-driven decision in either direction, since *Integration* makes the pure-tax result roughly equivalent.
@@ -197,7 +197,7 @@ Note in particular the *TOSI* rules under ITA [s.120.4](https://laws-lois.justic
 For dividend mechanics, see [Shareholder-Dividends.md](Shareholder-Dividends.md); a dedicated payroll page is in progress — see [Payment.md](Payment.md).  
 
 
-# Personal Service Business - a trap for consultants
+## Personal Service Business - a trap for consultants
 
 A *Personal Service Business* (PSB) is a CCPC whose owner-operator would reasonably be considered an *employee* of the client but for the corporation in between.  
 The classic case is a consultant indistinguishable from a staff employee except that the corp invoices in between:
@@ -238,7 +238,7 @@ For most owner-managed consulting CCPCs the practical protection is in the worki
 The more factors that point to an independent business rather than a disguised employment relationship, the lower the PSB risk.  
 
 
-# HST and other consumption taxes
+## HST and other consumption taxes
 
 The *Goods and Services Tax / Harmonized Sales Tax* (GST/HST) regime is a consumption tax on most goods and services sold in Canada.  
 It's administered by CRA under the *Excise Tax Act* rather than the *Income Tax Act*, and is filed separately from corporate income tax.  
@@ -253,7 +253,7 @@ By jurisdiction:
 - GST + Quebec Sales Tax (QST): Quebec (QST administered separately by Revenu Québec)
 - GST only: Alberta, Yukon, Northwest Territories, Nunavut
 
-This knowledge base focuses on GST/HST; PST and QST follow similar mechanics but are administered separately by each provincial revenue authority and are out of scope here.  
+This guide focuses on GST/HST; PST and QST follow similar mechanics but are administered separately by each provincial revenue authority and are out of scope here.  
 
 You need to register and file GST/HST once your worldwide *taxable supplies* exceed $30,000 over a rolling 4-quarter window (or in a single quarter) — the *small supplier* threshold.  
 Sales to non-resident customers (e.g. US clients) are *zero-rated*: you charge 0% GST/HST but still claim ITCs on related inputs, and the sale still counts toward the threshold.  
@@ -275,7 +275,7 @@ It's a separate filing — separate account number, separate set of mechanics.
 For the practical workflow, see [HST.md](HST.md).  
 
 
-# Filing deadlines and instalments
+## Filing deadlines and instalments
 
 These are the dates an owner-manager has to track. Missing them triggers interest, penalties, or both — including failure-to-file penalties on slips that apply even when no tax is owed.  
 
@@ -310,7 +310,7 @@ These are the dates an owner-manager has to track. Missing them triggers interes
 - *RRSP contribution deadline*: 60 days after Dec 31 (typically March 1)
 
 
-# Sources of law
+## Sources of law
 
 When a question gets specific, several layers of authority can apply:
 
@@ -330,9 +330,9 @@ When a question gets specific, several layers of authority can apply:
   - A taxpayer can challenge an interpretation in Tax Court
 
 
-# Key recurring concepts
+## Key recurring concepts
 
-These appear across the rest of this repo and on most T2 schedules.  
+These appear across the rest of this guide and on most T2 schedules.  
 Each has its own page or section for the detailed mechanics.
 
 - **SBD**: *Small Business Deduction*; reduced corporate rate on the first $500,000 of ABI per year
@@ -346,7 +346,7 @@ Each has its own page or section for the detailed mechanics.
 - **QSBC / LCGE**: *Qualified Small Business Corporation* shares qualify the shareholder for the *Lifetime Capital Gains Exemption* on disposition; gated by tests including a 90% active-business-assets requirement
 
 
-# Related
+## Related
 
 - [Adjusted Cost Base](Adjusted-Cost-Base.md)
 - [Capital Dividend Account](Capital-Dividend-Account.md)
@@ -357,7 +357,7 @@ Each has its own page or section for the detailed mechanics.
 - [Glossary](Glossary.md)
 
 
-# Citations
+## Citations
 
 - Income Tax Act (R.S.C., 1985, c. 1 (5th Supp.)): https://laws-lois.justice.gc.ca/eng/acts/I-3.3/
   - [s.18(1)(p)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-18.html) - limits on deductions for a Personal Service Business
@@ -377,7 +377,7 @@ Each has its own page or section for the detailed mechanics.
 - CRA Income Tax Folios index: https://www.canada.ca/en/revenue-agency/services/tax/technical-information/income-tax/income-tax-folios-index.html
 
 
-# TODO
+## TODO
 
 - Cross-link from the existing pages' "Related" sections once stable
 - Consider a small diagram of the two-bucket income flow (ABI / AII) into the dividend pools (GRIP / CDA / ERDTOH / NERDTOH) and out to the shareholder

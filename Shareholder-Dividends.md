@@ -22,7 +22,7 @@ Limitations:
 - The following is my understanding as of 2026
 
 
-# What a dividend is
+## What a dividend is
 
 A *dividend* is a distribution of property by a corporation to its shareholders, paid out of the corporation's after-tax retained earnings.  
 The corporation pays its corporate income tax first; the dividend then transfers (some of) that after-tax money to the shareholder.  
@@ -51,7 +51,7 @@ A *shareholder loan* from the corp is not a distribution at all.
 If the loan is not repaid within one year after the end of the corp's tax year in which it was made, ITA [s.15(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-15.html) includes the full loan amount in the shareholder's personal income for the year the loan was made.  
 
 
-# The three dividend flavours
+## The three dividend flavours
 
 A taxable dividend paid by a CCPC to a Canadian-resident shareholder falls into one of three flavours.  
 The flavour is determined by the source of the distribution on the corporate side, and by whether the corporation makes the required designation or election.
@@ -84,7 +84,7 @@ For a corporation that has always been a CCPC, LRIP does not constrain anything.
 For full mechanics of the CDA balance calculation and the T2054 election workflow, see [Capital-Dividend-Account.md](Capital-Dividend-Account.md).  
 
 
-# Tax integration
+## Tax integration
 
 *Integration* aims for the total tax paid on income earned through a corporation and distributed as a dividend to roughly equal the tax the same individual would have paid had they earned the income directly.  
 
@@ -123,7 +123,7 @@ For an owner-manager who has access to all three accounts, the integration frame
 Often CDA and GRIP are both empty; the only available option is a non-eligible dividend.  
 
 
-# GRIP - capacity for eligible dividends
+## GRIP - capacity for eligible dividends
 
 The *General Rate Income Pool* (GRIP), defined at ITA [s.89(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-89.html), tracks a CCPC's accumulated after-tax income that was taxed at the general (non-SBD) corporate rate, plus eligible dividends received from other taxable Canadian corporations.  
 Calculated each year on Schedule 53 (S53 - *General Rate Income Pool (GRIP) Calculation*); the running balance carries forward.  
@@ -142,7 +142,7 @@ This is why most owner-manager dividends end up being non-eligible by default: t
 Schedule 53 must still be filed each year to track and carry forward the balance, even when GRIP is zero.  
 
 
-# CDA - capacity for capital dividends
+## CDA - capacity for capital dividends
 
 The *Capital Dividend Account* (CDA) holds the non-taxable portion of the corporation's cumulative net capital gains, plus certain other amounts (e.g. tax-free portion of life-insurance proceeds), and is reduced by capital dividends paid.  
 For mechanics of CDA balance tracking, the s.83(2) election, Form T2054 filing, and the Part III tax penalty for over-electing, see [Capital-Dividend-Account.md](Capital-Dividend-Account.md).  
@@ -152,7 +152,7 @@ Any capital losses realized between your last balance check and the election dat
 Overdrawing triggers a 60% Part III tax (ITA s.184(2)).  
 
 
-# ERDTOH and NERDTOH - refundable dividend tax accounts
+## ERDTOH and NERDTOH - refundable dividend tax accounts
 
 The *Eligible Refundable Dividend Tax on Hand* (ERDTOH) and *Non-Eligible Refundable Dividend Tax on Hand* (NERDTOH) accounts hold previously paid refundable tax that the corporation gets back as a *dividend refund* under ITA [s.129(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-129.html) when it pays a taxable dividend.  
 How the pools are *filled* (Part IV tax on dividends received from other corporations, the refundable portion of Part I tax on AII) is covered in [T3.md](T3.md).  
@@ -176,7 +176,7 @@ The dividend refund is reported on T2 line 784 and applied as a credit against t
 A dividend declared but unpaid at year-end still triggers the refund for that year, provided it is recognized as payable on the corporation's books (year-end timing covered below).  
 
 
-# AII and the SBD grind
+## AII and the SBD grind
 
 A CCPC's *Aggregate Investment Income* (AII) for the year is primarily:
 - Interest
@@ -201,7 +201,7 @@ The interaction between these two effects shapes long-term dividend strategy:
 For an investment-only holdco with no active business income, the SBD grind is moot (there is no active income to grind); Part I refundable tax on AII still feeds NERDTOH and is still recovered by paying non-eligible dividends.  
 
 
-# Declaring a dividend
+## Declaring a dividend
 
 A dividend is declared by the corporation's directors passing a resolution.  
 The resolution is the legal authorization for the payment.  
@@ -232,7 +232,7 @@ Provincial corporate statutes have equivalent tests (e.g. *Ontario Business Corp
 For an owner-managed CCPC with positive retained earnings and modest short-term liabilities, the test is rarely a binding constraint; the resolution should still recite it.  
 
 
-# Eligible dividend designation
+## Eligible dividend designation
 
 If the dividend is designated as eligible, ITA s.89(14) requires a written notice to the shareholder on or before the time the dividend is paid.  
 The notice can be brief; CRA accepts a clear written statement that names the dividend and identifies it as eligible:
@@ -244,7 +244,7 @@ Keep the notice in the corporate minute book; CRA can request it on audit.
 A non-eligible dividend requires no designation notice.  
 
 
-# Declaration date, record date, and payment date
+## Declaration date, record date, and payment date
 
 A dividend has up to three distinct dates:
 - *Declaration date*: when the directors pass the resolution; legally creates the dividend obligation and the corresponding *Dividends Payable* liability on the books
@@ -271,7 +271,7 @@ It may be recharacterized as a constructive shareholder loan (with the s.15(2) c
 There is no bright-line statutory deadline; settle the declared dividend promptly, typically within a few months of year-end, by cash transfer or by crediting the shareholder's loan account.  
 
 
-# Payment methods
+## Payment methods
 
 For a single owner-manager shareholder, the typical payment channels are:
 - *Bank transfer* from the corporate operating account to the shareholder's personal account; the most common channel; use a clear payment description like "Dividend per resolution dated [DATE]"
@@ -283,7 +283,7 @@ For a single owner-manager shareholder, the typical payment channels are:
 The choice of payment channel does not change the tax treatment of the dividend, but the bookkeeping entry differs (see *Bookkeeping journal entries* below).  
 
 
-# Bookkeeping journal entries
+## Bookkeeping journal entries
 
 Standard double-entry treatment for an owner-managed CCPC paying its sole shareholder.  
 GIFI codes are aligned to the CRA GIFI guide ([RC4088](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4088/general-index-financial-information-gifi.html)).  
@@ -320,7 +320,7 @@ Year-end close. The Statement of Retained Earnings (Schedule 100 in most T2 soft
 Most chart-of-accounts setups do not require an explicit closing journal entry; the GIFI mapping handles it via Schedule 100.  
 
 
-# T5 slip and T5 Summary
+## T5 slip and T5 Summary
 
 A taxable dividend (eligible or non-eligible) paid to a Canadian-resident shareholder generally requires a *T5 Statement of Investment Income* slip and a *T5 Summary*.  
 Capital dividends paid to Canadian residents are NOT reported on a T5 (the recipient does not include the amount in income).  
@@ -345,7 +345,7 @@ For a *non-eligible* dividend:
 If both flavours were paid in the same calendar year, use a single T5 slip with both sets of boxes populated.  
 
 
-# T5 filing
+## T5 filing
 
 Deadline: last day of February of the calendar year following the year of payment.  
 
@@ -361,7 +361,7 @@ For an owner-manager filing one to fifty slips, the rate is $10 per day per slip
 Higher daily rates apply at higher slip counts.  
 
 
-# NR4 for non-resident shareholders
+## NR4 for non-resident shareholders
 
 Brief; full mechanics out of scope.
 
@@ -372,14 +372,14 @@ NR4 deadline: March 31 of the year following payment.
 See CRA Guide [T4061](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4061.html) for full NR4 mechanics.  
 
 
-# T2 reporting
+## T2 reporting
 
 Paying a dividend touches several T2 schedules beyond the bookkeeping entries above.  
 Most T2 software (FutureTax, TaxCycle) populates these automatically once the dividend amount and designation are entered.  
 Knowing which schedule reports what helps you sanity-check the result.  
 
 
-# Schedule 3 - dividends-paid section
+## Schedule 3 - dividends-paid section
 
 Schedule 3 (S3 - *Dividends Received, Taxable Dividends Paid, and Part IV Tax Calculation*) is shared with the dividend-receiving side covered in [T3.md](T3.md).  
 The dividends-paid side appears in Part 3 and Part 4 of the schedule:
@@ -403,7 +403,7 @@ For the receiving-side mechanics see [T3.md](T3.md).
 The Opco-Holdco structure itself is out of scope for this page.  
 
 
-# Schedule 53 - GRIP calculation
+## Schedule 53 - GRIP calculation
 
 Schedule 53 (S53 - *General Rate Income Pool (GRIP) Calculation*) tracks the running GRIP balance year over year.  
 See the GRIP section above for the addition formula and the conceptual treatment.  
@@ -415,7 +415,7 @@ Most T2 software auto-populates S53 from the general-rate active business income
 Verify that the closing balance matches expectations, especially in the first year you designate an eligible dividend.  
 
 
-# Schedule 55 - Part III.1 tax on excessive eligible dividend designations
+## Schedule 55 - Part III.1 tax on excessive eligible dividend designations
 
 Schedule 55 (S55 - *Part III.1 Tax on Excessive Eligible Dividend Designations*) is filed only when the corporation designates more eligible dividends in the year than its GRIP balance can support.  
 The excess is an *excessive eligible dividend designation* (EEDD).  
@@ -431,7 +431,7 @@ For an owner-managed CCPC where the director and the shareholder are the same pe
 Verify the GRIP balance *before* designating, so the excess never arises.  
 
 
-# Dividend refund line on the T2
+## Dividend refund line on the T2
 
 The dividend refund calculated under ITA s.129(1) is reported on the T2 jacket as the *dividend refund for the year* (historically T2 line 784; verify against the current form release).  
 The refund is applied as a credit against Part I and Part IV tax payable for the year; any excess is paid out (or applied to instalments) when the T2 is assessed.  
@@ -439,7 +439,7 @@ The underlying ERDTOH and NERDTOH balances and the eligible/non-eligible split o
 For the receiving-side mechanics that fill ERDTOH/NERDTOH (Part IV tax on dividends received from other corporations), see [T3.md](T3.md).  
 
 
-# Capital dividend election - Form T2054
+## Capital dividend election - Form T2054
 
 A capital dividend is reported on the capital-dividend line of Schedule 3 (per the S3 section above).  
 *In addition*, the corporation files Form T2054 (*Election for a Capital Dividend Under Subsection 83(2)*) with a certified copy of the directors' resolution, on or before the payment date.  
@@ -453,7 +453,7 @@ For full mechanics, see [Capital-Dividend-Account.md](Capital-Dividend-Account.m
 - The CRA My Business Account submission workflow
 
 
-# Worked examples
+## Worked examples
 
 The examples below use Ontario rates current as of the first half of 2026:
 - Federal SBD rate: 9%
@@ -473,7 +473,7 @@ Each example focuses on the corp-side workflow: declaration, journal entries, T2
 Personal-side tax is mentioned briefly for context.  
 
 
-# Example A - eligible dividend from general-rate active business income
+### Example A - eligible dividend from general-rate active business income
 
 Setup:
 - A CCPC with $700,000 of active business income in 2025: $500,000 at the combined SBD rate (12.2%) and $200,000 at the combined general rate (26.5%)
@@ -498,7 +498,7 @@ T2 (2026) schedule entries:
 Personal-side context: the shareholder reports $50,000 × 1.38 = $69,000 taxable on T1; federal DTC of $69,000 × 15.0198% ≈ $10,364; Ontario DTC of $69,000 × 10% = $6,900.  
 
 
-# Example B - non-eligible dividend from after-tax SBD-rate retained earnings
+### Example B - non-eligible dividend from after-tax SBD-rate retained earnings
 
 Setup:
 - The CCPC has been operating entirely under the SBD limit since incorporation
@@ -521,7 +521,7 @@ T2 (2026) schedule entries:
 Personal-side context: shareholder reports $80,000 × 1.15 = $92,000 taxable on T1; federal DTC of $92,000 × 9.0301% ≈ $8,308; Ontario DTC of $92,000 × 2.9863% ≈ $2,747.  
 
 
-# Example C - year-end non-eligible dividend sized to recover NERDTOH (AII / passive-income path)
+### Example C - year-end non-eligible dividend sized to recover NERDTOH (AII / passive-income path)
 
 Setup:
 - A CCPC with $200,000 of active business income in 2026 (under SBD; combined 12.2%)
@@ -570,7 +570,7 @@ The corporation has converted $12,267 of refundable Part I tax sitting in NERDTO
 The shareholder receives $32,000 cash in January 2027 against a *Due to shareholder* balance set up on December 30, 2026, and reports the dividend on their 2026 T1.  
 
 
-# Example D - capital dividend election
+### Example D - capital dividend election
 
 Setup:
 - The corporation realized a $20,000 net capital gain in 2026 (after offsetting prior losses)
@@ -605,7 +605,7 @@ For full mechanics, see [Capital-Dividend-Account.md](Capital-Dividend-Account.m
 - The CRA My Business Account submission workflow
 
 
-# Related
+## Related
 
 - [Adjusted Cost Base](Adjusted-Cost-Base.md)
 - [Capital Dividend Account](Capital-Dividend-Account.md)
@@ -614,7 +614,7 @@ For full mechanics, see [Capital-Dividend-Account.md](Capital-Dividend-Account.m
 - [T5008](T5008.md)
 
 
-# Citations
+## Citations
 
 - Income Tax Act (R.S.C., 1985, c. 1 (5th Supp.)):
   - [s.15(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-15.html) - shareholder loan inclusion in income (one-year repayment rule)
@@ -653,7 +653,7 @@ For full mechanics, see [Capital-Dividend-Account.md](Capital-Dividend-Account.m
   - Provincial equivalents (e.g. Ontario Business Corporations Act s.38(3); Alberta Business Corporations Act s.43)
 
 
-# TODO
+## TODO
 
 - Add a worked example for an investment-only holdco (no active business income; pure NERDTOH-recovery cycle)
 - Add screenshots for the T5 Web Forms filing flow via CRA My Business Account
