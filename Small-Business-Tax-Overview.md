@@ -26,7 +26,7 @@ Limitations:
 - The following is my understanding as of 2026
 
 
-# What corporate tax is
+# What is corporate tax
 
 A corporation is a separate legal and tax entity from its shareholders.  
 Corporations can be used to limit liability and for tax planning.  
@@ -61,13 +61,14 @@ Most owner-managers prepare the T2 using dedicated software (FutureTax, TaxCycle
 
 # Bookkeeping, the general ledger, and GIFI
 
-Every line on the T2 traces back to the corporation's *books*: the running record of every financial transaction it makes during the year.  
+Every line on the T2 traces back to the corporation's *books*: the running record of every financial transaction made during the year.  
 For a small CCPC, books are typically kept in accounting software (GnuCash, QuickBooks, Wave, Xero) or a structured spreadsheet, and reviewed annually before the T2 is filed.  
 
 In short:
 - *Double-entry*: every transaction posts equal *debits* and *credits* across two or more accounts; the books always balance
 - *Chart of accounts*: the corporation's own list of named accounts (cash, accounts receivable, revenue, expenses, retained earnings, etc.); names and structure are your choice
-- *Account classification*: every account is one of five types: *asset*, *liability*, *equity*, *revenue*, or *expense*; the *accounting equation* Assets = Liabilities + Equity always holds (revenue and expenses roll into equity through retained earnings at year-end)
+- *Account classification*: every account is one of five types: *asset*, *liability*, *equity*, *revenue*, or *expense*
+  - The *accounting equation* Assets = Liabilities + Equity always holds (revenue and expenses roll into equity through retained earnings at year-end)
 - *General ledger*: the running list of every posted entry, grouped by account
 - *Trial balance*: the year-end sum of all account balances; rolls up into the two financial statements: the *balance sheet* and the *income statement*
 
@@ -76,9 +77,9 @@ Two further conventions govern how transactions are recorded:
   - For revenue: when you send the invoice (not when cash arrives)
   - For expenses: when you receive the vendor bill (not when you pay)
 - *Basis of accounting* determines *how* the amount is measured
-  - The simplest is *tax basis*, where revenue and expenses follow ITA rules so the books and the T2 numbers match exactly
-
-These are independent choices, and the typical small-CCPC setup is *accrual + tax basis*.
+  - The simplest is *tax basis*, where revenue and expenses follow ITA rules so that books exactly match T2 numbers
+- The typical small owner-managed CCPC is set up as *accrual + tax basis*
+  - Other arrangements are possible, but outside the scope of this knowledge base
 
 A *cash flow statement* and *statement of retained earnings* are not required for the T2.  
 A full set of GAAP-compliant statements (*ASPE* for private corporations, *IFRS* for public ones) is only required if a third party (bank, outside shareholder) asks for it.  
@@ -87,10 +88,10 @@ A full set of GAAP-compliant statements (*ASPE* for private corporations, *IFRS*
 Each account must be mapped to a GIFI code in T2 Schedule 100 (balance sheet) and Schedule 125 (income statement).  
 GIFI codes are four-digit numbers organized by financial-statement section — for example, 1001 cash, 3849 retained earnings end-of-year, 8000-series revenue, 9999 net income.  
 The full list and mapping rules are in CRA's *RC4088 - General Index of Financial Information*.  
+One reasonable account organization convention is presented in this knowledge base.  
 
-The bookkeeping convention this repo follows is explicit Debit/Credit postings paired with specific GIFI codes.  
 See [T3.md](T3.md), [T5008.md](T5008.md), [Shareholder-Dividends.md](Shareholder-Dividends.md), and [Adjusted-Cost-Base.md](Adjusted-Cost-Base.md) for concrete worked examples.  
-Keep the books current during the year (monthly is typical) — reconstructing past months of activity at year-end is difficult.  
+It is recommended to keep books current during the year (monthly is typical); reconstructing past months of activity at year-end is difficult.  
 
 
 # CCPC status
@@ -100,13 +101,14 @@ A *Canadian-Controlled Private Corporation* (CCPC) is a corporation that is:
 - Private (not listed on a designated stock exchange)
 - Not controlled — directly or indirectly — by non-residents or by public corporations
 
-CCPC status unlocks several preferential tax treatments:
+CCPC status allows several preferential tax treatments:
 - The *Small Business Deduction* (SBD)
 - The *Lifetime Capital Gains Exemption* (LCGE) on *Qualified Small Business Corporation* (QSBC) shares
 - Refundable-tax mechanics on investment income
 
 For a corporation incorporated in Canada and directly owned by Canadian-resident individuals with no public listing, CCPC status usually applies.  
-Things that can change the result:
+
+Examples of things that can change the determination of CCPC status:
 - The *control in fact* test under ITA [s.256(5.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-256.html)
 - Certain share arrangements (e.g. options or shareholder agreements that give effective control to a non-resident or public corporation)
 
@@ -116,6 +118,10 @@ Things that can change the result:
 Corporate income for a CCPC sorts into two broad buckets, each taxed differently.  
 The combined rates below use Ontario as an example for illustration; the federal portion is the same nationally, but provincial rates vary — see [CRA's corporation tax rates page](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/corporations/corporation-tax-rates.html) for current rates by province.
 
+Two parts of the *Income Tax Act* drive a CCPC's tax mechanics:
+- *Part I tax*: regular income tax on the corporation's net taxable income; covers the SBD, the small-business and general rates, and the AII regime
+- *Part IV tax*: separate, *refundable* tax on certain dividends *received* from other corporations; offsets the *s.112* inter-corporate dividend deduction so received dividends can't be used to defer personal tax indefinitely
+
 *Active business income* (ABI): income from carrying on an active business — consulting fees, product sales, services rendered.  
 The first $500,000 per year is taxed at the *small-business rate* via the SBD (combined federal + Ontario ≈ 12.2% in 2026); ABI above $500,000 is taxed at the *general rate* (combined ≈ 26.5% in Ontario).  
 The $500,000 SBD *business limit* is not always a flat ceiling. It can be reduced by:
@@ -124,28 +130,35 @@ The $500,000 SBD *business limit* is not always a flat ceiling. It can be reduce
 - A large *taxable capital* base — the *large CCPC* rule
 
 *Aggregate investment income* (AII): income from passive investments held in the corp — interest, foreign income, the taxable portion of capital gains.  
-AII is taxed at a high combined rate (~50.2% in Ontario), but a portion is *refundable* — it's parked in the corporation's *NERDTOH* account and refunded back when the corporation eventually pays a dividend to the shareholder.  
+AII is taxed at a high combined rate (~50.2% in Ontario), but a portion is *refundable* — it's parked in the corporation's *NERDTOH* (non-eligible RDTOH) account and refunded when the corporation eventually pays a *non-eligible* dividend to the shareholder.  
 The refundable mechanism is what stops the CCPC from being used as an indefinite tax-deferral vehicle for passive investing.  
 
-Dividends *received* from other Canadian corporations (for example, portfolio shareholdings or funds structured as corporations) sit in their own bucket: generally tax-free at the corporate level via the *s.112 inter-corporate dividend deduction*, but they trigger *Part IV tax* that feeds the refundable accounts and gets refunded when the corp pays a dividend out.  
-Note that most Canadian ETFs are *mutual fund trusts* rather than corporations — their distributions come on T3 slips and are treated under different rules (interest, capital gains, foreign income, etc.); see [T3.md](T3.md).  
+Dividends *received* from other Canadian corporations (for example, portfolio shareholdings or funds structured as corporations) sit in their own bucket:
+- Exempt from Part I tax under *s.112*; the corresponding Part IV tax is recovered when the corp later pays a dividend out
+- The Part IV tax is mostly recorded in the corporation's *ERDTOH* (eligible RDTOH) account — the eligible-side counterpart to NERDTOH; see [Shareholder-Dividends.md](Shareholder-Dividends.md) for the full ERDTOH/NERDTOH mechanics
+
+The main T-slips a corporation receives for investment income reporting:
+- *T3* (Statement of Trust Income): distributions from trusts, including most Canadian ETFs (which are *mutual fund trusts* rather than corporations); covers interest, capital gains, foreign income, etc.; see [T3.md](T3.md)
+- *T5* (Statement of Investment Income): interest and Canadian-corp dividends from securities held *directly* (e.g. bonds, GICs, individual stocks)
+- *T5008* (Statement of Securities Transactions): summary of sales used to compute capital gains; see [T5008.md](T5008.md)
 
 
 # Integration
 
-*Integration* is the principle linking corporate and personal tax: the combined corporate + personal tax on a dollar of income that flows through a CCPC and out to the shareholder should roughly equal the personal tax on the same dollar earned directly.  
+*Integration* is the principle linking corporate and personal tax:
+- Combined corporate + personal tax on a dollar of income that flows through a CCPC and out to the shareholder should roughly equal the personal tax on the same dollar earned directly
+- In effect, dividends received by your corporation and paid out to yourself are not "double-taxed"
 
 The mechanism is the *dividend gross-up and tax credit*. When the corporation pays a dividend, the shareholder:
 - Grosses up the cash amount to a notional pre-corp-tax figure
 - Pays personal tax on the grossed-up amount
 - Claims a *dividend tax credit* (DTC) calibrated to offset the corporate tax already paid
 
-Integration is approximate, not exact — it works best when the actual corporate rate matches the rate the gross-up and DTC are calibrated to; different provinces and income sources produce small over- or under-taxation.  
-So a dividend isn't "double-taxed" the way corporate dividends are in some other jurisdictions — the gross-up + DTC mechanics are designed to make it neutral.  
+Integration is approximate; different provinces and income sources produce small over- or under-taxation.   
 For the full integration framework and dividend mechanics, see [Shareholder-Dividends.md](Shareholder-Dividends.md).  
 
 
-# Paying yourself: salary vs. dividends
+# Paying yourself: salary vs dividends
 
 A CCPC owner-manager has two main ways to extract money from the corporation: *salary* (employment income) or *dividends* (a distribution to the shareholder).  
 Most owner-managers use a mix; the choice is a tradeoff rather than a tax-driven decision in either direction, since *Integration* makes the pure-tax result roughly equivalent.
