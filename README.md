@@ -29,4 +29,5 @@ Work in progress:
 Audit:
 - [2026-04-28 Opus-4.7-xhigh](audit/2026-04-28_Audit_Opus-4.7-xhigh.md)
 - [2026-04-29 Opus-4.7-xhigh](audit/2026-04-29_Audit_Opus-4.7-xhigh.md)
+- [2026-05-06 Opus-4.7-xhigh](audit/2026-05-06_Audit_Opus-4.7-xhigh.md)
 

@@ -133,6 +133,17 @@ Stub pages keep `STATUS: WORK IN PROGRESS` at the top.
 
 ---
 
+## Audits
+
+Periodic documentation audits live under `audit/`. Filenames follow the pattern
+`<YYYY-MM-DD>_Audit_<Model>-<reasoning-effort>.md` — the date the audit was run, the model that
+ran it, and the reasoning-effort level the model was running at (e.g. `Opus-4.7-xhigh`). The same
+suffix appears in the audit's entry under the **Audit** list in `README.md`. Each audit is a
+read-only record of findings; fixes land in separate follow-up commits so the audit and the
+response stay separable in git history.
+
+---
+
 ## Git hygiene
 
 `.gitignore` excludes `.idea/` and the entire `.github/` directory **except** `copilot-instructions.md`. Don't commit other files under `.github/`.
