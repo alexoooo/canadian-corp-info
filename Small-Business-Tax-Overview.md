@@ -160,8 +160,11 @@ For the full integration framework and dividend mechanics, see [Shareholder-Divi
 
 ## Paying yourself: salary vs dividends
 
-A CCPC owner-manager has two main ways to extract money from the corporation: *salary* (employment income) or *dividends* (a distribution to the shareholder).  
-Most owner-managers use a mix; the choice is a tradeoff rather than a tax-driven decision in either direction, since *Integration* makes the pure-tax result roughly equivalent.
+A CCPC owner-manager has two main ways to take money out of the corporation: *salary* (employment income) or *dividends* (a distribution to the shareholder).  
+
+You can use either or both in a mix:
+- The choice is a tradeoff that depends on individual facts
+- *Integration* makes the tax result roughly equivalent
 
 *Salary* is paid to the owner in their capacity as an *employee*:
 - Deductible to the corporation as a business expense — reduces ABI and therefore corporate tax
@@ -177,7 +180,6 @@ Most owner-managers use a mix; the choice is a tradeoff rather than a tax-driven
 - No source deductions, no CPP, no EI — dividends are not employment income
 - Do not generate RRSP room or CPP credits
 - Eligible for the *dividend gross-up and tax credit* on the personal return, per *Integration*
-- Subject to a corporate-law *solvency test* (CBCA s.42 or provincial equivalent) before the directors can declare them
 - Can be designated *eligible* (from the GRIP pool), *non-eligible*, or *capital* (from the CDA) — each with its own gross-up and DTC; see [Shareholder-Dividends.md](Shareholder-Dividends.md)
 
 Practical tradeoffs:
@@ -185,42 +187,40 @@ Practical tradeoffs:
   - Builds *RRSP* room
   - Builds *CPP* credits
   - Counts as earned income for personal-finance purposes
-  - Predictable monthly cash flow
 - Dividend advantages:
-  - Simpler administratively (no payroll account, no monthly remittances, no T4)
-  - More flexible timing
-  - The only path to recover the corporation's NERDTOH/ERDTOH refundable balances
+  - More flexible timing: declared at any time (including retrospectively at year-end based on actual results), no monthly source-deduction cadence, and the declared-vs-paid date can straddle a year boundary
+  - Allows recovering the corporation's NERDTOH/ERDTOH refundable balances
 - A common pattern is enough salary to maximize RRSP room (or to hit the CPP *maximum pensionable earnings*), then top up with dividends as needed for cash flow
 
 The full optimization is personal — it depends on tax bracket, retirement strategy, mortgage plans, and family income-splitting considerations.  
 Note in particular the *TOSI* rules under ITA [s.120.4](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-120.4.html), which limit splitting through dividends to family members who are not active in the business.  
-For dividend mechanics, see [Shareholder-Dividends.md](Shareholder-Dividends.md); a dedicated payroll page is in progress — see [Payment.md](Payment.md).  
+For dividend mechanics, see [Shareholder-Dividends.md](Shareholder-Dividends.md); for payroll, see [Payment.md](Payment.md).  
 
 
-## Personal Service Business - a trap for consultants
+## Personal Service Business risk
 
 A *Personal Service Business* (PSB) is a CCPC whose owner-operator would reasonably be considered an *employee* of the client but for the corporation in between.  
-The classic case is a consultant indistinguishable from a staff employee except that the corp invoices in between:
+A CCPC classified as a PSB is less tax-efficient than a regular CCPC or the same individual operating as an unincorporated *sole proprietor*.
+
+The typical case is a consultant indistinguishable from a staff employee except that the corp invoices in between:
 - Working full-time for a single client
 - On the client's premises
 - With the client's equipment
 - On the client's schedule
 
-This is a real risk for IT contractors, engineers, and other specialists who incorporate to invoice a single long-term client.  
+This is a risk for IT contractors, engineers, and other specialists who incorporate to invoice a single long-term client.  
 
-PSB classification (ITA [s.125(7)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-125.html)) strips most of the favourable CCPC tax treatments and replaces them with a punitive regime:
-- No SBD — PSB income is excluded from active business income, so it cannot use the small-business rate
-- No *general rate reduction* either — taxed at the base federal 28% rather than the 15% general rate
-- Plus an *additional 5% federal tax* on PSB income under ITA [s.123.5](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-123.5.html), bringing the federal portion to 33% — combined ≈ 44.5% in Ontario
-- Almost no deductions allowed under ITA [s.18(1)(p)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-18.html): only salary and benefits paid to the incorporated employee, plus a few narrow items (legal costs to collect on contracts, certain employment-related expenses) — no rent, supplies, professional fees, software, or office costs
+PSB classification (ITA [s.125(7)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-125.html)) removes most of the favourable CCPC tax treatments and applies a less tax-efficient regime:
+- No SBD: PSB income is excluded from active business income, so it cannot use the small-business rate
+- No *general rate reduction*: taxed at the base federal 28% rather than the 15% general rate
+- Plus an *additional 5% federal tax* on PSB income under ITA [s.123.5](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-123.5.html), bringing the federal portion to 33% (combined ≈ 44.5% in Ontario)
+- Almost no deductions allowed under ITA [s.18(1)(p)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-18.html): only the incorporated employee's salary and benefits, not the usual business expenses (rent, supplies, software, professional fees)
 
-Combined effect: a CCPC reclassified as a PSB pays substantially more tax with substantially fewer deductions than either a regular CCPC or the same individual operating as an unincorporated *sole proprietor* would.  
-
-The PSB determination is fact-based, using the same multi-factor analysis as the employee-vs-contractor test in personal tax:
+The PSB determination is fact-based, using the same multifactor analysis as the employee-vs-contractor test in personal tax:
 - *Control*: does the client direct what, when, and how?
 - *Ownership of tools*
 - *Chance of profit / risk of loss*
-- *Integration* into the client's organization
+- *Integration* into the client's organization (the employee-vs-contractor factor — different concept from the tax *Integration* above)
 
 There are two statutory safe harbours in the s.125(7) definition:
 - The corporation employs more than *five full-time employees* throughout the year
@@ -228,7 +228,7 @@ There are two statutory safe harbours in the s.125(7) definition:
 
 Neither typically applies to an owner-managed consulting practice.  
 
-For most owner-managed consulting CCPCs the practical protection is in the working arrangement itself:
+PSB risk is then mostly managed through how the work is actually structured:
 - Have multiple clients where possible
 - Set your own hours and methods
 - Use your own tools and equipment
@@ -277,7 +277,8 @@ For the practical workflow, see [HST.md](HST.md).
 
 ## Filing deadlines and instalments
 
-These are the dates an owner-manager has to track. Missing them triggers interest, penalties, or both — including failure-to-file penalties on slips that apply even when no tax is owed.  
+These are the dates an owner-manager has to track.  
+Missing them triggers interest, penalties, or both — including failure-to-file penalties on slips that apply even when no tax is owed.  
 
 **T2 corporate income tax**:
 - *Return*: 6 months after fiscal year-end (ITA [s.150(1)(a)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-150.html))
