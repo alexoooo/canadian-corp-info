@@ -379,27 +379,6 @@ When a question gets specific, several layers of authority can apply:
   - A taxpayer can challenge an interpretation in Tax Court
 
 
-## Key recurring concepts
-
-These appear across the rest of this guide and on most T2 schedules.  
-Each has its own page or section for the detailed mechanics.
-
-- **SBD**: *Small Business Deduction*; reduced corporate rate on the first $500,000 of ABI per year
-- **ABI**: *Active Business Income*; income from carrying on an active business; gets the SBD on the first $500k
-- **AII**: *Aggregate Investment Income*; high rate at the corporate level, partially refundable via NERDTOH
-- **GRIP**: *General Rate Income Pool*; tracks capacity to designate *eligible* dividends; see [Shareholder-Dividends.md](Shareholder-Dividends.md)
-- **CDA**: *Capital Dividend Account*; tracks capacity to pay tax-free *capital* dividends; see [Capital-Dividend-Account.md](Capital-Dividend-Account.md)
-- **ERDTOH / NERDTOH**: *Refundable Dividend Tax on Hand* pools; refunded when the corporation pays a taxable dividend
-- **DTC**: *Dividend Tax Credit*; personal credit calibrated to offset corporate tax already paid (per Integration)
-- **Integration**: the design principle that combines corp + personal tax to approximate direct-earning tax; see [Shareholder-Dividends.md](Shareholder-Dividends.md)
-- **TOSI**: *Tax on Split Income* (ITA s.120.4); limits splitting through dividends to family members not active in the business
-- **PSB**: *Personal Service Business*; CCPC reclassified as a disguised employee, with most CCPC tax advantages removed
-- **GIFI**: *General Index of Financial Information*; standardized chart-of-accounts coding CRA uses to read your income statement and balance sheet on Schedules 100 and 125
-- **ACB**: *Adjusted Cost Base*; the tax cost of an investment, used to compute capital gain or loss on disposition; see [Adjusted-Cost-Base.md](Adjusted-Cost-Base.md)
-- **ITC**: *Input Tax Credit*; recoverable GST/HST paid on business inputs under the regular method
-- **QSBC / LCGE**: *Qualified Small Business Corporation* shares qualify the shareholder for the *Lifetime Capital Gains Exemption* on disposition; gated by tests including a 90% active-business-assets requirement
-
-
 ## Related
 
 - [Adjusted Cost Base](Adjusted-Cost-Base.md)
