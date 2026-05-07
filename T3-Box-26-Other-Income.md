@@ -218,6 +218,7 @@ In FutureTax, the worksheet can be opened by double-clicking the S7 field, and l
 
 For the broader ledger tree, see the "Relevant general ledger accounts" section in [T3](T3.md).
 For ACB interactions (Box 42 / ROC reducing ACB), see [Adjusted-Cost-Base.md](Adjusted-Cost-Base.md).
+For the corporate-tax framing of where T3 income lands, see [Small-Business-Tax-Overview.md](Small-Business-Tax-Overview.md).
 
 
 ## Citations

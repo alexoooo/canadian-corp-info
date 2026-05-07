@@ -195,7 +195,62 @@ The *TOSI* rules under ITA [s.120.4](https://laws-lois.justice.gc.ca/eng/acts/I-
 For dividend mechanics, see [Shareholder-Dividends.md](Shareholder-Dividends.md); for payroll, see [Payment.md](Payment.md).  
 
 
-## Personal Service Business risk
+## Income flow
+
+How corporate income is bucketed, parked in dividend pools, and paid out to the shareholder.
+
+```mermaid
+flowchart TB
+    T3[T3 slip]
+    T5in[T5 slip]
+    T5008[T5008 slip]
+    OP[Active operations]
+
+    ABI([ABI])
+    AII([AII])
+    DivRcv([Dividends received])
+
+    GRIP[(GRIP)]
+    CDA[(CDA)]
+    ERDTOH[(ERDTOH)]
+    NERDTOH[(NERDTOH)]
+
+    T4out["T4 — salary"]
+    T5elig["T5 — eligible div"]
+    T5neli["T5 — non-eligible div"]
+    T2054["T2054 — capital div"]
+    SH([Shareholder T1])
+
+    OP -->|net of salary| ABI
+    OP -->|deductible expense| T4out
+    T3 -->|interest, foreign| AII
+    T5in -->|interest| AII
+    T5008 -->|capital gain| AII
+    T5in -->|Cdn-corp div| DivRcv
+    T3 -->|eligible div| DivRcv
+
+    ABI -->|general-rate portion| GRIP
+    AII -->|non-taxable ½| CDA
+    AII -->|refundable 30⅔%| NERDTOH
+    DivRcv -->|Part IV: eligible| ERDTOH
+    DivRcv -->|Part IV: non-eligible| NERDTOH
+
+    GRIP -.->|designation| T5elig
+    ERDTOH -.->|refund| T5elig
+    NERDTOH -.->|refund| T5neli
+    CDA -.->|election| T2054
+
+    T4out --> SH
+    T5elig --> SH
+    T5neli --> SH
+    T2054 --> SH
+```
+
+Inputs: T-slips received from brokers and trusts (T3, T5, T5008).  
+Outputs: T-slips issued by the corp to the shareholder — T4 (salary), T5 (eligible or non-eligible dividend), T2054 (capital-dividend election form; no T5).
+
+
+## Personal Service Business classification risk
 
 A *Personal Service Business* (PSB) is a CCPC whose owner-operator would reasonably be considered an *employee* of the client but for the corporation in between.  
 A CCPC classified as a PSB is less tax-efficient than a regular CCPC or the same individual operating as an unincorporated *sole proprietor*.
@@ -379,9 +434,3 @@ Each has its own page or section for the detailed mechanics.
 - CRA RC4088 - General Index of Financial Information (GIFI): https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4088.html
 - CRA Corporation tax rates (current federal and provincial rates by year): https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/corporations/corporation-tax-rates.html
 - CRA Income Tax Folios index: https://www.canada.ca/en/revenue-agency/services/tax/technical-information/income-tax/income-tax-folios-index.html
-
-
-## TODO
-
-- Cross-link from the existing pages' "Related" sections once stable
-- Consider a small diagram of the two-bucket income flow (ABI / AII) into the dividend pools (GRIP / CDA / ERDTOH / NERDTOH) and out to the shareholder

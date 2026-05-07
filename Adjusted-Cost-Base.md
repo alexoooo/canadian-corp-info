@@ -140,6 +140,7 @@ There are limitations on which losses can be claimed, make sure you don't get a 
 
 ## Related
 
+- [Small Business Tax Overview](Small-Business-Tax-Overview.md)
 - [Adjusted Cost Base Tracking](Adjusted-Cost-Base-Tracking.md)
 - [Capital Dividend Account](Capital-Dividend-Account.md)
 - [T3](T3.md)
@@ -168,6 +169,6 @@ There are limitations on which losses can be claimed, make sure you don't get a 
 - https://www.cifinancial.com/ci-gam/ca/en/expert-insights/articles/etf-taxation--tax-loss-selling-and-identical-property.html
 
 
-## Todo:
+## TODO
 
 - Elaborate on foreign currency conversion, cross-reference with Foreign-Currency.md  

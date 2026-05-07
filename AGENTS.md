@@ -52,6 +52,7 @@ These rules encode actual decisions made across the existing guides. Follow them
 - **Cross-link, don't duplicate**: topic pages refer to each other through inline links and a `Related` section near the end; if you find yourself re-explaining ACB inside `T3.md`, link to `Adjusted-Cost-Base.md` instead
 - **Citations are concrete and authoritative**: existing pages cite the Income Tax Act, CRA forms/schedules, CRA guides, and Bank of Canada FX rates directly; match that — no vague "per CRA guidance" without a pointer
 - **Standard page shape** (where the page is mature): audience/scope at the top, walkthrough sections in the middle, then `Related`, `Citations`, and optionally `TODO` near the end
+- **Diagrams**: use Mermaid in fenced ```` ```mermaid ```` blocks for conceptual flow diagrams; `media/` is reserved for screenshots of actual CRA / brokerage forms and tooling
 - **ACB-specific conventions** (load-bearing — do not silently change):
   - Pooled average cost, not FIFO/LIFO
   - Trade-date FX for purchases, sales, and commissions

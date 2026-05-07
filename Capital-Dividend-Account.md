@@ -77,6 +77,7 @@ The CRA My Business Account website can change over time, here are steps as of 2
 
 ## Related
 
+- [Small Business Tax Overview](Small-Business-Tax-Overview.md)
 - [Adjusted Cost Base](Adjusted-Cost-Base.md)
 - [Shareholder Dividends](Shareholder-Dividends.md)
 - [T3](T3.md)
@@ -96,7 +97,7 @@ The CRA My Business Account website can change over time, here are steps as of 2
 - CRA Form T5: https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t5.html
 
 
-## TODO:
+## TODO
 
 - Include template for resolution to declare capital dividend  
 - Include spreadsheet to be used as template for CDA calculation  
