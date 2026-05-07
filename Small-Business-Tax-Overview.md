@@ -1,5 +1,3 @@
-STATUS: WORK IN PROGRESS
-
 # Small Business Tax Overview
 
 **Who this is for**:
@@ -301,14 +299,9 @@ Missing them triggers interest, penalties, or both — including failure-to-file
 - Annual filers with prior-year net tax over $3,000 also pay quarterly instalments
 
 **Corporate registry** (not a tax filing):
-- Federal (CBCA): annual return to Corporations Canada within 60 days of incorporation anniversary
-- Provincial: varies (e.g. Ontario annual return through the Ontario Business Registry)
+- Federal corporations (CBCA): annual return to Corporations Canada within 60 days of incorporation anniversary
+- Provincial corporation: varies (e.g. Ontario annual return through the Ontario Business Registry)
 - Missing the annual return repeatedly can lead to administrative dissolution
-
-**Personal-side dates** (if you also file your own T1):
-- *T1 return*: April 30 (June 15 for self-employed individuals; balance still due April 30)
-- *T1 instalments*: March 15, June 15, September 15, December 15
-- *RRSP contribution deadline*: 60 days after Dec 31 (typically March 1)
 
 
 ## Sources of law
@@ -327,7 +320,7 @@ When a question gets specific, several layers of authority can apply:
 - **Case law**: court decisions interpreting disputed tax provisions; binding, and can change how a section applies even when the statutory text hasn't moved
 - **CRA administrative position**: *Income Tax Folios* (formerly IT bulletins), CRA guides (T4012, T4015, RC4088), advance rulings, and the actual T2 / Schedule 3 / T5 forms
   - *Not law*, but how CRA reads and administers the ITA in practice
-  - CRA's published positions are the practical compliance baseline; not legally binding, and have been overturned in court
+  - CRA's published positions are the practical compliance baseline; not legally binding
   - A taxpayer can challenge an interpretation in Tax Court
 
 
