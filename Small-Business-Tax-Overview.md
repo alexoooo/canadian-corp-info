@@ -10,7 +10,7 @@ This page is a primer for the topics covered in the rest of this guide.
 - A *Canadian-Controlled Private Corporation* (CCPC) files an annual T2 corporate income tax return — separate from the owner's personal T1
 - Books are kept in *double-entry*; at year-end the chart of accounts is mapped to *GIFI* codes for Schedules 100 and 125
 - Active business income gets a reduced rate (the *Small Business Deduction*, SBD) on the first $500,000 per year
-  - Investment income (from a corporate brokerage account) is taxed at a much higher rate, but partially refundable when paid out as a dividend
+- Investment income (from a corporate brokerage account) is taxed at a much higher rate, but partially refundable when paid out as a dividend
 - You can pay yourself either a salary (deductible expense) or dividends (paid out of retained earnings)
 - *Integration* means a dollar earned directly or through a CCPC should be taxed roughly equally
 - The *Income Tax Act* (ITA) is the primary federal source
@@ -34,7 +34,7 @@ There are two types of corporations, federal and provincial:
 - For a single-province owner-managed CCPC, provincial is usually the simpler and cheaper choice
 - Federal corporations require extra-provincial registration in each province where the corp operates, which adds annual filings
 
-Corporations can make money from active business, or from passive investments (e.g. an ETF).  
+Corporations can make money from active business or from passive investments (e.g. an ETF).  
 Net income (or loss) is calculated as: revenue - expenses (tracked separately for active vs passive).  
 For an incorporated consultant who pays themselves a salary, the largest expense is typically that salary plus the employer's share of CPP.  
 If the corporation has a positive net income, it pays *corporate income tax*.  
@@ -74,7 +74,7 @@ Two further conventions govern how transactions are recorded:
 - *Accrual accounting* (required) determines *when* a transaction is recorded:
   - For revenue: when you send the invoice (not when cash arrives)
   - For expenses: when you receive the vendor bill (not when you pay)
-- *Basis of accounting* determines *how* the amount is measured
+- *Basis of accounting* determines *how* the amount is measured:
   - The simplest is *tax basis*, where revenue and expenses follow ITA rules so that books exactly match T2 numbers
 - The typical small owner-managed CCPC is set up as *accrual + tax basis*
   - Other arrangements are possible, but outside the scope of this guide
@@ -124,7 +124,7 @@ Two parts of the *Income Tax Act* drive a CCPC's tax mechanics:
 The first $500,000 per year is taxed at the *small-business rate* via the SBD (combined federal + Ontario ≈ 12.2% in 2026); ABI above $500,000 is taxed at the *general rate* (combined ≈ 26.5% in Ontario).  
 The $500,000 SBD *business limit* is not always a flat ceiling. It can be reduced by:
 - Sharing among *associated corporations* under ITA [s.125(3)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-125.html)
-- *Aggregate investment income* (AII) over $50,000 under ITA s.125(5.1) — the *AII grind*
+- *Aggregate investment income* (AII) over $50,000 under ITA [s.125(5.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-125.html) — the *AII grind*
 - A large *taxable capital* base — the *large CCPC* rule
 
 *Aggregate investment income* (AII): income from passive investments held in the corp — interest, foreign income, the taxable portion of capital gains.  
@@ -152,7 +152,7 @@ The mechanism is the *dividend gross-up and tax credit*. When the corporation pa
 - Pays personal tax on the grossed-up amount
 - Claims a *dividend tax credit* (DTC) calibrated to offset the corporate tax already paid
 
-Integration is approximate; different provinces and income sources produce small over- or under-taxation.   
+Integration is approximate; different provinces and income sources produce small over- or under-taxation.  
 For the full integration framework and dividend mechanics, see [Shareholder-Dividends.md](Shareholder-Dividends.md).  
 
 
@@ -191,7 +191,7 @@ Practical tradeoffs:
 - A common pattern is enough salary to maximize RRSP room (or to hit the CPP *maximum pensionable earnings*), then top up with dividends as needed for cash flow
 
 The full optimization is personal — it depends on tax bracket, retirement strategy, mortgage plans, and family income-splitting considerations.  
-Note in particular the *TOSI* rules under ITA [s.120.4](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-120.4.html), which limit splitting through dividends to family members who are not active in the business.  
+The *TOSI* rules under ITA [s.120.4](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-120.4.html) limit splitting through dividends to family members who are not active in the business.  
 For dividend mechanics, see [Shareholder-Dividends.md](Shareholder-Dividends.md); for payroll, see [Payment.md](Payment.md).  
 
 
@@ -239,7 +239,7 @@ The more factors that point to an independent business rather than a disguised e
 ## HST and other consumption taxes
 
 The *Goods and Services Tax / Harmonized Sales Tax* (GST/HST) regime is a consumption tax on most goods and services sold in Canada.  
-It's administered by CRA under the *Excise Tax Act* rather than the *Income Tax Act*, and is filed separately from corporate income tax.  
+It's administered by CRA under the *[Excise Tax Act](https://laws-lois.justice.gc.ca/eng/acts/E-15/)* rather than the *Income Tax Act*, and is filed separately from corporate income tax.  
 
 GST/HST comes in two forms:
 - *HST*: a single harmonized system that covers both federal and provincial aspects
@@ -253,21 +253,21 @@ By jurisdiction:
 
 This guide focuses on GST/HST; PST and QST follow similar mechanics but are administered separately by each provincial revenue authority and are out of scope here.  
 
-You need to register and file GST/HST once your worldwide *taxable supplies* exceed $30,000 over a rolling 4-quarter window (or in a single quarter) — the *small supplier* threshold.  
-Sales to non-resident customers (e.g. US clients) are *zero-rated*: you charge 0% GST/HST but still claim ITCs on related inputs, and the sale still counts toward the threshold.  
-Below the threshold, voluntary registration is allowed and often worthwhile — it lets you claim ITC refunds even when output tax is small or zero.  
+Registration and filing become mandatory once worldwide *taxable supplies* exceed $30,000 over a rolling 4-quarter window (or $30,000 in any single quarter) — the *small supplier* threshold.  
+Sales to non-resident customers (e.g. US clients) are *zero-rated*: 0% GST/HST is charged, but ITCs are still claimable on related inputs, and the sale still counts toward the threshold.  
+Below the threshold, voluntary registration is allowed and often worthwhile — it allows ITC refunds even when output tax is small or zero.  
 
 There are two main methods (the *regular method* is the default; the *quick method* requires an election via form GST74, filed through CRA My Business Account):
 - *Regular method*:
-  - Charge GST/HST on sales (the *output tax*)
-  - Claim back the GST/HST paid on inputs (*input tax credits*, ITCs)
-  - Remit the difference to CRA periodically (annually, quarterly, or monthly depending on revenue)
-  - More tax-efficient if you have many inputs (e.g. a physical goods business)
+  - GST/HST charged on sales (the *output tax*)
+  - GST/HST paid on inputs claimed back (*input tax credits*, ITCs)
+  - The difference remitted to CRA periodically (annually, quarterly, or monthly depending on revenue)
+  - More tax-efficient when there are many inputs (e.g. a physical goods business)
 - *Quick method*:
-  - Charge GST/HST on sales (the *output tax*)
-  - Do not track GST/HST paid on inputs
-  - Remit a portion of the collected amount, and keep the rest as taxable revenue
-  - More tax-efficient if you have few inputs (e.g. consulting service)
+  - GST/HST charged on sales (the *output tax*)
+  - GST/HST paid on inputs is not tracked
+  - A portion of the collected amount is remitted; the rest is kept as taxable revenue
+  - More tax-efficient when there are few inputs (e.g. consulting service)
 
 It's a separate filing — separate account number, separate set of mechanics.  
 For the practical workflow, see [HST.md](HST.md).  
@@ -281,7 +281,7 @@ Missing them triggers interest, penalties, or both — including failure-to-file
 **T2 corporate income tax**:
 - *Return*: 6 months after fiscal year-end (ITA [s.150(1)(a)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-150.html))
 - *Balance due*: 3 months after year-end for SBD-eligible CCPCs; 2 months for all other corporations (ITA [s.157](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-157.html))
-  - Note: balance is due *before* the return is due — calculate and pay the year's tax first, then file the return within the longer window
+  - Balance is due *before* the return: pay the year's tax first, then file within the longer window
 - *Instalments*: required when prior-year tax exceeds $3,000; quarterly for eligible CCPCs (last day of each fiscal quarter), monthly otherwise
 
 **Information slips (T4 / T5)**:
@@ -299,8 +299,8 @@ Missing them triggers interest, penalties, or both — including failure-to-file
 - Annual filers with prior-year net tax over $3,000 also pay quarterly instalments
 
 **Corporate registry** (not a tax filing):
-- Federal corporations (CBCA): annual return to Corporations Canada within 60 days of incorporation anniversary
-- Provincial corporation: varies (e.g. Ontario annual return through the Ontario Business Registry)
+- Federal corporations (CBCA): annual return to [Corporations Canada](https://ised-isde.canada.ca/site/corporations-canada/en/annual-return-business-corporations) within 60 days of incorporation anniversary
+- Provincial corporation: varies (e.g. Ontario annual return through the [Ontario Business Registry](https://www.ontario.ca/page/ontario-business-registry) within 6 months of fiscal year-end)
 - Missing the annual return repeatedly can lead to administrative dissolution
 
 
@@ -316,7 +316,7 @@ When a question gets specific, several layers of authority can apply:
 - ***Income Tax Regulations***: federal secondary legislation; same legal force as the ITA, fleshes out operational detail (prescribed rates, prescribed forms, prescribed manner of election)
 - **Provincial tax acts**: e.g. Ontario's *Taxation Act, 2007*; provincial corporate rates, provincial DTCs, and provincial credits live here, not in the ITA
 - **Tax treaties**: bilateral agreements (e.g. *Canada-US Tax Convention*) that can override the ITA in cross-border situations; the reduced 5% / 15% withholding rates on dividends paid to non-residents come from treaties, not from the ITA itself
-- **Corporate statutes**: the *Canada Business Corporations Act* (CBCA) and provincial equivalents (*OBCA*, *ABCA*, etc.); govern whether a corporate action is *legally valid* in the first place — e.g. CBCA s.42 sets the solvency test for declaring a dividend, and passing every ITA mechanic doesn't help if the dividend was illegal under the corporate statute
+- **Corporate statutes**: the *Canada Business Corporations Act* (CBCA) and provincial equivalents (*OBCA*, *ABCA*, etc.); govern whether a corporate action is *legally valid* in the first place — e.g. CBCA [s.42](https://laws-lois.justice.gc.ca/eng/acts/C-44/section-42.html) sets the solvency test for declaring a dividend, and passing every ITA mechanic doesn't help if the dividend was illegal under the corporate statute
 - **Case law**: court decisions interpreting disputed tax provisions; binding, and can change how a section applies even when the statutory text hasn't moved
 - **CRA administrative position**: *Income Tax Folios* (formerly IT bulletins), CRA guides (T4012, T4015, RC4088), advance rulings, and the actual T2 / Schedule 3 / T5 forms
   - *Not law*, but how CRA reads and administers the ITA in practice
@@ -330,24 +330,33 @@ These appear across the rest of this guide and on most T2 schedules.
 Each has its own page or section for the detailed mechanics.
 
 - **SBD**: *Small Business Deduction*; reduced corporate rate on the first $500,000 of ABI per year
+- **ABI**: *Active Business Income*; income from carrying on an active business; gets the SBD on the first $500k
 - **AII**: *Aggregate Investment Income*; high rate at the corporate level, partially refundable via NERDTOH
 - **GRIP**: *General Rate Income Pool*; tracks capacity to designate *eligible* dividends; see [Shareholder-Dividends.md](Shareholder-Dividends.md)
 - **CDA**: *Capital Dividend Account*; tracks capacity to pay tax-free *capital* dividends; see [Capital-Dividend-Account.md](Capital-Dividend-Account.md)
 - **ERDTOH / NERDTOH**: *Refundable Dividend Tax on Hand* pools; refunded when the corporation pays a taxable dividend
+- **DTC**: *Dividend Tax Credit*; personal credit calibrated to offset corporate tax already paid (per Integration)
 - **Integration**: the design principle that combines corp + personal tax to approximate direct-earning tax; see [Shareholder-Dividends.md](Shareholder-Dividends.md)
+- **TOSI**: *Tax on Split Income* (ITA s.120.4); limits splitting through dividends to family members not active in the business
+- **PSB**: *Personal Service Business*; CCPC reclassified as a disguised employee, with most CCPC tax advantages removed
 - **GIFI**: *General Index of Financial Information*; standardized chart-of-accounts coding CRA uses to read your income statement and balance sheet on Schedules 100 and 125
 - **ACB**: *Adjusted Cost Base*; the tax cost of an investment, used to compute capital gain or loss on disposition; see [Adjusted-Cost-Base.md](Adjusted-Cost-Base.md)
+- **ITC**: *Input Tax Credit*; recoverable GST/HST paid on business inputs under the regular method
 - **QSBC / LCGE**: *Qualified Small Business Corporation* shares qualify the shareholder for the *Lifetime Capital Gains Exemption* on disposition; gated by tests including a 90% active-business-assets requirement
 
 
 ## Related
 
 - [Adjusted Cost Base](Adjusted-Cost-Base.md)
+- [Adjusted Cost Base — Tracking](Adjusted-Cost-Base-Tracking.md)
 - [Capital Dividend Account](Capital-Dividend-Account.md)
 - [Shareholder Dividends](Shareholder-Dividends.md)
 - [T3](T3.md)
 - [T3 - Box 26 Other Income](T3-Box-26-Other-Income.md)
 - [T5008](T5008.md)
+- [Foreign Currency](Foreign-Currency.md)
+- [HST](HST.md)
+- [Payment](Payment.md)
 - [Glossary](Glossary.md)
 
 
@@ -355,6 +364,7 @@ Each has its own page or section for the detailed mechanics.
 
 - Income Tax Act (R.S.C., 1985, c. 1 (5th Supp.)): https://laws-lois.justice.gc.ca/eng/acts/I-3.3/
   - [s.18(1)(p)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-18.html) - limits on deductions for a Personal Service Business
+  - [s.112](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-112.html) - inter-corporate dividend deduction (Part I exemption for dividends received from other Canadian corporations)
   - [s.120.4](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-120.4.html) - *Tax on Split Income* (TOSI), restricting income splitting through dividends to non-active family members
   - [s.123.5](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-123.5.html) - additional 5% federal tax on PSB income
   - [s.125](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-125.html) - Small Business Deduction; s.125(3) sharing among associated corporations; s.125(5.1) AII grind and large-CCPC reduction of the business limit; s.125(7) definition of *Personal Service Business* and the five-full-time-employees safe harbour
