@@ -22,10 +22,25 @@ The audience is narrow: owners of a Canadian-controlled private corporation (CCP
 - **`T3.md`, `T5008.md`** — translate brokerage slips into bookkeeping entries, GIFI-aligned ledger accounts, and specific T2 schedule inputs; build on ACB concepts
 - **`T3-Box-26-Other-Income.md`** — sub-page of `T3.md`, indexed under it in the README
 - **`Capital-Dividend-Account.md`** — depends on capital gains data produced by the ACB/T3/T5008 workflows
-- **`Foreign-Currency.md`, `HST.md`, `Payment.md`, `Glossary.md`** — work-in-progress stubs; preserve `STATUS: WORK IN PROGRESS` markers where present
-- **`Shareholder-Dividends.md`** — AI-generated draft awaiting human review; carries the `STATUS: AI GENERATED, REVIEW IN PROGRESS` marker; the body is mature in shape and detail but each section still needs verification before the marker can be removed
+- **`Glossary.md`** — short definitions of the acronyms and tax terms used across the guide, each cross-referenced to its canonical page
+- **`Foreign-Currency.md`, `HST.md`, `Payment.md`** — stubs covering FX bookkeeping, GST/HST, and corporate-tax payment workflows respectively
+- **`Shareholder-Dividends.md`** — eligible, non-eligible, and capital dividend mechanics: which corporate pool each draws on, how to file (T5, T2054), and the T1 gross-up + DTC on the personal side
 
 When adding or substantially restructuring a topic, update `README.md` so the index stays current. Sub-pages are indented under their parent in the index (see how `T3-Box-26-Other-Income.md` sits under `T3.md`).
+
+---
+
+## Page status
+
+Every page sits in one of three states, and `README.md` groups pages by state.
+
+- **Signed off** — no marker; the maintainer has reviewed the page end-to-end; treat the content as authoritative within the disclaimer
+- **`STATUS: AI GENERATED, REVIEW IN PROGRESS`** — page shape and detail are mature, but each section still needs the maintainer's verification before its facts can be relied on
+- **`STATUS: WORK IN PROGRESS`** — stub or partial draft; not yet near complete
+
+When a marker is present, it is the very first line of the file, followed by a blank line, then the `# Title` heading (see `Shareholder-Dividends.md` for the canonical shape).
+
+This separation is load-bearing. The audience uses these pages as practical guidance, and AI-generated content can contain plausible-sounding errors that have not yet been caught. Do not silently promote a page — removing the marker and moving its `README.md` entry into Topics is a sign-off, and only the maintainer can issue it. When drafting new content from scratch, mark it `AI GENERATED, REVIEW IN PROGRESS` and place its `README.md` entry under Pending review.
 
 ---
 
@@ -124,7 +139,7 @@ For mature pages:
 7. `# Links` (optional) — informal external references
 8. `# TODO` (optional)
 
-Stub pages keep `STATUS: WORK IN PROGRESS` at the top.
+For non-mature pages, the `STATUS: …` marker (see [Page status](#page-status)) replaces the `**Who this is for**` opener until the page is promoted.
 
 ---
 
@@ -137,9 +152,10 @@ Stub pages keep `STATUS: WORK IN PROGRESS` at the top.
 ## Audits
 
 Periodic documentation audits live under `audit/`. Filenames follow the pattern
-`<YYYY-MM-DD>_Audit_<Model>-<reasoning-effort>.md` — the date the audit was run, the model that
-ran it, and the reasoning-effort level the model was running at (e.g. `Opus-4.7-xhigh`). The same
-suffix appears in the audit's entry under the **Audit** list in `README.md`. Each audit is a
+`<YYYY-MM-DD>_Audit_<Model>-<reasoning-effort>.md` for a fresh audit pass, or
+`<YYYY-MM-DD>_Audit-Followup_<Model>-<reasoning-effort>.md` for one that primarily verifies
+fixes from a prior audit. The date is when the audit was run, the model is the one that ran it,
+and the reasoning-effort level is the model's setting (e.g. `Opus-4.7-xhigh`). Each audit is a
 read-only record of findings; fixes land in separate follow-up commits so the audit and the
 response stay separable in git history.
 

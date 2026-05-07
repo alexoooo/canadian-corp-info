@@ -78,6 +78,7 @@ The CRA My Business Account website can change over time, here are steps as of 2
 ## Related
 
 - [Adjusted Cost Base](Adjusted-Cost-Base.md)
+- [Shareholder Dividends](Shareholder-Dividends.md)
 - [T3](T3.md)
 - [T5008](T5008.md)
 

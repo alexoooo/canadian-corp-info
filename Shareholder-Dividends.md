@@ -392,7 +392,7 @@ The capital-dividend line on S3 is reporting only; it does not by itself elect a
 The s.83(2) election still needs Form T2054 filed at or before the payment date (see *Capital dividend election - Form T2054* below).  
 
 If the shareholder is itself a Canadian corporation (e.g. an owner-manager who holds the operating company through a personal *holding company*, Holdco), the recipient is a *connected corporation* under ITA [s.186(4)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-186.html).  
-The payer corp is connected to the recipient if the recipient owns >10% of votes and >10% of FMV of the payer's shares.  
+The payer corp is connected to the recipient if the recipient controls the payer, or owns >10% of votes and >10% of FMV of the payer's shares (s.186(4)).  
 
 A dividend to a connected recipient:
 - Does not go in Box 450; reported on the connected-corporation portion of Schedule 3 instead
@@ -529,11 +529,11 @@ Setup:
 - AII is below the $50,000 grind threshold, so SBD is preserved
 
 NERDTOH calculation:
-- 2026 NERDTOH addition: $40,000 × 30⅔% = **$12,267** (ITA s.129(4)); refundable Part I tax remitted with 2026 instalments
+- 2026 NERDTOH addition: $40,000 × 30⅔% = **$12,266.67** (ITA s.129(4)); refundable Part I tax remitted with 2026 instalments
 - Opening NERDTOH: $0
-- Year-end NERDTOH: $12,267
+- Year-end NERDTOH: $12,266.67
 
-To fully recover the NERDTOH balance, the corporation needs a non-eligible dividend of $12,267 ÷ 38⅓% = **$32,000** (per the dividend refund formula in ITA s.129(1)).  
+To fully recover the NERDTOH balance, the corporation needs a non-eligible dividend of $12,266.67 ÷ 38⅓% = **$32,000** (per the dividend refund formula in ITA s.129(1)).  
 
 Year-end timing: the corporation's year-end is December 31, 2026.  
 On December 30, 2026 the directors pass a resolution declaring a $32,000 non-eligible dividend, *immediately payable* and credited to the shareholder's loan account on the same date.  
@@ -556,8 +556,8 @@ The intermediate "Dividends payable" step is shown to make the legal sequence ex
 T2 (2026) schedule entries:
 - S3 Part 3 / Box 450 (non-eligible portion): $32,000
 - S3 Part 4 / Box 500 (non-eligible portion): $32,000
-- T2 dividend refund line: $32,000 × 38⅓% = **$12,267**, capped at the NERDTOH balance of $12,267
-- The $12,267 refund offsets 2026 Part I tax payable
+- T2 dividend refund line: $32,000 × 38⅓% = **$12,266.67**, capped at the NERDTOH balance of $12,266.67
+- The $12,266.67 refund offsets 2026 Part I tax payable
 
 T5 slip: because the dividend is declared *and credited* to the shareholder's loan account on December 30, 2026, it is "paid or credited" in 2026 for T5 purposes.  
 The T5 goes on the 2026 calendar year (deadline: last day of February 2027) and the shareholder reports it on their 2026 T1.  
@@ -566,7 +566,7 @@ If the resolution had instead made the dividend payable on January 15, 2027 with
 ITA s.129(1) uses the same "paid, credited, or otherwise made available" standard; without an in-year credit the dividend has not been paid in 2026 and the NERDTOH refund is deferred to the 2027 T2.  
 The December-30 credit to *Due to shareholder* is the load-bearing step that makes the same-year refund possible.  
 
-The corporation has converted $12,267 of refundable Part I tax sitting in NERDTOH into a cash refund by paying out the $32,000 non-eligible dividend.  
+The corporation has converted $12,266.67 of refundable Part I tax sitting in NERDTOH into a cash refund by paying out the $32,000 non-eligible dividend.  
 The shareholder receives $32,000 cash in January 2027 against a *Due to shareholder* balance set up on December 30, 2026, and reports the dividend on their 2026 T1.  
 
 
@@ -657,5 +657,4 @@ For full mechanics, see [Capital-Dividend-Account.md](Capital-Dividend-Account.m
 
 - Add a worked example for an investment-only holdco (no active business income; pure NERDTOH-recovery cycle)
 - Add screenshots for the T5 Web Forms filing flow via CRA My Business Account
-- Propose Glossary entries for: GRIP, LRIP, CDA, ERDTOH, NERDTOH, AII, eligible dividend, non-eligible dividend, capital dividend, dividend gross-up, dividend tax credit (DTC), stated capital, paid-up capital (PUC), dividend refund, integration
 - Watch for enactment of the 2026 Ontario budget (proposed Ontario SBD rate cut to 2.2% effective July 1, 2026; non-eligible DTC drop to 1.9863% effective January 1, 2027) and update worked examples once enacted

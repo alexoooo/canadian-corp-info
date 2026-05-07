@@ -165,7 +165,6 @@ There are limitations on which losses can be claimed, make sure you don't get a 
 ## Links
 
 - Related to personal taxes, but still relevant: https://www.finiki.org/wiki/Adjusted_cost_base
-- https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4037/capital-gains.html
 - https://www.cifinancial.com/ci-gam/ca/en/expert-insights/articles/etf-taxation--tax-loss-selling-and-identical-property.html
 
 

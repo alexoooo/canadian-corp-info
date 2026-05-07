@@ -39,7 +39,7 @@ In some contexts, *other income* is referred to as *property income*:
 - Real estate rentals can generate T3 Box 26 *other income* (e.g. REIT ETF)
 - However, it can also come from sources unrelated to real estate; *property income* is a tax term
 
-Broadly speaking, income can be classified in different ways:
+Income can be classified in different ways:
 - *active* business vs *passive* non-business (i.e. investments or property rental)
 - *ordinary* income taxed at 100% vs *preferential* treatment as capital gains (inclusion rate) or dividends (gross-up and credit)
 - *resident* domestic recipient vs *non-resident* foreign recipient (outside the scope of this document)
