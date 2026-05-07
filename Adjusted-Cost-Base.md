@@ -129,7 +129,7 @@ There are limitations on which losses can be claimed, make sure you don't get a 
 - Who it applies to: you or an "affiliated person", including a corporation that you control (or a corporation controlled by your spouse/common-law partner)  
 - What is the action: acquisition of an identical property —
     same issuer, same class, same currency of issue
-    (ITA [s.248(12)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-248.html); CRA Folio S3-F3-C1);
+    ([CRA IT-387R2 (Archived) - *Meaning of "Identical Properties"*](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/it387r2-consolid/archived-meaning-identical-properties.html));
     whether two different ETFs tracking the same index are identical is fact-specific  
 - Condition at end of period: you or an affiliated person still owns that substituted property (or has the right to acquire it)  
 - What happens: loss is denied for now and is generally added to the ACB of the substituted property instead of being claimed immediately  
@@ -155,8 +155,8 @@ There are limitations on which losses can be claimed, make sure you don't get a 
   - [s.47(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-47.html) - identical properties: pooled average cost rather than FIFO or LIFO
   - [s.53](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-53.html) - adjustments to cost base (additions and deductions)
   - [s.54](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-54.html) - definitions of "adjusted cost base", "superficial loss", and "proceeds of disposition"
-  - [s.248(12)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-248.html) - definition of "identical property" (same issuer, class, and currency; relevant to superficial loss)
   - [s.251.1](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-251.1.html) - definition of "affiliated persons" (relevant to superficial loss)
+- CRA IT-387R2 (Archived) - *Meaning of "Identical Properties"*: https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/it387r2-consolid/archived-meaning-identical-properties.html
 - CRA T2 S4 - Corporation Loss Continuity and Application: https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2sch4.html
 - CRA T4037 "Capital Gains" guide: https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4037/capital-gains.html
 - Bank of Canada daily exchange rates: https://www.bankofcanada.ca/rates/exchange/daily-exchange-rates/

@@ -289,7 +289,7 @@ Missing them triggers interest, penalties, or both — including failure-to-file
 - Late-filing penalties are calculated *per slip* (not per filing), so a single missed slip can carry a meaningful penalty
 
 **Payroll source deductions** (if paying salary):
-- Most owner-managed CCPCs remit *monthly*: income tax + CPP + EI by the 15th of the following month
+- Most owner-managed CCPCs remit *monthly*: income tax + CPP + EI by the 15th of the following month (EI applies only when the employee is EI-insurable, which typically excludes the >40%-share owner-manager)
 - Larger employers move to twice-monthly or weekly remittance based on prior-year *AMWA* (average monthly withholding amount)
 
 **GST/HST** (if registered):

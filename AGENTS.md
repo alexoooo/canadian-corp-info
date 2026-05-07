@@ -22,7 +22,8 @@ The audience is narrow: owners of a Canadian-controlled private corporation (CCP
 - **`T3.md`, `T5008.md`** — translate brokerage slips into bookkeeping entries, GIFI-aligned ledger accounts, and specific T2 schedule inputs; build on ACB concepts
 - **`T3-Box-26-Other-Income.md`** — sub-page of `T3.md`, indexed under it in the README
 - **`Capital-Dividend-Account.md`** — depends on capital gains data produced by the ACB/T3/T5008 workflows
-- **`Foreign-Currency.md`, `HST.md`, `Payment.md`** — work-in-progress stubs; preserve `STATUS: WORK IN PROGRESS` markers where present
+- **`Foreign-Currency.md`, `HST.md`, `Payment.md`, `Glossary.md`** — work-in-progress stubs; preserve `STATUS: WORK IN PROGRESS` markers where present
+- **`Shareholder-Dividends.md`** — AI-generated draft awaiting human review; carries the `STATUS: AI GENERATED, REVIEW IN PROGRESS` marker; the body is mature in shape and detail but each section still needs verification before the marker can be removed
 
 When adding or substantially restructuring a topic, update `README.md` so the index stays current. Sub-pages are indented under their parent in the index (see how `T3-Box-26-Other-Income.md` sits under `T3.md`).
 

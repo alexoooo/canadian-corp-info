@@ -23,7 +23,7 @@ Work in progress:
 - [Foreign-Currency](Foreign-Currency.md)
 - [HST](HST.md)
 - [Payment](Payment.md)
-- [Shareholder-Dividends](Shareholder-Dividends.md)
+- [Shareholder-Dividends](Shareholder-Dividends.md) — AI generated, review in progress
 - [Glossary](Glossary.md)
 
 Audit:
