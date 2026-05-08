@@ -22,16 +22,16 @@ Limitations:
 - The following is my understanding as of 2026
 
 
-## What a dividend is
+## What is a dividend
 
-A *dividend* is a distribution of property by a corporation to its shareholders, paid out of the corporation's after-tax retained earnings.  
-The corporation pays its corporate income tax first; the dividend then transfers (some of) that after-tax money to the shareholder.  
+A *dividend* is a distribution of money or other property by a corporation to its shareholders, paid out of the corporation's after-tax retained earnings.  
+The corporation pays its corporate income tax first; the dividend then transfers (some of) that after-tax money to shareholders.  
 
 The *Income Tax Act* does not define "dividend" exhaustively.  
-ITA [s.248(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-248.html) only specifies that the term includes a stock dividend, so it takes its common-law meaning.  
+ITA [s.248(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-248.html) only adds that stock dividends count; otherwise the common-law definition applies.  
 Various deeming rules in [s.84](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-84.html) cover specific transactions like share redemptions and capital reductions.  
 
-A dividend is **not deductible to the corporation**.  
+A dividend is **not deductible to the corporation** (i.e. not treated as a business expense, so it does not reduce the corp's taxable income).  
 This is what distinguishes it from salary; the *Integration* framework is covered below.  
 
 Things that look like dividends but aren't (or are deemed to be dividends with different mechanics):
@@ -41,13 +41,13 @@ Things that look like dividends but aren't (or are deemed to be dividends with d
   - Taxed in the shareholder's hands at full ordinary rates with CPP/EI obligations
   - Does not draw on any of the dividend tax accounts (GRIP, CDA, RDTOH)
 - *Return of capital* out of *stated capital* / *paid-up capital* (PUC): a distribution that reduces PUC of a private corporation is *deemed* to be a dividend under ITA s.84(4.1), with limited exceptions
-  - In a typical owner-manager CCPC where the founder's incorporator shares were issued for $1 or $100, there is essentially no PUC capacity to do a real return of capital
+  - In a typical owner-manager CCPC where the founder's incorporator shares were issued for $1 or $100, the PUC is too small to support a meaningful return-of-capital distribution
 - Share *redemption*: when the corporation buys back shares, redemption proceeds in excess of PUC are *deemed* to be a dividend under ITA s.84(3)
   - The shareholder's adjusted cost base is then compared against PUC (not against the gross proceeds) for the capital gain or loss calculation
 
 These deemed-dividend mechanics are used mainly for restructuring transactions (estate freezes, share buybacks, winding up) and are out of scope for this document.  
 
-A *shareholder loan* from the corp is not a distribution at all.  
+A *shareholder loan* from the corp is a debt the shareholder owes back, not a distribution.  
 If the loan is not repaid within one year after the end of the corp's tax year in which it was made, ITA [s.15(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-15.html) includes the full loan amount in the shareholder's personal income for the year the loan was made.  
 
 
