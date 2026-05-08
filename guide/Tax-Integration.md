@@ -109,7 +109,7 @@ In other provinces, or at lower personal rates, the ranking between eligible and
 
 - [Small Business Tax Overview](Small-Business-Tax-Overview.md)
 - [Shareholder Dividends](Shareholder-Dividends.md)
-- [Capital Dividend Account](Capital-Dividend-Account.md)
+- [Capital Dividend Account](Capital-Dividend-Account/Capital-Dividend-Account.md)
 
 
 ## Citations

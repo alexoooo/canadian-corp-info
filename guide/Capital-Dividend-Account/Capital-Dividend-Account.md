@@ -72,16 +72,16 @@ The CRA My Business Account website can change over time, here are steps as of 2
     - "T2054 Election for a Capital Dividend Under Subsection 83(2)"
     - "Schedule 089 Request for Capital Dividend Account Balance Verification"
 
-![Screenshot of submitting CRA documents in CRA My Business Account](media/CRA-My-Business-Account_Submit-documents_Capital-Dividend.png)
+![Screenshot of submitting CRA documents in CRA My Business Account](CRA-My-Business-Account_Submit-documents_Capital-Dividend.png)
 
 
 ## Related
 
-- [Small Business Tax Overview](Small-Business-Tax-Overview.md)
-- [Adjusted Cost Base](Adjusted-Cost-Base.md)
-- [Shareholder Dividends](Shareholder-Dividends.md)
-- [T3](T3.md)
-- [T5008](T5008.md)
+- [Small Business Tax Overview](../Small-Business-Tax-Overview.md)
+- [Adjusted Cost Base](../Adjusted-Cost-Base/Adjusted-Cost-Base.md)
+- [Shareholder Dividends](../Shareholder-Dividends.md)
+- [T3](../T3/T3.md)
+- [T5008](../T5008/T5008.md)
 
 
 ## Citations

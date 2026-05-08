@@ -7,7 +7,7 @@ This is the single source of truth for project context, editorial conventions, a
 
 ## Repository nature
 
-This is a **documentation-only** repository. There is no build system, test suite, lint tooling, or package manifest. All artifacts are top-level Markdown files plus screenshots in `media/`. Edits are content edits; "running" the project means previewing Markdown.
+This is a **documentation-only** repository. There is no build system, test suite, lint tooling, or package manifest. The root holds `README.md`, `AGENTS.md`, `CLAUDE.md`, an `audit/` folder, and a `guide/` folder containing all topic content (with screenshots co-located alongside the pages that reference them). Edits are content edits; "running" the project means previewing Markdown.
 
 The audience is narrow: owners of a Canadian-controlled private corporation (CCPC), typically holding stocks/ETFs in a corporate trading account. Keep that frame — do not generalize content to personal tax, US filers, or other entity types unless the existing document already does.
 
@@ -15,19 +15,19 @@ The audience is narrow: owners of a Canadian-controlled private corporation (CCP
 
 ## Document architecture
 
-`README.md` is the topic index. Each top-level `.md` is a standalone page in the guide, covering one paperwork/tax area; the pages form a dependency graph rather than a flat collection:
+`README.md` is the topic index. Each page under `guide/` is a standalone topic; the pages form a dependency graph rather than a flat collection. A topic that has multiple files (parent page + sub-page, or page + screenshots) lives in its own subfolder under `guide/` so related files stay co-located; a topic that is a single page with no media sits as a flat `.md` directly under `guide/`.
 
-- **`Adjusted-Cost-Base.md`** — foundational concepts; other guides assume this vocabulary (ACB, ROC, phantom distributions, Book Cost vs ACB)
-- **`Adjusted-Cost-Base-Tracking.md`** — operational companion to the above; contains the spreadsheet workflow: row-order assumptions, formulas, transaction-type conventions; ACB-related edits elsewhere must stay consistent with this file
-- **`T3.md`, `T5008.md`** — translate brokerage slips into bookkeeping entries, GIFI-aligned ledger accounts, and specific T2 schedule inputs; build on ACB concepts
-- **`T3-Box-26-Other-Income.md`** — sub-page of `T3.md`, indexed under it in the README
-- **`Capital-Dividend-Account.md`** — depends on capital gains data produced by the ACB/T3/T5008 workflows
-- **`Glossary.md`** — short definitions of the acronyms and tax terms used across the guide, each cross-referenced to its canonical page
-- **`Foreign-Currency.md`, `HST.md`, `Payment.md`** — stubs covering FX bookkeeping, GST/HST, and corporate-tax payment workflows respectively
-- **`Shareholder-Dividends.md`** — eligible, non-eligible, and capital dividend mechanics: which corporate pool each draws on, how to file (T5, T2054), and the T1 gross-up + DTC on the personal side
-- **`Tax-Integration.md`** — the integration principle, the dividend gross-up + DTC mechanism, per-flavour gross-up/DTC rates, and the corp-side preference order for choosing among the three flavours
+- **`guide/Adjusted-Cost-Base/Adjusted-Cost-Base.md`** — foundational concepts; other guides assume this vocabulary (ACB, ROC, phantom distributions, Book Cost vs ACB)
+- **`guide/Adjusted-Cost-Base/Adjusted-Cost-Base-Tracking.md`** — operational companion to the above; contains the spreadsheet workflow: row-order assumptions, formulas, transaction-type conventions; ACB-related edits elsewhere must stay consistent with this file
+- **`guide/T3/T3.md`, `guide/T5008/T5008.md`** — translate brokerage slips into bookkeeping entries, GIFI-aligned ledger accounts, and specific T2 schedule inputs; build on ACB concepts
+- **`guide/T3/T3-Box-26-Other-Income.md`** — sub-page of `T3.md`, indexed under it in the README
+- **`guide/Capital-Dividend-Account/Capital-Dividend-Account.md`** — depends on capital gains data produced by the ACB/T3/T5008 workflows
+- **`guide/Glossary.md`** — short definitions of the acronyms and tax terms used across the guide, each cross-referenced to its canonical page
+- **`guide/Foreign-Currency.md`, `guide/HST.md`, `guide/Payment/Payment.md`** — stubs covering FX bookkeeping, GST/HST, and corporate-tax payment workflows respectively
+- **`guide/Shareholder-Dividends.md`** — eligible, non-eligible, and capital dividend mechanics: which corporate pool each draws on, how to file (T5, T2054), and the T1 gross-up + DTC on the personal side
+- **`guide/Tax-Integration.md`** — the integration principle, the dividend gross-up + DTC mechanism, per-flavour gross-up/DTC rates, and the corp-side preference order for choosing among the three flavours
 
-When adding or substantially restructuring a topic, update `README.md` so the index stays current. Sub-pages are indented under their parent in the index (see how `T3-Box-26-Other-Income.md` sits under `T3.md`).
+When adding or substantially restructuring a topic, update `README.md` so the index stays current. Sub-pages are indented under their parent in the index (see how `T3-Box-26-Other-Income.md` sits under `T3.md`). When adding a screenshot, place it in the same folder as the page that references it, and reference it with a bare filename rather than a relative path.
 
 ---
 
@@ -53,7 +53,7 @@ These rules encode actual decisions made across the existing guides. Follow them
 - **Cross-link, don't duplicate**: topic pages refer to each other through inline links and a `Related` section near the end; if you find yourself re-explaining ACB inside `T3.md`, link to `Adjusted-Cost-Base.md` instead
 - **Citations are concrete and authoritative**: existing pages cite the Income Tax Act, CRA forms/schedules, CRA guides, and Bank of Canada FX rates directly; match that — no vague "per CRA guidance" without a pointer
 - **Standard page shape** (where the page is mature): audience/scope at the top, walkthrough sections in the middle, then `Related`, `Citations`, and optionally `TODO` near the end
-- **Diagrams**: use Mermaid in fenced ```` ```mermaid ```` blocks for conceptual flow diagrams; `media/` is reserved for screenshots of actual CRA / brokerage forms and tooling
+- **Diagrams**: use Mermaid in fenced ```` ```mermaid ```` blocks for conceptual flow diagrams; PNG screenshots are reserved for actual CRA / brokerage forms and tooling, co-located in the same folder as the page that references them
 - **ACB-specific conventions** (load-bearing — do not silently change):
   - Pooled average cost, not FIFO/LIFO
   - Trade-date FX for purchases, sales, and commissions
@@ -147,7 +147,7 @@ For non-mature pages, the `STATUS: …` marker (see [Page status](#page-status))
 
 ## Media
 
-`media/` holds screenshots referenced inline (CRA portals, brokerage trade confirmations, T2/T3/Schedule 6/Schedule 7 examples, the ACB tracker spreadsheet). Filenames are descriptive and hyphenated. When adding screenshots, redact account numbers, names, and identifying detail — see `T5008-Transaction-Steps-Redacted.png` as the model.
+Screenshots (CRA portals, brokerage trade confirmations, T2/T3/Schedule 6/Schedule 7 examples, the ACB tracker spreadsheet) live in the same folder as the page that references them. Filenames are descriptive and hyphenated, and the page references them by bare filename. When adding screenshots, redact account numbers, names, and identifying detail — see `guide/T5008/T5008-Transaction-Steps-Redacted.png` as the model.
 
 ---
 

@@ -140,12 +140,12 @@ There are limitations on which losses can be claimed, make sure you don't get a 
 
 ## Related
 
-- [Small Business Tax Overview](Small-Business-Tax-Overview.md)
+- [Small Business Tax Overview](../Small-Business-Tax-Overview.md)
 - [Adjusted Cost Base Tracking](Adjusted-Cost-Base-Tracking.md)
-- [Capital Dividend Account](Capital-Dividend-Account.md)
-- [T3](T3.md)
-- [T5008](T5008.md)
-- [Foreign-Currency](Foreign-Currency.md)
+- [Capital Dividend Account](../Capital-Dividend-Account/Capital-Dividend-Account.md)
+- [T3](../T3/T3.md)
+- [T5008](../T5008/T5008.md)
+- [Foreign-Currency](../Foreign-Currency.md)
 
 
 ## Citations

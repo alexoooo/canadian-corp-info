@@ -91,7 +91,7 @@ Note: the *Low Rate Income Pool* (LRIP, ITA s.89(1)) only applies if the corpora
 - Requires an election under ITA [s.83(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-83.html) on Form T2054, filed at or before the payment date
 - Over-electing triggers *Part III* tax on the excess at 60% under ITA [s.184(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-184.html)
 
-For full mechanics of the CDA balance calculation and the T2054 election workflow, see [Capital-Dividend-Account.md](Capital-Dividend-Account.md).  
+For full mechanics of the CDA balance calculation and the T2054 election workflow, see [Capital-Dividend-Account.md](Capital-Dividend-Account/Capital-Dividend-Account.md).  
 
 
 ## Tax integration
@@ -124,7 +124,7 @@ Schedule 53 must still be filed each year to track and carry forward the balance
 ## CDA - capacity for capital dividends
 
 The *Capital Dividend Account* (CDA) holds the non-taxable portion of the corporation's cumulative net capital gains, plus certain other amounts (e.g. tax-free portion of life-insurance proceeds), and is reduced by capital dividends paid.  
-For mechanics of CDA balance tracking, the s.83(2) election, Form T2054 filing, and the Part III tax penalty for over-electing, see [Capital-Dividend-Account.md](Capital-Dividend-Account.md).  
+For mechanics of CDA balance tracking, the s.83(2) election, Form T2054 filing, and the Part III tax penalty for over-electing, see [Capital-Dividend-Account.md](Capital-Dividend-Account/Capital-Dividend-Account.md).  
 
 The CDA balance is read at the time the s.83(2) election is filed.  
 Any capital losses realized between your last balance check and the election date reduce the available balance.  
@@ -134,7 +134,7 @@ Overdrawing triggers a 60% Part III tax (ITA s.184(2)).
 ## ERDTOH and NERDTOH - refundable dividend tax accounts
 
 The *Eligible Refundable Dividend Tax on Hand* (ERDTOH) and *Non-Eligible Refundable Dividend Tax on Hand* (NERDTOH) accounts hold previously paid refundable tax that the corporation gets back as a *dividend refund* under ITA [s.129(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-129.html) when it pays a taxable dividend.  
-How the pools are *filled* (Part IV tax on dividends received from other corporations, the refundable portion of Part I tax on AII) is covered in [T3.md](T3.md).  
+How the pools are *filled* (Part IV tax on dividends received from other corporations, the refundable portion of Part I tax on AII) is covered in [T3.md](T3/T3.md).  
 This section focuses on how they are *emptied*: the refund mechanics from the dividend-payer's perspective.  
 
 The dividend refund for the year is calculated separately by dividend type:
@@ -167,7 +167,7 @@ AII affects the corporation in two ways relevant to dividend planning:
 1. AII generates a refundable Part I tax addition to NERDTOH equal to 30⅔% of AII (ITA s.129(4)), recovered by paying a non-eligible dividend
 2. AII over $50,000 grinds the SBD limit at $5 of SBD reduction per $1 of AII excess, fully eliminating the SBD at $150,000 of AII (ITA [s.125(5.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-125.html))
 
-See [T3-Box-26-Other-Income.md](T3-Box-26-Other-Income.md) for the detailed treatment of T3 Box 26 income.
+See [T3-Box-26-Other-Income.md](T3/T3-Box-26-Other-Income.md) for the detailed treatment of T3 Box 26 income.
 
 The interaction between these two effects shapes long-term dividend strategy:
 - If AII stays below the $50,000 grind threshold, the corp's active business income remains under the SBD rate; dividends paid are non-eligible by default; pay a non-eligible dividend each year to recover NERDTOH
@@ -201,7 +201,7 @@ Sample resolution for a sole-shareholder CCPC paying itself a non-eligible divid
 > Signed [DATE]: ______________________  [Director name]
 
 For an *eligible* dividend, change the third sentence to: "This dividend IS designated as an eligible dividend under subsection 89(14) of the *Income Tax Act*."  
-For a *capital* dividend the resolution must additionally elect under ITA s.83(2), and Form T2054 must be filed; see [Capital-Dividend-Account.md](Capital-Dividend-Account.md).  
+For a *capital* dividend the resolution must additionally elect under ITA s.83(2), and Form T2054 must be filed; see [Capital-Dividend-Account.md](Capital-Dividend-Account/Capital-Dividend-Account.md).  
 
 The solvency test under *Canada Business Corporations Act* (CBCA) [s.42](https://laws-lois.justice.gc.ca/eng/acts/C-44/section-42.html) prohibits declaring or paying a dividend if there are reasonable grounds for believing that:
 - The corporation is, or would after the payment be, unable to pay its liabilities as they become due (the *cash-flow* test), or
@@ -304,7 +304,7 @@ Most chart-of-accounts setups do not require an explicit closing journal entry; 
 A taxable dividend (eligible or non-eligible) paid to a Canadian-resident shareholder generally requires a *T5 Statement of Investment Income* slip and a *T5 Summary*.  
 Capital dividends paid to Canadian residents are NOT reported on a T5 (the recipient does not include the amount in income).  
 The corp's T2 Schedule 3 *does* still report the capital dividend; the T5 obligation and the S3 reporting obligation are independent.  
-See [Capital-Dividend-Account.md](Capital-Dividend-Account.md) for the full capital-dividend treatment.  
+See [Capital-Dividend-Account.md](Capital-Dividend-Account/Capital-Dividend-Account.md) for the full capital-dividend treatment.  
 
 The de minimis threshold is $50: taxable dividends totalling less than $50 to a single recipient in a calendar year do not require a T5.  
 Most owner-manager dividends exceed this.  
@@ -360,7 +360,7 @@ Knowing which schedule reports what helps you sanity-check the result.
 
 ## Schedule 3 - dividends-paid section
 
-Schedule 3 (S3 - *Dividends Received, Taxable Dividends Paid, and Part IV Tax Calculation*) is shared with the dividend-receiving side covered in [T3.md](T3.md).  
+Schedule 3 (S3 - *Dividends Received, Taxable Dividends Paid, and Part IV Tax Calculation*) is shared with the dividend-receiving side covered in [T3.md](T3/T3.md).  
 The dividends-paid side appears in Part 3 and Part 4 of the schedule:
 - *Part 3 / Box 450*: total *taxable* dividends paid in the tax year to recipients other than connected corporations (the dividend to the owner-manager); split between eligible and non-eligible portions in the input cells
 - *Part 4 / Box 500*: total taxable dividend paid in the tax year (up to Box 450); the figure that drives the dividend refund calculation
@@ -378,7 +378,7 @@ A dividend to a connected recipient:
 - The receiving Holdco's tax treatment shifts to the *Part IV tax* mechanics on the receiving side, rather than driving the payer's refund directly
 - Holdco only pays Part IV tax to the extent the payer claims a dividend refund (s.186(1))
 
-For the receiving-side mechanics see [T3.md](T3.md).  
+For the receiving-side mechanics see [T3.md](T3/T3.md).  
 The Opco-Holdco structure itself is out of scope for this page.  
 
 
@@ -415,7 +415,7 @@ Verify the GRIP balance *before* designating, so the excess never arises.
 The dividend refund calculated under ITA s.129(1) is reported on the T2 jacket as the *dividend refund for the year* (historically T2 line 784; verify against the current form release).  
 The refund is applied as a credit against Part I and Part IV tax payable for the year; any excess is paid out (or applied to instalments) when the T2 is assessed.  
 The underlying ERDTOH and NERDTOH balances and the eligible/non-eligible split of the refund are computed on T2 Page 7 (or via a dedicated dividend-refund worksheet, depending on T2 software).  
-For the receiving-side mechanics that fill ERDTOH/NERDTOH (Part IV tax on dividends received from other corporations), see [T3.md](T3.md).  
+For the receiving-side mechanics that fill ERDTOH/NERDTOH (Part IV tax on dividends received from other corporations), see [T3.md](T3/T3.md).  
 
 
 ## Capital dividend election - Form T2054
@@ -426,7 +426,7 @@ A capital dividend is reported on the capital-dividend line of Schedule 3 (per t
 The S3 line is information-reporting; the T2054 is what makes the dividend a capital dividend for tax purposes.  
 Both are required.  
 
-For full mechanics, see [Capital-Dividend-Account.md](Capital-Dividend-Account.md):
+For full mechanics, see [Capital-Dividend-Account.md](Capital-Dividend-Account/Capital-Dividend-Account.md):
 - The s.184(2) Part III tax penalty for over-electing
 - The S89 CDA balance verification
 - The CRA My Business Account submission workflow
@@ -578,7 +578,7 @@ A capital dividend can also be settled by credit to the shareholder loan account
 Only the credit side of the payment entry changes.  
 The T2054 election timing is independent of the settlement method: the election still has to be filed at or before the dividend's payment date.  
 
-For full mechanics, see [Capital-Dividend-Account.md](Capital-Dividend-Account.md):
+For full mechanics, see [Capital-Dividend-Account.md](Capital-Dividend-Account/Capital-Dividend-Account.md):
 - The s.184(2) Part III tax penalty for over-electing
 - The S89 CDA balance verification
 - The CRA My Business Account submission workflow
@@ -587,11 +587,11 @@ For full mechanics, see [Capital-Dividend-Account.md](Capital-Dividend-Account.m
 ## Related
 
 - [Small Business Tax Overview](Small-Business-Tax-Overview.md)
-- [Adjusted Cost Base](Adjusted-Cost-Base.md)
-- [Capital Dividend Account](Capital-Dividend-Account.md)
-- [T3](T3.md)
-- [T3 - Box 26 Other Income](T3-Box-26-Other-Income.md)
-- [T5008](T5008.md)
+- [Adjusted Cost Base](Adjusted-Cost-Base/Adjusted-Cost-Base.md)
+- [Capital Dividend Account](Capital-Dividend-Account/Capital-Dividend-Account.md)
+- [T3](T3/T3.md)
+- [T3 - Box 26 Other Income](T3/T3-Box-26-Other-Income.md)
+- [T5008](T5008/T5008.md)
 
 
 ## Citations

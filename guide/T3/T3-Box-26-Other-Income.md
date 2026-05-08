@@ -15,10 +15,10 @@ Limitations:
 
 ## What does it look like
 
-![T3 Box 26 example](media/T3-Box-26_T3-Slip.png)
+![T3 Box 26 example](T3-Box-26_T3-Slip.png)
 
 In the tax package from your brokerage, you might also find per-distribution details:  
-![T3 Box 26 details example](media/T3-Box-26_T3-Details.png)
+![T3 Box 26 details example](T3-Box-26_T3-Details.png)
 
 If you need the underlying breakdown and did not receive it from your brokerage, you may also be able to find it here:  
 https://ctbsext.posttrade.cds.ca/ctbsExt/external-landing  
@@ -199,7 +199,7 @@ S7 (assuming the classification is passive property income, as from a publicly t
 - T2 S7, Part 1 Box 32: Aggregate investment income / Total income from property
 - This is often done through a proprietary worksheet provided by the T2 software
 
-![T2 S7 - Part 1 - Box 32](media/T3-Box-26_Schedule-7-Box-32.png)
+![T2 S7 - Part 1 - Box 32](T3-Box-26_Schedule-7-Box-32.png)
 
 
 ## Software workflow example - FutureTax 2025.2
@@ -211,14 +211,14 @@ If your software has such a worksheet:
 - Put the T3 Box 26 amount in the property-income area rather than in the dividend or foreign-income area
 
 In FutureTax, the worksheet can be opened by double-clicking the S7 field, and looks like this:  
-![T2 S7 worksheet - FutureTax 2025.2 example](media/T3-Box-26_Schedule-7-Worksheet_Other-interest-and-property-income.png)
+![T2 S7 worksheet - FutureTax 2025.2 example](T3-Box-26_Schedule-7-Worksheet_Other-interest-and-property-income.png)
 
 
 ## Related
 
 For the broader ledger tree, see the "Relevant general ledger accounts" section in [T3](T3.md).
-For ACB interactions (Box 42 / ROC reducing ACB), see [Adjusted-Cost-Base.md](Adjusted-Cost-Base.md).
-For the corporate-tax framing of where T3 income lands, see [Small-Business-Tax-Overview.md](Small-Business-Tax-Overview.md).
+For ACB interactions (Box 42 / ROC reducing ACB), see [Adjusted-Cost-Base.md](../Adjusted-Cost-Base/Adjusted-Cost-Base.md).
+For the corporate-tax framing of where T3 income lands, see [Small-Business-Tax-Overview.md](../Small-Business-Tax-Overview.md).
 
 
 ## Citations

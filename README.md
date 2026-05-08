@@ -11,29 +11,29 @@ Disclaimer: author is not an accountant, this is not financial or tax advice.
 
 ## Topics
 
-- [Small-Business-Tax-Overview](Small-Business-Tax-Overview.md)
-- [Tax Integration](Tax-Integration.md)
-- [Adjusted Cost Base](Adjusted-Cost-Base.md)
-  - [Adjusted Cost Base - Tracking](Adjusted-Cost-Base-Tracking.md)
-- [Capital Dividend Account](Capital-Dividend-Account.md)
-- [T3](T3.md)
-  - [T3 - Box 26 Other Income](T3-Box-26-Other-Income.md)
-- [T5008](T5008.md)
+- [Small-Business-Tax-Overview](guide/Small-Business-Tax-Overview.md)
+- [Tax Integration](guide/Tax-Integration.md)
+- [Adjusted Cost Base](guide/Adjusted-Cost-Base/Adjusted-Cost-Base.md)
+  - [Adjusted Cost Base - Tracking](guide/Adjusted-Cost-Base/Adjusted-Cost-Base-Tracking.md)
+- [Capital Dividend Account](guide/Capital-Dividend-Account/Capital-Dividend-Account.md)
+- [T3](guide/T3/T3.md)
+  - [T3 - Box 26 Other Income](guide/T3/T3-Box-26-Other-Income.md)
+- [T5008](guide/T5008/T5008.md)
 
 
 ## Pending review
 
 AI generated, not verified yet:
-- [Glossary](Glossary.md)
-- [Shareholder-Dividends](Shareholder-Dividends.md)
+- [Glossary](guide/Glossary.md)
+- [Shareholder-Dividends](guide/Shareholder-Dividends.md)
 
 
 ## Work in progress
 
 Page stubs:
-- [Foreign-Currency](Foreign-Currency.md)
-- [HST](HST.md)
-- [Payment](Payment.md)
+- [Foreign-Currency](guide/Foreign-Currency.md)
+- [HST](guide/HST.md)
+- [Payment](guide/Payment/Payment.md)
 
 
 ## Audit

@@ -88,7 +88,7 @@ GIFI codes are four-digit numbers organized by financial-statement section — f
 The full list and mapping rules are in CRA's *RC4088 - General Index of Financial Information*.  
 One reasonable account organization convention is presented in this guide.  
 
-See [T3.md](T3.md), [T5008.md](T5008.md), [Shareholder-Dividends.md](Shareholder-Dividends.md), and [Adjusted-Cost-Base.md](Adjusted-Cost-Base.md) for concrete worked examples.  
+See [T3.md](T3/T3.md), [T5008.md](T5008/T5008.md), [Shareholder-Dividends.md](Shareholder-Dividends.md), and [Adjusted-Cost-Base.md](Adjusted-Cost-Base/Adjusted-Cost-Base.md) for concrete worked examples.  
 It is recommended to keep books current during the year (monthly is typical); reconstructing past months of activity at year-end is difficult.  
 
 
@@ -136,9 +136,9 @@ Dividends *received* from other Canadian corporations (for example, portfolio sh
 - The Part IV tax is mostly recorded in the corporation's *ERDTOH* (eligible RDTOH) account — the eligible-side counterpart to NERDTOH; see [Shareholder-Dividends.md](Shareholder-Dividends.md) for the full ERDTOH/NERDTOH mechanics
 
 The main T-slips a corporation receives for investment income reporting:
-- *T3* (Statement of Trust Income): distributions from trusts, including most Canadian ETFs (which are *mutual fund trusts* rather than corporations); covers interest, capital gains, foreign income, etc.; see [T3.md](T3.md)
+- *T3* (Statement of Trust Income): distributions from trusts, including most Canadian ETFs (which are *mutual fund trusts* rather than corporations); covers interest, capital gains, foreign income, etc.; see [T3.md](T3/T3.md)
 - *T5* (Statement of Investment Income): interest and Canadian-corp dividends from securities held *directly* (e.g. bonds, GICs, individual stocks)
-- *T5008* (Statement of Securities Transactions): summary of sales used to compute capital gains; see [T5008.md](T5008.md)
+- *T5008* (Statement of Securities Transactions): summary of sales used to compute capital gains; see [T5008.md](T5008/T5008.md)
 
 
 ## Integration
@@ -186,7 +186,7 @@ Practical tradeoffs:
 
 The full optimization is personal — it depends on tax bracket, retirement strategy, mortgage plans, and family income-splitting considerations.  
 The *TOSI* rules under ITA [s.120.4](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-120.4.html) limit splitting through dividends to family members who are not active in the business.  
-For dividend mechanics, see [Shareholder-Dividends.md](Shareholder-Dividends.md); for payroll, see [Payment.md](Payment.md).  
+For dividend mechanics, see [Shareholder-Dividends.md](Shareholder-Dividends.md); for payroll, see [Payment.md](Payment/Payment.md).  
 
 
 ## Income flow
@@ -375,16 +375,16 @@ When a question gets specific, several layers of authority can apply:
 
 ## Related
 
-- [Adjusted Cost Base](Adjusted-Cost-Base.md)
-- [Adjusted Cost Base — Tracking](Adjusted-Cost-Base-Tracking.md)
-- [Capital Dividend Account](Capital-Dividend-Account.md)
+- [Adjusted Cost Base](Adjusted-Cost-Base/Adjusted-Cost-Base.md)
+- [Adjusted Cost Base — Tracking](Adjusted-Cost-Base/Adjusted-Cost-Base-Tracking.md)
+- [Capital Dividend Account](Capital-Dividend-Account/Capital-Dividend-Account.md)
 - [Shareholder Dividends](Shareholder-Dividends.md)
-- [T3](T3.md)
-- [T3 - Box 26 Other Income](T3-Box-26-Other-Income.md)
-- [T5008](T5008.md)
+- [T3](T3/T3.md)
+- [T3 - Box 26 Other Income](T3/T3-Box-26-Other-Income.md)
+- [T5008](T5008/T5008.md)
 - [Foreign Currency](Foreign-Currency.md)
 - [HST](HST.md)
-- [Payment](Payment.md)
+- [Payment](Payment/Payment.md)
 - [Glossary](Glossary.md)
 
 

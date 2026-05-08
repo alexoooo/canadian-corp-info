@@ -38,7 +38,7 @@ From time to time, it's possible for company/ETF names and their ticker symbols 
 In common usage, it's easiest to refer to investments by their ticker symbol (e.g. this is what you'll see in online stock charts).  
 In order to quickly determine the correct symbol and corresponding name, you can maintain a "Security Master".  
 It is only used internally to facilitate consistent reporting, so it can be as minimal as Symbol / Name / Note:
-![Example of Security Master Spreadsheet](media/Security-Master_Example.png)
+![Example of Security Master Spreadsheet](Security-Master_Example.png)
 
 
 ## Spreadsheet template
@@ -49,7 +49,7 @@ Go to the following, and click "Use Template" (top right) to create your own cop
 https://docs.google.com/spreadsheets/d/1AV3RLfGw6l3G_az_2OpUHxRmTm5MwmkwPJHoPyNEBAM/template/preview
 
 Screenshot:
-![Screenshot of Adjusted Cost Base Tracker](media/Adjusted-Cost-Base-Tracker_Screenshot.png)
+![Screenshot of Adjusted Cost Base Tracker](Adjusted-Cost-Base-Tracker_Screenshot.png)
 
 You can keep this as a separate workbook, or as a single sheet within a larger workbook (if that is more convenient).  
 
@@ -91,7 +91,7 @@ Trading confirmation reporting is brokerage specific, you might see something sl
 However, the basic elements highlighted (or equivalent variants) are common to all.
 
 Example of Trade Confirmation (Sell, CAD):  
-![Example: Trade-Confirmation (Sell)](media/Trade-Confirmation_Sell_Example-for-ACB.png)
+![Example: Trade-Confirmation (Sell)](Trade-Confirmation_Sell_Example-for-ACB.png)
 - #1 `Date`: trade date; do not use settlement date (crossed out above)
 - #2 `Action`:
   - "Sell" for the example above (which labels the TRANSACTION TYPE = SOLD)
