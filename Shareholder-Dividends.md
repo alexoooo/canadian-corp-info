@@ -61,7 +61,7 @@ If the loan is not repaid within one year after the end of the corp's tax year i
 
 ## The three dividend flavours
 
-A taxable dividend paid by a CCPC to a Canadian-resident shareholder falls into one of three flavours.  
+A dividend paid by a CCPC to a Canadian-resident shareholder falls into one of three flavours: *eligible*, *non-eligible*, or *capital*.  
 The flavour is determined by the source of the distribution on the corporate side, and by whether the corporation makes the required designation or election.
 
 *Eligible dividend*:
@@ -70,7 +70,10 @@ The flavour is determined by the source of the distribution on the corporate sid
 - Designation required at or before the time of payment, by written notice to the shareholder under ITA s.89(14)
 - Over-designating triggers *Part III.1* tax on the excess at 20% under ITA [s.185.1](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-185.1.html), reported on T2 Schedule 55 (S55)
 
-For a typical CCPC operating entirely under the SBD limit, GRIP is empty unless the corporation has received eligible dividends from public-company holdings.  
+For a typical CCPC operating entirely under the SBD limit, GRIP is empty unless the corporation holds Canadian equity investments:
+- Direct shares of Canadian public companies
+- Canadian-equity ETFs (e.g. VCN, XIU), which pass through eligible dividends via T3 Box 49
+
 Most owner-manager dividends out of active business income end up being non-eligible.  
 
 *Non-eligible dividend*:
@@ -80,8 +83,7 @@ Most owner-manager dividends out of active business income end up being non-elig
 - Funded out of after-tax SBD-rate retained earnings
 - Smaller dividend tax credit on the personal side, because the corporation paid less tax
 
-The *Low Rate Income Pool* (LRIP) defined in ITA s.89(1) is only relevant if the corporation was previously a non-CCPC and crossed over.  
-For a corporation that has always been a CCPC, LRIP does not constrain anything.  
+Note: the *Low Rate Income Pool* (LRIP, ITA s.89(1)) only applies if the corporation was previously a non-CCPC and crossed over — not applicable for a corporation that has always been a CCPC.  
 
 *Capital dividend*:
 - Paid out of the *Capital Dividend Account* (CDA), which holds the non-taxable portion of cumulative net capital gains realized by the corporation (among other things)
