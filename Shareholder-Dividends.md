@@ -27,14 +27,22 @@ Limitations:
 A *dividend* is a distribution of money or other property by a corporation to its shareholders, paid out of the corporation's after-tax retained earnings.  
 The corporation pays its corporate income tax first; the dividend then transfers (some of) that after-tax money to shareholders.  
 
+Defining characteristics:
+- Paid *pro rata* to the holders of a class of shares; each holder receives the same per-share amount within the class
+- Declared at the directors' discretion; there is no obligation to pay even when retained earnings are positive (see [Declaring a dividend](#declaring-a-dividend) below)
+- Reduces the corporation's *retained earnings* dollar for dollar; a cash dividend also reduces *cash* on the balance sheet
+- **Not deductible to the corporation**: not treated as a business expense, so it does not reduce the corp's taxable income
+  - This is what distinguishes a dividend from salary; *Integration* (covered below) reconciles the two layers of tax
+
 The *Income Tax Act* does not define "dividend" exhaustively.  
 ITA [s.248(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-248.html) only adds that stock dividends count; otherwise the common-law definition applies.  
 Various deeming rules in [s.84](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-84.html) cover specific transactions like share redemptions and capital reductions.  
 
-A dividend is **not deductible to the corporation** (i.e. not treated as a business expense, so it does not reduce the corp's taxable income).  
-This is what distinguishes it from salary; the *Integration* framework is covered below.  
 
-Things that look like dividends but aren't (or are deemed to be dividends with different mechanics):
+## What is not a dividend
+
+Several transactions look like dividends but are categorically different — or are *deemed* to be dividends with different mechanics:
+
 - *Salary* or management fee paid to the owner-manager:
   - Deductible to the corp (reduces taxable income)
   - Reported on a T4 slip
