@@ -65,16 +65,15 @@ A dividend paid by a CCPC to a Canadian-resident shareholder falls into one of t
 The flavour is determined by the source of the distribution on the corporate side, and by whether the corporation makes the required designation or election.
 
 *Eligible dividend*:
-- Paid out of corporate income previously taxed at the general (non-SBD) rate, or out of eligible dividends received from other Canadian corporations
+- Paid out of one of:
+  - Corporate income previously taxed at the general (non-SBD) rate
+  - Eligible dividends received directly from another Canadian corporation (T5)
+  - Eligible dividends flowed through a Canadian trust under ITA [s.104(19)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-104.html) (T3 Box 49)
 - Tracked via the *General Rate Income Pool* (GRIP), defined at ITA [s.89(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-89.html)
 - Designation required at or before the time of payment, by written notice to the shareholder under ITA s.89(14)
 - Over-designating triggers *Part III.1* tax on the excess at 20% under ITA [s.185.1](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-185.1.html), reported on T2 Schedule 55 (S55)
 
-For a typical CCPC operating entirely under the SBD limit, GRIP is empty unless the corporation holds Canadian equity investments:
-- Direct shares of Canadian public companies
-- Canadian-equity ETFs (e.g. VCN, XIU), which pass through eligible dividends via T3 Box 49
-
-Most owner-manager dividends out of active business income end up being non-eligible.  
+For a typical CCPC operating entirely under the SBD limit, GRIP is empty unless the corporation holds Canadian equity investments (direct shares or Canadian-equity ETFs like VCN/XIU).  
 
 *Non-eligible dividend*:
 - Default classification: any taxable dividend not designated eligible (and not a capital dividend) is non-eligible
@@ -83,7 +82,7 @@ Most owner-manager dividends out of active business income end up being non-elig
 - Funded out of after-tax SBD-rate retained earnings
 - Smaller dividend tax credit on the personal side, because the corporation paid less tax
 
-Note: the *Low Rate Income Pool* (LRIP, ITA s.89(1)) only applies if the corporation was previously a non-CCPC and crossed over — not applicable for a corporation that has always been a CCPC.  
+Note: the *Low Rate Income Pool* (LRIP, ITA s.89(1)) only applies if the corporation was previously a non-CCPC and crossed over (not applicable for a corporation that has always been a CCPC).  
 
 *Capital dividend*:
 - Paid out of the *Capital Dividend Account* (CDA), which holds the non-taxable portion of cumulative net capital gains realized by the corporation (among other things)
@@ -92,6 +91,23 @@ Note: the *Low Rate Income Pool* (LRIP, ITA s.89(1)) only applies if the corpora
 - Over-electing triggers *Part III* tax on the excess at 60% under ITA [s.184(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-184.html)
 
 For full mechanics of the CDA balance calculation and the T2054 election workflow, see [Capital-Dividend-Account.md](Capital-Dividend-Account/Capital-Dividend-Account.md).  
+
+
+### Stranded GRIP and ERDTOH
+
+A CCPC that receives eligible dividends but only ever pays non-eligible dividends builds up an unused GRIP balance on S53.  
+The eligible designation has to be made at or before the time the dividend is paid (ITA [s.89(14)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-89.html)); a non-eligible dividend already paid cannot be retroactively redesignated.  
+
+The same pattern strands ERDTOH:
+- Part IV tax on Canadian-corp dividends received populates ERDTOH (ITA [s.129(4)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-129.html))
+- ERDTOH is preferentially refunded when an eligible dividend is paid; a non-eligible dividend only draws on ERDTOH after NERDTOH is exhausted (ITA [s.129(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-129.html))
+- A non-eligible-only payout history can leave both GRIP and ERDTOH stranded on the corporate books
+
+GRIP and ERDTOH cannot be transferred, sold, or rolled out to the shareholder; any unused balance at wind-up is lost.  
+
+Going forward, future dividends can be designated eligible up to the running GRIP balance on S53, with a current-year catch-up dividend if free retained earnings allow.  
+GRIP is finalized at year-end, so an in-year catch-up has to forecast the closing balance; over-designating triggers the Part III.1 tax described above.  
+ITA [s.185.1(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-185.1.html) lets the corporation and shareholder jointly elect to reclassify a small overshoot as a separate non-eligible dividend.  
 
 
 ## Tax integration
@@ -603,6 +619,7 @@ For full mechanics, see [Capital-Dividend-Account.md](Capital-Dividend-Account/C
   - [s.84](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-84.html) - deemed dividends (s.84(3) on share redemption; s.84(4.1) on private-corp PUC reduction)
   - [s.89(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-89.html) - definitions of "eligible dividend", GRIP, LRIP, CDA, PUC; the GRIP "general rate factor" of 0.72
   - [s.89(14)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-89.html) - eligible dividend designation by written notice to the shareholder at or before payment
+  - [s.104(19)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-104.html) - trust designation that flows the eligible-dividend character of taxable Canadian dividends through to beneficiaries (mechanism behind T3 Box 49)
   - [s.110.6(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-110.6.html) - definition of *qualified small business corporation share* (QSBC), including the 90% active-business-assets test gating LCGE eligibility
   - [s.120.4](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-120.4.html) - Tax on Split Income (TOSI), including the *excluded business* and *excluded shares* carve-outs that typically take an active owner-manager out of TOSI
   - [s.121](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-121.html) - federal dividend tax credit (15.0198% eligible, 9.0301% non-eligible, of the grossed-up amount)

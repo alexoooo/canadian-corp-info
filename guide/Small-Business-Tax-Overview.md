@@ -92,6 +92,22 @@ See [T3.md](T3/T3.md), [T5008.md](T5008/T5008.md), [Shareholder-Dividends.md](Sh
 It is recommended to keep books current during the year (monthly is typical); reconstructing past months of activity at year-end is difficult.  
 
 
+## Types of accounts
+
+The word *account* is used in several different senses across this guide:
+- *Ledger account*: a row in the corporation's own chart of accounts (e.g. *Cash*, *Accounts receivable*, *Investment revenue*); see the bookkeeping section above
+- *Tax pool account*: a notional running balance maintained for tax purposes only, tracked on dedicated T2 schedules or a private spreadsheet (determines the tax treatment of dividends paid out):
+  - *GRIP* (General Rate Income Pool, Schedule 53): capacity to pay eligible dividends
+  - *CDA* (Capital Dividend Account) — capacity to pay tax-free capital dividends
+  - *ERDTOH* / *NERDTOH* (Eligible / Non-Eligible Refundable Dividend Tax on Hand): refundable tax that flows back when a dividend is paid
+  - For full mechanics, see [Shareholder-Dividends.md](Shareholder-Dividends.md) and [Capital-Dividend-Account.md](Capital-Dividend-Account/Capital-Dividend-Account.md)
+- *CRA My Business Account*:
+  - Website where you can manage your corporate taxes (view, file, communicate, etc.)
+  - *CRA My Account* is the personal tax equivalent, you use the same login for both (and can associate any number of businesses) 
+- *CRA program account*: tracker that CRA maintains, identified by a *Business Number* (BN) plus a program suffix
+  - Common accounts: RC for corporate income tax, RT for GST/HST, RP for payroll, RZ for information returns (e.g. T5)
+
+
 ## CCPC status
 
 A *Canadian-Controlled Private Corporation* (CCPC) is a corporation that is:
