@@ -97,40 +97,9 @@ For full mechanics of the CDA balance calculation and the T2054 election workflo
 ## Tax integration
 
 *Integration* aims for the total tax paid on income earned through a corporation and distributed as a dividend to roughly equal the tax the same individual would have paid had they earned the income directly.  
+The mechanism is the *dividend gross-up and tax credit*, calibrated by flavour to the corporate tax already paid; capital dividends sit outside this framework (tax-free to a Canadian-resident shareholder).  
 
-The mechanism is the *dividend gross-up and tax credit*. The shareholder:
-- Grosses up the cash dividend to a notional pre-corporate-tax amount
-- Pays personal tax on the grossed-up amount
-- Claims a *dividend tax credit* (DTC) intended to offset the corporate tax the corporation already paid
-
-The federal gross-up and credit come from ITA [s.82(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-82.html) and [s.121](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-121.html).  
-Each province offers its own DTC at its own rate, so total integration depends on the shareholder's province of residence.  
-Integration is approximate, not exact: the gross-up and DTC are calibrated to typical combined corporate rates, and they over- or under-shoot for any given province and income level.  
-
-*Eligible dividend*:
-- Gross-up: 38% of cash dividend (ITA s.82(1))
-- Federal DTC: 15.0198% of the grossed-up (taxable) amount (ITA s.121)
-- The gross-up reflects the full general-rate corporate tax (~15% federal + the provincial general rate)
-- Eligible dividends carry the lowest combined corp+personal tax of the two taxable flavours, when the corporation actually paid tax at the general rate
-
-*Non-eligible dividend*:
-- Gross-up: 15% of cash dividend (ITA s.82(1))
-- Federal DTC: 9.0301% of the grossed-up amount (ITA s.121)
-- The smaller gross-up and credit reflect the lower SBD-rate corporate tax the corporation paid before distributing
-- Combined corp+personal tax is calibrated to the SBD corp rate; the actual relative position vs. an eligible dividend depends on the shareholder's province
-
-*Capital dividend*:
-- Not included in the shareholder's income at all (ITA [s.83(2)(b)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-83.html))
-- No gross-up, no DTC, not reported on the T1
-- The "tax already paid" at the corporate level is the tax on the *taxable* portion of the underlying capital gain; the *non-taxable* portion is what flows out tax-free as the capital dividend
-- For non-resident shareholders this treatment does not apply: Part XIII withholding still applies (default 25%, often reduced by treaty)
-
-For an owner-manager who has access to all three accounts, the integration framework gives a corp-side preference order:
-1. *Capital dividend* first (tax-free to the shareholder; constrained only by CDA balance and the s.83(2) election)
-2. *Eligible dividend* next (lower combined tax than non-eligible; available only to the extent of GRIP)
-3. *Non-eligible dividend* as the residual (always available; highest combined tax)
-
-Often CDA and GRIP are both empty; the only available option is a non-eligible dividend.  
+For the full integration mechanics — gross-up and DTC rates per flavour, corp-side preference order, ITA citations — see [Tax-Integration.md](Tax-Integration.md).  
 
 
 ## GRIP - capacity for eligible dividends

@@ -25,6 +25,7 @@ The audience is narrow: owners of a Canadian-controlled private corporation (CCP
 - **`Glossary.md`** — short definitions of the acronyms and tax terms used across the guide, each cross-referenced to its canonical page
 - **`Foreign-Currency.md`, `HST.md`, `Payment.md`** — stubs covering FX bookkeeping, GST/HST, and corporate-tax payment workflows respectively
 - **`Shareholder-Dividends.md`** — eligible, non-eligible, and capital dividend mechanics: which corporate pool each draws on, how to file (T5, T2054), and the T1 gross-up + DTC on the personal side
+- **`Tax-Integration.md`** — the integration principle, the dividend gross-up + DTC mechanism, per-flavour gross-up/DTC rates, and the corp-side preference order for choosing among the three flavours
 
 When adding or substantially restructuring a topic, update `README.md` so the index stays current. Sub-pages are indented under their parent in the index (see how `T3-Box-26-Other-Income.md` sits under `T3.md`).
 

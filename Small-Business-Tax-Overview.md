@@ -147,13 +147,7 @@ The main T-slips a corporation receives for investment income reporting:
 - Combined corporate + personal tax on a dollar of income that flows through a CCPC and out to the shareholder should roughly equal the personal tax on the same dollar earned directly
 - In effect, dividends received by your corporation and paid out to yourself are not "double-taxed"
 
-The mechanism is the *dividend gross-up and tax credit*. When the corporation pays a dividend, the shareholder:
-- Grosses up the cash amount to a notional pre-corp-tax figure
-- Pays personal tax on the grossed-up amount
-- Claims a *dividend tax credit* (DTC) calibrated to offset the corporate tax already paid
-
-Integration is approximate; different provinces and income sources produce small over- or under-taxation.  
-For the full integration framework and dividend mechanics, see [Shareholder-Dividends.md](Shareholder-Dividends.md).  
+For the gross-up + DTC mechanism, the per-flavour breakdown, and the corp-side preference order, see [Tax-Integration.md](Tax-Integration.md).  
 
 
 ## Paying yourself: salary vs dividends

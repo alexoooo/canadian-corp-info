@@ -12,7 +12,7 @@ For mechanics and worked examples, follow the link to the canonical page.
 - CCPC: *Canadian-Controlled Private Corporation* — a private corporation incorporated in Canada and not controlled by non-residents or public corporations
 - CDA: *Capital Dividend Account* — running balance tracking capacity to pay tax-free capital dividends; see [Capital-Dividend-Account.md](Capital-Dividend-Account.md)
 - CRA: *Canada Revenue Agency* — administers federal tax (and most provincial corporate tax)
-- DTC: *Dividend Tax Credit* — personal credit calibrated to offset corporate tax already paid (per Integration); see [Shareholder-Dividends.md](Shareholder-Dividends.md)
+- DTC: *Dividend Tax Credit* — personal credit calibrated to offset corporate tax already paid (per Integration); see [Tax-Integration.md](Tax-Integration.md)
 - Dividend refund: corporate refund under ITA s.129(1) when a taxable dividend is paid; calculated as 38⅓% of dividends paid, capped at the relevant RDTOH balance
 - Eligible dividend: dividend designated under s.89(14), drawing on the GRIP pool; carries a larger gross-up and DTC than a non-eligible dividend
 - ERDTOH: *Eligible Refundable Dividend Tax on Hand* — refundable tax pool that releases when an eligible dividend is paid
@@ -20,7 +20,7 @@ For mechanics and worked examples, follow the link to the canonical page.
 - Gross-up: notional uplift applied to a cash dividend on the personal return (38% for eligible, 15% for non-eligible) to derive the *taxable* amount on the T1
 - GRIP: *General Rate Income Pool* — capacity to designate eligible dividends; tracked on Schedule 53; see [Shareholder-Dividends.md](Shareholder-Dividends.md)
 - HST: *Harmonized Sales Tax* — provincial-and-federal-combined sales tax used by some provinces; see [HST.md](HST.md)
-- Integration: design principle that combines corporate + personal tax to approximate direct-earning tax; see [Shareholder-Dividends.md](Shareholder-Dividends.md)
+- Integration: design principle that combines corporate + personal tax to approximate direct-earning tax; see [Tax-Integration.md](Tax-Integration.md)
 - ITA: *Income Tax Act* (R.S.C., 1985, c. 1 (5th Supp.)) — primary federal tax statute
 - ITC: *Input Tax Credit* — recoverable GST/HST paid on business inputs under the regular method
 - LCGE: *Lifetime Capital Gains Exemption* — personal exemption available on the disposition of QSBC shares
