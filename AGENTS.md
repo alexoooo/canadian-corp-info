@@ -95,6 +95,7 @@ Surface rules below apply to both voices unless noted.
 
 - Short, declarative, one fact per sentence
 - Avoid multi-clause em-dash chains — break into a lead-in + bullets instead
+- Em-dashes should be rare; default to colon, parentheses, comma, or period, and treat one per paragraph as a soft ceiling
 - Caveats fold inline as parentheticals or sub-bullets, not as separate "Note in particular X" pointer-sentences
 - State rules as facts (`ACB cannot be negative.`), not as design intent ("the system is designed so…")
 

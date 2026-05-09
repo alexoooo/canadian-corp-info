@@ -2,7 +2,7 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
 
 # ERDTOH and NERDTOH (Refundable Dividend Tax Accounts)
 
-**Who this is for**: owners of a Canadian-controlled private corporation (CCPC) trying to understand the corporate-side refundable dividend tax accounts — what fills them, what empties them, and how they show up on the T2.  
+**Who this is for**: owners of a Canadian-controlled private corporation (CCPC) trying to understand the corporate-side refundable dividend tax accounts: what fills them, what empties them, and how they show up on the T2.  
 
 **TLDR**:
 - *ERDTOH* and *NERDTOH* are two corporate tax pools holding previously paid refundable tax
@@ -22,7 +22,8 @@ Limitations:
 
 The *Eligible Refundable Dividend Tax on Hand* (ERDTOH) and *Non-Eligible Refundable Dividend Tax on Hand* (NERDTOH) accounts are defined in ITA [s.89(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-89.html).  
 Both are refundable corporate tax pools maintained at the corporation level; balances roll forward year to year and are recovered only when the corporation pays a taxable dividend.  
-Neither account is a balance-sheet asset — they are notional T2 pools, tracked by T2 software and reported on T2 Page 7.  
+Neither account is a balance-sheet asset.  
+They are notional T2 pools, tracked by T2 software and reported on T2 Page 7.  
 
 The 2019 split keyed off the eligible-vs-non-eligible distinction:
 - ERDTOH holds Part IV tax on eligible dividends received from other Canadian corporations and is refunded preferentially when the corp pays an eligible dividend
@@ -36,14 +37,14 @@ Two mechanisms add to the RDTOH pools.
 
 *Part IV tax on dividends received from other corps* (ITA [s.186(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-186.html)):
 - 38⅓% on dividends received from non-connected Canadian corporations (e.g. portfolio shareholdings of public-equity corps)
-- For *connected* corporations: a flow-through proportional to the payer corporation's dividend refund — Part IV is only triggered to the extent the payer recovered RDTOH
+- For *connected* corporations: a flow-through proportional to the payer corporation's dividend refund (Part IV is only triggered to the extent the payer recovered RDTOH)
 - The destination (ERDTOH or NERDTOH) follows the type of dividend received under ITA [s.129(4)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-129.html):
   - Eligible dividend received → Part IV tax flows to ERDTOH
   - Non-eligible dividend received → Part IV tax flows to NERDTOH
   - Connected-corp Part IV tax retains the character that triggered the payer's refund
 
 *Refundable Part I tax on AII* (ITA s.129(4)):
-- Adds to NERDTOH only — never ERDTOH
+- Adds to NERDTOH only, never ERDTOH
 - 30⅔% of AII for the year
 - AII is interest, foreign income, the taxable portion of capital gains, and most T3 Box 26 amounts from index ETFs structured as mutual fund trusts (see [T3-Box-26-Other-Income.md](T3/T3-Box-26-Other-Income.md))
 
@@ -92,7 +93,7 @@ For the late-December NERDTOH-recovery procedure (resolution + credit to *Due to
 ## Stranding
 
 ERDTOH and NERDTOH cannot be transferred, sold, or rolled out to a shareholder; any unused balance at wind-up is lost.  
-The ordering rule above — non-eligible draws NERDTOH first, then ERDTOH — means a corporation that receives eligible dividends but only ever pays non-eligible dividends can build up ERDTOH that never drains while NERDTOH is non-empty.  
+The ordering rule above (non-eligible draws NERDTOH first, then ERDTOH) means a corporation that receives eligible dividends but only ever pays non-eligible dividends can build up ERDTOH that never drains while NERDTOH is non-empty.  
 
 Patterns to watch:
 - A CCPC receiving Box 49 ETF dividends (e.g. XEI) but only paying non-eligible dividends to the owner-manager: each year's Part IV tax on the eligible dividends received goes to ERDTOH, but the year's payout draws only from NERDTOH (which is being filled by the AII portion of the same ETF distributions); the ERDTOH balance grows and stays
@@ -122,7 +123,8 @@ End of 2026:
 To recover the $2,875 ERDTOH, the corporation pays a $7,500 eligible dividend (designated under s.89(14)), drawing on the GRIP capacity.  
 Dividend refund: $7,500 × 38⅓% = $2,875, exactly emptying ERDTOH.  
 
-If the corporation paid only a non-eligible dividend instead, the dividend would draw on NERDTOH first; with NERDTOH at $0, a $7,500 non-eligible dividend would spill into ERDTOH and trigger the same $2,875 refund — but the eligible designation produces a more favourable personal-side gross-up and DTC, so the eligible route is preferred when GRIP is available.  
+If the corporation paid only a non-eligible dividend instead, the dividend would draw on NERDTOH first; with NERDTOH at $0, a $7,500 non-eligible dividend would spill into ERDTOH and trigger the same $2,875 refund.  
+The eligible designation produces a more favourable personal-side gross-up and DTC, so the eligible route is preferred when GRIP is available.  
 
 For the parallel non-eligible / NERDTOH-recovery example (with the year-end timing trick), see [Shareholder-Dividends.md / Worked examples](Shareholder-Dividends.md#worked-examples).  
 
