@@ -51,6 +51,32 @@ Two mechanisms add to the RDTOH pools.
 The 30⅔% rate at which AII *adds* to NERDTOH is not the same as the 38⅓% rate at which a non-eligible dividend *removes* tax from NERDTOH; the two rates measure different things.  
 
 
+## Lifecycle
+
+The fill and empty cycle for the two pools.  
+Solid arrows show the standard flow; the dotted arrow shows the conditional ERDTOH spillover when a non-eligible dividend is paid and NERDTOH is exhausted.  
+
+```mermaid
+flowchart TB
+    AII([AII<br/>interest, foreign,<br/>taxable cap gains, Box 26])
+    DivE([Eligible dividend received<br/>e.g. T3 Box 49])
+    DivNE([Non-eligible dividend received<br/>e.g. T3 Box 23])
+
+    NERDTOH[(NERDTOH)]
+    ERDTOH[(ERDTOH)]
+
+    Refund([Dividend refund<br/>T2 line 784])
+
+    AII -->|+30⅔% Part I refundable| NERDTOH
+    DivE -->|+38⅓% Part IV| ERDTOH
+    DivNE -->|+38⅓% Part IV| NERDTOH
+
+    NERDTOH -->|−38⅓% × non-eligible paid| Refund
+    ERDTOH -->|−38⅓% × eligible paid| Refund
+    ERDTOH -.->|spillover if NERDTOH empty<br/>−38⅓% × non-eligible paid| Refund
+```
+
+
 ## Dividend refund
 
 The *dividend refund* under ITA [s.129(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-129.html) is calculated separately by dividend type and credited against tax payable for the same year.
