@@ -18,17 +18,40 @@ Limitations:
 - The following is my understanding as of 2026
 
 
-## The two pools
+## The four corporate tax pools
+
+ERDTOH and NERDTOH are two of four corporate tax pools that together drive the corp-side dividend mechanics.  
+Each pool tracks a different kind of pre-earned capacity or pre-paid tax, recovered through one specific dividend flavour paid out.  
+
+The four pools:
+- *GRIP* (Schedule 53): capacity to *designate* dividends as eligible
+- *CDA*: capacity to pay *tax-free capital* dividends to a Canadian-resident shareholder
+- *ERDTOH*: previously paid corporate tax, recovered when an eligible dividend is paid
+- *NERDTOH*: previously paid corporate tax, recovered when a non-eligible dividend is paid
+
+What fills each pool:
+- General-rate ABI → GRIP (72% of the post-tax addition)
+- Eligible dividend received → GRIP (full amount) + ERDTOH (Part IV tax)
+- Non-eligible dividend received → NERDTOH (Part IV tax)
+- AII → NERDTOH (30⅔% refundable Part I) + CDA (non-taxable ½ of capital gains)
+
+What each dividend flavour paid does:
+- *Eligible* (s.89(14) designation): draws on GRIP capacity; triggers an ERDTOH refund of 38⅓% × dividend paid
+- *Non-eligible* (no designation): triggers a NERDTOH refund of 38⅓% × dividend paid; ERDTOH is the spillover if NERDTOH is exhausted
+- *Capital* (s.83(2) election on Form T2054): draws on CDA capacity; no refund
+
+GRIP and CDA are about *capacity to pay* a particular dividend flavour; ERDTOH and NERDTOH are about *tax already paid* that comes back when the matching flavour is paid.  
+For full GRIP mechanics see [Shareholder-Dividends.md / GRIP - capacity for eligible dividends](Shareholder-Dividends.md#grip---capacity-for-eligible-dividends); for CDA see [Capital-Dividend-Account.md](Capital-Dividend-Account/Capital-Dividend-Account.md).  
+
+
+## The two RDTOH pools
 
 The *Eligible Refundable Dividend Tax on Hand* (ERDTOH) and *Non-Eligible Refundable Dividend Tax on Hand* (NERDTOH) accounts are defined in ITA [s.89(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-89.html).  
 Both are refundable tax pools; balances roll forward year to year and are recovered only when the corporation pays a taxable dividend.  
 Neither account is a balance-sheet asset.  
 They are notional T2 pools, tracked by T2 software and reported on T2 Page 7.  
 
-The 2019 split keyed off the eligible-vs-non-eligible distinction:
-- ERDTOH holds Part IV tax on eligible dividends received from other Canadian corporations and is refunded preferentially when the corp pays an eligible dividend
-- NERDTOH holds the refundable portion of Part I tax on AII and Part IV tax on non-eligible dividends received, and is refunded when the corp pays a non-eligible dividend
-- The single pre-2019 RDTOH was effectively split between the two pools on transition based on the source of each dollar
+The single pre-2019 RDTOH was effectively split between the two pools on transition based on the source of each dollar.  
 
 
 ## Additions
