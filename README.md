@@ -25,6 +25,7 @@ Disclaimer: author is not an accountant, this is not financial or tax advice.
 
 AI generated, not verified yet:
 - [Glossary](guide/Glossary.md)
+- [ERDTOH and NERDTOH](guide/ERDTOH-NERDTOH.md)
 - [Shareholder-Dividends](guide/Shareholder-Dividends.md)
 
 

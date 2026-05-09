@@ -149,25 +149,18 @@ Overdrawing triggers a 60% Part III tax (ITA s.184(2)).
 
 ## ERDTOH and NERDTOH - refundable dividend tax accounts
 
-The *Eligible Refundable Dividend Tax on Hand* (ERDTOH) and *Non-Eligible Refundable Dividend Tax on Hand* (NERDTOH) accounts hold previously paid refundable tax that the corporation gets back as a *dividend refund* under ITA [s.129(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-129.html) when it pays a taxable dividend.  
-How the pools are *filled* (Part IV tax on dividends received from other corporations, the refundable portion of Part I tax on AII) is covered in [T3.md](T3/T3.md).  
-This section focuses on how they are *emptied*: the refund mechanics from the dividend-payer's perspective.  
+The *Eligible Refundable Dividend Tax on Hand* (ERDTOH) and *Non-Eligible Refundable Dividend Tax on Hand* (NERDTOH) accounts hold previously paid refundable corporate tax that the corp gets back as a *dividend refund* under ITA [s.129(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-129.html) when it pays a taxable dividend.  
+For pool definitions, the additions side (Part IV tax and the 30⅔% refundable Part I on AII), and a fill-side worked example, see [ERDTOH-NERDTOH.md](ERDTOH-NERDTOH.md).  
 
-The dividend refund for the year is calculated separately by dividend type:
-- *Eligible* dividends paid → refund equal to the lesser of:
-  - 38⅓% of eligible dividends paid in the year
-  - ERDTOH balance at year-end (ITA s.129(1)(a))
-- *Non-eligible* dividends paid → refund equal to the lesser of:
-  - 38⅓% of non-eligible dividends paid in the year
-  - NERDTOH balance at year-end *plus* any ERDTOH balance left over after the eligible-dividend refund (ITA s.129(1)(b))
+The dividend refund is calculated separately by dividend type:
+- *Eligible* dividends paid → lesser of 38⅓% of eligible dividends paid in the year, or the ERDTOH year-end balance (ITA s.129(1)(a))
+- *Non-eligible* dividends paid → lesser of 38⅓% of non-eligible dividends paid in the year, or the NERDTOH year-end balance plus any ERDTOH balance left over after the eligible-dividend refund (ITA s.129(1)(b))
 
-An eligible dividend draws only on ERDTOH (cannot reach into NERDTOH).  
-A non-eligible dividend can spill into ERDTOH if the year's eligible-dividend refund has not exhausted it.  
+An eligible dividend draws only on ERDTOH; a non-eligible dividend draws on NERDTOH first and only spills into ERDTOH after NERDTOH is exhausted.  
+The 38⅓% refund rate is not the same as the 30⅔% rate at which AII *adds* to NERDTOH.  
+To fully empty a NERDTOH balance, the corporation needs roughly $2.61 of non-eligible dividend per $1 of NERDTOH (= 1 ÷ 38⅓%).  
 
-The 38⅓% rate applies to the refund itself (the rate at which a dollar of dividend liberates refundable tax), not to the rate at which AII *generates* refundable tax (30⅔% — see AII section below).  
-To fully empty a NERDTOH balance, the corporation needs to pay roughly $2.61 of non-eligible dividend per $1 of NERDTOH (= 1 ÷ 38⅓%).  
-
-The dividend refund is reported on T2 line 784 and applied as a credit against tax payable for the same tax year.  
+The dividend refund is reported on T2 line 784 and credited against tax payable for the same tax year.  
 A dividend declared but unpaid at year-end still triggers the refund for that year, provided it is recognized as payable on the corporation's books (year-end timing covered below).  
 
 

@@ -52,7 +52,7 @@ Integration is approximate; different provinces and income sources produce small
 - Not included in the shareholder's income at all (ITA [s.83(2)(b)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-83.html))
 - No gross-up, no DTC, not reported on the T1
 - The "tax already paid" at the corporate level is the tax on the *taxable* portion of the underlying capital gain; the *non-taxable* portion is what flows out tax-free as the capital dividend
-- Integration on capital gains earned in a CCPC is imperfect: the AII path (taxable half taxed at ~50%, partly refunded via NERDTOH on payout of a non-eligible dividend) typically leaves a small "tax cost" vs. realizing the gain personally, depending on province
+- Integration on capital gains earned in a CCPC is imperfect: the AII path (taxable half taxed at ~50%, partly refunded via [NERDTOH](ERDTOH-NERDTOH.md) on payout of a non-eligible dividend) typically leaves a small "tax cost" vs. realizing the gain personally, depending on province
 - For non-resident shareholders this treatment does not apply: Part XIII withholding still applies (default 25%, often reduced by treaty)
 
 
@@ -109,6 +109,7 @@ In other provinces, or at lower personal rates, the ranking between eligible and
 
 - [Small Business Tax Overview](Small-Business-Tax-Overview.md)
 - [Shareholder Dividends](Shareholder-Dividends.md)
+- [ERDTOH and NERDTOH](ERDTOH-NERDTOH.md)
 - [Capital Dividend Account](Capital-Dividend-Account/Capital-Dividend-Account.md)
 
 

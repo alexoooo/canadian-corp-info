@@ -100,7 +100,7 @@ The word *account* is used in several different senses across this guide:
   - *GRIP* (General Rate Income Pool, Schedule 53): capacity to pay eligible dividends
   - *CDA* (Capital Dividend Account) — capacity to pay tax-free capital dividends
   - *ERDTOH* / *NERDTOH* (Eligible / Non-Eligible Refundable Dividend Tax on Hand): refundable tax that flows back when a dividend is paid
-  - For full mechanics, see [Shareholder-Dividends.md](Shareholder-Dividends.md) and [Capital-Dividend-Account.md](Capital-Dividend-Account/Capital-Dividend-Account.md)
+  - For full mechanics, see [Shareholder-Dividends.md](Shareholder-Dividends.md), [ERDTOH-NERDTOH.md](ERDTOH-NERDTOH.md), and [Capital-Dividend-Account.md](Capital-Dividend-Account/Capital-Dividend-Account.md)
 - *CRA My Business Account*:
   - Website where you can manage your corporate taxes (view, file, communicate, etc.)
   - *CRA My Account* is the personal tax equivalent, you use the same login for both (and can associate any number of businesses) 
@@ -149,7 +149,7 @@ The refundable mechanism is what stops the CCPC from being used as an indefinite
 
 Dividends *received* from other Canadian corporations (for example, portfolio shareholdings or funds structured as corporations) sit in their own bucket:
 - Exempt from Part I tax under *s.112*; the corresponding Part IV tax is recovered when the corp later pays a dividend out
-- The Part IV tax is mostly recorded in the corporation's *ERDTOH* (eligible RDTOH) account — the eligible-side counterpart to NERDTOH; see [Shareholder-Dividends.md](Shareholder-Dividends.md) for the full ERDTOH/NERDTOH mechanics
+- The Part IV tax is mostly recorded in the corporation's *ERDTOH* (eligible RDTOH) account — the eligible-side counterpart to NERDTOH; see [ERDTOH-NERDTOH.md](ERDTOH-NERDTOH.md) for the full ERDTOH/NERDTOH mechanics
 
 The main T-slips a corporation receives for investment income reporting:
 - *T3* (Statement of Trust Income): distributions from trusts, including most Canadian ETFs (which are *mutual fund trusts* rather than corporations); covers interest, capital gains, foreign income, etc.; see [T3.md](T3/T3.md)
@@ -395,6 +395,7 @@ When a question gets specific, several layers of authority can apply:
 - [Adjusted Cost Base — Tracking](Adjusted-Cost-Base/Adjusted-Cost-Base-Tracking.md)
 - [Capital Dividend Account](Capital-Dividend-Account/Capital-Dividend-Account.md)
 - [Shareholder Dividends](Shareholder-Dividends.md)
+- [ERDTOH and NERDTOH](ERDTOH-NERDTOH.md)
 - [T3](T3/T3.md)
 - [T3 - Box 26 Other Income](T3/T3-Box-26-Other-Income.md)
 - [T5008](T5008/T5008.md)
