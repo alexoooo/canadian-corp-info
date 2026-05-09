@@ -6,7 +6,7 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
 
 **TLDR**:
 - *ERDTOH* and *NERDTOH* are two corporate tax pools holding previously paid refundable tax
-- Tax flows *into* the pools when the corp earns AII or receives dividends from other corps
+- Tax flows *into* the pools when the corp earns *Aggregate Investment Income* (AII) or receives dividends from other corps
 - Tax flows *out* of the pools as a *dividend refund* when the corp pays a taxable dividend
 - The pools were a single *RDTOH* account before 2019; the split into eligible and non-eligible was effective for tax years starting after 2018
 
@@ -21,7 +21,7 @@ Limitations:
 ## The two pools
 
 The *Eligible Refundable Dividend Tax on Hand* (ERDTOH) and *Non-Eligible Refundable Dividend Tax on Hand* (NERDTOH) accounts are defined in ITA [s.89(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-89.html).  
-Both are refundable corporate tax pools maintained at the corporation level; balances roll forward year to year and are recovered only when the corporation pays a taxable dividend.  
+Both are refundable tax pools; balances roll forward year to year and are recovered only when the corporation pays a taxable dividend.  
 Neither account is a balance-sheet asset.  
 They are notional T2 pools, tracked by T2 software and reported on T2 Page 7.  
 
@@ -48,7 +48,7 @@ Two mechanisms add to the RDTOH pools.
 - 30⅔% of AII for the year
 - AII is interest, foreign income, the taxable portion of capital gains, and most T3 Box 26 amounts from index ETFs structured as mutual fund trusts (see [T3-Box-26-Other-Income.md](T3/T3-Box-26-Other-Income.md))
 
-The 30⅔% rate at which AII *adds* to NERDTOH is not the same as the 38⅓% rate at which a non-eligible dividend *removes* tax from NERDTOH; the two rates measure different things.  
+The 30⅔% rate at which AII *adds* to NERDTOH is not the same as the 38⅓% rate at which a non-eligible dividend *removes* tax from NERDTOH.  
 
 
 ## Lifecycle
@@ -88,7 +88,7 @@ The *dividend refund* under ITA [s.129(1)](https://laws-lois.justice.gc.ca/eng/a
   - 38⅓% of non-eligible dividends paid in the year
   - NERDTOH year-end balance *plus* any ERDTOH balance left over after the eligible-dividend refund (ITA s.129(1)(b))
 
-The ordering matters:
+Ordering rules:
 - An eligible dividend draws only on ERDTOH; it cannot reach into NERDTOH
 - A non-eligible dividend draws on NERDTOH first, and only spills into ERDTOH after NERDTOH is exhausted
 - A non-eligible-only payout history can therefore strand ERDTOH on the corporate books (see [Stranding](#stranding) below)
@@ -121,7 +121,7 @@ For the late-December NERDTOH-recovery procedure (resolution + credit to *Due to
 ERDTOH and NERDTOH cannot be transferred, sold, or rolled out to a shareholder; any unused balance at wind-up is lost.  
 The ordering rule above (non-eligible draws NERDTOH first, then ERDTOH) means a corporation that receives eligible dividends but only ever pays non-eligible dividends can build up ERDTOH that never drains while NERDTOH is non-empty.  
 
-Patterns to watch:
+Stranding scenarios:
 - A CCPC receiving Box 49 ETF dividends (e.g. XEI) but only paying non-eligible dividends to the owner-manager: each year's Part IV tax on the eligible dividends received goes to ERDTOH, but the year's payout draws only from NERDTOH (which is being filled by the AII portion of the same ETF distributions); the ERDTOH balance grows and stays
 - A CCPC with no GRIP and a stranded ERDTOH balance: paying an eligible dividend would draw on ERDTOH but requires GRIP capacity to designate the dividend; without GRIP the ERDTOH stays stranded
 
