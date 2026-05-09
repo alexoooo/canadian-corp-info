@@ -18,7 +18,7 @@ Limitations:
   - Directly as an individual (personal income tax)
   - Flowing through a CCPC and out to shareholders (combined corporate + personal tax)
 - The total tax for the above two scenarios should be roughly equal
-- In effect, corporate income that is paid out as a dividend is not "double-taxed"
+- Corporate income that is paid out as a dividend is not "double-taxed"
 
 
 ## Gross-up and dividend tax credit
@@ -97,9 +97,9 @@ flowchart TB
 ```
 
 Reading the bottom row:
-- Direct: total tax \$535, net \$465 — the integration target
-- Non-eligible: total tax \$541, net \$459 — slight under-integration (~\$6 leakage)
-- Eligible: total tax \$554, net \$446 — slight under-integration (~\$19 leakage)
+- Direct: total tax \$535, net \$465 (the integration target)
+- Non-eligible: total tax \$541, net \$459 (slight under-integration, ~\$6 leakage)
+- Eligible: total tax \$554, net \$446 (slight under-integration, ~\$19 leakage)
 
 The leakage on the eligible path is larger here because Ontario's combined general corporate rate (26.5%) plus the DTC don't perfectly match the gross-up's notional 27.5% corporate rate, and the DTC isn't fully tuned to the top marginal personal bracket.  
 In other provinces, or at lower personal rates, the ranking between eligible and non-eligible can flip.  

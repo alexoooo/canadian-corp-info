@@ -97,7 +97,7 @@ How Box 26 can affect AII and NERDTOH:
   - The portion of Part I tax on AII that flows into NERDTOH (30⅔% of AII per s.129(4)) is recovered only when the corporation pays a non-eligible dividend; see [ERDTOH-NERDTOH.md](../ERDTOH-NERDTOH.md) for refund mechanics
 
 In terms of specific tax treatment, there are several concepts:
-- Income Tax Act: the legal rules - what counts as income, dividends, capital gains, property income, etc.
+- Income Tax Act: the legal rules - what counts as income, dividends, capital gains, property income, etc
 - T2 return + schedules: reporting mechanism for the tax rules
 - Bookkeeping + financial statements: your underlying records and classifications
 - GIFI: CRA standardized coding for filing financial statements (income statement, balance sheet) with the T2
@@ -105,7 +105,7 @@ In terms of specific tax treatment, there are several concepts:
 Practical treatment for T3 Box 26 from a vanilla index ETF (e.g. VCN or XEI):
 - Include it in corporate income; it rolls up to GIFI 8299 on "Schedule 125 (S125) - Income statement information"
 - Enter it as part of net income from property: Box 32 in Part 1 of Schedule 7 (S7) to calculate "Aggregate Investment Income" (AII)
-- For Box 26 from a trust that is not a mutual fund trust (e.g. certain commercial or income trusts), or from a trust with active business income, the AII classification and S7 treatment may differ — outside the scope of this document
+- For Box 26 from a trust that is not a mutual fund trust (e.g. certain commercial or income trusts), or from a trust with active business income, the AII classification and S7 treatment may differ; out of scope here
 
 For the GIFI code:
 - GIFI 8299 (Revenue) is a calculation, CRA does not mandate a specific GIFI code
@@ -114,7 +114,7 @@ For the GIFI code:
   - GIFI 8230 (Other revenue)
   - GIFI 8094 (Interest from other Canadian sources), which rolls up to GIFI 8090, but only when the T3 Box 26 amount is actual interest (e.g. bond index ETF like ZAG)
 - This document uses GIFI 8090 (Investment revenue), with a subaccount "Other investment income" (coded 8090-2)
-- If the corporation also earns direct interest income (e.g. GIC interest, savings account interest), use GIFI 8094 for that amount and GIFI 8090 (ledger subaccount 8090-2) for the T3 Box 26 amount — keeping them in separate ledger accounts makes the Schedule 125 reconciliation cleaner and avoids mixing T3-sourced income with directly earned interest
+- If the corporation also earns direct interest income (e.g. GIC interest, savings account interest), use GIFI 8094 for that amount and GIFI 8090 (ledger subaccount 8090-2) for the T3 Box 26 amount; this keeps the Schedule 125 reconciliation cleaner and avoids mixing T3-sourced income with directly earned interest
 
 For the S7 Box 32:
 - Your T2 tax software will typically calculate this number

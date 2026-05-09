@@ -77,7 +77,7 @@ Depending on your brokerage, you might see:
 - Every change to the ACB could be correctly reflected in the Book Cost, this is ideal  
 - ACB changes might be reflected but delayed (e.g. until following April)  
 - Some ACB changes might be missing entirely  
-- Superficial loss rules and external holdings may not be tracked correctly by your brokerage — see [Capital loss carry forward / back / superficial loss](#capital-loss-carry-forward--back--superficial-loss) below  
+- Superficial loss rules and external holdings may not be tracked correctly by your brokerage; see [Capital loss carry forward / back / superficial loss](#capital-loss-carry-forward--back--superficial-loss) below  
 - All brokerages might occasionally miss adjusting the Book Cost and sometimes report the wrong amount  
 - The behaviour can appear inconsistent  
 - It might be possible to raise a discrepancy with your brokerage, and they could re-issue T3 or T5008 slips  
@@ -97,12 +97,12 @@ Trading fees to sell a security:
 
 ACB uses pooled average cost across all identical properties (not FIFO or LIFO) (ITA [s.47(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-47.html)).  
 When you sell and fill out the T2 S6 entry, you will need to specify a "Date of acquisition".  
-For pooled securities, use the date of the very first purchase that contributed to the current pool — this is a conservative convention in the absence of specific CRA guidance.  
+For pooled securities, use the date of the very first purchase that contributed to the current pool, a conservative convention in the absence of specific CRA guidance.  
 
 
 ## Foreign assets and FX conversion to CAD
 
-If you hold USD or other foreign assets, you must convert to CAD when calculating ACB (you can use the Bank of Canada daily exchange rate — the indicative midpoint published at approximately 16:30 ET; the legacy noon rate is no longer published):  
+If you hold USD or other foreign assets, you must convert to CAD when calculating ACB (you can use the Bank of Canada daily exchange rate, the indicative midpoint published at approximately 16:30 ET; the legacy noon rate is no longer published):  
 - Purchases and sales: use the exchange rate for the trade date (not settlement date)  
 - Distributions (including ROC and reinvested/phantom amounts such as the non-cash portion of T3 box 21): use exchange rate on payment/distribution date (not when distribution is declared)  
 - Outlays and expenses (e.g. commissions): use exchange rate on trade date (not settlement date)  
@@ -127,10 +127,7 @@ Tax loss harvesting is the technique of realizing a loss, and then potentially i
 There are limitations on which losses can be claimed, make sure you don't get a *superficial loss* (ITA [s.54](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-54.html)):  
 - Time window: during the 61-day period that begins 30 days before and ends 30 days after a sale at a loss  
 - Who it applies to: you or an "affiliated person", including a corporation that you control (or a corporation controlled by your spouse/common-law partner)  
-- What is the action: acquisition of an identical property —
-    same issuer, same class, same currency of issue
-    ([CRA IT-387R2 (Archived) - *Meaning of "Identical Properties"*](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/it387r2-consolid/archived-meaning-identical-properties.html));
-    whether two different ETFs tracking the same index are identical is fact-specific  
+- What is the action: acquisition of an identical property (same issuer, same class, same currency of issue per [CRA IT-387R2 (Archived) - *Meaning of "Identical Properties"*](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/it387r2-consolid/archived-meaning-identical-properties.html); whether two different ETFs tracking the same index are identical is fact-specific)  
 - Condition at end of period: you or an affiliated person still owns that substituted property (or has the right to acquire it)  
 - What happens: loss is denied for now and is generally added to the ACB of the substituted property instead of being claimed immediately  
 - Example: if your corporation sells XEI at a loss,

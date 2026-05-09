@@ -58,7 +58,7 @@ You can keep this as a separate workbook, or as a single sheet within a larger w
 
 Inputs (from investment confirmations and T3):
 - `Date`:
-  - Buy/Sell: trade date (not settlement date) — for DRIP entered as Buy, see Notes below; payment/reinvestment date is used instead
+  - Buy/Sell: trade date (not settlement date); for DRIP entered as Buy, see Notes below; payment/reinvestment date is used instead
   - ROC/Phantom: payment/distribution date
 - `Symbol`: ETF or stock ticker
 - `Action`: Buy, Sell, ROC, Phantom
@@ -173,7 +173,7 @@ Outputs (cumulative per symbol):
 - `Remaining Quantity` should never go negative; if a sale would exceed current holdings, fix the input rather than allowing a negative balance
 - If you fully dispose of a position and later buy it again, the `Date of Acquisition` resets on the new purchase
 - This minimal template does not automate superficial loss, stock splits, or spin-offs; handle those with manual row edits:
-  - Stock split: insert a memo row on the effective date — adjust `Quantity` to the post-split total (ACB unchanged, per-unit ACB recalculates automatically)
+  - Stock split: insert a memo row on the effective date; adjust `Quantity` to the post-split total (ACB unchanged, per-unit ACB recalculates automatically)
   - Spin-off: close the parent position with a zero-proceeds Sell on the effective date, then open two new Buy rows (one for the parent, one for the new entity) with quantities and ACB allocated based on relative fair market values on that date; see [Adjusted-Cost-Base.md](Adjusted-Cost-Base.md) for the allocation rule
   - Superficial loss: the denied loss is not deducted; instead add it to the ACB of the substituted property via a manual Buy-like row (no quantity change, ACB increase only)
 - DRIP can be entered as Buy with `Commission` = 0; use the payment/reinvestment date (when the units are credited to your account) as `Date`, and the FX rate for that same date
@@ -181,11 +181,11 @@ Outputs (cumulative per symbol):
 
 ## Related
 
-- [Adjusted-Cost-Base.md](Adjusted-Cost-Base.md) — foundational ACB concepts, FX rate convention, and pooling rules this template implements
-- [Bank of Canada daily exchange rates](https://www.bankofcanada.ca/rates/exchange/daily-exchange-rates-lookup/) — source for FX CAD Rate values
+- [Adjusted-Cost-Base.md](Adjusted-Cost-Base.md) - foundational ACB concepts, FX rate convention, and pooling rules this template implements
+- [Bank of Canada daily exchange rates](https://www.bankofcanada.ca/rates/exchange/daily-exchange-rates-lookup/) - source for FX CAD Rate values
 
 
 ## Citations
 
-- ITA [s.47(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-47.html) — pooled average cost (WAC) mandatory for identical properties
+- ITA [s.47(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-47.html) - pooled average cost (WAC) mandatory for identical properties
 

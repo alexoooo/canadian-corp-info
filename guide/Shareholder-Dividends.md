@@ -41,7 +41,7 @@ Various deeming rules in [s.84](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/s
 
 ## What is not a dividend
 
-Several transactions look like dividends but are categorically different — or are *deemed* to be dividends with different mechanics:
+Several transactions look like dividends but are categorically different, or are *deemed* to be dividends with different mechanics:
 
 - *Salary* or management fee paid to the owner-manager:
   - Deductible to the corp (reduces taxable income)
@@ -115,7 +115,7 @@ ITA [s.185.1(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-185.1.ht
 *Integration* aims for the total tax paid on income earned through a corporation and distributed as a dividend to roughly equal the tax the same individual would have paid had they earned the income directly.  
 The mechanism is the *dividend gross-up and tax credit*, calibrated by flavour to the corporate tax already paid; capital dividends sit outside this framework (tax-free to a Canadian-resident shareholder).  
 
-For the full integration mechanics — gross-up and DTC rates per flavour, corp-side preference order, ITA citations — see [Tax-Integration.md](Tax-Integration.md).  
+For the full integration mechanics (gross-up and DTC rates per flavour, corp-side preference order, ITA citations), see [Tax-Integration.md](Tax-Integration.md).  
 
 
 ## GRIP - capacity for eligible dividends
@@ -131,7 +131,7 @@ The simplified annual addition to GRIP is:
 The 72% factor is set in ITA s.89(1) (the "general rate factor") and corresponds to a notional 28% combined corp tax; it does not move with actual provincial general rates.  
 
 For a CCPC operating entirely under the SBD limit, no general-rate active business income is generated.  
-The only way GRIP grows is through eligible dividends received from other Canadian corporations that designate them as eligible — most commonly public-corp ETFs and direct equity holdings, but also any other CCPC paying out of its own GRIP.  
+The only way GRIP grows is through eligible dividends received from other Canadian corporations that designate them as eligible (most commonly public-corp ETFs and direct equity holdings, but also any other CCPC paying out of its own GRIP).  
 This is why most owner-manager dividends end up being non-eligible by default: there is nothing in GRIP to designate against.  
 
 Schedule 53 must still be filed each year to track and carry forward the balance, even when GRIP is zero.  
