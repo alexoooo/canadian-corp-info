@@ -208,11 +208,14 @@ For dividend mechanics, see [Shareholder-Dividends.md](Shareholder-Dividends.md)
 How corporate income is bucketed, parked in dividend pools, and paid out to the shareholder.
 
 ```mermaid
-%%{init: {"flowchart": {"defaultRenderer": "elk"}}}%%
 flowchart TB
-    T3[T3 slip]
-    T5in[T5 slip]
-    T5008[T5008 slip]
+    subgraph Slips[" "]
+        direction LR
+        T3[T3 slip]
+        SpaceTT[ ]
+        T5in[T5 slip]
+        T5008[T5008 slip]
+    end
     OP[Active operations]
 
     ABI([ABI])
@@ -258,6 +261,10 @@ flowchart TB
     T5elig --> SH
     T5neli --> SH
     T2054 --> SH
+
+    classDef hidden fill:transparent,stroke:transparent,color:transparent
+    class SpaceTT hidden
+    style Slips fill:transparent,stroke:transparent
 ```
 
 Inputs: T-slips received from brokers and trusts (T3, T5, T5008).  
