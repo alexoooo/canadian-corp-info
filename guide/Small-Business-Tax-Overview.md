@@ -240,10 +240,10 @@ flowchart TB
 
     ABI -->|general-rate portion| GRIP
     AII -->|non-taxable ½| CDA
-    AII -->|refundable 30⅔%| NERDTOH
+    AII -->|refundable<br/>30⅔%| NERDTOH
     DivRcv -->|eligible| GRIP
-    DivRcv -->|Part IV: eligible| ERDTOH
-    DivRcv -->|Part IV: non-eligible| NERDTOH
+    DivRcv -->|Part IV:<br/>eligible| ERDTOH
+    DivRcv -->|Part IV:<br/>non-eligible| NERDTOH
 
     GRIP -.->|designation| T5elig
     ERDTOH -.->|refund| T5elig
