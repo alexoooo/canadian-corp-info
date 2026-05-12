@@ -208,6 +208,7 @@ For dividend mechanics, see [Shareholder-Dividends.md](Shareholder-Dividends.md)
 How corporate income is bucketed, parked in dividend pools, and paid out to the shareholder.
 
 ```mermaid
+%%{init: {"flowchart": {"defaultRenderer": "elk"}}}%%
 flowchart TB
     T3[T3 slip]
     T5in[T5 slip]
