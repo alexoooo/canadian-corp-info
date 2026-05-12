@@ -220,8 +220,10 @@ flowchart TB
 
     GRIP[(GRIP)]
     CDA[(CDA)]
-    NERDTOH[(NERDTOH)]
     ERDTOH[(ERDTOH)]
+    NERDTOH[(NERDTOH)]
+
+    PartIV{{Part IV tax}}
 
     T4out["T4 — salary"]
     T5elig["T5 — eligible div"]
@@ -240,10 +242,11 @@ flowchart TB
 
     ABI -->|general-rate portion| GRIP
     AII -->|non-taxable ½| CDA
-    AII -->|refundable<br/>30⅔%| NERDTOH
+    AII -->|refundable 30⅔%| NERDTOH
     DivRcv -->|eligible| GRIP
-    DivRcv -->|Part IV:<br/>eligible| ERDTOH
-    DivRcv -->|Part IV:<br/>non-eligible| NERDTOH
+    DivRcv --> PartIV
+    PartIV -->|eligible| ERDTOH
+    PartIV -->|non-eligible| NERDTOH
 
     GRIP -.->|designation| T5elig
     ERDTOH -.->|refund| T5elig
