@@ -220,8 +220,8 @@ flowchart TB
 
     GRIP[(GRIP)]
     CDA[(CDA)]
-    ERDTOH[(ERDTOH)]
     NERDTOH[(NERDTOH)]
+    ERDTOH[(ERDTOH)]
 
     T4out["T4 — salary"]
     T5elig["T5 — eligible div"]
