@@ -237,8 +237,7 @@ flowchart TB
     T5in -->|interest| AII
     T5008 -->|capital gain| AII
     T5in -->|Cdn-corp div| DivRcv
-    T3 -->|eligible div| DivRcv
-    T3 -->|non-eligible div| DivRcv
+    T3 -->|eligible &<br/>non-eligible div| DivRcv
 
     ABI -->|general-rate portion| GRIP
     AII -->|non-taxable ½| CDA
