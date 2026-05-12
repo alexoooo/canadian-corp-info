@@ -209,10 +209,10 @@ How corporate income is bucketed, parked in dividend pools, and paid out to the 
 
 ```mermaid
 flowchart TB
-    subgraph Slips[" "]
+    subgraph Slips [Slips]
         direction LR
         T3[T3 slip]
-        SpaceTT[ ]
+        SpaceTT[SpaceTT]
         T5in[T5 slip]
         T5008[T5008 slip]
     end
@@ -229,10 +229,10 @@ flowchart TB
 
     PartIV{{Part IV tax}}
 
-    T4out["T4 — salary"]
-    T5elig["T5 — eligible div"]
-    T5neli["T5 — non-eligible div"]
-    T2054["T2054 — capital div"]
+    T4out["T4: salary"]
+    T5elig["T5: eligible div"]
+    T5neli["T5: non-eligible div"]
+    T2054["T2054: capital div"]
     SH([Shareholder T1])
 
     OP -->|net of salary| ABI
@@ -264,7 +264,7 @@ flowchart TB
 
     classDef hidden fill:transparent,stroke:transparent,color:transparent
     class SpaceTT hidden
-    style Slips fill:transparent,stroke:transparent
+    style Slips fill:transparent,stroke:transparent,color:transparent
 ```
 
 Inputs: T-slips received from brokers and trusts (T3, T5, T5008).  
