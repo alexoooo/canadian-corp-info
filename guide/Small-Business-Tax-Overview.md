@@ -409,6 +409,7 @@ When a question gets specific, several layers of authority can apply:
 
 - [Adjusted Cost Base](Adjusted-Cost-Base/Adjusted-Cost-Base.md)
 - [Adjusted Cost Base — Tracking](Adjusted-Cost-Base/Adjusted-Cost-Base-Tracking.md)
+- [Capital Cost Allowance](Capital-Cost-Allowance.md)
 - [Capital Dividend Account](Capital-Dividend-Account/Capital-Dividend-Account.md)
 - [Shareholder Dividends](Shareholder-Dividends.md)
 - [ERDTOH and NERDTOH](ERDTOH-NERDTOH.md)

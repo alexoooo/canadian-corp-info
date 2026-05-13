@@ -25,14 +25,16 @@ Disclaimer: author is not an accountant, this is not financial or tax advice.
 
 AI generated, not verified yet:
 - [Glossary](guide/Glossary.md)
+- [Capital Cost Allowance](guide/Capital-Cost-Allowance.md)
+- [Inventory](guide/Inventory.md)
 - [ERDTOH and NERDTOH](guide/ERDTOH-NERDTOH.md)
 - [Shareholder-Dividends](guide/Shareholder-Dividends.md)
+- [Foreign Currency](guide/Foreign-Currency.md)
 
 
 ## Work in progress
 
 Page stubs:
-- [Foreign-Currency](guide/Foreign-Currency.md)
 - [HST](guide/HST.md)
 - [Payment](guide/Payment/Payment.md)
 
