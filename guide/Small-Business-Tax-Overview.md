@@ -24,6 +24,75 @@ Limitations:
 - The following is my understanding as of 2026
 
 
+## Income flow
+
+How corporate income is bucketed, parked in dividend pools, and paid out to the shareholder.  
+Terms in the diagram (*ABI*, *AII*, *GRIP*, *CDA*, *ERDTOH*, *NERDTOH*, *Part IV tax*) are defined in the sections below.  
+
+```mermaid
+flowchart TB
+    subgraph Slips [Slips]
+        direction LR
+        T3[T3 slip]
+        SpaceTT[SpaceTT]
+        T5in[T5 slip]
+        T5008[T5008 slip]
+    end
+    OP[Active operations]
+
+    ABI([ABI])
+    AII([AII])
+    DivRcv([Dividends received])
+
+    GRIP[(GRIP)]
+    CDA[(CDA)]
+    ERDTOH[(ERDTOH)]
+    NERDTOH[(NERDTOH)]
+
+    PartIV{{Part IV tax}}
+
+    T4out["T4: salary"]
+    T5elig["T5: eligible div"]
+    T5neli["T5: non-eligible div"]
+    T2054["T2054: capital div"]
+    SH([Shareholder T1])
+
+    OP -->|net of salary| ABI
+    OP -->|deductible expense| T4out
+    T3 -->|interest, foreign,<br/>cap gain ½, other| AII
+    T5in -->|interest| AII
+    T5008 -->|capital gain| AII
+    T5in -->|Cdn-corp<br/>div| DivRcv
+    T3 -->|eligible<br/>div| DivRcv
+    T3 -->|non-eligible<br/>div| DivRcv
+
+    ABI -->|general-rate portion| GRIP
+    AII -->|non-taxable ½| CDA
+    AII -->|refundable 30⅔%| NERDTOH
+    DivRcv -->|eligible| GRIP
+    DivRcv --> PartIV
+    PartIV -->|eligible| ERDTOH
+    PartIV -->|non-eligible| NERDTOH
+
+    GRIP -.->|designation| T5elig
+    ERDTOH -.->|refund| T5elig
+    NERDTOH -.->|refund| T5neli
+    CDA -.->|election| T2054
+
+    T4out --> SH
+    T5elig --> SH
+    T5neli --> SH
+    T2054 --> SH
+
+    classDef hidden fill:transparent,stroke:transparent,color:transparent
+    class SpaceTT hidden
+    style Slips fill:transparent,stroke:transparent,color:transparent
+```
+
+Inputs: T-slips received from brokers and trusts (T3, T5, T5008).  
+Outputs: T-slips issued by the corp to the shareholder: T4 (salary), T5 (eligible or non-eligible dividend), T2054 (capital-dividend election form; no T5).
+
+
 ## What is corporate tax
 
 A corporation is a separate legal and tax entity from its shareholders.  
@@ -201,74 +270,6 @@ Practical tradeoffs:
 The full optimization is personal: it depends on tax bracket, retirement strategy, mortgage plans, and family income-splitting considerations.  
 The *TOSI* rules under ITA [s.120.4](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-120.4.html) limit splitting through dividends to family members who are not active in the business.  
 For dividend mechanics, see [Shareholder-Dividends.md](Shareholder-Dividends.md); for payroll, see [Payment.md](Payment/Payment.md).  
-
-
-## Income flow
-
-How corporate income is bucketed, parked in dividend pools, and paid out to the shareholder.
-
-```mermaid
-flowchart TB
-    subgraph Slips [Slips]
-        direction LR
-        T3[T3 slip]
-        SpaceTT[SpaceTT]
-        T5in[T5 slip]
-        T5008[T5008 slip]
-    end
-    OP[Active operations]
-
-    ABI([ABI])
-    AII([AII])
-    DivRcv([Dividends received])
-
-    GRIP[(GRIP)]
-    CDA[(CDA)]
-    ERDTOH[(ERDTOH)]
-    NERDTOH[(NERDTOH)]
-
-    PartIV{{Part IV tax}}
-
-    T4out["T4: salary"]
-    T5elig["T5: eligible div"]
-    T5neli["T5: non-eligible div"]
-    T2054["T2054: capital div"]
-    SH([Shareholder T1])
-
-    OP -->|net of salary| ABI
-    OP -->|deductible expense| T4out
-    T3 -->|interest, foreign,<br/>cap gain ½, other| AII
-    T5in -->|interest| AII
-    T5008 -->|capital gain| AII
-    T5in -->|Cdn-corp<br/>div| DivRcv
-    T3 -->|eligible<br/>div| DivRcv
-    T3 -->|non-eligible<br/>div| DivRcv
-
-    ABI -->|general-rate portion| GRIP
-    AII -->|non-taxable ½| CDA
-    AII -->|refundable 30⅔%| NERDTOH
-    DivRcv -->|eligible| GRIP
-    DivRcv --> PartIV
-    PartIV -->|eligible| ERDTOH
-    PartIV -->|non-eligible| NERDTOH
-
-    GRIP -.->|designation| T5elig
-    ERDTOH -.->|refund| T5elig
-    NERDTOH -.->|refund| T5neli
-    CDA -.->|election| T2054
-
-    T4out --> SH
-    T5elig --> SH
-    T5neli --> SH
-    T2054 --> SH
-
-    classDef hidden fill:transparent,stroke:transparent,color:transparent
-    class SpaceTT hidden
-    style Slips fill:transparent,stroke:transparent,color:transparent
-```
-
-Inputs: T-slips received from brokers and trusts (T3, T5, T5008).  
-Outputs: T-slips issued by the corp to the shareholder: T4 (salary), T5 (eligible or non-eligible dividend), T2054 (capital-dividend election form; no T5).
 
 
 ## Personal Service Business classification risk
