@@ -26,24 +26,26 @@ Limitations:
 
 ## Income flow
 
-How corporate income is bucketed, parked in dividend pools, and paid out to the shareholder.  
+How corporate income is bucketed, parked in dividend pools or retained earnings, and paid out to the shareholder.  
 Terms in the diagram (*ABI*, *AII*, *GRIP*, *CDA*, *ERDTOH*, *NERDTOH*, *Part IV tax*) are defined in the sections below.  
+*Retained earnings* holds the after-tax balance of corporate profits and is the cash source for the *T5* dividend outputs.  
+The dashed lines from *GRIP* / *ERDTOH* / *NERDTOH* are designations and refunds, not cash flow.  
 
 ```mermaid
 flowchart TB
-    subgraph Slips [Slips]
+    subgraph Inputs [Inputs]
         direction LR
         T3[T3 slip]
-        SpaceTT[SpaceTT]
         T5in[T5 slip]
         T5008[T5008 slip]
+        OP[Active operations]
     end
-    OP[Active operations]
 
     ABI([ABI])
     AII([AII])
     DivRcv([Dividends received])
 
+    RE[(Retained earnings)]
     GRIP[(GRIP)]
     CDA[(CDA)]
     ERDTOH[(ERDTOH)]
@@ -66,7 +68,9 @@ flowchart TB
     T3 -->|eligible<br/>div| DivRcv
     T3 -->|non-eligible<br/>div| DivRcv
 
+    ABI -->|SBD portion ≤$500K<br/>after-tax| RE
     ABI -->|general-rate portion| GRIP
+    AII -->|after-tax ~½| RE
     AII -->|non-taxable ½| CDA
     AII -->|refundable 30⅔%| NERDTOH
     DivRcv -->|eligible| GRIP
@@ -74,6 +78,8 @@ flowchart TB
     PartIV -->|eligible| ERDTOH
     PartIV -->|non-eligible| NERDTOH
 
+    RE -->|cash| T5elig
+    RE -->|cash| T5neli
     GRIP -.->|designation| T5elig
     ERDTOH -.->|refund| T5elig
     NERDTOH -.->|refund| T5neli
@@ -84,9 +90,7 @@ flowchart TB
     T5neli --> SH
     T2054 --> SH
 
-    classDef hidden fill:transparent,stroke:transparent,color:transparent
-    class SpaceTT hidden
-    style Slips fill:transparent,stroke:transparent,color:transparent
+    style Inputs fill:transparent,stroke:transparent,color:transparent
 ```
 
 Inputs: T-slips received from brokers and trusts (T3, T5, T5008).  
