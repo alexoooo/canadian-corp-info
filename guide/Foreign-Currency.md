@@ -31,17 +31,22 @@ The Income Tax Act presumes a Canadian-resident corporation reports in Canadian 
 Foreign-currency amounts are converted to CAD at the rate prevailing on the transaction date (ITA [s.261(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-261.html); CRA Income Tax Folio S5-F4-C1).  
 
 Acceptable sources for the exchange rate, applied consistently across the year:
-- *Bank of Canada single daily exchange rate*: published once per business day by approximately 16:30 ET, replacing the legacy noon rate that was discontinued on 2017-03-01
+- *Bank of Canada single daily exchange rate*: published once per business day by approximately 16:30 ET, replacing the legacy noon rate that was discontinued on 2017-03-01; the BoC describes these as *indicative rates* based on aggregated market quotes and CRA folio S5-F4-C1 names them as the default rate for post-2017-02-28 conversions
+- *Year-average BoC rate*: CRA folio S5-F4-C1 accepts an annual average for income-account items where the rate does not fluctuate significantly through the year; used as a simplification when the per-transaction rate is impractical
 - The corp's *bank's actual settlement rate* on the transaction: acceptable when the bank statement shows the CAD and USD legs of an actual conversion; the only rate that reflects what actually happened in the account
 - Other commercial sources (Bloomberg, Reuters, OANDA), applied consistently
 - For a small CCPC the practical convention is: BoC daily rate for accruals, year-end revaluations, and ACB; the bank's actual settlement rate for any CAD↔USD conversion the bank itself performed
 
 The *functional currency election* under ITA [s.261(3)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-261.html) lets a corporation file its T2 in USD, EUR, GBP, AUD, or JPY when that currency is the corporation's *primary* books-and-records currency.  
-It is filed on Form T1296 within 60 days of the start of the first tax year for which it applies.  
+The election is available only to a corporation resident in Canada that is *not* an investment corporation, mortgage investment corporation, or mutual fund corporation.  
+It is filed on Form T1296 no later than 60 days after the first day of the first tax year for which it applies.  
 For a typical owner-managed CCPC operating in Canada with CAD bank accounts and Canadian customers, the election is not available because CAD remains the primary currency; out of scope here.  
 
 
 ## When to use which rate
+
+CRA Income Tax Folio S5-F4-C1 lets a corporation pick any consistent and appropriate method for income-account items (current-rate / accrual, settlement, fixed-rate, or average-rate).  
+This guide uses the *transaction-date* method throughout, applied per-event as listed below.  
 
 The rate-by-event convention used throughout this guide, with cross-links to where each rule is applied:
 
@@ -72,7 +77,7 @@ This is the load-bearing distinction in foreign-currency tax: every FX gain or l
 - Arises from dispositions of *capital property*: foreign securities, USD held in an investment account to acquire securities, settlement of a foreign-currency capital obligation
 - 50% inclusion rate (ITA [s.38](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-38.html)); recognized only on disposition (ITA [s.39(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-39.html)), not on year-end revaluation (IT-95R paragraph 9)
 - "Disposition" of foreign currency includes converting it to CAD, using it to pay a CAD obligation, transferring it to a third currency, or using it to acquire property
-- Reported on Schedule 6 (Summary of Dispositions of Capital Property); the non-taxable half is deducted on Schedule 1 line 705 in the usual capital-gains pattern
+- Reported on Schedule 6 (Summary of Dispositions of Capital Property); reconciled through Schedule 1 in the usual capital-gains accounting-to-tax pattern (full accounting gain or loss removed, the taxable half from Schedule 6 added back)
 
 The $200 personal FX de minimis under ITA [s.39(1.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-39.html) applies only to *individuals*.  
 A corporation has no de minimis: every capital-account FX gain or loss, however small, is reportable on Schedule 6.  
@@ -97,7 +102,7 @@ How it works:
 - Each ledger account has a single native currency; CAD-native accounts hold CAD, USD-native accounts hold USD, and the two never mix within a single account
 - Cross-currency transactions split into two legs, each balancing within its own currency, with `FX gain/loss - CAD` (8231-1) and `FX gain/loss - USD` (8231-2) acting as the per-currency bridge
 - Same-currency transactions (USD payment closing a USD receivable; CAD payment from `Deposits` to a Canadian supplier) are pure-currency entries with no FX bridge
-- Investment accounts stay *CAD-native* even when the underlying security trades in USD: ACB is a CAD figure by definition under ITA [s.47](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-47.html), so the investment ledger account holds the CAD ACB; subsequent USD/CAD movement affects the cash side (`Deposits - USD`) instead of the investment side
+- Investment accounts stay *CAD-native* even when the underlying security trades in USD: ACB is defined in ITA [s.54](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-54.html) and, for a Canadian-resident corporation reporting in CAD under [s.261](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-261.html), the figure is CAD-denominated; the investment ledger account holds the CAD ACB and subsequent USD/CAD movement affects the cash side (`Deposits - USD`) instead of the investment side
 - Period-end revaluation: translate every foreign-currency-native account balance to CAD at the closing BoC rate; the net of (8231-1 in CAD + 8231-2 translated to CAD at the closing rate) is the FX gain or loss for the period and flows to Schedule 125 GIFI 8231
 
 The `FX gain/loss` sub-accounts (8231-1, 8231-2) accumulate per-currency positions through the year and are not separately reported; both roll up to a single GIFI 8231 line on Schedule 125 after the period-end translation.  
@@ -120,7 +125,7 @@ Internal codes carry a `-N` suffix (matching the convention in [T3](T3/T3.md)); 
     <tr><td>1060-2</td><td>Accounts receivable - USD</td><td>USD</td><td>1060 (at closing BoC rate at year-end)</td></tr>
     <tr><td>2303-1</td><td>Investments - DLR/DLR.U</td><td>CAD</td><td>2303 (Canadian shares; ACB-denominated in CAD even when traded in USD)</td></tr>
     <tr><td>8000</td><td>Trade sales of goods and services</td><td>CAD</td><td>8000</td></tr>
-    <tr><td>8210-1</td><td>Realized gain/loss on disposition of investments</td><td>CAD</td><td>8211 (per <a href="T3/T3.md">T3</a>)</td></tr>
+    <tr><td>8211-1</td><td>Disposition of capital property</td><td>CAD</td><td>8211 (per <a href="T3/T3.md">T3</a>)</td></tr>
     <tr><td>8231-1</td><td>Foreign exchange gain/loss - CAD</td><td>CAD</td><td>8231 (net with 8231-2 at closing rate)</td></tr>
     <tr><td>8231-2</td><td>Foreign exchange gain/loss - USD</td><td>USD</td><td>8231 (net with 8231-1; translated at closing BoC rate)</td></tr>
     <tr><td>8710</td><td>Interest and bank charges</td><td>CAD</td><td>8710</td></tr>
@@ -129,7 +134,7 @@ Internal codes carry a `-N` suffix (matching the convention in [T3](T3/T3.md)); 
 
 Notes on the codes:
 - GIFI 1003 captures USD deposits at a Canadian bank; GIFI 1004 (foreign bank, CAD) and 1005 (foreign bank, foreign currency) are reserved for accounts at foreign banks and are not in scope here
-- GIFI 8231 covers realized and unrealized FX on income-account monetary items; do not confuse with GIFI 8230 (the generic disposal-of-assets revenue line)
+- GIFI 8231 covers realized and unrealized FX on income-account monetary items; do not confuse with GIFI 8210 (the broader realized-gains-on-disposal-of-assets line) — 8231 is the FX-specific line on Schedule 125
 - Splitting `FX gain/loss` into 8231-1 (CAD-native) and 8231-2 (USD-native) is what makes the trading-account convention work; both roll up to GIFI 8231 at year-end
 - For broader account-tree conventions (investment accounts, withholding taxes, GIFI rollups), see [T3](T3/T3.md)
 
@@ -252,7 +257,7 @@ Concrete example on USD 50,000:
 Worked example — convert USD 10,000 of invoice proceeds back to CAD via Gambit at a flat-commission bank broker.  
 Assume: BoC rate on day 0 is 1.36; DLR.U trades at USD 10.00; DLR trades at CAD 13.60 on day 1; two $9.95 trading commissions (one in USD on the buy leg, one in CAD on the sell leg).  
 
-The `Investments - DLR/DLR.U` account is CAD-native: ACB is in CAD by definition under ITA s.47, so the USD purchase enters the investment account at the trade-date CAD equivalent (USD 10,009.95 × 1.36 = CAD 13,613.53). The USD-side cash outflow is bridged to the CAD-side investment entry via the per-currency FX accounts.  
+The `Investments - DLR/DLR.U` account is CAD-native: ACB is defined in ITA s.54 and CAD-denominated by default reporting currency (s.261), so the USD purchase enters the investment account at the trade-date CAD equivalent (USD 10,009.95 × 1.36 = CAD 13,613.53). The USD-side cash outflow is bridged to the CAD-side investment entry via the per-currency FX accounts.  
 
 Day 0 — buy 1,000 units of DLR.U at USD 10.00 + USD 9.95 commission = USD 10,009.95:
 - USD-side (balances within USD):
@@ -268,7 +273,7 @@ Day 1 — journal DLR.U units to the DLR side:
 Day 1 — sell 1,000 units of DLR at CAD 13.60 = CAD 13,600 minus $9.95 commission = CAD 13,590.05 net proceeds:
 - Pure CAD entry (no FX bridge; both legs CAD-native):
   - Debit `Deposits` (1002-1): CAD 13,590.05
-  - Debit `Realized gain/loss on disposition of investments` (8210-1, capital-account; Schedule 6 disposition): CAD 23.48
+  - Debit `Disposition of capital property` (8211-1, capital-account; Schedule 6 disposition): CAD 23.48
   - Credit `Investments - DLR/DLR.U` (2303-1): CAD 13,613.53
 
 Schedule 6 entry:
@@ -536,6 +541,7 @@ flowchart TB
   - [s.39(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-39.html) - capital gain or loss on FX from the disposition of foreign currency, or settlement of a foreign-currency capital obligation
   - [s.40(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-40.html) - general capital-gain-on-disposition formula
   - [s.47(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-47.html) - identical-properties pooling (relevant for DLR / DLR.U as the same fund)
+  - [s.54](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-54.html) - definition of "adjusted cost base"
   - [s.261](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-261.html) - functional currency election and acceptable exchange-rate sources
 - Excise Tax Act (R.S.C., 1985, c. E-15):
   - Schedule VI, Part V, section 7 - zero-rated general services to non-residents
