@@ -25,10 +25,10 @@ Disclaimer: author is not an accountant, this is not financial or tax advice.
 
 AI generated, not verified yet:
 - [Glossary](guide/Glossary.md)
-- [Capital Cost Allowance](guide/Capital-Cost-Allowance.md)
-- [Inventory](guide/Inventory.md)
 - [ERDTOH and NERDTOH](guide/ERDTOH-NERDTOH.md)
 - [Shareholder-Dividends](guide/Shareholder-Dividends.md)
+- [Inventory](guide/Inventory.md)
+- [Capital Cost Allowance](guide/Capital-Cost-Allowance.md)
 - [Foreign Currency](guide/Foreign-Currency.md)
 
 

@@ -14,8 +14,10 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
 - Small items below the corp's capitalization policy (often $500) and incorporation expenses up to $3,000 are expensed immediately rather than capitalized
 
 Limitations:
-- Focus is on a typical owner-managed CCPC operating in Canada; manufacturing and processing (Class 53), clean-energy (Classes 43.1 / 43.2), and resource regimes are mentioned but not worked
-- Buildings (Class 1 / 3 / 6) are pointed at, not covered in depth; the additional 2% / 6% election under Regulation 1101(5b.1) is out of scope
+- Focus is on a typical owner-managed CCPC operating in Canada
+- Manufacturing and processing (Class 53), clean-energy (Classes 43.1 / 43.2), and resource regimes are touched on but not worked through
+- Buildings (Class 1 / 3 / 6) are touched on, not covered in depth
+- The additional 2% / 6% election under Regulation 1101(5b.1) is out of scope
 - Change-of-use deemed dispositions (ITA s.13(7)) are out of scope beyond a pointer
 - Leasing-income property rules (Regulation 1100(15)) and the *specified energy property* rules are out of scope
 - Provincial CCA forms (Quebec TP-130.B, Alberta AT1 Schedule 13) are out of scope; federal Schedule 8 is the focus
@@ -51,7 +53,7 @@ Common classes for an owner-managed CCPC:
 - *Class 55* (40%, declining): zero-emission vehicles otherwise in Class 16 (taxis, courier trucks)
 - *Class 53* (50%, declining): manufacturing and processing machinery and equipment
 
-Classes pointed at but not worked here:
+Classes touched on but not worked through here:
 - Class 1 (4%, declining): buildings; +2% allowance for non-residential, +6% for an M&P building, elected via Regulation 1101(5b.1); see CRA T4012
 - Classes 43.1 / 43.2: clean-energy equipment
 - Class 56: zero-emission automotive equipment

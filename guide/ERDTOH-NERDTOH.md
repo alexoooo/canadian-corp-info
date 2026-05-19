@@ -12,7 +12,7 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
 
 Limitations:
 - Focus is on a typical owner-managed CCPC with a Canadian-resident shareholder
-- *Connected*-corporation flow-through Part IV mechanics are sketched but not worked through in depth
+- *Connected*-corporation flow-through Part IV mechanics are touched on but not worked through in depth
 - The salary-vs-dividend tradeoff and TOSI rules are out of scope; see [Shareholder-Dividends.md](Shareholder-Dividends.md)
 - Tax information can change over time
 - The following is my understanding as of 2026

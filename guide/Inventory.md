@@ -1,47 +1,62 @@
 STATUS: AI GENERATED, REVIEW IN PROGRESS
 
-# Inventory
+# Inventory \[done]
 
 **Who this is for**:
 - Owners of a Canadian-controlled private corporation (CCPC)
 - Buy goods for resale (retail, e-commerce, parts-and-services), or buy materials for use in its own operations
-- Need to translate those purchases into ledger entries, a year-end valuation, the cost-of-sales section of T2 Schedule 125, and the inventory lines of Schedule 100
+- Need to translate those purchases into ledger entries, a year-end valuation, the cost-of-sales section of the income statement (T2 Schedule 125), and the inventory lines of the balance sheet (Schedule 100)
 
 **TLDR**:
 - *Inventory* is property held for sale, or held for use in producing property held for sale (ITA [s.248(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-248.html))
 - A property is either *inventory* or *depreciable property*, never both at the same time; *purpose at acquisition* decides which
 - Inventory is valued each year-end at the lower of *cost* or *fair market value* (LCM), per ITA [s.10(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-10.html)
 - *Cost* follows a permitted cost-flow assumption (weighted-average, FIFO, or specific identification), applied consistently year over year (s.10(2))
-- *Cost of sales* (COGS) is the matching deduction at the moment a unit is sold; unlike *Capital Cost Allowance* (CCA) for fixed assets, the cost is not spread over multiple years
-- Materials bought to *build* a fixed asset for the corp's own use are not inventory; they sit in a `Construction in progress` (CIP) asset account, transfer into a CCA class on completion, and start to amortize only once the asset is *available for use* (ITA [s.13(26)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-13.html))
+- *Cost of sales* (aka *Cost of goods sold*, COGS) is the matching deduction at the moment a unit is sold; unlike *Capital Cost Allowance* (CCA) for fixed assets, the cost is not spread over multiple years
+- Materials bought to *build* a fixed asset for the corp's own use are not inventory; they accumulate in `Construction in progress` (CIP), transfer into a CCA class on completion, and amortize only once the asset is *available for use* (ITA [s.13(26)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-13.html)); see [Capital Cost Allowance](Capital-Cost-Allowance.md)
 
 Limitations:
-- Focus is on a typical owner-managed CCPC with goods-for-resale or self-use materials inventory; manufacturing inventory with overhead absorption and standard-cost variances is pointed at but not worked
+- Focus is on a typical owner-managed CCPC with goods-for-resale or self-use materials inventory
+- Manufacturing inventory with overhead absorption and standard-cost variances is touched on but not worked through
 - Long-term construction contracts (ITA s.10.1), commodity-pool inventories (s.10(6)), real-estate developer inventory, and financial-institution security inventories are out of scope
 - Consignment inventory is mentioned briefly; service-business work-in-process under s.10(5)(a)/(11) is out of scope
-- Inventory-method change requires CRA approval (Regulation 1801) and is not worked here
+- Inventory-method change requires CRA approval (Regulation 1801) and is not covered here
 - The following is my understanding as of 2026
 
 
-## What inventory is
+## Inventory versus other purchase types \[done]
 
-ITA [s.248(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-248.html) defines *inventory* as "a description of property the cost or value of which is relevant in computing a taxpayer's income from a business for a taxation year".  
-The everyday cases:
+Purchased property in a CCPC follows one of a few tax treatments (inventory is the most common):
+- *Inventory* (the focus of this page): property held for sale, or held to produce property held for sale; cost flows through `Cost of sales` (COGS) when a unit sells; valued at LCM each year-end
+- *Materials to build a fixed asset for the corp's own use*: not inventory; cost accumulates in `Construction in progress` (CIP), transfers into a CCA class on completion, and amortizes through annual CCA claims; see [Capital Cost Allowance](Capital-Cost-Allowance.md)
+- *Consumable supplies* (office paper, packaging, cleaning, lubricants): expensed when used; not capitalized; out of scope here
+- *Spare parts*: inventory if held for resale; expensed or capitalized into the equipment they service otherwise; the non-resale case is out of scope here
+
+The [Materials versus finished items](#materials-versus-finished-items) section below covers the inventory-vs-CIP distinction.  
+
+
+## What inventory is \[done]
+
+ITA [s.248(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-248.html) defines *inventory* as "a description of property the cost or value of which is relevant in computing a taxpayer's income from a business for a taxation year".
+
+Typical cases:
 - Finished goods bought wholesale for resale
 - Raw materials and parts held to be combined into a product for sale
 - Work in progress (WIP) for a manufacturing CCPC
 - Real-estate-developer land and buildings held for sale (not in scope here)
 
 A property is *inventory* or *depreciable property*, never both:
-- Inventory is matched to revenue through cost of sales (COGS); the cost leaves the books at the moment of sale
-- Depreciable property is held to earn income over time; the cost leaves the books over its life through CCA (see [Capital Cost Allowance](Capital-Cost-Allowance.md))
+- Inventory is matched to revenue through cost of sales (COGS); the cost is deducted at the moment of sale
+- Depreciable property is held to earn income over time; the cost is deducted over its life through CCA (see [Capital Cost Allowance](Capital-Cost-Allowance.md))
 
 *Purpose at acquisition* determines which category applies:
 - Bought to resell: inventory
 - Bought to use in the business: depreciable property (or operating expense if below the capitalization threshold)
 - Bought as a one-off speculation that you intend to flip: *adventure or concern in the nature of trade*, taxed at cost under ITA [s.10(1.01)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-10.html) rather than at LCM (still inventory in form, but with cost-only valuation)
 
-If purpose changes after acquisition (say a delivery van bought to resell, then taken off the lot for operational use), that is a *change in use* event. The deemed-disposition rules in s.45 / s.13(7) apply and trigger a transfer between inventory and a CCA class at fair market value. This is rare for a typical CCPC and is out of scope here.
+If purpose changes after acquisition (say a delivery van bought to resell, then taken off the lot for operational use), that is a *change in use* event.  
+The deemed-disposition rules in s.45 / s.13(7) apply and trigger a transfer between inventory and a CCA class at fair market value.  
+This is rare for a typical CCPC and is out of scope here.  
 
 
 ## Valuation methods
