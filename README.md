@@ -24,25 +24,26 @@ Disclaimer: author is not an accountant, this is not financial or tax advice.
 ## Pending review
 
 AI generated, not verified yet:
-- [Glossary](guide/Glossary.md)
-- [ERDTOH and NERDTOH](guide/ERDTOH-NERDTOH.md)
-- [Shareholder-Dividends](guide/Shareholder-Dividends.md)
-- [Inventory](guide/Inventory.md)
+- [Materials and CIP](guide/Materials-And-CIP.md)
 - [Capital Cost Allowance](guide/Capital-Cost-Allowance.md)
 - [Foreign Currency](guide/Foreign-Currency.md)
+- [ERDTOH and NERDTOH](guide/ERDTOH-NERDTOH.md)
+- [Shareholder-Dividends](guide/Shareholder-Dividends.md)
+- [Glossary](guide/Glossary.md)
+- [Inventory](guide/Inventory.md)
+- [HST](guide/HST.md)
 
 
 ## Work in progress
 
 Page stubs:
-- [HST](guide/HST.md)
 - [Payment](guide/Payment/Payment.md)
 
 
 ## Audit
 
-- [2026-04-28 Opus-4.7-xhigh](audit/2026-04-28_Audit_Opus-4.7-xhigh.md)
-- [2026-04-29 Opus-4.7-xhigh](audit/2026-04-29_Audit-Followup_Opus-4.7-xhigh.md)
-- [2026-05-06 Opus-4.7-xhigh](audit/2026-05-06_Audit_Opus-4.7-xhigh.md)
-- [2026-05-07 Opus-4.6-max](audit/2026-05-07_Audit-Followup_Opus-4.6-max.md)
+- [2026-04-28 Audit Opus-4.7-xhigh](audit/2026-04-28_Audit_Opus-4.7-xhigh.md)
+- [2026-04-29 Audit-Followup Opus-4.7-xhigh](audit/2026-04-29_Audit-Followup_Opus-4.7-xhigh.md)
+- [2026-05-06 Audit Opus-4.7-xhigh](audit/2026-05-06_Audit_Opus-4.7-xhigh.md)
+- [2026-05-07 Audit-Followup Opus-4.6-max](audit/2026-05-07_Audit-Followup_Opus-4.6-max.md)
 

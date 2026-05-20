@@ -371,6 +371,8 @@ Most owner-managed CCPCs simply carry the small residual on Schedule 8 indefinit
 ## Related
 
 - [Small Business Tax Overview](Small-Business-Tax-Overview.md)
+- [Materials and CIP](Materials-And-CIP.md)
+- [Inventory](Inventory.md)
 - [Adjusted Cost Base](Adjusted-Cost-Base/Adjusted-Cost-Base.md)
 - [Capital Dividend Account](Capital-Dividend-Account/Capital-Dividend-Account.md)
 - [HST](HST.md)

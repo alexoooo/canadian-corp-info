@@ -13,7 +13,7 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
 - Inventory is valued each year-end at the lower of *cost* or *fair market value* (LCM), per ITA [s.10(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-10.html)
 - *Cost* follows a permitted cost-flow assumption (weighted-average, FIFO, or specific identification), applied consistently year over year (s.10(2))
 - *Cost of sales* (aka *Cost of goods sold*, COGS) is the matching deduction at the moment a unit is sold; unlike *Capital Cost Allowance* (CCA) for fixed assets, the cost is not spread over multiple years
-- Materials bought to *build* a fixed asset for the corp's own use are not inventory; they accumulate in `Construction in progress` (CIP), transfer into a CCA class on completion, and amortize only once the asset is *available for use* (ITA [s.13(26)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-13.html)); see [Capital Cost Allowance](Capital-Cost-Allowance.md)
+- Materials bought to build a fixed asset for the corp's own use are *not* inventory; see [Materials and CIP](Materials-And-CIP.md)
 
 Limitations:
 - Focus is on a typical owner-managed CCPC with goods-for-resale or self-use materials inventory
@@ -28,14 +28,12 @@ Limitations:
 
 Purchased property in a CCPC follows one of a few tax treatments (inventory is the most common):
 - *Inventory* (the focus of this page): property held for sale, or held to produce property held for sale; cost flows through `Cost of sales` (COGS) when a unit sells; valued at LCM each year-end
-- *Materials to build a fixed asset for the corp's own use*: not inventory; cost accumulates in `Construction in progress` (CIP), transfers into a CCA class on completion, and amortizes through annual CCA claims; see [Capital Cost Allowance](Capital-Cost-Allowance.md)
+- *Materials to build a fixed asset for the corp's own use*: not inventory; see [Materials and CIP](Materials-And-CIP.md)
 - *Consumable supplies* (office paper, packaging, cleaning, lubricants): expensed when used; not capitalized; out of scope here
 - *Spare parts*: inventory if held for resale; expensed or capitalized into the equipment they service otherwise; the non-resale case is out of scope here
 
-The [Materials versus finished items](#materials-versus-finished-items) section below covers the inventory-vs-CIP distinction.  
 
-
-## What inventory is \[done]
+## What inventory is \[meh]
 
 ITA [s.248(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-248.html) defines *inventory* as "a description of property the cost or value of which is relevant in computing a taxpayer's income from a business for a taxation year".
 
@@ -98,30 +96,6 @@ What does *not* get capitalized into inventory cost:
 - Abnormal waste, breakage in transit covered by insurance proceeds, or shrinkage; these adjust COGS or appear as a separate loss line, not inventory cost
 
 For a *manufacturing* CCPC, conversion costs (direct labour, factory overhead) would also enter inventory cost under accounting standards. ITA s.10 defers to the cost figure produced by a properly applied accounting standard, and CRA generally accepts ASPE Section 3031 / IFRS IAS 2. Manufacturing cost build-up is out of scope here; the worked examples below assume buy-and-resell or buy-for-own-use.
-
-
-## Materials versus finished items
-
-The relevant distinction is between two destinations for purchased materials:
-- *Materials held for resale*, or *materials held to be combined into a product for resale*: these are inventory; cost flows through COGS at sale; no amortization
-- *Materials held to be combined into a fixed asset for the corp's own use*: these are not inventory; the accumulated cost sits in a `Construction in progress` (CIP) asset account during construction; on completion *and* available-for-use, the accumulated cost transfers into the appropriate CCA class and starts to amortize through annual CCA claims
-
-Same lumber, two paths:
-- Lumber bought by a furniture-maker CCPC to build chairs for sale → raw-materials inventory (GIFI 1126); cost flows to COGS as the chairs are sold
-- Lumber bought by a service CCPC to build a shed on the corp's property for its own tool storage → CIP (an asset account, typically a sub-account under the relevant fixed-asset class on Schedule 100); on completion, the full CIP balance transfers into a CCA class (likely Class 6 for a frame shed with no support below ground level, otherwise Class 1)
-
-This matters because the deduction *timing* is completely different:
-- Inventory expensed at sale: the deduction matches the revenue; no spreading over time
-- Depreciable property amortized via CCA: the deduction is rate-bounded each year (e.g. 10% declining for Class 6; 4% for Class 1) and may be discretionarily deferred; nothing is deducted until the property is *available for use* (ITA [s.13(26)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-13.html))
-
-The available-for-use rule for self-constructed assets:
-- A shed under construction sits in CIP and produces no deduction whatsoever: neither inventory expense (it is not inventory) nor CCA (it is not yet available for use)
-- *Available for use* is the earliest of: first use to earn income; the point at which it is capable of producing the intended service; or the end of the second tax year after acquisition (the rolling-two-year / 357-day rule under s.13(27))
-- Until that point, accumulated costs grow as a non-deducting asset balance
-
-A second pattern, less common: a *finished good* taken off the resale shelf for the corp's own use. A tool-retailer CCPC that pulls a $1,200 saw from inventory into the workshop has *changed use*. The book entry transfers the unit's cost from inventory to a Class 8 fixed asset; CCA mechanics then apply from the conversion date.
-
-For the full mechanics of how a CCA pool consumes accumulated cost, see [Capital Cost Allowance](Capital-Cost-Allowance.md). This page does not re-explain the half-year rule, UCC, recapture, or terminal loss.
 
 
 ## Imported goods and FX
@@ -290,15 +264,12 @@ Schedule 1 reconciliation:
 - Inventory normally produces no S1 adjustments; the income statement already reflects the tax-basis cost of sales
 - Exceptions: a change in valuation method approved by CRA (the catch-up may be on S1); accounting-vs-tax LCM divergence (rare under ASPE/IFRS, both of which track ITA s.10 LCM); a write-down that the accountant booked but for which CRA disallowed the FMV evidence on audit (also rare)
 
-CIP and fixed-asset accounts:
-- Materials bought for own-use construction are *not* in any of the 1120-series GIFI codes
-- They sit in an asset account that rolls up to a fixed-asset GIFI code (e.g. a `Construction in progress` sub-account presented within the relevant Schedule 100 fixed-asset line until completion)
-- On completion and available-for-use, the CIP balance transfers into the appropriate CCA class line on Schedule 100, and the cost becomes the *capital cost* (the A element in the s.13(21) UCC formula) for that class on Schedule 8
+Self-constructed-asset materials sit in CIP, not in the inventory GIFI accounts; see [Materials and CIP](Materials-And-CIP.md).
 
 
 ## Worked examples
 
-Three multi-period walkthroughs. Each shows the ledger entries, the GIFI codes touched, and the year-end Schedule 125 outcome.  
+Two multi-period walkthroughs. Each shows the ledger entries, the GIFI codes touched, and the year-end Schedule 125 outcome.  
 Calendar fiscal year (Jan 1 to Dec 31) is assumed throughout. The corp is HST-registered and claims ITCs on all eligible inputs.
 
 ### Example 1: E-commerce weighted-average with year-end write-down
@@ -368,7 +339,7 @@ Apr 5 2027, supplier invoice received, BoC rate 1.34 CAD/USD (same day):
 - Credit `Accounts payable - USD` = US $10,000 booked at 1.34 = CAD $13,400
 
 Apr 12 2027, freight invoice CAD $850 from the Canadian customs broker (CAD-denominated; includes freight, brokerage, $200 of customs duty):
-- Debit `Inventory - goods for sale` (GIFI 1121) = $850 (CIP within line 8457 at year-end; or directly to 1121 with documentation)
+- Debit `Inventory - goods for sale` (GIFI 1121) = $850
 - Debit `HST receivable` = recoverable HST portion if applicable to the freight (note: import HST is self-assessed separately on the goods, not on the broker bill)
 - Credit `Accounts payable` = $850
 
@@ -392,70 +363,6 @@ Year-end Schedule 125 if 300 units are sold during the year at $70 each:
 - `8457` Freight-in and duty: $850
 - `8500` Closing: 200 units × $28.50 = $5,700
 - `8518` Cost of sales = 0 + 13,400 + 850 − 5,700 = $8,550 (= 300 × $28.50)
-
-### Example 3: Self-constructed shed, materials then CCA
-
-Setup: a small commercial-services CCPC builds a wood-frame storage shed on its rented business property to house tools and equipment. The shed has no support below ground level (skids on gravel pad), placing it in CCA Class 6 (10%, declining). Construction spans two fiscal years.
-
-The example shows three things: the materials are *not* inventory; no deduction flows during construction; CCA starts only on completion and available-for-use.
-
-Year 1 (2026):
-
-Mar 1 2026, buy $4,000 of lumber + framing hardware:
-- Debit `Construction in progress` (CIP, an asset account presented within Schedule 100 fixed-asset section; not GIFI 1121) = $4,000
-- Debit `HST receivable` = $520
-- Credit `Cash` = $4,520
-
-Sep 1 2026, buy $2,000 of roofing materials and fasteners:
-- Debit `Construction in progress` = $2,000
-- Debit `HST receivable` = $260
-- Credit `Cash` = $2,260
-
-Dec 31 2026, shed is roughly half-built, sitting roofless on the gravel pad; available-for-use date has not been reached.
-- CIP balance: $6,000
-- COGS deduction in 2026: $0 (the materials are not inventory)
-- CCA deduction in 2026: $0 (the asset is not available for use)
-- Schedule 100: CIP sits within the fixed-asset section; no inventory line touched
-- Schedule 125: no purchases line touched; the materials never were inventory
-- Schedule 8: no Class 6 entry yet
-
-Year 2 (2027):
-
-Mar 1 2027, buy $3,000 more lumber, $500 windows, $500 door:
-- Debit `Construction in progress` = $4,000
-- Debit `HST receivable` = $520
-- Credit `Cash` = $4,520
-
-Aug 1 2027, pay a contractor $1,500 for labour to finish the build:
-- Debit `Construction in progress` = $1,500
-- Debit `HST receivable` = $195
-- Credit `Cash` = $1,695
-
-Sep 1 2027, shed is complete and the corp begins using it to store tools; this is the *available-for-use* date.
-
-Transfer entry, Sep 1 2027:
-- Debit `Buildings - cost - Class 6` (Schedule 100 fixed-asset line for Class 6) = $11,500
-- Credit `Construction in progress` = $11,500
-
-Schedule 8 year 2 (2027), Class 6 row:
-- Opening UCC: $0
-- Cost of additions: $11,500
-- Dispositions: $0
-- Half-year-adjusted base (assuming standard half-year rule, no AIIP enhancement): $5,750
-- Class 6 rate: 10%
-- CCA: 10% × $5,750 = $575
-- Closing UCC: $11,500 − $575 = $10,925
-
-Schedule 125 year 2 (2027):
-- Cost-of-sales section: no entries from the shed project (it never was inventory)
-- Operating expenses: `8670 Amortization of tangible assets` reflects whatever book amortization the corp posted for the shed and any other tangibles
-- Schedule 1 then adds back book amortization and deducts CCA (the $575 from Schedule 8); see [Capital Cost Allowance](Capital-Cost-Allowance.md) for the reconciliation mechanics
-
-Key contrast with example 1:
-- The same dollars of materials would have flowed through COGS within 1–2 years if the corp had bought them for resale
-- As own-use construction inputs, the dollars flow through CCA over roughly 30–40 years of geometric decay
-- The corp's intent at acquisition determines which path the materials follow
-
 
 ## Edge cases
 
@@ -482,6 +389,7 @@ Key contrast with example 1:
 ## Related
 
 - [Small Business Tax Overview](Small-Business-Tax-Overview.md)
+- [Materials and CIP](Materials-And-CIP.md)
 - [Capital Cost Allowance](Capital-Cost-Allowance.md)
 - [Adjusted Cost Base](Adjusted-Cost-Base/Adjusted-Cost-Base.md)
 - [HST](HST.md)
@@ -497,10 +405,8 @@ Key contrast with example 1:
   - [s.10(1.01)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-10.html) - inventory of an adventure or concern in the nature of trade valued at cost (no FMV write-down)
   - [s.10(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-10.html) - method consistency requirement; recovery of prior write-down if FMV recovers
   - [s.10(2.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-10.html) - election to value at FMV for specific inventory types
-  - [s.13(26)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-13.html) - available-for-use rule for depreciable property (relevant for the inventory-to-CCA boundary on self-constructed assets)
   - [s.15](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-15.html) - shareholder benefits triggered by inventory appropriation
   - [s.18(1)(a)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-18.html) - general deductibility test (expense for the purpose of gaining income)
-  - [s.18(1)(b)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-18.html) - exclusion of capital expenditures (the rule that pushes self-constructed-asset materials out of COGS and into CCA)
   - [s.45](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-45.html) - change-of-use rules
   - [s.69(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-69.html) - non-arm's-length transactions deemed at FMV
   - [s.248(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-248.html) - definition of "inventory"
@@ -522,4 +428,4 @@ Key contrast with example 1:
 - Manufacturing WIP treatment: a section walking conversion-cost build-up under ASPE 3031 / IFRS IAS 2 and the M&P Class 53 CCA tie-in
 - Reg 1801 method-change procedure: format of the written request, supporting evidence, CRA processing timeline
 - Cross-reference with [Foreign-Currency](Foreign-Currency.md) once that page is past the stub phase
-- Add inventory terms to [Glossary](Glossary.md) on a separate maintainer pass: COGS, FMV, LCM, WIP, CIP, weighted-average cost, landed cost, perpetual / periodic inventory
+- Add inventory terms to [Glossary](Glossary.md) on a separate maintainer pass: COGS, FMV, LCM, WIP, weighted-average cost, landed cost, perpetual / periodic inventory
