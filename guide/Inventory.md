@@ -18,7 +18,7 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
 Limitations:
 - Focus is on a typical owner-managed CCPC with goods-for-resale or self-use materials inventory
 - Manufacturing inventory with overhead absorption and standard-cost variances is touched on but not worked through
-- Long-term construction contracts (ITA s.10.1), commodity-pool inventories (s.10(6)), real-estate developer inventory, and financial-institution security inventories are out of scope
+- Long-term construction contracts (percentage-of-completion under s.9 and CRA folio S4-F8-C1), commodity-pool inventories (s.10(6)), real-estate developer inventory, and financial-institution security inventories are out of scope
 - Consignment inventory is mentioned briefly; service-business work-in-process under s.10(5)(a)/(11) is out of scope
 - Inventory-method change requires CRA approval (Regulation 1801) and is not covered here
 - The following is my understanding as of 2026
@@ -379,7 +379,7 @@ Year-end Schedule 125 if 300 units are sold during the year at $70 each:
 ## Out of scope
 
 - Manufacturing overhead absorption, standard-cost variances, and variable-vs-absorption costing: these require accounting-standard mechanics (ASPE Section 3031 / IFRS IAS 2) that interact with tax through s.10 acceptance
-- Long-term construction contracts under ITA s.10.1: percentage-of-completion mechanics
+- Long-term construction contracts: percentage-of-completion mechanics under s.9 and CRA folio S4-F8-C1 / archived IT-92R2
 - Commodity-pool inventory valued at FMV under s.10(6) (e.g. grain elevators) and dealer-in-securities inventory under s.10(15)
 - Real-estate developer inventory of land and partially completed buildings; adjacent to but distinct from typical resale inventory
 - Reg 1801 inventory-method change application mechanics: the form of the request, supporting reasons, CRA review timeline

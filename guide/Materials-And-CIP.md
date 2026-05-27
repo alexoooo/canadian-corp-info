@@ -1,6 +1,6 @@
 STATUS: AI GENERATED, REVIEW IN PROGRESS
 
-# Materials and Construction in Progress
+# Materials and Construction in Progress \[done]
 
 **Who this is for**:
 - Owners of a Canadian-controlled private corporation (CCPC)
@@ -8,43 +8,50 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
 - Need to translate those costs into ledger entries, a year-end balance sheet figure, and an eventual transfer into a CCA class
 
 **TLDR**:
-- Materials bought to build a fixed asset for the corp's own use are *not* inventory; they accumulate in a `Construction in progress` (CIP) asset account during construction
+- Materials bought to build a fixed asset for the corp's own use are *not* inventory; they accumulate in a `Construction in progress` (CIP) general-ledger account (a balance-sheet asset account in the corp's chart of accounts) during construction
 - CIP produces *no deduction* while construction is underway: not inventory (so no COGS), and not yet available for use (so no CCA)
-- On completion *and* available for use (ITA [s.13(26)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-13.html)), the accumulated CIP balance transfers into the appropriate CCA class and the cost becomes the *capital cost* (the A element in the s.13(21) UCC formula) for that class
+- On completion *and* available for use (ITA [s.13(26)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-13.html)), the accumulated CIP balance transfers into the appropriate CCA class and becomes the *capital cost* for that class
 - From that point on, the cost is deducted year by year through annual CCA claims; see [Capital Cost Allowance](Capital-Cost-Allowance.md) for the half-year rule, UCC mechanics, recapture, and terminal loss
 
 Limitations:
 - Focus is on a typical owner-managed CCPC building a tangible fixed asset (shed, leasehold improvement, custom equipment) for its own use
-- Capitalizable cost build-up beyond materials and direct contractor labour (factory overhead, indirect costs, allocated employee salaries on the project) is touched on but not worked through
+- Capitalizable cost build-up beyond materials and direct contractor labour (factory overhead, indirect costs, allocated employee salaries on the project) is mentioned at a high level only
 - Soft costs during construction (interest under s.18(3.1), property taxes on the construction site, legal and accounting fees on a capital project) are out of scope
 - Interest capitalization election under s.21 is out of scope
-- Long-term construction contracts under s.10.1 (a CCPC building for a customer) are inventory-side rules and not covered here
+- Long-term construction contracts (a CCPC building for a customer) are inventory-side rules and not covered here
 - Real-estate developer construction of land and buildings held for resale is inventory-side and out of scope
 - The following is my understanding as of 2026
 
 
-## Materials versus finished items
+## Two destinations for materials
 
-The relevant distinction is between two destinations for purchased materials:
-- *Materials held for resale*, or *materials held to be combined into a product for resale*: these are inventory; cost flows through COGS at sale; no amortization
-- *Materials held to be combined into a fixed asset for the corp's own use*: these are not inventory; the accumulated cost sits in a `Construction in progress` (CIP) asset account during construction; on completion *and* available-for-use, the accumulated cost transfers into the appropriate CCA class and starts to amortize through annual CCA claims
+Purchased materials follow one of two paths in a CCPC:
+- *Materials held for resale*, or *to be combined into a product for resale*: inventory; cost flows through COGS at sale; no amortization
+- *Materials to be combined into a fixed asset for the corp's own use*: not inventory; the accumulated cost sits in a `Construction in progress` (CIP) asset account during construction; on completion and available-for-use, the cost transfers into the appropriate CCA class and amortizes through annual CCA claims
 
-Same lumber, two paths:
-- Lumber bought by a furniture-maker CCPC to build chairs for sale → raw-materials inventory (GIFI 1126); cost flows to COGS as the chairs are sold
-- Lumber bought by a service CCPC to build a shed on the corp's property for its own tool storage → CIP (an asset account, typically a sub-account under the relevant fixed-asset class on Schedule 100); on completion, the full CIP balance transfers into a CCA class (likely Class 6 for a frame shed with no support below ground level, otherwise Class 1)
+The same lumber can take either path:
+- Lumber bought by a furniture-maker CCPC to build chairs for sale:
+  - Raw-materials inventory (GIFI 1126)
+  - Cost flows to COGS as the chairs are sold
+- Lumber bought by a service CCPC to build a shed on the corp's property for its own tool storage:
+  - CIP (asset account, typically a sub-account under the relevant fixed-asset line on Schedule 100)
+  - On completion the CIP balance transfers into a CCA class (Class 6 for a frame shed with no support below ground level, otherwise Class 1)
 
-This matters because the deduction *timing* is completely different:
-- Inventory expensed at sale: the deduction matches the revenue; no spreading over time
-- Depreciable property amortized via CCA: the deduction is rate-bounded each year (e.g. 10% declining for Class 6; 4% for Class 1) and may be discretionarily deferred; nothing is deducted until the property is *available for use* (ITA [s.13(26)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-13.html))
+Deduction timing by path:
+- Inventory expensed at sale: deduction matches the revenue; no spreading over time
+- Depreciable property via CCA: rate-bounded each year (10% declining for Class 6, 4% for Class 1) and discretionary; nothing is deducted until the property is *available for use* (ITA [s.13(26)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-13.html))
 
-The available-for-use rule for self-constructed assets:
-- A shed under construction sits in CIP and produces no deduction whatsoever: neither inventory expense (it is not inventory) nor CCA (it is not yet available for use)
-- *Available for use* is the earliest of: first use to earn income; the point at which it is capable of producing the intended service; or the end of the second tax year after acquisition (the rolling-two-year / 357-day rule under s.13(27))
-- Until that point, accumulated costs grow as a non-deducting asset balance
+Available-for-use rule for self-constructed assets:
+- A shed under construction sits in CIP and produces no deduction: not inventory (no COGS), not yet available for use (no CCA)
+- *Available for use* is the earliest of: first use to earn income; the point at which the asset is capable of producing the intended service; or the end of the second tax year after acquisition (the rolling-two-year / 357-day rule under s.13(27))
+- Until that point, accumulated costs sit as a non-deducting asset balance
 
-A second pattern, less common: a *finished good* taken off the resale shelf for the corp's own use. A tool-retailer CCPC that pulls a $1,200 saw from inventory into the workshop has *changed use*. The book entry transfers the unit's cost from inventory to a Class 8 fixed asset; CCA mechanics then apply from the conversion date.
+Change of use, finished item from the resale shelf into own use:
+- A tool-retailer CCPC pulling a $1,200 saw from inventory into the workshop is a *change in use* event under s.45 / s.13(7)
+- Book entry transfers the unit's cost from inventory to a Class 8 fixed asset at fair market value
+- CCA mechanics apply from the conversion date
 
-For the full mechanics of how a CCA pool consumes accumulated cost, see [Capital Cost Allowance](Capital-Cost-Allowance.md). This page does not re-explain the half-year rule, UCC, recapture, or terminal loss.
+See [Capital Cost Allowance](Capital-Cost-Allowance.md) for the half-year rule, UCC mechanics, recapture, and terminal loss.
 
 
 ## Bookkeeping and T2 schedules
@@ -64,16 +71,34 @@ After transfer:
 - Schedule 8 row for that class begins amortizing per the standard CCA mechanics; see [Capital Cost Allowance](Capital-Cost-Allowance.md)
 
 
+## CIP flow
+
+```mermaid
+flowchart TB
+    Mat(["Materials, contractor labour,<br/>capitalizable soft costs"])
+    CIP[("Construction in progress<br/>asset balance; no deduction")]
+    Trigger{{"Available for use<br/>ITA s.13(26)–(27)"}}
+    Fixed[("Fixed-asset GIFI line<br/>Schedule 100")]
+    UCC[("UCC pool by class<br/>Schedule 8")]
+    CCA["Annual CCA<br/>rate × half-year-adjusted base"]
+
+    Mat -->|"+"| CIP
+    CIP --> Trigger
+    Trigger -->|"transfer at accumulated cost"| Fixed
+    Fixed --> UCC
+    UCC --> CCA
+    CCA -.->|"− CCA, carry forward"| UCC
+```
+
+
 ## Worked example: self-constructed shed
 
 Setup: a small commercial-services CCPC builds a wood-frame storage shed on its rented business property to house tools and equipment. The shed has no support below ground level (skids on gravel pad), placing it in CCA Class 6 (10%, declining). Construction spans two fiscal years. Calendar fiscal year (Jan 1 to Dec 31) is assumed. The corp is HST-registered and claims ITCs on all eligible inputs.
 
-The example shows three things: the materials are *not* inventory; no deduction flows during construction; CCA starts only on completion and available-for-use.
-
 Year 1 (2026):
 
 Mar 1 2026, buy $4,000 of lumber + framing hardware:
-- Debit `Construction in progress` (CIP, an asset account presented within Schedule 100 fixed-asset section; not GIFI 1121) = $4,000
+- Debit `Construction in progress` (asset account; not GIFI 1121) = $4,000
 - Debit `HST receivable` = $520
 - Credit `Cash` = $4,520
 
@@ -82,7 +107,7 @@ Sep 1 2026, buy $2,000 of roofing materials and fasteners:
 - Debit `HST receivable` = $260
 - Credit `Cash` = $2,260
 
-Dec 31 2026, shed is roughly half-built, sitting roofless on the gravel pad; available-for-use date has not been reached.
+Dec 31 2026, shed not yet available for use:
 - CIP balance: $6,000
 - COGS deduction in 2026: $0 (the materials are not inventory)
 - CCA deduction in 2026: $0 (the asset is not available for use)
@@ -102,7 +127,7 @@ Aug 1 2027, pay a contractor $1,500 for labour to finish the build:
 - Debit `HST receivable` = $195
 - Credit `Cash` = $1,695
 
-Sep 1 2027, shed is complete and the corp begins using it to store tools; this is the *available-for-use* date.
+Sep 1 2027, available-for-use date (construction complete, shed in service for tool storage).
 
 Transfer entry, Sep 1 2027:
 - Debit `Buildings - cost - Class 6` (Schedule 100 fixed-asset line for Class 6) = $11,500
@@ -122,10 +147,9 @@ Schedule 125 year 2 (2027):
 - Operating expenses: `8670 Amortization of tangible assets` reflects whatever book amortization the corp posted for the shed and any other tangibles
 - Schedule 1 then adds back book amortization and deducts CCA (the $575 from Schedule 8); see [Capital Cost Allowance](Capital-Cost-Allowance.md) for the reconciliation mechanics
 
-Key contrast with [inventory-for-resale](Inventory.md):
-- The same dollars of materials would have flowed through COGS within 1–2 years if the corp had bought them for resale
-- As own-use construction inputs, the dollars flow through CCA over roughly 30–40 years of geometric decay
-- The corp's intent at acquisition determines which path the materials follow
+Contrast with [Inventory](Inventory.md):
+- The same dollars as resale inventory would have flowed through COGS within a year or two
+- As own-use construction inputs, the same dollars flow through CCA on the Class 6 geometric tail (10% declining; ~96% of cost expensed by year 30)
 
 
 ## Out of scope
@@ -134,7 +158,7 @@ Key contrast with [inventory-for-resale](Inventory.md):
 - Soft costs during construction: interest under ITA s.18(3.1), property taxes on the construction site, legal and accounting fees attributable to a capital project
 - Interest capitalization election under ITA s.21
 - Book-vs-tax impairment differences: ASPE Section 3061 and IFRS IAS 36 allow impairment write-downs on CIP that have no tax effect (the book write-down is added back on Schedule 1, and CCA continues from the unimpaired UCC once the asset is available for use)
-- Long-term construction contracts under ITA s.10.1 for a CCPC building for a customer (that is inventory-side, not the self-constructed-asset path)
+- Long-term construction contracts (a CCPC building for a customer): percentage-of-completion under s.9, with CRA folio S4-F8-C1 / archived IT-92R2 as guidance; inventory-side rules, not the self-constructed-asset path
 - Real-estate developer construction of land and buildings held for resale (inventory-side rules)
 
 
