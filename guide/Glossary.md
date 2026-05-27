@@ -8,13 +8,13 @@ For mechanics and worked examples, follow the link to the canonical page.
 - ABI: *Active Business Income* — income from carrying on an active business; gets the SBD on the first $500k; see [Small-Business-Tax-Overview.md](Small-Business-Tax-Overview.md)
 - ACB: *Adjusted Cost Base* — the tax cost of an investment, used to compute capital gain or loss on disposition; see [Adjusted-Cost-Base.md](Adjusted-Cost-Base/Adjusted-Cost-Base.md)
 - AII: *Aggregate Investment Income* — passive investment income (interest, foreign income, taxable portion of capital gains) taxed at a high corporate rate, with a refundable portion via NERDTOH
-- AIIP: *Accelerated Investment Incentive Property* — transitional first-year enhanced CCA for property acquired after Nov 20 2018 and available for use before 2028; see [Capital-Cost-Allowance.md](Capital-Cost-Allowance.md)
+- AIIP: *Accelerated Investment Incentive Property* — transitional first-year enhanced CCA for property acquired after Nov 20 2018 and available for use before 2028; see [Capital-Cost-Allowance.md](Cost-Recovery/Capital-Cost-Allowance.md)
 - Capital dividend: tax-free dividend paid out of the CDA to a Canadian-resident shareholder; requires an s.83(2) election on Form T2054; see [Capital-Dividend-Account.md](Capital-Dividend-Account/Capital-Dividend-Account.md)
-- CCA: *Capital Cost Allowance* — the federal tax depreciation deduction under ITA s.20(1)(a); see [Capital-Cost-Allowance.md](Capital-Cost-Allowance.md)
+- CCA: *Capital Cost Allowance* — the federal tax depreciation deduction under ITA s.20(1)(a); see [Capital-Cost-Allowance.md](Cost-Recovery/Capital-Cost-Allowance.md)
 - CCPC: *Canadian-Controlled Private Corporation* — a private corporation incorporated in Canada and not controlled by non-residents or public corporations
 - CDA: *Capital Dividend Account* — running balance tracking capacity to pay tax-free capital dividends; see [Capital-Dividend-Account.md](Capital-Dividend-Account/Capital-Dividend-Account.md)
 - CRA: *Canada Revenue Agency* — administers federal tax (and most provincial corporate tax)
-- DIEP: *Designated Immediate Expensing Property* — the 2021–2023 CCPC measure allowing up to $1.5M of full first-year expensing; not available for new acquisitions in 2026; see [Capital-Cost-Allowance.md](Capital-Cost-Allowance.md)
+- DIEP: *Designated Immediate Expensing Property* — the 2021–2023 CCPC measure allowing up to $1.5M of full first-year expensing; not available for new acquisitions in 2026; see [Capital-Cost-Allowance.md](Cost-Recovery/Capital-Cost-Allowance.md)
 - DTC: *Dividend Tax Credit* — personal credit calibrated to offset corporate tax already paid (per Integration); see [Tax-Integration.md](Tax-Integration.md)
 - Dividend refund: corporate refund under ITA s.129(1) when a taxable dividend is paid; calculated as 38⅓% of dividends paid, capped at the relevant RDTOH balance; see [ERDTOH-NERDTOH.md](ERDTOH-NERDTOH.md)
 - Eligible dividend: dividend designated under s.89(14), drawing on the GRIP pool; carries a larger gross-up and DTC than a non-eligible dividend
@@ -22,7 +22,7 @@ For mechanics and worked examples, follow the link to the canonical page.
 - GIFI: *General Index of Financial Information* — CRA's standardized chart-of-accounts coding used on Schedules 100 and 125; defined in CRA RC4088
 - Gross-up: notional uplift applied to a cash dividend on the personal return (38% for eligible, 15% for non-eligible) to derive the *taxable* amount on the T1
 - GRIP: *General Rate Income Pool* — capacity to designate eligible dividends; tracked on Schedule 53; see [Shareholder-Dividends.md](Shareholder-Dividends.md)
-- Half-year rule: Regulation 1100(2); only half-rate CCA on net additions in the year of acquisition; several classes are exempt; see [Capital-Cost-Allowance.md](Capital-Cost-Allowance.md)
+- Half-year rule: Regulation 1100(2); only half-rate CCA on net additions in the year of acquisition; several classes are exempt; see [Capital-Cost-Allowance.md](Cost-Recovery/Capital-Cost-Allowance.md)
 - HST: *Harmonized Sales Tax* — provincial-and-federal-combined sales tax used by some provinces; see [HST.md](HST.md)
 - Integration: design principle that combines corporate + personal tax to approximate direct-earning tax; see [Tax-Integration.md](Tax-Integration.md)
 - ITA: *Income Tax Act* (R.S.C., 1985, c. 1 (5th Supp.)) — primary federal tax statute
@@ -35,7 +35,7 @@ For mechanics and worked examples, follow the link to the canonical page.
 - PUC: *Paid-Up Capital* — tax-side measure of contributed capital tracked per share class; can drive deemed-dividend mechanics on redemption or capital reduction
 - QSBC: *Qualified Small Business Corporation* — share-level test gating LCGE eligibility, including a 90% active-business-assets requirement
 - RDTOH: *Refundable Dividend Tax on Hand* — umbrella term covering the ERDTOH and NERDTOH pools; the single pre-2019 RDTOH was split into the two for tax years starting after 2018; see [ERDTOH-NERDTOH.md](ERDTOH-NERDTOH.md)
-- Recapture: negative UCC at year-end included in income under ITA s.13(1); see [Capital-Cost-Allowance.md](Capital-Cost-Allowance.md)
+- Recapture: negative UCC at year-end included in income under ITA s.13(1); see [Capital-Cost-Allowance.md](Cost-Recovery/Capital-Cost-Allowance.md)
 - ROC: *Return of Capital* — distribution that reduces ACB rather than producing taxable income; T3 Box 42 typically carries ROC; see [Adjusted-Cost-Base.md](Adjusted-Cost-Base/Adjusted-Cost-Base.md)
 - SBD: *Small Business Deduction* — reduced corporate rate on the first $500,000 of ABI per year; ITA s.125
 - Schedule \<N\>, where N is a number: part of T2, often abbreviated as S\<N\>
@@ -48,6 +48,6 @@ For mechanics and worked examples, follow the link to the canonical page.
 - T4: *Statement of Remuneration Paid* — slip issued by an employer for salary paid to an employee
 - T5: *Statement of Investment Income* — slip for interest and Canadian-corp dividends; also issued by a CCPC paying taxable dividends to its shareholders
 - T5008: *Statement of Securities Transactions* — slip summarizing securities sales used to compute capital gains; see [T5008.md](T5008/T5008.md)
-- Terminal loss: residual UCC deducted when a class empties under ITA s.20(16); see [Capital-Cost-Allowance.md](Capital-Cost-Allowance.md)
+- Terminal loss: residual UCC deducted when a class empties under ITA s.20(16); see [Capital-Cost-Allowance.md](Cost-Recovery/Capital-Cost-Allowance.md)
 - TOSI: *Tax on Split Income* (ITA s.120.4) — limits income-splitting through dividends to family members not active in the business
-- UCC: *Undepreciated Capital Cost* — running balance of a CCA class pool, defined in ITA s.13(21); see [Capital-Cost-Allowance.md](Capital-Cost-Allowance.md)
+- UCC: *Undepreciated Capital Cost* — running balance of a CCA class pool, defined in ITA s.13(21); see [Capital-Cost-Allowance.md](Cost-Recovery/Capital-Cost-Allowance.md)

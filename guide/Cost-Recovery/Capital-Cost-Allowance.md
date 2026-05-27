@@ -25,6 +25,13 @@ Limitations:
 - The following is my understanding as of 2026
 
 
+## In this folder
+
+- [Cost Recovery](Cost-Recovery.md): overview of the three cost-recovery channels, concept map, and shared acquisition-cost / available-for-use / change-of-use rules
+- [Inventory](Inventory.md): goods held for resale
+- [Materials and CIP](Materials-And-CIP.md): self-constructed fixed assets feeding into a CCA class
+
+
 ## What CCA is
 
 *Capital Cost Allowance* is the deduction allowed under ITA [s.20(1)(a)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-20.html) for the wear-and-tear of depreciable property used to earn business income.  
@@ -132,6 +139,8 @@ For buildings (s.13(28)), the earliest of:
 - All or substantially all (~90%) of the building first used for its intended purpose
 - Construction substantially complete
 
+See [Cost Recovery — Available for use](Cost-Recovery.md#available-for-use) for the cross-channel framing, including how the same trigger applies to a CIP balance transferring into a CCA class.
+
 
 ## Acquisitions and dispositions
 
@@ -145,6 +154,8 @@ What does not get capitalized:
 - Recurring repairs and maintenance: operating expense
 - Software licences with a term of one year or less: operating expense
 - Items priced below the corporation's capitalization threshold policy (the *de minimis* policy, typically $500 to $2,500)
+
+The same capitalize-vs-expense rules apply across all three cost-recovery channels; see [Cost Recovery — Acquisition cost](Cost-Recovery.md#acquisition-cost-what-gets-capitalized).
 
 Dispositions:
 - *Proceeds of disposition* per s.13(21) = sale price + insurance proceeds + compensation for damage or expropriation
@@ -215,7 +226,7 @@ These thresholds matter most for:
 
 ## Bookkeeping and T2 schedules
 
-In the books (accrual + tax basis, per [Small-Business-Tax-Overview.md](Small-Business-Tax-Overview.md)):
+In the books (accrual + tax basis, per [Small Business Tax Overview](../Small-Business-Tax-Overview.md)):
 - At acquisition: debit the fixed-asset GIFI account (`Computer equipment` 1770, `Furniture and fixtures` 1780, `Motor vehicles` 1740, `Machinery and equipment` 1900, `Goodwill / intangibles` 1880-series); credit `Cash` or `Accounts payable`
 - Tax-basis-only convention: skip monthly accounting depreciation entirely; book the CCA at year-end as the period charge (debit `Amortization of tangible assets` 8670 / credit the relevant accumulated-amortization account)
 - GAAP-style books convention: book accounting depreciation monthly per the corp's policy; add it back on Schedule 1; deduct CCA from Schedule 8
@@ -370,13 +381,14 @@ Most owner-managed CCPCs simply carry the small residual on Schedule 8 indefinit
 
 ## Related
 
-- [Small Business Tax Overview](Small-Business-Tax-Overview.md)
+- [Cost Recovery](Cost-Recovery.md)
 - [Materials and CIP](Materials-And-CIP.md)
 - [Inventory](Inventory.md)
-- [Adjusted Cost Base](Adjusted-Cost-Base/Adjusted-Cost-Base.md)
-- [Capital Dividend Account](Capital-Dividend-Account/Capital-Dividend-Account.md)
-- [HST](HST.md)
-- [Glossary](Glossary.md)
+- [Small Business Tax Overview](../Small-Business-Tax-Overview.md)
+- [Adjusted Cost Base](../Adjusted-Cost-Base/Adjusted-Cost-Base.md)
+- [Capital Dividend Account](../Capital-Dividend-Account/Capital-Dividend-Account.md)
+- [HST](../HST.md)
+- [Glossary](../Glossary.md)
 
 
 ## Citations

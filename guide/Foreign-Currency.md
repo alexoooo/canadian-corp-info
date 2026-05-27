@@ -528,7 +528,7 @@ flowchart TB
 - [T3](T3/T3.md)
 - [T5008](T5008/T5008.md)
 - [HST](HST.md)
-- [Inventory](Inventory.md)
+- [Inventory](Cost-Recovery/Inventory.md)
 - [Glossary](Glossary.md)
 
 
@@ -573,5 +573,5 @@ flowchart TB
 
 - Cross-link with [HST](HST.md) once that page is past the stub phase; the zero-rated-services note here is a pointer
 - Add FX-specific terms to [Glossary](Glossary.md) on a separate maintainer pass: BoC daily rate, functional currency election, income-account FX, capital-account FX, monetary item, multi-currency bookkeeping convention, FX trading account, Norbert's Gambit, journal (broker), settlement-date rate, realized FX, unrealized FX
-- Worked example for a USD payable to a foreign supplier (the mirror of the USD-AR example); useful for inventory-importing CCPCs and partly covered in [Inventory](Inventory.md) Example 2
+- Worked example for a USD payable to a foreign supplier (the mirror of the USD-AR example); useful for inventory-importing CCPCs and partly covered in [Inventory](Cost-Recovery/Inventory.md) Example 2
 - A short companion section if and when the maintainer signs off this page on the bank-statement-driven workflow (record at the bank's actual settlement rate, reconcile to BoC monthly) vs the BoC-driven workflow (record at BoC daily, reconcile to bank at year-end)

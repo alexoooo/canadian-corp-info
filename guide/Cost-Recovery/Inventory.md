@@ -24,6 +24,13 @@ Limitations:
 - The following is my understanding as of 2026
 
 
+## In this folder
+
+- [Cost Recovery](Cost-Recovery.md): overview of the three cost-recovery channels, concept map, and shared acquisition-cost / available-for-use / change-of-use rules
+- [Materials and CIP](Materials-And-CIP.md): self-constructed fixed assets
+- [Capital Cost Allowance](Capital-Cost-Allowance.md): depreciable property
+
+
 ## Inventory versus other purchase types \[done]
 
 Purchased property in a CCPC follows one of a few tax treatments (inventory is the most common):
@@ -55,6 +62,7 @@ A property is *inventory* or *depreciable property*, never both:
 If purpose changes after acquisition (say a delivery van bought to resell, then taken off the lot for operational use), that is a *change in use* event.  
 The deemed-disposition rules in s.45 / s.13(7) apply and trigger a transfer between inventory and a CCA class at fair market value.  
 This is rare for a typical CCPC and is out of scope here.  
+See [Cost Recovery — Change of use](Cost-Recovery.md#change-of-use) for the cross-channel framing.  
 
 
 ## Valuation methods
@@ -87,6 +95,8 @@ A unit's *cost* (the C in LCM) is the *landed cost* at the point the unit become
 - Insurance during transit, where directly attributable to acquisition
 - Trade-date FX conversion for foreign-currency purchases (see [Imported goods and FX](#imported-goods-and-fx) below)
 
+The same capitalize-vs-expense rules apply across all three cost-recovery channels; see [Cost Recovery — Acquisition cost](Cost-Recovery.md#acquisition-cost-what-gets-capitalized).
+
 What does *not* get capitalized into inventory cost:
 - Recoverable HST claimed as an *input tax credit* (ITC), booked to `HST receivable`, not to inventory
 - Storage costs after the inventory reaches the corp's premises; treat as operating expense (GIFI 8810 `Office expenses` or a dedicated `Warehousing` line)
@@ -100,7 +110,7 @@ For a *manufacturing* CCPC, conversion costs (direct labour, factory overhead) w
 
 ## Imported goods and FX
 
-For inventory bought in a foreign currency, follow the same trade-date FX convention used elsewhere in this guide for ACB purchases (see [Adjusted Cost Base](Adjusted-Cost-Base/Adjusted-Cost-Base.md)):
+For inventory bought in a foreign currency, follow the same trade-date FX convention used elsewhere in this guide for ACB purchases (see [Adjusted Cost Base](../Adjusted-Cost-Base/Adjusted-Cost-Base.md)):
 - Convert the invoice amount to CAD using the FX rate on the *purchase date* (the date of the supplier invoice, which generally matches the bill-of-lading date for goods crossing the border)
 - Bank of Canada daily rates are the conventional source; some bookkeepers use the corp's bank's actual settlement rate, which is acceptable if applied consistently
 
@@ -118,7 +128,7 @@ FX gain or loss on payable settlement:
 
 GST/HST on imports:
 - Self-assessed and paid to Canada Border Services on Form B3 at the point of import; if the corp is HST-registered, the same amount is reclaimable as an ITC on the next GST/HST return; if not, it is a permanent cost addition to inventory
-- See [HST](HST.md) for the full mechanics
+- See [HST](../HST.md) for the full mechanics
 
 
 ## Tracking through the year
@@ -368,7 +378,7 @@ Year-end Schedule 125 if 300 units are sold during the year at $70 each:
 
 - *Consignment inventory*: goods physically present on the corp's premises but legally owned by another party (or vice versa) are *not* on the corp's books; book only inventory the corp owns under contract; a clear consignment agreement and a separate count tag are the audit evidence
 - *Related-party purchases*: inventory bought from a non-arm's-length supplier at above-FMV is capped at FMV under ITA [s.69(1)(a)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-69.html); the excess is denied (the corp paid too much, but only gets to deduct the FMV portion)
-- *Inventory appropriated for shareholder use*: a CCPC giving inventory to a shareholder (or to a related person) triggers a deemed disposition at FMV (s.69) and a *shareholder benefit* under ITA [s.15](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-15.html); this also has GST/HST self-supply implications; treat as a sale at FMV in the books and add the benefit to the shareholder's T4 / T5 reporting (out of scope here, see [Shareholder-Dividends](Shareholder-Dividends.md) for the dividend path)
+- *Inventory appropriated for shareholder use*: a CCPC giving inventory to a shareholder (or to a related person) triggers a deemed disposition at FMV (s.69) and a *shareholder benefit* under ITA [s.15](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-15.html); this also has GST/HST self-supply implications; treat as a sale at FMV in the books and add the benefit to the shareholder's T4 / T5 reporting (out of scope here, see [Shareholder-Dividends](../Shareholder-Dividends.md) for the dividend path)
 - *Software, digital subscriptions, SaaS*: not inventory; SaaS is an operating expense; perpetually licensed software is Class 12 (application software) or Class 50 (systems software bundled with hardware); see [Capital Cost Allowance](Capital-Cost-Allowance.md)
 - *Trade samples and demo units*: tracked separately from saleable inventory; if eventually scrapped, expense at the point of removal; if eventually sold, restore to inventory at the residual book value
 - *Inventory of a discontinued line*: an obsolescence write-down to expected liquidation value is supportable under s.10(1); document the obsolescence trigger (date the discontinuation decision was made, supplier announcement, etc.)
@@ -388,13 +398,14 @@ Year-end Schedule 125 if 300 units are sold during the year at $70 each:
 
 ## Related
 
-- [Small Business Tax Overview](Small-Business-Tax-Overview.md)
+- [Cost Recovery](Cost-Recovery.md)
 - [Materials and CIP](Materials-And-CIP.md)
 - [Capital Cost Allowance](Capital-Cost-Allowance.md)
-- [Adjusted Cost Base](Adjusted-Cost-Base/Adjusted-Cost-Base.md)
-- [HST](HST.md)
-- [Foreign-Currency](Foreign-Currency.md)
-- [Glossary](Glossary.md)
+- [Small Business Tax Overview](../Small-Business-Tax-Overview.md)
+- [Adjusted Cost Base](../Adjusted-Cost-Base/Adjusted-Cost-Base.md)
+- [HST](../HST.md)
+- [Foreign Currency](../Foreign-Currency.md)
+- [Glossary](../Glossary.md)
 
 
 ## Citations
@@ -424,8 +435,8 @@ Year-end Schedule 125 if 300 units are sold during the year at $70 each:
 
 ## TODO
 
-- Companion tracking-spreadsheet artifact (parallel to [Adjusted Cost Base Tracking](Adjusted-Cost-Base/Adjusted-Cost-Base-Tracking.md)): a worked perpetual weighted-average ledger with running-cost and COGS formulas, plus a year-end LCM column
+- Companion tracking-spreadsheet artifact (parallel to [Adjusted Cost Base Tracking](../Adjusted-Cost-Base/Adjusted-Cost-Base-Tracking.md)): a worked perpetual weighted-average ledger with running-cost and COGS formulas, plus a year-end LCM column
 - Manufacturing WIP treatment: a section walking conversion-cost build-up under ASPE 3031 / IFRS IAS 2 and the M&P Class 53 CCA tie-in
 - Reg 1801 method-change procedure: format of the written request, supporting evidence, CRA processing timeline
-- Cross-reference with [Foreign-Currency](Foreign-Currency.md) once that page is past the stub phase
-- Add inventory terms to [Glossary](Glossary.md) on a separate maintainer pass: COGS, FMV, LCM, WIP, weighted-average cost, landed cost, perpetual / periodic inventory
+- Cross-reference with [Foreign Currency](../Foreign-Currency.md) once that page is past the stub phase
+- Add inventory terms to [Glossary](../Glossary.md) on a separate maintainer pass: COGS, FMV, LCM, WIP, weighted-average cost, landed cost, perpetual / periodic inventory

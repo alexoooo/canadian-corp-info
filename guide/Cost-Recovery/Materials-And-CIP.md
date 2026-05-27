@@ -23,6 +23,13 @@ Limitations:
 - The following is my understanding as of 2026
 
 
+## In this folder
+
+- [Cost Recovery](Cost-Recovery.md): overview of the three cost-recovery channels, concept map, and shared acquisition-cost / available-for-use / change-of-use rules
+- [Inventory](Inventory.md): goods held for resale
+- [Capital Cost Allowance](Capital-Cost-Allowance.md): depreciable property after the CIP transfer
+
+
 ## Two destinations for materials
 
 Purchased materials follow one of two paths in a CCPC:
@@ -45,11 +52,13 @@ Available-for-use rule for self-constructed assets:
 - A shed under construction sits in CIP and produces no deduction: not inventory (no COGS), not yet available for use (no CCA)
 - *Available for use* is the earliest of: first use to earn income; the point at which the asset is capable of producing the intended service; or the end of the second tax year after acquisition (the rolling-two-year / 357-day rule under s.13(27))
 - Until that point, accumulated costs sit as a non-deducting asset balance
+- See [Cost Recovery — Available for use](Cost-Recovery.md#available-for-use) for the full cross-channel framing, including the building variant under s.13(28)
 
 Change of use, finished item from the resale shelf into own use:
 - A tool-retailer CCPC pulling a $1,200 saw from inventory into the workshop is a *change in use* event under s.45 / s.13(7)
 - Book entry transfers the unit's cost from inventory to a Class 8 fixed asset at fair market value
 - CCA mechanics apply from the conversion date
+- See [Cost Recovery — Change of use](Cost-Recovery.md#change-of-use) for the cross-channel framing and the HST-side adjustment under ETA s.206
 
 See [Capital Cost Allowance](Capital-Cost-Allowance.md) for the half-year rule, UCC mechanics, recapture, and terminal loss.
 
@@ -164,11 +173,12 @@ Contrast with [Inventory](Inventory.md):
 
 ## Related
 
+- [Cost Recovery](Cost-Recovery.md)
 - [Inventory](Inventory.md)
 - [Capital Cost Allowance](Capital-Cost-Allowance.md)
-- [Small Business Tax Overview](Small-Business-Tax-Overview.md)
-- [HST](HST.md)
-- [Glossary](Glossary.md)
+- [Small Business Tax Overview](../Small-Business-Tax-Overview.md)
+- [HST](../HST.md)
+- [Glossary](../Glossary.md)
 
 
 ## Citations
@@ -190,4 +200,4 @@ Contrast with [Inventory](Inventory.md):
 - Interest capitalization election under ITA s.21: when it applies, mechanics, interaction with s.18(3.1)
 - Book-vs-tax differences: ASPE Section 3061 and IFRS IAS 36 impairment write-downs on CIP and how Schedule 1 reverses them on the tax side
 - More worked examples: multi-year project with partial completion at year-end; leasehold improvement on rented business premises; custom equipment build (Class 8 / Class 53 destination); cost overruns mid-project
-- Add CIP-related terms to [Glossary](Glossary.md): CIP, available-for-use, capital cost, self-constructed asset
+- Add CIP-related terms to [Glossary](../Glossary.md): CIP, available-for-use, capital cost, self-constructed asset

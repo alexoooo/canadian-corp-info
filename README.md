@@ -24,13 +24,14 @@ Disclaimer: author is not an accountant, this is not financial or tax advice.
 ## Pending review
 
 AI generated, not verified yet:
-- [Materials and CIP](guide/Materials-And-CIP.md)
-- [Capital Cost Allowance](guide/Capital-Cost-Allowance.md)
+- [Cost Recovery](guide/Cost-Recovery/Cost-Recovery.md)
+  - [Inventory](guide/Cost-Recovery/Inventory.md)
+  - [Materials and CIP](guide/Cost-Recovery/Materials-And-CIP.md)
+  - [Capital Cost Allowance](guide/Cost-Recovery/Capital-Cost-Allowance.md)
 - [Foreign Currency](guide/Foreign-Currency.md)
 - [ERDTOH and NERDTOH](guide/ERDTOH-NERDTOH.md)
 - [Shareholder-Dividends](guide/Shareholder-Dividends.md)
 - [Glossary](guide/Glossary.md)
-- [Inventory](guide/Inventory.md)
 - [HST](guide/HST.md)
 
 
