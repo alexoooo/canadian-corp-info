@@ -1,6 +1,6 @@
 STATUS: AI GENERATED, REVIEW IN PROGRESS
 
-# Inventory
+# Inventory \[done]
 
 **Who this is for**:
 - Owners of a Canadian-controlled private corporation (CCPC)
@@ -31,7 +31,7 @@ Limitations:
 - [Capital Cost Allowance](Capital-Cost-Allowance.md): depreciable property
 
 
-## Inventory versus other purchase types
+## Inventory versus other purchase types \[done]
 
 Purchased property in a CCPC follows one of a few tax treatments (inventory is the most common):
 - *Inventory* (the focus of this page): property held for sale, or held to produce property held for sale; cost flows through `Cost of sales` (COGS) when a unit sells; valued at LCM each year-end
@@ -40,7 +40,7 @@ Purchased property in a CCPC follows one of a few tax treatments (inventory is t
 - *Spare parts*: inventory if held for resale; expensed or capitalized into the equipment they service otherwise; the non-resale case is out of scope here
 
 
-## What inventory is
+## What inventory is \[meh]
 
 ITA [s.248(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-248.html) defines *inventory* as "a description of property the cost or value of which is relevant in computing a taxpayer's income from a business for a taxation year".
 

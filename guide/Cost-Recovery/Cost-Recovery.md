@@ -1,6 +1,6 @@
 STATUS: AI GENERATED, REVIEW IN PROGRESS
 
-# Cost Recovery
+# Cost Recovery \[done]
 
 **Who this is for**:
 - Owners of a Canadian-controlled private corporation (CCPC)
@@ -22,7 +22,7 @@ Limitations:
 - The following is my understanding as of 2026
 
 
-## Three deduction channels
+## Three deduction channels \[done]
 
 Channel is set by purpose at acquisition.
 
@@ -45,7 +45,7 @@ Channel is set by purpose at acquisition.
 - After transfer: standard CCA mechanics apply
 
 
-## Cost-recovery flow
+## Cost-recovery flow \[done]
 
 ```mermaid
 flowchart TB

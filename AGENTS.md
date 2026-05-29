@@ -105,6 +105,7 @@ Surface rules below apply to both voices unless noted.
 - Noun phrases or concrete operations: `T3 boxes`, `Trading fees`, `Foreign assets and FX conversion to CAD`, `Sources of law`
 - Never rhetorical or marketing-style: avoid `Why X matters`, `Understanding Y`, `What you need to know about Z`
 - Short — 2–6 words is typical
+- A trailing bracketed status tag — `\[done]`, `\[meh]`, and similar — is the maintainer's intentional authoring/progress annotation, not part of the heading text. Leave these tags exactly as written: never delete, reword, or "clean them up," and treat them as an explicit exception to the noun-phrase rule above. Only the maintainer adds or removes them.
 
 ### Voice and pronouns
 
@@ -158,7 +159,8 @@ Periodic documentation audits live under `audit/`. Filenames follow the pattern
 `<YYYY-MM-DD>_Audit_<Model>-<reasoning-effort>.md` for a fresh audit pass, or
 `<YYYY-MM-DD>_Audit-Followup_<Model>-<reasoning-effort>.md` for one that primarily verifies
 fixes from a prior audit. The date is when the audit was run, the model is the one that ran it,
-and the reasoning-effort level is the model's setting (e.g. `Opus-4.7-xhigh`). Each audit is a
+and the reasoning-effort level is the model's setting (e.g. `Opus-4.7-xhigh`). Both the model and
+the reasoning-effort suffix are required; never omit the suffix. Each audit is a
 read-only record of findings; fixes land in separate follow-up commits so the audit and the
 response stay separable in git history.
 
