@@ -22,7 +22,7 @@ Limitations:
 - The following is my understanding as of 2026
 
 
-## Three deduction channels \[done]
+## Three deduction channels \[in-progress]
 
 Channel is set by purpose at acquisition.
 
@@ -33,6 +33,7 @@ Channel is set by purpose at acquisition.
 - Deduction: COGS on Schedule 125 line 8518 at the moment a unit is sold
 
 *Depreciable property* (mechanics in [Capital Cost Allowance](Capital-Cost-Allowance.md)):
+- Long-lived assets the corp buys to use rather than resell (computers, vehicles, furniture, equipment); their cost is deducted gradually over the years they are used instead of all at once
 - ITA s.18(1)(b) blocks immediate deduction; ITA s.20(1)(a) re-opens it through CCA
 - Cost: pooled in the class's *undepreciated capital cost* (UCC) under [s.13(21)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-13.html)
 - Rate: per-class, set by Regulation 1100; geometric decline for most classes, straight-line for Classes 13 and 14
@@ -85,7 +86,7 @@ flowchart TB
 ```
 
 
-## Acquisition cost: what gets capitalized
+## Acquisition cost: what gets capitalized \[done]
 
 To *capitalize* a cost is to record it on the balance sheet as part of an asset rather than expense it immediately.
 The dollars sit in that asset until they flow out through one of the three channels above.  
