@@ -226,7 +226,7 @@ Broker-specific Gambit support shifts over time; the table below reflects public
 
 The Gambit round trip is a *securities disposition*, not an income-account currency conversion:
 - DLR and DLR.U are *identical property* under ITA [s.47(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-47.html); the ACB is pooled and computed in CAD
-- The ACB of the DLR.U leg is the CAD equivalent of the USD purchase price at the *settlement-date* BoC rate (consistent with the trade-date convention used elsewhere in this guide for securities; CRA technical interpretation 2015-0588981C6 confirms the settlement-date rate for ACB on Gambit)
+- The ACB of the DLR.U leg is the CAD equivalent of the USD purchase price at the *trade-date* BoC rate, consistent with the convention used elsewhere in this guide for securities. (CRA technical interpretation 2015-0588981C6 — a transcribed APFF Roundtable position, persuasive rather than binding — instead points to the *settlement-date* rate for FX on a disposition; this guide stays on trade-date for consistency with the [Adjusted Cost Base](Adjusted-Cost-Base/Adjusted-Cost-Base.md) workflow)
 - The disposition produces a small capital gain or loss equal to (CAD proceeds from the DLR sale) − (CAD ACB of the DLR.U leg) − (outlays and expenses on disposition)
 - Half of the gain (or loss) is taxable (or deductible) at the current 50% inclusion rate; report on T2 Schedule 6 under capital-property dispositions
 - The capital gain is part of *Aggregate Investment Income* (AII) and does not benefit from the *Small Business Deduction*; for a small Gambit gain this is immaterial, but the entry is still required

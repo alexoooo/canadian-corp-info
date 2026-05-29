@@ -1,6 +1,6 @@
 STATUS: AI GENERATED, REVIEW IN PROGRESS
 
-# Materials and Construction in Progress \[done]
+# Materials and Construction in Progress
 
 **Who this is for**:
 - Owners of a Canadian-controlled private corporation (CCPC)
@@ -167,7 +167,7 @@ Contrast with [Inventory](Inventory.md):
 - Soft costs during construction: interest under ITA s.18(3.1), property taxes on the construction site, legal and accounting fees attributable to a capital project
 - Interest capitalization election under ITA s.21
 - Book-vs-tax impairment differences: ASPE Section 3061 and IFRS IAS 36 allow impairment write-downs on CIP that have no tax effect (the book write-down is added back on Schedule 1, and CCA continues from the unimpaired UCC once the asset is available for use)
-- Long-term construction contracts (a CCPC building for a customer): percentage-of-completion under s.9, with CRA folio S4-F8-C1 / archived IT-92R2 as guidance; inventory-side rules, not the self-constructed-asset path
+- Long-term construction contracts (a CCPC building for a customer): percentage-of-completion under s.9, with archived IT-92R2 as guidance; inventory-side rules, not the self-constructed-asset path
 - Real-estate developer construction of land and buildings held for resale (inventory-side rules)
 
 

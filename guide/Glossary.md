@@ -3,12 +3,12 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
 # Glossary
 
 Short definitions of the acronyms and tax terms used across this guide.
-For mechanics and worked examples, follow the link to the canonical page.
+For mechanics and worked examples, follow the link to the canonical page where one exists.
 
 - ABI: *Active Business Income* — income from carrying on an active business; gets the SBD on the first $500k; see [Small-Business-Tax-Overview.md](Small-Business-Tax-Overview.md)
 - ACB: *Adjusted Cost Base* — the tax cost of an investment, used to compute capital gain or loss on disposition; see [Adjusted-Cost-Base.md](Adjusted-Cost-Base/Adjusted-Cost-Base.md)
-- AII: *Aggregate Investment Income* — passive investment income (interest, foreign income, taxable portion of capital gains) taxed at a high corporate rate, with a refundable portion via NERDTOH
-- AIIP: *Accelerated Investment Incentive Property* — transitional first-year enhanced CCA for property acquired after Nov 20 2018 and available for use before 2028; see [Capital-Cost-Allowance.md](Cost-Recovery/Capital-Cost-Allowance.md)
+- AII: *Aggregate Investment Income* — passive investment income (interest, foreign income, taxable portion of capital gains) taxed at a high corporate rate, with a refundable portion via NERDTOH; see [Small-Business-Tax-Overview.md](Small-Business-Tax-Overview.md)
+- AIIP: *Accelerated Investment Incentive Property* — property eligible for an enhanced first-year CCA deduction (the half-year rule is suspended); reinstated by Bill C-15 for property acquired after 2024 and available for use before 2030, with a phase-out through 2033; see [Capital-Cost-Allowance.md](Cost-Recovery/Capital-Cost-Allowance.md)
 - Capital dividend: tax-free dividend paid out of the CDA to a Canadian-resident shareholder; requires an s.83(2) election on Form T2054; see [Capital-Dividend-Account.md](Capital-Dividend-Account/Capital-Dividend-Account.md)
 - CCA: *Capital Cost Allowance* — the federal tax depreciation deduction under ITA s.20(1)(a); see [Capital-Cost-Allowance.md](Cost-Recovery/Capital-Cost-Allowance.md)
 - CCPC: *Canadian-Controlled Private Corporation* — a private corporation incorporated in Canada and not controlled by non-residents or public corporations
@@ -20,19 +20,19 @@ For mechanics and worked examples, follow the link to the canonical page.
 - Eligible dividend: dividend designated under s.89(14), drawing on the GRIP pool; carries a larger gross-up and DTC than a non-eligible dividend
 - ERDTOH: *Eligible Refundable Dividend Tax on Hand* — refundable tax pool that releases when an eligible dividend is paid; see [ERDTOH-NERDTOH.md](ERDTOH-NERDTOH.md)
 - GIFI: *General Index of Financial Information* — CRA's standardized chart-of-accounts coding used on Schedules 100 and 125; defined in CRA RC4088
-- Gross-up: notional uplift applied to a cash dividend on the personal return (38% for eligible, 15% for non-eligible) to derive the *taxable* amount on the T1
+- Gross-up: notional uplift applied to a cash dividend on the personal return (38% for eligible, 15% for non-eligible) to derive the *taxable* amount on the T1; see [Tax-Integration.md](Tax-Integration.md)
 - GRIP: *General Rate Income Pool* — capacity to designate eligible dividends; tracked on Schedule 53; see [Shareholder-Dividends.md](Shareholder-Dividends.md)
 - Half-year rule: Regulation 1100(2); only half-rate CCA on net additions in the year of acquisition; several classes are exempt; see [Capital-Cost-Allowance.md](Cost-Recovery/Capital-Cost-Allowance.md)
 - HST: *Harmonized Sales Tax* — provincial-and-federal-combined sales tax used by some provinces; see [HST.md](HST.md)
 - Integration: design principle that combines corporate + personal tax to approximate direct-earning tax; see [Tax-Integration.md](Tax-Integration.md)
 - ITA: *Income Tax Act* (R.S.C., 1985, c. 1 (5th Supp.)) — primary federal tax statute
-- ITC: *Input Tax Credit* — recoverable GST/HST paid on business inputs under the regular method
+- ITC: *Input Tax Credit* — recoverable GST/HST paid on business inputs under the regular method; see [HST.md](HST.md)
 - LCGE: *Lifetime Capital Gains Exemption* — personal exemption available on the disposition of QSBC shares
 - LRIP: *Low Rate Income Pool* — relevant only if the corporation was previously a non-CCPC; for a corporation that has always been a CCPC, LRIP does not constrain anything
 - NERDTOH: *Non-Eligible Refundable Dividend Tax on Hand* — refundable tax pool that releases when a non-eligible dividend is paid; see [ERDTOH-NERDTOH.md](ERDTOH-NERDTOH.md)
 - Non-eligible dividend: default classification for any taxable dividend not designated eligible (and not a capital dividend); carries a smaller gross-up and DTC than an eligible dividend
 - PSB: *Personal Service Business* — a CCPC effectively acting as a disguised employee, with most CCPC tax advantages removed; see [Small-Business-Tax-Overview.md](Small-Business-Tax-Overview.md)
-- PUC: *Paid-Up Capital* — tax-side measure of contributed capital tracked per share class; can drive deemed-dividend mechanics on redemption or capital reduction
+- PUC: *Paid-Up Capital* — tax-side measure of contributed capital tracked per share class; can drive deemed-dividend mechanics on redemption or capital reduction; see [Shareholder-Dividends.md](Shareholder-Dividends.md)
 - QSBC: *Qualified Small Business Corporation* — share-level test gating LCGE eligibility, including a 90% active-business-assets requirement
 - RDTOH: *Refundable Dividend Tax on Hand* — umbrella term covering the ERDTOH and NERDTOH pools; the single pre-2019 RDTOH was split into the two for tax years starting after 2018; see [ERDTOH-NERDTOH.md](ERDTOH-NERDTOH.md)
 - Recapture: negative UCC at year-end included in income under ITA s.13(1); see [Capital-Cost-Allowance.md](Cost-Recovery/Capital-Cost-Allowance.md)

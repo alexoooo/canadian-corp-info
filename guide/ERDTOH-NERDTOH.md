@@ -128,6 +128,8 @@ The T2 line items that carry the pools and the refund:
 - *S3 Part 3 Box 450*: total taxable dividends paid in the year (eligible and non-eligible combined)
 - *S3 Part 4 Box 500*: the portion of Box 450 that drives the dividend refund calculation
 
+These page, line, and box numbers drift between form releases; verify them against the current-year T2 and Schedule 3.
+
 T2 software fills these in once dividends paid (eligible vs non-eligible split) are entered.  
 
 

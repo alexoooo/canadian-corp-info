@@ -48,7 +48,7 @@ Several transactions look like dividends but are categorically different, or are
   - Reported on a T4 slip
   - Taxed in the shareholder's hands at full ordinary rates with CPP/EI obligations
   - Does not draw on any of the dividend tax accounts (GRIP, CDA, RDTOH)
-- *Return of capital* out of *stated capital* / *paid-up capital* (PUC): a distribution that reduces PUC of a private corporation is *deemed* to be a dividend under ITA s.84(4.1), with limited exceptions
+- *Return of capital* out of *stated capital* / *paid-up capital* (PUC): a distribution that reduces PUC of a private corporation is *deemed* to be a dividend under ITA s.84(4), with limited exceptions
   - In a typical owner-manager CCPC where the founder's incorporator shares were issued for $1 or $100, the PUC is too small to support a meaningful return-of-capital distribution
 - Share *redemption*: when the corporation buys back shares, redemption proceeds in excess of PUC are *deemed* to be a dividend under ITA s.84(3)
   - The shareholder's adjusted cost base is then compared against PUC (not against the gross proceeds) for the capital gain or loss calculation
@@ -408,12 +408,13 @@ Verify that the closing balance matches expectations, especially in the first ye
 Schedule 55 (S55 - *Part III.1 Tax on Excessive Eligible Dividend Designations*) is filed only when the corporation designates more eligible dividends in the year than its GRIP balance can support.  
 The excess is an *excessive eligible dividend designation* (EEDD).  
 
-The Part III.1 tax under ITA [s.185.1](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-185.1.html) is 20% of the excess, raised to 30% if the designation was made knowingly or in circumstances amounting to gross negligence.  
+The Part III.1 tax under ITA [s.185.1](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-185.1.html) is 20% of the excess (s.185.1(1)(a)), with an additional 10% (30% in total, under s.185.1(1)(b)) where the excessive designation arises under paragraph (c) of the s.89(1) definition — the anti-avoidance rule for designations one of whose main purposes is to artificially inflate GRIP or deflate LRIP. That extra 10% is an objective GRIP/LRIP-manipulation test, not a "knowing or grossly negligent" culpability standard.  
 
 Under ITA s.185.1(2), the corporation can jointly elect with the shareholder(s) who received the excess to treat the EEDD as a separate non-eligible dividend instead:
 - Eliminates the Part III.1 tax
 - Reclassifies the excess for the shareholder's personal tax (smaller gross-up and DTC)
 - Must be made within 90 days of the day the corporation is assessed for the Part III.1 tax
+- Not available where the 30% rate applies (an EEDD arising under paragraph (c) of the s.89(1) definition — the GRIP/LRIP-manipulation case)
 
 For an owner-managed CCPC where the director and the shareholder are the same person, the joint election is straightforward to execute.  
 Verify the GRIP balance *before* designating, so the excess never arises.  
@@ -609,7 +610,7 @@ For full mechanics, see [Capital-Dividend-Account.md](Capital-Dividend-Account/C
   - [s.15(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-15.html) - shareholder loan inclusion in income (one-year repayment rule)
   - [s.82(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-82.html) - dividend gross-up (38% eligible, 15% non-eligible)
   - [s.83(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-83.html) - capital dividend election; the elected amount is excluded from the shareholder's income under s.83(2)(b)
-  - [s.84](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-84.html) - deemed dividends (s.84(3) on share redemption; s.84(4.1) on private-corp PUC reduction)
+  - [s.84](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-84.html) - deemed dividends (s.84(3) on share redemption; s.84(4) on private-corp PUC reduction)
   - [s.89(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-89.html) - definitions of "eligible dividend", GRIP, LRIP, CDA, PUC; the GRIP "general rate factor" of 0.72
   - [s.89(14)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-89.html) - eligible dividend designation by written notice to the shareholder at or before payment
   - [s.104(19)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-104.html) - trust designation that flows the eligible-dividend character of taxable Canadian dividends through to beneficiaries (mechanism behind T3 Box 49)
@@ -620,7 +621,7 @@ For full mechanics, see [Capital-Dividend-Account.md](Capital-Dividend-Account/C
   - [s.129](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-129.html) - dividend refund on taxable dividends paid (s.129(1)); definitions of ERDTOH and NERDTOH (s.129(4))
   - [s.162(7.01)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-162.html) - late-filing penalty for information returns (T5)
   - [s.184(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-184.html) - Part III tax on excessive capital dividend elections (60% of the excess)
-  - [s.185.1](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-185.1.html) - Part III.1 tax on excessive eligible dividend designations (20% baseline, 30% knowing/gross negligence); s.185.1(2) joint election to reclassify the excess as a separate non-eligible dividend
+  - [s.185.1](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-185.1.html) - Part III.1 tax on excessive eligible dividend designations (20%, plus an additional 10% where the excess arises under paragraph (c) of the s.89(1) definition — the GRIP/LRIP-manipulation rule); s.185.1(2) joint election to reclassify the excess as a separate non-eligible dividend (unavailable when the 30% rate applies)
   - [s.186](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-186.html) - Part IV tax on dividends received by a corporation from a connected payer (s.186(1)); definition of "connected" corporations (s.186(4))
   - [s.212(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-212.html) - Part XIII withholding tax on dividends paid to non-residents (default 25%, often reduced by treaty)
   - [s.248(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-248.html) - definition of "dividend" (includes a stock dividend; otherwise common-law meaning)

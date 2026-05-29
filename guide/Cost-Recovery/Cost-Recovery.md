@@ -1,6 +1,6 @@
 STATUS: AI GENERATED, REVIEW IN PROGRESS
 
-# Cost Recovery \[done]
+# Cost Recovery
 
 **Who this is for**:
 - Owners of a Canadian-controlled private corporation (CCPC)
@@ -18,11 +18,11 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
 Limitations:
 - This page is an overview; the per-channel mechanics (LCM, half-year rule, UCC, recapture, terminal loss, available-for-use, CIP transfer entry) live on the three sub-pages
 - Common cross-channel mechanics (HST recoverability on acquisition, FX translation at trade date, available-for-use, change-of-use) are summarized here and cross-referenced from the sub-pages
-- Service-business work-in-process (s.10(11)), long-term construction contracts (percentage-of-completion under s.9 and CRA folio S4-F8-C1), real-estate developer inventory, manufacturing overhead absorption, and resource regimes are out of scope
+- Service-business work-in-process (s.10(11)), long-term construction contracts (percentage-of-completion under s.9; archived IT-92R2), real-estate developer inventory, manufacturing overhead absorption, and resource regimes are out of scope
 - The following is my understanding as of 2026
 
 
-## Three deduction channels \[done]
+## Three deduction channels
 
 Channel is set by purpose at acquisition.
 
@@ -45,7 +45,7 @@ Channel is set by purpose at acquisition.
 - After transfer: standard CCA mechanics apply
 
 
-## Cost-recovery flow \[done]
+## Cost-recovery flow
 
 ```mermaid
 flowchart TB
@@ -150,7 +150,7 @@ The HST-side equivalent is the deemed ITC adjustment under ETA s.206 when busine
 
 The cluster touches the same four T2 schedules across all three channels; the line items differ by channel.
 
-- *Schedule 100* (balance sheet): inventory on the 1120-series GIFI codes; fixed assets on the fixed-asset codes (1740 / 1770 / 1780 / 1880-series / 1900); CIP as a sub-account within the fixed-asset section until transfer
+- *Schedule 100* (balance sheet): inventory on the 1120-series GIFI codes; fixed assets on the fixed-asset codes (1742 / 1774 / 1787 / 2010-series / 1900); CIP as a sub-account within the fixed-asset section until transfer
 - *Schedule 125* (income statement): COGS lines 8300–8518 for inventory; `Amortization of tangible assets` (8670) at the *book* amortization figure for depreciable property
 - *Schedule 8* (CCA): one row per class with opening UCC, additions, dispositions, half-year adjustment, rate, CCA claimed, closing UCC; inventory not on Schedule 8
 - *Schedule 1* (book-to-tax reconciliation): book amortization added back, CCA from Schedule 8 deducted; inventory typically produces no adjustment

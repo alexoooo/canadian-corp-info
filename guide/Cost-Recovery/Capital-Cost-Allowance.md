@@ -8,7 +8,7 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
 - *Capital Cost Allowance* (CCA) is the federal income tax version of depreciation; accounting depreciation is not deductible under ITA [s.18(1)(b)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-18.html) so it is added back on Schedule 1; CCA is the matching deduction under [s.20(1)(a)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-20.html)
 - Capital purchases are pooled by *class*; each class has a fixed rate set by Regulation 1100; most are *declining balance*
 - The running pool balance is the *undepreciated capital cost* (UCC); CCA for a year = rate × adjusted UCC base
-- The *half-year rule* gives only half-rate CCA on net additions in the year of acquisition; several classes are exempt; the *Accelerated Investment Incentive* (AIIP, 2018–2027) modifies this transitionally
+- The *half-year rule* gives only half-rate CCA on net additions in the year of acquisition; several classes are exempt; the *Accelerated Investment Incentive* (AIIP) overrides it with an enhanced first-year deduction — reinstated by Bill C-15 for property acquired after 2024 and available for use before 2030
 - On disposal, UCC is reduced by the lesser of (proceeds, original cost); a negative ending balance is *recapture* (income), a positive balance with no asset left in the class is a *terminal loss* (deduction)
 - CCA is *discretionary*: you can claim any amount from $0 up to the maximum, and unused UCC carries forward indefinitely
 - Small items below the corp's capitalization policy (often $500) and incorporation expenses up to $3,000 are expensed immediately rather than capitalized
@@ -53,7 +53,7 @@ Common classes for an owner-managed CCPC:
 - *Class 10* (30%, declining): motor vehicles, vans, light trucks, pickup trucks under the passenger-vehicle cost threshold; one shared pool for all vehicles
 - *Class 10.1* (30%, declining): passenger vehicles whose cost exceeds the prescribed limit ($39,000 + sales taxes in 2026, up from $38,000 in 2025); each vehicle goes in *its own separate Class 10.1*; no recapture, no terminal loss, half-CCA in year of disposition under Regulation 1100(2.5)
 - *Class 12* (100%, no half-year for most items): small tools costing under $500, kitchen utensils, uniforms, application software (other than systems software); the half-year rule does apply to dies, jigs, moulds, and the cutting or shaping part of a machine
-- *Class 13* (straight-line over lease term + first renewal; minimum 5 years, maximum 40 years): leasehold improvements; half-year applies
+- *Class 13* (straight-line over lease term + first renewal; minimum 5 years, maximum 40 years): leasehold improvements; exempt from the Regulation 1100(2) half-year rule (its first-year allowance is instead limited under Schedule III / para 1100(1)(b))
 - *Class 14* (straight-line over remaining legal life): limited-life intangibles (patents, franchises, licences with a fixed term); no half-year
 - *Class 14.1* (5%, declining): goodwill, incorporation expenses over $3,000, customer lists, unlimited-life intangibles; half-year applies; replaced the pre-2017 *eligible capital property* (ECP) regime
 - *Class 54* (30%, declining): zero-emission passenger vehicles, cost capped at $61,000 + taxes
@@ -115,15 +115,18 @@ Net additions = (cost of additions) − (lesser of proceeds, cost for dispositio
 
 Classes exempt from the half-year rule include 12 (most items), 13, 14, 23, 24, 27, 29, 34, and 52.  
 
-The *Accelerated Investment Incentive* (AIIP) is a transitional regime that applied to property acquired after Nov 20 2018 and available for use before 2028:
-- For half-year-rule and non-half-year-rule CCA classes, the first-year deduction was enhanced (the half-year rule was suspended and an additional uplift applied)
-- For *full-expensing* classes (Class 53 M&P, 43.1 / 43.2 clean energy, 54 / 55 / 56 zero-emission vehicles), 100% of cost was deductible in the first year
+The *Accelerated Investment Incentive* (AIIP) enhances the first-year CCA deduction by suspending the half-year rule and applying an uplift. It first applied to property acquired after Nov 20 2018, began phasing out for property available for use after 2023, and was scheduled to end after 2027 — but the 2024 Fall Economic Statement reinstated it, enacted by Bill C-15 (Budget Implementation Act, 2025, No. 1) on Royal Assent on Mar 26 2026.
 
-Both were subject to phase-out for property available for use after 2023. The phase-out percentages have been adjusted multiple times by federal budget bills, so they are not quoted here.  
+As reinstated, for property acquired after 2024 (on or after Jan 1 2025) and available for use before 2030:
+- For CCA classes otherwise subject to the half-year rule, the half-year rule is suspended and the first-year base is 150% of the net addition — three times the deduction the half-year rule alone would have allowed
+- For classes not subject to the half-year rule, the first-year deduction is one-and-a-half times the normal allowance
+- For *full-expensing* classes (Class 53 M&P, 43.1 / 43.2 clean energy, 54 / 55 / 56 zero-emission vehicles), 100% of cost is deductible in the first year
+
+A new phase-out runs from 2030 to 2033: the enhancement steps down for property available for use after 2029 and is fully eliminated for property available for use after 2033. The year-by-year step-down percentages are not quoted here.  
 Before claiming, verify the current applicable rate on CRA's [Accelerated Investment Incentive](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/report-business-income-expenses/claiming-capital-cost-allowance/accelerated-investment-incentive.html) page.  
-The enhanced deduction ends for property available for use after 2027.  
+The reinstated enhancement is available only for property acquired after 2024; earlier acquisitions fall under the original 2018 rules, which had wound down by 2027.  
 
-A separate *Immediate Expensing Measure* (the "$1.5M rule") allowed CCPCs to fully expense up to $1.5 million per year of *Designated Immediate Expensing Property* (DIEP) across most CCA classes other than 1–6, 14.1, 17, 47, 49, and 51. It applied only to CCPC-acquired property available for use before 2024 and is not available for new acquisitions in 2026. A Dec 2024 amendment removed the short-fiscal-year proration for any past DIEP claims, retroactive to fiscal years ending on or after Apr 19 2021.
+A separate *Immediate Expensing Measure* (the "$1.5M rule") allowed CCPCs to fully expense up to $1.5 million per year of *Designated Immediate Expensing Property* (DIEP) across most CCA classes other than 1–6, 14.1, 17, 47, 49, and 51. It applied only to CCPC-acquired property available for use before 2024 and is not available for new acquisitions in 2026. A Dec 2024 amendment removed the separate short-fiscal-year proration of the *deduction* for past DIEP claims, retroactive to fiscal years ending on or after Apr 19 2021; the $1.5 million immediate-expensing limit itself still prorates for a short tax year under Regulation 1104(3.5)(b).
 
 
 ## Available-for-use rule
@@ -197,7 +200,7 @@ For a tax year shorter than 365 days (incorporation year, year of dissolution, f
 
 Exceptions to proration:
 - Classes 12, 13, 14, 15
-- DIEP immediate expensing — proration removed by the Dec 2024 amendment, retroactive to fiscal years ending on or after Apr 19 2021
+- DIEP immediate-expensing *deduction* — the Dec 2024 amendment removed its short-year proration, retroactive to fiscal years ending on or after Apr 19 2021 (the $1.5M DIEP limit itself still prorates under Regulation 1104(3.5)(b))
 
 
 ## CCA is discretionary
@@ -227,7 +230,7 @@ These thresholds matter most for:
 ## Bookkeeping and T2 schedules
 
 In the books (accrual + tax basis, per [Small Business Tax Overview](../Small-Business-Tax-Overview.md)):
-- At acquisition: debit the fixed-asset GIFI account (`Computer equipment` 1770, `Furniture and fixtures` 1780, `Motor vehicles` 1740, `Machinery and equipment` 1900, `Goodwill / intangibles` 1880-series); credit `Cash` or `Accounts payable`
+- At acquisition: debit the fixed-asset GIFI account (`Computer equipment` 1774, `Furniture and fixtures` 1787, `Motor vehicles` 1742, `Machinery and equipment` 1900, `Goodwill / intangibles` 2010-series, with goodwill at 2012); credit `Cash` or `Accounts payable`
 - Tax-basis-only convention: skip monthly accounting depreciation entirely; book the CCA at year-end as the period charge (debit `Amortization of tangible assets` 8670 / credit the relevant accumulated-amortization account)
 - GAAP-style books convention: book accounting depreciation monthly per the corp's policy; add it back on Schedule 1; deduct CCA from Schedule 8
 
@@ -258,7 +261,7 @@ IT-consulting-specific allocation calls:
 Year 1 (2026):
 
 Mar 1 entry:
-- Debit `Computer equipment - cost` (GIFI 1770) = $4,000
+- Debit `Computer equipment - cost` (GIFI 1774) = $4,000
 - Debit `HST receivable` = $520
 - Credit `Cash` = $4,520
 
@@ -268,10 +271,10 @@ Schedule 8 Class 50 row:
 - Opening UCC: $0
 - Cost of additions: $4,000
 - Dispositions: $0
-- AIIP enhanced first-year deduction may apply for 2026 acquisitions; verify the current multiplier on CRA's AIIP page
 - Standard Class 50 declining-balance rate: 55%
 - Without AIIP, the half-year adjustment would give a base of $2,000 and CCA of $2,000 × 55% = $1,100
-- Closing UCC: $4,000 − CCA claimed
+- Under the reinstated AIIP (this 2026 acquisition is available for use before 2030), the half-year rule is suspended and the first-year base is 150% of the addition: CCA of $6,000 × 55% = $3,300 — three times the half-year figure
+- Closing UCC: $4,000 − CCA claimed (e.g. $700 with the AIIP deduction)
 
 Year 2 (2027):
 
@@ -286,7 +289,7 @@ Year 3 (2028): laptop sold for $400 cash on Aug 15 2028.
 Aug 15 entry (book side, GAAP-style books):
 - Debit `Cash` = $400
 - Debit `Accumulated amortization - computer equipment` for the cumulative book amortization
-- Credit `Computer equipment - cost` (GIFI 1770) = $4,000
+- Credit `Computer equipment - cost` (GIFI 1774) = $4,000
 - Plug the residual to `Gain on disposal of capital assets` (GIFI 8210) or `Loss on disposal of capital assets`
 
 Schedule 8 Class 50 row:
@@ -319,6 +322,7 @@ Schedule 8 Class 8 row:
 - Cost of additions: $1,800
 - Dispositions: $0
 - Without AIIP, half-year-adjusted base = $900, and CCA = 20% × $900 = $180
+- Under the reinstated AIIP, the first-year deduction is $1,800 × 1.5 × 20% = $540 and closing UCC is $1,260; the multi-year tail below is shown on the pre-AIIP $1,620 basis to illustrate the declining-balance mechanics
 - Closing UCC: $1,800 − $180 = $1,620
 
 Year 2 (2027) and onward (no further transactions in the class):
@@ -342,7 +346,7 @@ The first $3,000 is *immediately deductible*; only the excess of $1,200 is capit
 
 Apr 1 entry:
 - Debit `Professional fees` (GIFI 8860) = $3,000
-- Debit `Goodwill / intangible assets - cost` (GIFI 1880-series, e.g. 1881 for incorporation costs in your chart of accounts) = $1,200
+- Debit `Goodwill / intangible assets - cost` (GIFI 2010 intangible assets, which includes organization/incorporation costs; goodwill is 2012) = $1,200
 - Credit `Cash` = $4,200
 
 Schedule 8 Class 14.1 row:
@@ -394,7 +398,7 @@ Most owner-managed CCPCs simply carry the small residual on Schedule 8 indefinit
 ## Citations
 
 - Income Tax Act (R.S.C., 1985, c. 1 (5th Supp.)): https://laws-lois.justice.gc.ca/eng/acts/I-3.3/
-  - [s.13](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-13.html) - recapture (s.13(1)); special rule for Class 10.1 (s.13(2)); change of use and partial use (s.13(7)); investment tax credit reduction of UCC (s.13(7.1)); UCC definition (s.13(21)); available-for-use rules (s.13(26)–(32))
+  - [s.13](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-13.html) - recapture (s.13(1)); no recapture on a Class 10.1 passenger vehicle (s.13(2)); change of use and partial use (s.13(7)); investment tax credit reduction of UCC (s.13(7.1)); UCC definition (s.13(21)); available-for-use rules (s.13(26)–(32))
   - [s.18(1)(b)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-18.html) - disallowance of accounting depreciation
   - [s.20(1)(a)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-20.html) - permission to deduct CCA per regulation
   - [s.20(16)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-20.html) - terminal loss

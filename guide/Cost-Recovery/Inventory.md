@@ -1,6 +1,6 @@
 STATUS: AI GENERATED, REVIEW IN PROGRESS
 
-# Inventory \[done]
+# Inventory
 
 **Who this is for**:
 - Owners of a Canadian-controlled private corporation (CCPC)
@@ -18,9 +18,9 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
 Limitations:
 - Focus is on a typical owner-managed CCPC with goods-for-resale or self-use materials inventory
 - Manufacturing inventory with overhead absorption and standard-cost variances is touched on but not worked through
-- Long-term construction contracts (percentage-of-completion under s.9 and CRA folio S4-F8-C1), commodity-pool inventories (s.10(6)), real-estate developer inventory, and financial-institution security inventories are out of scope
+- Long-term construction contracts (percentage-of-completion under s.9; archived IT-92R2), commodity-pool inventories (s.10(6)), real-estate developer inventory, and financial-institution security inventories are out of scope
 - Consignment inventory is mentioned briefly; service-business work-in-process under s.10(5)(a)/(11) is out of scope
-- Inventory-method change requires CRA approval (Regulation 1801) and is not covered here
+- Inventory-method change requires the Minister's concurrence (ITA s.10(2.1)) and is not covered here
 - The following is my understanding as of 2026
 
 
@@ -31,7 +31,7 @@ Limitations:
 - [Capital Cost Allowance](Capital-Cost-Allowance.md): depreciable property
 
 
-## Inventory versus other purchase types \[done]
+## Inventory versus other purchase types
 
 Purchased property in a CCPC follows one of a few tax treatments (inventory is the most common):
 - *Inventory* (the focus of this page): property held for sale, or held to produce property held for sale; cost flows through `Cost of sales` (COGS) when a unit sells; valued at LCM each year-end
@@ -40,7 +40,7 @@ Purchased property in a CCPC follows one of a few tax treatments (inventory is t
 - *Spare parts*: inventory if held for resale; expensed or capitalized into the equipment they service otherwise; the non-resale case is out of scope here
 
 
-## What inventory is \[meh]
+## What inventory is
 
 ITA [s.248(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-248.html) defines *inventory* as "a description of property the cost or value of which is relevant in computing a taxpayer's income from a business for a taxation year".
 
@@ -75,14 +75,14 @@ Cost-flow assumptions permitted by CRA (pick one, apply consistently):
 
 The lower of cost or fair market value (LCM) rule:
 - Each year-end, every inventory item is valued at the lower of its cost (per the chosen method above) and its *fair market value* at year-end (ITA [s.10(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-10.html))
-- "Fair market value" is defined by case law and Income Tax Folio S3-F4-C1; for a typical resale CCPC it is the net realizable value: what the corp could sell the item for, less selling costs
+- "Fair market value" for inventory is a case-law / net-realizable-value concept (see archived IT-473R); for a typical resale CCPC it is the net realizable value: what the corp could sell the item for, less selling costs
 - If FMV is below cost, the difference is a *write-down*, deductible in the current year (s.10(1)) and recoverable as income if the FMV later recovers (s.10(2))
 - LCM is applied item by item, not at the inventory level in aggregate; a write-down on slow-moving SKU A cannot be offset by appreciation on fast-moving SKU B
 
 Method consistency:
 - The chosen method must be applied year over year (ITA [s.10(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-10.html))
-- A change of method requires CRA approval under Regulation 1801; in practice this means filing a written request with supporting reasons; do not silently switch methods
-- An election under s.10(2.1) to value all inventory at FMV is available in narrow cases (commodity pools, certain financial businesses) and is not the right tool for a typical resale CCPC
+- A change of method requires the Minister's concurrence under ITA s.10(2.1) (with the s.10(2) consistency rule as the backdrop); in practice this means filing a written request with supporting reasons; do not silently switch methods
+- Valuing all inventory at FMV instead of LCM is permitted under Regulation 1801, but it is not the right tool for a typical resale CCPC
 
 
 ## What goes into cost
@@ -389,10 +389,10 @@ Year-end Schedule 125 if 300 units are sold during the year at $70 each:
 ## Out of scope
 
 - Manufacturing overhead absorption, standard-cost variances, and variable-vs-absorption costing: these require accounting-standard mechanics (ASPE Section 3031 / IFRS IAS 2) that interact with tax through s.10 acceptance
-- Long-term construction contracts: percentage-of-completion mechanics under s.9 and CRA folio S4-F8-C1 / archived IT-92R2
+- Long-term construction contracts: percentage-of-completion mechanics under s.9; archived IT-92R2
 - Commodity-pool inventory valued at FMV under s.10(6) (e.g. grain elevators) and dealer-in-securities inventory under s.10(15)
 - Real-estate developer inventory of land and partially completed buildings; adjacent to but distinct from typical resale inventory
-- Reg 1801 inventory-method change application mechanics: the form of the request, supporting reasons, CRA review timeline
+- s.10(2.1) inventory-method change application mechanics: the form of the request, supporting reasons, CRA review timeline
 - The art-business and farm-business special inventory rules (s.10(1.1), Reg 1802)
 
 
@@ -415,14 +415,14 @@ Year-end Schedule 125 if 300 units are sold during the year at $70 each:
   - [s.10(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-10.html) - inventory valuation at the lower of cost or fair market value
   - [s.10(1.01)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-10.html) - inventory of an adventure or concern in the nature of trade valued at cost (no FMV write-down)
   - [s.10(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-10.html) - method consistency requirement; recovery of prior write-down if FMV recovers
-  - [s.10(2.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-10.html) - election to value at FMV for specific inventory types
+  - [s.10(2.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-10.html) - Minister's concurrence required to change the inventory valuation method
   - [s.15](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-15.html) - shareholder benefits triggered by inventory appropriation
   - [s.18(1)(a)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-18.html) - general deductibility test (expense for the purpose of gaining income)
   - [s.45](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-45.html) - change-of-use rules
   - [s.69(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-69.html) - non-arm's-length transactions deemed at FMV
   - [s.248(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-248.html) - definition of "inventory"
 - Income Tax Regulations (C.R.C., c. 945): https://laws-lois.justice.gc.ca/eng/regulations/C.R.C.,_c._945/
-  - Regulation 1801 - method-change election and approval requirement
+  - Regulation 1801 - option to value all inventory at fair market value (alternative to LCM)
   - Regulation 1802 - farming inventory valuation (out of scope, pointer only)
 - CRA T4012 - T2 Corporation Income Tax Guide: https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4012.html
 - CRA T2 SCH 125 - Income Statement Information (GIFI cost-of-sales codes 8300, 8320, 8340, 8360, 8450, 8457, 8500, 8518, 8519): https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2sch125.html
@@ -437,6 +437,6 @@ Year-end Schedule 125 if 300 units are sold during the year at $70 each:
 
 - Companion tracking-spreadsheet artifact (parallel to [Adjusted Cost Base Tracking](../Adjusted-Cost-Base/Adjusted-Cost-Base-Tracking.md)): a worked perpetual weighted-average ledger with running-cost and COGS formulas, plus a year-end LCM column
 - Manufacturing WIP treatment: a section walking conversion-cost build-up under ASPE 3031 / IFRS IAS 2 and the M&P Class 53 CCA tie-in
-- Reg 1801 method-change procedure: format of the written request, supporting evidence, CRA processing timeline
+- s.10(2.1) method-change procedure: format of the written request, supporting evidence, CRA processing timeline
 - Cross-reference with [Foreign Currency](../Foreign-Currency.md) once that page is past the stub phase
 - Add inventory terms to [Glossary](../Glossary.md) on a separate maintainer pass: COGS, FMV, LCM, WIP, weighted-average cost, landed cost, perpetual / periodic inventory

@@ -154,16 +154,16 @@ ITC eligibility (ETA [s.169](https://laws-lois.justice.gc.ca/eng/acts/E-15/secti
 - The corp must hold supporting documentation that meets the prescribed *documentary requirements* (below)
 
 Documentary requirements escalate with invoice size (ETA Regulations, *Input Tax Credit Information (GST/HST) Regulations*; CRA GST/HST Memorandum 8.4):
-- *Under $30*: supplier name, transaction date, total amount paid
-- *$30 to $149.99*: the above plus the supplier's GST/HST registration number, plus an indication of whether HST is included or extra
-- *$150 or more*: the above plus the recipient's name, terms of payment, and a description of each supply
-- Missing the supplier's registration number on a $30+ invoice is the most common reason CRA disallows an ITC on audit; verify the number against the [GST/HST Registry](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/confirming-a-gst-hst-account-number.html) for any new supplier
+- *Under $100*: supplier (or intermediary) name, transaction date, total amount paid
+- *$100 to $499.99*: the above plus the supplier's GST/HST registration number, plus an indication of whether HST is included or extra
+- *$500 or more*: the above plus the recipient's name, terms of payment, and a description of each supply
+- Missing the supplier's registration number on a $100+ invoice is the most common reason CRA disallows an ITC on audit; verify the number against the [GST/HST Registry](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/confirming-a-gst-hst-account-number.html) for any new supplier
 
 Specific limits and denials:
 - *Meals and entertainment*: ITC limited to 50% of the HST paid (ETA [s.236](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-236.html)), mirroring the income-tax 50% limit under ITA s.67.1
 - *Club memberships and dining/recreational facility fees*: ITC denied (ETA [s.170(1)(a)](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-170.html))
 - *Passenger vehicles*: ITC capped at the $39,000 + applicable taxes Class 10.1 ceiling (ETA s.201); see [Capital Cost Allowance](Cost-Recovery/Capital-Cost-Allowance.md) for the Class 10.1 mechanics that mirror this
-- *Personal-use property*: ITC denied where business use is 10% or less; pro-rated where business use is between 10% and 90% on capital property
+- *Capital personal property used partly for personal purposes* (e.g. a vehicle or computer): all-or-nothing under ETA [s.199](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-199.html) — full ITC if business use exceeds 50%, no ITC if 50% or less; this is not a sliding proration (the 10%–90% proration is the capital-*real*-property rule, not the rule for a corporation's capital personal property)
 - *Property and services acquired for making exempt supplies*: ITC denied (a typical CCPC has no exempt supplies, but residential rent and most financial services are common exempt categories that block ITCs on the related inputs)
 
 Time limits:
@@ -321,7 +321,7 @@ Jul 31 — invoice #2 to an Ontario client for $15,000 + HST:
 - Credit `HST collected` = $1,950
 
 Sep 1 — buy a $4,000 + HST = $4,520 laptop (Class 50 capital asset; business use 100%):
-- Debit `Computer equipment - cost` (GIFI 1770) = $4,000
+- Debit `Computer equipment - cost` (GIFI 1774) = $4,000
 - Debit `HST receivable` = $520
 - Credit `Cash` = $4,520
 
@@ -435,6 +435,7 @@ The break-even point against the regular method on Ontario services is roughly t
   - [s.165](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-165.html) - imposition of GST/HST on taxable supplies, including the rate
   - [s.169](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-169.html) - general entitlement to input tax credits
   - [s.170](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-170.html) - denied ITCs (club memberships, dining facilities)
+  - [s.199](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-199.html) - all-or-nothing ITC on capital personal property (full ITC if business use exceeds 50%, none if 50% or less)
   - [s.201](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-201.html) - passenger-vehicle ITC ceiling
   - [s.206](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-206.html) - change-in-use deemed ITC adjustments on capital property
   - [s.218.1](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-218.1.html) - self-assessment on imported services and intangibles
@@ -458,7 +459,6 @@ The break-even point against the regular method on Ontario services is roughly t
 - CRA *RC4088 General Index of Financial Information (GIFI)*: https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4088.html
 - CRA *GST/HST Memorandum 3.3 Place of Supply*: https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/3-3.html
 - CRA *GST/HST Memorandum 8.4 Documentary Requirements for Claiming Input Tax Credits*: https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/8-4/documentary-requirements-claiming-input-tax-credits.html
-- CRA *GST/HST Memorandum 14 Special Quick Method*: https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/19-1.html
 - CRA *GST/HST Notice 342 Nova Scotia HST Rate Decrease* - transitional rules for the 2025-04-01 rate change from 15% to 14%: https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/notice342/nova-scotia-hst-rate-decrease-questions-answers-general-transitional-rules-personal-property-services.html
 - CRA *Form GST34-2 Goods and Services Tax/Harmonized Sales Tax Return* (personalized return; not separately downloadable): https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/complete-file-return-business.html
 - CRA *Form GST74 Election and Revocation of an Election to Use the Quick Method of Accounting*: https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/gst74.html
@@ -481,7 +481,6 @@ The break-even point against the regular method on Ontario services is roughly t
 - Verify the GIFI rollup codes for `HST receivable` and `HST collected` against the current RC4088 and reflect them in the bookkeeping section
 - Reproduce or link the current full Quick Method province × business-type rate matrix from RC4058 once the maintainer confirms which subset is worth carrying inline vs deferring to the CRA page
 - Verify the s.148(2)(c) aggregation rule for *associated* corps under the small-supplier test against current CRA administrative position (the statute references "associated" but CRA's interpretation in some publications uses a narrower definition than ITA s.256)
-- Verify the Memorandum 14 link target; the *Special Quick Method* memorandum is for public-service bodies and may not be the right reference for an owner-managed CCPC
 - Add a tracking-spreadsheet companion analogous to [Adjusted Cost Base Tracking](Adjusted-Cost-Base/Adjusted-Cost-Base-Tracking.md): a per-period log of HST collected and ITCs claimed, with the GST34 line mapping
 - Cross-link this page from [Payment](Payment/Payment.md) once that page is past the stub phase; this page covers bookkeeping and return preparation, Payment covers the cash-to-CRA mechanics (pre-authorized debit, online banking, instalment scheduling)
 - Add GST/HST terms to [Glossary](Glossary.md) on a separate maintainer pass: zero-rated, exempt, taxable supply, ITC, Quick Method, small supplier, place of supply, RT program account
