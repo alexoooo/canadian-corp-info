@@ -22,7 +22,7 @@ Limitations:
 - The following is my understanding as of 2026
 
 
-## Three deduction channels
+## Three deduction channels \[done]
 
 Channel is set by purpose at acquisition.
 
@@ -45,49 +45,51 @@ Channel is set by purpose at acquisition.
 - After transfer: standard CCA mechanics apply
 
 
-## Cost-recovery flow
+## Cost-recovery flow \[done]
 
 ```mermaid
 flowchart TB
     Buy(["Corp buys property"])
     Purpose{{"Purpose at acquisition"}}
-    Inv[("Inventory<br/>weighted-avg / FIFO<br/>LCM at year-end")]
-    Fixed[("Depreciable property<br/>fixed-asset GIFI line")]
-    CIP[("Construction in progress<br/>asset balance; no deduction")]
-    Avail{{"Available for use<br/>ITA s.13(26)–(27)"}}
-    UCC[("UCC pool by class<br/>Schedule 8")]
+    Inv[("Inventory")]
+    Fixed[("Depreciable property")]
+    CIP[("Construction in progress")]
+    Avail{{"Available for use"}}
+    UCC[("UCC pool by class")]
     Sale(["Sale of a unit"])
-    COGS["Cost of sales<br/>Schedule 125 line 8518"]
-    CCA["Annual CCA<br/>rate × half-year-adjusted base"]
+    COGS["Cost of sales"]
+    CCA["Annual CCA"]
     Disp(["Disposition of a capital asset"])
-    Rec["Recapture (s.13(1))<br/>or terminal loss (s.20(16))"]
-    CG["Capital gain on Schedule 6<br/>if proceeds &gt; original cost"]
-    CofU{{"Change in use<br/>ITA s.45 / s.13(7)"}}
+    Rec["Recapture or terminal loss"]
+    CG["Capital gain"]
+    CofU{{"Change in use"}}
 
     Buy --> Purpose
     Purpose -->|"hold for resale"| Inv
     Purpose -->|"use as fixed asset"| Fixed
     Purpose -->|"build fixed asset"| CIP
     CIP --> Avail
-    Avail -->|"transfer at accumulated cost"| Fixed
+    Avail --> Fixed
     Fixed --> UCC
     UCC --> CCA
-    CCA -.->|"− CCA, carry forward"| UCC
+    CCA -.->|"reduces"| UCC
     Inv --> Sale
     Sale --> COGS
     Fixed --> Disp
     Disp --> Rec
     Disp -.->|"proceeds &gt; original cost"| CG
-    Inv -.->|"FMV deemed disposition"| CofU
-    Fixed -.->|"FMV deemed disposition"| CofU
-    CofU -.->|"re-classify"| Inv
-    CofU -.->|"re-classify"| Fixed
+    Inv -.->|"purpose changes"| CofU
+    Fixed -.->|"purpose changes"| CofU
+    CofU -.->|"re-classify at FMV"| Inv
+    CofU -.->|"re-classify at FMV"| Fixed
 ```
 
 
 ## Acquisition cost: what gets capitalized
 
-The same rules govern what dollars enter the cost figure across all three channels.
+To *capitalize* a cost is to record it on the balance sheet as part of an asset rather than expense it immediately.
+The dollars sit in that asset until they flow out through one of the three channels above.  
+The same rules govern what counts as part of the asset's cost across all three channels.  
 
 Included in cost:
 - Invoice price net of trade discounts
@@ -203,5 +205,4 @@ A CIP balance is never directly disposed of:
 
 ## TODO
 
-- A side-by-side worked example synthesizing the three channels (same $1,000 spend treated three ways) is not on this page; per the current scope it stays on the sub-pages
 - A unified Cost-Recovery glossary subset (capitalize, expense, landed cost, available for use, UCC, COGS, change in use) may be worth pulling out once the sub-pages stabilize
