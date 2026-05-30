@@ -81,6 +81,11 @@ Each class has its own pool. The shape of a year-end calculation:
 - CCA = rate × (adjusted UCC base after half-year adjustment)
 - Closing UCC = adjusted UCC base before half-year minus CCA claimed
 
+Tracking is per class, not per asset:
+- the pool is a single UCC figure for the whole class; there is no UCC per item, and Schedule 8 carries one row per class
+- keep a separate *asset register* (item, class, cost, in-service date, disposal date, proceeds) as a reference: it tells you what is still in each class and feeds the *additions* and *dispositions* totals, but it is not the CCA computation
+- the register grows with the number of items; the CCA math stays one row per class per year
+
 ```mermaid
 flowchart TB
     Open[("Opening UCC")]
@@ -173,6 +178,13 @@ Dispositions:
 
 *Terminal loss* (ITA s.20(16)): if closing UCC is positive *and* no property remains in the class, the residual UCC is deducted from income for the year.
 
+Retiring or scrapping an asset:
+- throwing out or scrapping property is a *disposition* with proceeds equal to whatever you receive, often $0
+- the pool drops by the lesser of (proceeds, original cost), so a $0 retirement subtracts nothing and the class keeps depreciating
+- the terminal-loss trigger is the *class being empty* (every asset disposed of) with positive UCC: it turns on disposition, not on whether an asset still functions; a broken asset you keep is still property in the class
+- $0 proceeds leave the entire residual to be deducted as the terminal loss once the class empties; any proceeds reduce that loss, and proceeds above the remaining UCC become *recapture* instead
+- because the class is one pool, no loss is recognized on a single retired item while other assets remain in the class
+
 Class 10.1 exception (ITA [s.20(16.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-20.html), Regulation 1100(2.5)):
 - No recapture (the $39,000 cap already limited the deduction)
 - No terminal loss (the loss above the cap is already excluded)
@@ -213,6 +225,10 @@ Common reasons to claim less than the maximum:
 - Small-ABI year where claiming full CCA would lose value compared with deferring to a year taxed at the general rate
 - AII grind planning: a year close to the $50,000 AII threshold where reducing net income would not change the SBD outcome
 
+The opposite move can also pay:
+- a non-capital loss carries back 3 years as well as forward 20 (ITA [s.111(1)(a)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-111.html)), so claiming CCA to create or deepen a loss can recover tax already paid in the prior three years (requested on T2 Schedule 4)
+- worth it only when those prior years had tax to recover; a startup with no profitable history defers instead, leaving the deduction in UCC
+
 
 ## Capitalize-vs-expense thresholds
 
@@ -225,6 +241,25 @@ Two thresholds shape what gets onto Schedule 8 in the first place:
 These thresholds matter most for:
 - Software bundled with hardware: systems software → Class 50; standalone application software → Class 12 (100%); SaaS subscriptions → operating expense (no capitalization at all)
 - Home-office equipment: only the business-use portion of cost goes into UCC; the personal-use portion is a shareholder benefit (s.15) or simply not capitalized
+
+
+The de minimis floor is a policy choice within limits:
+- the Income Tax Act sets no dollar threshold; the test is the general current-vs-capital distinction, and CRA tolerates expensing amounts too small to matter
+- a floor of $500 to $2,500 is accepted if it is reasonable for the size of the business and applied consistently from year to year
+
+Costs of setting the floor high:
+- expensing changes only *timing*: both routes deduct the full cost eventually, so a higher floor merely pulls the deduction earlier (a small gain on a sub-$2,500 item, smaller still while AIIP front-loads first-year CCA)
+- consistency cuts both ways: a high floor forces immediate expensing even in a loss year, where a non-capital loss expires after 20 years while undepreciated CCA never does
+- "immaterial" scales with size: $2,500 is not credibly immaterial for a corp earning $40,000
+- over-expensing understates assets on any ASPE financial statements a bank or buyer relies on
+
+Simplest tax-basis treatment: set a single $500 floor in a written policy, expense below it, capitalize at or above.  
+$500 is the easiest figure to defend (it matches the Class 12 tools line) and leaves larger items in CCA, where the discretionary claim keeps year-to-year flexibility.  
+
+Out of scope here:
+- a higher floor (toward $2,500) for a larger, steadily-profitable corp with no external-reporting needs
+- deferring deductions in a loss or low-rate year by capitalizing instead of expensing
+- GAAP/ASPE statement presentation, where capitalization affects reported assets and earnings
 
 
 ## Bookkeeping and T2 schedules
@@ -405,6 +440,7 @@ Most owner-managed CCPCs simply carry the small residual on Schedule 8 indefinit
   - [s.20(16.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-20.html) - terminal-loss exceptions (Class 10.1, replacement property, Class 14.1 unless cessation)
   - [s.44](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-44.html) - replacement-property election (deferring recapture or capital gain)
   - [s.85](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-85.html) - rollover of property to a corporation (non-arm's-length deemed-cost mechanics)
+  - [s.111(1)(a)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-111.html) - non-capital loss carryover: 3 years back, 20 years forward
 - Income Tax Regulations (C.R.C., c. 945): https://laws-lois.justice.gc.ca/eng/regulations/C.R.C.,_c._945/
   - Part XI - capital cost allowances
   - Regulation 1100(1) - prescribed CCA rates by class

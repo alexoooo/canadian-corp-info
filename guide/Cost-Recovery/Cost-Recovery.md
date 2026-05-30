@@ -33,7 +33,7 @@ Channel is set by purpose at acquisition.
 - Deduction: COGS on Schedule 125 line 8518 at the moment a unit is sold
 
 *Depreciable property* (mechanics in [Capital Cost Allowance](Capital-Cost-Allowance.md)):
-- Long-lived assets the corp buys to use rather than resell (computers, vehicles, furniture, equipment); their cost is deducted gradually over the years they are used instead of all at once
+- Long-lived assets the corp buys to use rather than resell
 - ITA s.18(1)(b) blocks immediate deduction; ITA s.20(1)(a) re-opens it through CCA
 - Cost: pooled in the class's *undepreciated capital cost* (UCC) under [s.13(21)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-13.html)
 - Rate: per-class, set by Regulation 1100; geometric decline for most classes, straight-line for Classes 13 and 14
@@ -44,6 +44,37 @@ Channel is set by purpose at acquisition.
 - Cost accumulates in a `Construction in progress` (CIP) balance-sheet asset
 - Trigger: *available for use* (ITA s.13(26)–(27)) transfers the accumulated cost into the appropriate CCA class
 - After transfer: standard CCA mechanics apply
+
+
+## Depreciation and classes
+
+*Depreciation* spreads a long-lived asset's cost across the years it is used instead of expensing it all at once.  
+Two versions, computed differently:
+- *Accounting depreciation*: the figure recorded in the corporation's own books; the method and rate are an accounting choice (commonly straight-line over the asset's estimated useful life)
+- *Tax depreciation* (CCA): the figure allowed on the T2 return; the method and rate are fixed by the Income Tax Act, not chosen by the corp
+
+Only CCA is deductible: ITA s.18(1)(b) blocks accounting depreciation and s.20(1)(a) substitutes CCA.  
+A corporation keeping full accounting-standard books records accounting depreciation, then adds it back on Schedule 1 and deducts CCA on Schedule 8 in its place.  
+
+This guide keeps the books on a *tax basis*, where the book figures are the T2 figures (see [Small Business Tax Overview](../Small-Business-Tax-Overview.md)).  
+On a tax basis there is no separate accounting-depreciation schedule to reconcile: the CCA amount is booked directly as the period's depreciation.  
+The worked examples therefore use CCA's declining-balance (geometric) method as the depreciation figure.  
+
+CCA does not track each asset individually.  
+The Act sorts depreciable property into numbered *classes*, each with a fixed annual rate set by Regulation 1100:
+- *Class 8* (20%): the catch-all for furniture, equipment, and property not assigned to another class
+- *Class 10* (30%): most motor vehicles
+- *Class 50* (55%): computers and systems software
+
+Each class is a single pool.  
+An asset's cost is added to its class pool, and CCA is claimed on the pool as a whole rather than asset by asset.  
+Most classes decline geometrically: the rate applies to the pool's remaining balance each year, so the deduction is largest in the first year and tapers off.  
+
+Tracking follows the pool, not the item:
+- one *UCC balance per class* to maintain, regardless of how many assets sit inside it
+- a separate asset list matters only for knowing what is still in each class and for disposition figures (see [Capital Cost Allowance — Pool mechanics](Capital-Cost-Allowance.md#pool-mechanics-ucc))
+
+The full class list and per-class rates are in [Capital Cost Allowance — Classes and rates](Capital-Cost-Allowance.md#classes-and-rates).
 
 
 ## Cost-recovery flow \[done]
@@ -92,6 +123,10 @@ To *capitalize* a cost is to record it on the balance sheet as part of an asset 
 The dollars sit in that asset until they flow out through one of the three channels above.  
 The same rules govern what counts as part of the asset's cost across all three channels.  
 
+Below a *de minimis* floor, a long-lived item is expensed immediately rather than capitalized into any channel.  
+The floor is the corporation's own policy (commonly $500, sometimes up to $2,500), applied consistently; it is a bookkeeping convention, not a CRA rule.  
+A residual UCC pool is not cleared the same way: once capitalized, a class pool runs its geometric tail until the asset is disposed of or the business ceases (see [Capital Cost Allowance — Capitalize-vs-expense thresholds](Capital-Cost-Allowance.md#capitalize-vs-expense-thresholds)).  
+
 Included in cost:
 - Invoice price net of trade discounts
 - Freight, customs duty, brokerage on inbound goods or equipment
@@ -112,7 +147,8 @@ The 50%-business-use rule on ITC eligibility for capital property is in [HST](..
 
 ## Available for use
 
-CCA cannot be claimed on a class addition until the property is *available for use* (ITA [s.13(26)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-13.html)). The cost is in the UCC pool from the acquisition date, but the half-year-adjusted base feeds CCA only once the property is in service.
+CCA cannot be claimed on a class addition until the property is *available for use* (ITA [s.13(26)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-13.html)).  
+The cost is in the UCC pool from the acquisition date, but the half-year-adjusted base feeds CCA only once the property is in service.
 
 For non-buildings (s.13(27)), the earliest of:
 - First time the property is used to earn income
@@ -173,6 +209,10 @@ Disposition closes the channel.
 - Closing UCC negative at year-end is *recapture* (s.13(1)) included in income; UCC reset to zero
 - Closing UCC positive with no asset left in the class is a *terminal loss* (s.20(16)) deducted from income
 - Class 10.1, Class 14.1, and replacement-property rules carry exceptions
+
+Scrapping or retiring an item is a disposition too:
+- proceeds are whatever you receive, often $0 for a broken item thrown out; the pool drops by the lesser of (proceeds, original cost), so a $0 retirement removes nothing and the pool keeps depreciating
+- a terminal loss turns on the *class being empty* with positive UCC, not on whether an item still works: a broken-but-kept asset is still in the class, and a single retired item triggers no loss while others remain (detail in [Capital Cost Allowance — Recapture and terminal loss](Capital-Cost-Allowance.md#recapture-and-terminal-loss))
 
 A CIP balance is never directly disposed of:
 - *Cancelled project*: write-down (deductible if the project served a business purpose)

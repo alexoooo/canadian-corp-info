@@ -152,6 +152,11 @@ Two further conventions govern how transactions are recorded:
 - The typical small owner-managed CCPC is set up as *accrual + tax basis*
   - Other arrangements are possible, but outside the scope of this guide
 
+Long-lived assets (useful life beyond the current year) that cost more than a certain amount are *capitalized*: recorded as an asset, then expensed incrementally over time (*amortization*, also known as *depreciation*).  
+That threshold (a *de minimis* floor) is the corporation's own policy, not a CRA rule: typically $500, sometimes up to $2,500 in situations that are out of scope.  
+Under tax-basis accounting (but not GAAP/ASPE) amortization is optional — the full asset amount can stay on the books and be expensed in a later year.  
+See [Cost Recovery](Cost-Recovery/Cost-Recovery.md) for the full treatment.
+
 A *cash flow statement* and *statement of retained earnings* are not required for the T2.  
 A full set of GAAP-compliant statements (*ASPE* for private corporations, *IFRS* for public ones) is only required if a third party (bank, outside shareholder) asks for it.  
 
