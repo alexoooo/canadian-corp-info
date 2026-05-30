@@ -406,6 +406,7 @@ Year-end Schedule 125 if 300 units are sold during the year at $70 each:
 - [HST](../HST.md)
 - [Foreign Currency](../Foreign-Currency.md)
 - [Glossary](../Glossary.md)
+- [Whole-dollar rounding](../Whole-Dollar-Rounding.md)
 
 
 ## Citations
@@ -440,3 +441,4 @@ Year-end Schedule 125 if 300 units are sold during the year at $70 each:
 - s.10(2.1) method-change procedure: format of the written request, supporting evidence, CRA processing timeline
 - Cross-reference with [Foreign Currency](../Foreign-Currency.md) once that page is past the stub phase
 - Add inventory terms to [Glossary](../Glossary.md) on a separate maintainer pass: COGS, FMV, LCM, WIP, weighted-average cost, landed cost, perpetual / periodic inventory
+- Rename to "Inventory-And-COGS.md"?

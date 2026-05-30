@@ -166,6 +166,9 @@ GIFI codes are four-digit numbers organized by financial-statement section: 1001
 The full list and mapping rules are in CRA's *RC4088 - General Index of Financial Information*.  
 One reasonable account organization convention is presented in this guide.  
 
+Books are kept to the cent, but the T2 and its GIFI schedules are filed in whole dollars (rounded to the nearest dollar).  
+Rounding each line on its own can throw the accounting equation or a subtotal off by a dollar or two, so it is done systematically (see [Whole-dollar rounding](Whole-Dollar-Rounding.md)).  
+
 See [T3.md](T3/T3.md), [T5008.md](T5008/T5008.md), [Shareholder-Dividends.md](Shareholder-Dividends.md), and [Adjusted-Cost-Base.md](Adjusted-Cost-Base/Adjusted-Cost-Base.md) for concrete worked examples.  
 It is recommended to keep books current during the year (monthly is typical); reconstructing past months of activity at year-end is difficult.  
 

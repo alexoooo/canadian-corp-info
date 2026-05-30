@@ -33,6 +33,7 @@ AI generated, not verified yet:
 - [Shareholder-Dividends](guide/Shareholder-Dividends.md)
 - [Glossary](guide/Glossary.md)
 - [HST](guide/HST.md)
+- [Whole-dollar rounding](guide/Whole-Dollar-Rounding.md)
 
 
 ## Work in progress

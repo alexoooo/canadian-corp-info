@@ -38,6 +38,7 @@ For mechanics and worked examples, follow the link to the canonical page where o
 - RDTOH: *Refundable Dividend Tax on Hand* — umbrella term covering the ERDTOH and NERDTOH pools; the single pre-2019 RDTOH was split into the two for tax years starting after 2018; see [ERDTOH-NERDTOH.md](ERDTOH-NERDTOH.md)
 - Recapture: negative UCC at year-end included in income under ITA s.13(1); see [Capital-Cost-Allowance.md](Cost-Recovery/Capital-Cost-Allowance.md)
 - ROC: *Return of Capital* — distribution that reduces ACB rather than producing taxable income; T3 Box 42 typically carries ROC; see [Adjusted-Cost-Base.md](Adjusted-Cost-Base/Adjusted-Cost-Base.md)
+- Rounding (whole-dollar): books are kept to the cent but the T2 and GIFI schedules are filed in whole dollars (round to the nearest dollar); subtotals are summed from the rounded lines and a designated line absorbs the residual so the statements still tie; see [Whole-Dollar-Rounding.md](Whole-Dollar-Rounding.md)
 - SBD: *Small Business Deduction* — reduced corporate rate on the first $500,000 of ABI per year; ITA s.125
 - Schedule \<N\>, where N is a number: part of T2, often abbreviated as S\<N\>
 - Stated capital: corporate-statute measure of contributed capital per share class; the corporate-law analogue of PUC

@@ -183,6 +183,7 @@ Outputs (cumulative per symbol):
 
 - [Adjusted-Cost-Base.md](Adjusted-Cost-Base.md) - foundational ACB concepts, FX rate convention, and pooling rules this template implements
 - [Bank of Canada daily exchange rates](https://www.bankofcanada.ca/rates/exchange/daily-exchange-rates-lookup/) - source for FX CAD Rate values
+- [Whole-Dollar-Rounding.md](../Whole-Dollar-Rounding.md) - rounding cent-level per-unit ACB to whole-dollar GIFI/Schedule 6 figures
 
 
 ## Citations
