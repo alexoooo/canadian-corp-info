@@ -9,7 +9,7 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
 **TLDR**:
 - Every purchase a CCPC makes eventually becomes a deduction; the question is *which channel and when*
 - Three channels:
-  - *Cost of sales* (COGS) for inventory at the moment of sale
+  - *Cost of sales* (aka *Cost of Goods Sold*, COGS) for inventory at the moment of sale
   - *Capital Cost Allowance* (CCA) for depreciable property geometrically over years
   - *Construction in progress* (CIP) for self-constructed fixed assets, accumulating during the build then transferring to a CCA class on completion
 - The channel is set by the corp's *purpose at acquisition*: hold for resale (inventory), use as a fixed asset (CCA), or build a fixed asset (CIP → CCA)
@@ -22,26 +22,26 @@ Limitations:
 - The following is my understanding as of 2026
 
 
-## Three deduction channels \[in-progress]
+## Three deduction channels \[done]
 
-Channel is set by purpose at acquisition.
+The deduction *channel* is set by purpose at acquisition.
 
 *Inventory* (mechanics in [Inventory](Inventory.md)):
-- Property held for sale, or held to produce property for sale (ITA [s.248(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-248.html))
+- Purpose: property held for sale, or held to produce property for sale (ITA [s.248(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-248.html))
 - Cost: *landed cost* at acquisition (invoice price plus freight, duty, brokerage, and other costs of getting the unit to the corp's premises)
 - Valuation: lower of cost or fair market value each year-end (ITA s.10(1))
 - Deduction: COGS on Schedule 125 line 8518 at the moment a unit is sold
 
 *Depreciable property* (mechanics in [Capital Cost Allowance](Capital-Cost-Allowance.md)):
-- Long-lived assets the corp buys to use rather than resell
-- ITA s.18(1)(b) blocks immediate deduction; ITA s.20(1)(a) re-opens it through CCA
+- Purpose: long-lived assets the corp buys to use rather than resell
+- Mechanics: ITA s.18(1)(b) blocks immediate deduction; ITA s.20(1)(a) re-opens it through CCA
 - Cost: pooled in the class's *undepreciated capital cost* (UCC) under [s.13(21)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-13.html)
 - Rate: per-class, set by Regulation 1100; geometric decline for most classes, straight-line for Classes 13 and 14
 - Disposition: recapture (s.13(1)) or terminal loss (s.20(16)) closes the channel
 
 *Self-constructed fixed asset* (mechanics in [Materials and CIP](Materials-And-CIP.md)):
-- Materials and contractor labour going into a fixed asset built for the corp's own use; *not* inventory (s.18(1)(b) still blocks immediate deduction)
-- Cost accumulates in a `Construction in progress` (CIP) balance-sheet asset
+- Purpose: Materials and contractor labour going into a fixed asset built for the corp's own use; *not* inventory (s.18(1)(b) still blocks immediate deduction)
+- Mechanics: cost accumulates in a `Construction in progress` (CIP) balance-sheet asset
 - Trigger: *available for use* (ITA s.13(26)–(27)) transfers the accumulated cost into the appropriate CCA class
 - After transfer: standard CCA mechanics apply
 
