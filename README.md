@@ -25,7 +25,7 @@ Disclaimer: author is not an accountant, this is not financial or tax advice.
 
 AI generated, not verified yet:
 - [Cost Recovery](guide/Cost-Recovery/Cost-Recovery.md)
-  - [Inventory](guide/Cost-Recovery/Inventory.md)
+  - [Inventory and cost of goods sold](guide/Cost-Recovery/Inventory-And-COGS.md)
   - [Materials and CIP](guide/Cost-Recovery/Materials-And-CIP.md)
   - [Capital Cost Allowance](guide/Cost-Recovery/Capital-Cost-Allowance.md)
 - [Foreign Currency](guide/Foreign-Currency.md)

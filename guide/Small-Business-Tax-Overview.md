@@ -419,7 +419,7 @@ When a question gets specific, several layers of authority can apply:
 - [Adjusted Cost Base](Adjusted-Cost-Base/Adjusted-Cost-Base.md)
 - [Adjusted Cost Base — Tracking](Adjusted-Cost-Base/Adjusted-Cost-Base-Tracking.md)
 - [Cost Recovery](Cost-Recovery/Cost-Recovery.md)
-  - [Inventory](Cost-Recovery/Inventory.md)
+  - [Inventory](Cost-Recovery/Inventory-And-COGS.md)
   - [Materials and CIP](Cost-Recovery/Materials-And-CIP.md)
   - [Capital Cost Allowance](Cost-Recovery/Capital-Cost-Allowance.md)
 - [Capital Dividend Account](Capital-Dividend-Account/Capital-Dividend-Account.md)

@@ -28,7 +28,7 @@ Limitations:
 ## In this folder
 
 - [Cost Recovery](Cost-Recovery.md): overview of the three cost-recovery channels, concept map, and shared acquisition-cost / available-for-use / change-of-use rules
-- [Inventory](Inventory.md): goods held for resale
+- [Inventory](Inventory-And-COGS.md): goods held for resale
 - [Materials and CIP](Materials-And-CIP.md): self-constructed fixed assets feeding into a CCA class
 
 
@@ -422,7 +422,7 @@ Most owner-managed CCPCs simply carry the small residual on Schedule 8 indefinit
 
 - [Cost Recovery](Cost-Recovery.md)
 - [Materials and CIP](Materials-And-CIP.md)
-- [Inventory](Inventory.md)
+- [Inventory](Inventory-And-COGS.md)
 - [Small Business Tax Overview](../Small-Business-Tax-Overview.md)
 - [Adjusted Cost Base](../Adjusted-Cost-Base/Adjusted-Cost-Base.md)
 - [Capital Dividend Account](../Capital-Dividend-Account/Capital-Dividend-Account.md)

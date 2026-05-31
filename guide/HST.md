@@ -115,7 +115,7 @@ Two ledger accounts run alongside the corp's commercial activity through each re
 - `HST receivable` (asset): every input tax credit (ITC) the corp accrues; closed out against `HST payable` at the period-end net-tax calculation
 - `HST collected` or `HST payable` (liability): every dollar of HST the corp charges on a taxable supply; closed out against `HST receivable` at period-end
 
-This account naming is the canonical convention used in the worked examples on [Inventory](Cost-Recovery/Inventory.md), [Capital Cost Allowance](Cost-Recovery/Capital-Cost-Allowance.md), and [Materials and CIP](Cost-Recovery/Materials-And-CIP.md).  
+This account naming is the canonical convention used in the worked examples on [Inventory](Cost-Recovery/Inventory-And-COGS.md), [Capital Cost Allowance](Cost-Recovery/Capital-Cost-Allowance.md), and [Materials and CIP](Cost-Recovery/Materials-And-CIP.md).  
 
 Posting pattern on a sale to a Canadian customer (HST-registered Ontario corp):
 - Debit `Cash` or `Accounts receivable` = sale price + 13% HST
@@ -235,7 +235,7 @@ For the full bookkeeping, invoice presentation, and the W-8BEN-E interaction wit
 Import HST on goods:
 - Collected by *Canada Border Services Agency* (CBSA) at the point of import on Form *B3 Canada Customs Coding Form*, calculated on the duty-paid value of the goods
 - If the corp is a GST/HST registrant, the import HST is recoverable as an ITC on the next return; the CBSA *Customs Coding Document* (the B3-1 receipted copy) is the documentary support
-- If the corp is not registered, the import HST is permanent landed cost and is capitalized into inventory or capital cost (see [Inventory](Cost-Recovery/Inventory.md#imported-goods-and-fx) and [Capital Cost Allowance](Cost-Recovery/Capital-Cost-Allowance.md))
+- If the corp is not registered, the import HST is permanent landed cost and is capitalized into inventory or capital cost (see [Inventory](Cost-Recovery/Inventory-And-COGS.md#imported-goods-and-fx) and [Capital Cost Allowance](Cost-Recovery/Capital-Cost-Allowance.md))
 
 Import HST on services and intangibles:
 - *Self-assessed* by the recipient under ETA [s.218.1](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-218.1.html) when an imported service is acquired for use otherwise than exclusively in commercial activity
@@ -411,7 +411,7 @@ The break-even point against the regular method on Ontario services is roughly t
 - *Bad debts*: when an HST-charged invoice is written off as uncollectible, the corp recovers the HST through a *bad-debt adjustment* on a future return (ETA [s.231](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-231.html)); the recovery requires the debt to have been written off in the books and the supply to have been previously taxable
 - *Inter-corporate supplies* between closely related corporations: an election under ETA [s.156](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-156.html) zero-rates most supplies between qualifying members of a closely related group; filed jointly on Form RC4616; useful in an opco/holdco structure and out of scope here
 - *Voluntary disclosure*: missed past returns or unclaimed ITCs can be corrected through the *Voluntary Disclosures Program* (VDP) if the corp comes forward before CRA initiates contact; penalty relief and partial interest relief are available
-- *Shareholder benefit and inventory appropriation*: when a CCPC gives goods to a shareholder or to a related person, the *self-supply* and *change-of-use* rules can trigger GST/HST on the deemed disposition (ETA s.172, s.190); see [Inventory](Cost-Recovery/Inventory.md#edge-cases) for the income-tax side
+- *Shareholder benefit and inventory appropriation*: when a CCPC gives goods to a shareholder or to a related person, the *self-supply* and *change-of-use* rules can trigger GST/HST on the deemed disposition (ETA s.172, s.190); see [Inventory](Cost-Recovery/Inventory-And-COGS.md#edge-cases) for the income-tax side
 - *Trust account convention*: HST collected is the corp's money in a legal sense (the corp is the debtor to CRA, not a trustee), but practical bookkeeping often treats it as a quasi-trust; do not commingle the cash with operating funds beyond what is necessary, especially for a corp on monthly or quarterly reporting
 
 
@@ -420,7 +420,7 @@ The break-even point against the regular method on Ontario services is roughly t
 - [Small Business Tax Overview](Small-Business-Tax-Overview.md)
 - [Foreign Currency](Foreign-Currency.md)
 - [Cost Recovery](Cost-Recovery/Cost-Recovery.md)
-  - [Inventory](Cost-Recovery/Inventory.md)
+  - [Inventory](Cost-Recovery/Inventory-And-COGS.md)
   - [Capital Cost Allowance](Cost-Recovery/Capital-Cost-Allowance.md)
   - [Materials and CIP](Cost-Recovery/Materials-And-CIP.md)
 - [Payment](Payment/Payment.md)

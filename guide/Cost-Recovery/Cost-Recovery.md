@@ -26,7 +26,7 @@ Limitations:
 
 The deduction *channel* is set by purpose at acquisition.
 
-*Inventory* (mechanics in [Inventory](Inventory.md)):
+*Inventory* (mechanics in [Inventory](Inventory-And-COGS.md)):
 - Purpose: property held for sale, or held to produce property for sale (ITA [s.248(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-248.html))
 - Cost: *landed cost* at acquisition (invoice price plus freight, duty, brokerage, and other costs of getting the unit to the corp's premises)
 - Valuation: lower of cost or fair market value each year-end (ITA s.10(1))
@@ -246,4 +246,4 @@ A CIP balance is never directly disposed of:
 
 ## TODO
 
-- A unified Cost-Recovery glossary subset (capitalize, expense, landed cost, available for use, UCC, COGS, change in use) may be worth pulling out once the sub-pages stabilize
+- A unified Cost-Recovery glossary subset (capitalize, expense, available for use, change in use) may be worth pulling out once the sub-pages stabilize

@@ -101,7 +101,7 @@ A consistent rule avoids the slow upward bias that comes from always rounding a 
 Rounding from cents to whole dollars matters most where a calculation produces many decimal places:
 - *Foreign-currency translation*: Bank of Canada rates carry four decimals, so converted balances rarely land on a whole cent, let alone a whole dollar; see [Foreign Currency](Foreign-Currency.md)
 - *ACB per-unit averages*: pooled average cost divides to fractions of a cent per unit, then multiplies back up on a disposition; see [Adjusted Cost Base - Tracking](Adjusted-Cost-Base/Adjusted-Cost-Base-Tracking.md)
-- *Inventory*: weighted-average unit cost and lower-of-cost-or-market write-downs produce fractional cents that must reconcile across the balance sheet and cost of sales; see [Inventory](Cost-Recovery/Inventory.md)
+- *Inventory*: weighted-average unit cost and lower-of-cost-or-market write-downs produce fractional cents that must reconcile across the balance sheet and cost of sales; see [Inventory](Cost-Recovery/Inventory-And-COGS.md)
 - *Capital cost allowance*: declining-balance rates and the half-year adjustment applied to a UCC pool seldom yield whole dollars; see [Capital Cost Allowance](Cost-Recovery/Capital-Cost-Allowance.md)
 
 In every case the rule is the same: keep the working figures to the cent, round at the GIFI mapping, and let a designated line absorb the residual.
@@ -112,7 +112,7 @@ In every case the rule is the same: keep the working figures to the cent, round 
 - [Small Business Tax Overview](Small-Business-Tax-Overview.md) — bookkeeping, the general ledger, and GIFI
 - [Foreign Currency](Foreign-Currency.md)
 - [Adjusted Cost Base - Tracking](Adjusted-Cost-Base/Adjusted-Cost-Base-Tracking.md)
-- [Inventory](Cost-Recovery/Inventory.md)
+- [Inventory](Cost-Recovery/Inventory-And-COGS.md)
 - [Capital Cost Allowance](Cost-Recovery/Capital-Cost-Allowance.md)
 - [GST/HST](HST.md)
 - [Glossary](Glossary.md)

@@ -26,7 +26,7 @@ Limitations:
 ## In this folder
 
 - [Cost Recovery](Cost-Recovery.md): overview of the three cost-recovery channels, concept map, and shared acquisition-cost / available-for-use / change-of-use rules
-- [Inventory](Inventory.md): goods held for resale
+- [Inventory](Inventory-And-COGS.md): goods held for resale
 - [Capital Cost Allowance](Capital-Cost-Allowance.md): depreciable property after the CIP transfer
 
 
@@ -156,7 +156,7 @@ Schedule 125 year 2 (2027):
 - Operating expenses: `8670 Amortization of tangible assets` reflects whatever book amortization the corp posted for the shed and any other tangibles
 - Schedule 1 then adds back book amortization and deducts CCA (the $575 from Schedule 8); see [Capital Cost Allowance](Capital-Cost-Allowance.md) for the reconciliation mechanics
 
-Contrast with [Inventory](Inventory.md):
+Contrast with [Inventory](Inventory-And-COGS.md):
 - The same dollars as resale inventory would have flowed through COGS within a year or two
 - As own-use construction inputs, the same dollars flow through CCA on the Class 6 geometric tail (10% declining; ~96% of cost expensed by year 30)
 
@@ -174,7 +174,7 @@ Contrast with [Inventory](Inventory.md):
 ## Related
 
 - [Cost Recovery](Cost-Recovery.md)
-- [Inventory](Inventory.md)
+- [Inventory](Inventory-And-COGS.md)
 - [Capital Cost Allowance](Capital-Cost-Allowance.md)
 - [Small Business Tax Overview](../Small-Business-Tax-Overview.md)
 - [HST](../HST.md)

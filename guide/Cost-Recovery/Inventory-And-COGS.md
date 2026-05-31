@@ -1,6 +1,6 @@
 STATUS: AI GENERATED, REVIEW IN PROGRESS
 
-# Inventory \[done]
+# Inventory and cost of goods sold \[done]
 
 **Who this is for**:
 - Owners of a Canadian-controlled private corporation (CCPC)
@@ -63,6 +63,24 @@ If purpose changes after acquisition (say a delivery van bought to resell, then 
 The deemed-disposition rules in s.45 / s.13(7) apply and trigger a transfer between inventory and a CCA class at fair market value.  
 This is rare for a typical CCPC and is out of scope here.  
 See [Cost Recovery — Change of use](Cost-Recovery.md#change-of-use) for the cross-channel framing.  
+
+
+## Cost of goods sold
+
+*Cost of sales* (aka *cost of goods sold*, COGS) is the cost of the inventory units that sold during the year, matched against the revenue they produced.  
+It is a deduction from business income under ITA [s.9](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-9.html), recognized at the moment a unit is sold rather than when it is bought; s.9 is the parent rule, not a stand-alone COGS provision.  
+Unlike *Capital Cost Allowance* (CCA), the cost is not spread over years; unlike a *construction in progress* (CIP) balance, it is deductible (see [Cost Recovery](Cost-Recovery.md) for the channel split).  
+
+The cost-of-sales identity:
+- Opening inventory + purchases (net of returns) + freight-in + other direct costs − closing inventory = COGS
+- Schedule 125 enforces it as lines 8300 + 8320 + 8457 + 8450 − 8500 = 8518
+- the closing figure is set by the year-end *lower of cost or fair market value* (LCM) valuation under ITA [s.10(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-10.html), so the valuation method drives COGS directly
+- the cost-flow method is fixed year over year under s.10(2); valuing all inventory at FMV instead is the Regulation 1801 alternative
+
+Mechanics, further down this page:
+- the running per-sale figure (units sold × current average cost) and the cost-of-sales GIFI codes (`8300`–`8519`): [Tracking through the year](#tracking-through-the-year)
+- the identity check and the Schedule 125 / Schedule 100 posting: [Year-end reconciliation](#year-end-reconciliation), [Bookkeeping and T2 schedules](#bookkeeping-and-t2-schedules)
+- shrinkage and LCM write-downs run through COGS (`8518`)
 
 
 ## Valuation methods
@@ -440,5 +458,3 @@ Year-end Schedule 125 if 300 units are sold during the year at $70 each:
 - Manufacturing WIP treatment: a section walking conversion-cost build-up under ASPE 3031 / IFRS IAS 2 and the M&P Class 53 CCA tie-in
 - s.10(2.1) method-change procedure: format of the written request, supporting evidence, CRA processing timeline
 - Cross-reference with [Foreign Currency](../Foreign-Currency.md) once that page is past the stub phase
-- Add inventory terms to [Glossary](../Glossary.md) on a separate maintainer pass: COGS, FMV, LCM, WIP, weighted-average cost, landed cost, perpetual / periodic inventory
-- Rename to "Inventory-And-COGS.md"?
