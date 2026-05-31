@@ -57,6 +57,7 @@ These deemed-dividend mechanics are used mainly for restructuring transactions (
 
 A *shareholder loan* from the corp is a debt the shareholder owes back, not a distribution.  
 If the loan is not repaid within one year after the end of the corp's tax year in which it was made, ITA [s.15(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-15.html) includes the full loan amount in the shareholder's personal income for the year the loan was made.  
+The broader s.15(1) rules on benefits the corp confers on a shareholder (personal use of corporate property, a personal expense paid by the corp) are covered in [Owner-corporation transactions](Owner-Corporation-Transactions.md).  
 
 
 ## The three dividend flavours
@@ -597,6 +598,7 @@ For full mechanics, see [Capital-Dividend-Account.md](Capital-Dividend-Account/C
 ## Related
 
 - [Small Business Tax Overview](Small-Business-Tax-Overview.md)
+- [Owner-corporation transactions](Owner-Corporation-Transactions.md)
 - [Adjusted Cost Base](Adjusted-Cost-Base/Adjusted-Cost-Base.md)
 - [Capital Dividend Account](Capital-Dividend-Account/Capital-Dividend-Account.md)
 - [T3](T3/T3.md)

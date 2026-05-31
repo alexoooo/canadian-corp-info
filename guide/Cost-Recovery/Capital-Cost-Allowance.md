@@ -412,7 +412,7 @@ Most owner-managed CCPCs simply carry the small residual on Schedule 8 indefinit
 
 ## Edge cases worth a short note
 
-- *Personal-use proportion* on a vehicle: keep a kilometre log; the personal-use portion of CCA, fuel, insurance, and other vehicle costs is a shareholder benefit under ITA s.6 / s.15 and must be added to the shareholder's personal income
+- *Personal-use proportion* on a vehicle: keep a kilometre log; the personal-use portion of CCA, fuel, insurance, and other vehicle costs is a shareholder benefit under ITA s.6 / s.15 and must be added to the shareholder's personal income; see [Owner-corporation transactions](../Owner-Corporation-Transactions.md) for the standby charge, operating cost benefit, and the personal-car allowance alternative
 - *Investment Tax Credit recapture*: ITCs claimed against capital cost reduce UCC in the next year (s.13(7.1)); relevant for SR&ED claimants
 - *Available-for-use 357-day delay*: cost of property bought in the last weeks of a fiscal year is capitalized but ineligible for CCA until next year if not yet in service
 - *Non-arm's-length acquisitions*: deemed-cost rules in s.13(7)(e) cap UCC at the seller's UCC plus a fraction of any gain — common in family-CCPC transfers, share rollovers under s.85, and asset transfers between associated corporations
@@ -427,6 +427,7 @@ Most owner-managed CCPCs simply carry the small residual on Schedule 8 indefinit
 - [Adjusted Cost Base](../Adjusted-Cost-Base/Adjusted-Cost-Base.md)
 - [Capital Dividend Account](../Capital-Dividend-Account/Capital-Dividend-Account.md)
 - [HST](../HST.md)
+- [Owner-corporation transactions](../Owner-Corporation-Transactions.md)
 - [Glossary](../Glossary.md)
 - [Whole-dollar rounding](../Whole-Dollar-Rounding.md)
 

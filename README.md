@@ -31,6 +31,7 @@ AI generated, not verified yet:
 - [Foreign Currency](guide/Foreign-Currency.md)
 - [ERDTOH and NERDTOH](guide/ERDTOH-NERDTOH.md)
 - [Shareholder-Dividends](guide/Shareholder-Dividends.md)
+- [Owner-corporation transactions](guide/Owner-Corporation-Transactions.md)
 - [Glossary](guide/Glossary.md)
 - [HST](guide/HST.md)
 - [Whole-dollar rounding](guide/Whole-Dollar-Rounding.md)
