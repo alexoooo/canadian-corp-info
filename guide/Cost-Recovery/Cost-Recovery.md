@@ -45,6 +45,31 @@ The deduction *channel* is set by purpose at acquisition.
 - Trigger: *available for use* (ITA s.13(26)–(27)) transfers the accumulated cost into the appropriate CCA class
 - After transfer: standard CCA mechanics apply
 
+
+## Inventory versus materials: same entry, different exit
+
+Inventory and the materials that go into a self-constructed fixed asset are the two channels that look alike: both are balance-sheet asset accounts holding capitalized cost until it becomes a deduction, and the *same* physical item (a length of lumber) can land in either. The purchase entry is effectively identical. What separates them is the *exit*, not the entry.
+
+What is the same:
+- *Classification input*: purpose at acquisition decides the channel, not the item; the same lumber is inventory for a furniture-maker building chairs to sell and CIP for a corp building its own shed
+- *Acquisition cost*: both capitalize the same landed-cost components under the shared rules in [Acquisition cost](#acquisition-cost-what-gets-capitalized)
+- *Purchase entry*: debit the asset account, debit `HST receivable` for the recoverable ITC, credit cash or accounts payable
+- *No deduction while parked*: dollars sitting in either account produce no deduction until they leave
+- *Running weighted-average*: both can be tracked as an averaged pool; inventory averages because units sell one at a time, and a *shared* materials pool averages because several builds draw from it ([Materials and CIP — Multiple builds from a shared materials pool](Materials-And-CIP.md#multiple-builds-from-a-shared-materials-pool)); a single-build project needs no averaging at all
+
+How they differ, all on the exit side:
+- *What leaves, and when*: inventory leaves a few units at a time, each at a sale; materials leave as the whole accumulated cost of a finished asset, once, at available-for-use
+- *Trigger*: a sale, versus *available for use* (s.13(26)–(27)) moving the cost into a CCA class
+- *Where the cost lands*: `Cost of sales` on Schedule 125 (line 8518), versus a CCA class pool on Schedule 8
+- *Deduction speed*: all at once at the moment of sale, versus geometrically over years through CCA
+- *Year-end revaluation*: inventory is written down to fair market value under LCM (s.10(1)); a CIP balance carries at cost with no tax revaluation
+- *Balance-sheet codes*: inventory on the 1120-series GIFI codes, versus the fixed-asset section (a CIP sub-account, then a CCA class line), never the 1120-series
+- *Method lock*: the inventory cost-flow method is fixed year over year (s.10(2)); a materials pool only needs a reasonable, consistent costing method, with no equivalent statutory lock
+- *Disposition*: no capital-gains treatment on inventory; the finished fixed asset can trigger recapture, terminal loss, or a capital gain (see [Disposition mechanics](#disposition-mechanics))
+
+So "both use average cost" is true but does not collapse them into one channel. The averaging only costs what leaves each pool; the pools drain into different deduction channels, on different triggers, at different speeds, and that is the distinction.
+
+
 ## Terminology: Amortization / Depreciation / CCA \[done]
 
 *Amortization* and *Depreciation* are two names for the same mechanism.
