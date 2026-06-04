@@ -26,7 +26,7 @@ Limitations:
 
 The deduction *channel* is set by purpose at acquisition.
 
-*Inventory* (mechanics in [Inventory](Inventory-And-COGS.md)):
+*Inventory* (mechanics in [Inventory-And-COGS](Inventory-And-COGS.md)):
 - Purpose: property held for sale, or held to produce property for sale (ITA [s.248(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-248.html))
 - Cost: *landed cost* at acquisition (invoice price plus freight, duty, brokerage, and other costs of getting the unit to the corp's premises)
 - Valuation: lower of cost or fair market value each year-end (ITA s.10(1))
@@ -45,19 +45,37 @@ The deduction *channel* is set by purpose at acquisition.
 - Trigger: *available for use* (ITA s.13(26)–(27)) transfers the accumulated cost into the appropriate CCA class
 - After transfer: standard CCA mechanics apply
 
+## Terminology: Amortization / Depreciation / CCA \[done]
 
-## Depreciation and classes
+*Amortization* and *Depreciation* are two names for the same mechanism.
+For tax, neither label matters, as the CRA doesn't use either terms, instead referring to the mechanism as *CCA*.
 
-*Depreciation* spreads a long-lived asset's cost across the years it is used instead of expensing it all at once.  
-Two versions, computed differently:
-- *Accounting depreciation*: the figure recorded in the corporation's own books; the method and rate are an accounting choice (commonly straight-line over the asset's estimated useful life)
-- *Tax depreciation* (CCA): the figure allowed on the T2 return; the method and rate are fixed by the Income Tax Act, not chosen by the corp
+In common usage, there are two conventions:
+- IFRS (international accounting standard): reserves *depreciation* for tangible assets and *amortization* for intangibles such as patents
+- ASPE (Canadian accounting standard): uses *amortization* as the umbrella term for tangible property too
 
-Only CCA is deductible: ITA s.18(1)(b) blocks accounting depreciation and s.20(1)(a) substitutes CCA.  
-A corporation keeping full accounting-standard books records accounting depreciation, then adds it back on Schedule 1 and deducts CCA on Schedule 8 in its place.  
+This guide generally uses *amortization*, but *depreciation* can be used interchangeably.
+
+There are two distinct concepts of amortization:
+- *Accounting amortization*: the figure recorded in the corporation's own books; the method and rate are an accounting choice (e.g. geometric, or straight-line over the asset's estimated useful life)
+- *Tax amortization* (CCA): the figure allowed on the T2 return; the method (geometric) and rate (based on class) are fixed by the Income Tax Act
+
+
+## Amortization and classes \[wip]
+
+*Amortization* spreads a long-lived asset's cost across the years it is used instead of expensing it all at once.
+
+Only CCA is relevant for taxes (deductible): ITA s.18(1)(b) blocks accounting amortization and s.20(1)(a) substitutes CCA.
+
+In this guide, we focus on tax-basis accounting, where accounting is done as a reflection of taxes.  
+For our purpose, the two concepts are combined, but it is possible to treat them separately, which is out of scope in this guide.
+
+When using IFRS/ASPE/GAAP accounting standards, a corporation:
+- Tracks full accounting-standard records of accounting amortization
+- Adds it back on Schedule 1 and deducts CCA on Schedule 8 in its place
 
 This guide keeps the books on a *tax basis*, where the book figures are the T2 figures (see [Small Business Tax Overview](../Small-Business-Tax-Overview.md)).  
-On a tax basis there is no separate accounting-depreciation schedule to reconcile: the CCA amount is booked directly as the period's depreciation.  
+Using tax basis, there is no separate accounting-depreciation schedule to reconcile: the CCA amount is booked directly as the period's depreciation.  
 The worked examples therefore use CCA's declining-balance (geometric) method as the depreciation figure.  
 
 CCA does not track each asset individually.  
