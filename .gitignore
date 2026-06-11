@@ -5,3 +5,6 @@
 .claude/.credentials.json
 .claude/cache/
 .claude/logs/
+
+# Transient audit working folder (see docs/Audit-Instructions.md); removed on delivery
+audit/wip/

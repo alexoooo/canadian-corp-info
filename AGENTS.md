@@ -7,7 +7,7 @@ This is the single source of truth for project context, editorial conventions, a
 
 ## Repository nature
 
-This is a **documentation-only** repository. There is no build system, test suite, lint tooling, or package manifest. The root holds `README.md`, `AGENTS.md`, `CLAUDE.md`, an `audit/` folder, and a `guide/` folder containing all topic content (with screenshots co-located alongside the pages that reference them). Edits are content edits; "running" the project means previewing Markdown.
+This is a **documentation-only** repository. There is no build system, test suite, lint tooling, or package manifest. The root holds `README.md`, `AGENTS.md`, `CLAUDE.md`, a `docs/` folder (process docs for agents, e.g. the audit playbook), an `audit/` folder, and a `guide/` folder containing all topic content (with screenshots co-located alongside the pages that reference them). Edits are content edits; "running" the project means previewing Markdown.
 
 The audience is narrow: owners of a Canadian-controlled private corporation (CCPC), typically holding stocks/ETFs in a corporate trading account. Keep that frame — do not generalize content to personal tax, US filers, or other entity types unless the existing document already does. A brief contrast with sole-proprietor or personal-tax treatment is allowed where it clarifies the corporate treatment and stays clearly secondary (see `guide/Owner-Corporation-Transactions.md`); do not let such a contrast grow into general personal-tax coverage.
 
@@ -163,6 +163,10 @@ and the reasoning-effort level is the model's setting (e.g. `Opus-4.7-xhigh`). B
 the reasoning-effort suffix are required; never omit the suffix. Each audit is a
 read-only record of findings; fixes land in separate follow-up commits so the audit and the
 response stay separable in git history.
+
+The full process — operating mode, verification discipline, the document skeleton, and the
+follow-up review — is in [`docs/Audit-Instructions.md`](docs/Audit-Instructions.md). Follow it when
+asked to run an audit.
 
 ---
 
