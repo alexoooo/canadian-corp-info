@@ -160,7 +160,9 @@ Periodic documentation audits live under `audit/`. Filenames follow the pattern
 `<YYYY-MM-DD>_Audit-Followup_<Model>-<reasoning-effort>.md` for one that primarily verifies
 fixes from a prior audit. The date is when the audit was run, the model is the one that ran it,
 and the reasoning-effort level is the model's setting (e.g. `Opus-4.7-xhigh`). Both the model and
-the reasoning-effort suffix are required; never omit the suffix. Each audit is a
+the reasoning-effort suffix are required; never omit the suffix. Read both tokens programmatically
+from the live session (the same `model.display_name`/`effort.level` the status line consumes) —
+never guess them; see [Audit Instructions](docs/Audit-Instructions.md) for how. Each audit is a
 read-only record of findings; fixes land in separate follow-up commits so the audit and the
 response stay separable in git history.
 

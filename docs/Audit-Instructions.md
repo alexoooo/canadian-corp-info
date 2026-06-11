@@ -21,7 +21,7 @@ A follow-up review is the second half of the cycle: after the audit's fixes land
 
 Work sequentially and resumably — the audit must survive a context reset:
 
-- Launch at most one side agent at a time; do not fan out many agents in parallel
+- Run at most one side agent at a time. One agent serves context non-contamination — keeping bulky reads and dead-ends out of the main thread — and running them one at a time keeps the checkpoint trail intact. Do not fan out parallel agents for throughput: parallel work can't be checkpointed page-by-page, so a context reset loses all of it at once and defeats the resumability this section exists to protect
 - Before reading content, write the audit plan as a checklist and save it under `audit/wip/`; iterate it as work proceeds
 - Checkpoint partial findings to `audit/wip/` as each page or cluster is finished, so a fresh session resumes from a good state instead of restarting
 - Remove `audit/wip/` once the final audit document is delivered
@@ -39,7 +39,7 @@ The standing rule is no false positives — a wrong finding wastes the maintaine
 
 ## Full-audit document
 
-Filename: `<YYYY-MM-DD>_Audit_<Model>-<effort>.md` under `audit/`. The date is when the audit ran, the model is the one running it, and `<effort>` is the reasoning-effort setting read from `~/.claude/settings.json` `effortLevel` — never guessed.
+Filename: `<YYYY-MM-DD>_Audit_<Model>-<effort>.md` under `audit/`. The date is when the audit ran. Both `<Model>` and `<effort>` describe the live session and must be read programmatically — never guessed. They are the same two values the status line prints: Claude Code feeds the `statusLine` command a JSON payload whose `model.display_name` and `effort.level` are exactly these tokens (see `~/.claude/statusline.py`). Read the effort from `~/.claude/settings.json` `effortLevel`; take the model from the session's model identity, normalised to its hyphenated short form (`Fable 5` → `Fable-5`, dropping any `(1M context)` qualifier). A session-only effort override reaches the status line but may not be written to settings.json — if the two could disagree, confirm the live value rather than assuming. Cautionary tale: a prior run named its file `Fable-5-xhigh` from a guessed suffix when the session was running at `high` — the correct name was `Fable-5-high`.
 
 Section skeleton:
 
@@ -73,7 +73,7 @@ Coding scheme: a per-page letter prefix plus a sequential number (`CR-1`, `CR-2`
 
 ## Follow-up review
 
-Filename: `<YYYY-MM-DD>_Audit-Followup_<Model>-<effort>.md`. Run it after the audit's fixes have landed (typically a separate commit), to confirm they held and nothing regressed.
+Filename: `<YYYY-MM-DD>_Audit-Followup_<Model>-<effort>.md` — same `<Model>`/`<effort>` rule as the full audit (read programmatically, never guessed). Run it after the audit's fixes have landed (typically a separate commit), to confirm they held and nothing regressed.
 
 Section skeleton:
 
