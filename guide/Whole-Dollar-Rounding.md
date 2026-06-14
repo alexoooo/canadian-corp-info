@@ -1,6 +1,5 @@
 STATUS: AI GENERATED, REVIEW IN PROGRESS
 
-
 # Whole-dollar rounding
 
 **Who this is for**:
@@ -48,7 +47,7 @@ The detail now over-states the total by $1. Nudging one line by hand fixes this 
 - *Round to the nearest dollar*: a fractional amount rounds to the nearest whole dollar; an amount exactly halfway rounds up to the higher dollar (round half up) — so $10,500.49 becomes $10,500 and $10,500.50 becomes $10,501
 - *GST/HST is separate*: sales tax is rounded to the nearest cent, not the nearest dollar, and follows its own rules on the GST/HST return; see [GST/HST](HST.md)
 
-Round half up is the convention used across CRA's income-tax calculations; banker's rounding (round half to even) shows up only in narrow places such as the annual indexation of tax brackets, and does not apply here.
+Round half up is the convention used across CRA's income-tax calculations, including the annual indexation of tax brackets (ITA [s.117.1(3)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-117.1.html) rounds an equidistant amount to the higher dollar); banker's rounding (round half to even) does not apply here.
 
 
 ## Systematic methods
@@ -120,6 +119,7 @@ In every case the rule is the same: keep the working figures to the cent, round 
 
 ## Citations
 
+- ITA [s.117.1(3)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-117.1.html) - indexed amounts rounded to the nearest dollar, equidistant amounts to the higher dollar (round half up)
 - CRA RC4088 - General Index of Financial Information (GIFI): https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4088/general-index-financial-information-gifi.html
 - CRA T4012 - T2 Corporation Income Tax Guide: https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4012/t2-corporation-income-tax-guide.html
 - CRA T2 SCH 100 - Balance Sheet Information: https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2sch100.html

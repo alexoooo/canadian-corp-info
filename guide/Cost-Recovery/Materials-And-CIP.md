@@ -1,6 +1,6 @@
 STATUS: AI GENERATED, REVIEW IN PROGRESS
 
-# Materials and Construction in Progress \[done]
+# Materials and Construction in Progress <!-- [done] -->
 
 **Who this is for**:
 - Owners of a Canadian-controlled private corporation (CCPC)
@@ -51,15 +51,15 @@ Deduction timing by path:
 
 Available-for-use rule for self-constructed assets:
 - A shed under construction sits in CIP and produces no deduction: not inventory (no COGS), not yet available for use (no CCA)
-- *Available for use* is the earliest of: first use to earn income; the point at which the asset is capable of producing the intended service; or the end of the second tax year after acquisition (the rolling-two-year / 357-day rule under s.13(27))
+- *Available for use* is the earliest of: first use to earn income; the point at which the asset is capable of producing the intended service; or the beginning of the second tax year after the acquisition year (the rolling-two-year / 357-day rule under s.13(27))
 - Until that point, accumulated costs sit as a non-deducting asset balance
 - See [Cost Recovery — Available for use](Cost-Recovery.md#available-for-use) for the full cross-channel framing, including the building variant under s.13(28)
 
 Change of use, finished item from the resale shelf into own use:
-- A tool-retailer CCPC pulling a $1,200 saw from inventory into the workshop is a *change in use* event under s.45 / s.13(7)
-- Book entry transfers the unit's cost from inventory to a Class 8 fixed asset at fair market value
+- A tool-retailer CCPC pulling a $1,200 saw from inventory into the workshop is a *change in use* event
+- On CRA's position (archived IT-102R2) the conversion is not a disposition: the book entry transfers the unit's *inventory value* from inventory to a Class 8 fixed asset, and that value becomes the capital cost
 - CCA mechanics apply from the conversion date
-- See [Cost Recovery — Change of use](Cost-Recovery.md#change-of-use) for the cross-channel framing and the HST-side adjustment under ETA s.206
+- See [Cost Recovery — Change of use](Cost-Recovery.md#change-of-use) for the cross-channel framing (including the contested s.45 / s.13(7) reading) and the HST-side adjustment under ETA s.199(3) / s.200(2)
 
 See [Capital Cost Allowance](Capital-Cost-Allowance.md) for the half-year rule, UCC mechanics, recapture, and terminal loss.
 
@@ -116,7 +116,7 @@ The single-build picture above is the base case: materials bought straight into 
 Where the averaging lives:
 - The weighted-average sits in Layer 1, on the pooled material, because the pool is drawn down a BOM at a time and each draw needs a cost assigned to it; this is the same reason inventory uses a cost-flow assumption
 - The Layer 3 transfer is still a lump per build; the averaging upstream and the lump transfer downstream are both true, at different layers
-- Weighted-average is a reasonable and consistent choice for the pool; unlike inventory there is no s.10(2) method-lock, since these materials are not inventory; specific identification is tighter when materials are individually tagged and high-value
+- Weighted-average is a reasonable and consistent choice for the pool; unlike inventory there is no s.10(2.1) method-lock, since these materials are not inventory; specific identification is tighter when materials are individually tagged and high-value
 
 Year-end, before a build is available for use:
 - Unconsumed pool and in-progress CIP are both non-deducting asset balances: no COGS (never inventory), no CCA (not yet available for use)
@@ -335,6 +335,7 @@ On the schedules: no cost-of-sales entries in either year (never inventory); Sch
 - CRA T2 SCH 100 - Balance Sheet Information: https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2sch100.html
 - CRA T2 SCH 8 - Capital Cost Allowance: https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2sch8.html
 - CRA Income Tax Folio S3-F4-C1 - General Discussion of Capital Cost Allowance: https://www.canada.ca/en/revenue-agency/services/tax/technical-information/income-tax/income-tax-folios-index/series-3-property-investments-savings-plans/series-3-property-investments-savings-plans-folio-4-capital-cost-allowance/income-tax-folio-s3-f4-c1-general-discussion-capital-cost-allowance.html
+- CRA Interpretation Bulletin IT-102R2 (archived) - Conversion of property, other than real property, from or to inventory: https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/it102r2.html
 
 
 ## TODO

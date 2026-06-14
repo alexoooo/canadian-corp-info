@@ -52,7 +52,7 @@ Common classes for an owner-managed CCPC:
 - *Class 8* (20%, declining): office furniture, photocopiers, tools costing $500 or more, equipment not in another class; half-year applies — the catch-all
 - *Class 10* (30%, declining): motor vehicles, vans, light trucks, pickup trucks under the passenger-vehicle cost threshold; one shared pool for all vehicles
 - *Class 10.1* (30%, declining): passenger vehicles whose cost exceeds the prescribed limit ($39,000 + sales taxes in 2026, up from $38,000 in 2025); each vehicle goes in *its own separate Class 10.1*; no recapture, no terminal loss, half-CCA in year of disposition under Regulation 1100(2.5)
-- *Class 12* (100%, no half-year for most items): small tools costing under $500, kitchen utensils, uniforms, application software (other than systems software); the half-year rule does apply to dies, jigs, moulds, and the cutting or shaping part of a machine
+- *Class 12* (100%, no half-year for most items): small tools costing under $500, kitchen utensils, uniforms, application software (other than systems software); the half-year rule does apply to application software, films, dies, jigs, moulds, and the cutting or shaping part of a machine
 - *Class 13* (straight-line over lease term + first renewal; minimum 5 years, maximum 40 years): leasehold improvements; exempt from the Regulation 1100(2) half-year rule (its first-year allowance is instead limited under Schedule III / para 1100(1)(b))
 - *Class 14* (straight-line over remaining legal life): limited-life intangibles (patents, franchises, licences with a fixed term); no half-year
 - *Class 14.1* (5%, declining): goodwill, incorporation expenses over $3,000, customer lists, unlimited-life intangibles; half-year applies; replaced the pre-2017 *eligible capital property* (ECP) regime
@@ -141,11 +141,12 @@ CCA cannot be claimed on a class addition until the property is *available for u
 For non-buildings (s.13(27)), the earliest of:
 - First time it is used to earn income
 - Capable of producing a commercially saleable product or service
-- End of the second tax year after acquisition (the rolling-two-year / 357-day rule)
+- Beginning of the second tax year after the acquisition year (the rolling-two-year / 357-day rule)
 
 For buildings (s.13(28)), the earliest of:
 - All or substantially all (~90%) of the building first used for its intended purpose
 - Construction substantially complete
+- Beginning of the second tax year after the acquisition year (the same 357-day rolling rule, s.13(28)(c))
 
 See [Cost Recovery — Available for use](Cost-Recovery.md#available-for-use) for the cross-channel framing, including how the same trigger applies to a CIP balance transferring into a CCA class.
 
@@ -192,13 +193,13 @@ Class 10.1 exception (ITA [s.20(16.1)](https://laws-lois.justice.gc.ca/eng/acts/
 
 Class 14.1 exception (s.20(16.1)(c)): no terminal loss unless the business ceases.  
 
-Anti-replacement rule (s.20(16.1)(b)): no terminal loss if replacement property of the same class is acquired within 24 months.
+Former-property exception (s.20(16.1)(b)): a narrow rule tied to the s.13(4)/(4.2) former-property elections (franchises, concessions, licences) — no terminal loss when a *similar* property is acquired within 24 months for the same fixed place and is still owned at year-end. It is not a general bar on claiming a terminal loss after replacing a same-class asset.
 
 
 ## Special class rules to be careful about
 
 - *Class 10.1*: each vehicle is a separate class; capped capital cost; no recapture or terminal loss; half-CCA on disposition (above)
-- *Class 12 with half-year*: dies, jigs, moulds, and the cutting or shaping part of a machine *are* subject to the half-year rule even though most of Class 12 is not
+- *Class 12 with half-year*: application software, films, dies, jigs, moulds, and the cutting or shaping part of a machine *are* subject to the half-year rule even though most of Class 12 is not
 - *Class 13*: straight-line over (lease term + first renewal), minimum 5 years, maximum 40 years; recompute the schedule if the lease is amended
 - *Class 14*: straight-line over the actual remaining legal life of the intangible
 - *Class 14.1*: 5% declining; pre-2017 CEC transitional balances use 7%; the first $3,000 of incorporation expenses is a one-time deduction, not Class 14.1
@@ -289,7 +290,7 @@ Setup: single-shareholder IT consulting CCPC. Buys a laptop for $4,520 (includin
 
 IT-consulting-specific allocation calls:
 - Systems software bundled with the laptop (Windows, drivers) → same Class 50; do not split
-- Standalone application software (e.g. a $200 perpetual licence for an IDE) → Class 12 (100%; most Class 12 software is exempt from the half-year rule)
+- Standalone application software (e.g. a $200 perpetual licence for an IDE) → Class 12 (100%); application software is subject to the half-year rule, halving the first-year claim outside the AIIP window — the reinstated AIIP suspends it for a 2026 acquisition
 - SaaS subscriptions (Office 365, GitHub Copilot, AWS, JetBrains All-Products Pack) → operating expense via `Office supplies & subscriptions` or `Internet & cloud services`; never capitalized regardless of annual cost
 - A separate $300 second monitor → arguably Class 12 (small tools < $500, treated as a standalone instrument) or Class 50 (computer peripheral, bundled with the laptop's role); pick a convention in the bookkeeping policy and apply it consistently
 
@@ -364,7 +365,7 @@ Year 2 (2027) and onward (no further transactions in the class):
 - Each year: CCA = 20% × opening UCC; the pool asymptotes to zero, never reaches it under pure declining balance
 - Year 2 closing: $1,620 × 0.80 = $1,296
 - Year 3 closing: $1,296 × 0.80 = $1,036.80
-- After 5 years of full-rate CCA, ~$590 of UCC remains; after 10 years, ~$193
+- By year 5 of this schedule, ~$664 of UCC remains; by year 10, ~$217
 
 When to trigger a terminal loss: when the corp disposes of every piece of Class 8 property in the year, the residual UCC becomes a deduction (ITA s.20(16)). For a multi-asset pool, this is rarely useful; for a single-asset class that has been sold or scrapped, it cleans up the pool.  
 
@@ -410,7 +411,7 @@ What if a Class 14.1 UCC pool becomes immaterial: continue claiming the geometri
 Most owner-managed CCPCs simply carry the small residual on Schedule 8 indefinitely. Leaving a $50 line on S8 is correct — CRA expects pool continuity. Merging low-balance pools in the corp's own asset register is fine internally, but the S8 filing must still show the running UCC by class.
 
 
-## Edge cases worth a short note
+## Edge cases
 
 - *Personal-use proportion* on a vehicle: keep a kilometre log; the personal-use portion of CCA, fuel, insurance, and other vehicle costs is a shareholder benefit under ITA s.6 / s.15 and must be added to the shareholder's personal income; see [Owner-corporation transactions](../Owner-Corporation-Transactions.md) for the standby charge, operating cost benefit, and the personal-car allowance alternative
 - *Investment Tax Credit recapture*: ITCs claimed against capital cost reduce UCC in the next year (s.13(7.1)); relevant for SR&ED claimants
@@ -439,7 +440,7 @@ Most owner-managed CCPCs simply carry the small residual on Schedule 8 indefinit
   - [s.18(1)(b)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-18.html) - disallowance of accounting depreciation
   - [s.20(1)(a)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-20.html) - permission to deduct CCA per regulation
   - [s.20(16)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-20.html) - terminal loss
-  - [s.20(16.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-20.html) - terminal-loss exceptions (Class 10.1, replacement property, Class 14.1 unless cessation)
+  - [s.20(16.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-20.html) - terminal-loss exceptions (Class 10.1; s.13(4.3) former property; Class 14.1 unless cessation)
   - [s.44](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-44.html) - replacement-property election (deferring recapture or capital gain)
   - [s.85](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-85.html) - rollover of property to a corporation (non-arm's-length deemed-cost mechanics)
   - [s.111(1)(a)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-111.html) - non-capital loss carryover: 3 years back, 20 years forward
@@ -449,7 +450,7 @@ Most owner-managed CCPCs simply carry the small residual on Schedule 8 indefinit
   - Regulation 1100(2) - half-year rule
   - Regulation 1100(2.5) - half-CCA on Class 10.1 disposition
   - Regulation 1100(3) - short-fiscal-year proration; exceptions
-  - Regulation 1101(1af) - separate-class election for Class 10.1
+  - Regulation 1101(1af) - separate class prescribed for each Class 10.1 vehicle
   - Regulation 1101(5b.1) - separate-class election for non-residential building additional 2% / 6%
   - Regulation 1104(4) - AIIP / DIEP phase-out and definitions
   - Schedule II - class definitions

@@ -21,7 +21,7 @@ For mechanics and worked examples, follow the link to the canonical page where o
 - Dividend refund: corporate refund under ITA s.129(1) when a taxable dividend is paid; calculated as 38⅓% of dividends paid, capped at the relevant RDTOH balance; see [ERDTOH-NERDTOH.md](ERDTOH-NERDTOH.md)
 - Eligible dividend: dividend designated under s.89(14), drawing on the GRIP pool; carries a larger gross-up and DTC than a non-eligible dividend
 - ERDTOH: *Eligible Refundable Dividend Tax on Hand* — refundable tax pool that releases when an eligible dividend is paid; see [ERDTOH-NERDTOH.md](ERDTOH-NERDTOH.md)
-- FMV: *Fair Market Value* — the price a willing buyer and seller would agree on at arm's length; sets the write-down ceiling in the lower-of-cost-or-market inventory test and the deemed proceeds on non-arm's-length transfers; see [Inventory-And-COGS.md](Cost-Recovery/Inventory-And-COGS.md)
+- FMV: *Fair Market Value* — the price a willing buyer and seller would agree on at arm's length; the value an inventory item is written down to when FMV falls below cost in the lower-of-cost-or-market test, and the deemed proceeds on non-arm's-length transfers; see [Inventory-And-COGS.md](Cost-Recovery/Inventory-And-COGS.md)
 - GIFI: *General Index of Financial Information* — CRA's standardized chart-of-accounts coding used on Schedules 100 and 125; defined in CRA RC4088
 - Gross-up: notional uplift applied to a cash dividend on the personal return (38% for eligible, 15% for non-eligible) to derive the *taxable* amount on the T1; see [Tax-Integration.md](Tax-Integration.md)
 - GRIP: *General Rate Income Pool* — capacity to designate eligible dividends; tracked on Schedule 53; see [Shareholder-Dividends.md](Shareholder-Dividends.md)

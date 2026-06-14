@@ -1,6 +1,5 @@
 STATUS: AI GENERATED, REVIEW IN PROGRESS
 
-
 # GST/HST
 
 **Who this is for**:
@@ -173,7 +172,7 @@ Time limits:
 Capital property and ITCs:
 - Business use over 50%: full ITC on the HST portion at the time of acquisition; the net cost (excluding HST) enters the capital cost for the appropriate CCA class (see [Capital Cost Allowance](Cost-Recovery/Capital-Cost-Allowance.md))
 - Business use 50% or less on personal-use-eligible property (passenger vehicles, residences): ITC denied entirely; the full gross cost including HST enters the capital cost
-- A subsequent *change in use* triggers a deemed ITC adjustment under ETA [s.206](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-206.html) (proportional claw-back if business use drops below 50%, proportional grant if it rises above)
+- A subsequent *change in use* triggers a deemed ITC adjustment under ETA [s.199(3)](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-199.html) / [s.200(2)](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-200.html) (a deemed sale claws back the prior ITC if business use drops to 50% or less; a deemed acquisition grants one if it rises above 50%); capital *real* property follows ETA [s.206](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-206.html) instead, with a sliding proration
 
 
 ## Quick Method
@@ -233,8 +232,8 @@ For the full bookkeeping, invoice presentation, and the W-8BEN-E interaction wit
 ## Imports
 
 Import HST on goods:
-- Collected by *Canada Border Services Agency* (CBSA) at the point of import on Form *B3 Canada Customs Coding Form*, calculated on the duty-paid value of the goods
-- If the corp is a GST/HST registrant, the import HST is recoverable as an ITC on the next return; the CBSA *Customs Coding Document* (the B3-1 receipted copy) is the documentary support
+- Collected by *Canada Border Services Agency* (CBSA) at the point of import on the *Commercial Accounting Declaration* (which replaced Form B3 when CARM became the system of record in October 2024; Customs Notice 24-29), calculated on the duty-paid value of the goods
+- If the corp is a GST/HST registrant, the import HST is recoverable as an ITC on the next return; the Commercial Accounting Declaration in the CARM Client Portal (or the broker's statement built from it) is the documentary support
 - If the corp is not registered, the import HST is permanent landed cost and is capitalized into inventory or capital cost (see [Inventory](Cost-Recovery/Inventory-And-COGS.md#imported-goods-and-fx) and [Capital Cost Allowance](Cost-Recovery/Capital-Cost-Allowance.md))
 
 Import HST on services and intangibles:
@@ -243,8 +242,8 @@ Import HST on services and intangibles:
 - Where the imported service supports exempt supplies, or supports both taxable and exempt supplies, the self-assessment is real and net tax increases; out of scope here
 
 Imports in foreign currency:
-- The duty-paid value used by CBSA is in CAD, converted at the *date of accounting* per the *Customs Act*; this is the CAD figure on the B3
-- Book the ITC at that CAD figure; do not retranslate at the corp's own FX rate
+- The duty-paid value used by CBSA is in Canadian dollars, converted at the *date of accounting* per the *Customs Act*; this is the dollar figure on the Commercial Accounting Declaration
+- Book the ITC at that figure; do not retranslate at the corp's own FX rate
 
 
 ## Capital purchases
@@ -255,9 +254,10 @@ A capital purchase by an HST-registered corp follows one of two paths:
 
 For a passenger vehicle in Class 10.1, the ITC is additionally capped by the prescribed-amount ceiling under ETA s.201, matching the income-tax capital-cost cap; the formula limits the ITC to the HST that would have applied to the $39,000 ceiling rather than the actual purchase price.  
 
-A change in use (s.206) triggers a deemed ITC adjustment in the year of change:
-- Use drops from over 50% to 50% or less: a claw-back of the prior ITC, proportional to the residual fair-market value
-- Use rises from 50% or less to over 50%: a granted ITC, proportional to the residual fair-market value
+A change in use (s.199(3) / s.200(2)) triggers a deemed ITC adjustment in the year of change:
+- Use drops from over 50% to 50% or less: a deemed sale (s.200(2)) claws back the prior ITC, proportional to the residual fair-market value
+- Use rises from 50% or less to over 50%: a deemed acquisition (s.199(3)) grants an ITC, proportional to the residual fair-market value
+- Capital *real* property follows ETA s.206 instead, with a sliding 10%–90% proration rather than the over-50% all-or-nothing test
 
 For the per-class CCA mechanics that consume the resulting net capital cost, see [Capital Cost Allowance](Cost-Recovery/Capital-Cost-Allowance.md).  
 
@@ -436,9 +436,10 @@ The break-even point against the regular method on Ontario services is roughly t
   - [s.165](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-165.html) - imposition of GST/HST on taxable supplies, including the rate
   - [s.169](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-169.html) - general entitlement to input tax credits
   - [s.170](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-170.html) - denied ITCs (club memberships, dining facilities)
-  - [s.199](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-199.html) - all-or-nothing ITC on capital personal property (full ITC if business use exceeds 50%, none if 50% or less)
+  - [s.199](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-199.html) - all-or-nothing ITC on capital personal property (full ITC if business use exceeds 50%, none if 50% or less); deemed acquisition when business use rises above 50% (s.199(3))
+  - [s.200](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-200.html) - deemed sale and ITC claw-back when business use of capital personal property drops to 50% or less (s.200(2))
   - [s.201](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-201.html) - passenger-vehicle ITC ceiling
-  - [s.206](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-206.html) - change-in-use deemed ITC adjustments on capital property
+  - [s.206](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-206.html) - change-in-use deemed ITC adjustments on capital *real* property (sliding 10%–90% proration)
   - [s.218.1](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-218.1.html) - self-assessment on imported services and intangibles
   - [s.221](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-221.html) - obligation of a registrant to collect tax on every taxable supply
   - [s.225](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-225.html) - net-tax computation; 4-year ITC time limit (s.225(4))
@@ -454,7 +455,7 @@ The break-even point against the regular method on Ontario services is roughly t
   - [s.278.1](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-278.1.html) - mandatory electronic filing
   - Schedule VI, Part V - zero-rated exports of services and goods (s.1 goods; s.7 general services to non-residents; s.23 advisory, professional, or consulting services to non-residents)
   - Schedule IX - place-of-supply rules
-- *Input Tax Credit Information (GST/HST) Regulations* (SOR/91-45) - prescribed documentary requirements at the $30 and $150 thresholds: https://laws-lois.justice.gc.ca/eng/regulations/SOR-91-45/
+- *Input Tax Credit Information (GST/HST) Regulations* (SOR/91-45) - prescribed documentary requirements at the $100 and $500 thresholds: https://laws-lois.justice.gc.ca/eng/regulations/SOR-91-45/
 - CRA *RC4022 General Information for GST/HST Registrants*: https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4022.html
 - CRA *RC4058 Quick Method of Accounting for GST/HST* - eligibility, election mechanics, full province × business-type rate matrix, 1% credit on first $30,000: https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4058.html
 - CRA *RC4088 General Index of Financial Information (GIFI)*: https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4088.html
@@ -467,6 +468,7 @@ The break-even point against the regular method on Ontario services is roughly t
 - CRA *Form RC4616 Election or Revocation of an Election for Closely Related Corporations and/or Canadian Partnerships*: https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/rc4616.html
 - CRA *GST/HST Registry* (verify a supplier's GST/HST number): https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/confirming-a-gst-hst-account-number.html
 - CRA *Charge and collect the GST/HST – Which rate to charge*: https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-which-rate.html
+- CBSA *Customs Notice 24-29* - CARM cutover; the Commercial Accounting Declaration replacing the B3: https://www.cbsa-asfc.gc.ca/publications/cn-ad/cn24-29-eng.html
 
 
 ## Links

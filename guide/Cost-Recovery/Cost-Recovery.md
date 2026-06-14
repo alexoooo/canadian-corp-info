@@ -1,6 +1,6 @@
 STATUS: AI GENERATED, REVIEW IN PROGRESS
 
-# Cost Recovery \[done]
+# Cost Recovery <!-- [done] -->
 
 **Who this is for**:
 - Owners of a Canadian-controlled private corporation (CCPC)
@@ -13,16 +13,16 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
   - *Capital Cost Allowance* (CCA) for depreciable property geometrically over years
   - *Construction in progress* (CIP) for self-constructed fixed assets, accumulating during the build then transferring to a CCA class on completion
 - The channel is set by the corp's *purpose at acquisition*: hold for resale (inventory), use as a fixed asset (CCA), or build a fixed asset (CIP → CCA)
-- A *change in use* later can move a property between channels at fair market value
+- A *change in use* later can move a property between channels; the property carries its existing cost into the new channel and no tax is owed at the switch (see [Change of use](#change-of-use))
 
 Limitations:
 - This page is an overview; the per-channel mechanics (LCM, half-year rule, UCC, recapture, terminal loss, available-for-use, CIP transfer entry) live on the three sub-pages
 - Common cross-channel mechanics (HST recoverability on acquisition, FX translation at trade date, available-for-use, change-of-use) are summarized here and cross-referenced from the sub-pages
-- Service-business work-in-process (s.10(11)), long-term construction contracts (percentage-of-completion under s.9; archived IT-92R2), real-estate developer inventory, manufacturing overhead absorption, and resource regimes are out of scope
+- Service-business work-in-process (s.10(5)(a)), long-term construction contracts (percentage-of-completion under s.9; archived IT-92R2), real-estate developer inventory, manufacturing overhead absorption, and resource regimes are out of scope
 - The following is my understanding as of 2026
 
 
-## Three deduction channels \[done]
+## Three deduction channels <!-- [done] -->
 
 The deduction *channel* is set by purpose at acquisition.
 
@@ -64,29 +64,30 @@ How they differ, all on the exit side:
 - *Deduction speed*: all at once at the moment of sale, versus geometrically over years through CCA
 - *Year-end revaluation*: inventory is written down to fair market value under LCM (s.10(1)); a CIP balance carries at cost with no tax revaluation
 - *Balance-sheet codes*: inventory on the 1120-series GIFI codes, versus the fixed-asset section (a CIP sub-account, then a CCA class line), never the 1120-series
-- *Method lock*: the inventory cost-flow method is fixed year over year (s.10(2)); a materials pool only needs a reasonable, consistent costing method, with no equivalent statutory lock
+- *Method lock*: the inventory cost-flow method is fixed year over year (s.10(2.1)); a materials pool only needs a reasonable, consistent costing method, with no equivalent statutory lock
 - *Disposition*: no capital-gains treatment on inventory; the finished fixed asset can trigger recapture, terminal loss, or a capital gain (see [Disposition mechanics](#disposition-mechanics))
 
 So "both use average cost" is true but does not collapse them into one channel. The averaging only costs what leaves each pool; the pools drain into different deduction channels, on different triggers, at different speeds, and that is the distinction.
 
 
-## Terminology: Amortization / Depreciation / CCA \[done]
+## Terminology: Amortization / Depreciation / CCA <!-- [done] -->
 
-*Amortization* and *Depreciation* are two names for the same mechanism.
-For tax, neither label matters, as the CRA doesn't use either terms, instead referring to the mechanism as *CCA*.
+*Amortization* and *Depreciation* are two names for the same mechanism.  
+For tax, neither label matters, as the CRA doesn't use either terms, instead referring to the mechanism as *CCA*.  
+GIFI codes use the accounting *Amortization* terminology (GIFI 8570 `Amortization of intangible assets`, and GIFI 8670 `Amortization of tangible assets`).  
 
 In common usage, there are two conventions:
 - IFRS (international accounting standard): reserves *depreciation* for tangible assets and *amortization* for intangibles such as patents
 - ASPE (Canadian accounting standard): uses *amortization* as the umbrella term for tangible property too
 
-This guide generally uses *amortization*, but *depreciation* can be used interchangeably.
+This guide generally uses *amortization*, but *depreciation* can be used interchangeably.  
 
 There are two distinct concepts of amortization:
 - *Accounting amortization*: the figure recorded in the corporation's own books; the method and rate are an accounting choice (e.g. geometric, or straight-line over the asset's estimated useful life)
 - *Tax amortization* (CCA): the figure allowed on the T2 return; the method (geometric) and rate (based on class) are fixed by the Income Tax Act
 
 
-## Amortization and classes \[wip]
+## Amortization and classes <!-- [wip] -->
 
 *Amortization* spreads a long-lived asset's cost across the years it is used instead of expensing it all at once.
 
@@ -120,7 +121,7 @@ Tracking follows the pool, not the item:
 The full class list and per-class rates are in [Capital Cost Allowance — Classes and rates](Capital-Cost-Allowance.md#classes-and-rates).
 
 
-## Cost-recovery flow \[done]
+## Cost-recovery flow <!-- [done] -->
 
 ```mermaid
 flowchart TB
@@ -155,12 +156,12 @@ flowchart TB
     Disp -.->|"proceeds &gt; original cost"| CG
     Inv -.->|"purpose changes"| CofU
     Fixed -.->|"purpose changes"| CofU
-    CofU -.->|"re-classify at FMV"| Inv
-    CofU -.->|"re-classify at FMV"| Fixed
+    CofU -.->|"re-classify"| Inv
+    CofU -.->|"re-classify"| Fixed
 ```
 
 
-## Acquisition cost: what gets capitalized \[done]
+## Acquisition cost: what gets capitalized <!-- [done] -->
 
 To *capitalize* a cost is to record it on the balance sheet as part of an asset rather than expense it immediately.
 The dollars sit in that asset until they flow out through one of the three channels above.  
@@ -196,11 +197,12 @@ The cost is in the UCC pool from the acquisition date, but the half-year-adjuste
 For non-buildings (s.13(27)), the earliest of:
 - First time the property is used to earn income
 - The property is capable of producing the intended commercially saleable product or service
-- The end of the second tax year after acquisition (the rolling-two-year / 357-day rule)
+- The beginning of the second tax year after the acquisition year (the rolling-two-year / 357-day rule)
 
 For buildings (s.13(28)), the earliest of:
 - All or substantially all (~90%) of the building first used for its intended purpose
 - Construction is substantially complete
+- The beginning of the second tax year after the acquisition year (the same 357-day rolling rule, s.13(28)(c))
 
 Two notes on coverage:
 - A CIP balance produces no deduction in the interim: not inventory (no COGS), not yet available for use (no CCA). The available-for-use date is the trigger that moves the accumulated cost from CIP into the appropriate CCA class on Schedule 100; standard CCA mechanics apply from there
@@ -209,21 +211,24 @@ Two notes on coverage:
 
 ## Change of use
 
-Property can move between channels when the corp's purpose changes after acquisition (ITA s.45, s.13(7)):
-- Deemed disposition is at *fair market value* on the date of the change
-- Book entry transfers the asset out of the source channel at FMV and into the destination channel at FMV
-- Destination channel's mechanics apply prospectively from the change date
-
-A gain or loss may arise on the deemed disposition:
-- *Inventory → fixed asset*: the FMV-vs-cost difference is realized in inventory
-- *Fixed asset → inventory*: recapture (s.13(1)) or terminal loss (s.20(16)) can trigger on the source CCA class
+Property can move between channels when the corp's purpose changes after acquisition.  
+CRA's administrative position (archived [IT-102R2](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/it102r2.html)) treats an inventory↔fixed-asset conversion as a re-classification, not a disposition:
+- *Inventory → fixed asset*: the unit's *inventory value* at the conversion date becomes its capital cost; no FMV step-up, and no income is recognized at conversion
+- *Fixed asset → inventory*: no recapture (s.13(1)) or terminal loss (s.20(16)) triggers at conversion; the capital gain or loss accrued to that date (ACB vs FMV) is measured then but recognized only on the actual sale, and the post-conversion income gain runs from an opening inventory value equal to FMV at conversion
+- Destination channel's mechanics apply prospectively from the conversion date
+- For real property the parallel archived position is [IT-218R](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/it218r.html)
 
 Common examples:
-- A tool-retailer CCPC pulls a saw off the resale shelf to put it into its own workshop: inventory → Class 8 fixed asset at FMV
-- A delivery van originally bought for resale is taken into operational use: inventory → Class 10 at FMV
-- A computer originally bought for staff use is moved into a side reseller line: fixed asset → inventory at FMV (rare for a typical CCPC)
+- A tool-retailer CCPC pulls a saw off the resale shelf to put it into its own workshop: inventory → Class 8 fixed asset at the unit's inventory value
+- A delivery van originally bought for resale is taken into operational use: inventory → Class 10 at its inventory value
+- A computer originally bought for staff use is moved into a side reseller line: fixed asset → inventory (rare for a typical CCPC)
 
-The HST-side equivalent is the deemed ITC adjustment under ETA s.206 when business-use proportion crosses 50% on capital property; see [HST](../HST.md#capital-purchases).
+The statutory reading is contested:
+- The change-of-use rules (ITA s.45, s.13(7)) deem a disposition at *fair market value* when use changes between earning income and some other purpose (personal use is the standard case); on CRA's reading they do not reach a move between two income-producing uses
+- The Federal Court of Appeal in [*CAE Inc v R*, 2013 FCA 92](https://www.canlii.org/en/ca/fca/doc/2013/2013fca92/2013fca92.html) read s.45 / s.13(7) to apply to an inventory↔capital conversion as an FMV deemed disposition; CRA treats that analysis as obiter and continues to assess on IT-102R2
+- This guide follows the IT-102R2 positions above (the basis CRA assesses on) and keeps s.45 / s.13(7) for actual income↔personal changes of use
+
+The HST-side equivalent is the deemed ITC adjustment under ETA s.199(3) / s.200(2) when business-use proportion crosses 50% on capital personal property; see [HST](../HST.md#capital-purchases).
 
 
 ## T2 schedules touched
@@ -243,7 +248,7 @@ Disposition closes the channel.
 *Inventory disposition*:
 - Revenue hits `Trade sales of goods and services` (GIFI 8000)
 - Cost hits `Cost of sales` (GIFI 8518) at the unit's cost
-- Year-end LCM write-downs (s.10(1)) and recoveries (s.10(2)) also run through COGS
+- Year-end LCM write-downs and any later recoveries (the s.10(1) valuation re-applied at each year-end) also run through COGS
 - No capital-gains treatment on inventory
 
 *Depreciable-property disposition* (full mechanics in [Capital Cost Allowance](Capital-Cost-Allowance.md#recapture-and-terminal-loss)):
@@ -276,15 +281,18 @@ A CIP balance is never directly disposed of:
 - Income Tax Act (R.S.C., 1985, c. 1 (5th Supp.)): https://laws-lois.justice.gc.ca/eng/acts/I-3.3/
   - [s.9](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-9.html) - income from a business or property; the parent rule that makes COGS a deduction from revenue
   - [s.10](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-10.html) - inventory valuation
-  - [s.13](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-13.html) - recapture (s.13(1)); UCC definition (s.13(21)); available-for-use rules (s.13(26)–(32))
+  - [s.13](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-13.html) - recapture (s.13(1)); change-of-use deemed dispositions for depreciable property (s.13(7)); UCC definition (s.13(21)); available-for-use rules (s.13(26)–(32))
   - [s.18(1)(a)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-18.html) - general deductibility test (expense for the purpose of gaining income)
   - [s.18(1)(b)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-18.html) - block on direct deduction of capital expenditure; the rule that pushes capital purchases through CCA
   - [s.20(1)(a)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-20.html) - permission to deduct CCA per regulation
   - [s.20(16)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-20.html) - terminal loss
-  - [s.45](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-45.html) - change-of-use rules
+  - [s.45](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-45.html) - change-of-use deemed dispositions (income↔personal use); on CRA's position not engaged by an inventory↔fixed-asset conversion
   - [s.248(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-248.html) - definition of "inventory"
 - CRA Income Tax Folio S3-F4-C1 - General Discussion of Capital Cost Allowance: https://www.canada.ca/en/revenue-agency/services/tax/technical-information/income-tax/income-tax-folios-index/series-3-property-investments-savings-plans/series-3-property-investments-savings-plans-folio-4-capital-cost-allowance/income-tax-folio-s3-f4-c1-general-discussion-capital-cost-allowance.html
 - CRA RC4088 - General Index of Financial Information (GIFI): https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4088.html
+- CRA Interpretation Bulletin IT-102R2 (archived) - Conversion of property, other than real property, from or to inventory: https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/it102r2.html
+- CRA Interpretation Bulletin IT-218R (archived) - Profit, capital gains and losses from the sale of real estate, including conversion between capital property and inventory: https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/it218r.html
+- *CAE Inc v R*, 2013 FCA 92 - Federal Court of Appeal reading of s.45 / s.13(7) as applying to an inventory↔capital conversion; CRA treats the analysis as obiter: https://www.canlii.org/en/ca/fca/doc/2013/2013fca92/2013fca92.html
 
 
 ## TODO

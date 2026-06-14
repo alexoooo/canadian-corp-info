@@ -36,19 +36,23 @@ pages was recomputed.
 
 - **One CRITICAL**: the Cost-Recovery cluster grounds inventory↔fixed-asset conversions on
   s.45 / s.13(7) deemed dispositions at fair market value, on three pages with book entries and
-  examples. Verified against the statute, neither provision covers that conversion (both govern
-  changes between income-producing and *other* purposes), and CRA's position (archived IT-102R2)
+  examples, and states it as settled. CRA's published administrative position (archived IT-102R2)
   is the opposite: the conversion is *not* a disposition, and inventory converted to capital
-  property takes its **inventory value**, not FMV, as capital cost. This content predates the
-  2026-05-28 audit and was missed by both prior passes.
+  property takes its **inventory value**, not FMV, as capital cost. The statutory reading is itself
+  contested — the Federal Court of Appeal in *CAE Inc v R* (2013 FCA 92) read s.45 / s.13(7) to
+  apply to such a conversion (the FMV-disposition treatment the pages use), and CRA treats that as
+  obiter and keeps applying IT-102R2. So the pages adopt a defensible but contested position with no
+  hedge, against the position CRA actually assesses on. This content predates the 2026-05-28 audit
+  and was missed by both prior passes.
 - **One HIGH**: `Capital-Cost-Allowance.md` states a general anti-replacement rule — "no terminal
   loss if replacement property of the same class is acquired within 24 months" — that does not
   exist. The real s.20(16.1)(b) is a narrow rule for former property deemed owned under
   s.13(4.3)(a)/(b) (similar property at the same fixed place). A reader could forgo a legitimate
   terminal loss.
 - **Ten MEDIUM**: a cluster of ITA s.10 subsection mis-attributions on the inventory pages; the
-  write-down recovery mechanism attributed to s.10(2) and mis-timed "at sale"; ETA s.206 (capital
-  *real* property) cited for capital-personal-property change-of-use ITC adjustments on three
+  s.10(2) over-attribution (write-down recovery and method consistency), plus the mis-timed "at
+  sale" reversal; ETA s.206 (capital *real* property) cited for capital-personal-property
+  change-of-use ITC adjustments on three
   pages; the retired Form B3 presented as the current import-accounting document (CARM replaced it
   in October 2024); an available-for-use statement that misplaces the rolling-rule time point and
   omits the buildings limb; Class 12 software wrongly called exempt from the half-year rule; a
@@ -153,8 +157,8 @@ a deemed disposition at fair market value under s.45 / s.13(7):
 
 Verified against the statute text: **s.45(1)** deems a disposition only where use changes between
 gaining or producing income and "some other purpose" (personal use being the standard case), and
-**s.13(7)(a)/(b)** does the same for depreciable property. Inventory and business fixed assets are
-both income-producing uses, so neither provision applies to a conversion between them. CRA's
+**s.13(7)(a)/(b)** does the same for depreciable property. On CRA's reading, inventory and business fixed assets
+are both income-producing uses, so neither provision reaches a conversion between them. CRA's
 administrative position — archived **IT-102R2, "Conversion of property, other than real property,
 from or to inventory"** — says the opposite of the pages:
 
@@ -166,13 +170,22 @@ from or to inventory"** — says the opposite of the pages:
   date) and recognized only on the actual sale, with the post-conversion income gain measured from
   an opening inventory value equal to FMV at conversion
 
-Effect: a reader following these pages would recognize taxable income on a conversion that
-triggers none, and would claim CCA on an FMV base that CRA would reduce to the inventory value.
-The s.13(7) change-of-use citation is legitimate only for the business↔personal cases the CCA
-page already points to. Suggested fix: rewrite the `Cost-Recovery.md` *Change of use* section (and
-the two echoes) on the IT-102R2 positions, keep s.45/s.13(7) only for income↔personal-use changes,
-and re-point the citation entries. (For real property the parallel position is archived IT-218R;
-out of scope for the cluster but worth a pointer if the section is rewritten.)
+One caveat on that statutory reading: it is contested. The Federal Court of Appeal in *CAE Inc v R*
+(2013 FCA 92) read s.45 and s.13(7) to apply to an inventory↔capital conversion — the FMV-deemed-
+disposition treatment the pages describe — while CRA treats that analysis as obiter and continues
+to apply IT-102R2 / IT-218R. So the pages are not citing irrelevant provisions; they adopt the FCA
+reading and present it as settled, against the published administrative position a CCPC files under.
+The defect is the absent hedge and the conflict with CRA's stated position, not that the statute
+unambiguously excludes the conversion.
+
+Effect under CRA's position: a reader following these pages would recognize taxable income on a
+conversion that triggers none, and would claim CCA on an FMV base that CRA would reduce to the
+inventory value. The s.13(7) change-of-use citation is legitimate only for the business↔personal
+cases the CCA page already points to. Suggested fix: rewrite the `Cost-Recovery.md` *Change of use*
+section (and the two echoes) to lead with the IT-102R2 positions, keep s.45/s.13(7) only for
+income↔personal-use changes, re-point the citation entries, and flag the *CAE Inc* tension rather
+than presenting either treatment as settled. (For real property the parallel CRA position is archived
+IT-218R; out of scope for the cluster but relevant if the section is rewritten.)
 
 ### [MEDIUM] CR-5 Four ITA s.10 subsections attributed to the wrong rules
 
@@ -198,7 +211,7 @@ Verified against the full text of s.10 (all subsections fetched):
 All four sit in Limitations/Out-of-scope lines, so no walkthrough is wrong, but each points a
 reader at an unrelated provision.
 
-### [MEDIUM] CR-6 Write-down recovery: wrong provision, and one wrong trigger
+### [MEDIUM] CR-6 s.10(2) over-attributed: write-down recovery, method consistency, and one wrong trigger
 
 Five places attribute the recovery of a prior LCM write-down to s.10(2):
 `Cost-Recovery.md:246` ("write-downs (s.10(1)) and recoveries (s.10(2))"),
@@ -209,6 +222,13 @@ amount as … the end of the preceding taxation year"). The recovery arises from
 s.10(1) at the next year-end: "cost" stays the original cost, so a recovered FMV lifts the
 valuation back up to (at most) cost. No subsection needs to be cited beyond s.10(1)+(2) working
 together; the current gloss assigns the mechanism to the wrong one.
+
+The same s.10(2) over-attribution covers *method consistency*. The same-method requirement is
+s.10(2.1) — "that method shall … be used in the valuation of property … at the end of the following
+taxation year … unless the taxpayer, with the concurrence of the Minister … adopts another method";
+s.10(2) only carries the prior closing value forward. The "applied consistently year over year
+(s.10(2))" cites at `Inventory-And-COGS.md:14`, `:78`, `:101`, the `:436` gloss, and
+`Cost-Recovery.md:67` should read s.10(2.1) (already cited for the method *change* at `:23/:102/:437`).
 
 Compounding it, `Inventory-And-COGS.md:357` frames the reversal as happening at sale: "If FMV at
 the time of sale had been $50 … the corp would *reverse* prior write-down up to $43.33 … per
@@ -286,9 +306,10 @@ mechanism.
 ### [LOW] CR-12 Shareholder appropriation pointed at the wrong slips
 
 `Inventory-And-COGS.md:399`: "add the benefit to the shareholder's T4 / T5 reporting". A s.15(1)
-benefit conferred qua shareholder is reported on a **T4A** (box 117 for loan benefits, box 283
-for other shareholder benefits), or on a T4 only when conferred qua employee; a T5 carries
-investment income and is wrong here. The s.69/s.15 substance of the bullet is correct.
+benefit conferred qua shareholder is reported on a **T4A** (code 117 for the s.80.4 loan benefit;
+code 028 "Other income" for an appropriation or other shareholder benefit), or on a T4 only when
+conferred qua employee; a T5 carries investment income and is wrong here. The s.69/s.15 substance
+of the bullet is correct.
 
 ---
 
@@ -383,10 +404,12 @@ rounding is involved in bracket indexation; no place in the ITA where it applies
 the example (or the whole clause): the sentence's point — round half up, banker's rounding does
 not apply here — survives without it.
 
-### [LOW] WDR-2 Two blank lines between the STATUS marker and the title
+### [LOW] WDR-2 Two blank lines between the STATUS marker and the title (two pages)
 
-`Whole-Dollar-Rounding.md:1-4`. AGENTS.md specifies marker, one blank line, then the `# Title`
-(canonical shape in `Shareholder-Dividends.md`). Remove one blank line.
+`Whole-Dollar-Rounding.md:1-4` and `HST.md:1-4`. AGENTS.md specifies marker, one blank line, then
+the `# Title` (canonical shape in `Shareholder-Dividends.md`). Remove one blank line on each. A
+check of the other STATUS-marked pages found the defect on these two only; the rest already use the
+one-blank-line shape.
 
 ---
 

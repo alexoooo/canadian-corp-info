@@ -1,6 +1,6 @@
 STATUS: AI GENERATED, REVIEW IN PROGRESS
 
-# Inventory and cost of goods sold \[done]
+# Inventory and cost of goods sold <!-- [done] -->
 
 **Who this is for**:
 - Owners of a Canadian-controlled private corporation (CCPC)
@@ -11,15 +11,15 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
 - *Inventory* is property held for sale, or held for use in producing property held for sale (ITA [s.248(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-248.html))
 - A property is either *inventory* or *depreciable property*, never both at the same time; *purpose at acquisition* decides which
 - Inventory is valued each year-end at the lower of *cost* or *fair market value* (LCM), per ITA [s.10(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-10.html)
-- *Cost* follows a permitted cost-flow assumption (weighted-average, FIFO, or specific identification), applied consistently year over year (s.10(2))
+- *Cost* follows a permitted cost-flow assumption (weighted-average, FIFO, or specific identification), applied consistently year over year (s.10(2.1))
 - *Cost of sales* (aka *Cost of goods sold*, COGS) is the matching deduction at the moment a unit is sold; unlike *Capital Cost Allowance* (CCA) for fixed assets, the cost is not spread over multiple years
 - Materials bought to build a fixed asset for the corp's own use are *not* inventory; see [Materials and CIP](Materials-And-CIP.md)
 
 Limitations:
 - Focus is on a typical owner-managed CCPC with goods-for-resale or self-use materials inventory
 - Manufacturing inventory with overhead absorption and standard-cost variances is touched on but not worked through
-- Long-term construction contracts (percentage-of-completion under s.9; archived IT-92R2), commodity-pool inventories (s.10(6)), real-estate developer inventory, and financial-institution security inventories are out of scope
-- Consignment inventory is mentioned briefly; service-business work-in-process under s.10(5)(a)/(11) is out of scope
+- Specialized inventory rules for particular industries (long-term construction contracts, commodity traders, real-estate developers, financial institutions) are out of scope
+- Consignment inventory is mentioned briefly; service-business work-in-process under s.10(5)(a) is out of scope
 - Inventory-method change requires the Minister's concurrence (ITA s.10(2.1)) and is not covered here
 - The following is my understanding as of 2026
 
@@ -31,7 +31,7 @@ Limitations:
 - [Capital Cost Allowance](Capital-Cost-Allowance.md): depreciable property
 
 
-## Inventory versus other purchase types \[done]
+## Inventory versus other purchase types <!-- [done] -->
 
 Purchased property in a CCPC follows one of a few tax treatments (inventory is the most common):
 - *Inventory* (the focus of this page): property held for sale, or held to produce property held for sale; cost flows through `Cost of sales` (COGS) when a unit sells; valued at LCM each year-end
@@ -40,7 +40,7 @@ Purchased property in a CCPC follows one of a few tax treatments (inventory is t
 - *Spare parts*: inventory if held for resale; expensed or capitalized into the equipment they service otherwise; the non-resale case is out of scope here
 
 
-## What inventory is \[meh]
+## What inventory is <!-- [meh] -->
 
 ITA [s.248(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-248.html) defines *inventory* as "a description of property the cost or value of which is relevant in computing a taxpayer's income from a business for a taxation year".
 
@@ -59,10 +59,10 @@ A property is *inventory* or *depreciable property*, never both:
 - Bought to use in the business: depreciable property (or operating expense if below the capitalization threshold)
 - Bought as a one-off speculation that you intend to flip: *adventure or concern in the nature of trade*, taxed at cost under ITA [s.10(1.01)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-10.html) rather than at LCM (still inventory in form, but with cost-only valuation)
 
-If purpose changes after acquisition (say a delivery van bought to resell, then taken off the lot for operational use), that is a *change in use* event.  
-The deemed-disposition rules in s.45 / s.13(7) apply and trigger a transfer between inventory and a CCA class at fair market value.  
-This is rare for a typical CCPC and is out of scope here.  
-See [Cost Recovery — Change of use](Cost-Recovery.md#change-of-use) for the cross-channel framing.  
+If purpose changes after acquisition (e.g. something purchased to resell is consumed for operations instead), that is a *change in use* event.  
+When inventory is converted to capital property, it carries its inventory cost over as its new capital cost, so no tax arises at the switch (archived IT-102R2).  
+This is rare for a typical CCPC and the details are out of scope here.  
+See [Cost Recovery — Change of use](Cost-Recovery.md#change-of-use) for the cross-channel framing, including the contested s.45 / s.13(7) reading.  
 
 
 ## Cost of goods sold
@@ -75,7 +75,7 @@ The cost-of-sales identity:
 - Opening inventory + purchases (net of returns) + freight-in + other direct costs − closing inventory = COGS
 - Schedule 125 enforces it as lines 8300 + 8320 + 8457 + 8450 − 8500 = 8518
 - the closing figure is set by the year-end *lower of cost or fair market value* (LCM) valuation under ITA [s.10(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-10.html), so the valuation method drives COGS directly
-- the cost-flow method is fixed year over year under s.10(2); valuing all inventory at FMV instead is the Regulation 1801 alternative
+- the cost-flow method is fixed year over year under s.10(2.1); valuing all inventory at FMV instead is the Regulation 1801 alternative
 
 Mechanics, further down this page:
 - the running per-sale figure (units sold × current average cost) and the cost-of-sales GIFI codes (`8300`–`8519`): [Tracking through the year](#tracking-through-the-year)
@@ -94,12 +94,12 @@ Cost-flow assumptions permitted by CRA (pick one, apply consistently):
 The lower of cost or fair market value (LCM) rule:
 - Each year-end, every inventory item is valued at the lower of its cost (per the chosen method above) and its *fair market value* at year-end (ITA [s.10(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-10.html))
 - "Fair market value" for inventory is a case-law / net-realizable-value concept (see archived IT-473R); for a typical resale CCPC it is the net realizable value: what the corp could sell the item for, less selling costs
-- If FMV is below cost, the difference is a *write-down*, deductible in the current year (s.10(1)) and recoverable as income if the FMV later recovers (s.10(2))
+- If FMV is below cost, the difference is a *write-down*, deductible in the current year (s.10(1)); if FMV later recovers, the next year-end's re-applied s.10(1) valuation restores the value, to at most original cost (s.10(2) only carries the prior closing value forward as the opening value)
 - LCM is applied item by item, not at the inventory level in aggregate; a write-down on slow-moving SKU A cannot be offset by appreciation on fast-moving SKU B
 
 Method consistency:
-- The chosen method must be applied year over year (ITA [s.10(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-10.html))
-- A change of method requires the Minister's concurrence under ITA s.10(2.1) (with the s.10(2) consistency rule as the backdrop); in practice this means filing a written request with supporting reasons; do not silently switch methods
+- The chosen method must be applied year over year (ITA [s.10(2.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-10.html)); s.10(2) separately carries the prior year-end's closing value forward as the opening value
+- A change of method requires the Minister's concurrence under the same s.10(2.1); in practice this means filing a written request with supporting reasons; do not silently switch methods
 - Valuing all inventory at FMV instead of LCM is permitted under Regulation 1801, but it is not the right tool for a typical resale CCPC
 
 
@@ -145,7 +145,7 @@ FX gain or loss on payable settlement:
 - Reason: the landed cost is fixed at the trade-date rate; subsequent FX movements are a financing outcome, not part of the inventory's acquisition cost
 
 GST/HST on imports:
-- Self-assessed and paid to Canada Border Services on Form B3 at the point of import; if the corp is HST-registered, the same amount is reclaimable as an ITC on the next GST/HST return; if not, it is a permanent cost addition to inventory
+- Self-assessed and paid to Canada Border Services on the *Commercial Accounting Declaration* (which replaced Form B3 when CARM became the system of record in October 2024) at the point of import; if the corp is HST-registered, the same amount is reclaimable as an ITC on the next GST/HST return; if not, it is a permanent cost addition to inventory
 - See [HST](../HST.md) for the full mechanics
 
 
@@ -258,7 +258,7 @@ Step 3, apply LCM to the corrected book balance:
 - If FMV < cost, book a write-down to bring the SKU to FMV
 - Document the FMV evidence (recent selling-price data, supplier quotes for replacement cost, obsolescence assessment, manager sign-off) and keep it with the year-end working papers
 - The write-down is deductible in the current year (s.10(1))
-- If a previously written-down SKU recovers (FMV climbs back above its written-down value), reverse part or all of the prior write-down up to original cost (s.10(2)); a SKU cannot be written *up* above original cost
+- If a previously written-down SKU is still on hand and its FMV climbs back, the re-applied s.10(1) valuation reverses part or all of the prior write-down, up to original cost; a SKU cannot be written *up* above original cost
 
 Step 4, verify the cost-of-sales identity:
 - Opening inventory + purchases (net of returns) + freight-in + other direct costs − closing inventory = COGS
@@ -338,23 +338,23 @@ Dec 31, physical count finds 88 units (2 missing, presumed shrinkage):
 - Pool: 88 units, total cost $3,813.34, average still $43.33
 
 Dec 31, LCM test: a competitor has just released a similar product and the corp expects to clear the remaining stock at $35 retail; FMV per unit is roughly $30 net of selling cost; FMV < cost, write down:
-- Debit `Cost of sales` (GIFI 8518) = 88 × ($43.33 − $30.00) = $1,173.04
-- Credit `Inventory - goods for sale` (GIFI 1121) = $1,173.04
-- Pool after write-down: 88 units, total cost $2,640.30, "average" $30.00
+- Debit `Cost of sales` (GIFI 8518) = $3,813.34 − (88 × $30.00) = $1,173.34
+- Credit `Inventory - goods for sale` (GIFI 1121) = $1,173.34
+- Pool after write-down: 88 units, total cost $2,640.00, "average" $30.00
 
 Schedule 125 year 1 cost-of-sales section:
 - `8300` Opening inventory: $0
 - `8320` Purchases: $12,800 ($4,000 + $8,800)
 - `8457` Freight-in and duty: $0 (already in landed cost in this example)
-- `8500` Closing inventory: $2,640.30
-- `8518` Cost of sales = 0 + 12,800 + 0 − 2,640.30 = $10,159.70 (matches the per-unit ledger: $2,400 + $6,500 + $86.66 + $1,173.04 = $10,159.70)
+- `8500` Closing inventory: $2,640.00
+- `8518` Cost of sales = 0 + 12,800 + 0 − 2,640.00 = $10,160.00 (matches the per-unit ledger: $2,400 + $6,500 + $86.66 + $1,173.34 = $10,160.00)
 
 Year 2 (2027):
 
 The 88 remaining units are cleared in Q1 at $35 each; the actual FMV recovery is mild:
 - Sales-side entries omitted
 - COGS at the written-down basis: 88 × $30.00 = $2,640
-- If FMV at the time of sale had been $50 (above the original $43.33 cost), the corp would *reverse* prior write-down up to $43.33 (never above) per s.10(2); in this scenario the actual FMV is $32, so no reversal; the prior write-down was correct
+- A reversal would be a *year-end valuation* event, not a sale-time one: units sold carry their written-down $30.00 cost into COGS regardless of what FMV does in the meantime; only units still on hand at a year-end with recovered FMV are revalued upward by the re-applied s.10(1) test, to at most the original $43.33 cost
 
 ### Example 2: Imported goods with FX and landed cost
 
@@ -396,22 +396,22 @@ Year-end Schedule 125 if 300 units are sold during the year at $70 each:
 
 - *Consignment inventory*: goods physically present on the corp's premises but legally owned by another party (or vice versa) are *not* on the corp's books; book only inventory the corp owns under contract; a clear consignment agreement and a separate count tag are the audit evidence
 - *Related-party purchases*: inventory bought from a non-arm's-length supplier at above-FMV is capped at FMV under ITA [s.69(1)(a)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-69.html); the excess is denied (the corp paid too much, but only gets to deduct the FMV portion)
-- *Inventory appropriated for shareholder use*: a CCPC giving inventory to a shareholder (or to a related person) triggers a deemed disposition at FMV (s.69) and a *shareholder benefit* under ITA [s.15](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-15.html); this also has GST/HST self-supply implications; treat as a sale at FMV in the books and add the benefit to the shareholder's T4 / T5 reporting (out of scope here, see [Shareholder-Dividends](../Shareholder-Dividends.md) for the dividend path)
+- *Inventory appropriated for shareholder use*: a CCPC giving inventory to a shareholder (or to a related person) triggers a deemed disposition at FMV (s.69) and a *shareholder benefit* under ITA [s.15](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-15.html); this also has GST/HST self-supply implications; treat as a sale at FMV in the books and report the benefit on the shareholder's T4A (code 028, Other income), or on a T4 only when it is conferred on them as an employee (out of scope here, see [Shareholder-Dividends](../Shareholder-Dividends.md) for the dividend path)
 - *Software, digital subscriptions, SaaS*: not inventory; SaaS is an operating expense; perpetually licensed software is Class 12 (application software) or Class 50 (systems software bundled with hardware); see [Capital Cost Allowance](Capital-Cost-Allowance.md)
 - *Trade samples and demo units*: tracked separately from saleable inventory; if eventually scrapped, expense at the point of removal; if eventually sold, restore to inventory at the residual book value
 - *Inventory of a discontinued line*: an obsolescence write-down to expected liquidation value is supportable under s.10(1); document the obsolescence trigger (date the discontinuation decision was made, supplier announcement, etc.)
 - *Sales tax in non-harmonized provinces*: PST is non-recoverable and forms part of inventory cost in those provinces; HST in HST-registered provinces is recoverable and is not part of cost
-- *Service-business "inventory"*: hours of unbilled professional work are not inventory under s.10 in the same way as goods; professional WIP has its own rules under s.10(11) and is out of scope here
+- *Service-business "inventory"*: hours of unbilled professional work are not inventory under s.10 in the same way as goods; professional WIP has its own rules under s.10(5)(a) (with s.10(4)(a) supplying the FMV meaning) and is out of scope here
 
 
 ## Out of scope
 
 - Manufacturing overhead absorption, standard-cost variances, and variable-vs-absorption costing: these require accounting-standard mechanics (ASPE Section 3031 / IFRS IAS 2) that interact with tax through s.10 acceptance
 - Long-term construction contracts: percentage-of-completion mechanics under s.9; archived IT-92R2
-- Commodity-pool inventory valued at FMV under s.10(6) (e.g. grain elevators) and dealer-in-securities inventory under s.10(15)
+- Commodity-pool inventory valued at FMV under Regulation 1801 (e.g. grain elevators) and the mark-to-market security inventories of registered dealers (s.142.5)
 - Real-estate developer inventory of land and partially completed buildings; adjacent to but distinct from typical resale inventory
 - s.10(2.1) inventory-method change application mechanics: the form of the request, supporting reasons, CRA review timeline
-- The art-business and farm-business special inventory rules (s.10(1.1), Reg 1802)
+- The art-business and farm-business special inventory rules (s.10(6), Reg 1802)
 
 
 ## Related
@@ -433,11 +433,11 @@ Year-end Schedule 125 if 300 units are sold during the year at $70 each:
   - [s.9](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-9.html) - income from a business or property; the parent rule that makes COGS a deduction from revenue
   - [s.10(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-10.html) - inventory valuation at the lower of cost or fair market value
   - [s.10(1.01)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-10.html) - inventory of an adventure or concern in the nature of trade valued at cost (no FMV write-down)
-  - [s.10(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-10.html) - method consistency requirement; recovery of prior write-down if FMV recovers
-  - [s.10(2.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-10.html) - Minister's concurrence required to change the inventory valuation method
+  - [s.10(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-10.html) - continuity rule: opening inventory valued at the prior year-end's closing amount
+  - [s.10(2.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-10.html) - same-method consistency requirement; Minister's concurrence required to change the inventory valuation method
   - [s.15](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-15.html) - shareholder benefits triggered by inventory appropriation
   - [s.18(1)(a)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-18.html) - general deductibility test (expense for the purpose of gaining income)
-  - [s.45](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-45.html) - change-of-use rules
+  - [s.45](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-45.html) - change-of-use deemed dispositions (income↔personal use); on CRA's position (IT-102R2) not engaged by an inventory↔capital conversion
   - [s.69(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-69.html) - non-arm's-length transactions deemed at FMV
   - [s.248(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-248.html) - definition of "inventory"
 - Income Tax Regulations (C.R.C., c. 945): https://laws-lois.justice.gc.ca/eng/regulations/C.R.C.,_c._945/
@@ -448,6 +448,7 @@ Year-end Schedule 125 if 300 units are sold during the year at $70 each:
 - CRA T2 SCH 100 - Balance Sheet Information (GIFI inventory codes 1120, 1121, 1122, 1125, 1126): https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2sch100.html
 - CRA RC4088 - General Index of Financial Information (GIFI): https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4088.html
 - CRA Interpretation Bulletin IT-473R (archived) - Inventory Valuation: https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/it473r.html
+- CRA Interpretation Bulletin IT-102R2 (archived) - Conversion of property, other than real property, from or to inventory: https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/it102r2.html
 - CRA Income Tax Folio S3-F4-C1 - General Discussion of Capital Cost Allowance (referenced for the inventory-vs-depreciable-property boundary): https://www.canada.ca/en/revenue-agency/services/tax/technical-information/income-tax/income-tax-folios-index/series-3-property-investments-savings-plans/series-3-property-investments-savings-plans-folio-4-capital-cost-allowance/income-tax-folio-s3-f4-c1-general-discussion-capital-cost-allowance.html
 - Bank of Canada daily exchange rates: https://www.bankofcanada.ca/rates/exchange/
 
