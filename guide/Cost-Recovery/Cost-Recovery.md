@@ -9,10 +9,10 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
 **TLDR**:
 - Every purchase a CCPC makes eventually becomes a deduction; the question is *which channel and when*
 - Three channels:
-  - *Cost of sales* (aka *Cost of Goods Sold*, COGS) for inventory at the moment of sale
-  - *Capital Cost Allowance* (CCA) for depreciable property geometrically over years
-  - *Construction in progress* (CIP) for self-constructed fixed assets, accumulating during the build then transferring to a CCA class on completion
-- The channel is set by the corp's *purpose at acquisition*: hold for resale (inventory), use as a fixed asset (CCA), or build a fixed asset (CIP → CCA)
+  - *Cost of sales* (aka *Cost of Goods Sold*, COGS) for resell: tracked as *inventory*, expensed at the moment of sale
+  - *Construction in progress* (CIP) for self-constructed fixed assets: tracked as *materials*, accumulating during the build then transferring to a CCA class on completion
+  - *Capital Cost Allowance* (CCA) for depreciable property: tracked in *asset register*, expensed by *class* geometrically over years
+- The channel is set by the corp's *purpose at acquisition*: hold for resale (inventory, COGS → expense), build a fixed asset (CIP → CCA), use as a fixed asset (CCA)
 - A *change in use* later can move a property between channels; the property carries its existing cost into the new channel and no tax is owed at the switch (see [Change of use](#change-of-use))
 
 Limitations:
@@ -32,6 +32,12 @@ The deduction *channel* is set by purpose at acquisition.
 - Valuation: lower of cost or fair market value each year-end (ITA s.10(1))
 - Deduction: COGS on Schedule 125 line 8518 at the moment a unit is sold
 
+*Self-constructed fixed asset* (mechanics in [Materials and CIP](Materials-And-CIP.md)):
+- Purpose: Materials and contractor labour going into a fixed asset built for the corp's own use; *not* inventory (s.18(1)(b) still blocks immediate deduction)
+- Mechanics: cost accumulates in a `Construction in progress` (CIP) balance-sheet asset
+- Trigger: *available for use* (ITA s.13(26)–(27)) transfers the accumulated cost into the appropriate CCA class
+- After transfer: standard CCA mechanics apply
+
 *Depreciable property* (mechanics in [Capital Cost Allowance](Capital-Cost-Allowance.md)):
 - Purpose: long-lived assets the corp buys to use rather than resell
 - Mechanics: ITA s.18(1)(b) blocks immediate deduction; ITA s.20(1)(a) re-opens it through CCA
@@ -39,35 +45,32 @@ The deduction *channel* is set by purpose at acquisition.
 - Rate: per-class, set by Regulation 1100; geometric decline for most classes, straight-line for Classes 13 and 14
 - Disposition: recapture (s.13(1)) or terminal loss (s.20(16)) closes the channel
 
-*Self-constructed fixed asset* (mechanics in [Materials and CIP](Materials-And-CIP.md)):
-- Purpose: Materials and contractor labour going into a fixed asset built for the corp's own use; *not* inventory (s.18(1)(b) still blocks immediate deduction)
-- Mechanics: cost accumulates in a `Construction in progress` (CIP) balance-sheet asset
-- Trigger: *available for use* (ITA s.13(26)–(27)) transfers the accumulated cost into the appropriate CCA class
-- After transfer: standard CCA mechanics apply
 
+## Inventory versus materials: same entry, different exit <!-- [done] -->
 
-## Inventory versus materials: same entry, different exit
-
-Inventory and the materials that go into a self-constructed fixed asset are the two channels that look alike: both are balance-sheet asset accounts holding capitalized cost until it becomes a deduction, and the *same* physical item (a length of lumber) can land in either. The purchase entry is effectively identical. What separates them is the *exit*, not the entry.
+There are similarities between inventory (for sale) and materials (for a self-constructed fixed asset).  
+They are tracked in the same way, but treated differently when consumed.
 
 What is the same:
-- *Classification input*: purpose at acquisition decides the channel, not the item; the same lumber is inventory for a furniture-maker building chairs to sell and CIP for a corp building its own shed
+- *Classification input*: purpose at acquisition decides the channel, not the item
+- *Ledger entries*: both are balance-sheet asset accounts (using different GIFI codes)
+- *External tracking*: both require quantity and cost tracking by item type (outside of ledger, e.g. in a spreadsheet)
 - *Acquisition cost*: both capitalize the same landed-cost components under the shared rules in [Acquisition cost](#acquisition-cost-what-gets-capitalized)
 - *Purchase entry*: debit the asset account, debit `HST receivable` for the recoverable ITC, credit cash or accounts payable
 - *No deduction while parked*: dollars sitting in either account produce no deduction until they leave
-- *Running weighted-average*: both can be tracked as an averaged pool; inventory averages because units sell one at a time, and a *shared* materials pool averages because several builds draw from it ([Materials and CIP — Multiple builds from a shared materials pool](Materials-And-CIP.md#multiple-builds-from-a-shared-materials-pool)); a single-build project needs no averaging at all
+- *Running weighted-average*:
+  - Both can be tracked as an averaged pool (per type of item)
+  - Inventory averages because units sell one at a time, and a *shared* materials pool averages because several builds draw from it ([Materials and CIP — Multiple builds from a shared materials pool](Materials-And-CIP.md#multiple-builds-from-a-shared-materials-pool))
 
-How they differ, all on the exit side:
-- *What leaves, and when*: inventory leaves a few units at a time, each at a sale; materials leave as the whole accumulated cost of a finished asset, once, at available-for-use
+How they differ (all on the exit side):
+- *What leaves, and when*: inventory leaves when units are sold; materials leave when the finished asset is available-for-use based on Bill of Materials (BOM)
 - *Trigger*: a sale, versus *available for use* (s.13(26)–(27)) moving the cost into a CCA class
-- *Where the cost lands*: `Cost of sales` on Schedule 125 (line 8518), versus a CCA class pool on Schedule 8
+- *Where the cost lands*: `Cost of sales` on Schedule 125 (GIFI 8518), versus a CCA class pool on Schedule 8
 - *Deduction speed*: all at once at the moment of sale, versus geometrically over years through CCA
 - *Year-end revaluation*: inventory is written down to fair market value under LCM (s.10(1)); a CIP balance carries at cost with no tax revaluation
 - *Balance-sheet codes*: inventory on the 1120-series GIFI codes, versus the fixed-asset section (a CIP sub-account, then a CCA class line), never the 1120-series
-- *Method lock*: the inventory cost-flow method is fixed year over year (s.10(2.1)); a materials pool only needs a reasonable, consistent costing method, with no equivalent statutory lock
+- *Method lock*: the inventory cost-flow method is fixed year over year (s.10(2.1)); a materials pool only needs a reasonable, consistent costing method, with no equivalent statutory requirement
 - *Disposition*: no capital-gains treatment on inventory; the finished fixed asset can trigger recapture, terminal loss, or a capital gain (see [Disposition mechanics](#disposition-mechanics))
-
-So "both use average cost" is true but does not collapse them into one channel. The averaging only costs what leaves each pool; the pools drain into different deduction channels, on different triggers, at different speeds, and that is the distinction.
 
 
 ## Terminology: Amortization / Depreciation / CCA <!-- [done] -->
