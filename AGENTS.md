@@ -17,6 +17,7 @@ The audience is narrow: owners of a Canadian-controlled private corporation (CCP
 
 `README.md` is the topic index. Each page under `guide/` is a standalone topic; the pages form a dependency graph rather than a flat collection. A topic that has multiple files (parent page + sub-page, or page + screenshots) lives in its own subfolder under `guide/` so related files stay co-located; a topic that is a single page with no media sits as a flat `.md` directly under `guide/`.
 
+- **`guide/Concept-Map.md`** — overarching map of the whole guide: the five layers (taxonomy trees, event-sourced pool balances, events, the event→effect matrix, the annual flow DAG) and which page owns each concept; the orienting "start here" page
 - **`guide/Adjusted-Cost-Base/Adjusted-Cost-Base.md`** — foundational concepts; other guides assume this vocabulary (ACB, ROC, phantom distributions, Book Cost vs ACB)
 - **`guide/Adjusted-Cost-Base/Adjusted-Cost-Base-Tracking.md`** — operational companion to the above; contains the spreadsheet workflow: row-order assumptions, formulas, transaction-type conventions; ACB-related edits elsewhere must stay consistent with this file
 - **`guide/T3/T3.md`, `guide/T5008/T5008.md`** — translate brokerage slips into bookkeeping entries, GIFI-aligned ledger accounts, and specific T2 schedule inputs; build on ACB concepts

@@ -4,7 +4,8 @@
 - Entrepreneurs who are curious about bookkeeping and taxes  
 - Anyone who wants a high-level picture of how Canadian small-business corporate tax fits together
 
-This page is a primer for the topics covered in the rest of this guide.
+This page is a primer for the topics covered in the rest of this guide.  
+For a one-page map of how all the topics connect, see [Concept map](Concept-Map.md).
 
 **TLDR**:
 - A *Canadian-Controlled Private Corporation* (CCPC) files an annual T2 corporate income tax return (separate from the owner's personal T1)

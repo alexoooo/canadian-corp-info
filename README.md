@@ -25,6 +25,7 @@ Disclaimer: author is not an accountant, this is not financial or tax advice.
 ## Pending review
 
 AI generated, not verified yet:
+- [Concept map](guide/Concept-Map.md)
 - [Cost Recovery](guide/Cost-Recovery/Cost-Recovery.md)
   - [Inventory and cost of goods sold](guide/Cost-Recovery/Inventory-And-COGS.md)
   - [Materials and CIP](guide/Cost-Recovery/Materials-And-CIP.md)
