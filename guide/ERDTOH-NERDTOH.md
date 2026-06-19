@@ -1,11 +1,13 @@
 STATUS: AI GENERATED, REVIEW IN PROGRESS
 
-# ERDTOH and NERDTOH (Refundable Dividend Tax Accounts)
+# ERDTOH and NERDTOH (Eligible and Non-Eligible Refundable Dividend Tax On Hand) <!-- [done] -->
 
-**Who this is for**: owners of a Canadian-controlled private corporation (CCPC) trying to understand the corporate-side refundable dividend tax accounts: what fills them, what empties them, and how they show up on the T2.  
+**Who this is for**:
+- Owners of a Canadian-controlled private corporation (CCPC) whose corp earns investment income or receives dividends from other corporations
+- Want to understand the refundable tax the corp prepays on that income, and how the corp gets it back when it pays a dividend to its shareholders
 
 **TLDR**:
-- *ERDTOH* and *NERDTOH* are two corporate tax pools holding previously paid refundable tax
+- *ERDTOH* and *NERDTOH* are two corporate tax pools holding refundable tax the corp has already paid
 - Tax flows *into* the pools when the corp earns *Aggregate Investment Income* (AII) or receives dividends from other corps
 - Tax flows *out* of the pools as a *dividend refund* when the corp pays a taxable dividend
 - The pools were a single *RDTOH* account before 2019; the split into eligible and non-eligible was effective for tax years starting after 2018

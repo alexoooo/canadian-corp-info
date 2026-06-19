@@ -1,8 +1,10 @@
 STATUS: AI GENERATED, REVIEW IN PROGRESS
 
-# Shareholder Dividends
+# Shareholder Dividends <!-- [done] -->
 
-**Who this is for**: owners of a Canadian-controlled private corporation (CCPC) declaring and paying a dividend to themselves as the shareholder.  
+**Who this is for**:
+- Owners of a Canadian-controlled private corporation (CCPC)
+- Declaring and paying a dividend to themselves as the shareholder.  
 
 **TLDR**:
 - Dividends distribute after-tax corporate profits to shareholders
@@ -12,52 +14,59 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
   - How they are taxed in the shareholder's hands
 
 Limitations:
-- Focus is on a single owner-manager shareholder of a CCPC; multiple share classes, family-trust structures, and estate-freeze arrangements are out of scope
-- The shareholder is assumed to be a Canadian-resident *individual*; the Opco-paying-Holdco case is mentioned briefly in the Schedule 3 section, and non-resident shareholders are mentioned briefly in the NR4 section
-- The salary-vs-dividend remuneration tradeoff (CPP, RRSP, payroll, WSIB) is out of scope; this page covers the dividend path only
-- LCGE / QSBC interactions are out of scope (including the use of dividends as a *purification* tool under ITA [s.110.6(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-110.6.html))
+- Focus is on a single owner-manager shareholder of a CCPC; more complex ownership structures (multiple share classes, family trusts, succession planning) are out of scope
+- The shareholder is assumed to be a Canadian-resident *individual*; Opco-paying-Holdco and non-resident shareholders are mentioned briefly
+- The salary-vs-dividend remuneration tradeoff (CPP, RRSP, payroll, WSIB) is out of scope; this page only covers dividends
+- Tax planning for selling the business (e.g. the lifetime capital gains exemption) is out of scope
 - *Tax on Split Income* (TOSI) under ITA [s.120.4](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-120.4.html) is out of scope; verify TOSI does not apply before paying dividends to anyone other than yourself
 - Stock dividends and dividends in kind are out of scope; this page assumes ordinary cash dividends
 - Tax information can change over time (e.g. the single RDTOH account was split into ERDTOH and NERDTOH effective for tax years starting after 2018)
 - The following is my understanding as of 2026
 
 
-## What is a dividend
+## What is a dividend <!-- [done] -->
 
 A *dividend* is a distribution of money or other property by a corporation to its shareholders, paid out of the corporation's after-tax retained earnings.  
 The corporation pays its corporate income tax first; the dividend then transfers (some of) that after-tax money to shareholders.  
 
 Defining characteristics:
-- Paid *pro rata* to the holders of a class of shares; each holder receives the same per-share amount within the class
+- Paid *pro rata* to the holders of a class of shares; every holder within a class of shares receives the same per-share amount 
 - Declared at the directors' discretion; there is no obligation to pay even when retained earnings are positive (see [Declaring a dividend](#declaring-a-dividend) below)
 - Reduces the corporation's *retained earnings* dollar for dollar; a cash dividend also reduces *cash* on the balance sheet
-- **Not deductible to the corporation**: not treated as a business expense, so it does not reduce the corp's taxable income
-  - This is what distinguishes a dividend from salary; *Integration* (covered below) reconciles the two layers of tax
+- **Not deductible to the corporation**: not treated as a business expense, so it does not reduce the corporation's taxable income
+  - This distinguishes a dividend from salary; *Integration* (covered below) reconciles the two layers of tax
 
 The *Income Tax Act* does not define "dividend" exhaustively.  
 ITA [s.248(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-248.html) only adds that stock dividends count; otherwise the common-law definition applies.  
 Various deeming rules in [s.84](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-84.html) cover specific transactions like share redemptions and capital reductions.  
 
 
-## What is not a dividend
+## What is not a dividend <!-- [done] -->
 
-Several transactions look like dividends but are categorically different, or are *deemed* to be dividends with different mechanics:
-
+These transactions move money from the corporation to the owner but are not dividends:
 - *Salary* or management fee paid to the owner-manager:
   - Deductible to the corp (reduces taxable income)
   - Reported on a T4 slip
   - Taxed in the shareholder's hands at full ordinary rates with CPP/EI obligations
   - Does not draw on any of the dividend tax accounts (GRIP, CDA, RDTOH)
+- *Shareholder loan* from the corp: a debt the shareholder owes back, not a distribution
+  - If the loan is not repaid within one year after the end of the corp's tax year in which it was made, ITA [s.15(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-15.html) includes the full loan amount in the shareholder's personal income for the year the loan was made
+  - The broader s.15(1) rules on benefits the corp confers on a shareholder (personal use of corporate property, a personal expense paid by the corp) are covered in [Owner-corporation transactions](Owner-Corporation-Transactions.md)
+
+
+## Deemed dividends <!-- [done] -->
+
+A *deemed dividend* counts as a dividend under the *Income Tax Act*, even though it does not distribute profit out of retained earnings.
+- Applies to cash taken out of the corporation in a way that would otherwise be taxed more lightly than a dividend
+  - Tax-free as a return of capital, or as a capital gain on a share buyback (ITA [s.84](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-84.html))
+
+Some situations you might encounter:
 - *Return of capital* out of *stated capital* / *paid-up capital* (PUC): a distribution that reduces PUC of a private corporation is *deemed* to be a dividend under ITA s.84(4), with limited exceptions
   - In a typical owner-manager CCPC where the founder's incorporator shares were issued for $1 or $100, the PUC is too small to support a meaningful return-of-capital distribution
 - Share *redemption*: when the corporation buys back shares, redemption proceeds in excess of PUC are *deemed* to be a dividend under ITA s.84(3)
   - The shareholder's adjusted cost base is then compared against PUC (not against the gross proceeds) for the capital gain or loss calculation
 
-These deemed-dividend mechanics are used mainly for restructuring transactions (estate freezes, share buybacks, winding up) and are out of scope for this document.  
-
-A *shareholder loan* from the corp is a debt the shareholder owes back, not a distribution.  
-If the loan is not repaid within one year after the end of the corp's tax year in which it was made, ITA [s.15(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-15.html) includes the full loan amount in the shareholder's personal income for the year the loan was made.  
-The broader s.15(1) rules on benefits the corp confers on a shareholder (personal use of corporate property, a personal expense paid by the corp) are covered in [Owner-corporation transactions](Owner-Corporation-Transactions.md).  
+These mechanics are used mainly for restructuring transactions (estate freezes, share buybacks, winding up) and are out of scope for this document.  
 
 
 ## The three dividend flavours
