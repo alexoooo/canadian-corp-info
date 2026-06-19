@@ -13,6 +13,7 @@ Disclaimer: author is not an accountant, this is not financial or tax advice.
 
 - [Small-Business-Tax-Overview](guide/Small-Business-Tax-Overview.md)
 - [Tax Integration](guide/Tax-Integration.md)
+- [Dividends](guide/Dividends/Dividends.md)
 - [Adjusted Cost Base](guide/Adjusted-Cost-Base/Adjusted-Cost-Base.md)
   - [Adjusted Cost Base - Tracking](guide/Adjusted-Cost-Base/Adjusted-Cost-Base-Tracking.md)
 - [Capital Dividend Account](guide/Capital-Dividend-Account/Capital-Dividend-Account.md)
@@ -29,8 +30,12 @@ AI generated, not verified yet:
   - [Materials and CIP](guide/Cost-Recovery/Materials-And-CIP.md)
   - [Capital Cost Allowance](guide/Cost-Recovery/Capital-Cost-Allowance.md)
 - [Foreign Currency](guide/Foreign-Currency.md)
-- [ERDTOH and NERDTOH](guide/ERDTOH-NERDTOH.md)
-- [Shareholder-Dividends](guide/Shareholder-Dividends.md)
+- Dividends sub-pages (hub in Topics):
+  - [ERDTOH and NERDTOH](guide/Dividends/ERDTOH-NERDTOH.md)
+  - [Declaring and paying a dividend](guide/Dividends/Declaring-And-Paying.md)
+  - [Bookkeeping and information slips](guide/Dividends/Bookkeeping-And-Slips.md)
+  - [T2 reporting](guide/Dividends/T2-Reporting.md)
+  - [Worked examples](guide/Dividends/Worked-Examples.md)
 - [Owner-corporation transactions](guide/Owner-Corporation-Transactions.md)
 - [Glossary](guide/Glossary.md)
 - [HST](guide/HST.md)

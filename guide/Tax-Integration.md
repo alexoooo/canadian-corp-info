@@ -52,7 +52,7 @@ Integration is approximate; different provinces and income sources produce small
 - Not included in the shareholder's income at all (ITA [s.83(2)(b)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-83.html))
 - No gross-up, no DTC, not reported on the T1
 - The "tax already paid" at the corporate level is the tax on the *taxable* portion of the underlying capital gain; the *non-taxable* portion is what flows out tax-free as the capital dividend
-- Integration on capital gains earned in a CCPC is imperfect: the AII path (taxable half taxed at ~50%, partly refunded via [NERDTOH](ERDTOH-NERDTOH.md) on payout of a non-eligible dividend) typically leaves a small "tax cost" vs. realizing the gain personally, depending on province
+- Integration on capital gains earned in a CCPC is imperfect: the AII path (taxable half taxed at ~50%, partly refunded via [NERDTOH](Dividends/ERDTOH-NERDTOH.md) on payout of a non-eligible dividend) typically leaves a small "tax cost" vs. realizing the gain personally, depending on province
 - For non-resident shareholders this treatment does not apply: Part XIII withholding still applies (default 25%, often reduced by treaty)
 
 
@@ -71,7 +71,7 @@ Often CDA and GRIP are both empty; the only available option is a non-eligible d
 Assumptions: $1,000 of corporate income, Ontario, shareholder at top marginal rate (53.53%).  
 Combined corporate rates: SBD 12.2% (federal 9% + Ontario 3.2%), general 26.5% (federal 15% + Ontario 11.5%).  
 DTC rates as % of the grossed-up (taxable) amount: eligible 25.02% (federal 15.02% + Ontario 10.0%), non-eligible 12.02% (federal 9.03% + Ontario 2.99%).  
-The 2026 Ontario budget proposes lowering the small-business rate to 2.2% (combined 11.2%) effective July 1, 2026 and the non-eligible DTC to 1.9863% effective January 1, 2027; restate for tax years straddling those dates (see [Shareholder Dividends](Shareholder-Dividends.md#worked-examples)).  
+The 2026 Ontario budget proposes lowering the small-business rate to 2.2% (combined 11.2%) effective July 1, 2026 and the non-eligible DTC to 1.9863% effective January 1, 2027; restate for tax years straddling those dates (see [Dividends](Dividends/Worked-Examples.md#worked-examples)).  
 
 ```mermaid
 flowchart TB
@@ -109,8 +109,8 @@ In other provinces, or at lower personal rates, the ranking between eligible and
 ## Related
 
 - [Small Business Tax Overview](Small-Business-Tax-Overview.md)
-- [Shareholder Dividends](Shareholder-Dividends.md)
-- [ERDTOH and NERDTOH](ERDTOH-NERDTOH.md)
+- [Dividends](Dividends/Dividends.md)
+- [ERDTOH and NERDTOH](Dividends/ERDTOH-NERDTOH.md)
 - [Capital Dividend Account](Capital-Dividend-Account/Capital-Dividend-Account.md)
 
 

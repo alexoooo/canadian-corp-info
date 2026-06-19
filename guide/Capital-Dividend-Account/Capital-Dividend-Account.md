@@ -14,6 +14,7 @@ Limitations:
 
 The Capital Dividend Account is not part of the ledger; it can be tracked separately (e.g. in a spreadsheet).  
 The CDA can be used to pay the tax-free portion of the cumulative net capital gain from the corporation to the shareholders with a capital dividend.  
+A capital dividend is one of the three dividend flavours (eligible, non-eligible, capital); for how it sits alongside the others and the steps to declare and pay it, see [Dividends](../Dividends/Dividends.md).  
 Note: the CDA can also include other amounts such as the tax-free portion of life-insurance proceeds received by the corporation (s.89(1)(d) ITA), but that is outside the scope of this document.  
 
 Maintain a running total of capital gain or loss:
@@ -79,7 +80,7 @@ The CRA My Business Account website can change over time, here are steps as of 2
 
 - [Small Business Tax Overview](../Small-Business-Tax-Overview.md)
 - [Adjusted Cost Base](../Adjusted-Cost-Base/Adjusted-Cost-Base.md)
-- [Shareholder Dividends](../Shareholder-Dividends.md)
+- [Dividends](../Dividends/Dividends.md)
 - [T3](../T3/T3.md)
 - [T5008](../T5008/T5008.md)
 

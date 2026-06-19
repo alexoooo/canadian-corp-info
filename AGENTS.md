@@ -24,7 +24,8 @@ The audience is narrow: owners of a Canadian-controlled private corporation (CCP
 - **`guide/Capital-Dividend-Account/Capital-Dividend-Account.md`** — depends on capital gains data produced by the ACB/T3/T5008 workflows
 - **`guide/Glossary.md`** — short definitions of the acronyms and tax terms used across the guide, each cross-referenced to its canonical page
 - **`guide/Foreign-Currency.md`, `guide/HST.md`, `guide/Payment/Payment.md`** — stubs covering FX bookkeeping, GST/HST, and corporate-tax payment workflows respectively
-- **`guide/Shareholder-Dividends.md`** — eligible, non-eligible, and capital dividend mechanics: which corporate pool each draws on, how to file (T5, T2054), and the T1 gross-up + DTC on the personal side
+- **`guide/Dividends/Dividends.md`** — eligible, non-eligible, and capital dividend concepts: which corporate pool each draws on and the T1 gross-up + DTC on the personal side; the hub for the dividend sub-pages
+- **`guide/Dividends/Declaring-And-Paying.md`, `guide/Dividends/Bookkeeping-And-Slips.md`, `guide/Dividends/T2-Reporting.md`, `guide/Dividends/Worked-Examples.md`** — sub-pages of `Dividends.md` covering the paying-side mechanics (resolution, journal entries, T5/NR4, T2 schedules incl. T2054, worked examples), indexed under it in the README
 - **`guide/Tax-Integration.md`** — the integration principle, the dividend gross-up + DTC mechanism, per-flavour gross-up/DTC rates, and the corp-side preference order for choosing among the three flavours
 
 When adding or substantially restructuring a topic, update `README.md` so the index stays current. Sub-pages are indented under their parent in the index (see how `T3-Box-26-Other-Income.md` sits under `T3.md`). When adding a screenshot, place it in the same folder as the page that references it, and reference it with a bare filename rather than a relative path.
@@ -39,7 +40,7 @@ Every page sits in one of three states, and `README.md` groups pages by state.
 - **`STATUS: AI GENERATED, REVIEW IN PROGRESS`** — page shape and detail are mature, but each section still needs the maintainer's verification before its facts can be relied on
 - **`STATUS: WORK IN PROGRESS`** — stub or partial draft; not yet near complete
 
-When a marker is present, it is the very first line of the file, followed by a blank line, then the `# Title` heading (see `Shareholder-Dividends.md` for the canonical shape).
+When a marker is present, it is the very first line of the file, followed by a blank line, then the `# Title` heading (see `Cost-Recovery/Cost-Recovery.md` for the canonical shape).
 
 This separation is load-bearing. The audience uses these pages as practical guidance, and AI-generated content can contain plausible-sounding errors that have not yet been caught. Do not silently promote a page — removing the marker and moving its `README.md` entry into Topics is a sign-off, and only the maintainer can issue it. When drafting new content from scratch, mark it `AI GENERATED, REVIEW IN PROGRESS` and place its `README.md` entry under Pending review.
 

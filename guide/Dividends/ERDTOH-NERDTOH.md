@@ -2,6 +2,8 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
 
 # ERDTOH and NERDTOH (Eligible and Non-Eligible Refundable Dividend Tax On Hand) <!-- [done] -->
 
+See parent document: [Dividends](Dividends.md)
+
 **Who this is for**:
 - Owners of a Canadian-controlled private corporation (CCPC) whose corp earns investment income or receives dividends from other corporations
 - Want to understand the refundable tax the corp prepays on that income, and how the corp gets it back when it pays a dividend to its shareholders
@@ -15,7 +17,7 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
 Limitations:
 - Focus is on a typical owner-managed CCPC with a Canadian-resident shareholder
 - *Connected*-corporation flow-through Part IV mechanics are touched on but not worked through in depth
-- The salary-vs-dividend tradeoff and TOSI rules are out of scope; see [Shareholder-Dividends.md](Shareholder-Dividends.md)
+- The salary-vs-dividend tradeoff and TOSI rules are out of scope; see [Dividends](Dividends.md)
 - Tax information can change over time
 - The following is my understanding as of 2026
 
@@ -44,17 +46,17 @@ What each dividend flavour paid does:
 
 GRIP and CDA are about *capacity to pay* a particular dividend flavour.  
 ERDTOH and NERDTOH are about *tax already paid* that comes back when the matching flavour is paid.   
-For full GRIP mechanics see [Shareholder-Dividends.md / GRIP - capacity for eligible dividends](Shareholder-Dividends.md#grip---capacity-for-eligible-dividends); for CDA see [Capital-Dividend-Account.md](Capital-Dividend-Account/Capital-Dividend-Account.md).  
+For full GRIP mechanics see [Dividends / GRIP - capacity for eligible dividends](Dividends.md#grip---capacity-for-eligible-dividends); for CDA see [Capital-Dividend-Account.md](../Capital-Dividend-Account/Capital-Dividend-Account.md).  
 
 
-## The two RDTOH pools
+## The two RDTOH pools <!-- [done] -->
 
 The *Eligible Refundable Dividend Tax on Hand* (ERDTOH) and *Non-Eligible Refundable Dividend Tax on Hand* (NERDTOH) accounts are defined in ITA [s.89(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-89.html).  
 Both are refundable tax pools; balances roll forward year to year and are recovered only when the corporation pays a taxable dividend.  
 Neither account is a balance-sheet asset.  
 They are notional T2 pools, tracked by T2 software and reported on T2 Page 7.  
 
-The single pre-2019 RDTOH was effectively split between the two pools on transition based on the source of each dollar.  
+Prior to 2019, there was a single RDTOH, it was split on transition between the two pools based on the source of each dollar.  
 
 
 ## Additions
@@ -72,7 +74,7 @@ Two mechanisms add to the RDTOH pools.
 *Refundable Part I tax on AII* (ITA s.129(4)):
 - Adds to NERDTOH only, never ERDTOH
 - 30⅔% of AII for the year
-- AII is interest, foreign income, the taxable portion of capital gains, and most T3 Box 26 amounts from index ETFs structured as mutual fund trusts (see [T3-Box-26-Other-Income.md](T3/T3-Box-26-Other-Income.md))
+- AII is interest, foreign income, the taxable portion of capital gains, and most T3 Box 26 amounts from index ETFs structured as mutual fund trusts (see [T3-Box-26-Other-Income.md](../T3/T3-Box-26-Other-Income.md))
 
 The 30⅔% rate at which AII *adds* to NERDTOH is not the same as the 38⅓% rate at which a non-eligible dividend *removes* tax from NERDTOH.  
 
@@ -141,7 +143,7 @@ T2 software fills these in once dividends paid (eligible vs non-eligible split) 
 ITA s.129(1) keys off when the dividend is *paid* in the year, using the same "paid, credited, or otherwise made available" standard that determines T5 / T1 timing.  
 A resolution that merely *declares* a dividend payable on a future date in the next year, with no in-year credit to the shareholder, does not land the refund in the current year.  
 
-For the late-December NERDTOH-recovery procedure (resolution + credit to *Due to shareholder* + January cash settlement), see [Shareholder-Dividends.md / Declaration date, record date, and payment date](Shareholder-Dividends.md#declaration-date-record-date-and-payment-date).  
+For the late-December NERDTOH-recovery procedure (resolution + credit to *Due to shareholder* + January cash settlement), see [Dividends / Declaration date, record date, and payment date](Declaring-And-Paying.md#declaration-date-record-date-and-payment-date).  
 
 
 ## Stranding
@@ -159,7 +161,7 @@ Stranding scenarios:
 
 Draining a stranded balance:
 - Designate future dividends as eligible up to the running GRIP balance on Schedule 53, with a current-year catch-up dividend if free retained earnings allow; the eligible dividend draws down both GRIP and ERDTOH
-- GRIP is finalized at year-end, so an in-year catch-up has to forecast the closing balance; over-designating triggers Part III.1 tax (see [Shareholder-Dividends.md / Schedule 55](Shareholder-Dividends.md#schedule-55---part-iii1-tax-on-excessive-eligible-dividend-designations))
+- GRIP is finalized at year-end, so an in-year catch-up has to forecast the closing balance; over-designating triggers Part III.1 tax (see [Dividends / Schedule 55](T2-Reporting.md#schedule-55---part-iii1-tax-on-excessive-eligible-dividend-designations))
 - ITA [s.185.1(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-185.1.html) lets the corporation and shareholder jointly elect to reclassify a small overshoot as a separate non-eligible dividend
 
 
@@ -187,18 +189,18 @@ Dividend refund: $7,500 × 38⅓% = $2,875, exactly emptying ERDTOH.
 If the corporation paid only a non-eligible dividend instead, the dividend would draw on NERDTOH first; with NERDTOH at $0, a $7,500 non-eligible dividend would spill into ERDTOH and trigger the same $2,875 refund.  
 The eligible designation produces a more favourable personal-side gross-up and DTC, so the eligible route is preferred when GRIP is available.  
 
-For the parallel non-eligible / NERDTOH-recovery example (with the year-end timing trick), see [Shareholder-Dividends.md / Worked examples](Shareholder-Dividends.md#worked-examples).  
+For the parallel non-eligible / NERDTOH-recovery example (with the year-end timing trick), see [Dividends / Worked examples](Worked-Examples.md#worked-examples).  
 
 
 # Related
 
-- [Shareholder Dividends](Shareholder-Dividends.md)
-- [T3](T3/T3.md)
-- [T3 - Box 26 Other Income](T3/T3-Box-26-Other-Income.md)
-- [Tax Integration](Tax-Integration.md)
-- [Capital Dividend Account](Capital-Dividend-Account/Capital-Dividend-Account.md)
-- [Small Business Tax Overview](Small-Business-Tax-Overview.md)
-- [Glossary](Glossary.md)
+- [Dividends](Dividends.md)
+- [T3](../T3/T3.md)
+- [T3 - Box 26 Other Income](../T3/T3-Box-26-Other-Income.md)
+- [Tax Integration](../Tax-Integration.md)
+- [Capital Dividend Account](../Capital-Dividend-Account/Capital-Dividend-Account.md)
+- [Small Business Tax Overview](../Small-Business-Tax-Overview.md)
+- [Glossary](../Glossary.md)
 
 
 # Citations

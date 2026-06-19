@@ -200,7 +200,7 @@ The same employee-versus-shareholder framing recurs across a cluster of common i
 - A trip combining business and vacation is deductible only for the business portion; the personal portion (extra nights, a companion's airfare) is either non-deductible or a taxable benefit
 
 *Shareholder loans and low-interest loans*:
-- A withdrawal that is a loan rather than a distribution is included in income if not repaid within one year of the corp's following year-end (ITA s.15(2); see [Shareholder Dividends](Shareholder-Dividends.md))
+- A withdrawal that is a loan rather than a distribution is included in income if not repaid within one year of the corp's following year-end (ITA s.15(2); see [Dividends](Dividends/Dividends.md))
 - A loan at below the prescribed rate also creates an imputed-interest benefit under ITA [s.80.4(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-80.4.html)
 
 *Non-deductible perks*:
@@ -237,7 +237,7 @@ The corporate structure trades this simplicity for the benefit and deduction rul
 ## Related
 
 - [Small Business Tax Overview](Small-Business-Tax-Overview.md)
-- [Shareholder Dividends](Shareholder-Dividends.md)
+- [Dividends](Dividends/Dividends.md)
 - [Capital Cost Allowance](Cost-Recovery/Capital-Cost-Allowance.md)
 - [HST](HST.md)
 - [Glossary](Glossary.md)

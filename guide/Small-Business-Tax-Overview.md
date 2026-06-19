@@ -169,7 +169,7 @@ One reasonable account organization convention is presented in this guide.
 Books are kept to the cent, but the T2 and its GIFI schedules are filed in whole dollars (rounded to the nearest dollar).  
 Rounding each line on its own can throw the accounting equation or a subtotal off by a dollar or two, so it is done systematically (see [Whole-dollar rounding](Whole-Dollar-Rounding.md)).  
 
-See [T3.md](T3/T3.md), [T5008.md](T5008/T5008.md), [Shareholder-Dividends.md](Shareholder-Dividends.md), and [Adjusted-Cost-Base.md](Adjusted-Cost-Base/Adjusted-Cost-Base.md) for concrete worked examples.  
+See [T3.md](T3/T3.md), [T5008.md](T5008/T5008.md), [Dividends](Dividends/Dividends.md), and [Adjusted-Cost-Base.md](Adjusted-Cost-Base/Adjusted-Cost-Base.md) for concrete worked examples.  
 It is recommended to keep books current during the year (monthly is typical); reconstructing past months of activity at year-end is difficult.  
 
 
@@ -181,7 +181,7 @@ The word *account* is used in several different senses across this guide:
   - *GRIP* (General Rate Income Pool, Schedule 53): capacity to pay eligible dividends
   - *CDA* (Capital Dividend Account): capacity to pay tax-free capital dividends
   - *ERDTOH* / *NERDTOH* (Eligible / Non-Eligible Refundable Dividend Tax on Hand): refundable tax that flows back when a dividend is paid
-  - For full mechanics, see [Shareholder-Dividends.md](Shareholder-Dividends.md), [ERDTOH-NERDTOH.md](ERDTOH-NERDTOH.md), and [Capital-Dividend-Account.md](Capital-Dividend-Account/Capital-Dividend-Account.md)
+  - For full mechanics, see [Dividends](Dividends/Dividends.md), [ERDTOH-NERDTOH.md](Dividends/ERDTOH-NERDTOH.md), and [Capital-Dividend-Account.md](Capital-Dividend-Account/Capital-Dividend-Account.md)
 - *CRA My Business Account*: CRA's online portal for corporate tax filings, payments, and correspondence; *CRA My Account* is the personal-tax equivalent and uses the same login (you can associate multiple businesses)
 - *CRA program account*: tracker that CRA maintains, identified by a *Business Number* (BN) plus a program suffix
   - Common accounts: RC for corporate income tax, RT for GST/HST, RP for payroll, RZ for information returns (e.g. T5)
@@ -217,7 +217,7 @@ Two parts of the *Income Tax Act* drive a CCPC's tax mechanics:
 
 *Active business income* (ABI): income from carrying on an active business (consulting fees, product sales, services rendered).  
 The first $500,000 per year is taxed at the *small-business rate* via the SBD (combined federal + Ontario ≈ 12.2% in 2026); ABI above $500,000 is taxed at the *general rate* (combined ≈ 26.5% in Ontario).  
-The 2026 Ontario budget proposes cutting the Ontario small-business rate to 2.2% (combined 11.2%) effective July 1, 2026; see [Shareholder Dividends](Shareholder-Dividends.md#worked-examples).  
+The 2026 Ontario budget proposes cutting the Ontario small-business rate to 2.2% (combined 11.2%) effective July 1, 2026; see [Dividends](Dividends/Worked-Examples.md#worked-examples).  
 The $500,000 SBD *business limit* is not always a flat ceiling. It can be reduced by:
 - Sharing among *associated corporations* under ITA [s.125(3)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-125.html)
 - *Aggregate investment income* (AII) over $50,000 under ITA [s.125(5.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-125.html) (the *AII grind*)
@@ -229,7 +229,7 @@ The refundable mechanism is what stops the CCPC from being used as an indefinite
 
 Dividends *received* from other Canadian corporations (for example, portfolio shareholdings or funds structured as corporations) sit in their own bucket:
 - Exempt from Part I tax under *s.112*; the corresponding Part IV tax is recovered when the corp later pays a dividend out
-- The Part IV tax is mostly recorded in the corporation's *ERDTOH* (eligible RDTOH) account, the eligible-side counterpart to NERDTOH; see [ERDTOH-NERDTOH.md](ERDTOH-NERDTOH.md) for the full ERDTOH/NERDTOH mechanics
+- The Part IV tax is mostly recorded in the corporation's *ERDTOH* (eligible RDTOH) account, the eligible-side counterpart to NERDTOH; see [ERDTOH-NERDTOH.md](Dividends/ERDTOH-NERDTOH.md) for the full ERDTOH/NERDTOH mechanics
 
 The main T-slips a corporation receives for investment income reporting:
 - *T3* (Statement of Trust Income): distributions from trusts, including most Canadian ETFs (which are *mutual fund trusts* rather than corporations); covers interest, capital gains, foreign income, etc.; see [T3.md](T3/T3.md)
@@ -268,7 +268,7 @@ You can use either or both in a mix:
 - No source deductions, no CPP, no EI; dividends are not employment income
 - Do not generate RRSP room or CPP credits
 - Eligible for the *dividend gross-up and tax credit* on the personal return, per *Integration*
-- Can be designated *eligible* (from the GRIP pool), *non-eligible*, or *capital* (from the CDA), each with its own gross-up and DTC; see [Shareholder-Dividends.md](Shareholder-Dividends.md)
+- Can be designated *eligible* (from the GRIP pool), *non-eligible*, or *capital* (from the CDA), each with its own gross-up and DTC; see [Dividends](Dividends/Dividends.md)
 
 Practical tradeoffs:
 - Salary advantages:
@@ -282,7 +282,7 @@ Practical tradeoffs:
 
 The full optimization is personal: it depends on tax bracket, retirement strategy, mortgage plans, and family income-splitting considerations.  
 The *TOSI* rules under ITA [s.120.4](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-120.4.html) limit splitting through dividends to family members who are not active in the business.  
-For dividend mechanics, see [Shareholder-Dividends.md](Shareholder-Dividends.md); for payroll, see [Payment.md](Payment/Payment.md).  
+For dividend mechanics, see [Dividends](Dividends/Dividends.md); for payroll, see [Payment.md](Payment/Payment.md).  
 
 
 ## Personal Service Business classification risk
@@ -423,9 +423,9 @@ When a question gets specific, several layers of authority can apply:
   - [Materials and CIP](Cost-Recovery/Materials-And-CIP.md)
   - [Capital Cost Allowance](Cost-Recovery/Capital-Cost-Allowance.md)
 - [Capital Dividend Account](Capital-Dividend-Account/Capital-Dividend-Account.md)
-- [Shareholder Dividends](Shareholder-Dividends.md)
+- [Dividends](Dividends/Dividends.md)
 - [Owner-corporation transactions](Owner-Corporation-Transactions.md)
-- [ERDTOH and NERDTOH](ERDTOH-NERDTOH.md)
+- [ERDTOH and NERDTOH](Dividends/ERDTOH-NERDTOH.md)
 - [T3](T3/T3.md)
 - [T3 - Box 26 Other Income](T3/T3-Box-26-Other-Income.md)
 - [T5008](T5008/T5008.md)

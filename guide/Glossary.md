@@ -18,13 +18,13 @@ For mechanics and worked examples, follow the link to the canonical page where o
 - CRA: *Canada Revenue Agency* — administers federal tax (and most provincial corporate tax)
 - DIEP: *Designated Immediate Expensing Property* — the 2021–2023 CCPC measure allowing up to $1.5M of full first-year expensing; not available for new acquisitions in 2026; see [Capital-Cost-Allowance.md](Cost-Recovery/Capital-Cost-Allowance.md)
 - DTC: *Dividend Tax Credit* — personal credit calibrated to offset corporate tax already paid (per Integration); see [Tax-Integration.md](Tax-Integration.md)
-- Dividend refund: corporate refund under ITA s.129(1) when a taxable dividend is paid; calculated as 38⅓% of dividends paid, capped at the relevant RDTOH balance; see [ERDTOH-NERDTOH.md](ERDTOH-NERDTOH.md)
+- Dividend refund: corporate refund under ITA s.129(1) when a taxable dividend is paid; calculated as 38⅓% of dividends paid, capped at the relevant RDTOH balance; see [ERDTOH-NERDTOH.md](Dividends/ERDTOH-NERDTOH.md)
 - Eligible dividend: dividend designated under s.89(14), drawing on the GRIP pool; carries a larger gross-up and DTC than a non-eligible dividend
-- ERDTOH: *Eligible Refundable Dividend Tax on Hand* — refundable tax pool that releases when an eligible dividend is paid; see [ERDTOH-NERDTOH.md](ERDTOH-NERDTOH.md)
+- ERDTOH: *Eligible Refundable Dividend Tax on Hand* — refundable tax pool that releases when an eligible dividend is paid; see [ERDTOH-NERDTOH.md](Dividends/ERDTOH-NERDTOH.md)
 - FMV: *Fair Market Value* — the price a willing buyer and seller would agree on at arm's length; the value an inventory item is written down to when FMV falls below cost in the lower-of-cost-or-market test, and the deemed proceeds on non-arm's-length transfers; see [Inventory-And-COGS.md](Cost-Recovery/Inventory-And-COGS.md)
 - GIFI: *General Index of Financial Information* — CRA's standardized chart-of-accounts coding used on Schedules 100 and 125; defined in CRA RC4088
 - Gross-up: notional uplift applied to a cash dividend on the personal return (38% for eligible, 15% for non-eligible) to derive the *taxable* amount on the T1; see [Tax-Integration.md](Tax-Integration.md)
-- GRIP: *General Rate Income Pool* — capacity to designate eligible dividends; tracked on Schedule 53; see [Shareholder-Dividends.md](Shareholder-Dividends.md)
+- GRIP: *General Rate Income Pool* — capacity to designate eligible dividends; tracked on Schedule 53; see [Dividends](Dividends/Dividends.md)
 - Half-year rule: Regulation 1100(2); only half-rate CCA on net additions in the year of acquisition; several classes are exempt; see [Capital-Cost-Allowance.md](Cost-Recovery/Capital-Cost-Allowance.md)
 - HST: *Harmonized Sales Tax* — provincial-and-federal-combined sales tax used by some provinces; see [HST.md](HST.md)
 - Integration: design principle that combines corporate + personal tax to approximate direct-earning tax; see [Tax-Integration.md](Tax-Integration.md)
@@ -34,13 +34,13 @@ For mechanics and worked examples, follow the link to the canonical page where o
 - LCGE: *Lifetime Capital Gains Exemption* — personal exemption available on the disposition of QSBC shares
 - LCM: *lower of cost or market* — the year-end inventory valuation rule (ITA s.10(1)): each item is carried at the lower of its landed cost or fair market value; see [Inventory-And-COGS.md](Cost-Recovery/Inventory-And-COGS.md)
 - LRIP: *Low Rate Income Pool* — relevant only if the corporation was previously a non-CCPC; for a corporation that has always been a CCPC, LRIP does not constrain anything
-- NERDTOH: *Non-Eligible Refundable Dividend Tax on Hand* — refundable tax pool that releases when a non-eligible dividend is paid; see [ERDTOH-NERDTOH.md](ERDTOH-NERDTOH.md)
+- NERDTOH: *Non-Eligible Refundable Dividend Tax on Hand* — refundable tax pool that releases when a non-eligible dividend is paid; see [ERDTOH-NERDTOH.md](Dividends/ERDTOH-NERDTOH.md)
 - Non-eligible dividend: default classification for any taxable dividend not designated eligible (and not a capital dividend); carries a smaller gross-up and DTC than an eligible dividend
 - Perpetual / periodic inventory: two inventory-tracking systems; *perpetual* updates the ledger at each purchase and sale, *periodic* plugs cost of sales from a year-end physical count; see [Inventory-And-COGS.md](Cost-Recovery/Inventory-And-COGS.md#tracking-through-the-year)
 - PSB: *Personal Service Business* — a CCPC effectively acting as a disguised employee, with most CCPC tax advantages removed; see [Small-Business-Tax-Overview.md](Small-Business-Tax-Overview.md)
-- PUC: *Paid-Up Capital* — tax-side measure of contributed capital tracked per share class; can drive deemed-dividend mechanics on redemption or capital reduction; see [Shareholder-Dividends.md](Shareholder-Dividends.md)
+- PUC: *Paid-Up Capital* — tax-side measure of contributed capital tracked per share class; can drive deemed-dividend mechanics on redemption or capital reduction; see [Dividends](Dividends/Dividends.md)
 - QSBC: *Qualified Small Business Corporation* — share-level test gating LCGE eligibility, including a 90% active-business-assets requirement
-- RDTOH: *Refundable Dividend Tax on Hand* — umbrella term covering the ERDTOH and NERDTOH pools; the single pre-2019 RDTOH was split into the two for tax years starting after 2018; see [ERDTOH-NERDTOH.md](ERDTOH-NERDTOH.md)
+- RDTOH: *Refundable Dividend Tax on Hand* — umbrella term covering the ERDTOH and NERDTOH pools; the single pre-2019 RDTOH was split into the two for tax years starting after 2018; see [ERDTOH-NERDTOH.md](Dividends/ERDTOH-NERDTOH.md)
 - Recapture: negative UCC at year-end included in income under ITA s.13(1); see [Capital-Cost-Allowance.md](Cost-Recovery/Capital-Cost-Allowance.md)
 - ROC: *Return of Capital* — distribution that reduces ACB rather than producing taxable income; T3 Box 42 typically carries ROC; see [Adjusted-Cost-Base.md](Adjusted-Cost-Base/Adjusted-Cost-Base.md)
 - Rounding (whole-dollar): books are kept to the cent but the T2 and GIFI schedules are filed in whole dollars (round to the nearest dollar); subtotals are summed from the rounded lines and a designated line absorbs the residual so the statements still tie; see [Whole-Dollar-Rounding.md](Whole-Dollar-Rounding.md)
