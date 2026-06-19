@@ -21,36 +21,42 @@ Limitations:
 Each section below renders one of these aspects as a diagram or table; the [relationship legend](#how-the-concepts-relate) at the end labels every cluster by its shape (tree, flow, matrix, or graph).
 
 
-## The yearly flow
+## Yearly process flow <!-- [done] -->
 
-Annual pipeline stages:
-- Economic activity becomes slips
-- Slips become bookkeeping
-- Bookkeeping sorts into pools
-- Pools drive the year-end return and dividend
-
-A *process flow* (DAG): each stage feeds the next, left to right, with no loop back.  
+- Operating activity and investment slips both post to the books
+- The books roll up into financial statements, then GIFI schedules on the T2
+- Classified income fills the tax pools
+- Pools drive the year-end return and the dividend decision
 
 ```mermaid
 flowchart TB
-    EV([Economic events<br/>sales · purchases · trades · distributions received])
-    DOC[Slips received<br/>T3 · T5 · T5008]
-    GL[(Bookkeeping<br/>general ledger to GIFI)]
-    CLASS{{Income classification<br/>ABI · AII · dividends received}}
-    POOLS[(Tax pools<br/>GRIP · CDA · ERDTOH · NERDTOH)]
-    DEC{{Dividend decision<br/>eligible · non-eligible · capital}}
-    T2[Year-end T2<br/>S3 · S53 · S55 · S6 · S8]
-    OUT[Outputs<br/>dividend refund · T5 / T2054 to shareholder]
-    T1([Shareholder T1<br/>gross-up plus DTC])
+    OPS(["Operating activity:<br/>sales · expenses · payroll"])
+    INV(["Investment activity:<br/>interest · distributions · trades"])
+    BILLS["Invoices · bills · receipts"]
+    DOC["T3 · T5 · T5008 slips"]
+    GL[("Bookkeeping ledger")]
+    FS["Financial statements:<br/>income statement · balance sheet"]
+    GIFI["GIFI schedules:<br/>S125 income · S100 balance"]
+    CLASS{{"Income classification:<br/>ABI · AII · dividends received"}}
+    POOLS[("Tax pools:<br/>GRIP · CDA · ERDTOH · NERDTOH")]
+    DEC{{"Dividend decision:<br/>eligible · non-eligible · capital"}}
+    T2["Year-end T2:<br/>S3 · S53 · S55 · S6 · S8"]
+    OUT["Outputs:<br/>dividend refund · T5 / T2054 to shareholder"]
+    T1(["Shareholder T1:<br/>gross-up plus DTC"])
 
-    EV --> DOC --> GL --> CLASS --> POOLS
+    OPS --> BILLS --> GL
+    INV --> DOC --> GL
+    GL --> FS --> GIFI --> CLASS --> POOLS
+    DOC -.->|tax character| CLASS
     POOLS -->|capacity| DEC
     DEC --> T2 --> OUT --> T1
-    GL -.-> T2
+    GIFI -.-> T2
     POOLS -.->|refunds| T2
 ```
 
-Owns the detail: [Small Business Tax Overview](Small-Business-Tax-Overview.md) (the same flow with every cash and designation edge), then the per-stage pages linked below.  
+For details, see:
+- [Small Business Tax Overview](Small-Business-Tax-Overview.md): mode detailed flowchart and other references
+- [Bookkeeping, the general ledger, and GIFI](Small-Business-Tax-Overview.md#bookkeeping-the-general-ledger-and-gifi): books → financial statements → GIFI mapping  
 
 
 ## Income taxonomy
@@ -60,17 +66,17 @@ A *hierarchy* (tree): each kind of income is a leaf, annotated with the balance 
 
 ```mermaid
 flowchart TB
-    CI([Corporate income])
-    ABI([Active business income<br/>ABI])
-    AII([Aggregate investment income<br/>AII])
-    DR([Dividends received<br/>from other corps])
+    CI(["Corporate income"])
+    ABI(["Active business income<br/>ABI"])
+    AII(["Aggregate investment income<br/>AII"])
+    DR(["Dividends received<br/>from other corps"])
 
-    SBD[SBD-rate, first $500K<br/>to retained earnings]
-    GEN[General-rate portion<br/>to GRIP at 72%]
-    INT[Interest, foreign income<br/>to NERDTOH at 30⅔%]
-    CG[Capital gains<br/>taxable ½ to NERDTOH<br/>non-taxable ½ to CDA]
-    DRE[Eligible received<br/>to GRIP plus ERDTOH]
-    DRN[Non-eligible received<br/>to NERDTOH]
+    SBD["SBD-rate, first $500K<br/>to retained earnings"]
+    GEN["General-rate portion<br/>to GRIP at 72%"]
+    INT["Interest, foreign income<br/>to NERDTOH at 30⅔%"]
+    CG["Capital gains<br/>taxable ½ to NERDTOH<br/>non-taxable ½ to CDA"]
+    DRE["Eligible received<br/>to GRIP plus ERDTOH"]
+    DRN["Non-eligible received<br/>to NERDTOH"]
 
     CI --> ABI
     CI --> AII
@@ -93,20 +99,20 @@ The running balances that determine how dividends are taxed on the corporation's
 
 ```mermaid
 flowchart TB
-    GENABI([General-rate ABI])
-    DivE([Eligible dividend received])
-    DivNE([Non-eligible dividend received])
-    AII([AII: interest, foreign,<br/>taxable cap gains, Box 26])
-    CapGain([Capital gain: non-taxable ½])
+    GENABI(["General-rate ABI"])
+    DivE(["Eligible dividend received"])
+    DivNE(["Non-eligible dividend received"])
+    AII(["AII: interest, foreign,<br/>taxable cap gains, Box 26"])
+    CapGain(["Capital gain: non-taxable ½"])
 
-    GRIP[(GRIP)]
-    CDA[(CDA)]
-    ERDTOH[(ERDTOH)]
-    NERDTOH[(NERDTOH)]
+    GRIP[("GRIP")]
+    CDA[("CDA")]
+    ERDTOH[("ERDTOH")]
+    NERDTOH[("NERDTOH")]
 
-    PayE([Pay eligible<br/>dividend])
-    PayNE([Pay non-eligible<br/>dividend])
-    PayC([Pay capital<br/>dividend])
+    PayE(["Pay eligible<br/>dividend"])
+    PayNE(["Pay non-eligible<br/>dividend"])
+    PayC(["Pay capital<br/>dividend"])
 
     GENABI -->|+72%| GRIP
     DivE -->|full amount| GRIP
@@ -132,13 +138,13 @@ A *hierarchy* (tree) with one timing branch (CIP becomes a fixed asset once avai
 
 ```mermaid
 flowchart TB
-    Buy([Corp buys property])
-    Purpose{{Purpose at acquisition}}
-    Inv[(Inventory)]
-    CIP[(Construction in progress)]
-    Fixed[(Depreciable property<br/>UCC pool by class)]
-    COGS[Cost of sales<br/>at the moment of sale]
-    CCA[Annual CCA<br/>over years]
+    Buy(["Corp buys property"])
+    Purpose{{"Purpose at acquisition"}}
+    Inv[("Inventory")]
+    CIP[("Construction in progress")]
+    Fixed[("Depreciable property<br/>UCC pool by class")]
+    COGS["Cost of sales<br/>at the moment of sale"]
+    CCA["Annual CCA<br/>over years"]
 
     Buy --> Purpose
     Purpose -->|hold for resale| Inv
