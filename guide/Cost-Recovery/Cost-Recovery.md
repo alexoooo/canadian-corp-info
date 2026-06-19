@@ -73,7 +73,7 @@ How they differ (all on the exit side):
 - *Disposition*: no capital-gains treatment on inventory; the finished fixed asset can trigger recapture, terminal loss, or a capital gain (see [Disposition mechanics](#disposition-mechanics))
 
 
-## Terminology: Amortization / Depreciation / CCA <!-- [done] -->
+## Terminology: Amortization, Depreciation, CCA <!-- [done] -->
 
 *Amortization* and *Depreciation* are two names for the same mechanism.  
 For tax, neither label matters, as the CRA doesn't use either terms, instead referring to the mechanism as *CCA*.  

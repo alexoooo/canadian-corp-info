@@ -20,9 +20,9 @@ Limitations:
 - The following is my understanding as of 2026
 
 
-## The four corporate tax pools
+## The four corporate tax pools <!-- [done] -->
 
-ERDTOH and NERDTOH are two of four corporate tax pools that together drive the corp-side dividend mechanics.  
+ERDTOH and NERDTOH are two of four corporate tax pools that together determine how dividends are taxed on the corporation's side.  
 Each pool tracks a different kind of pre-earned capacity or pre-paid tax, recovered through one specific dividend flavour paid out.  
 
 The four pools:
@@ -42,7 +42,8 @@ What each dividend flavour paid does:
 - *Non-eligible* (no designation): triggers a NERDTOH refund of 38⅓% × dividend paid; ERDTOH is the spillover if NERDTOH is exhausted
 - *Capital* (s.83(2) election on Form T2054): draws on CDA capacity; no refund
 
-GRIP and CDA are about *capacity to pay* a particular dividend flavour; ERDTOH and NERDTOH are about *tax already paid* that comes back when the matching flavour is paid.  
+GRIP and CDA are about *capacity to pay* a particular dividend flavour.  
+ERDTOH and NERDTOH are about *tax already paid* that comes back when the matching flavour is paid.   
 For full GRIP mechanics see [Shareholder-Dividends.md / GRIP - capacity for eligible dividends](Shareholder-Dividends.md#grip---capacity-for-eligible-dividends); for CDA see [Capital-Dividend-Account.md](Capital-Dividend-Account/Capital-Dividend-Account.md).  
 
 
@@ -145,14 +146,21 @@ For the late-December NERDTOH-recovery procedure (resolution + credit to *Due to
 
 ## Stranding
 
-ERDTOH and NERDTOH cannot be transferred, sold, or rolled out to a shareholder; any unused balance at wind-up is lost.  
-The ordering rule above (non-eligible draws NERDTOH first, then ERDTOH) means a corporation that receives eligible dividends but only ever pays non-eligible dividends can build up ERDTOH that never drains while NERDTOH is non-empty.  
+GRIP, ERDTOH, and NERDTOH cannot be transferred, sold, or rolled out to a shareholder; any unused balance at wind-up is lost.  
+A corporation that receives eligible dividends but only ever pays non-eligible dividends strands both GRIP and ERDTOH on the corporate books.  
+
+How the two pools strand:
+- *GRIP*: eligible dividends received add to GRIP, but the eligible designation has to be made at or before the time the dividend is paid (ITA [s.89(14)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-89.html)); a non-eligible dividend already paid cannot be retroactively redesignated, so an unused GRIP balance accumulates on Schedule 53
+- *ERDTOH*: Part IV tax on dividends received populates ERDTOH, but the ordering rule (non-eligible draws NERDTOH first, ERDTOH only after NERDTOH is exhausted) means ERDTOH never drains while NERDTOH is non-empty
 
 Stranding scenarios:
 - A CCPC receiving Box 49 ETF dividends (e.g. XEI) but only paying non-eligible dividends to the owner-manager: each year's Part IV tax on the eligible dividends received goes to ERDTOH, but the year's payout draws only from NERDTOH (which is being filled by the AII portion of the same ETF distributions); the ERDTOH balance grows and stays
 - A CCPC with no GRIP and a stranded ERDTOH balance: paying an eligible dividend would draw on ERDTOH but requires GRIP capacity to designate the dividend; without GRIP the ERDTOH stays stranded
 
-The companion GRIP-stranding pitfall is covered in [Shareholder-Dividends.md / Stranded GRIP and ERDTOH](Shareholder-Dividends.md#stranded-grip-and-erdtoh).  
+Draining a stranded balance:
+- Designate future dividends as eligible up to the running GRIP balance on Schedule 53, with a current-year catch-up dividend if free retained earnings allow; the eligible dividend draws down both GRIP and ERDTOH
+- GRIP is finalized at year-end, so an in-year catch-up has to forecast the closing balance; over-designating triggers Part III.1 tax (see [Shareholder-Dividends.md / Schedule 55](Shareholder-Dividends.md#schedule-55---part-iii1-tax-on-excessive-eligible-dividend-designations))
+- ITA [s.185.1(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-185.1.html) lets the corporation and shareholder jointly elect to reclassify a small overshoot as a separate non-eligible dividend
 
 
 ## Worked example - ERDTOH buildup from corporate ETF holdings
@@ -196,9 +204,11 @@ For the parallel non-eligible / NERDTOH-recovery example (with the year-end timi
 # Citations
 
 - Income Tax Act (R.S.C., 1985, c. 1 (5th Supp.)):
-  - [s.89(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-89.html) - definitions of *ERDTOH* and *NERDTOH*
+  - [s.89(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-89.html) - definitions of *ERDTOH* and *NERDTOH* (and of *GRIP*)
+  - [s.89(14)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-89.html) - eligible dividend designation by written notice at or before payment
   - [s.112](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-112.html) - inter-corporate dividend deduction (Part I exemption for dividends received)
   - [s.129(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-129.html) - dividend refund formula (eligible: s.129(1)(a); non-eligible: s.129(1)(b))
   - [s.129(4)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-129.html) - additions to ERDTOH and NERDTOH; refundable Part I tax on AII (30⅔%); destination rule for Part IV tax
+  - [s.185.1](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-185.1.html) - Part III.1 tax on excessive eligible dividend designations (20%); s.185.1(2) joint election to reclassify a small overshoot as a non-eligible dividend
   - [s.186(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-186.html) - Part IV tax on dividends received from other corporations (38⅓% non-connected; flow-through for connected)
 - CRA T4012 - T2 Corporation Income Tax Guide: https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4012.html

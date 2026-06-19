@@ -69,21 +69,21 @@ Some situations you might encounter:
 These mechanics are used mainly for restructuring transactions (estate freezes, share buybacks, winding up) and are out of scope for this document.  
 
 
-## The three dividend flavours
+## Three dividend flavours: Eligible, Non-eligible, Capital <!-- [done] -->
 
 A dividend paid by a CCPC to a Canadian-resident shareholder falls into one of three flavours: *eligible*, *non-eligible*, or *capital*.  
-The flavour is determined by the source of the distribution on the corporate side, and by whether the corporation makes the required designation or election.
+The flavour is determined by the source of the distribution for the corporation, and by whether the corporation makes the required designation or election.  
 
 *Eligible dividend*:
 - Paid out of one of:
-  - Corporate income previously taxed at the general (non-SBD) rate
+  - Corporate income previously taxed at the general (non-SBD, Small Business Deduction) rate
   - Eligible dividends received directly from another Canadian corporation (T5)
   - Eligible dividends flowed through a Canadian trust under ITA [s.104(19)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-104.html) (T3 Box 49)
 - Tracked via the *General Rate Income Pool* (GRIP), defined at ITA [s.89(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-89.html)
 - Designation required at or before the time of payment, by written notice to the shareholder under ITA s.89(14)
 - Over-designating triggers *Part III.1* tax on the excess at 20% under ITA [s.185.1](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-185.1.html), reported on T2 Schedule 55 (S55)
 
-For a typical CCPC operating entirely under the SBD limit, GRIP is empty unless the corporation holds Canadian equity investments (direct shares or Canadian-equity ETFs like VCN/XIU).  
+For a typical CCPC operating entirely under the SBD limit, GRIP is empty unless the corporation holds Canadian equity investments (direct shares or Canadian-equity ETFs like VCN/XEI).  
 
 *Non-eligible dividend*:
 - Default classification: any taxable dividend not designated eligible (and not a capital dividend) is non-eligible
@@ -103,51 +103,37 @@ Note: the *Low Rate Income Pool* (LRIP, ITA s.89(1)) only applies if the corpora
 For full mechanics of the CDA balance calculation and the T2054 election workflow, see [Capital-Dividend-Account.md](Capital-Dividend-Account/Capital-Dividend-Account.md).  
 
 
-### Stranded GRIP and ERDTOH
-
-A CCPC that receives eligible dividends but only ever pays non-eligible dividends builds up an unused GRIP balance on S53.  
-The eligible designation has to be made at or before the time the dividend is paid (ITA [s.89(14)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-89.html)); a non-eligible dividend already paid cannot be retroactively redesignated.  
-
-The same pattern strands ERDTOH:
-- Part IV tax on Canadian-corp dividends received populates ERDTOH (ITA [s.129(4)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-129.html))
-- ERDTOH is preferentially refunded when an eligible dividend is paid; a non-eligible dividend only draws on ERDTOH after NERDTOH is exhausted (ITA [s.129(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-129.html))
-- A non-eligible-only payout history can leave both GRIP and ERDTOH stranded on the corporate books
-
-GRIP and ERDTOH cannot be transferred, sold, or rolled out to the shareholder; any unused balance at wind-up is lost.  
-
-Going forward, future dividends can be designated eligible up to the running GRIP balance on S53, with a current-year catch-up dividend if free retained earnings allow.  
-GRIP is finalized at year-end, so an in-year catch-up has to forecast the closing balance; over-designating triggers the Part III.1 tax described above.  
-ITA [s.185.1(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-185.1.html) lets the corporation and shareholder jointly elect to reclassify a small overshoot as a separate non-eligible dividend.  
-
-
-## Tax integration
+## Tax integration <!-- [done] -->
 
 *Integration* aims for the total tax paid on income earned through a corporation and distributed as a dividend to roughly equal the tax the same individual would have paid had they earned the income directly.  
-The mechanism is the *dividend gross-up and tax credit*, calibrated by flavour to the corporate tax already paid; capital dividends sit outside this framework (tax-free to a Canadian-resident shareholder).  
+*Dividend gross-up and tax credit* adjust by flavour to the corporate tax already paid (capital dividends sit outside this framework, they are tax-free to a Canadian-resident shareholder).  
 
 For the full integration mechanics (gross-up and DTC rates per flavour, corp-side preference order, ITA citations), see [Tax-Integration.md](Tax-Integration.md).  
 
 
-## GRIP - capacity for eligible dividends
+## GRIP - capacity for eligible dividends <!-- [done] -->
 
-The *General Rate Income Pool* (GRIP), defined at ITA [s.89(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-89.html), tracks a CCPC's accumulated after-tax income that was taxed at the general (non-SBD) corporate rate, plus eligible dividends received from other taxable Canadian corporations.  
+The *General Rate Income Pool* (GRIP) is defined at ITA [s.89(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-89.html).  
+It tracks a CCPC's accumulated after-tax income taxed at the general (non-SBD) corporate rate, plus eligible dividends received from other taxable Canadian corporations.  
 Calculated each year on Schedule 53 (S53 - *General Rate Income Pool (GRIP) Calculation*); the running balance carries forward.  
 
-The simplified annual addition to GRIP is:
+GRIP is updated every year:
 - Plus 72% of *general-rate active business income* for the year (active business income above the SBD limit, taxed at the general rate)
 - Plus eligible dividends *received* during the year from other taxable Canadian corporations
 - Minus eligible dividends *paid* during the year
 
-The 72% factor is set in ITA s.89(1) (the "general rate factor") and corresponds to a notional 28% combined corp tax; it does not move with actual provincial general rates.  
+The 72% factor (the "general rate factor") is defined in ITA s.89(1).  
+It is the after-tax remainder of a notional 28% combined corporate tax rate, not the provincial general rate.  
 
 For a CCPC operating entirely under the SBD limit, no general-rate active business income is generated.  
-The only way GRIP grows is through eligible dividends received from other Canadian corporations that designate them as eligible (most commonly public-corp ETFs and direct equity holdings, but also any other CCPC paying out of its own GRIP).  
+The only way GRIP grows is through eligible dividends received from other Canadian corporations that designate them as eligible.  
+Common sources are public-corp ETFs and direct equity holdings, but also any other CCPC paying out of its own GRIP.  
 This is why most owner-manager dividends end up being non-eligible by default: there is nothing in GRIP to designate against.  
 
 Schedule 53 must still be filed each year to track and carry forward the balance, even when GRIP is zero.  
 
 
-## CDA - capacity for capital dividends
+## CDA - capacity for capital dividends <!-- [done] -->
 
 The *Capital Dividend Account* (CDA) holds the non-taxable portion of the corporation's cumulative net capital gains, plus certain other amounts (e.g. tax-free portion of life-insurance proceeds), and is reduced by capital dividends paid.  
 For mechanics of CDA balance tracking, the s.83(2) election, Form T2054 filing, and the Part III tax penalty for over-electing, see [Capital-Dividend-Account.md](Capital-Dividend-Account/Capital-Dividend-Account.md).  
@@ -157,24 +143,30 @@ Any capital losses realized between your last balance check and the election dat
 Overdrawing triggers a 60% Part III tax (ITA s.184(2)).  
 
 
-## ERDTOH and NERDTOH - refundable dividend tax accounts
+## ERDTOH and NERDTOH - refundable dividend tax accounts <!-- [done] -->
 
-The *Eligible Refundable Dividend Tax on Hand* (ERDTOH) and *Non-Eligible Refundable Dividend Tax on Hand* (NERDTOH) accounts hold previously paid refundable corporate tax that the corp gets back as a *dividend refund* under ITA [s.129(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-129.html) when it pays a taxable dividend.  
-For pool definitions, the additions side (Part IV tax and the 30⅔% refundable Part I on AII), and a fill-side worked example, see [ERDTOH-NERDTOH.md](ERDTOH-NERDTOH.md).  
+Two accounts hold previously paid refundable corporate tax:
+- *Eligible Refundable Dividend Tax on Hand* (ERDTOH)
+- *Non-Eligible Refundable Dividend Tax on Hand* (NERDTOH)
 
-The dividend refund is calculated separately by dividend type:
-- *Eligible* dividends paid → lesser of 38⅓% of eligible dividends paid in the year, or the ERDTOH year-end balance (ITA s.129(1)(a))
-- *Non-eligible* dividends paid → lesser of 38⅓% of non-eligible dividends paid in the year, or the NERDTOH year-end balance plus any ERDTOH balance left over after the eligible-dividend refund (ITA s.129(1)(b))
+The corporation gets this tax back as a *dividend refund* under ITA [s.129(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-129.html) when it pays a taxable dividend:
+- *Eligible* dividend paid → draws only on ERDTOH (ITA s.129(1)(a))
+- *Non-eligible* dividend paid → draws on NERDTOH first, and only spills into ERDTOH after NERDTOH is exhausted (ITA s.129(1)(b))
 
-An eligible dividend draws only on ERDTOH; a non-eligible dividend draws on NERDTOH first and only spills into ERDTOH after NERDTOH is exhausted.  
-The 38⅓% refund rate is not the same as the 30⅔% rate at which AII *adds* to NERDTOH.  
-To fully empty a NERDTOH balance, the corporation needs roughly $2.61 of non-eligible dividend per $1 of NERDTOH (= 1 ÷ 38⅓%).  
+For how these accounts get filled, how much comes back, and a worked example, see [ERDTOH-NERDTOH.md](ERDTOH-NERDTOH.md).  
 
 The dividend refund is reported on T2 line 784 and credited against tax payable for the same tax year.  
 A dividend declared but unpaid at year-end still triggers the refund for that year, provided it is recognized as payable on the corporation's books (year-end timing covered below).  
 
 
-## AII and the SBD grind
+### Stranded GRIP and ERDTOH <!-- [done] -->
+
+A CCPC that receives eligible dividends but only ever pays non-eligible dividends strands both GRIP and ERDTOH: unused balances that cannot be transferred, sold, or rolled out, and are lost at wind-up.  
+The fix is to designate future dividends as eligible up to the running GRIP balance, draining both pools together.  
+For the full stranding mechanics and catch-up remediation, see [ERDTOH-NERDTOH.md / Stranding](ERDTOH-NERDTOH.md#stranding).
+
+
+## AII and the SBD grind <!-- [done] -->
 
 A CCPC's *Aggregate Investment Income* (AII) for the year is primarily:
 - Interest
@@ -188,15 +180,22 @@ AII affects the corporation in two ways relevant to dividend planning:
 
 See [T3-Box-26-Other-Income.md](T3/T3-Box-26-Other-Income.md) for the detailed treatment of T3 Box 26 income.
 
-The interaction between these two effects shapes long-term dividend strategy:
-- If AII stays below the $50,000 grind threshold, the corp's active business income remains under the SBD rate; dividends paid are non-eligible by default; pay a non-eligible dividend each year to recover NERDTOH
-- If AII is large enough to meaningfully grind the SBD, the active business income that exceeds the reduced SBD limit is taxed at the general rate; in subsequent years that starts adding to GRIP via Schedule 53, opening the door to eligible dividends as well
+The NERDTOH addition and the SBD grind apply differently depending on the corporation's AII level:
+- If AII stays below the $50,000 grind threshold:
+  - Active business income remains under the SBD rate
+  - Dividends paid are non-eligible by default
+  - Pay a non-eligible dividend each year to recover NERDTOH
+- If AII is large enough to meaningfully grind the SBD:
+  - Active business income above the reduced SBD limit is taxed at the general rate
+  - In subsequent years that starts adding to GRIP via Schedule 53
+  - This opens the door to paying eligible dividends as well
 - In the limiting case of AII ≥ $150,000, the SBD is fully ground to zero and *all* active business income is taxed at the general rate
   - This maximizes the GRIP addition (72% of all ABI flows in via Schedule 53)
   - In subsequent years the corporation can pay eligible dividends out of that GRIP
   - The lower combined corp+personal tax on eligible dividends partially offsets the loss of the SBD rate
 
 For an investment-only holdco with no active business income, the SBD grind is moot (there is no active income to grind); Part I refundable tax on AII still feeds NERDTOH and is still recovered by paying non-eligible dividends.  
+This does not mean a holdco escapes the grind: the AAII of all associated corporations is pooled for the s.125(5.1) test, so an investment holdco's AII still grinds the SBD of an associated operating company.  
 
 
 ## Declaring a dividend
