@@ -1,37 +1,34 @@
 STATUS: AI GENERATED, REVIEW IN PROGRESS
 
-# Concept map
+# Concept map <!-- [done] -->
 
 **Who this is for**:
 - Anyone who wants to see how the pieces of this guide fit together before diving into a single topic
-- A map of the domain, not a substitute for the topic pages — every box below links to the page that owns the detail
 
 **TLDR**:
-- The guide describes one domain — a CCPC's tax year — from five angles: *kinds of things* (trees), *running balances* (state), *events*, *effects* (event → balance rules), and *the yearly flow* (a pipeline)
-- Most concepts belong to one angle; confusion usually comes from mixing two
-- Readers from a software background may recognize the running balances as *event-sourced state*: each balance is last year's closing balance plus a fold over this year's events
+- Small business tax is presented from five aspects, with most concepts belonging to just one:
+  - *Kinds of things* (trees): income, dividends, and purchases each sort into a hierarchy of types
+  - *Running balances* (state): pools like GRIP, CDA, ERDTOH, and NERDTOH that carry forward year to year
+  - *Events*: the year's transactions — earning income, receiving or paying a dividend, buying or selling an asset
+  - *Effects*: the fixed rules mapping each event to the balances it moves
+  - *The yearly flow* (a pipeline): slip → bookkeeping → pool → T2 → dividend → personal return
 
 Limitations:
-- This is an overview; rates and numbers are illustrative (Ontario, 2026) and each concept's authoritative mechanics and citations live on its owner page
-- Diagrams are deliberately high-level; they drop edge cases (connected-corporation Part IV flow-through, LRIP, recapture timing) that the owner pages cover
+- This is an overview; rates and numbers are illustrative (Ontario, 2026)
+- Diagrams are deliberately high-level; they drop edge cases that the detailed pages cover
 - The following is my understanding as of 2026
 
-
-## How the guide fits together
-
-The same domain, read five ways:
-- *Kinds of things* (hierarchies): income, dividends, and purchases each sort into a small tree of types
-- *Running balances* (state): a handful of accounts carry forward year to year — each is last year's balance plus this year's events
-- *Events*: the transactions of the year — earning income, receiving or paying a dividend, buying or selling an asset
-- *Effects*: a fixed rule maps each event to the balances it moves (the matrices below)
-- *The yearly flow*: events become slips, slips become ledger entries, entries feed the pools, the pools drive the T2 and the dividend, and the dividend lands on the shareholder's personal return
-
-The [relationship legend](#how-the-concepts-relate) at the end labels every cluster by its shape (tree, flow, matrix, or graph).
+Each section below renders one of these aspects as a diagram or table; the [relationship legend](#how-the-concepts-relate) at the end labels every cluster by its shape (tree, flow, matrix, or graph).
 
 
 ## The yearly flow
 
-The annual pipeline, stage by stage: economic activity becomes slips, slips become bookkeeping, bookkeeping sorts into pools, and the pools drive the year-end return and the dividend.  
+Annual pipeline stages:
+- Economic activity becomes slips
+- Slips become bookkeeping
+- Bookkeeping sorts into pools
+- Pools drive the year-end return and dividend
+
 A *process flow* (DAG): each stage feeds the next, left to right, with no loop back.  
 
 ```mermaid
