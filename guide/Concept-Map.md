@@ -169,55 +169,76 @@ Federal rates shown; a provincial dividend tax credit applies on top:
 Details: [Dividends — three flavours](Dividends/Dividends.md#three-dividend-flavours-eligible-non-eligible-capital), [Tax Integration](Tax-Integration.md) (gross-up and DTC mechanics).  
 
 
-## Event → pool effects
+## Event → pool effects <!-- [done] -->
 
-The rule layer: a fixed map from each event to the pool balances it moves.  
-This is the *matrix* at the heart of the corporate side — the four pools as columns, events as rows, cells as the delta.  
+A pool is a running balance carried forward year to year: income adds to it, paying the matching dividend draws it down.  
+Here's how each event maps to the pool balance changes:
+- Columns: the four pools
+- Rows: events
+- Cells: the delta (blank means no change)
 
-| Event | GRIP | CDA | ERDTOH | NERDTOH |
-|---|---|---|---|---|
-| Earn general-rate ABI | +72% of ABI | — | — | — |
-| Earn AII (interest, foreign) | — | — | — | +30⅔% of AII |
-| Realize capital gain | — | +non-taxable ½ | — | +30⅔% of taxable ½ |
-| Realize capital loss | — | −non-taxable ½ (floored at 0) | — | — |
-| Receive eligible dividend | +full amount | — | +38⅓% Part IV | — |
-| Receive non-eligible dividend | — | — | — | +38⅓% Part IV |
-| Pay eligible dividend | −amount | — | −38⅓% refund | — |
-| Pay non-eligible dividend | — | — | − spillover after NERDTOH | −38⅓% refund (first) |
-| Pay capital dividend | — | −amount | — | — |
+| Event | GRIP          | CDA                            | ERDTOH                    | NERDTOH               |
+|---|---------------|--------------------------------|---------------------------|-----------------------|
+| Earn general-rate ABI | + 72% of ABI  |                                |                           |                       |
+| Earn AII (interest, foreign) |               |                                |                           | + 30⅔% of AII         |
+| Realize capital gain |               | + non-taxable ½                |                           | + 30⅔% of taxable ½   |
+| Realize capital loss |               | − non-taxable ½ (floored at 0) |                           |                       |
+| Receive eligible dividend | + full amount |                                | + 38⅓% Part IV            |                       |
+| Receive non-eligible dividend |               |                                |                           | + 38⅓% Part IV        |
+| Pay eligible dividend | − amount      |                                | − 38⅓% refund             |                       |
+| Pay non-eligible dividend |               |                                | − spillover after NERDTOH | − 38⅓% refund (first) |
+| Pay capital dividend |               | − amount                       |                           |                       |
 
-Notes: a capital gain's taxable half is part of AII, which is why it also adds to NERDTOH; received dividends from a *connected* corporation differ (Part IV is tied to the payer's own refund). The 72% factor, the 30⅔% Part I rate, and the 38⅓% Part IV / refund rate are fixed by statute (see Citations).  
+Notes:
+- A capital gain's taxable half is part of AII, so it also adds to NERDTOH
+- Received dividends from a *connected* corporation differ: Part IV is tied to the payer's own refund
+- The 72% factor, 30⅔% Part I rate, and 38⅓% Part IV / refund rate are fixed by statute (see Citations)  
 
-The upstream balances each live on a single page, so they are not a cross-pool matrix — each event touches one aggregate:
+Running balances measuring the corporation's asset costs (separate from the tax pools above).  
+Each row pairs an event with the balance it moves:
 
-| Event | Aggregate | Effect | Owns the detail |
-|---|---|---|---|
-| Buy security | ACB (per security) | + cost and commissions (trade-date FX) | [ACB](Adjusted-Cost-Base/Adjusted-Cost-Base.md) |
-| Return of capital (T3 Box 42) | ACB | − distribution | [ACB](Adjusted-Cost-Base/Adjusted-Cost-Base.md) |
-| Sell security | ACB | remove sold units; realize gain or loss | [T5008](T5008/T5008.md) |
-| Acquire depreciable asset | UCC (per class) | + capital cost (half-year on net additions) | [CCA](Cost-Recovery/Capital-Cost-Allowance.md) |
-| Claim CCA | UCC | − CCA for the year | [CCA](Cost-Recovery/Capital-Cost-Allowance.md) |
-| Dispose depreciable asset | UCC | − lesser of proceeds or cost; recapture or terminal loss | [CCA](Cost-Recovery/Capital-Cost-Allowance.md) |
-| Buy inventory | Inventory | + landed cost | [Inventory](Cost-Recovery/Inventory-And-COGS.md) |
-| Sell inventory | Inventory | − unit cost (to COGS) | [Inventory](Cost-Recovery/Inventory-And-COGS.md) |
+| Event | Balance | Effect | Details                                                 |
+|---|---|---|---------------------------------------------------------|
+| Buy security | ACB (per security) | + cost and commissions (trade-date FX) | [ACB](Adjusted-Cost-Base/Adjusted-Cost-Base.md)         |
+| Return of capital (T3 Box 42) | ACB | − distribution | [ACB](Adjusted-Cost-Base/Adjusted-Cost-Base.md)         |
+| Sell security | ACB | remove sold units; realize gain or loss | [T5008](T5008/T5008.md)                                 |
+| Acquire depreciable asset | UCC (per class) | + capital cost (half-year on net additions) | [CCA](Cost-Recovery/Capital-Cost-Allowance.md)          |
+| Claim CCA | UCC | − CCA for the year | [CCA](Cost-Recovery/Capital-Cost-Allowance.md)          |
+| Dispose depreciable asset | UCC | − lesser of proceeds or cost; recapture or terminal loss | [CCA](Cost-Recovery/Capital-Cost-Allowance.md)          |
+| Buy inventory | Inventory | + landed cost | [Inventory](Cost-Recovery/Inventory-And-COGS.md)        |
+| Sell inventory | Inventory | − unit cost (to COGS) | [Inventory](Cost-Recovery/Inventory-And-COGS.md)        |
 | Incur construction cost | CIP | + materials and labour | [Materials and CIP](Cost-Recovery/Materials-And-CIP.md) |
 | Available for use | CIP → UCC | transfer balance to a CCA class | [Materials and CIP](Cost-Recovery/Materials-And-CIP.md) |
 
-Realizing a gain or loss is where the two halves meet: the disposition event closes an ACB or UCC balance and, in the same step, feeds the pool matrix above.  
+Selling an asset is where the two sets of balances meet:
+- The sale both removes the asset's cost (its ACB or UCC)
+- And feeds the resulting gain or loss into the tax pools above  
 
 
 ## How the concepts relate
 
-The same map, classified by the *shape* of each relationship — which is which:
-- *Trees* (is-a / part-of): the income taxonomy, the three dividend flavours, the three cost-recovery channels, the CCA classes, and the T-slip / T2-schedule catalogues
-- *State* (event-sourced balances): GRIP, CDA, ERDTOH, NERDTOH, ACB per security, UCC per class, inventory, CIP, and retained earnings — each is `opening + fold(year's events) → closing`, carried forward
-- *Process flow* (a DAG): the yearly pipeline from slips through bookkeeping and pools to the T2, the dividend, and the personal return
-- *Matrices* (combined attributes): the dividend flavour × attribute table, and the event × pool effect table
-- *Cross-cutting graph edges* (genuinely networked, not a clean tree or flow):
-  - The NERDTOH → ERDTOH spillover ordering when a non-eligible dividend is paid
-  - AII's triple role: it fills NERDTOH, grinds the SBD over $50,000, and (by pushing ABI to the general rate) indirectly fills GRIP
-  - Province → dividend tax credit, applied on top of every federal DTC
-  - FX translation, HST recoverability, and whole-dollar rounding as aspects that touch every dollar amount on every page
+- *Categorization* (each sorts an item into one of a few fixed types):
+  - Income classification
+  - Three dividend flavours
+  - Three cost-recovery channels
+  - CCA classes
+  - T-slip and T2-schedule lists
+- *Running balances* (carried forward year to year, moved up or down by the year's events):
+  - Four tax pools: GRIP, CDA, ERDTOH, NERDTOH
+  - ACB per security
+  - UCC per class
+  - Inventory
+  - Construction in progress
+  - Retained earnings
+- *Annual tax cycle*: slips → bookkeeping → pools → T2 → dividend → personal return
+- *Comparison tables* (each shows how two lists combine):
+  - Dividend-flavours table
+  - Event-to-pool table
+- *Cross-cutting concepts*:
+  - The NERDTOH → ERDTOH spillover order when a non-eligible dividend is paid
+  - AII does three things at once: it fills NERDTOH, shrinks the small-business deduction once it tops $50,000, and (by pushing active income to the general rate) indirectly fills GRIP
+  - The provincial dividend tax credit, applied on top of every federal one
+  - Currency conversion, HST recoverability, and whole-dollar rounding, which touch every dollar amount on every page
 
 
 ## Related
