@@ -11,7 +11,7 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
 - As *employee*, the corp can reimburse business use through a reasonable allowance or an actual-cost claim, tax-free to the owner and deductible to the corp (ITA s.6)
 - As *shareholder*, a benefit the corp confers is added to the owner's personal income with no offsetting corporate deduction (ITA s.15)
 - The recurring test on a mixed-use asset is the *business-use proportion*, backed by a contemporaneous log
-- Straight salary and dividends are covered elsewhere; this page is about benefits, allowances, reimbursements, rent, and asset transfers
+- Straight salary and dividends are covered elsewhere; this page is about benefits, allowances, reimbursements, rent, asset transfers, and shareholder loans
 
 Limitations:
 - Focus is the single owner-manager CCPC and its sole shareholder-employee
@@ -199,9 +199,8 @@ The same employee-versus-shareholder framing recurs across a cluster of common i
 *Travel with a personal component*:
 - A trip combining business and vacation is deductible only for the business portion; the personal portion (extra nights, a companion's airfare) is either non-deductible or a taxable benefit
 
-*Shareholder loans and low-interest loans*:
-- A withdrawal that is a loan rather than a distribution is included in income if not repaid within one year of the corp's following year-end (ITA s.15(2); see [Dividends](Dividends/Dividends.md))
-- A loan at below the prescribed rate also creates an imputed-interest benefit under ITA [s.80.4(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-80.4.html)
+*Shareholder loans*:
+- A draw that is a loan rather than salary or a dividend carries its own rules (the s.15(2) repayment deadline and the s.80.4 interest benefit); see [Shareholder loans](#shareholder-loans) below
 
 *Non-deductible perks*:
 - Recreational facilities, club dues (golf, dining, fitness), and yacht/lodge costs are denied a deduction outright under ITA [s.18(1)(l)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-18.html); the matching ITC is denied under ETA s.170(1)(a)
@@ -210,7 +209,7 @@ The same employee-versus-shareholder framing recurs across a cluster of common i
 *Personal expenses paid by the corp*:
 - Charge a genuinely personal cost to the shareholder loan account (`Due from shareholder`) rather than to an expense account
 - Left in an expense account, CRA disallows the deduction and can assess a s.15(1) benefit
-- Clear the resulting `Due from shareholder` balance by repayment, salary, or dividend before the s.15(2) one-year window closes
+- Clear the resulting `Due from shareholder` balance by repayment, salary, or dividend before the s.15(2) repayment window closes (see [Shareholder loans](#shareholder-loans))
 
 Ledger entry for a personal cost run through the corp account:  
 Debit: "Due from shareholder" (GIFI 1300 area) = amount  
@@ -219,6 +218,66 @@ Credit: "Cash" (GIFI 1001) = amount
 *Salary to family members*:
 - A salary to a spouse or child is deductible only to the extent it is *reasonable* for work actually performed
 - Dividends to family members who are not active in the business are constrained by TOSI (ITA s.120.4; see [Small Business Tax Overview](Small-Business-Tax-Overview.md))
+
+
+## Shareholder loans
+
+The *shareholder loan account* records money moving between the owner and the corporation outside salary and dividends.  
+It runs in both directions, and the tax rules are not symmetric:
+- *Due from shareholder*: the owner has borrowed from the corp (an asset on the corp's books)
+- *Due to shareholder*: the owner has lent to the corp (a liability on the corp's books)
+
+### Owner borrows from the corporation
+
+A loan from the corp to its shareholder is added to the owner's income for the year the loan was *made* (ITA [s.15(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-15.html)), unless it is repaid in time.  
+
+The repayment exception (ITA [s.15(2.6)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-15.html)) has two conditions, both required:
+- Repaid within *one year after the end of the corporation's tax year in which the loan was made*
+- The repayment is *not part of a series of loans and repayments*
+
+The deadline keys off the corporation's *fiscal year-end*, not 365 days from the advance.  
+A practical test: the loan must not still be outstanding at two consecutive year-end balance sheets.  
+
+Worked example (December 31 year-end, $1,000 borrowed):
+- Borrowed 2024-12-01, repaid 2024-12-31: gone before year-end, never on a year-end balance sheet (clean)
+- Borrowed 2024-12-01, repaid 2025-01-01: made in the 2024 tax year, so the deadline is 2025-12-31; repaid almost a year early (clean)
+- Whether the repayment falls on Dec 31 or Jan 1 does not matter to s.15(2): both are inside the window, because the clock runs to the year-end plus one year, not to the loan's anniversary
+
+The *series* condition is the trap in a repeating pattern:
+- Borrowing each December and repaying each January, year after year, is a *series of loans and repayments*
+- Each loan viewed alone is repaid within its window, yet s.15(2.6) still fails and the principal is assessed under s.15(2)
+- The dividing line is economic substance: a genuine, permanent repayment qualifies; a January repayment that merely bridges to the next December re-borrow does not
+
+What counts as a repayment:
+- Cash actually returned to the corp
+- A bona fide *set-off*: a dividend, salary, or bonus declared to the owner and applied against the balance (real income, properly recorded)
+- An offset against a genuine *Due to shareholder* the corp already owes
+- *Not* a repayment: an amount repaid and promptly re-advanced (round-tripping), or a temporary entry reversed soon after
+
+If a loan is caught by s.15(2):
+- The principal is included in the owner's income for the year the loan was *made* (CRA reassesses that year)
+- A later genuine repayment is deductible under ITA [s.20(1)(j)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-20.html) in the year of repayment, so the inclusion reverses; the real cost is the timing, plus any interest and penalties
+
+The interest benefit is a separate rule (ITA [s.80.4(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-80.4.html)):
+- An interest-free or below-prescribed-rate loan imputes a benefit for the period it is outstanding, at the CRA *prescribed rate* (set quarterly)
+- The benefit is reduced by interest the owner actually pays no later than January 30 of the following year
+- It applies even when the loan stays inside the s.15(2) window: escaping one rule does not escape the other
+- On a small, short-lived balance the amount is a few dollars, but it is technically reportable
+
+### Owner lends to the corporation
+
+Funding the corp from personal money is the common direction for an owner-manager, and it is far simpler:
+- The owner can lend to the corp at *zero interest*: s.15(2) and s.80.4 run only corp-to-shareholder, so neither applies in this direction
+- Repaying the owner that principal later is *tax-free* (return of a loan, not income), as long as the advance was genuinely a loan
+- Keep it documented as a loan (a board note or a simple promissory note, plus clean bookkeeping) and distinct from contributed *share capital*, so a repayment is not recharacterized as a dividend or benefit
+- Charging interest is optional: if charged, the corp deducts a bona fide interest expense and the owner reports the interest income (a T5 is required at $50 or more)
+- The attribution rules do not catch an owner funding their own corp in the ordinary case (they target transfers to a spouse or minor; corporate attribution under ITA [s.74.4](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-74.4.html) targets benefiting a designated person)
+
+Ledger entry when the owner lends $5,000 to the corp:  
+Debit: "Cash" (GIFI 1001) = $5,000  
+Credit: "Due to shareholder" (GIFI 2780 area) = $5,000  
+
+Repaying the owner later reverses this entry, with no tax to the owner on the principal returned.  
 
 
 ## Sole-proprietorship contrast
@@ -254,12 +313,15 @@ The corporate structure trades this simplicity for the benefit and deduction rul
   - [s.13(7)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-13.html) - change-of-use and partial-use adjustments to capital cost
   - [s.15(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-15.html) - benefit conferred on a shareholder, included in income with no corporate deduction
   - [s.15(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-15.html) - shareholder loan inclusion (one-year repayment rule)
+  - [s.15(2.6)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-15.html) - repayment exception: repaid within one year of the lender's year-end and not part of a series of loans and repayments
   - [s.18(1)(a)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-18.html) - general limitation: deductible only if incurred to earn income
   - [s.18(1)(l)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-18.html) - recreational facilities, club dues, and yacht/lodge costs denied
   - [s.18(1)(r)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-18.html) - cap on the employer's deduction for a tax-exempt per-km allowance (Reg 7306)
+  - [s.20(1)(j)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-20.html) - deduction on repaying a shareholder loan previously included under s.15(2)
   - [s.46](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-46.html) - $1,000 floor on cost and proceeds of personal-use property
   - [s.67.1](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-67.html) - 50% limit on meals and entertainment
   - [s.69](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-69.html) - non-arm's-length transfers deemed to occur at FMV
+  - [s.74.4](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-74.4.html) - corporate attribution where a loan or transfer benefits a designated person
   - [s.80.4(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-80.4.html) - imputed-interest benefit on a low-interest shareholder loan
   - [s.85](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-85.html) - rollover of property to a corporation (defer gain on transfer)
   - [s.120.4](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-120.4.html) - Tax on Split Income (TOSI)

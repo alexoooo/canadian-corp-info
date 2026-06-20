@@ -27,6 +27,7 @@ For mechanics and worked examples, follow the link to the canonical page where o
 - GRIP: *General Rate Income Pool* — capacity to designate eligible dividends; tracked on Schedule 53; see [Dividends](Dividends/Dividends.md)
 - Half-year rule: Regulation 1100(2); only half-rate CCA on net additions in the year of acquisition; several classes are exempt; see [Capital-Cost-Allowance.md](Cost-Recovery/Capital-Cost-Allowance.md)
 - HST: *Harmonized Sales Tax* — provincial-and-federal-combined sales tax used by some provinces; see [HST.md](HST.md)
+- Impute / imputed: to treat an amount as having arisen for tax purposes even though no cash changed hands; an *imputed* interest benefit deems interest at the prescribed rate on a low- or no-interest shareholder loan (ITA s.80.4); see [Owner-Corporation-Transactions.md](Owner-Corporation-Transactions.md#shareholder-loans)
 - Integration: design principle that combines corporate + personal tax to approximate direct-earning tax; see [Tax-Integration.md](Tax-Integration.md)
 - ITA: *Income Tax Act* (R.S.C., 1985, c. 1 (5th Supp.)) — primary federal tax statute
 - ITC: *Input Tax Credit* — recoverable GST/HST paid on business inputs under the regular method; see [HST.md](HST.md)
