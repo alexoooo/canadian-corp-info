@@ -12,6 +12,7 @@ Disclaimer: author is not an accountant, this is not financial or tax advice.
 ## Topics
 
 - [Small-Business-Tax-Overview](guide/Small-Business-Tax-Overview.md)
+- [Concept map](guide/Concept-Map.md)
 - [Tax Integration](guide/Tax-Integration.md)
 - [Dividends](guide/Dividends/Dividends.md)
 - [Adjusted Cost Base](guide/Adjusted-Cost-Base/Adjusted-Cost-Base.md)
@@ -25,7 +26,6 @@ Disclaimer: author is not an accountant, this is not financial or tax advice.
 ## Pending review
 
 AI generated, not verified yet:
-- [Concept map](guide/Concept-Map.md)
 - [Cost Recovery](guide/Cost-Recovery/Cost-Recovery.md)
   - [Inventory and cost of goods sold](guide/Cost-Recovery/Inventory-And-COGS.md)
   - [Materials and CIP](guide/Cost-Recovery/Materials-And-CIP.md)

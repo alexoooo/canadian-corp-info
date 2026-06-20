@@ -1,6 +1,4 @@
-STATUS: AI GENERATED, REVIEW IN PROGRESS
-
-# Concept map <!-- [done] -->
+# Concept Map
 
 **Who this is for**:
 - Anyone who wants to see how the pieces of this guide fit together before diving into a single topic
@@ -19,7 +17,7 @@ Limitations:
 - The following is my understanding as of 2026
 
 
-## From business activity to shareholder return <!-- [done] -->
+## From business activity to shareholder return
 
 - Operating activity and investment slips both post to the books
 - The books roll up into financial statements, then GIFI schedules on the T2
@@ -57,7 +55,7 @@ Details:
 - [Bookkeeping, the general ledger, and GIFI](Small-Business-Tax-Overview.md#bookkeeping-the-general-ledger-and-gifi): books → financial statements → GIFI mapping  
 
 
-## Income classification <!-- [done] -->
+## Income classification
 
 How a dollar of corporate income is classified, and which pool it feeds:
 - *Active business income* (ABI)
@@ -73,7 +71,7 @@ How a dollar of corporate income is classified, and which pool it feeds:
 Details: [Small Business Tax Overview — active vs investment income](Small-Business-Tax-Overview.md#active-vs-investment-income).  
 
 
-## Tax pools: GRIP, CDA, ERDTOH, NERDTOH <!-- [done] -->
+## Tax pools: GRIP, CDA, ERDTOH, NERDTOH
 
 GRIP, CDA, ERDTOH, and NERDTOH are:
 - *Running balances* the corporation carries forward year to year
@@ -121,7 +119,7 @@ Details:
 - [Capital Dividend Account](Capital-Dividend-Account/Capital-Dividend-Account.md)
 
 
-## Cost-recovery channels <!-- [done] -->
+## Cost-recovery channels
 
 Every purchase eventually becomes a tax deduction.  
 How that happens depends on why it was purchased: to resell, to use as a long-term asset, or to build into a long-term asset.  
@@ -148,7 +146,7 @@ flowchart TB
 Details: [Cost Recovery](Cost-Recovery/Cost-Recovery.md) (full flow with disposition, recapture, terminal loss, and change of use).  
 
 
-## Dividend flavours: Eligible, Non-eligible, Capital <!-- [done] -->
+## Dividend flavours: Eligible, Non-eligible, Capital
 
 These are the three flavours a corporation can *pay* out to its shareholders.  
 Dividends it *receives* (on a T3 or T5) are covered under [Income classification](#income-classification).  
@@ -169,7 +167,7 @@ Federal rates shown; a provincial dividend tax credit applies on top:
 Details: [Dividends — three flavours](Dividends/Dividends.md#three-dividend-flavours-eligible-non-eligible-capital), [Tax Integration](Tax-Integration.md) (gross-up and DTC mechanics).  
 
 
-## Event → pool effects <!-- [done] -->
+## Event → pool effects
 
 A pool is a running balance carried forward year to year: income adds to it, paying the matching dividend draws it down.  
 Here's how each event maps to the pool balance changes:
@@ -235,10 +233,10 @@ Selling an asset is where the two sets of balances meet:
   - Dividend-flavours table
   - Event-to-pool table
 - *Cross-cutting concepts*:
-  - The NERDTOH → ERDTOH spillover order when a non-eligible dividend is paid
-  - AII does three things at once: it fills NERDTOH, shrinks the small-business deduction once it tops $50,000, and (by pushing active income to the general rate) indirectly fills GRIP
-  - The provincial dividend tax credit, applied on top of every federal one
-  - Currency conversion, HST recoverability, and whole-dollar rounding, which touch every dollar amount on every page
+  - A non-eligible dividend draws its refund from NERDTOH first, then from ERDTOH once NERDTOH runs out
+  - AII fills NERDTOH, shrinks the small-business deduction once it tops $50,000, and so indirectly fills GRIP
+  - Provincial dividend tax credit, applied on top of every federal one
+  - Applicable to most transaction types: currency conversion, HST recoverability, and whole-dollar rounding
 
 
 ## Related
