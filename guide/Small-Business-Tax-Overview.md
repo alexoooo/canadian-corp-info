@@ -207,7 +207,7 @@ Examples of things that can change the determination of CCPC status:
 - Certain share arrangements (e.g. options or shareholder agreements that give effective control to a non-resident or public corporation)
 
 
-## The two buckets of corporate income
+## Active vs investment income
 
 Corporate income for a CCPC sorts into two broad buckets, each taxed differently.  
 The combined rates below use Ontario as an example for illustration. The federal portion is the same nationally, but provincial rates vary; see [CRA's corporation tax rates page](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/corporations/corporation-tax-rates.html) for current rates by province.

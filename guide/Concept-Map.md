@@ -18,10 +18,8 @@ Limitations:
 - Diagrams are deliberately high-level; they drop edge cases that the detailed pages cover
 - The following is my understanding as of 2026
 
-Each section below renders one of these aspects as a diagram or table; the [relationship legend](#how-the-concepts-relate) at the end labels every cluster by its shape (tree, flow, matrix, or graph).
 
-
-## Yearly process flow <!-- [done] -->
+## From business activity to shareholder return <!-- [done] -->
 
 - Operating activity and investment slips both post to the books
 - The books roll up into financial statements, then GIFI schedules on the T2
@@ -54,55 +52,44 @@ flowchart TB
     POOLS -.->|refunds| T2
 ```
 
-For details, see:
-- [Small Business Tax Overview](Small-Business-Tax-Overview.md): mode detailed flowchart and other references
+Details:
+- [Small Business Tax Overview](Small-Business-Tax-Overview.md): more detailed flowchart and other references
 - [Bookkeeping, the general ledger, and GIFI](Small-Business-Tax-Overview.md#bookkeeping-the-general-ledger-and-gifi): books → financial statements → GIFI mapping  
 
 
-## Income taxonomy
+## Income classification <!-- [done] -->
 
-How a dollar of corporate income is classified, and which pool each kind feeds.  
-A *hierarchy* (tree): each kind of income is a leaf, annotated with the balance it lands in.  
+How a dollar of corporate income is classified, and which pool it feeds:
+- *Active business income* (ABI)
+  - First $500K, at the SBD rate → retained earnings
+  - Portion at the general rate → GRIP (+72%)
+- *Aggregate investment income* (AII)
+  - Interest and foreign income → NERDTOH (+30⅔%)
+  - Capital gains → taxable ½ to NERDTOH, non-taxable ½ to CDA
+- *Dividends received* from other corporations
+  - Eligible → GRIP and ERDTOH
+  - Non-eligible → NERDTOH
 
-```mermaid
-flowchart TB
-    CI(["Corporate income"])
-    ABI(["Active business income<br/>ABI"])
-    AII(["Aggregate investment income<br/>AII"])
-    DR(["Dividends received<br/>from other corps"])
-
-    SBD["SBD-rate, first $500K<br/>to retained earnings"]
-    GEN["General-rate portion<br/>to GRIP at 72%"]
-    INT["Interest, foreign income<br/>to NERDTOH at 30⅔%"]
-    CG["Capital gains<br/>taxable ½ to NERDTOH<br/>non-taxable ½ to CDA"]
-    DRE["Eligible received<br/>to GRIP plus ERDTOH"]
-    DRN["Non-eligible received<br/>to NERDTOH"]
-
-    CI --> ABI
-    CI --> AII
-    CI --> DR
-    ABI --> SBD
-    ABI --> GEN
-    AII --> INT
-    AII --> CG
-    DR --> DRE
-    DR --> DRN
-```
-
-Owns the detail: [Small Business Tax Overview — two buckets of corporate income](Small-Business-Tax-Overview.md#the-two-buckets-of-corporate-income).  
+Details: [Small Business Tax Overview — active vs investment income](Small-Business-Tax-Overview.md#active-vs-investment-income).  
 
 
-## The four tax pools
+## Tax pools: GRIP, CDA, ERDTOH, NERDTOH <!-- [done] -->
 
-The running balances that determine how dividends are taxed on the corporation's side.  
-*State* (event-sourced balances): solid arrows show what *fills* each pool during the year; arrows out show what *empties* it when a dividend is paid; dotted arrows are capacity or designation, not cash.  
+GRIP, CDA, ERDTOH, and NERDTOH are:
+- *Running balances* the corporation carries forward year to year
+- Income is added, and paying a dividend is subtracted  
+
+Legend:
+- Solid arrows into a pool are what fills it during the year
+- Solid arrows out are the refund it releases when a dividend is paid
+- Dotted arrows are capacity or spillover (not cash)  
 
 ```mermaid
 flowchart TB
     GENABI(["General-rate ABI"])
     DivE(["Eligible dividend received"])
     DivNE(["Non-eligible dividend received"])
-    AII(["AII: interest, foreign,<br/>taxable cap gains, Box 26"])
+    AII(["AII: interest, foreign,<br/>taxable cap gains, T3 Box 26"])
     CapGain(["Capital gain: non-taxable ½"])
 
     GRIP[("GRIP")]
@@ -128,17 +115,20 @@ flowchart TB
     CDA -.->|capacity| PayC
 ```
 
-Owns the detail: [ERDTOH and NERDTOH](Dividends/ERDTOH-NERDTOH.md), [Dividends — GRIP](Dividends/Dividends.md#grip---capacity-for-eligible-dividends), [Capital Dividend Account](Capital-Dividend-Account/Capital-Dividend-Account.md).  
+Details:
+- [ERDTOH and NERDTOH](Dividends/ERDTOH-NERDTOH.md)
+- [Dividends — GRIP](Dividends/Dividends.md#grip---capacity-for-eligible-dividends)
+- [Capital Dividend Account](Capital-Dividend-Account/Capital-Dividend-Account.md)
 
 
-## Cost-recovery channels
+## Cost-recovery channels <!-- [done] -->
 
-The parallel structure on the spending side: every purchase becomes a deduction through one of three channels, set by purpose at acquisition.  
-A *hierarchy* (tree) with one timing branch (CIP becomes a fixed asset once available for use).  
+Every purchase eventually becomes a tax deduction.  
+How that happens depends on why it was purchased: to resell, to use as a long-term asset, or to build into a long-term asset.  
 
 ```mermaid
 flowchart TB
-    Buy(["Corp buys property"])
+    Buy(["Corporation buys property"])
     Purpose{{"Purpose at acquisition"}}
     Inv[("Inventory")]
     CIP[("Construction in progress")]
@@ -155,25 +145,28 @@ flowchart TB
     Fixed --> CCA
 ```
 
-Owns the detail: [Cost Recovery](Cost-Recovery/Cost-Recovery.md) (full flow with disposition, recapture, terminal loss, and change of use).  
+Details: [Cost Recovery](Cost-Recovery/Cost-Recovery.md) (full flow with disposition, recapture, terminal loss, and change of use).  
 
 
-## Dividend flavours at a glance
+## Dividend flavours: Eligible, Non-eligible, Capital <!-- [done] -->
 
-The three dividend flavours are one concept distinguished by a fixed set of attributes — a *matrix*.  
-Federal rates shown; a provincial dividend tax credit applies on top (Ontario: 10% eligible, 2.9863% non-eligible of the grossed-up amount in 2026).  
+These are the three flavours a corporation can *pay* out to its shareholders.  
+Dividends it *receives* (on a T3 or T5) are covered under [Income classification](#income-classification).  
 
-| Attribute | Eligible | Non-eligible | Capital |
-|---|---|---|---|
-| Source pool | GRIP | SBD-rate retained earnings (default) | CDA |
+Federal rates shown; a provincial dividend tax credit applies on top:
+- Ontario: 10% eligible, 2.9863% non-eligible of the grossed-up amount in 2026.  
+
+| Attribute | Eligible | Non-eligible | Capital                                                |
+|---|---|---|--------------------------------------------------------|
+| Source pool | GRIP | SBD-rate retained earnings (default) | CDA                                                    |
 | Corp action required | Designation (s.89(14)), at or before payment | None | Election (s.83(2)) on Form T2054, at or before payment |
-| Personal gross-up | 38% | 15% | none (tax-free) |
-| Federal DTC | 15.0198% of grossed-up | 9.0301% of grossed-up | none |
-| Refund pool drawn | ERDTOH | NERDTOH, then ERDTOH spillover | none |
-| Over-doing-it penalty | Part III.1, 20% (s.185.1) | none | Part III, 60% (s.184(2)) |
-| Shareholder slip | T5 | T5 | none (notify; corp files T2054) |
+| Personal gross-up | 38% | 15% | none (tax-free)                                        |
+| Federal DTC | 15.0198% of grossed-up | 9.0301% of grossed-up | none                                                   |
+| Refund pool drawn | ERDTOH | NERDTOH, then ERDTOH spillover | none                                                   |
+| Excess-dividend penalty | Part III.1, 20% (s.185.1) | none | Part III, 60% (s.184(2))                               |
+| Slip issued to shareholder | T5 | T5 | none (notify; corporation files T2054)                 |
 
-Owns the detail: [Dividends — three flavours](Dividends/Dividends.md#three-dividend-flavours-eligible-non-eligible-capital), [Tax Integration](Tax-Integration.md) (gross-up and DTC mechanics).  
+Details: [Dividends — three flavours](Dividends/Dividends.md#three-dividend-flavours-eligible-non-eligible-capital), [Tax Integration](Tax-Integration.md) (gross-up and DTC mechanics).  
 
 
 ## Event → pool effects
@@ -240,7 +233,7 @@ The same map, classified by the *shape* of each relationship — which is which:
 
 ## Citations
 
-Full citations live on each concept's owner page; the rates this map states come from:
+Full citations live on each page; the rates here come from:
 - Income Tax Act (R.S.C., 1985, c. 1 (5th Supp.)):
   - [s.82(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-82.html) - dividend gross-up (38% eligible, 15% non-eligible)
   - [s.83(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-83.html) - capital dividend election; [s.184(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-184.html) - 60% Part III tax on over-elections
