@@ -27,7 +27,7 @@ A *dividend* is a distribution of money or other property by a corporation to it
 The corporation pays its corporate income tax first; the dividend then transfers (some of) that after-tax money to shareholders.  
 
 Defining characteristics:
-- Paid *pro rata* to the holders of a class of shares; every holder within a class of shares receives the same per-share amount 
+- Paid *pro rata* within a class of shares: every holder of that class receives the same per-share amount
 - Declared at the directors' discretion; there is no obligation to pay even when retained earnings are positive (see [Declaring a dividend](Declaring-And-Paying.md#declaring-a-dividend))
 - Reduces the corporation's *retained earnings* dollar for dollar; a cash dividend also reduces *cash* on the balance sheet
 - **Not deductible to the corporation**: not treated as a business expense, so it does not reduce the corporation's taxable income
@@ -146,7 +146,11 @@ The corporation gets this tax back as a *dividend refund* under ITA [s.129(1)](h
 For how these accounts get filled, how much comes back, and a worked example, see [ERDTOH-NERDTOH.md](ERDTOH-NERDTOH.md).  
 
 The dividend refund is reported on T2 line 784 and credited against tax payable for the same tax year.  
-A dividend declared but unpaid at year-end still triggers the refund for that year, provided it is recognized as payable on the corporation's books (year-end timing covered below).  
+A dividend declared but not yet paid in cash at year-end can still trigger the refund for that year:
+- It must be credited or otherwise made available to the shareholder by year-end (e.g. to the *Due to shareholder* account)
+- Merely booking a payable does not count
+
+For the year-end timing, see [Declaring and paying a dividend](Declaring-And-Paying.md#declaration-date-record-date-and-payment-date).  
 
 
 ### Stranded GRIP and ERDTOH
@@ -163,8 +167,9 @@ A CCPC's *Aggregate Investment Income* (AII) for the year is primarily:
 - Most T3 Box 26 distributions from index ETFs structured as mutual fund trusts
 
 AII affects the corporation in two ways relevant to dividend planning:
-1. AII generates a refundable Part I tax addition to NERDTOH equal to 30⅔% of AII (ITA s.129(4)), recovered by paying a non-eligible dividend
-2. AII over $50,000 grinds the SBD limit at $5 of SBD reduction per $1 of AII excess, fully eliminating the SBD at $150,000 of AII (ITA [s.125(5.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-125.html))
+- Generates a refundable Part I tax addition to NERDTOH equal to 30⅔% of AII (ITA s.129(4)), recovered by paying a non-eligible dividend
+- Grinds the SBD limit once it tops $50,000, by $5 per $1 of excess, fully eliminating the SBD at $150,000 (ITA [s.125(5.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-125.html))
+  - The grind technically runs on *adjusted aggregate investment income* (AAII), which differs slightly from AII (e.g. it excludes gains and losses on active-business assets)
 
 See [T3-Box-26-Other-Income.md](../T3/T3-Box-26-Other-Income.md) for the detailed treatment of T3 Box 26 income.
 
@@ -212,9 +217,7 @@ The accounts above determine *which* dividend to pay; the steps to actually decl
   - [s.84](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-84.html) - deemed dividends (s.84(3) on share redemption; s.84(4) on private-corp PUC reduction)
   - [s.89(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-89.html) - definitions of "eligible dividend", GRIP, LRIP, CDA, PUC; the GRIP "general rate factor" of 0.72
   - [s.89(14)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-89.html) - eligible dividend designation by written notice to the shareholder at or before payment
-  - [s.104(19)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-104.html) - trust designation that flows the eligible-dividend character of taxable Canadian dividends through to beneficiaries (mechanism behind T3 Box 49)
-  - [s.110.6(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-110.6.html) - definition of *qualified small business corporation share* (QSBC), including the 90% active-business-assets test gating LCGE eligibility
-  - [s.120.4](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-120.4.html) - Tax on Split Income (TOSI), including the *excluded business* and *excluded shares* carve-outs that typically take an active owner-manager out of TOSI
+  - [s.104(19)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-104.html) - trust designation that flows the eligible-dividend character of taxable Canadian dividends through to beneficiaries (mechanism behind T3 Box 49)  - [s.120.4](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-120.4.html) - Tax on Split Income (TOSI), including the *excluded business* and *excluded shares* carve-outs that typically take an active owner-manager out of TOSI
   - [s.121](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-121.html) - federal dividend tax credit (15.0198% eligible, 9.0301% non-eligible, of the grossed-up amount)
   - [s.125(5.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-125.html) - SBD grind on AII over $50,000 ($5 SBD reduction per $1 of AII excess)
   - [s.129](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-129.html) - dividend refund on taxable dividends paid (s.129(1)); definitions of ERDTOH and NERDTOH (s.129(4))

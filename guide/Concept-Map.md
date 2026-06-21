@@ -84,7 +84,7 @@ Details: [Small Business Tax Overview — active vs investment income](Small-Bus
 
 GRIP, CDA, ERDTOH, and NERDTOH are:
 - *Running balances* the corporation carries forward year to year
-- Income is added, and paying a dividend is subtracted  
+- Income or refundable tax adds to them; paying the matching dividend draws them down  
 
 Legend:
 - Solid arrows into a pool are what fills it during the year
@@ -274,7 +274,7 @@ Each row pairs an event with the balance it moves:
 | Buy security | ACB (per security) | + cost and commissions (trade-date FX) | [ACB](Adjusted-Cost-Base/Adjusted-Cost-Base.md)         |
 | Return of capital (T3 Box 42) | ACB | − distribution | [ACB](Adjusted-Cost-Base/Adjusted-Cost-Base.md)         |
 | Sell security | ACB | remove sold units; realize gain or loss | [T5008](T5008/T5008.md)                                 |
-| Acquire depreciable asset | UCC (per class) | + capital cost (half-year on net additions) | [CCA](Cost-Recovery/Capital-Cost-Allowance.md)          |
+| Acquire depreciable asset | UCC (per class) | + capital cost (half-year on net additions, currently replaced by AIIP's larger first-year claim) | [CCA](Cost-Recovery/Capital-Cost-Allowance.md)          |
 | Claim CCA | UCC | − CCA for the year | [CCA](Cost-Recovery/Capital-Cost-Allowance.md)          |
 | Dispose depreciable asset | UCC | − lesser of proceeds or cost; recapture or terminal loss | [CCA](Cost-Recovery/Capital-Cost-Allowance.md)          |
 | Buy inventory | Inventory | + landed cost | [Inventory](Cost-Recovery/Inventory-And-COGS.md)        |
@@ -284,7 +284,9 @@ Each row pairs an event with the balance it moves:
 
 A sale is the only event that changes both sets of balances:
 - It draws down the cost balance (the ACB or UCC)
-- Resulting gain or loss feeds the tax pools above  
+- Resulting gain or loss feeds the tax pools above:
+  - A security's capital gain splits into CDA and NERDTOH
+  - A depreciable asset's recapture or terminal loss runs through income first  
 
 
 ## Loss carryforwards

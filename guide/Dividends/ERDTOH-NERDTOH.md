@@ -22,7 +22,7 @@ Limitations:
 - The following is my understanding as of 2026
 
 
-## The four corporate tax pools <!-- [done] -->
+## Corporate tax pools: ERDTOH / NERDTOH vs GRIP and CDA <!-- [done] -->
 
 ERDTOH and NERDTOH are two of four corporate tax pools that together determine how dividends are taxed on the corporation's side.  
 Each pool tracks a different kind of pre-earned capacity or pre-paid tax, recovered through one specific dividend flavour paid out.  
@@ -56,17 +56,34 @@ Both are refundable tax pools; balances roll forward year to year and are recove
 Neither account is a balance-sheet asset.  
 They are notional T2 pools, tracked by T2 software and reported on T2 Page 7.  
 
+### Transition from RDTOH (pre-2019) <!-- [done] -->
+
 Prior to 2019, there was a single RDTOH, it was split on transition between the two pools based on the source of each dollar.  
 
+Effective: first tax year beginning after 2018 (2019 for a calendar-year corp).  
+Computed from the prior year-end RDTOH and GRIP (ITA [s.129(5)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-129.html)).  
 
-## Additions
+CCPC split:
+- *ERDTOH*: lesser of the prior-year RDTOH and 38⅓% of the prior-year GRIP (net of eligible dividends paid that year)
+- *NERDTOH*: the rest
+
+Non-CCPC: entire RDTOH to ERDTOH.  
+
+RDTOH by source:
+- Eligible dividends received → ERDTOH (added full amount to GRIP and 38⅓% to RDTOH, so the 38⅓% × GRIP cap matches)
+- Refundable Part I tax on AII → NERDTOH (adds to RDTOH but not GRIP, so nothing fits under the cap)
+
+No dividend before 2019 means no refund, so the full RDTOH carried into the split.  
+
+
+## Additions <!-- [done] -->
 
 Two mechanisms add to the RDTOH pools.
 
 *Part IV tax on dividends received from other corps* (ITA [s.186(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-186.html)):
 - 38⅓% on dividends received from non-connected Canadian corporations (e.g. portfolio shareholdings of public-equity corps)
 - For *connected* corporations: a flow-through proportional to the payer corporation's dividend refund (Part IV is only triggered to the extent the payer recovered RDTOH)
-- The destination (ERDTOH or NERDTOH) follows the type of dividend received under ITA [s.129(4)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-129.html):
+- The destination (ERDTOH or NERDTOH) is determined by the type of dividend received (under ITA [s.129(4)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-129.html)):
   - Eligible dividend received → Part IV tax flows to ERDTOH
   - Non-eligible dividend received → Part IV tax flows to NERDTOH
   - Connected-corp Part IV tax retains the character that triggered the payer's refund
@@ -76,17 +93,20 @@ Two mechanisms add to the RDTOH pools.
 - 30⅔% of AII for the year
 - AII is interest, foreign income, the taxable portion of capital gains, and most T3 Box 26 amounts from index ETFs structured as mutual fund trusts (see [T3-Box-26-Other-Income.md](../T3/T3-Box-26-Other-Income.md))
 
-The 30⅔% rate at which AII *adds* to NERDTOH is not the same as the 38⅓% rate at which a non-eligible dividend *removes* tax from NERDTOH.  
+Note that the 30⅔% rate at which AII *adds* to NERDTOH is distinct from the 38⅓% rate at which a non-eligible dividend *removes* tax from NERDTOH.  
 
 
-## Lifecycle
+## Inflows and outflows <!-- [done] -->
 
-The fill and empty cycle for the two pools.  
-Solid arrows show the standard flow; the dotted arrow shows the conditional ERDTOH spillover when a non-eligible dividend is paid and NERDTOH is exhausted.  
+Each pool is filled by investment income or dividends received, then empties when a dividend is paid.  
+
+Legend:
+- Solid arrows show the standard flow
+- The dotted arrow shows the ERDTOH spillover when a non-eligible dividend is paid and NERDTOH is exhausted  
 
 ```mermaid
 flowchart TB
-    AII([AII<br/>interest, foreign,<br/>taxable cap gains, Box 26])
+    AII([AII<br/>interest, foreign,<br/>taxable cap gains, T3 Box 26])
     DivE([Eligible dividend received<br/>e.g. T3 Box 49])
     DivNE([Non-eligible dividend received<br/>e.g. T3 Box 23])
 
@@ -105,7 +125,7 @@ flowchart TB
 ```
 
 
-## Dividend refund
+## Dividend refund <!-- [done] -->
 
 The *dividend refund* under ITA [s.129(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-129.html) is calculated separately by dividend type and credited against tax payable for the same year.
 
@@ -117,7 +137,7 @@ The *dividend refund* under ITA [s.129(1)](https://laws-lois.justice.gc.ca/eng/a
   - NERDTOH year-end balance *plus* any ERDTOH balance left over after the eligible-dividend refund (ITA s.129(1)(b))
 
 Ordering rules:
-- An eligible dividend draws only on ERDTOH; it cannot reach into NERDTOH
+- An eligible dividend draws only on ERDTOH; it cannot use NERDTOH
 - A non-eligible dividend draws on NERDTOH first, and only spills into ERDTOH after NERDTOH is exhausted
 - A non-eligible-only payout history can therefore strand ERDTOH on the corporate books (see [Stranding](#stranding) below)
 
@@ -125,7 +145,7 @@ The 38⅓% rate is the rate at which a dollar of dividend liberates refundable t
 To fully empty a $1 NERDTOH balance the corporation needs $1 ÷ 38⅓% ≈ **$2.61** of non-eligible dividend.  
 
 
-## T2 reporting
+## T2 reporting <!-- [done] -->
 
 The T2 line items that carry the pools and the refund:
 - *T2 Page 7*: opening, additions, deductions, and closing balances for ERDTOH and NERDTOH
@@ -211,6 +231,7 @@ For the parallel non-eligible / NERDTOH-recovery example (with the year-end timi
   - [s.112](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-112.html) - inter-corporate dividend deduction (Part I exemption for dividends received)
   - [s.129(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-129.html) - dividend refund formula (eligible: s.129(1)(a); non-eligible: s.129(1)(b))
   - [s.129(4)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-129.html) - additions to ERDTOH and NERDTOH; refundable Part I tax on AII (30⅔%); destination rule for Part IV tax
+  - [s.129(5)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-129.html) - transition of the pre-2019 RDTOH into ERDTOH and NERDTOH (CCPC opening ERDTOH = lesser of RDTOH and 38⅓% of GRIP)
   - [s.185.1](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-185.1.html) - Part III.1 tax on excessive eligible dividend designations (20%); s.185.1(2) joint election to reclassify a small overshoot as a non-eligible dividend
   - [s.186(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-186.html) - Part IV tax on dividends received from other corporations (38⅓% non-connected; flow-through for connected)
 - CRA T4012 - T2 Corporation Income Tax Guide: https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4012.html
