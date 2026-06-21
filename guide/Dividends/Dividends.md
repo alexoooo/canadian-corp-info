@@ -1,4 +1,5 @@
 # Dividends
+
 **Who this is for**:
 - Owners of a Canadian-controlled private corporation (CCPC)
 - Declaring and paying a dividend to themselves as the shareholder.  

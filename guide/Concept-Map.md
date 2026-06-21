@@ -282,9 +282,9 @@ Each row pairs an event with the balance it moves:
 | Incur construction cost | CIP | + materials and labour | [Materials and CIP](Cost-Recovery/Materials-And-CIP.md) |
 | Available for use | CIP → UCC | transfer balance to a CCA class | [Materials and CIP](Cost-Recovery/Materials-And-CIP.md) |
 
-Selling an asset is where the two sets of balances meet:
-- The sale both removes the asset's cost (its ACB or UCC)
-- And feeds the resulting gain or loss into the tax pools above  
+A sale is the only event that changes both sets of balances:
+- It draws down the cost balance (the ACB or UCC)
+- Resulting gain or loss feeds the tax pools above  
 
 
 ## Loss carryforwards
