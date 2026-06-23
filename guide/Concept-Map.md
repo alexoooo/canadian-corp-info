@@ -362,12 +362,15 @@ Details: [Filing deadlines and instalments](Small-Business-Tax-Overview.md#filin
 ## Related
 
 - [Small Business Tax Overview](Small-Business-Tax-Overview.md)
+- [Corporate Structure](Corporate-Structure/Corporate-Structure.md)
+  - [Share Capital](Corporate-Structure/Share-Capital.md)
 - [Tax Integration](Tax-Integration.md)
 - [Dividends](Dividends/Dividends.md)
 - [Capital Dividend Account](Capital-Dividend-Account/Capital-Dividend-Account.md)
 - [Cost Recovery](Cost-Recovery/Cost-Recovery.md)
 - [Adjusted Cost Base](Adjusted-Cost-Base/Adjusted-Cost-Base.md)
 - [Owner-corporation transactions](Owner-Corporation-Transactions.md)
+- [Business Acquisition](Business-Acquisition/Business-Acquisition.md)
 - [HST](HST.md)
 - [Payment](Payment/Payment.md)
 - [Glossary](Glossary.md)

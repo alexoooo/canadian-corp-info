@@ -15,7 +15,7 @@ Limitations:
 - Focus is on the owner-manager(s) of a CCPC holding a single common share class; more complex ownership structures (multiple share classes, family trusts, succession planning) are out of scope
 - The shareholder is assumed to be a Canadian-resident *individual*; Opco-paying-Holdco and non-resident shareholders are mentioned briefly
 - The salary-vs-dividend remuneration tradeoff (CPP, RRSP, payroll, WSIB) is out of scope; this page only covers dividends
-- Tax planning for selling the business (e.g. the lifetime capital gains exemption) is out of scope
+- Tax planning for buying or selling a business (e.g. the lifetime capital gains exemption) is out of scope; see [Business Acquisition](../Business-Acquisition/Business-Acquisition.md) for an orientation
 - Full *Tax on Split Income* (TOSI) mechanics under ITA [s.120.4](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-120.4.html) are out of scope; see [Multiple owner-managers](#multiple-owner-managers) for the active owner-manager case
 - Stock dividends and dividends in kind are out of scope; this page assumes ordinary cash dividends
 - Tax information can change over time (e.g. the single RDTOH account was split into ERDTOH and NERDTOH effective for tax years starting after 2018)
@@ -64,7 +64,7 @@ Some situations you might encounter:
 - Share *redemption*: when the corporation buys back shares, redemption proceeds in excess of PUC are *deemed* to be a dividend under ITA s.84(3)
   - The shareholder's adjusted cost base is then compared against PUC (not against the gross proceeds) for the capital gain or loss calculation
 
-These mechanics are used mainly for restructuring transactions (estate freezes, share buybacks, winding up) and are out of scope for this document.  
+These mechanics are used mainly for restructuring transactions (estate freezes, share buybacks, winding up); the acquisition and freeze cases are covered in [Business Acquisition](../Business-Acquisition/Business-Acquisition.md), and otherwise out of scope here.  
 
 
 ## Multiple owner-managers
@@ -87,7 +87,7 @@ A dividend to a family member who is not active in the business is normally caug
 That usually removes the income-splitting benefit.  
 
 If you don't already have multiple appropriate share classes, then setting up the classes will need an articles amendment.  
-Care must be taken with share valuation and PUC, this restructuring is out of scope; consider professional advice.  
+Care must be taken with share valuation and PUC (see [Share Capital](../Corporate-Structure/Share-Capital.md)); this restructuring is out of scope, so consider professional advice.  
 
 
 ### Tax on Split Income (TOSI)
@@ -250,6 +250,8 @@ The accounts above determine *which* dividend to pay; the steps to actually decl
 
 - [Small Business Tax Overview](../Small-Business-Tax-Overview.md)
 - [Owner-corporation transactions](../Owner-Corporation-Transactions.md)
+- [Share Capital](../Corporate-Structure/Share-Capital.md)
+- [Business Acquisition](../Business-Acquisition/Business-Acquisition.md)
 - [Adjusted Cost Base](../Adjusted-Cost-Base/Adjusted-Cost-Base.md)
 - [Capital Dividend Account](../Capital-Dividend-Account/Capital-Dividend-Account.md)
 - [T3](../T3/T3.md)

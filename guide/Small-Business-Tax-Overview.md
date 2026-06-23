@@ -102,6 +102,7 @@ Outputs: T-slips issued by the corp to the shareholder: T4 (salary), T5 (eligibl
 
 A corporation is a separate legal and tax entity from its shareholders.  
 Corporations can be used to limit liability and for tax planning.  
+For how the corporation is put together (the shareholder/director/officer roles and its share capital), see [Corporate Structure](Corporate-Structure/Corporate-Structure.md).  
 
 There are two types of corporations, federal and provincial:
 - They are taxed the same way; the differences are in corporate law (governing statute, registration jurisdiction, name-protection scope, director rules)
@@ -423,6 +424,8 @@ When a question gets specific, several layers of authority can apply:
 
 ## Related
 
+- [Corporate Structure](Corporate-Structure/Corporate-Structure.md)
+  - [Share Capital](Corporate-Structure/Share-Capital.md)
 - [Adjusted Cost Base](Adjusted-Cost-Base/Adjusted-Cost-Base.md)
 - [Adjusted Cost Base — Tracking](Adjusted-Cost-Base/Adjusted-Cost-Base-Tracking.md)
 - [Cost Recovery](Cost-Recovery/Cost-Recovery.md)
@@ -432,6 +435,7 @@ When a question gets specific, several layers of authority can apply:
 - [Capital Dividend Account](Capital-Dividend-Account/Capital-Dividend-Account.md)
 - [Dividends](Dividends/Dividends.md)
 - [Owner-corporation transactions](Owner-Corporation-Transactions.md)
+- [Business Acquisition](Business-Acquisition/Business-Acquisition.md)
 - [ERDTOH and NERDTOH](Dividends/ERDTOH-NERDTOH.md)
 - [T3](T3/T3.md)
 - [T3 - Box 26 Other Income](T3/T3-Box-26-Other-Income.md)

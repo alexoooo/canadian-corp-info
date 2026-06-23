@@ -27,6 +27,12 @@ Disclaimer: author is not an accountant, this is not financial or tax advice.
 ## Pending review
 
 AI generated, not verified yet:
+- [Corporate Structure](guide/Corporate-Structure/Corporate-Structure.md)
+  - [Share Capital](guide/Corporate-Structure/Share-Capital.md)
+- [Business Acquisition](guide/Business-Acquisition/Business-Acquisition.md)
+  - [Asset versus share purchase](guide/Business-Acquisition/Asset-vs-Share.md)
+  - [Preferred-share consideration](guide/Business-Acquisition/Preferred-Share-Consideration.md)
+  - [Estate Freeze](guide/Business-Acquisition/Estate-Freeze.md)
 - [Cost Recovery](guide/Cost-Recovery/Cost-Recovery.md)
   - [Inventory and cost of goods sold](guide/Cost-Recovery/Inventory-And-COGS.md)
   - [Materials and CIP](guide/Cost-Recovery/Materials-And-CIP.md)

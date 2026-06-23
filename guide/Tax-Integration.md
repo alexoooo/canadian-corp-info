@@ -3,7 +3,7 @@
 **Who this is for**: owners of a Canadian-controlled private corporation (CCPC) paying themselves dividends and trying to understand how the corporate-side and personal-side tax fit together.  
 
 Limitations:
-- Focus is on a single owner-manager shareholder of a CCPC; multiple share classes, family-trust structures, and estate-freeze arrangements are out of scope
+- Focus is on a single owner-manager shareholder of a CCPC; multiple share classes, family-trust structures, and estate-freeze arrangements are out of scope (see [Share Capital](Corporate-Structure/Share-Capital.md) and [Business Acquisition](Business-Acquisition/Business-Acquisition.md))
 - The shareholder is assumed to be a Canadian-resident *individual*; non-resident treatment is touched on only for capital dividends
 - This page focuses on dividend integration; salary integration is trivial (deductible to the corporation, taxed once on the personal side as employment income)
 - The salary-vs-dividend remuneration tradeoff (CPP, RRSP, payroll, WSIB) is out of scope; this page covers the dividend path only
@@ -109,6 +109,7 @@ In other provinces, or at lower personal rates, the ranking between eligible and
 ## Related
 
 - [Small Business Tax Overview](Small-Business-Tax-Overview.md)
+- [Business Acquisition](Business-Acquisition/Business-Acquisition.md)
 - [Dividends](Dividends/Dividends.md)
 - [ERDTOH and NERDTOH](Dividends/ERDTOH-NERDTOH.md)
 - [Capital Dividend Account](Capital-Dividend-Account/Capital-Dividend-Account.md)
