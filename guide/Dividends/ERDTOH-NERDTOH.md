@@ -21,6 +21,7 @@ Limitations:
 
 
 ## Corporate tax pools: ERDTOH / NERDTOH vs GRIP and CDA
+
 ERDTOH and NERDTOH are two of four corporate tax pools that together determine how dividends are taxed on the corporation's side.  
 Each pool tracks a different kind of pre-earned capacity or pre-paid tax, recovered through one specific dividend flavour paid out.  
 
@@ -47,12 +48,14 @@ For full GRIP mechanics see [Dividends / GRIP - capacity for eligible dividends]
 
 
 ## The two RDTOH pools
+
 The *Eligible Refundable Dividend Tax on Hand* (ERDTOH) and *Non-Eligible Refundable Dividend Tax on Hand* (NERDTOH) accounts are defined in ITA [s.89(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-89.html).  
 Both are refundable tax pools; balances roll forward year to year and are recovered only when the corporation pays a taxable dividend.  
 Neither account is a balance-sheet asset.  
 They are notional T2 pools, tracked by T2 software and reported on T2 Page 7.  
 
 ### Transition from RDTOH (pre-2019)
+
 Prior to 2019, there was a single RDTOH, it was split on transition between the two pools based on the source of each dollar.  
 
 Effective: first tax year beginning after 2018 (2019 for a calendar-year corp).  
@@ -72,6 +75,7 @@ No dividend before 2019 means no refund, so the full RDTOH carried into the spli
 
 
 ## Additions
+
 Two mechanisms add to the RDTOH pools.
 
 *Part IV tax on dividends received from other corps* (ITA [s.186(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-186.html)):
@@ -91,6 +95,7 @@ Note that the 30⅔% rate at which AII *adds* to NERDTOH is distinct from the 38
 
 
 ## Inflows and outflows
+
 Each pool is filled by investment income or dividends received, then empties when a dividend is paid.  
 
 Legend:
@@ -119,6 +124,7 @@ flowchart TB
 
 
 ## Dividend refund
+
 The *dividend refund* under ITA [s.129(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-129.html) is calculated separately by dividend type and credited against tax payable for the same year.
 
 - *Eligible* dividends paid → refund equal to the lesser of:
@@ -138,6 +144,7 @@ To fully empty a $1 NERDTOH balance the corporation needs $1 ÷ 38⅓% ≈ **$2.
 
 
 ## T2 reporting
+
 The T2 line items that carry the pools and the refund:
 - *T2 Page 7*: opening, additions, deductions, and closing balances for ERDTOH and NERDTOH
 - *T2 line 784*: total dividend refund for the year, applied as a credit against tax payable on the same return
@@ -150,6 +157,7 @@ T2 software fills these in once dividends paid (eligible vs non-eligible split) 
 
 
 ## Year-end timing
+
 The refund under ITA s.129(1) depends on when the dividend is *paid* in the year (the same "paid, credited, or otherwise made available" test that sets T5 / T1 timing).  
 Declaring a dividend payable on a date in the next year, with no in-year credit to the shareholder, leaves the refund out of the current year.  
 
@@ -160,6 +168,7 @@ For the late-December NERDTOH-recovery procedure (resolution + credit to *Due to
 
 
 ## Stranding
+
 GRIP, ERDTOH, and NERDTOH cannot be transferred, sold, or rolled out to a shareholder; any unused balance at wind-up is lost.  
 A corporation that receives eligible dividends but only ever pays non-eligible dividends strands both GRIP and ERDTOH on the corporate books.  
 
@@ -191,6 +200,7 @@ Draining a stranded balance:
 
 
 ## Worked example - ERDTOH buildup from corporate ETF holdings
+
 Setup:
 - A CCPC holds $200,000 of XEI (an eligible-dividend-paying Canadian-equity ETF structured as a mutual fund trust)
 - 2026 distributions allocated to the corp: T3 Box 49 (eligible dividends) = $7,500; for simplicity assume Box 26 / Box 21 amounts are negligible
