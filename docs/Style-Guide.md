@@ -1,0 +1,167 @@
+# Style Guide
+
+The canonical prose-style rules for the guide: how pages read, not what they cover.  
+Content policy lives in [`../AGENTS.md`](../AGENTS.md): the two registers' content, ACB conventions, cross-linking, the disclaimer stance, and the page-status / promotion machinery.  
+This guide follows its own rules and reads as one worked example of the house style.  
+
+To internalize the style fast, read a signed-off page (`../guide/Adjusted-Cost-Base/Adjusted-Cost-Base.md`) beside a frozen raw-AI specimen (`examples/HST-AI-draft.md`, `examples/Estate-Freeze-AI-draft.md`).  
+The rules below name what the maintainer changes on the way from the second to the first.  
+
+
+## Two voices
+
+The guide has two registers, one per page:
+- *Primer voice* (`../guide/Small-Business-Tax-Overview.md`, `../README.md`): third-person factual, concept-oriented, no procedure
+- *Operational voice* (per-topic pages: `Adjusted-Cost-Base.md`, `T3.md`, `T5008.md`, `Capital-Dividend-Account.md`): second-person imperative, procedure-oriented, with concrete debit/credit and schedule-entry walkthroughs and worked numerical examples
+
+Every rule below applies to both voices unless noted.  
+
+
+## Section rhythm
+
+A section is a stack of short stanzas separated by blank lines.  
+A stanza is one of two things:
+- 1–3 short factual sentences, each on its own line ending in two trailing spaces so they render as separate lines without a paragraph break
+- A colon lead-in followed by a bullet group
+
+A stanza sentence-line keeps its terminal period.  
+Only bullets drop it.  
+
+The canonical shape, from `Adjusted-Cost-Base.md`:
+
+```
+ACB cannot be negative.␠␠
+If ROC would reduce it below zero, the excess becomes an immediate capital gain (ITA [s.40(3)](…)).␠␠
+```
+
+(`␠␠` marks the two trailing spaces; write them as literal spaces.)  
+
+Stanzas appear in sequence with no connective tissue.  
+Cut "broadly speaking", "in turn", "in essence", "consequently", "the takeaway is", "that said".  
+Let the facts stand in order and trust the reader to follow.  
+
+
+## Bullets
+
+- No trailing period on a bullet
+- One fact and one sentence per bullet; if a point needs more, add a sub-bullet rather than extending the parent line
+  - To check: a period mid-bullet (one not inside a `code` span, a quoted example like `ACB cannot be negative.`, or an abbreviation) means two sentences, so split into separate bullets or a sub-bullet
+  - A semicolon is fine for the house `*Label*: description; clause` form; reserve splitting for two independent facts
+- In body prose, a bullet group takes a short colon lead-in line: `Things that increase your ACB:`, `By jurisdiction:`, `Included in cost:`
+- A section that is itself a list (`## Related`, `## Citations`, or a reference section) is led by its heading, not a separate colon line
+- Lead-ins are sentence-fragment labels, not narrative — never `Here are the…` or `The following lists…`
+- `*term*: definition` bullets use a colon, never an em-dash: `Cost of the property: typically the purchase price that you paid`
+
+
+## Sentences
+
+- Short, declarative, one fact each
+- Em-dashes are rare: use them only to separate an independent clause from a mid-sentence qualification (`*GST/HST* runs alongside income tax — rate and structure vary by province`), never as a label separator, never in multi-clause chains
+- Treat one em-dash per paragraph as a soft ceiling; default to a colon, parentheses, comma, or a new sentence
+- State rules as facts (`ACB cannot be negative.`), not as design intent (`the system is designed so…`)
+- One hedge per claim at most; do not stack `generally` / `typically` / `approximately` / `for the most part`
+- Caveats fold inline as parentheticals or sub-bullets, not as separate `Note that…` or `It is important to…` pointer-sentences
+- Drop filler intensifiers and meta-labels: `really`, `simply`, `worth a short note`, `as a pointer`
+- For partial coverage, write `touched on but not worked through`; avoid the lawyerly `sketched` / `pointed at but not worked`
+- Introduce and clarify an ambiguous term once, where it first appears; do not re-qualify it in later contexts where the meaning is already settled
+
+
+## Headings
+
+- `#` for the page title (one per file), `##` for sections, `###` for sub-sections
+- Noun phrases or concrete operations: `Trading fees`, `Sources of law`, `Three deduction channels`, `Declaring a dividend`
+- Never rhetorical or marketing-style: no `Why X matters`, `Understanding Y`, `What you need to know about Z`
+- Short: 2–6 words is typical
+- A trailing status tag on a heading (`\[done]`, `\[meh]`, or the HTML-comment forms `<!-- [done] -->` / `<!-- [wip] -->` / `<!-- [meh] -->`) is the maintainer's progress annotation, not heading text
+  - It is the one exception to the noun-phrase rule
+  - Leave these tags exactly as written; only the maintainer adds, moves, or removes them
+
+
+## Voice and pronouns
+
+- Primer voice: third-person factual (`A corporation is…`, `Active business income is taxed at…`)
+- Operational voice: second-person imperative for the reader-as-bookkeeper (`Debit X`, `Maintain a running total`, `Enter the order…`); first-person plural only for shared bookkeeping conventions (`we want to roll up to GIFI codes`)
+- Disclaimers and uncertainty are first-person: `The following is my understanding as of 2026.`, `I am not an accountant`
+
+
+## Emphasis
+
+- `*italics*` for a tax term as it is introduced or contrasted; ITA, CRA, GST, HST, T1, T2 and similar drop the italics once they read as common nouns
+- `` `code` `` only for actual spreadsheet identifiers, formula names, GIFI account codes, CRA box labels, and ledger account names (`HST receivable`, `Cost of sales`, `S3 Part 3 Box 450`)
+- "GIFI" labels only an official four-digit rollup code
+  - A sub-code carrying an internal `-N` suffix is a bookkeeping convention, not a CRA code: write it as `(8518-1)` or "code 8518-1", never "GIFI 8518-1"
+- Schedule names: spell out on first use within a section (`Schedule 3`), then abbreviate (`S3`); do not mix the two forms inside one section
+
+
+## Citations
+
+- Inline parenthetical the first time a rule appears, linked to laws-lois: `(ITA [s.47(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-47.html))`
+- A `## Citations` section near the end of every mature page; each entry is the source then a short hyphen-explanation of what it covers:
+  - `[s.40(3)](…) - deemed capital gain when ACB would be driven below zero`
+- Citations are concrete and authoritative: cite the ITA section, CRA form/schedule/guide, or Bank of Canada rate directly; never a vague "per CRA guidance" without a pointer
+
+
+## Page shape
+
+A mature page runs in this order:
+1. `**Who this is for**:` line or bullet list
+2. Optional `**TLDR**:` line or block
+3. `Limitations:` block
+4. Walkthrough sections (the body)
+5. `## Related`: sibling pages
+6. `## Citations`: ITA sections, CRA forms, external resources
+7. `## Links` (optional): informal external references
+8. `## TODO` (optional)
+
+A non-mature page carries its `STATUS: …` marker as the very first line, then a blank line, then the `# Title`.  
+The marker stands in for the `**Who this is for**` opener until the page is promoted.  
+See [`../AGENTS.md`](../AGENTS.md) for the status states and the promotion steps.  
+
+
+## Worked examples and diagrams
+
+- Primer voice grounds terms with small parentheticals: `(e.g. an ETF)`, `(FutureTax, TaxCycle, ProFile)`, `(industry jargon for the main return)`
+- Operational voice carries explicit worked examples: concrete dollar values, a `Year 1 / Year 2 / Year 3` progression where state evolves, `→` arrows for the running result, and debits/credits as labeled ledger lines:
+  - `Year 1 ROC: $2.00/unit × 100 = $200 → total ACB: $800.00, per-unit ACB: $8.00`
+- Mermaid in fenced ```` ```mermaid ```` blocks for conceptual flow diagrams
+- PNG screenshots only for real CRA / brokerage forms and tooling, co-located in the page's folder, referenced by bare filename, with account numbers and identifying detail redacted
+
+
+## Canadian English
+
+Use Canadian spelling throughout, matching the existing pages: behaviour, flavour, favourable, neighbour, cheque, licence (noun), centre.  
+Keep tax-term and form spellings as the CRA writes them.  
+
+
+## Reviewing an AI draft
+
+Raw AI drafts already get the structure right: the headings, the bullet groups, the citations, the page skeleton.  
+What review strips is a thin layer of narrative smoothing.  
+Each tell below is a cosmetic recast — wording, not the substance of a claim.  
+
+The before-snippets are quoted as drafted, and may since have been reviewed away.  
+The frozen drafts under `examples/` preserve raw AI prose in full.  
+
+The tells, ordered by frequency in the pending pages:
+- *Rhetorical heading* → noun phrase
+  - before: `## Why a corporation has multiple classes` (`Share-Capital.md`)
+  - after: `## Multiple share classes`
+- *Em-dash appositive or clause chain* → colon, parentheses, or a new sentence
+  - before: `…under paragraph (c) of the s.89(1) definition — the anti-avoidance rule for designations one of whose main purposes is to artificially inflate GRIP or deflate LRIP.` (`T2-Reporting.md`)
+  - after: end the sentence at `definition`, then start a new one: `That paragraph is the anti-avoidance rule for designations whose main purpose is to inflate GRIP or deflate LRIP.`
+- *Em-dash as a label separator* → colon
+  - before: `ABI: *Active Business Income* — income from carrying on an active business; gets the SBD…` (`Glossary.md`)
+  - after: `ABI (*Active Business Income*): income from carrying on an active business; gets the SBD…`
+- *Bullet packing two facts* (two sentences, or a semicolon joining two independent clauses) → split into separate bullets or a sub-bullet
+  - before: `*Two taxpayers*: the corporation files its own T2 return and the owner files a personal T1; money crossing between them is salary, a dividend, a loan, or a benefit` (`Corporate-Structure.md`)
+  - after: keep the first clause on the bullet, move `money crossing between them is salary, a dividend, a loan, or a benefit` to a sub-bullet
+- *Lawyerly partial-coverage phrasing* → plain wording
+  - before: `Incorporation mechanics (name search, articles filing, annual returns) are sketched, not worked through` (`Corporate-Structure.md`)
+  - after: `…are touched on, not worked through`
+- *Verb-led or narrative sentence opener where a label fits* → colon lead-in fragment
+- *Multi-sentence explanatory paragraph* → a stanza of one-sentence lines, or a colon lead-in + bullets
+- *Hedge stacking* (`generally`, `typically`, `usually` piled on one claim) → one hedge at most
+- *`Note that…` / `It is important to…` pointer-sentence* → inline parenthetical or sub-bullet
+- *`**Label**: long sentence.` paragraph* → the colon-bullet convention
+- *Connective tissue* (`in turn`, `consequently`, `that said`) → delete; let the stanzas sequence themselves
+- *Trailing period on a bullet* → remove

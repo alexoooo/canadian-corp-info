@@ -232,7 +232,8 @@ The $500,000 SBD *business limit* is not always a flat ceiling. It can be reduce
 - A large *taxable capital* base (the *large CCPC* rule)
 
 *Aggregate investment income* (AII): income from passive investments held in the corp (interest, foreign income, the taxable portion of capital gains).  
-AII is taxed at a high combined rate (~50.2% in Ontario), but a portion is *refundable*. It's parked in the corporation's *NERDTOH* (non-eligible RDTOH) account and refunded when the corporation eventually pays a *non-eligible* dividend to the shareholder.  
+AII is taxed at a high combined rate (~50.2% in Ontario), but a portion is *refundable*.  
+It's parked in the corporation's *NERDTOH* (non-eligible RDTOH) account and refunded when the corporation eventually pays a *non-eligible* dividend to the shareholder.  
 The refundable mechanism is what stops the CCPC from being used as an indefinite tax-deferral vehicle for passive investing.  
 
 Dividends *received* from other Canadian corporations (for example, portfolio shareholdings or funds structured as corporations) sit in their own bucket:

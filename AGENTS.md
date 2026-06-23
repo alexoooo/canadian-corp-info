@@ -7,7 +7,7 @@ This is the single source of truth for project context, editorial conventions, a
 
 ## Repository nature
 
-This is a **documentation-only** repository. There is no build system, test suite, lint tooling, or package manifest. The root holds `README.md`, `AGENTS.md`, `CLAUDE.md`, a `docs/` folder (process docs for agents, e.g. the audit playbook), an `audit/` folder, and a `guide/` folder containing all topic content (with screenshots co-located alongside the pages that reference them). Edits are content edits; "running" the project means previewing Markdown.
+This is a **documentation-only** repository. There is no build system, test suite, lint tooling, or package manifest. The root holds `README.md`, `AGENTS.md`, `CLAUDE.md`, a `docs/` folder (process docs for agents: the [style guide](docs/Style-Guide.md) and the audit playbook), an `audit/` folder, and a `guide/` folder containing all topic content (with screenshots co-located alongside the pages that reference them). Edits are content edits; "running" the project means previewing Markdown.
 
 The audience is narrow: owners of a Canadian-controlled private corporation (CCPC), typically holding stocks/ETFs in a corporate trading account. Keep that frame — do not generalize content to personal tax, US filers, or other entity types unless the existing document already does. A brief contrast with sole-proprietor or personal-tax treatment is allowed where it clarifies the corporate treatment and stays clearly secondary (see `guide/Owner-Corporation-Transactions.md`); do not let such a contrast grow into general personal-tax coverage.
 
@@ -50,7 +50,7 @@ This separation is load-bearing. The audience uses these pages as practical guid
 Promotion is the maintainer's end-to-end sign-off on a mature page; only the maintainer issues it, and only on the maintainer's explicit say-so for a specific page. The steps:
 
 - Delete the `STATUS: AI GENERATED, REVIEW IN PROGRESS` first line and its trailing blank line, so the file opens on its `# Title` heading
-- Strip the per-section `<!-- [done] -->` review tags from every heading — they are section-by-section review scaffolding (the maintainer-only heading tags described under [Headings](#headings)), and a signed-off page carries none
+- Strip the per-section `<!-- [done] -->` review tags from every heading — they are section-by-section review scaffolding (the maintainer-only heading tags described under [`docs/Style-Guide.md` — Headings](docs/Style-Guide.md#headings)), and a signed-off page carries none
 - Move the page's `README.md` entry from Pending review into Topics, indented under its parent hub if it is a sub-page
 
 The `<!-- [done] -->` tags are how the maintainer tracks review toward sign-off; a page is ready to promote once they cover it end to end.
@@ -78,84 +78,10 @@ These rules encode actual decisions made across the existing guides. Follow them
 
 ## Style
 
-The guide has two registers — keep them consistent within a page.
+Prose style is canonical in [`docs/Style-Guide.md`](docs/Style-Guide.md): the two voices, section rhythm, bullets, sentences, headings, emphasis, citations, page shape, worked examples, and the tells that separate reviewed prose from raw AI drafts. Follow that file when editing or adding content. This section keeps only the two reminders that interact with the rest of this document.
 
-### Two voices
-
-- **Primer voice** (`Small-Business-Tax-Overview.md`, `README.md`): third-person factual, concept-oriented, no procedure
-- **Operational voice** (per-topic pages: `Adjusted-Cost-Base.md`, `T3.md`, `T5008.md`, `Capital-Dividend-Account.md`): second-person imperative, procedure-oriented, concrete debit/credit and schedule-entry walkthroughs with worked numerical examples
-
-Surface rules below apply to both voices unless noted.
-
-### Section rhythm
-
-- A section is a stack of short stanzas separated by blank lines
-- A stanza is either:
-  - 1–3 short factual sentences, each on its own line ending with two trailing spaces (`  `) so they render as separate lines without a paragraph break
-  - A colon lead-in followed by a bullet group
-- Stanzas appear in sequence without connective tissue ("broadly speaking", "in turn", "in essence", "the takeaway is", "consequently") — let facts stand and trust the reader
-
-### Bullet structure
-
-- No trailing period on bullets
-- One fact per bullet; if a point needs more, use a sub-bullet rather than extending the parent line
-- Each bullet group is preceded by a short lead-in line ending in a colon ("GST/HST comes in two forms:", "By jurisdiction:", "Things that increase your ACB:")
-- Lead-ins are sentence-fragment labels, not narrative ("Here are the…" / "The following lists…")
-- For term-definition bullets (`- *term*: definition`), use a colon, not an em-dash; reserve em-dashes for separating an independent clause from a qualification or example mid-sentence ("`*GST/HST* runs alongside income tax — rate and structure vary by province`")
-
-### Sentences
-
-- Short, declarative, one fact per sentence
-- Avoid multi-clause em-dash chains — break into a lead-in + bullets instead
-- Em-dashes should be rare; default to colon, parentheses, comma, or period, and treat one per paragraph as a soft ceiling
-- Caveats fold inline as parentheticals or sub-bullets, not as separate "Note in particular X" pointer-sentences
-- State rules as facts (`ACB cannot be negative.`), not as design intent ("the system is designed so…")
-
-### Headings
-
-- Heading levels: `#` for the page title (one per file), `##` for section headings, `###` for sub-sections under a section
-- Noun phrases or concrete operations: `T3 boxes`, `Trading fees`, `Foreign assets and FX conversion to CAD`, `Sources of law`
-- Never rhetorical or marketing-style: avoid `Why X matters`, `Understanding Y`, `What you need to know about Z`
-- Short — 2–6 words is typical
-- A trailing bracketed status tag — `\[done]`, `\[meh]`, and similar — is the maintainer's intentional authoring/progress annotation, not part of the heading text. Leave these tags exactly as written: never delete, reword, or "clean them up," and treat them as an explicit exception to the noun-phrase rule above. Only the maintainer adds or removes them.
-
-### Voice and pronouns
-
-- **Primer voice**: third-person factual ("A corporation is…", "Active business income is taxed at…")
-- **Operational voice**: second-person imperative for the reader-as-bookkeeper ("Debit X", "Maintain a running total", "Enter the order…"); first-person plural sparingly for shared bookkeeping conventions ("we want to roll up to GIFI codes")
-- Disclaimers and uncertainty are first-person ("my understanding as of 2026", "I am not an accountant")
-- Avoid hedge stacking ("generally", "typically", "approximately", "for the most part") — use one hedge per claim if any
-
-### Examples and concreteness
-
-- **Primer voice**: small parenthetical groundings (`(e.g. an ETF)`, `(FutureTax, TaxCycle, ProFile)`, `(industry jargon for the main return)`)
-- **Operational voice**: explicit worked examples with concrete dollar values and a `Year 1 / Year 2 / Year 3` progression where state evolves; show debits/credits as labeled ledger lines
-
-### Tax-term emphasis
-
-- *Italics* for tax terms being introduced or contrasted; ITA, CRA, GST, HST, T1, T2, etc. are unitalicized once they are common-noun-like
-- `code` style only for actual spreadsheet identifiers, formula names, GIFI account codes, or CRA box labels
-- Schedule names: spell out on first use within a section ("Schedule 3"), then abbreviate ("S3"); don't mix forms within the same section
-
-### Citations
-
-- Inline parenthetical at the point a rule first appears: `(ITA [s.47(1)](…))`, linked to laws-lois
-- Comprehensive `# Citations` section near the end of every mature page; each entry has a short hyphen-explanation of what the section covers (`s.40(3) - deemed capital gain when ACB would be driven below zero`)
-- Citations are concrete and authoritative — no vague "per CRA guidance" without a pointer
-
-### Page shape
-
-For mature pages:
-1. `**Who this is for**:` line
-2. Optional `**TLDR**:` line or block
-3. `Limitations:` block
-4. Walkthrough sections (the body)
-5. `# Related` — list of sibling pages
-6. `# Citations` — ITA sections, CRA forms, external resources
-7. `# Links` (optional) — informal external references
-8. `# TODO` (optional)
-
-For non-mature pages, the `STATUS: …` marker (see [Page status](#page-status)) replaces the `**Who this is for**` opener until the page is promoted.
+- **Two voices, one per page**: *primer* (third-person factual, concept-oriented; `Small-Business-Tax-Overview.md`, `README.md`) and *operational* (second-person imperative, with worked debit/credit and schedule-entry walkthroughs; the per-topic pages)
+- **Heading status tags are maintainer-only**: a trailing `\[done]`, `\[meh]`, or HTML-comment tag (`<!-- [done] -->`, `<!-- [wip] -->`) on a heading is an authoring/progress annotation, not heading text — leave it exactly as written and never "clean it up"
 
 ---
 

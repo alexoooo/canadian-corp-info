@@ -6,14 +6,12 @@ The ACB is used when you sell a security; this results in a T5008 and needs to b
 You are responsible for maintaining your own ACB records and using those to calculate capital gains or losses (i.e. do not just report the T5008 Box 20 amount, which is the Book Cost rather than the ACB).  
 
 This document is an overview of ACB concepts.  
-For detailed step-by-step instructions for how to track ACB, see:
-[Adjusted Cost Base Tracking](Adjusted-Cost-Base-Tracking.md)
+For detailed step-by-step instructions for how to track ACB, see [Adjusted Cost Base Tracking](Adjusted-Cost-Base-Tracking.md).  
 
-This document only covers stocks and ETFs.  
-Other types of investments (real estate, etc.) are out of scope and might have different or additional rules.  
-
-Tax information can change over time (e.g. the capital gains inclusion rate was going to increase to 2/3, before the proposal was cancelled).  
-The following is my understanding as of 2026.  
+Limitations:
+- This document only covers stocks and ETFs; other types of investments (real estate, etc.) are out of scope and might have different or additional rules
+- Tax information can change over time (e.g. the capital gains inclusion rate was going to increase to 2/3, before the proposal was cancelled)
+- The following is my understanding as of 2026
 
 
 ## Definitions
