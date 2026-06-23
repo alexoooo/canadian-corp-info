@@ -45,6 +45,16 @@ When a marker is present, it is the very first line of the file, followed by a b
 
 This separation is load-bearing. The audience uses these pages as practical guidance, and AI-generated content can contain plausible-sounding errors that have not yet been caught. Do not silently promote a page — removing the marker and moving its `README.md` entry into Topics is a sign-off, and only the maintainer can issue it. When drafting new content from scratch, mark it `AI GENERATED, REVIEW IN PROGRESS` and place its `README.md` entry under Pending review.
 
+### Promotion (sign-off)
+
+Promotion is the maintainer's end-to-end sign-off on a mature page; only the maintainer issues it, and only on the maintainer's explicit say-so for a specific page. The steps:
+
+- Delete the `STATUS: AI GENERATED, REVIEW IN PROGRESS` first line and its trailing blank line, so the file opens on its `# Title` heading
+- Strip the per-section `<!-- [done] -->` review tags from every heading — they are section-by-section review scaffolding (the maintainer-only heading tags described under [Headings](#headings)), and a signed-off page carries none
+- Move the page's `README.md` entry from Pending review into Topics, indented under its parent hub if it is a sub-page
+
+The `<!-- [done] -->` tags are how the maintainer tracks review toward sign-off; a page is ready to promote once they cover it end to end.
+
 ---
 
 ## Editorial conventions

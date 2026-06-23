@@ -108,6 +108,50 @@ Filing and remittance deadlines:
 For the full overview of CCPC filing-deadline cadence including the T2, T4/T5 slips, and payroll source deductions alongside GST/HST, see [Small Business Tax Overview](Small-Business-Tax-Overview.md#filing-deadlines-and-instalments).
 
 
+## When tax becomes payable
+
+The rate and place-of-supply rules fix *how much* HST applies; a separate rule fixes *when* the liability arises — the *tax point*.  
+HST is payable on the earlier of the day the consideration is paid and the day it becomes *due* (ETA [s.168(1)](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-168.html)).  
+
+Consideration becomes due on the earliest of (ETA [s.152(1)](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-152.html)):
+- The earlier of the *date of the invoice* and the day the supplier *first issues* it (s.152(1)(a))
+- The day the supplier *would have* issued the invoice but for undue delay (s.152(1)(b))
+- The day the recipient must pay under a *written agreement* (s.152(1)(c))
+
+For a service CCPC that bills on completion with no earlier payment and no written due date, the tax point is the *invoice date*.  
+Because s.152(1)(a) takes the earlier of the invoice date and the issue date, back-dating an invoice pulls the tax point earlier, and post-dating it cannot defer the tax point past the issue date.  
+The undue-delay rule (s.152(1)(b)) stops a registrant from deferring HST by sitting on an invoice for work already complete.  
+
+This tax point dates every entry in the bookkeeping section below: `HST collected` is recognized in the reporting period that contains the tax point, not when the cash arrives.  
+For a foreign-currency supply, the same tax-point date sets the rate used to convert the HST to CAD (ETA [s.159](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-159.html)); see [Foreign Currency](Foreign-Currency.md#taxable-usd-supplies-and-hst).  
+
+### Year-end straddle: income vs HST timing
+
+Income tax and HST run on different clocks, so a supply near year-end can fall in two different periods.  
+Corporate income is recognized when *earned* — when the amount becomes receivable under ITA [s.9](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-9.html) and [s.12(1)(b)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-12.html) — which for completed services is when the work is done.  
+The HST tax point follows the s.152 rule above instead.  
+
+Work finished on Dec 31 but invoiced in January is the common case:
+- *Income*: belongs to the year the work was done (earned Dec 31), whatever the invoice date
+- *HST*: if the invoice is dated and issued in January, the tax point is January and the HST belongs to the next reporting period
+
+Dating the invoice Dec 31 — legitimate when the work was complete that day — collapses both into the earlier year through the s.152(1)(a) invoice-date prong.  
+Dating it in January splits them, and the books need a *year-end revenue accrual* to record the income in the year it was earned while the HST stays in the next period:
+
+Dec 31 — accrue the earned revenue; no HST, because the tax point has not arrived:
+- Debit `Accrued/unbilled receivable` (GIFI 1480, *Other current assets*) = net fee
+- Credit `Trade sales of goods and services` (GIFI 8000) = net fee
+
+January — issue the invoice; reclassify the receivable and add the HST at its own tax point:
+- Debit `Accounts receivable` (GIFI 1060) = fee + HST
+- Credit `Accrued/unbilled receivable` (GIFI 1480) = net fee
+- Credit `HST collected` = HST
+
+The accrual carries *revenue only*; `HST collected` is recognized in January with the invoice, because that is when the tax point occurs.  
+`HST collected` is a liability, not income, so moving it between periods changes only which GST34 return reports it — not taxable income in either year.  
+There is no dedicated GIFI line for unbilled service revenue: map it to *Other current assets* (1480) to keep it distinct from billed trade AR, or fold it into *Accounts receivable* (1060) when the accrual reverses within days.  Manufacturing WIP (1125) is a different item — partially completed goods, not earned-but-unbilled service fees.  
+
+
 ## Bookkeeping accounts
 
 Two ledger accounts run alongside the corp's commercial activity through each reporting period:
@@ -432,8 +476,11 @@ The break-even point against the regular method on Ontario services is roughly t
 
 - Excise Tax Act (R.S.C., 1985, c. E-15): https://laws-lois.justice.gc.ca/eng/acts/E-15/
   - [s.148](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-148.html) - small-supplier threshold ($30,000 over four quarters or in any single quarter; aggregation across associated corps)
+  - [s.152](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-152.html) - when consideration becomes due (earlier of the invoice date and the day the invoice is first issued)
   - [s.156](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-156.html) - election to zero-rate supplies between closely related corporations
+  - [s.159](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-159.html) - conversion of foreign-currency consideration to CAD at the tax-point date
   - [s.165](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-165.html) - imposition of GST/HST on taxable supplies, including the rate
+  - [s.168](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-168.html) - tax payable on the earlier of payment and consideration becoming due
   - [s.169](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-169.html) - general entitlement to input tax credits
   - [s.170](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-170.html) - denied ITCs (club memberships, dining facilities)
   - [s.199](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-199.html) - all-or-nothing ITC on capital personal property (full ITC if business use exceeds 50%, none if 50% or less); deemed acquisition when business use rises above 50% (s.199(3))
@@ -455,6 +502,9 @@ The break-even point against the regular method on Ontario services is roughly t
   - [s.278.1](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-278.1.html) - mandatory electronic filing
   - Schedule VI, Part V - zero-rated exports of services and goods (s.1 goods; s.7 general services to non-residents; s.23 advisory, professional, or consulting services to non-residents)
   - Schedule IX - place-of-supply rules
+- Income Tax Act (R.S.C., 1985, c. 1 (5th Supp.)):
+  - [s.9](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-9.html) - income from a business is the profit, recognized when earned (accrual)
+  - [s.12(1)(b)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-12.html) - amounts receivable for services rendered included when the account is rendered, or would have been but for undue delay
 - *Input Tax Credit Information (GST/HST) Regulations* (SOR/91-45) - prescribed documentary requirements at the $100 and $500 thresholds: https://laws-lois.justice.gc.ca/eng/regulations/SOR-91-45/
 - CRA *RC4022 General Information for GST/HST Registrants*: https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4022.html
 - CRA *RC4058 Quick Method of Accounting for GST/HST* - eligibility, election mechanics, full province × business-type rate matrix, 1% credit on first $30,000: https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4058.html

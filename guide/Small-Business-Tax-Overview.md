@@ -146,8 +146,14 @@ In short:
 
 Two further conventions govern how transactions are recorded:
 - *Accrual accounting* (required) determines *when* a transaction is recorded:
-  - For revenue: when you send the invoice (not when cash arrives)
-  - For expenses: when you receive the vendor bill (not when you pay)
+  - For revenue (e.g. invoicing a client):
+    - Revenue counts when the work is done, not when you send the invoice or when the cash arrives (ITA [s.9](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-9.html), [s.12(1)(b)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-12.html))
+    - Setting your invoice date to the service-completion date simplifies bookkeeping around year-end (before year-end the invoice date can be later than work date without affecting tax)
+    - Otherwise, December work invoiced and dated in January is December income, booked with a year-end accrual (see [HST / Year-end straddle](HST.md#year-end-straddle-income-vs-hst-timing))
+  - For expenses (e.g. paying a vendor):
+    - Expenses count when the goods or services are received, not when the bill arrives or when you pay (ITA [s.9](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-9.html), [s.18(1)(a)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-18.html))
+    - You can't set the vendor's bill date the way you set your own invoice date, so a late bill is squared up with a year-end accrual (before year-end a late bill doesn't affect tax)
+    - December services billed in January are a December expense, booked with a year-end accrual; the bill's HST is processed when you receive it (see [HST / Year-end straddle](HST.md#year-end-straddle-income-vs-hst-timing))
 - *Basis of accounting* determines *how* the amount is measured:
   - The simplest is *tax basis*, where revenue and expenses follow ITA rules so that books exactly match T2 numbers
 - The typical small owner-managed CCPC is set up as *accrual + tax basis*

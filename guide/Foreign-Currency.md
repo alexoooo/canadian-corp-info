@@ -352,6 +352,18 @@ Registration and ITC consequences:
 - Once registered, ITCs on Canadian inputs remain claimable even though all output is zero-rated; the corp typically files for a GST/HST refund each period
 - See [HST](HST.md) for the full mechanics including registration, reporting periods, ITC tracking, and Quick Method considerations (most service consultants are ineligible for Quick Method regardless of the zero-rating)
 
+### Taxable USD supplies and HST
+
+The zero-rated case above carries no HST, so no FX question arises on the tax.  
+A *taxable* USD-denominated supply — for example a USD invoice to a Canadian customer — does carry HST, and the HST is converted to CAD at the rate on its *tax-point* date: the earlier of the invoice date and the day the invoice is issued (ETA [s.159](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-159.html); see [HST / When tax becomes payable](HST.md#when-tax-becomes-payable)).  
+
+The HST tax-point rate can differ from the rate date on the revenue:
+- *Revenue*: invoice-date BoC rate, as elsewhere on this page
+- *HST*: tax-point-date BoC rate under s.159
+
+When the invoice is issued the day it is dated, the two coincide and a single rate applies.  
+They diverge across a year-end straddle: revenue is accrued in the earlier year at that year-end's rate, while the HST is recognized with the next-year invoice at the later rate (see [HST / Year-end straddle](HST.md#year-end-straddle-income-vs-hst-timing)).  
+
 ### US withholding tax and W-8BEN-E
 
 When invoicing a US client, US tax law requires the client to withhold US tax on payments to a foreign person unless an exemption is supported:
@@ -548,6 +560,7 @@ flowchart TB
   - Schedule VI, Part V, section 7 - zero-rated general services to non-residents
   - Schedule VI, Part V, section 23 - zero-rated advisory, professional, or consulting services to non-residents
   - [s.148](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-148.html) - small-supplier threshold (zero-rated supplies count toward the $30,000 test)
+  - [s.159](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-159.html) - conversion of foreign-currency consideration to CAD at the HST tax-point date
 - CRA publications:
   - CRA archived IT-95R - *Foreign Exchange Gains and Losses* (paragraphs 8 and 9 on accrual vs settlement for income-account vs capital-account FX): https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/it95r/archived-foreign-exchange-gains-losses.html
   - CRA Income Tax Folio S5-F4-C1 - *Income Tax Reporting Currency*: https://www.canada.ca/en/revenue-agency/services/tax/technical-information/income-tax/income-tax-folios-index/series-5-international-residency/series-5-international-residency-folio-4-foreign-currency/income-tax-folio-s5-f4-c1-income-tax-reporting-currency.html
@@ -572,7 +585,7 @@ flowchart TB
 
 ## TODO
 
-- Cross-link with [HST](HST.md) once that page is past the stub phase; the zero-rated-services note here is a pointer
+- Zero-rated and taxable-supply HST notes now cross-link [HST](HST.md) (tax-point and s.159 conversion); revisit the overlap on a maintainer sign-off pass
 - Add FX-specific terms to [Glossary](Glossary.md) on a separate maintainer pass: BoC daily rate, functional currency election, income-account FX, capital-account FX, monetary item, multi-currency bookkeeping convention, FX trading account, Norbert's Gambit, journal (broker), settlement-date rate, realized FX, unrealized FX
 - Worked example for a USD payable to a foreign supplier (the mirror of the USD-AR example); useful for inventory-importing CCPCs and partly covered in [Inventory](Cost-Recovery/Inventory-And-COGS.md) Example 2
 - A short companion section if and when the maintainer signs off this page on the bank-statement-driven workflow (record at the bank's actual settlement rate, reconcile to BoC monthly) vs the BoC-driven workflow (record at BoC daily, reconcile to bank at year-end)

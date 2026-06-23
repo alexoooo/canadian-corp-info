@@ -15,6 +15,7 @@ Disclaimer: author is not an accountant, this is not financial or tax advice.
 - [Concept map](guide/Concept-Map.md)
 - [Tax Integration](guide/Tax-Integration.md)
 - [Dividends](guide/Dividends/Dividends.md)
+  - [ERDTOH and NERDTOH](guide/Dividends/ERDTOH-NERDTOH.md)
 - [Adjusted Cost Base](guide/Adjusted-Cost-Base/Adjusted-Cost-Base.md)
   - [Adjusted Cost Base - Tracking](guide/Adjusted-Cost-Base/Adjusted-Cost-Base-Tracking.md)
 - [Capital Dividend Account](guide/Capital-Dividend-Account/Capital-Dividend-Account.md)
@@ -32,7 +33,6 @@ AI generated, not verified yet:
   - [Capital Cost Allowance](guide/Cost-Recovery/Capital-Cost-Allowance.md)
 - [Foreign Currency](guide/Foreign-Currency.md)
 - Dividends sub-pages (hub in Topics):
-  - [ERDTOH and NERDTOH](guide/Dividends/ERDTOH-NERDTOH.md)
   - [Declaring and paying a dividend](guide/Dividends/Declaring-And-Paying.md)
   - [Bookkeeping and information slips](guide/Dividends/Bookkeeping-And-Slips.md)
   - [T2 reporting](guide/Dividends/T2-Reporting.md)

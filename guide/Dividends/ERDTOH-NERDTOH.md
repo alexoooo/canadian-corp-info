@@ -1,6 +1,4 @@
-STATUS: AI GENERATED, REVIEW IN PROGRESS
-
-# ERDTOH and NERDTOH (Eligible and Non-Eligible Refundable Dividend Tax On Hand) <!-- [done] -->
+# ERDTOH and NERDTOH (Eligible and Non-Eligible Refundable Dividend Tax On Hand)
 
 See parent document: [Dividends](Dividends.md)
 
@@ -22,8 +20,7 @@ Limitations:
 - The following is my understanding as of 2026
 
 
-## Corporate tax pools: ERDTOH / NERDTOH vs GRIP and CDA <!-- [done] -->
-
+## Corporate tax pools: ERDTOH / NERDTOH vs GRIP and CDA
 ERDTOH and NERDTOH are two of four corporate tax pools that together determine how dividends are taxed on the corporation's side.  
 Each pool tracks a different kind of pre-earned capacity or pre-paid tax, recovered through one specific dividend flavour paid out.  
 
@@ -49,15 +46,13 @@ ERDTOH and NERDTOH are about *tax already paid* that comes back when the matchin
 For full GRIP mechanics see [Dividends / GRIP - capacity for eligible dividends](Dividends.md#grip---capacity-for-eligible-dividends); for CDA see [Capital-Dividend-Account.md](../Capital-Dividend-Account/Capital-Dividend-Account.md).  
 
 
-## The two RDTOH pools <!-- [done] -->
-
+## The two RDTOH pools
 The *Eligible Refundable Dividend Tax on Hand* (ERDTOH) and *Non-Eligible Refundable Dividend Tax on Hand* (NERDTOH) accounts are defined in ITA [s.89(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-89.html).  
 Both are refundable tax pools; balances roll forward year to year and are recovered only when the corporation pays a taxable dividend.  
 Neither account is a balance-sheet asset.  
 They are notional T2 pools, tracked by T2 software and reported on T2 Page 7.  
 
-### Transition from RDTOH (pre-2019) <!-- [done] -->
-
+### Transition from RDTOH (pre-2019)
 Prior to 2019, there was a single RDTOH, it was split on transition between the two pools based on the source of each dollar.  
 
 Effective: first tax year beginning after 2018 (2019 for a calendar-year corp).  
@@ -76,8 +71,7 @@ RDTOH by source:
 No dividend before 2019 means no refund, so the full RDTOH carried into the split.  
 
 
-## Additions <!-- [done] -->
-
+## Additions
 Two mechanisms add to the RDTOH pools.
 
 *Part IV tax on dividends received from other corps* (ITA [s.186(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-186.html)):
@@ -96,8 +90,7 @@ Two mechanisms add to the RDTOH pools.
 Note that the 30⅔% rate at which AII *adds* to NERDTOH is distinct from the 38⅓% rate at which a non-eligible dividend *removes* tax from NERDTOH.  
 
 
-## Inflows and outflows <!-- [done] -->
-
+## Inflows and outflows
 Each pool is filled by investment income or dividends received, then empties when a dividend is paid.  
 
 Legend:
@@ -125,8 +118,7 @@ flowchart TB
 ```
 
 
-## Dividend refund <!-- [done] -->
-
+## Dividend refund
 The *dividend refund* under ITA [s.129(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-129.html) is calculated separately by dividend type and credited against tax payable for the same year.
 
 - *Eligible* dividends paid → refund equal to the lesser of:
@@ -145,8 +137,7 @@ The 38⅓% rate is the rate at which a dollar of dividend liberates refundable t
 To fully empty a $1 NERDTOH balance the corporation needs $1 ÷ 38⅓% ≈ **$2.61** of non-eligible dividend.  
 
 
-## T2 reporting <!-- [done] -->
-
+## T2 reporting
 The T2 line items that carry the pools and the refund:
 - *T2 Page 7*: opening, additions, deductions, and closing balances for ERDTOH and NERDTOH
 - *T2 line 784*: total dividend refund for the year, applied as a credit against tax payable on the same return
@@ -159,25 +150,39 @@ T2 software fills these in once dividends paid (eligible vs non-eligible split) 
 
 
 ## Year-end timing
+The refund under ITA s.129(1) depends on when the dividend is *paid* in the year (the same "paid, credited, or otherwise made available" test that sets T5 / T1 timing).  
+Declaring a dividend payable on a date in the next year, with no in-year credit to the shareholder, leaves the refund out of the current year.  
 
-ITA s.129(1) keys off when the dividend is *paid* in the year, using the same "paid, credited, or otherwise made available" standard that determines T5 / T1 timing.  
-A resolution that merely *declares* a dividend payable on a future date in the next year, with no in-year credit to the shareholder, does not land the refund in the current year.  
+The refund uses the *year-end* pool balance, which already holds the year's Part IV additions.  
+A dividend received and paid out in the same year therefore puts its Part IV tax and matching refund on one T2, where they net to zero, with no need to wait for the next year.  
 
 For the late-December NERDTOH-recovery procedure (resolution + credit to *Due to shareholder* + January cash settlement), see [Dividends / Declaration date, record date, and payment date](Declaring-And-Paying.md#declaration-date-record-date-and-payment-date).  
 
 
 ## Stranding
-
 GRIP, ERDTOH, and NERDTOH cannot be transferred, sold, or rolled out to a shareholder; any unused balance at wind-up is lost.  
 A corporation that receives eligible dividends but only ever pays non-eligible dividends strands both GRIP and ERDTOH on the corporate books.  
 
+Stranding doesn't cost anything to the corporation, but the shareholder pays more personal taxes:  
+- Either way the corporation recovers the same 38⅓% refund: NERDTOH on a non-eligible dividend, ERDTOH on an eligible one.    
+- Shareholder pays more: non-eligible dividends carry a lower gross-up and dividend tax credit, so the same cash leaves a bigger personal tax bill  
+
 How the two pools strand:
-- *GRIP*: eligible dividends received add to GRIP, but the eligible designation has to be made at or before the time the dividend is paid (ITA [s.89(14)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-89.html)); a non-eligible dividend already paid cannot be retroactively redesignated, so an unused GRIP balance accumulates on Schedule 53
-- *ERDTOH*: Part IV tax on dividends received populates ERDTOH, but the ordering rule (non-eligible draws NERDTOH first, ERDTOH only after NERDTOH is exhausted) means ERDTOH never drains while NERDTOH is non-empty
+- *GRIP*:
+  - Eligible dividends received add to GRIP, but the eligible designation has to be made at or before the time the dividend is paid (ITA [s.89(14)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-89.html))
+  - Non-eligible dividends already paid cannot be retroactively redesignated, so an unused GRIP balance accumulates on Schedule 53
+- *ERDTOH*:
+  - Part IV tax on dividends received populates ERDTOH
+  - Ordering rule: non-eligible draws NERDTOH first, ERDTOH only after NERDTOH is exhausted
+  - ERDTOH never drains while NERDTOH is non-empty
 
 Stranding scenarios:
-- A CCPC receiving Box 49 ETF dividends (e.g. XEI) but only paying non-eligible dividends to the owner-manager: each year's Part IV tax on the eligible dividends received goes to ERDTOH, but the year's payout draws only from NERDTOH (which is being filled by the AII portion of the same ETF distributions); the ERDTOH balance grows and stays
-- A CCPC with no GRIP and a stranded ERDTOH balance: paying an eligible dividend would draw on ERDTOH but requires GRIP capacity to designate the dividend; without GRIP the ERDTOH stays stranded
+- A CCPC receiving Box 49 ETF dividends (e.g. XEI) but only paying non-eligible dividends to the owner-manager:
+  - Each year's Part IV tax on the eligible dividends received goes to ERDTOH, but the year's payout draws only from NERDTOH (which is being filled by the AII portion of the same ETF distributions)
+  - ERDTOH balance grows and stays
+- A CCPC with no GRIP and a stranded ERDTOH balance:
+  - Paying an eligible dividend would draw on ERDTOH but requires GRIP capacity to designate the dividend
+  - Without GRIP the ERDTOH stays stranded
 
 Draining a stranded balance:
 - Designate future dividends as eligible up to the running GRIP balance on Schedule 53, with a current-year catch-up dividend if free retained earnings allow; the eligible dividend draws down both GRIP and ERDTOH
@@ -186,15 +191,14 @@ Draining a stranded balance:
 
 
 ## Worked example - ERDTOH buildup from corporate ETF holdings
-
 Setup:
 - A CCPC holds $200,000 of XEI (an eligible-dividend-paying Canadian-equity ETF structured as a mutual fund trust)
-- 2026 distributions allocated to the corp: T3 Box 49 (eligible dividends) = $7,500; assume Box 26 / Box 21 amounts are negligible for simplicity
+- 2026 distributions allocated to the corp: T3 Box 49 (eligible dividends) = $7,500; for simplicity assume Box 26 / Box 21 amounts are negligible
 - The corp's only other income is $200,000 ABI under the SBD
 - Opening GRIP and ERDTOH balances: $0
 
 Receiving the dividend:
-- The $7,500 in Box 49 is reported on S3 Part 1 as a dividend received; the s.112 deduction removes it from Part I taxable income
+- Box 49: $7,500 is reported on S3 Part 1 as a dividend received; the s.112 deduction removes it from Part I taxable income
 - Part IV tax: $7,500 × 38⅓% = **$2,875**, paid with the 2026 T2; this $2,875 flows to ERDTOH per s.129(4)
 - GRIP also increases by the $7,500 of eligible dividends received
 
@@ -206,10 +210,13 @@ End of 2026:
 To recover the $2,875 ERDTOH, the corporation pays a $7,500 eligible dividend (designated under s.89(14)), drawing on the GRIP capacity.  
 Dividend refund: $7,500 × 38⅓% = $2,875, exactly emptying ERDTOH.  
 
-If the corporation paid only a non-eligible dividend instead, the dividend would draw on NERDTOH first; with NERDTOH at $0, a $7,500 non-eligible dividend would spill into ERDTOH and trigger the same $2,875 refund.  
+Paid in 2026, the $2,875 Part IV tax and this $2,875 refund both fall on the 2026 T2 and net to zero (see [Year-end timing](#year-end-timing)); the refund slips to the 2027 T2 only if the dividend is not paid or credited until then.  
+
+If a non-eligible dividend was used instead, it would draw on NERDTOH first.  
+With NERDTOH at $0, a $7,500 non-eligible dividend spills into ERDTOH and triggers the same $2,875 refund.  
 The eligible designation produces a more favourable personal-side gross-up and DTC, so the eligible route is preferred when GRIP is available.  
 
-For the parallel non-eligible / NERDTOH-recovery example (with the year-end timing trick), see [Dividends / Worked examples](Worked-Examples.md#worked-examples).  
+For the parallel non-eligible / NERDTOH-recovery example (with year-end timing), see [Dividends / Worked examples](Worked-Examples.md#worked-examples).  
 
 
 # Related

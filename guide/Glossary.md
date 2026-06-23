@@ -7,6 +7,7 @@ For mechanics and worked examples, follow the link to the canonical page where o
 
 - ABI: *Active Business Income* — income from carrying on an active business; gets the SBD on the first $500k; see [Small-Business-Tax-Overview.md](Small-Business-Tax-Overview.md)
 - ACB: *Adjusted Cost Base* — the tax cost of an investment, used to compute capital gain or loss on disposition; see [Adjusted-Cost-Base.md](Adjusted-Cost-Base/Adjusted-Cost-Base.md)
+- Accrued / unbilled receivable: revenue *earned* but not yet invoiced; booked by a year-end accrual so completed work falls in the year it was earned, then reclassified to *Accounts receivable* when the invoice issues; no dedicated GIFI line — mapped to *Other current assets* (1480) or *Accounts receivable* (1060), and distinct from manufacturing WIP (1125); see [HST.md](HST.md#year-end-straddle-income-vs-hst-timing)
 - AII: *Aggregate Investment Income* — passive investment income (interest, foreign income, taxable portion of capital gains) taxed at a high corporate rate, with a refundable portion via NERDTOH; see [Small-Business-Tax-Overview.md](Small-Business-Tax-Overview.md)
 - AIIP: *Accelerated Investment Incentive Property* — property eligible for an enhanced first-year CCA deduction (the half-year rule is suspended); reinstated by Bill C-15 for property acquired after 2024 and available for use before 2030, with a phase-out through 2033; see [Capital-Cost-Allowance.md](Cost-Recovery/Capital-Cost-Allowance.md)
 - Capital dividend: tax-free dividend paid out of the CDA to a Canadian-resident shareholder; requires an s.83(2) election on Form T2054; see [Capital-Dividend-Account.md](Capital-Dividend-Account/Capital-Dividend-Account.md)
@@ -56,6 +57,7 @@ For mechanics and worked examples, follow the link to the canonical page where o
 - T4: *Statement of Remuneration Paid* — slip issued by an employer for salary paid to an employee
 - T5: *Statement of Investment Income* — slip for interest and Canadian-corp dividends; also issued by a CCPC paying taxable dividends to its shareholders
 - T5008: *Statement of Securities Transactions* — slip summarizing securities sales used to compute capital gains; see [T5008.md](T5008/T5008.md)
+- Tax point: the day GST/HST on a supply becomes payable — the earlier of payment and the day consideration becomes due, which for an invoiced service is the earlier of the invoice date and the issue date (ETA s.168, s.152); see [HST.md](HST.md#when-tax-becomes-payable)
 - Terminal loss: residual UCC deducted when a class empties under ITA s.20(16); see [Capital-Cost-Allowance.md](Cost-Recovery/Capital-Cost-Allowance.md)
 - TOSI: *Tax on Split Income* (ITA s.120.4) — limits income-splitting through dividends to family members not active in the business
 - UCC: *Undepreciated Capital Cost* — running balance of a CCA class pool, defined in ITA s.13(21); see [Capital-Cost-Allowance.md](Cost-Recovery/Capital-Cost-Allowance.md)
