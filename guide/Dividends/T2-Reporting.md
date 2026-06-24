@@ -61,13 +61,15 @@ Verify that the closing balance matches expectations, especially in the first ye
 Schedule 55 (S55 - *Part III.1 Tax on Excessive Eligible Dividend Designations*) is filed only when the corporation designates more eligible dividends in the year than its GRIP balance can support.  
 The excess is an *excessive eligible dividend designation* (EEDD).  
 
-The Part III.1 tax under ITA [s.185.1](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-185.1.html) is 20% of the excess (s.185.1(1)(a)), with an additional 10% (30% in total, under s.185.1(1)(b)) where the excessive designation arises under paragraph (c) of the s.89(1) definition — the anti-avoidance rule for designations one of whose main purposes is to artificially inflate GRIP or deflate LRIP. That extra 10% is an objective GRIP/LRIP-manipulation test, not a "knowing or grossly negligent" culpability standard.  
+The Part III.1 tax under ITA [s.185.1](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-185.1.html) is 20% of the excess (s.185.1(1)(a)), with an additional 10% (30% in total, under s.185.1(1)(b)) where the excessive designation arises under paragraph (c) of the s.89(1) definition.  
+That paragraph is the anti-avoidance rule for designations one of whose main purposes is to artificially inflate GRIP or deflate LRIP.  
+That extra 10% is an objective GRIP/LRIP-manipulation test, not a "knowing or grossly negligent" culpability standard.  
 
 Under ITA s.185.1(2), the corporation can jointly elect with the shareholder(s) who received the excess to treat the EEDD as a separate non-eligible dividend instead:
 - Eliminates the Part III.1 tax
 - Reclassifies the excess for the shareholder's personal tax (smaller gross-up and DTC)
 - Must be made within 90 days of the day the corporation is assessed for the Part III.1 tax
-- Not available where the 30% rate applies (an EEDD arising under paragraph (c) of the s.89(1) definition — the GRIP/LRIP-manipulation case)
+- Not available where the 30% rate applies (an EEDD arising under paragraph (c) of the s.89(1) definition: the GRIP/LRIP-manipulation case)
 
 For an owner-managed CCPC where the director and the shareholder are the same person, the joint election is straightforward to execute.  
 Verify the GRIP balance *before* designating, so the excess never arises.  

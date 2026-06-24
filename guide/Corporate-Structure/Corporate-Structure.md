@@ -15,7 +15,7 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
 
 Limitations:
 - This page is orientation and reference, not legal advice; corporate law is federal or provincial and the details vary by jurisdiction
-- Incorporation mechanics (name search, articles filing, annual returns) are sketched, not worked through
+- Incorporation mechanics (name search, articles filing, annual returns) are touched on, not worked through
 - CCPC status and the control tests live in [Small Business Tax Overview](../Small-Business-Tax-Overview.md) and are not repeated here
 - The following is my understanding as of 2026
 
@@ -27,7 +27,8 @@ It can own property, owe debts, sign contracts, sue, and be sued in its own name
 
 Two consequences follow for an owner-manager:
 - *Limited liability*: the shareholders' financial exposure is normally limited to what they paid for their shares; the corporation's debts are its own
-- *Two taxpayers*: the corporation files its own T2 return and the owner files a personal T1; money crossing between them is salary, a dividend, a loan, or a benefit (see [Owner-corporation transactions](../Owner-Corporation-Transactions.md))
+- *Two taxpayers*: the corporation files its own T2 return and the owner files a personal T1
+  - Money crossing between them is salary, a dividend, a loan, or a benefit (see [Owner-corporation transactions](../Owner-Corporation-Transactions.md))
 
 The separateness is the whole reason the rest of this guide exists.  
 A sole proprietor and their business are one taxpayer; a corporation and its owner are two.  

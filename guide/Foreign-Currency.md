@@ -134,7 +134,7 @@ Internal codes carry a `-N` suffix (matching the convention in [T3](T3/T3.md)); 
 
 Notes on the codes:
 - GIFI 1003 captures USD deposits at a Canadian bank; GIFI 1004 (foreign bank, CAD) and 1005 (foreign bank, foreign currency) are reserved for accounts at foreign banks and are not in scope here
-- GIFI 8231 covers realized and unrealized FX on income-account monetary items; do not confuse with GIFI 8210 (the broader realized-gains-on-disposal-of-assets line) — 8231 is the FX-specific line on Schedule 125
+- GIFI 8231 covers realized and unrealized FX on income-account monetary items; do not confuse with GIFI 8210 (the broader realized-gains-on-disposal-of-assets line); 8231 is the FX-specific line on Schedule 125
 - Splitting `FX gain/loss` into 8231-1 (CAD-native) and 8231-2 (USD-native) is what makes the trading-account convention work; both roll up to GIFI 8231 at year-end
 - For broader account-tree conventions (investment accounts, withholding taxes, GIFI rollups), see [T3](T3/T3.md)
 
@@ -226,7 +226,8 @@ Broker-specific Gambit support shifts over time; the table below reflects public
 
 The Gambit round trip is a *securities disposition*, not an income-account currency conversion:
 - DLR and DLR.U are *identical property* under ITA [s.47(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-47.html); the ACB is pooled and computed in CAD
-- The ACB of the DLR.U leg is the CAD equivalent of the USD purchase price at the *trade-date* BoC rate, consistent with the convention used elsewhere in this guide for securities. (CRA technical interpretation 2015-0588981C6 — a transcribed APFF Roundtable position, persuasive rather than binding — instead points to the *settlement-date* rate for FX on a disposition; this guide stays on trade-date for consistency with the [Adjusted Cost Base](Adjusted-Cost-Base/Adjusted-Cost-Base.md) workflow)
+- The ACB of the DLR.U leg is the CAD equivalent of the USD purchase price at the *trade-date* BoC rate, consistent with the convention used elsewhere in this guide for securities
+  - CRA technical interpretation 2015-0588981C6 (a transcribed APFF Roundtable position, persuasive rather than binding) instead points to the *settlement-date* rate for FX on a disposition; this guide stays on trade-date for consistency with the [Adjusted Cost Base](Adjusted-Cost-Base/Adjusted-Cost-Base.md) workflow
 - The disposition produces a small capital gain or loss equal to (CAD proceeds from the DLR sale) − (CAD ACB of the DLR.U leg) − (outlays and expenses on disposition)
 - Half of the gain (or loss) is taxable (or deductible) at the current 50% inclusion rate; report on T2 Schedule 6 under capital-property dispositions
 - The capital gain is part of *Aggregate Investment Income* (AII) and does not benefit from the *Small Business Deduction*; for a small Gambit gain this is immaterial, but the entry is still required
@@ -257,7 +258,8 @@ Concrete example on USD 50,000:
 Worked example — convert USD 10,000 of invoice proceeds back to CAD via Gambit at a flat-commission bank broker.  
 Assume: BoC rate on day 0 is 1.36; DLR.U trades at USD 10.00; DLR trades at CAD 13.60 on day 1; two $9.95 trading commissions (one in USD on the buy leg, one in CAD on the sell leg).  
 
-The `Investments - DLR/DLR.U` account is CAD-native: ACB is defined in ITA s.54 and CAD-denominated by default reporting currency (s.261), so the USD purchase enters the investment account at the trade-date CAD equivalent (USD 10,009.95 × 1.36 = CAD 13,613.53). The USD-side cash outflow is bridged to the CAD-side investment entry via the per-currency FX accounts.  
+The `Investments - DLR/DLR.U` account is CAD-native: ACB is defined in ITA s.54 and CAD-denominated by default reporting currency (s.261), so the USD purchase enters the investment account at the trade-date CAD equivalent (USD 10,009.95 × 1.36 = CAD 13,613.53).  
+The USD-side cash outflow is bridged to the CAD-side investment entry via the per-currency FX accounts.  
 
 Day 0 — buy 1,000 units of DLR.U at USD 10.00 + USD 9.95 commission = USD 10,009.95:
 - USD-side (balances within USD):
@@ -355,7 +357,7 @@ Registration and ITC consequences:
 ### Taxable USD supplies and HST
 
 The zero-rated case above carries no HST, so no FX question arises on the tax.  
-A *taxable* USD-denominated supply — for example a USD invoice to a Canadian customer — does carry HST, and the HST is converted to CAD at the rate on its *tax-point* date: the earlier of the invoice date and the day the invoice is issued (ETA [s.159](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-159.html); see [HST / When tax becomes payable](HST.md#when-tax-becomes-payable)).  
+A *taxable* USD-denominated supply (for example a USD invoice to a Canadian customer) does carry HST, and the HST is converted to CAD at the rate on its *tax-point* date: the earlier of the invoice date and the day the invoice is issued (ETA [s.159](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-159.html); see [HST / When tax becomes payable](HST.md#when-tax-becomes-payable)).  
 
 The HST tax-point rate can differ from the rate date on the revenue:
 - *Revenue*: invoice-date BoC rate, as elsewhere on this page
@@ -447,7 +449,9 @@ The capital-account treatment applies narrowly when the USD is held *and intende
 
 ### Worked example
 
-Setup: single-shareholder consulting CCPC keeps a small USD float for paying US software vendors directly. The float is funded once a year from CAD via internal bank conversion. Calendar fiscal year, opening USD 0.
+Setup: single-shareholder consulting CCPC keeps a small USD float for paying US software vendors directly.  
+The float is funded once a year from CAD via internal bank conversion.  
+Calendar fiscal year, opening USD 0.
 
 Mar 1 — internal CAD → USD bank conversion to fund the float; CAD 7,000 → USD 5,000 at the bank's effective rate of 1.40:
 - CAD-side (balances within CAD):

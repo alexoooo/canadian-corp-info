@@ -105,7 +105,7 @@ When using IFRS/ASPE/GAAP accounting standards, a corporation:
 
 This guide keeps the books on a *tax basis*, where the book figures are the T2 figures (see [Small Business Tax Overview](../Small-Business-Tax-Overview.md)).  
 Using tax basis, there is no separate accounting-depreciation schedule to reconcile: the CCA amount is booked directly as the period's depreciation.  
-The worked examples therefore use CCA's declining-balance (geometric) method as the depreciation figure.  
+The worked examples use CCA's declining-balance (geometric) method as the depreciation figure.  
 
 CCA does not track each asset individually.  
 The Act sorts depreciable property into numbered *classes*, each with a fixed annual rate set by Regulation 1100:
@@ -208,7 +208,8 @@ For buildings (s.13(28)), the earliest of:
 - The beginning of the second tax year after the acquisition year (the same 357-day rolling rule, s.13(28)(c))
 
 Two notes on coverage:
-- A CIP balance produces no deduction in the interim: not inventory (no COGS), not yet available for use (no CCA). The available-for-use date is the trigger that moves the accumulated cost from CIP into the appropriate CCA class on Schedule 100; standard CCA mechanics apply from there
+- A CIP balance produces no deduction in the interim: not inventory (no COGS), not yet available for use (no CCA)
+  - The available-for-use date is the trigger that moves the accumulated cost from CIP into the appropriate CCA class on Schedule 100; standard CCA mechanics apply from there
 - Inventory has no available-for-use rule; cost flows through COGS only at the moment of sale
 
 

@@ -8,7 +8,8 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
 - *Capital Cost Allowance* (CCA) is the federal income tax version of depreciation; accounting depreciation is not deductible under ITA [s.18(1)(b)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-18.html) so it is added back on Schedule 1; CCA is the matching deduction under [s.20(1)(a)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-20.html)
 - Capital purchases are pooled by *class*; each class has a fixed rate set by Regulation 1100; most are *declining balance*
 - The running pool balance is the *undepreciated capital cost* (UCC); CCA for a year = rate × adjusted UCC base
-- The *half-year rule* gives only half-rate CCA on net additions in the year of acquisition; several classes are exempt; the *Accelerated Investment Incentive* (AIIP) overrides it with an enhanced first-year deduction — reinstated by Bill C-15 for property acquired after 2024 and available for use before 2030
+- The *half-year rule* gives only half-rate CCA on net additions in the year of acquisition; several classes are exempt; the *Accelerated Investment Incentive* (AIIP) overrides it with an enhanced first-year deduction
+  - AIIP was reinstated by Bill C-15 for property acquired after 2024 and available for use before 2030
 - On disposal, UCC is reduced by the lesser of (proceeds, original cost); a negative ending balance is *recapture* (income), a positive balance with no asset left in the class is a *terminal loss* (deduction)
 - CCA is *discretionary*: you can claim any amount from $0 up to the maximum, and unused UCC carries forward indefinitely
 - Small items below the corp's capitalization policy (often $500) and incorporation expenses up to $3,000 are expensed immediately rather than capitalized
@@ -18,7 +19,7 @@ Limitations:
 - Manufacturing and processing (Class 53), clean-energy (Classes 43.1 / 43.2), and resource regimes are touched on but not worked through
 - Buildings (Class 1 / 3 / 6) are touched on, not covered in depth
 - The additional 2% / 6% election under Regulation 1101(5b.1) is out of scope
-- Change-of-use deemed dispositions (ITA s.13(7)) are out of scope beyond a pointer
+- Change-of-use deemed dispositions (ITA s.13(7)) are touched on, not worked through
 - Leasing-income property rules (Regulation 1100(15)) and the *specified energy property* rules are out of scope
 - Provincial CCA forms (Quebec TP-130.B, Alberta AT1 Schedule 13) are out of scope; federal Schedule 8 is the focus
 - Tax information can change (e.g. AIIP phase-out percentages, vehicle limits)
@@ -39,10 +40,10 @@ Accounting depreciation booked under your basis of accounting is not deductible 
 Effect: book and tax fixed-asset balances diverge over the asset's life and re-converge on disposal.  
 
 The statutory framework:
-- ITA s.20(1)(a) — permission to deduct CCA, with the rate left to regulation
-- Income Tax Regulations Part XI and Schedule II — the actual rates and class definitions
-- ITA [s.13](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-13.html) — recapture, UCC definition, and the available-for-use rules
-- ITA [s.20(16)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-20.html) — terminal loss
+- ITA s.20(1)(a): permission to deduct CCA, with the rate left to regulation
+- Income Tax Regulations Part XI and Schedule II: the actual rates and class definitions
+- ITA [s.13](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-13.html): recapture, UCC definition, and the available-for-use rules
+- ITA [s.20(16)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-20.html): terminal loss
 
 
 ## Classes and rates
@@ -71,7 +72,8 @@ CRA's [Classes of depreciable property](https://www.canada.ca/en/revenue-agency/
 ## Pool mechanics (UCC)
 
 For a class, the *undepreciated capital cost* (UCC) is the running balance of pooled cost minus all CCA previously claimed and minus the cost-side of dispositions (ITA [s.13(21)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-13.html)).  
-Each class has its own pool. The shape of a year-end calculation:
+Each class has its own pool.  
+The shape of a year-end calculation:
 - Opening UCC (last year's closing balance after CCA)
 - Plus: cost of additions in the year that are available for use (s.13(26))
 - Minus: lesser of (proceeds, original cost) for each disposition in the year
@@ -120,23 +122,29 @@ Net additions = (cost of additions) − (lesser of proceeds, cost for dispositio
 
 Classes exempt from the half-year rule include 12 (most items), 13, 14, 23, 24, 27, 29, 34, and 52.  
 
-The *Accelerated Investment Incentive* (AIIP) enhances the first-year CCA deduction by suspending the half-year rule and applying an uplift. It first applied to property acquired after Nov 20 2018, began phasing out for property available for use after 2023, and was scheduled to end after 2027 — but the 2024 Fall Economic Statement reinstated it, enacted by Bill C-15 (Budget Implementation Act, 2025, No. 1) on Royal Assent on Mar 26 2026.
+The *Accelerated Investment Incentive* (AIIP) enhances the first-year CCA deduction by suspending the half-year rule and applying an uplift.  
+It first applied to property acquired after Nov 20 2018, began phasing out for property available for use after 2023, and was scheduled to end after 2027.  
+The 2024 Fall Economic Statement reinstated it, enacted by Bill C-15 (Budget Implementation Act, 2025, No. 1) on Royal Assent on Mar 26 2026.
 
 As reinstated, for property acquired after 2024 (on or after Jan 1 2025) and available for use before 2030:
 - For CCA classes otherwise subject to the half-year rule, the half-year rule is suspended and the first-year base is 150% of the net addition — three times the deduction the half-year rule alone would have allowed
 - For classes not subject to the half-year rule, the first-year deduction is one-and-a-half times the normal allowance
 - For *full-expensing* classes (Class 53 M&P, 43.1 / 43.2 clean energy, 54 / 55 / 56 zero-emission vehicles), 100% of cost is deductible in the first year
 
-A new phase-out runs from 2030 to 2033: the enhancement steps down for property available for use after 2029 and is fully eliminated for property available for use after 2033. The year-by-year step-down percentages are not quoted here.  
+A new phase-out runs from 2030 to 2033: the enhancement steps down for property available for use after 2029 and is fully eliminated for property available for use after 2033.  
+The year-by-year step-down percentages are not quoted here.  
 Before claiming, verify the current applicable rate on CRA's [Accelerated Investment Incentive](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/report-business-income-expenses/claiming-capital-cost-allowance/accelerated-investment-incentive.html) page.  
 The reinstated enhancement is available only for property acquired after 2024; earlier acquisitions fall under the original 2018 rules, which had wound down by 2027.  
 
-A separate *Immediate Expensing Measure* (the "$1.5M rule") allowed CCPCs to fully expense up to $1.5 million per year of *Designated Immediate Expensing Property* (DIEP) across most CCA classes other than 1–6, 14.1, 17, 47, 49, and 51. It applied only to CCPC-acquired property available for use before 2024 and is not available for new acquisitions in 2026. A Dec 2024 amendment removed the separate short-fiscal-year proration of the *deduction* for past DIEP claims, retroactive to fiscal years ending on or after Apr 19 2021; the $1.5 million immediate-expensing limit itself still prorates for a short tax year under Regulation 1104(3.5)(b).
+A separate *Immediate Expensing Measure* (the "$1.5M rule") allowed CCPCs to fully expense up to $1.5 million per year of *Designated Immediate Expensing Property* (DIEP) across most CCA classes other than 1–6, 14.1, 17, 47, 49, and 51.  
+It applied only to CCPC-acquired property available for use before 2024 and is not available for new acquisitions in 2026.  
+A Dec 2024 amendment removed the separate short-fiscal-year proration of the *deduction* for past DIEP claims, retroactive to fiscal years ending on or after Apr 19 2021; the $1.5 million immediate-expensing limit itself still prorates for a short tax year under Regulation 1104(3.5)(b).
 
 
 ## Available-for-use rule
 
-CCA cannot be claimed on a class addition until the property is *available for use* (ITA [s.13(26)–(32)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-13.html)). The cost is in the pool from the acquisition date, but the half-year-adjusted base feeds CCA only once it is available for use.
+CCA cannot be claimed on a class addition until the property is *available for use* (ITA [s.13(26)–(32)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-13.html)).  
+The cost is in the pool from the acquisition date, but the half-year-adjusted base feeds CCA only once it is available for use.
 
 For non-buildings (s.13(27)), the earliest of:
 - First time it is used to earn income
@@ -175,7 +183,9 @@ Dispositions:
 
 ## Recapture and terminal loss
 
-*Recapture* (ITA [s.13(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-13.html)): if closing UCC is negative at year-end (cumulative proceeds exceeded the remaining UCC), the negative balance is included in income for the year. UCC is reset to zero. Recapture is *active business income* when the asset was used in the active business, so it benefits from the *Small Business Deduction* (SBD) at the same rate as the underlying ABI.
+*Recapture* (ITA [s.13(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-13.html)): if closing UCC is negative at year-end (cumulative proceeds exceeded the remaining UCC), the negative balance is included in income for the year.  
+UCC is reset to zero.  
+Recapture is *active business income* when the asset was used in the active business, so it benefits from the *Small Business Deduction* (SBD) at the same rate as the underlying ABI.
 
 *Terminal loss* (ITA s.20(16)): if closing UCC is positive *and* no property remains in the class, the residual UCC is deducted from income for the year.
 
@@ -193,10 +203,12 @@ Class 10.1 exception (ITA [s.20(16.1)](https://laws-lois.justice.gc.ca/eng/acts/
 
 Class 14.1 exception (s.20(16.1)(c)): no terminal loss unless the business ceases.  
 
-Former-property exception (s.20(16.1)(b)): a narrow rule tied to the s.13(4)/(4.2) former-property elections (franchises, concessions, licences) — no terminal loss when a *similar* property is acquired within 24 months for the same fixed place and is still owned at year-end. It is not a general bar on claiming a terminal loss after replacing a same-class asset.
+Former-property exception (s.20(16.1)(b)): a narrow rule tied to the s.13(4)/(4.2) former-property elections (franchises, concessions, licences).  
+No terminal loss when a *similar* property is acquired within 24 months for the same fixed place and is still owned at year-end.  
+It is not a general bar on claiming a terminal loss after replacing a same-class asset.
 
 
-## Special class rules to be careful about
+## Special class rules
 
 - *Class 10.1*: each vehicle is a separate class; capped capital cost; no recapture or terminal loss; half-CCA on disposition (above)
 - *Class 12 with half-year*: application software, films, dies, jigs, moulds, and the cutting or shaping part of a machine *are* subject to the half-year rule even though most of Class 12 is not
@@ -213,12 +225,13 @@ For a tax year shorter than 365 days (incorporation year, year of dissolution, f
 
 Exceptions to proration:
 - Classes 12, 13, 14, 15
-- DIEP immediate-expensing *deduction* — the Dec 2024 amendment removed its short-year proration, retroactive to fiscal years ending on or after Apr 19 2021 (the $1.5M DIEP limit itself still prorates under Regulation 1104(3.5)(b))
+- DIEP immediate-expensing *deduction*: the Dec 2024 amendment removed its short-year proration, retroactive to fiscal years ending on or after Apr 19 2021 (the $1.5M DIEP limit itself still prorates under Regulation 1104(3.5)(b))
 
 
 ## CCA is discretionary
 
-There is no obligation to claim the maximum. CCA is computed up to the cap; the corporation may claim any amount from $0 to the cap; unclaimed CCA does not expire, it stays in UCC.  
+There is no obligation to claim the maximum.  
+CCA is computed up to the cap; the corporation may claim any amount from $0 to the cap; unclaimed CCA does not expire, it stays in UCC.  
 
 Common reasons to claim less than the maximum:
 - Loss year: preserve the deduction for a future year that produces tax at a higher marginal rate
@@ -234,14 +247,15 @@ The opposite move can also pay:
 ## Capitalize-vs-expense thresholds
 
 Two thresholds shape what gets onto Schedule 8 in the first place:
-- *De minimis bookkeeping policy*: many small CCPCs set a $500 (sometimes $1,000 or $2,500) capitalization floor in their own policy; below it, items are expensed regardless of useful life. This is a bookkeeping convention, not a CRA rule
+- *De minimis bookkeeping policy*: many small CCPCs set a $500 (sometimes $1,000 or $2,500) capitalization floor in their own policy; below it, items are expensed regardless of useful life
+  - This is a bookkeeping convention, not a CRA rule
 - *Class 12 tools threshold*: tools and instruments costing under $500 automatically go to Class 12 at 100% (no half-year rule for most items), so a $300 monitor stand and a $600 office chair are taxed differently *by class*, not by policy
 - *Incorporation expenses immediate-deduction threshold*: the first $3,000 of incorporation expenses is deductible immediately in the year incurred; only the excess is capitalized to Class 14.1
 - *Tax-pool de minimis*: if a declining-balance pool gets to an immaterial balance, there is no statutory write-off threshold; the geometric tail continues until the class empties or the business ceases
 
 These thresholds matter most for:
 - Software bundled with hardware: systems software → Class 50; standalone application software → Class 12 (100%); SaaS subscriptions → operating expense (no capitalization at all)
-- Home-office equipment: only the business-use portion of cost goes into UCC; the personal-use portion is a shareholder benefit (s.15) or simply not capitalized
+- Home-office equipment: only the business-use portion of cost goes into UCC; the personal-use portion is a shareholder benefit (s.15) or not capitalized
 
 
 The de minimis floor is a policy choice within limits:
@@ -286,11 +300,13 @@ Calendar fiscal year (Jan 1 to Dec 31) is assumed unless noted.
 
 ### Example 1: Class 50 laptop (IT consulting CCPC)
 
-Setup: single-shareholder IT consulting CCPC. Buys a laptop for $4,520 (including 13% HST) on Mar 1 2026; the corp is HST-registered and claims the $520 ITC; capitalizes the $4,000 net to Class 50.  
+Setup: single-shareholder IT consulting CCPC.  
+Buys a laptop for $4,520 (including 13% HST) on Mar 1 2026; the corp is HST-registered and claims the $520 ITC; capitalizes the $4,000 net to Class 50.  
 
 IT-consulting-specific allocation calls:
 - Systems software bundled with the laptop (Windows, drivers) → same Class 50; do not split
-- Standalone application software (e.g. a $200 perpetual licence for an IDE) → Class 12 (100%); application software is subject to the half-year rule, halving the first-year claim outside the AIIP window — the reinstated AIIP suspends it for a 2026 acquisition
+- Standalone application software (e.g. a $200 perpetual licence for an IDE) → Class 12 (100%); application software is subject to the half-year rule, halving the first-year claim outside the AIIP window
+  - The reinstated AIIP suspends it for a 2026 acquisition
 - SaaS subscriptions (Office 365, GitHub Copilot, AWS, JetBrains All-Products Pack) → operating expense via `Office supplies & subscriptions` or `Internet & cloud services`; never capitalized regardless of annual cost
 - A separate $300 second monitor → arguably Class 12 (small tools < $500, treated as a standalone instrument) or Class 50 (computer peripheral, bundled with the laptop's role); pick a convention in the bookkeeping policy and apply it consistently
 
@@ -314,7 +330,8 @@ Schedule 8 Class 50 row:
 
 Year 2 (2027):
 
-No transactions. Schedule 8 Class 50 row:
+No transactions.  
+Schedule 8 Class 50 row:
 - Opening UCC: from year 1
 - Additions: $0; dispositions: $0; half-year adjustment: none (no additions)
 - CCA: 55% × opening UCC
@@ -342,9 +359,11 @@ Schedule 1 reconciliation for year 3:
 
 ### Example 2: Class 8 floor polisher (physical-service CCPC)
 
-Setup: single-shareholder commercial cleaning CCPC. Buys a $1,800 floor polisher on Jun 15 2026; the corp is HST-registered and claims the $234 ITC; capitalizes $1,800 to Class 8.  
+Setup: single-shareholder commercial cleaning CCPC.  
+Buys a $1,800 floor polisher on Jun 15 2026; the corp is HST-registered and claims the $234 ITC; capitalizes $1,800 to Class 8.  
 
-Why Class 8 and not 12: cost is at or above the $500 Class 12 tools threshold, so the tool-instrument exemption does not apply. No other class fits, so the catch-all Class 8 applies at 20% declining balance with the half-year rule.  
+Why Class 8 and not 12: cost is at or above the $500 Class 12 tools threshold, so the tool-instrument exemption does not apply.  
+No other class fits, so the catch-all Class 8 applies at 20% declining balance with the half-year rule.  
 
 Year 1 (2026):
 
@@ -367,9 +386,11 @@ Year 2 (2027) and onward (no further transactions in the class):
 - Year 3 closing: $1,296 × 0.80 = $1,036.80
 - By year 5 of this schedule, ~$664 of UCC remains; by year 10, ~$217
 
-When to trigger a terminal loss: when the corp disposes of every piece of Class 8 property in the year, the residual UCC becomes a deduction (ITA s.20(16)). For a multi-asset pool, this is rarely useful; for a single-asset class that has been sold or scrapped, it cleans up the pool.  
+When to trigger a terminal loss: when the corp disposes of every piece of Class 8 property in the year, the residual UCC becomes a deduction (ITA s.20(16)).  
+For a multi-asset pool, this is rarely useful; for a single-asset class that has been sold or scrapped, it cleans up the pool.  
 
-For contrast: a $400 hand-tool bought the same year would be Class 12 (under the $500 threshold) and 100% deductible in year 1 — no pool, no tail. Splitting purchases just below $500 vs just above creates very different tax timing for similar-looking spend.
+For contrast: a $400 hand-tool bought the same year would be Class 12 (under the $500 threshold) and 100% deductible in year 1 — no pool, no tail.  
+Splitting purchases just below $500 vs just above creates very different tax timing for similar-looking spend.
 
 
 ### Example 3: Class 14.1 incorporation expenses
@@ -393,7 +414,9 @@ Schedule 8 Class 14.1 row:
 - CCA: 5% × $600 = $30
 - Closing UCC: $1,200 − $30 = $1,170
 
-Short-fiscal-year note: this first fiscal year is exactly 365 days (Apr 1 2026 to Mar 31 2027 in a non-leap-year alignment), so no proration. If incorporation had been Oct 1 2026 with a Mar 31 2027 year-end, the first fiscal year would be 182 days and CCA would be prorated under Regulation 1100(3): $30 × (182 / 365) ≈ $14.96. Class 14.1 is *not* in the Regulation 1100(3) proration-exception list.
+Short-fiscal-year note: this first fiscal year is exactly 365 days (Apr 1 2026 to Mar 31 2027 in a non-leap-year alignment), so no proration.  
+If incorporation had been Oct 1 2026 with a Mar 31 2027 year-end, the first fiscal year would be 182 days and CCA would be prorated under Regulation 1100(3): $30 × (182 / 365) ≈ $14.96.  
+Class 14.1 is *not* in the Regulation 1100(3) proration-exception list.
 
 Year 2 onward:
 - Each year: CCA = 5% × opening UCC
@@ -401,14 +424,18 @@ Year 2 onward:
 - Year 3 closing: $1,055.93
 - After 20 years of full-rate CCA, ~$420 of UCC remains; the pool decays geometrically
 
-What if incorporation expenses total *less than $3,000*: the entire amount is immediately deductible in year 1, nothing goes to Class 14.1, and Schedule 8 has no Class 14.1 entry. This is the common case for a corporation set up online for a few hundred dollars (e.g. through Ownr or a similar service).
+What if incorporation expenses total *less than $3,000*: the entire amount is immediately deductible in year 1, nothing goes to Class 14.1, and Schedule 8 has no Class 14.1 entry.  
+This is the common case for a corporation set up online for a few hundred dollars (e.g. through Ownr or a similar service).
 
-What if a Class 14.1 UCC pool becomes immaterial: continue claiming the geometric tail year by year. There is no CRA "write off below $X" rule; the only ways to clear a Class 14.1 pool are:
+What if a Class 14.1 UCC pool becomes immaterial: continue claiming the geometric tail year by year.  
+There is no CRA "write off below $X" rule; the only ways to clear a Class 14.1 pool are:
 - Acquire more Class 14.1 property and eventually dispose of all of it (rare for owner-managed CCPCs)
 - The corporation ceases business (triggers terminal loss under the s.20(16.1)(c) cessation exception)
 - The corporation winds up
 
-Most owner-managed CCPCs simply carry the small residual on Schedule 8 indefinitely. Leaving a $50 line on S8 is correct — CRA expects pool continuity. Merging low-balance pools in the corp's own asset register is fine internally, but the S8 filing must still show the running UCC by class.
+Most owner-managed CCPCs carry the small residual on Schedule 8 indefinitely.  
+Leaving a $50 line on S8 is correct: CRA expects pool continuity.  
+Merging low-balance pools in the corp's own asset register is fine internally, but the S8 filing must still show the running UCC by class.
 
 
 ## Edge cases

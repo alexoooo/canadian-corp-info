@@ -24,7 +24,7 @@ Limitations:
 
 The two structures buy different things:
 - *Asset purchase*: the buyer corporation buys specific assets of the business (equipment, inventory, goodwill, customer lists, sometimes real estate) and assumes only the liabilities it agrees to
-- *Share purchase*: the buyer corporation buys the shares of the target corporation from its shareholders; the target keeps everything it owns and owes, and simply changes hands
+- *Share purchase*: the buyer corporation buys the shares of the target corporation from its shareholders; the target keeps everything it owns and owes, and changes hands
 
 A share purchase is only possible if the target is incorporated.  
 An unincorporated business (a sole proprietorship or partnership) has no shares, so the only thing to buy is its assets.  

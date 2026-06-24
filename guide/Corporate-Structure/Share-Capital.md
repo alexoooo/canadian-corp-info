@@ -80,7 +80,7 @@ Canadian corporate statutes require shares to be issued *without nominal or par 
 The full consideration the corporation receives for a share is added to the *stated capital account* for that class (CBCA s.26).  
 
 There is no "$1 par value" concept as in some other countries.  
-The amount recorded for a class is simply what was paid in for it.  
+The amount recorded for a class is what was paid in for it.  
 
 
 ## Paid-up capital (PUC)
@@ -113,7 +113,7 @@ That is exactly the instrument used to fix today's value into preferred shares i
 Redemptions are constrained by corporate law: a corporation may not redeem shares if doing so would leave it unable to pay its liabilities (CBCA s.34–36).  
 
 
-## Why a corporation has multiple classes
+## Multiple share classes
 
 A single founder needs only one common class.  
 Reasons to add classes:

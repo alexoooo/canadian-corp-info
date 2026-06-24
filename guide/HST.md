@@ -110,7 +110,7 @@ For the full overview of CCPC filing-deadline cadence including the T2, T4/T5 sl
 
 ## When tax becomes payable
 
-The rate and place-of-supply rules fix *how much* HST applies; a separate rule fixes *when* the liability arises — the *tax point*.  
+The rate and place-of-supply rules fix *how much* HST applies; a separate rule fixes *when* the liability arises: the *tax point*.  
 HST is payable on the earlier of the day the consideration is paid and the day it becomes *due* (ETA [s.168(1)](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-168.html)).  
 
 Consideration becomes due on the earliest of (ETA [s.152(1)](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-152.html)):
@@ -128,14 +128,14 @@ For a foreign-currency supply, the same tax-point date sets the rate used to con
 ### Year-end straddle: income vs HST timing
 
 Income tax and HST run on different clocks, so a supply near year-end can fall in two different periods.  
-Corporate income is recognized when *earned* — when the amount becomes receivable under ITA [s.9](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-9.html) and [s.12(1)(b)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-12.html) — which for completed services is when the work is done.  
+Corporate income is recognized when *earned* (when the amount becomes receivable under ITA [s.9](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-9.html) and [s.12(1)(b)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-12.html)), which for completed services is when the work is done.  
 The HST tax point follows the s.152 rule above instead.  
 
 Work finished on Dec 31 but invoiced in January is the common case:
 - *Income*: belongs to the year the work was done (earned Dec 31), whatever the invoice date
 - *HST*: if the invoice is dated and issued in January, the tax point is January and the HST belongs to the next reporting period
 
-Dating the invoice Dec 31 — legitimate when the work was complete that day — collapses both into the earlier year through the s.152(1)(a) invoice-date prong.  
+Dating the invoice Dec 31 (legitimate when the work was complete that day) collapses both into the earlier year through the s.152(1)(a) invoice-date prong.  
 Dating it in January splits them, and the books need a *year-end revenue accrual* to record the income in the year it was earned while the HST stays in the next period:
 
 Dec 31 — accrue the earned revenue; no HST, because the tax point has not arrived:
@@ -149,7 +149,8 @@ January — issue the invoice; reclassify the receivable and add the HST at its 
 
 The accrual carries *revenue only*; `HST collected` is recognized in January with the invoice, because that is when the tax point occurs.  
 `HST collected` is a liability, not income, so moving it between periods changes only which GST34 return reports it — not taxable income in either year.  
-There is no dedicated GIFI line for unbilled service revenue: map it to *Other current assets* (1480) to keep it distinct from billed trade AR, or fold it into *Accounts receivable* (1060) when the accrual reverses within days.  Manufacturing WIP (1125) is a different item — partially completed goods, not earned-but-unbilled service fees.  
+There is no dedicated GIFI line for unbilled service revenue: map it to *Other current assets* (1480) to keep it distinct from billed trade AR, or fold it into *Accounts receivable* (1060) when the accrual reverses within days.  
+Manufacturing WIP (1125) is a different item — partially completed goods, not earned-but-unbilled service fees.  
 
 
 ## Bookkeeping accounts
@@ -264,9 +265,9 @@ The corp charges 0% HST on the sale, the sale still counts toward the $30,000 sm
 Zero-rated categories most relevant to an owner-managed CCPC:
 - *Exports of tangible goods* shipped to a non-resident purchaser outside Canada (Schedule VI, Part V, s.1)
 - *Services rendered to a non-resident* with no presence in Canada (Schedule VI, Part V, s.7), with carve-outs for services performed for an individual physically in Canada or services in respect of Canadian real or tangible personal property
-- *Advisory, professional, or consulting services to a non-resident* (Schedule VI, Part V, s.23) — the typical category for an IT, management, or design consultant invoicing US clients
+- *Advisory, professional, or consulting services to a non-resident* (Schedule VI, Part V, s.23): the typical category for an IT, management, or design consultant invoicing US clients
 - *Freight transportation services on international shipments* (Schedule VI, Part VII)
-- *Basic groceries, prescription drugs, certain medical devices* — relevant only to a CCPC in those industries
+- *Basic groceries, prescription drugs, certain medical devices*: relevant only to a CCPC in those industries
 
 For a CCPC with all-non-resident clients, registration is still required once taxable supplies (including zero-rated) cross $30,000.  
 Once registered, ITCs on Canadian inputs (rent, software, professional fees) are claimable in full, so the corp typically files for a net refund each reporting period.  
@@ -347,7 +348,8 @@ Calendar fiscal year 2026, Ontario-resident CCPC, annual reporting period, all c
 
 ### Example 1: regular method, HST-registered Ontario service CCPC
 
-Setup: single-shareholder IT consulting CCPC. Three invoices issued through the year; modest operating inputs.  
+Setup: single-shareholder IT consulting CCPC.  
+Three invoices issued through the year; modest operating inputs.  
 
 Mar 31 — invoice #1 to an Ontario client for $20,000 + HST:
 - Debit `Accounts receivable` = $22,600

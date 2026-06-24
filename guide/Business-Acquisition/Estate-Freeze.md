@@ -58,7 +58,7 @@ This is how "paying the previous owner" works in the family case: a stream of re
 ITA [s.84.1](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-84.1.html) is the anti-avoidance rule that governs the family case.  
 It applies when an *individual* transfers shares of one corporation to another corporation they do not deal with at arm's length, and it stops the individual from converting what should be a dividend into a more lightly taxed capital gain.  
 
-Without s.84.1, a parent could sell their shares to a corporation owned by their child, take back a note or boosted PUC, and claim a capital gain (and the lifetime capital gains exemption) on surplus that is really just the company's retained earnings.  
+Without s.84.1, a parent could sell their shares to a corporation owned by their child, take back a note or boosted PUC, and claim a capital gain (and the lifetime capital gains exemption) on surplus that is just the company's retained earnings.  
 s.84.1 blocks this by grinding the PUC and/or deeming a dividend on the transfer.  
 
 

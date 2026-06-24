@@ -123,7 +123,9 @@ What does *not* get capitalized into inventory cost:
 - Interest on financing used to buy inventory; deductible as `Interest and bank charges` (GIFI 8710), not in inventory cost
 - Abnormal waste, breakage in transit covered by insurance proceeds, or shrinkage; these adjust COGS or appear as a separate loss line, not inventory cost
 
-For a *manufacturing* CCPC, conversion costs (direct labour, factory overhead) would also enter inventory cost under accounting standards. ITA s.10 defers to the cost figure produced by a properly applied accounting standard, and CRA generally accepts ASPE Section 3031 / IFRS IAS 2. Manufacturing cost build-up is out of scope here; the worked examples below assume buy-and-resell or buy-for-own-use.
+For a *manufacturing* CCPC, conversion costs (direct labour, factory overhead) would also enter inventory cost under accounting standards.  
+ITA s.10 defers to the cost figure produced by a properly applied accounting standard, and CRA generally accepts ASPE Section 3031 / IFRS IAS 2.  
+Manufacturing cost build-up is out of scope here; the worked examples below assume buy-and-resell or buy-for-own-use.
 
 
 ## Imported goods and FX
@@ -145,13 +147,17 @@ FX gain or loss on payable settlement:
 - Reason: the landed cost is fixed at the trade-date rate; subsequent FX movements are a financing outcome, not part of the inventory's acquisition cost
 
 GST/HST on imports:
-- Self-assessed and paid to Canada Border Services on the *Commercial Accounting Declaration* (which replaced Form B3 when CARM became the system of record in October 2024) at the point of import; if the corp is HST-registered, the same amount is reclaimable as an ITC on the next GST/HST return; if not, it is a permanent cost addition to inventory
+- Self-assessed and paid to Canada Border Services on the *Commercial Accounting Declaration* (which replaced Form B3 when CARM became the system of record in October 2024) at the point of import
+  - if the corp is HST-registered, the same amount is reclaimable as an ITC on the next GST/HST return
+  - if not, it is a permanent cost addition to inventory
 - See [HST](../HST.md) for the full mechanics
 
 
 ## Tracking through the year
 
-Assume a *perpetual* inventory system: the inventory ledger is updated at each purchase and each sale, and the running balance is always current. A *periodic* system (no per-transaction update, COGS plugged at year-end from a physical count) works but obscures shrinkage and complicates LCM testing. Modern e-commerce platforms (Shopify, WooCommerce) produce perpetual inventory by default; spreadsheet tracking can do either.
+Assume a *perpetual* inventory system: the inventory ledger is updated at each purchase and each sale, and the running balance is always current.  
+A *periodic* system (no per-transaction update, COGS plugged at year-end from a physical count) works but obscures shrinkage and complicates LCM testing.  
+Modern e-commerce platforms (Shopify, WooCommerce) produce perpetual inventory by default; spreadsheet tracking can do either.
 
 Running weighted-average computation:
 - Maintain one running line per SKU (or per pool, if SKUs are interchangeable)
@@ -241,12 +247,15 @@ flowchart TB
 
 ## Year-end reconciliation
 
-The year-end pass turns the running inventory ledger into a tax-filed closing balance. Five steps.
+The year-end pass turns the running inventory ledger into a tax-filed closing balance.  
+Five steps.
 
 Step 1, physical count:
 - Stop sales and receiving briefly, or hold a *cycle count* across the last week of the year if continuous operations
 - Tag each location (warehouse, retail floor, in-transit not yet received); count every SKU
-- Reconcile in-transit goods using the *FOB terms*. FOB shipping point: title transferred at the supplier's dock, so the corp owns the goods in transit and they belong in closing inventory. FOB destination: title transfers on receipt, so in-transit goods do not yet belong
+- Reconcile in-transit goods using the *FOB terms*:
+  - FOB shipping point: title transferred at the supplier's dock, so the corp owns the goods in transit and they belong in closing inventory
+  - FOB destination: title transfers on receipt, so in-transit goods do not yet belong
 
 Step 2, investigate the variance:
 - Compare physical count to perpetual book balance, by SKU
@@ -268,7 +277,8 @@ Step 4, verify the cost-of-sales identity:
 Step 5, post to the T2 schedules:
 - Schedule 100 closing line for each inventory GIFI code (1121, 1122, 1125, 1126 as applicable) reflects the corrected, LCM-adjusted closing balance
 - Schedule 125 cost-of-sales section uses the codes shown in [Tracking through the year](#tracking-through-the-year)
-- Schedule 1 is typically clean for inventory. The most common adjustment is when the corp's book inventory differs from its tax inventory because of a one-time accounting change; flag this with the accountant rather than handling silently
+- Schedule 1 is typically clean for inventory
+  - the most common adjustment is when the corp's book inventory differs from its tax inventory because of a one-time accounting change; flag this with the accountant rather than handling silently
 
 
 ## Bookkeeping and T2 schedules
@@ -297,12 +307,15 @@ Self-constructed-asset materials sit in CIP, not in the inventory GIFI accounts;
 
 ## Worked examples
 
-Two multi-period walkthroughs. Each shows the ledger entries, the GIFI codes touched, and the year-end Schedule 125 outcome.  
-Calendar fiscal year (Jan 1 to Dec 31) is assumed throughout. The corp is HST-registered and claims ITCs on all eligible inputs.
+Two multi-period walkthroughs.  
+Each shows the ledger entries, the GIFI codes touched, and the year-end Schedule 125 outcome.  
+Calendar fiscal year (Jan 1 to Dec 31) is assumed throughout.  
+The corp is HST-registered and claims ITCs on all eligible inputs.
 
 ### Example 1: E-commerce weighted-average with year-end write-down
 
-Setup: single-shareholder e-commerce CCPC selling a single SKU (a wireless earbud, $40 cost / $80 retail). Weighted-average cost method.
+Setup: single-shareholder e-commerce CCPC selling a single SKU (a wireless earbud, $40 cost / $80 retail).  
+Weighted-average cost method.
 
 Year 1 (2026):
 
@@ -358,7 +371,8 @@ The 88 remaining units are cleared in Q1 at $35 each; the actual FMV recovery is
 
 ### Example 2: Imported goods with FX and landed cost
 
-Setup: same e-commerce CCPC. Year 2 (2027) opens a new SKU sourced from a US supplier.
+Setup: same e-commerce CCPC.  
+Year 2 (2027) opens a new SKU sourced from a US supplier.
 
 Mar 15 2027, order 500 units at US $20 each = US $10,000; trade-date BoC FX = 1.34 CAD/USD; CAD equivalent = $13,400.
 
@@ -378,7 +392,9 @@ May 1 2027, pay the USD invoice from a USD bank account at spot rate 1.37 CAD/US
 - Credit `USD bank account` = US $10,000 × 1.37 = $13,700 CAD-equivalent of USD outflow
 - Debit `Realized FX loss` (operating-expense line, GIFI 9270 `Other expenses` or a dedicated `Realized FX gain/loss` sub-account) = $300
 
-The $300 FX loss is *not* added to inventory cost. Landed cost was fixed at the Apr 5 trade-date rate. Subsequent FX movement is a financing-cycle outcome.
+The $300 FX loss is *not* added to inventory cost.  
+Landed cost was fixed at the Apr 5 trade-date rate.  
+Subsequent FX movement is a financing-cycle outcome.
 
 Schedule 125 year 2 cost-of-sales section (for this SKU only, ignoring example 1):
 - `8320` Purchases: $13,400 (the trade-date CAD equivalent)

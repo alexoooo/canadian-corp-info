@@ -30,15 +30,19 @@ Limitations:
 ## The problem
 
 Your books are kept in dollars and cents, and they balance to the cent: every entry posts equal debits and credits, so `Assets = Liabilities + Equity` holds exactly.  
-The T2 is filed in whole dollars. GIFI (Schedules 100 and 125) and the calculation schedules carry no cents.  
+The T2 is filed in whole dollars.  
+GIFI (Schedules 100 and 125) and the calculation schedules carry no cents.  
 
-Rounding each line on its own does not preserve the relationships between lines. Round every figure to the nearest dollar and the rounded parts may no longer sum to the rounded total, the two sides of the balance sheet may differ by a dollar or two, and a rounded trial balance may not have debits equal to credits.  
+Rounding each line on its own does not preserve the relationships between lines.  
+Round every figure to the nearest dollar and the rounded parts may no longer sum to the rounded total, the two sides of the balance sheet may differ by a dollar or two, and a rounded trial balance may not have debits equal to credits.  
 
 Example — three asset lines that balance to the cent against a single payable:
 - Cash $40.50, Receivables $40.50, Prepaid $40.50 → total assets $121.50
 - Rounded independently (half up): $41 + $41 + $41 = $123, but total assets $121.50 rounds to $122
 
-The detail now over-states the total by $1. Nudging one line by hand fixes this instance, but choosing the line ad hoc is not repeatable and can bias the books over time. The methods below make the rounding deterministic.
+The detail now over-states the total by $1.  
+Nudging one line by hand fixes this instance, but choosing the line ad hoc is not repeatable and can bias the books over time.  
+The methods below make the rounding deterministic.
 
 
 ## CRA's rules
@@ -52,20 +56,22 @@ Round half up is the convention used across CRA's income-tax calculations, inclu
 
 ## Systematic methods
 
-Apply these in order. The first two are enough for most sets of books; the last two close the remaining gaps.
+Apply these in order.  
+The first two are enough for most sets of books; the last two close the remaining gaps.
 
 ### Keep the books in cents
 
 The ledger is the source of truth and stays in dollars and cents.  
 Rounding is a presentation step applied when the trial balance is mapped to GIFI — it is not posted back into the accounts.  
-Next year's opening balances therefore carry full precision, and rounding error never accumulates in the books.  
+Next year's opening balances carry full precision, and rounding error never accumulates in the books.  
 
 ### Sum the rounded lines for every subtotal
 
 Round each detail line to the nearest dollar, then add the rounded lines to get the subtotal and total.  
 Never round a true total independently of its parts: derive every total from the rounded detail, and each column adds up by construction.  
 
-This alone removes most discrepancies. The balance-sheet sides still connect through retained earnings, handled below.
+This alone removes most discrepancies.  
+The balance-sheet sides still connect through retained earnings, handled below.
 
 ### Largest-remainder method for a fixed total
 
@@ -87,7 +93,7 @@ Worked example — allocate a fixed $100 pooled cost across three units holding 
 
 The two sides of the balance sheet are linked through retained earnings: closing retained earnings = opening retained earnings + net income − dividends.  
 Net income is the rounded bottom line of the income statement, so let retained earnings (`3849`) carry any whole-dollar residual on the balance sheet, and net income (or a dedicated rounding line) carry it on the income statement.  
-Choosing the absorbing line by policy — the same line every period — keeps the equation exact without distorting any operational figure, and keeps the treatment consistent and defensible.  
+Choosing the absorbing line by policy (the same line every period) keeps the equation exact without distorting any operational figure, and keeps the treatment consistent and defensible.  
 
 ### Round half up, every period
 

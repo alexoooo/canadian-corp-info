@@ -96,12 +96,12 @@ GST/HST on the allowance:
 Here the corporation owns (or leases) the car, claims CCA on it (Class 10 or 10.1; see [Capital Cost Allowance](Cost-Recovery/Capital-Cost-Allowance.md)), and deducts the operating costs.  
 Any personal use by the shareholder-employee is then a *taxable benefit* reported on the owner's T4, in two parts.  
 
-*Standby charge* (ITA [s.6(1)(e)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-6.html), s.6(2)) — the benefit of having the car available:
+*Standby charge* (ITA [s.6(1)(e)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-6.html), s.6(2)), the benefit of having the car available:
 - For a corp-owned car: 2% of the original cost (including GST/HST) per month the car is available to the owner
 - For a leased car: two-thirds of the lease cost
 - *Reduced* where business use exceeds 50% and personal driving is at or below 1,667 km per month: the standby is prorated by personal km ÷ (1,667 × months available)
 
-*Operating cost benefit* (ITA [s.6(1)(k)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-6.html), s.6(2.2)) — the benefit of the corp paying personal operating costs:
+*Operating cost benefit* (ITA [s.6(1)(k)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-6.html), s.6(2.2)), the benefit of the corp paying personal operating costs:
 - 34¢ per personal kilometre for 2026 (31¢ for taxpayers principally selling or leasing automobiles), set by Reg 7305.1
 - Optional alternative where business use exceeds 50%: one-half of the standby charge, if the employee elects in writing before year-end
 
@@ -179,7 +179,7 @@ The principal-residence trap:
 - Do *not* claim CCA on the home-office portion of the residence; claiming CCA converts that portion to depreciable income-producing property and can disqualify it from the *principal residence exemption* on a later sale (CRA Income Tax Folio S1-F3-C2)
 - Keep the income-producing use ancillary and make no structural changes, so the whole home stays eligible for the exemption
 
-Employee route, for contrast (out of scope, one pointer):
+Employee route, for contrast (out of scope):
 - An employee required to maintain a home office who is *not* reimbursed can deduct workspace-in-the-home costs on their own T1 using form T2200 (employer certification) and form T777, under ITA [s.8(1)(i)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-8.html) as limited by the work-space rule in s.8(13)
 - This is a personal-tax path; the corporate reimbursement or rent route above is usually simpler for an owner-manager
 
@@ -285,7 +285,7 @@ Repaying the owner later reverses this entry, with no tax to the owner on the pr
 For comparison only — a sole proprietor is not a separate taxpayer, so the owner-corporation boundary that drives this whole page does not exist.  
 
 How the same situations collapse:
-- There is no separate entity to confer a shareholder benefit, so ITA s.15 and the standby-charge mechanics simply do not apply
+- There is no separate entity to confer a shareholder benefit, so ITA s.15 and the standby-charge mechanics do not apply
 - A mixed-use asset is handled by claiming the *business-use proportion* of its costs directly on form T2125 (*Statement of Business or Professional Activities*) on the owner's T1
 - CCA on a vehicle, computer, or tool is claimed by the proprietor on the business-use share of the asset
 - There is no allowance-versus-benefit choice and no rent-to-yourself: the proprietor and the business are the same person
