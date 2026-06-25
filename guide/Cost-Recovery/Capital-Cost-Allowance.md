@@ -254,7 +254,7 @@ Two thresholds shape what gets onto Schedule 8 in the first place:
 - *Tax-pool de minimis*: if a declining-balance pool gets to an immaterial balance, there is no statutory write-off threshold; the geometric tail continues until the class empties or the business ceases
 
 These thresholds matter most for:
-- Software bundled with hardware: systems software → Class 50; standalone application software → Class 12 (100%); SaaS subscriptions → operating expense (no capitalization at all)
+- Software bundled with hardware: systems software → Class 50; standalone application software → Class 12 (100%); SaaS subscriptions → operating expense, GIFI 9150 (no capitalization at all)
 - Home-office equipment: only the business-use portion of cost goes into UCC; the personal-use portion is a shareholder benefit (s.15) or not capitalized
 
 
@@ -307,7 +307,7 @@ IT-consulting-specific allocation calls:
 - Systems software bundled with the laptop (Windows, drivers) → same Class 50; do not split
 - Standalone application software (e.g. a $200 perpetual licence for an IDE) → Class 12 (100%); application software is subject to the half-year rule, halving the first-year claim outside the AIIP window
   - The reinstated AIIP suspends it for a 2026 acquisition
-- SaaS subscriptions (Office 365, GitHub Copilot, AWS, JetBrains All-Products Pack) → operating expense via `Office supplies & subscriptions` or `Internet & cloud services`; never capitalized regardless of annual cost
+- SaaS subscriptions (Office 365, AWS, Claude) → operating expense, GIFI 9150 Computer-related expenses; never capitalized regardless of annual cost
 - A separate $300 second monitor → arguably Class 12 (small tools < $500, treated as a standalone instrument) or Class 50 (computer peripheral, bundled with the laptop's role); pick a convention in the bookkeeping policy and apply it consistently
 
 Year 1 (2026):
@@ -455,6 +455,7 @@ Merging low-balance pools in the corp's own asset register is fine internally, b
 - [Adjusted Cost Base](../Adjusted-Cost-Base/Adjusted-Cost-Base.md)
 - [Capital Dividend Account](../Capital-Dividend-Account/Capital-Dividend-Account.md)
 - [HST](../HST.md)
+- [Expense Classification](../Expense-Classification.md)
 - [Owner-corporation transactions](../Owner-Corporation-Transactions.md)
 - [Glossary](../Glossary.md)
 - [Whole-dollar rounding](../Whole-Dollar-Rounding.md)

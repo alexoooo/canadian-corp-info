@@ -60,6 +60,7 @@ flowchart TB
 Details:
 - [Small Business Tax Overview](Small-Business-Tax-Overview.md): more detailed flowchart and other references
 - [Bookkeeping, the general ledger, and GIFI](Small-Business-Tax-Overview.md#bookkeeping-the-general-ledger-and-gifi): books → financial statements → GIFI mapping
+- [Ledger and Accounts](Ledger-And-Accounts.md): debits and credits, journal entries, the trial balance, and a full chart of accounts
 - [Paying yourself: salary vs dividends](Small-Business-Tax-Overview.md#paying-yourself-salary-vs-dividends): the two ways money leaves the corporation
 - [GST/HST](HST.md): the parallel collect-and-remit cycle  
 
@@ -329,6 +330,7 @@ Details: [Filing deadlines and instalments](Small-Business-Tax-Overview.md#filin
 
 - *Categorization* (each sorts an item into one of a few fixed types):
   - Income classification
+  - Expense classification (capitalize vs expense, and the GIFI line)
   - Salary vs dividend, then the three dividend flavours
   - Three cost-recovery channels
   - CCA classes
@@ -368,6 +370,8 @@ Details: [Filing deadlines and instalments](Small-Business-Tax-Overview.md#filin
 - [Dividends](Dividends/Dividends.md)
 - [Capital Dividend Account](Capital-Dividend-Account/Capital-Dividend-Account.md)
 - [Cost Recovery](Cost-Recovery/Cost-Recovery.md)
+- [Expense Classification](Expense-Classification.md)
+- [Ledger and Accounts](Ledger-And-Accounts.md)
 - [Adjusted Cost Base](Adjusted-Cost-Base/Adjusted-Cost-Base.md)
 - [Owner-corporation transactions](Owner-Corporation-Transactions.md)
 - [Business Acquisition](Business-Acquisition/Business-Acquisition.md)

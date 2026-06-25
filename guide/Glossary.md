@@ -17,13 +17,16 @@ For mechanics and worked examples, follow the link to the canonical page where o
 - CDA (*Capital Dividend Account*): running balance tracking capacity to pay tax-free capital dividends; see [Capital-Dividend-Account.md](Capital-Dividend-Account/Capital-Dividend-Account.md)
 - COGS (*Cost of Goods Sold*): the cost of inventory deducted at the moment of sale, recognized on Schedule 125 line 8518; see [Inventory-And-COGS.md](Cost-Recovery/Inventory-And-COGS.md)
 - CRA (*Canada Revenue Agency*): administers federal tax (and most provincial corporate tax)
+- Debit / credit: the left and right sides of a double-entry; a debit increases an asset or expense and decreases a liability, equity, or revenue, while a credit does the reverse; every entry has equal debits and credits; see [Ledger-And-Accounts.md](Ledger-And-Accounts.md)
 - DIEP (*Designated Immediate Expensing Property*): the 2021–2023 CCPC measure allowing up to $1.5M of full first-year expensing; not available for new acquisitions in 2026; see [Capital-Cost-Allowance.md](Cost-Recovery/Capital-Cost-Allowance.md)
 - DTC (*Dividend Tax Credit*): personal credit calibrated to offset corporate tax already paid (per Integration); see [Tax-Integration.md](Tax-Integration.md)
 - Dividend refund: corporate refund under ITA s.129(1) when a taxable dividend is paid; calculated as 38⅓% of dividends paid, capped at the relevant RDTOH balance; see [ERDTOH-NERDTOH.md](Dividends/ERDTOH-NERDTOH.md)
+- Double-entry: the bookkeeping method in which each transaction posts equal debits and credits across two or more accounts, so Assets = Liabilities + Equity always holds; see [Ledger-And-Accounts.md](Ledger-And-Accounts.md)
 - Eligible dividend: dividend designated under s.89(14), drawing on the GRIP pool; carries a larger gross-up and DTC than a non-eligible dividend
 - ERDTOH (*Eligible Refundable Dividend Tax on Hand*): refundable tax pool that releases when an eligible dividend is paid; see [ERDTOH-NERDTOH.md](Dividends/ERDTOH-NERDTOH.md)
 - FMV (*Fair Market Value*): the price a willing buyer and seller would agree on at arm's length; the value an inventory item is written down to when FMV falls below cost in the lower-of-cost-or-market test, and the deemed proceeds on non-arm's-length transfers; see [Inventory-And-COGS.md](Cost-Recovery/Inventory-And-COGS.md)
-- GIFI (*General Index of Financial Information*): CRA's standardized chart-of-accounts coding used on Schedules 100 and 125; defined in CRA RC4088
+- General ledger: the running record of every posted entry, grouped by account; its year-end *trial balance* rolls up into the balance sheet and income statement; see [Ledger-And-Accounts.md](Ledger-And-Accounts.md)
+- GIFI (*General Index of Financial Information*): CRA's standardized chart-of-accounts coding used on Schedules 100 and 125; defined in CRA RC4088; see [Expense-Classification.md](Expense-Classification.md)
 - Gross-up: notional uplift applied to a cash dividend on the personal return (38% for eligible, 15% for non-eligible) to derive the *taxable* amount on the T1; see [Tax-Integration.md](Tax-Integration.md)
 - GRIP (*General Rate Income Pool*): capacity to designate eligible dividends; tracked on Schedule 53; see [Dividends](Dividends/Dividends.md)
 - Half-year rule: Regulation 1100(2); only half-rate CCA on net additions in the year of acquisition; several classes are exempt; see [Capital-Cost-Allowance.md](Cost-Recovery/Capital-Cost-Allowance.md)
@@ -32,6 +35,7 @@ For mechanics and worked examples, follow the link to the canonical page where o
 - Integration: design principle that combines corporate + personal tax to approximate direct-earning tax; see [Tax-Integration.md](Tax-Integration.md)
 - ITA (*Income Tax Act* (R.S.C., 1985, c. 1 (5th Supp.))): primary federal tax statute
 - ITC (*Input Tax Credit*): recoverable GST/HST paid on business inputs under the regular method; see [HST.md](HST.md)
+- Journal entry: one transaction recorded as a dated set of debit and credit lines, before it is posted to the ledger; see [Ledger-And-Accounts.md](Ledger-And-Accounts.md)
 - Landed cost: the full cost of bringing inventory to the corp's premises (invoice price plus freight-in, duty, brokerage, and non-recoverable tax); the *cost* figure in the lower-of-cost-or-market test; see [Inventory-And-COGS.md](Cost-Recovery/Inventory-And-COGS.md#what-goes-into-cost)
 - LCGE (*Lifetime Capital Gains Exemption*): personal exemption available on the disposition of QSBC shares
 - LCM (*lower of cost or market*): the year-end inventory valuation rule (ITA s.10(1)): each item is carried at the lower of its landed cost or fair market value; see [Inventory-And-COGS.md](Cost-Recovery/Inventory-And-COGS.md)
@@ -39,6 +43,7 @@ For mechanics and worked examples, follow the link to the canonical page where o
 - NERDTOH (*Non-Eligible Refundable Dividend Tax on Hand*): refundable tax pool that releases when a non-eligible dividend is paid; see [ERDTOH-NERDTOH.md](Dividends/ERDTOH-NERDTOH.md)
 - Non-eligible dividend: default classification for any taxable dividend not designated eligible (and not a capital dividend); carries a smaller gross-up and DTC than an eligible dividend
 - Perpetual / periodic inventory: two inventory-tracking systems; *perpetual* updates the ledger at each purchase and sale, *periodic* plugs cost of sales from a year-end physical count; see [Inventory-And-COGS.md](Cost-Recovery/Inventory-And-COGS.md#tracking-through-the-year)
+- Plug / plug account: a figure derived as the residual needed to make the books balance (the periodic COGS plug, a rounding residual, an FX bridge), and the account that absorbs it; see [Ledger-And-Accounts.md](Ledger-And-Accounts.md#plugs-and-plug-accounts)
 - PSB (*Personal Service Business*): a CCPC effectively acting as a disguised employee, with most CCPC tax advantages removed; see [Small-Business-Tax-Overview.md](Small-Business-Tax-Overview.md)
 - PUC (*Paid-Up Capital*): tax-side measure of contributed capital tracked per share class; can drive deemed-dividend mechanics on redemption or capital reduction; see [Dividends](Dividends/Dividends.md)
 - QSBC (*Qualified Small Business Corporation*): share-level test gating LCGE eligibility, including a 90% active-business-assets requirement
@@ -60,6 +65,7 @@ For mechanics and worked examples, follow the link to the canonical page where o
 - Tax point: the day GST/HST on a supply becomes payable — the earlier of payment and the day consideration becomes due, which for an invoiced service is the earlier of the invoice date and the issue date (ETA s.168, s.152); see [HST.md](HST.md#when-tax-becomes-payable)
 - Terminal loss: residual UCC deducted when a class empties under ITA s.20(16); see [Capital-Cost-Allowance.md](Cost-Recovery/Capital-Cost-Allowance.md)
 - TOSI (*Tax on Split Income* (ITA s.120.4)): limits income-splitting through dividends to family members not active in the business
+- Trial balance: the list of every ledger account balance in a debit or credit column; the two columns must be equal, which proves the books are internally consistent; see [Ledger-And-Accounts.md](Ledger-And-Accounts.md)
 - UCC (*Undepreciated Capital Cost*): running balance of a CCA class pool, defined in ITA s.13(21); see [Capital-Cost-Allowance.md](Cost-Recovery/Capital-Cost-Allowance.md)
 - Weighted-average cost: an inventory cost-flow method where each unit carries the running pooled average cost; the inventory analogue of ACB pooling for securities; see [Inventory-And-COGS.md](Cost-Recovery/Inventory-And-COGS.md#valuation-methods)
 - WIP (*Work In Progress*): partially completed goods in a manufacturing inventory, sitting between raw materials and finished goods (GIFI 1125); see [Inventory-And-COGS.md](Cost-Recovery/Inventory-And-COGS.md)

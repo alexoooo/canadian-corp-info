@@ -467,7 +467,7 @@ Aug 15 — pay USD 2,000 to a US software vendor (annual subscription); bill-dat
   - Debit `FX gain/loss - USD` (8231-2): USD 2,000
 - CAD-side (at bill-date BoC 1.35):
   - Credit `FX gain/loss - CAD` (8231-1): CAD 2,700
-  - Debit `Computer-related expenses / Software subscriptions` (CAD-native operating-expense line): CAD 2,700
+  - Debit `Computer-related expenses / Software subscriptions` (GIFI 9150, CAD-native operating-expense line): CAD 2,700
 
 Dec 31 — year-end revaluation at closing BoC rate 1.38:
 - Account balances before revaluation:
@@ -544,6 +544,8 @@ flowchart TB
 - [T3](T3/T3.md)
 - [T5008](T5008/T5008.md)
 - [HST](HST.md)
+- [Ledger and Accounts](Ledger-And-Accounts.md)
+- [Expense Classification](Expense-Classification.md)
 - [Inventory](Cost-Recovery/Inventory-And-COGS.md)
 - [Glossary](Glossary.md)
 - [Whole-dollar rounding](Whole-Dollar-Rounding.md)

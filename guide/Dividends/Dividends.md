@@ -22,6 +22,16 @@ Limitations:
 - The following is my understanding as of 2026
 
 
+## Sub-pages
+
+This page is a hub; these are the sub-pages:
+- [ERDTOH and NERDTOH](ERDTOH-NERDTOH.md): how the two refundable dividend-tax accounts fill and refund, plus stranding
+- [Declaring and paying a dividend](Declaring-And-Paying.md): resolution, eligible designation, the three dates, and payment channels
+- [Bookkeeping and information slips](Bookkeeping-And-Slips.md): journal entries, T5 slip and Summary, and NR4 for non-residents
+- [T2 reporting](T2-Reporting.md): Schedules 3, 53, and 55, the dividend-refund line, and Form T2054
+- [Worked examples](Worked-Examples.md): end-to-end examples
+
+
 ## What is a dividend
 
 A *dividend* is a distribution of money or other property by a corporation to its shareholders, paid out of the corporation's after-tax retained earnings.  

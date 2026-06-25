@@ -357,7 +357,7 @@ Mar 31 — invoice #1 to an Ontario client for $20,000 + HST:
 - Credit `HST collected` = $2,600
 
 Apr 15 — pay $1,800 + HST = $2,034 for the year's accounting software (SaaS subscription):
-- Debit `Office supplies and subscriptions` = $1,800
+- Debit `Software subscriptions` (GIFI 9150) = $1,800
 - Debit `HST receivable` = $234
 - Credit `Cash` = $2,034
 
@@ -372,7 +372,7 @@ Sep 1 — buy a $4,000 + HST = $4,520 laptop (Class 50 capital asset; business u
 - Credit `Cash` = $4,520
 
 Oct 15 — pay $600 + HST = $678 for a year of professional liability insurance:
-- Debit `Insurance` = $600
+- Debit `Insurance` (GIFI 8690) = $600
 - Debit `HST receivable` = $78
 - Credit `Cash` = $678
 
@@ -412,8 +412,8 @@ The invoice-side ledger entries are identical: the corp still charges 13% HST on
 
 The input-side ledger entries differ:
 - Operating inputs (software, insurance) are recorded *gross of HST*; no ITC is claimed
-  - Apr 15 software: debit `Office supplies and subscriptions` = $2,034; credit `Cash` = $2,034
-  - Oct 15 insurance: debit `Insurance` = $678; credit `Cash` = $678
+  - Apr 15 software: debit `Software subscriptions` (GIFI 9150) = $2,034; credit `Cash` = $2,034
+  - Oct 15 insurance: debit `Insurance` (GIFI 8690) = $678; credit `Cash` = $678
 - Capital purchase (laptop) keeps the regular-method posting because the Quick Method does *not* eliminate ITCs on capital purchases:
   - Sep 1 laptop: debit `Computer equipment - cost` = $4,000; debit `HST receivable` = $520; credit `Cash` = $4,520
 
@@ -469,6 +469,8 @@ The break-even point against the regular method on Ontario services is roughly t
   - [Inventory](Cost-Recovery/Inventory-And-COGS.md)
   - [Capital Cost Allowance](Cost-Recovery/Capital-Cost-Allowance.md)
   - [Materials and CIP](Cost-Recovery/Materials-And-CIP.md)
+- [Ledger and Accounts](Ledger-And-Accounts.md)
+- [Expense Classification](Expense-Classification.md)
 - [Payment](Payment/Payment.md)
 - [Glossary](Glossary.md)
 - [Whole-dollar rounding](Whole-Dollar-Rounding.md)

@@ -115,6 +115,7 @@ In every case the rule is the same: keep the working figures to the cent, round 
 ## Related
 
 - [Small Business Tax Overview](Small-Business-Tax-Overview.md) — bookkeeping, the general ledger, and GIFI
+- [Ledger and Accounts](Ledger-And-Accounts.md)
 - [Foreign Currency](Foreign-Currency.md)
 - [Adjusted Cost Base - Tracking](Adjusted-Cost-Base/Adjusted-Cost-Base-Tracking.md)
 - [Inventory](Cost-Recovery/Inventory-And-COGS.md)

@@ -275,6 +275,7 @@ A CIP balance is never directly disposed of:
 
 - [Small Business Tax Overview](../Small-Business-Tax-Overview.md): primer for the rest of the guide
 - [HST](../HST.md): GST/HST mechanics, including ITC eligibility on inputs and the 50%-business-use line on capital property
+- [Expense Classification](../Expense-Classification.md): GIFI lines for operating expenses and the capitalize-vs-expense decision
 - [Foreign Currency](../Foreign-Currency.md): trade-date FX convention used to convert foreign-currency invoices into landed cost
 - [Adjusted Cost Base](../Adjusted-Cost-Base/Adjusted-Cost-Base.md): the investing-side analogue of inventory pooling, applied to securities rather than goods
 - [Glossary](../Glossary.md)

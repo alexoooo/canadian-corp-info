@@ -46,6 +46,8 @@ AI generated, not verified yet:
 - [Owner-corporation transactions](guide/Owner-Corporation-Transactions.md)
 - [Glossary](guide/Glossary.md)
 - [HST](guide/HST.md)
+- [Expense Classification](guide/Expense-Classification.md)
+- [Ledger and Accounts](guide/Ledger-And-Accounts.md)
 - [Whole-dollar rounding](guide/Whole-Dollar-Rounding.md)
 
 
@@ -53,7 +55,6 @@ AI generated, not verified yet:
 
 Page stubs:
 - [Payment](guide/Payment/Payment.md)
-- [Ledger And Accounts](guide/Ledger-And-Accounts.md)
 
 
 ## Audit

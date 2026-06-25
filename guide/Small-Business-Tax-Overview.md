@@ -137,13 +137,12 @@ Most owner-managers prepare the T2 using dedicated software (FutureTax, TaxCycle
 Every line on the T2 traces back to the corporation's *books*: the running record of every financial transaction made during the year.  
 For a small CCPC, books are typically kept in accounting software (GnuCash, QuickBooks, Wave, Xero) or a structured spreadsheet, and reviewed annually before the T2 is filed.  
 
-In short:
-- *Double-entry*: every transaction posts equal *debits* and *credits* across two or more accounts; the books always balance
-- *Chart of accounts*: the corporation's own list of named accounts (cash, accounts receivable, revenue, expenses, retained earnings, etc.); names and structure are your choice
-- *Account classification*: every account is one of five types: *asset*, *liability*, *equity*, *revenue*, or *expense*
-  - The *accounting equation* Assets = Liabilities + Equity always holds (revenue and expenses roll into equity through retained earnings at year-end)
-- *General ledger*: the running list of every posted entry, grouped by account
-- *Trial balance*: the year-end sum of all account balances; rolls up into the two financial statements: the *balance sheet* and the *income statement*
+The corporation keeps *double-entry* books on a *chart of accounts* (its own named list of accounts): every transaction posts equal *debits* and *credits*, so the *accounting equation* Assets = Liabilities + Equity always holds.  
+Each account is one of five types: *asset*, *liability*, *equity*, *revenue*, *expense*.  
+Revenue and expenses roll into equity through retained earnings at year-end.  
+The *general ledger* is a running record of all financial transactions.  
+At year-end, the *trial balance* rolls up into *balance sheet* and *income statement*.  
+For the mechanics (debits and credits, journal entries, the trial balance, plug accounts, and a sample chart of accounts) see [Ledger and Accounts](Ledger-And-Accounts.md).
 
 Two further conventions govern how transactions are recorded:
 - *Accrual accounting* (required) determines *when* a transaction is recorded:
@@ -433,6 +432,8 @@ When a question gets specific, several layers of authority can apply:
   - [Inventory](Cost-Recovery/Inventory-And-COGS.md)
   - [Materials and CIP](Cost-Recovery/Materials-And-CIP.md)
   - [Capital Cost Allowance](Cost-Recovery/Capital-Cost-Allowance.md)
+- [Ledger and Accounts](Ledger-And-Accounts.md)
+- [Expense Classification](Expense-Classification.md)
 - [Capital Dividend Account](Capital-Dividend-Account/Capital-Dividend-Account.md)
 - [Dividends](Dividends/Dividends.md)
 - [Owner-corporation transactions](Owner-Corporation-Transactions.md)
