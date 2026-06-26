@@ -179,7 +179,7 @@ Posting pattern at the close of a reporting period (regular method):
 Under the *Quick Method* the posting pattern differs:
 - The corp still charges 13% HST (or the applicable rate) on each sale and posts the full gross amount to `HST collected`
 - ITCs on operating inputs are *not* claimed and `HST receivable` carries only ITCs on capital purchases (see [Quick Method](#quick-method) below)
-- At period-end, the difference between `HST collected` and the *Quick Method remittance* is credited to `Other revenue` (GIFI 8242) rather than netting through `HST receivable`
+- At period-end, the difference between `HST collected` and the *Quick Method remittance* is credited to `Other revenue` (GIFI 8230) rather than netting through `HST receivable`
 
 GIFI rollup of the two control accounts is verified against CRA RC4088 by the maintainer before sign-off; this draft leaves the specific rollup line as a TODO.
 
@@ -253,7 +253,7 @@ When the Quick Method pays:
 - *Zero-rated revenue*: corps with mostly zero-rated revenue (e.g. all-US-client consulting) cannot use the Quick Method to advantage — the remittance rate applies to GST/HST-inclusive revenue, and zero-rated supplies have no HST in their consideration, so the Quick Method math collapses to zero remittance on those supplies; the regular method's ITC refund position is better; see [Foreign Currency](Foreign-Currency.md) for the zero-rated-services workflow
 
 Income-tax interaction:
-- The kept portion of the HST collected is taxable income to the corp under ITA s.9; book it to `Other revenue` (GIFI 8242) rather than netting it into `HST receivable`
+- The kept portion of the HST collected is taxable income to the corp under ITA s.9; book it to `Other revenue` (GIFI 8230) rather than netting it into `HST receivable`
 - Quick-Method ITCs that are still claimed (capital purchases, imports) follow the standard regular-method posting
 
 
@@ -320,7 +320,7 @@ flowchart TB
     Receivable[("HST receivable<br/>asset")]
     NetTax{{"Net tax<br/>(GST34 line 109)"}}
     Quick{{"Quick Method<br/>remittance %"}}
-    Other[("Other revenue<br/>GIFI 8242<br/>kept spread")]
+    Other[("Other revenue<br/>GIFI 8230<br/>kept spread")]
     Remit["Remit to CRA"]
     Refund["Refund from CRA"]
 
@@ -436,7 +436,7 @@ Income-statement effect of the kept spread:
 - HST collected through the year: $5,850
 - Quick Method tax remitted (gross of capital ITC): $4,174.80
 - Kept spread: $5,850 − $4,174.80 = $1,675.20
-- Booked at year-end: debit `HST collected` = $5,850; credit `HST remittance payable` = $4,174.80; credit `Other revenue` (GIFI 8242) = $1,675.20
+- Booked at year-end: debit `HST collected` = $5,850; credit `HST remittance payable` = $4,174.80; credit `Other revenue` (GIFI 8230) = $1,675.20
 - The $1,675.20 is taxable income to the corp under ITA s.9 and feeds into ABI
 
 Side-by-side comparison:

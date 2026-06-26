@@ -18,13 +18,13 @@ Limitations:
 Standard double-entry treatment for an owner-managed CCPC paying its sole shareholder.  
 GIFI codes are aligned to the CRA GIFI guide ([RC4088](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4088/general-index-financial-information-gifi.html)).  
 
-GIFI does not split dividends declared by tax classification: all cash dividends declared roll up to GIFI 3701 (*Cash dividends*) in the Statement of Retained Earnings, regardless of whether they are eligible, non-eligible, or capital.  
-The chart of accounts can still carry separate sub-accounts (e.g. "Dividends declared - eligible", "Dividends declared - non-eligible", "Capital dividends declared") so the corp's books show the type breakdown internally; at the GIFI roll-up level all three map to 3701.  
+GIFI does not split dividends declared by tax classification: all cash dividends declared roll up to GIFI 3700 (*Dividends declared*) in the Statement of Retained Earnings, regardless of whether they are eligible, non-eligible, or capital.  
+The chart of accounts can still carry separate sub-accounts (e.g. "Dividends declared - eligible", "Dividends declared - non-eligible", "Capital dividends declared") so the corp's books show the type breakdown internally; at the GIFI roll-up level all three map to 3700.  
 The eligible/non-eligible split is reported on the taxable-dividends-paid section of T2 Schedule 3.  
 Capital dividends paid are reported on the separate capital-dividend line of Schedule 3 *and* require a Form T2054 election in addition (see [T2 reporting](T2-Reporting.md)).  
 
 Declaration. Book the resolution; substitute the relevant chart-of-accounts sub-account as appropriate.  
-Debit: "Dividends declared" (GIFI 3701) = $X  
+Debit: "Dividends declared" (GIFI 3700) = $X  
 Credit: "Dividends payable" (GIFI 2962) = $X  
 
 Payment, when cash transfers.  
@@ -43,7 +43,7 @@ When the dividend is declared specifically to clear a shareholder loan receivabl
 A paper resolution alone does not constitute repayment for s.15(2) purposes; the receivable has to actually come off the corporation's books (via the journal entry above) within the window.  
 
 When declaration and payment occur on the same day, the two entries can be collapsed and *Dividends payable* skipped.  
-Debit: "Dividends declared" (GIFI 3701) = $X  
+Debit: "Dividends declared" (GIFI 3700) = $X  
 Credit: "Cash" (GIFI 1001) = $X  
 
 Year-end close. The Statement of Retained Earnings (Schedule 100 in most T2 software) nets dividends declared against opening retained earnings to derive the closing balance (GIFI 3849).  

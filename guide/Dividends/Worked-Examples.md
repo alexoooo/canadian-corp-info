@@ -42,7 +42,7 @@ Setup:
 In 2026 the directors declare a $50,000 eligible dividend to the sole shareholder; resolution and payment same day; eligible-dividend designation notice provided to the shareholder.  
 
 Declaration:  
-Debit: "Dividends declared - eligible" (GIFI 3701) = $50,000  
+Debit: "Dividends declared - eligible" (GIFI 3700) = $50,000  
 Credit: "Dividends payable" (GIFI 2962) = $50,000  
 
 Payment:  
@@ -69,7 +69,7 @@ Setup:
 In late 2026 the directors declare an $80,000 non-eligible dividend to the sole shareholder; resolution and payment same day.  
 
 Declaration and payment collapsed:  
-Debit: "Dividends declared - non-eligible" (GIFI 3701) = $80,000  
+Debit: "Dividends declared - non-eligible" (GIFI 3700) = $80,000  
 Credit: "Cash" (GIFI 1001) = $80,000  
 
 T2 (2026) schedule entries:
@@ -100,7 +100,7 @@ On December 30, 2026 the directors pass a resolution declaring a $32,000 non-eli
 The actual cash transfer to the shareholder's personal bank account is scheduled for January 15, 2027.  
 
 Declaration and credit (Dec 30, 2026, booked in 2026 fiscal year):  
-Debit: "Dividends declared - non-eligible" (GIFI 3701) = $32,000  
+Debit: "Dividends declared - non-eligible" (GIFI 3700) = $32,000  
 Credit: "Dividends payable" (GIFI 2962) = $32,000  
 
 Debit: "Dividends payable" (GIFI 2962) = $32,000  
@@ -140,7 +140,7 @@ In 2026 the directors elect under ITA s.83(2) to pay a $10,000 capital dividend.
 Form T2054 is filed via CRA My Business Account with a certified copy of the resolution attached, on or before the payment date.  
 
 Declaration:  
-Debit: "Capital dividends declared" (GIFI 3701) = $10,000  
+Debit: "Capital dividends declared" (GIFI 3700) = $10,000  
 Credit: "Dividends payable" (GIFI 2962) = $10,000  
 
 Payment:  

@@ -247,7 +247,7 @@ Revenue (Schedule 125):
 | Foreign exchange gains/losses | `8231` | realized FX gains and losses (per-currency `8231-1` / `8231-2`) |
 | Subsidies and grants | `8242` | government assistance and grants |
 
-The Quick Method kept spread is also booked to a revenue line; see [HST](HST.md#quick-method).  
+The Quick Method kept spread is booked to `8230` Other revenue; see [HST](HST.md#quick-method).  
 
 Cost of sales (Schedule 125):
 
@@ -340,6 +340,4 @@ Decide the accounts there, then record the debits and credits here.
 ## TODO
 
 - Verify every chart-of-accounts code against the current RC4088 at sign-off (balance-sheet and equity codes especially)
-- The Dividends pages label GIFI `3701` as "Dividends declared"; RC4088 has `3700` Dividends declared (rollup) and `3701` Cash dividends (detail) — settle the house convention
-- HST.md books the Quick Method kept spread to "Other revenue (GIFI 8242)", but RC4088 has `8242` Subsidies and grants and `8230` Other revenue — reconcile the code or the label
 - Decide whether the chart should show internal sub-codes inline or only the parent lines
