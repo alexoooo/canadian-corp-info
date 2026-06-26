@@ -226,7 +226,7 @@ If a non-eligible dividend was used instead, it would draw on NERDTOH first.
 With NERDTOH at $0, a $7,500 non-eligible dividend spills into ERDTOH and triggers the same $2,875 refund.  
 The eligible designation produces a more favourable personal-side gross-up and DTC, so the eligible route is preferred when GRIP is available.  
 
-For the parallel non-eligible / NERDTOH-recovery example (with year-end timing), see [Dividends / Worked examples](Worked-Examples.md#worked-examples).  
+For the parallel non-eligible / NERDTOH-recovery example (with year-end timing), see [Dividends / Worked examples](Dividends-Examples.md#worked-examples).  
 
 
 # Related

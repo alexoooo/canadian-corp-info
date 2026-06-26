@@ -93,7 +93,7 @@ GST/HST on the allowance:
 
 ### Corporate car used personally
 
-Here the corporation owns (or leases) the car, claims CCA on it (Class 10 or 10.1; see [Capital Cost Allowance](Cost-Recovery/Capital-Cost-Allowance.md)), and deducts the operating costs.  
+Here the corporation owns (or leases) the car, claims CCA on it (Class 10 or 10.1; see [Capital Cost Allowance](Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md)), and deducts the operating costs.  
 Any personal use by the shareholder-employee is then a *taxable benefit* reported on the owner's T4, in two parts.  
 
 *Standby charge* (ITA [s.6(1)(e)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-6.html), s.6(2)), the benefit of having the car available:
@@ -133,7 +133,7 @@ The same employee-versus-shareholder split applies to any asset: equipment, tool
 Three routes, cleanest first:
 - *Reimburse the business portion*: the corp reimburses the owner for the business-use share of the asset's running costs; a genuine expense reimbursement is tax-free and deductible
 - *Corp rents the asset from the owner*: the corp deducts the rent (ITA [s.18(1)(a)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-18.html)); the owner reports the rent as property income on their T1 and deducts the related expenses against it; the rent must be reasonable for what is being rented
-- *Owner sells the asset to the corp at FMV*: the asset becomes a corporate asset and the corp claims CCA on it (see [Capital Cost Allowance](Cost-Recovery/Capital-Cost-Allowance.md)); for an appreciated asset, an ITA [s.85](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-85.html) rollover can defer the gain on transfer; the same rollover is used to pay a business vendor in shares (see [Preferred-share consideration](Business-Acquisition/Preferred-Share-Consideration.md))
+- *Owner sells the asset to the corp at FMV*: the asset becomes a corporate asset and the corp claims CCA on it (see [Capital Cost Allowance](Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md)); for an appreciated asset, an ITA [s.85](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-85.html) rollover can defer the gain on transfer; the same rollover is used to pay a business vendor in shares (see [Preferred-share consideration](Business-Acquisition/Preferred-Share-Consideration.md))
 
 Worked example (owner's tool sold to the corp):
 - The owner personally owns a piece of equipment now used entirely in the business; its FMV is $5,000
@@ -298,7 +298,7 @@ The corporate structure trades this simplicity for the benefit and deduction rul
 - [Small Business Tax Overview](Small-Business-Tax-Overview.md)
 - [Dividends](Dividends/Dividends.md)
 - [Business Acquisition](Business-Acquisition/Business-Acquisition.md)
-- [Capital Cost Allowance](Cost-Recovery/Capital-Cost-Allowance.md)
+- [Capital Cost Allowance](Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md)
 - [HST](HST.md)
 - [Glossary](Glossary.md)
 

@@ -71,7 +71,7 @@ Often CDA and GRIP are both empty; the only available option is a non-eligible d
 Assumptions: $1,000 of corporate income, Ontario, shareholder at top marginal rate (53.53%).  
 Combined corporate rates: SBD 12.2% (federal 9% + Ontario 3.2%), general 26.5% (federal 15% + Ontario 11.5%).  
 DTC rates as % of the grossed-up (taxable) amount: eligible 25.02% (federal 15.02% + Ontario 10.0%), non-eligible 12.02% (federal 9.03% + Ontario 2.99%).  
-The 2026 Ontario budget proposes lowering the small-business rate to 2.2% (combined 11.2%) effective July 1, 2026 and the non-eligible DTC to 1.9863% effective January 1, 2027; restate for tax years straddling those dates (see [Dividends](Dividends/Worked-Examples.md#worked-examples)).  
+The 2026 Ontario budget proposes lowering the small-business rate to 2.2% (combined 11.2%) effective July 1, 2026 and the non-eligible DTC to 1.9863% effective January 1, 2027; restate for tax years straddling those dates (see [Dividends](Dividends/Dividends-Examples.md#worked-examples)).  
 
 ```mermaid
 flowchart TB

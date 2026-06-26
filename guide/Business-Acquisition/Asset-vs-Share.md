@@ -36,7 +36,7 @@ The buyer usually prefers an asset purchase, for two reasons.
 
 *Cost step-up*:
 - The price paid for each asset becomes its new cost base
-- Depreciable assets start fresh CCA pools at their allocated cost, so the buyer depreciates the full price paid (see [Capital Cost Allowance](../Cost-Recovery/Capital-Cost-Allowance.md))
+- Depreciable assets start fresh CCA pools at their allocated cost, so the buyer depreciates the full price paid (see [Capital Cost Allowance](../Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md))
 - Purchased goodwill goes into Class 14.1 and is depreciable
 - In a share purchase there is no step-up: the target's assets keep their existing (often low) undepreciated cost, and the buyer's only cost base is the price paid for the shares
 
@@ -72,7 +72,7 @@ The capital gains inclusion rate is one-half for 2026 (the proposed increase to 
 
 - [Business Acquisition](Business-Acquisition.md)
 - [Preferred-share consideration](Preferred-Share-Consideration.md)
-- [Capital Cost Allowance](../Cost-Recovery/Capital-Cost-Allowance.md)
+- [Capital Cost Allowance](../Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md)
 - [Capital Dividend Account](../Capital-Dividend-Account/Capital-Dividend-Account.md)
 - [Share Capital](../Corporate-Structure/Share-Capital.md)
 

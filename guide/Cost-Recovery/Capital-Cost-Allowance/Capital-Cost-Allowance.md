@@ -26,18 +26,18 @@ Limitations:
 - The following is my understanding as of 2026
 
 
-## In this folder
+## Sub-pages
 
-- [Cost Recovery](Cost-Recovery.md): overview of the three cost-recovery channels, concept map, and shared acquisition-cost / available-for-use / change-of-use rules
-- [Inventory](Inventory-And-COGS.md): goods held for resale
-- [Materials and CIP](Materials-And-CIP.md): self-constructed fixed assets feeding into a CCA class
+- [CCA Classification](CCA-Classification.md): which class a purchase goes in, the classes-and-rates table, and commonly confusing cases
+- [CCA Worked examples](CCA-Examples.md): three multi-year walkthroughs with ledger entries and the matching T2 schedules
+- [CCA Tracking](CCA-Tracking.md): the asset register and the exact per-class formulas for a spreadsheet
 
 
 ## What CCA is
 
 *Capital Cost Allowance* is the deduction allowed under ITA [s.20(1)(a)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-20.html) for the wear-and-tear of depreciable property used to earn business income.  
 Accounting depreciation booked under your basis of accounting is not deductible (ITA [s.18(1)(b)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-18.html)); the books add it back on T2 Schedule 1 and substitute the CCA figure computed on T2 Schedule 8.  
-Effect: book and tax fixed-asset balances diverge over the asset's life and re-converge on disposal.  
+Book and tax fixed-asset balances diverge over the asset's life and re-converge on disposal.  
 
 The statutory framework:
 - ITA s.20(1)(a): permission to deduct CCA, with the rate left to regulation
@@ -45,28 +45,7 @@ The statutory framework:
 - ITA [s.13](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-13.html): recapture, UCC definition, and the available-for-use rules
 - ITA [s.20(16)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-20.html): terminal loss
 
-
-## Classes and rates
-
-Common classes for an owner-managed CCPC:
-- *Class 50* (55%, declining balance): computers, peripherals, networking equipment acquired after Mar 18 2007; half-year rule applies
-- *Class 8* (20%, declining): office furniture, photocopiers, tools costing $500 or more, equipment not in another class; half-year applies — the catch-all
-- *Class 10* (30%, declining): motor vehicles, vans, light trucks, pickup trucks under the passenger-vehicle cost threshold; one shared pool for all vehicles
-- *Class 10.1* (30%, declining): passenger vehicles whose cost exceeds the prescribed limit ($39,000 + sales taxes in 2026, up from $38,000 in 2025); each vehicle goes in *its own separate Class 10.1*; no recapture, no terminal loss, half-CCA in year of disposition under Regulation 1100(2.5)
-- *Class 12* (100%, no half-year for most items): small tools costing under $500, kitchen utensils, uniforms, application software (other than systems software); the half-year rule does apply to application software, films, dies, jigs, moulds, and the cutting or shaping part of a machine
-- *Class 13* (straight-line over lease term + first renewal; minimum 5 years, maximum 40 years): leasehold improvements; exempt from the Regulation 1100(2) half-year rule (its first-year allowance is instead limited under Schedule III / para 1100(1)(b))
-- *Class 14* (straight-line over remaining legal life): limited-life intangibles (patents, franchises, licences with a fixed term); no half-year
-- *Class 14.1* (5%, declining): goodwill, incorporation expenses over $3,000, customer lists, unlimited-life intangibles; half-year applies; replaced the pre-2017 *eligible capital property* (ECP) regime
-- *Class 54* (30%, declining): zero-emission passenger vehicles, cost capped at $61,000 + taxes
-- *Class 55* (40%, declining): zero-emission vehicles otherwise in Class 16 (taxis, courier trucks)
-- *Class 53* (50%, declining): manufacturing and processing machinery and equipment
-
-Classes touched on but not worked through here:
-- Class 1 (4%, declining): buildings; +2% allowance for non-residential, +6% for an M&P building, elected via Regulation 1101(5b.1); see CRA T4012
-- Classes 43.1 / 43.2: clean-energy equipment
-- Class 56: zero-emission automotive equipment
-
-CRA's [Classes of depreciable property](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/report-business-income-expenses/claiming-capital-cost-allowance/classes-depreciable-property.html) page has the full list; the table above covers what an owner-managed CCPC most often touches.
+For the class list and how to pick a class, see [CCA Classification](CCA-Classification.md).
 
 
 ## Pool mechanics (UCC)
@@ -77,7 +56,7 @@ The shape of a year-end calculation:
 - Opening UCC (last year's closing balance after CCA)
 - Plus: cost of additions in the year that are available for use (s.13(26))
 - Minus: lesser of (proceeds, original cost) for each disposition in the year
-- Minus: investment tax credits claimed prior year (s.13(7.1)) — relevant if the corp is also claiming SR&ED
+- Minus: investment tax credits claimed prior year (s.13(7.1)), relevant if the corp is also claiming SR&ED
 - = adjusted UCC base
 - Apply the half-year adjustment to net additions (unless the class is exempt)
 - CCA = rate × (adjusted UCC base after half-year adjustment)
@@ -85,7 +64,7 @@ The shape of a year-end calculation:
 
 Tracking is per class, not per asset:
 - the pool is a single UCC figure for the whole class; there is no UCC per item, and Schedule 8 carries one row per class
-- keep a separate *asset register* (item, class, cost, in-service date, disposal date, proceeds) as a reference: it tells you what is still in each class and feeds the *additions* and *dispositions* totals, but it is not the CCA computation
+- keep a separate *asset register* (item, class, cost, in-service date, disposal date, proceeds) as a reference: it tells you what is still in each class and feeds the *additions* and *dispositions* totals, but it is not the CCA computation; see [CCA Tracking](CCA-Tracking.md)
 - the register grows with the number of items; the CCA math stays one row per class per year
 
 ```mermaid
@@ -114,6 +93,8 @@ flowchart TB
     Close -.->|"closing &gt; 0 and class empty"| Terminal
 ```
 
+For the exact spreadsheet formulas behind this diagram, see [CCA Tracking](CCA-Tracking.md).
+
 
 ## Half-year rule and AIIP
 
@@ -127,7 +108,7 @@ It first applied to property acquired after Nov 20 2018, began phasing out for p
 The 2024 Fall Economic Statement reinstated it, enacted by Bill C-15 (Budget Implementation Act, 2025, No. 1) on Royal Assent on Mar 26 2026.
 
 As reinstated, for property acquired after 2024 (on or after Jan 1 2025) and available for use before 2030:
-- For CCA classes otherwise subject to the half-year rule, the half-year rule is suspended and the first-year base is 150% of the net addition — three times the deduction the half-year rule alone would have allowed
+- For CCA classes otherwise subject to the half-year rule, the half-year rule is suspended and the first-year base is 150% of the net addition (three times the deduction the half-year rule alone would have allowed)
 - For classes not subject to the half-year rule, the first-year deduction is one-and-a-half times the normal allowance
 - For *full-expensing* classes (Class 53 M&P, 43.1 / 43.2 clean energy, 54 / 55 / 56 zero-emission vehicles), 100% of cost is deductible in the first year
 
@@ -156,7 +137,7 @@ For buildings (s.13(28)), the earliest of:
 - Construction substantially complete
 - Beginning of the second tax year after the acquisition year (the same 357-day rolling rule, s.13(28)(c))
 
-See [Cost Recovery — Available for use](Cost-Recovery.md#available-for-use) for the cross-channel framing, including how the same trigger applies to a CIP balance transferring into a CCA class.
+See [Cost Recovery — Available for use](../Cost-Recovery.md#available-for-use) for the cross-channel framing, including how the same trigger applies to a CIP balance transferring into a CCA class.
 
 
 ## Acquisitions and dispositions
@@ -172,7 +153,7 @@ What does not get capitalized:
 - Software licences with a term of one year or less: operating expense
 - Items priced below the corporation's capitalization threshold policy (the *de minimis* policy, typically $500 to $2,500)
 
-The same capitalize-vs-expense rules apply across all three cost-recovery channels; see [Cost Recovery — Acquisition cost](Cost-Recovery.md#acquisition-cost-what-gets-capitalized).
+The same capitalize-vs-expense rules apply across all three cost-recovery channels; see [Cost Recovery — Acquisition cost](../Cost-Recovery.md#acquisition-cost-what-gets-capitalized).
 
 Dispositions:
 - *Proceeds of disposition* per s.13(21) = sale price + insurance proceeds + compensation for damage or expropriation
@@ -208,16 +189,6 @@ No terminal loss when a *similar* property is acquired within 24 months for the 
 It is not a general bar on claiming a terminal loss after replacing a same-class asset.
 
 
-## Special class rules
-
-- *Class 10.1*: each vehicle is a separate class; capped capital cost; no recapture or terminal loss; half-CCA on disposition (above)
-- *Class 12 with half-year*: application software, films, dies, jigs, moulds, and the cutting or shaping part of a machine *are* subject to the half-year rule even though most of Class 12 is not
-- *Class 13*: straight-line over (lease term + first renewal), minimum 5 years, maximum 40 years; recompute the schedule if the lease is amended
-- *Class 14*: straight-line over the actual remaining legal life of the intangible
-- *Class 14.1*: 5% declining; pre-2017 CEC transitional balances use 7%; the first $3,000 of incorporation expenses is a one-time deduction, not Class 14.1
-- *Class 50 vs Class 12 vs Class 8*: standalone application software is Class 12 (100%); systems software bundled with hardware is Class 50; hardware peripherals not bundled may go to Class 50 or Class 8 depending on durability and the corp's capitalization policy
-
-
 ## Short fiscal year
 
 For a tax year shorter than 365 days (incorporation year, year of dissolution, fiscal-year change), CCA is prorated under Regulation 1100(3):
@@ -228,10 +199,10 @@ Exceptions to proration:
 - DIEP immediate-expensing *deduction*: the Dec 2024 amendment removed its short-year proration, retroactive to fiscal years ending on or after Apr 19 2021 (the $1.5M DIEP limit itself still prorates under Regulation 1104(3.5)(b))
 
 
-## CCA is discretionary
+## Discretionary CCA
 
 There is no obligation to claim the maximum.  
-CCA is computed up to the cap; the corporation may claim any amount from $0 to the cap; unclaimed CCA does not expire, it stays in UCC.  
+CCA is computed up to the cap; the corporation may claim any amount from $0 to the cap; unclaimed CCA does not expire and stays in UCC.  
 
 Common reasons to claim less than the maximum:
 - Loss year: preserve the deduction for a future year that produces tax at a higher marginal rate
@@ -246,7 +217,7 @@ The opposite move can also pay:
 
 ## Capitalize-vs-expense thresholds
 
-Two thresholds shape what gets onto Schedule 8 in the first place:
+Several thresholds shape what gets onto Schedule 8 in the first place:
 - *De minimis bookkeeping policy*: many small CCPCs set a $500 (sometimes $1,000 or $2,500) capitalization floor in their own policy; below it, items are expensed regardless of useful life
   - This is a bookkeeping convention, not a CRA rule
 - *Class 12 tools threshold*: tools and instruments costing under $500 automatically go to Class 12 at 100% (no half-year rule for most items), so a $300 monitor stand and a $600 office chair are taxed differently *by class*, not by policy
@@ -279,7 +250,7 @@ Out of scope here:
 
 ## Bookkeeping and T2 schedules
 
-In the books (accrual + tax basis, per [Small Business Tax Overview](../Small-Business-Tax-Overview.md)):
+In the books (accrual + tax basis, per [Small Business Tax Overview](../../Small-Business-Tax-Overview.md)):
 - At acquisition: debit the fixed-asset GIFI account (`Computer equipment` 1774, `Furniture and fixtures` 1787, `Motor vehicles` 1742, `Machinery and equipment` 1900, `Goodwill / intangibles` 2010-series, with goodwill at 2012); credit `Cash` or `Accounts payable`
 - Tax-basis-only convention: skip monthly accounting depreciation entirely; book the CCA at year-end as the period charge (debit `Amortization of tangible assets` 8670 / credit the relevant accumulated-amortization account)
 - GAAP-style books convention: book accounting depreciation monthly per the corp's policy; add it back on Schedule 1; deduct CCA from Schedule 8
@@ -287,178 +258,35 @@ In the books (accrual + tax basis, per [Small Business Tax Overview](../Small-Bu
 T2 schedules involved with CCA:
 - *Schedule 8* (T2 SCH8): the per-class CCA computation; columns include opening UCC, cost of additions, AIIP / ZEV adjustment, dispositions, UCC after additions and dispositions, half-year adjustment, CCA rate, CCA claimed, closing UCC; T2 software (FutureTax, TaxCycle, ProFile) keeps an asset register and rolls up to S8 automatically
 - *S8 reconciliation worksheet* (S8RecWS in TaxCycle, "Reconcile Fixed Assets" in CCH iFirm): reconciles book fixed-asset balances on Schedule 100 to the tax UCC; useful as a sanity check
-- *Schedule 1* (S1): reconciles book to tax — add back book amortization (GIFI 8670 and any other amortization lines); deduct CCA from S8
+- *Schedule 1* (S1): reconciles book to tax by adding back book amortization (GIFI 8670 and any other amortization lines) and deducting CCA from S8
 - *Schedule 100* (S100): balance sheet, with cost and accumulated-amortization GIFI codes
 - *Schedule 125* (S125): income statement, with amortization expense on GIFI 8670
 
 
-## Worked examples
-
-Three multi-year walkthroughs covering the most common owner-managed CCPC scenarios.  
-Each shows the ledger entries, the relevant Schedule 8 column, and the Schedule 1 reconciliation.  
-Calendar fiscal year (Jan 1 to Dec 31) is assumed unless noted.
-
-### Example 1: Class 50 laptop (IT consulting CCPC)
-
-Setup: single-shareholder IT consulting CCPC.  
-Buys a laptop for $4,520 (including 13% HST) on Mar 1 2026; the corp is HST-registered and claims the $520 ITC; capitalizes the $4,000 net to Class 50.  
-
-IT-consulting-specific allocation calls:
-- Systems software bundled with the laptop (Windows, drivers) → same Class 50; do not split
-- Standalone application software (e.g. a $200 perpetual licence for an IDE) → Class 12 (100%); application software is subject to the half-year rule, halving the first-year claim outside the AIIP window
-  - The reinstated AIIP suspends it for a 2026 acquisition
-- SaaS subscriptions (Office 365, AWS, Claude) → operating expense, GIFI 9150 Computer-related expenses; never capitalized regardless of annual cost
-- A separate $300 second monitor → arguably Class 12 (small tools < $500, treated as a standalone instrument) or Class 50 (computer peripheral, bundled with the laptop's role); pick a convention in the bookkeeping policy and apply it consistently
-
-Year 1 (2026):
-
-Mar 1 entry:
-- Debit `Computer equipment - cost` (GIFI 1774) = $4,000
-- Debit `HST receivable` = $520
-- Credit `Cash` = $4,520
-
-The laptop is available for use on Mar 1 (turned on, used to deliver consulting that day).  
-
-Schedule 8 Class 50 row:
-- Opening UCC: $0
-- Cost of additions: $4,000
-- Dispositions: $0
-- Standard Class 50 declining-balance rate: 55%
-- Without AIIP, the half-year adjustment would give a base of $2,000 and CCA of $2,000 × 55% = $1,100
-- Under the reinstated AIIP (this 2026 acquisition is available for use before 2030), the half-year rule is suspended and the first-year base is 150% of the addition: CCA of $6,000 × 55% = $3,300 — three times the half-year figure
-- Closing UCC: $4,000 − CCA claimed (e.g. $700 with the AIIP deduction)
-
-Year 2 (2027):
-
-No transactions.  
-Schedule 8 Class 50 row:
-- Opening UCC: from year 1
-- Additions: $0; dispositions: $0; half-year adjustment: none (no additions)
-- CCA: 55% × opening UCC
-- Closing UCC: opening UCC − CCA
-
-Year 3 (2028): laptop sold for $400 cash on Aug 15 2028.
-
-Aug 15 entry (book side, GAAP-style books):
-- Debit `Cash` = $400
-- Debit `Accumulated amortization - computer equipment` for the cumulative book amortization
-- Credit `Computer equipment - cost` (GIFI 1774) = $4,000
-- Plug the residual to `Gain on disposal of capital assets` (GIFI 8210) or `Loss on disposal of capital assets`
-
-Schedule 8 Class 50 row:
-- Opening UCC: from year 2
-- Dispositions: $400 (lesser of proceeds $400 and original cost $4,000 = $400)
-- Closing UCC: opening UCC − $400 − CCA claimed
-- If the laptop was the only Class 50 asset and the resulting balance is positive, claim the residual as a *terminal loss* (ITA s.20(16))
-- If the resulting balance is negative, the excess is *recapture* (ITA s.13(1))
-
-Schedule 1 reconciliation for year 3:
-- Add back: book amortization expense for the year and the accounting gain/loss on disposal
-- Deduct: CCA from Schedule 8 (including any terminal loss)
-
-
-### Example 2: Class 8 floor polisher (physical-service CCPC)
-
-Setup: single-shareholder commercial cleaning CCPC.  
-Buys a $1,800 floor polisher on Jun 15 2026; the corp is HST-registered and claims the $234 ITC; capitalizes $1,800 to Class 8.  
-
-Why Class 8 and not 12: cost is at or above the $500 Class 12 tools threshold, so the tool-instrument exemption does not apply.  
-No other class fits, so the catch-all Class 8 applies at 20% declining balance with the half-year rule.  
-
-Year 1 (2026):
-
-Jun 15 entry:
-- Debit `Machinery and equipment - cost` (GIFI 1900) = $1,800
-- Debit `HST receivable` = $234
-- Credit `Cash` = $2,034
-
-Schedule 8 Class 8 row:
-- Opening UCC: $0
-- Cost of additions: $1,800
-- Dispositions: $0
-- Without AIIP, half-year-adjusted base = $900, and CCA = 20% × $900 = $180
-- Under the reinstated AIIP, the first-year deduction is $1,800 × 1.5 × 20% = $540 and closing UCC is $1,260; the multi-year tail below is shown on the pre-AIIP $1,620 basis to illustrate the declining-balance mechanics
-- Closing UCC: $1,800 − $180 = $1,620
-
-Year 2 (2027) and onward (no further transactions in the class):
-- Each year: CCA = 20% × opening UCC; the pool asymptotes to zero, never reaches it under pure declining balance
-- Year 2 closing: $1,620 × 0.80 = $1,296
-- Year 3 closing: $1,296 × 0.80 = $1,036.80
-- By year 5 of this schedule, ~$664 of UCC remains; by year 10, ~$217
-
-When to trigger a terminal loss: when the corp disposes of every piece of Class 8 property in the year, the residual UCC becomes a deduction (ITA s.20(16)).  
-For a multi-asset pool, this is rarely useful; for a single-asset class that has been sold or scrapped, it cleans up the pool.  
-
-For contrast: a $400 hand-tool bought the same year would be Class 12 (under the $500 threshold) and 100% deductible in year 1 — no pool, no tail.  
-Splitting purchases just below $500 vs just above creates very different tax timing for similar-looking spend.
-
-
-### Example 3: Class 14.1 incorporation expenses
-
-Setup: corp is incorporated on Apr 1 2026 (first fiscal year Apr 1 2026 to Mar 31 2027) at a total cost of $4,200 in incorporation expenses (legal fees, name search, registry filing, minute book).  
-
-Year 1 (first fiscal year):
-
-The first $3,000 is *immediately deductible*; only the excess of $1,200 is capitalized to Class 14.1.
-
-Apr 1 entry:
-- Debit `Professional fees` (GIFI 8860) = $3,000
-- Debit `Goodwill / intangible assets - cost` (GIFI 2010 intangible assets, which includes organization/incorporation costs; goodwill is 2012) = $1,200
-- Credit `Cash` = $4,200
-
-Schedule 8 Class 14.1 row:
-- Opening UCC: $0
-- Cost of additions: $1,200
-- Half-year applies; adjusted base = $600
-- Class 14.1 rate: 5%
-- CCA: 5% × $600 = $30
-- Closing UCC: $1,200 − $30 = $1,170
-
-Short-fiscal-year note: this first fiscal year is exactly 365 days (Apr 1 2026 to Mar 31 2027 in a non-leap-year alignment), so no proration.  
-If incorporation had been Oct 1 2026 with a Mar 31 2027 year-end, the first fiscal year would be 182 days and CCA would be prorated under Regulation 1100(3): $30 × (182 / 365) ≈ $14.96.  
-Class 14.1 is *not* in the Regulation 1100(3) proration-exception list.
-
-Year 2 onward:
-- Each year: CCA = 5% × opening UCC
-- Year 2 closing: $1,170 × 0.95 = $1,111.50
-- Year 3 closing: $1,055.93
-- After 20 years of full-rate CCA, ~$420 of UCC remains; the pool decays geometrically
-
-What if incorporation expenses total *less than $3,000*: the entire amount is immediately deductible in year 1, nothing goes to Class 14.1, and Schedule 8 has no Class 14.1 entry.  
-This is the common case for a corporation set up online for a few hundred dollars (e.g. through Ownr or a similar service).
-
-What if a Class 14.1 UCC pool becomes immaterial: continue claiming the geometric tail year by year.  
-There is no CRA "write off below $X" rule; the only ways to clear a Class 14.1 pool are:
-- Acquire more Class 14.1 property and eventually dispose of all of it (rare for owner-managed CCPCs)
-- The corporation ceases business (triggers terminal loss under the s.20(16.1)(c) cessation exception)
-- The corporation winds up
-
-Most owner-managed CCPCs carry the small residual on Schedule 8 indefinitely.  
-Leaving a $50 line on S8 is correct: CRA expects pool continuity.  
-Merging low-balance pools in the corp's own asset register is fine internally, but the S8 filing must still show the running UCC by class.
-
-
 ## Edge cases
 
-- *Personal-use proportion* on a vehicle: keep a kilometre log; the personal-use portion of CCA, fuel, insurance, and other vehicle costs is a shareholder benefit under ITA s.6 / s.15 and must be added to the shareholder's personal income; see [Owner-corporation transactions](../Owner-Corporation-Transactions.md) for the standby charge, operating cost benefit, and the personal-car allowance alternative
+- *Personal-use proportion* on a vehicle: keep a kilometre log; the personal-use portion of CCA, fuel, insurance, and other vehicle costs is a shareholder benefit under ITA s.6 / s.15 and must be added to the shareholder's personal income; see [Owner-corporation transactions](../../Owner-Corporation-Transactions.md) for the standby charge, operating cost benefit, and the personal-car allowance alternative
 - *Investment Tax Credit recapture*: ITCs claimed against capital cost reduce UCC in the next year (s.13(7.1)); relevant for SR&ED claimants
 - *Available-for-use 357-day delay*: cost of property bought in the last weeks of a fiscal year is capitalized but ineligible for CCA until next year if not yet in service
-- *Non-arm's-length acquisitions*: deemed-cost rules in s.13(7)(e) cap UCC at the seller's UCC plus a fraction of any gain — common in family-CCPC transfers, share rollovers under s.85, and asset transfers between associated corporations
+- *Non-arm's-length acquisitions*: deemed-cost rules in s.13(7)(e) cap UCC at the seller's UCC plus a fraction of any gain; common in family-CCPC transfers, share rollovers under s.85, and asset transfers between associated corporations
 
 
 ## Related
 
-- [Cost Recovery](Cost-Recovery.md)
-- [Materials and CIP](Materials-And-CIP.md)
-- [Inventory](Inventory-And-COGS.md)
-- [Small Business Tax Overview](../Small-Business-Tax-Overview.md)
-- [Adjusted Cost Base](../Adjusted-Cost-Base/Adjusted-Cost-Base.md)
-- [Capital Dividend Account](../Capital-Dividend-Account/Capital-Dividend-Account.md)
-- [HST](../HST.md)
-- [Expense Classification](../Expense-Classification.md)
-- [Owner-corporation transactions](../Owner-Corporation-Transactions.md)
-- [Glossary](../Glossary.md)
-- [Whole-dollar rounding](../Whole-Dollar-Rounding.md)
+- [CCA Classification](CCA-Classification.md)
+- [CCA Worked examples](CCA-Examples.md)
+- [CCA Tracking](CCA-Tracking.md)
+- [Cost Recovery](../Cost-Recovery.md)
+- [Materials and CIP](../Materials-And-CIP.md)
+- [Inventory](../Inventory-And-COGS.md)
+- [Small Business Tax Overview](../../Small-Business-Tax-Overview.md)
+- [Adjusted Cost Base](../../Adjusted-Cost-Base/Adjusted-Cost-Base.md)
+- [Capital Dividend Account](../../Capital-Dividend-Account/Capital-Dividend-Account.md)
+- [HST](../../HST.md)
+- [Expense Classification](../../Expense-Classification.md)
+- [Owner-corporation transactions](../../Owner-Corporation-Transactions.md)
+- [Glossary](../../Glossary.md)
+- [Whole-dollar rounding](../../Whole-Dollar-Rounding.md)
 
 
 ## Citations

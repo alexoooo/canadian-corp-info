@@ -28,7 +28,7 @@ Limitations:
 
 - [Cost Recovery](Cost-Recovery.md): overview of the three cost-recovery channels, concept map, and shared acquisition-cost / available-for-use / change-of-use rules
 - [Materials and CIP](Materials-And-CIP.md): self-constructed fixed assets
-- [Capital Cost Allowance](Capital-Cost-Allowance.md): depreciable property
+- [Capital Cost Allowance](Capital-Cost-Allowance/Capital-Cost-Allowance.md): depreciable property
 
 
 ## Inventory versus other purchase types <!-- [done] -->
@@ -52,7 +52,7 @@ Typical cases:
 
 A property is *inventory* or *depreciable property*, never both:
 - Inventory is matched to revenue through cost of sales (COGS); the cost is deducted at the moment of sale
-- Depreciable property is held to earn income over time; the cost is deducted over its life through CCA (see [Capital Cost Allowance](Capital-Cost-Allowance.md))
+- Depreciable property is held to earn income over time; the cost is deducted over its life through CCA (see [Capital Cost Allowance](Capital-Cost-Allowance/Capital-Cost-Allowance.md))
 
 *Purpose at acquisition* determines which category applies:
 - Bought to resell: inventory
@@ -413,7 +413,7 @@ Year-end Schedule 125 if 300 units are sold during the year at $70 each:
 - *Consignment inventory*: goods physically present on the corp's premises but legally owned by another party (or vice versa) are *not* on the corp's books; book only inventory the corp owns under contract; a clear consignment agreement and a separate count tag are the audit evidence
 - *Related-party purchases*: inventory bought from a non-arm's-length supplier at above-FMV is capped at FMV under ITA [s.69(1)(a)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-69.html); the excess is denied (the corp paid too much, but only gets to deduct the FMV portion)
 - *Inventory appropriated for shareholder use*: a CCPC giving inventory to a shareholder (or to a related person) triggers a deemed disposition at FMV (s.69) and a *shareholder benefit* under ITA [s.15](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-15.html); this also has GST/HST self-supply implications; treat as a sale at FMV in the books and report the benefit on the shareholder's T4A (code 028, Other income), or on a T4 only when it is conferred on them as an employee (out of scope here, see [Dividends](../Dividends/Dividends.md) for the dividend path)
-- *Software, digital subscriptions, SaaS*: not inventory; SaaS is an operating expense; perpetually licensed software is Class 12 (application software) or Class 50 (systems software bundled with hardware); see [Capital Cost Allowance](Capital-Cost-Allowance.md)
+- *Software, digital subscriptions, SaaS*: not inventory; SaaS is an operating expense; perpetually licensed software is Class 12 (application software) or Class 50 (systems software bundled with hardware); see [Capital Cost Allowance](Capital-Cost-Allowance/Capital-Cost-Allowance.md)
 - *Trade samples and demo units*: tracked separately from saleable inventory; if eventually scrapped, expense at the point of removal; if eventually sold, restore to inventory at the residual book value
 - *Inventory of a discontinued line*: an obsolescence write-down to expected liquidation value is supportable under s.10(1); document the obsolescence trigger (date the discontinuation decision was made, supplier announcement, etc.)
 - *Sales tax in non-harmonized provinces*: PST is non-recoverable and forms part of inventory cost in those provinces; HST in HST-registered provinces is recoverable and is not part of cost
@@ -434,7 +434,7 @@ Year-end Schedule 125 if 300 units are sold during the year at $70 each:
 
 - [Cost Recovery](Cost-Recovery.md)
 - [Materials and CIP](Materials-And-CIP.md)
-- [Capital Cost Allowance](Capital-Cost-Allowance.md)
+- [Capital Cost Allowance](Capital-Cost-Allowance/Capital-Cost-Allowance.md)
 - [Small Business Tax Overview](../Small-Business-Tax-Overview.md)
 - [Ledger and Accounts](../Ledger-And-Accounts.md)
 - [Adjusted Cost Base](../Adjusted-Cost-Base/Adjusted-Cost-Base.md)

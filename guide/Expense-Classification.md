@@ -7,7 +7,7 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
 Every cost the corporation incurs lands on a *GIFI* code — the *General Index of Financial Information*, CRA's standardized chart of accounts (RC4088).  
 Operating expenses are reported on Schedule 125 (the income statement); capital assets sit on Schedule 100 (the balance sheet) and are deducted over time through capital cost allowance.  
 This page covers the income-statement side: deciding whether a cost is a current expense or a capital asset, and which Schedule 125 line it belongs on.  
-For the definition of GIFI itself see [Glossary](Glossary.md); for the balance-sheet and CCA side see [Capital Cost Allowance](Cost-Recovery/Capital-Cost-Allowance.md).  
+For the definition of GIFI itself see [Glossary](Glossary.md); for the balance-sheet and CCA side see [Capital Cost Allowance](Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md).  
 
 Limitations:
 - Covers the operating-expense lines an owner-managed service or consulting CCPC actually uses; the full RC4088 listing has hundreds of codes for industries out of scope here
@@ -47,7 +47,7 @@ flowchart TD
     Op --> Pick["Pick the Schedule 125<br/>line by category"]
 ```
 
-For how a capital cost is then deducted (CCA classes, the half-year rule, the Accelerated Investment Incentive), see [Capital Cost Allowance](Cost-Recovery/Capital-Cost-Allowance.md).  
+For how a capital cost is then deducted (CCA classes, the half-year rule, the Accelerated Investment Incentive), see [Capital Cost Allowance](Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md).  
 For what gets folded into the cost of an asset or inventory rather than expensed, see [Cost Recovery](Cost-Recovery/Cost-Recovery.md).  
 
 
@@ -97,7 +97,7 @@ The split follows the capitalize-or-expense fork:
 
 So a recurring software subscription — a month-to-month or annual SaaS — is `9150`; the laptop you run it on is `1774` and depreciates.  
 `8810` Office expenses is a defensible alternative home for software for a corp that prefers to keep all software there, but `9150` is the more precise line.  
-For the asset-side mechanics (Class 50, Class 12, the half-year rule, the AIIP), see [Capital Cost Allowance](Cost-Recovery/Capital-Cost-Allowance.md).  
+For the asset-side mechanics (Class 50, Class 12, the half-year rule, the AIIP), see [Capital Cost Allowance](Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md).  
 
 
 ## HST and the booked amount
@@ -134,7 +134,7 @@ For inventory costing, the COGS identity, and which channel a cost belongs to, s
 
 - [Ledger and Accounts](Ledger-And-Accounts.md)
 - [Cost Recovery](Cost-Recovery/Cost-Recovery.md)
-- [Capital Cost Allowance](Cost-Recovery/Capital-Cost-Allowance.md)
+- [Capital Cost Allowance](Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md)
 - [Inventory and COGS](Cost-Recovery/Inventory-And-COGS.md)
 - [HST](HST.md)
 - [Foreign Currency](Foreign-Currency.md)

@@ -159,7 +159,7 @@ Two ledger accounts run alongside the corp's commercial activity through each re
 - `HST receivable` (asset): every input tax credit (ITC) the corp accrues; closed out against `HST payable` at the period-end net-tax calculation
 - `HST collected` or `HST payable` (liability): every dollar of HST the corp charges on a taxable supply; closed out against `HST receivable` at period-end
 
-This account naming is the canonical convention used in the worked examples on [Inventory](Cost-Recovery/Inventory-And-COGS.md), [Capital Cost Allowance](Cost-Recovery/Capital-Cost-Allowance.md), and [Materials and CIP](Cost-Recovery/Materials-And-CIP.md).  
+This account naming is the canonical convention used in the worked examples on [Inventory](Cost-Recovery/Inventory-And-COGS.md), [Capital Cost Allowance](Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md), and [Materials and CIP](Cost-Recovery/Materials-And-CIP.md).  
 
 Posting pattern on a sale to a Canadian customer (HST-registered Ontario corp):
 - Debit `Cash` or `Accounts receivable` = sale price + 13% HST
@@ -206,7 +206,7 @@ Documentary requirements escalate with invoice size (ETA Regulations, *Input Tax
 Specific limits and denials:
 - *Meals and entertainment*: ITC limited to 50% of the HST paid (ETA [s.236](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-236.html)), mirroring the income-tax 50% limit under ITA s.67.1
 - *Club memberships and dining/recreational facility fees*: ITC denied (ETA [s.170(1)(a)](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-170.html))
-- *Passenger vehicles*: ITC capped at the $39,000 + applicable taxes Class 10.1 ceiling (ETA s.201); see [Capital Cost Allowance](Cost-Recovery/Capital-Cost-Allowance.md) for the Class 10.1 mechanics that mirror this
+- *Passenger vehicles*: ITC capped at the $39,000 + applicable taxes Class 10.1 ceiling (ETA s.201); see [Capital Cost Allowance](Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md) for the Class 10.1 mechanics that mirror this
 - *Capital personal property used partly for personal purposes* (e.g. a vehicle or computer): all-or-nothing under ETA [s.199](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-199.html) — full ITC if business use exceeds 50%, no ITC if 50% or less; this is not a sliding proration (the 10%–90% proration is the capital-*real*-property rule, not the rule for a corporation's capital personal property); for the income-tax side of the same mixed use (per-km allowance, standby charge, shareholder benefits) see [Owner-corporation transactions](Owner-Corporation-Transactions.md)
 - *Property and services acquired for making exempt supplies*: ITC denied (a typical CCPC has no exempt supplies, but residential rent and most financial services are common exempt categories that block ITCs on the related inputs)
 
@@ -215,7 +215,7 @@ Time limits:
 - *Specified persons* (listed financial institutions and registrants with annual taxable supplies over $6M): 2 years on the same basis
 
 Capital property and ITCs:
-- Business use over 50%: full ITC on the HST portion at the time of acquisition; the net cost (excluding HST) enters the capital cost for the appropriate CCA class (see [Capital Cost Allowance](Cost-Recovery/Capital-Cost-Allowance.md))
+- Business use over 50%: full ITC on the HST portion at the time of acquisition; the net cost (excluding HST) enters the capital cost for the appropriate CCA class (see [Capital Cost Allowance](Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md))
 - Business use 50% or less on personal-use-eligible property (passenger vehicles, residences): ITC denied entirely; the full gross cost including HST enters the capital cost
 - A subsequent *change in use* triggers a deemed ITC adjustment under ETA [s.199(3)](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-199.html) / [s.200(2)](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-200.html) (a deemed sale claws back the prior ITC if business use drops to 50% or less; a deemed acquisition grants one if it rises above 50%); capital *real* property follows ETA [s.206](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-206.html) instead, with a sliding proration
 
@@ -279,7 +279,7 @@ For the full bookkeeping, invoice presentation, and the W-8BEN-E interaction wit
 Import HST on goods:
 - Collected by *Canada Border Services Agency* (CBSA) at the point of import on the *Commercial Accounting Declaration* (which replaced Form B3 when CARM became the system of record in October 2024; Customs Notice 24-29), calculated on the duty-paid value of the goods
 - If the corp is a GST/HST registrant, the import HST is recoverable as an ITC on the next return; the Commercial Accounting Declaration in the CARM Client Portal (or the broker's statement built from it) is the documentary support
-- If the corp is not registered, the import HST is permanent landed cost and is capitalized into inventory or capital cost (see [Inventory](Cost-Recovery/Inventory-And-COGS.md#imported-goods-and-fx) and [Capital Cost Allowance](Cost-Recovery/Capital-Cost-Allowance.md))
+- If the corp is not registered, the import HST is permanent landed cost and is capitalized into inventory or capital cost (see [Inventory](Cost-Recovery/Inventory-And-COGS.md#imported-goods-and-fx) and [Capital Cost Allowance](Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md))
 
 Import HST on services and intangibles:
 - *Self-assessed* by the recipient under ETA [s.218.1](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-218.1.html) when an imported service is acquired for use otherwise than exclusively in commercial activity
@@ -304,7 +304,7 @@ A change in use (s.199(3) / s.200(2)) triggers a deemed ITC adjustment in the ye
 - Use rises from 50% or less to over 50%: a deemed acquisition (s.199(3)) grants an ITC, proportional to the residual fair-market value
 - Capital *real* property follows ETA s.206 instead, with a sliding 10%–90% proration rather than the over-50% all-or-nothing test
 
-For the per-class CCA mechanics that consume the resulting net capital cost, see [Capital Cost Allowance](Cost-Recovery/Capital-Cost-Allowance.md).  
+For the per-class CCA mechanics that consume the resulting net capital cost, see [Capital Cost Allowance](Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md).  
 
 
 ## GST/HST flow
@@ -467,7 +467,7 @@ The break-even point against the regular method on Ontario services is roughly t
 - [Foreign Currency](Foreign-Currency.md)
 - [Cost Recovery](Cost-Recovery/Cost-Recovery.md)
   - [Inventory](Cost-Recovery/Inventory-And-COGS.md)
-  - [Capital Cost Allowance](Cost-Recovery/Capital-Cost-Allowance.md)
+  - [Capital Cost Allowance](Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md)
   - [Materials and CIP](Cost-Recovery/Materials-And-CIP.md)
 - [Ledger and Accounts](Ledger-And-Accounts.md)
 - [Expense Classification](Expense-Classification.md)

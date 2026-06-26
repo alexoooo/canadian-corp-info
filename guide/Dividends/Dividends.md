@@ -29,7 +29,7 @@ This page is a hub; these are the sub-pages:
 - [Declaring and paying a dividend](Declaring-And-Paying.md): resolution, eligible designation, the three dates, and payment channels
 - [Bookkeeping and information slips](Bookkeeping-And-Slips.md): journal entries, T5 slip and Summary, and NR4 for non-residents
 - [T2 reporting](T2-Reporting.md): Schedules 3, 53, and 55, the dividend-refund line, and Form T2054
-- [Worked examples](Worked-Examples.md): end-to-end examples
+- [Dividend examples](Dividends-Examples.md): end-to-end examples
 
 
 ## What is a dividend
@@ -253,7 +253,7 @@ The accounts above determine *which* dividend to pay; the steps to actually decl
 - [Declaring and paying a dividend](Declaring-And-Paying.md): directors' resolution, s.89(14) eligible designation, three dates and year-end timing, and payment channels
 - [Bookkeeping and information slips](Bookkeeping-And-Slips.md): double-entry journal entries, T5 slip and Summary, and NR4 for non-resident shareholders
 - [T2 reporting](T2-Reporting.md): Schedules 3, 53, and 55, dividend-refund line, and Form T2054 capital-dividend election
-- [Worked examples](Worked-Examples.md): four end-to-end examples (eligible, non-eligible, year-end NERDTOH recovery, capital dividend)
+- [Dividend examples](Dividends-Examples.md): four end-to-end examples (eligible, non-eligible, year-end NERDTOH recovery, capital dividend)
 
 
 ## Related

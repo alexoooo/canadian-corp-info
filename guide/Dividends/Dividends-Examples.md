@@ -1,6 +1,6 @@
 STATUS: AI GENERATED, REVIEW IN PROGRESS
 
-# Worked examples
+# Dividend examples
 
 See parent document: [Dividends](Dividends.md)
 

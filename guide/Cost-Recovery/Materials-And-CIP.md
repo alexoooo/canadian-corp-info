@@ -11,7 +11,7 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
 - Materials bought to build a fixed asset for the corp's own use are *not* inventory; they accumulate in a `Construction in progress` (CIP) general-ledger account (a balance-sheet asset account in the corp's chart of accounts) during construction
 - CIP produces *no deduction* while construction is underway: not inventory (so no COGS), and not yet available for use (so no CCA)
 - On completion *and* available for use (ITA [s.13(26)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-13.html)), the accumulated CIP balance transfers into the appropriate CCA class and becomes the *capital cost* for that class
-- From that point on, the cost is deducted year by year through annual CCA claims; see [Capital Cost Allowance](Capital-Cost-Allowance.md) for the half-year rule, UCC mechanics, recapture, and terminal loss
+- From that point on, the cost is deducted year by year through annual CCA claims; see [Capital Cost Allowance](Capital-Cost-Allowance/Capital-Cost-Allowance.md) for the half-year rule, UCC mechanics, recapture, and terminal loss
 - Building several assets at once from a shared stock of materials: track the materials in a running weighted-average pool, charge each build's *bill of materials* (BOM) into its own CIP, and transfer each build to its CCA class on its own available-for-use date (worked through in [Example 2](#example-2-multiple-builds-from-a-shared-materials-pool))
 
 Limitations:
@@ -28,7 +28,7 @@ Limitations:
 
 - [Cost Recovery](Cost-Recovery.md): overview of the three cost-recovery channels, concept map, and shared acquisition-cost / available-for-use / change-of-use rules
 - [Inventory](Inventory-And-COGS.md): goods held for resale
-- [Capital Cost Allowance](Capital-Cost-Allowance.md): depreciable property after the CIP transfer
+- [Capital Cost Allowance](Capital-Cost-Allowance/Capital-Cost-Allowance.md): depreciable property after the CIP transfer
 
 
 ## Two destinations for materials
@@ -61,7 +61,7 @@ Change of use, finished item from the resale shelf into own use:
 - CCA mechanics apply from the conversion date
 - See [Cost Recovery — Change of use](Cost-Recovery.md#change-of-use) for the cross-channel framing (including the contested s.45 / s.13(7) reading) and the HST-side adjustment under ETA s.199(3) / s.200(2)
 
-See [Capital Cost Allowance](Capital-Cost-Allowance.md) for the half-year rule, UCC mechanics, recapture, and terminal loss.
+See [Capital Cost Allowance](Capital-Cost-Allowance/Capital-Cost-Allowance.md) for the half-year rule, UCC mechanics, recapture, and terminal loss.
 
 
 ## Bookkeeping and T2 schedules
@@ -81,7 +81,7 @@ During construction:
 
 After transfer:
 - Schedule 100 fixed-asset line for the destination CCA class reflects the transferred cost
-- Schedule 8 row for that class begins amortizing per the standard CCA mechanics; see [Capital Cost Allowance](Capital-Cost-Allowance.md)
+- Schedule 8 row for that class begins amortizing per the standard CCA mechanics; see [Capital Cost Allowance](Capital-Cost-Allowance/Capital-Cost-Allowance.md)
 
 
 ## CIP flow
@@ -221,7 +221,7 @@ Schedule 8 year 2 (2027), Class 6 row:
 Schedule 125 year 2 (2027):
 - Cost-of-sales section: no entries from the shed project (it never was inventory)
 - Operating expenses: `8670 Amortization of tangible assets` reflects whatever book amortization the corp posted for the shed and any other tangibles
-- Schedule 1 then adds back book amortization and deducts CCA (the $575 from Schedule 8); see [Capital Cost Allowance](Capital-Cost-Allowance.md) for the reconciliation mechanics
+- Schedule 1 then adds back book amortization and deducts CCA (the $575 from Schedule 8); see [Capital Cost Allowance](Capital-Cost-Allowance/Capital-Cost-Allowance.md) for the reconciliation mechanics
 
 Contrast with [Inventory](Inventory-And-COGS.md):
 - The same dollars as resale inventory would have flowed through COGS within a year or two
@@ -234,7 +234,7 @@ Both machines are destined for CCA Class 8 (20%, declining), the catch-all for e
 Construction overlaps and the two finish in different years.  
 Calendar fiscal year (Jan 1 to Dec 31) is assumed.  
 The corp is HST-registered and claims ITCs on all eligible inputs.  
-To keep the focus on the pool and the staggered completions, the Schedule 8 figures below use the plain half-year basis; these 2026 and 2027 in-service dates actually fall under the reinstated AIIP (enhanced first-year CCA, half-year rule suspended), covered in [Capital Cost Allowance](Capital-Cost-Allowance.md).
+To keep the focus on the pool and the staggered completions, the Schedule 8 figures below use the plain half-year basis; these 2026 and 2027 in-service dates actually fall under the reinstated AIIP (enhanced first-year CCA, half-year rule suspended), covered in [Capital Cost Allowance](Capital-Cost-Allowance/Capital-Cost-Allowance.md).
 
 The corp keeps a `Materials on hand` pool for steel (running weighted-average per kg) and a separate CIP balance per build.
 
@@ -322,7 +322,7 @@ Schedule 8 year 2 (2027), Class 8 row:
 Two builds, one class, two staggered additions: each is half-year-adjusted in the year it became available for use, and from year 2 they depreciate together as one Class 8 pool.  
 Build B's pre-completion costs produced no deduction in 2026; the trigger was available-for-use, not spend.
 
-On the schedules: no cost-of-sales entries in either year (never inventory); Schedule 8 carries the Class 8 pool above; Schedule 1 reconciles book amortization to CCA if the corp keeps full accounting books rather than a tax basis (see [Capital Cost Allowance](Capital-Cost-Allowance.md)).
+On the schedules: no cost-of-sales entries in either year (never inventory); Schedule 8 carries the Class 8 pool above; Schedule 1 reconciles book amortization to CCA if the corp keeps full accounting books rather than a tax basis (see [Capital Cost Allowance](Capital-Cost-Allowance/Capital-Cost-Allowance.md)).
 
 
 ## Out of scope
@@ -339,7 +339,7 @@ On the schedules: no cost-of-sales entries in either year (never inventory); Sch
 
 - [Cost Recovery](Cost-Recovery.md)
 - [Inventory](Inventory-And-COGS.md)
-- [Capital Cost Allowance](Capital-Cost-Allowance.md)
+- [Capital Cost Allowance](Capital-Cost-Allowance/Capital-Cost-Allowance.md)
 - [Small Business Tax Overview](../Small-Business-Tax-Overview.md)
 - [HST](../HST.md)
 - [Glossary](../Glossary.md)

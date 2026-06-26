@@ -38,7 +38,7 @@ The deduction *channel* is set by purpose at acquisition.
 - Trigger: *available for use* (ITA s.13(26)–(27)) transfers the accumulated cost into the appropriate CCA class
 - After transfer: standard CCA mechanics apply
 
-*Depreciable property* (mechanics in [Capital Cost Allowance](Capital-Cost-Allowance.md)):
+*Depreciable property* (mechanics in [Capital Cost Allowance](Capital-Cost-Allowance/Capital-Cost-Allowance.md)):
 - Purpose: long-lived assets the corp buys to use rather than resell
 - Mechanics: ITA s.18(1)(b) blocks immediate deduction; ITA s.20(1)(a) re-opens it through CCA
 - Cost: pooled in the class's *undepreciated capital cost* (UCC) under [s.13(21)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-13.html)
@@ -119,9 +119,9 @@ Most classes decline geometrically: the rate applies to the pool's remaining bal
 
 Tracking follows the pool, not the item:
 - one *UCC balance per class* to maintain, regardless of how many assets sit inside it
-- a separate asset list matters only for knowing what is still in each class and for disposition figures (see [Capital Cost Allowance — Pool mechanics](Capital-Cost-Allowance.md#pool-mechanics-ucc))
+- a separate asset list matters only for knowing what is still in each class and for disposition figures (see [Capital Cost Allowance — Pool mechanics](Capital-Cost-Allowance/Capital-Cost-Allowance.md#pool-mechanics-ucc))
 
-The full class list and per-class rates are in [Capital Cost Allowance — Classes and rates](Capital-Cost-Allowance.md#classes-and-rates).
+The full class list and per-class rates are in [Capital Cost Allowance — Classes and rates](Capital-Cost-Allowance/CCA-Classification.md#classes-and-rates).
 
 
 ## Cost-recovery flow <!-- [done] -->
@@ -172,7 +172,7 @@ The same rules govern what counts as part of the asset's cost across all three c
 
 Below a *de minimis* floor, a long-lived item is expensed immediately rather than capitalized into any channel.  
 The floor is the corporation's own policy (commonly $500, sometimes up to $2,500), applied consistently; it is a bookkeeping convention, not a CRA rule.  
-A residual UCC pool is not cleared the same way: once capitalized, a class pool runs its geometric tail until the asset is disposed of or the business ceases (see [Capital Cost Allowance — Capitalize-vs-expense thresholds](Capital-Cost-Allowance.md#capitalize-vs-expense-thresholds)).  
+A residual UCC pool is not cleared the same way: once capitalized, a class pool runs its geometric tail until the asset is disposed of or the business ceases (see [Capital Cost Allowance — Capitalize-vs-expense thresholds](Capital-Cost-Allowance/Capital-Cost-Allowance.md#capitalize-vs-expense-thresholds)).  
 
 Included in cost:
 - Invoice price net of trade discounts
@@ -255,7 +255,7 @@ Disposition closes the channel.
 - Year-end LCM write-downs and any later recoveries (the s.10(1) valuation re-applied at each year-end) also run through COGS
 - No capital-gains treatment on inventory
 
-*Depreciable-property disposition* (full mechanics in [Capital Cost Allowance](Capital-Cost-Allowance.md#recapture-and-terminal-loss)):
+*Depreciable-property disposition* (full mechanics in [Capital Cost Allowance](Capital-Cost-Allowance/Capital-Cost-Allowance.md#recapture-and-terminal-loss)):
 - UCC reduction = lesser of (proceeds, original cost)
 - Any "gain" above original cost is a capital gain on Schedule 6, not recapture
 - Closing UCC negative at year-end is *recapture* (s.13(1)) included in income; UCC reset to zero
@@ -264,7 +264,7 @@ Disposition closes the channel.
 
 Scrapping or retiring an item is a disposition too:
 - proceeds are whatever you receive, often $0 for a broken item thrown out; the pool drops by the lesser of (proceeds, original cost), so a $0 retirement removes nothing and the pool keeps depreciating
-- a terminal loss turns on the *class being empty* with positive UCC, not on whether an item still works: a broken-but-kept asset is still in the class, and a single retired item triggers no loss while others remain (detail in [Capital Cost Allowance — Recapture and terminal loss](Capital-Cost-Allowance.md#recapture-and-terminal-loss))
+- a terminal loss turns on the *class being empty* with positive UCC, not on whether an item still works: a broken-but-kept asset is still in the class, and a single retired item triggers no loss while others remain (detail in [Capital Cost Allowance — Recapture and terminal loss](Capital-Cost-Allowance/Capital-Cost-Allowance.md#recapture-and-terminal-loss))
 
 A CIP balance is never directly disposed of:
 - *Cancelled project*: write-down (deductible if the project served a business purpose)

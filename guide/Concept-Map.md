@@ -275,9 +275,9 @@ Each row pairs an event with the balance it moves:
 | Buy security | ACB (per security) | + cost and commissions (trade-date FX) | [ACB](Adjusted-Cost-Base/Adjusted-Cost-Base.md)         |
 | Return of capital (T3 Box 42) | ACB | − distribution | [ACB](Adjusted-Cost-Base/Adjusted-Cost-Base.md)         |
 | Sell security | ACB | remove sold units; realize gain or loss | [T5008](T5008/T5008.md)                                 |
-| Acquire depreciable asset | UCC (per class) | + capital cost (half-year on net additions, currently replaced by AIIP's larger first-year claim) | [CCA](Cost-Recovery/Capital-Cost-Allowance.md)          |
-| Claim CCA | UCC | − CCA for the year | [CCA](Cost-Recovery/Capital-Cost-Allowance.md)          |
-| Dispose depreciable asset | UCC | − lesser of proceeds or cost; recapture or terminal loss | [CCA](Cost-Recovery/Capital-Cost-Allowance.md)          |
+| Acquire depreciable asset | UCC (per class) | + capital cost (half-year on net additions, currently replaced by AIIP's larger first-year claim) | [CCA](Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md)          |
+| Claim CCA | UCC | − CCA for the year | [CCA](Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md)          |
+| Dispose depreciable asset | UCC | − lesser of proceeds or cost; recapture or terminal loss | [CCA](Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md)          |
 | Buy inventory | Inventory | + landed cost | [Inventory](Cost-Recovery/Inventory-And-COGS.md)        |
 | Sell inventory | Inventory | − unit cost (to COGS) | [Inventory](Cost-Recovery/Inventory-And-COGS.md)        |
 | Incur construction cost | CIP | + materials and labour | [Materials and CIP](Cost-Recovery/Materials-And-CIP.md) |
@@ -301,7 +301,7 @@ Carrying a loss back recovers tax already paid in a prior year; carrying it forw
 CCA is discretionary and UCC never expires, so deferring CCA in a loss year avoids deepening a non-capital loss, which does expire after 20 years.  
 A realized capital loss also draws down CDA by the non-taxable half it removes (see the event table above).  
 
-Details: [Capital loss carry forward / back](Adjusted-Cost-Base/Adjusted-Cost-Base.md#capital-loss-carry-forward--back--superficial-loss), [Capital Cost Allowance](Cost-Recovery/Capital-Cost-Allowance.md) (loss-year CCA timing).  
+Details: [Capital loss carry forward / back](Adjusted-Cost-Base/Adjusted-Cost-Base.md#capital-loss-carry-forward--back--superficial-loss), [Capital Cost Allowance](Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md) (loss-year CCA timing).  
 
 
 ## Filing calendar
