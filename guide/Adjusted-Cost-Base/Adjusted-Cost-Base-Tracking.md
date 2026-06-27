@@ -82,6 +82,14 @@ Inputs (from investment confirmations and T3):
   - Free-form text to capture any auxiliary information (e.g. if the given entry was audited)
   - Can leave blank if there is nothing particularly noteworthy about transaction
 
+The names and relative ordering of columns is not a fixed requirement, renaming or reordering (or adding extra informational columns) doesn't change the math.  
+This guide uses the following convention:
+- Lead with the identifying inputs (`Date`, `Symbol`, `Action`)
+- Keep the input columns to the left of the computed output and intermediate columns
+- Keep the free-form `Note` last
+
+Row order, unlike column order, is functional: rows must stay in transaction order per symbol (see [Inputs: data entry](#inputs-data-entry)).  
+
 
 ## Inputs: data entry
 

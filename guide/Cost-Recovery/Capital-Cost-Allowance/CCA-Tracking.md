@@ -18,33 +18,97 @@ CCA tracking has two layers, because the deduction is per class but the records 
 Keep all amounts in dollars and cents; round only when mapping to the whole-dollar T2 (see [Whole-dollar rounding](../../Whole-Dollar-Rounding.md)).  
 
 
-## Asset register
+## Class reference
 
-One row per item. Columns:
-- `Item`: a description that identifies the asset (e.g. "MacBook Pro 14, S/N …")
-- `Class`: the CCA class (`8`, `10`, `10.1`, `12`, `13`, `14`, `14.1`, `50`, …); choose it with [CCA Classification](CCA-Classification.md)
-- `Acquisition date`: the date the corp became entitled to the property
-- `Capital cost`: the amount added to the pool — purchase price plus freight, installation, duty, and non-recoverable tax, net of any HST input tax credit claimed
-- `Available-for-use date`: when CCA can start (often the acquisition date; later if the asset is not yet in service)
-- `Disposal date`: blank until the item is sold, scrapped, or otherwise disposed of
-- `Proceeds`: blank until disposal; then the sale price plus any insurance or compensation
-- `AIIP eligible`: yes if acquired after 2024 and available for use before 2030 (drives the first-year uplift)
-- `Note`: personal-use percentage, trade-in details, ITC reductions, anything that changes `Capital cost`
+Columns:
+- `Class`:
+  - CCA class: `8`, `10`, `10.1`, `12`, `13`, `14`, `14.1`, `50`, etc.
+- `Type`:
+  - Tangible or Intangible
+- `GIFI cost`: balance-sheet asset line (Schedule 100)
+- `GIFI accumulated amortization`: contra line paired with the cost line
+- `GIFI amortization expense`: income-statement line (Schedule 125)
 
-The register is a reference, not the deduction; the CCA math happens one row per class in the schedule below.  
+The same sheet is the natural home for the class constants the formulas use (`Rate`, `Method`, the half-year flag), keyed on the same `Class`.
+
+Common classes for a consulting CCPC:
+
+| Class | Type | GIFI cost | GIFI accum. amort. | GIFI amort. expense |
+|-------|------|-----------|--------------------|---------------------|
+| 8 | Tangible | `1740` | `1741` | `8670` |
+| 10, 10.1 | Tangible | `1742` | `1743` | `8670` |
+| 12 | Tangible | `1774` software, `1770` small tools | `1775`, `1771` | `8670` |
+| 13 | Tangible | `1918` | `1919` | `8670` |
+| 14, 14.1 | Intangible | `2010` | `2011` | `8570` |
+| 50 | Tangible | `1774` | `1775` | `8670` |
+
+The balance-sheet line follows the asset's nature, so a mixed class (12) lands on more than one cost line; `Type` and the amortization-expense line (`8670` / `8570`) still follow cleanly from the class.  
+For intangibles, use the specific line where one fits: `2012` goodwill, `2018` incorporation costs, `2020` trademarks/patents, `2022` customer lists, each with its own contra; otherwise `2010` Intangible assets.
+
+
+## Asset register <!-- [done] -->
+
+Columns:
+- `Item`:
+  - Short description that identifies the asset (e.g. "MacBook Pro 14")
+- `Class`:
+  - Choose from *class reference* `Class` (above)
+  - Determined per [CCA Classification](CCA-Classification.md)
+- `Acquisition date`:
+  - When the corporation became entitled to the property (purchase date)
+  - Drives eligibility and limits: AIIP eligibility, passenger-vehicle and zero-emission cost ceilings, available-for-use second-year fallback
+  - Part of the audit trail, serves as documentary proof
+- `Available-for-use date`:
+  - Often the acquisition date; later if the asset is not yet in service
+  - Determines the year when the addition enters the pool (CCA starts), when the half-year or AIIP adjustment applies
+- `Capital cost`:
+  - Amount added to the pool
+  - Purchase price plus freight, installation, duty, and non-recoverable tax
+  - Net of any HST input tax credit claimed
+- `Disposal date`:
+  - Blank until the item is sold, scrapped, or otherwise disposed of
+- `Proceeds`:
+  - Blank until disposal
+  - Sale price plus any insurance or compensation
+- `AIIP eligible`:
+  - True if acquired after 2024 and available for use before 2030
+  - Drives the first-year uplift
+- `Note`:
+  - Free-form text for anything worth recording about the row
+  - For example, a plain-English breakdown of what `Item` bundles ("incorporation lawyer + appraisal + tax lawyer"), personal-use percentage, trade-in details, or ITC reductions
+  - Can be left blank if there isn't anything noteworthy
+
+The register contributes to the CCA calculation:
+- `Additions` and `Dispositions` amounts for each class
+- Whether a class still holds any item, which decides a terminal loss when its last asset is disposed
+
+Calculation of the annual deduction is not done in the register, that happens in the *CCA schedule* (below).
+
+The names and relative ordering of columns is not a fixed requirement, renaming or reordering (or adding extra informational columns) doesn't change the math.  
+This guide uses the following convention:
+- Lead with what identifies the row (`Item`), then `Class`
+- Keep `Class` and the date columns to the left, so they stay visible when you freeze `Item` and are easy to filter and roll up on
+- Keep flags and the free-form `Note` last
+- You can choose to add informational columns, such as serial number, vendor, etc. 
 
 
 ## CCA schedule
 
 One row per `Class` per fiscal `Year`. Columns:
-- `Opening UCC`: the prior year's `Closing UCC` for the class (0 for a new class)
+- `Opening UCC`:
+  - the prior year's `Closing UCC` for the class
+  - 0 for a new class
 - `Additions`: cost of items in this class that become available for use this year
-- `Dispositions`: the disposition value of items disposed this year (capped, see formula)
+- `Dispositions`:
+  - the disposition value of items disposed this year
+  - capped at `MIN(Proceeds, Capital cost)` per item, see formula
 - `Adjustment`: the half-year or AIIP adjustment to the base
 - `CCA base`: the amount the rate is applied to
 - `Rate`: the class rate
 - `CCA (max)`: the most that can be claimed this year
-- `CCA (claimed)`: the amount actually claimed (discretionary, `0` to `CCA (max)`)
+- `CCA (claimed)`:
+  - the amount actually claimed
+  - discretionary: `0` to `CCA (max)`
 - `Closing UCC`: carried to next year's `Opening UCC`
 - `Recapture` / `Terminal loss`: end-of-year adjustments when the pool goes negative or empties
 
@@ -75,6 +139,7 @@ End-of-year pool adjustments:
 - *Terminal loss* (ITA [s.20(16)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-20.html)): if `Closing UCC > 0` and no items remain in the class, then `Terminal loss = Closing UCC` is a deduction and `Closing UCC` resets to 0
 
 Special cases the formula above does not cover:
+- *Mixed first-year treatments in one class-year*: a class with both AIIP and half-year additions in the same year breaks the single-factor `Adjustment` above; compute the adjustment per addition and sum it (`+0.5 × AIIP additions − 0.5 × half-year additions`); the pool stays one line per class, matching Schedule 8's separate AIIP and regular addition columns
 - *Full-expensing classes* (53, 54, 55, 56, 43.1 / 43.2 under AIIP): `CCA (max) = Net additions` in the year available for use (100%); any later residual depreciates at the class rate
 - *Class 13 and Class 14* are straight-line, not declining balance: CCA is `Capital cost ÷ amortization period` (the lease term + first renewal for 13; the remaining legal life for 14), subject to the first-year limit; the declining-balance formula does not apply
 - *Class 10.1*: half-CCA in the year of disposition; no recapture or terminal loss
@@ -90,6 +155,22 @@ The schedule's `Additions` and `Dispositions` are sums over the register, filter
 
 Compute `MIN(Proceeds, Capital cost)` in a helper column on the register so the disposition sum picks it up.  
 A pivot table over the register by `Class` and year produces the same two totals if you prefer pivots to `SUMIFS`.  
+
+
+## Posting to the ledger
+
+The reference table maps each class to its GIFI accounts, so the pivot can total the register and schedule into ledger entries.  
+
+At acquisition, the `Capital cost` posts to the balance-sheet cost line:
+- Debit the `GIFI cost` line for the class (e.g. `1774` for Class 50)
+
+Each year, the CCA posts as amortization:
+- Debit the amortization-expense line: `8670` for a tangible class, `8570` for an intangible class
+- Credit the accumulated-amortization contra line for the class (e.g. `1775` for Class 50, `2011` for Class 14.1)
+
+The ledger records *book* amortization; CCA is the *tax* deduction.  
+If you set book depreciation equal to CCA (common for a small corp), the per-class CCA is what you post.  
+If book amortization differs, post the book figure and let Schedule 1 reconcile it against CCA (see [Ledger and Accounts](../../Ledger-And-Accounts.md)).  
 
 
 ## Worked tie-out
@@ -132,6 +213,8 @@ The 2026 figures ($3,300 and $540 of CCA) match the two worked examples; the lat
 - [Adjusted Cost Base Tracking](../../Adjusted-Cost-Base/Adjusted-Cost-Base-Tracking.md)
 - [Whole-dollar rounding](../../Whole-Dollar-Rounding.md)
 - [Cost Recovery](../Cost-Recovery.md)
+- [Ledger and Accounts](../../Ledger-And-Accounts.md)
+- [Expense Classification](../../Expense-Classification.md)
 - [Glossary](../../Glossary.md)
 
 
@@ -146,6 +229,7 @@ The 2026 figures ($3,300 and $540 of CCA) match the two worked examples; the lat
   - Regulation 1100(3) - short-fiscal-year proration; exceptions
   - Regulation 1104(4) - AIIP definitions and phase-out
 - CRA T2 SCH8 - Capital Cost Allowance (CCA): https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2sch8.html
+- CRA RC4088 - General Index of Financial Information (GIFI), for the Schedule 100/125 codes: https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4088.html
 
 
 ## TODO
