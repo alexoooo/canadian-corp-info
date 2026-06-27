@@ -63,9 +63,9 @@ The shape of a year-end calculation:
 - Closing UCC = adjusted UCC base before half-year minus CCA claimed
 
 Tracking is per class, not per asset:
-- the pool is a single UCC figure for the whole class; there is no UCC per item, and Schedule 8 carries one row per class
-- keep a separate *asset register* (item, class, cost, in-service date, disposal date, proceeds) as a reference: it tells you what is still in each class and feeds the *additions* and *dispositions* totals, but it is not the CCA computation; see [CCA Tracking](CCA-Tracking.md)
-- the register grows with the number of items; the CCA math stays one row per class per year
+- The pool is a single UCC figure for the whole class; there is no UCC per item, and Schedule 8 carries one row per class
+- Keep a separate *asset register* (item, class, cost, in-service date, disposal date, proceeds) as a reference: it tells you what is still in each class and feeds the *additions* and *dispositions* totals, but it is not the CCA computation; see [CCA Tracking](CCA-Tracking.md)
+- The register grows with the number of items; the CCA math stays one row per class per year
 
 ```mermaid
 flowchart TB
@@ -171,11 +171,11 @@ Recapture is *active business income* when the asset was used in the active busi
 *Terminal loss* (ITA s.20(16)): if closing UCC is positive *and* no property remains in the class, the residual UCC is deducted from income for the year.
 
 Retiring or scrapping an asset:
-- throwing out or scrapping property is a *disposition* with proceeds equal to whatever you receive, often $0
-- the pool drops by the lesser of (proceeds, original cost), so a $0 retirement subtracts nothing and the class keeps depreciating
-- the terminal-loss trigger is the *class being empty* (every asset disposed of) with positive UCC: it turns on disposition, not on whether an asset still functions; a broken asset you keep is still property in the class
+- Throwing out or scrapping property is a *disposition* with proceeds equal to whatever you receive, often $0
+- The pool drops by the lesser of (proceeds, original cost), so a $0 retirement subtracts nothing and the class keeps depreciating
+- The terminal-loss trigger is the *class being empty* (every asset disposed of) with positive UCC: it turns on disposition, not on whether an asset still functions; a broken asset you keep is still property in the class
 - $0 proceeds leave the entire residual to be deducted as the terminal loss once the class empties; any proceeds reduce that loss, and proceeds above the remaining UCC become *recapture* instead
-- because the class is one pool, no loss is recognized on a single retired item while other assets remain in the class
+- Because the class is one pool, no loss is recognized on a single retired item while other assets remain in the class
 
 Class 10.1 exception (ITA [s.20(16.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-20.html), Regulation 1100(2.5)):
 - No recapture (the $39,000 cap already limited the deduction)
@@ -211,8 +211,8 @@ Common reasons to claim less than the maximum:
 - AII grind planning: a year close to the $50,000 AII threshold where reducing net income would not change the SBD outcome
 
 The opposite move can also pay:
-- a non-capital loss carries back 3 years as well as forward 20 (ITA [s.111(1)(a)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-111.html)), so claiming CCA to create or deepen a loss can recover tax already paid in the prior three years (requested on T2 Schedule 4)
-- worth it only when those prior years had tax to recover; a startup with no profitable history defers instead, leaving the deduction in UCC
+- A non-capital loss carries back 3 years as well as forward 20 (ITA [s.111(1)(a)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-111.html)), so claiming CCA to create or deepen a loss can recover tax already paid in the prior three years (requested on T2 Schedule 4)
+- Worth it only when those prior years had tax to recover; a startup with no profitable history defers instead, leaving the deduction in UCC
 
 
 ## Capitalize-vs-expense thresholds
@@ -228,23 +228,30 @@ These thresholds matter most for:
 - Software bundled with hardware: systems software → Class 50; standalone application software → Class 12 (100%); SaaS subscriptions → operating expense, GIFI 9150 (no capitalization at all)
 - Home-office equipment: only the business-use portion of cost goes into UCC; the personal-use portion is a shareholder benefit (s.15) or not capitalized
 
+For certain classes, you can expense an item in the books rather than capitalize and amortize it.  
+Where a class writes off the whole cost in the first year, capitalizing the item and expensing it results in the same deduction in the same year:
+- *Which classes*: most of Class 12 (the half-year-exempt items: sub-$500 tools, kitchen utensils, uniforms) and the *full-expensing* classes under AIIP (53, 43.1 / 43.2, 54 / 55 / 56)
+- *No spread*: nothing is amortized over later years, so the choice is bookkeeping mechanics, not timing, and expensing such an item directly costs no tax
+- *Software exception*: Class 12 application software stays under the half-year rule, so outside the AIIP window it deducts over two years and the equivalence fails
+- *When timing diverges*: only if the alternative is a declining-balance class (Class 8 at 20%, say), where the pool releases the cost over years; that gap is what the capitalization floor trades off
+- *On disposal*: a pooled item's proceeds can return as recapture (capped at cost), while an expensed item's proceeds are simply income; rarely material for low-value resales
 
 The de minimis floor is a policy choice within limits:
-- the Income Tax Act sets no dollar threshold; the test is the general current-vs-capital distinction, and CRA tolerates expensing amounts too small to matter
-- a floor of $500 to $2,500 is accepted if it is reasonable for the size of the business and applied consistently from year to year
+- The Income Tax Act sets no dollar threshold; the test is the general current-vs-capital distinction, and CRA tolerates expensing amounts too small to matter
+- A floor of $500 to $2,500 is accepted if it is reasonable for the size of the business and applied consistently from year to year
 
 Costs of setting the floor high:
-- expensing changes only *timing*: both routes deduct the full cost eventually, so a higher floor merely pulls the deduction earlier (a small gain on a sub-$2,500 item, smaller still while AIIP front-loads first-year CCA)
-- consistency cuts both ways: a high floor forces immediate expensing even in a loss year, where a non-capital loss expires after 20 years while undepreciated CCA never does
+- Expensing changes only *timing*: both routes deduct the full cost eventually, so a higher floor merely pulls the deduction earlier (a small gain on a sub-$2,500 item, smaller still while AIIP front-loads first-year CCA)
+- Consistency cuts both ways: a high floor forces immediate expensing even in a loss year, where a non-capital loss expires after 20 years while undepreciated CCA never does
 - "immaterial" scales with size: $2,500 is not credibly immaterial for a corp earning $40,000
-- over-expensing understates assets on any ASPE financial statements a bank or buyer relies on
+- Over-expensing understates assets on any ASPE financial statements a bank or buyer relies on
 
 Simplest tax-basis treatment: set a single $500 floor in a written policy, expense below it, capitalize at or above.  
 $500 is the easiest figure to defend (it matches the Class 12 tools line) and leaves larger items in CCA, where the discretionary claim keeps year-to-year flexibility.  
 
 Out of scope here:
-- a higher floor (toward $2,500) for a larger, steadily-profitable corp with no external-reporting needs
-- deferring deductions in a loss or low-rate year by capitalizing instead of expensing
+- A higher floor (toward $2,500) for a larger, steadily-profitable corp with no external-reporting needs
+- Deferring deductions in a loss or low-rate year by capitalizing instead of expensing
 - GAAP/ASPE statement presentation, where capitalization affects reported assets and earnings
 
 

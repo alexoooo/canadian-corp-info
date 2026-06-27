@@ -74,13 +74,13 @@ Unlike *Capital Cost Allowance* (CCA), the cost is not spread over years; unlike
 The cost-of-sales identity:
 - Opening inventory + purchases (net of returns) + freight-in + other direct costs − closing inventory = COGS
 - Schedule 125 enforces it as lines 8300 + 8320 + 8457 + 8450 − 8500 = 8518
-- the closing figure is set by the year-end *lower of cost or fair market value* (LCM) valuation under ITA [s.10(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-10.html), so the valuation method drives COGS directly
-- the cost-flow method is fixed year over year under s.10(2.1); valuing all inventory at FMV instead is the Regulation 1801 alternative
+- The closing figure is set by the year-end *lower of cost or fair market value* (LCM) valuation under ITA [s.10(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-10.html), so the valuation method drives COGS directly
+- The cost-flow method is fixed year over year under s.10(2.1); valuing all inventory at FMV instead is the Regulation 1801 alternative
 
 Mechanics, further down this page:
-- the running per-sale figure (units sold × current average cost) and the cost-of-sales GIFI codes (`8300`–`8519`): [Tracking through the year](#tracking-through-the-year)
-- the identity check and the Schedule 125 / Schedule 100 posting: [Year-end reconciliation](#year-end-reconciliation), [Bookkeeping and T2 schedules](#bookkeeping-and-t2-schedules)
-- shrinkage and LCM write-downs run through COGS (`8518`)
+- The running per-sale figure (units sold × current average cost) and the cost-of-sales GIFI codes (`8300`–`8519`): [Tracking through the year](#tracking-through-the-year)
+- The identity check and the Schedule 125 / Schedule 100 posting: [Year-end reconciliation](#year-end-reconciliation), [Bookkeeping and T2 schedules](#bookkeeping-and-t2-schedules)
+- Shrinkage and LCM write-downs run through COGS (`8518`)
 
 
 ## Valuation methods
@@ -148,8 +148,8 @@ FX gain or loss on payable settlement:
 
 GST/HST on imports:
 - Self-assessed and paid to Canada Border Services on the *Commercial Accounting Declaration* (which replaced Form B3 when CARM became the system of record in October 2024) at the point of import
-  - if the corp is HST-registered, the same amount is reclaimable as an ITC on the next GST/HST return
-  - if not, it is a permanent cost addition to inventory
+  - If the corp is HST-registered, the same amount is reclaimable as an ITC on the next GST/HST return
+  - If not, it is a permanent cost addition to inventory
 - See [HST](../HST.md) for the full mechanics
 
 
@@ -278,7 +278,7 @@ Step 5, post to the T2 schedules:
 - Schedule 100 closing line for each inventory GIFI code (1121, 1122, 1125, 1126 as applicable) reflects the corrected, LCM-adjusted closing balance
 - Schedule 125 cost-of-sales section uses the codes shown in [Tracking through the year](#tracking-through-the-year)
 - Schedule 1 is typically clean for inventory
-  - the most common adjustment is when the corp's book inventory differs from its tax inventory because of a one-time accounting change; flag this with the accountant rather than handling silently
+  - The most common adjustment is when the corp's book inventory differs from its tax inventory because of a one-time accounting change; flag this with the accountant rather than handling silently
 
 
 ## Bookkeeping and T2 schedules

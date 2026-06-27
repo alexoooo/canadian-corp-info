@@ -43,6 +43,7 @@ The "Half-year" column notes only the year-of-acquisition rule; under the reinst
 
 Classes touched on but not worked through here:
 - Class 1 (4%, declining): buildings; +2% allowance for non-residential, +6% for an M&P building, elected via Regulation 1101(5b.1); see CRA T4012
+- Class 3 (5%, declining) and Class 6 (10%, declining): marine and outdoor structures — wharves, docks, breakwaters, trestles — and certain older or wood-frame buildings; see [Example 1: Small wooden dock](#example-1-small-wooden-dock)
 - Classes 43.1 / 43.2: clean-energy equipment
 - Class 56: zero-emission automotive equipment
 
@@ -60,6 +61,36 @@ CRA's [Classes of depreciable property](https://www.canada.ca/en/revenue-agency/
 - *Limited-life vs unlimited-life intangibles*: an intangible with a fixed legal life (a patent, a term licence, a franchise for a set period) → Class 14, straight-line over that life; an intangible with no fixed life (goodwill, an unlimited franchise, a customer list) → Class 14.1 at 5%
 - *Incorporation and organization costs*: the first $3,000 is deducted immediately as a current expense (`8860` Professional fees), not capitalized; only the excess goes to Class 14.1
 - *Buildings*: a building the corp owns → Class 1 (4%), with a +2% (non-residential) or +6% (M&P) top-up available by separate-class election; out of depth here, see CRA T4012
+- *Wharves, docks, and marine structures*: a fixed waterfront structure is named in Schedule II, so it never defaults to the Class 8 catch-all or to a Class 1 building (Class 1 names a bridge, canal, culvert, and dam, but not a wharf or dock); a wooden wharf → Class 6 (10%); a wharf of concrete, steel, or stone → Class 3 (5%); a dock, a trestle, or a non-wooden breakwater → Class 3 (5%); the Regulations define neither "wharf" nor "dock", so the label turns on what the structure is and does; a floating dock on pontoons is arguably Class 8 equipment, not a fixed structure; the water lot or its Crown lease is not depreciable in this class; see [Example 1: Small wooden dock](#example-1-small-wooden-dock)
+- *GIFI line for a wharf or dock*: the cost goes to `1906` Wharves (the line the GIFI groups with docks, float walks, and marinas), the contra to `1907`, and the year's amortization to `8670`; the line is the same whether the CCA class is 3 or 6, so the GIFI presentation does not settle the CCA class
+
+
+## Worked classification cases
+
+Longer scenarios that walk a classification decision end to end with the full rationale; the one-line cases are under [Commonly confusing cases](#commonly-confusing-cases), and for the multi-year depreciation of a class once chosen see [CCA Worked examples](CCA-Examples.md).
+
+### Example 1: Small wooden dock
+
+*Scenario*: a waterfront-business CCPC builds a small wooden dock on poles for a few thousand dollars; small fishing boats (under 20 ft) and pontoon boats tie up to it; it is not used to load or unload cargo.
+
+*Walk the decision*:
+- Depreciable property used to earn income? Yes, a durable fixed structure used in the business; prorate the CCA for any personal or recreational use
+- Below the capitalization floor? No, a built structure is capital, not a current expense, even at a few thousand dollars
+- Named in Schedule II? Yes, both a dock and a wharf are named, so it never falls to the Class 8 catch-all or to a Class 1 building (Class 1 names a bridge, canal, culvert, and dam, not a wharf or dock)
+- Which named item, and what is it made of? The characterization below decides the class
+
+*Considerations*:
+- *Dock vs wharf*: a wharf is a structure where vessels lie to load and unload; a small, non-loading mooring for fishing boats and pontoons is the ordinary meaning of a dock → Class 3 (5%)
+- *Material qualifier asymmetry*: "wharf" splits by construction (wooden → Class 6 at 10%, concrete, steel, or stone → Class 3 at 5%), but "dock" has no material split, so being wooden does not move a dock into Class 6
+- *Fixed vs floating*: on poles it is a fixed structure, not equipment; a floating dock on pontoons that is not affixed to the bottom is arguably Class 8 equipment instead, a separate analysis
+- *Water lot*: the water lot itself, or a Crown or municipal water-lot lease, is not depreciable in this class; a long-term lease may instead be a Class 13 leasehold interest, tracked separately
+- *Repair vs capital*: replacing a few deck boards is a current expense; building the dock, or substantially rebuilding it, is the capital addition that enters the pool
+- *First-year treatment*: Class 3 is ordinary declining balance, so the half-year rule applies, or the AIIP uplift if the build is AIIP-eligible (available for use before 2030); it is not a full-expensing class
+- *Materiality*: on a small cost base the gap between 5% and 10% is only a few dollars of CCA a year, which favours the straightforward dock position over a dispute
+
+*Conclusion*: Class 3 (5%), as a dock. The Class 6 (10%) wooden-wharf reading is the aggressive alternative and is weak on these facts, because the structure does not function as a wharf; record why it is a dock (small, non-loading, small-craft mooring) so the position is documented.
+
+*Reporting*: the cost goes to `1906` Wharves (the line the GIFI groups with docks, float walks, and marinas), the contra to `1907`, and the year's amortization to `8670`; the GIFI line is the same whether the class is 3 or 6, so it does not settle the class. For the asset register and the year-by-year pool, see [CCA Tracking](CCA-Tracking.md).
 
 
 ## Special class rules
@@ -85,10 +116,11 @@ CRA's [Classes of depreciable property](https://www.canada.ca/en/revenue-agency/
 ## Citations
 
 - Income Tax Regulations (C.R.C., c. 945): https://laws-lois.justice.gc.ca/eng/regulations/C.R.C.,_c._945/
-  - Schedule II - class definitions
+  - Schedule II - class definitions (incl. Class 3 non-wooden and Class 6 wooden wharves, docks, and breakwaters)
   - Regulation 1100(1) - prescribed CCA rates by class
   - Regulation 1101(1af) - separate class prescribed for each Class 10.1 vehicle
   - Regulation 1101(5b.1) - separate-class election for non-residential building additional 2% / 6%
 - Income Tax Act [s.20(16.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-20.html) - terminal-loss exceptions (Class 10.1; Class 14.1 unless cessation)
 - CRA T4012 - T2 Corporation Income Tax Guide: https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4012.html
 - CRA Classes of depreciable property: https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/report-business-income-expenses/claiming-capital-cost-allowance/classes-depreciable-property.html
+- CRA RC4088 - General Index of Financial Information (GIFI), for the wharf line `1906`: https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4088.html

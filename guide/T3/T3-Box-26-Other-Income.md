@@ -40,11 +40,11 @@ In some contexts, *other income* is referred to as *property income*:
 - However, it can also come from sources unrelated to real estate; *property income* is a tax term
 
 Income can be classified in different ways:
-- *active* business vs *passive* non-business (i.e. investments or property rental)
-- *ordinary* income taxed at 100% vs *preferential* treatment as capital gains (inclusion rate) or dividends (gross-up and credit)
-- *resident* domestic recipient vs *non-resident* foreign recipient (outside the scope of this document)
+- *Active* business vs *passive* non-business (i.e. investments or property rental)
+- *Ordinary* income taxed at 100% vs *preferential* treatment as capital gains (inclusion rate) or dividends (gross-up and credit)
+- *Resident* domestic recipient vs *non-resident* foreign recipient (outside the scope of this document)
 - *Canadian-source* domestic payer vs *foreign-source* foreign payer
-- *trust* issuer with T3 vs *corporation* that issues T5
+- *Trust* issuer with T3 vs *corporation* that issues T5
 
 Some examples of income that can show up in T3 Box 26 from a vanilla ETF:
 - Canadian bonds - Canadian-sourced interest

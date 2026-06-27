@@ -84,7 +84,7 @@ Those concepts are the vocabulary the [Dividends](../Dividends/Dividends.md) and
 ## Citations
 
 - Canada Business Corporations Act (R.S.C., 1985, c. C-44): https://laws-lois.justice.gc.ca/eng/acts/C-44/
-  - separate legal existence, the shareholder/director/officer roles, and the records a corporation must keep
+  - Separate legal existence, the shareholder/director/officer roles, and the records a corporation must keep
 - Income Tax Act (R.S.C., 1985, c. 1 (5th Supp.)):
   - [s.125(7)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-125.html) - definition of "Canadian-controlled private corporation" (covered in [Small Business Tax Overview](../Small-Business-Tax-Overview.md))
 - CRA - Corporation income tax (T2) overview: https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/corporations.html

@@ -4,7 +4,7 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
 
 **Who this is for**: owners of a Canadian-controlled private corporation (CCPC) who want end-to-end CCA walkthroughs with ledger entries and the matching T2 schedules.  
 
-Three multi-year walkthroughs covering the most common owner-managed CCPC scenarios.  
+Four multi-year walkthroughs: three common owner-managed CCPC scenarios, plus a Class 3 dock for a waterfront business.  
 Each shows the ledger entries, the relevant Schedule 8 column, and the Schedule 1 reconciliation.  
 For the underlying rules see [Capital Cost Allowance](Capital-Cost-Allowance.md); for which class an asset goes in see [CCA Classification](CCA-Classification.md); for the per-row spreadsheet formulas see [CCA Tracking](CCA-Tracking.md).  
 Calendar fiscal year (Jan 1 to Dec 31) is assumed unless noted.  
@@ -150,12 +150,51 @@ Leaving a $50 line on S8 is correct: CRA expects pool continuity.
 Merging low-balance pools in the corp's own asset register is fine internally, but the S8 filing must still show the running UCC by class.
 
 
+## Example 4: Class 3 wooden dock (waterfront-business CCPC)
+
+Setup: single-shareholder waterfront-business CCPC (boat rentals and a small marina).  
+Builds a small wooden dock on poles over April 2026 for $6,780 (including 13% HST), available for use May 1 2026; the corp is HST-registered and claims the $780 ITC; capitalizes the $6,000 net to Class 3.  
+Small fishing boats and pontoons tie up to it; it is not a loading wharf, so it is a *dock* (Class 3, 5%), not a wooden wharf (Class 6, 10%) — see [Example 1: Small wooden dock](CCA-Classification.md#example-1-small-wooden-dock) for that classification call.  
+While the dock is being built the costs sit in construction-in-progress and are not yet depreciable; they move to Class 3 and start CCA only when it is available for use (see [Materials and CIP](../Materials-And-CIP.md)).  
+
+Year 1 (2026):
+
+May 1 entry:
+- Debit `Wharves - cost` (GIFI 1906) = $6,000
+- Debit `HST receivable` = $780
+- Credit `Cash` = $6,780
+
+Schedule 8 Class 3 row:
+- Opening UCC: $0
+- Cost of additions: $6,000
+- Dispositions: $0
+- Class 3 declining-balance rate: 5%
+- Without AIIP, the half-year adjustment would give a base of $3,000 and CCA of $3,000 × 5% = $150
+- Under the reinstated AIIP (available for use before 2030), the half-year rule is suspended and the first-year base is 150% of the addition: CCA of $9,000 × 5% = $450 (three times the half-year figure)
+- Closing UCC: $6,000 − $450 = $5,550
+
+Year-end book amortization, where book depreciation is set equal to CCA (the common small-corp convention):
+- Debit `Amortization of tangible assets` (GIFI 8670) = $450
+- Credit `Accumulated amortization - wharves` (GIFI 1907) = $450
+
+Year 2 (2027) and onward (no further transactions in the class):
+- Each year: CCA = 5% × opening UCC
+- Year 2 closing: $5,550 × 0.95 = $5,272.50
+- Year 3 closing: $5,272.50 × 0.95 = $5,008.88
+- A 5% pool decays very slowly: by year 20 roughly $2,100 of the $6,000 still sits in the pool, so a dock stays on Schedule 8 for decades
+
+Disposal: a dock is usually removed or scrapped rather than sold.
+- If the corp holds no other Class 3 property when the dock is removed, the remaining UCC is a *terminal loss* (ITA s.20(16))
+- If a storm or ice destroys it and insurance pays out, proceeds (capped at the $6,000 cost) above the then-current UCC are *recapture* (ITA s.13(1)); any insurance above $6,000 is a capital gain on Schedule 6, not recapture
+
+
 ## Related
 
 - [Capital Cost Allowance](Capital-Cost-Allowance.md)
 - [CCA Classification](CCA-Classification.md)
 - [CCA Tracking](CCA-Tracking.md)
 - [Cost Recovery](../Cost-Recovery.md)
+- [Materials and CIP](../Materials-And-CIP.md)
 - [HST](../../HST.md)
 - [Glossary](../../Glossary.md)
 

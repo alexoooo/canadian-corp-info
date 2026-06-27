@@ -118,8 +118,8 @@ An asset's cost is added to its class pool, and CCA is claimed on the pool as a 
 Most classes decline geometrically: the rate applies to the pool's remaining balance each year, so the deduction is largest in the first year and tapers off.  
 
 Tracking follows the pool, not the item:
-- one *UCC balance per class* to maintain, regardless of how many assets sit inside it
-- a separate asset list matters only for knowing what is still in each class and for disposition figures (see [Capital Cost Allowance — Pool mechanics](Capital-Cost-Allowance/Capital-Cost-Allowance.md#pool-mechanics-ucc))
+- One *UCC balance per class* to maintain, regardless of how many assets sit inside it
+- A separate asset list matters only for knowing what is still in each class and for disposition figures (see [Capital Cost Allowance — Pool mechanics](Capital-Cost-Allowance/Capital-Cost-Allowance.md#pool-mechanics-ucc))
 
 The full class list and per-class rates are in [Capital Cost Allowance — Classes and rates](Capital-Cost-Allowance/CCA-Classification.md#classes-and-rates).
 
@@ -263,8 +263,8 @@ Disposition closes the channel.
 - Class 10.1, Class 14.1, and replacement-property rules carry exceptions
 
 Scrapping or retiring an item is a disposition too:
-- proceeds are whatever you receive, often $0 for a broken item thrown out; the pool drops by the lesser of (proceeds, original cost), so a $0 retirement removes nothing and the pool keeps depreciating
-- a terminal loss turns on the *class being empty* with positive UCC, not on whether an item still works: a broken-but-kept asset is still in the class, and a single retired item triggers no loss while others remain (detail in [Capital Cost Allowance — Recapture and terminal loss](Capital-Cost-Allowance/Capital-Cost-Allowance.md#recapture-and-terminal-loss))
+- Proceeds are whatever you receive, often $0 for a broken item thrown out; the pool drops by the lesser of (proceeds, original cost), so a $0 retirement removes nothing and the pool keeps depreciating
+- A terminal loss turns on the *class being empty* with positive UCC, not on whether an item still works: a broken-but-kept asset is still in the class, and a single retired item triggers no loss while others remain (detail in [Capital Cost Allowance — Recapture and terminal loss](Capital-Cost-Allowance/Capital-Cost-Allowance.md#recapture-and-terminal-loss))
 
 A CIP balance is never directly disposed of:
 - *Cancelled project*: write-down (deductible if the project served a business purpose)

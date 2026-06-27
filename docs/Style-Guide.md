@@ -17,6 +17,20 @@ The guide has two registers, one per page:
 Every rule below applies to both voices unless noted.  
 
 
+## Write for the reader, not the repo
+
+Every page is the finished product a CCPC owner reads, not source that a later step compiles.  
+Address that reader and no one else; the body never speaks to the maintainer or to you as its author.  
+
+What that rules out:
+- Meta-commentary on the repository or the writing process: that a section is new, that more examples are planned, or that other pages exist as files
+- Phrases narrating the document set: "this is the start of a growing set", "each case follows the same shape", "as we noted for our purposes"
+- Authoring scaffolding in the body: a template a future example should follow, a convention for contributors, a note on what is unfinished
+
+Maintainer-facing notes keep to their own channels, all outside the body: the `STATUS:` marker, a heading status tag, a `## TODO` section, or `AGENTS.md`.  
+Reader-facing cross-links are not meta: linking to a related page guides the reader and is encouraged.  
+
+
 ## Section rhythm
 
 A section is a stack of short stanzas separated by blank lines.  
@@ -44,6 +58,9 @@ Let the facts stand in order and trust the reader to follow.
 ## Bullets
 
 - No trailing period on a bullet
+- Start each bullet with a capital letter
+  - Only the first character of the bullet is affected; text after a mid-bullet colon stays as written (`Foo: bar`)
+  - A leading literal keeps its own casing: a `code` identifier, a bare URL, an ITA section token (`s.40(3)`), or a brand styled lowercase (`finiki`)
 - One fact and one sentence per bullet; if a point needs more, add a sub-bullet rather than extending the parent line
   - To check: a period mid-bullet (one not inside a `code` span, a quoted example like `ACB cannot be negative.`, or an abbreviation) means two sentences, so split into separate bullets or a sub-bullet
   - A semicolon is fine for the house `*Label*: description; clause` form; reserve splitting for two independent facts
@@ -165,3 +182,6 @@ The tells, ordered by frequency in the pending pages:
 - *`**Label**: long sentence.` paragraph* → the colon-bullet convention
 - *Connective tissue* (`in turn`, `consequently`, `that said`) → delete; let the stanzas sequence themselves
 - *Trailing period on a bullet* → remove
+- *Meta-commentary addressed to the maintainer or to the AI author* → delete; the body speaks only to the reader
+  - before: `This is the start of a growing set. Each case keeps the same shape:` (`CCA-Classification.md`)
+  - after: drop it; the examples themselves show the shape
