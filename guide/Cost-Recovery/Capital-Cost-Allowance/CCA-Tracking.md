@@ -43,24 +43,26 @@ The tax constants that depend only on the CCA class. One row per `Class`. Column
 - `Half-year default`:
   - The class's usual half-year treatment (`True` for most, `False` where the class is exempt)
   - The register inherits it; override per item where it varies (Class 12)
+- `What goes here`:
+  - A one-line cue for what the class covers, a reminder when classifying an item
+  - Optional and informational; the canonical rules are in [CCA Classification](CCA-Classification.md)
 
-| Class | Rate | Method | Tangibility | Half-year default |
-|-------|-----|--------|-------------|-------------------|
-| 8 | `20%` | `Declining balance` | Tangible | True |
-| 10 | `30%` | `Declining balance` | Tangible | True |
-| 10.1 | `30%` | `Declining balance` | Tangible | True |
-| 12 | `100%` | `Declining balance` | Tangible | True |
-| 13 |  | `Straight-line` | Tangible | True |
-| 14 |  | `Straight-line` | Intangible | False |
-| 14.1 | `5%` | `Declining balance` | Intangible | True |
-| 50 | `55%` | `Declining balance` | Tangible | True |
+| Class | Rate | Method | Tangibility | Half-year default | What goes here |
+|-------|-----|--------|-------------|-------------------|----------------|
+| 8 | `20%` | `Declining balance` | Tangible | True | catch-all: office furniture, equipment, photocopiers |
+| 10 | `30%` | `Declining balance` | Tangible | True | motor vehicles under the cost cap (shared pool) |
+| 10.1 | `30%` | `Declining balance` | Tangible | True | passenger vehicle over the cost cap (own class) |
+| 12 | `100%` | `Declining balance` | Tangible | True | app software bought outright (half-year applies) |
+| 13 |  | `Straight-line` | Tangible | True | leasehold improvements |
+| 14 |  | `Straight-line` | Intangible | False | limited-life intangibles (patents, term licences) |
+| 14.1 | `5%` | `Declining balance` | Intangible | True | goodwill, incorp. costs over $3,000, customer lists |
+| 50 | `55%` | `Declining balance` | Tangible | True | computers, peripherals, networking |
 
 `Rate`, `Method`, and `Tangibility` are functions of the class.  
-`Half-year default` is the class's usual treatment, which the register inherits and can override per item — only a default because the property, not the class number, ultimately decides (Class 12 software is subject to the rule, its small tools are exempt).
+`Half-year default` is the class's usual treatment, which the register inherits and can override per item — only a default because the property, not the class number, ultimately decides.
 
 The GIFI account lines deliberately do *not* live here.  
 They follow the asset's balance-sheet nature, not its class: a single class routinely spans several accounts (Class 8, the catch-all, splits across furniture, equipment, and machinery), and a single account can serve several classes (`1774` covers both Class 12 application software and Class 50 hardware).  
-Class 12 is only notable because its account split (software `1774`/`1775` vs small tools `1770`/`1771`) also changes the half-year flag.  
 They are keyed on the account; see [Posting to the ledger](#posting-to-the-ledger).  
 
 
@@ -97,7 +99,7 @@ Columns:
   - Drives the first-year uplift
 - `Half-year`:
   - True if the half-year rule applies to this addition, false if exempt
-  - Inherits `Half-year default` from the *class reference*; override per item where it varies (Class 12 software true, small tools false)
+  - Inherits `Half-year default` from the *class reference*; override per item where the property's treatment differs from the class default
   - Applies only when `AIIP eligible` is false; an AIIP addition takes the uplift instead
 - `Note`:
   - Free-form text for anything worth recording about the row
@@ -200,7 +202,6 @@ Posting is keyed on each item's `Account`, not its CCA class. The account resolv
 | Furniture & equipment | `1740` | `1741` | `8670` |
 | Vehicles | `1742` | `1743` | `8670` |
 | Computer hardware & software | `1774` | `1775` | `8670` |
-| Small tools | `1770` | `1771` | `8670` |
 | Leasehold improvements | `1918` | `1919` | `8670` |
 | Intangibles | `2010` | `2011` | `8570` |
 

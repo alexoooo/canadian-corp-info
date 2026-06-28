@@ -220,7 +220,6 @@ The opposite move can also pay:
 Several thresholds shape what gets onto Schedule 8 in the first place:
 - *De minimis bookkeeping policy*: many small CCPCs set a $500 (sometimes $1,000 or $2,500) capitalization floor in their own policy; below it, items are expensed regardless of useful life
   - This is a bookkeeping convention, not a CRA rule
-- *Class 12 tools threshold*: tools and instruments costing under $500 automatically go to Class 12 at 100% (no half-year rule for most items), so a $300 monitor stand and a $600 office chair are taxed differently *by class*, not by policy
 - *Incorporation expenses immediate-deduction threshold*: the first $3,000 of incorporation expenses is deductible immediately in the year incurred; only the excess is capitalized to Class 14.1
 - *Tax-pool de minimis*: if a declining-balance pool gets to an immaterial balance, there is no statutory write-off threshold; the geometric tail continues until the class empties or the business ceases
 
@@ -230,7 +229,7 @@ These thresholds matter most for:
 
 For certain classes, you can expense an item in the books rather than capitalize and amortize it.  
 Where a class writes off the whole cost in the first year, capitalizing the item and expensing it results in the same deduction in the same year:
-- *Which classes*: most of Class 12 (the half-year-exempt items: sub-$500 tools, kitchen utensils, uniforms) and the *full-expensing* classes under AIIP (53, 43.1 / 43.2, 54 / 55 / 56)
+- *Which classes*: most of Class 12 (its half-year-exempt items) and the *full-expensing* classes under AIIP (53, 43.1 / 43.2, 54 / 55 / 56)
 - *No spread*: nothing is amortized over later years, so the choice is bookkeeping mechanics, not timing, and expensing such an item directly costs no tax
 - *Software exception*: Class 12 application software stays under the half-year rule, so outside the AIIP window it deducts over two years and the equivalence fails
 - *When timing diverges*: only if the alternative is a declining-balance class (Class 8 at 20%, say), where the pool releases the cost over years; that gap is what the capitalization floor trades off

@@ -20,7 +20,7 @@ IT-consulting-specific allocation calls:
 - Standalone application software (e.g. a $200 perpetual licence for an IDE) → Class 12 (100%); application software is subject to the half-year rule, halving the first-year claim outside the AIIP window
   - The reinstated AIIP suspends it for a 2026 acquisition
 - SaaS subscriptions (Office 365, AWS, Claude) → operating expense, GIFI 9150 Computer-related expenses; never capitalized regardless of annual cost
-- A separate $300 second monitor → arguably Class 12 (small tools < $500, treated as a standalone instrument) or Class 50 (computer peripheral, bundled with the laptop's role); pick a convention in the bookkeeping policy and apply it consistently
+- A separate $300 second monitor → Class 50 (computer peripheral), or expensed if it falls below your de minimis floor; pick a convention in the bookkeeping policy and apply it consistently
 
 Year 1 (2026):
 
@@ -74,7 +74,6 @@ Schedule 1 reconciliation for year 3:
 Setup: single-shareholder commercial cleaning CCPC.  
 Buys a $1,800 floor polisher on Jun 15 2026; the corp is HST-registered and claims the $234 ITC; capitalizes $1,800 to Class 8.  
 
-Class 8 rather than 12: cost is at or above the $500 Class 12 tools threshold, so the tool-instrument exemption does not apply.  
 No other class fits, so the catch-all Class 8 applies at 20% declining balance with the half-year rule.  
 
 Year 1 (2026):
@@ -100,9 +99,6 @@ Year 2 (2027) and onward (no further transactions in the class):
 
 When to trigger a terminal loss: when the corp disposes of every piece of Class 8 property in the year, the residual UCC becomes a deduction (ITA s.20(16)).  
 For a multi-asset pool, this is rarely useful; for a single-asset class that has been sold or scrapped, it cleans up the pool.  
-
-For contrast: a $400 hand-tool bought the same year would be Class 12 (under the $500 threshold) and 100% deductible in year 1 (no pool, no tail).  
-Splitting purchases just below $500 vs just above creates very different tax timing for similar-looking spend.
 
 
 ## Example 3: Class 14.1 incorporation expenses

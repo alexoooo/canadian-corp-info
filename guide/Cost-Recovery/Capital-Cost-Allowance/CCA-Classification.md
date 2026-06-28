@@ -17,7 +17,7 @@ Work the decision in order:
 - *Does a specific class definition in Schedule II name it?* Most owner-managed purchases match a named class: a computer is Class 50, a vehicle is Class 10 / 10.1 / 54, a leasehold improvement is Class 13, an intangible is Class 14 / 14.1
 - *If two classes could fit, the more specific definition wins:* a computer is Class 50, not the Class 8 catch-all
 - *If nothing specific fits, it falls to Class 8* (the 20% catch-all)
-- *Apply the cost-driven splits:* a tool or instrument under $500 goes to Class 12; a passenger vehicle over the cost cap goes to its own Class 10.1; incorporation costs over $3,000 go to Class 14.1
+- *Apply the cost-driven splits:* a passenger vehicle over the cost cap goes to its own Class 10.1; incorporation costs over $3,000 go to Class 14.1
 - *Bundled vs standalone:* systems software bundled with hardware follows the hardware into its class; standalone application software is its own Class 12
 
 
@@ -28,10 +28,10 @@ The classes an owner-managed CCPC most often uses:
 | Class | Rate / basis | What it covers | Half-year |
 |-------|--------------|----------------|-----------|
 | `50` | 55% declining | computers, peripherals, networking equipment (acquired after Mar 18 2007) | yes |
-| `8` | 20% declining | office furniture, photocopiers, tools costing $500 or more, equipment not in another class (the catch-all) | yes |
+| `8` | 20% declining | office furniture, photocopiers, equipment not in another class (the catch-all) | yes |
 | `10` | 30% declining | motor vehicles, vans, light and pickup trucks under the passenger-vehicle cost cap; one shared pool | yes |
 | `10.1` | 30% declining | passenger vehicles costing over the cap ($39,000 + sales taxes in 2026); each in its own class | special |
-| `12` | 100% | tools costing under $500, kitchen utensils, uniforms, application software (other than systems software) | mostly no |
+| `12` | 100% | application software (other than systems software) | mostly no |
 | `13` | straight-line over lease term + first renewal (min 5, max 40 years) | leasehold improvements | exempt |
 | `14` | straight-line over remaining legal life | limited-life intangibles (patents, franchises, term licences) | no |
 | `14.1` | 5% declining | goodwill, incorporation expenses over $3,000, customer lists, unlimited-life intangibles | yes |
@@ -55,9 +55,8 @@ CRA's [Classes of depreciable property](https://www.canada.ca/en/revenue-agency/
 ## Commonly confusing cases
 
 - *Software has three homes*: systems software bundled with hardware → the hardware's class (Class 50 for a computer); standalone application software bought outright → Class 12 (100%, but the half-year rule applies to application software); a subscription or licence of one year or less (SaaS) → not capital at all, an operating expense (`9150`); see [Expense Classification](../../Expense-Classification.md)
-- *Monitors, docks, and other peripherals*: a peripheral bought and used as part of the computer → Class 50; a small standalone accessory under $500 → Class 12 (tool or instrument); a durable standalone item with no better class → Class 8. Pick a convention and apply it consistently
+- *Monitors, docks, and other peripherals*: a peripheral bought and used as part of the computer → Class 50; a durable standalone item with no better class → Class 8. Pick a convention and apply it consistently
 - *Passenger vehicle over the cost cap*: under the cap ($39,000 + taxes in 2026) → Class 10, the shared pool; over the cap → Class 10.1, each vehicle in its own class with capital cost capped, no recapture or terminal loss, and half-CCA in the year of disposition; a zero-emission passenger vehicle → Class 54 (cap $61,000 + taxes)
-- *Tools and instruments around $500*: under $500 → Class 12 (100% write-off); $500 or more → Class 8 (20%). The split is by cost, not by what the tool is, so a $480 and a $520 version of the same tool are deducted very differently
 - *Furniture and equipment with no named class*: office furniture, shelving, a printer, a generic machine → Class 8, the catch-all at 20%
 - *Leasehold improvements*: improvements to leased premises → Class 13, straight-line over the lease term plus the first renewal (5–40 years), not a declining-balance class
 - *Limited-life vs unlimited-life intangibles*: an intangible with a fixed legal life (a patent, a term licence, a franchise for a set period) → Class 14, straight-line over that life; an intangible with no fixed life (goodwill, an unlimited franchise, a customer list) → Class 14.1 at 5%
