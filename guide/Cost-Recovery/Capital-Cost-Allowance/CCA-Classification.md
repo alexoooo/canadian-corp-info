@@ -39,11 +39,13 @@ The classes an owner-managed CCPC most often uses:
 | `55` | 40% declining | zero-emission vehicles otherwise in Class 16 (taxis, courier trucks) | full-expensing |
 | `53` | 50% declining | manufacturing and processing machinery and equipment | full-expensing |
 
-The "Half-year" column notes only the year-of-acquisition rule; under the reinstated AIIP, half-year is suspended and full-expensing classes deduct 100% in year one. See [Half-year rule and AIIP](Capital-Cost-Allowance.md#half-year-rule-and-aiip), and the per-class quirks under [Special class rules](#special-class-rules).
+The "Half-year" column notes only the year-of-acquisition rule.  
+Under the reinstated *Accelerated Investment Incentive Property* (AIIP) rules, the half-year rule is suspended: a regular class gets an enhanced first-year allowance of 1.5× its normal rate, and a full-expensing class deducts 100% in year one.  
+See [Half-year rule and AIIP](Capital-Cost-Allowance.md#half-year-rule-and-aiip), and the per-class quirks under [Special class rules](#special-class-rules).
 
-Classes touched on but not worked through here:
+Related classes (not covered in depth here):
 - Class 1 (4%, declining): buildings; +2% allowance for non-residential, +6% for an M&P building, elected via Regulation 1101(5b.1); see CRA T4012
-- Class 3 (5%, declining) and Class 6 (10%, declining): marine and outdoor structures — wharves, docks, breakwaters, trestles — and certain older or wood-frame buildings; see [Example 1: Small wooden dock](#example-1-small-wooden-dock)
+- Class 3 (5%, declining) and Class 6 (10%, declining): marine and outdoor structures (wharves, docks, breakwaters, trestles) and certain older or wood-frame buildings; see [Example 1: Small wooden dock](#example-1-small-wooden-dock)
 - Classes 43.1 / 43.2: clean-energy equipment
 - Class 56: zero-emission automotive equipment
 
@@ -69,14 +71,17 @@ CRA's [Classes of depreciable property](https://www.canada.ca/en/revenue-agency/
 
 Longer scenarios that walk a classification decision end to end with the full rationale; the one-line cases are under [Commonly confusing cases](#commonly-confusing-cases), and for the multi-year depreciation of a class once chosen see [CCA Worked examples](CCA-Examples.md).
 
-### Example 1: Small wooden dock
+### Example 1: Small wooden dock <!-- [done] -->
 
-*Scenario*: a waterfront-business CCPC builds a small wooden dock on poles for a few thousand dollars; small fishing boats (under 20 ft) and pontoon boats tie up to it; it is not used to load or unload cargo.
+*Scenario*:
+- Waterfront-business CCPC builds a small wooden dock on poles for a few thousand dollars
+- Small fishing boats (under 20 ft) and pontoon boats tie up to it, cost $5,000
+- It is not used to load or unload cargo
 
-*Walk the decision*:
+*Decision steps*:
 - Depreciable property used to earn income? Yes, a durable fixed structure used in the business; prorate the CCA for any personal or recreational use
-- Below the capitalization floor? No, a built structure is capital, not a current expense, even at a few thousand dollars
-- Named in Schedule II? Yes, both a dock and a wharf are named, so it never falls to the Class 8 catch-all or to a Class 1 building (Class 1 names a bridge, canal, culvert, and dam, not a wharf or dock)
+- Below the capitalization floor (< $500)? No, a built structure is capital, not a current expense
+- Named in Schedule II? Yes, both a dock and a wharf are named, so it doesn't use the Class 8 catch-all or Class 1 building (Class 1 names a bridge, canal, culvert, and dam, not a wharf or dock)
 - Which named item, and what is it made of? The characterization below decides the class
 
 *Considerations*:
@@ -84,13 +89,20 @@ Longer scenarios that walk a classification decision end to end with the full ra
 - *Material qualifier asymmetry*: "wharf" splits by construction (wooden → Class 6 at 10%, concrete, steel, or stone → Class 3 at 5%), but "dock" has no material split, so being wooden does not move a dock into Class 6
 - *Fixed vs floating*: on poles it is a fixed structure, not equipment; a floating dock on pontoons that is not affixed to the bottom is arguably Class 8 equipment instead, a separate analysis
 - *Water lot*: the water lot itself, or a Crown or municipal water-lot lease, is not depreciable in this class; a long-term lease may instead be a Class 13 leasehold interest, tracked separately
-- *Repair vs capital*: replacing a few deck boards is a current expense; building the dock, or substantially rebuilding it, is the capital addition that enters the pool
-- *First-year treatment*: Class 3 is ordinary declining balance, so the half-year rule applies, or the AIIP uplift if the build is AIIP-eligible (available for use before 2030); it is not a full-expensing class
-- *Materiality*: on a small cost base the gap between 5% and 10% is only a few dollars of CCA a year, which favours the straightforward dock position over a dispute
+- *Repair vs capital*: replacing a few deck boards is a current expense; building the dock, or substantially rebuilding it, is a capital addition that adds to the pool
+- *First-year treatment*: a regular declining-balance class, not a full-expensing class, so no 100% write-off in year one
+  - A new build available for use before 2030 is AIIP: the half-year rule is suspended, and year one is 7.5% of cost (1.5× the 5% rate)
+  - Without AIIP, the ordinary half-year rule applies: 2.5% of cost in year one
+- *Materiality*: on a small cost base the dollar gap between the 5% and 10% rates is small
 
-*Conclusion*: Class 3 (5%), as a dock. The Class 6 (10%) wooden-wharf reading is the aggressive alternative and is weak on these facts, because the structure does not function as a wharf; record why it is a dock (small, non-loading, small-craft mooring) so the position is documented.
+*Conclusion*:
+- Class 3 (5%), as a dock
+- Record why it is a dock (small, non-loading, small-craft mooring) in the asset register's free-form `Note` column, so the position is documented
 
-*Reporting*: the cost goes to `1906` Wharves (the line the GIFI groups with docks, float walks, and marinas), the contra to `1907`, and the year's amortization to `8670`; the GIFI line is the same whether the class is 3 or 6, so it does not settle the class. For the asset register and the year-by-year pool, see [CCA Tracking](CCA-Tracking.md).
+*Reporting*:
+- Cost to `1906` Wharves (the line the GIFI groups with docks, float walks, and marinas), contra to `1907`, amortization to `8670`
+- The GIFI line is the same whether the class is 3 or 6, so it does not settle the class
+- For the asset register and the year-by-year pool, see [CCA Tracking](CCA-Tracking.md)
 
 
 ## Special class rules

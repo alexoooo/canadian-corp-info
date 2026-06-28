@@ -171,7 +171,7 @@ The dollars sit in that asset until they flow out through one of the three chann
 The same rules govern what counts as part of the asset's cost across all three channels.  
 
 Below a *de minimis* floor, a long-lived item is expensed immediately rather than capitalized into any channel.  
-The floor is the corporation's own policy (commonly $500, sometimes up to $2,500), applied consistently; it is a bookkeeping convention, not a CRA rule.  
+The floor is a policy choice for the corporation (commonly $500, sometimes up to $2,500): CRA sets no dollar threshold, but it must be reasonable and applied consistently.  
 A residual UCC pool is not cleared the same way: once capitalized, a class pool runs its geometric tail until the asset is disposed of or the business ceases (see [Capital Cost Allowance — Capitalize-vs-expense thresholds](Capital-Cost-Allowance/Capital-Cost-Allowance.md#capitalize-vs-expense-thresholds)).  
 
 Included in cost:
