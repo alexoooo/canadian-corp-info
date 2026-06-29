@@ -171,8 +171,13 @@ Two routes, paralleling the property section above:
 - *Rent*: the corp pays the owner rent for the dedicated workspace; the corp deducts the rent (GIFI 8910 area) and the owner reports rental income and deducts the workspace share of home costs against it
 
 What the corp can and cannot pick up:
-- *Running costs*: h/eat, electricity, water, a share of internet, and minor maintenance are reimbursable on the business-use share, because they are genuine business costs
+- *Running costs*: heat, electricity, water, a share of internet, and minor maintenance are reimbursable on the business-use share, because they are genuine business costs
+  - *Rented home (tenant)*: rent is an occupancy cost rather than an ownership cost, so unlike property tax the business-use share of rent is reimbursable, on the same footing as utilities; the principal-residence and CCA cautions below do not apply, since you do not own the place
+    - Keep paying the landlord yourself and have the corp reimburse only the business-use slice; do not put the lease in the corp's name or have it pay the full rent, which would be a taxable benefit on the personal share
+  - *Condo fees*: a single bundled fee mixes running costs with capital, so split it before applying the business-use share; reimburse the operating slice (utilities, common-area maintenance, management) and exclude the reserve-fund contribution, special assessments, and building insurance, which are ownership costs like property tax
+    - Take the split from the condo corporation's annual budget and financial statements (or the status certificate), so the allocation is defensible rather than a guess
 - *Mortgage interest and property tax*: not running costs of the work, so reimbursing them is a shareholder benefit rather than a deductible expense; keep them out of the reimbursement
+  - It can look like a deduction for the corp plus tax-free cash for the owner, but it is neither: you owe these as the homeowner whether or not the corp uses the space, so the corp is covering a personal cost rather than recovering a business one
 - *Rent route*: mortgage interest is deductible only against the rent the owner reports as income, which nets close to zero, so renting does not turn it into a real deduction
 
 Worked example (reimbursement, 12% workspace):
