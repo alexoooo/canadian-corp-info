@@ -41,6 +41,8 @@ AI generated, not verified yet:
     - [Capital Cost Allowance - Worked examples](guide/Cost-Recovery/Capital-Cost-Allowance/CCA-Examples.md)
     - [Capital Cost Allowance - Tracking](guide/Cost-Recovery/Capital-Cost-Allowance/CCA-Tracking.md)
 - [Foreign Currency](guide/Foreign-Currency.md)
+- [T5](guide/T5/T5.md)
+  - [T5 - Box 18 Capital Gains Dividends](guide/T5/T5-Box-18-Capital-Gains-Dividends.md)
 - Dividends sub-pages (hub in Topics):
   - [Declaring and paying a dividend](guide/Dividends/Declaring-And-Paying.md)
   - [Bookkeeping and information slips](guide/Dividends/Bookkeeping-And-Slips.md)

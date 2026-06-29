@@ -60,7 +60,7 @@ For mechanics and worked examples, follow the link to the canonical page where o
   - Typically prepared using T2 software
 - T3 (*Statement of Trust Income Allocations and Designations*): slip issued by trusts (including most Canadian ETFs structured as mutual fund trusts); see [T3.md](T3/T3.md)
 - T4 (*Statement of Remuneration Paid*): slip issued by an employer for salary paid to an employee
-- T5 (*Statement of Investment Income*): slip for interest and Canadian-corp dividends; also issued by a CCPC paying taxable dividends to its shareholders
+- T5 (*Statement of Investment Income*): slip for interest and Canadian-corp dividends; also issued by a CCPC paying taxable dividends to its shareholders; see [T5.md](T5/T5.md)
 - T5008 (*Statement of Securities Transactions*): slip summarizing securities sales used to compute capital gains; see [T5008.md](T5008/T5008.md)
 - Tax point: the day GST/HST on a supply becomes payable — the earlier of payment and the day consideration becomes due, which for an invoiced service is the earlier of the invoice date and the issue date (ETA s.168, s.152); see [HST.md](HST.md#when-tax-becomes-payable)
 - Terminal loss: residual UCC deducted when a class empties under ITA s.20(16); see [Capital-Cost-Allowance.md](Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md)

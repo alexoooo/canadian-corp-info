@@ -266,6 +266,7 @@ The accounts above determine *which* dividend to pay; the steps to actually decl
 - [Capital Dividend Account](../Capital-Dividend-Account/Capital-Dividend-Account.md)
 - [T3](../T3/T3.md)
 - [T3 - Box 26 Other Income](../T3/T3-Box-26-Other-Income.md)
+- [T5](../T5/T5.md)
 - [T5008](../T5008/T5008.md)
 
 
