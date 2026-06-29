@@ -104,7 +104,7 @@ Longer scenarios that walk a classification decision end to end with the full ra
 - For the asset register and the year-by-year pool, see [CCA Tracking](CCA-Tracking.md)
 
 
-### Example 2: Water well upgrade
+### Example 2: Water well upgrade <!-- [done] -->
 
 *Scenario*:
 - A CCPC operating from a property that draws its own water replaces an old dug well with a modern drilled well for a few thousand dollars
@@ -124,6 +124,12 @@ Longer scenarios that walk a classification decision end to end with the full ra
 - *Registration or permit fee*: incidental, so expense it or fold it into the equipment cost
 - *Not oil or gas*: a petroleum or natural-gas well is a resource asset deducted through the CDE or CEE pools, not CCA, a separate regime
 - *Business use only*: the treatment holds only if the corp owns the property and the well serves the corp's income-earning use; a well on a personal or shareholder-use property is not the corp's deductible cost and raises a shareholder-benefit issue
+- *Dual-use property*: where an on-site residence shares the water system, the corp depreciates only its business-use share, and the residential owner funds the rest (directly or through `Due from shareholder`) so the corp is not left carrying a s.15(1) benefit
+  - *Allocation basis*: the test is a reasonable, consistent, documented basis (ITA [s.67](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-67.html)), not metered precision; a relative-value or area split backed by an independent appraisal qualifies, with water use the more precise key only where it materially differs and is measurable at reasonable cost
+  - *Estimating the share*: where metering is impractical or the business is not yet operating, a documented proxy such as a plumbing fixture-unit count is acceptable, revisited as use stabilizes, since the business-use percentage is applied afresh each year and climbs as commercial operations come online
+  - *Directly attributable costs*: a cost belonging wholly to one side (a marina-only pump, a repair to the house) is assigned to it in full, not run through the shared split
+  - *Ownership*: co-ownership on title (tenants in common) under an agreement allocating the shared infrastructure (well, septic, access) lets the corp depreciate its co-owner share and documents the split; keep each owner's capital contribution aligned with their allocated portion so the corp's investment stays in the commercial part
+  - *Timing*: if the commercial operation the well serves is not yet running, CCA on the business share is gated by the available-for-use rule, separately from the allocation percentage (see [Available-for-use rule](Capital-Cost-Allowance.md#available-for-use-rule))
 - *First-year treatment*: Class 8 is AIIP-eligible, so a well available for use before 2030 deducts 1.5 × 20% = 30% of the equipment cost in year one, with the half-year rule suspended
 
 *Conclusion*:
