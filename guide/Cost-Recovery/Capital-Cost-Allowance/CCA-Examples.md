@@ -135,6 +135,15 @@ Year 2 onward:
 Incorporation expenses under $3,000: the entire amount is immediately deductible in year 1, nothing goes to Class 14.1, and Schedule 8 has no Class 14.1 entry.  
 This is the common case for a corporation set up online for a few hundred dollars (e.g. through Ownr or a similar service).
 
+Missing the year-1 deduction:
+- The under-$3,000 slice is *deductible* under s.20(1)(b), so s.13(35) keeps it out of Class 14.1
+  - The test is whether the amount is *deductible*, not whether it was *deducted*
+- It never enters a pool, so it cannot be amortized in a later year
+- The only ways to claim it are in the year incurred, or by adjusting that year's return
+- A CCPC has three years from the original notice of assessment to request that adjustment
+  - Unlike an individual, a corporation cannot use the s.152(4.2) ten-year relief, so the deduction is lost once that window closes
+- The amortize-it-later path applies only to the excess over $3,000, because only that excess is added to Class 14.1
+
 An immaterial Class 14.1 pool: continue claiming the geometric tail year by year.  
 There is no CRA "write off below $X" rule; the only ways to clear a Class 14.1 pool are:
 - Acquire more Class 14.1 property and eventually dispose of all of it (rare for owner-managed CCPCs)

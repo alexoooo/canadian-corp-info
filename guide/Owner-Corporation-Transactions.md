@@ -170,6 +170,11 @@ Two routes, paralleling the property section above:
 - *Reimbursement*: the corp reimburses the business-use share (by area) of the home costs the owner pays personally — heat, electricity, a portion of internet, minor maintenance; the home stays a personal asset
 - *Rent*: the corp pays the owner rent for the dedicated workspace; the corp deducts the rent (GIFI 8910 area) and the owner reports rental income and deducts the workspace share of home costs against it
 
+What the corp can and cannot pick up:
+- *Running costs*: h/eat, electricity, water, a share of internet, and minor maintenance are reimbursable on the business-use share, because they are genuine business costs
+- *Mortgage interest and property tax*: not running costs of the work, so reimbursing them is a shareholder benefit rather than a deductible expense; keep them out of the reimbursement
+- *Rent route*: mortgage interest is deductible only against the rent the owner reports as income, which nets close to zero, so renting does not turn it into a real deduction
+
 Worked example (reimbursement, 12% workspace):
 - A room used exclusively for the corp's work is 12% of the home's area
 - The corp reimburses 12% of the year's utilities and a reasonable share of internet, against receipts the owner provides
@@ -181,6 +186,7 @@ The principal-residence trap:
 
 Employee route, for contrast (out of scope):
 - An employee required to maintain a home office who is *not* reimbursed can deduct workspace-in-the-home costs on their own T1 using form T2200 (employer certification) and form T777, under ITA [s.8(1)(i)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-8.html) as limited by the work-space rule in s.8(13)
+  - Even on this path, mortgage interest and CCA are never deductible; a salaried employee also cannot deduct property tax or home insurance, while a commission employee can deduct a reasonable share of those two but still not mortgage interest
 - This is a personal-tax path; the corporate reimbursement or rent route above is usually simpler for an owner-manager
 
 

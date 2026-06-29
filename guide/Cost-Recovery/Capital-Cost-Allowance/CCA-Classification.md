@@ -104,6 +104,38 @@ Longer scenarios that walk a classification decision end to end with the full ra
 - For the asset register and the year-by-year pool, see [CCA Tracking](CCA-Tracking.md)
 
 
+### Example 2: Water well upgrade
+
+*Scenario*:
+- A CCPC operating from a property that draws its own water replaces an old dug well with a modern drilled well for a few thousand dollars
+- The old well was unregistered; after the upgrade it is a registered well with greater capacity and a longer life
+- The well supplies the corp's business operations, not a residence or personal use
+
+*Decision steps*:
+- Depreciable property used to earn income? Yes, the well's physical components are durable property used in the business
+- Repair or capital? A betterment, not a like-for-like fix: a new, higher-capacity, registered well, so the equipment side is capital, not a current-expense repair
+- Named in Schedule II? No class names a water well, so the equipment falls to the Class 8 catch-all
+- Split the cost: separate the tangible equipment from the drilling and boring labour, which are treated differently
+
+*Considerations*:
+- *Equipment*: casing, cribwork or liner, well screen, piping, and the pump are tangible property not named in any other class, so they fall in the Class 8 catch-all at 20% (CRA IT-472)
+- *Drilling and boring*: the drilling or boring labour itself is a current expense, deductible in the year and not capitalized, even when it is part of a capital project (CRA IT-472)
+- *Repair vs betterment*: the equipment is capital because the upgrade creates a materially better asset; only the boring cost escapes capitalization, and it does so by the IT-472 rule, not by a repair argument
+- *Registration or permit fee*: incidental, so expense it or fold it into the equipment cost
+- *Not oil or gas*: a petroleum or natural-gas well is a resource asset deducted through the CDE or CEE pools, not CCA, a separate regime
+- *Business use only*: the treatment holds only if the corp owns the property and the well serves the corp's income-earning use; a well on a personal or shareholder-use property is not the corp's deductible cost and raises a shareholder-benefit issue
+- *First-year treatment*: Class 8 is AIIP-eligible, so a well available for use before 2030 deducts 1.5 × 20% = 30% of the equipment cost in year one, with the half-year rule suspended
+
+*Conclusion*:
+- Equipment to Class 8 (20%); the drilling and boring labour deducted currently
+- Record the equipment-versus-boring split and the betterment rationale in the asset register's free-form `Note` column
+
+*Reporting*:
+- Equipment cost to `1740` Machinery, equipment, furniture, and fixtures, contra to `1741`, amortization to `8670`
+- Drilling and boring labour to a current expense line for the year (for example repairs and maintenance, `8960`), not capitalized
+- For the asset register and the year-by-year pool, see [CCA Tracking](CCA-Tracking.md)
+
+
 ## Special class rules
 
 - *Class 10.1*: each vehicle is a separate class; capped capital cost; no recapture or terminal loss; half-CCA on disposition (see [Recapture and terminal loss](Capital-Cost-Allowance.md#recapture-and-terminal-loss))
@@ -134,4 +166,5 @@ Longer scenarios that walk a classification decision end to end with the full ra
 - Income Tax Act [s.20(16.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-20.html) - terminal-loss exceptions (Class 10.1; Class 14.1 unless cessation)
 - CRA T4012 - T2 Corporation Income Tax Guide: https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4012.html
 - CRA Classes of depreciable property: https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/report-business-income-expenses/claiming-capital-cost-allowance/classes-depreciable-property.html
+- CRA IT-472 (archived) - Capital Cost Allowance, Class 8 property (water-well equipment in Class 8; the drilling cost a current expense): https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/it472/archived-capital-cost-allowance-class-8-property.html
 - CRA RC4088 - General Index of Financial Information (GIFI), for the wharf line `1906`: https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4088.html
