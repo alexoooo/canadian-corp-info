@@ -204,6 +204,22 @@ Exceptions to proration:
 There is no obligation to claim the maximum.  
 CCA is computed up to the cap; the corporation may claim any amount from $0 to the cap; unclaimed CCA does not expire and stays in UCC.  
 
+Deferring shifts timing, not total.  
+The unclaimed amount stays in the pool, so each later year's cap is the rate applied to the higher UCC: a higher ceiling, never a catch-up lump, and the rate itself does not change.  
+The declining-balance tail stretches out; the full cost still comes off eventually.  
+
+Worked example (an existing $10,000 Class 8 pool at 20%, no additions in either year):
+- *Claim the max each year*:
+  - Year 1: 20% × $10,000 = $2,000 → UCC $8,000
+  - Year 2: 20% × $8,000 = $1,600 → UCC $6,400
+- *Skip year 1, claim year 2*:
+  - Year 1: claim $0 → UCC stays $10,000
+  - Year 2: 20% × $10,000 = $2,000 → UCC $8,000
+- Year 2's maximum is the rate on the current balance: $2,000, not $3,600 (no catch-up for the skipped year) and not $1,600 (the base is still the full $10,000)
+- Claimed plus remaining UCC is $10,000 on both paths ($3,600 + $6,400, or $2,000 + $8,000); skipping defers $1,600 into the pool rather than losing it
+
+The AIIP first-year uplift is the exception: it is available only in the year the asset becomes available for use, so deferring that year keeps the cost but forgoes the acceleration.  
+
 Common reasons to claim less than the maximum:
 - Loss year: preserve the deduction for a future year that produces tax at a higher marginal rate
 - Non-capital loss already large enough to wipe out taxable income (non-capital losses expire after 20 years; UCC does not expire)

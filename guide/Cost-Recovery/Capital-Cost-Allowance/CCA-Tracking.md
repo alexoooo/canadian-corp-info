@@ -40,14 +40,14 @@ The tax constants that depend only on the CCA class. One row per `Class`. Column
 - `Tangibility`:
   - `Tangible`: equipment, vehicles, leasehold improvements, etc.
   - `Intangible`: incorporation costs, goodwill, limited-life rights, etc.
-- `Half-year default`:
+- `Half-year Default`:
   - The class's usual half-year treatment (`True` for most, `False` where the class is exempt)
   - The register inherits it; override per item where it varies (Class 12)
-- `What goes here`:
+- `What Goes Here`:
   - A one-line cue for what the class covers, a reminder when classifying an item
   - Optional and informational; the canonical rules are in [CCA Classification](CCA-Classification.md)
 
-| Class | Rate | Method | Tangibility | Half-year default | What goes here |
+| Class | Rate | Method | Tangibility | Half-year Default | What Goes Here |
 |-------|-----|--------|-------------|-------------------|----------------|
 | 8 | `20%` | `Declining balance` | Tangible | True | catch-all: office furniture, equipment, photocopiers |
 | 10 | `30%` | `Declining balance` | Tangible | True | motor vehicles under the cost cap (shared pool) |
@@ -59,7 +59,7 @@ The tax constants that depend only on the CCA class. One row per `Class`. Column
 | 50 | `55%` | `Declining balance` | Tangible | True | computers, peripherals, networking |
 
 `Rate`, `Method`, and `Tangibility` are functions of the class.  
-`Half-year default` is the class's usual treatment, which the register inherits and can override per item — only a default because the property, not the class number, ultimately decides.
+`Half-year Default` is the class's usual treatment, which the register inherits and can override per item — only a default because the property, not the class number, ultimately decides.
 
 The GIFI account lines deliberately do *not* live here.  
 They follow the asset's balance-sheet nature, not its class: a single class routinely spans several accounts (Class 8, the catch-all, splits across furniture, equipment, and machinery), and a single account can serve several classes (`1774` covers both Class 12 application software and Class 50 hardware).  
@@ -78,29 +78,29 @@ Columns:
   - Ledger account the item posts to, i.e. its balance-sheet name (e.g. "Equipment", "Land improvements")
   - Used to look up GIFI cost, contra, and amortization-expense lines for posting (see [Posting to the ledger](#posting-to-the-ledger))
   - Often follows from `Class`, but recorded per item because a class can span several accounts
-- `Acquisition date`:
+- `Acquisition Date`:
   - When the corporation became entitled to the property (purchase date)
   - Drives eligibility and limits: AIIP eligibility, passenger-vehicle and zero-emission cost ceilings, available-for-use second-year fallback
   - Part of the audit trail, serves as documentary proof
-- `Available-for-use date`:
+- `Available-for-use Date`:
   - Often the acquisition date; later if the asset is not yet in service
   - Determines the year when the addition enters the pool (CCA starts), when the half-year or AIIP adjustment applies
-- `Capital cost`:
+- `Capital Cost`:
   - Amount added to the pool
   - Purchase price plus freight, installation, duty, and non-recoverable tax
   - Net of any HST input tax credit claimed
-- `Disposal date`:
+- `Disposal Date`:
   - Blank until the item is sold, scrapped, or otherwise disposed of
 - `Proceeds`:
   - Blank until disposal
   - Sale price plus any insurance or compensation
-- `AIIP eligible`:
+- `AIIP Eligible`:
   - True if acquired after 2024 and available for use before 2030
   - Drives the first-year uplift
 - `Half-year`:
   - True if the half-year rule applies to this addition, false if exempt
-  - Inherits `Half-year default` from the *class reference*; override per item where the property's treatment differs from the class default
-  - Applies only when `AIIP eligible` is false; an AIIP addition takes the uplift instead
+  - Inherits `Half-year Default` from the *class reference*; override per item where the property's treatment differs from the class default
+  - Applies only when `AIIP Eligible` is false; an AIIP addition takes the uplift instead
 - `Note`:
   - Free-form text for anything worth recording about the row
   - For example, a plain-English breakdown of what `Item` bundles ("incorporation lawyer + appraisal + tax lawyer"), personal-use percentage, trade-in details, or ITC reductions
@@ -123,71 +123,59 @@ This guide uses the following convention:
 
 ## CCA schedule
 
-One row per `Class` per fiscal `Year`. Columns:
-- `Opening UCC`:
-  - The prior year's `Closing UCC` for the class
-  - 0 for a new class
-- `Additions`: cost of items in this class that become available for use this year
-- `Dispositions`:
-  - The disposition value of items disposed this year
-  - Capped at `MIN(Proceeds, Capital cost)` per item, see formula
-- `Adjustment`: the half-year or AIIP adjustment to the base
-- `CCA base`: the amount the rate is applied to
-- `Rate`: the class rate
-- `CCA (max)`: the most that can be claimed this year
-- `CCA (claimed)`:
-  - The amount actually claimed
-  - Discretionary: `0` to `CCA (max)`
-- `Closing UCC`: carried to next year's `Opening UCC`
-- `Recapture` / `Terminal loss`: end-of-year adjustments when the pool goes negative or empties
+One row per `Class` per fiscal `Year` (manually entered, Classes can be copy/pasted from `Class reference`).  
+
+Columns, left to right, each computed from the columns to its left (declining-balance class, normal 365-day year; [Special cases](#special-cases) cover the rest):
+- `Opening UCC` = the prior year's `Closing UCC` for the class
+  - `0` for a new class
+- `Additions` = cost of items in this class that become available for use this year
+  - Summed from the register by class and year, see [Rolling the register into the schedule](#rolling-the-register-into-the-schedule)
+- `Dispositions` = sum over items disposed this year of `MIN(Proceeds, Capital Cost)`
+  - The cap means a sale above original cost removes only the cost from the pool; the excess is a capital gain on Schedule 6, not recapture
+- `Net Additions` = `Additions − Dispositions`
+- `Adjustment` = the half-year or AIIP first-year adjustment to the base:
+  - `0` if the class is half-year-exempt, or `Net Additions ≤ 0`
+  - `+0.5 × Net Additions` if AIIP-eligible
+  - `−0.5 × Net Additions` otherwise (half-year rule applies, no AIIP)
+  - Non-zero only in the year an asset becomes available for use; later years have `Net Additions = 0`, which makes the half-year rule and AIIP uplift one-time first-year effects
+- `CCA Base` = `Opening UCC + Net Additions + Adjustment`
+- `Rate` = the class rate, from `Class reference`
+- `CCA (Max)` = `Rate × MAX(0, CCA Base)`
+- `CCA (Claimed)` = any value from `0` to `CCA (Max)`
+  - Discretionary, and the only figure you type each year (see [Discretionary CCA](Capital-Cost-Allowance.md#discretionary-cca))
+- `Closing UCC` = `Opening UCC + Net Additions − CCA (Claimed)`
+  - Carried to next year's `Opening UCC`
+- `Recapture` = `−Closing UCC` if `Closing UCC < 0`, else `0` (ITA [s.13(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-13.html))
+  - An income inclusion; `Closing UCC` then resets to `0`
+- `Terminal Loss` = `Closing UCC` if `Closing UCC > 0` and no items remain in the class, else `0` (ITA [s.20(16)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-20.html))
+  - A deduction; `Closing UCC` then resets to `0`
+
+`Recapture` and `Terminal Loss` are both always columns; at most one is non-zero in a class-year, since the pool cannot be both negative and emptied at once.  
 
 
-## Formulas
+## Special cases
 
-For a declining-balance class in a normal (365-day) year:
-
-```
-Dispositions      = sum over items disposed this year of MIN(Proceeds, Capital cost)
-Net additions     = Additions − Dispositions
-
-Adjustment        = 0                      if the class is half-year-exempt, or Net additions ≤ 0
-                  = +0.5 × Net additions   if AIIP-eligible
-                  = −0.5 × Net additions   otherwise (half-year rule applies, no AIIP)
-
-CCA base          = Opening UCC + Net additions + Adjustment
-CCA (max)         = Rate × MAX(0, CCA base)
-CCA (claimed)     = any value from 0 to CCA (max)        (discretionary)
-Closing UCC       = Opening UCC + Net additions − CCA (claimed)
-```
-
-The `MIN(Proceeds, Capital cost)` cap means a sale above original cost removes only the cost from the pool; the excess is a capital gain on Schedule 6, not recapture.  
-The `Adjustment` applies only in the year an asset becomes available for use, because in later years `Net additions` is zero; this is what makes the half-year rule and the AIIP uplift one-time first-year effects.  
-
-End-of-year pool adjustments:
-- *Recapture* (ITA [s.13(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-13.html)): if `Closing UCC < 0`, then `Recapture = −Closing UCC` is income and `Closing UCC` resets to 0
-- *Terminal loss* (ITA [s.20(16)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-20.html)): if `Closing UCC > 0` and no items remain in the class, then `Terminal loss = Closing UCC` is a deduction and `Closing UCC` resets to 0
-
-Special cases the formula above does not cover:
+The column formulas above cover a declining-balance class in a normal (365-day) year. Cases they do not cover:
 - *Mixed first-year treatments in one class-year*: a class with both AIIP and half-year additions in the same year breaks the single-factor `Adjustment` above; compute the adjustment per addition and sum it (`+0.5 × AIIP additions − 0.5 × half-year additions`); the pool stays one line per class, matching Schedule 8's separate AIIP and regular addition columns
-- *Full-expensing classes* (53, 54, 55, 56, 43.1 / 43.2 under AIIP): `CCA (max) = Net additions` in the year available for use (100%); any later residual depreciates at the class rate
-- *Class 13 and Class 14* are straight-line, not declining balance: CCA is `Capital cost ÷ amortization period` (the lease term + first renewal for 13; the remaining legal life for 14), subject to the first-year limit; the declining-balance formula does not apply
+- *Full-expensing classes* (53, 54, 55, 56, 43.1 / 43.2 under AIIP): `CCA (Max) = Net Additions` in the year available for use (100%); any later residual depreciates at the class rate
+- *Class 13 and Class 14* are straight-line, not declining balance: CCA is `Capital Cost ÷ amortization period` (the lease term + first renewal for 13; the remaining legal life for 14), subject to the first-year limit; the declining-balance formula does not apply
 - *Class 10.1*: half-CCA in the year of disposition; no recapture or terminal loss
-- *Short tax year* (under 365 days): multiply `CCA (max)` by `days in tax year ÷ 365`, except for classes 12, 13, 14, and 15
+- *Short tax year* (under 365 days): multiply `CCA (Max)` by `days in tax year ÷ 365`, except for classes 12, 13, 14, and 15
 - *Investment tax credits* claimed against capital cost reduce next year's `Opening UCC` (ITA s.13(7.1)); relevant only for SR&ED claimants
 
 
 ## Rolling the register into the schedule
 
 The schedule's `Additions` and `Dispositions` are sums over the register, filtered by class and year. In a spreadsheet:
-- `Additions` for a class and year = `SUMIFS(register Capital cost, Class = this class, Available-for-use year = this year)`
-- `Dispositions` for a class and year = `SUMIFS(per-item MIN(Proceeds, Capital cost), Class = this class, Disposal year = this year)`
+- `Additions` for a class and year = `SUMIFS(register Capital Cost, Class = this class, Available-for-use year = this year)`
+- `Dispositions` for a class and year = `SUMIFS(per-item MIN(Proceeds, Capital Cost), Class = this class, Disposal year = this year)`
 
-Compute `MIN(Proceeds, Capital cost)` in a helper column on the register so the disposition sum picks it up.  
+Compute `MIN(Proceeds, Capital Cost)` in a helper column on the register so the disposition sum picks it up.  
 A pivot table over the register by `Class` and year produces the same totals if you prefer pivots to `SUMIFS`.  
 
 The `Adjustment` comes from the same register, summing the first-year flags by class and year:
-- AIIP additions = `SUMIFS(Capital cost, Class = this class, Available-for-use year = this year, AIIP eligible = true)`
-- Half-year additions = `SUMIFS(Capital cost, Class = this class, Available-for-use year = this year, AIIP eligible = false, Half-year = true)`
+- AIIP additions = `SUMIFS(Capital Cost, Class = this class, Available-for-use year = this year, AIIP Eligible = true)`
+- Half-year additions = `SUMIFS(Capital Cost, Class = this class, Available-for-use year = this year, AIIP Eligible = false, Half-year = true)`
 - `Adjustment = +0.5 × AIIP additions − 0.5 × Half-year additions`
 
 This is the general per-addition form of the `Adjustment`; it collapses to the single-factor formula above when every addition in the class-year shares the same treatment.  
@@ -208,7 +196,7 @@ Posting is keyed on each item's `Account`, not its CCA class. The account resolv
 The amortization-expense line follows the account's nature: `8670` tangible, `8570` intangible.  
 For intangibles, use the specific line where one fits: `2012` goodwill, `2018` incorporation costs, `2020` trademarks/patents, `2022` customer lists, each with its own contra; otherwise `2010` Intangible assets.  
 
-At acquisition, the `Capital cost` posts to the balance-sheet cost line:
+At acquisition, the `Capital Cost` posts to the balance-sheet cost line:
 - Debit the account's `GIFI cost` line (e.g. `1774` for a computer)
 
 Each year, the CCA posts as amortization:
@@ -226,17 +214,17 @@ The Class 50 laptop and Class 8 polisher from [CCA Worked examples](CCA-Examples
 
 Class 50 (rate 55%), $4,000 addition in 2026, sold for $400 in 2028:
 
-| Year | Opening UCC | Additions | Dispositions | Net add | Adjustment | CCA base | CCA (max) | Closing UCC | Recapture |
+| Year | Opening UCC | Additions | Dispositions | Net Add | Adjustment | CCA Base | CCA (Max) | Closing UCC | Recapture |
 |------|------------:|----------:|-------------:|--------:|-----------:|---------:|----------:|------------:|----------:|
 | 2026 | 0 | 4,000 | 0 | 4,000 | +2,000 | 6,000 | 3,300 | 700 | — |
 | 2027 | 700 | 0 | 0 | 0 | 0 | 700 | 385 | 315 | — |
 | 2028 | 315 | 0 | 400 | −400 | 0 | — | 0 | 0 | 85 |
 
-In 2028, `Opening + Net add = 315 − 400 = −85`, so the pool goes negative: $85 of recapture, closing UCC reset to 0.  
+In 2028, `Opening + Net Add = 315 − 400 = −85`, so the pool goes negative: $85 of recapture, closing UCC reset to 0.  
 
 Class 8 (rate 20%), $1,800 addition in 2026, no disposal:
 
-| Year | Opening UCC | Additions | Net add | Adjustment | CCA base | CCA (max) | Closing UCC |
+| Year | Opening UCC | Additions | Net Add | Adjustment | CCA Base | CCA (Max) | Closing UCC |
 |------|------------:|----------:|--------:|-----------:|---------:|----------:|------------:|
 | 2026 | 0 | 1,800 | 1,800 | +900 | 2,700 | 540 | 1,260 |
 | 2027 | 1,260 | 0 | 0 | 0 | 1,260 | 252 | 1,008 |
@@ -247,8 +235,8 @@ The 2026 figures ($3,300 and $540 of CCA) match the two worked examples; the lat
 
 ## Notes
 
-- The claim is discretionary every year: enter `CCA (claimed)` from 0 to `CCA (max)`; deferring leaves the balance in `Closing UCC` for a future year (see [Discretionary CCA](Capital-Cost-Allowance.md#discretionary-cca))
-- An item sits in the register from its acquisition date but only enters `Additions` in the year of its `Available-for-use date`
+- The claim is discretionary every year: enter `CCA (Claimed)` from 0 to `CCA (Max)`; deferring leaves the balance in `Closing UCC` for a future year (see [Discretionary CCA](Capital-Cost-Allowance.md#discretionary-cca))
+- An item sits in the register from its acquisition date but only enters `Additions` in the year of its `Available-for-use Date`
 - Keep the register even though the deduction is per class: it is the only record of what remains in each pool, which is what the terminal-loss test ("no items remain in the class") depends on
 
 
