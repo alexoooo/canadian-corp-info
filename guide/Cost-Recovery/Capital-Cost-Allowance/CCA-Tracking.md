@@ -4,7 +4,7 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
 
 **Who this is for**: owners of a Canadian-controlled private corporation (CCPC) who keep their own CCA records in a spreadsheet rather than relying solely on tax software.  
 
-This page gives the asset register and the exact per-class formulas — including the half-year rule, the Accelerated Investment Incentive (AIIP), recapture, terminal loss, and short-year proration — so a spreadsheet reproduces what Schedule 8 expects.  
+This page gives the asset register, and the exact per-class formulas — including the half-year rule, the Accelerated Investment Incentive (AIIP), recapture, terminal loss, and short-year proration — for the years you compute or check CCA by hand.  
 For the concepts see [Capital Cost Allowance](Capital-Cost-Allowance.md); for which class an asset goes in see [CCA Classification](CCA-Classification.md); for end-to-end narratives see [CCA Worked examples](CCA-Examples.md).  
 It parallels [Adjusted Cost Base Tracking](../../Adjusted-Cost-Base/Adjusted-Cost-Base-Tracking.md), the same idea for securities.  
 
@@ -22,13 +22,13 @@ The deduction is per class but the records are per item:
   - Feeds the additions and dispositions totals into the schedule
 - *CCA schedule*:
   - One row per class per fiscal year
-  - Carries the running UCC and computes the year's CCA
-  - Maps to Schedule 8
+  - Holds each pool's year-end UCC, transcribed from the filed Schedule 8
+  - Computed by hand only where there is no carryforward (first year, software switch, paper filing)
 
 Keep all amounts in dollars and cents; round only when mapping to the whole-dollar T2 (see [Whole-dollar rounding](../../Whole-Dollar-Rounding.md)).  
 
 
-## Class reference <!-- [wip] -->
+## Class reference <!-- [done] -->
 
 The tax constants that depend only on the CCA class. One row per `Class`. Columns:
 - `Class`: the key (`8`, `10`, `10.1`, `12`, `13`, `14`, `14.1`, `50`, etc.)
@@ -111,7 +111,7 @@ The register contributes to the CCA calculation:
 - The half-year and AIIP additions for each class, which set the `Adjustment`
 - Whether a class still holds any item, which decides a terminal loss when its last asset is disposed
 
-Calculation of the annual deduction is not done in the register, that happens in the *CCA schedule* (below).
+Calculation of the annual deduction is not done in the register; that lands on the *CCA schedule* (below).
 
 The names and relative ordering of columns is not a fixed requirement, renaming or reordering (or adding extra informational columns) doesn't change the math.  
 This guide uses the following convention:
@@ -123,9 +123,34 @@ This guide uses the following convention:
 
 ## CCA schedule
 
-One row per `Class` per fiscal `Year` (manually entered, Classes can be copy/pasted from `Class reference`).  
+One row per `Class` per fiscal `Year`, holding that pool's year-end figures.  
 
-Columns, left to right, each computed from the columns to its left (declining-balance class, normal 365-day year; [Special cases](#special-cases) cover the rest):
+You normally do not compute this.  
+The T2 software computes Schedule 8 and carries each pool's UCC forward to next year; this sheet is where you transcribe that result, so your own records hold the pool history independently of the software.  
+
+Transcribe from the filed Schedule 8:
+- `Year`
+- `Class`
+- `Opening UCC`: last year's `Closing UCC` for the class
+- `Additions`
+- `Dispositions`
+- `CCA (Claimed)`: what the return actually claimed
+- `Closing UCC`: next year's `Opening UCC`
+
+In the rare year a pool is recaptured or takes a terminal loss, record that figure too.  
+
+Saving the filed Schedule 8 itself (PDF or printout) does the same job, so the snapshot is optional.  
+Its one real payoff is owning the per-class `Opening UCC` if you switch software or lose the vendor file.  
+
+Compute the schedule yourself only where there is no carryforward to lean on.  
+That by-hand path is the [next section](#computing-the-schedule-yourself), plus the special cases, register rollup, and worked tie-out that follow it.  
+
+
+## Computing the schedule yourself
+
+When there is no carryforward to lean on: the first year (setting opening UCC), a software switch, a paper filing, or a figure you want to check by hand.  
+
+For a declining-balance class in a normal (365-day) year, the columns run left to right, each computed from the columns to its left ([Special cases](#special-cases) cover the rest):
 - `Opening UCC` = the prior year's `Closing UCC` for the class
   - `0` for a new class
 - `Additions` = cost of items in this class that become available for use this year
@@ -142,7 +167,7 @@ Columns, left to right, each computed from the columns to its left (declining-ba
 - `Rate` = the class rate, from `Class reference`
 - `CCA (Max)` = `Rate × MAX(0, CCA Base)`
 - `CCA (Claimed)` = any value from `0` to `CCA (Max)`
-  - Discretionary, and the only figure you type each year (see [Discretionary CCA](Capital-Cost-Allowance.md#discretionary-cca))
+  - Discretionary, and the only figure you choose by hand (see [Discretionary CCA](Capital-Cost-Allowance.md#discretionary-cca))
 - `Closing UCC` = `Opening UCC + Net Additions − CCA (Claimed)`
   - Carried to next year's `Opening UCC`
 - `Recapture` = `−Closing UCC` if `Closing UCC < 0`, else `0` (ITA [s.13(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-13.html))
