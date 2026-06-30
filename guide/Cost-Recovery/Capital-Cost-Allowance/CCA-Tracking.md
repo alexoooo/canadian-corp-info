@@ -66,7 +66,7 @@ They follow the asset's balance-sheet nature, not its class: a single class rout
 They are keyed on the account; see [Posting to the ledger](#posting-to-the-ledger).  
 
 
-## Asset register <!-- [done] -->
+## Asset register <!-- [wip] -->
 
 Columns:
 - `Item`:
@@ -97,21 +97,26 @@ Columns:
 - `AIIP Eligible`:
   - True if acquired after 2024 and available for use before 2030
   - Drives the first-year uplift
+  - The accelerated-additions split you key into Schedule 8 reads off this flag
 - `Half-year`:
   - True if the half-year rule applies to this addition, false if exempt
   - Inherits `Half-year Default` from the *class reference*; override per item where the property's treatment differs from the class default
   - Applies only when `AIIP Eligible` is false; an AIIP addition takes the uplift instead
+  - The software applies the half-year rule by class on its own; this column only feeds the by-hand `Adjustment` or flags an item that departs from its class default
 - `Note`:
   - Free-form text for anything worth recording about the row
   - For example, a plain-English breakdown of what `Item` bundles ("incorporation lawyer + appraisal + tax lawyer"), personal-use percentage, trade-in details, or ITC reductions
   - Can be left blank if there isn't anything noteworthy
+- `Target Year`
+  - Formula used to apply filtering in `Pivot table for Schedule 8`
+  - = YEAR(`Acquisition Date`) = `Pivot table for Schedule 8`.`Year`
 
 The register contributes to the CCA calculation:
 - `Additions` and `Dispositions` amounts for each class
 - The half-year and AIIP additions for each class, which set the `Adjustment`
 - Whether a class still holds any item, which decides a terminal loss when its last asset is disposed
 
-Calculation of the annual deduction is not done in the register; that lands on the *CCA schedule* (below).
+Calculation of the annual deduction is not done in the register; you roll these totals up per class and feed them to Schedule 8 (next).
 
 The names and relative ordering of columns is not a fixed requirement, renaming or reordering (or adding extra informational columns) doesn't change the math.  
 This guide uses the following convention:
@@ -121,14 +126,45 @@ This guide uses the following convention:
 - You can choose to add informational columns, such as serial number, vendor, etc. 
 
 
+## Pivot table for Schedule 8
+
+T2 Schedule 8 uses one row per class, but the `Asset register` is per item.
+To fill out S8, we build a pivot table which groups the year's additions by class:
+- `Year`: use to select the desired year
+- `Data`: `Asset register` A:
+- 
+
+
+
+Filing comes down to this rollup: the register is per item but , so you roll the register up to one set of totals per class and key those into the software.  
+
+
+For each `Class` with a purchase or disposal in the year, take three totals off the register:
+- `Additions` = `SUMIFS(Capital Cost, Class = this class, Available-for-use year = this year)`
+  - Cost of the class's items that became available for use this year; an item bought but not yet in service waits for the year it is
+- AIIP additions = `SUMIFS(Capital Cost, Class = this class, Available-for-use year = this year, AIIP Eligible = true)`
+  - The accelerated share of `Additions`; the software wants it flagged separately to apply the first-year uplift
+- `Dispositions` = `SUMIFS(per-item MIN(Proceeds, Capital Cost), Class = this class, Disposal year = this year)`
+  - The `MIN` caps each item at its `Capital Cost`, so a sale above cost removes only the cost from the pool and the excess is a capital gain on Schedule 6, not recapture; put the `MIN` in a helper column on the register so the sum picks it up
+
+A pivot table is the easier way to build this. Grouped by `Class` and year, it lists exactly the classes that had activity, so you never have to know the set in advance or risk omitting one; a `SUMIFS` grid only fills the classes you thought to list.  
+The `SUMIFS` formulas above still define what each cell holds: the pivot's `Dispositions` needs the same `MIN` helper column, and a pivot is a snapshot, so refresh it after the register changes.  
+
+Key these per-class totals into the software's Schedule 8; it applies the half-year rule and AIIP uplift, computes each pool's CCA, recapture, and terminal loss, and carries the UCC forward.  
+Record what it produces in the [CCA schedule](#cca-schedule) below.  
+
+If you instead compute the pool math by hand, the same register gives the first-year `Adjustment`:
+- Half-year additions = `SUMIFS(Capital Cost, Class = this class, Available-for-use year = this year, AIIP Eligible = false, Half-year = true)`
+- `Adjustment = +0.5 × AIIP additions − 0.5 × Half-year additions`
+- The by-hand formulas take it from there, see [Computing the schedule yourself](#computing-the-schedule-yourself)
+
+
 ## CCA schedule
 
 One row per `Class` per fiscal `Year`, holding that pool's year-end figures.  
 
-You normally do not compute this.  
-The T2 software computes Schedule 8 and carries each pool's UCC forward to next year; this sheet is where you transcribe that result, so your own records hold the pool history independently of the software.  
-
-Transcribe from the filed Schedule 8:
+After Schedule 8 is filed, the software has computed each pool's CCA and carried its UCC forward; you transcribe the filed result here so your own records hold the pool history independently of the vendor file.  
+Transcribe per class:
 - `Year`
 - `Class`
 - `Opening UCC`: last year's `Closing UCC` for the class
@@ -136,14 +172,13 @@ Transcribe from the filed Schedule 8:
 - `Dispositions`
 - `CCA (Claimed)`: what the return actually claimed
 - `Closing UCC`: next year's `Opening UCC`
+- `Recapture` or `Terminal Loss`: only in the rare year a pool has one
 
-In the rare year a pool is recaptured or takes a terminal loss, record that figure too.  
-
-Saving the filed Schedule 8 itself (PDF or printout) does the same job, so the snapshot is optional.  
+Saving the filed Schedule 8 itself (PDF or printout) does the same job, so this snapshot is optional.  
 Its one real payoff is owning the per-class `Opening UCC` if you switch software or lose the vendor file.  
 
-Compute the schedule yourself only where there is no carryforward to lean on.  
-That by-hand path is the [next section](#computing-the-schedule-yourself), plus the special cases, register rollup, and worked tie-out that follow it.  
+Compute each pool's UCC yourself only where there is no carryforward to lean on.  
+That by-hand path is the [next section](#computing-the-schedule-yourself), plus the special cases and worked tie-out that follow it.  
 
 
 ## Computing the schedule yourself
@@ -154,7 +189,7 @@ For a declining-balance class in a normal (365-day) year, the columns run left t
 - `Opening UCC` = the prior year's `Closing UCC` for the class
   - `0` for a new class
 - `Additions` = cost of items in this class that become available for use this year
-  - Summed from the register by class and year, see [Rolling the register into the schedule](#rolling-the-register-into-the-schedule)
+  - Summed from the register by class and year, see [Rolling the register into Schedule 8](#rolling-the-register-into-schedule-8)
 - `Dispositions` = sum over items disposed this year of `MIN(Proceeds, Capital Cost)`
   - The cap means a sale above original cost removes only the cost from the pool; the excess is a capital gain on Schedule 6, not recapture
 - `Net Additions` = `Additions − Dispositions`
@@ -187,23 +222,6 @@ The column formulas above cover a declining-balance class in a normal (365-day) 
 - *Class 10.1*: half-CCA in the year of disposition; no recapture or terminal loss
 - *Short tax year* (under 365 days): multiply `CCA (Max)` by `days in tax year ÷ 365`, except for classes 12, 13, 14, and 15
 - *Investment tax credits* claimed against capital cost reduce next year's `Opening UCC` (ITA s.13(7.1)); relevant only for SR&ED claimants
-
-
-## Rolling the register into the schedule
-
-The schedule's `Additions` and `Dispositions` are sums over the register, filtered by class and year. In a spreadsheet:
-- `Additions` for a class and year = `SUMIFS(register Capital Cost, Class = this class, Available-for-use year = this year)`
-- `Dispositions` for a class and year = `SUMIFS(per-item MIN(Proceeds, Capital Cost), Class = this class, Disposal year = this year)`
-
-Compute `MIN(Proceeds, Capital Cost)` in a helper column on the register so the disposition sum picks it up.  
-A pivot table over the register by `Class` and year produces the same totals if you prefer pivots to `SUMIFS`.  
-
-The `Adjustment` comes from the same register, summing the first-year flags by class and year:
-- AIIP additions = `SUMIFS(Capital Cost, Class = this class, Available-for-use year = this year, AIIP Eligible = true)`
-- Half-year additions = `SUMIFS(Capital Cost, Class = this class, Available-for-use year = this year, AIIP Eligible = false, Half-year = true)`
-- `Adjustment = +0.5 × AIIP additions − 0.5 × Half-year additions`
-
-This is the general per-addition form of the `Adjustment`; it collapses to the single-factor formula above when every addition in the class-year shares the same treatment.  
 
 
 ## Posting to the ledger
