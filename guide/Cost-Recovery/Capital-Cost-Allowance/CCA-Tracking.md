@@ -9,18 +9,18 @@ For the concepts see [Capital Cost Allowance](Capital-Cost-Allowance.md); for wh
 It parallels [Adjusted Cost Base Tracking](../../Adjusted-Cost-Base/Adjusted-Cost-Base-Tracking.md), the same idea for securities.  
 
 
-## Three trackers: class reference, asset register, CCA schedule
+## Three trackers: class reference, asset register, CCA history
 
 The deduction is per class but the records are per item:
 - *Class reference*:
   - One row per CCA class
-  - Static lookup used by the register and schedule (rarely changes)
+  - Static lookup used by the register and the by-hand computation (rarely changes)
   - Class attributes: rate, method, tangibility, and half-year default
 - *Asset register*:
   - One row per item bought, sold, or held
   - Source of truth for what exists
-  - Feeds the additions and dispositions totals into the schedule
-- *CCA schedule*:
+  - Rolls up to the per-class additions and dispositions for Schedule 8
+- *CCA history*:
   - One row per class per fiscal year
   - Holds each pool's year-end UCC, transcribed from the filed Schedule 8
   - Computed by hand only where there is no carryforward (first year, software switch, paper filing)
@@ -95,9 +95,11 @@ Columns:
   - Blank until disposal
   - Sale price plus any insurance or compensation
 - `AIIP Eligible`:
-  - True if acquired after 2024 and available for use before 2030
-  - Drives the first-year uplift
-  - Schedule 8 reports AIIP-eligible additions in their own column (225); this flag identifies them
+  - True if acquired after 2024 and available for use before 2030 (the reinstated incentive)
+  - Not if you or a non-arm's-length party previously owned it, or it came in on a rollover; an arm's-length purchase of used property still qualifies
+  - Leave false for the full-expensing and ZEV classes (53, 54, 55, 56, 43.1, 43.2), which expense on their own rules
+  - Drives the first-year uplift; Schedule 8 reports these additions in their own column (225)
+  - Rules and phase-out: [Half-year rule and AIIP](Capital-Cost-Allowance.md#half-year-rule-and-aiip)
 - `Note`:
   - Free-form text for anything worth recording about the row
   - For example, a plain-English breakdown of what `Item` bundles ("incorporation lawyer + appraisal + tax lawyer"), personal-use percentage, trade-in details, or ITC reductions
@@ -150,14 +152,20 @@ The `Year Additions`, `Year AIIP Additions`, `Year Dispositions`, and `In Year` 
 A pivot is a snapshot, so refresh it after the register changes.  
 
 Key the three per-class totals into the software's Schedule 8; it applies the half-year rule and AIIP uplift, computes each pool's CCA, recapture, and terminal loss, and carries the UCC forward.  
-Record what it produces in the [CCA schedule](#cca-schedule) below.  
+The CCA it deducts is discretionary: set the per-class claim in Schedule 8's `CCA` column (217), anywhere from `$0` to the computed maximum, to defer (see [Discretionary CCA](Capital-Cost-Allowance.md#discretionary-cca)).  
+Deferring keeps the balance in the pool, but on AIIP additions it forfeits the accelerated boost, which applies only in the year the asset becomes available for use.  
+Recapture and terminal loss are not discretionary.  
+You can record what it produces in the [CCA history](#cca-history) below.  
 
 
-## CCA schedule
+## CCA history
+
+**This sheet is optional.**
+The filed Schedule 8 already preserves these figures; keep a copy only to hold your own per-class `Opening UCC` if you switch software.  
 
 One row per `Class` per fiscal `Year`, holding that pool's year-end figures.  
 
-After Schedule 8 is filed, the software has computed each pool's CCA and carried its UCC forward; you transcribe the filed result here so your own records hold the pool history independently of the vendor file.  
+After Schedule 8 is filed, the software has computed each pool's CCA and carried its UCC forward.  
 Transcribe per class:
 - `Year`
 - `Class`
@@ -167,9 +175,6 @@ Transcribe per class:
 - `CCA (Claimed)`: what the return actually claimed
 - `Closing UCC`: next year's `Opening UCC`
 - `Recapture` or `Terminal Loss`: only in the rare year a pool has one
-
-Saving the filed Schedule 8 itself (PDF or printout) does the same job, so this snapshot is optional.  
-Its one real payoff is owning the per-class `Opening UCC` if you switch software or lose the vendor file.  
 
 Compute each pool's UCC yourself only where there is no carryforward to lean on.  
 That by-hand path is the [next section](#computing-the-schedule-yourself), plus the special cases and worked tie-out that follow it.  
@@ -225,7 +230,10 @@ Cases they do not cover:
 
 ## Posting to the ledger
 
-Posting is keyed on each item's `Account`, not its CCA class. The account resolves the GIFI lines from the chart of accounts ([Ledger and Accounts](../../Ledger-And-Accounts.md) is the canonical list). Common accounts:
+Posting is keyed on each item's `Account`, not its CCA class.  
+The account resolves the GIFI lines from the chart of accounts ([Ledger and Accounts](../../Ledger-And-Accounts.md) is the canonical list).  
+
+Common accounts:
 
 | Account | GIFI cost | GIFI accum. amort. | GIFI amort. expense |
 |---------|-----------|--------------------|---------------------|
@@ -311,5 +319,5 @@ The 2026 figures ($3,300 and $540 of CCA) match the two worked examples; the lat
 
 ## TODO
 
-- Add a downloadable spreadsheet template (asset register + CCA schedule) and screenshots, as the [ACB tracker](../../Adjusted-Cost-Base/Adjusted-Cost-Base-Tracking.md) has
+- Add a downloadable spreadsheet template (asset register + CCA history) and screenshots, as the [ACB tracker](../../Adjusted-Cost-Base/Adjusted-Cost-Base-Tracking.md) has
 - Confirm the Class 13 / Class 14 straight-line first-year limits against Schedule III before relying on them

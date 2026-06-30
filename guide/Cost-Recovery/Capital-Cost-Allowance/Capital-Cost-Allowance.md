@@ -117,6 +117,9 @@ The year-by-year step-down percentages are not quoted here.
 Before claiming, verify the current applicable rate on CRA's [Accelerated Investment Incentive](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/report-business-income-expenses/claiming-capital-cost-allowance/accelerated-investment-incentive.html) page.  
 The reinstated enhancement is available only for property acquired after 2024; earlier acquisitions fall under the original 2018 rules, which had wound down by 2027.  
 
+Eligibility is not only about dates: property you or a non-arm's-length person previously owned, or that came in on a tax-deferred rollover, qualifies only if no CCA or terminal loss was claimed on it before.  
+An arm's-length purchase of used property still qualifies.  
+
 A separate *Immediate Expensing Measure* (the "$1.5M rule") allowed CCPCs to fully expense up to $1.5 million per year of *Designated Immediate Expensing Property* (DIEP) across most CCA classes other than 1–6, 14.1, 17, 47, 49, and 51.  
 It applied only to CCPC-acquired property available for use before 2024 and is not available for new acquisitions in 2026.  
 A Dec 2024 amendment removed the separate short-fiscal-year proration of the *deduction* for past DIEP claims, retroactive to fiscal years ending on or after Apr 19 2021; the $1.5 million immediate-expensing limit itself still prorates for a short tax year under Regulation 1104(3.5)(b).
