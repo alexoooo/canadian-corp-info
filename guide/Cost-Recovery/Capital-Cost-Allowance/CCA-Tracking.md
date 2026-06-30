@@ -42,7 +42,7 @@ The tax constants that depend only on the CCA class. One row per `Class`. Column
   - `Intangible`: incorporation costs, goodwill, limited-life rights, etc.
 - `Half-year Default`:
   - The class's usual half-year treatment (`True` for most, `False` where the class is exempt)
-  - The register inherits it; override per item where it varies (Class 12)
+  - Applied by the software per class
 - `What Goes Here`:
   - A one-line cue for what the class covers, a reminder when classifying an item
   - Optional and informational; the canonical rules are in [CCA Classification](CCA-Classification.md)
@@ -59,7 +59,7 @@ The tax constants that depend only on the CCA class. One row per `Class`. Column
 | 50 | `55%` | `Declining balance` | Tangible | True | computers, peripherals, networking |
 
 `Rate`, `Method`, and `Tangibility` are functions of the class.  
-`Half-year Default` is the class's usual treatment, which the register inherits and can override per item — only a default because the property, not the class number, ultimately decides.
+`Half-year Default` is the class's usual treatment; the standard flow takes it as given and the software applies it by class. The property ultimately decides, not the class number, so a few items can depart from the default; tracking those per item is [out of scope](#out-of-scope).
 
 The GIFI account lines deliberately do *not* live here.  
 They follow the asset's balance-sheet nature, not its class: a single class routinely spans several accounts (Class 8, the catch-all, splits across furniture, equipment, and machinery), and a single account can serve several classes (`1774` covers both Class 12 application software and Class 50 hardware).  
@@ -97,23 +97,30 @@ Columns:
 - `AIIP Eligible`:
   - True if acquired after 2024 and available for use before 2030
   - Drives the first-year uplift
-  - The accelerated-additions split you key into Schedule 8 reads off this flag
-- `Half-year`:
-  - True if the half-year rule applies to this addition, false if exempt
-  - Inherits `Half-year Default` from the *class reference*; override per item where the property's treatment differs from the class default
-  - Applies only when `AIIP Eligible` is false; an AIIP addition takes the uplift instead
-  - The software applies the half-year rule by class on its own; this column only feeds the by-hand `Adjustment` or flags an item that departs from its class default
+  - Schedule 8 reports AIIP-eligible additions in their own column (225); this flag identifies them
 - `Note`:
   - Free-form text for anything worth recording about the row
   - For example, a plain-English breakdown of what `Item` bundles ("incorporation lawyer + appraisal + tax lawyer"), personal-use percentage, trade-in details, or ITC reductions
   - Can be left blank if there isn't anything noteworthy
-- `Target Year`
-  - Formula used to apply filtering in `Pivot table for Schedule 8`
-  - = YEAR(`Acquisition Date`) = `Pivot table for Schedule 8`.`Year`
+- `In Year`:
+  - Filters the [Pivot for Schedule 8](#pivot-for-schedule-8) to items that add or dispose in its selected `Year`
+  - = `OR(YEAR(Available-for-use Date) = Year, YEAR(Disposal Date) = Year)`
+  - `Year` is the parameter cell on the pivot sheet
+- `Year Additions`:
+  - The item's contribution to its class's additions for the year
+  - = `IF(YEAR(Available-for-use Date) = Year, Capital Cost, 0)`
+  - Keyed to the available-for-use year, not the purchase year: an item bought but not yet in service waits for the year it goes into service
+- `Year AIIP Additions`:
+  - The accelerated subset of `Year Additions`, the Schedule 8 AIIP/ZEV split
+  - = `IF(AND(YEAR(Available-for-use Date) = Year, AIIP Eligible), Capital Cost, 0)`
+- `Year Dispositions`:
+  - The item's contribution to its class's dispositions for the year
+  - = `IF(YEAR(Disposal Date) = Year, MIN(Proceeds, Capital Cost), 0)`
+  - The `MIN` caps each item at its `Capital Cost`, so a sale above cost removes only the cost from the pool; the excess is a capital gain on Schedule 6, not recapture
 
 The register contributes to the CCA calculation:
 - `Additions` and `Dispositions` amounts for each class
-- The half-year and AIIP additions for each class, which set the `Adjustment`
+- The AIIP additions for each class, the accelerated split fed to Schedule 8
 - Whether a class still holds any item, which decides a terminal loss when its last asset is disposed
 
 Calculation of the annual deduction is not done in the register; you roll these totals up per class and feed them to Schedule 8 (next).
@@ -122,41 +129,28 @@ The names and relative ordering of columns is not a fixed requirement, renaming 
 This guide uses the following convention:
 - Lead with what identifies the row (`Item`), then `Class`
 - Keep `Class` and the date columns to the left, so they stay visible when you freeze `Item` and are easy to filter and roll up on
-- Keep flags and the free-form `Note` last
+- Keep flags and the free-form `Note` last, with the pivot helper columns to their right
 - You can choose to add informational columns, such as serial number, vendor, etc. 
 
 
-## Pivot table for Schedule 8
+## Pivot for Schedule 8
 
 T2 Schedule 8 uses one row per class, but the `Asset register` is per item.
-To fill out S8, we build a pivot table which groups the year's additions by class:
-- `Year`: use to select the desired year
-- `Data`: `Asset register` A:
-- 
+To fill it out, build a `pivot table` that groups the year's additions and dispositions by class:
+- `Year`: a parameter cell on the pivot sheet, set to the fiscal year you are filing
+- `Data`: the whole `Asset register`
+- `Filter`: `In Year` = TRUE, so only items that add or dispose in `Year` appear
+- `Rows`: `Class`, which lists exactly the classes with activity that year
+- `Values`:
+  - `Sum of Year Additions` = the class's total additions, Schedule 8 "cost of acquisitions" (203)
+  - `Sum of Year AIIP Additions` = the accelerated portion, the AIIP/ZEV column (225)
+  - `Sum of Year Dispositions` = proceeds capped at cost, Schedule 8 "proceeds of dispositions"
 
+The `Year Additions`, `Year AIIP Additions`, `Year Dispositions`, and `In Year` columns the pivot reads are helper columns on the `Asset register` above, each keyed to `Year`. Additions key off the available-for-use year and dispositions off the disposal year, so one year flag cannot select both; the helpers settle each item before the pivot sums them.  
+A pivot is a snapshot, so refresh it after the register changes.  
 
-
-Filing comes down to this rollup: the register is per item but , so you roll the register up to one set of totals per class and key those into the software.  
-
-
-For each `Class` with a purchase or disposal in the year, take three totals off the register:
-- `Additions` = `SUMIFS(Capital Cost, Class = this class, Available-for-use year = this year)`
-  - Cost of the class's items that became available for use this year; an item bought but not yet in service waits for the year it is
-- AIIP additions = `SUMIFS(Capital Cost, Class = this class, Available-for-use year = this year, AIIP Eligible = true)`
-  - The accelerated share of `Additions`; the software wants it flagged separately to apply the first-year uplift
-- `Dispositions` = `SUMIFS(per-item MIN(Proceeds, Capital Cost), Class = this class, Disposal year = this year)`
-  - The `MIN` caps each item at its `Capital Cost`, so a sale above cost removes only the cost from the pool and the excess is a capital gain on Schedule 6, not recapture; put the `MIN` in a helper column on the register so the sum picks it up
-
-A pivot table is the easier way to build this. Grouped by `Class` and year, it lists exactly the classes that had activity, so you never have to know the set in advance or risk omitting one; a `SUMIFS` grid only fills the classes you thought to list.  
-The `SUMIFS` formulas above still define what each cell holds: the pivot's `Dispositions` needs the same `MIN` helper column, and a pivot is a snapshot, so refresh it after the register changes.  
-
-Key these per-class totals into the software's Schedule 8; it applies the half-year rule and AIIP uplift, computes each pool's CCA, recapture, and terminal loss, and carries the UCC forward.  
+Key the three per-class totals into the software's Schedule 8; it applies the half-year rule and AIIP uplift, computes each pool's CCA, recapture, and terminal loss, and carries the UCC forward.  
 Record what it produces in the [CCA schedule](#cca-schedule) below.  
-
-If you instead compute the pool math by hand, the same register gives the first-year `Adjustment`:
-- Half-year additions = `SUMIFS(Capital Cost, Class = this class, Available-for-use year = this year, AIIP Eligible = false, Half-year = true)`
-- `Adjustment = +0.5 × AIIP additions − 0.5 × Half-year additions`
-- The by-hand formulas take it from there, see [Computing the schedule yourself](#computing-the-schedule-yourself)
 
 
 ## CCA schedule
@@ -189,7 +183,7 @@ For a declining-balance class in a normal (365-day) year, the columns run left t
 - `Opening UCC` = the prior year's `Closing UCC` for the class
   - `0` for a new class
 - `Additions` = cost of items in this class that become available for use this year
-  - Summed from the register by class and year, see [Rolling the register into Schedule 8](#rolling-the-register-into-schedule-8)
+  - Summed from the register by class and year, see [Pivot for Schedule 8](#pivot-for-schedule-8)
 - `Dispositions` = sum over items disposed this year of `MIN(Proceeds, Capital Cost)`
   - The cap means a sale above original cost removes only the cost from the pool; the excess is a capital gain on Schedule 6, not recapture
 - `Net Additions` = `Additions − Dispositions`
@@ -215,7 +209,12 @@ For a declining-balance class in a normal (365-day) year, the columns run left t
 
 ## Special cases
 
-The column formulas above cover a declining-balance class in a normal (365-day) year. Cases they do not cover:
+The column formulas above cover a declining-balance class in a normal (365-day) year.
+
+Deliberately excluded to keep the standard flow simple, on a convention-over-configuration basis:
+- *Per-item half-year overrides*: the register carries no `Half-year` column; the standard flow takes each class's `Half-year Default` and lets the software apply it; a few classes (Class 12 above all) hold items that can depart from the default, so if you compute CCA by hand and need an exception, add the half-year input yourself
+
+Cases they do not cover:
 - *Mixed first-year treatments in one class-year*: a class with both AIIP and half-year additions in the same year breaks the single-factor `Adjustment` above; compute the adjustment per addition and sum it (`+0.5 × AIIP additions − 0.5 × half-year additions`); the pool stays one line per class, matching Schedule 8's separate AIIP and regular addition columns
 - *Full-expensing classes* (53, 54, 55, 56, 43.1 / 43.2 under AIIP): `CCA (Max) = Net Additions` in the year available for use (100%); any later residual depreciates at the class rate
 - *Class 13 and Class 14* are straight-line, not declining balance: CCA is `Capital Cost ÷ amortization period` (the lease term + first renewal for 13; the remaining legal life for 14), subject to the first-year limit; the declining-balance formula does not apply
