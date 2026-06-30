@@ -38,11 +38,22 @@ The buyer usually prefers an asset purchase, for two reasons.
 - The price paid for each asset becomes its new cost base
 - Depreciable assets start fresh CCA pools at their allocated cost, so the buyer depreciates the full price paid (see [Capital Cost Allowance](../Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md))
 - Purchased goodwill goes into Class 14.1 and is depreciable
-- In a share purchase there is no step-up: the target's assets keep their existing (often low) undepreciated cost, and the buyer's only cost base is the price paid for the shares
+- In a share purchase there is no step-up of the target's *depreciable* assets: they keep their existing (often low) undepreciated cost, and the buyer's only cost base is the price paid for the shares
+  - A later wind-up or amalgamation of the acquired target can still bump certain *non-depreciable* capital property (land, or shares of another corporation) up toward fair market value under ITA [s.88(1)(d)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-88.html), within limits; depreciable property and inventory cannot be bumped
 
 *Clean liabilities*:
 - An asset purchase leaves behind liabilities the buyer does not expressly assume, including unknown or contingent ones (past tax, warranty, litigation)
 - A share purchase inherits the target's entire history, so the buyer takes on its latent liabilities and relies on representations and indemnities for protection
+
+Two more consequences turn on the structure rather than the buyer's preference:
+
+*Sales tax*:
+- An asset sale is generally subject to GST/HST on the taxable assets; the buyer and vendor can jointly elect under [ETA s.167](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-167.html) to make the sale of a business (or a self-contained part) GST/HST-free, where the buyer acquires ownership of all or substantially all (90%+) of the property needed to carry it on
+- A share sale carries no GST/HST: a share is a financial instrument and its sale is exempt
+
+*Associated corporation (share route)*:
+- If the buyer is itself a CCPC, buying the target's shares makes the two corporations associated under ITA [s.256(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-256.html): they then share one $500,000 small-business limit (s.125(3)) and their adjusted aggregate investment income aggregates for the AAII grind
+- An asset purchase into the buyer's existing corporation adds no second corporation, so it avoids this
 
 
 ## The vendor's perspective
@@ -81,9 +92,13 @@ The capital gains inclusion rate is one-half for 2026 (the proposed increase to 
 
 - Income Tax Act (R.S.C., 1985, c. 1 (5th Supp.)):
   - [s.13(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-13.html) - recapture of CCA on a disposition of depreciable property (relevant to an asset sale by the target, including a sale of goodwill)
+  - [s.88(1)(d)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-88.html) - cost bump on certain non-depreciable capital property on a post-acquisition wind-up or amalgamation
   - [s.110.6](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-110.6.html) - lifetime capital gains exemption; definition of "qualified small business corporation share"
   - [s.125(7)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-125.html) - "Canadian-controlled private corporation", a QSBC requirement
+  - [s.256(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-256.html) - association after a share purchase; [s.125(3)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-125.html) sharing of the small-business limit among associated corporations
 - Income Tax Regulations (C.R.C., c. 945):
   - Schedule II, Class 14.1 - goodwill and other unlimited-life intangibles, depreciable at 5% declining balance (replaced the former eligible capital property regime; ITA s.14 was repealed effective 2017)
   - Regulation 1100(1) - prescribed CCA rates by class
+- Excise Tax Act (R.S.C., 1985, c. E-15):
+  - [s.167](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-167.html) - election to treat the sale of a business (or part) as GST/HST-free
 - CRA - Capital gains, including the lifetime capital gains exemption: https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-12700-capital-gains.html

@@ -209,11 +209,13 @@ Transfer entry, Sep 1 2027:
 - Debit `Buildings - cost - Class 6` (Schedule 100 fixed-asset line for Class 6) = $11,500
 - Credit `Construction in progress` = $11,500
 
+The Schedule 8 figures below use the plain half-year basis; this 2027 in-service date actually falls under the reinstated AIIP (enhanced first-year CCA, half-year rule suspended), covered in [Capital Cost Allowance](Capital-Cost-Allowance/Capital-Cost-Allowance.md).
+
 Schedule 8 year 2 (2027), Class 6 row:
 - Opening UCC: $0
 - Cost of additions: $11,500
 - Dispositions: $0
-- Half-year-adjusted base (assuming standard half-year rule, no AIIP enhancement): $5,750
+- Half-year-adjusted base: $5,750
 - Class 6 rate: 10%
 - CCA: 10% × $5,750 = $575
 - Closing UCC: $11,500 − $575 = $10,925

@@ -44,6 +44,7 @@ flowchart TB
 
     ABI([ABI])
     AII([AII])
+    CapGain([Capital gain])
     DivRcv([Dividends received])
 
     RE[(Retained earnings)]
@@ -62,9 +63,10 @@ flowchart TB
 
     OP -->|net of salary| ABI
     OP -->|deductible expense| T4out
-    T3 -->|interest, foreign,<br/>cap gain ½, other| AII
+    T3 -->|interest, foreign,<br/>other| AII
+    T3 -->|cap gain| CapGain
     T5in -->|interest| AII
-    T5008 -->|capital gain| AII
+    T5008 -->|capital gain| CapGain
     T5in -->|Cdn-corp<br/>div| DivRcv
     T3 -->|eligible<br/>div| DivRcv
     T3 -->|non-eligible<br/>div| DivRcv
@@ -72,8 +74,9 @@ flowchart TB
     ABI -->|SBD portion ≤$500K<br/>after-tax| RE
     ABI -->|general-rate portion| GRIP
     AII -->|after-tax ~½| RE
-    AII -->|non-taxable ½| CDA
     AII -->|refundable 30⅔%| NERDTOH
+    CapGain -->|taxable ½| AII
+    CapGain -->|non-taxable ½| CDA
     DivRcv -->|eligible| GRIP
     DivRcv --> PartIV
     PartIV -->|eligible| ERDTOH
@@ -227,13 +230,15 @@ The first $500,000 per year is taxed at the *small-business rate* via the SBD (c
 The 2026 Ontario budget proposes cutting the Ontario small-business rate to 2.2% (combined 11.2%) effective July 1, 2026; see [Dividends](Dividends/Dividends-Examples.md#worked-examples).  
 The $500,000 SBD *business limit* is not always a flat ceiling. It can be reduced by:
 - Sharing among *associated corporations* under ITA [s.125(3)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-125.html)
-- *Aggregate investment income* (AII) over $50,000 under ITA [s.125(5.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-125.html) (the *AII grind*)
+- *Adjusted aggregate investment income* (AAII) over $50,000 under ITA [s.125(5.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-125.html) (the *AAII grind*)
 - A large *taxable capital* base (the *large CCPC* rule)
 
 *Aggregate investment income* (AII): income from passive investments held in the corp (interest, foreign income, the taxable portion of capital gains).  
 AII is taxed at a high combined rate (~50.2% in Ontario), but a portion is *refundable*.  
 It's parked in the corporation's *NERDTOH* (non-eligible RDTOH) account and refunded when the corporation eventually pays a *non-eligible* dividend to the shareholder.  
-The refundable mechanism is what stops the CCPC from being used as an indefinite tax-deferral vehicle for passive investing.  
+The refundable mechanism is what stops the CCPC from being used as an indefinite tax-deferral vehicle for passive investing.
+
+The small-business-deduction grind keys off *adjusted* aggregate investment income (AAII), which is AII with a few adjustments; for a plain corporate brokerage account AAII equals AII, so the $50,000 threshold bites on the same number.  
 
 Dividends *received* from other Canadian corporations (for example, portfolio shareholdings or funds structured as corporations) sit in their own bucket:
 - Exempt from Part I tax under *s.112*; the corresponding Part IV tax is recovered when the corp later pays a dividend out
@@ -455,7 +460,7 @@ When a question gets specific, several layers of authority can apply:
   - [s.112](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-112.html) - inter-corporate dividend deduction (Part I exemption for dividends received from other Canadian corporations)
   - [s.120.4](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-120.4.html) - *Tax on Split Income* (TOSI), restricting income splitting through dividends to non-active family members
   - [s.123.5](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-123.5.html) - additional 5% federal tax on PSB income
-  - [s.125](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-125.html) - Small Business Deduction; s.125(3) sharing among associated corporations; s.125(5.1) AII grind and large-CCPC reduction of the business limit; s.125(7) definition of *Personal Service Business* and the five-full-time-employees safe harbour
+  - [s.125](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-125.html) - Small Business Deduction; s.125(3) sharing among associated corporations; s.125(5.1) AAII grind and large-CCPC reduction of the business limit; s.125(7) definition of *Personal Service Business* and the five-full-time-employees safe harbour
   - [s.150](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-150.html) - T2 corporate return filing deadline (6 months after fiscal year-end)
   - [s.157](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-157.html) - balance-due dates and corporate tax instalment rules
   - [s.256(5.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-256.html) - *control in fact* test relevant to CCPC status

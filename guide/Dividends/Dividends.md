@@ -194,8 +194,8 @@ Two accounts hold previously paid refundable corporate tax:
 - *Non-Eligible Refundable Dividend Tax on Hand* (NERDTOH)
 
 The corporation gets this tax back as a *dividend refund* under ITA [s.129(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-129.html) when it pays a taxable dividend:
-- *Eligible* dividend paid → draws only on ERDTOH (ITA s.129(1)(a))
-- *Non-eligible* dividend paid → draws on NERDTOH first, and only spills into ERDTOH after NERDTOH is exhausted (ITA s.129(1)(b))
+- *Eligible* dividend paid → draws only on ERDTOH (ITA s.129(1)(a)(i))
+- *Non-eligible* dividend paid → draws on NERDTOH first, and only spills into ERDTOH after NERDTOH is exhausted (ITA s.129(1)(a)(ii))
 
 For how these accounts get filled, how much comes back, and a worked example, see [ERDTOH-NERDTOH.md](ERDTOH-NERDTOH.md).  
 

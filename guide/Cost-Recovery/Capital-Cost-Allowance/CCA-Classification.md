@@ -32,12 +32,12 @@ The classes an owner-managed CCPC most often uses:
 | `10` | 30% declining | motor vehicles, vans, light and pickup trucks under the passenger-vehicle cost cap; one shared pool | yes |
 | `10.1` | 30% declining | passenger vehicles costing over the cap ($39,000 + sales taxes in 2026); each in its own class | special |
 | `12` | 100% | application software (other than systems software) | mostly no |
-| `13` | straight-line over lease term + first renewal (min 5, max 40 years) | leasehold improvements | exempt |
+| `13` | straight-line over lease term + first renewal (min 5, max 40 years) | leasehold improvements | exempt (Sch. III first-year limit) |
 | `14` | straight-line over remaining legal life | limited-life intangibles (patents, franchises, term licences) | no |
 | `14.1` | 5% declining | goodwill, incorporation expenses over $3,000, customer lists, unlimited-life intangibles | yes |
 | `54` | 30% declining | zero-emission passenger vehicles (cost capped at $61,000 + taxes) | full-expensing |
 | `55` | 40% declining | zero-emission vehicles otherwise in Class 16 (taxis, courier trucks) | full-expensing |
-| `53` | 50% declining | manufacturing and processing machinery and equipment | full-expensing |
+| `53` / `43` | 50% / 30% declining | manufacturing and processing machinery and equipment (Class 53 before 2026; Class 43 for acquisitions after 2025) | full-expensing |
 
 The "Half-year" column notes only the year-of-acquisition rule.  
 Under the reinstated *Accelerated Investment Incentive Property* (AIIP) rules, the half-year rule is suspended: a regular class gets an enhanced first-year allowance of 1.5× its normal rate, and a full-expensing class deducts 100% in year one.  

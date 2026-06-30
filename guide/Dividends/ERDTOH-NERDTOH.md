@@ -32,7 +32,7 @@ The four pools:
 - *NERDTOH*: previously paid corporate tax, recovered when a non-eligible dividend is paid
 
 What fills each pool:
-- General-rate ABI → GRIP (72% of the post-tax addition)
+- General-rate ABI → GRIP (72% of the general-rate income)
 - Eligible dividend received → GRIP (full amount) + ERDTOH (Part IV tax)
 - Non-eligible dividend received → NERDTOH (Part IV tax)
 - AII → NERDTOH (30⅔% refundable Part I) + CDA (non-taxable ½ of capital gains)
@@ -132,7 +132,7 @@ The *dividend refund* under ITA [s.129(1)](https://laws-lois.justice.gc.ca/eng/a
   - ERDTOH year-end balance (ITA s.129(1)(a))
 - *Non-eligible* dividends paid → refund equal to the lesser of:
   - 38⅓% of non-eligible dividends paid in the year
-  - NERDTOH year-end balance *plus* any ERDTOH balance left over after the eligible-dividend refund (ITA s.129(1)(b))
+  - NERDTOH year-end balance *plus* any ERDTOH balance left over after the eligible-dividend refund (ITA s.129(1)(a)(ii))
 
 Ordering rules:
 - An eligible dividend draws only on ERDTOH; it cannot use NERDTOH
@@ -229,7 +229,7 @@ The eligible designation produces a more favourable personal-side gross-up and D
 For the parallel non-eligible / NERDTOH-recovery example (with year-end timing), see [Dividends / Worked examples](Dividends-Examples.md#worked-examples).  
 
 
-# Related
+## Related
 
 - [Dividends](Dividends.md)
 - [T3](../T3/T3.md)
@@ -240,13 +240,13 @@ For the parallel non-eligible / NERDTOH-recovery example (with year-end timing),
 - [Glossary](../Glossary.md)
 
 
-# Citations
+## Citations
 
 - Income Tax Act (R.S.C., 1985, c. 1 (5th Supp.)):
   - [s.89(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-89.html) - definition of *GRIP*
   - [s.89(14)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-89.html) - eligible dividend designation by written notice at or before payment
   - [s.112](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-112.html) - inter-corporate dividend deduction (Part I exemption for dividends received)
-  - [s.129(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-129.html) - dividend refund formula (eligible: s.129(1)(a); non-eligible: s.129(1)(b))
+  - [s.129(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-129.html) - dividend refund formula (eligible: s.129(1)(a)(i); non-eligible: s.129(1)(a)(ii))
   - [s.129(4)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-129.html) - definitions of *ERDTOH* and *NERDTOH*, and the additions to each; refundable Part I tax on AII (30⅔%); destination rule for Part IV tax
   - [s.129(5)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-129.html) - transition of the pre-2019 RDTOH into ERDTOH and NERDTOH (CCPC opening ERDTOH = lesser of RDTOH and 38⅓% of GRIP)
   - [s.185.1](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-185.1.html) - Part III.1 tax on excessive eligible dividend designations (20%); s.185.1(2) joint election to reclassify a small overshoot as a non-eligible dividend

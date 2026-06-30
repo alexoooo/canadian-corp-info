@@ -79,7 +79,7 @@ No other class fits, so the catch-all Class 8 applies at 20% declining balance w
 Year 1 (2026):
 
 Jun 15 entry:
-- Debit `Machinery and equipment - cost` (GIFI 1900) = $1,800
+- Debit `Machinery and equipment - cost` (GIFI 1740) = $1,800
 - Debit `HST receivable` = $234
 - Credit `Cash` = $2,034
 

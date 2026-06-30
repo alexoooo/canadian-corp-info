@@ -353,7 +353,7 @@ Details: [Filing deadlines and instalments](Small-Business-Tax-Overview.md#filin
   - Event-to-pool table
 - *Cross-cutting concepts*:
   - A non-eligible dividend draws its refund from NERDTOH first, then from ERDTOH once NERDTOH runs out
-  - AII fills NERDTOH, shrinks the small-business deduction once it tops $50,000, and so indirectly fills GRIP
+  - AII fills NERDTOH, shrinks the small-business deduction once adjusted AII (AAII) tops $50,000, and so indirectly fills GRIP
   - The $500,000 business limit is also shared among associated corporations and pared back for a large-CCPC capital base
   - TOSI limits splitting dividends to family members not active in the business
   - GST/HST is a parallel cycle on its own account and return
@@ -388,7 +388,7 @@ Full citations live on each page; here are the key provisions behind this page:
   - [s.83(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-83.html) - capital dividend election; [s.184(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-184.html) - 60% Part III tax on over-elections
   - [s.89(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-89.html) - GRIP and CDA definitions and the 0.72 general-rate factor; [s.89(14)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-89.html) - eligible designation
   - [s.121](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-121.html) - federal dividend tax credit (15.0198% eligible, 9.0301% non-eligible)
-  - [s.125(5.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-125.html) - SBD grind on AII over $50,000
+  - [s.125(5.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-125.html) - SBD grind on AAII over $50,000
   - [s.129](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-129.html) - dividend refund (s.129(1)); ERDTOH and NERDTOH definitions, 30⅔% Part I on AII, and the 38⅓% pool rates (s.129(4))
   - [s.185.1](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-185.1.html) - 20% Part III.1 tax on excessive eligible designations
   - [s.186(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-186.html) - 38⅓% Part IV tax on dividends received

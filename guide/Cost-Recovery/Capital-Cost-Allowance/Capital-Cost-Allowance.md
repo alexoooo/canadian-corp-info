@@ -16,7 +16,7 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
 
 Limitations:
 - Focus is on a typical owner-managed CCPC operating in Canada
-- Manufacturing and processing (Class 53), clean-energy (Classes 43.1 / 43.2), and resource regimes are touched on but not worked through
+- Manufacturing and processing (Class 53, or Class 43 for acquisitions after 2025), clean-energy (Classes 43.1 / 43.2), and resource regimes are touched on but not worked through
 - Buildings (Class 1 / 3 / 6) are touched on, not covered in depth
 - The additional 2% / 6% election under Regulation 1101(5b.1) is out of scope
 - Change-of-use deemed dispositions (ITA s.13(7)) are touched on, not worked through
@@ -102,6 +102,7 @@ The *half-year rule* (Regulation 1100(2)) lets you claim CCA on only half the ne
 Net additions = (cost of additions) − (lesser of proceeds, cost for dispositions).  
 
 Classes exempt from the half-year rule include 12 (most items), 13, 14, 23, 24, 27, 29, 34, and 52.  
+Class 13 is exempt from this Regulation 1100(2) rule, but Schedule III imposes its own first-year limit on leasehold improvements, so the asset register still flags a first-year cap for the class.  
 
 The *Accelerated Investment Incentive* (AIIP) enhances the first-year CCA deduction by suspending the half-year rule and applying an uplift.  
 It first applied to property acquired after Nov 20 2018, began phasing out for property available for use after 2023, and was scheduled to end after 2027.  
@@ -110,7 +111,7 @@ The 2024 Fall Economic Statement reinstated it, enacted by Bill C-15 (Budget Imp
 As reinstated, for property acquired after 2024 (on or after Jan 1 2025) and available for use before 2030:
 - For CCA classes otherwise subject to the half-year rule, the half-year rule is suspended and the first-year base is 150% of the net addition (three times the deduction the half-year rule alone would have allowed)
 - For classes not subject to the half-year rule, the first-year deduction is one-and-a-half times the normal allowance
-- For *full-expensing* classes (Class 53 M&P, 43.1 / 43.2 clean energy, 54 / 55 / 56 zero-emission vehicles), 100% of cost is deductible in the first year
+- For *full-expensing* classes (M&P equipment in Class 53, or Class 43 for acquisitions after 2025; clean energy 43.1 / 43.2; zero-emission vehicles 54 / 55 / 56), 100% of cost is deductible in the first year
 
 A new phase-out runs from 2030 to 2033: the enhancement steps down for property available for use after 2029 and is fully eliminated for property available for use after 2033.  
 The year-by-year step-down percentages are not quoted here.  
@@ -128,7 +129,7 @@ A Dec 2024 amendment removed the separate short-fiscal-year proration of the *de
 ## Available-for-use rule
 
 CCA cannot be claimed on a class addition until the property is *available for use* (ITA [s.13(26)–(32)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-13.html)).  
-The cost is in the pool from the acquisition date, but the half-year-adjusted base feeds CCA only once it is available for use.
+The cost does not enter the pool until the property is available for use; the half-year-adjusted base then feeds CCA once it is in service.
 
 For non-buildings (s.13(27)), the earliest of:
 - First time it is used to earn income
@@ -248,7 +249,7 @@ These thresholds matter most for:
 
 For certain classes, you can expense an item in the books rather than capitalize and amortize it.  
 Where a class writes off the whole cost in the first year, capitalizing the item and expensing it results in the same deduction in the same year:
-- *Which classes*: most of Class 12 (its half-year-exempt items) and the *full-expensing* classes under AIIP (53, 43.1 / 43.2, 54 / 55 / 56)
+- *Which classes*: most of Class 12 (its half-year-exempt items) and the *full-expensing* classes under AIIP (M&P Class 53 / 43, 43.1 / 43.2, 54 / 55 / 56)
 - *No spread*: nothing is amortized over later years, so the choice is bookkeeping mechanics, not timing, and expensing such an item directly costs no tax
 - *Software exception*: Class 12 application software stays under the half-year rule, so outside the AIIP window it deducts over two years and the equivalence fails
 - *When timing diverges*: only if the alternative is a declining-balance class (Class 8 at 20%, say), where the pool releases the cost over years; that gap is what the capitalization floor trades off
@@ -276,7 +277,7 @@ Out of scope here:
 ## Bookkeeping and T2 schedules
 
 In the books (accrual + tax basis, per [Small Business Tax Overview](../../Small-Business-Tax-Overview.md)):
-- At acquisition: debit the fixed-asset GIFI account (`Computer equipment` 1774, `Furniture and fixtures` 1787, `Motor vehicles` 1742, `Machinery and equipment` 1900, `Goodwill / intangibles` 2010-series, with goodwill at 2012); credit `Cash` or `Accounts payable`
+- At acquisition: debit the fixed-asset GIFI account (`Computer equipment` 1774, `Furniture and fixtures` 1787, `Motor vehicles` 1742, `Machinery and equipment` 1740, `Goodwill / intangibles` 2010-series, with goodwill at 2012); credit `Cash` or `Accounts payable`
 - Tax-basis-only convention: skip monthly accounting depreciation entirely; book the CCA at year-end as the period charge (debit `Amortization of tangible assets` 8670 / credit the relevant accumulated-amortization account)
 - GAAP-style books convention: book accounting depreciation monthly per the corp's policy; add it back on Schedule 1; deduct CCA from Schedule 8
 

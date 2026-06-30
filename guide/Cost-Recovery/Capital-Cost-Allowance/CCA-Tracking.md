@@ -36,7 +36,7 @@ The tax constants that depend only on the CCA class. One row per `Class`. Column
 - `Method`:
   - `Declining balance`: UCC * (1 - Rate), the most common (default) method
   - `Straight-line`: capital cost / amortization period, classes 13 and 14 only (`Rate` is unused)
-  - `Full expensing`: capital cost, full-expensing classes 53, 54, 55, 56, and 43.1/43.2 under AIIP (`Rate` is unused)
+  - `Full expensing`: capital cost, full-expensing classes 53 / 43 (M&P), 54, 55, 56, and 43.1/43.2 under AIIP (`Rate` is unused)
 - `Tangibility`:
   - `Tangible`: equipment, vehicles, leasehold improvements, etc.
   - `Intangible`: incorporation costs, goodwill, limited-life rights, etc.
@@ -59,7 +59,7 @@ The tax constants that depend only on the CCA class. One row per `Class`. Column
 | 50 | `55%` | `Declining balance` | Tangible | True | computers, peripherals, networking |
 
 `Rate`, `Method`, and `Tangibility` are functions of the class.  
-`Half-year Default` is the class's usual treatment; the standard flow takes it as given and the software applies it by class. The property ultimately decides, not the class number, so a few items can depart from the default; tracking those per item is [out of scope](#out-of-scope).
+`Half-year Default` is the class's usual treatment; the standard flow takes it as given and the software applies it by class. The property ultimately decides, not the class number, so a few items can depart from the default; see [Special cases](#special-cases) for per-item handling.
 
 The GIFI account lines deliberately do *not* live here.  
 They follow the asset's balance-sheet nature, not its class: a single class routinely spans several accounts (Class 8, the catch-all, splits across furniture, equipment, and machinery), and a single account can serve several classes (`1774` covers both Class 12 application software and Class 50 hardware).  
@@ -97,7 +97,7 @@ Columns:
 - `AIIP Eligible`:
   - True if acquired after 2024 and available for use before 2030 (the reinstated incentive)
   - Not if you or a non-arm's-length party previously owned it, or it came in on a rollover; an arm's-length purchase of used property still qualifies
-  - Leave false for the full-expensing and ZEV classes (53, 54, 55, 56, 43.1, 43.2), which expense on their own rules
+  - Leave false for the full-expensing and ZEV classes (M&P Class 53 / 43, 54, 55, 56, 43.1, 43.2), which expense on their own rules
   - Drives the first-year uplift; Schedule 8 reports these additions in their own column (225)
   - Rules and phase-out: [Half-year rule and AIIP](Capital-Cost-Allowance.md#half-year-rule-and-aiip)
 - `Note`:
@@ -221,7 +221,7 @@ Deliberately excluded to keep the standard flow simple, on a convention-over-con
 
 Cases they do not cover:
 - *Mixed first-year treatments in one class-year*: a class with both AIIP and half-year additions in the same year breaks the single-factor `Adjustment` above; compute the adjustment per addition and sum it (`+0.5 × AIIP additions − 0.5 × half-year additions`); the pool stays one line per class, matching Schedule 8's separate AIIP and regular addition columns
-- *Full-expensing classes* (53, 54, 55, 56, 43.1 / 43.2 under AIIP): `CCA (Max) = Net Additions` in the year available for use (100%); any later residual depreciates at the class rate
+- *Full-expensing classes* (M&P Class 53 / 43, 54, 55, 56, 43.1 / 43.2 under AIIP): `CCA (Max) = Net Additions` in the year available for use (100%); any later residual depreciates at the class rate
 - *Class 13 and Class 14* are straight-line, not declining balance: CCA is `Capital Cost ÷ amortization period` (the lease term + first renewal for 13; the remaining legal life for 14), subject to the first-year limit; the declining-balance formula does not apply
 - *Class 10.1*: half-CCA in the year of disposition; no recapture or terminal loss
 - *Short tax year* (under 365 days): multiply `CCA (Max)` by `days in tax year ÷ 365`, except for classes 12, 13, 14, and 15

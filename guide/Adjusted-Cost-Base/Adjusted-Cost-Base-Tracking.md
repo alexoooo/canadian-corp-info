@@ -183,7 +183,7 @@ Outputs (cumulative per symbol):
 - This minimal template does not automate superficial loss, stock splits, or spin-offs; handle those with manual row edits:
   - Stock split: insert a memo row on the effective date; adjust `Quantity` to the post-split total (ACB unchanged, per-unit ACB recalculates automatically)
   - Spin-off: close the parent position with a zero-proceeds Sell on the effective date, then open two new Buy rows (one for the parent, one for the new entity) with quantities and ACB allocated based on relative fair market values on that date; see [Adjusted-Cost-Base.md](Adjusted-Cost-Base.md) for the allocation rule
-  - Superficial loss: the denied loss is not deducted; instead add it to the ACB of the substituted property via a manual Buy-like row (no quantity change, ACB increase only)
+  - Superficial loss: the denied loss is not deducted; instead it is added to the ACB of the substituted property under ITA s.53(1)(f), via a manual Buy-like row (no quantity change, ACB increase only). That addition lands wherever the substituted property is held, which can be a different account or an affiliated person (the shareholder personally, a spouse, or another affiliated corporation), not necessarily this sheet
 - DRIP can be entered as Buy with `Commission` = 0; use the payment/reinvestment date (when the units are credited to your account) as `Date`, and the FX rate for that same date
 
 

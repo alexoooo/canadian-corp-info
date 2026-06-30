@@ -73,7 +73,7 @@ Unlike *Capital Cost Allowance* (CCA), the cost is not spread over years; unlike
 
 The cost-of-sales identity:
 - Opening inventory + purchases (net of returns) + freight-in + other direct costs − closing inventory = COGS
-- Schedule 125 enforces it as lines 8300 + 8320 + 8457 + 8450 − 8500 = 8518
+- Schedule 125 enforces it as lines 8300 + 8320 + 8340 + 8360 + 8450 + 8457 − 8500 = 8518 (direct wages 8340 and subcontracts 8360 are zero for a resale-only CCPC)
 - The closing figure is set by the year-end *lower of cost or fair market value* (LCM) valuation under ITA [s.10(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-10.html), so the valuation method drives COGS directly
 - The cost-flow method is fixed year over year under s.10(2.1); valuing all inventory at FMV instead is the Regulation 1801 alternative
 
@@ -271,7 +271,7 @@ Step 3, apply LCM to the corrected book balance:
 
 Step 4, verify the cost-of-sales identity:
 - Opening inventory + purchases (net of returns) + freight-in + other direct costs − closing inventory = COGS
-- This identity is what Schedule 125 enforces: lines 8300 + 8320 + 8457 + 8450 − 8500 = 8518
+- This identity is what Schedule 125 enforces: lines 8300 + 8320 + 8340 + 8360 + 8450 + 8457 − 8500 = 8518 (8340 and 8360 are zero for a resale-only CCPC)
 - If the identity does not hold, the bookkeeping ledger and the schedule disagree; fix the ledger, not the schedule
 
 Step 5, post to the T2 schedules:

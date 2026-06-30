@@ -86,8 +86,8 @@ Channels (current as of 2026):
 
 Distribution: two copies of the slip to the shareholder by the same deadline; one copy retained by the issuer; the T5 Summary goes to CRA only (not to the shareholder).  
 
-A late T5 attracts a per-slip penalty under ITA [s.162(7.01)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-162.html).  
-For an owner-manager filing one to fifty slips, the rate is $10 per day per slip with a $100 minimum and a 100-day cap (a single late slip ranges from $100 to $1,000).  
+A late T5 attracts a penalty under ITA [s.162(7.01)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-162.html).  
+For an owner-manager filing one to fifty slips, the penalty is $10 per day for the whole T5 filing (not per slip), subject to a $100 minimum and a 100-day cap, so the whole filing ranges from $100 to $1,000 however many slips it contains.  
 Higher daily rates apply at higher slip counts.  
 
 

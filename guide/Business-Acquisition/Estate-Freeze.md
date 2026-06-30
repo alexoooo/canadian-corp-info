@@ -69,7 +69,7 @@ The exception is in ITA s.84.1(2)(e), introduced by Bill C-208 and tightened by 
 
 The transfer must follow one of two pathways:
 - *Immediate transfer*: both legal and factual control pass to the child's corporation, with the balance of shares transferred within three years; the child must retain control and stay actively involved for at least three years after the transfer
-- *Gradual transfer*: legal control passes immediately and the parent's equity is significantly reduced within ten years; the child must retain control and stay involved for the later of five years or completion of the transfer
+- *Gradual transfer*: legal control passes immediately and the parent's equity is significantly reduced within ten years; the child must retain control and stay actively involved for at least five years after the transfer
 
 A further condition: the parent can use the exception only once for shares deriving their value from the same business.  
 The conditions are strict and tested after closing, so this is firmly advisor territory.  
@@ -80,7 +80,14 @@ The conditions are strict and tested after closing, so this is firmly advisor te
 Where the exception applies and the shares are *qualified small business corporation* (QSBC) shares, the parent can shelter the capital gain with the *lifetime capital gains exemption* (LCGE), up to $1,275,000 for 2026 (ITA [s.110.6](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-110.6.html)).  
 The capital gains inclusion rate is one-half for 2026 (the proposed increase to two-thirds was cancelled in 2025).  
 
-A freeze is often timed to *multiply* the exemption across family members holding shares (or beneficiaries of a family trust), which is one of its planning attractions.  
+A freeze is often timed to *multiply* the exemption across family members holding shares (or beneficiaries of a family trust), which is one of its planning attractions.
+
+
+## Corporate attribution trap
+
+A freeze that benefits a *designated person* (the freezor's spouse, or a trust with minor beneficiaries) can trigger corporate attribution under ITA [s.74.4(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-74.4.html): the freezor is taxed on deemed interest, at the prescribed rate, on the value frozen, reduced by dividends actually paid out.  
+A freeze whose growth accrues to *adult* children is not caught, since they are not designated persons (ITA [s.74.5(5)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-74.5.html)).  
+This is one more reason a freeze involving a spouse or minor beneficiaries is advisor territory, checked alongside TOSI (s.120.4) on any dividends the next generation receives.  
 
 
 ## Related
@@ -103,5 +110,5 @@ A freeze is often timed to *multiply* the exemption across family members holdin
   - [s.70(5)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-70.html) - deemed disposition of shares at fair market value on death (the value a freeze caps)
   - [s.110.6](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-110.6.html) - lifetime capital gains exemption on QSBC shares
   - [s.120.4](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-120.4.html) - Tax on Split Income (TOSI)
-  - [s.74.4](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-74.4.html) - corporate attribution where a freeze benefits a designated person (spouse or minor)
+  - [s.74.4](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-74.4.html) - corporate attribution where a freeze benefits a designated person; [s.74.5(5)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-74.5.html) defines *designated person* (spouse or related minor, not adult children)
 - CRA - Form T2057, Election on Disposition of Property by a Taxpayer to a Taxable Canadian Corporation: https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2057.html

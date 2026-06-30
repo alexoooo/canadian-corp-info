@@ -101,7 +101,7 @@ Any personal use by the shareholder-employee is then a *taxable benefit* reporte
 - For a leased car: two-thirds of the lease cost
 - *Reduced* where business use exceeds 50% and personal driving is at or below 1,667 km per month: the standby is prorated by personal km ÷ (1,667 × months available)
 
-*Operating cost benefit* (ITA [s.6(1)(k)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-6.html), s.6(2.2)), the benefit of the corp paying personal operating costs:
+*Operating cost benefit* (ITA [s.6(1)(k)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-6.html)), the benefit of the corp paying personal operating costs:
 - 34¢ per personal kilometre for 2026 (31¢ for taxpayers principally selling or leasing automobiles), set by Reg 7305.1
 - Optional alternative where business use exceeds 50%: one-half of the standby charge, if the employee elects in writing before year-end
 
@@ -321,7 +321,7 @@ The corporate structure trades this simplicity for the benefit and deduction rul
   - [s.6(1)(a)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-6.html) - value of employment benefits included in income
   - [s.6(1)(b)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-6.html) - allowances; (vii.1) reasonable per-km motor-vehicle allowance excluded from income; (x), (xi) an allowance not based solely on km, or duplicated by reimbursement, is deemed unreasonable
   - [s.6(1)(e)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-6.html), s.6(2) - automobile standby charge and the reduced-standby formula
-  - [s.6(1)(k)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-6.html), s.6(2.2) - operating cost benefit and the optional ½-standby election
+  - [s.6(1)(k)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-6.html) - operating cost benefit, including the optional ½-standby alternative; per-km rate under Reg 7305.1
   - [s.8(1)(i)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-8.html), s.8(13) - employee deduction for office rent and supplies, and the work-space-in-the-home limitation (T2200 / T777 path)
   - [s.13(7)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-13.html) - change-of-use and partial-use adjustments to capital cost
   - [s.15(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-15.html) - benefit conferred on a shareholder, included in income with no corporate deduction

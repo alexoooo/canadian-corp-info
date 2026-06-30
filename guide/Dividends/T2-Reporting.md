@@ -100,7 +100,7 @@ For full mechanics, see [Capital-Dividend-Account.md](../Capital-Dividend-Accoun
 
 - Income Tax Act (R.S.C., 1985, c. 1 (5th Supp.)):
   - [s.83(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-83.html) - capital dividend election; the elected amount is excluded from the shareholder's income under s.83(2)(b)
-  - [s.89(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-89.html) - GRIP definition and the paragraph (c) anti-avoidance rule behind the additional Part III.1 rate
+  - [s.89(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-89.html) - GRIP definition; and paragraph (c) of the *excessive eligible dividend designation* definition, the anti-avoidance rule behind the additional Part III.1 rate
   - [s.129](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-129.html) - dividend refund on taxable dividends paid (s.129(1))
   - [s.184(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-184.html) - Part III tax on excessive capital dividend elections (60% of the excess)
   - [s.185.1](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-185.1.html) - Part III.1 tax on excessive eligible dividend designations (20%, plus an additional 10% where the excess arises under paragraph (c) of the s.89(1) definition); s.185.1(2) joint election to reclassify the excess as a separate non-eligible dividend (unavailable when the 30% rate applies)

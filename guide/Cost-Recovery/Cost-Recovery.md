@@ -13,7 +13,7 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
   - *Construction in progress* (CIP) for self-constructed fixed assets: tracked as *materials*, accumulating during the build then transferring to a CCA class on completion
   - *Capital Cost Allowance* (CCA) for depreciable property: tracked in *asset register*, expensed by *class* geometrically over years
 - The channel is set by the corp's *purpose at acquisition*: hold for resale (inventory, COGS → expense), build a fixed asset (CIP → CCA), use as a fixed asset (CCA)
-- A *change in use* later can move a property between channels; the property carries its existing cost into the new channel and no tax is owed at the switch (see [Change of use](#change-of-use))
+- A *change in use* later can move a property between channels; the property moves at a carryover or FMV basis depending on the direction, and no tax is owed at the switch (see [Change of use](#change-of-use))
 
 Limitations:
 - This page is an overview; the per-channel mechanics (LCM, half-year rule, UCC, recapture, terminal loss, available-for-use, CIP transfer entry) live on the three sub-pages
@@ -195,7 +195,7 @@ The 50%-business-use rule on ITC eligibility for capital property is in [HST](..
 ## Available for use
 
 CCA cannot be claimed on a class addition until the property is *available for use* (ITA [s.13(26)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-13.html)).  
-The cost is in the UCC pool from the acquisition date, but the half-year-adjusted base feeds CCA only once the property is in service.
+The cost does not enter the class's UCC until the property is available for use; the half-year-adjusted base then feeds CCA once the property is in service.
 
 For non-buildings (s.13(27)), the earliest of:
 - First time the property is used to earn income
@@ -239,7 +239,7 @@ The HST-side equivalent is the deemed ITC adjustment under ETA s.199(3) / s.200(
 
 The cluster touches the same four T2 schedules across all three channels; the line items differ by channel.
 
-- *Schedule 100* (balance sheet): inventory on the 1120-series GIFI codes; fixed assets on the fixed-asset codes (1742 / 1774 / 1787 / 2010-series / 1900); CIP as a sub-account within the fixed-asset section until transfer
+- *Schedule 100* (balance sheet): inventory on the 1120-series GIFI codes; fixed assets on the fixed-asset codes (1740 / 1742 / 1774 / 1787 / 2010-series); CIP as a sub-account within the fixed-asset section until transfer
 - *Schedule 125* (income statement): COGS lines 8300–8518 for inventory; `Amortization of tangible assets` (8670) at the *book* amortization figure for depreciable property
 - *Schedule 8* (CCA): one row per class with opening UCC, additions, dispositions, half-year adjustment, rate, CCA claimed, closing UCC; inventory not on Schedule 8
 - *Schedule 1* (book-to-tax reconciliation): book amortization added back, CCA from Schedule 8 deducted; inventory typically produces no adjustment

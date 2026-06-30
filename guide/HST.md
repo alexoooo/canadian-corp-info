@@ -32,14 +32,16 @@ Limitations:
 
 Registration is mandatory once worldwide *taxable supplies* exceed $30,000:
 - Over the immediately preceding four consecutive calendar quarters, *or*
-- In any single calendar quarter (the *blow-out* test in ETA [s.148(1)(b)](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-148.html))
+- In any single calendar quarter (the *blow-out* test in ETA [s.148(2)](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-148.html))
 
-Two clocks run once the threshold is crossed:
-- *Effective date of registration*: the day of the supply that put the corp over the threshold (ETA [s.240(2.1)](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-240.html)); GST/HST must be charged on that supply and every subsequent supply
-- *Filing deadline for the registration application*: 29 days after the effective date
+Two clocks run once the threshold is crossed, and the effective date depends on which test tripped:
+- *Effective date of registration*:
+  - Single-quarter blow-out (s.148(2)): the day of the supply that put the corp over $30,000 within the quarter; that supply and every later one are taxable, with no grace period
+  - Four-quarter test (s.148(1)): the corp stays a small supplier through the end of the month following the quarter in which it crossed, so the crossing supplies are not taxable; registration takes effect from the end of that grace
+- *Filing deadline for the registration application*: 29 days after the day the corp is first required to be registered (ETA [s.240(2.1)](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-240.html))
 
 *Taxable supplies* for this test include zero-rated supplies (such as services to non-residents; see [Zero-rated supplies](#zero-rated-supplies) below) but exclude *exempt* supplies (most financial services, residential rent, basic health and dental care, most child-care and educational services).  
-*Associated* corporations' taxable supplies aggregate with the corp's own when applying the test (s.148(2)(c)); a group of associated CCPCs cannot stay below the threshold by splitting revenue across entities.  
+*Associated* corporations' taxable supplies aggregate with the corp's own when applying the test (the *associate* definition is in ETA [s.148(4)](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-148.html)); a group of associated CCPCs cannot stay below the threshold by splitting revenue across entities.  
 
 Voluntary registration is available below the threshold (ETA [s.240(3)](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-240.html)):
 - The corp can claim ITCs on inputs from day one of registration, which is the main reason to register voluntarily
@@ -226,7 +228,7 @@ The *Quick Method* (ETA [s.227](https://laws-lois.justice.gc.ca/eng/acts/E-15/se
 ITCs on *capital purchases* and on *imports* are still claimable separately under the regular method, even after the Quick Method election.  
 
 Eligibility requires *all* of the following:
-- Worldwide *taxable supplies* (including those of associated corps) in the previous fiscal year, plus the HST charged on those supplies, total $400,000 or less (ETA s.227(4); the threshold rose from $200,000 to $400,000 for fiscal years starting on or after 2013-01-01)
+- Worldwide *taxable supplies* (including those of associated corps) in the previous fiscal year, plus the HST charged on those supplies, total $400,000 or less; this cap and the Quick Method remittance rates are set by the *Streamlined Accounting (GST/HST) Regulations* (the election framework is ETA [s.227](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-227.html); the cap rose from $200,000 for fiscal years beginning on or after 2013-01-01)
 - The corp is not in an ineligible designation (per RC4058):
   - Listed financial institutions
   - Accountants, bookkeepers, tax-return preparers (when supplying those services)
@@ -248,7 +250,7 @@ Remittance rate:
 - *1% credit on the first $30,000 of eligible supplies* in each fiscal year, applied as a reduction to the remittance percentage on those supplies (e.g. Ontario service: 8.8% − 1.0% = 7.8% on the first $30,000, then 8.8% on the remainder)
 
 When the Quick Method pays:
-- *Service consultants with low input HST*: the kept spread (4.2% of GST/HST-inclusive revenue in Ontario services after the 1% credit applies on the first $30k) usually exceeds the ITCs that would have been claimable under the regular method, because the inputs (rent on a home office, a few SaaS subscriptions, a laptop) generate small ITCs
+- *Service consultants with low input HST*: the kept spread (≈2.7% of GST/HST-inclusive revenue for Ontario services, or ≈3.0% of net revenue, before the extra 1% credit on the first $30,000) usually exceeds the ITCs that would have been claimable under the regular method, because the inputs (rent on a home office, a few SaaS subscriptions, a laptop) generate small ITCs
 - *High-input retail or e-commerce*: ITCs on cost of goods sold and on freight-in routinely exceed what the Quick Method would save; stay with the regular method
 - *Zero-rated revenue*: corps with mostly zero-rated revenue (e.g. all-US-client consulting) cannot use the Quick Method to advantage — the remittance rate applies to GST/HST-inclusive revenue, and zero-rated supplies have no HST in their consideration, so the Quick Method math collapses to zero remittance on those supplies; the regular method's ITC refund position is better; see [Foreign Currency](Foreign-Currency.md) for the zero-rated-services workflow
 
@@ -436,15 +438,15 @@ Income-statement effect of the kept spread:
 - HST collected through the year: $5,850
 - Quick Method tax remitted (gross of capital ITC): $4,174.80
 - Kept spread: $5,850 − $4,174.80 = $1,675.20
-- Booked at year-end: debit `HST collected` = $5,850; credit `HST remittance payable` = $4,174.80; credit `Other revenue` (GIFI 8230) = $1,675.20
+- Booked at year-end: debit `HST collected` = $5,850; credit `HST receivable` = $520; credit `Other revenue` (GIFI 8230) = $1,675.20; credit `HST remittance payable` = $3,654.80
 - The $1,675.20 is taxable income to the corp under ITA s.9 and feeds into ABI
 
 Side-by-side comparison:
 - Regular method 2026: $5,018 to CRA, no kept spread, ITCs on operating inputs claimed at $312 total ($234 + $78)
 - Quick Method 2026: $3,654.80 to CRA, $1,675.20 of additional taxable income, no operating-input ITCs claimed
 - *Cash difference*: Quick Method retains an extra $5,018 − $3,654.80 = $1,363.20 of cash
-- *Income-tax cost of the kept spread*: $1,675.20 × ABI rate (Ontario CCPC ABI ≈ 12.2% on the first $500k) = ~$204
-- *Net of corporate tax on the spread*: ~$1,159 better than the regular method on this profile
+- *Income-tax cost*: the $1,675.20 kept spread is taxable income, but expensing the operating inputs gross (instead of claiming $312 of ITCs) adds $312 of deductions, so the net extra taxable income is $1,675.20 − $312 = $1,363.20 (the same as the cash saved); tax at the Ontario CCPC ABI rate (≈12.2% on the first $500k) ≈ $166
+- *Net of corporate tax*: ~$1,197 better than the regular method on this profile (the cash saving × (1 − 12.2%))
 
 For a consulting CCPC with this input profile, the Quick Method wins.  
 The break-even point against the regular method on Ontario services is roughly the ITC level at which operating-input HST equals the kept spread; for $45,000 of Ontario service revenue, that break-even is around $1,675 of recoverable HST on operating inputs (about $13,000 of HST-eligible operating spending), well above what most consulting CCPCs actually run.  
@@ -494,7 +496,7 @@ The break-even point against the regular method on Ontario services is roughly t
   - [s.218.1](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-218.1.html) - self-assessment on imported services and intangibles
   - [s.221](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-221.html) - obligation of a registrant to collect tax on every taxable supply
   - [s.225](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-225.html) - net-tax computation; 4-year ITC time limit (s.225(4))
-  - [s.227](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-227.html) - Quick Method election framework
+  - [s.227](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-227.html) - Quick Method election framework; the $400,000 eligibility cap and the remittance rates are set by the *Streamlined Accounting (GST/HST) Regulations* (SOR/91-51)
   - [s.231](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-231.html) - bad-debt adjustment on a written-off receivable
   - [s.236](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-236.html) - 50% ITC limit on meals and entertainment
   - [s.237](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-237.html) - quarterly instalments for annual filers with prior-year net tax over $3,000
@@ -537,7 +539,7 @@ The break-even point against the regular method on Ontario services is roughly t
 
 - Verify the GIFI rollup codes for `HST receivable` and `HST collected` against the current RC4088 and reflect them in the bookkeeping section
 - Reproduce or link the current full Quick Method province × business-type rate matrix from RC4058 once the maintainer confirms which subset is worth carrying inline vs deferring to the CRA page
-- Verify the s.148(2)(c) aggregation rule for *associated* corps under the small-supplier test against current CRA administrative position (the statute references "associated" but CRA's interpretation in some publications uses a narrower definition than ITA s.256)
+- Verify the s.148(4) aggregation rule for *associated* corps under the small-supplier test against current CRA administrative position (the statute references "associated" but CRA's interpretation in some publications uses a narrower definition than ITA s.256)
 - Add a tracking-spreadsheet companion analogous to [Adjusted Cost Base Tracking](Adjusted-Cost-Base/Adjusted-Cost-Base-Tracking.md): a per-period log of HST collected and ITCs claimed, with the GST34 line mapping
 - Cross-link this page from [Payment](Payment/Payment.md) once that page is past the stub phase; this page covers bookkeeping and return preparation, Payment covers the cash-to-CRA mechanics (pre-authorized debit, online banking, instalment scheduling)
 - Add GST/HST terms to [Glossary](Glossary.md) on a separate maintainer pass: zero-rated, exempt, taxable supply, ITC, Quick Method, small supplier, place of supply, RT program account

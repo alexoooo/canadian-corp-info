@@ -105,6 +105,9 @@ Reading the bottom row:
 The leakage on the eligible path is larger here because Ontario's combined general corporate rate (26.5%) plus the DTC don't perfectly match the gross-up's notional 27.5% corporate rate, and the DTC isn't fully tuned to the top marginal personal bracket.  
 In other provinces, or at lower personal rates, the ranking between eligible and non-eligible can flip.  
 
+The two taxable paths model different income streams, not one stream paid two ways: the eligible path assumes the $1,000 was taxed at the general corporate rate (26.5%), the non-eligible path assumes the SBD rate (12.2%).  
+The non-eligible path's lower total tax reflects that lower corporate rate, not a preference for the non-eligible flavour; for the *same* general-rate income, an eligible dividend beats a non-eligible one, which is the ranking the [corp-side preference order](#corp-side-preference-order) gives.  
+
 
 ## Related
 

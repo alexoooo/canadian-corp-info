@@ -423,9 +423,9 @@ Schedule 125 year 1:
 Schedule 1 reconciliation: none required; income-account FX is fully includable and the GIFI line already flows to taxable income.  
 
 Economic check:
-- Invoice #1: USD 10,000 recognized as CAD 13,600 revenue; collected at CAD 13,400 (loss of CAD 200 on the collection date); USD 10,000 held at year-end is worth CAD 13,800 (gain of CAD 400 between Apr 20 and Dec 31)
-- Invoice #2: USD 5,000 recognized as CAD 6,800 revenue; still outstanding at year-end and worth CAD 6,900 (gain of CAD 100 between Oct 1 and Dec 31)
-- Net FX: −200 + 400 + 100 = +300 CAD gain ✓ (matches the trading-account result)
+- Invoice #1: USD 10,000 recognized as CAD 13,600 revenue (at 1.36); the USD is held, not converted, so it revalues to CAD 13,800 at year-end (1.38), an FX gain of CAD 200
+- Invoice #2: USD 5,000 recognized as CAD 6,800 revenue (at 1.36); still outstanding at year-end, worth CAD 6,900 (at 1.38), an FX gain of CAD 100
+- Net FX: 200 + 100 = +300 CAD gain ✓ (matches the trading-account result)
 
 
 ## Year-end USD deposit account
