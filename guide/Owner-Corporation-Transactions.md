@@ -186,6 +186,7 @@ Worked example (reimbursement, 12% workspace):
 - No taxable benefit arises, because the corp is reimbursing a genuine business cost
 
 The principal-residence trap:
+- Reimbursing or deducting the running costs above does *not* affect the exemption; they are current expenses, and only CCA, a structural change, or non-ancillary use trips the change-in-use rules
 - Do *not* claim CCA on the home-office portion of the residence; claiming CCA converts that portion to depreciable income-producing property and can disqualify it from the *principal residence exemption* on a later sale (CRA Income Tax Folio S1-F3-C2)
 - Keep the income-producing use ancillary and make no structural changes, so the whole home stays eligible for the exemption
 

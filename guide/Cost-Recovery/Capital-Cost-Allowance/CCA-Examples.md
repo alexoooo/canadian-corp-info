@@ -144,6 +144,12 @@ Missing the year-1 deduction:
   - Unlike an individual, a corporation cannot use the s.152(4.2) ten-year relief, so the deduction is lost once that window closes
 - The amortize-it-later path applies only to the excess over $3,000, because only that excess is added to Class 14.1
 
+If the first $3,000 was capitalized instead of expensed:
+- *It went into Class 14.1 and CCA was claimed on it*: the first $3,000 has been deducted anyway, just at 5% a year instead of at once; that under-claims the s.20(1)(b) entitlement, which is in the CRA's favour, so leave it and let the pool run down
+- *It sat on the balance sheet with no CCA and no deduction*: once the year is statute-barred the deduction is forgone and the amount lingers as a phantom asset, carrying book value with no remaining tax basis
+  - Tidy it off through *retained earnings* as a prior-period correction (debit retained earnings, credit the incorporation-cost asset), not through the income statement
+  - Do *not* expense it: a forgone amount run through the P&L is non-deductible, adds back on Schedule 1, and leaves the books no cleaner; the retained-earnings route reaches the same tax result while keeping the current income statement clean
+
 An immaterial Class 14.1 pool: continue claiming the geometric tail year by year.  
 There is no CRA "write off below $X" rule; the only ways to clear a Class 14.1 pool are:
 - Acquire more Class 14.1 property and eventually dispose of all of it (rare for owner-managed CCPCs)
