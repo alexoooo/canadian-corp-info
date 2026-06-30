@@ -145,14 +145,21 @@ Missing the year-1 deduction:
 - The amortize-it-later path applies only to the excess over $3,000, because only that excess is added to Class 14.1
 
 If the first $3,000 was capitalized instead of expensed:
-- *It went into Class 14.1 and CCA was claimed on it*: the first $3,000 has been deducted anyway, just at 5% a year instead of at once; that under-claims the s.20(1)(b) entitlement, which is in the CRA's favour, so leave it and let the pool run down; this is forbearance on a finished under-claim across closed years, not a sign the $3,000 validly belongs in the pool — a shield against reassessment, not a basis to start claiming on
-- *It sat on the balance sheet with no CCA and no deduction*: once the year is statute-barred the deduction is forgone and the amount lingers as a phantom asset, carrying book value with no remaining tax basis
+- *CCA was claimed on it*: the $3,000 is deducted at 5% a year rather than at once
+  - That under-claims the s.20(1)(b) entitlement, in the CRA's favour, so leave it and let the pool run down
+  - The forbearance is a shield against reassessing a closed under-claim, not proof the $3,000 belongs in the pool
+- *No CCA was ever claimed*: once the year is statute-barred the deduction is forgone, and the amount lingers as a phantom asset with book value but no tax basis
   - Tidy it off through *retained earnings* as a prior-period correction (debit retained earnings, credit the incorporation-cost asset), not through the income statement
-  - Do *not* expense it: a forgone amount run through the P&L is non-deductible, adds back on Schedule 1, and leaves the books no cleaner; the retained-earnings route reaches the same tax result while keeping the current income statement clean
+  - Do *not* expense it: the write-off is non-deductible, adds back on Schedule 1, and leaves the books no cleaner; retained earnings reaches the same tax result with a clean income statement
 
 Starting the 5% now, rather than expensing or tidying off, splits on the same $3,000 line:
-- *The excess over $3,000*: you can — it was added to Class 14.1 in year one, and because CCA is discretionary its full cost stays in the pool when nothing was claimed, so you begin the 5% in any open year off the standing UCC; this is a current-year deduction, not a reassessment of the closed years, so the statute bar does not bite (set the opening UCC from the year-one addition and expect to substantiate it, especially if no prior Schedule 8 carried the pool)
-- *The first $3,000*: you cannot — it was never a valid Class 14.1 addition (the deductible-not-deducted test above), so there is no pool to draw down; the leave-it tolerance above forgives a *completed* slow claim, it does not license starting one on an amount that never belonged in the pool
+- *The excess over $3,000*: yes
+  - It joined Class 14.1 in year one, and discretionary CCA keeps its full cost in the pool when nothing was claimed
+  - Begin the 5% in any open year off the standing UCC: a current-year deduction, not a reassessment, so the statute bar does not bite
+  - Set the opening UCC from the year-one addition and be ready to substantiate it
+- *The first $3,000*: no
+  - It was never a valid Class 14.1 addition (the deductible-not-deducted test above), so there is no pool to draw down
+  - The leave-it tolerance forgives a completed slow claim, it does not license starting one
 
 So when a phantom incorporation-cost asset bundles both, tidy off only the first-$3,000 slice; the excess is a live pool to start claiming on, not book value to write off.  
 
