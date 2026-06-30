@@ -145,10 +145,16 @@ Missing the year-1 deduction:
 - The amortize-it-later path applies only to the excess over $3,000, because only that excess is added to Class 14.1
 
 If the first $3,000 was capitalized instead of expensed:
-- *It went into Class 14.1 and CCA was claimed on it*: the first $3,000 has been deducted anyway, just at 5% a year instead of at once; that under-claims the s.20(1)(b) entitlement, which is in the CRA's favour, so leave it and let the pool run down
+- *It went into Class 14.1 and CCA was claimed on it*: the first $3,000 has been deducted anyway, just at 5% a year instead of at once; that under-claims the s.20(1)(b) entitlement, which is in the CRA's favour, so leave it and let the pool run down; this is forbearance on a finished under-claim across closed years, not a sign the $3,000 validly belongs in the pool — a shield against reassessment, not a basis to start claiming on
 - *It sat on the balance sheet with no CCA and no deduction*: once the year is statute-barred the deduction is forgone and the amount lingers as a phantom asset, carrying book value with no remaining tax basis
   - Tidy it off through *retained earnings* as a prior-period correction (debit retained earnings, credit the incorporation-cost asset), not through the income statement
   - Do *not* expense it: a forgone amount run through the P&L is non-deductible, adds back on Schedule 1, and leaves the books no cleaner; the retained-earnings route reaches the same tax result while keeping the current income statement clean
+
+Starting the 5% now, rather than expensing or tidying off, splits on the same $3,000 line:
+- *The excess over $3,000*: you can — it was added to Class 14.1 in year one, and because CCA is discretionary its full cost stays in the pool when nothing was claimed, so you begin the 5% in any open year off the standing UCC; this is a current-year deduction, not a reassessment of the closed years, so the statute bar does not bite (set the opening UCC from the year-one addition and expect to substantiate it, especially if no prior Schedule 8 carried the pool)
+- *The first $3,000*: you cannot — it was never a valid Class 14.1 addition (the deductible-not-deducted test above), so there is no pool to draw down; the leave-it tolerance above forgives a *completed* slow claim, it does not license starting one on an amount that never belonged in the pool
+
+So when a phantom incorporation-cost asset bundles both, tidy off only the first-$3,000 slice; the excess is a live pool to start claiming on, not book value to write off.  
 
 An immaterial Class 14.1 pool: continue claiming the geometric tail year by year.  
 There is no CRA "write off below $X" rule; the only ways to clear a Class 14.1 pool are:

@@ -19,7 +19,7 @@ The deduction is per class but the records are per item:
 - *Asset register*:
   - One row per item bought, sold, or held
   - Source of truth for what exists
-  - Rolls up to the per-class additions and dispositions for Schedule 8
+  - Rolls up two ways: by class for Schedule 8, and by account for the balance-sheet cost and accumulated-amortization lines
 - *CCA history*:
   - One row per class per fiscal year
   - Holds each pool's year-end UCC, transcribed from the filed Schedule 8
@@ -230,6 +230,8 @@ Cases they do not cover:
 
 ## Posting to the ledger
 
+The register rolls up two ways. The [Pivot for Schedule 8](#pivot-for-schedule-8) groups it by `Class` for the tax return; for the books you group the same register by `Account` — the balance-sheet cost lines (Schedule 100) and their accumulated-amortization contra accounts.  
+
 Posting is keyed on each item's `Account`, not its CCA class.  
 The account resolves the GIFI lines from the chart of accounts ([Ledger and Accounts](../../Ledger-And-Accounts.md) is the canonical list).  
 
@@ -246,16 +248,66 @@ Common accounts:
 The amortization-expense line follows the account's nature: `8670` tangible, `8570` intangible.  
 For intangibles, use the specific line where one fits: `2012` goodwill, `2018` incorporation costs, `2020` trademarks/patents, `2022` customer lists, each with its own contra; otherwise `2010` Intangible assets.  
 
-At acquisition, the `Capital Cost` posts to the balance-sheet cost line:
-- Debit the account's `GIFI cost` line (e.g. `1774` for a computer)
+### Amortization by account
 
-Each year, the CCA posts as amortization:
-- Debit the account's amortization-expense line (`8670` tangible, `8570` intangible)
-- Credit the account's accumulated-amortization contra line (e.g. `1775` for a computer, `2011` for an intangible)
+Schedule 8 gives CCA per *class*; the books need it per *account*. Build a one-row-per-`Account` rollup for the year you are filing:
+- `Account`: from the register
+- `Amortization`: the year's amortization to post to the account
+  - With book depreciation set equal to CCA — the usual simplification for a one-owner corp — this is the claimed CCA of the classes whose items post to the account
+  - Several classes in one account (`1774` holds Class 12 software and Class 50 hardware): add their claimed CCA together
+  - One class across several accounts (Class 8 spread over furniture, equipment, and machinery): split that class's claimed CCA across its accounts in proportion to the items' carrying value (opening UCC plus the year's additions)
+- `Expense line`: `8670` if the account is tangible, `8570` if intangible
+- `Contra line`: the account's accumulated-amortization line (`1741`, `1775`, ...)
+
+Where each class sits in exactly one account — the usual case for a one-owner consulting corp — `Amortization` is just that class's claimed CCA and there is nothing to split.  
+Both rollups read the same register, so the total `Amortization` across accounts equals the total CCA across classes; use that as a check.  
+
+### Entries
+
+At acquisition, `Capital Cost` posts to the cost line as an ordinary purchase, made when you buy rather than at year-end:
+- Debit the account's cost line (e.g. `1774` for a computer)
+- Credit `Cash` or the payable
+
+At year-end, post each row of the amortization rollup:
+- Debit the `Expense line` (`8670` tangible, `8570` intangible)
+- Credit the `Contra line` (e.g. `1775` for a computer, `2011` for an intangible)
+- Amount: the account's `Amortization`
+
+On disposal, clear the item from the cost line and its contra:
+- Credit the cost line by the item's original `Capital Cost`
+- Debit the contra line by the amortization booked against it
+- Debit `Cash` or the receivable by the proceeds; the balancing figure is the book gain or loss (GIFI `8210`, a loss entered negative)
+- The tax result — recapture, terminal loss, or capital gain — is separate, computed on Schedule 8 and Schedule 6 and reconciled on Schedule 1, not from this entry
 
 The ledger records *book* amortization; CCA is the *tax* deduction.  
-If you set book depreciation equal to CCA (common for a small corp), the per-class CCA is what you post; where a class spans more than one account (Class 12), split that CCA across the accounts by the items' carrying values.  
-If book amortization differs, post the book figure and let Schedule 1 reconcile it against CCA (see [Ledger and Accounts](../../Ledger-And-Accounts.md)).  
+Setting book depreciation equal to CCA keeps one set of numbers, so the claim above is what you post.  
+If you keep book amortization on a different basis (say straight-line over useful life), post that figure instead and let Schedule 1 reconcile it against the CCA claimed (see [Ledger and Accounts](../../Ledger-And-Accounts.md)).  
+
+
+## Capital asset continuity
+
+**This schedule is optional**, like [CCA history](#cca-history): once you keep double-entry books the ledger already carries these balances.  
+Keep it as the workpaper that proves the Schedule 100 capital-asset lines and supplies the opening figures if you ever switch software.  
+
+One row per `Account` per fiscal `Year`; the cost half and the amortization half each roll forward from last year's close:
+- `Account`
+- `Opening Cost`: the prior year's `Closing Cost` (`0` for a new account)
+- `Additions`: cost of items acquired this year that post to the account
+  - The register's additions grouped by `Account` rather than `Class`, on the acquisition year; an asset bought but not yet in service is booked here now while its CCA waits for the available-for-use year, so this can lead Schedule 8 by a year
+- `Disposals`: original `Capital Cost` of the items disposed this year from the account
+  - Full cost, not the `MIN(Proceeds, Capital Cost)` the pool uses: the books remove what the asset was carried at, and the gain or loss falls out in the disposal entry
+- `Closing Cost` = `Opening Cost + Additions − Disposals`
+  - The Schedule 100 cost line (e.g. `1774`)
+- `Opening Accum. Amort.`: the prior year's `Closing Accum. Amort.` (`0` for a new account)
+- `Amortization`: the year's amount, from [Amortization by account](#amortization-by-account)
+- `Disposal Accum. Amort.`: accumulated amortization carried on the items disposed this year, removed with them
+  - Pooled book-equals-CCA holds no exact per-item figure; estimate it as the item's cost less its disposal-year carrying value, and let the gain or loss absorb the rounding
+- `Closing Accum. Amort.` = `Opening Accum. Amort. + Amortization − Disposal Accum. Amort.`
+  - The Schedule 100 accumulated-amortization contra line (e.g. `1775`)
+- `Net Book Value` = `Closing Cost − Closing Accum. Amort.`
+  - What the account carries on the balance sheet
+
+`Closing Cost` and `Closing Accum. Amort.` should equal the ledger balances of the account's cost and contra lines; a gap means an entry was missed or misposted.  
 
 
 ## Worked tie-out
@@ -281,6 +333,29 @@ Class 8 (rate 20%), $1,800 addition in 2026, no disposal:
 | 2028 | 1,008 | 0 | 0 | 0 | 1,008 | 201.60 | 806.40 |
 
 The 2026 figures ($3,300 and $540 of CCA) match the two worked examples; the later years apply the rate to the declining `Opening UCC`.  
+
+The same two assets on the books, each on its own account with book amortization set equal to CCA, using [Capital asset continuity](#capital-asset-continuity) (Accum. = accumulated amortization):
+
+Computer hardware & software (`1774`), the Class 50 laptop, sold in 2028:
+
+| Year | Opening Cost | Additions | Disposals | Closing Cost | Open. Accum. | Amort. | Disp. Accum. | Close. Accum. | NBV |
+|------|-------------:|----------:|----------:|-------------:|-------------:|-------:|-------------:|--------------:|----:|
+| 2026 | 0 | 4,000 | 0 | 4,000 | 0 | 3,300 | 0 | 3,300 | 700 |
+| 2027 | 4,000 | 0 | 0 | 4,000 | 3,300 | 385 | 0 | 3,685 | 315 |
+| 2028 | 4,000 | 0 | 4,000 | 0 | 3,685 | 0 | 3,685 | 0 | 0 |
+
+The 2028 disposal entry books an $85 gain (`8210`) — proceeds 400 less net book value 315 — the same $85 that lands as recapture on Schedule 8.  
+
+Furniture & equipment (`1740`), the Class 8 polisher, never disposed:
+
+| Year | Opening Cost | Additions | Closing Cost | Open. Accum. | Amort. | Close. Accum. | NBV |
+|------|-------------:|----------:|-------------:|-------------:|-------:|--------------:|----:|
+| 2026 | 0 | 1,800 | 1,800 | 0 | 540 | 540 | 1,260 |
+| 2027 | 1,800 | 0 | 1,800 | 540 | 252 | 792 | 1,008 |
+| 2028 | 1,800 | 0 | 1,800 | 792 | 201.60 | 993.60 | 806.40 |
+
+Each account's `NBV` equals its class's `Closing UCC` above — laptop 700, 315, 0; polisher 1,260, 1,008, 806.40 — because book amortization was set to CCA and each class maps to a single account.  
+Where that holds the continuity is just the class schedule restated on the books; the split in [Amortization by account](#amortization-by-account) is what pulls them apart when a class spans accounts.  
 
 
 ## Notes
