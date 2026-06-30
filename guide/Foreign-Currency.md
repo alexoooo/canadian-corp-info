@@ -352,7 +352,7 @@ Invoice presentation:
 Registration and ITC consequences:
 - Zero-rated revenue still counts as *taxable supplies* for the small-supplier threshold (ETA [s.148](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-148.html)): a CCPC with all-US-client revenue over $30,000 in a rolling four-quarter window must register
 - Once registered, ITCs on Canadian inputs remain claimable even though all output is zero-rated; the corp typically files for a GST/HST refund each period
-- See [HST](HST.md) for the full mechanics including registration, reporting periods, ITC tracking, and Quick Method considerations (most service consultants are ineligible for Quick Method regardless of the zero-rating)
+- See [HST](HST.md) for the full mechanics including registration, reporting periods, ITC tracking, and Quick Method considerations (a consultant billing only non-resident clients gets no benefit from the Quick Method anyway, since zero-rated supplies carry no HST to keep)
 
 ### Taxable USD supplies and HST
 

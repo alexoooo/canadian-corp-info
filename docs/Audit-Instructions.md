@@ -19,9 +19,9 @@ A follow-up review is the second half of the cycle: after the audit's fixes land
 
 ## Operating mode
 
-Work sequentially and resumably — the audit must survive a context reset:
+Work resumably, in bounded checkpointed increments — the audit must survive a context reset:
 
-- Run at most one side agent at a time. One agent serves context non-contamination — keeping bulky reads and dead-ends out of the main thread — and running them one at a time keeps the checkpoint trail intact. Do not fan out parallel agents for throughput: parallel work can't be checkpointed page-by-page, so a context reset loses all of it at once and defeats the resumability this section exists to protect
+- Run side agents to keep the main thread clean: bulky reads, citation fetches, and dead-ends belong in an agent, not in the main context. A few may run in parallel — cap it at two or three — but parallelism here serves context management, never throughput. Each agent owns a separable unit (a single page or a tight cluster) and checkpoints its findings to `audit/wip/` as it returns, so page-by-page resumability still holds. The cap is the loss bound: if tokens run out or the context resets mid-audit, only the few in-flight units are lost rather than the whole pass. Don't launch the next batch until the finished one is checkpointed
 - Before reading content, write the audit plan as a checklist and save it under `audit/wip/`; iterate it as work proceeds
 - Checkpoint partial findings to `audit/wip/` as each page or cluster is finished, so a fresh session resumes from a good state instead of restarting
 - Remove `audit/wip/` once the final audit document is delivered

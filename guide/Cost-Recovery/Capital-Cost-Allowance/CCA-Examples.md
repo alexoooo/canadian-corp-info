@@ -117,19 +117,19 @@ Apr 1 entry:
 Schedule 8 Class 14.1 row:
 - Opening UCC: $0
 - Cost of additions: $1,200
-- Half-year applies; adjusted base = $600
-- Class 14.1 rate: 5%
-- CCA: 5% × $600 = $30
-- Closing UCC: $1,200 − $30 = $1,170
+- Class 14.1 declining-balance rate: 5%
+- Without AIIP, the half-year adjustment would give a base of $600 and CCA of $600 × 5% = $30
+- Under the reinstated AIIP (available for use before 2030), the half-year rule is suspended and the first-year base is 150% of the addition: CCA of $1,800 × 5% = $90 (three times the half-year figure)
+- Closing UCC: $1,200 − $90 = $1,110
 
 Short fiscal year: this first fiscal year is exactly 365 days (Apr 1 2026 to Mar 31 2027 in a non-leap-year alignment), so no proration.  
-If incorporation had been Oct 1 2026 with a Mar 31 2027 year-end, the first fiscal year would be 182 days and CCA would be prorated under Regulation 1100(3): $30 × (182 / 365) ≈ $14.96.  
+If incorporation had been Oct 1 2026 with a Mar 31 2027 year-end, the first fiscal year would be 182 days and CCA would be prorated under Regulation 1100(3): $90 × (182 / 365) ≈ $44.88.  
 Class 14.1 is *not* in the Regulation 1100(3) proration-exception list.
 
 Year 2 onward:
 - Each year: CCA = 5% × opening UCC
-- Year 2 closing: $1,170 × 0.95 = $1,111.50
-- Year 3 closing: $1,055.93
+- Year 2 closing: $1,110 × 0.95 = $1,054.50
+- Year 3 closing: $1,001.78
 - After 20 years of full-rate CCA, ~$420 of UCC remains; the pool decays geometrically
 
 Incorporation expenses under $3,000: the entire amount is immediately deductible in year 1, nothing goes to Class 14.1, and Schedule 8 has no Class 14.1 entry.  

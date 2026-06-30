@@ -72,3 +72,4 @@ Page stubs:
 - [2026-05-29 Audit-Followup Opus-4.8-xhigh](audit/2026-05-29_Audit-Followup_Opus-4.8-xhigh.md)
 - [2026-06-10 Audit Fable-5-high](audit/2026-06-10_Audit_Fable-5-high.md)
 - [2026-06-11 Audit-Followup Opus-4.8-xhigh](audit/2026-06-11_Audit-Followup_Opus-4.8-xhigh.md)
+- [2026-06-30 Audit Opus-4.8-max](audit/2026-06-30_Audit_Opus-4.8-max.md)

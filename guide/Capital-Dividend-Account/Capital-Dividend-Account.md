@@ -37,7 +37,7 @@ Example (50% inclusion rate):
 Capital Dividend Account election process:
 - Verification: check the CDA balance via Schedule 89 (S89) or My Business Account (the balance shown reflects the last assessed T2, so it typically lags by 6–12 weeks after your year-end while CRA processes the return)
 - Resolution: directors must pass a resolution to pay a dividend and elect for it to be a Capital Dividend under s.83(2)
-- Filing: submit Form T2054 ("Election for a Capital Dividend Under Subsection 83(2)") along with a certified copy of the resolution on or before the payment date
+- Filing: submit Form T2054 ("Election for a Capital Dividend Under Subsection 83(2)") along with a certified copy of the resolution on or before the day the dividend becomes payable (or the first day any part of it is paid, if earlier)
   - Certification means the Secretary or a Director signs a statement on the resolution attesting that it is a true copy of the resolution passed by the board
 - Reporting:
   - Enter the dividend on T2 Schedule 3 (S3)
@@ -86,7 +86,7 @@ The CRA My Business Account website can change over time, here are steps as of 2
 ## Citations
 
 - Income Tax Act (R.S.C., 1985, c. 1 (5th Supp.)):
-  - [s.83(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-83.html) - capital dividend election: the corporation elects in prescribed form and at or before the payment date
+  - [s.83(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-83.html) - capital dividend election: the corporation elects in prescribed form on or before the day the dividend becomes payable (or the first day any part is paid, if earlier)
   - [s.89(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-89.html) - definition of "capital dividend account" (including the non-taxable portion of capital gains and certain life-insurance proceeds)
   - [s.184](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-184.html) - Part III tax on excessive capital-dividend elections
   - [s.212(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-212.html) - Part XIII withholding tax on taxable dividends and capital dividends paid to non-residents

@@ -80,8 +80,10 @@ The capital gains inclusion rate is one-half for 2026 (the proposed increase to 
 ## Citations
 
 - Income Tax Act (R.S.C., 1985, c. 1 (5th Supp.)):
-  - [s.13(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-13.html) - recapture of CCA on a disposition of depreciable property (relevant to an asset sale by the target)
-  - [s.14](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-14.html) - eligible capital property / Class 14.1 treatment of goodwill
+  - [s.13(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-13.html) - recapture of CCA on a disposition of depreciable property (relevant to an asset sale by the target, including a sale of goodwill)
   - [s.110.6](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-110.6.html) - lifetime capital gains exemption; definition of "qualified small business corporation share"
   - [s.125(7)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-125.html) - "Canadian-controlled private corporation", a QSBC requirement
+- Income Tax Regulations (C.R.C., c. 945):
+  - Schedule II, Class 14.1 - goodwill and other unlimited-life intangibles, depreciable at 5% declining balance (replaced the former eligible capital property regime; ITA s.14 was repealed effective 2017)
+  - Regulation 1100(1) - prescribed CCA rates by class
 - CRA - Capital gains, including the lifetime capital gains exemption: https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-12700-capital-gains.html
