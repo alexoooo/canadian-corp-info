@@ -50,8 +50,8 @@ Debit: "Dividends payable" (GIFI 2962) = $50,000
 Credit: "Cash" (GIFI 1001) = $50,000  
 
 T2 (2026) schedule entries:
-- S3 Part 3 / Box 450 (eligible portion): $50,000
-- S3 Part 4 / Box 500 (eligible portion): $50,000
+- S3 Part 3: line 450 (taxable dividends paid, non-connected) $50,000, all eligible — line 455 $50,000, line 465 (total eligible paid) $50,000
+- S3 Part 4: line 500 (total dividends paid in the year) $50,000
 - S53 (GRIP): opening $144,000 − eligible paid $50,000 + 2026 additions = closing balance
 - T2 dividend refund line: $0 (no ERDTOH balance assumed in this example)
 
@@ -73,8 +73,8 @@ Debit: "Dividends declared - non-eligible" (GIFI 3700) = $80,000
 Credit: "Cash" (GIFI 1001) = $80,000  
 
 T2 (2026) schedule entries:
-- S3 Part 3 / Box 450 (non-eligible portion): $80,000
-- S3 Part 4 / Box 500 (non-eligible portion): $80,000
+- S3 Part 3: line 450 (taxable dividends paid, non-connected) $80,000, all non-eligible — line 470 (total non-eligible paid) $80,000
+- S3 Part 4: line 500 (total dividends paid in the year) $80,000
 - S53: opening $0, no change
 - T2 dividend refund line: $0 (no NERDTOH balance)
 
@@ -86,7 +86,7 @@ Personal-side context: shareholder reports $80,000 × 1.15 = $92,000 taxable on 
 Setup:
 - A CCPC with $200,000 of active business income in 2026 (under SBD; combined 12.2%)
 - Plus $40,000 of AII from interest, foreign income, and the taxable portion of capital gains on corporate investments
-- AII is below the $50,000 grind threshold, so SBD is preserved
+- The $40,000 is below the $50,000 AAII grind threshold (AAII equals AII here), so SBD is preserved
 
 NERDTOH calculation:
 - 2026 NERDTOH addition: $40,000 × 30⅔% = **$12,266.67** (ITA s.129(4)); refundable Part I tax remitted with 2026 instalments
@@ -114,9 +114,9 @@ The two declaration-day entries can be collapsed into a single line (Debit "Divi
 The intermediate "Dividends payable" step is shown to make the legal sequence explicit.  
 
 T2 (2026) schedule entries:
-- S3 Part 3 / Box 450 (non-eligible portion): $32,000
-- S3 Part 4 / Box 500 (non-eligible portion): $32,000
-- T2 dividend refund line: $32,000 × 38⅓% = **$12,266.67**, capped at the NERDTOH balance of $12,266.67
+- S3 Part 3: line 450 (taxable dividends paid, non-connected) $32,000, all non-eligible — line 470 (total non-eligible paid) $32,000
+- S3 Part 4: line 500 (total dividends paid in the year) $32,000
+- T2 dividend refund line: line 470 × 38⅓% = $32,000 × 38⅓% = **$12,266.67**, capped at the NERDTOH balance of $12,266.67
 - The $12,266.67 refund offsets 2026 Part I tax payable
 
 T5 slip: because the dividend is declared *and credited* to the shareholder's loan account on December 30, 2026, it is "paid or credited" in 2026 for T5 purposes.  
@@ -149,7 +149,7 @@ Credit: "Cash" (GIFI 1001) = $10,000
 
 T2 (2026) interactions:
 - *No T5 issued* (capital dividend is not income to a Canadian-resident shareholder)
-- *S3 capital-dividend line*: $10,000 (information reporting on the dedicated capital-dividends-paid line, separate from Box 450 / Box 500 which only carry taxable dividends)
+- *S3 line 510* (dividends paid out of the capital dividend account): $10,000; it is included in the line 500 total dividends paid but backed out of the taxable-dividend lines 450–470, so it adds nothing to the dividend refund
 - CDA balance reduces by $10,000 (tracked on the corporation's CDA worksheet, not on a T2 schedule)
 - Form T2054 + certified resolution submitted on or before the day the dividend becomes payable, or first paid if earlier (this is what makes the dividend a capital dividend for tax purposes; the S3 line by itself does not elect)
 
@@ -169,5 +169,5 @@ For full mechanics, see [Capital-Dividend-Account.md](../Capital-Dividend-Accoun
 - Income Tax Act (R.S.C., 1985, c. 1 (5th Supp.)):
   - [s.83(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-83.html) - capital dividend election (Example D)
   - [s.89(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-89.html) - GRIP and the 0.72 general rate factor (Example A)
-  - [s.125(5.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-125.html) - SBD grind on AII over $50,000 (Example C)
+  - [s.125(5.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-125.html) - SBD grind on AAII over $50,000 (Example C)
   - [s.129](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-129.html) - dividend refund (s.129(1)); refundable Part I tax on AII feeding NERDTOH (s.129(4))

@@ -69,7 +69,7 @@ A *deemed dividend* counts as a dividend under the *Income Tax Act*, even though
   - Tax-free as a return of capital, or as a capital gain on a share buyback (ITA [s.84](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-84.html))
 
 Some situations you might encounter:
-- *Return of capital* out of *stated capital* / *paid-up capital* (PUC): a distribution that reduces PUC of a private corporation is *deemed* to be a dividend under ITA s.84(4), with limited exceptions
+- *Return of capital* out of *stated capital* / *paid-up capital* (PUC): a distribution that reduces PUC is *deemed* to be a dividend under ITA s.84(4), with limited exceptions
   - In a typical owner-manager CCPC where the founder's incorporator shares were issued for $1 or $100, the PUC is too small to support a meaningful return-of-capital distribution
 - Share *redemption*: when the corporation buys back shares, redemption proceeds in excess of PUC are *deemed* to be a dividend under ITA s.84(3)
   - The shareholder's adjusted cost base is then compared against PUC (not against the gross proceeds) for the capital gain or loss calculation
@@ -199,7 +199,7 @@ The corporation gets this tax back as a *dividend refund* under ITA [s.129(1)](h
 
 For how these accounts get filled, how much comes back, and a worked example, see [ERDTOH-NERDTOH.md](ERDTOH-NERDTOH.md).  
 
-The dividend refund is reported on the T2 jacket (historically line 784; verify against the current form release) and credited against tax payable for the same tax year.  
+The dividend refund is reported on the T2 jacket (line 784) and credited against tax payable for the same tax year.  
 A dividend declared but not yet paid in cash at year-end can still trigger the refund for that year:
 - It must be credited or otherwise made available to the shareholder by year-end (e.g. to the *Due to shareholder* account)
 - Merely booking a payable does not count
@@ -276,15 +276,15 @@ The accounts above determine *which* dividend to pay; the steps to actually decl
   - [s.15(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-15.html) - shareholder loan inclusion in income (one-year repayment rule)
   - [s.82(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-82.html) - dividend gross-up (38% eligible, 15% non-eligible)
   - [s.83(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-83.html) - capital dividend election; the elected amount is excluded from the shareholder's income under s.83(2)(b)
-  - [s.84](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-84.html) - deemed dividends (s.84(3) on share redemption; s.84(4) on private-corp PUC reduction)
+  - [s.84](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-84.html) - deemed dividends (s.84(3) on share redemption; s.84(4) on PUC reduction)
   - [s.89(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-89.html) - definitions of "eligible dividend", GRIP, LRIP, CDA, PUC; the GRIP "general rate factor" of 0.72
   - [s.89(14)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-89.html) - eligible dividend designation by written notice to the shareholder at or before payment
   - [s.104(19)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-104.html) - trust designation that flows the eligible-dividend character of taxable Canadian dividends through to beneficiaries (mechanism behind T3 Box 49)  - [s.120.4](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-120.4.html) - Tax on Split Income (TOSI), including the *excluded business* and *excluded shares* carve-outs that typically take an active owner-manager out of TOSI
   - [s.121](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-121.html) - federal dividend tax credit (15.0198% eligible, 9.0301% non-eligible, of the grossed-up amount)
-  - [s.125(5.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-125.html) - SBD grind on AII over $50,000 ($5 SBD reduction per $1 of AII excess)
+  - [s.125(5.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-125.html) - SBD grind on adjusted aggregate investment income (AAII) over $50,000 ($5 SBD reduction per $1 of AAII excess)
   - [s.129](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-129.html) - dividend refund on taxable dividends paid (s.129(1)); definitions of ERDTOH and NERDTOH (s.129(4))
   - [s.184(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-184.html) - Part III tax on excessive capital dividend elections (60% of the excess)
-  - [s.185.1](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-185.1.html) - Part III.1 tax on excessive eligible dividend designations (20%, plus an additional 10% where the excess arises under paragraph (c) of the s.89(1) definition: the GRIP/LRIP-manipulation rule); s.185.1(2) joint election to reclassify the excess as a separate non-eligible dividend (unavailable when the 30% rate applies)
+  - [s.185.1](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-185.1.html) - Part III.1 tax on excessive eligible dividend designations (20%, plus an additional 10% where the excess arises under paragraph (c) of the *excessive eligible dividend designation* definition in s.89(1): the GRIP/LRIP-manipulation rule); s.185.1(2) joint election to reclassify the excess as a separate non-eligible dividend (unavailable when the 30% rate applies)
   - [s.248(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-248.html) - definition of "dividend" (includes a stock dividend; otherwise common-law meaning)
 - CRA forms:
   - T1206 - Tax on Split Income (filed with the recipient's personal T1; federal TOSI on line 40424): https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t1206.html

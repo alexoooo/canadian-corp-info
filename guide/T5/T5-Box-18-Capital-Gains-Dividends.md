@@ -23,7 +23,7 @@ Under ITA [s.131(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-131.
 The label is misleading; in substance it is a capital gain:
 - It is not a taxable dividend, so it does not go on Schedule 3, takes no s.112 deduction, and attracts no Part IV tax
 - Only the taxable half is taxed (the capital gains inclusion rate under ITA [s.38](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-38.html))
-- The taxable half is a taxable capital gain: it forms part of Aggregate Investment Income (AII), feeds NERDTOH through ITA [s.129(4)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-129.html), and counts toward the $50,000 AII threshold that grinds the small business deduction (ITA [s.125(5.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-125.html))
+- The taxable half is a taxable capital gain: it forms part of Aggregate Investment Income (AII), feeds NERDTOH through ITA [s.129(4)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-129.html), and counts toward the $50,000 adjusted-aggregate-investment-income (AAII) threshold that grinds the small business deduction (ITA [s.125(5.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-125.html))
 - The non-taxable half is added to the Capital Dividend Account (CDA) under ITA [s.89(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-89.html), exactly as with an ordinary capital gain
 
 A capital gains dividend does not change the ACB of your fund shares; it is a current-year gain, not a return of capital.  
@@ -109,7 +109,7 @@ Track the non-taxable half in the Capital Dividend Account; see [Capital Dividen
   - [s.40(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-40.html) - capital gain on an actual disposition (the T5008 case, for contrast)
   - [s.89(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-89.html) - capital dividend account definition; the non-taxable half of a capital gain is added
   - [s.104(21)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-104.html) - trust designation of net taxable capital gains (the T3 Box 21 counterpart, for contrast)
-  - [s.125(5.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-125.html) - SBD grind on AII over $50,000
+  - [s.125(5.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-125.html) - SBD grind on AAII over $50,000
   - [s.129(4)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-129.html) - AII and NERDTOH definitions
   - [s.131(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-131.html) - capital gains dividend from a mutual fund corporation, deemed a capital gain of the shareholder
 - CRA Form T5 - Statement of Investment Income: https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t5.html

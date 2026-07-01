@@ -69,7 +69,7 @@ The exception is in ITA s.84.1(2)(e), introduced by Bill C-208 and tightened by 
 
 The transfer must follow one of two pathways:
 - *Immediate transfer*: both legal and factual control pass to the child's corporation, with the balance of shares transferred within three years; the child must retain control and stay actively involved for at least three years after the transfer
-- *Gradual transfer*: legal control passes immediately and the parent's equity is significantly reduced within ten years; the child must retain control and stay actively involved for at least five years after the transfer
+- *Gradual transfer*: legal control passes immediately and the parent's equity is significantly reduced within ten years; the child must retain control and stay actively involved for at least five years after the transfer (or until the transfer is complete, if later)
 
 A further condition: the parent can use the exception only once for shares deriving their value from the same business.  
 The conditions are strict and tested after closing, so this is firmly advisor territory.  

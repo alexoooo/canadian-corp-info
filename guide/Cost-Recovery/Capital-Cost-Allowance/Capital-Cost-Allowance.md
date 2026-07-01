@@ -106,12 +106,12 @@ Class 13 is exempt from this Regulation 1100(2) rule, but Schedule III imposes i
 
 The *Accelerated Investment Incentive* (AIIP) enhances the first-year CCA deduction by suspending the half-year rule and applying an uplift.  
 It first applied to property acquired after Nov 20 2018, began phasing out for property available for use after 2023, and was scheduled to end after 2027.  
-The 2024 Fall Economic Statement reinstated it, enacted by Bill C-15 (Budget Implementation Act, 2025, No. 1) on Royal Assent on Mar 26 2026.
+The 2024 Fall Economic Statement reinstated it, enacted by Bill C-15 (Budget 2025 Implementation Act, No. 1) on Royal Assent on Mar 26 2026.
 
 As reinstated, for property acquired after 2024 (on or after Jan 1 2025) and available for use before 2030:
 - For CCA classes otherwise subject to the half-year rule, the half-year rule is suspended and the first-year base is 150% of the net addition (three times the deduction the half-year rule alone would have allowed)
 - For classes not subject to the half-year rule, the first-year deduction is one-and-a-half times the normal allowance
-- For *full-expensing* classes (M&P equipment in Class 53, or Class 43 for acquisitions after 2025; clean energy 43.1 / 43.2; zero-emission vehicles 54 / 55 / 56), 100% of cost is deductible in the first year
+- For *full-expensing* classes (M&P equipment in Class 53, or Class 43 for acquisitions after 2025; clean energy 43.1 / 43.2; zero-emission vehicles 54 / 55 / 56), 100% of cost is deductible in the first year — a stronger enhanced first-year allowance than the 150% above, though both wind down over 2030–2033
 
 A new phase-out runs from 2030 to 2033: the enhancement steps down for property available for use after 2029 and is fully eliminated for property available for use after 2033.  
 The year-by-year step-down percentages are not quoted here.  
@@ -228,7 +228,7 @@ Common reasons to claim less than the maximum:
 - Loss year: preserve the deduction for a future year that produces tax at a higher marginal rate
 - Non-capital loss already large enough to wipe out taxable income (non-capital losses expire after 20 years; UCC does not expire)
 - Small-ABI year where claiming full CCA would lose value compared with deferring to a year taxed at the general rate
-- AII grind planning: a year close to the $50,000 AII threshold where reducing net income would not change the SBD outcome
+- AAII grind planning: a year close to the $50,000 AAII threshold where reducing net income would not change the SBD outcome
 
 The opposite move can also pay:
 - A non-capital loss carries back 3 years as well as forward 20 (ITA [s.111(1)(a)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-111.html)), so claiming CCA to create or deepen a loss can recover tax already paid in the prior three years (requested on T2 Schedule 4)

@@ -90,7 +90,7 @@ After transfer:
 flowchart TB
     Mat(["Materials, contractor labour,<br/>capitalizable soft costs"])
     CIP[("Construction in progress<br/>asset balance; no deduction")]
-    Trigger{{"Available for use<br/>ITA s.13(26)–(27)"}}
+    Trigger{{"Available for use<br/>ITA s.13(26)–(28)"}}
     Fixed[("Fixed-asset GIFI line<br/>Schedule 100")]
     UCC[("UCC pool by class<br/>Schedule 8")]
     CCA["Annual CCA<br/>rate × half-year-adjusted base"]
@@ -352,7 +352,8 @@ On the schedules: no cost-of-sales entries in either year (never inventory); Sch
 - Income Tax Act (R.S.C., 1985, c. 1 (5th Supp.)): https://laws-lois.justice.gc.ca/eng/acts/I-3.3/
   - [s.13(21)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-13.html) - definition of "capital cost" (the A element in the UCC formula)
   - [s.13(26)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-13.html) - available-for-use rule for depreciable property
-  - [s.13(27)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-13.html) - rolling-two-year / 357-day deeming rule
+  - [s.13(27)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-13.html) - rolling-two-year / 357-day deeming rule (non-buildings)
+  - [s.13(28)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-13.html) - available-for-use rule for buildings (the 357-day variant; governs the shed)
   - [s.18(1)(b)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-18.html) - exclusion of capital expenditures (the rule that pushes self-constructed-asset materials out of COGS and into the CCA path)
 - CRA T2 SCH 100 - Balance Sheet Information: https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2sch100.html
 - CRA T2 SCH 8 - Capital Cost Allowance: https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2sch8.html
@@ -366,5 +367,4 @@ On the schedules: no cost-of-sales entries in either year (never inventory); Sch
 - Soft costs under ITA s.18(3.1): treatment of interest, property tax, legal and accounting fees attributable to construction of a capital asset
 - Interest capitalization election under ITA s.21: when it applies, mechanics, interaction with s.18(3.1)
 - Book-vs-tax differences: ASPE Section 3061 and IFRS IAS 36 impairment write-downs on CIP and how Schedule 1 reverses them on the tax side
-- More worked examples: leasehold improvement on rented business premises; a Class 53 M&P-equipment destination; cost overruns mid-project
-- Add CIP-related terms to [Glossary](../Glossary.md): CIP, available-for-use, capital cost, self-constructed asset, bill of materials (BOM)
+- More worked examples: leasehold improvement on rented business premises; a Class 43 M&P-equipment destination (Class 53 before 2026); cost overruns mid-project

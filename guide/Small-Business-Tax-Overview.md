@@ -389,7 +389,7 @@ Missing them triggers interest, penalties, or both, including failure-to-file pe
 
 **Information slips (T4 / T5)**:
 - T4 (salary) and T5 (dividends) slips and summaries are due *Feb 28* of the year following the calendar year covered
-- Late-filing penalties are calculated *per slip* (not per filing), so a single missed slip can carry a meaningful penalty
+- Late-filing penalties are charged *per return type* (the whole T4 or T5 filing), not per slip: $10 per day, a $100 minimum, and a 100-day cap — higher daily rates apply at higher slip counts — so a single late filing runs $100–$1,000 (ITA s.162(7.01))
 
 **Payroll source deductions** (if paying salary):
 - Most owner-managed CCPCs remit *monthly*: income tax + CPP + EI by the 15th of the following month (EI applies only when the employee is EI-insurable, which typically excludes the >40%-share owner-manager)

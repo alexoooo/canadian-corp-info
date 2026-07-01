@@ -207,6 +207,9 @@ Assets (Schedule 100):
 | Intangible assets | `2010` | `2012` goodwill, `2018` incorporation costs |
 | Long-term investments | `2300` | `2303` Canadian shares (a corporate brokerage account) |
 
+Cash-line convention used throughout the guide: `1001` Cash is the main operating chequing account; `1002` / `1003` hold any separate savings, second, or foreign-currency account (a corporate brokerage cash balance sits in a `1002` sub-account — see [Foreign Currency](Foreign-Currency.md)).  
+A chequing balance is equally codeable to `1002`, since it is a deposit in a Canadian bank; either mapping is fine, provided it is applied consistently and each account keeps the same code year to year.  
+
 The HST control accounts — `HST receivable` (input tax credits) and `HST collected` — have no dedicated GIFI line; at year-end they net to `1483` Taxes recoverable/refundable, or to `2680` Taxes payable if a net amount is owed.  
 See [HST](HST.md).  
 

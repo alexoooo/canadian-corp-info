@@ -148,12 +148,19 @@ To fill it out, build a `pivot table` that groups the year's additions and dispo
   - `Sum of Year AIIP Additions` = the accelerated portion, the AIIP/ZEV column (225)
   - `Sum of Year Dispositions` = proceeds capped at cost, Schedule 8 "proceeds of dispositions"
 
-The `Year Additions`, `Year AIIP Additions`, `Year Dispositions`, and `In Year` columns the pivot reads are helper columns on the `Asset register` above, each keyed to `Year`. Additions key off the available-for-use year and dispositions off the disposal year, so one year flag cannot select both; the helpers settle each item before the pivot sums them.  
+The `Year Additions`, `Year AIIP Additions`, `Year Dispositions`, and `In Year` columns the pivot reads are helper columns on the `Asset register` above, each keyed to `Year`.  
+Additions key off the available-for-use year and dispositions off the disposal year, so one year flag cannot select both; the helpers settle each item before the pivot sums them.  
 A pivot is a snapshot, so refresh it after the register changes.  
 
 Key the three per-class totals into the software's Schedule 8; it applies the half-year rule and AIIP uplift, computes each pool's CCA, recapture, and terminal loss, and carries the UCC forward.  
 The CCA it deducts is discretionary: set the per-class claim in Schedule 8's `CCA` column (217), anywhere from `$0` to the computed maximum, to defer (see [Discretionary CCA](Capital-Cost-Allowance.md#discretionary-cca)).  
 Deferring keeps the balance in the pool, but on AIIP additions it forfeits the accelerated boost, which applies only in the year the asset becomes available for use.  
+
+FutureTax renders the half-year rule as a per-class control on Schedule 8: a *Half Rule* checkbox (column H) in version 2019.2 and earlier, or an automatic 0.5 factor (column 13) in later versions.  
+It applies the standard half-year reduction: with it on, only half of the year's net additions enter the first-year CCA base; with it off, the full additions do.  
+Leave it on for ordinary additions subject to the half-year rule; it should be off for the half-year-exempt classes (12, 13, 14, 15, …) and for AIIP additions, where the half-year rule is suspended and the accelerated uplift applies instead.  
+It is not a deferral switch — turning it off on a class that *is* subject to the half-year rule drops the mandatory reduction and over-claims first-year CCA; to defer, reduce the discretionary `CCA` claim (column 217) above instead, which is where the AIIP-forfeiture caution applies.  
+
 Recapture and terminal loss are not discretionary.  
 You can record what it produces in the [CCA history](#cca-history) below.  
 

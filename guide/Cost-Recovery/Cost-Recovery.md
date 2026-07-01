@@ -35,7 +35,7 @@ The deduction *channel* is set by purpose at acquisition.
 *Self-constructed fixed asset* (mechanics in [Materials and CIP](Materials-And-CIP.md)):
 - Purpose: Materials and contractor labour going into a fixed asset built for the corp's own use; *not* inventory (s.18(1)(b) still blocks immediate deduction)
 - Mechanics: cost accumulates in a `Construction in progress` (CIP) balance-sheet asset
-- Trigger: *available for use* (ITA s.13(26)–(27)) transfers the accumulated cost into the appropriate CCA class
+- Trigger: *available for use* (ITA s.13(26)–(28)) transfers the accumulated cost into the appropriate CCA class
 - After transfer: standard CCA mechanics apply
 
 *Depreciable property* (mechanics in [Capital Cost Allowance](Capital-Cost-Allowance/Capital-Cost-Allowance.md)):
@@ -64,7 +64,7 @@ What is the same:
 
 How they differ (all on the exit side):
 - *What leaves, and when*: inventory leaves when units are sold; materials leave when the finished asset is available-for-use based on Bill of Materials (BOM)
-- *Trigger*: a sale, versus *available for use* (s.13(26)–(27)) moving the cost into a CCA class
+- *Trigger*: a sale, versus *available for use* (s.13(26)–(28)) moving the cost into a CCA class
 - *Where the cost lands*: `Cost of sales` on Schedule 125 (GIFI 8518), versus a CCA class pool on Schedule 8
 - *Deduction speed*: all at once at the moment of sale, versus geometrically over years through CCA
 - *Year-end revaluation*: inventory is written down to fair market value under LCM (s.10(1)); a CIP balance carries at cost with no tax revaluation

@@ -310,7 +310,7 @@ Filing a return and paying the tax have separate deadlines; missing either draws
 
 Filings:
 - *T2 return*: 6 months after year-end
-- *T4 and T5 slips*: to CRA and the recipient by Feb 28; penalty charged per slip
+- *T4 and T5 slips*: to CRA and the recipient by Feb 28; late penalty is per filing, not per slip ($10/day, $100 minimum, 100-day cap; ITA s.162(7.01))
 - *GST/HST return*: annual, quarterly, or monthly by revenue band
 - *Corporate annual return*: to the federal or provincial registry (not a tax filing)
 

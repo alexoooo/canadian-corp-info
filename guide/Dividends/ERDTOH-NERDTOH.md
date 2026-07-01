@@ -148,8 +148,8 @@ To fully empty a $1 NERDTOH balance the corporation needs $1 ÷ 38⅓% ≈ **$2.
 The T2 line items that carry the pools and the refund:
 - *T2 Page 7*: opening, additions, deductions, and closing balances for ERDTOH and NERDTOH
 - *T2 line 784*: total dividend refund for the year, applied as a credit against tax payable on the same return
-- *S3 Part 3 Box 450*: total taxable dividends paid in the year (eligible and non-eligible combined)
-- *S3 Part 4 Box 500*: the portion of Box 450 that drives the dividend refund calculation
+- *S3 Part 3, line 460*: total taxable dividends paid that qualify for the refund (line 450 to non-connected recipients, plus the connected-corporation column O); line 455 flags the eligible portion of line 450
+- *S3 Part 3, lines 465 / 470*: the eligible and non-eligible splits of line 460; each multiplied by 38⅓% gives the eligible and non-eligible dividend refund (amounts AA and DD on page 7), capped at the ERDTOH and NERDTOH balances
 
 These page, line, and box numbers drift between form releases; verify them against the current-year T2 and Schedule 3.
 

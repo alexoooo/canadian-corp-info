@@ -48,7 +48,7 @@ The buyer usually prefers an asset purchase, for two reasons.
 Two more consequences turn on the structure rather than the buyer's preference:
 
 *Sales tax*:
-- An asset sale is generally subject to GST/HST on the taxable assets; the buyer and vendor can jointly elect under [ETA s.167](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-167.html) to make the sale of a business (or a self-contained part) GST/HST-free, where the buyer acquires ownership of all or substantially all (90%+) of the property needed to carry it on
+- An asset sale is generally subject to GST/HST on the taxable assets; the buyer and vendor can jointly elect under [ETA s.167](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-167.html) to make the sale of a business (or a self-contained part) GST/HST-free, where the buyer acquires ownership, possession, or use of all or substantially all (90%+) of the property needed to carry it on
 - A share sale carries no GST/HST: a share is a financial instrument and its sale is exempt
 
 *Associated corporation (share route)*:
@@ -98,7 +98,7 @@ The capital gains inclusion rate is one-half for 2026 (the proposed increase to 
   - [s.256(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-256.html) - association after a share purchase; [s.125(3)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-125.html) sharing of the small-business limit among associated corporations
 - Income Tax Regulations (C.R.C., c. 945):
   - Schedule II, Class 14.1 - goodwill and other unlimited-life intangibles, depreciable at 5% declining balance (replaced the former eligible capital property regime; ITA s.14 was repealed effective 2017)
-  - Regulation 1100(1) - prescribed CCA rates by class
+  - Regulation 1100(1)(a)(xii.1) - the 5% Class 14.1 rate; Regulation 1100(1) generally - prescribed CCA rates by class
 - Excise Tax Act (R.S.C., 1985, c. E-15):
   - [s.167](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-167.html) - election to treat the sale of a business (or part) as GST/HST-free
 - CRA - Capital gains, including the lifetime capital gains exemption: https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-12700-capital-gains.html

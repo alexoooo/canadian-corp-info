@@ -473,6 +473,6 @@ Year-end Schedule 125 if 300 units are sold during the year at $70 each:
 ## TODO
 
 - Companion tracking-spreadsheet artifact (parallel to [Adjusted Cost Base Tracking](../Adjusted-Cost-Base/Adjusted-Cost-Base-Tracking.md)): a worked perpetual weighted-average ledger with running-cost and COGS formulas, plus a year-end LCM column
-- Manufacturing WIP treatment: a section walking conversion-cost build-up under ASPE 3031 / IFRS IAS 2 and the M&P Class 53 CCA tie-in
+- Manufacturing WIP treatment: a section walking conversion-cost build-up under ASPE 3031 / IFRS IAS 2 and the M&P Class 43 CCA tie-in (Class 53 before 2026)
 - s.10(2.1) method-change procedure: format of the written request, supporting evidence, CRA processing timeline
 - Cross-reference with [Foreign Currency](../Foreign-Currency.md) once that page is past the stub phase
