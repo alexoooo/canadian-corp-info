@@ -30,7 +30,7 @@ The dividends-paid side appears in Part 3 and Part 4 of the schedule:
   - Reported on Schedule 3 on the dedicated capital-dividends-paid line (immediately above the taxable-dividends-paid section in current versions of the form)
 
 The capital-dividend line on S3 is reporting only; it does not by itself elect anything.  
-The s.83(2) election still needs Form T2054 filed at or before the payment date (see *Capital dividend election - Form T2054* below).  
+The s.83(2) election still needs Form T2054 filed on or before the day the dividend becomes payable, or the first day any part is paid if earlier (see *Capital dividend election - Form T2054* below).  
 
 If the shareholder is itself a Canadian corporation (e.g. an owner-manager who holds the operating company through a personal *holding company*, Holdco), the recipient is a *connected corporation* under ITA [s.186(4)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-186.html).  
 The payer corp is connected to the recipient if the recipient controls the payer, or owns >10% of votes and >10% of FMV of the payer's shares (s.186(4)).  
@@ -86,7 +86,7 @@ For the receiving-side mechanics that fill ERDTOH/NERDTOH (Part IV tax on divide
 ## Capital dividend election - Form T2054
 
 A capital dividend is reported on the capital-dividend line of Schedule 3 (per the S3 section above).  
-*In addition*, the corporation files Form T2054 (*Election for a Capital Dividend Under Subsection 83(2)*) with a certified copy of the directors' resolution, on or before the payment date.  
+*In addition*, the corporation files Form T2054 (*Election for a Capital Dividend Under Subsection 83(2)*) with a certified copy of the directors' resolution, on or before the day the dividend becomes payable (or the first day any part is paid, if earlier).  
 
 The S3 line is information-reporting; the T2054 is what makes the dividend a capital dividend for tax purposes.  
 Both are required.  

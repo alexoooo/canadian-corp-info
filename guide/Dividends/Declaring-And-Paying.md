@@ -98,7 +98,7 @@ The choice of payment channel does not change the tax treatment of the dividend,
 
 - Income Tax Act (R.S.C., 1985, c. 1 (5th Supp.)):
   - [s.15(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-15.html) - shareholder loan inclusion in income (one-year repayment rule); a transfer without a resolution can be recharacterized as a shareholder loan
-  - [s.83(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-83.html) - capital dividend election (filed on Form T2054 at or before the payment date)
+  - [s.83(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-83.html) - capital dividend election (filed on Form T2054 on or before the day the dividend becomes payable, or first paid if earlier)
   - [s.89(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-89.html) - definition of "eligible dividend" referenced in the designation notice
   - [s.89(14)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-89.html) - eligible dividend designation by written notice to the shareholder at or before payment
   - [s.129(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-129.html) - dividend refund keys off when the dividend is paid, credited, or otherwise made available in the year

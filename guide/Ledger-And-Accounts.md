@@ -1,6 +1,6 @@
 STATUS: AI GENERATED, REVIEW IN PROGRESS
 
-# Ledger And Accounts
+# Ledger and Accounts
 
 **Who this is for**: owners of a Canadian-controlled private corporation (CCPC) who keep the corporation's double-entry books themselves.  
 

@@ -72,6 +72,8 @@ For a *non-eligible* dividend:
 - Box 11: Taxable amount of dividends other than eligible (Box 10 × 1.15)
 - Box 12: Dividend tax credit for dividends other than eligible (Box 11 × 9.0301%)
 
+The gross-up factors (1.38 eligible, 1.15 non-eligible) are set by ITA [s.82(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-82.html); the dividend tax credit rates (15.0198%, 9.0301%) by ITA [s.121](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-121.html).  
+
 If both flavours were paid in the same calendar year, use a single T5 slip with both sets of boxes populated.  
 
 
@@ -105,6 +107,8 @@ See CRA Guide [T4061](https://www.canada.ca/en/revenue-agency/services/forms-pub
 
 - Income Tax Act (R.S.C., 1985, c. 1 (5th Supp.)):
   - [s.15(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-15.html) - shareholder loan inclusion (one-year repayment rule); relevant when a dividend clears a *Due from shareholder* receivable
+  - [s.82(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-82.html) - dividend gross-up (1.38 eligible, 1.15 non-eligible)
+  - [s.121](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-121.html) - federal dividend tax credit (15.0198% eligible, 9.0301% non-eligible)
   - [s.162(7.01)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-162.html) - late-filing penalty for information returns (T5)
   - [s.212(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-212.html) - Part XIII withholding tax on dividends paid to non-residents (default 25%, often reduced by treaty)
 - CRA forms:

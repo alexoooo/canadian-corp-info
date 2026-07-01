@@ -20,7 +20,7 @@ Note: the CDA can also include other amounts such as the tax-free portion of lif
 Maintain a running total of capital gain or loss:
 - Realized Gains/Losses when you sell a security, calculate: T5008 Box 21 - ACB (your independently calculated ACB, not T5008 Box 20)  
   - Box 21 is assumed net-of-fees; if it shows the gross amount, subtract the commission first (see [T5008 / T5008 boxes](../T5008/T5008.md#t5008-boxes))
-- Distributions: for T3/T5 slips, add the entire capital gains amount (e.g., T3 Box 21) to your running total
+- Distributions: for T3/T5 slips, add the entire capital gains amount (e.g., T3 Box 21 or T5 Box 18) to your running total
 - Deemed gains: when return of capital (ROC) drives a security's ACB below zero, ITA [s.40(3)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-40.html) deems an immediate capital gain equal to the shortfall; add it like a realized gain (the ACB sheet computes it, see [Adjusted Cost Base - Tracking](../Adjusted-Cost-Base/Adjusted-Cost-Base-Tracking.md))
 - Capital gains increase the running total, and capital losses decrease it
 

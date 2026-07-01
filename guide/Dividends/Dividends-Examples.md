@@ -137,7 +137,7 @@ Setup:
 - The non-taxable portion (50% under the current inclusion rate) is **$10,000**, added to the CDA
 
 In 2026 the directors elect under ITA s.83(2) to pay a $10,000 capital dividend.  
-Form T2054 is filed via CRA My Business Account with a certified copy of the resolution attached, on or before the payment date.  
+Form T2054 is filed via CRA My Business Account with a certified copy of the resolution attached, on or before the day the dividend becomes payable (or the first day any part is paid, if earlier).  
 
 Declaration:  
 Debit: "Capital dividends declared" (GIFI 3700) = $10,000  
@@ -151,13 +151,13 @@ T2 (2026) interactions:
 - *No T5 issued* (capital dividend is not income to a Canadian-resident shareholder)
 - *S3 capital-dividend line*: $10,000 (information reporting on the dedicated capital-dividends-paid line, separate from Box 450 / Box 500 which only carry taxable dividends)
 - CDA balance reduces by $10,000 (tracked on the corporation's CDA worksheet, not on a T2 schedule)
-- Form T2054 + certified resolution submitted on or before payment date (this is what makes the dividend a capital dividend for tax purposes; the S3 line by itself does not elect)
+- Form T2054 + certified resolution submitted on or before the day the dividend becomes payable, or first paid if earlier (this is what makes the dividend a capital dividend for tax purposes; the S3 line by itself does not elect)
 
 Personal-side context: capital dividend is tax-free to a Canadian-resident shareholder; not reported on the T1.  
 
 A capital dividend can also be settled by credit to the shareholder loan account (Credit "Due to shareholder") or by clearing a *Due from shareholder* receivable, using the same bookkeeping patterns shown above.  
 Only the credit side of the payment entry changes.  
-The T2054 election timing is independent of the settlement method: the election still has to be filed at or before the dividend's payment date.  
+The T2054 election timing is independent of the settlement method: the election still has to be filed on or before the day the dividend becomes payable (or the first day any part is paid, if earlier).  
 
 For full mechanics, see [Capital-Dividend-Account.md](../Capital-Dividend-Account/Capital-Dividend-Account.md):
 - The s.184(2) Part III tax penalty for over-electing

@@ -136,12 +136,12 @@ For a typical CCPC operating entirely under the SBD limit, GRIP is empty unless 
 - Funded out of after-tax SBD-rate retained earnings
 - Smaller dividend tax credit on the personal side, because the corporation paid less tax
 
-Note: the *Low Rate Income Pool* (LRIP, ITA s.89(1)) only applies if the corporation was previously a non-CCPC and crossed over (not applicable for a corporation that has always been a CCPC).  
+The *Low Rate Income Pool* (LRIP, ITA s.89(1)) applies only if the corporation was previously a non-CCPC and crossed over; it does not apply to a corporation that has always been a CCPC.  
 
 *Capital dividend*:
 - Paid out of the *Capital Dividend Account* (CDA), which holds the non-taxable portion of cumulative net capital gains realized by the corporation (among other things)
 - Tax-free to a Canadian-resident shareholder; no T5 is issued
-- Requires an election under ITA [s.83(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-83.html) on Form T2054, filed at or before the payment date
+- Requires an election under ITA [s.83(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-83.html) on Form T2054, filed on or before the day the dividend becomes payable (or the first day any part of it is paid, if earlier)
 - Over-electing triggers *Part III* tax on the excess at 60% under ITA [s.184(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-184.html)
 
 For full mechanics of the CDA balance calculation and the T2054 election workflow, see [Capital-Dividend-Account.md](../Capital-Dividend-Account/Capital-Dividend-Account.md).  
@@ -199,7 +199,7 @@ The corporation gets this tax back as a *dividend refund* under ITA [s.129(1)](h
 
 For how these accounts get filled, how much comes back, and a worked example, see [ERDTOH-NERDTOH.md](ERDTOH-NERDTOH.md).  
 
-The dividend refund is reported on T2 line 784 and credited against tax payable for the same tax year.  
+The dividend refund is reported on the T2 jacket (historically line 784; verify against the current form release) and credited against tax payable for the same tax year.  
 A dividend declared but not yet paid in cash at year-end can still trigger the refund for that year:
 - It must be credited or otherwise made available to the shareholder by year-end (e.g. to the *Due to shareholder* account)
 - Merely booking a payable does not count
@@ -284,7 +284,7 @@ The accounts above determine *which* dividend to pay; the steps to actually decl
   - [s.125(5.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-125.html) - SBD grind on AII over $50,000 ($5 SBD reduction per $1 of AII excess)
   - [s.129](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-129.html) - dividend refund on taxable dividends paid (s.129(1)); definitions of ERDTOH and NERDTOH (s.129(4))
   - [s.184(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-184.html) - Part III tax on excessive capital dividend elections (60% of the excess)
-  - [s.185.1](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-185.1.html) - Part III.1 tax on excessive eligible dividend designations (20%, plus an additional 10% where the excess arises under paragraph (c) of the s.89(1) definition — the GRIP/LRIP-manipulation rule); s.185.1(2) joint election to reclassify the excess as a separate non-eligible dividend (unavailable when the 30% rate applies)
+  - [s.185.1](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-185.1.html) - Part III.1 tax on excessive eligible dividend designations (20%, plus an additional 10% where the excess arises under paragraph (c) of the s.89(1) definition: the GRIP/LRIP-manipulation rule); s.185.1(2) joint election to reclassify the excess as a separate non-eligible dividend (unavailable when the 30% rate applies)
   - [s.248(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-248.html) - definition of "dividend" (includes a stock dividend; otherwise common-law meaning)
 - CRA forms:
   - T1206 - Tax on Split Income (filed with the recipient's personal T1; federal TOSI on line 40424): https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t1206.html

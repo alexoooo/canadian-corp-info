@@ -101,7 +101,7 @@ For the exact spreadsheet formulas behind this diagram, see [CCA Tracking](CCA-T
 The *half-year rule* (Regulation 1100(2)) lets you claim CCA on only half the net additions in the year of acquisition.  
 Net additions = (cost of additions) − (lesser of proceeds, cost for dispositions).  
 
-Classes exempt from the half-year rule include 12 (most items), 13, 14, 23, 24, 27, 29, 34, and 52.  
+Classes exempt from the half-year rule include 12 (most items), 13, 14, 15, 23, 24, 27, 29, 34, and 52.  
 Class 13 is exempt from this Regulation 1100(2) rule, but Schedule III imposes its own first-year limit on leasehold improvements, so the asset register still flags a first-year cap for the class.  
 
 The *Accelerated Investment Incentive* (AIIP) enhances the first-year CCA deduction by suspending the half-year rule and applying an uplift.  

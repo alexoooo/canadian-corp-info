@@ -70,7 +70,7 @@ The vendor usually prefers a share sale, which is the mirror image.
 - It is the single biggest reason a vendor pushes for a share deal
 
 
-## How the target's status decides
+## The target's status
 
 Putting the two perspectives together:
 - *Unincorporated target*: only assets exist to buy; the asset-purchase analysis applies, and the vendor reports the gains on their personal return

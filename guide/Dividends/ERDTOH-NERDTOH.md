@@ -91,7 +91,7 @@ Two mechanisms add to the RDTOH pools.
 - 30⅔% of AII for the year
 - AII is interest, foreign income, the taxable portion of capital gains, and most T3 Box 26 amounts from index ETFs structured as mutual fund trusts (see [T3-Box-26-Other-Income.md](../T3/T3-Box-26-Other-Income.md))
 
-Note that the 30⅔% rate at which AII *adds* to NERDTOH is distinct from the 38⅓% rate at which a non-eligible dividend *removes* tax from NERDTOH.  
+The 30⅔% rate at which AII *adds* to NERDTOH is distinct from the 38⅓% rate at which a non-eligible dividend *removes* tax from NERDTOH.  
 
 
 ## Inflows and outflows

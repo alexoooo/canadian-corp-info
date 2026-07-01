@@ -214,7 +214,7 @@ Federal rates shown; a provincial dividend tax credit applies on top:
 | Attribute | Eligible | Non-eligible | Capital                                                |
 |---|---|---|--------------------------------------------------------|
 | Source pool | GRIP | SBD-rate retained earnings (default) | CDA                                                    |
-| Corp action required | Designation (s.89(14)), at or before payment | None | Election (s.83(2)) on Form T2054, at or before payment |
+| Corp action required | Designation (s.89(14)), at or before payment | None | Election (s.83(2)) on Form T2054, on or before it becomes payable (or first paid, if earlier) |
 | Personal gross-up | 38% | 15% | none (tax-free)                                        |
 | Federal DTC | 15.0198% of grossed-up | 9.0301% of grossed-up | none                                                   |
 | Refund pool drawn | ERDTOH | NERDTOH, then ERDTOH spillover | none                                                   |

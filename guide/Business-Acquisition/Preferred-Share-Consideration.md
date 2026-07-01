@@ -105,7 +105,7 @@ TOSI is one of the conditions that pushes the family case onto its own page; see
 
 - Income Tax Act (R.S.C., 1985, c. 1 (5th Supp.)):
   - [s.85(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-85.html) - joint election for a tax-deferred rollover of property to a taxable Canadian corporation
-  - s.85(2.1) - grind limiting the paid-up capital of shares received to the elected amount
+  - [s.85(2.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-85.html) - grind limiting the paid-up capital of shares received to the elected amount
   - [s.85.1](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-85.1.html) - automatic rollover on an arm's-length share-for-share exchange
   - [s.84(3)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-84.html) - redemption proceeds over PUC deemed to be a dividend
   - [s.120.4](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-120.4.html) - Tax on Split Income (TOSI)

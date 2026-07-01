@@ -227,7 +227,7 @@ Two parts of the *Income Tax Act* drive a CCPC's tax mechanics:
 
 *Active business income* (ABI): income from carrying on an active business (consulting fees, product sales, services rendered).  
 The first $500,000 per year is taxed at the *small-business rate* via the SBD (combined federal + Ontario ≈ 12.2% in 2026); ABI above $500,000 is taxed at the *general rate* (combined ≈ 26.5% in Ontario).  
-The 2026 Ontario budget proposes cutting the Ontario small-business rate to 2.2% (combined 11.2%) effective July 1, 2026; see [Dividends](Dividends/Dividends-Examples.md#worked-examples).  
+The 2026 Ontario budget proposes cutting the Ontario small-business rate to 2.2% (combined 11.2%) effective July 1, 2026; see [Dividends - worked examples](Dividends/Dividends-Examples.md#worked-examples).  
 The $500,000 SBD *business limit* is not always a flat ceiling. It can be reduced by:
 - Sharing among *associated corporations* under ITA [s.125(3)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-125.html)
 - *Adjusted aggregate investment income* (AAII) over $50,000 under ITA [s.125(5.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-125.html) (the *AAII grind*)

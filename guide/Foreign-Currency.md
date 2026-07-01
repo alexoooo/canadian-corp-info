@@ -1,6 +1,5 @@
 STATUS: AI GENERATED, REVIEW IN PROGRESS
 
-
 # Foreign Currency
 
 **Who this is for**: owners of a Canadian-controlled private corporation (CCPC) who hold a USD bank account, invoice US customers in USD, hold USD-denominated investments, or convert between CAD and USD.  
@@ -242,12 +241,12 @@ T5008 note:
 
 Concrete example on USD 50,000:
 
-- Bank wire / retail FX at 2% spread: CAD 50,000 × 1.36 × 0.02 ≈ CAD 1,360 lost to spread
+- Bank wire / retail FX at 2% spread: USD 50,000 × 1.36 × 0.02 ≈ CAD 1,360 lost to spread
 - Norbert's Gambit, round-trip, at a flat-commission bank broker:
   - DLR.U bid-ask spread ~10 bps + DLR bid-ask spread ~7 bps: ≈ CAD 85
   - Two commissions of $9.95 (or one journal fee at NBDB / Questrade): ≈ CAD 20
   - Total all-in: ~CAD 100–120
-- Savings on this size: ~CAD 1,240, about 24× cheaper than the bank
+- Savings on this size: ~CAD 1,240, about 12× cheaper than the bank
 - Break-even threshold against a 2% bank spread:
   - Bank broker with $9.95 commissions: ~CAD 1,500
   - NBDB or Questrade with $9.95 journal fee and $0 commissions: ~CAD 1,000
@@ -509,7 +508,7 @@ flowchart TB
     YE{{"Year-end<br/>revaluation"}}
 
     Inv -->|"trade revenue"| AR
-    AR -->|"collection-date FX"| USD
+    AR -->|"collect in USD"| USD
     AR -.->|"or direct CAD wire"| CAD
     AR -->|"FX delta vs booked"| FX
     USD --> Gambit

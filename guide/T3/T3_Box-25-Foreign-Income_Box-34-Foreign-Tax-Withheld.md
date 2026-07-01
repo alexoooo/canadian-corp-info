@@ -1,6 +1,6 @@
 STATUS: AI GENERATED, REVIEW IN PROGRESS
 
-# T3 Box 25 - Foreign Income
+# T3 Box 25 - Foreign Income / Box 34 - Foreign Tax Withheld
 
 See parent document: [T3](T3.md)  
 **Who this is for**: owners of a Canadian-controlled private corporation (CCPC) who receive a T3 with Box 25 (foreign non-business income), with or without Box 34 (foreign tax withheld).  
@@ -138,8 +138,16 @@ Here the Aggregate total (8,146) is the foreign property income (6,912) plus the
 Make sure the amount is not removed as "taxable dividends deductible" (Part 1 line 062 / Part 3 line 049, fed from Schedule 3); that line captures only s.112/113-deductible dividends (from taxable Canadian corporations or foreign affiliates), which a portfolio foreign distribution is not.  
 
 Foreign tax credit (only if Box 34 has an amount):
-- Schedule 21 (S21), Part 1 (Federal foreign non-business income tax credit): claim the credit for the foreign tax paid (ITA [s.126(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-126.html)), reducing the Canadian tax otherwise payable
-- Schedule 1 (S1), Other additions (Description 705, Amount 295): enter the Box 34 amount as a "Foreign tax add-back" to reverse the withholding expensed in `Withholding taxes` (9283), so the credit is not double-counted against the expense
+- Schedule 21 (S21), Part 1 (Federal foreign non-business income tax credit): claim the credit for the foreign tax paid (ITA [s.126(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-126.html)), reducing the Canadian tax otherwise payable. One row per country of source; the columns are:
+  - *Column 1A* (100): country of source, e.g. US
+  - *Column 1B* (110): net foreign non-business income, i.e. the gross Box 25 amount less any related carrying expenses (usually just the Box 25 figure)
+  - *Column 1C* (120): foreign tax paid, i.e. the Box 34 amount
+  - *Column 1D* (130): leave blank when claiming the credit. It is only for foreign tax you instead deduct from income under s.20(12), which is the mutually exclusive alternative to the credit; crediting and deducting the same dollars is not allowed. Column 1E computes `1C - 1D`, so any figure here reduces the credit dollar for dollar. You would use it only for excess foreign tax the s.126(1) limit disallows (see below), not for a small fully creditable amount
+  - *Column 1F* (line 600 in Part 6): adjusted net income, used in the credit-limit calculation; software-populated
+- Schedule 1 (S1), Other additions: enter the Box 34 amount as a "Foreign tax add-back" to reverse the withholding expensed in `Withholding taxes` (9283), so the credit is not double-counted against the expense. This is the "Other additions" grid on S1 page 3, not the "Other deductions" grid on page 4; the two look alike but have different box numbers and opposite sign:
+  - *Column 1* (Description, 605): a label such as "Foreign tax add-back - T3 Box 34"
+  - *Column 2* (Amount, 295): the Box 34 amount
+  - The grid totals to box 296, which feeds amount D (line 199 on page 1) and is *added* to income; do not use the page-4 "Other deductions" grid (Description 705, Amount 395, totalling to 396 → amount E → line 499), which subtracts
 - If you claim neither the S21 credit nor the S1 add-back, the foreign tax stays a plain expense, which is less tax-efficient
 - An alternative some find simpler: debit only the net amount (skip the `Withholding taxes` expense) and add the gross-up back through the S1 "Other additions" line
 

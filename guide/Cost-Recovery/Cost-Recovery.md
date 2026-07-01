@@ -76,7 +76,7 @@ How they differ (all on the exit side):
 ## Terminology: Amortization, Depreciation, CCA <!-- [done] -->
 
 *Amortization* and *Depreciation* are two names for the same mechanism.  
-For tax, neither label matters, as the CRA doesn't use either terms, instead referring to the mechanism as *CCA*.  
+For tax, neither label matters: the CRA refers to the *tax deduction* as *CCA* rather than by either term.  
 GIFI codes use the accounting *Amortization* terminology (GIFI 8570 `Amortization of intangible assets`, and GIFI 8670 `Amortization of tangible assets`).  
 
 In common usage, there are two conventions:

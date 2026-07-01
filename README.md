@@ -43,7 +43,7 @@ AI generated, not verified yet:
 - [Foreign Currency](guide/Foreign-Currency.md)
 - [T5](guide/T5/T5.md)
   - [T5 - Box 18 Capital Gains Dividends](guide/T5/T5-Box-18-Capital-Gains-Dividends.md)
-- [T3 - Box 25 Foreign Income](guide/T3/T3-Box-25-Foreign-Income.md) (sub-page of T3, hub in Topics)
+- [T3 - Box 25 Foreign Income / Box 34 Foreign Tax Withheld](guide/T3/T3_Box-25-Foreign-Income_Box-34-Foreign-Tax-Withheld.md) (sub-page of T3, hub in Topics)
 - Dividends sub-pages (hub in Topics):
   - [Declaring and paying a dividend](guide/Dividends/Declaring-And-Paying.md)
   - [Bookkeeping and information slips](guide/Dividends/Bookkeeping-And-Slips.md)

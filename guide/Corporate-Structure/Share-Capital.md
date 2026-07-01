@@ -140,7 +140,7 @@ Creating a new class requires an articles amendment, and valuing shares when mor
 - Income Tax Act (R.S.C., 1985, c. 1 (5th Supp.)):
   - [s.89(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-89.html) - definition of "paid-up capital" (PUC)
   - [s.84(3)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-84.html) - redemption proceeds over PUC deemed to be a dividend
-  - [s.84(4)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-84.html) - PUC reduction by a private corporation deemed to be a dividend
+  - [s.84(4)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-84.html) - PUC reduction deemed to be a dividend
 - Canada Business Corporations Act (R.S.C., 1985, c. C-44): https://laws-lois.justice.gc.ca/eng/acts/C-44/
   - s.24 - shares without nominal or par value; classes and series of shares
   - s.26 - the stated capital account

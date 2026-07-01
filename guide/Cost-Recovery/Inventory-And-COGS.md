@@ -382,8 +382,8 @@ Apr 5 2027, supplier invoice received, BoC rate 1.34 CAD/USD (same day):
 
 Apr 12 2027, freight invoice CAD $850 from the Canadian customs broker (CAD-denominated; includes freight, brokerage, $200 of customs duty):
 - Debit `Inventory - goods for sale` (GIFI 1121) = $850
-- Debit `HST receivable` = recoverable HST portion if applicable to the freight (note: import HST is self-assessed separately on the goods, not on the broker bill)
 - Credit `Accounts payable` = $850
+- If any of the brokerage/freight services carry recoverable HST, split it out to `HST receivable` and raise `Accounts payable` by the same amount (the $850 landed cost is unchanged); import HST on the goods is self-assessed separately, not on this broker bill
 
 Pool: 500 units, landed cost $14,250 (= $13,400 + $850), average $28.50.
 

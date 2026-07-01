@@ -77,7 +77,7 @@ The freeze fixes today's value into the parent's preferred shares, lets future g
 The family case carries its own anti-avoidance rules (ITA s.84.1) and a specific relieving exception for genuine intergenerational transfers; see [Estate Freeze](Estate-Freeze.md).  
 
 
-## When to get an advisor
+## Professional advice
 
 Everything on these pages is set up by professionals, not as do-it-yourself bookkeeping.  
 Get tax and legal advice before:

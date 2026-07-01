@@ -38,7 +38,7 @@ Schedule 8 Class 50 row:
 - Standard Class 50 declining-balance rate: 55%
 - Without AIIP, the half-year adjustment would give a base of $2,000 and CCA of $2,000 × 55% = $1,100
 - Under the reinstated AIIP (this 2026 acquisition is available for use before 2030), the half-year rule is suspended and the first-year base is 150% of the addition: CCA of $6,000 × 55% = $3,300 (three times the half-year figure)
-- Closing UCC: $4,000 − CCA claimed (e.g. $700 with the AIIP deduction)
+- Closing UCC: $4,000 − $3,300 CCA = $700 (with the AIIP deduction)
 
 Year 2 (2027):
 
@@ -111,7 +111,7 @@ The first $3,000 is *immediately deductible*; only the excess of $1,200 is capit
 
 Apr 1 entry:
 - Debit `Professional fees` (GIFI 8860) = $3,000
-- Debit `Goodwill / intangible assets - cost` (GIFI 2010 intangible assets, which includes organization/incorporation costs; goodwill is 2012) = $1,200
+- Debit `Incorporation costs` (GIFI 2018, the incorporation-costs line within the 2010 intangible-assets group; goodwill is 2012) = $1,200
 - Credit `Cash` = $4,200
 
 Schedule 8 Class 14.1 row:
