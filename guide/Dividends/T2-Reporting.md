@@ -35,7 +35,7 @@ The s.83(2) election still needs Form T2054 filed on or before the day the divid
 If the shareholder is itself a Canadian corporation (e.g. an owner-manager who holds the operating company through a personal *holding company*, Holdco), the recipient is a *connected corporation* under ITA [s.186(4)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-186.html).  
 The payer corp is connected to the recipient if the recipient controls the payer, or owns >10% of votes and >10% of FMV of the payer's shares (s.186(4)).  
 
-A dividend to a connected recipient:
+A dividend to a connected-corporation:
 - Does not go in Box 450; reported on the connected-corporation portion of Schedule 3 instead
 - The receiving Holdco's tax treatment shifts to the *Part IV tax* mechanics on the receiving side, rather than driving the payer's refund directly
 - Holdco only pays Part IV tax to the extent the payer claims a dividend refund (s.186(1))
