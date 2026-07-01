@@ -20,8 +20,8 @@ Limitations:
 
 T3 Box 25 is *foreign non-business income* allocated to a beneficiary of a trust: income from a source outside Canada that is income from property, not a capital gain, and not from a business.  
 It is a catch-all that can hold more than one kind of income:
-- *Foreign interest* — e.g. interest the fund earns on US-dollar cash or on foreign bonds
-- *Foreign dividends* — e.g. dividends the fund receives on US or other foreign equities
+- *Foreign interest*: e.g. interest the fund earns on US-dollar cash or on foreign bonds
+- *Foreign dividends*: e.g. dividends the fund receives on US or other foreign equities
 - A single Box 25 figure can blend both; the slip reports one number and does not split it by character
 
 T3 Box 34 is the *foreign non-business income tax paid* — the foreign tax (typically withholding) on that income, if any.  
@@ -118,14 +118,16 @@ Foreign income — Schedule 7 (S7): the Box 25 amount is income from property th
 
 Enter the full gross Box 25 amount (despite the Box 019 "net of related expenses" label, expenses are entered separately).  
 
-Schedule 7 does not split property income by interest vs dividends; both aggregate together into Box 019 and into AII identically. The interest-versus-dividend split lives in the GIFI presentation (8091 vs 8097 on Schedule 125), not on Schedule 7.  
-
-In FutureTax T2, double-click the field to open the S7 worksheet (S7WS). Its "Income from property" grid has one row per income type and two columns that map straight to the two Schedule 7 lines above:
+In FutureTax T2, double-click the field to open the S7 worksheet (S7WS). Its "Income from property" grid has one row per income type and two columns that map straight to the two Schedule 7 lines above. The columns are independent, so **each foreign amount must be entered in both** — this is the step most easily missed:
 - *Foreign* column: feeds Box 019 (foreign investment income, line 445)
 - *Aggregate* column: feeds Box 032 (worldwide income from property, AII at line 440)
 - The row you use changes no filed number; every row sums into its column total. Put foreign interest on the "Other interest and property income" row: it is the correct label for interest (e.g. DLR.U) and is the expandable one, so multiple T3s can be itemized there
-- Foreign property income goes in both columns, and in FutureTax the columns are independent — there is no cross-feed: the *Aggregate* column populates Box 032, the *Foreign* column populates Box 019. Enter the foreign Box 25 amount in **both** — the Aggregate column so it counts in worldwide AII (Box 032 → line 440), and the Foreign column so it is identified as the foreign subset (Box 019 → line 445). Foreign investment income is a subset of AII, so the same dollars belong in both boxes; entering the amount in the Foreign column alone puts it in foreign investment income but leaves it out of AII, understating the refundable-tax (NERDTOH) pool
+- Foreign investment income is a subset of AII, so the same dollars belong in both boxes; entering the amount in the Foreign column alone puts it in foreign investment income (Box 019) but leaves it out of AII (Box 032), understating the refundable-tax (NERDTOH) pool
 - On the generated Schedule 7, check that Box 032 equals your Canadian income from property plus the foreign Box 25 (AII at line 440 rises by the foreign amount) and that Box 019 equals the foreign total
+
+The worksheet below shows the correct entry: each foreign amount is keyed into both the Foreign and Aggregate columns (the same figure in each row), so the Foreign total (Box 019) is a subset of the Aggregate total (Box 032). Here the Aggregate total (8,146) is the foreign property income (6,912) plus the Canadian s.112/113 dividends (1,234), while the Foreign total (6,912) carries only the foreign rows.  
+
+![FutureTax S7 worksheet: each foreign property-income amount entered in both the Foreign and Aggregate columns, so the Foreign total is a subset of the Aggregate total](T3-Box-25_Schedule-7-Worksheet_Other-interest-and-property-income.png)
 
 Make sure the amount is not removed as "taxable dividends deductible" (Part 1 line 062 / Part 3 line 049, fed from Schedule 3); that line captures only s.112/113-deductible dividends (from taxable Canadian corporations or foreign affiliates), which a portfolio foreign distribution is not.  
 
@@ -167,5 +169,5 @@ The S21 credit for non-business foreign tax is bounded by the Canadian tax other
 
 ## TODO
 
-- Add screenshots: a Box 25 / Box 34 slip, and the S7 foreign-income worksheet for the interest line
+- Add a Box 25 / Box 34 T3 slip screenshot (the S7 worksheet screenshot is included)
 - Expand the foreign tax credit limitation (s.126(1) limit and the s.20(11)/(12) interaction) for larger Box 34 amounts
