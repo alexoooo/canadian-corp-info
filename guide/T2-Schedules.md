@@ -162,6 +162,7 @@ Not schedules, but part of the same season:
 ## Related
 
 - [Small Business Tax Overview](Small-Business-Tax-Overview.md)
+- [Investments](Investments.md) (the investing cycle behind S3, S6, S7, and S21)
 - [Ledger and Accounts](Ledger-And-Accounts.md)
 - [Expense Classification](Expense-Classification.md)
 - [Whole-dollar rounding](Whole-Dollar-Rounding.md)

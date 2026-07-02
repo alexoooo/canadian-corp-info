@@ -35,7 +35,7 @@ When adding or substantially restructuring a topic, update `README.md` so the in
 
 ## Page status
 
-Every page sits in one of three states, and `README.md` groups pages by state.
+Every page sits in one of three states. `README.md` indexes pages thematically and carries the state as a per-entry marker: no marker for signed-off pages, `†` for AI-generated pages pending review (legend at the top of the Topics section), and a `(work-in-progress stub)` annotation for stubs.
 
 - **Signed off** — no marker; the maintainer has reviewed the page end-to-end; treat the content as authoritative within the disclaimer
 - **`STATUS: AI GENERATED, REVIEW IN PROGRESS`** — page shape and detail are mature, but each section still needs the maintainer's verification before its facts can be relied on
@@ -43,7 +43,7 @@ Every page sits in one of three states, and `README.md` groups pages by state.
 
 When a marker is present, it is the very first line of the file, followed by a blank line, then the `# Title` heading (see `Cost-Recovery/Cost-Recovery.md` for the canonical shape).
 
-This separation is load-bearing. The audience uses these pages as practical guidance, and AI-generated content can contain plausible-sounding errors that have not yet been caught. Do not silently promote a page — removing the marker and moving its `README.md` entry into Topics is a sign-off, and only the maintainer can issue it. When drafting new content from scratch, mark it `AI GENERATED, REVIEW IN PROGRESS` and place its `README.md` entry under Pending review.
+This separation is load-bearing. The audience uses these pages as practical guidance, and AI-generated content can contain plausible-sounding errors that have not yet been caught. Do not silently promote a page — removing the `STATUS` line and the README `†` marker is a sign-off, and only the maintainer can issue it. When drafting new content from scratch, mark it `AI GENERATED, REVIEW IN PROGRESS` and add its `README.md` entry with a `†`, under the thematic group it belongs to.
 
 ### Promotion (sign-off)
 
@@ -51,7 +51,7 @@ Promotion is the maintainer's end-to-end sign-off on a mature page; only the mai
 
 - Delete the `STATUS: AI GENERATED, REVIEW IN PROGRESS` first line and its trailing blank line, so the file opens on its `# Title` heading
 - Strip the per-section `<!-- [done] -->` review tags from every heading — they are section-by-section review scaffolding (the maintainer-only heading tags described under [`docs/Style-Guide.md` — Headings](docs/Style-Guide.md#headings)), and a signed-off page carries none
-- Move the page's `README.md` entry from Pending review into Topics, indented under its parent hub if it is a sub-page
+- Remove the `†` marker from the page's `README.md` entry (the entry stays in its thematic group, indented under its parent hub if it is a sub-page)
 
 The `<!-- [done] -->` tags are how the maintainer tracks review toward sign-off; a page is ready to promote once they cover it end to end.
 
