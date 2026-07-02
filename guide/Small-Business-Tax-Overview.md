@@ -295,7 +295,7 @@ Practical tradeoffs:
 
 The full optimization is personal: it depends on tax bracket, retirement strategy, mortgage plans, and family income-splitting considerations.  
 The *TOSI* rules under ITA [s.120.4](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-120.4.html) limit splitting through dividends to family members who are not active in the business.  
-For dividend mechanics, see [Dividends](Dividends/Dividends.md); for payroll, see [Payment.md](Payment/Payment.md).  
+For dividend mechanics, see [Dividends](Dividends/Dividends.md); for payroll, see [Payroll](Payroll/Payroll.md).  
 
 
 ## Personal Service Business classification risk

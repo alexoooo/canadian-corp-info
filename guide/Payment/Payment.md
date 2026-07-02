@@ -23,7 +23,7 @@ The corp remits the GST34 net tax for each reporting period: the Quick Method fl
 
 ## Payroll remittance
 
-Source deductions apply only if the corp pays a *salary*; a corp that distributes only dividends has no payroll to remit. The salary-vs-dividend choice is in [Small Business Tax Overview](../Small-Business-Tax-Overview.md#paying-yourself-salary-vs-dividends).
+Source deductions apply only if the corp pays a *salary*; a corp that distributes only dividends has no payroll to remit. The salary-vs-dividend choice is in [Small Business Tax Overview](../Small-Business-Tax-Overview.md#paying-yourself-salary-vs-dividends); the payroll concepts and bookkeeping are in [Payroll](../Payroll/Payroll.md).
 
 - *Account*: an `RP` payroll program account under the business number (format `…RP0001`)
 - *What is remitted each period*: the employee's federal and provincial income tax, plus CPP (both the employee and employer halves, since the corp is the employer), plus EI where the employee is EI-insurable

@@ -301,7 +301,7 @@ Carrying a loss back recovers tax already paid in a prior year; carrying it forw
 CCA is discretionary and UCC never expires, so deferring CCA in a loss year avoids deepening a non-capital loss, which does expire after 20 years.  
 A realized capital loss also draws down CDA by the non-taxable half it removes (see the event table above).  
 
-Details: [Capital loss carry forward / back](Adjusted-Cost-Base/Adjusted-Cost-Base.md#capital-loss-carry-forward--back--superficial-loss), [Capital Cost Allowance](Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md) (loss-year CCA timing).  
+Details: [Losses](Losses.md), [Capital loss carry forward / back](Adjusted-Cost-Base/Adjusted-Cost-Base.md#capital-loss-carry-forward--back--superficial-loss), [Capital Cost Allowance](Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md) (loss-year CCA timing).  
 
 
 ## Filing calendar

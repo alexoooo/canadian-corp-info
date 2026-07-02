@@ -1,0 +1,221 @@
+STATUS: AI GENERATED, REVIEW IN PROGRESS
+
+# Payroll
+
+**Who this is for**:
+- Owners of a Canadian-controlled private corporation (CCPC)
+- Paying themselves (or a family member) a salary from the corporation
+
+**TLDR**:
+- Salary is the T4 channel: deductible to the corporation, taxed as employment income in the owner's hands
+- Running it means four recurring obligations:
+  - An RP payroll program account with CRA
+  - *Source deductions* withheld from each pay
+  - Remittance to CRA by the 15th of the following month
+  - A T4 slip and T4 Summary by Feb 28
+- A single owner-manager withholds income tax and CPP (both halves); EI usually does not apply
+- Every step posts through two ledger accounts: `Salaries and wages` (`9060`) and `Employee deductions payable` (`2627`)
+
+Limitations:
+- The corporation's only employee is assumed to be a single Canadian-resident owner-manager; an arm's-length employee follows the same mechanics, but hiring topics (employment contracts, employment standards, EI premiums) are touched on, not worked through
+- The salary-vs-dividend remuneration tradeoff (RRSP room, CPP credits, integration) is out of scope; see [Paying yourself: salary vs dividends](../Small-Business-Tax-Overview.md#paying-yourself-salary-vs-dividends)
+- Valuing taxable benefits (automobile, home office, personal use of corporate property) is covered in [Owner-corporation transactions](../Owner-Corporation-Transactions.md); this page covers how a benefit is reported once valued
+- Provincial employer levies (Ontario Employer Health Tax, WSIB) are out of scope
+- The owner's personal T1 side (reporting the T4, claiming the CPP credit) is out of scope
+- Withholding rates and CPP limits change every January; figures below are 2026 and the dollar examples are illustrative
+- The following is my understanding as of 2026
+
+
+## The payroll cycle
+
+Each pay splits the gross salary three ways: net cash to the owner, withholdings parked in a liability account, and the full gross (plus the employer CPP half) as a deductible expense.  
+The withholdings leave for CRA by the 15th of the following month; the T4 reconciles the whole year in February.  
+
+```mermaid
+flowchart TB
+    RUN(["Pay run: gross salary"])
+    NET["Net pay to owner"]
+    LIAB[("Employee deductions payable:<br/>income tax · CPP both halves")]
+    REMIT["PD7A remittance:<br/>15th of following month"]
+    EXP["Salary expense:<br/>deductible, reduces ABI"]
+    T4["T4 slip + T4 Summary:<br/>by Feb 28"]
+    T1(["Owner's T1"])
+
+    RUN --> NET
+    RUN --> LIAB
+    RUN --> EXP
+    LIAB --> REMIT
+    NET -.->|year's pay and withholdings| T4
+    T4 --> T1
+```
+
+The pay run itself needs no payroll software at this scale:
+- Compute the withholdings with CRA's *Payroll Deductions Online Calculator* (PDOC) or the T4032 tables
+- Pay the net amount from the corporate account by cheque, e-transfer, or bill payment
+- Post the journal entry (see [Pay-run bookkeeping](#pay-run-bookkeeping))
+
+
+## RP program account
+
+Payroll runs on an `RP` program account under the corporation's business number (format `…RP0001`).  
+Register through CRA My Business Account before the first remittance is due; the account can be opened at the same time as the RC corporate-tax account or added later.  
+
+Withholding is triggered by *paying* salary, not by accruing it (ITA [s.153(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-153.html)).  
+A corporation that pays only dividends has no payroll and needs no RP account; see [Dividends](../Dividends/Dividends.md).  
+
+
+## Source deductions
+
+Three amounts are potentially withheld from each pay; for a single owner-manager only the first two apply.  
+
+*Income tax* (federal and provincial):
+- Set by the employee's *TD1* forms (federal and provincial), which claim the basic personal amount and any other credits
+- The corporation keeps the completed TD1s on file; they are not sent to CRA
+- The per-pay amount comes from PDOC or the T4032 tables for the province of employment
+
+*CPP* (both halves, since the corporation is the employer):
+- Employee half: 5.95% of pensionable earnings between the $3,500 basic exemption and the $74,600 YMPE (2026 maximum $4,230.45)
+- Employer half: matches the employee half dollar for dollar
+- *CPP2*: a second contribution at 4% each on earnings between the YMPE and the $85,000 YAMPE (2026 maximum $416 each)
+- The exemption prorates per pay period ($291.67 per month)
+
+*EI*:
+- An owner controlling more than 40% of the voting shares is not insurable (Employment Insurance Act [s.5(2)(b)](https://laws-lois.justice.gc.ca/eng/acts/E-5.6/section-5.html)): no employee premium, no employer premium, and no entitlement to regular EI benefits
+- An arm's-length employee is insurable; the corporation withholds the employee premium and pays 1.4× as the employer share
+- A voluntary opt-in to EI *special* benefits (maternity, parental, sickness) exists for self-employed persons, including a >40% owner-manager, under Part VII.1 of the Employment Insurance Act; once benefits are drawn the opt-in becomes permanent
+
+The withheld amounts are the employee's money held in trust for CRA.  
+Remitting them late or not at all is treated more severely than a late corporate-tax balance (see the penalty note below).  
+
+
+## Remittance schedule and PD7A
+
+- *What*: the income tax withheld, plus both CPP halves (and both EI shares, when EI applies), for all pays in the period
+- *When*: a *regular* remitter pays by the 15th of the month following the month the salary was paid (Income Tax Regulations [s.108(1)](https://laws-lois.justice.gc.ca/eng/regulations/C.R.C.,_c._945/section-108.html))
+- *Quarterly option*: an employer with a low average monthly withholding amount (AMWA under $3,000) and a clean compliance record can remit quarterly; new small employers can qualify from the start (see CRA guide T4001 for the current thresholds)
+- *Voucher*: CRA issues a *PD7A* (Statement of Account for Current Source Deductions) each period; remit against it through My Business Account, an online-banking payee, or a bank's business tax service (see [Payment](../Payment/Payment.md))
+- *Nil months*: if no salary was paid in a period, report a nil remittance by the due date through My Business Account or CRA's TeleReply line; skipping the report draws a follow-up
+
+Late or missing remittances draw a graduated penalty of 3% to 10% of the amount (ITA [s.227(9)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-227.html)), plus interest.  
+
+
+## Pay-run bookkeeping
+
+Two accounts carry the whole cycle:
+- `Salaries and wages` (`9060`): expense; gross salary plus the employer CPP half
+- `Employee deductions payable` (`2627`): liability; everything owed to CRA but not yet remitted
+
+Example: $5,000 gross monthly salary, 2026 Ontario, TD1 basic personal amounts only.  
+CPP employee half: ($5,000 − $291.67) × 5.95% = $280.15; the corporation matches it.  
+Income tax per PDOC: $760.00 (illustrative; the actual figure depends on the TD1 claims).  
+
+Pay run (January 31):
+
+| Account | Debit | Credit |
+|---|---|---|
+| `Salaries and wages` (`9060`) — gross | 5,000.00 | |
+| `Salaries and wages` (`9060`) — employer CPP | 280.15 | |
+| `Employee deductions payable` (`2627`) | | 1,320.30 |
+| `Cash` (`1001`) — net pay | | 3,959.85 |
+
+Remittance (by February 15):
+
+| Account | Debit | Credit |
+|---|---|---|
+| `Employee deductions payable` (`2627`) | 1,320.30 | |
+| `Cash` (`1001`) | | 1,320.30 |
+
+The `2627` balance returns to zero after each on-time remittance; a residual balance at month-end means a missed or short remittance.  
+For the account definitions and the chart of accounts, see [Ledger and Accounts](../Ledger-And-Accounts.md).  
+
+
+## T4 slip and T4 Summary
+
+After each calendar year the corporation issues a *T4* slip to the employee and files it with a *T4 Summary* by Feb 28.  
+The Summary totals all slips and reconciles them against the year's remittances; a shortfall is payable with the filing.  
+
+The boxes that matter for an owner-manager:
+
+| Box | Contents |
+|---|---|
+| 14 | Employment income: salary plus taxable benefits |
+| 16 / 16A | Employee CPP / CPP2 withheld |
+| 22 | Income tax withheld |
+| 24 | EI insurable earnings: 0 for the EI-exempt owner |
+| 26 | CPP pensionable earnings |
+| 28 | EI-exempt marker |
+| 34 | Automobile benefit (see [Owner-corporation transactions](../Owner-Corporation-Transactions.md#vehicles)) |
+| 40 | Other taxable benefits |
+
+Continuing the example: box 14 $60,000.00, box 16 $3,361.80, box 22 $9,120.00, box 24 0, box 26 $60,000.00, box 28 EI exempt.  
+
+Filing:
+- File through *Web Forms* in My Business Account (enter the slip online, no software needed) or from T2/payroll software
+- CRA cross-checks box 16 against the CPP computed from box 26 (the *PIER* review, pensionable and insurable earnings review); a mismatch draws a report and a balance-due notice
+- The late-filing penalty applies per return, not per slip, even when no tax is owing (see [Filing deadlines](../Small-Business-Tax-Overview.md#filing-deadlines-and-instalments))
+
+
+## Owner-manager remuneration
+
+*Reasonableness*:
+- Deductions must be reasonable in the circumstances (ITA [s.67](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-67.html))
+- CRA's administrative practice is not to challenge the reasonableness of salary or bonus paid to an active owner-manager of a CCPC out of the business's profits
+- Salary to a spouse or child is deductible only to the extent it is reasonable for the work actually performed; keep timesheets or a duties record
+- Salary is outside *TOSI* (which targets dividends and similar split income); s.67 reasonableness is the constraint instead
+
+*Year-end bonus accrual*:
+- A bonus can be accrued in the fiscal year (deductible then) and paid later; withholding arises only at payment
+- Remuneration still unpaid on the 180th day after the fiscal year-end is deducted only in the year it is actually paid (ITA [s.78(4)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-78.html))
+- This is the common lever for setting the corp's taxable income after year-end results are known (e.g. bonusing down to the SBD limit)
+
+*Fiscal vs calendar year*:
+- The corporation deducts salary in the fiscal year it is incurred; the T4 reports it in the calendar year it is paid
+- For a non-December year-end the two never line up exactly; the mismatch is normal and needs no adjustment
+
+*Cash actually moves*:
+- Pay the net salary from the corporate account; a salary that is only book-entry against the shareholder loan account must be a genuine, documented set-off (see [Owner-corporation transactions](../Owner-Corporation-Transactions.md#shareholder-loans))
+- Money taken out without a pay run (and without a dividend) lands in the shareholder loan account, with the s.15(2) inclusion risk that carries
+
+
+## Related
+
+- [Small Business Tax Overview](../Small-Business-Tax-Overview.md)
+- [Payment](../Payment/Payment.md)
+- [Dividends](../Dividends/Dividends.md)
+- [Owner-corporation transactions](../Owner-Corporation-Transactions.md)
+- [Ledger and Accounts](../Ledger-And-Accounts.md)
+- [Expense Classification](../Expense-Classification.md)
+- [Tax Integration](../Tax-Integration.md)
+
+
+## Citations
+
+- Income Tax Act (R.S.C., 1985, c. 1 (5th Supp.)):
+  - [s.67](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-67.html) - general reasonableness limit on deductions
+  - [s.78(4)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-78.html) - remuneration unpaid 180 days after year-end is deductible only when paid
+  - [s.153(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-153.html) - withholding obligation on salary and wages paid
+  - [s.227(9)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-227.html) - graduated penalty on late or deficient remittances
+- Income Tax Regulations (C.R.C., c. 945):
+  - [s.108](https://laws-lois.justice.gc.ca/eng/regulations/C.R.C.,_c._945/section-108.html) - remittance due dates by remitter category
+- Canada Pension Plan (R.S.C., 1985, c. C-8) - employee and employer contributions, basic exemption, YMPE/YAMPE: https://laws-lois.justice.gc.ca/eng/acts/C-8/
+- Employment Insurance Act (S.C. 1996, c. 23):
+  - [s.5(2)(b)](https://laws-lois.justice.gc.ca/eng/acts/E-5.6/section-5.html) - employment not insurable when the employee controls more than 40% of the voting shares
+  - Part VII.1 (s.152.01 and following) - voluntary opt-in to special benefits for self-employed persons
+- CRA guides and tools:
+  - T4001 - Employers' Guide: Payroll Deductions and Remittances: https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4001.html
+  - RC4120 - Employers' Guide: Filing the T4 Slip and Summary: https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4120.html
+  - Payroll Deductions Online Calculator (PDOC): https://www.canada.ca/en/revenue-agency/services/e-services/digital-services-businesses/payroll-deductions-online-calculator.html
+  - T4032 - Payroll Deductions Tables: https://www.canada.ca/en/revenue-agency/services/forms-publications/payroll/t4032-payroll-deductions-tables.html
+  - TD1 - Personal Tax Credits Returns: https://www.canada.ca/en/revenue-agency/services/forms-publications/td1-personal-tax-credits-returns.html
+
+
+## TODO
+
+- Split into sub-pages at parity with `Dividends/` as content grows: source-deduction computation walkthrough (PDOC screenshots), T4 box-by-box with a redacted slip, a worked full-year example
+- Verify the 2026 CPP figures ($74,600 YMPE, $85,000 YAMPE, $4,230.45 / $416 maximums) and the illustrative $760 withholding against the current T4032/PDOC; keep consistent with the same figures in [Payment](../Payment/Payment.md)
+- Verify the GIFI treatment of the employer CPP half (kept in `9060` here) against RC4088; decide whether a detail sub-code convention is needed
+- Verify the quarterly-remitter AMWA thresholds and the new-employer criteria against the current T4001
+- Verify the EI special-benefits opt-in description (EIA Part VII.1) and the permanence-once-drawn rule; source the CRA administrative position on owner-manager remuneration reasonableness (Income Tax Technical News No. 22, archived) before sign-off
+- Confirm the mandatory-electronic-filing slip threshold for T4 returns and add it to the filing section
+- Decide whether Ontario EHT and WSIB stay out of scope or get a named-threshold note
+- Settle the boundary with [Payment](../Payment/Payment.md) as that page grows past the stub: this page owns the payroll concepts and bookkeeping, Payment owns the cash-to-CRA mechanics; move or trim the CPP-figure duplication accordingly
