@@ -32,13 +32,12 @@ Unmarked pages are reviewed; † = AI generated, not verified yet.
 **Bookkeeping**:
 - [Ledger and Accounts](guide/Ledger-And-Accounts.md) †
 - [Expense Classification](guide/Expense-Classification.md) †
-- [Whole-dollar rounding](guide/Whole-Dollar-Rounding.md) †
+- [Foreign Currency](guide/Foreign-Currency.md) † (cross-cutting: billing, banking, and investments)
 
 **Operating the business**:
 - [HST](guide/HST.md) †
 - [Receivables and Bad Debts](guide/Receivables-And-Bad-Debts.md) †
 - [Deferred Revenue](guide/Deferred-Revenue.md) †
-- [Foreign Currency](guide/Foreign-Currency.md) † (cross-cutting: billing, banking, and investments)
 - [Cost Recovery](guide/Cost-Recovery/Cost-Recovery.md) †
   - [Inventory and cost of goods sold](guide/Cost-Recovery/Inventory-And-COGS.md) †
   - [Materials and CIP](guide/Cost-Recovery/Materials-And-CIP.md) †
@@ -78,7 +77,8 @@ Unmarked pages are reviewed; † = AI generated, not verified yet.
 - [T2 Schedules](guide/T2-Schedules.md) †
 - [Losses](guide/Losses.md) †
 - [CRA Administration](guide/CRA-Administration.md) †
-- [Payment](guide/Payment/Payment.md) (work-in-progress stub)
+- [Payment](guide/Payment/Payment.md) †
+- [Whole-dollar rounding](guide/Whole-Dollar-Rounding.md) †
 
 
 ## Audit
