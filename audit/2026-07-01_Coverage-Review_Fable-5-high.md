@@ -91,27 +91,37 @@ no page or section works the topic through; a passing mention may exist (noted w
 
 ### Tier 3 — operating-side topics touched on but not worked through
 
-8. *Receivables and bad debts, income side*: the HST bad-debt adjustment (ETA s.231) is covered,
+8. *Receivables and bad debts, income side* — DRAFTED as `guide/Receivables-And-Bad-Debts.md`
+   (2026-07-02): the HST bad-debt adjustment (ETA s.231) is covered,
    but the income-tax write-off (s.20(1)(p)), later recovery, and the bookkeeping entries are not;
    the two halves belong together.
-9. *Deferred revenue, deposits, retainers*: no coverage of advance payments — s.12(1)(a)
+9. *Deferred revenue, deposits, retainers* — DRAFTED as `guide/Deferred-Revenue.md` (2026-07-02):
+   no coverage of advance payments — s.12(1)(a)
    inclusion, the s.20(1)(m) reserve, the deferred-revenue liability account, and the GST/HST
    tax-point on deposits vs prepayments. Directly relevant to a consulting practice on retainer.
-10. *Charitable donations by the corp*: absent. Corporate donations are a deduction (not a
+10. *Charitable donations by the corp* — DRAFTED as `guide/Donations.md` (2026-07-02): absent.
+    Corporate donations are a deduction (not a
     credit), limited to 75% of net income with a 5-year carryforward (Schedule 2); donating
     appreciated securities zeroes the capital-gain inclusion while the full gain credits the CDA —
     a strong synergy with the guide's existing CDA and in-kind coverage.
-11. *Debt and financing costs*: no page owns borrowing — loan and line-of-credit bookkeeping,
+11. *Debt and financing costs* — DRAFTED as `guide/Debt-And-Financing.md` (2026-07-02): no page
+    owns borrowing — loan and line-of-credit bookkeeping,
     interest deductibility (s.20(1)(c)), financing fees (s.20(1)(e)), and paying interest to the
     owner on a due-to-shareholder balance (which triggers a T5 to the owner).
-12. *Capital-vs-income character of trading gains*: the guide assumes capital treatment
+12. *Capital-vs-income character of trading gains* — DRAFTED as
+    `guide/Capital-Vs-Income-Character.md` (2026-07-02; a small standalone page rather than a
+    section, since Adjusted-Cost-Base.md and T5008.md are both signed off): the guide assumes
+    capital treatment
     throughout the ACB/T5008 chain. A short section acknowledging the trader-vs-investor
     question and the s.39(4) Canadian-securities election (and whether it is available to the
     corp) would armour the assumption. Fits on Adjusted-Cost-Base.md or T5008.md.
-13. *Employee benefits beyond the vehicle/home-office set*: PHSP / health spending accounts (a
+13. *Employee benefits beyond the vehicle/home-office set* — DRAFTED as an `## Employee benefits`
+    section in `guide/Owner-Corporation-Transactions.md` (2026-07-02): PHSP / health spending
+    accounts (a
     common owner-manager question), group insurance, the CRA gifts-and-awards policy. The
     corporate-owned life-insurance premium note in Owner-Corporation-Transactions is the seed.
-14. *Rental and property income character*: when rent is active vs property income — the
+14. *Rental and property income character* — DRAFTED as `guide/Rental-And-Property-Income.md`
+    (2026-07-02): when rent is active vs property income — the
     specified investment business definition, the five-employee rule, incidental rent from
     business premises (subleasing, mixed-use property). Relevant to any CCPC with real property
     alongside operations.
@@ -124,15 +134,17 @@ Smaller items that extend existing pages rather than warranting new ones:
   the capital-gains component; the life-insurance-proceeds component is the other main CDA source
   and is unmentioned (the premium-deductibility note in Owner-Corporation-Transactions could
   cross-link)
-- *T2 assembly view* (new section, or extend `Small-Business-Tax-Overview.md`): the guide covers
+- *T2 assembly view* — DRAFTED as `guide/T2-Schedules.md` (2026-07-02): the guide covers
   schedules per topic but never shows the whole return: which schedules a typical CCPC files
   (S1, S3, S6, S7, S8, S50, S53, S100/125/141, S200), Schedule 50 shareholder information,
   Schedule 141 (who prepared the statements), and mandatory electronic filing; Schedule 141 and
   Schedule 50 are currently unmentioned anywhere
-- *Schedule 1 as a concept* (`Expense-Classification.md` or the T2 assembly section): individual
-  pages mention their own S1 adjustments (CCA vs amortization, 50% meals) but nothing explains
-  the book-to-tax reconciliation once; under tax-basis books the list is short, which is exactly
-  why a single unified list is feasible
+- *Schedule 1 as a concept* — covered at orientation level by the S1 expansion in
+  `guide/T2-Schedules.md` (unified add-back/deduction list); a deeper treatment on
+  `Expense-Classification.md` remains optional: individual pages mention their own S1
+  adjustments (CCA vs amortization, 50% meals) but nothing explained the book-to-tax
+  reconciliation once; under tax-basis books the list is short, which is exactly why a single
+  unified list is feasible
 - *Instalment computation* (`Payment/Payment.md`): the calendar covers when; the three
   computation options (prior-year, current-year, no-calculation) and the first-year exemption are
   not covered — belongs in Payment when it grows past the stub

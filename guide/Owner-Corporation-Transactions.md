@@ -232,6 +232,36 @@ Credit: "Cash" (GIFI 1001) = amount
 - Dividends to family members who are not active in the business are constrained by TOSI (ITA s.120.4; see [Small Business Tax Overview](Small-Business-Tax-Overview.md))
 
 
+## Employee benefits
+
+A benefit provided to the owner *as employee* can be deductible to the corp and tax-free personally — the best of both columns — but only inside the recognized categories below.  
+The owner-manager caution runs through all of them: a benefit that would not plausibly be offered to an arm's-length employee in the same job invites recharacterization as a shareholder benefit (s.15(1), taxed with no deduction).  
+
+*Private health services plan (PHSP)*:
+- Premiums the corp pays under a *private health services plan* — an insured extended-health/dental plan or a *health spending account* (HSA) — are deductible to the corp and excluded from the employee's income (ITA [s.6(1)(a)(i)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-6.html); *PHSP* defined in s.248(1))
+- The plan must have the character of insurance and cover hospital, medical, or dental expenses; coverage limits must be reasonable for the employment
+- The single-shareholder-employee case is the scrutinized one: a cost-plus HSA whose only member is the owner is accepted by CRA only within limits (the plan must be qua employee, with reasonable annual caps); verify the current position before setting one up
+- Done properly, this converts medical and dental costs into a corporate deduction with no taxable benefit — usually better than paying them personally
+
+*Other insurance*:
+- Employer-paid *group term life* premiums are a taxable benefit to the employee
+- Employer-paid *disability* premiums are not a benefit, but they make any eventual disability payments taxable to the recipient; premiums paid personally keep the payments tax-free — for an owner-manager, paying disability premiums personally is the usual advice
+- Corporate-owned *life insurance* on the owner is a different topic (premiums generally non-deductible; see [Non-deductible perks](#other-mixed-use-and-benefit-situations) above)
+
+*Gifts and awards*:
+- CRA's administrative policy exempts *non-cash* gifts and awards up to $500 (total, per year) per employee; cash and near-cash (gift cards redeemable like cash) are always taxable
+- A separate $500 non-cash allowance exists for a long-service award at five-year intervals
+- The policy is for employees at large: CRA's position is that gifts to a person who is also a shareholder (or a related person) are presumed received *as shareholder* — taxable, no exemption — unless received clearly qua employee; for a single-owner corp, do not lean on the gifts policy
+- On the HST side, ITC and remittance consequences follow the taxable-benefit outcome (ETA s.173)
+
+*Professional dues, training, phone plans*:
+- Professional membership dues the corp pays are not a benefit where the membership principally benefits the employer (the consulting designation behind the corp's revenue clearly does)
+- Employer-paid training that maintains or upgrades skills related to the work is not a benefit
+- An employer-provided cellphone plan of reasonable cost, used primarily for work, is not a benefit; personal-use overages are (see [Phone, internet, and home computer](#other-mixed-use-and-benefit-situations) above)
+
+The bookkeeping is unexciting once the character is settled: deductible premiums and costs go to their expense lines (`8690` Insurance, `8760` memberships, `9060`-adjacent benefit costs), and anything taxable feeds the T4 as an employment benefit (see [Payroll](Payroll/Payroll.md)).  
+
+
 ## Shareholder loans
 
 The *shareholder loan account* records money moving between the owner and the corporation outside salary and dividends.  
@@ -322,6 +352,7 @@ The corporate structure trades this simplicity for the benefit and deduction rul
   - [s.6(1)(b)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-6.html) - allowances; (vii.1) reasonable per-km motor-vehicle allowance excluded from income; (x), (xi) an allowance not based solely on km, or duplicated by reimbursement, is deemed unreasonable
   - [s.6(1)(e)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-6.html), s.6(2) - automobile standby charge and the reduced-standby formula
   - [s.6(1)(k)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-6.html) - operating cost benefit, including the optional ½-standby alternative; per-km rate under Reg 7305.1
+  - [s.6(1)(a)(i)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-6.html) - employer contributions to a private health services plan excluded from the benefit inclusion; *PHSP* defined in [s.248(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-248.html)
   - [s.8(1)(i)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-8.html), s.8(13) - employee deduction for office rent and supplies, and the work-space-in-the-home limitation (T2200 / T777 path)
   - [s.13(7)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-13.html) - change-of-use and partial-use adjustments to capital cost
   - [s.15(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-15.html) - benefit conferred on a shareholder, included in income with no corporate deduction
@@ -347,6 +378,8 @@ The corporate structure trades this simplicity for the benefit and deduction rul
   - s.199, s.201 - capital personal property and passenger-vehicle ITC limits (see [HST](HST.md))
 - CRA guides and forms:
   - T4130 - Employers' Guide – Taxable Benefits and Allowances: https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4130.html
+  - Gifts, awards, and long-service awards (administrative policy): https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/benefits-allowances/gifts-awards-social-events/gifts-awards-long-service-awards.html
+  - Private health services plans: https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/benefits-allowances/private-health-services-plan-premiums.html
   - Automobile and motor vehicle benefits: https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/benefits-allowances/automobile/automobile-motor-vehicle-benefits.html
   - 2026 automobile deduction limits and expense benefit rates (Department of Finance): https://www.canada.ca/en/department-finance.html
   - T2200 - Declaration of Conditions of Employment; T777 - Statement of Employment Expenses
@@ -359,3 +392,6 @@ The corporate structure trades this simplicity for the benefit and deduction rul
 - Verify the 2026 per-km allowance (73¢ / 67¢), operating cost benefit rate (34¢), and the Class 10.1 cost ceiling against the final CRA / Finance figures before sign-off
 - Confirm the GIFI rollup codes used in the ledger entries (motor vehicle expenses, rent, equipment) against RC4088
 - Consider a screenshot of the T4 box 34 automobile-benefit entry once a redacted example is available
+- Verify CRA's current position on a single-shareholder-employee PHSP / cost-plus HSA (the qua-employee condition and the reasonable-limit guidance) before sign-off
+- Verify the gifts-and-awards figures ($500 annual non-cash, $500 long-service at five-year intervals) and the shareholder-presumption wording against the current administrative-policy page
+- Verify the disability-premium treatment (employer-paid premiums not a benefit but benefits taxable; personally-paid premiums keep benefits tax-free) against T4130

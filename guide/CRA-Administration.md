@@ -188,6 +188,7 @@ A nil assessment cannot be objected to; for a loss year, the lever is a loss det
 
 - [Payment](Payment/Payment.md)
 - [Losses](Losses.md)
+- [T2 Schedules](T2-Schedules.md)
 - [T1135](T1135.md)
 - [Payroll](Payroll/Payroll.md)
 - [Small Business Tax Overview](Small-Business-Tax-Overview.md)

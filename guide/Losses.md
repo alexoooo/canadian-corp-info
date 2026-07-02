@@ -155,6 +155,7 @@ Carryforward (the alternative):
 - [Capital Cost Allowance](Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md) (discretionary CCA in a loss year)
 - [Capital Dividend Account](Capital-Dividend-Account/Capital-Dividend-Account.md)
 - [ERDTOH and NERDTOH](Dividends/ERDTOH-NERDTOH.md)
+- [Donations](Donations.md) (the other discretionary carryforward, on a shorter 5-year clock)
 - [Small Business Tax Overview](Small-Business-Tax-Overview.md)
 - [Ledger and Accounts](Ledger-And-Accounts.md)
 - [CRA Administration](CRA-Administration.md) (reassessments, objections, the statute-barred clock)

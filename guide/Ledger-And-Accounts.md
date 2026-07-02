@@ -221,6 +221,7 @@ Liabilities (Schedule 100):
 | Employee deductions payable | `2627` | source deductions withheld, not yet remitted |
 | Taxes payable | `2680` | corporate income tax owing; also a net HST payable |
 | Short-term debt | `2700` | `2701` loans from Canadian banks; a line of credit |
+| Deferred income | `2770` | retainers and prepayments not yet earned (see [Deferred Revenue](Deferred-Revenue.md)) |
 | Due to shareholder(s)/director(s) | `2780` | shareholder-loan account when the corporation owes the owner |
 | Dividends payable | `2962` | a declared dividend not yet paid |
 | Long-term debt | `3140` | the portion of a loan due beyond one year |
@@ -244,11 +245,13 @@ Revenue (Schedule 125):
 |---|---|---|
 | Trade sales of goods and services | `8000` | operating revenue (consulting fees, product sales) |
 | Investment revenue | `8090` | `8094` interest, `8096` Canadian dividends, `8097` foreign dividends |
+| Real estate rental revenue | `8141` | rent earned on real property (see [Rental and Property Income](Rental-And-Property-Income.md)) |
 | Realized gains/losses on disposal of assets | `8210` | gain or loss on selling a capital asset |
 | Realized gains/losses on sale of investments | `8211` | gain or loss on selling securities |
 | Other revenue | `8230` | miscellaneous income with no more specific line |
 | Foreign exchange gains/losses | `8231` | realized FX gains and losses (per-currency `8231-1` / `8231-2`) |
 | Subsidies and grants | `8242` | government assistance and grants |
+| Bad debt recoveries | `8250` | collections on debts written off in a prior year |
 
 The Quick Method kept spread is booked to `8230` Other revenue; see [HST](HST.md#quick-method).  
 
@@ -269,7 +272,9 @@ Operating expenses (Schedule 125) — the lines a service or consulting CCPC rea
 | Account | GIFI | Notes |
 |---|---|---|
 | Advertising and promotion | `8520` | advertising, website, promotional material |
+| Donations | `8522` | charitable donations; added back on Schedule 1 and deducted via Schedule 2 (see [Donations](Donations.md)) |
 | Meals and entertainment | `8523` | client meals (income-tax deduction limited to 50%) |
+| Bad debt expense | `8590` | write-offs and the doubtful-account allowance (see [Receivables and Bad Debts](Receivables-And-Bad-Debts.md)) |
 | Amortization of tangible assets | `8670` | book depreciation; tax uses CCA instead (`8570` for intangibles) |
 | Insurance | `8690` | commercial general and professional liability, property |
 | Interest and bank charges | `8710` | interest, bank fees, merchant charges; `8715` bank charges |

@@ -473,6 +473,8 @@ The break-even point against the regular method on Ontario services is roughly t
   - [Materials and CIP](Cost-Recovery/Materials-And-CIP.md)
 - [Ledger and Accounts](Ledger-And-Accounts.md)
 - [Expense Classification](Expense-Classification.md)
+- [Receivables and Bad Debts](Receivables-And-Bad-Debts.md) (the income-tax half of the bad-debt adjustment)
+- [Deferred Revenue](Deferred-Revenue.md) (tax point on deposits and prepayments)
 - [Payment](Payment/Payment.md)
 - [Glossary](Glossary.md)
 - [Whole-dollar rounding](Whole-Dollar-Rounding.md)
