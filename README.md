@@ -80,6 +80,9 @@ Unmarked pages are reviewed; † = AI generated, not verified yet.
 - [Payment](guide/Payment/Payment.md) †
 - [Whole-dollar rounding](guide/Whole-Dollar-Rounding.md) †
 
+**Further reading**:
+- [Further Reading](guide/Further-Reading.md) † (topics adjacent to the guide, with pointers)
+
 
 ## Audit
 
