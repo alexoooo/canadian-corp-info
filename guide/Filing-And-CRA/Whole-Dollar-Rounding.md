@@ -1,6 +1,6 @@
 STATUS: AI GENERATED, REVIEW IN PROGRESS
 
-# Whole-dollar rounding
+# Whole-Dollar Rounding
 
 **Who this is for**:
 - Owners of a Canadian-controlled private corporation (CCPC) who keep books in dollars and cents but file the T2 in whole dollars
@@ -27,7 +27,7 @@ Limitations:
 - I am not an accountant; this is not financial or tax advice
 
 
-## The problem
+## The Problem
 
 Your books are kept in dollars and cents, and they balance to the cent: every entry posts equal debits and credits, so `Assets = Liabilities + Equity` holds exactly.  
 The T2 is filed in whole dollars.  
@@ -45,7 +45,7 @@ Nudging one line by hand fixes this instance, but choosing the line ad hoc is no
 The methods below make the rounding deterministic.
 
 
-## CRA's rules
+## CRA's Rules
 
 - *Whole dollars*: GIFI amounts on Schedule 100 (balance sheet) and Schedule 125 (income statement), and the figures on the calculation schedules (Schedule 1, Schedule 6, Schedule 8), are reported in whole dollars with no cents — RC4088 gives the example of reporting cash of $10,500.75 as `10501`
 - *Round to the nearest dollar*: a fractional amount rounds to the nearest whole dollar; an amount exactly halfway rounds up to the higher dollar (round half up) — so $10,500.49 becomes $10,500 and $10,500.50 becomes $10,501
@@ -54,18 +54,18 @@ The methods below make the rounding deterministic.
 Round half up is the convention used across CRA's income-tax calculations, including the annual indexation of tax brackets (ITA [s.117.1(3)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-117.1.html) rounds an equidistant amount to the higher dollar); banker's rounding (round half to even) does not apply here.
 
 
-## Systematic methods
+## Systematic Methods
 
 Apply these in order.  
 The first two are enough for most sets of books; the last two close the remaining gaps.
 
-### Keep the books in cents
+### Keep the Books in Cents
 
 The ledger is the source of truth and stays in dollars and cents.  
 Rounding is a presentation step applied when the trial balance is mapped to GIFI — it is not posted back into the accounts.  
 Next year's opening balances carry full precision, and rounding error never accumulates in the books.  
 
-### Sum the rounded lines for every subtotal
+### Sum the Rounded Lines for Every Subtotal
 
 Round each detail line to the nearest dollar, then add the rounded lines to get the subtotal and total.  
 Never round a true total independently of its parts: derive every total from the rounded detail, and each column adds up by construction.  
@@ -73,7 +73,7 @@ Never round a true total independently of its parts: derive every total from the
 This alone removes most discrepancies.  
 The balance-sheet sides still connect through retained earnings, handled below.
 
-### Largest-remainder method for a fixed total
+### Largest-Remainder Method for a Fixed Total
 
 Sometimes a set of lines must add up to a total that is already fixed in whole dollars (for example, allocating a rounded total across sub-accounts, or splitting a pooled cost across units).  
 
@@ -89,19 +89,19 @@ Worked example — allocate a fixed $100 pooled cost across three units holding 
 - Largest remainder is the first unit ($0.34), so it gets the extra dollar: $34, $33, $33
 - Total $34 + $33 + $33 = $100, exact
 
-### One designated line absorbs the residual
+### One Designated Line Absorbs the Residual
 
 The two sides of the balance sheet are linked through retained earnings: closing retained earnings = opening retained earnings + net income − dividends.  
 Net income is the rounded bottom line of the income statement, so let retained earnings (`3849`) carry any whole-dollar residual on the balance sheet, and net income (or a dedicated rounding line) carry it on the income statement.  
 Choosing the absorbing line by policy (the same line every period) keeps the equation exact without distorting any operational figure, and keeps the treatment consistent and defensible.  
 
-### Round half up, every period
+### Round Half Up, Every Period
 
 Use the same rule CRA uses, applied the same way each year.  
 A consistent rule avoids the slow upward bias that comes from always rounding a particular direction, and matches the figures CRA's own calculations produce.  
 
 
-## Where it bites
+## Where It Bites
 
 Rounding from cents to whole dollars matters most where a calculation produces many decimal places:
 - *Foreign-currency translation*: Bank of Canada rates carry four decimals, so converted balances rarely land on a whole cent, let alone a whole dollar; see [Foreign Currency](../Bookkeeping/Foreign-Currency.md)

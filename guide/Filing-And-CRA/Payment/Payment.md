@@ -21,7 +21,7 @@ The corp remits the GST34 net tax for each reporting period: the Quick Method fl
 - *How*: My Business Account, an online-banking "Federal - GST/HST" payee (banks list the return balance and the instalments as separate payees), or a bank's business tax service; see [Payment methods](#payment-methods) below
 
 
-## Payroll remittance
+## Payroll Remittance
 
 Source deductions apply only if the corp pays a *salary*; a corp that distributes only dividends has no payroll to remit. The salary-vs-dividend choice is in [Small Business Tax Overview](../../Overview/Small-Business-Tax.md#paying-yourself-salary-vs-dividends); the payroll concepts and bookkeeping are in [Payroll](../../Paying-Yourself/Payroll.md).
 
@@ -37,7 +37,7 @@ Source deductions apply only if the corp pays a *salary*; a corp that distribute
 The withheld amounts sit in the `Employee deductions payable` (2627) control account until remitted; see [Ledger and Accounts](../../Bookkeeping/Ledger-And-Accounts.md).
 
 
-## Payment methods
+## Payment Methods
 
 - Scheduled from CRA My Business Account
   - Free, but takes 5 business days

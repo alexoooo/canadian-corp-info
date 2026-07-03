@@ -15,7 +15,7 @@ Limitations:
 - Tax information can change over time; the following is my understanding as of 2026 (see [Adjusted Cost Base](Adjusted-Cost-Base.md) for background)  
 
 
-## Investment identification - security master
+## Investment Identification - Security Master
 
 You need to identify investments for record keeping and T2 reporting.  
 
@@ -41,7 +41,7 @@ It is only used internally to facilitate consistent reporting, so it can be as m
 ![Example of Security Master Spreadsheet](Security-Master_Example.png)
 
 
-## Spreadsheet template
+## Spreadsheet Template
 
 Any spreadsheet software could be used (Excel, LibreOffice Calc, etc.), the example here uses Google Sheets.  
 
@@ -54,7 +54,7 @@ Screenshot:
 You can keep this as a separate workbook, or as a single sheet within a larger workbook (if that is more convenient).  
 
 
-## Inputs: what information is used
+## Inputs: What Information Is Used
 
 Inputs (from investment confirmations and T3):
 - `Date`:
@@ -91,7 +91,7 @@ This guide uses the following convention:
 Row order, unlike column order, is functional: rows must stay in transaction order per symbol (see [Inputs: data entry](#inputs-data-entry)).  
 
 
-## Inputs: data entry
+## Inputs: Data Entry
 
 Rows must be entered in transaction order for each Symbol.  
 
@@ -120,7 +120,7 @@ Example of Trade Confirmation (Sell, CAD):
     https://www.bankofcanada.ca/rates/exchange/daily-exchange-rates-lookup/
 
 
-## Outputs: where to use them and how are they calculated
+## Outputs: Where to Use Them and How Are They Calculated
 
 Outputs (cumulative per symbol):
 - `Remaining Quantity` = `Previous Remaining Quantity` + `Quantity Change`  
@@ -136,7 +136,7 @@ Outputs (cumulative per symbol):
   Earliest date of continuous holding for the current pooled position, used in S6
 
 
-## Intermediate calculations
+## Intermediate Calculations
 
 - `Previous Row for Symbol` =  
   &ensp; IFERROR(  

@@ -21,7 +21,7 @@ Limitations:
 - The following is my understanding as of 2026
 
 
-## Paying with shares instead of cash
+## Paying with Shares Instead of Cash
 
 Rather than pay cash on closing, the buyer corporation issues the vendors *preferred shares* of the buyer (see [Share Capital](../Corporate-Structure/Share-Capital.md)).  
 The shares are redeemable and retractable, with a fixed redemption value equal to the agreed purchase price.  
@@ -34,7 +34,7 @@ This is a *vendor take-back* in equity rather than debt:
 - As *equity*, the claim ranks behind the corporation's creditors, and redemptions are limited by the corporate-law solvency tests (CBCA s.34–36)
 
 
-## The section 85 rollover
+## The Section 85 Rollover
 
 Handing the vendors shares is itself a disposition of what they gave up (their target shares, or the business assets), so without relief it would trigger their gain immediately.  
 A *rollover* defers that gain.  
@@ -48,7 +48,7 @@ The main tool is the joint election under ITA [s.85(1)](https://laws-lois.justic
 A share-for-share exchange between arm's-length parties can instead use ITA s.85.1, which applies automatically without an election.  
 
 
-## Sizing the shares: redemption value and PUC
+## Sizing the Shares: Redemption Value and PUC
 
 Two numbers are set when the shares are issued:
 - *Redemption value*: equal to the purchase price; this is what the corporation must pay to redeem the shares
@@ -58,7 +58,7 @@ The gap between the high redemption value and the low PUC is deliberate.
 That gap is the amount that will come out as a deemed dividend as the shares are redeemed.  
 
 
-## Redeeming the shares over time
+## Redeeming the Shares Over Time
 
 The corporation redeems the preferred shares in tranches over the following years, as cash allows.  
 Each redemption is a *deemed dividend* to the extent it exceeds the PUC of the shares redeemed (ITA [s.84(3)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-84.html)); the rest is treated as proceeds for the vendor's capital-gain calculation (see [Dividends — Deemed dividends](../../Paying-Yourself/Dividends/Dividends.md#deemed-dividends)).  
@@ -74,17 +74,17 @@ So almost the entire $100,000 is a dividend in the vendor's hands, with no corpo
 Repeating this each year pays the vendor out as a stream of dividends, spreading both the corporation's cash outflow and the vendor's tax over time.  
 
 
-## Dividend treatment versus a cash sale
+## Dividend Treatment vs a Cash Sale
 
 The redemption route changes the *character* of the vendor's income, not just its timing:
-- A straight share sale for cash or a note produces a *capital gain*, which can be sheltered by the lifetime capital gains exemption on QSBC shares (see [Asset versus share purchase](Asset-vs-Share.md))
+- A straight share sale for cash or a note produces a *capital gain*, which can be sheltered by the lifetime capital gains exemption on QSBC shares (see [Asset vs Share Purchase](Asset-vs-Share.md))
 - Redeeming low-PUC preferred shares produces a *deemed dividend*, which cannot use the exemption
 
 Which is better depends on the vendor's exemption room, the parties' tax rates, and how long the payout runs.  
 This is a central reason the structure is decided with an advisor rather than by default.  
 
 
-## TOSI and family vendors
+## TOSI and Family Vendors
 
 Where the vendors are family members, the dividends they receive, including deemed dividends on redemption, can be caught by the *Tax on Split Income* (TOSI) and taxed at the top marginal rate unless an exclusion applies (see [Dividends — TOSI](../../Paying-Yourself/Dividends/Dividends.md#tax-on-split-income-tosi)).  
 Common exclusions include the owner being 65 or older, the shares being *excluded shares*, or the amount being a *reasonable return*.  
@@ -95,7 +95,7 @@ TOSI is one of the conditions that pushes the family case onto its own page; see
 ## Related
 
 - [Business Acquisition](Business-Acquisition.md)
-- [Asset versus share purchase](Asset-vs-Share.md)
+- [Asset vs Share Purchase](Asset-vs-Share.md)
 - [Estate Freeze](Estate-Freeze.md)
 - [Share Capital](../Corporate-Structure/Share-Capital.md)
 - [Dividends](../../Paying-Yourself/Dividends/Dividends.md)

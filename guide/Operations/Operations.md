@@ -17,7 +17,7 @@ Limitations:
 - The following is my understanding as of 2026
 
 
-## What this covers
+## What This Covers
 
 Once a corporation is running, most of the tax work is recurring: bill customers, collect and remit sales tax, recognize revenue at the right time, and recover the cost of what the corporation buys. This group collects those operating events.
 
@@ -27,7 +27,7 @@ Once a corporation is running, most of the tax work is recurring: bill customers
 - [Debt and Financing](Debt-And-Financing.md), [Donations](Donations.md), and [Rental and Property Income](Rental-And-Property-Income.md) cover interest deductibility, corporate charitable giving, and property income earned inside the corporation.
 
 
-## Sub-pages
+## Sub-Pages
 
 This page is a hub; these are the sub-pages:
 - [HST](HST.md): registration, the Quick Method, input tax credits, and filing

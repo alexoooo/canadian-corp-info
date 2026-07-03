@@ -17,7 +17,7 @@ Limitations:
 - The following is my understanding as of 2026
 
 
-## What this covers
+## What This Covers
 
 A corporation is a separate legal person with a life of its own: it is created, it holds a structure of shares and roles while it operates, it may buy or reorganize a business along the way, and eventually it is dissolved. This group collects the pages tied to those lifecycle moments, as opposed to the recurring year-to-year work covered under Operations and Filing.
 
@@ -27,14 +27,14 @@ A corporation is a separate legal person with a life of its own: it is created, 
 - [Winding Down](Winding-Down.md) covers dissolution and the final filings that close the corporation out.
 
 
-## Sub-pages
+## Sub-Pages
 
 This page is a hub; these are the sub-pages:
 - [Corporate Structure](Corporate-Structure/Corporate-Structure.md): the separate legal person, the roles, the incorporation choice, the minute book, and share capital
   - [Share Capital](Corporate-Structure/Share-Capital.md): share classes, paid-up capital, and stated capital
 - [Starting Up](Starting-Up.md): incorporation choices and first-year setup
 - [Business Acquisition](Business-Acquisition/Business-Acquisition.md): buying or restructuring a business
-  - [Asset versus share purchase](Business-Acquisition/Asset-vs-Share.md): the two ways to buy a business and who prefers which
+  - [Asset vs Share Purchase](Business-Acquisition/Asset-vs-Share.md): the two ways to buy a business and who prefers which
   - [Preferred-share consideration](Business-Acquisition/Preferred-Share-Consideration.md): paying with preferred shares
   - [Estate Freeze](Business-Acquisition/Estate-Freeze.md): locking in today's value and passing future growth on
 - [Winding Down](Winding-Down.md): dissolution and final returns

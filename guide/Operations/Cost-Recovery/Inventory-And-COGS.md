@@ -1,6 +1,6 @@
 STATUS: AI GENERATED, REVIEW IN PROGRESS
 
-# Inventory and cost of goods sold <!-- [done] -->
+# Inventory and Cost of Goods Sold <!-- [done] -->
 
 **Who this is for**:
 - Owners of a Canadian-controlled private corporation (CCPC)
@@ -24,14 +24,14 @@ Limitations:
 - The following is my understanding as of 2026
 
 
-## In this folder
+## In This Folder
 
 - [Cost Recovery](Cost-Recovery.md): overview of the three cost-recovery channels, concept map, and shared acquisition-cost / available-for-use / change-of-use rules
 - [Materials and CIP](Materials-And-CIP.md): self-constructed fixed assets
 - [Capital Cost Allowance](Capital-Cost-Allowance/Capital-Cost-Allowance.md): depreciable property
 
 
-## Inventory versus other purchase types <!-- [done] -->
+## Inventory vs Other Purchase Types <!-- [done] -->
 
 Purchased property in a CCPC follows one of a few tax treatments (inventory is the most common):
 - *Inventory* (the focus of this page): property held for sale, or held to produce property held for sale; cost flows through `Cost of sales` (COGS) when a unit sells; valued at LCM each year-end
@@ -40,7 +40,7 @@ Purchased property in a CCPC follows one of a few tax treatments (inventory is t
 - *Spare parts*: inventory if held for resale; expensed or capitalized into the equipment they service otherwise; the non-resale case is out of scope here
 
 
-## What inventory is <!-- [meh] -->
+## What Inventory Is <!-- [meh] -->
 
 ITA [s.248(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-248.html) defines *inventory* as "a description of property the cost or value of which is relevant in computing a taxpayer's income from a business for a taxation year".
 
@@ -65,7 +65,7 @@ This is rare for a typical CCPC and the details are out of scope here.
 See [Cost Recovery — Change of use](Cost-Recovery.md#change-of-use) for the cross-channel framing, including the contested s.45 / s.13(7) reading.  
 
 
-## Cost of goods sold
+## Cost of Goods Sold
 
 *Cost of sales* (aka *cost of goods sold*, COGS) is the cost of the inventory units that sold during the year, matched against the revenue they produced.  
 It is a deduction from business income under ITA [s.9](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-9.html), recognized at the moment a unit is sold rather than when it is bought; s.9 is the parent rule, not a stand-alone COGS provision.  
@@ -83,7 +83,7 @@ Mechanics, further down this page:
 - Shrinkage and LCM write-downs run through COGS (`8518`)
 
 
-## Valuation methods
+## Valuation Methods
 
 Cost-flow assumptions permitted by CRA (pick one, apply consistently):
 - *Weighted-average cost* (the focus of this page): each unit's cost is the running pooled average; analogous to the *Adjusted Cost Base* (ACB) pooling used for securities elsewhere in this guide, applied to inventory units instead of share lots
@@ -103,7 +103,7 @@ Method consistency:
 - Valuing all inventory at FMV instead of LCM is permitted under Regulation 1801, but it is not the right tool for a typical resale CCPC
 
 
-## What goes into cost
+## What Goes into Cost
 
 A unit's *cost* (the C in LCM) is the *landed cost* at the point the unit becomes part of inventory:
 - Invoice purchase price, net of trade discounts
@@ -128,7 +128,7 @@ ITA s.10 defers to the cost figure produced by a properly applied accounting sta
 Manufacturing cost build-up is out of scope here; the worked examples below assume buy-and-resell or buy-for-own-use.
 
 
-## Imported goods and FX
+## Imported Goods and FX
 
 For inventory bought in a foreign currency, follow the same trade-date FX convention used elsewhere in this guide for ACB purchases (see [Adjusted Cost Base](../../Investments/Adjusted-Cost-Base/Adjusted-Cost-Base.md)):
 - Convert the invoice amount to CAD using the FX rate on the *purchase date* (the date of the supplier invoice, which generally matches the bill-of-lading date for goods crossing the border)
@@ -153,7 +153,7 @@ GST/HST on imports:
 - See [HST](../HST.md) for the full mechanics
 
 
-## Tracking through the year
+## Tracking Through the Year
 
 Assume a *perpetual* inventory system: the inventory ledger is updated at each purchase and each sale, and the running balance is always current.  
 A *periodic* system (no per-transaction update, COGS plugged at year-end from a physical count) works but obscures shrinkage and complicates LCM testing.  
@@ -215,7 +215,7 @@ Inventory shrinkage adjustment (between physical count and book balance, after i
 - Credit `Inventory - goods for sale` (GIFI 1121)
 
 
-## Inventory flow
+## Inventory Flow
 
 ```mermaid
 flowchart TB
@@ -245,7 +245,7 @@ flowchart TB
 ```
 
 
-## Year-end reconciliation
+## Year-End Reconciliation
 
 The year-end pass turns the running inventory ledger into a tax-filed closing balance.  
 Five steps.
@@ -281,7 +281,7 @@ Step 5, post to the T2 schedules:
   - The most common adjustment is when the corp's book inventory differs from its tax inventory because of a one-time accounting change; flag this with the accountant rather than handling silently
 
 
-## Bookkeeping and T2 schedules
+## Bookkeeping and T2 Schedules
 
 Schedule 125 cost-of-sales walkthrough (line by line):
 - `8300 Opening inventory`: closing inventory from the prior year's Schedule 125, line 8500
@@ -305,14 +305,14 @@ Schedule 1 reconciliation:
 Self-constructed-asset materials sit in CIP, not in the inventory GIFI accounts; see [Materials and CIP](Materials-And-CIP.md).
 
 
-## Worked examples
+## Worked Examples
 
 Two multi-period walkthroughs.  
 Each shows the ledger entries, the GIFI codes touched, and the year-end Schedule 125 outcome.  
 Calendar fiscal year (Jan 1 to Dec 31) is assumed throughout.  
 The corp is HST-registered and claims ITCs on all eligible inputs.
 
-### Example 1: E-commerce weighted-average with year-end write-down
+### Example 1: E-Commerce Weighted-Average with Year-End Write-Down
 
 Setup: single-shareholder e-commerce CCPC selling a single SKU (a wireless earbud, $40 cost / $80 retail).  
 Weighted-average cost method.
@@ -369,7 +369,7 @@ The 88 remaining units are cleared in Q1 at $35 each; the actual FMV recovery is
 - COGS at the written-down basis: 88 × $30.00 = $2,640
 - A reversal would be a *year-end valuation* event, not a sale-time one: units sold carry their written-down $30.00 cost into COGS regardless of what FMV does in the meantime; only units still on hand at a year-end with recovered FMV are revalued upward by the re-applied s.10(1) test, to at most the original $43.33 cost
 
-### Example 2: Imported goods with FX and landed cost
+### Example 2: Imported Goods with FX and Landed Cost
 
 Setup: same e-commerce CCPC.  
 Year 2 (2027) opens a new SKU sourced from a US supplier.
@@ -408,7 +408,7 @@ Year-end Schedule 125 if 300 units are sold during the year at $70 each:
 - `8500` Closing: 200 units × $28.50 = $5,700
 - `8518` Cost of sales = 0 + 13,400 + 850 − 5,700 = $8,550 (= 300 × $28.50)
 
-## Edge cases
+## Edge Cases
 
 - *Consignment inventory*: goods physically present on the corp's premises but legally owned by another party (or vice versa) are *not* on the corp's books; book only inventory the corp owns under contract; a clear consignment agreement and a separate count tag are the audit evidence
 - *Related-party purchases*: inventory bought from a non-arm's-length supplier at above-FMV is capped at FMV under ITA [s.69(1)(a)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-69.html); the excess is denied (the corp paid too much, but only gets to deduct the FMV portion)
@@ -420,7 +420,7 @@ Year-end Schedule 125 if 300 units are sold during the year at $70 each:
 - *Service-business "inventory"*: hours of unbilled professional work are not inventory under s.10 in the same way as goods; professional WIP has its own rules under s.10(5)(a) (with s.10(4)(a) supplying the FMV meaning) and is out of scope here
 
 
-## Out of scope
+## Out of Scope
 
 - Manufacturing overhead absorption, standard-cost variances, and variable-vs-absorption costing: these require accounting-standard mechanics (ASPE Section 3031 / IFRS IAS 2) that interact with tax through s.10 acceptance
 - Long-term construction contracts: percentage-of-completion mechanics under s.9; archived IT-92R2

@@ -20,7 +20,7 @@ Limitations:
 - The following is my understanding as of 2026
 
 
-## A separate legal person
+## A Separate Legal Person
 
 A corporation is a legal person separate from its owners.  
 It can own property, owe debts, sign contracts, sue, and be sued in its own name.  
@@ -34,7 +34,7 @@ The separateness is the whole reason the rest of this guide exists.
 A sole proprietor and their business are one taxpayer; a corporation and its owner are two.  
 
 
-## Three roles: shareholders, directors, officers
+## Three Roles: Shareholders, Directors, Officers
 
 A corporation is acted on through three roles, each with a different job:
 - *Shareholders*: own the corporation by holding its shares; they elect the directors and vote on fundamental changes, but do not run day-to-day operations
@@ -45,7 +45,7 @@ In a single-owner CCPC the same person is the sole shareholder, the sole directo
 The roles still matter, because the *Income Tax Act* taxes the owner differently depending on which hat they are wearing in a given transaction.  
 
 
-## Federal or provincial incorporation
+## Federal or Provincial Incorporation
 
 A corporation is created under one of two regimes:
 - *Federal*: incorporated under the Canada Business Corporations Act (CBCA); can carry on business across Canada subject to extra-provincial registration
@@ -55,7 +55,7 @@ The choice affects filing fees, residency requirements for directors, and name p
 It does not change the income-tax treatment in this guide: the T2 and the CCPC rules apply the same way to a federal and a provincial corporation.  
 
 
-## The minute book
+## The Minute Book
 
 The *minute book* is the corporation's permanent legal record.  
 It holds the articles of incorporation, the by-laws, the share register, and the directors' and shareholders' resolutions.  
@@ -64,7 +64,7 @@ The dividend, share-issuance, and restructuring steps elsewhere in this guide al
 A dividend declared without a recorded resolution, or shares issued without a register entry, is a gap CRA and a future buyer will both look for.  
 
 
-## Share capital
+## Share Capital
 
 *Share capital* is how ownership of the corporation is divided and recorded.  
 Share classes, authorized versus issued shares, paid-up capital, and preferred-share features all live on their own page: [Share Capital](Share-Capital.md).  

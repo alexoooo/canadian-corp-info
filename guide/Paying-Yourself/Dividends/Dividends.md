@@ -22,7 +22,7 @@ Limitations:
 - The following is my understanding as of 2026
 
 
-## Sub-pages
+## Sub-Pages
 
 This page is a hub; these are the sub-pages:
 - [ERDTOH and NERDTOH](ERDTOH-NERDTOH.md): how the two refundable dividend-tax accounts fill and refund, plus stranding
@@ -32,7 +32,7 @@ This page is a hub; these are the sub-pages:
 - [Dividend examples](Dividends-Examples.md): end-to-end examples
 
 
-## What is a dividend
+## What Is a Dividend
 
 A *dividend* is a distribution of money or other property by a corporation to its shareholders, paid out of the corporation's after-tax retained earnings.  
 The corporation pays its corporate income tax first; the dividend then transfers (some of) that after-tax money to shareholders.  
@@ -49,7 +49,7 @@ ITA [s.248(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-248.html) 
 Various deeming rules in [s.84](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-84.html) cover specific transactions like share redemptions and capital reductions.  
 
 
-## What is not a dividend
+## What Is Not a Dividend
 
 These transactions move money from the corporation to the owner but are not dividends:
 - *Salary* or management fee paid to the owner-manager:
@@ -62,7 +62,7 @@ These transactions move money from the corporation to the owner but are not divi
   - The broader s.15(1) rules on benefits the corp confers on a shareholder (personal use of corporate property, a personal expense paid by the corp) are covered in [Owner-corporation transactions](../Owner-Corporation-Transactions.md)
 
 
-## Deemed dividends
+## Deemed Dividends
 
 A *deemed dividend* counts as a dividend under the *Income Tax Act*, even though it does not distribute profit out of retained earnings.
 - Applies to cash taken out of the corporation in a way that would otherwise be taxed more lightly than a dividend
@@ -77,14 +77,14 @@ Some situations you might encounter:
 These mechanics are used mainly for restructuring transactions (estate freezes, share buybacks, winding up); the acquisition and freeze cases are covered in [Business Acquisition](../../Corporate-Lifecycle/Business-Acquisition/Business-Acquisition.md), and otherwise out of scope here.  
 
 
-## Multiple owner-managers
+## Multiple Owner-Managers
 
 The dividend accounts and mechanics in this guide are corporation-level.  
 GRIP, CDA, ERDTOH, NERDTOH, SBD grind, and integration all behave the same whether the CCPC has one owner-manager or several.  
 
 Two things are specific to a second owner-manager: how a dividend is split across the shares, and whether TOSI applies to the recipient.
 
-### Pro rata and separate share classes
+### Pro Rata and Separate Share Classes
 
 A dividend declared on a share class is paid to every holder of that class in proportion to their holdings (see [What is a dividend](#what-is-a-dividend)).  
 Two co-founders on a single common class therefore receive each dividend in their share ratio; paying them different amounts requires separate share classes.  
@@ -113,7 +113,7 @@ If no exclusion applies, TOSI is computed on Form T1206 filed with the recipient
 Full TOSI mechanics are out of scope.
 
 
-## Three dividend flavours: Eligible, Non-eligible, Capital
+## Three Dividend Flavours: Eligible, Non-Eligible, Capital
 
 A dividend paid by a CCPC to a Canadian-resident shareholder falls into one of three flavours: *eligible*, *non-eligible*, or *capital*.  
 The flavour is determined by the source of the distribution for the corporation, and by whether the corporation makes the required designation or election.  
@@ -147,7 +147,7 @@ The *Low Rate Income Pool* (LRIP, ITA s.89(1)) applies only if the corporation w
 For full mechanics of the CDA balance calculation and the T2054 election workflow, see [Capital-Dividend-Account.md](../../Investments/Capital-Dividend-Account/Capital-Dividend-Account.md).  
 
 
-## Tax integration
+## Tax Integration
 
 *Integration* aims for the total tax paid on income earned through a corporation and distributed as a dividend to roughly equal the tax the same individual would have paid had they earned the income directly.  
 *Dividend gross-up and tax credit* adjust by flavour to the corporate tax already paid (capital dividends sit outside this framework, they are tax-free to a Canadian-resident shareholder).  
@@ -155,7 +155,7 @@ For full mechanics of the CDA balance calculation and the T2054 election workflo
 For the full integration mechanics (gross-up and DTC rates per flavour, corp-side preference order, ITA citations), see [Tax-Integration.md](../../Overview/Tax-Integration.md).  
 
 
-## GRIP - capacity for eligible dividends
+## GRIP - Capacity for Eligible Dividends
 
 The *General Rate Income Pool* (GRIP) is defined at ITA [s.89(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-89.html).  
 It tracks a CCPC's accumulated after-tax income taxed at the general (non-SBD) corporate rate, plus eligible dividends received from other taxable Canadian corporations.  
@@ -177,7 +177,7 @@ This is why most owner-manager dividends end up being non-eligible by default: t
 Schedule 53 must still be filed each year to track and carry forward the balance, even when GRIP is zero.  
 
 
-## CDA - capacity for capital dividends
+## CDA - Capacity for Capital Dividends
 
 The *Capital Dividend Account* (CDA) holds the non-taxable portion of the corporation's cumulative net capital gains, plus certain other amounts (e.g. tax-free portion of life-insurance proceeds), and is reduced by capital dividends paid.  
 For mechanics of CDA balance tracking, the s.83(2) election, Form T2054 filing, and the Part III tax penalty for over-electing, see [Capital-Dividend-Account.md](../../Investments/Capital-Dividend-Account/Capital-Dividend-Account.md).  
@@ -187,7 +187,7 @@ Any capital losses realized between your last balance check and the election dat
 Overdrawing triggers a 60% Part III tax (ITA s.184(2)).  
 
 
-## ERDTOH and NERDTOH - refundable dividend tax accounts
+## ERDTOH and NERDTOH - Refundable Dividend Tax Accounts
 
 Two accounts hold previously paid refundable corporate tax:
 - *Eligible Refundable Dividend Tax on Hand* (ERDTOH)
@@ -214,7 +214,7 @@ The fix is to designate future dividends as eligible up to the running GRIP bala
 For the full stranding mechanics and catch-up remediation, see [ERDTOH-NERDTOH.md / Stranding](ERDTOH-NERDTOH.md#stranding).
 
 
-## AII and the SBD grind
+## AII and the SBD Grind
 
 A CCPC's *Aggregate Investment Income* (AII) for the year is primarily:
 - Interest
@@ -247,7 +247,7 @@ For an investment-only holdco with no active business income, the SBD grind is m
 This does not mean a holdco escapes the grind: the AAII of all associated corporations is pooled for the s.125(5.1) test, so an investment holdco's AII still grinds the SBD of an associated operating company.  
 
 
-## Paying a dividend in practice
+## Paying a Dividend in Practice
 
 The accounts above determine *which* dividend to pay; the steps to actually declare, pay, record, and report it are split across:
 - [Declaring and paying a dividend](Declaring-And-Paying.md): directors' resolution, s.89(14) eligible designation, three dates and year-end timing, and payment channels

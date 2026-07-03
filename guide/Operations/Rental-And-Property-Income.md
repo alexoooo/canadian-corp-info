@@ -20,7 +20,7 @@ Limitations:
 - The following is my understanding as of 2026
 
 
-## Why the character matters
+## Why the Character Matters
 
 The rate gap is the whole story (see [Active vs investment income](../Overview/Small-Business-Tax.md#active-vs-investment-income)):
 - *Active business income*: 12.2% up to the business limit (Ontario 2026)
@@ -30,7 +30,7 @@ The rate gap is the whole story (see [Active vs investment income](../Overview/S
 On the T2, property-income rent flows through Schedule 7 into aggregate investment income; active rent is just revenue (see [T2 Schedules](../Filing-And-CRA/T2-Schedules.md#investment-income-schedules)).  
 
 
-## Specified investment business
+## Specified Investment Business
 
 A business whose *principal purpose* is deriving income from property (rent, interest, dividends, royalties) is a *specified investment business* (ITA [s.125(7)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-125.html)) — excluded from the small business deduction no matter how much work it takes:
 - Effort does not convert it: managing tenants, repairs, and leases full-time is still deriving income from property
@@ -41,7 +41,7 @@ A business whose *principal purpose* is deriving income from property (rent, int
 One or two rental properties inside or beside a consulting CCPC are nowhere near the employee threshold: that rent is property income, planned for as such.  
 
 
-## Rent that stays active
+## Rent That Stays Active
 
 Two situations keep rent out of the property-income bucket:
 
@@ -57,7 +57,7 @@ Two situations keep rent out of the property-income bucket:
 The dividing line for incidental rent is proportion and purpose: a floor rented out in a building bought mostly to rent is a rental business with an owner-occupied corner, not an active business with incidental rent.  
 
 
-## Co-owned and mixed-use property
+## Co-Owned and Mixed-Use Property
 
 Real property often arrives shared — the corporation on title with other owners (tenants-in-common), or one property serving both the corporation's own operations and third-party tenants.  
 
@@ -86,7 +86,7 @@ The HST character follows the use of the space, not the corporation's registrati
 A property moving between commercial and residential use can trigger self-supply and change-in-use rules on the HST side; that is professional-advice territory beyond this page.  
 
 
-## Scenario table
+## Scenario Table
 
 | Scenario | Character | Where it lands |
 |---|---|---|
@@ -106,7 +106,7 @@ Bookkeeping runs through `Real estate rental revenue` (`8141`), with the propert
 - [Capital Cost Allowance](Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md)
 - [HST](HST.md)
 - [Owner-corporation transactions](../Paying-Yourself/Owner-Corporation-Transactions.md) (corporate property used personally)
-- [Capital versus Income Character](../Investments/Capital-Vs-Income-Character.md) (the parallel character question for securities)
+- [Capital vs Income Character](../Investments/Capital-Vs-Income-Character.md) (the parallel character question for securities)
 - [T2 Schedules](../Filing-And-CRA/T2-Schedules.md)
 
 

@@ -1,6 +1,6 @@
 STATUS: AI GENERATED, REVIEW IN PROGRESS
 
-# CCA worked examples
+# CCA Worked Examples
 
 **Who this is for**: owners of a Canadian-controlled private corporation (CCPC) who want end-to-end CCA walkthroughs with ledger entries and the matching T2 schedules.  
 
@@ -10,7 +10,7 @@ For the underlying rules see [Capital Cost Allowance](Capital-Cost-Allowance.md)
 Calendar fiscal year (Jan 1 to Dec 31) is assumed unless noted.  
 
 
-## Example 1: Class 50 laptop (IT consulting CCPC)
+## Example 1: Class 50 Laptop (IT Consulting CCPC)
 
 Setup: single-shareholder IT consulting CCPC.  
 Buys a laptop for $4,520 (including 13% HST) on Mar 1 2026; the corp is HST-registered and claims the $520 ITC; capitalizes the $4,000 net to Class 50.  
@@ -69,7 +69,7 @@ Schedule 1 reconciliation for year 3:
 - Deduct: CCA from Schedule 8 (including any terminal loss)
 
 
-## Example 2: Class 8 floor polisher (physical-service CCPC)
+## Example 2: Class 8 Floor Polisher (Physical-Service CCPC)
 
 Setup: single-shareholder commercial cleaning CCPC.  
 Buys a $1,800 floor polisher on Jun 15 2026; the corp is HST-registered and claims the $234 ITC; capitalizes $1,800 to Class 8.  
@@ -101,7 +101,7 @@ When to trigger a terminal loss: when the corp disposes of every piece of Class 
 For a multi-asset pool, this is rarely useful; for a single-asset class that has been sold or scrapped, it cleans up the pool.  
 
 
-## Example 3: Class 14.1 incorporation expenses
+## Example 3: Class 14.1 Incorporation Expenses
 
 Setup: corp is incorporated on Apr 1 2026 (first fiscal year Apr 1 2026 to Mar 31 2027) at a total cost of $4,200 in incorporation expenses (legal fees, name search, registry filing, minute book).  
 
@@ -174,7 +174,7 @@ Leaving a $50 line on S8 is correct: CRA expects pool continuity.
 Merging low-balance pools in the corp's own asset register is fine internally, but the S8 filing must still show the running UCC by class.
 
 
-## Example 4: Class 3 wooden dock (waterfront-business CCPC)
+## Example 4: Class 3 Wooden Dock (Waterfront-Business CCPC)
 
 Setup: single-shareholder waterfront-business CCPC (boat rentals and a small marina).  
 Builds a small wooden dock on poles over April 2026 for $6,780 (including 13% HST), available for use May 1 2026; the corp is HST-registered and claims the $780 ITC; capitalizes the $6,000 net to Class 3.  

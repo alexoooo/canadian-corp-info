@@ -8,7 +8,7 @@ To internalize the style fast, read a signed-off page (`../guide/Investments/Adj
 The rules below name what the maintainer changes on the way from the second to the first.  
 
 
-## Two voices
+## Two Voices
 
 The guide has two registers, one per page:
 - *Primer voice* (`../guide/Overview/Small-Business-Tax.md`, `../README.md`): third-person factual, concept-oriented, no procedure
@@ -17,7 +17,7 @@ The guide has two registers, one per page:
 Every rule below applies to both voices unless noted.  
 
 
-## Write for the reader, not the repo
+## Write for the Reader, Not the Repo
 
 Every page is the finished product a CCPC owner reads, not source that a later step compiles.  
 Address that reader and no one else; the body never speaks to the maintainer or to you as its author.  
@@ -31,7 +31,7 @@ Maintainer-facing notes keep to their own channels, all outside the body: the `S
 Reader-facing cross-links are not meta: linking to a related page guides the reader and is encouraged.  
 
 
-## Section rhythm
+## Section Rhythm
 
 A section is a stack of short stanzas separated by blank lines.  
 A stanza is one of two things:
@@ -86,7 +86,11 @@ Let the facts stand in order and trust the reader to follow.
 ## Headings
 
 - `#` for the page title (one per file), `##` for sections, `###` for sub-sections
-- Noun phrases or concrete operations: `Trading fees`, `Sources of law`, `Three deduction channels`, `Declaring a dividend`
+- Title Case at every level, page title and sections alike: capitalize the first and last word and every principal word; lowercase the minor words (articles, coordinating conjunctions, short prepositions — `a`, `an`, `the`, `and`, `or`, `nor`, `of`, `to`, `in`, `on`, `for`, `with`, `vs`) unless they open or close the heading
+  - Acronyms and mixed-case or digit-bearing tokens keep their own casing: `GST/HST`, `ACB`, `Box 26`, `s.39(4)`, `T2`, `Part III.1`
+  - Both parts of a hyphenated compound are capitalized: `Year-End`, `Owner-Manager`, `Non-Eligible`, `Zero-Rated`
+  - Write `vs`, not `versus`, and keep it lowercase: `Book Cost vs ACB`, `Asset vs Share Purchase`
+- Noun phrases or concrete operations: `Trading Fees`, `Sources of Law`, `Three Deduction Channels`, `Declaring a Dividend`
 - Never rhetorical or marketing-style: no `Why X matters`, `Understanding Y`, `What you need to know about Z`
 - Short: 2–6 words is typical
 - A trailing status tag on a heading (`\[done]`, `\[meh]`, or the HTML-comment forms `<!-- [done] -->` / `<!-- [wip] -->` / `<!-- [meh] -->`) is the maintainer's progress annotation, not heading text
@@ -94,7 +98,7 @@ Let the facts stand in order and trust the reader to follow.
   - Leave these tags exactly as written; only the maintainer adds, moves, or removes them
 
 
-## Voice and pronouns
+## Voice and Pronouns
 
 - Primer voice: third-person factual (`A corporation is…`, `Active business income is taxed at…`)
 - Operational voice: second-person imperative for the reader-as-bookkeeper (`Debit X`, `Maintain a running total`, `Enter the order…`); first-person plural only for shared bookkeeping conventions (`we want to roll up to GIFI codes`)
@@ -118,7 +122,7 @@ Let the facts stand in order and trust the reader to follow.
 - Citations are concrete and authoritative: cite the ITA section, CRA form/schedule/guide, or Bank of Canada rate directly; never a vague "per CRA guidance" without a pointer
 
 
-## Page shape
+## Page Shape
 
 A mature page runs in this order:
 1. `**Who this is for**:` line or bullet list
@@ -135,7 +139,7 @@ The marker stands in for the `**Who this is for**` opener until the page is prom
 See [`../AGENTS.md`](../AGENTS.md) for the status states and the promotion steps.  
 
 
-## Worked examples and diagrams
+## Worked Examples and Diagrams
 
 - Primer voice grounds terms with small parentheticals: `(e.g. an ETF)`, `(FutureTax, TaxCycle, ProFile)`, `(industry jargon for the main return)`
 - Operational voice carries explicit worked examples: concrete dollar values, a `Year 1 / Year 2 / Year 3` progression where state evolves, `→` arrows for the running result, and debits/credits as labeled ledger lines:
@@ -150,7 +154,7 @@ Use Canadian spelling throughout, matching the existing pages: behaviour, flavou
 Keep tax-term and form spellings as the CRA writes them.  
 
 
-## Reviewing an AI draft
+## Reviewing an AI Draft
 
 Raw AI drafts already get the structure right: the headings, the bullet groups, the citations, the page skeleton.  
 What review strips is a thin layer of narrative smoothing.  
@@ -162,7 +166,7 @@ The frozen drafts under `examples/` preserve raw AI prose in full.
 The tells, ordered by frequency in the pending pages:
 - *Rhetorical heading* → noun phrase
   - before: `## Why a corporation has multiple classes` (`Share-Capital.md`)
-  - after: `## Multiple share classes`
+  - after: `## Multiple Share Classes`
 - *Em-dash appositive or clause chain* → colon, parentheses, or a new sentence
   - before: `…under paragraph (c) of the s.89(1) definition — the anti-avoidance rule for designations one of whose main purposes is to artificially inflate GRIP or deflate LRIP.` (`T2-Reporting.md`)
   - after: end the sentence at `definition`, then start a new one: `That paragraph is the anti-avoidance rule for designations whose main purpose is to inflate GRIP or deflate LRIP.`

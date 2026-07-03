@@ -1,6 +1,6 @@
 STATUS: AI GENERATED, REVIEW IN PROGRESS
 
-# Declaring and paying a dividend
+# Declaring and Paying a Dividend
 
 See parent document: [Dividends](Dividends.md)
 
@@ -13,7 +13,7 @@ Limitations:
 - Single owner-manager shareholder of a CCPC; more complex ownership structures are out of scope
 
 
-## Declaring a dividend
+## Declaring a Dividend
 
 A dividend is declared by the corporation's directors passing a resolution.  
 The resolution is the legal authorization for the payment.  
@@ -44,7 +44,7 @@ Provincial corporate statutes have equivalent tests (e.g. *Ontario Business Corp
 For an owner-managed CCPC with positive retained earnings and modest short-term liabilities, the test is rarely a binding constraint; the resolution should still recite it.  
 
 
-## Eligible dividend designation
+## Eligible Dividend Designation
 
 If the dividend is designated as eligible, ITA s.89(14) requires a written notice to the shareholder on or before the time the dividend is paid.  
 The notice can be brief; CRA accepts a clear written statement that names the dividend and identifies it as eligible:
@@ -56,7 +56,7 @@ Keep the notice in the corporate minute book; CRA can request it on audit.
 A non-eligible dividend requires no designation notice.  
 
 
-## Declaration date, record date, and payment date
+## Declaration Date, Record Date, and Payment Date
 
 A dividend has up to three distinct dates:
 - *Declaration date*: when the directors pass the resolution; legally creates the dividend obligation and the corresponding *Dividends Payable* liability on the books
@@ -83,7 +83,7 @@ It may be recharacterized as a constructive shareholder loan (with the s.15(2) c
 There is no bright-line statutory deadline; settle the declared dividend promptly, typically within a few months of year-end, by cash transfer or by crediting the shareholder's loan account.  
 
 
-## Payment methods
+## Payment Methods
 
 For a single owner-manager shareholder, the typical payment channels are:
 - *Bank transfer* from the corporate operating account to the shareholder's personal account; the most common channel; use a clear payment description like "Dividend per resolution dated [DATE]"

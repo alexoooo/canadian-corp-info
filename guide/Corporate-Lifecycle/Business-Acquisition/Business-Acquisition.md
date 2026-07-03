@@ -21,7 +21,7 @@ Limitations:
 - The following is my understanding as of 2026
 
 
-## The scenario
+## The Scenario
 
 The starting position has two corporations' worth of moving parts:
 - An *existing business* you want to buy; it may or may not be incorporated
@@ -34,7 +34,7 @@ This is a *vendor take-back* done in equity rather than as a loan.
 It defers the vendors' tax, spreads the corporation's cash outflow over years, and, when the vendors are family, doubles as a succession plan.  
 
 
-## Two forks
+## Two Forks
 
 Every version of the deal is a combination of two choices.  
 
@@ -54,14 +54,14 @@ flowchart TB
 
 *Structure* (what you buy):
 - If the target is not incorporated, there are only assets to buy
-- If the target is incorporated, you can buy its assets or its shares; the vendor and the buyer usually prefer opposite answers (see [Asset versus share purchase](Asset-vs-Share.md))
+- If the target is incorporated, you can buy its assets or its shares; the vendor and the buyer usually prefer opposite answers (see [Asset vs Share Purchase](Asset-vs-Share.md))
 
 *Consideration* (how you pay):
 - Cash, or a promissory note (debt the corporation pays down over time)
 - Preferred shares of the buyer corporation, redeemed over time (see [Preferred-share consideration](Preferred-Share-Consideration.md))
 
 
-## Paying with preferred shares
+## Paying with Preferred Shares
 
 The core of the scenario is the share-consideration route.  
 The buyer corporation issues redeemable, retractable preferred shares to the vendors with a fixed redemption value equal to the agreed price, then redeems them over time as cash allows.  
@@ -69,7 +69,7 @@ The buyer corporation issues redeemable, retractable preferred shares to the ven
 The detail is on [Preferred-share consideration](Preferred-Share-Consideration.md): the s.85 rollover that defers the vendors' gain, how the shares' paid-up capital is set, and the deemed dividend that arises on each redemption.  
 
 
-## The family case
+## The Family Case
 
 When the previous owners are a parent (or another family member) selling to the next generation, the same preferred-share machinery is an *estate freeze*.  
 The freeze fixes today's value into the parent's preferred shares, lets future growth accrue to the child's new common shares, and funds the parent's retirement by redeeming the preferred shares over time.  
@@ -77,7 +77,7 @@ The freeze fixes today's value into the parent's preferred shares, lets future g
 The family case carries its own anti-avoidance rules (ITA s.84.1) and a specific relieving exception for genuine intergenerational transfers; see [Estate Freeze](Estate-Freeze.md).  
 
 
-## Professional advice
+## Professional Advice
 
 Everything on these pages is set up by professionals, not as do-it-yourself bookkeeping.  
 Get tax and legal advice before:
@@ -90,7 +90,7 @@ Get tax and legal advice before:
 
 ## Related
 
-- [Asset versus share purchase](Asset-vs-Share.md)
+- [Asset vs Share Purchase](Asset-vs-Share.md)
 - [Preferred-share consideration](Preferred-Share-Consideration.md)
 - [Estate Freeze](Estate-Freeze.md)
 - [Share Capital](../Corporate-Structure/Share-Capital.md)

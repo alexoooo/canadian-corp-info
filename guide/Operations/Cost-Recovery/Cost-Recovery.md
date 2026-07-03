@@ -22,7 +22,7 @@ Limitations:
 - The following is my understanding as of 2026
 
 
-## Three deduction channels <!-- [done] -->
+## Three Deduction Channels <!-- [done] -->
 
 The deduction *channel* is set by purpose at acquisition.
 
@@ -46,7 +46,7 @@ The deduction *channel* is set by purpose at acquisition.
 - Disposition: recapture (s.13(1)) or terminal loss (s.20(16)) closes the channel
 
 
-## Inventory versus materials: same entry, different exit <!-- [done] -->
+## Inventory vs Materials: Same Entry, Different Exit <!-- [done] -->
 
 There are similarities between inventory (for sale) and materials (for a self-constructed fixed asset).  
 They are tracked in the same way, but treated differently when consumed.
@@ -90,7 +90,7 @@ There are two distinct concepts of amortization:
 - *Tax amortization* (CCA): the figure allowed on the T2 return; the method (geometric) and rate (based on class) are fixed by the Income Tax Act
 
 
-## Amortization and classes <!-- [wip] -->
+## Amortization and Classes <!-- [wip] -->
 
 *Amortization* spreads a long-lived asset's cost across the years it is used instead of expensing it all at once.
 
@@ -124,7 +124,7 @@ Tracking follows the pool, not the item:
 The full class list and per-class rates are in [Capital Cost Allowance — Classes and rates](Capital-Cost-Allowance/CCA-Classification.md#classes-and-rates).
 
 
-## Cost-recovery flow <!-- [done] -->
+## Cost-Recovery Flow <!-- [done] -->
 
 ```mermaid
 flowchart TB
@@ -164,7 +164,7 @@ flowchart TB
 ```
 
 
-## Acquisition cost: what gets capitalized <!-- [done] -->
+## Acquisition Cost: What Gets Capitalized <!-- [done] -->
 
 To *capitalize* a cost is to record it on the balance sheet as part of an asset rather than expense it immediately.
 The dollars sit in that asset until they flow out through one of the three channels above.  
@@ -192,7 +192,7 @@ Excluded from cost (booked elsewhere):
 The 50%-business-use rule on ITC eligibility for capital property is in [HST](../HST.md#capital-purchases); the FX trade-date convention is in [Foreign Currency](../../Bookkeeping/Foreign-Currency.md#when-to-use-which-rate).
 
 
-## Available for use
+## Available for Use
 
 CCA cannot be claimed on a class addition until the property is *available for use* (ITA [s.13(26)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-13.html)).  
 The cost does not enter the class's UCC until the property is available for use; the half-year-adjusted base then feeds CCA once the property is in service.
@@ -213,7 +213,7 @@ Two notes on coverage:
 - Inventory has no available-for-use rule; cost flows through COGS only at the moment of sale
 
 
-## Change of use
+## Change of Use
 
 Property can move between channels when the corp's purpose changes after acquisition.  
 CRA's administrative position (archived [IT-102R2](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/it102r2.html)) treats an inventory↔fixed-asset conversion as a re-classification, not a disposition:
@@ -235,7 +235,7 @@ The statutory reading is contested:
 The HST-side equivalent is the deemed ITC adjustment under ETA s.199(3) / s.200(2) when business-use proportion crosses 50% on capital personal property; see [HST](../HST.md#capital-purchases).
 
 
-## T2 schedules touched
+## T2 Schedules Touched
 
 The cluster touches the same four T2 schedules across all three channels; the line items differ by channel.
 
@@ -245,7 +245,7 @@ The cluster touches the same four T2 schedules across all three channels; the li
 - *Schedule 1* (book-to-tax reconciliation): book amortization added back, CCA from Schedule 8 deducted; inventory typically produces no adjustment
 
 
-## Disposition mechanics
+## Disposition Mechanics
 
 Disposition closes the channel.
 

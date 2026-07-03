@@ -20,7 +20,7 @@ Limitations:
 - The following is my understanding as of 2026
 
 
-## The wind-down sequence
+## The Wind-Down Sequence
 
 ```mermaid
 flowchart TB
@@ -47,7 +47,7 @@ The order exists because each step feeds the next:
 Spreading the sweep dividends over two or three personal tax years can beat one lump; the wind-down horizon is a planning input, not an afterthought.  
 
 
-## Disposing of assets
+## Disposing of Assets
 
 Each asset leaves by sale, or by distribution to the owner:
 - A *sale* closes out UCC and ACB normally: recapture or terminal loss per class, capital gain or loss per security (see [CCA — Recapture and terminal loss](../Operations/Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md#recapture-and-terminal-loss), [T5008](../Investments/T5008/T5008.md))
@@ -58,7 +58,7 @@ Settle the debts, including the shareholder loan:
 - A `Due to shareholder` (`2780`) balance repays tax-free and should be paid out before the final distribution math (it is a debt, not a distribution)
 
 
-## Closing the GST/HST account
+## Closing the GST/HST Account
 
 Cancel the RT registration once commercial activity has ceased (see [HST](../Operations/HST.md)):
 - File the final return for the period ending on the cancellation date
@@ -66,7 +66,7 @@ Cancel the RT registration once commercial activity has ceased (see [HST](../Ope
 - A payroll account closes with its own end-of-business rules: remit the final source deductions and file the final T4s promptly after the last pay (see [Payroll](../Paying-Yourself/Payroll.md); the T4001 end-of-business deadlines are days, not months)
 
 
-## Sweeping the tax pools
+## Sweeping the Tax Pools
 
 Pool balances cannot be transferred, sold, or inherited; whatever is left at dissolution is gone (the stranding problem, see [Dividends — Stranded GRIP and ERDTOH](../Paying-Yourself/Dividends/Dividends.md#stranded-grip-and-erdtoh)).  
 
@@ -81,7 +81,7 @@ The refund needs two live things:
 - A corporation still around to receive the money — sweep in the second-last year, collect the refund, and keep the final stub year trivial
 
 
-## The final distribution
+## The Final Distribution
 
 What remains after the sweep goes out in two slices:
 - *Paid-up capital* comes back tax-free — typically the nominal $100 subscription (see [Share Capital — PUC](Corporate-Structure/Share-Capital.md#paid-up-capital-puc))
@@ -95,7 +95,7 @@ The clearance certificate governs the timing:
 - The certificate confirms taxes are paid; it does not change them
 
 
-## The final T2 and dissolution
+## The Final T2 and Dissolution
 
 - The last tax year ends on the dissolution date; the final T2 is due 6 months later, and marks the return as final up to dissolution
 - File the corporate registry's *articles of dissolution* only after the distributions and refunds are done: federally under CBCA [s.210](https://laws-lois.justice.gc.ca/eng/acts/C-44/section-210.html); Ontario has its own consent prerequisites — check the current Ontario Business Registry requirements
@@ -107,7 +107,7 @@ After dissolution:
 - Property missed in the wind-up vests in the Crown (CBCA [s.228](https://laws-lois.justice.gc.ca/eng/acts/C-44/section-228.html)); recovering it means reviving the corporation — the reason the final distribution checklist includes every bank account, deposit, and refund
 
 
-## Worked example
+## Worked Example
 
 A consulting CCPC winds down with: $150,000 cash after settling all debts, PUC $100, CDA $20,000, NERDTOH $5,000, GRIP $0.  
 

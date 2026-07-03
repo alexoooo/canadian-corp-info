@@ -13,7 +13,7 @@ Limitations:
 - Tax information can change over time; the following is my understanding as of 2026
 
 
-## What does it look like
+## What Does It Look Like
 
 ![T3 Box 26 example](T3-Box-26_T3-Slip.png)
 
@@ -25,7 +25,7 @@ https://ctbsext.posttrade.cds.ca/ctbsExt/external-landing
 You can also use this to calculate expected values to validate the T3 amounts.  
 
 
-## Meaning and tax treatment
+## Meaning and Tax Treatment
 
 T3 Box 26 is *other income* allocated to a beneficiary of a trust.  
 *Other income* can sit alongside other T3 income types in a single cash distribution.  
@@ -123,7 +123,7 @@ For the S7 Box 32:
 - If your software uses a S7 worksheet, you will need to enter the T3 Box 26 amount there (see example below)
 
 
-## Relevant general ledger accounts
+## Relevant General Ledger Accounts
 
 For the broader ledger tree, see: [T3](T3.md)  
 
@@ -156,7 +156,7 @@ GIFI codes: https://www.canada.ca/en/revenue-agency/services/forms-publications/
 Note that CRA does not mandate specific GIFI account usage; what is presented here is one reasonable convention.  
 
 
-## Ledger entries
+## Ledger Entries
 
 Since CRA does not require specific ledger entries, here we adopt a particular bookkeeping convention that would generally be considered reasonable.  
 
@@ -186,7 +186,7 @@ If the investment is generating Canadian interest income, such as a bond ETF, th
 - If you choose to use this, make sure to do it consistently
 
 
-## T2 schedule mapping
+## T2 Schedule Mapping
 
 Income statement (S125) convention:
 - `Other investment income` (GIFI 8090, using ledger subaccount 8090-2)
@@ -202,7 +202,7 @@ S7 (assuming the classification is passive property income, as from a publicly t
 ![T2 S7 - Part 1 - Box 32](T3-Box-26_Schedule-7-Box-32.png)
 
 
-## Software workflow example - FutureTax 2025.2
+## Software Workflow Example - FutureTax 2025.2
 
 For S7 Box 32, some T2 software provides a worksheet for other interest and property income.  
 

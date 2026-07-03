@@ -22,7 +22,7 @@ Limitations:
 - The following is my understanding as of 2026
 
 
-## Two kinds of loss
+## Two Kinds of Loss
 
 | Attribute | Non-capital loss | Net capital loss |
 |---|---|---|
@@ -41,7 +41,7 @@ The two do not mix:
 The capital-loss side (superficial-loss rule, the realized-loss mechanics, the CDA effect) is covered in [Adjusted Cost Base — Capital loss carry forward / back](../Investments/Adjusted-Cost-Base/Adjusted-Cost-Base.md#capital-loss-carry-forward--back--superficial-loss); this page covers the T2 machinery and the non-capital side.  
 
 
-## The loss year on the T2
+## The Loss Year on the T2
 
 Taxable income on the T2 has a floor of zero.  
 When the year's deductions exceed income, the return shows nil taxable income and the excess becomes the year's non-capital loss (defined in ITA [s.111(8)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-111.html)).  
@@ -57,7 +57,7 @@ To lock in a disputed or material loss amount, request a *determination of loss*
 For an uncontroversial loss, filing Schedule 4 and carrying the balance is the normal course; the determination is a tool for when the amount is challenged.  
 
 
-## Carrying back
+## Carrying Back
 
 A carryback applies the loss against one of the three preceding tax years; CRA reassesses that year and refunds its tax.  
 
@@ -85,7 +85,7 @@ Receiving the reassessment refund:
 Any refund interest CRA adds is interest income in the year received.  
 
 
-## Carrying forward
+## Carrying Forward
 
 An unapplied loss carries forward as an opening balance on next year's Schedule 4.  
 
@@ -104,7 +104,7 @@ Track the balances in a small continuity schedule mirroring S4, one row per orig
 The expiry column is the point of the schedule: an expiring balance should redirect the [discretionary CCA](../Operations/Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md#discretionary-cca) decision and the salary/bonus level in the years before it dies.  
 
 
-## What a loss dollar is worth
+## What a Loss Dollar Is Worth
 
 A loss displaces the tax on whichever income it is applied against; income types are taxed at very different permanent rates.  
 Combined Ontario 2026 rates, and what a displaced dollar permanently saves:
@@ -131,7 +131,7 @@ Deferring CCA is the other half of the decision (see [Discretionary CCA](../Oper
 - Skipping the claim leaves the deduction in UCC, which never expires; take it in a profitable year instead
 
 
-## Worked example
+## Worked Example
 
 FY2025: taxable income $80,000, all SBD-rate ABI → tax at 12.2% = $9,760 paid.  
 FY2026: deductions exceed income by $60,000 → taxable income nil, non-capital loss $60,000.  

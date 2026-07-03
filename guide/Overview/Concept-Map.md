@@ -17,7 +17,7 @@ Limitations:
 - The following is my understanding as of 2026
 
 
-## From business activity to shareholder return
+## From Business Activity to Shareholder Return
 
 - Operating activity and investment slips both post to the books
 - GST/HST runs alongside in a separate cycle: output tax less input tax credits, on a separate return
@@ -65,7 +65,7 @@ Details:
 - [GST/HST](../Operations/HST.md): the parallel collect-and-remit cycle  
 
 
-## Income classification
+## Income Classification
 
 How a dollar of corporate income is classified, and which pool it feeds:
 - *Active business income* (ABI)
@@ -81,7 +81,7 @@ How a dollar of corporate income is classified, and which pool it feeds:
 Details: [Small Business Tax Overview — active vs investment income](Small-Business-Tax.md#active-vs-investment-income).  
 
 
-## Tax pools: GRIP, CDA, ERDTOH, NERDTOH
+## Tax Pools: GRIP, CDA, ERDTOH, NERDTOH
 
 GRIP, CDA, ERDTOH, and NERDTOH are:
 - *Running balances* the corporation carries forward year to year
@@ -129,7 +129,7 @@ Details:
 - [Capital Dividend Account](../Investments/Capital-Dividend-Account/Capital-Dividend-Account.md)
 
 
-## Cost-recovery channels
+## Cost-Recovery Channels
 
 Every purchase eventually becomes a tax deduction.  
 How that happens depends on why it was purchased: to resell, to use as a long-term asset, or to build into a long-term asset.  
@@ -156,7 +156,7 @@ flowchart TB
 Details: [Cost Recovery](../Operations/Cost-Recovery/Cost-Recovery.md) (full flow with disposition, recapture, terminal loss, and change of use).  
 
 
-## GST/HST cycle
+## GST/HST Cycle
 
 GST/HST runs parallel to income tax, on its own account and its own return.
 Two methods: the *regular method* (track every ITC) or the *quick method* (remit a flat fraction, keep the rest).  
@@ -183,7 +183,7 @@ Registration is mandatory once taxable supplies pass $30,000 over four quarters;
 Details: [HST](../Operations/HST.md), [Small Business Tax Overview — HST and other consumption taxes](Small-Business-Tax.md#hst-and-other-consumption-taxes).  
 
 
-## Remuneration: salary vs dividend
+## Remuneration: Salary vs Dividend
 
 Salary and dividends are the two ways an owner-manager takes money out of the corporation.  
 Salary is deductible and paid before corporate tax; dividends are paid from after-tax balances.  
@@ -203,7 +203,7 @@ Splitting dividends to family members is constrained by *TOSI* (tax on split inc
 Details: [Paying yourself: salary vs dividends](Small-Business-Tax.md#paying-yourself-salary-vs-dividends), [Tax Integration](Tax-Integration.md).  
 
 
-## Dividend flavours: Eligible, Non-eligible, Capital
+## Dividend Flavours: Eligible, Non-Eligible, Capital
 
 These are the three flavours a corporation can *pay* out to its shareholders.  
 Dividends it *receives* (on a T3 or T5) are covered under [Income classification](#income-classification).  
@@ -224,7 +224,7 @@ Federal rates shown; a provincial dividend tax credit applies on top:
 Details: [Dividends — three flavours](../Paying-Yourself/Dividends/Dividends.md#three-dividend-flavours-eligible-non-eligible-capital), [Tax Integration](Tax-Integration.md) (gross-up and DTC mechanics).  
 
 
-## Owner-corporation transactions
+## Owner-Corporation Transactions
 
 An owner assumes two distinct roles:
 - As *employee*: a reimbursement or a reasonable allowance for business use is tax-free to the owner and deductible to the corp (ITA s.6)
@@ -242,7 +242,7 @@ The shareholder loan account is a running balance carried forward, alongside the
 Details: [Owner-corporation transactions](../Paying-Yourself/Owner-Corporation-Transactions.md).  
 
 
-## Event → pool effects
+## Event → Pool Effects
 
 A pool is a running balance carried forward year to year: income adds to it, paying the matching dividend draws it down.  
 Here's how each event maps to the pool balance changes:
@@ -290,7 +290,7 @@ A sale is the only event that changes both sets of balances:
   - A depreciable asset's recapture or terminal loss runs through income first  
 
 
-## Loss carryforwards
+## Loss Carryforwards
 
 A year in which deductions exceed income produces a loss, which the corporation can apply to other years on T2 Schedule 4 (Loss Continuity).  
 There are two kinds of running balance:
@@ -304,7 +304,7 @@ A realized capital loss also draws down CDA by the non-taxable half it removes (
 Details: [Losses](../Filing-And-CRA/Losses.md), [Capital loss carry forward / back](../Investments/Adjusted-Cost-Base/Adjusted-Cost-Base.md#capital-loss-carry-forward--back--superficial-loss), [Capital Cost Allowance](../Operations/Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md) (loss-year CCA timing).  
 
 
-## Filing calendar
+## Filing Calendar
 
 Filing a return and paying the tax have separate deadlines; missing either draws interest or penalties.  
 
@@ -326,7 +326,7 @@ In practice the tax is estimated and paid by the earlier date, and the return is
 Details: [Filing deadlines and instalments](Small-Business-Tax.md#filing-deadlines-and-instalments).  
 
 
-## How the concepts relate
+## How the Concepts Relate
 
 - *Categorization* (each sorts an item into one of a few fixed types):
   - Income classification

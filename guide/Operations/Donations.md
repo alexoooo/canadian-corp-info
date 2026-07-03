@@ -20,7 +20,7 @@ Limitations:
 - The following is my understanding as of 2026
 
 
-## Deduction, limit, and carryforward
+## Deduction, Limit, and Carryforward
 
 A corporation deducts charitable gifts in computing taxable income (ITA [s.110.1(1)(a)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-110.1.html)):
 - The gift must be to a *qualified donee* (a registered charity or the other listed categories); check CRA's public list of registered charities
@@ -36,7 +36,7 @@ The books-to-return path takes one add-back:
 The net tax effect equals an ordinary deduction; the detour through S1 and S2 exists so the 75% cap and the carryforward can be tracked.  
 
 
-## Donation versus sponsorship
+## Donation vs Sponsorship
 
 Money to a charity is not always a donation:
 - *Sponsorship*: the corporation gets advertising or promotion back (logo on the event banner, a program listing pitched at the corp's market) — an ordinary advertising expense (`8520`), fully deductible, no receipt needed, no 75% cap
@@ -46,7 +46,7 @@ Money to a charity is not always a donation:
 For a small corporation whose gift buys genuine local visibility, sponsorship is often both the accurate label and the simpler deduction.  
 
 
-## Donating appreciated securities
+## Donating Appreciated Securities
 
 Donating publicly-listed securities *in kind* to a qualified donee stacks three benefits (ITA [s.38(a.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-38.html)):
 - The receipt (and the s.110.1 deduction) is the securities' fair market value
@@ -75,7 +75,7 @@ The mechanics need the donee to accept securities in kind (most large charities 
 Remove the position from the [ACB tracker](../Investments/Adjusted-Cost-Base/Adjusted-Cost-Base-Tracking.md) as a disposition at FMV.  
 
 
-## Corporate versus personal giving
+## Corporate vs Personal Giving
 
 Both routes reach a receipt; the difference is whose tax it reduces:
 - *Corporate*: a deduction against corporate rates (12.2% SBD-rate Ontario 2026) — modest per dollar, but paid with pre-personal-tax corporate dollars, and the in-kind securities play above only exists for corporately-held positions

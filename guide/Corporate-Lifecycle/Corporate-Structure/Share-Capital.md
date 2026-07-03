@@ -22,7 +22,7 @@ Limitations:
 - The following is my understanding as of 2026
 
 
-## What a share represents
+## What a Share Represents
 
 A *share* is a unit of ownership in the corporation.  
 What that ownership entitles the holder to is not fixed by the word "share"; it is set by the *class* the share belongs to, as described in the articles of incorporation.  
@@ -35,7 +35,7 @@ A class is defined by three rights, in any combination:
 The articles can create several classes, each with a different mix of these rights.  
 
 
-## Common and preferred shares
+## Common and Preferred Shares
 
 The two broad families are common and preferred:
 
@@ -54,7 +54,7 @@ The two broad families are common and preferred:
 The defining contrast: common shares ride the growth, preferred shares lock in a fixed amount.  
 
 
-## Voting and non-voting
+## Voting and Non-Voting
 
 Votes attach to a class, not to shares generally.  
 *Control* of the corporation follows the voting shares: whoever holds a majority of the votes elects the directors.  
@@ -64,7 +64,7 @@ This lets ownership of *value* and ownership of *control* be separated:
 - A freeze uses exactly this split, leaving control with the freezor while growth shifts to new common shares
 
 
-## Authorized versus issued shares
+## Authorized vs Issued Shares
 
 Two counts that are easy to confuse:
 - *Authorized*: the shares the articles permit the corporation to issue; Canadian articles commonly authorize an unlimited number of one or more classes
@@ -74,7 +74,7 @@ Only issued shares carry votes and receive dividends.
 Authorizing a class costs nothing and confers nothing until shares of that class are issued; creating a *new* class later requires an amendment to the articles.  
 
 
-## No-par-value shares
+## No-Par-Value Shares
 
 Canadian corporate statutes require shares to be issued *without nominal or par value* (CBCA s.24(1)).  
 The full consideration the corporation receives for a share is added to the *stated capital account* for that class (CBCA s.26).  
@@ -83,7 +83,7 @@ There is no "$1 par value" concept as in some other countries.
 The amount recorded for a class is what was paid in for it.  
 
 
-## Paid-up capital (PUC)
+## Paid-Up Capital (PUC)
 
 *Paid-up capital* (PUC) is the tax measure of the capital contributed for a class of shares, defined at ITA [s.89(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-89.html).  
 It starts from the corporate-law stated capital, then is adjusted by the *Income Tax Act*, and it is averaged across all shares of the class.  
@@ -100,7 +100,7 @@ In a typical owner-manager CCPC whose founder shares were issued for $100, PUC i
 PUC becomes load-bearing in freezes and share-funded purchases, where the gap between a preferred share's redemption value and its low PUC is what later comes out as a deemed dividend.  
 
 
-## Redeemable, retractable, convertible
+## Redeemable, Retractable, Convertible
 
 Preferred shares usually carry one or more of these features, set in the articles:
 - *Redeemable*: the corporation can buy the share back, at the corporation's option, for a set *redemption amount*
@@ -113,7 +113,7 @@ That is exactly the instrument used to fix today's value into preferred shares i
 Redemptions are constrained by corporate law: a corporation may not redeem shares if doing so would leave it unable to pay its liabilities (CBCA s.34–36).  
 
 
-## Multiple share classes
+## Multiple Share Classes
 
 A single founder needs only one common class.  
 Reasons to add classes:

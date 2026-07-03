@@ -17,7 +17,7 @@ Limitations:
 - The following is my understanding as of 2026
 
 
-## What this covers
+## What This Covers
 
 Every number elsewhere in the guide eventually becomes a journal entry, and those entries roll up through the general index of financial information (GIFI) onto the T2. This group covers the machinery that makes that work.
 
@@ -26,7 +26,7 @@ Every number elsewhere in the guide eventually becomes a journal entry, and thos
 - [Foreign Currency](Foreign-Currency.md) sits across every other topic: revenue billed in USD, a USD bank account, and a USD investment account all need translation to CAD, and this page sets the rate conventions the rest of the guide relies on.
 
 
-## Sub-pages
+## Sub-Pages
 
 This page is a hub; these are the sub-pages:
 - [Ledger and Accounts](Ledger-And-Accounts.md): the GIFI-aligned chart of accounts and debit/credit conventions

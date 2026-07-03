@@ -21,7 +21,7 @@ Limitations:
 - The following is my understanding as of 2026
 
 
-## The assessment cycle
+## The Assessment Cycle
 
 Corporate tax is self-assessed: the corporation computes its own tax, files, and pays; CRA assesses first and verifies later.  
 
@@ -52,7 +52,7 @@ The notice of assessment (NOA):
 - Compare it line by line against the filed T2; a changed line comes with an explanation paragraph on the notice
 
 
-## Booking the tax cycle
+## Booking the Tax Cycle
 
 The corporation's income tax flows through two accounts (see [Ledger and Accounts](../Bookkeeping/Ledger-And-Accounts.md)):
 - `Current income taxes` (`9990`): expense
@@ -81,7 +81,7 @@ Interest and penalties on the notice:
 The true-up posts in the year the notice arrives; do not reopen a closed year's books for it.  
 
 
-## The reassessment clock
+## The Reassessment Clock
 
 CRA can reassess a CCPC's tax year within the *normal reassessment period*: 3 years from the date of the original notice of assessment (ITA [s.152(3.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-152.html)).  
 
@@ -97,7 +97,7 @@ The clock cuts both ways:
 - Review old years for missed claims before their third anniversary, not after
 
 
-## Interest and penalties
+## Interest and Penalties
 
 All rates key off the quarterly *prescribed rate* (Income Tax Regulations [s.4301](https://laws-lois.justice.gc.ca/eng/regulations/C.R.C.,_c._945/section-4301.html), set from 90-day T-bill yields):
 - *Arrears interest*: prescribed rate + 4%, compounded daily, from the balance-due date
@@ -111,7 +111,7 @@ The penalties an owner-managed corporation actually meets:
 - *Information-slip and T1135 penalties*: flat-rate, no tax owing required; see [Filing deadlines](../Overview/Small-Business-Tax.md#filing-deadlines-and-instalments) and [T1135](../Investments/T1135.md)
 
 
-## Reviews and audits
+## Reviews and Audits
 
 A *desk review* (processing review) is a letter asking for the backup behind specific lines: a GIFI expense line, a schedule figure, an ITC.  
 
@@ -127,7 +127,7 @@ Cooperate on documents, keep answers factual, and involve an accountant early; a
 Authorizing a representative (an accountant) for the RC account is done in My Business Account; the authorization is per program account and survives until revoked.  
 
 
-## Records retention
+## Records Retention
 
 The duty to keep books and records at all is ITA [s.230](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-230.html); the retention clock is 6 years from the end of the last tax year the record relates to (s.230(4), Income Tax Regulations [s.5800](https://laws-lois.justice.gc.ca/eng/regulations/C.R.C.,_c._945/section-5800.html)).  
 
@@ -139,7 +139,7 @@ What that means in practice:
 - Destroying records early needs CRA consent (Form T137); the practical answer for a small corporation is to keep everything digital and never destroy
 
 
-## Amending a filed T2
+## Amending a Filed T2
 
 There is no separate amendment form: a change to a filed year is a *requested reassessment*.  
 
@@ -170,7 +170,7 @@ Money while the dispute runs:
 A nil assessment cannot be objected to; for a loss year, the lever is a loss determination (see [Losses](Losses.md#the-loss-year-on-the-t2)).  
 
 
-## Relief programs
+## Relief Programs
 
 *Taxpayer relief* (ITA [s.220(3.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-220.html)):
 - CRA can cancel or waive interest and penalties (never the tax itself) up to 10 years back

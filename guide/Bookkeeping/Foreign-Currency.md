@@ -24,7 +24,7 @@ Limitations:
 - The following is my understanding as of 2026
 
 
-## Reporting currency and exchange-rate sources
+## Reporting Currency and Exchange-Rate Sources
 
 The Income Tax Act presumes a Canadian-resident corporation reports in Canadian dollars.  
 Foreign-currency amounts are converted to CAD at the rate prevailing on the transaction date (ITA [s.261(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-261.html); CRA Income Tax Folio S5-F4-C1).  
@@ -42,7 +42,7 @@ It is filed on Form T1296 no later than 60 days after the first day of the first
 For a typical owner-managed CCPC operating in Canada with CAD bank accounts and Canadian customers, the election is not available because CAD remains the primary currency; out of scope here.  
 
 
-## When to use which rate
+## When to Use Which Rate
 
 CRA Income Tax Folio S5-F4-C1 lets a corporation pick any consistent and appropriate method for income-account items (current-rate / accrual, settlement, fixed-rate, or average-rate).  
 This guide uses the *transaction-date* method throughout, applied per-event as listed below.  
@@ -62,7 +62,7 @@ A *non-monetary item* is everything else: inventory, capital assets, prepaid exp
 The year-end-revaluation rule applies only to monetary items; non-monetary items stay at the historical CAD figure recorded on acquisition.  
 
 
-## Capital-account vs income-account FX
+## Capital-Account vs Income-Account FX
 
 This is the load-bearing distinction in foreign-currency tax: every FX gain or loss has a character that follows the underlying transaction.  
 
@@ -90,7 +90,7 @@ Which side of the line a given USD balance sits on:
 For a typical owner-managed CCPC consultant, almost all USD activity is income-account; capital-account FX appears only on disposition of USD securities and is handled through the ACB workflow.
 
 
-## Multi-currency bookkeeping convention
+## Multi-Currency Bookkeeping Convention
 
 The worked examples on this page use a *multi-currency native* convention: each ledger account has a single native currency, cross-currency transactions split into a CAD leg and a USD leg with separate FX bridge accounts per currency, and FX gain or loss is recognized at period-end revaluation rather than at each settlement.  
 This is what GnuCash, Xero, and QuickBooks Multi-Currency produce natively, and it keeps each bank account and AR balance in the currency the underlying account actually holds.  
@@ -107,7 +107,7 @@ How it works:
 The `FX gain/loss` sub-accounts (8231-1, 8231-2) accumulate per-currency positions through the year and are not separately reported; both roll up to a single GIFI 8231 line on Schedule 125 after the period-end translation.  
 
 
-## GIFI mapping
+## GIFI Mapping
 
 Account codes used through the worked examples below.  
 Internal codes carry a `-N` suffix (matching the convention in [T3](../Investments/T3/T3.md)); the GIFI rollup at year-end is the parent code without the suffix.  
@@ -138,7 +138,7 @@ Notes on the codes:
 - For broader account-tree conventions (investment accounts, withholding taxes, GIFI rollups), see [T3](../Investments/T3/T3.md)
 
 
-## Bank conversions and the embedded spread
+## Bank Conversions and the Embedded Spread
 
 When a bank converts CAD↔USD, the rate it applies is worse than the mid-market spot rate.  
 The difference between the BoC mid-rate and the rate the bank used is the *implicit spread*; this is how the bank earns on the conversion.  
@@ -207,7 +207,7 @@ Settlement timing:
 - Brokers that auto-journal (RBC Direct Investing, BMO InvestorLine) let you initiate the second leg the same day as the first; the journal reconciles on the back end
 - Brokers that require a phone call or secure message typically settle the round trip over 2 business days
 
-### Broker support
+### Broker Support
 
 Broker-specific Gambit support shifts over time; the table below reflects publicly documented behaviour as of 2026 and should be re-verified with the broker's current FAQ before relying on it.
 
@@ -221,7 +221,7 @@ Broker-specific Gambit support shifts over time; the table below reflects public
 - *Wealthsimple*: Norbert's Gambit in beta as of 2026; confirm corporate-account availability with the broker before assuming support
 - *Interactive Brokers Canada*: direct interbank FX through FXCONV / IDEALPRO at ~1 basis point with a ~$2 minimum is cheaper than the Gambit; use that instead unless you need the cash in another broker
 
-### Tax characterization
+### Tax Characterization
 
 The Gambit round trip is a *securities disposition*, not an income-account currency conversion:
 - DLR and DLR.U are *identical property* under ITA [s.47(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-47.html); the ACB is pooled and computed in CAD
@@ -237,7 +237,7 @@ T5008 note:
 - Do not use the T5008 Book Cost on Schedule 6; use your own ACB tracking
 - The standard ACB-tracking workflow applies; see [Adjusted Cost Base — Tracking](../Investments/Adjusted-Cost-Base/Adjusted-Cost-Base-Tracking.md)
 
-### Cost comparison
+### Cost Comparison
 
 Concrete example on USD 50,000:
 
@@ -290,7 +290,7 @@ At period-end, translate 8231-2 to CAD at the closing rate; the net of 8231-1 an
 In practice the Gambit window is one or two business days and the FX drift contributes only cents; the capital gain or loss on Schedule 6 dominates the round-trip result.
 
 
-## Getting paid in USD (invoicing US clients)
+## Getting Paid in USD (Invoicing US Clients)
 
 The accrual + tax basis bookkeeping convention (per [Small Business Tax Overview](../Overview/Small-Business-Tax.md)) recognizes revenue at the invoice date.  
 For a USD invoice, the CAD equivalent is computed at the BoC rate on the invoice date and that figure is the recorded revenue.  
@@ -324,7 +324,7 @@ This combines a customer settlement with a bank FX conversion in a single transa
   - Credit `FX gain/loss - CAD` (8231-1): USD amount × bank's settlement rate (CAD value matching the CAD credited plus fees)
 - No FX gain or loss recognized on this entry; the bank's implicit spread is captured in the difference between the bank's settlement rate and the BoC mid, and surfaces at period-end revaluation when 8231-2 is translated at the closing rate
 
-### Year-end retranslation
+### Year-End Retranslation
 
 Any USD-native monetary balance (AR or cash) at year-end is translated to CAD at the closing BoC rate.  
 The trading accounts (8231-1, 8231-2) capture the cumulative per-currency positions through the year; period-end revaluation translates 8231-2 to CAD at the closing rate and the net of (8231-1 + translated 8231-2) is the period's FX gain or loss on Schedule 125 GIFI 8231.  
@@ -336,7 +336,7 @@ Mechanically, this is done by:
 
 The treatment is income-account (IT-95R paragraph 8); fully includable, no inclusion-rate halving.
 
-### Zero-rated GST/HST on services to non-residents
+### Zero-Rated GST/HST on Services to Non-Residents
 
 Services rendered to a non-resident customer with no presence in Canada are typically *zero-rated* under the *Excise Tax Act*, Schedule VI, Part V:
 - Section 7 covers general services to a non-resident
@@ -353,7 +353,7 @@ Registration and ITC consequences:
 - Once registered, ITCs on Canadian inputs remain claimable even though all output is zero-rated; the corp typically files for a GST/HST refund each period
 - See [HST](../Operations/HST.md) for the full mechanics including registration, reporting periods, ITC tracking, and Quick Method considerations (a consultant billing only non-resident clients gets no benefit from the Quick Method anyway, since zero-rated supplies carry no HST to keep)
 
-### Taxable USD supplies and HST
+### Taxable USD Supplies and HST
 
 The zero-rated case above carries no HST, so no FX question arises on the tax.  
 A *taxable* USD-denominated supply (for example a USD invoice to a Canadian customer) does carry HST, and the HST is converted to CAD at the rate on its *tax-point* date: the earlier of the invoice date and the day the invoice is issued (ETA [s.159](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-159.html); see [HST / When tax becomes payable](../Operations/HST.md#when-tax-becomes-payable)).  
@@ -365,7 +365,7 @@ The HST tax-point rate can differ from the rate date on the revenue:
 When the invoice is issued the day it is dated, the two coincide and a single rate applies.  
 They diverge across a year-end straddle: revenue is accrued in the earlier year at that year-end's rate, while the HST is recognized with the next-year invoice at the later rate (see [HST / Year-end straddle](../Operations/HST.md#year-end-straddle-income-vs-hst-timing)).  
 
-### US withholding tax and W-8BEN-E
+### US Withholding Tax and W-8BEN-E
 
 When invoicing a US client, US tax law requires the client to withhold US tax on payments to a foreign person unless an exemption is supported:
 - File Form *W-8BEN-E* with the US client (not with the IRS) to certify the corp's Canadian tax residency
@@ -374,7 +374,7 @@ When invoicing a US client, US tax law requires the client to withhold US tax on
 - The W-8BEN-E is renewed every three years or sooner on a change of circumstances
 - Full mechanics are out of scope for this guide
 
-### Worked example
+### Worked Example
 
 Setup: single-shareholder Canadian IT consulting CCPC, calendar fiscal year, HST-registered, all clients are US corporations with no Canadian presence.  
 Year 1 (2026), three transactions:
@@ -427,7 +427,7 @@ Economic check:
 - Net FX: 200 + 100 = +300 CAD gain ✓ (matches the trading-account result)
 
 
-## Year-end USD deposit account
+## Year-End USD Deposit Account
 
 Year-end handling depends on whether the USD cash is on income account or capital account.  
 
@@ -446,7 +446,7 @@ Year-end handling depends on whether the USD cash is on income account or capita
 In practice, for most owner-managed CCPCs the USD balance is on income account: it flows from operations and is used for operations.  
 The capital-account treatment applies narrowly when the USD is held *and intended* for investment.  
 
-### Worked example
+### Worked Example
 
 Setup: single-shareholder consulting CCPC keeps a small USD float for paying US software vendors directly.  
 The float is funded once a year from CAD via internal bank conversion.  
@@ -493,7 +493,7 @@ Economic check:
 The CAD 160 loss is the bank's implicit spread surfacing: the corp paid for USD at 1.40 but the BoC mid never reached 1.40, so the USD never recovered its CAD cost basis.
 
 
-## Currency flow
+## Currency Flow
 
 ```mermaid
 flowchart TB
@@ -523,7 +523,7 @@ flowchart TB
 ```
 
 
-## Edge cases
+## Edge Cases
 
 - *USD-denominated capital assets*: foreign securities held in a corporate trading account follow [Adjusted Cost Base](../Investments/Adjusted-Cost-Base/Adjusted-Cost-Base.md) — trade-date FX for purchases, sales, and commissions; payment-date FX for distributions; the FX layer here is the ACB workflow's mirror image
 - *Foreign tax withheld on USD distributions*: see [T3](../Investments/T3/T3.md) for the Box 25 / Box 34 walkthrough; foreign withholding tax is grossed up on Schedule 7 and a foreign tax credit is claimed on Schedule 21

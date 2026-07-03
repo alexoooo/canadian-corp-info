@@ -19,7 +19,7 @@ Limitations:
 - The following is my understanding as of 2026
 
 
-## Income timing and the reserve
+## Income Timing and the Reserve
 
 An amount received for services not yet rendered is income when received (ITA [s.12(1)(a)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-12.html)) — the Act pulls prepayments in immediately, ahead of accrual accounting.  
 The deferral comes from the matching reserve (ITA [s.20(1)(m)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-20.html)): a reasonable amount for the portion of the services still to be rendered after year-end.  
@@ -32,7 +32,7 @@ The pair works like the doubtful-debt reserve (see [Receivables and Bad Debts](R
 In tax-basis books the two steps collapse into the deferred-revenue liability below: the closing `2770` balance *is* the reserve, and the S13 entries fall out of the ledger.  
 
 
-## Deposits, prepayments, and retainers
+## Deposits, Prepayments, and Retainers
 
 The word "deposit" covers three different things; the tax treatment follows the substance:
 
@@ -48,7 +48,7 @@ The dividing line is refundability and application:
 - A "retainer" that merely reserves availability (a standby fee, never applied to invoices) is earned when the standby period runs — it is fee revenue, not a deposit
 
 
-## HST timing
+## HST Timing
 
 HST does not follow the income deferral:
 - Tax is payable on the earlier of the day the consideration is paid and the day it becomes due — generally the invoice date (ETA [s.168(1)](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-168.html); see [HST — When tax becomes payable](HST.md#when-tax-becomes-payable))
@@ -81,7 +81,7 @@ A balance expected to unwind beyond the next year belongs on the long-term line 
 A refundable security deposit books to a plain liability (a `2620`-series payable), not `2770`, with no HST line — and moves to revenue only if forfeited or applied.  
 
 
-## Worked example
+## Worked Example
 
 December 31 year-end; the $10,000 retainer above arrives December 15, and $4,000 of the work is delivered by year-end:
 - *Books*: `2770` closes at $6,000; revenue shows the $4,000 delivered

@@ -32,7 +32,7 @@ Market Value:
 - Not used for any tax calculations
 
 
-## What changes the ACB
+## What Changes the ACB
 
 Things that increase your ACB:
 - Purchasing a security
@@ -81,7 +81,7 @@ Depending on your brokerage, you might see:
 - It might be possible to raise a discrepancy with your brokerage, and they could re-issue T3 or T5008 slips  
 
 
-## Trading fees
+## Trading Fees
 
 Trading fees to buy a security increase your ACB (i.e. they are "capitalized", not counted as an expense).  
 
@@ -91,14 +91,14 @@ Trading fees to sell a security:
 - Are treated as "Outlays and expense from disposition" in T2 S6
 
 
-## Date of acquisition for pooled securities
+## Date of Acquisition for Pooled Securities
 
 ACB uses pooled average cost across all identical properties (not FIFO or LIFO) (ITA [s.47(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-47.html)).  
 When you sell and fill out the T2 S6 entry, you will need to specify a "Date of acquisition".  
 For pooled securities, use the date of the very first purchase that contributed to the current pool, a conservative convention in the absence of specific CRA guidance.  
 
 
-## Foreign assets and FX conversion to CAD
+## Foreign Assets and FX Conversion to CAD
 
 If you hold USD or other foreign assets, you must convert to CAD when calculating ACB (you can use the Bank of Canada daily exchange rate, the indicative midpoint published at approximately 16:30 ET; the legacy noon rate is no longer published):  
 - Purchases and sales: use the exchange rate for the trade date (not settlement date)  
@@ -108,7 +108,7 @@ If you hold USD or other foreign assets, you must convert to CAD when calculatin
 - For ACB purposes, always use the daily exchange rate as specified above  
 
 
-## Corporate vs personal ACB
+## Corporate vs Personal ACB
 
 If you hold a security in a personal account, as well as in your corporation's account, they are considered assets of two distinct legal entities.  
 You track the ACB for each entity separately, even if they hold the identical security.  
@@ -116,7 +116,7 @@ You track the ACB for each entity separately, even if they hold the identical se
 Note that while ACB is tracked separately, personal and corporate accounts are "affiliated persons" for the purpose of superficial loss (see below).
 
 
-## Capital loss carry forward / back / superficial loss
+## Capital Loss Carry Forward / Back / Superficial Loss
 
 Capital losses can be carried forward indefinitely to offset future capital gains, and they can be carried back 3 years.  
 To carry back a capital loss, a corporation uses T2 Schedule 4 (S4, Corporation Loss Continuity and Application), which triggers a reassessment of the prior-year T2.  

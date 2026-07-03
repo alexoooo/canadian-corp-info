@@ -17,7 +17,7 @@ Limitations:
 - The following is my understanding as of 2026
 
 
-## Touched on but not worked through
+## Touched on but Not Worked Through
 
 - *Corporate-owned life insurance and the CDA credit*: the non-taxable portion of a life-insurance payout to the corporation credits the capital dividend account (ITA [s.89(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-89.html), paragraph (d))
   - Nearest coverage: [Capital Dividend Account](../Investments/Capital-Dividend-Account/Capital-Dividend-Account.md), which works only the capital-gains source and flags this one as out of scope, plus the premium-deductibility note in [Owner-Corporation-Transactions](../Paying-Yourself/Owner-Corporation-Transactions.md)
@@ -31,13 +31,13 @@ Limitations:
   - Nearest coverage: [T2 Schedules](../Filing-And-CRA/T2-Schedules.md) and [Expense-Classification](../Bookkeeping/Expense-Classification.md)
 
 
-## Not covered but potentially relevant
+## Not Covered but Potentially Relevant
 
 - *Underused Housing Tax (UHT)*: an annual federal filing that can reach a corporation on title of residential property; the requirement for Canadian-controlled corporations narrowed after the first filing years, so verify the current rule before assuming a return is or is not due
   - Nearest coverage: [Rental and Property Income](../Operations/Rental-And-Property-Income.md) and [Owner-Corporation-Transactions](../Paying-Yourself/Owner-Corporation-Transactions.md); further: the CRA Underused Housing Tax pages and the Underused Housing Tax Act
 
 
-## Deliberately out of scope
+## Deliberately Out of Scope
 
 - *Personal T1 mechanics and sole-proprietor treatment*: appear only as brief contrasts where they clarify the corporate case, as in [Owner-Corporation-Transactions](../Paying-Yourself/Owner-Corporation-Transactions.md); the personal return is its own domain
 - *PST and QST*: the guide works federal GST/HST only; provincial sales taxes outside the participating-province HST are not covered

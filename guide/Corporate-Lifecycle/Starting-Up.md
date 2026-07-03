@@ -22,7 +22,7 @@ Limitations:
 - The following is my understanding as of 2026
 
 
-## From incorporation to the first return
+## From Incorporation to the First Return
 
 ```mermaid
 flowchart TB
@@ -42,7 +42,7 @@ The corporation is a taxpayer from its incorporation date, even with no activity
 Every year from then on needs a T2 and a corporate-registry annual return, nil or not (see [Filing deadlines](../Overview/Small-Business-Tax.md#filing-deadlines-and-instalments)).  
 
 
-## Business number and program accounts
+## Business Number and Program Accounts
 
 Incorporating federally (or in most provinces) feeds the corporate registry data to CRA, which issues the nine-digit *business number* and the corporate-tax account automatically.  
 
@@ -55,7 +55,7 @@ The program accounts, and when each is needed (see [Types of accounts](../Overvi
 Register for CRA My Business Account early; assessments, review letters, and most registrations run through it.  
 
 
-## Choosing the fiscal year-end
+## Choosing the Fiscal Year-End
 
 The first fiscal period runs from incorporation to any date up to 53 weeks out (ITA [s.249.1](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-249.1.html)).  
 There is no election form: the year-end is set by the first T2 filed with that date, and after that it is fixed — a change needs CRA's concurrence (s.249.1(7)).  
@@ -70,7 +70,7 @@ A deliberately short first year is fine, but it prorates by days:
 - CCA claims (see [CCA — Short fiscal year](../Operations/Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md#short-fiscal-year))
 
 
-## Funding the corporation
+## Funding the Corporation
 
 The standard capitalization for an owner-managed CCPC is nominal share capital plus a shareholder loan:
 - *Shares*: a token subscription (e.g. 100 common shares for $100) into `Common shares` (`3500`); this sets the *paid-up capital*, and keeping it nominal is normal (see [Share Capital — PUC](Corporate-Structure/Share-Capital.md#paid-up-capital-puc))
@@ -86,7 +86,7 @@ Opening entries — incorporated May 1, $100 subscription, $10,000 lent in:
 | `Due to shareholder` (`2780`) | | 10,000.00 |
 
 
-## Costs before and around incorporation
+## Costs Before and Around Incorporation
 
 *Incorporation costs* (legal fees, name search, registry fees, the minute book):
 - The first $3,000 is deductible in the first year (ITA [s.20(1)(b)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-20.html)); any excess is a Class 14.1 addition
@@ -100,7 +100,7 @@ Opening entries — incorporated May 1, $100 subscription, $10,000 lent in:
 Deductions need a business to deduct against: expenses become deductible once the business has *commenced* (activity directed at earning income — soliciting clients, delivering work), not from some later first-revenue date.  
 
 
-## Bringing in assets
+## Bringing in Assets
 
 Equipment the owner already has (a laptop, tools, furniture) can serve the corporation two ways, both covered in [Owner-corporation transactions](../Paying-Yourself/Owner-Corporation-Transactions.md#personal-property-used-by-the-business):
 - *Owner keeps the asset* and the corporation pays a reasonable rent or usage charge — simplest for anything the owner also uses personally
@@ -123,7 +123,7 @@ Appreciated property is the exception:
 Personal-tax history does not follow the asset in: the corporation's cost starts at the transfer price, and prior personal use is irrelevant to its books.  
 
 
-## First-year clocks
+## First-Year Clocks
 
 - *T2*: due 6 months after the chosen year-end; the balance (if any) is due at 3 months
 - *Instalments*: none in the first year — they key off prior-year tax, and there is none (see [Filing deadlines and instalments](../Overview/Small-Business-Tax.md#filing-deadlines-and-instalments))

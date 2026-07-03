@@ -1,6 +1,6 @@
 STATUS: AI GENERATED, REVIEW IN PROGRESS
 
-# Owner-corporation transactions
+# Owner-Corporation Transactions
 
 **Who this is for**:
 - Owner-manager of a CCPC who uses a personally-owned asset (car, home office, tools, phone) for the business, or uses a corporate-owned asset personally
@@ -21,7 +21,7 @@ Limitations:
 - The following is my understanding as of 2026
 
 
-## Two hats: employee and shareholder
+## Two Hats: Employee and Shareholder
 
 The owner of an owner-managed CCPC deals with the corporation in two distinct capacities, and the *Income Tax Act* treats each differently:
 - As an *employee*, a benefit or allowance the corp provides is governed by ITA [s.6](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-6.html); a properly structured reimbursement of business use is tax-free to the owner, and the cost is deductible to the corp
@@ -39,7 +39,7 @@ These move the asset onto a normal commercial footing instead of relying on the 
 The sections below work through the two most common cases (vehicles and personal property), then the related situations that share the same mechanics.  
 
 
-## Business-use proportion and logs
+## Business-Use Proportion and Logs
 
 Every mixed-use case turns on one number: the share of use that is genuinely for the business.  
 That proportion has to be supported by a contemporaneous record, because CRA can demand it on audit and will disallow an unsupported estimate.  
@@ -61,7 +61,7 @@ Keep the log with the corporate records, not just personally; it supports both t
 "Expensing the car" splits into two completely different mechanisms depending on who owns the vehicle.  
 The choice of ownership is the single biggest driver of the tax outcome.  
 
-### Personal car used for the corp
+### Personal Car Used for the Corp
 
 This is the common owner-manager case: the car is registered to and owned by the owner personally, and is used partly for the corp's business.  
 The corp does *not* own the car, so it claims no CCA and posts none of the running costs directly; instead it compensates the owner for business use, in one of two ways.  
@@ -91,7 +91,7 @@ GST/HST on the allowance:
 - An HST-registered corp may claim a *deemed input tax credit* on a reasonable km allowance equal to the tax fraction of the allowance (ETA [s.174](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-174.html))
 - In a 13% HST province: $7,670 × 13/113 ≈ $882; book the ITC to `HST receivable` and net it out of the expense (see [HST](../Operations/HST.md))
 
-### Corporate car used personally
+### Corporate Car Used Personally
 
 Here the corporation owns (or leases) the car, claims CCA on it (Class 10 or 10.1; see [Capital Cost Allowance](../Operations/Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md)), and deducts the operating costs.  
 Any personal use by the shareholder-employee is then a *taxable benefit* reported on the owner's T4, in two parts.  
@@ -124,11 +124,11 @@ Why the personal-car structure usually wins for an owner-manager:
 - The corporate-car route mainly pays off when business use is very high and personal use is minimal
 
 
-## Personal property used by the business
+## Personal Property Used by the Business
 
 The same employee-versus-shareholder split applies to any asset: equipment, tools, real estate, a computer.  
 
-### Owner keeps the asset
+### Owner Keeps the Asset
 
 Three routes, cleanest first:
 - *Reimburse the business portion*: the corp reimburses the owner for the business-use share of the asset's running costs; a genuine expense reimbursement is tax-free and deductible
@@ -149,7 +149,7 @@ Personal side of the sale:
 - A gain only arises if the asset appreciated above cost, which is uncommon for depreciating equipment
 - A non-arm's-length sale above FMV is capped to FMV under ITA s.69; price the transfer at genuine FMV
 
-### Corporate property used personally
+### Corporate Property Used Personally
 
 When the corp owns an asset and the shareholder uses it personally, ITA s.15(1) confers a shareholder benefit:
 - The benefit equals the FMV of the personal use (for property held mainly to benefit the shareholder, CRA's position can extend to an imputed return on the corp's full investment in the asset, not just out-of-pocket cost)
@@ -162,7 +162,7 @@ Worked example (corporate-owned cottage):
 - This is why holding personal-use real estate inside a corporation is generally tax-inefficient
 
 
-## Home office
+## Home Office
 
 A home office is the most common mixed-use case after the vehicle, and it has its own trap.  
 
@@ -196,7 +196,7 @@ Employee route, for contrast (out of scope):
 - This is a personal-tax path; the corporate reimbursement or rent route above is usually simpler for an owner-manager
 
 
-## Other mixed-use and benefit situations
+## Other Mixed-Use and Benefit Situations
 
 The same employee-versus-shareholder framing recurs across a cluster of common items.  
 
@@ -232,7 +232,7 @@ Credit: "Cash" (GIFI 1001) = amount
 - Dividends to family members who are not active in the business are constrained by TOSI (ITA s.120.4; see [Small Business Tax Overview](../Overview/Small-Business-Tax.md))
 
 
-## Employee benefits
+## Employee Benefits
 
 A benefit provided to the owner *as employee* can be deductible to the corp and tax-free personally — the best of both columns — but only inside the recognized categories below.  
 The owner-manager caution runs through all of them: a benefit that would not plausibly be offered to an arm's-length employee in the same job invites recharacterization as a shareholder benefit (s.15(1), taxed with no deduction).  
@@ -262,14 +262,14 @@ The owner-manager caution runs through all of them: a benefit that would not pla
 The bookkeeping is unexciting once the character is settled: deductible premiums and costs go to their expense lines (`8690` Insurance, `8760` memberships, `9060`-adjacent benefit costs), and anything taxable feeds the T4 as an employment benefit (see [Payroll](Payroll.md)).  
 
 
-## Shareholder loans
+## Shareholder Loans
 
 The *shareholder loan account* records money moving between the owner and the corporation outside salary and dividends.  
 It runs in both directions, and the tax rules are not symmetric:
 - *Due from shareholder*: the owner has borrowed from the corp (an asset on the corp's books)
 - *Due to shareholder*: the owner has lent to the corp (a liability on the corp's books)
 
-### Owner borrows from the corporation
+### Owner Borrows from the Corporation
 
 A loan from the corp to its shareholder is added to the owner's income for the year the loan was *made* (ITA [s.15(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-15.html)), unless it is repaid in time.  
 
@@ -306,7 +306,7 @@ The interest benefit is a separate rule (ITA [s.80.4(2)](https://laws-lois.justi
 - It applies even when the loan stays inside the s.15(2) window: escaping one rule does not escape the other
 - On a small, short-lived balance the amount is a few dollars, but it is technically reportable
 
-### Owner lends to the corporation
+### Owner Lends to the Corporation
 
 Funding the corp from personal money is the common direction for an owner-manager, and it is far simpler:
 - The owner can lend to the corp at *zero interest*: s.15(2) and s.80.4 run only corp-to-shareholder, so neither applies in this direction
@@ -322,7 +322,7 @@ Credit: "Due to shareholder" (GIFI 2780 area) = $5,000
 Repaying the owner later reverses this entry, with no tax to the owner on the principal returned.  
 
 
-## Sole-proprietorship contrast
+## Sole-Proprietorship Contrast
 
 For comparison only — a sole proprietor is not a separate taxpayer, so the owner-corporation boundary that drives this whole page does not exist.  
 

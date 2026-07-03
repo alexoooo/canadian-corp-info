@@ -16,7 +16,7 @@ Limitations:
 - Tax information can change over time; the following is my understanding as of 2026
 
 
-## Meaning and tax treatment
+## Meaning and Tax Treatment
 
 T3 Box 25 is *foreign non-business income* allocated to a beneficiary of a trust: income from a source outside Canada that is income from property, not a capital gain, and not from a business.  
 It is a catch-all that can hold more than one kind of income:
@@ -39,7 +39,7 @@ What the interest-versus-dividend character changes is presentation, not tax dol
 - *Schedule 7*: does not split the two; both land in the foreign-income line (Box 019) and feed aggregate investment income identically, so the worksheet row you pick there does not change the tax result
 
 
-## Determining whether Box 25 is interest or dividends
+## Determining Whether Box 25 Is Interest or Dividends
 
 The slip won't tell you, so classify by what the holding actually pays:
 - The fund's holdings are the first clue: a currency or cash ETF earns *interest*; a foreign-bond ETF earns *interest*; a foreign-equity ETF earns *dividends*
@@ -50,7 +50,7 @@ The slip won't tell you, so classify by what the holding actually pays:
 Apply the classification consistently year to year.  
 
 
-## Worked example - DLR.U (US-dollar cash ETF)
+## Worked Example - DLR.U (US-Dollar Cash ETF)
 
 DLR.U (Global X US Dollar Currency ETF) holds US dollars and earns interest on that cash.  
 The sponsor characterizes the distribution as net investment income excluding dividends.  
@@ -66,7 +66,7 @@ The fuller flow (a Box 34 amount, and the foreign tax credit) appears with forei
 T3 amounts are reported in Canadian dollars; if you also track the USD distributions during the year, convert them at the payment-date rate (see [Foreign Currency](../../Bookkeeping/Foreign-Currency.md)).  
 
 
-## Relevant general ledger accounts
+## Relevant General Ledger Accounts
 
 For the broader ledger tree, see [T3](T3.md).  
 
@@ -98,7 +98,7 @@ In the ledger tree both 8091 and 8097 sit under the 8090 parent, but when filing
 GIFI codes: https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4088/general-index-financial-information-gifi.html  
 
 
-## Ledger entries
+## Ledger Entries
 
 During the year the distribution can be parked in `TBD investment distributions` (8090-3) and reclassified when the T3 arrives (see [T3](T3.md)).  
 
@@ -112,7 +112,7 @@ When the T3 confirms the Box 25 amount, post the net cash, the foreign tax, and 
 If there is no Box 34 (no withholding, as with DLR.U), the net debit equals the gross and the `Withholding taxes` line is omitted.  
 
 
-## T2 schedule mapping
+## T2 Schedule Mapping
 
 On Schedule 7 (S7), the Box 25 amount is income from property that belongs in two places, and the distinction matters:
 - Part 1, Box 032: total income from property (worldwide), which feeds aggregate investment income (AII) to line 440 of the T2 return

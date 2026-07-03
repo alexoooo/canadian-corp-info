@@ -25,7 +25,7 @@ Limitations:
 - The following is my understanding as of 2026
 
 
-## Income flow
+## Income Flow
 
 How corporate income is bucketed, parked in dividend pools or retained earnings, and paid out to the shareholder.  
 Terms in the diagram (*ABI*, *AII*, *GRIP*, *CDA*, *ERDTOH*, *NERDTOH*, *Part IV tax*) are defined in the sections below.  
@@ -101,7 +101,7 @@ Inputs: T-slips received from brokers and trusts (T3, T5, T5008).
 Outputs: T-slips issued by the corp to the shareholder: T4 (salary), T5 (eligible or non-eligible dividend), T2054 (capital-dividend election form; no T5).
 
 
-## What is corporate tax
+## What Is Corporate Tax
 
 A corporation is a separate legal and tax entity from its shareholders.  
 Corporations can be used to limit liability and for tax planning.  
@@ -135,7 +135,7 @@ Sales tax (GST/HST, plus QST in Quebec) is handled separately:
 Most owner-managers prepare the T2 using dedicated software (FutureTax, TaxCycle, ProFile) rather than the paper forms.  
 
 
-## Bookkeeping, the general ledger, and GIFI
+## Bookkeeping, the General Ledger, and GIFI
 
 Every line on the T2 traces back to the corporation's *books*: the running record of every financial transaction made during the year.  
 For a small CCPC, books are typically kept in accounting software (GnuCash, QuickBooks, Wave, Xero) or a structured spreadsheet, and reviewed annually before the T2 is filed.  
@@ -183,7 +183,7 @@ See [T3.md](../Investments/T3/T3.md), [T5008.md](../Investments/T5008/T5008.md),
 It is recommended to keep books current during the year (monthly is typical); reconstructing past months of activity at year-end is difficult.  
 
 
-## Types of accounts
+## Types of Accounts
 
 The word *account* is used in several different senses across this guide:
 - *Ledger account*: a row in the corporation's own chart of accounts (e.g. *Cash*, *Accounts receivable*, *Investment revenue*); see the bookkeeping section above
@@ -197,7 +197,7 @@ The word *account* is used in several different senses across this guide:
   - Common accounts: RC for corporate income tax, RT for GST/HST, RP for payroll, RZ for information returns (e.g. T5)
 
 
-## CCPC status
+## CCPC Status
 
 A *Canadian-Controlled Private Corporation* (CCPC) is a corporation that is:
 - Incorporated in Canada
@@ -216,7 +216,7 @@ Examples of things that can change the determination of CCPC status:
 - Certain share arrangements (e.g. options or shareholder agreements that give effective control to a non-resident or public corporation)
 
 
-## Active vs investment income
+## Active vs Investment Income
 
 Corporate income for a CCPC sorts into two broad buckets, each taxed differently.  
 The combined rates below use Ontario as an example for illustration. The federal portion is the same nationally, but provincial rates vary; see [CRA's corporation tax rates page](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/corporations/corporation-tax-rates.html) for current rates by province.
@@ -259,7 +259,7 @@ The main T-slips a corporation receives for investment income reporting:
 For the gross-up + DTC mechanism, the per-flavour breakdown, and the corp-side preference order, see [Tax-Integration.md](Tax-Integration.md).  
 
 
-## Paying yourself: salary vs dividends
+## Paying Yourself: Salary vs Dividends
 
 A CCPC owner-manager has two main ways to take money out of the corporation: *salary* (employment income) or *dividends* (a distribution to the shareholder).  
 
@@ -298,7 +298,7 @@ The *TOSI* rules under ITA [s.120.4](https://laws-lois.justice.gc.ca/eng/acts/I-
 For dividend mechanics, see [Dividends](../Paying-Yourself/Dividends/Dividends.md); for payroll, see [Payroll](../Paying-Yourself/Payroll.md).  
 
 
-## Personal Service Business classification risk
+## Personal Service Business Classification Risk
 
 A *Personal Service Business* (PSB) is a CCPC whose owner-operator would reasonably be considered an *employee* of the client but for the corporation in between.  
 A CCPC classified as a PSB is less tax-efficient than a regular CCPC or the same individual operating as an unincorporated *sole proprietor*.
@@ -339,7 +339,7 @@ PSB risk is then mostly managed through how the work is actually structured:
 The more factors that point to an independent business rather than a disguised employment relationship, the lower the PSB risk.  
 
 
-## HST and other consumption taxes
+## HST and Other Consumption Taxes
 
 The *Goods and Services Tax / Harmonized Sales Tax* (GST/HST) regime is a consumption tax on most goods and services sold in Canada.  
 It's administered by CRA under the *[Excise Tax Act](https://laws-lois.justice.gc.ca/eng/acts/E-15/)* rather than the *Income Tax Act*, and is filed separately from corporate income tax.  
@@ -376,7 +376,7 @@ It's a separate filing: separate account number, separate set of mechanics.
 For the practical workflow, see [HST.md](../Operations/HST.md).  
 
 
-## Filing deadlines and instalments
+## Filing Deadlines and Instalments
 
 These are the dates an owner-manager has to track.  
 Missing them triggers interest, penalties, or both, including failure-to-file penalties on slips that apply even when no tax is owed.  
@@ -407,7 +407,7 @@ Missing them triggers interest, penalties, or both, including failure-to-file pe
 - Missing the annual return repeatedly can lead to administrative dissolution
 
 
-## Sources of law
+## Sources of Law
 
 When a question gets specific, several layers of authority can apply:
 

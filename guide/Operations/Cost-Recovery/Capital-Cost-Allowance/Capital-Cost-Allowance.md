@@ -26,14 +26,14 @@ Limitations:
 - The following is my understanding as of 2026
 
 
-## Sub-pages
+## Sub-Pages
 
 - [CCA Classification](CCA-Classification.md): which class a purchase goes in, the classes-and-rates table, and commonly confusing cases
 - [CCA Worked examples](CCA-Examples.md): three multi-year walkthroughs with ledger entries and the matching T2 schedules
 - [CCA Tracking](CCA-Tracking.md): the asset register and the exact per-class formulas for a spreadsheet
 
 
-## What CCA is
+## What CCA Is
 
 *Capital Cost Allowance* is the deduction allowed under ITA [s.20(1)(a)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-20.html) for the wear-and-tear of depreciable property used to earn business income.  
 Accounting depreciation booked under your basis of accounting is not deductible (ITA [s.18(1)(b)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-18.html)); the books add it back on T2 Schedule 1 and substitute the CCA figure computed on T2 Schedule 8.  
@@ -48,7 +48,7 @@ The statutory framework:
 For the class list and how to pick a class, see [CCA Classification](CCA-Classification.md).
 
 
-## Pool mechanics (UCC)
+## Pool Mechanics (UCC)
 
 For a class, the *undepreciated capital cost* (UCC) is the running balance of pooled cost minus all CCA previously claimed and minus the cost-side of dispositions (ITA [s.13(21)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-13.html)).  
 Each class has its own pool.  
@@ -96,7 +96,7 @@ flowchart TB
 For the exact spreadsheet formulas behind this diagram, see [CCA Tracking](CCA-Tracking.md).
 
 
-## Half-year rule and AIIP
+## Half-Year Rule and AIIP
 
 The *half-year rule* (Regulation 1100(2)) lets you claim CCA on only half the net additions in the year of acquisition.  
 Net additions = (cost of additions) − (lesser of proceeds, cost for dispositions).  
@@ -126,7 +126,7 @@ It applied only to CCPC-acquired property available for use before 2024 and is n
 A Dec 2024 amendment removed the separate short-fiscal-year proration of the *deduction* for past DIEP claims, retroactive to fiscal years ending on or after Apr 19 2021; the $1.5 million immediate-expensing limit itself still prorates for a short tax year under Regulation 1104(3.5)(b).
 
 
-## Available-for-use rule
+## Available-for-Use Rule
 
 CCA cannot be claimed on a class addition until the property is *available for use* (ITA [s.13(26)–(32)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-13.html)).  
 The cost does not enter the pool until the property is available for use; the half-year-adjusted base then feeds CCA once it is in service.
@@ -144,7 +144,7 @@ For buildings (s.13(28)), the earliest of:
 See [Cost Recovery — Available for use](../Cost-Recovery.md#available-for-use) for the cross-channel framing, including how the same trigger applies to a CIP balance transferring into a CCA class.
 
 
-## Acquisitions and dispositions
+## Acquisitions and Dispositions
 
 What goes into capital cost (the *A* element in the s.13(21) UCC formula):
 - Purchase price
@@ -166,7 +166,7 @@ Dispositions:
 - Replacement-property rules (ITA [s.44](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-44.html), s.13(4)) can defer recapture; out of scope here, but relevant for involuntary dispositions (fire, theft, expropriation)
 
 
-## Recapture and terminal loss
+## Recapture and Terminal Loss
 
 *Recapture* (ITA [s.13(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-13.html)): if closing UCC is negative at year-end (cumulative proceeds exceeded the remaining UCC), the negative balance is included in income for the year.  
 UCC is reset to zero.  
@@ -193,7 +193,7 @@ No terminal loss when a *similar* property is acquired within 24 months for the 
 It is not a general bar on claiming a terminal loss after replacing a same-class asset.
 
 
-## Short fiscal year
+## Short Fiscal Year
 
 For a tax year shorter than 365 days (incorporation year, year of dissolution, fiscal-year change), CCA is prorated under Regulation 1100(3):
 - Maximum CCA × (days in tax year / 365)
@@ -235,7 +235,7 @@ The opposite move can also pay:
 - Worth it only when those prior years had tax to recover; a startup with no profitable history defers instead, leaving the deduction in UCC
 
 
-## Capitalize-vs-expense thresholds
+## Capitalize-vs-Expense Thresholds
 
 Several thresholds shape what gets onto Schedule 8 in the first place:
 - *De minimis bookkeeping policy*: many small CCPCs set a $500 (sometimes $1,000 or $2,500) capitalization floor in their own policy; below it, items are expensed regardless of useful life
@@ -274,7 +274,7 @@ Out of scope here:
 - GAAP/ASPE statement presentation, where capitalization affects reported assets and earnings
 
 
-## Bookkeeping and T2 schedules
+## Bookkeeping and T2 Schedules
 
 In the books (accrual + tax basis, per [Small Business Tax Overview](../../../Overview/Small-Business-Tax.md)):
 - At acquisition: debit the fixed-asset GIFI account (`Computer equipment` 1774, `Furniture and fixtures` 1787, `Motor vehicles` 1742, `Machinery and equipment` 1740, `Goodwill / intangibles` 2010-series, with goodwill at 2012); credit `Cash` or `Accounts payable`
@@ -289,7 +289,7 @@ T2 schedules involved with CCA:
 - *Schedule 125* (S125): income statement, with amortization expense on GIFI 8670
 
 
-## Edge cases
+## Edge Cases
 
 - *Personal-use proportion* on a vehicle: keep a kilometre log; the personal-use portion of CCA, fuel, insurance, and other vehicle costs is a shareholder benefit under ITA s.6 / s.15 and must be added to the shareholder's personal income; see [Owner-corporation transactions](../../../Paying-Yourself/Owner-Corporation-Transactions.md) for the standby charge, operating cost benefit, and the personal-car allowance alternative
 - *Investment Tax Credit recapture*: ITCs claimed against capital cost reduce UCC in the next year (s.13(7.1)); relevant for SR&ED claimants

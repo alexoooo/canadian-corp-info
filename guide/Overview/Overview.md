@@ -17,7 +17,7 @@ Limitations:
 - The following is my understanding as of 2026
 
 
-## What this covers
+## What This Covers
 
 The overview pages frame the whole guide before you commit to a topic. A CCPC is a separate taxpayer that files its own return, pays corporate tax, and then passes after-tax money to its owner; almost every other page is a detail of that arc. Two pages carry the framing:
 
@@ -29,7 +29,7 @@ The overview pages frame the whole guide before you commit to a topic. A CCPC is
 The [glossary](Glossary.md) defines the acronyms (ACB, CDA, GRIP, ERDTOH, NERDTOH, SBD) each cross-referenced to its canonical page, and [further reading](Further-Reading.md) points at adjacent topics the guide does not work through.
 
 
-## Sub-pages
+## Sub-Pages
 
 This page is a hub; these are the sub-pages:
 - [Small-Business-Tax](Small-Business-Tax.md): the primer — corporate tax rates, the SBD, active versus investment income, and the filing calendar

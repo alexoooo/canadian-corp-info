@@ -20,7 +20,7 @@ Limitations:
 - The following is my understanding as of 2026
 
 
-## Accrual income and the receivable
+## Accrual Income and the Receivable
 
 Income is recognized when it is earned (ITA [s.9](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-9.html)); an amount receivable for work billed is included even though uncollected (ITA [s.12(1)(b)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-12.html)).  
 HST follows its own clock — generally the earlier of the invoice date and payment (see [HST — When tax becomes payable](HST.md#when-tax-becomes-payable)).  
@@ -37,7 +37,7 @@ Collection reverses the receivable: Dr `Cash` (`1001`) 5,650, Cr `Accounts recei
 The gap between these two entries is where this page lives: review the open receivables at every year-end (an *aging* by invoice date) and decide which are current, doubtful, or bad.  
 
 
-## Doubtful accounts and the reserve
+## Doubtful Accounts and the Reserve
 
 A debt that is *doubtful* — collection is uncertain but not yet hopeless — supports a reserve (ITA [s.20(1)(l)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-20.html)):
 - Book it through the contra-asset `Allowance for doubtful accounts` (`1061`): Dr `Bad debt expense` (`8590`), Cr `1061`
@@ -51,7 +51,7 @@ The reserve is annual, not permanent:
 For a corporation with a handful of clients, the reserve is often skipped: an invoice tends to move from current to bad in one step, and the write-off below is the only entry ever needed.  
 
 
-## Writing off a bad debt
+## Writing Off a Bad Debt
 
 A debt is written off when it is *established to have become bad* in the year (ITA [s.20(1)(p)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-20.html)):
 - Becoming bad is a question of fact: the client is insolvent, unreachable, or has refused to pay and further collection effort is not worth its cost
@@ -70,7 +70,7 @@ If the debt had been through the allowance first, the write-off debits `1061` in
 Partial write-offs are fine: write off the portion established to be bad and keep the rest receivable.  
 
 
-## HST bad-debt adjustment
+## HST Bad-Debt Adjustment
 
 The HST remitted on the unpaid invoice is recovered under ETA [s.231](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-231.html) (see [HST — Edge cases](HST.md#edge-cases)):
 - Conditions: the tax was reported and remitted on a prior return, the debt has been written off in the books, and the sale was to an arm's-length recipient
@@ -81,7 +81,7 @@ The HST remitted on the unpaid invoice is recovered under ETA [s.231](https://la
 The income-tax write-off and the HST adjustment travel together: both key off the same books-and-records write-off, so make the ledger entry, then claim both from it.  
 
 
-## Recovering a written-off debt
+## Recovering a Written-Off Debt
 
 Money that arrives after the write-off is income again:
 - The recovered portion is included in the year received (ITA [s.12(1)(i)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-12.html)), booked to `Bad debt recoveries` (`8250`)

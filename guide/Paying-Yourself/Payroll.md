@@ -26,7 +26,7 @@ Limitations:
 - The following is my understanding as of 2026
 
 
-## The payroll cycle
+## The Payroll Cycle
 
 Each pay splits the gross salary three ways: net cash to the owner, withholdings parked in a liability account, and the full gross (plus the employer CPP half) as a deductible expense.  
 The withholdings leave for CRA by the 15th of the following month; the T4 reconciles the whole year in February.  
@@ -55,7 +55,7 @@ The pay run itself needs no payroll software at this scale:
 - Post the journal entry (see [Pay-run bookkeeping](#pay-run-bookkeeping))
 
 
-## RP program account
+## RP Program Account
 
 Payroll runs on an `RP` program account under the corporation's business number (format `…RP0001`).  
 Register through CRA My Business Account before the first remittance is due; the account can be opened at the same time as the RC corporate-tax account or added later.  
@@ -64,7 +64,7 @@ Withholding is triggered by *paying* salary, not by accruing it (ITA [s.153(1)](
 A corporation that pays only dividends has no payroll and needs no RP account; see [Dividends](Dividends/Dividends.md).  
 
 
-## Source deductions
+## Source Deductions
 
 Three amounts are potentially withheld from each pay; for a single owner-manager only the first two apply.  
 
@@ -88,7 +88,7 @@ The withheld amounts are the employee's money held in trust for CRA.
 Remitting them late or not at all is treated more severely than a late corporate-tax balance (see the penalty note below).  
 
 
-## Remittance schedule and PD7A
+## Remittance Schedule and PD7A
 
 - *What*: the income tax withheld, plus both CPP halves (and both EI shares, when EI applies), for all pays in the period
 - *When*: a *regular* remitter pays by the 15th of the month following the month the salary was paid (Income Tax Regulations [s.108(1)](https://laws-lois.justice.gc.ca/eng/regulations/C.R.C.,_c._945/section-108.html))
@@ -99,7 +99,7 @@ Remitting them late or not at all is treated more severely than a late corporate
 Late or missing remittances draw a graduated penalty of 3% to 10% of the amount (ITA [s.227(9)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-227.html)), plus interest.  
 
 
-## Pay-run bookkeeping
+## Pay-Run Bookkeeping
 
 Two accounts carry the whole cycle:
 - `Salaries and wages` (`9060`): expense; gross salary plus the employer CPP half
@@ -129,7 +129,7 @@ The `2627` balance returns to zero after each on-time remittance; a residual bal
 For the account definitions and the chart of accounts, see [Ledger and Accounts](../Bookkeeping/Ledger-And-Accounts.md).  
 
 
-## T4 slip and T4 Summary
+## T4 Slip and T4 Summary
 
 After each calendar year the corporation issues a *T4* slip to the employee and files it with a *T4 Summary* by Feb 28.  
 The Summary totals all slips and reconciles them against the year's remittances; a shortfall is payable with the filing.  
@@ -155,7 +155,7 @@ Filing:
 - The late-filing penalty applies per return, not per slip, even when no tax is owing (see [Filing deadlines](../Overview/Small-Business-Tax.md#filing-deadlines-and-instalments))
 
 
-## Owner-manager remuneration
+## Owner-Manager Remuneration
 
 *Reasonableness*:
 - Deductions must be reasonable in the circumstances (ITA [s.67](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-67.html))

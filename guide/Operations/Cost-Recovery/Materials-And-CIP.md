@@ -24,14 +24,14 @@ Limitations:
 - The following is my understanding as of 2026
 
 
-## In this folder
+## In This Folder
 
 - [Cost Recovery](Cost-Recovery.md): overview of the three cost-recovery channels, concept map, and shared acquisition-cost / available-for-use / change-of-use rules
 - [Inventory](Inventory-And-COGS.md): goods held for resale
 - [Capital Cost Allowance](Capital-Cost-Allowance/Capital-Cost-Allowance.md): depreciable property after the CIP transfer
 
 
-## Two destinations for materials
+## Two Destinations for Materials
 
 Purchased materials follow one of two paths in a CCPC:
 - *Materials held for resale*, or *to be combined into a product for resale*: inventory; cost flows through COGS at sale; no amortization
@@ -64,7 +64,7 @@ Change of use, finished item from the resale shelf into own use:
 See [Capital Cost Allowance](Capital-Cost-Allowance/Capital-Cost-Allowance.md) for the half-year rule, UCC mechanics, recapture, and terminal loss.
 
 
-## Bookkeeping and T2 schedules
+## Bookkeeping and T2 Schedules
 
 Self-constructed-asset materials are *not* in any of the 1120-series GIFI inventory codes.  
 They sit in an asset account that rolls up to a fixed-asset GIFI code, typically a `Construction in progress` sub-account presented within the relevant Schedule 100 fixed-asset line until completion.
@@ -84,7 +84,7 @@ After transfer:
 - Schedule 8 row for that class begins amortizing per the standard CCA mechanics; see [Capital Cost Allowance](Capital-Cost-Allowance/Capital-Cost-Allowance.md)
 
 
-## CIP flow
+## CIP Flow
 
 ```mermaid
 flowchart TB
@@ -104,7 +104,7 @@ flowchart TB
 ```
 
 
-## Multiple builds from a shared materials pool
+## Multiple Builds from a Shared Materials Pool
 
 The single-build picture above is the base case: materials bought straight into one CIP balance.  
 A corp building several fixed assets at once from a common stock of materials splits it into three layers.
@@ -159,11 +159,11 @@ flowchart TB
 ```
 
 
-## Worked examples
+## Worked Examples
 
 Two walkthroughs: a single self-constructed asset, then several builds drawing from a shared materials pool.
 
-### Example 1: self-constructed shed
+### Example 1: Self-Constructed Shed
 
 Setup: a small commercial-services CCPC builds a wood-frame storage shed on its rented business property to house tools and equipment.  
 The shed has no support below ground level (skids on gravel pad), placing it in CCA Class 6 (10%, declining).  
@@ -229,7 +229,7 @@ Contrast with [Inventory](Inventory-And-COGS.md):
 - The same dollars as resale inventory would have flowed through COGS within a year or two
 - As own-use construction inputs, the same dollars flow through CCA on the Class 6 geometric tail (10% declining; ~96% of cost expensed by year 30)
 
-### Example 2: multiple builds from a shared materials pool
+### Example 2: Multiple Builds from a Shared Materials Pool
 
 Setup: a metal-fabrication services CCPC builds two custom machines for its own workshop from a shared stock of steel plate.  
 Both machines are destined for CCA Class 8 (20%, declining), the catch-all for equipment.  
@@ -327,7 +327,7 @@ Build B's pre-completion costs produced no deduction in 2026; the trigger was av
 On the schedules: no cost-of-sales entries in either year (never inventory); Schedule 8 carries the Class 8 pool above; Schedule 1 reconciles book amortization to CCA if the corp keeps full accounting books rather than a tax basis (see [Capital Cost Allowance](Capital-Cost-Allowance/Capital-Cost-Allowance.md)).
 
 
-## Out of scope
+## Out of Scope
 
 - Capitalizable cost build-up beyond direct materials and contractor labour: factory-overhead allocation, employee labour on the project, equipment rental, site preparation
 - Soft costs during construction: interest under ITA s.18(3.1), property taxes on the construction site, legal and accounting fees attributable to a capital project

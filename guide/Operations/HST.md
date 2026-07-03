@@ -58,7 +58,7 @@ How to register:
 - Form *RC1 Request for a Business Number*: paper fallback
 
 
-## Rates and place of supply
+## Rates and Place of Supply
 
 Rate by province as of 2026:
 - *Ontario*: 13% HST
@@ -78,7 +78,7 @@ PST and QST are not HST:
 - QST runs alongside GST under a parallel ITC-equivalent regime called *ITR* (input tax refund); a Quebec-based corp tracks GST and QST separately and files them on a combined Revenu Québec return
 
 
-## Program account and CRA mechanics
+## Program Account and CRA Mechanics
 
 GST/HST sits under the `RT` program account, distinct from `RC` for corporate income tax and `RP` for payroll.  
 A typical *Business Number* (BN) takes the shape `123456789RT0001`: nine-digit BN, two-letter program identifier, four-digit reference suffix.  
@@ -92,7 +92,7 @@ The standard filing surface:
 - Remittances of $10,000 or more must be paid electronically (ETA [s.278(3)](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-278.html))
 
 
-## Reporting periods and deadlines
+## Reporting Periods and Deadlines
 
 Reporting period is assigned automatically based on prior-year *taxable supplies* (ETA [s.245](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-245.html)):
 - ≤ $1.5M: *annual* reporting period (default for most owner-managed CCPCs)
@@ -110,7 +110,7 @@ Filing and remittance deadlines:
 For the full overview of CCPC filing-deadline cadence including the T2, T4/T5 slips, and payroll source deductions alongside GST/HST, see [Small Business Tax Overview](../Overview/Small-Business-Tax.md#filing-deadlines-and-instalments).
 
 
-## When tax becomes payable
+## When Tax Becomes Payable
 
 The rate and place-of-supply rules fix *how much* HST applies; a separate rule fixes *when* the liability arises: the *tax point*.  
 HST is payable on the earlier of the day the consideration is paid and the day it becomes *due* (ETA [s.168(1)](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-168.html)).  
@@ -127,7 +127,7 @@ The undue-delay rule (s.152(1)(b)) stops a registrant from deferring HST by sitt
 This tax point dates every entry in the bookkeeping section below: `HST collected` is recognized in the reporting period that contains the tax point, not when the cash arrives.  
 For a foreign-currency supply, the same tax-point date sets the rate used to convert the HST to CAD (ETA [s.159](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-159.html)); see [Foreign Currency](../Bookkeeping/Foreign-Currency.md#taxable-usd-supplies-and-hst).  
 
-### Year-end straddle: income vs HST timing
+### Year-End Straddle: Income vs HST Timing
 
 Income tax and HST run on different clocks, so a supply near year-end can fall in two different periods.  
 Corporate income is recognized when *earned* (when the amount becomes receivable under ITA [s.9](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-9.html) and [s.12(1)(b)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-12.html)), which for completed services is when the work is done.  
@@ -155,7 +155,7 @@ There is no dedicated GIFI line for unbilled service revenue: map it to *Other c
 Manufacturing WIP (1125) is a different item — partially completed goods, not earned-but-unbilled service fees.  
 
 
-## Bookkeeping accounts
+## Bookkeeping Accounts
 
 Two ledger accounts run alongside the corp's commercial activity through each reporting period:
 - `HST receivable` (asset): every input tax credit (ITC) the corp accrues; closed out against `HST payable` at the period-end net-tax calculation
@@ -186,7 +186,7 @@ Under the *Quick Method* the posting pattern differs:
 GIFI rollup of the two control accounts is verified against CRA RC4088 by the maintainer before sign-off; this draft leaves the specific rollup line as a TODO.
 
 
-## Regular method and input tax credits
+## Regular Method and Input Tax Credits
 
 Under the *regular method*, net tax for a reporting period is computed on the GST34 return as:
 - Line 101: total revenue from taxable supplies (sales, including zero-rated, excluding HST charged)
@@ -259,7 +259,7 @@ Income-tax interaction:
 - Quick-Method ITCs that are still claimed (capital purchases, imports) follow the standard regular-method posting
 
 
-## Zero-rated supplies
+## Zero-Rated Supplies
 
 *Zero-rated* supplies are *taxable supplies* at 0% (ETA Schedule VI).  
 The corp charges 0% HST on the sale, the sale still counts toward the $30,000 small-supplier threshold, and ITCs on inputs that support the zero-rated supply remain fully claimable.  
@@ -293,7 +293,7 @@ Imports in foreign currency:
 - Book the ITC at that figure; do not retranslate at the corp's own FX rate
 
 
-## Capital purchases
+## Capital Purchases
 
 A capital purchase by an HST-registered corp follows one of two paths:
 - *Business use over 50% on commercial-activity property*: claim the full ITC on the HST portion at acquisition; capitalize the net cost (excluding HST) as the *capital cost* for the appropriate CCA class
@@ -309,7 +309,7 @@ A change in use (s.199(3) / s.200(2)) triggers a deemed ITC adjustment in the ye
 For the per-class CCA mechanics that consume the resulting net capital cost, see [Capital Cost Allowance](Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md).  
 
 
-## GST/HST flow
+## GST/HST Flow
 
 ```mermaid
 flowchart TB
@@ -343,12 +343,12 @@ flowchart TB
 ```
 
 
-## Worked examples
+## Worked Examples
 
 Two single-year walkthroughs that share the same revenue and input profile, comparing the regular method and the Quick Method side by side.  
 Calendar fiscal year 2026, Ontario-resident CCPC, annual reporting period, all customers in Ontario, opening `HST receivable` and `HST collected` balances of zero.  
 
-### Example 1: regular method, HST-registered Ontario service CCPC
+### Example 1: Regular Method, HST-Registered Ontario Service CCPC
 
 Setup: single-shareholder IT consulting CCPC.  
 Three invoices issued through the year; modest operating inputs.  
@@ -406,7 +406,7 @@ On 2027-03-31 the payment clears:
 - Debit `HST remittance payable` = $5,018
 - Credit `Cash` = $5,018
 
-### Example 2: Quick Method, same setup
+### Example 2: Quick Method, Same Setup
 
 Same three invoices and same input bills; the corp filed a *GST74* election effective 2026-01-01 to use the Quick Method.  
 
@@ -452,7 +452,7 @@ For a consulting CCPC with this input profile, the Quick Method wins.
 The break-even point against the regular method on Ontario services is roughly the ITC level at which operating-input HST equals the kept spread; for $45,000 of Ontario service revenue, that break-even is around $1,675 of recoverable HST on operating inputs (about $13,000 of HST-eligible operating spending), well above what most consulting CCPCs actually run.  
 
 
-## Edge cases
+## Edge Cases
 
 - *Late registration*: if the corp crossed $30,000 in a past quarter and never registered, register now with the effective date set to the day after the threshold was crossed; the corp owes HST on every taxable supply made since that date and must remit it even if it was not charged to the customer at the time (ETA s.221); collecting it retroactively from customers is usually impractical, so the unbilled HST becomes a cost
 - *Multiple commercial activities*: a corp running two distinct lines of business under one BN can keep them under a single `RT0001` account or open a separate `RT0002` etc. (ETA s.239); separate accounts allow different reporting periods or different Quick Method statuses per branch

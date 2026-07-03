@@ -1,6 +1,6 @@
 STATUS: AI GENERATED, REVIEW IN PROGRESS
 
-# CCA asset classification
+# CCA Asset Classification
 
 **Who this is for**: owners of a Canadian-controlled private corporation (CCPC) deciding which CCA class a purchase belongs in.  
 
@@ -9,7 +9,7 @@ This page covers the choice of class; for how the pool then depreciates (UCC, th
 Scope and limitations are on the [hub](Capital-Cost-Allowance.md).  
 
 
-## How to classify an asset
+## How to Classify an Asset
 
 Work the decision in order:
 - *Is it depreciable property at all?* Inventory held for resale, and a service or licence consumed within a year (SaaS, a monthly subscription), are not capital; they are cost of sales or an operating expense. See [Expense Classification](../../../Bookkeeping/Expense-Classification.md) and [Cost Recovery](../Cost-Recovery.md)
@@ -21,7 +21,7 @@ Work the decision in order:
 - *Bundled vs standalone:* systems software bundled with hardware follows the hardware into its class; standalone application software is its own Class 12
 
 
-## Classes and rates
+## Classes and Rates
 
 The classes an owner-managed CCPC most often uses:
 
@@ -52,7 +52,7 @@ Related classes (not covered in depth here):
 CRA's [Classes of depreciable property](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/report-business-income-expenses/claiming-capital-cost-allowance/classes-depreciable-property.html) page has the full list; the table above covers what an owner-managed CCPC most often touches.
 
 
-## Commonly confusing cases
+## Commonly Confusing Cases
 
 - *Software has three homes*: systems software bundled with hardware → the hardware's class (Class 50 for a computer); standalone application software bought outright → Class 12 (100%, but the half-year rule applies to application software); a subscription or licence of one year or less (SaaS) → not capital at all, an operating expense (`9150`); see [Expense Classification](../../../Bookkeeping/Expense-Classification.md)
 - *Monitors, docks, and other peripherals*: a peripheral bought and used as part of the computer → Class 50; a durable standalone item with no better class → Class 8. Pick a convention and apply it consistently
@@ -66,11 +66,11 @@ CRA's [Classes of depreciable property](https://www.canada.ca/en/revenue-agency/
 - *GIFI line for a wharf or dock*: the cost goes to `1906` Wharves (the line the GIFI groups with docks, float walks, and marinas), the contra to `1907`, and the year's amortization to `8670`; the line is the same whether the CCA class is 3 or 6, so the GIFI presentation does not settle the CCA class
 
 
-## Worked classification cases
+## Worked Classification Cases
 
 Longer scenarios that walk a classification decision end to end with the full rationale; the one-line cases are under [Commonly confusing cases](#commonly-confusing-cases), and for the multi-year depreciation of a class once chosen see [CCA Worked examples](CCA-Examples.md).
 
-### Example 1: Small wooden dock <!-- [done] -->
+### Example 1: Small Wooden Dock <!-- [done] -->
 
 *Scenario*:
 - Waterfront-business CCPC builds a small wooden dock on poles for a few thousand dollars
@@ -104,7 +104,7 @@ Longer scenarios that walk a classification decision end to end with the full ra
 - For the asset register and the year-by-year pool, see [CCA Tracking](CCA-Tracking.md)
 
 
-### Example 2: Water well upgrade <!-- [done] -->
+### Example 2: Water Well Upgrade <!-- [done] -->
 
 *Scenario*:
 - A CCPC operating from a property that draws its own water replaces an old dug well with a modern drilled well for a few thousand dollars
@@ -142,7 +142,7 @@ Longer scenarios that walk a classification decision end to end with the full ra
 - For the asset register and the year-by-year pool, see [CCA Tracking](CCA-Tracking.md)
 
 
-## Special class rules
+## Special Class Rules
 
 - *Class 10.1*: each vehicle is a separate class; capped capital cost; no recapture or terminal loss; half-CCA on disposition (see [Recapture and terminal loss](Capital-Cost-Allowance.md#recapture-and-terminal-loss))
 - *Class 12 with half-year*: application software, films, dies, jigs, moulds, and the cutting or shaping part of a machine *are* subject to the half-year rule even though most of Class 12 is not

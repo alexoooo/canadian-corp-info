@@ -27,7 +27,7 @@ Pick the most specific line that fits, and use the same line for the same kind o
 Consistency matters more than the choice between two defensible lines.  
 
 
-## Capitalize or expense
+## Capitalize or Expense
 
 The first decision for any cost is whether it is consumed now or delivers an enduring benefit:
 
@@ -51,7 +51,7 @@ For how a capital cost is then deducted (CCA classes, the half-year rule, the Ac
 For what gets folded into the cost of an asset or inventory rather than expensed, see [Cost Recovery](../Operations/Cost-Recovery/Cost-Recovery.md).  
 
 
-## Operating-expense reference (Schedule 125)
+## Operating-Expense Reference (Schedule 125)
 
 The lines an owner-managed service or consulting CCPC reaches for, with what belongs on each.  
 Titles are from RC4088; the full index has many more.  
@@ -85,7 +85,7 @@ Placement notes:
 - *Other expenses*: use `9270` only when nothing more specific fits; a reviewer reads a large "Other" balance as miscoding.
 
 
-## Computer and software costs
+## Computer and Software Costs
 
 This is where owner-managers most often hesitate.  
 The split follows the capitalize-or-expense fork:
@@ -100,7 +100,7 @@ So a recurring software subscription — a month-to-month or annual SaaS — is 
 For the asset-side mechanics (Class 50, Class 12, the half-year rule, the AIIP), see [Capital Cost Allowance](../Operations/Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md).  
 
 
-## HST and the booked amount
+## HST and the Booked Amount
 
 The GIFI line a cost goes on never changes with the HST method; the *amount* booked to that line does.
 
@@ -122,7 +122,7 @@ Under the Quick Method the deductible expense is $1,130 instead of $1,000 — th
 For the method rules, eligibility, and the revenue-side mechanics, see [HST](../Operations/HST.md#quick-method).  
 
 
-## Cost of sales is separate
+## Cost of Sales Is Separate
 
 Costs that go directly into producing the goods or services sold are *cost of sales*, reported in a distinct Schedule 125 block (8300–8519: opening and closing inventory, purchases, direct wages, sub-contracts, freight-in) and rolled to `8518` Cost of sales.  
 They are not operating expenses.  

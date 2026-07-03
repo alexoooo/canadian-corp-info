@@ -18,7 +18,7 @@ Limitations:
 - The following is my understanding as of 2026
 
 
-## What this covers
+## What This Covers
 
 At year-end the year's activity is pulled together into the T2 corporate return, filed, paid, and then defended if the CRA asks. This group covers that end of the cycle.
 
@@ -29,7 +29,7 @@ At year-end the year's activity is pulled together into the T2 corporate return,
 - [Whole-dollar rounding](Whole-Dollar-Rounding.md) is the rounding convention applied consistently across the forms.
 
 
-## Sub-pages
+## Sub-Pages
 
 This page is a hub; these are the sub-pages:
 - [T2 Schedules](T2-Schedules.md): which schedule carries each activity onto the return

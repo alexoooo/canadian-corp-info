@@ -1,6 +1,6 @@
 STATUS: AI GENERATED, REVIEW IN PROGRESS
 
-# T2 reporting
+# T2 Reporting
 
 See parent document: [Dividends](Dividends.md)
 
@@ -13,14 +13,14 @@ Limitations:
 - The Opco-Holdco / connected-corporation structure is mentioned only briefly; the receiving side is in [T3](../../Investments/T3/T3.md)
 
 
-## T2 reporting
+## T2 Reporting
 
 Paying a dividend touches several T2 schedules beyond the bookkeeping entries in [Bookkeeping and information slips](Bookkeeping-And-Slips.md).  
 Most T2 software (FutureTax, TaxCycle) populates these automatically once the dividend amount and designation are entered.  
 Knowing which schedule reports what helps you sanity-check the result.  
 
 
-## Schedule 3 - dividends-paid section
+## Schedule 3 - Dividends-Paid Section
 
 Schedule 3 (S3 - *Dividends Received, Taxable Dividends Paid, and Part IV Tax Calculation*) is shared with the dividend-receiving side covered in [T3.md](../../Investments/T3/T3.md).  
 The dividends-paid side appears in Part 3 and Part 4 of the schedule:
@@ -45,7 +45,7 @@ For the receiving-side mechanics see [T3.md](../../Investments/T3/T3.md).
 The Opco-Holdco structure itself is out of scope for this page.  
 
 
-## Schedule 53 - GRIP calculation
+## Schedule 53 - GRIP Calculation
 
 Schedule 53 (S53 - *General Rate Income Pool (GRIP) Calculation*) tracks the running GRIP balance year over year.  
 See the [GRIP section in Dividends.md](Dividends.md#grip---capacity-for-eligible-dividends) for the addition formula and the conceptual treatment.  
@@ -57,7 +57,7 @@ Most T2 software auto-populates S53 from the general-rate active business income
 Verify that the closing balance matches expectations, especially in the first year you designate an eligible dividend.  
 
 
-## Schedule 55 - Part III.1 tax on excessive eligible dividend designations
+## Schedule 55 - Part III.1 Tax on Excessive Eligible Dividend Designations
 
 Schedule 55 (S55 - *Part III.1 Tax on Excessive Eligible Dividend Designations*) is filed only when the corporation designates more eligible dividends in the year than its GRIP balance can support.  
 The excess is an *excessive eligible dividend designation* (EEDD).  
@@ -76,7 +76,7 @@ For an owner-managed CCPC where the director and the shareholder are the same pe
 Verify the GRIP balance *before* designating, so the excess never arises.  
 
 
-## Dividend refund line on the T2
+## Dividend Refund Line on the T2
 
 The dividend refund calculated under ITA s.129(1) is reported on the T2 jacket as the *dividend refund for the year* (T2 line 784).  
 The refund is applied as a credit against Part I and Part IV tax payable for the year; any excess is paid out (or applied to instalments) when the T2 is assessed.  
@@ -84,7 +84,7 @@ The underlying ERDTOH and NERDTOH balances and the eligible/non-eligible split o
 For the receiving-side mechanics that fill ERDTOH/NERDTOH (Part IV tax on dividends received from other corporations), see [T3.md](../../Investments/T3/T3.md).  
 
 
-## Capital dividend election - Form T2054
+## Capital Dividend Election - Form T2054
 
 A capital dividend is reported on the capital-dividend line of Schedule 3 (per the S3 section above).  
 *In addition*, the corporation files Form T2054 (*Election for a Capital Dividend Under Subsection 83(2)*) with a certified copy of the directors' resolution, on or before the day the dividend becomes payable (or the first day any part is paid, if earlier).  

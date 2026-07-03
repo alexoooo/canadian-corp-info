@@ -20,7 +20,7 @@ Limitations:
 - The following is my understanding as of 2026
 
 
-## Interest deductibility
+## Interest Deductibility
 
 ITA [s.20(1)(c)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-20.html) allows interest on borrowed money used for the purpose of earning income from a business or property, under a legal obligation to pay it.  
 
@@ -36,7 +36,7 @@ Non-deductible interest worth knowing:
 Compound interest (interest on unpaid interest) is deductible only when actually paid, not when accrued (ITA [s.20(1)(d)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-20.html)).  
 
 
-## Lines of credit and term loans
+## Lines of Credit and Term Loans
 
 *Line of credit*:
 - Draws: Dr `Cash` (`1001`), Cr `Short-term debt` (`2701`); repayments reverse
@@ -57,7 +57,7 @@ First payment:
 - At year-end, reclassify the next twelve months' principal from `3140` to `2701` so the balance sheet splits current from long-term (a presentation entry; no tax effect)
 
 
-## Costs of borrowing
+## Costs of Borrowing
 
 Fees for arranging the financing are not interest and do not deduct outright (ITA [s.20(1)(e)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-20.html)):
 - Covered: arrangement and commitment fees, the lender's application fee, legal costs of the loan agreement, appraisal fees required by the lender
@@ -71,7 +71,7 @@ Recurring annual fees are the exception (ITA s.20(1)(e.1)):
 Example — a $1,500 arrangement fee on the term loan above deducts $300 a year for five years; the bank's $120 annual review fee deducts as paid.  
 
 
-## Interest paid to the owner
+## Interest Paid to the Owner
 
 An owner who has lent money in (`Due to shareholder`, `2780`) can charge the corporation interest; the base mechanics are in [Owner-corporation transactions — Owner lends to the corporation](../Paying-Yourself/Owner-Corporation-Transactions.md#owner-lends-to-the-corporation).  
 

@@ -1,6 +1,6 @@
 STATUS: AI GENERATED, REVIEW IN PROGRESS
 
-# Asset Versus Share Purchase
+# Asset vs Share Purchase
 
 See parent document: [Business Acquisition](Business-Acquisition.md)
 
@@ -20,7 +20,7 @@ Limitations:
 - The following is my understanding as of 2026
 
 
-## What you are buying
+## What You Are Buying
 
 The two structures buy different things:
 - *Asset purchase*: the buyer corporation buys specific assets of the business (equipment, inventory, goodwill, customer lists, sometimes real estate) and assumes only the liabilities it agrees to
@@ -30,7 +30,7 @@ A share purchase is only possible if the target is incorporated.
 An unincorporated business (a sole proprietorship or partnership) has no shares, so the only thing to buy is its assets.  
 
 
-## The buyer's perspective
+## The Buyer's Perspective
 
 The buyer usually prefers an asset purchase, for two reasons.  
 
@@ -56,7 +56,7 @@ Two more consequences turn on the structure rather than the buyer's preference:
 - An asset purchase into the buyer's existing corporation adds no second corporation, so it avoids this
 
 
-## The vendor's perspective
+## The Vendor's Perspective
 
 The vendor usually prefers a share sale, which is the mirror image.  
 
@@ -70,7 +70,7 @@ The vendor usually prefers a share sale, which is the mirror image.
 - It is the single biggest reason a vendor pushes for a share deal
 
 
-## The target's status
+## The Target's Status
 
 Putting the two perspectives together:
 - *Unincorporated target*: only assets exist to buy; the asset-purchase analysis applies, and the vendor reports the gains on their personal return

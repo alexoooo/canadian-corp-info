@@ -13,12 +13,12 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
 - Each step has its own page; this page is the map and adds no mechanics of its own
 
 Limitations:
-- Assumes buy-and-hold portfolio investing (ETFs, stocks, GICs) in an operating consulting corporation; frequent trading changes the character of gains and breaks several of these pages' assumptions (see [Capital versus Income Character](Capital-Vs-Income-Character.md))
+- Assumes buy-and-hold portfolio investing (ETFs, stocks, GICs) in an operating consulting corporation; frequent trading changes the character of gains and breaks several of these pages' assumptions (see [Capital vs Income Character](Capital-Vs-Income-Character.md))
 - Registered plans, real property, and holding-company structures are out of scope
 - The following is my understanding as of 2026
 
 
-## The investing cycle
+## The Investing Cycle
 
 ```mermaid
 flowchart TB
@@ -39,11 +39,11 @@ Two habits carry the whole cycle:
 - *Reconcile at slip season*: the T3, T5, and T5008 slips arriving in February and March must tie to the books and the ACB records before the T2 is prepared
 
 
-## Step by step
+## Step by Step
 
 | Step | What to handle | Page |
 |---|---|---|
-| Character | buy-and-hold produces capital gains; frequent trading turns gains into income and erases the CDA | [Capital versus Income Character](Capital-Vs-Income-Character.md) |
+| Character | buy-and-hold produces capital gains; frequent trading turns gains into income and erases the CDA | [Capital vs Income Character](Capital-Vs-Income-Character.md) |
 | Funding | investment income is taxed differently from active income, and too much of it can grind the small business deduction | [Active vs investment income](../Overview/Small-Business-Tax.md#active-vs-investment-income), [Tax Integration](../Overview/Tax-Integration.md) |
 | Buying | ACB per security, averaged across purchases | [Adjusted Cost Base](Adjusted-Cost-Base/Adjusted-Cost-Base.md), [ACB Tracking](Adjusted-Cost-Base/Adjusted-Cost-Base-Tracking.md) |
 | Buying in USD | convert every amount to CAD at the transaction-date rate | [Foreign Currency](../Bookkeeping/Foreign-Currency.md) |

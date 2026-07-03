@@ -15,7 +15,7 @@ Limitations:
 - The following is my understanding as of 2026
 
 
-## Meaning and tax treatment
+## Meaning and Tax Treatment
 
 A mutual fund corporation realizes capital gains inside the fund and flows them out by electing to pay a capital gains dividend.  
 Under ITA [s.131(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-131.html), the amount is deemed to be a capital gain of the shareholder from the disposition of capital property in the year.  
@@ -29,7 +29,7 @@ The label is misleading; in substance it is a capital gain:
 A capital gains dividend does not change the ACB of your fund shares; it is a current-year gain, not a return of capital.  
 
 
-## Three-way contrast
+## Three-Way Contrast
 
 Three slips can all put a capital gain on Schedule 6, and they are easy to confuse:
 
@@ -44,7 +44,7 @@ Three slips can all put a capital gain on Schedule 6, and they are easy to confu
 - For an actual sale of a holding, see [T5008](../T5008/T5008.md)
 
 
-## Relevant general ledger accounts
+## Relevant General Ledger Accounts
 
 For the broader ledger tree, see [T5](T5.md#relevant-general-ledger-accounts).  
 
@@ -68,7 +68,7 @@ Accounts typically involved in the Box 18 workflow:
 </table>
 
 
-## Ledger entries
+## Ledger Entries
 
 A capital gains dividend from a mutual fund corporation is normally paid in cash, so there is no phantom (non-cash) portion and no ACB adjustment (unlike a T3 Box 21 distribution).  
 
@@ -79,7 +79,7 @@ For the Box 18 amount:
 During the year the amount can be parked in `TBD investment distributions` (8090-3) and reclassified to `Capital gains dividends` (8211-3) once the T5 confirms the Box 18 figure.  
 
 
-## T2 schedule mapping
+## T2 Schedule Mapping
 
 Schedule 6 (S6 - Summary of Dispositions of Capital Property): report the full Box 18 amount as a capital gain.  
 - Use Part 1 (Shares), since a mutual fund corporation issues shares; like T3 Box 21, this is reported as a gain even though no disposition occurred

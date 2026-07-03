@@ -1,6 +1,6 @@
 STATUS: AI GENERATED, REVIEW IN PROGRESS
 
-# Dividend examples
+# Dividend Examples
 
 See parent document: [Dividends](Dividends.md)
 
@@ -13,7 +13,7 @@ Limitations:
 - Personal-side tax is shown only briefly for context; the corp-side workflow is the focus
 
 
-## Worked examples
+## Worked Examples
 
 The examples below use Ontario rates current as of the first half of 2026:
 - Federal SBD rate: 9%
@@ -33,7 +33,7 @@ Each example focuses on the corp-side workflow: declaration, journal entries, T2
 Personal-side tax is mentioned briefly for context.  
 
 
-### Example A - eligible dividend from general-rate active business income
+### Example A - Eligible Dividend from General-Rate Active Business Income
 
 Setup:
 - A CCPC with $700,000 of active business income in 2025: $500,000 at the combined SBD rate (12.2%) and $200,000 at the combined general rate (26.5%)
@@ -58,7 +58,7 @@ T2 (2026) schedule entries:
 Personal-side context: the shareholder reports $50,000 × 1.38 = $69,000 taxable on T1; federal DTC of $69,000 × 15.0198% ≈ $10,364; Ontario DTC of $69,000 × 10% = $6,900.  
 
 
-### Example B - non-eligible dividend from after-tax SBD-rate retained earnings
+### Example B - Non-Eligible Dividend from After-Tax SBD-Rate Retained Earnings
 
 Setup:
 - The CCPC has been operating entirely under the SBD limit since incorporation
@@ -81,7 +81,7 @@ T2 (2026) schedule entries:
 Personal-side context: shareholder reports $80,000 × 1.15 = $92,000 taxable on T1; federal DTC of $92,000 × 9.0301% ≈ $8,308; Ontario DTC of $92,000 × 2.9863% ≈ $2,747.  
 
 
-### Example C - year-end non-eligible dividend sized to recover NERDTOH (AII / passive-income path)
+### Example C - Year-End Non-Eligible Dividend Sized to Recover NERDTOH (AII / Passive-Income Path)
 
 Setup:
 - A CCPC with $200,000 of active business income in 2026 (under SBD; combined 12.2%)
@@ -130,7 +130,7 @@ The corporation has converted $12,266.67 of refundable Part I tax sitting in NER
 The shareholder receives $32,000 cash in January 2027 against a *Due to shareholder* balance set up on December 30, 2026, and reports the dividend on their 2026 T1.  
 
 
-### Example D - capital dividend election
+### Example D - Capital Dividend Election
 
 Setup:
 - The corporation realized a $20,000 net capital gain in 2026 (after offsetting prior losses)

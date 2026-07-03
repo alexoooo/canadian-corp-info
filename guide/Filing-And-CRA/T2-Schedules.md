@@ -20,7 +20,7 @@ Limitations:
 - The following is my understanding as of 2026
 
 
-## Return assembly
+## Return Assembly
 
 ```mermaid
 flowchart TB
@@ -47,7 +47,7 @@ Everything on the schedules is in whole dollars (see [Whole-dollar rounding](Who
 T2 software generates the schedule set from the data entered; the failure mode is not a mis-filed schedule but a missing one — income or an event the software was never told about.  
 
 
-## The T2 jacket
+## The T2 Jacket
 
 The jacket (form T2, nine pages) is the return proper; everything else attaches to it:
 - *Identification*: name, BN, year-end, the CCPC box, and the yes/no questions — including whether specified foreign property exceeded $100,000 (which commits the corporation to a [T1135](../Investments/T1135.md))
@@ -57,7 +57,7 @@ The jacket (form T2, nine pages) is the return proper; everything else attaches 
 - *Balance*: federal and Ontario tax, minus instalments, gives the balance due or refund (see [Filing deadlines and instalments](../Overview/Small-Business-Tax.md#filing-deadlines-and-instalments))
 
 
-## Every-year schedules
+## Every-Year Schedules
 
 Filed with essentially every return of an owner-managed CCPC:
 
@@ -83,7 +83,7 @@ For a single-owner corporation it is one row that never changes, but it is still
 Self-prepared statements are a legitimate answer for an owner-managed corporation; answer it accurately rather than aspirationally.  
 
 
-## Investment-income schedules
+## Investment-Income Schedules
 
 Triggered by the corporate investment account (see [Active vs investment income](../Overview/Small-Business-Tax.md#active-vs-investment-income)):
 
@@ -99,7 +99,7 @@ S7 does double duty: it computes the *aggregate investment income* that drives t
 The slip-to-schedule mapping (which T3/T5 box lands on which schedule) is diagrammed on [T5](../Investments/T5/T5.md#t5-boxes) and worked box-by-box on the T3 and T5 pages.  
 
 
-## Event-driven schedules
+## Event-Driven Schedules
 
 Filed in the years something happens:
 
@@ -125,7 +125,7 @@ Filed in the years something happens:
 A wind-up year files the same package one last time, plus the clearance machinery around it (see [Winding Down](../Corporate-Lifecycle/Winding-Down.md)).  
 
 
-## Ontario schedules
+## Ontario Schedules
 
 Ontario corporate tax has been administered by CRA within the T2 since 2009; there is no separate Ontario return:
 - *S500* (Ontario Corporation Tax Calculation): the Ontario rates and the Ontario small-business deduction; T2 software generates it for any corporation taxable in Ontario
@@ -133,7 +133,7 @@ Ontario corporate tax has been administered by CRA within the T2 since 2009; the
 - The old Ontario annual-return schedules (S546/S547) were retired in 2021: the corporate-registry annual return is now filed in the Ontario Business Registry, separate from the T2 (see [Starting Up — First-year clocks](../Corporate-Lifecycle/Starting-Up.md#first-year-clocks))
 
 
-## Rarely applicable schedules
+## Rarely Applicable Schedules
 
 One line each, so the names are recognizable when software or a checklist mentions them:
 
@@ -149,7 +149,7 @@ One line each, so the names are recognizable when software or a checklist mentio
 | S88 | Internet Business Activities | income earned from websites the corporation runs; a brochure site alone does not appear to trigger it |
 
 
-## Forms filed alongside the T2
+## Forms Filed Alongside the T2
 
 Not schedules, but part of the same season:
 - *T1135* (Foreign Income Verification Statement): its own return with its own penalty, due with the T2; see [T1135](../Investments/T1135.md)

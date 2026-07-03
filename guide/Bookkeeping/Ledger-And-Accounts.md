@@ -15,7 +15,7 @@ Limitations:
 - The following is my understanding as of 2026
 
 
-## The accounting equation
+## The Accounting Equation
 
 The whole system rests on one identity:
 
@@ -43,7 +43,7 @@ flowchart LR
 ```
 
 
-## Accounts and the five types
+## Accounts and the Five Types
 
 Every account in the chart of accounts is one of five types.  
 The type fixes which financial statement the account lands on and which side increases it:
@@ -61,7 +61,7 @@ Permanent versus temporary accounts:
 - *Temporary* (income-statement) accounts — revenue and expenses — start each year at zero; at year-end their net (the year's net income) is closed into retained earnings, and a declared dividend is closed the same way
 
 
-## Debits and credits
+## Debits and Credits
 
 Every entry has at least one *debit* (left side) and one *credit* (right side), and the two sides are equal.  
 Debit and credit mean only "left" and "right" — neither is inherently an increase or a decrease.  
@@ -93,7 +93,7 @@ Paying $500 of office rent in cash touches two of them:
 One debit, one credit, equal sides.  
 
 
-## Journal entries and the general ledger
+## Journal Entries and the General Ledger
 
 A *journal entry* records one transaction in the order it happened.  
 This guide writes entries as a dated description followed by the debit and credit lines:
@@ -113,7 +113,7 @@ At the *year-end close*, the temporary accounts (revenue, expenses, and dividend
 After the close only permanent accounts carry forward, and `Assets = Liabilities + Equity` holds on the closing balance sheet.  
 
 
-## A worked set of books
+## A Worked Set of Books
 
 A first fiscal year for a one-owner consulting CCPC, regular HST method, 13% HST (Ontario).  
 For the Quick Method's effect on the booked amounts, see [HST](../Operations/HST.md#quick-method) and [Expense Classification](Expense-Classification.md#hst-and-the-booked-amount).  
@@ -178,7 +178,7 @@ Reading the result onto the two statements:
 `HST collected` ($1,040) net of `HST receivable` ($390) leaves $650 owing to CRA — the net HST the regular-method return remits; see [HST](../Operations/HST.md).  
 
 
-## Chart of accounts
+## Chart of Accounts
 
 A *chart of accounts* is the corporation's own list of named accounts; the names and structure are your choice, but each account must map to a GIFI code for Schedules 100 and 125.  
 The tables below are a superset of the accounts used across this guide plus the ones a typical owner-managed service or consulting CCPC commonly needs.  
@@ -298,7 +298,7 @@ Operating expenses (Schedule 125) — the lines a service or consulting CCPC rea
 The income statement then totals to `9367` Total operating expenses, `9368` Total expenses, and `9999` Net income/loss; these are computed lines, not accounts you post to.  
 
 
-## Plugs and plug accounts
+## Plugs and Plug Accounts
 
 A *plug* is a figure you derive as the residual needed to make something balance, rather than recording it directly from a source document.  
 A *plug account* is an account set up to absorb such a residual.  
@@ -315,7 +315,7 @@ A large or growing plug — a suspense account that never clears, a rounding lin
 Investigate it before it reaches the trial balance.  
 
 
-## Classifying a transaction
+## Classifying a Transaction
 
 Writing the entry and choosing the account are two steps.  
 This page covers the first: making a balanced entry that posts to the ledger.  

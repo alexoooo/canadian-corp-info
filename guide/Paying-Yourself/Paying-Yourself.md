@@ -17,7 +17,7 @@ Limitations:
 - The following is my understanding as of 2026
 
 
-## What this covers
+## What This Covers
 
 Money earned inside a corporation is not yours until it comes out, and there are only a few ways to bring it out. This group covers each lever and the tradeoff between them.
 
@@ -28,7 +28,7 @@ Money earned inside a corporation is not yours until it comes out, and there are
 The salary-versus-dividend decision is where these meet. Because of [tax integration](../Overview/Tax-Integration.md), the headline tax cost is similar either way, so the choice usually turns on CPP, RRSP room, cash-flow timing, and simplicity.
 
 
-## Sub-pages
+## Sub-Pages
 
 This page is a hub; these are the sub-pages:
 - [Payroll](Payroll.md): salary, source deductions, remittances, and the T4

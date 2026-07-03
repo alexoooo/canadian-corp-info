@@ -1,6 +1,6 @@
 STATUS: AI GENERATED, REVIEW IN PROGRESS
 
-# Bookkeeping and information slips
+# Bookkeeping and Information Slips
 
 See parent document: [Dividends](Dividends.md)
 
@@ -13,7 +13,7 @@ Limitations:
 - NR4 mechanics are touched on only briefly; full non-resident withholding is out of scope
 
 
-## Bookkeeping journal entries
+## Bookkeeping Journal Entries
 
 Standard double-entry treatment for an owner-managed CCPC paying its sole shareholder.  
 GIFI codes are aligned to the CRA GIFI guide ([RC4088](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4088/general-index-financial-information-gifi.html)).  
@@ -50,7 +50,7 @@ Year-end close. The Statement of Retained Earnings (Schedule 100 in most T2 soft
 Most chart-of-accounts setups do not require an explicit closing journal entry; the GIFI mapping handles it via Schedule 100.  
 
 
-## T5 slip and T5 Summary
+## T5 Slip and T5 Summary
 
 A taxable dividend (eligible or non-eligible) paid to a Canadian-resident shareholder generally requires a *T5 Statement of Investment Income* slip and a *T5 Summary*.  
 Capital dividends paid to Canadian residents are NOT reported on a T5 (the recipient does not include the amount in income).  
@@ -77,7 +77,7 @@ The gross-up factors (1.38 eligible, 1.15 non-eligible) are set by ITA [s.82(1)]
 If both flavours were paid in the same calendar year, use a single T5 slip with both sets of boxes populated.  
 
 
-## T5 filing
+## T5 Filing
 
 Deadline: last day of February of the calendar year following the year of payment.  
 
@@ -93,7 +93,7 @@ For an owner-manager filing one to fifty slips, the penalty is $10 per day for t
 Higher daily rates apply at higher slip counts.  
 
 
-## NR4 for non-resident shareholders
+## NR4 for Non-Resident Shareholders
 
 Brief; full mechanics out of scope.
 

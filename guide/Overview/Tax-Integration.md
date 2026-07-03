@@ -11,7 +11,7 @@ Limitations:
 - The following is my understanding as of 2026
 
 
-## What is integration
+## What Is Integration
 
 *Integration* is the principle linking corporate and personal tax:
 - There are two ways that a dollar of income can be earned:
@@ -21,7 +21,7 @@ Limitations:
 - Corporate income that is paid out as a dividend is not "double-taxed"
 
 
-## Gross-up and dividend tax credit
+## Gross-Up and Dividend Tax Credit
 
 The mechanism is the *dividend gross-up and tax credit*.  
 When the corporation pays a dividend, the shareholder:
@@ -34,7 +34,7 @@ Each province offers its own DTC at its own rate, so total integration depends o
 Integration is approximate; different provinces and income sources produce small over- or under-taxation.  
 
 
-## Integration by dividend flavour
+## Integration by Dividend Flavour
 
 *Eligible dividend*:
 - Gross-up: 38% of cash dividend (ITA s.82(1))
@@ -56,7 +56,7 @@ Integration is approximate; different provinces and income sources produce small
 - For non-resident shareholders this treatment does not apply: Part XIII withholding still applies (default 25%, often reduced by treaty)
 
 
-## Corp-side preference order
+## Corp-Side Preference Order
 
 For an owner-manager who has access to all three accounts, the integration framework gives a corp-side preference order:
 1. *Capital dividend* first (tax-free to the shareholder; constrained only by CDA balance and the s.83(2) election)
@@ -66,7 +66,7 @@ For an owner-manager who has access to all three accounts, the integration frame
 Often CDA and GRIP are both empty; the only available option is a non-eligible dividend.  
 
 
-## Worked example
+## Worked Example
 
 Assumptions: $1,000 of corporate income, Ontario, shareholder at top marginal rate (53.53%).  
 Combined corporate rates: SBD 12.2% (federal 9% + Ontario 3.2%), general 26.5% (federal 15% + Ontario 11.5%).  

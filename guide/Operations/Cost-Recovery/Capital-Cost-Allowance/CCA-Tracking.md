@@ -1,6 +1,6 @@
 STATUS: AI GENERATED, REVIEW IN PROGRESS
 
-# CCA tracking
+# CCA Tracking
 
 **Who this is for**: owners of a Canadian-controlled private corporation (CCPC) who keep their own CCA records in a spreadsheet rather than relying solely on tax software.  
 
@@ -9,7 +9,7 @@ For the concepts see [Capital Cost Allowance](Capital-Cost-Allowance.md); for wh
 It parallels [Adjusted Cost Base Tracking](../../../Investments/Adjusted-Cost-Base/Adjusted-Cost-Base-Tracking.md), the same idea for securities.  
 
 
-## Three trackers: class reference, asset register, CCA history
+## Three Trackers: Class Reference, Asset Register, CCA History
 
 The deduction is per class but the records are per item:
 - *Class reference*:
@@ -28,7 +28,7 @@ The deduction is per class but the records are per item:
 Keep all amounts in dollars and cents; round only when mapping to the whole-dollar T2 (see [Whole-dollar rounding](../../../Filing-And-CRA/Whole-Dollar-Rounding.md)).  
 
 
-## Class reference <!-- [done] -->
+## Class Reference <!-- [done] -->
 
 The tax constants that depend only on the CCA class. One row per `Class`. Columns:
 - `Class`: the key (`8`, `10`, `10.1`, `12`, `13`, `14`, `14.1`, `50`, etc.)
@@ -66,7 +66,7 @@ They follow the asset's balance-sheet nature, not its class: a single class rout
 They are keyed on the account; see [Posting to the ledger](#posting-to-the-ledger).  
 
 
-## Asset register <!-- [wip] -->
+## Asset Register <!-- [wip] -->
 
 Columns:
 - `Item`:
@@ -165,7 +165,7 @@ Recapture and terminal loss are not discretionary.
 You can record what it produces in the [CCA history](#cca-history) below.  
 
 
-## CCA history
+## CCA History
 
 **This sheet is optional.**
 The filed Schedule 8 already preserves these figures; keep a copy only to hold your own per-class `Opening UCC` if you switch software.  
@@ -187,7 +187,7 @@ Compute each pool's UCC yourself only where there is no carryforward to lean on.
 That by-hand path is the [next section](#computing-the-schedule-yourself), plus the special cases and worked tie-out that follow it.  
 
 
-## Computing the schedule yourself
+## Computing the Schedule Yourself
 
 When there is no carryforward to lean on: the first year (setting opening UCC), a software switch, a paper filing, or a figure you want to check by hand.  
 
@@ -219,7 +219,7 @@ For a declining-balance class in a normal (365-day) year, the columns run left t
 `Recapture` and `Terminal Loss` are both always columns; at most one is non-zero in a class-year, since the pool cannot be both negative and emptied at once.  
 
 
-## Special cases
+## Special Cases
 
 The column formulas above cover a declining-balance class in a normal (365-day) year.
 
@@ -235,7 +235,7 @@ Cases they do not cover:
 - *Investment tax credits* claimed against capital cost reduce next year's `Opening UCC` (ITA s.13(7.1)); relevant only for SR&ED claimants
 
 
-## Posting to the ledger
+## Posting to the Ledger
 
 The register rolls up two ways. The [Pivot for Schedule 8](#pivot-for-schedule-8) groups it by `Class` for the tax return; for the books you group the same register by `Account` — the balance-sheet cost lines (Schedule 100) and their accumulated-amortization contra accounts.  
 
@@ -255,7 +255,7 @@ Common accounts:
 The amortization-expense line follows the account's nature: `8670` tangible, `8570` intangible.  
 For intangibles, use the specific line where one fits: `2012` goodwill, `2018` incorporation costs, `2020` trademarks/patents, `2022` customer lists, each with its own contra; otherwise `2010` Intangible assets.  
 
-### Amortization by account
+### Amortization by Account
 
 Schedule 8 gives CCA per *class*; the books need it per *account*. Build a one-row-per-`Account` rollup for the year you are filing:
 - `Account`: from the register
@@ -291,7 +291,7 @@ Setting book depreciation equal to CCA keeps one set of numbers, so the claim ab
 If you keep book amortization on a different basis (say straight-line over useful life), post that figure instead and let Schedule 1 reconcile it against the CCA claimed (see [Ledger and Accounts](../../../Bookkeeping/Ledger-And-Accounts.md)).  
 
 
-## Capital asset continuity
+## Capital Asset Continuity
 
 **This schedule is optional**, like [CCA history](#cca-history): once you keep double-entry books the ledger already carries these balances.  
 Keep it as the workpaper that proves the Schedule 100 capital-asset lines and supplies the opening figures if you ever switch software.  
@@ -317,7 +317,7 @@ One row per `Account` per fiscal `Year`; the cost half and the amortization half
 `Closing Cost` and `Closing Accum. Amort.` should equal the ledger balances of the account's cost and contra lines; a gap means an entry was missed or misposted.  
 
 
-## Worked tie-out
+## Worked Tie-Out
 
 The Class 50 laptop and Class 8 polisher from [CCA Worked examples](CCA-Examples.md), both AIIP-eligible 2026 acquisitions, run through the schedule:
 

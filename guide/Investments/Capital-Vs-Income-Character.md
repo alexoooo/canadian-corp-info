@@ -1,6 +1,6 @@
 STATUS: AI GENERATED, REVIEW IN PROGRESS
 
-# Capital versus Income Character
+# Capital vs Income Character
 
 **Who this is for**:
 - Owners of a Canadian-controlled private corporation (CCPC) with a corporate investment account
@@ -19,7 +19,7 @@ Limitations:
 - The following is my understanding as of 2026
 
 
-## Why character matters
+## Why Character Matters
 
 | Attribute | Capital account | Income account |
 |---|---|---|
@@ -33,7 +33,7 @@ Everything downstream in this guide — the [T5008 workflow](T5008/T5008.md), th
 The loss side cuts the other way: an income-account loss is fully deductible, which is why CRA argues capital on gains and taxpayers argue capital on losses — character is symmetric and cannot be chosen per trade.  
 
 
-## The character factors
+## The Character Factors
 
 Gains are income when the activity amounts to a business of trading — or a single *adventure in the nature of trade* — rather than investing.  
 The courts weigh (and CRA's IT-479R catalogues) the same factors either way:
@@ -48,7 +48,7 @@ No single factor decides; the pattern does.
 The same corporation can have both: a long-term portfolio on capital account and a separately-identifiable speculative program whose gains are income.  
 
 
-## Where a typical owner-managed CCPC lands
+## Where a Typical Owner-Managed CCPC Lands
 
 The scenario this guide assumes — retained earnings parked in broad ETFs and blue-chip dividend payers, bought with cash, held for years, traded a handful of times a year for rebalancing or [Norbert's Gambit](../Bookkeeping/Foreign-Currency.md) — is squarely capital:
 - Turnover is low and holdings yield income while held
@@ -59,7 +59,7 @@ The pattern that breaks the assumption: day- or swing-trading with corporate cas
 If that describes the account, the T5008 chain on this guide's pages does not apply as written — the gains are business income, there is no CDA accretion, and professional advice is warranted.  
 
 
-## The s.39(4) election
+## The s.39(4) Election
 
 ITA [s.39(4)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-39.html) lets a taxpayer elect that every *Canadian security* it owns is capital property:
 - Filed once (Form T123 with the return); irrevocable, and it covers all Canadian securities in the election year and every later year
@@ -73,7 +73,7 @@ Its practical limits for this guide's portfolios:
 Whether to file it pre-emptively is a judgement call: it buys certainty on the Canadian side at the cost of permanently forfeiting income-account loss treatment on those securities.  
 
 
-## Consequences of income treatment
+## Consequences of Income Treatment
 
 If CRA recharacterizes gains as income:
 - The gains are fully included as business income; prior years' 50% inclusions are reassessed within the normal window (see [CRA Administration](../Filing-And-CRA/CRA-Administration.md#the-reassessment-clock))
