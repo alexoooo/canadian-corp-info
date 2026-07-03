@@ -9,25 +9,25 @@ This is the single source of truth for project context, editorial conventions, a
 
 This is a **documentation-only** repository. There is no build system, test suite, lint tooling, or package manifest. The root holds `README.md`, `AGENTS.md`, `CLAUDE.md`, a `docs/` folder (process docs for agents: the [style guide](docs/Style-Guide.md) and the audit playbook), an `audit/` folder, and a `guide/` folder containing all topic content (with screenshots co-located alongside the pages that reference them). Edits are content edits; "running" the project means previewing Markdown.
 
-The audience is narrow: owners of a Canadian-controlled private corporation (CCPC), typically holding stocks/ETFs in a corporate trading account. Keep that frame — do not generalize content to personal tax, US filers, or other entity types unless the existing document already does. A brief contrast with sole-proprietor or personal-tax treatment is allowed where it clarifies the corporate treatment and stays clearly secondary (see `guide/Owner-Corporation-Transactions.md`); do not let such a contrast grow into general personal-tax coverage.
+The audience is narrow: owners of a Canadian-controlled private corporation (CCPC), typically holding stocks/ETFs in a corporate trading account. Keep that frame — do not generalize content to personal tax, US filers, or other entity types unless the existing document already does. A brief contrast with sole-proprietor or personal-tax treatment is allowed where it clarifies the corporate treatment and stays clearly secondary (see `guide/Paying-Yourself/Owner-Corporation-Transactions.md`); do not let such a contrast grow into general personal-tax coverage.
 
 ---
 
 ## Document architecture
 
-`README.md` is the topic index. Each page under `guide/` is a standalone topic; the pages form a dependency graph rather than a flat collection. A topic that has multiple files (parent page + sub-page, or page + screenshots) lives in its own subfolder under `guide/` so related files stay co-located; a topic that is a single page with no media sits as a flat `.md` directly under `guide/`.
+`README.md` is the topic index. `guide/` is organized into seven thematic group folders — `Overview/`, `Corporate-Lifecycle/`, `Bookkeeping/`, `Operations/`, `Paying-Yourself/`, `Investments/`, and `Filing-And-CRA/` — each opening with a hub page named after the folder (e.g. `Operations/Operations.md`) that introduces and indexes the group. Each page within a group is a standalone topic; the pages form a dependency graph rather than a flat collection. A topic that has multiple files (parent page + sub-page, or page + screenshots) nests in its own subfolder within its group so related files stay co-located.
 
-- **`guide/Concept-Map.md`** — overarching map of the whole guide: the five aspects it sorts concepts into (kinds of things, running balances, events, effects, and the yearly flow) and which page owns each concept; the orienting "start here" page
-- **`guide/Adjusted-Cost-Base/Adjusted-Cost-Base.md`** — foundational concepts; other guides assume this vocabulary (ACB, ROC, phantom distributions, Book Cost vs ACB)
-- **`guide/Adjusted-Cost-Base/Adjusted-Cost-Base-Tracking.md`** — operational companion to the above; contains the spreadsheet workflow: row-order assumptions, formulas, transaction-type conventions; ACB-related edits elsewhere must stay consistent with this file
-- **`guide/T3/T3.md`, `guide/T5008/T5008.md`** — translate brokerage slips into bookkeeping entries, GIFI-aligned ledger accounts, and specific T2 schedule inputs; build on ACB concepts
-- **`guide/T3/T3-Box-26-Other-Income.md`** — sub-page of `T3.md`, indexed under it in the README
-- **`guide/Capital-Dividend-Account/Capital-Dividend-Account.md`** — depends on capital gains data produced by the ACB/T3/T5008 workflows
-- **`guide/Glossary.md`** — short definitions of the acronyms and tax terms used across the guide, each cross-referenced to its canonical page
-- **`guide/Foreign-Currency.md`, `guide/HST.md`, `guide/Payment/Payment.md`** — stubs covering FX bookkeeping, GST/HST, and corporate-tax payment workflows respectively
-- **`guide/Dividends/Dividends.md`** — eligible, non-eligible, and capital dividend concepts: which corporate pool each draws on and the T1 gross-up + DTC on the personal side; the hub for the dividend sub-pages
-- **`guide/Dividends/Declaring-And-Paying.md`, `guide/Dividends/Bookkeeping-And-Slips.md`, `guide/Dividends/T2-Reporting.md`, `guide/Dividends/Dividends-Examples.md`** — sub-pages of `Dividends.md` covering the paying-side mechanics (resolution, journal entries, T5/NR4, T2 schedules incl. T2054, worked examples), indexed under it in the README
-- **`guide/Tax-Integration.md`** — the integration principle, the dividend gross-up + DTC mechanism, per-flavour gross-up/DTC rates, and the corp-side preference order for choosing among the three flavours
+- **`guide/Overview/Concept-Map.md`** — overarching map of the whole guide: the five aspects it sorts concepts into (kinds of things, running balances, events, effects, and the yearly flow) and which page owns each concept; the orienting "start here" page
+- **`guide/Investments/Adjusted-Cost-Base/Adjusted-Cost-Base.md`** — foundational concepts; other guides assume this vocabulary (ACB, ROC, phantom distributions, Book Cost vs ACB)
+- **`guide/Investments/Adjusted-Cost-Base/Adjusted-Cost-Base-Tracking.md`** — operational companion to the above; contains the spreadsheet workflow: row-order assumptions, formulas, transaction-type conventions; ACB-related edits elsewhere must stay consistent with this file
+- **`guide/Investments/T3/T3.md`, `guide/Investments/T5008/T5008.md`** — translate brokerage slips into bookkeeping entries, GIFI-aligned ledger accounts, and specific T2 schedule inputs; build on ACB concepts
+- **`guide/Investments/T3/T3-Box-26-Other-Income.md`** — sub-page of `T3.md`, indexed under it in the README
+- **`guide/Investments/Capital-Dividend-Account/Capital-Dividend-Account.md`** — depends on capital gains data produced by the ACB/T3/T5008 workflows
+- **`guide/Overview/Glossary.md`** — short definitions of the acronyms and tax terms used across the guide, each cross-referenced to its canonical page
+- **`guide/Bookkeeping/Foreign-Currency.md`, `guide/Operations/HST.md`, `guide/Filing-And-CRA/Payment/Payment.md`** — stubs covering FX bookkeeping, GST/HST, and corporate-tax payment workflows respectively
+- **`guide/Paying-Yourself/Dividends/Dividends.md`** — eligible, non-eligible, and capital dividend concepts: which corporate pool each draws on and the T1 gross-up + DTC on the personal side; the hub for the dividend sub-pages
+- **`guide/Paying-Yourself/Dividends/Declaring-And-Paying.md`, `guide/Paying-Yourself/Dividends/Bookkeeping-And-Slips.md`, `guide/Paying-Yourself/Dividends/T2-Reporting.md`, `guide/Paying-Yourself/Dividends/Dividends-Examples.md`** — sub-pages of `Dividends.md` covering the paying-side mechanics (resolution, journal entries, T5/NR4, T2 schedules incl. T2054, worked examples), indexed under it in the README
+- **`guide/Overview/Tax-Integration.md`** — the integration principle, the dividend gross-up + DTC mechanism, per-flavour gross-up/DTC rates, and the corp-side preference order for choosing among the three flavours
 
 When adding or substantially restructuring a topic, update `README.md` so the index stays current. Sub-pages are indented under their parent in the index (see how `T3-Box-26-Other-Income.md` sits under `T3.md`). When adding a screenshot, place it in the same folder as the page that references it, and reference it with a bare filename rather than a relative path.
 
@@ -41,7 +41,7 @@ Every page sits in one of three states. `README.md` indexes pages thematically a
 - **`STATUS: AI GENERATED, REVIEW IN PROGRESS`** — page shape and detail are mature, but each section still needs the maintainer's verification before its facts can be relied on
 - **`STATUS: WORK IN PROGRESS`** — stub or partial draft; not yet near complete
 
-When a marker is present, it is the very first line of the file, followed by a blank line, then the `# Title` heading (see `Cost-Recovery/Cost-Recovery.md` for the canonical shape).
+When a marker is present, it is the very first line of the file, followed by a blank line, then the `# Title` heading (see `Operations/Cost-Recovery/Cost-Recovery.md` for the canonical shape).
 
 This separation is load-bearing. The audience uses these pages as practical guidance, and AI-generated content can contain plausible-sounding errors that have not yet been caught. Do not silently promote a page — removing the `STATUS` line and the README `†` marker is a sign-off, and only the maintainer can issue it. When drafting new content from scratch, mark it `AI GENERATED, REVIEW IN PROGRESS` and add its `README.md` entry with a `†`, under the thematic group it belongs to.
 
@@ -80,14 +80,14 @@ These rules encode actual decisions made across the existing guides. Follow them
 
 Prose style is canonical in [`docs/Style-Guide.md`](docs/Style-Guide.md): the two voices, section rhythm, bullets, sentences, headings, emphasis, citations, page shape, worked examples, and the tells that separate reviewed prose from raw AI drafts. Follow that file when editing or adding content. This section keeps only the two reminders that interact with the rest of this document.
 
-- **Two voices, one per page**: *primer* (third-person factual, concept-oriented; `Small-Business-Tax-Overview.md`, `README.md`) and *operational* (second-person imperative, with worked debit/credit and schedule-entry walkthroughs; the per-topic pages)
+- **Two voices, one per page**: *primer* (third-person factual, concept-oriented; `Small-Business-Tax.md`, `README.md`) and *operational* (second-person imperative, with worked debit/credit and schedule-entry walkthroughs; the per-topic pages)
 - **Heading status tags are maintainer-only**: a trailing `\[done]`, `\[meh]`, or HTML-comment tag (`<!-- [done] -->`, `<!-- [wip] -->`) on a heading is an authoring/progress annotation, not heading text — leave it exactly as written and never "clean it up"
 
 ---
 
 ## Media
 
-Screenshots (CRA portals, brokerage trade confirmations, T2/T3/Schedule 6/Schedule 7 examples, the ACB tracker spreadsheet) live in the same folder as the page that references them. Filenames are descriptive and hyphenated, and the page references them by bare filename. When adding screenshots, redact account numbers, names, and identifying detail — see `guide/T5008/T5008-Transaction-Steps-Redacted.png` as the model.
+Screenshots (CRA portals, brokerage trade confirmations, T2/T3/Schedule 6/Schedule 7 examples, the ACB tracker spreadsheet) live in the same folder as the page that references them. Filenames are descriptive and hyphenated, and the page references them by bare filename. When adding screenshots, redact account numbers, names, and identifying detail — see `guide/Investments/T5008/T5008-Transaction-Steps-Redacted.png` as the model.
 
 ---
 

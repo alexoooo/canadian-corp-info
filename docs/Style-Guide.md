@@ -4,14 +4,14 @@ The canonical prose-style rules for the guide: how pages read, not what they cov
 Content policy lives in [`../AGENTS.md`](../AGENTS.md): the two registers' content, ACB conventions, cross-linking, the disclaimer stance, and the page-status / promotion machinery.  
 This guide follows its own rules and reads as one worked example of the house style.  
 
-To internalize the style fast, read a signed-off page (`../guide/Adjusted-Cost-Base/Adjusted-Cost-Base.md`) beside a frozen raw-AI specimen (`examples/HST-AI-draft.md`, `examples/Estate-Freeze-AI-draft.md`).  
+To internalize the style fast, read a signed-off page (`../guide/Investments/Adjusted-Cost-Base/Adjusted-Cost-Base.md`) beside a frozen raw-AI specimen (`examples/HST-AI-draft.md`, `examples/Estate-Freeze-AI-draft.md`).  
 The rules below name what the maintainer changes on the way from the second to the first.  
 
 
 ## Two voices
 
 The guide has two registers, one per page:
-- *Primer voice* (`../guide/Small-Business-Tax-Overview.md`, `../README.md`): third-person factual, concept-oriented, no procedure
+- *Primer voice* (`../guide/Overview/Small-Business-Tax.md`, `../README.md`): third-person factual, concept-oriented, no procedure
 - *Operational voice* (per-topic pages: `Adjusted-Cost-Base.md`, `T3.md`, `T5008.md`, `Capital-Dividend-Account.md`): second-person imperative, procedure-oriented, with concrete debit/credit and schedule-entry walkthroughs and worked numerical examples
 
 Every rule below applies to both voices unless noted.  

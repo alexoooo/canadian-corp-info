@@ -1,7 +1,7 @@
 # Estate Freeze (frozen AI-draft specimen)
 
 > FROZEN STYLE SPECIMEN. Not tax guidance, not maintained, do not edit or promote.
-> Curated excerpt of [`../../guide/Business-Acquisition/Estate-Freeze.md`](../../guide/Business-Acquisition/Estate-Freeze.md) as drafted (AI generated); snapshot 2026-06-23.
+> Curated excerpt of [`../../guide/Corporate-Lifecycle/Business-Acquisition/Estate-Freeze.md`](../../guide/Corporate-Lifecycle/Business-Acquisition/Estate-Freeze.md) as drafted (AI generated); snapshot 2026-06-23.
 > Read it against a reviewed page and the rules in [`../Style-Guide.md`](../Style-Guide.md#reviewing-an-ai-draft).
 
 Tells on display:
