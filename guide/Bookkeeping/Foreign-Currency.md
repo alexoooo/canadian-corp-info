@@ -2,14 +2,17 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
 
 # Foreign Currency
 
-**Who this is for**: owners of a Canadian-controlled private corporation (CCPC) who hold a USD bank account, invoice US customers in USD, hold USD-denominated investments, or convert between CAD and USD.  
+**Who this is for**:
+- Owners of a Canadian-controlled private corporation (CCPC) who hold a USD bank account, invoice US customers in USD, hold USD-denominated investments, or convert between CAD and USD
 
 **TLDR**:
 - The corporation reports in CAD by default; foreign-currency-native accounts (USD bank, USD AR) are translated at year-end to populate Schedule 100 in CAD
 - *Bank of Canada* (BoC) single daily exchange rate is the conventional source; the corp's bank's actual settlement rate is also acceptable if applied consistently
 - FX rate convention follows the *transaction date*: invoice date for revenue, trade date for securities and commissions, payment date for distributions, year-end closing rate for revaluation of *monetary items*
 - FX gains and losses split into *income account* (operating receivables, payables, cash from operations) and *capital account* (foreign securities, USD held to acquire securities); the character follows the underlying transaction
-- This page uses a *multi-currency native* bookkeeping convention: each ledger account has one native currency, cross-currency entries split into a CAD leg and a USD leg with `FX gain/loss - CAD` (8231-1) and `FX gain/loss - USD` (8231-2) as per-currency bridge accounts; year-end revaluation translates the USD-native accounts at the closing rate and the net of 8231-1 + 8231-2 (translated) is the period's FX gain or loss on Schedule 125 GIFI 8231
+- This page uses a *multi-currency native* bookkeeping convention:
+  - Each ledger account has one native currency; cross-currency entries split into a CAD leg and a USD leg with `FX gain/loss - CAD` (8231-1) and `FX gain/loss - USD` (8231-2) as per-currency bridge accounts
+  - Year-end revaluation translates the USD-native accounts at the closing rate; the net of 8231-1 + 8231-2 (translated) is the period's FX gain or loss on Schedule 125 GIFI 8231
 - Bank CAD↔USD conversion bakes a 1.5%–3% spread into the rate; the spread surfaces as an FX loss at period-end revaluation
 - *Norbert's Gambit* via *DLR* / *DLR.U* on the TSX moves USD↔CAD at ~10–30 basis points all-in instead of the bank's ~200 bp spread; the round trip is a securities disposition reported on Schedule 6
 - Invoices to a non-resident US customer for services are *zero-rated* GST/HST under the Excise Tax Act, Schedule VI, Part V; see [HST](../Operations/HST.md) for the full mechanics
@@ -30,7 +33,8 @@ The Income Tax Act presumes a Canadian-resident corporation reports in Canadian 
 Foreign-currency amounts are converted to CAD at the rate prevailing on the transaction date (ITA [s.261(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-261.html); CRA Income Tax Folio S5-F4-C1).  
 
 Acceptable sources for the exchange rate, applied consistently across the year:
-- *Bank of Canada single daily exchange rate*: published once per business day by approximately 16:30 ET, replacing the legacy noon rate that was discontinued on 2017-03-01; the BoC describes these as *indicative rates* based on aggregated market quotes and CRA folio S5-F4-C1 names them as the default rate for post-2017-02-28 conversions
+- *Bank of Canada single daily exchange rate*: published once per business day by approximately 16:30 ET, replacing the legacy noon rate that was discontinued on 2017-03-01
+  - The BoC describes these as *indicative rates* based on aggregated market quotes, and CRA folio S5-F4-C1 names them as the default rate for post-2017-02-28 conversions
 - *Year-average BoC rate*: CRA folio S5-F4-C1 accepts an annual average for income-account items where the rate does not fluctuate significantly through the year; used as a simplification when the per-transaction rate is impractical
 - The corp's *bank's actual settlement rate* on the transaction: acceptable when the bank statement shows the CAD and USD legs of an actual conversion; the only rate that reflects what actually happened in the account
 - Other commercial sources (Bloomberg, Reuters, OANDA), applied consistently
@@ -74,9 +78,11 @@ This is the load-bearing distinction in foreign-currency tax: every FX gain or l
 
 *Capital-account FX*:
 - Arises from dispositions of *capital property*: foreign securities, USD held in an investment account to acquire securities, settlement of a foreign-currency capital obligation
-- 50% inclusion rate (ITA [s.38](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-38.html)); recognized only on disposition (ITA [s.39(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-39.html)), not on year-end revaluation (IT-95R paragraph 9)
+- 50% inclusion rate (ITA [s.38](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-38.html))
+- Recognized only on disposition (ITA [s.39(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-39.html)), not on year-end revaluation (IT-95R paragraph 9)
 - "Disposition" of foreign currency includes converting it to CAD, using it to pay a CAD obligation, transferring it to a third currency, or using it to acquire property
-- Reported on Schedule 6 (Summary of Dispositions of Capital Property); reconciled through Schedule 1 in the usual capital-gains accounting-to-tax pattern (full accounting gain or loss removed, the taxable half from Schedule 6 added back)
+- Reported on Schedule 6 (Summary of Dispositions of Capital Property)
+- Reconciled through Schedule 1 in the usual capital-gains accounting-to-tax pattern (full accounting gain or loss removed, the taxable half from Schedule 6 added back)
 
 The $200 personal FX de minimis under ITA [s.39(1.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-39.html) applies only to *individuals*.  
 A corporation has no de minimis: every capital-account FX gain or loss, however small, is reportable on Schedule 6.  
@@ -101,8 +107,10 @@ How it works:
 - Each ledger account has a single native currency; CAD-native accounts hold CAD, USD-native accounts hold USD, and the two never mix within a single account
 - Cross-currency transactions split into two legs, each balancing within its own currency, with `FX gain/loss - CAD` (8231-1) and `FX gain/loss - USD` (8231-2) acting as the per-currency bridge
 - Same-currency transactions (USD payment closing a USD receivable; CAD payment from `Deposits` to a Canadian supplier) are pure-currency entries with no FX bridge
-- Investment accounts stay *CAD-native* even when the underlying security trades in USD: ACB is defined in ITA [s.54](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-54.html) and, for a Canadian-resident corporation reporting in CAD under [s.261](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-261.html), the figure is CAD-denominated; the investment ledger account holds the CAD ACB and subsequent USD/CAD movement affects the cash side (`Deposits - USD`) instead of the investment side
-- Period-end revaluation: translate every foreign-currency-native account balance to CAD at the closing BoC rate; the net of (8231-1 in CAD + 8231-2 translated to CAD at the closing rate) is the FX gain or loss for the period and flows to Schedule 125 GIFI 8231
+- Investment accounts stay *CAD-native* even when the underlying security trades in USD: ACB is defined in ITA [s.54](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-54.html) and, for a Canadian-resident corporation reporting in CAD under [s.261](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-261.html), the figure is CAD-denominated
+  - The investment ledger account holds the CAD ACB, and subsequent USD/CAD movement affects the cash side (`Deposits - USD`) instead of the investment side
+- Period-end revaluation translates every foreign-currency-native account balance to CAD at the closing BoC rate
+- The net of (8231-1 in CAD + 8231-2 translated to CAD at the closing rate) is the FX gain or loss for the period and flows to Schedule 125 GIFI 8231
 
 The `FX gain/loss` sub-accounts (8231-1, 8231-2) accumulate per-currency positions through the year and are not separately reported; both roll up to a single GIFI 8231 line on Schedule 125 after the period-end translation.  
 
@@ -118,13 +126,13 @@ Internal codes carry a `-N` suffix (matching the convention in [T3](../Investmen
   </thead>
   <tbody>
     <tr><td>1002-1</td><td>Deposits</td><td>CAD</td><td>1002 (Deposits in Canadian banks - Canadian currency)</td></tr>
-    <tr><td>1002-2</td><td>Deposits - investment</td><td>CAD</td><td>1002 (cash sitting in a CAD investment account; per <a href="T3/T3.md">T3</a>)</td></tr>
+    <tr><td>1002-2</td><td>Deposits - investment</td><td>CAD</td><td>1002 (cash sitting in a CAD investment account; per <a href="../Investments/T3/T3.md">T3</a>)</td></tr>
     <tr><td>1002-3</td><td>Deposits - USD</td><td>USD</td><td>1003 (Deposits in Canadian banks - foreign currency)</td></tr>
     <tr><td>1060-1</td><td>Accounts receivable - CAD</td><td>CAD</td><td>1060</td></tr>
     <tr><td>1060-2</td><td>Accounts receivable - USD</td><td>USD</td><td>1060 (at closing BoC rate at year-end)</td></tr>
     <tr><td>2303-1</td><td>Investments - DLR/DLR.U</td><td>CAD</td><td>2303 (Canadian shares; ACB-denominated in CAD even when traded in USD)</td></tr>
     <tr><td>8000</td><td>Trade sales of goods and services</td><td>CAD</td><td>8000</td></tr>
-    <tr><td>8211-1</td><td>Disposition of capital property</td><td>CAD</td><td>8211 (per <a href="T3/T3.md">T3</a>)</td></tr>
+    <tr><td>8211-1</td><td>Disposition of capital property</td><td>CAD</td><td>8211 (per <a href="../Investments/T3/T3.md">T3</a>)</td></tr>
     <tr><td>8231-1</td><td>Foreign exchange gain/loss - CAD</td><td>CAD</td><td>8231 (net with 8231-2 at closing rate)</td></tr>
     <tr><td>8231-2</td><td>Foreign exchange gain/loss - USD</td><td>USD</td><td>8231 (net with 8231-1; translated at closing BoC rate)</td></tr>
     <tr><td>8710</td><td>Interest and bank charges</td><td>CAD</td><td>8710</td></tr>
@@ -133,7 +141,8 @@ Internal codes carry a `-N` suffix (matching the convention in [T3](../Investmen
 
 Notes on the codes:
 - GIFI 1003 captures USD deposits at a Canadian bank; GIFI 1004 (foreign bank, CAD) and 1005 (foreign bank, foreign currency) are reserved for accounts at foreign banks and are not in scope here
-- GIFI 8231 covers realized and unrealized FX on income-account monetary items; do not confuse with GIFI 8210 (the broader realized-gains-on-disposal-of-assets line); 8231 is the FX-specific line on Schedule 125
+- GIFI 8231 is the FX-specific line on Schedule 125, covering realized and unrealized FX on income-account monetary items
+  - Do not confuse it with GIFI 8210, the broader realized-gains-on-disposal-of-assets line
 - Splitting `FX gain/loss` into 8231-1 (CAD-native) and 8231-2 (USD-native) is what makes the trading-account convention work; both roll up to GIFI 8231 at year-end
 - For broader account-tree conventions (investment accounts, withholding taxes, GIFI rollups), see [T3](../Investments/T3/T3.md)
 
@@ -143,7 +152,7 @@ Notes on the codes:
 When a bank converts CAD↔USD, the rate it applies is worse than the mid-market spot rate.  
 The difference between the BoC mid-rate and the rate the bank used is the *implicit spread*; this is how the bank earns on the conversion.  
 
-This section covers the simplest case: a plain CAD↔USD transfer between two accounts at the same bank.  
+The simplest case is a plain CAD↔USD transfer between two accounts at the same bank.  
 The more involved case of a USD wire from a customer landing in the CAD account (which combines bank conversion with closing out a USD receivable) is covered in [Getting paid in USD](#getting-paid-in-usd-invoicing-us-clients) below.  
 
 Bookkeeping treatment under the multi-currency convention:
@@ -164,11 +173,11 @@ Typical CAD↔USD conversion spreads observed in practice (rough magnitudes; ver
 - Norbert's Gambit through a discount broker (see next section): 10–30 basis points all-in
 - Interactive Brokers desk FX (FXCONV / IDEALPRO): ~1 basis point plus a small minimum commission
 
-Worked example — internal CAD → USD transfer between two accounts at the same bank:
+Worked example (internal CAD → USD transfer between two accounts at the same bank):
 - Setup: corp moves CAD 10,000 from `Deposits` (1002-1, CAD-native) to `Deposits - USD` (1002-3, USD-native) at the same Canadian bank on Apr 20
 - BoC mid-rate that day is 1.36 (mid-implied USD value of CAD 10,000 ≈ USD 7,352.94)
 - The bank credits the USD side with USD 7,210; effective bank rate 1.3870 CAD/USD, about a 2.0% spread vs the BoC mid
-- Ledger entry — each currency leg balances independently:
+- Ledger entry (each currency leg balances independently):
   - CAD-side (balances within CAD):
     - Credit `Deposits` (1002-1): CAD 10,000
     - Debit `FX gain/loss - CAD` (8231-1): CAD 10,000
@@ -229,10 +238,11 @@ The Gambit round trip is a *securities disposition*, not an income-account curre
   - CRA technical interpretation 2015-0588981C6 (a transcribed APFF Roundtable position, persuasive rather than binding) instead points to the *settlement-date* rate for FX on a disposition; this guide stays on trade-date for consistency with the [Adjusted Cost Base](../Investments/Adjusted-Cost-Base/Adjusted-Cost-Base.md) workflow
 - The disposition produces a small capital gain or loss equal to (CAD proceeds from the DLR sale) − (CAD ACB of the DLR.U leg) − (outlays and expenses on disposition)
 - Half of the gain (or loss) is taxable (or deductible) at the current 50% inclusion rate; report on T2 Schedule 6 under capital-property dispositions
-- The capital gain is part of *Aggregate Investment Income* (AII) and does not benefit from the *Small Business Deduction*; for a small Gambit gain this is immaterial, but the entry is still required
+- The capital gain is part of *Aggregate Investment Income* (AII) and does not benefit from the *Small Business Deduction*
+  - For a small Gambit gain this is immaterial, but the entry is still required
 - The personal $200 FX de minimis (s.39(1.1)) does not apply to a corporation: every Gambit, however small the gain, is reportable
 
-T5008 note:
+The broker's T5008:
 - The broker may issue a T5008 for the DLR sale leg with a "Book Cost" that does not match your computed CAD ACB
 - Do not use the T5008 Book Cost on Schedule 6; use your own ACB tracking
 - The standard ACB-tracking workflow applies; see [Adjusted Cost Base — Tracking](../Investments/Adjusted-Cost-Base/Adjusted-Cost-Base-Tracking.md)
@@ -250,17 +260,17 @@ Concrete example on USD 50,000:
 - Break-even threshold against a 2% bank spread:
   - Bank broker with $9.95 commissions: ~CAD 1,500
   - NBDB or Questrade with $9.95 journal fee and $0 commissions: ~CAD 1,000
-  - Below the break-even, the bank conversion is actually cheaper because the per-trip Gambit overhead exceeds the spread savings
+  - Below the break-even, the bank conversion is cheaper because the per-trip Gambit overhead exceeds the spread savings
 
 ### Bookkeeping
 
-Worked example — convert USD 10,000 of invoice proceeds back to CAD via Gambit at a flat-commission bank broker.  
+Worked example (convert USD 10,000 of invoice proceeds back to CAD via Gambit at a flat-commission bank broker).  
 Assume: BoC rate on day 0 is 1.36; DLR.U trades at USD 10.00; DLR trades at CAD 13.60 on day 1; two $9.95 trading commissions (one in USD on the buy leg, one in CAD on the sell leg).  
 
 The `Investments - DLR/DLR.U` account is CAD-native: ACB is defined in ITA s.54 and CAD-denominated by default reporting currency (s.261), so the USD purchase enters the investment account at the trade-date CAD equivalent (USD 10,009.95 × 1.36 = CAD 13,613.53).  
 The USD-side cash outflow is bridged to the CAD-side investment entry via the per-currency FX accounts.  
 
-Day 0 — buy 1,000 units of DLR.U at USD 10.00 + USD 9.95 commission = USD 10,009.95:
+Day 0, buy 1,000 units of DLR.U at USD 10.00 + USD 9.95 commission = USD 10,009.95:
 - USD-side (balances within USD):
   - Credit `Deposits - USD` (1002-3): USD 10,009.95
   - Debit `FX gain/loss - USD` (8231-2): USD 10,009.95
@@ -268,10 +278,10 @@ Day 0 — buy 1,000 units of DLR.U at USD 10.00 + USD 9.95 commission = USD 10,0
   - Credit `FX gain/loss - CAD` (8231-1): CAD 13,613.53
   - Debit `Investments - DLR/DLR.U` (2303-1, CAD-native): CAD 13,613.53
 
-Day 1 — journal DLR.U units to the DLR side:
+Day 1, journal DLR.U units to the DLR side:
 - No ledger entry; the journal is an internal broker bookkeeping action with no cash impact, and the investment account is already CAD-denominated
 
-Day 1 — sell 1,000 units of DLR at CAD 13.60 = CAD 13,600 minus $9.95 commission = CAD 13,590.05 net proceeds:
+Day 1, sell 1,000 units of DLR at CAD 13.60 = CAD 13,600 minus $9.95 commission = CAD 13,590.05 net proceeds:
 - Pure CAD entry (no FX bridge; both legs CAD-native):
   - Debit `Deposits` (1002-1): CAD 13,590.05
   - Debit `Disposition of capital property` (8211-1, capital-account; Schedule 6 disposition): CAD 23.48
@@ -297,7 +307,7 @@ For a USD invoice, the CAD equivalent is computed at the BoC rate on the invoice
 
 ### Bookkeeping
 
-On invoice issue — a cross-currency entry (CAD-side revenue, USD-side AR) with FX bridge accounts:
+On invoice issue, a cross-currency entry (CAD-side revenue, USD-side AR) with FX bridge accounts:
 - USD-side (balances within USD):
   - Debit `Accounts receivable - USD` (1060-2): USD invoice amount
   - Credit `FX gain/loss - USD` (8231-2): USD invoice amount
@@ -305,7 +315,7 @@ On invoice issue — a cross-currency entry (CAD-side revenue, USD-side AR) with
   - Debit `FX gain/loss - CAD` (8231-1): USD invoice amount × invoice-date BoC rate
   - Credit `Trade sales of goods and services` (8000): same CAD amount
 
-On collection — two cases:
+On collection, two cases:
 
 Case A: USD payment hits the USD operating account (`Deposits - USD`, 1002-3).  
 Pure USD entry; no FX bridge because both legs are USD-native:
@@ -356,7 +366,8 @@ Registration and ITC consequences:
 ### Taxable USD Supplies and HST
 
 The zero-rated case above carries no HST, so no FX question arises on the tax.  
-A *taxable* USD-denominated supply (for example a USD invoice to a Canadian customer) does carry HST, and the HST is converted to CAD at the rate on its *tax-point* date: the earlier of the invoice date and the day the invoice is issued (ETA [s.159](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-159.html); see [HST / When tax becomes payable](../Operations/HST.md#when-tax-becomes-payable)).  
+A *taxable* USD-denominated supply (for example a USD invoice to a Canadian customer) does carry HST, and the HST is converted to CAD at the rate on its *tax-point* date (ETA [s.159](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-159.html)).  
+The tax point is the earlier of the day the consideration is paid and the day it becomes due (ETA [s.168(1)](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-168.html)), normally the invoice date for a consultant billing on completion; see [HST / When tax becomes payable](../Operations/HST.md#when-tax-becomes-payable) for the full s.152 breakdown.  
 
 The HST tax-point rate can differ from the rate date on the revenue:
 - *Revenue*: invoice-date BoC rate, as elsewhere on this page
@@ -379,7 +390,7 @@ When invoicing a US client, US tax law requires the client to withhold US tax on
 Setup: single-shareholder Canadian IT consulting CCPC, calendar fiscal year, HST-registered, all clients are US corporations with no Canadian presence.  
 Year 1 (2026), three transactions:
 
-Mar 15 — issue invoice #1 for USD 10,000; BoC rate 1.36:
+Mar 15, issue invoice #1 for USD 10,000; BoC rate 1.36:
 - USD-side:
   - Debit `Accounts receivable - USD` (1060-2): USD 10,000
   - Credit `FX gain/loss - USD` (8231-2): USD 10,000
@@ -388,13 +399,13 @@ Mar 15 — issue invoice #1 for USD 10,000; BoC rate 1.36:
   - Credit `Trade sales of goods and services` (8000): CAD 13,600
 - Invoice shows GST/HST: $0.00 (zero-rated, ETA Sch VI Part V s.23)
 
-Apr 20 — USD 10,000 received into `Deposits - USD`:
+Apr 20, USD 10,000 received into `Deposits - USD`:
 - Pure USD entry (no FX bridge; both legs USD-native):
   - Debit `Deposits - USD` (1002-3): USD 10,000
   - Credit `Accounts receivable - USD` (1060-2): USD 10,000
 - No FX gain or loss recognized; the FX exposure stays in the trading accounts
 
-Oct 1 — issue invoice #2 for USD 5,000; BoC rate 1.36:
+Oct 1, issue invoice #2 for USD 5,000; BoC rate 1.36:
 - USD-side:
   - Debit `Accounts receivable - USD` (1060-2): USD 5,000
   - Credit `FX gain/loss - USD` (8231-2): USD 5,000
@@ -402,7 +413,7 @@ Oct 1 — issue invoice #2 for USD 5,000; BoC rate 1.36:
   - Debit `FX gain/loss - CAD` (8231-1): CAD 6,800
   - Credit `Trade sales of goods and services` (8000): CAD 6,800
 
-Dec 31 — year-end revaluation at closing BoC rate 1.38:
+Dec 31, year-end revaluation at closing BoC rate 1.38:
 - Account balances before revaluation:
   - `Accounts receivable - USD` (1060-2): USD 5,000 (invoice #2 unpaid)
   - `Deposits - USD` (1002-3): USD 10,000 (from invoice #1)
@@ -452,7 +463,7 @@ Setup: single-shareholder consulting CCPC keeps a small USD float for paying US 
 The float is funded once a year from CAD via internal bank conversion.  
 Calendar fiscal year, opening USD 0.
 
-Mar 1 — internal CAD → USD bank conversion to fund the float; CAD 7,000 → USD 5,000 at the bank's effective rate of 1.40:
+Mar 1, internal CAD → USD bank conversion to fund the float; CAD 7,000 → USD 5,000 at the bank's effective rate of 1.40:
 - CAD-side (balances within CAD):
   - Credit `Deposits` (1002-1): CAD 7,000
   - Debit `FX gain/loss - CAD` (8231-1): CAD 7,000
@@ -460,7 +471,7 @@ Mar 1 — internal CAD → USD bank conversion to fund the float; CAD 7,000 → 
   - Debit `Deposits - USD` (1002-3): USD 5,000
   - Credit `FX gain/loss - USD` (8231-2): USD 5,000
 
-Aug 15 — pay USD 2,000 to a US software vendor (annual subscription); bill-date BoC rate 1.35:
+Aug 15, pay USD 2,000 to a US software vendor (annual subscription); bill-date BoC rate 1.35:
 - USD-side:
   - Credit `Deposits - USD` (1002-3): USD 2,000
   - Debit `FX gain/loss - USD` (8231-2): USD 2,000
@@ -468,7 +479,7 @@ Aug 15 — pay USD 2,000 to a US software vendor (annual subscription); bill-dat
   - Credit `FX gain/loss - CAD` (8231-1): CAD 2,700
   - Debit `Computer-related expenses / Software subscriptions` (GIFI 9150, CAD-native operating-expense line): CAD 2,700
 
-Dec 31 — year-end revaluation at closing BoC rate 1.38:
+Dec 31, year-end revaluation at closing BoC rate 1.38:
 - Account balances before revaluation:
   - `Deposits - USD` (1002-3): USD 3,000 (= 5,000 funded − 2,000 paid)
   - `FX gain/loss - CAD` (8231-1): CAD 4,300 debit (= 7,000 debit − 2,700 credit)
@@ -525,7 +536,7 @@ flowchart TB
 
 ## Edge Cases
 
-- *USD-denominated capital assets*: foreign securities held in a corporate trading account follow [Adjusted Cost Base](../Investments/Adjusted-Cost-Base/Adjusted-Cost-Base.md) — trade-date FX for purchases, sales, and commissions; payment-date FX for distributions; the FX layer here is the ACB workflow's mirror image
+- *USD-denominated capital assets*: foreign securities held in a corporate trading account follow [Adjusted Cost Base](../Investments/Adjusted-Cost-Base/Adjusted-Cost-Base.md); trade-date FX for purchases, sales, and commissions; payment-date FX for distributions; the FX layer here is the ACB workflow's mirror image
 - *Foreign tax withheld on USD distributions*: see [T3](../Investments/T3/T3.md) for the Box 25 / Box 34 walkthrough; foreign withholding tax is grossed up on Schedule 7 and a foreign tax credit is claimed on Schedule 21
 - *USD credit card paying CAD bills*: the foreign-currency liability is settled at the statement-conversion FX; record at the transaction date, recognize FX gain or loss on statement settlement
 - *Triangular conversions* (USD → EUR → CAD): each leg is a separate disposition; the intermediate currency is itself property; out of scope here
@@ -567,6 +578,7 @@ flowchart TB
   - Schedule VI, Part V, section 23 - zero-rated advisory, professional, or consulting services to non-residents
   - [s.148](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-148.html) - small-supplier threshold (zero-rated supplies count toward the $30,000 test)
   - [s.159](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-159.html) - conversion of foreign-currency consideration to CAD at the HST tax-point date
+  - [s.168(1)](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-168.html) - HST payable on the earlier of payment and consideration becoming due (the tax-point date)
 - CRA publications:
   - CRA archived IT-95R - *Foreign Exchange Gains and Losses* (paragraphs 8 and 9 on accrual vs settlement for income-account vs capital-account FX): https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/it95r/archived-foreign-exchange-gains-losses.html
   - CRA Income Tax Folio S5-F4-C1 - *Income Tax Reporting Currency*: https://www.canada.ca/en/revenue-agency/services/tax/technical-information/income-tax/income-tax-folios-index/series-5-international-residency/series-5-international-residency-folio-4-foreign-currency/income-tax-folio-s5-f4-c1-income-tax-reporting-currency.html
