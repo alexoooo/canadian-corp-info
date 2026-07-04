@@ -22,9 +22,10 @@ A follow-up review is the second half of the cycle: after the audit's fixes land
 Work resumably, in bounded checkpointed increments — the audit must survive a context reset:
 
 - Run side agents to keep the main thread clean: bulky reads, citation fetches, and dead-ends belong in an agent, not in the main context. A few may run in parallel — cap it at two or three — but parallelism here serves context management, never throughput. Each agent owns a separable unit (a single page or a tight cluster) and checkpoints its findings to `audit/wip/` as it returns, so page-by-page resumability still holds. The cap is the loss bound: if tokens run out or the context resets mid-audit, only the few in-flight units are lost rather than the whole pass. Don't launch the next batch until the finished one is checkpointed
-- Before reading content, write the audit plan as a checklist and save it under `audit/wip/`; iterate it as work proceeds
-- Checkpoint partial findings to `audit/wip/` as each page or cluster is finished, so a fresh session resumes from a good state instead of restarting
-- Remove `audit/wip/` once the final audit document is delivered
+- Start from a clean slate: before reading content, delete any existing `audit/wip/` so a prior pass's leftovers can't leak in, then write the audit plan as a checklist and save it under `audit/wip/`; iterate the checklist as work proceeds
+- Keep the findings as a live document: open a running file in `audit/wip/` (e.g. `findings.md`) in the final document's section shape and append each finding the moment it survives verification, rather than holding findings in context for a write-up at the end; a fresh session then resumes from a good state — the loss is a single finding, and producing the deliverable is concatenation, not reconstruction
+- Persist thinking artifacts, not just findings: when a page needs extended reasoning — a rate reconciliation, a citation trail, a half-formed suspicion to revisit — write it to `audit/wip/` as you go; in-progress reasoning is exactly what a token-exhausted session cannot rebuild, so treat it as recoverable state rather than scratch that lives only in context
+- Leave `audit/wip/` in place when the audit finishes — deleting it is the maintainer's call, and the next audit's clean-slate step clears it if forgotten
 
 `audit/wip/` is scratch space (git-ignored). Nothing in it is the deliverable; the deliverable is the single dated audit file.
 
@@ -93,4 +94,3 @@ Verify, don't trust: trace each prior finding to its line(s), re-check the factu
 
 - Add one index line to the `## Audit` section of `README.md` pointing at the new file
 - Confirm `git status` shows only the new audit file plus that README line — no `guide/` page is touched (audits are read-only; fixes land separately)
-- Remove `audit/wip/`
