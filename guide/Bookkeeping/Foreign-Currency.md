@@ -22,7 +22,7 @@ Limitations:
 - *Functional currency* election (ITA s.261) is mentioned once and excluded from scope; it is a multinational filing aimed at corporations whose primary books-and-records currency is not CAD
 - Foreign-securities tax slips (T3 Box 25/34 foreign-income, foreign tax credit on Schedule 21) and ACB mechanics live in [T3](../Investments/T3/T3.md) and [Adjusted Cost Base](../Investments/Adjusted-Cost-Base/Adjusted-Cost-Base.md); this page covers only the FX-conversion layer
 - *Hedging* (forward contracts, currency swaps) and derivative tax mechanics are out of scope
-- Broker support for Norbert's Gambit changes; named brokers below reflect their 2026 state and should be re-verified before relying on them
+- Broker support for Norbert's Gambit can change; named brokers below reflect their 2026 state and should be re-verified before relying on them
 - Tax information can change over time (e.g. the capital gains inclusion rate was going to increase to 2/3, before the proposal was cancelled)
 - The following is my understanding as of 2026
 
