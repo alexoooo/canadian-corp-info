@@ -142,7 +142,7 @@ Foreign tax credit (only if Box 34 has an amount):
   - *Column 1A* (100): country of source, e.g. US
   - *Column 1B* (110): net foreign non-business income, i.e. the gross Box 25 amount less any related carrying expenses (usually just the Box 25 figure)
   - *Column 1C* (120): foreign tax paid, i.e. the Box 34 amount
-  - *Column 1D* (130): leave blank when claiming the credit. It is only for foreign tax you instead deduct from income under s.20(12), which is the mutually exclusive alternative to the credit; crediting and deducting the same dollars is not allowed. Column 1E computes `1C - 1D`, so any figure here reduces the credit dollar for dollar. You would use it only for excess foreign tax the s.126(1) limit disallows (see below), not for a small fully creditable amount
+  - *Column 1D* (130): leave it blank for a T3 Box 34 amount. The column feeds the s.20(12) deduction, the mutually exclusive alternative to the credit, but that deduction is not available for foreign tax flowed through a trust (see [Box 34 Without Box 25](#box-34-without-box-25)); it applies only to foreign non-business tax the corporation pays directly, not through a T3. Column 1E computes `1C - 1D`, so any figure here reduces the credit dollar for dollar
   - *Column 1F* (line 600 in Part 6): adjusted net income, used in the credit-limit calculation; software-populated
 - Schedule 1 (S1), Other additions: enter the Box 34 amount as a "Foreign tax add-back" to reverse the withholding expensed in `Withholding taxes` (9283), so the credit is not double-counted against the expense. This is the "Other additions" grid on S1 page 3, not the "Other deductions" grid on page 4; the two look alike but have different box numbers and opposite sign:
   - *Column 1* (Description, 605): a label such as "Foreign tax add-back - T3 Box 34"
@@ -151,8 +151,29 @@ Foreign tax credit (only if Box 34 has an amount):
 - If you claim neither the S21 credit nor the S1 add-back, the foreign tax stays a plain expense, which is less tax-efficient
 - An alternative some find simpler: debit only the net amount (skip the `Withholding taxes` expense) and add the gross-up back through the S1 "Other additions" line
 
-The S21 credit for non-business foreign tax is bounded by the Canadian tax otherwise payable on that foreign income; any uncredited excess may be deductible under ITA [s.20(12)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-20.html).  
-The detailed credit limitation is out of scope here.  
+The S21 credit for non-business foreign tax is bounded by the Canadian tax otherwise payable on that foreign income.  
+For foreign tax that reaches you through a trust (a T3 Box 34 amount), any uncredited excess is not recoverable: the [s.20(12)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-20.html) deduction does not apply, because s.104(22.1) deems the beneficiary to have paid the foreign tax only for the purposes of the s.126 credit (see [Box 34 Without Box 25](#box-34-without-box-25) below).  
+The detailed credit-limit arithmetic is out of scope here.  
+
+
+## Box 34 Without Box 25
+
+Box 34 is the foreign tax on the Box 25 income, so the two normally travel together and Box 34 is a fraction of Box 25.  
+The slip enforces no arithmetic link between them, though, and a Box 34 amount can show up against a nil or much smaller Box 25.  
+
+The cause is a character mismatch: the foreign side withholds on the gross cash distribution, while the fund assigns that same cash to Canadian tax characters box by box.  
+When the Canadian character is not foreign non-business income, the withholding still lands in Box 34 (the slip has no other box for foreign tax) while the distribution itself lands elsewhere:
+- *Return of capital (Box 42) or capital gains (Box 21)*: the cash is characterized as ROC or a capital gain for Canadian purposes, not as property income, so little or nothing reaches Box 25
+- *US REITs are the classic case*: FIRPTA withholding applies even to return-of-capital distributions, so a distribution that is largely Box 42 / Box 21 can still carry a Box 34 amount
+- *Timing*: an interim slip can show withholding before the fund finalizes the character split in its March tax-characterization breakdown, so the two may not line up dollar for dollar until the final numbers arrive
+
+An uncreditable Box 34 on a T3 gives no Canadian relief:
+- The s.126(1) credit is bounded by the Canadian tax on the foreign non-business income (the Box 25 amount), so with Box 25 nil there is little or no credit room (see [T2 Schedule Mapping](#t2-schedule-mapping) above)
+- There is no s.20(12) fallback for foreign tax flowed through a trust: s.104(22.1) deems the beneficiary to have paid the foreign tax only for the purposes of s.126, and s.104(22) to (22.3) do not extend to the s.20(11) or s.20(12) deductions (CRA position in IT-506 and IT-201R2). This binds a corporate beneficiary the same as an individual; the deeming is scoped by statute to the credit, not to the type of taxpayer
+- The withholding therefore stays a non-deductible cost: add it back on Schedule 1 as in the creditable flow, but with no offsetting credit, so it simply reduces the after-tax return
+
+Before treating a Box 34 as lost, pull the fund's annual tax-characterization breakdown (or the CTBS PDF; see [Determining Whether Box 25 Is Interest or Dividends](#determining-whether-box-25-is-interest-or-dividends) above).  
+An interim Box 34 with no Box 25 often resolves into a real Box 25 once the character is finalized, which restores the credit room.  
 
 
 ## Related
@@ -167,14 +188,15 @@ The detailed credit limitation is out of scope here.
 ## Citations
 
 - Income Tax Act (R.S.C., 1985, c. 1 (5th Supp.)):
-  - [s.104](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-104.html) - trust income allocations and amounts becoming payable to beneficiaries
+  - [s.104](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-104.html) - trust income allocations and amounts becoming payable to beneficiaries; s.104(22)/(22.1) designate foreign source income and foreign tax to the beneficiary for the purposes of the s.126 credit only
   - [s.108](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-108.html) - trust definitions and the deeming rule in s.108(5) for beneficiary income from a trust interest
   - [s.112(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-112.html) - intercorporate-dividend deduction, limited to dividends from a taxable Canadian corporation (foreign dividends do not qualify)
-  - [s.20(12)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-20.html) - deduction for foreign non-business income tax not credited
+  - [s.20(12)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-20.html) - deduction for foreign non-business income tax not credited; not available for tax flowed through a trust, since the s.104(22.1) designation applies only for the s.126 credit
   - [s.125(5.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-125.html) - reduction of the small-business business limit when adjusted aggregate investment income exceeds $50,000
   - [s.126(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-126.html) - foreign non-business income tax credit
   - [s.129(4)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-129.html) - definitions of aggregate investment income and non-eligible RDTOH
 - CRA Form T3 - Statement of Trust Income Allocations and Designations: https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t3.html
+- CRA IT-201R2 (archived) - Foreign Tax Credit - Trust and Beneficiaries; and IT-506 (archived) - Foreign Income Taxes as a Deduction from Income (para 11): a beneficiary cannot claim the s.20(11)/(12) deduction for foreign tax allocated by a trust: https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/it201r2/archived-foreign-tax-credit-trust-beneficiaries.html
 - CRA T2 S7: https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2sch7.html
 - CRA T2 S21: https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2sch21.html
 - CRA RC4088 - General Index of Financial Information (GIFI): https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4088/general-index-financial-information-gifi.html
@@ -185,4 +207,4 @@ The detailed credit limitation is out of scope here.
 ## TODO
 
 - Add a Box 25 / Box 34 T3 slip screenshot (the S7 worksheet screenshot is included)
-- Expand the foreign tax credit limitation (s.126(1) limit and the s.20(11)/(12) interaction) for larger Box 34 amounts
+- Expand the s.126(1) foreign tax credit limit arithmetic (the credit-limit fraction) for larger Box 34 amounts
