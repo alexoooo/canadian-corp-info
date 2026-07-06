@@ -4,6 +4,18 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
 
 ## Corporate Income Tax
 
+The corp pays its T2 balance, and monthly or quarterly instalments toward it during the year.
+
+- *Account*: the `RC` corporation-income-tax program account under the business number
+- *Balance-due day*: the balance is due two months after the tax year-end, or three months for a CCPC that claims the small business deduction with taxable income within the business limit (ITA [s.248(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-248.html) "balance-due day")
+- *Instalments*: monthly by default (ITA [s.157(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-157.html)); an eligible small CCPC may instead pay quarterly (s.157(1.1)) if it claims the SBD, keeps taxable income at $500,000 or less and taxable capital at $10 million or less across the associated group, and has a clean 12-month filing-and-remittance record
+- *Instalment base*: base the instalments on the current year's estimated tax or on a prior-year instalment base (the canonical page sets out the one-year and two-year base methods)
+- *No-instalment threshold*: instalments are not required when the year's total tax payable, or the first instalment base, is $3,000 or less (ITA [s.157(2.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-157.html)); pay the whole balance by the balance-due day instead
+- *Interest*: deficient or late instalments carry instalment interest and a possible instalment penalty (s.163.1); an unpaid balance after the balance-due day accrues arrears interest, compounded daily at the prescribed rate
+- *How*: My Business Account, an online-banking "Federal - Corporation Tax" payee, or a bank's business tax service; see [Payment methods](#payment-methods) below
+
+See [filing deadlines and instalments](../../Overview/Small-Business-Tax.md#filing-deadlines-and-instalments) for the full computation.
+
 When filing T2 taxes, enter the pre-paid instalments for them to count towards the balance:  
 T2 (Corporate Income Tax Return) / Page 9 / Summary of tax and credits  
 Deduct other credits / line 840 (Tax instalments paid)  

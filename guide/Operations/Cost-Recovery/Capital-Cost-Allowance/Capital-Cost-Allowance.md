@@ -112,6 +112,7 @@ As reinstated, for property acquired after 2024 (on or after Jan 1 2025) and ava
 - For CCA classes otherwise subject to the half-year rule, the half-year rule is suspended and the first-year base is 150% of the net addition (three times the deduction the half-year rule alone would have allowed)
 - For classes not subject to the half-year rule, the first-year deduction is one-and-a-half times the normal allowance
 - For *full-expensing* classes (M&P equipment in Class 53, or Class 43 for acquisitions after 2025; clean energy 43.1 / 43.2; zero-emission vehicles 54 / 55 / 56), 100% of cost is deductible in the first year — a stronger enhanced first-year allowance than the 150% above, though both wind down over 2030–2033
+- Classes 44 (patents), 46 (data-network infrastructure), and 50 (general-purpose computer equipment) are fully expensed in the first year under a separate Budget 2024 measure (Reg 1100(2)), for property acquired after Apr 15 2024 and available for use before 2027
 
 A new phase-out runs from 2030 to 2033: the enhancement steps down for property available for use after 2029 and is fully eliminated for property available for use after 2033.  
 The year-by-year step-down percentages are not quoted here.  
@@ -199,7 +200,7 @@ For a tax year shorter than 365 days (incorporation year, year of dissolution, f
 - Maximum CCA × (days in tax year / 365)
 
 Exceptions to proration:
-- Classes 12, 13, 14, 15
+- Classes 14 and 15 (plus specialty items: timber limits, industrial mineral mines, Canadian film or video productions, and certain mining allowances)
 - DIEP immediate-expensing *deduction*: the Dec 2024 amendment removed its short-year proration, retroactive to fiscal years ending on or after Apr 19 2021 (the $1.5M DIEP limit itself still prorates under Regulation 1104(3.5)(b))
 
 
@@ -249,7 +250,7 @@ These thresholds matter most for:
 
 For certain classes, you can expense an item in the books rather than capitalize and amortize it.  
 Where a class writes off the whole cost in the first year, capitalizing the item and expensing it results in the same deduction in the same year:
-- *Which classes*: most of Class 12 (its half-year-exempt items) and the *full-expensing* classes under AIIP (M&P Class 53 / 43, 43.1 / 43.2, 54 / 55 / 56)
+- *Which classes*: most of Class 12 (its half-year-exempt items), the *full-expensing* classes under AIIP (M&P Class 53 / 43, 43.1 / 43.2, 54 / 55 / 56), and Classes 44 / 46 / 50 for property available for use before 2027 (Budget 2024)
 - *No spread*: nothing is amortized over later years, so the choice is bookkeeping mechanics, not timing, and expensing such an item directly costs no tax
 - *Software exception*: Class 12 application software stays under the half-year rule, so outside the AIIP window it deducts over two years and the equivalence fails
 - *When timing diverges*: only if the alternative is a declining-balance class (Class 8 at 20%, say), where the pool releases the cost over years; that gap is what the capitalization floor trades off

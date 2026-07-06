@@ -52,7 +52,8 @@ Credit: "Cash" (GIFI 1001) = $50,000
 T2 (2026) schedule entries:
 - S3 Part 3: line 450 (taxable dividends paid, non-connected) $50,000, all eligible — line 455 $50,000, line 465 (total eligible paid) $50,000
 - S3 Part 4: line 500 (total dividends paid in the year) $50,000
-- S53 (GRIP): opening $144,000 − eligible paid $50,000 + 2026 additions = closing balance
+- S53 (GRIP): opening $144,000 + 2026 additions = closing balance (line 590)
+  - The $50,000 designated in 2026 is tested against that closing balance, then deducted on the 2027 S53 (line 300, *eligible dividends paid in the previous tax year*)
 - T2 dividend refund line: $0 (no ERDTOH balance assumed in this example)
 
 Personal-side context: the shareholder reports $50,000 × 1.38 = $69,000 taxable on T1; federal DTC of $69,000 × 15.0198% ≈ $10,364; Ontario DTC of $69,000 × 10% = $6,900.  

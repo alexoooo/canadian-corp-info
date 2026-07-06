@@ -30,7 +30,8 @@ Limitations:
 | Cost tracking | [adjusted cost base](Adjusted-Cost-Base/Adjusted-Cost-Base.md), superficial-loss rule | inventory of a trading business |
 
 Everything downstream in this guide — the [T5008 workflow](T5008/T5008.md), the ACB tracker, the capital-dividend sweep — sits on the capital-account side of this table.  
-The loss side cuts the other way: an income-account loss is fully deductible, which is why CRA argues capital on gains and taxpayers argue capital on losses — character is symmetric and cannot be chosen per trade.  
+The loss side cuts the other way: an income-account loss is fully deductible, which is why CRA argues income on gains and capital on losses, and the taxpayer argues the reverse.  
+Character is symmetric and cannot be chosen per trade.  
 
 
 ## The Character Factors

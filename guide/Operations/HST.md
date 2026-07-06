@@ -463,7 +463,7 @@ The break-even point against the regular method on Ontario services is roughly t
 - *Inter-corporate supplies* between closely related corporations: an election under ETA [s.156](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-156.html) zero-rates most supplies between qualifying members of a closely related group; filed jointly on Form RC4616; useful in an opco/holdco structure and out of scope here
 - *Voluntary disclosure*: missed past returns or unclaimed ITCs can be corrected through the *Voluntary Disclosures Program* (VDP) if the corp comes forward before CRA initiates contact; penalty relief and partial interest relief are available
 - *Shareholder benefit and inventory appropriation*: when a CCPC gives goods to a shareholder or to a related person, the *self-supply* and *change-of-use* rules can trigger GST/HST on the deemed disposition (ETA s.172, s.190); see [Inventory](Cost-Recovery/Inventory-And-COGS.md#edge-cases) for the income-tax side
-- *Trust account convention*: HST collected is the corp's money in a legal sense (the corp is the debtor to CRA, not a trustee), but practical bookkeeping often treats it as a quasi-trust; do not commingle the cash with operating funds beyond what is necessary, especially for a corp on monthly or quarterly reporting
+- *Trust account convention*: HST collected is held in a statutory deemed trust for the Crown, separate and apart from the corp's own property (ETA [s.222](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-222.html)); this is stronger than an ordinary debt, so keep the cash segregated from operating funds, especially for a corp on monthly or quarterly reporting
 
 
 ## Related

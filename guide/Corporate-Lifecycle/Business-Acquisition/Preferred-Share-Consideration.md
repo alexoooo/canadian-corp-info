@@ -87,7 +87,8 @@ This is a central reason the structure is decided with an advisor rather than by
 ## TOSI and Family Vendors
 
 Where the vendors are family members, the dividends they receive, including deemed dividends on redemption, can be caught by the *Tax on Split Income* (TOSI) and taxed at the top marginal rate unless an exclusion applies (see [Dividends — TOSI](../../Paying-Yourself/Dividends/Dividends.md#tax-on-split-income-tosi)).  
-Common exclusions include the owner being 65 or older, the shares being *excluded shares*, or the amount being a *reasonable return*.  
+Common exclusions include the vendor having been actively engaged in the business in any five earlier years (an *excluded business*), the shares being *excluded shares*, or the amount being a *reasonable return*.  
+Amounts that would be an excluded amount for the vendor's spouse are also excluded once that spouse is 65 or older.  
 
 TOSI is one of the conditions that pushes the family case onto its own page; see [Estate Freeze](Estate-Freeze.md).  
 

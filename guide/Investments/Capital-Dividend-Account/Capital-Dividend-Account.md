@@ -27,13 +27,13 @@ Maintain a running total of capital gain or loss:
 Calculate the balance of the Capital Dividend Account:
 - When the running total is negative, the balance is zero until new gains exceed those past losses
 - When the running total is positive, the balance is the non-taxable portion (currently 50%) of the net capital gain
-- When you pay a capital dividend, subtract it from the CDA; the balance is read at the time the s.83(2) election is filed, so interim capital losses between your last calculation and the election date reduce the available balance
+- When you pay a capital dividend, subtract it from the CDA; the balance is measured immediately before the dividend becomes payable (s.83(2)(a)), so interim capital losses between your last calculation and the payable date reduce the available balance
 
 Example (50% inclusion rate):
 - Year 1: sell a position, gain = $10,000 → non-taxable portion = $5,000 → CDA balance: $5,000
 - Year 2: sell a position, loss = $12,000 → non-taxable portion = $6,000 → cumulative balance would be negative, so CDA balance: $0
 - Year 3: sell a position, gain = $4,000 → non-taxable portion = $2,000 → this first offsets the prior negative balance, leaving CDA balance: $1,000
-- At this point the corporation can elect to pay a capital dividend of up to $1,000, subject to the balance still being available on the election date
+- At this point the corporation can elect to pay a capital dividend of up to $1,000, subject to the balance still being available immediately before the dividend becomes payable
 
 Capital Dividend Account election process:
 - Verification: check the CDA balance via Schedule 89 (S89) or My Business Account (the balance shown reflects the last assessed T2, so it typically lags by 6–12 weeks after your year-end while CRA processes the return)

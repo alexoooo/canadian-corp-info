@@ -181,8 +181,12 @@ Outputs (cumulative per symbol):
 - `Remaining Quantity` should never go negative; if a sale would exceed current holdings, fix the input rather than allowing a negative balance
 - If you fully dispose of a position and later buy it again, the `Date of Acquisition` resets on the new purchase
 - This minimal template does not automate superficial loss, stock splits, or spin-offs; handle those with manual row edits:
-  - Stock split: insert a memo row on the effective date; adjust `Quantity` to the post-split total (ACB unchanged, per-unit ACB recalculates automatically)
-  - Spin-off: close the parent position with a zero-proceeds Sell on the effective date, then open two new Buy rows (one for the parent, one for the new entity) with quantities and ACB allocated based on relative fair market values on that date; see [Adjusted-Cost-Base.md](Adjusted-Cost-Base.md) for the allocation rule
+  - Stock split: enter a Buy row on the effective date for the *additional* units received, with `Gross Amount` 0 and a `Note`; `Remaining Quantity` rises to the post-split total, ACB is unchanged, and per-unit ACB recalculates (a plain memo row feeds no `Quantity Change`, so it stays inert)
+  - Spin-off: record it with memo rows (see [Adjusted-Cost-Base.md](Adjusted-Cost-Base.md) for the allocation rule):
+    - Close the parent position with a Sell whose `Gross Amount` equals its current ACB, so the row's gain/loss nets to zero (a zero-proceeds Sell instead books a phantom loss equal to the whole ACB)
+    - Open two Buy rows, one for the parent and one for the new entity, with quantities and ACB split by relative fair market value on the effective date
+    - Mark every spin-off row in `Note` and exclude it from Schedule 6
+    - Restore the parent's original `Date of Acquisition` on its re-Buy row, since the holding is continuous through the spin-off
   - Superficial / suspended loss (the direction matters, because this sheet tracks the corporation's account):
     - *A loss sold on this sheet* (the corporation sells), with the corporation or an affiliated person reacquiring the identical property in the window: the loss is **suspended** under ITA s.40(3.3)/(3.4), not a superficial loss (ITA s.54(h) excludes it)
       - Add no s.53(1)(f) ACB row; tag the Sell row's loss in `Note` as suspended, claimable once the affiliated group is out of the position for 30 days (or the other s.40(3.4)(b) events)

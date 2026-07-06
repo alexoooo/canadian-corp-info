@@ -245,7 +245,10 @@ The owner-manager caution runs through all of them: a benefit that would not pla
 
 *Other insurance*:
 - Employer-paid *group term life* premiums are a taxable benefit to the employee
-- Employer-paid *disability* premiums are not a benefit, but they make any eventual disability payments taxable to the recipient; premiums paid personally keep the payments tax-free — for an owner-manager, paying disability premiums personally is the usual advice
+- Employer-paid *disability* premiums: the benefit treatment turns on whether the plan is a group plan:
+  - Under a *group* sickness or accident plan, the premiums are not a taxable benefit, but they make any eventual disability payments taxable to the recipient (ITA s.6(1)(f))
+  - On an *individual* (non-group) policy, the premiums are a taxable benefit (the s.6(1)(a)(i) exception covers group plans only), which is generally understood to keep the payments tax-free
+  - Premiums paid personally also keep the payments tax-free, so for an owner-manager paying disability premiums personally is the usual advice
 - Corporate-owned *life insurance* on the owner is a different topic (premiums generally non-deductible; see [Non-deductible perks](#other-mixed-use-and-benefit-situations) above)
 
 *Gifts and awards*:

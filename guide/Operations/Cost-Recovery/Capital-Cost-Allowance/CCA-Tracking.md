@@ -228,10 +228,10 @@ Deliberately excluded to keep the standard flow simple, on a convention-over-con
 
 Cases they do not cover:
 - *Mixed first-year treatments in one class-year*: a class with both AIIP and half-year additions in the same year breaks the single-factor `Adjustment` above; compute the adjustment per addition and sum it (`+0.5 × AIIP additions − 0.5 × half-year additions`); the pool stays one line per class, matching Schedule 8's separate AIIP and regular addition columns
-- *Full-expensing classes* (M&P Class 53 / 43, 54, 55, 56, 43.1 / 43.2 under AIIP): `CCA (Max) = Net Additions` in the year available for use (100%); any later residual depreciates at the class rate
+- *Full-expensing classes* (M&P Class 53 / 43, 54, 55, 56, 43.1 / 43.2 under AIIP; and Classes 44 / 46 / 50 for property available for use before 2027 under the Budget 2024 measure): `CCA (Max) = Net Additions` in the year available for use (100%); any later residual depreciates at the class rate
 - *Class 13 and Class 14* are straight-line, not declining balance: CCA is `Capital Cost ÷ amortization period` (the lease term + first renewal for 13; the remaining legal life for 14), subject to the first-year limit; the declining-balance formula does not apply
 - *Class 10.1*: half-CCA in the year of disposition; no recapture or terminal loss
-- *Short tax year* (under 365 days): multiply `CCA (Max)` by `days in tax year ÷ 365`, except for classes 12, 13, 14, and 15
+- *Short tax year* (under 365 days): multiply `CCA (Max)` by `days in tax year ÷ 365`, except for classes 14 and 15 (and specialty items: timber limits, industrial mineral mines, Canadian film or video productions, and certain mining allowances)
 - *Investment tax credits* claimed against capital cost reduce next year's `Opening UCC` (ITA s.13(7.1)); relevant only for SR&ED claimants
 
 
@@ -319,17 +319,17 @@ One row per `Account` per fiscal `Year`; the cost half and the amortization half
 
 ## Worked Tie-Out
 
-The Class 50 laptop and Class 8 polisher from [CCA Worked examples](CCA-Examples.md), both AIIP-eligible 2026 acquisitions, run through the schedule:
+The Class 50 laptop and Class 8 polisher from [CCA Worked examples](CCA-Examples.md), both 2026 acquisitions, run through the schedule (the laptop under the Budget 2024 100% measure, the polisher under AIIP):
 
 Class 50 (rate 55%), $4,000 addition in 2026, sold for $400 in 2028:
 
 | Year | Opening UCC | Additions | Dispositions | Net Add | Adjustment | CCA Base | CCA (Max) | Closing UCC | Recapture |
 |------|------------:|----------:|-------------:|--------:|-----------:|---------:|----------:|------------:|----------:|
-| 2026 | 0 | 4,000 | 0 | 4,000 | +2,000 | 6,000 | 3,300 | 700 | — |
-| 2027 | 700 | 0 | 0 | 0 | 0 | 700 | 385 | 315 | — |
-| 2028 | 315 | 0 | 400 | −400 | 0 | — | 0 | 0 | 85 |
+| 2026 | 0 | 4,000 | 0 | 4,000 | — | 4,000 | 4,000 | 0 | — |
+| 2027 | 0 | 0 | 0 | 0 | — | 0 | 0 | 0 | — |
+| 2028 | 0 | 0 | 400 | −400 | — | — | 0 | 0 | 400 |
 
-In 2028, `Opening + Net Add = 315 − 400 = −85`, so the pool goes negative: $85 of recapture, closing UCC reset to 0.  
+In 2028, `Opening + Net Add = 0 − 400 = −400`, so the pool goes negative: $400 of recapture, closing UCC reset to 0.  
 
 Class 8 (rate 20%), $1,800 addition in 2026, no disposal:
 
@@ -339,7 +339,7 @@ Class 8 (rate 20%), $1,800 addition in 2026, no disposal:
 | 2027 | 1,260 | 0 | 0 | 0 | 1,260 | 252 | 1,008 |
 | 2028 | 1,008 | 0 | 0 | 0 | 1,008 | 201.60 | 806.40 |
 
-The 2026 figures ($3,300 and $540 of CCA) match the two worked examples; the later years apply the rate to the declining `Opening UCC`.  
+The 2026 figures ($4,000 for the laptop and $540 for the polisher) match the two worked examples; the polisher's later years apply the rate to its declining `Opening UCC`.  
 
 The same two assets on the books, each on its own account with book amortization set equal to CCA, using [Capital asset continuity](#capital-asset-continuity) (Accum. = accumulated amortization):
 
@@ -347,11 +347,11 @@ Computer hardware & software (`1774`), the Class 50 laptop, sold in 2028:
 
 | Year | Opening Cost | Additions | Disposals | Closing Cost | Open. Accum. | Amort. | Disp. Accum. | Close. Accum. | NBV |
 |------|-------------:|----------:|----------:|-------------:|-------------:|-------:|-------------:|--------------:|----:|
-| 2026 | 0 | 4,000 | 0 | 4,000 | 0 | 3,300 | 0 | 3,300 | 700 |
-| 2027 | 4,000 | 0 | 0 | 4,000 | 3,300 | 385 | 0 | 3,685 | 315 |
-| 2028 | 4,000 | 0 | 4,000 | 0 | 3,685 | 0 | 3,685 | 0 | 0 |
+| 2026 | 0 | 4,000 | 0 | 4,000 | 0 | 4,000 | 0 | 4,000 | 0 |
+| 2027 | 4,000 | 0 | 0 | 4,000 | 4,000 | 0 | 0 | 4,000 | 0 |
+| 2028 | 4,000 | 0 | 4,000 | 0 | 4,000 | 0 | 4,000 | 0 | 0 |
 
-The 2028 disposal entry books an $85 gain (`8210`) — proceeds 400 less net book value 315 — the same $85 that lands as recapture on Schedule 8.  
+The 2028 disposal entry books a $400 gain (`8210`), proceeds 400 less net book value 0, the same $400 that lands as recapture on Schedule 8.  
 
 Furniture & equipment (`1740`), the Class 8 polisher, never disposed:
 
@@ -361,7 +361,7 @@ Furniture & equipment (`1740`), the Class 8 polisher, never disposed:
 | 2027 | 1,800 | 0 | 1,800 | 540 | 252 | 792 | 1,008 |
 | 2028 | 1,800 | 0 | 1,800 | 792 | 201.60 | 993.60 | 806.40 |
 
-Each account's `NBV` equals its class's `Closing UCC` above — laptop 700, 315, 0; polisher 1,260, 1,008, 806.40 — because book amortization was set to CCA and each class maps to a single account.  
+Each account's `NBV` equals its class's `Closing UCC` above (laptop 0, 0, 0; polisher 1,260, 1,008, 806.40), because book amortization was set to CCA and each class maps to a single account.  
 Where that holds the continuity is just the class schedule restated on the books; the split in [Amortization by account](#amortization-by-account) is what pulls them apart when a class spans accounts.  
 
 

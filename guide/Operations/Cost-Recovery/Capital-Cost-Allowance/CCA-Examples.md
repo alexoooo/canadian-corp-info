@@ -36,18 +36,20 @@ Schedule 8 Class 50 row:
 - Cost of additions: $4,000
 - Dispositions: $0
 - Standard Class 50 declining-balance rate: 55%
-- Without AIIP, the half-year adjustment would give a base of $2,000 and CCA of $2,000 × 55% = $1,100
-- Under the reinstated AIIP (this 2026 acquisition is available for use before 2030), the half-year rule is suspended and the first-year base is 150% of the addition: CCA of $6,000 × 55% = $3,300 (three times the half-year figure)
-- Closing UCC: $4,000 − $3,300 CCA = $700 (with the AIIP deduction)
+- Without any incentive, the half-year adjustment would give a base of $2,000 and CCA of $2,000 × 55% = $1,100
+- Class 50 computer equipment qualifies for 100% first-year expensing under the Budget 2024 productivity measure (property acquired after Apr 15 2024 and available for use before 2027), so the maximum first-year CCA is 100% × $4,000 = $4,000
+  - The general AIIP result for a regular class would be lower (150% × $4,000 × 55% = $3,300), so the 100% measure governs
+- Closing UCC: $4,000 − $4,000 CCA = $0
+- CCA is a ceiling, not a mandate: the corp may claim any amount from $0 to $4,000, leaving any unclaimed cost in UCC to depreciate at 55% later
 
 Year 2 (2027):
 
 No transactions.  
 Schedule 8 Class 50 row:
-- Opening UCC: from year 1
-- Additions: $0; dispositions: $0; half-year adjustment: none (no additions)
-- CCA: 55% × opening UCC
-- Closing UCC: opening UCC − CCA
+- Opening UCC: $0 (fully expensed in year 1)
+- Additions: $0; dispositions: $0
+- CCA: 55% × $0 = $0
+- Closing UCC: $0
 
 Year 3 (2028): laptop sold for $400 cash on Aug 15 2028.
 
@@ -58,11 +60,12 @@ Aug 15 entry (book side, GAAP-style books):
 - Plug the residual to `Gain on disposal of capital assets` (GIFI 8210) or `Loss on disposal of capital assets`
 
 Schedule 8 Class 50 row:
-- Opening UCC: from year 2
+- Opening UCC: $0 (from year 2)
 - Dispositions: $400 (lesser of proceeds $400 and original cost $4,000 = $400)
 - Closing UCC: opening UCC − $400 − CCA claimed
 - If the laptop was the only Class 50 asset and the resulting balance is positive, claim the residual as a *terminal loss* (ITA s.20(16))
 - If the resulting balance is negative, the excess is *recapture* (ITA s.13(1))
+- Here opening UCC is $0, so $0 − $400 = −$400: $400 of recapture (no terminal loss)
 
 Schedule 1 reconciliation for year 3:
 - Add back: book amortization expense for the year and the accounting gain/loss on disposal

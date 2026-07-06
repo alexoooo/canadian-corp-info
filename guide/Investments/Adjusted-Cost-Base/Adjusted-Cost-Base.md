@@ -60,8 +60,9 @@ Example:
 
 Corporate actions can increase or decrease your ACB:
 - Stock split: total ACB stays the same, but it is spread over more shares/units, so the per-share/per-unit ACB decreases proportionally
-- Spin-off: allocate the original total ACB between the parent company and the new entity based on their relative fair market values on the effective date, then continue
-  tracking them as two separate pooled positions (s.86.1 eligible foreign spin-offs follow the issuer's allocation notice instead; that path is not covered here)
+- Spin-off (Canadian plan-of-arrangement): allocate the original total ACB between the parent and the new entity by their relative fair market values on the effective date, then track them as two separate pooled positions
+  - Foreign spin-off: the default is a taxable dividend in kind at the shares' FMV, that FMV becomes their ACB (ITA s.52(2)), and the parent's ACB is unchanged
+  - A s.86.1 election, available only where CRA lists the distribution as eligible and you elect in writing with your return, replaces that default with the relative-FMV apportionment above and defers the income inclusion
 
 
 ## Book Cost vs ACB

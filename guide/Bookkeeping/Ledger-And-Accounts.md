@@ -185,8 +185,8 @@ The tables below are a superset of the accounts used across this guide plus the 
 Titles are from CRA RC4088; the balance sheet (Schedule 100) runs `1000`–`3849`, the income statement (Schedule 125) runs `8000`–`9999`.  
 Use the most specific line that fits and keep it stable year to year.  
 
-Internal sub-codes: the guide sometimes splits one GIFI line into per-currency or per-purpose tracking accounts, written `NNNN-N` — for example `8231-1` and `8231-2` for the CAD and USD sides of foreign-exchange gains, or `1060-1` / `1060-2` for CAD and USD receivables.  
-These are bookkeeping sub-accounts only: they roll up to the official parent line (`8231`, `1060`) for filing and are never themselves GIFI codes.  
+Internal sub-codes: the guide sometimes splits one GIFI line into per-currency or per-purpose tracking accounts, written `NNNN-N` — for example `8231-1` and `8231-2` for the CAD and USD sides of foreign-exchange gains, or `1062-1` / `1062-2` for CAD and USD trade receivables.  
+These are bookkeeping sub-accounts only: they roll up to the official parent line (`8231`, `1062`) for filing and are never themselves GIFI codes.  
 See [Foreign Currency](Foreign-Currency.md).  
 
 Assets (Schedule 100):
@@ -196,8 +196,8 @@ Assets (Schedule 100):
 | Cash | `1001` | the main operating bank account |
 | Deposits in Canadian banks and institutions – Canadian currency | `1002` | a separate CAD savings or second account |
 | Deposits in Canadian banks and institutions – foreign currency | `1003` | a USD account held at a Canadian bank |
-| Accounts receivable | `1060` | amounts billed to clients, not yet collected |
-| Allowance for doubtful accounts | `1061` | contra-asset for receivables unlikely to be collected |
+| Trade accounts receivable | `1062` | amounts billed to clients, not yet collected |
+| Allowance for doubtful trade accounts receivable | `1063` | contra-asset for trade receivables unlikely to be collected |
 | Inventories | `1120` | rollup; `1121` goods for sale, `1122` parts and supplies, `1125` work in progress, `1126` raw materials |
 | Due from shareholder(s)/director(s) | `1300` | shareholder-loan account when the owner owes the corporation |
 | Other current assets | `1480` | `1483` taxes recoverable/refundable, `1484` prepaid expenses, `1482` accrued investment income |

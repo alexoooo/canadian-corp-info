@@ -79,7 +79,7 @@ This is the load-bearing distinction in foreign-currency tax: every FX gain or l
 *Capital-account FX*:
 - Arises from dispositions of *capital property*: foreign securities, USD held in an investment account to acquire securities, settlement of a foreign-currency capital obligation
 - 50% inclusion rate (ITA [s.38](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-38.html))
-- Recognized only on disposition (ITA [s.39(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-39.html)), not on year-end revaluation (IT-95R paragraph 9)
+- Recognized only on disposition (ITA [s.39(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-39.html) with [s.40](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-40.html)), not on year-end revaluation (IT-95R paragraph 9)
 - "Disposition" of foreign currency includes converting it to CAD, using it to pay a CAD obligation, transferring it to a third currency, or using it to acquire property
 - Reported on Schedule 6 (Summary of Dispositions of Capital Property)
 - Reconciled through Schedule 1 in the usual capital-gains accounting-to-tax pattern (full accounting gain or loss removed, the taxable half from Schedule 6 added back)
@@ -118,24 +118,35 @@ The `FX gain/loss` sub-accounts (8231-1, 8231-2) accumulate per-currency positio
 ## GIFI Mapping
 
 Account codes used through the worked examples below.  
-Internal codes carry a `-N` suffix (matching the convention in [T3](../Investments/T3/T3.md)); the GIFI rollup at year-end is the parent code without the suffix.  
+Where the guide splits one GIFI line into per-currency or per-purpose sub-accounts, each carries a `-N` suffix (matching the convention in [T3](../Investments/T3/T3.md)); an account that is the only one on its GIFI line uses the plain code, and every code rolls up to its parent GIFI line at year-end.  
 
 <table>
   <thead>
-    <tr><th>Internal code</th><th>Account</th><th>Currency</th><th>GIFI rollup</th></tr>
+    <tr><th>Account</th><th>Internal code</th><th>Currency</th><th>Notes</th></tr>
   </thead>
   <tbody>
-    <tr><td>1002-1</td><td>Deposits</td><td>CAD</td><td>1002 (Deposits in Canadian banks - Canadian currency)</td></tr>
-    <tr><td>1002-2</td><td>Deposits - investment</td><td>CAD</td><td>1002 (cash sitting in a CAD investment account; per <a href="../Investments/T3/T3.md">T3</a>)</td></tr>
-    <tr><td>1002-3</td><td>Deposits - USD</td><td>USD</td><td>1003 (Deposits in Canadian banks - foreign currency)</td></tr>
-    <tr><td>1060-1</td><td>Accounts receivable - CAD</td><td>CAD</td><td>1060</td></tr>
-    <tr><td>1060-2</td><td>Accounts receivable - USD</td><td>USD</td><td>1060 (at closing BoC rate at year-end)</td></tr>
-    <tr><td>2303-1</td><td>Investments - DLR/DLR.U</td><td>CAD</td><td>2303 (Canadian shares; ACB-denominated in CAD even when traded in USD)</td></tr>
-    <tr><td>8000</td><td>Trade sales of goods and services</td><td>CAD</td><td>8000</td></tr>
-    <tr><td>8211-1</td><td>Disposition of capital property</td><td>CAD</td><td>8211 (per <a href="../Investments/T3/T3.md">T3</a>)</td></tr>
-    <tr><td>8231-1</td><td>Foreign exchange gain/loss - CAD</td><td>CAD</td><td>8231 (net with 8231-2 at closing rate)</td></tr>
-    <tr><td>8231-2</td><td>Foreign exchange gain/loss - USD</td><td>USD</td><td>8231 (net with 8231-1; translated at closing BoC rate)</td></tr>
-    <tr><td>8710</td><td>Interest and bank charges</td><td>CAD</td><td>8710</td></tr>
+    <tr><td>Assets</td><td>2599-valid</td><td></td><td></td></tr>
+    <tr><td nowrap>&ensp; └ Current assets</td><td>1599-calc</td><td></td><td></td></tr>
+    <tr><td nowrap>&ensp; &ensp; └ Cash and deposits</td><td>1000</td><td></td><td></td></tr>
+    <tr><td nowrap>&ensp; &ensp; &ensp; └ Deposits</td><td>1002-1</td><td>CAD</td><td>Deposits in Canadian banks - Canadian currency</td></tr>
+    <tr><td nowrap>&ensp; &ensp; &ensp; └ Deposits - investment</td><td>1002-2</td><td>CAD</td><td>Cash in a CAD investment account (per <a href="../Investments/T3/T3.md">T3</a>)</td></tr>
+    <tr><td nowrap>&ensp; &ensp; &ensp; └ Deposits - USD</td><td>1003</td><td>USD</td><td>Deposits in Canadian banks - foreign currency</td></tr>
+    <tr><td nowrap>&ensp; &ensp; └ Trade accounts receivable</td><td>1062-parent</td><td></td><td></td></tr>
+    <tr><td nowrap>&ensp; &ensp; &ensp; └ Trade accounts receivable - CAD</td><td>1062-1</td><td>CAD</td><td></td></tr>
+    <tr><td nowrap>&ensp; &ensp; &ensp; └ Trade accounts receivable - USD</td><td>1062-2</td><td>USD</td><td>Translated at the closing BoC rate at year-end</td></tr>
+    <tr><td nowrap>&ensp; └ Long-term investments</td><td>2300</td><td></td><td></td></tr>
+    <tr><td nowrap>&ensp; &ensp; └ Canadian shares</td><td>2303</td><td></td><td></td></tr>
+    <tr><td nowrap>&ensp; &ensp; &ensp; └ Brokerage</td><td>2303-1</td><td>CAD</td><td>ACB-denominated in CAD even when traded in USD (per <a href="../Investments/T3/T3.md">T3</a>)</td></tr>
+    <tr><td>Revenue</td><td>8299-valid</td><td></td><td></td></tr>
+    <tr><td nowrap>&ensp; └ Trade sales of goods and services</td><td>8000</td><td>CAD</td><td></td></tr>
+    <tr><td nowrap>&ensp; └ Realized gains/losses on disposal of assets</td><td>8210</td><td></td><td></td></tr>
+    <tr><td nowrap>&ensp; &ensp; └ Realized gains/losses on sale of investments</td><td>8211</td><td></td><td></td></tr>
+    <tr><td nowrap>&ensp; &ensp; &ensp; └ Disposition of capital property</td><td>8211-1</td><td>CAD</td><td>Per <a href="../Investments/T3/T3.md">T3</a></td></tr>
+    <tr><td nowrap>&ensp; └ Foreign exchange gain/loss</td><td>8231</td><td></td><td>FX line on Schedule 125 (not 8210)</td></tr>
+    <tr><td nowrap>&ensp; &ensp; └ Foreign exchange gain/loss - CAD</td><td>8231-1</td><td>CAD</td><td>Net with 8231-2 at the closing rate</td></tr>
+    <tr><td nowrap>&ensp; &ensp; └ Foreign exchange gain/loss - USD</td><td>8231-2</td><td>USD</td><td>Translated at the closing BoC rate</td></tr>
+    <tr><td>Operating expenses</td><td>9367-calc</td><td></td><td></td></tr>
+    <tr><td nowrap>&ensp; └ Interest and bank charges</td><td>8710</td><td>CAD</td><td></td></tr>
   </tbody>
 </table>
 
@@ -164,7 +175,7 @@ Explicit fees the bank shows as separate line items:
 - Wire-in fee (e.g. $15 to receive an international wire)
 - Wire-out fee (e.g. $30 to send an international wire)
 - Currency-conversion fee shown as a distinct line on the statement (less common)
-- All of these are bookable: debit `Interest and bank charges` (8710, CAD), credit `Deposits` (1002-1) or `Deposits - USD` (1002-3) in the matching currency
+- All of these are bookable: debit `Interest and bank charges` (8710, CAD), credit `Deposits` (1002-1) or `Deposits - USD` (1003) in the matching currency
 
 Typical CAD↔USD conversion spreads observed in practice (rough magnitudes; verify against your own bank's posted rates):
 - Big-bank retail conversion at a branch teller: 2.0%–3.0% from mid-rate
@@ -174,7 +185,7 @@ Typical CAD↔USD conversion spreads observed in practice (rough magnitudes; ver
 - Interactive Brokers desk FX (FXCONV / IDEALPRO): ~1 basis point plus a small minimum commission
 
 Worked example (internal CAD → USD transfer between two accounts at the same bank):
-- Setup: corp moves CAD 10,000 from `Deposits` (1002-1, CAD-native) to `Deposits - USD` (1002-3, USD-native) at the same Canadian bank on Apr 20
+- Setup: corp moves CAD 10,000 from `Deposits` (1002-1, CAD-native) to `Deposits - USD` (1003, USD-native) at the same Canadian bank on Apr 20
 - BoC mid-rate that day is 1.36 (mid-implied USD value of CAD 10,000 ≈ USD 7,352.94)
 - The bank credits the USD side with USD 7,210; effective bank rate 1.3870 CAD/USD, about a 2.0% spread vs the BoC mid
 - Ledger entry (each currency leg balances independently):
@@ -182,7 +193,7 @@ Worked example (internal CAD → USD transfer between two accounts at the same b
     - Credit `Deposits` (1002-1): CAD 10,000
     - Debit `FX gain/loss - CAD` (8231-1): CAD 10,000
   - USD-side (balances within USD):
-    - Debit `Deposits - USD` (1002-3): USD 7,210
+    - Debit `Deposits - USD` (1003): USD 7,210
     - Credit `FX gain/loss - USD` (8231-2): USD 7,210
 - No FX gain or loss is recognized at this point; both trading accounts now hold per-currency positions (8231-1 carries CAD 10,000 debit; 8231-2 carries USD 7,210 credit)
 - The implicit spread of ~CAD 194 surfaces at period-end revaluation:
@@ -267,16 +278,16 @@ Concrete example on USD 50,000:
 Worked example (convert USD 10,000 of invoice proceeds back to CAD via Gambit at a flat-commission bank broker).  
 Assume: BoC rate on day 0 is 1.36; DLR.U trades at USD 10.00; DLR trades at CAD 13.60 on day 1; two $9.95 trading commissions (one in USD on the buy leg, one in CAD on the sell leg).  
 
-The `Investments - DLR/DLR.U` account is CAD-native: ACB is defined in ITA s.54 and CAD-denominated by default reporting currency (s.261), so the USD purchase enters the investment account at the trade-date CAD equivalent (USD 10,009.95 × 1.36 = CAD 13,613.53).  
+The `Brokerage` account is CAD-native: ACB is defined in ITA s.54 and CAD-denominated by default reporting currency (s.261), so the USD purchase enters the investment account at the trade-date CAD equivalent (USD 10,009.95 × 1.36 = CAD 13,613.53).  
 The USD-side cash outflow is bridged to the CAD-side investment entry via the per-currency FX accounts.  
 
 Day 0, buy 1,000 units of DLR.U at USD 10.00 + USD 9.95 commission = USD 10,009.95:
 - USD-side (balances within USD):
-  - Credit `Deposits - USD` (1002-3): USD 10,009.95
+  - Credit `Deposits - USD` (1003): USD 10,009.95
   - Debit `FX gain/loss - USD` (8231-2): USD 10,009.95
 - CAD-side (balances within CAD, at trade-date BoC 1.36):
   - Credit `FX gain/loss - CAD` (8231-1): CAD 13,613.53
-  - Debit `Investments - DLR/DLR.U` (2303-1, CAD-native): CAD 13,613.53
+  - Debit `Brokerage` (2303-1, CAD-native): CAD 13,613.53
 
 Day 1, journal DLR.U units to the DLR side:
 - No ledger entry; the journal is an internal broker bookkeeping action with no cash impact, and the investment account is already CAD-denominated
@@ -285,7 +296,7 @@ Day 1, sell 1,000 units of DLR at CAD 13.60 = CAD 13,600 minus $9.95 commission 
 - Pure CAD entry (no FX bridge; both legs CAD-native):
   - Debit `Deposits` (1002-1): CAD 13,590.05
   - Debit `Disposition of capital property` (8211-1, capital-account; Schedule 6 disposition): CAD 23.48
-  - Credit `Investments - DLR/DLR.U` (2303-1): CAD 13,613.53
+  - Credit `Brokerage` (2303-1): CAD 13,613.53
 
 Schedule 6 entry:
 - Description: "DLR / DLR.U, Norbert's Gambit round trip"
@@ -309,7 +320,7 @@ For a USD invoice, the CAD equivalent is computed at the BoC rate on the invoice
 
 On invoice issue, a cross-currency entry (CAD-side revenue, USD-side AR) with FX bridge accounts:
 - USD-side (balances within USD):
-  - Debit `Accounts receivable - USD` (1060-2): USD invoice amount
+  - Debit `Trade accounts receivable - USD` (1062-2): USD invoice amount
   - Credit `FX gain/loss - USD` (8231-2): USD invoice amount
 - CAD-side (balances within CAD, at invoice-date BoC rate):
   - Debit `FX gain/loss - CAD` (8231-1): USD invoice amount × invoice-date BoC rate
@@ -317,16 +328,16 @@ On invoice issue, a cross-currency entry (CAD-side revenue, USD-side AR) with FX
 
 On collection, two cases:
 
-Case A: USD payment hits the USD operating account (`Deposits - USD`, 1002-3).  
+Case A: USD payment hits the USD operating account (`Deposits - USD`, 1003).  
 Pure USD entry; no FX bridge because both legs are USD-native:
-- Debit `Deposits - USD` (1002-3): USD amount received
-- Credit `Accounts receivable - USD` (1060-2): same USD amount
+- Debit `Deposits - USD` (1003): USD amount received
+- Credit `Trade accounts receivable - USD` (1062-2): same USD amount
 - No FX gain or loss recognized on collection; the FX exposure remains in the trading accounts (8231-1, 8231-2) until period-end revaluation
 
 Case B: USD payment is converted by the bank and lands in the CAD account.  
 This combines a customer settlement with a bank FX conversion in a single transaction:
 - USD-side (balances within USD):
-  - Credit `Accounts receivable - USD` (1060-2): USD amount received
+  - Credit `Trade accounts receivable - USD` (1062-2): USD amount received
   - Debit `FX gain/loss - USD` (8231-2): USD amount received
 - CAD-side (balances within CAD, at the bank's actual settlement rate):
   - Debit `Deposits` (1002-1): actual CAD credited (net of explicit fees)
@@ -392,7 +403,7 @@ Year 1 (2026), three transactions:
 
 Mar 15, issue invoice #1 for USD 10,000; BoC rate 1.36:
 - USD-side:
-  - Debit `Accounts receivable - USD` (1060-2): USD 10,000
+  - Debit `Trade accounts receivable - USD` (1062-2): USD 10,000
   - Credit `FX gain/loss - USD` (8231-2): USD 10,000
 - CAD-side (at invoice-date BoC 1.36):
   - Debit `FX gain/loss - CAD` (8231-1): CAD 13,600
@@ -401,13 +412,13 @@ Mar 15, issue invoice #1 for USD 10,000; BoC rate 1.36:
 
 Apr 20, USD 10,000 received into `Deposits - USD`:
 - Pure USD entry (no FX bridge; both legs USD-native):
-  - Debit `Deposits - USD` (1002-3): USD 10,000
-  - Credit `Accounts receivable - USD` (1060-2): USD 10,000
+  - Debit `Deposits - USD` (1003): USD 10,000
+  - Credit `Trade accounts receivable - USD` (1062-2): USD 10,000
 - No FX gain or loss recognized; the FX exposure stays in the trading accounts
 
 Oct 1, issue invoice #2 for USD 5,000; BoC rate 1.36:
 - USD-side:
-  - Debit `Accounts receivable - USD` (1060-2): USD 5,000
+  - Debit `Trade accounts receivable - USD` (1062-2): USD 5,000
   - Credit `FX gain/loss - USD` (8231-2): USD 5,000
 - CAD-side (at invoice-date BoC 1.36):
   - Debit `FX gain/loss - CAD` (8231-1): CAD 6,800
@@ -415,13 +426,13 @@ Oct 1, issue invoice #2 for USD 5,000; BoC rate 1.36:
 
 Dec 31, year-end revaluation at closing BoC rate 1.38:
 - Account balances before revaluation:
-  - `Accounts receivable - USD` (1060-2): USD 5,000 (invoice #2 unpaid)
-  - `Deposits - USD` (1002-3): USD 10,000 (from invoice #1)
+  - `Trade accounts receivable - USD` (1062-2): USD 5,000 (invoice #2 unpaid)
+  - `Deposits - USD` (1003): USD 10,000 (from invoice #1)
   - `FX gain/loss - CAD` (8231-1): CAD 20,400 debit (= 13,600 + 6,800)
   - `FX gain/loss - USD` (8231-2): USD 15,000 credit (= 10,000 + 5,000)
   - `Trade sales` (8000): CAD 20,400 credit
 - Translate USD-native balances at the closing rate (1.38):
-  - `Accounts receivable - USD` → CAD 6,900 (Schedule 100 GIFI 1060)
+  - `Trade accounts receivable - USD` → CAD 6,900 (Schedule 100 GIFI 1062)
   - `Deposits - USD` → CAD 13,800 (Schedule 100 GIFI 1003)
   - `FX gain/loss - USD` 8231-2 → CAD 20,700 credit (translated)
 - Schedule 125 GIFI 8231 = net of (8231-1 CAD 20,400 debit) + (8231-2 translated CAD 20,700 credit) = CAD 300 credit → net FX gain CAD 300
@@ -450,7 +461,7 @@ Year-end handling depends on whether the USD cash is on income account or capita
 
 *Investment USD deposit*:
 - Cash sitting in a corporate trading account specifically to acquire USD securities
-- Capital-account character; *no* year-end revaluation (ITA s.39(2) realizes FX only on disposition)
+- Capital-account character; *no* year-end revaluation (a capital gain under ITA s.39(1) arises on disposition only)
 - The FX gain or loss surfaces when the USD is used to buy a USD security (the security's CAD ACB is the trade-date conversion) or when the USD is converted back to CAD
 - This mirrors the FX convention for purchases and dispositions of foreign securities in [Adjusted Cost Base](../Investments/Adjusted-Cost-Base/Adjusted-Cost-Base.md)
 
@@ -468,12 +479,12 @@ Mar 1, internal CAD → USD bank conversion to fund the float; CAD 7,000 → USD
   - Credit `Deposits` (1002-1): CAD 7,000
   - Debit `FX gain/loss - CAD` (8231-1): CAD 7,000
 - USD-side (balances within USD):
-  - Debit `Deposits - USD` (1002-3): USD 5,000
+  - Debit `Deposits - USD` (1003): USD 5,000
   - Credit `FX gain/loss - USD` (8231-2): USD 5,000
 
 Aug 15, pay USD 2,000 to a US software vendor (annual subscription); bill-date BoC rate 1.35:
 - USD-side:
-  - Credit `Deposits - USD` (1002-3): USD 2,000
+  - Credit `Deposits - USD` (1003): USD 2,000
   - Debit `FX gain/loss - USD` (8231-2): USD 2,000
 - CAD-side (at bill-date BoC 1.35):
   - Credit `FX gain/loss - CAD` (8231-1): CAD 2,700
@@ -481,7 +492,7 @@ Aug 15, pay USD 2,000 to a US software vendor (annual subscription); bill-date B
 
 Dec 31, year-end revaluation at closing BoC rate 1.38:
 - Account balances before revaluation:
-  - `Deposits - USD` (1002-3): USD 3,000 (= 5,000 funded − 2,000 paid)
+  - `Deposits - USD` (1003): USD 3,000 (= 5,000 funded − 2,000 paid)
   - `FX gain/loss - CAD` (8231-1): CAD 4,300 debit (= 7,000 debit − 2,700 credit)
   - `FX gain/loss - USD` (8231-2): USD 3,000 credit (= 5,000 credit − 2,000 debit)
 - Translate USD-native balances at the closing rate (1.38):
@@ -509,7 +520,7 @@ The CAD 160 loss is the bank's implicit spread surfacing: the corp paid for USD 
 ```mermaid
 flowchart TB
     Inv["USD invoice<br/>(invoice-date FX)"]
-    AR[("USD AR<br/>GIFI 1060")]
+    AR[("USD AR<br/>GIFI 1062")]
     USD[("USD deposit<br/>GIFI 1003")]
     Gambit{{"Norbert's Gambit<br/>DLR.U → DLR<br/>~20 bps"}}
     Bank{{"Bank conversion<br/>~200 bps spread"}}
@@ -566,9 +577,9 @@ flowchart TB
 
 - Income Tax Act (R.S.C., 1985, c. 1 (5th Supp.)):
   - [s.38](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-38.html) - taxable capital gain inclusion rate (one-half)
-  - [s.39(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-39.html) - definitions of capital gain and capital loss
+  - [s.39(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-39.html) - definitions of capital gain and capital loss (including on a disposition of foreign currency held on capital account)
   - [s.39(1.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-39.html) - $200 personal FX de minimis (individuals only; does not apply to corporations)
-  - [s.39(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-39.html) - capital gain or loss on FX from the disposition of foreign currency, or settlement of a foreign-currency capital obligation
+  - [s.39(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-39.html) - capital FX gain or loss arising without a disposition of property, such as settling a foreign-currency capital obligation (a disposition of foreign currency itself is a s.39(1)/s.40 capital gain)
   - [s.40(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-40.html) - general capital-gain-on-disposition formula
   - [s.47(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-47.html) - identical-properties pooling (relevant for DLR / DLR.U as the same fund)
   - [s.54](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-54.html) - definition of "adjusted cost base"

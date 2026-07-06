@@ -34,7 +34,7 @@ flowchart TB
     CLR["TX19 clearance certificate"]
     DISS(["Articles of dissolution"])
 
-    STOP --> ASSETS --> SWEEP --> T2A --> DIST --> T2B --> CLR --> DISS
+    STOP --> ASSETS --> SWEEP --> T2A --> CLR --> DIST --> T2B --> DISS
     ASSETS -.-> HST
 ```
 
@@ -42,6 +42,7 @@ The order exists because each step feeds the next:
 - Asset dispositions crystallize the last capital gains, topping up CDA and NERDTOH one final time
 - The pool sweep needs those final balances; the dividend refund needs the sweep-year T2 assessed
 - The final distribution needs the refund cash in the bank
+- The clearance certificate must precede the final distribution; distributing first exposes the directors to personal liability under s.159(3)
 - The dissolution needs everything else done, because it ends the corporation's ability to act
 
 Spreading the sweep dividends over two or three personal tax years can beat one lump; the wind-down horizon is a planning input, not an afterthought.  
@@ -74,7 +75,10 @@ The sweep, in order of value:
 - *CDA first*: elect and pay a capital dividend for the full balance (Form T2054, see [Capital Dividend Account](../Investments/Capital-Dividend-Account/Capital-Dividend-Account.md)); it is tax-free money and the easiest to leave behind by accident
   - Check the balance immediately before the election: a late capital loss shrinks CDA retroactively
 - *NERDTOH and ERDTOH next*: pay taxable dividends sized so the refunds drain both accounts; a non-eligible dividend of `NERDTOH ÷ 38⅓%` recovers the full balance (see [ERDTOH and NERDTOH](../Paying-Yourself/Dividends/ERDTOH-NERDTOH.md))
-- *GRIP alongside*: designate the taxable dividends eligible up to the GRIP balance, capturing the lower personal rate on the way out
+- *GRIP and the eligible dividend*: size the two flavours separately, because each pool answers to a different dividend type:
+  - Keep the NERDTOH-draining dividend above non-eligible: an eligible dividend draws a refund only from ERDTOH (ITA [s.129(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-129.html)), never from NERDTOH
+  - Designate an eligible dividend up to the GRIP balance (the Part III.1 ceiling), ideally at least `ERDTOH ÷ 38⅓%` so ERDTOH drains too
+  - GRIP designated beyond that draws no further refund, but still captures the lower personal rate on the way out
 
 The refund needs two live things:
 - A T2 filed for the dividend year within 3 years (ITA [s.129(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-129.html))
@@ -91,7 +95,7 @@ What remains after the sweep goes out in two slices:
 
 The clearance certificate governs the timing:
 - Directors who distribute property before obtaining a certificate under ITA [s.159(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-159.html) are personally liable for the corporation's unpaid taxes up to the value distributed (s.159(3))
-- Request it on Form TX19 after the final returns are filed; processing takes months, so it is the wind-down's long pole
+- Request it on Form TX19 after all returns *due to date* are filed and assessed; processing takes months, so it is the wind-down's long pole
 - The certificate confirms taxes are paid; it does not change them
 
 

@@ -27,7 +27,7 @@ The classes an owner-managed CCPC most often uses:
 
 | Class | Rate / basis | What it covers | Half-year |
 |-------|--------------|----------------|-----------|
-| `50` | 55% declining | computers, peripherals, networking equipment (acquired after Mar 18 2007) | yes |
+| `50` | 55% declining | computers, peripherals, networking equipment (acquired after Mar 18 2007) | full-expensing to 2026 |
 | `8` | 20% declining | office furniture, photocopiers, equipment not in another class (the catch-all) | yes |
 | `10` | 30% declining | motor vehicles, vans, light and pickup trucks under the passenger-vehicle cost cap; one shared pool | yes |
 | `10.1` | 30% declining | passenger vehicles costing over the cap ($39,000 + sales taxes in 2026); each in its own class | special |
@@ -41,6 +41,7 @@ The classes an owner-managed CCPC most often uses:
 
 The "Half-year" column notes only the year-of-acquisition rule.  
 Under the reinstated *Accelerated Investment Incentive Property* (AIIP) rules, the half-year rule is suspended: a regular class gets an enhanced first-year allowance of 1.5× its normal rate, and a full-expensing class deducts 100% in year one.  
+Classes 44, 46, and 50 are fully expensed (100%, not 1.5×) for property available for use before 2027, under a separate Budget 2024 measure.  
 See [Half-year rule and AIIP](Capital-Cost-Allowance.md#half-year-rule-and-aiip), and the per-class quirks under [Special class rules](#special-class-rules).
 
 Related classes (not covered in depth here):
