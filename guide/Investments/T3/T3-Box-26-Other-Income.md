@@ -93,7 +93,8 @@ How Box 26 can affect AII and NERDTOH:
 - For a vanilla index ETF that is structured as a mutual fund trust:
   - Box 26 will usually behave like property income and is commonly treated as part of Aggregate Investment Income (AII)
   - If an amount is part of AII for a CCPC, it can then contribute to Non-Eligible Refundable Dividend Tax on Hand (NERDTOH) through the broader formula in ITA s.129(4)
-  - Adjusted aggregate investment income (AAII) over $50,000 grinds the small business deduction under ITA [s.125(5.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-125.html): every dollar of AAII above $50,000 reduces the $500,000 SBD business limit by $5, fully eliminating it at $150,000 of AAII (for a plain-vanilla ETF holding, AAII equals AII); active business income above the reduced limit is taxed at the general corporate rate instead of the small-business rate
+  - Adjusted aggregate investment income (AAII) over $50,000 grinds the small business deduction under ITA [s.125(5.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-125.html): every dollar of AAII above $50,000 reduces the $500,000 SBD business limit by $5, fully eliminating it at $150,000 of AAII (for a plain-vanilla ETF holding, AAII is AII plus the ETF's Canadian portfolio dividends)
+    - Active business income above the reduced limit is taxed at the general corporate rate, not the small-business rate
   - The portion of Part I tax on AII that flows into NERDTOH (30⅔% of AII per s.129(4)) is recovered only when the corporation pays a non-eligible dividend; see [ERDTOH-NERDTOH.md](../../Paying-Yourself/Dividends/ERDTOH-NERDTOH.md) for refund mechanics
 
 In terms of specific tax treatment, there are several concepts:

@@ -129,12 +129,14 @@ Authorizing a representative (an accountant) for the RC account is done in My Bu
 
 ## Records Retention
 
-The duty to keep books and records at all is ITA [s.230](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-230.html); the retention clock is 6 years from the end of the last tax year the record relates to (s.230(4), Income Tax Regulations [s.5800](https://laws-lois.justice.gc.ca/eng/regulations/C.R.C.,_c._945/section-5800.html)).  
+The duty to keep books and records is ITA [s.230](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-230.html).  
+The default retention clock is 6 years from the end of the last tax year the record relates to (s.230(4)(b)).  
+Certain records prescribed by Income Tax Regulations [s.5800](https://laws-lois.justice.gc.ca/eng/regulations/C.R.C.,_c._945/section-5800.html), including the general ledger, must instead be kept until 2 years after dissolution (s.230(4)(a)).  
 
 What that means in practice:
-- *Transaction records* (invoices, receipts, bank and brokerage statements, contracts, the ledger itself): 6 years from the end of the tax year they relate to
+- *Transaction records* (invoices, receipts, bank and brokerage statements, ordinary client contracts): 6 years from the end of the tax year they relate to (s.230(4)(b))
 - *Long-lived records*: a record supporting a balance that persists — an [ACB tracker](../Investments/Adjusted-Cost-Base/Adjusted-Cost-Base-Tracking.md), a [CCA asset register](../Operations/Cost-Recovery/Capital-Cost-Allowance/CCA-Tracking.md), the [loss continuity schedule](Losses.md#carrying-forward) — relates to every year the balance is alive, so its 6 years start when the balance is finally used up
-- *Permanent corporate records* (minute book, share registers, articles): keep until 2 years after dissolution (Regulations s.5800)
+- *Permanent records* (minute book, share registers, articles, **the general ledger, and any special contracts or agreements needed to understand its entries**): keep until 2 years after dissolution (Reg 5800(1)(a)), effectively permanent for a going concern that is never dissolved
 - Electronic records are fine; keep them readable and in Canada (or get CRA's written permission otherwise)
 - Destroying records early needs CRA consent (Form T137); the practical answer for a small corporation is to keep everything digital and never destroy
 

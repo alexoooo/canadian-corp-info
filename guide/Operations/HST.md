@@ -239,7 +239,10 @@ Eligibility requires *all* of the following:
 
 How to elect:
 - File Form *GST74 Election and Revocation of an Election to Use the Quick Method of Accounting*
-- The election takes effect on the first day of the reporting period in which it is filed (for an annual filer, the start of the fiscal year), or a later date specified on the form
+- The election takes effect on the first day of a reporting period you specify on the form (which need not be the period you file it in)
+- Filing deadline (ETA [s.227(2)](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-227.html)):
+  - *Annual filer*: file GST74 by the first day of the second fiscal quarter of the year the election first applies to (April 1 for a calendar year; the Minister may allow a later date)
+  - *Monthly or quarterly filer*: file by the due date of the return for the first reporting period the election covers
 - The election is binding for at least one full year before revocation; after that, file a new GST74 revoking the election
 
 Remittance rate:

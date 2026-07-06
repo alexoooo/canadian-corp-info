@@ -238,7 +238,9 @@ AII is taxed at a high combined rate (~50.2% in Ontario), but a portion is *refu
 It's parked in the corporation's *NERDTOH* (non-eligible RDTOH) account and refunded when the corporation eventually pays a *non-eligible* dividend to the shareholder.  
 The refundable mechanism is what stops the CCPC from being used as an indefinite tax-deferral vehicle for passive investing.
 
-The small-business-deduction grind keys off *adjusted* aggregate investment income (AAII), which is AII with a few adjustments; for a plain corporate brokerage account AAII equals AII, so the $50,000 threshold bites on the same number.  
+The small-business-deduction grind keys off *adjusted* aggregate investment income (AAII), not AII.  
+AAII adds the Canadian portfolio dividends that AII leaves out; interest, foreign income, and taxable capital gains already sit in both.  
+For a brokerage account earning Canadian dividends, that makes AAII larger than AII, so the $50,000 threshold can bite sooner.  
 
 Dividends *received* from other Canadian corporations (for example, portfolio shareholdings or funds structured as corporations) sit in their own bucket:
 - Exempt from Part I tax under *s.112*; the corresponding Part IV tax is recovered when the corp later pays a dividend out

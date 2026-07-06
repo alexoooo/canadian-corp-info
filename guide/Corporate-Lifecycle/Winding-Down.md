@@ -102,7 +102,8 @@ The clearance certificate governs the timing:
 - Close the remaining program accounts (RZ after the last T5 filing, RC last of all)
 
 After dissolution:
-- Records stay: the permanent corporate records survive until 2 years after dissolution, transaction records for their normal 6 years (see [CRA Administration — Records retention](../Filing-And-CRA/CRA-Administration.md#records-retention))
+- Once dissolved, **all** records (transactional ones included) must be kept until 2 years after dissolution: Reg 5800(1)(b) sweeps the transaction records into that 2-year clock, displacing their going-concern 6-year default
+- Keeping everything digital costs nothing, so the practical default is to retain beyond that 2-year minimum (see [CRA Administration](../Filing-And-CRA/CRA-Administration.md#records-retention))
 - Director liability for unremitted source deductions and GST/HST survives dissolution (ITA [s.227.1](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-227.1.html), ETA [s.323](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-323.html)), with a two-year limitation after ceasing to be a director
 - Property missed in the wind-up vests in the Crown (CBCA [s.228](https://laws-lois.justice.gc.ca/eng/acts/C-44/section-228.html)); recovering it means reviving the corporation — the reason the final distribution checklist includes every bank account, deposit, and refund
 

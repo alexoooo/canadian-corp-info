@@ -183,7 +183,10 @@ Outputs (cumulative per symbol):
 - This minimal template does not automate superficial loss, stock splits, or spin-offs; handle those with manual row edits:
   - Stock split: insert a memo row on the effective date; adjust `Quantity` to the post-split total (ACB unchanged, per-unit ACB recalculates automatically)
   - Spin-off: close the parent position with a zero-proceeds Sell on the effective date, then open two new Buy rows (one for the parent, one for the new entity) with quantities and ACB allocated based on relative fair market values on that date; see [Adjusted-Cost-Base.md](Adjusted-Cost-Base.md) for the allocation rule
-  - Superficial loss: the denied loss is not deducted; instead it is added to the ACB of the substituted property under ITA s.53(1)(f), via a manual Buy-like row (no quantity change, ACB increase only). That addition lands wherever the substituted property is held, which can be a different account or an affiliated person (the shareholder personally, a spouse, or another affiliated corporation), not necessarily this sheet
+  - Superficial / suspended loss (the direction matters, because this sheet tracks the corporation's account):
+    - *A loss sold on this sheet* (the corporation sells), with the corporation or an affiliated person reacquiring the identical property in the window: the loss is **suspended** under ITA s.40(3.3)/(3.4), not a superficial loss (ITA s.54(h) excludes it)
+      - Add no s.53(1)(f) ACB row; tag the Sell row's loss in `Note` as suspended, claimable once the affiliated group is out of the position for 30 days (or the other s.40(3.4)(b) events)
+    - *An affiliated individual's personal loss is denied* (you or your spouse sold personally) and the corporation holds the repurchase on this sheet: only then is the denied loss added to the substituted property's ACB under ITA s.53(1)(f), via a manual Buy-like row on this sheet (no quantity change, ACB increase only)
 - DRIP can be entered as Buy with `Commission` = 0; use the payment/reinvestment date (when the units are credited to your account) as `Date`, and the FX rate for that same date
 
 

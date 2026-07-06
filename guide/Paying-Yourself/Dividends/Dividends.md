@@ -225,7 +225,7 @@ A CCPC's *Aggregate Investment Income* (AII) for the year is primarily:
 AII affects the corporation in two ways relevant to dividend planning:
 - Generates a refundable Part I tax addition to NERDTOH equal to 30⅔% of AII (ITA s.129(4)), recovered by paying a non-eligible dividend
 - Grinds the SBD limit once it tops $50,000, by $5 per $1 of excess, fully eliminating the SBD at $150,000 (ITA [s.125(5.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-125.html))
-  - The grind technically runs on *adjusted aggregate investment income* (AAII), which differs slightly from AII (e.g. it excludes gains and losses on active-business assets)
+  - The grind runs on *adjusted aggregate investment income* (AAII), which differs from AII (it excludes gains and losses on active-business assets, and adds Canadian portfolio dividends that AII leaves out)
 
 See [T3-Box-26-Other-Income.md](../../Investments/T3/T3-Box-26-Other-Income.md) for the detailed treatment of T3 Box 26 income.
 

@@ -127,10 +127,13 @@ There are limitations on which losses can be claimed, make sure you don't get a 
 - Who it applies to: you or an "affiliated person", including a corporation that you control (or a corporation controlled by your spouse/common-law partner)  
 - What is the action: acquisition of an identical property (same issuer, same class, same currency of issue per [CRA IT-387R2 (Archived) - *Meaning of "Identical Properties"*](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/it387r2-consolid/archived-meaning-identical-properties.html); whether two different ETFs tracking the same index are identical is fact-specific)  
 - Condition at end of period: you or an affiliated person still owns that substituted property (or has the right to acquire it)  
-- What happens: the loss is denied for now by ITA s.40(2)(g)(i) and is instead added to the ACB of the substituted property under ITA s.53(1)(f), to be recovered when that property is eventually sold  
-- Example: if your corporation sells XEI at a loss,
-    and you buy XEI in your personal account within the 30-day window and still hold it at the end of the window,
-    the corporate loss can be a superficial loss even though the repurchase happened in a different account
+- What happens depends on *who sold at the loss*:  
+  - *The corporation sells at a loss* and the corporation or an affiliated person reacquires the identical property in the window and still holds it at the end: this is **not** a superficial loss (ITA s.54(h) excludes it) but a *suspended loss* under ITA [s.40(3.3)/(3.4)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-40.html)
+    - The loss is deemed nil, with **no** s.53(1)(f) ACB addition anywhere
+    - It stays suspended in the corporation, released only once neither it nor any affiliated person has held the property (or an identical one) for a 30-day period (or on the other s.40(3.4)(b) events, such as winding up)  
+  - *You or your spouse sell personally at a loss* and the corporation reacquires the identical property in the window and still holds it: this is a genuine superficial loss (ITA s.40(2)(g)(i))
+    - The denied personal loss is added to the *corporation's* ACB of the repurchased security under ITA s.53(1)(f), recovered when the corporation later sells  
+- The s.53(1)(f) ACB bump only ever runs from an affiliated individual's denied *personal* loss into the *corporation's* ACB, never from a corporate loss into your personal account
 
 
 ## Related
@@ -148,7 +151,8 @@ There are limitations on which losses can be claimed, make sure you don't get a 
 - Income Tax Act (R.S.C., 1985, c. 1 (5th Supp.)):
   - [s.40(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-40.html) - capital gain and capital loss formula, including outlays and expenses on disposition
   - [s.40(3)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-40.html) - deemed capital gain when ACB would be driven below zero (e.g. by excess ROC)
-  - [s.40(2)(g)(i)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-40.html) - denial of a superficial loss
+  - [s.40(3.3), s.40(3.4)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-40.html) - corporate/affiliated stop-loss: a loss on a disposition by a corporation is deemed nil and suspended when an affiliated person reacquires the identical property, released when the affiliated group is out of the position
+  - [s.40(2)(g)(i)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-40.html) - denial of a superficial loss (individual seller / corporate reacquirer case)
   - [s.47(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-47.html) - identical properties: pooled average cost rather than FIFO or LIFO
   - [s.53](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-53.html) - adjustments to cost base (additions and deductions), including s.53(1)(f), which adds a denied superficial loss to the substituted property's ACB
   - [s.54](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-54.html) - definitions of "adjusted cost base", "superficial loss", and "proceeds of disposition"
