@@ -84,14 +84,4 @@ Unmarked pages are reviewed; † = AI generated, not verified yet.
 
 ## Audit
 
-- [2026-04-28 Audit Opus-4.7-xhigh](audit/2026-04-28_Audit_Opus-4.7-xhigh.md)
-- [2026-04-29 Audit-Followup Opus-4.7-xhigh](audit/2026-04-29_Audit-Followup_Opus-4.7-xhigh.md)
-- [2026-05-06 Audit Opus-4.7-xhigh](audit/2026-05-06_Audit_Opus-4.7-xhigh.md)
-- [2026-05-07 Audit-Followup Opus-4.6-max](audit/2026-05-07_Audit-Followup_Opus-4.6-max.md)
-- [2026-05-28 Audit Opus-4.8-xhigh](audit/2026-05-28_Audit_Opus-4.8-xhigh.md)
-- [2026-05-29 Audit-Followup Opus-4.8-xhigh](audit/2026-05-29_Audit-Followup_Opus-4.8-xhigh.md)
-- [2026-06-10 Audit Fable-5-high](audit/2026-06-10_Audit_Fable-5-high.md)
-- [2026-06-11 Audit-Followup Opus-4.8-xhigh](audit/2026-06-11_Audit-Followup_Opus-4.8-xhigh.md)
-- [2026-06-30 Audit Opus-4.8-max](audit/2026-06-30_Audit_Opus-4.8-max.md)
-- [2026-07-01 Audit-Followup Opus-4.8-xhigh](audit/2026-07-01_Audit-Followup_Opus-4.8-xhigh.md)
-- [2026-07-04 Audit Fable-5-max](audit/2026-07-04_Audit_Fable-5-max.md)
+Periodic audits and reviews are listed in [Audit Summary](audit/Audit-Summary.md).
