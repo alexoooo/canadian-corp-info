@@ -7,7 +7,7 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
 - Booking the receivable, the doubtful-account reserve, the write-off, and the HST recovery
 
 **TLDR**:
-- On the accrual basis, an invoice is income when the work is billed, not when the cash arrives; the receivable sits in `Accounts receivable` (`1060`)
+- On the accrual basis, an invoice is income when the work is billed, not when the cash arrives; the receivable sits in `Trade accounts receivable` (`1062`)
 - *Doubtful* and *bad* are different stages: a doubtful debt supports a reserve (ITA s.20(1)(l)) that re-measures every year; a bad debt is written off once (s.20(1)(p))
 - A write-off requires the amount to have been included in income and the debt to have become bad in the year — document the collection attempts
 - The HST charged on a written-off invoice comes back through a bad-debt adjustment (ETA s.231), claimable within four years
@@ -29,18 +29,18 @@ Invoicing $5,000 of consulting plus 13% HST:
 
 | Account | Debit | Credit |
 |---|---|---|
-| `Accounts receivable` (`1060`) | 5,650.00 | |
+| `Trade accounts receivable` (`1062`) | 5,650.00 | |
 | `Trade sales of goods and services` (`8000`) | | 5,000.00 |
 | `HST collected` | | 650.00 |
 
-Collection reverses the receivable: Dr `Cash` (`1001`) 5,650, Cr `Accounts receivable` (`1060`) 5,650.  
+Collection reverses the receivable: Dr `Cash` (`1001`) 5,650, Cr `Trade accounts receivable` (`1062`) 5,650.  
 The gap between these two entries is where this page lives: review the open receivables at every year-end (an *aging* by invoice date) and decide which are current, doubtful, or bad.  
 
 
 ## Doubtful Accounts and the Reserve
 
 A debt that is *doubtful* — collection is uncertain but not yet hopeless — supports a reserve (ITA [s.20(1)(l)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-20.html)):
-- Book it through the contra-asset `Allowance for doubtful accounts` (`1061`): Dr `Bad debt expense` (`8590`), Cr `1061`
+- Book it through the contra-asset `Allowance for doubtful trade accounts receivable` (`1063`): Dr `Bad debt expense` (`8590`), Cr `1063`
 - The reserve is deductible only against amounts that were included in income, and it must be a reasonable, debt-by-debt estimate — not a formula percentage of all receivables
 - The invoice's HST portion was never income, so the supportable reserve is the net-of-HST share of the doubtful balance (see TODO)
 
@@ -64,9 +64,9 @@ Writing off the $5,650 invoice:
 |---|---|---|
 | `Bad debt expense` (`8590`) | 5,000.00 | |
 | `HST collected` — s.231 adjustment | 650.00 | |
-| `Accounts receivable` (`1060`) | | 5,650.00 |
+| `Trade accounts receivable` (`1062`) | | 5,650.00 |
 
-If the debt had been through the allowance first, the write-off debits `1061` instead of `8590` for the reserved portion.  
+If the debt had been through the allowance first, the write-off debits `1063` instead of `8590` for the reserved portion.  
 Partial write-offs are fine: write off the portion established to be bad and keep the rest receivable.  
 
 

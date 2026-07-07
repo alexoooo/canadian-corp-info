@@ -145,13 +145,13 @@ Dec 31 — accrue the earned revenue; no HST, because the tax point has not arri
 - Credit `Trade sales of goods and services` (GIFI 8000) = net fee
 
 January — issue the invoice; reclassify the receivable and add the HST at its own tax point:
-- Debit `Accounts receivable` (GIFI 1060) = fee + HST
+- Debit `Trade accounts receivable` (GIFI 1062) = fee + HST
 - Credit `Accrued/unbilled receivable` (GIFI 1480) = net fee
 - Credit `HST collected` = HST
 
 The accrual carries *revenue only*; `HST collected` is recognized in January with the invoice, because that is when the tax point occurs.  
 `HST collected` is a liability, not income, so moving it between periods changes only which GST34 return reports it — not taxable income in either year.  
-There is no dedicated GIFI line for unbilled service revenue: map it to *Other current assets* (1480) to keep it distinct from billed trade AR, or fold it into *Accounts receivable* (1060) when the accrual reverses within days.  
+There is no dedicated GIFI line for unbilled service revenue: map it to *Other current assets* (1480) to keep it distinct from billed trade AR, or fold it into *Trade accounts receivable* (1062) when the accrual reverses within days.  
 Manufacturing WIP (1125) is a different item — partially completed goods, not earned-but-unbilled service fees.  
 
 
@@ -164,7 +164,7 @@ Two ledger accounts run alongside the corp's commercial activity through each re
 This account naming is the canonical convention used in the worked examples on [Inventory](Cost-Recovery/Inventory-And-COGS.md), [Capital Cost Allowance](Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md), and [Materials and CIP](Cost-Recovery/Materials-And-CIP.md).  
 
 Posting pattern on a sale to a Canadian customer (HST-registered Ontario corp):
-- Debit `Cash` or `Accounts receivable` = sale price + 13% HST
+- Debit `Cash` or `Trade accounts receivable` = sale price + 13% HST
 - Credit `Trade sales of goods and services` (GIFI 8000) = sale price (net of HST)
 - Credit `HST collected` = 13% × sale price
 
@@ -355,7 +355,7 @@ Setup: single-shareholder IT consulting CCPC.
 Three invoices issued through the year; modest operating inputs.  
 
 Mar 31 — invoice #1 to an Ontario client for $20,000 + HST:
-- Debit `Accounts receivable` = $22,600
+- Debit `Trade accounts receivable` = $22,600
 - Credit `Trade sales of goods and services` (GIFI 8000) = $20,000
 - Credit `HST collected` = $2,600
 
@@ -365,7 +365,7 @@ Apr 15 — pay $1,800 + HST = $2,034 for the year's accounting software (SaaS su
 - Credit `Cash` = $2,034
 
 Jul 31 — invoice #2 to an Ontario client for $15,000 + HST:
-- Debit `Accounts receivable` = $16,950
+- Debit `Trade accounts receivable` = $16,950
 - Credit `Trade sales of goods and services` (GIFI 8000) = $15,000
 - Credit `HST collected` = $1,950
 
@@ -380,7 +380,7 @@ Oct 15 — pay $600 + HST = $678 for a year of professional liability insurance:
 - Credit `Cash` = $678
 
 Nov 30 — invoice #3 to an Ontario client for $10,000 + HST:
-- Debit `Accounts receivable` = $11,300
+- Debit `Trade accounts receivable` = $11,300
 - Credit `Trade sales of goods and services` (GIFI 8000) = $10,000
 - Credit `HST collected` = $1,300
 

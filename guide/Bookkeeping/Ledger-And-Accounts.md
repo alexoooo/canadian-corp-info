@@ -128,7 +128,7 @@ The year's transactions:
    - Debit `HST receivable` = $260
    - Credit `Cash` = $2,260
 3. Invoice a client for $8,000 of services + $1,040 HST, on account:
-   - Debit `Accounts receivable` (GIFI 1060) = $9,040
+   - Debit `Trade accounts receivable` (GIFI 1062) = $9,040
    - Credit `Trade sales of goods and services` (GIFI 8000) = $8,000
    - Credit `HST collected` = $1,040
 4. Pay an annual software subscription, $1,000 + $130 HST (an operating expense):
@@ -137,7 +137,7 @@ The year's transactions:
    - Credit `Cash` = $1,130
 5. Collect the client invoice — $9,040 received:
    - Debit `Cash` = $9,040
-   - Credit `Accounts receivable` (GIFI 1060) = $9,040
+   - Credit `Trade accounts receivable` (GIFI 1062) = $9,040
 6. Declare a $3,000 dividend, not yet paid:
    - Debit `Dividends declared` (GIFI 3700) = $3,000
    - Credit `Dividends payable` (GIFI 2962) = $3,000
@@ -153,7 +153,7 @@ The `Cash` account, posted to its T-account:
    balance 15,650          |
 ```
 
-The trial balance after all six entries (`Accounts receivable` nets to zero and drops off):
+The trial balance after all six entries (`Trade accounts receivable` nets to zero and drops off):
 
 | Account | GIFI | Debit | Credit |
 |---|---|------:|-------:|
@@ -295,7 +295,7 @@ Operating expenses (Schedule 125) — the lines a service or consulting CCPC rea
 | Vehicle expenses | `9281` | fuel, insurance, repairs of a business vehicle |
 | Withholding taxes | `9283` | foreign withholding tax on investment income |
 
-The income statement then totals to `9367` Total operating expenses, `9368` Total expenses, and `9999` Net income/loss; these are computed lines, not accounts you post to.  
+The income statement then totals to `9367` Total operating expenses, `9368` Total expenses, and `9999` Net income/loss after taxes and extraordinary items; these are computed lines, not accounts you post to, and the balance sheet's `3680` Net income/loss must equal `9999`.  
 
 
 ## Plugs and Plug Accounts

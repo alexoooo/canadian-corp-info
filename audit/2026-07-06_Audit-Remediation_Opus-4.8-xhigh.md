@@ -70,24 +70,37 @@ corrected.
 
 ---
 
-## New work items discovered (open)
+## New work items discovered (all closed 2026-07-07, Fable-5, on maintainer go-ahead)
 
-- **W1 — Guide-wide GIFI receivables sweep.** The `1060`-for-trade-AR (and `1061`-for-allowance)
-  error is guide-wide, not FX-local. Map trade/client receivables `1060` → `1062` and the doubtful-
-  accounts allowance `1061` → `1063` on: `Receivables-And-Bad-Debts.md` (:10 / :32 / :36 / :67 AR;
-  :43 / :69 allowance), `HST.md` (:148 / :154 coded; :167 / :360 / :370 / :385 name-only),
-  `Inventory-And-COGS.md` (:202), `Glossary.md` (:11). Leave genuine non-trade receivables on their
-  correct lines (T3 `1060-1` investment distributions; taxes receivable `1066`; interest receivable
-  `1067`). Pending maintainer go-ahead — guide-wide and beyond the 2026-07-04 audit scope.
-- **W2 — Audit AI-generated account / GIFI tables against the T3 convention.** The Foreign-Currency
-  table defect is unlikely to be isolated. Other AI-generated pages carrying chart-of-accounts or
-  GIFI tables should be checked for both structure (indented tree, parent nodes, prefix = rollup)
-  and code correctness (right GIFI line, one currency per account, suffix only where a line is
-  split). Not yet scoped.
-- **W3 — Audit-method note.** This cycle's audit (Fable-5) and review (Opus-4.8) shared a blind
-  spot: neither questioned GIFI-code correctness or account-tree structure on the AI-generated
-  bookkeeping pages, and the audit's one receivables finding endorsed a wrong fix. Future audit
-  passes should verify GIFI mappings against RC4088 directly rather than against sibling pages.
+- **W1 — Guide-wide GIFI receivables sweep — done.** The `1060`-for-trade-AR (and `1061`-for-
+  allowance) error was guide-wide, not FX-local. Trade/client receivables recoded and renamed to
+  the canonical `Trade accounts receivable` (`1062`), the doubtful-accounts allowance to
+  `Allowance for doubtful trade accounts receivable` (`1063`), on: `Receivables-And-Bad-Debts.md`
+  (four AR + two allowance instances), `HST.md` (two coded, four name-only journal lines),
+  `Inventory-And-COGS.md` (one name-only), `Glossary.md` (accrued-receivable entry), and — beyond
+  the item's original list — `Ledger-And-Accounts.md`, whose worked example and trial-balance note
+  still carried `1060` after the FX-5 correction updated only the sub-code note and chart rows.
+  Genuine non-trade receivables untouched (T3 `1060-1` investment distributions; generic prose
+  mentions; signed-off pages). Repo-wide grep confirms no trade-AR `1060`/`1061` remains in
+  `guide/`.
+- **W2 — Audit of AI-generated account / GIFI tables — done (full RC4088 sweep, the maintainer's
+  chosen depth).** Scope: the six AI-generated pages carrying chart-of-accounts or GIFI tables —
+  `T5.md`, `T5-Box-18-Capital-Gains-Dividends.md`, `T3_Box-25…md`, `Ledger-And-Accounts.md`,
+  `Expense-Classification.md`, `CCA-Tracking.md`. All 117 distinct GIFI codes and 9 range/band
+  claims verified against RC4088 itself — the verbatim RC4088(E) Rev.21 PDF (cchwebsites.com
+  mirror; canada.ca 403s direct fetch), side-agent pass plus independent main-thread spot-checks:
+  **117 match, 0 mismatches**. Tree structure on all three investment pages conforms to the
+  `T3.md` canon (parent/subtotal markers, `&ensp; └` nesting, prefix = rollup, one currency per
+  account, suffix only on genuine splits). One fix applied: `Ledger-And-Accounts.md` now gives
+  `9999` its full RC4088 title *Net income/loss after taxes and extraordinary items* — bare
+  "Net income/loss" is 3680's exact title (FX-3's defect class) — and states the 3680 = 9999 tie.
+  Full verdict table and method: `audit/wip/W2-gifi-verification.md`.
+- **W3 — Audit-method note — done.** This cycle's audit (Fable-5) and review (Opus-4.8) shared a
+  blind spot: neither questioned GIFI-code correctness or account-tree structure on the
+  AI-generated bookkeeping pages, and the audit's one receivables finding endorsed a wrong fix.
+  Now a standing rule in `docs/Audit-Instructions.md` § Verification discipline: verify GIFI
+  mappings and table structure against RC4088 and the hand-written convention pages directly,
+  never against sibling AI-generated pages, with FX-5 recorded as the cautionary tale.
 
 ---
 

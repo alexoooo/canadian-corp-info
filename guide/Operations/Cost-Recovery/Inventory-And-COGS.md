@@ -199,7 +199,7 @@ Purchase with freight-in:
 - Credit `Accounts payable` = invoice + freight invoice
 
 Sale to a customer (one entry for revenue, one for COGS):
-- Debit `Cash` or `Accounts receivable` = sale price + HST collected
+- Debit `Cash` or `Trade accounts receivable` = sale price + HST collected
 - Credit `Trade sales of goods and services` (GIFI 8000) = sale price net of HST
 - Credit `HST collected` = HST charged
 - Debit `Cost of sales` (GIFI 8518) = units sold × current average cost
