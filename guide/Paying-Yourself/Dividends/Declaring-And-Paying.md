@@ -33,7 +33,7 @@ Sample resolution for a sole-shareholder CCPC paying itself a non-eligible divid
 > The directors have determined that there are no reasonable grounds for believing that the Corporation is, or after the payment would be, unable to pay its liabilities as they become due, and that the realizable value of the Corporation's assets is not less than the aggregate of its liabilities and stated capital of all classes.  
 > Signed [DATE]: ______________________  [Director name]
 
-For an *eligible* dividend, change the third sentence to: "This dividend IS designated as an eligible dividend under subsection 89(14) of the *Income Tax Act*."  
+For an *eligible* dividend, change the designation sentence to: "This dividend IS designated as an eligible dividend under subsection 89(14) of the *Income Tax Act*."  
 For a *capital* dividend the resolution must additionally elect under ITA s.83(2), and Form T2054 must be filed; see [Capital-Dividend-Account.md](../../Investments/Capital-Dividend-Account/Capital-Dividend-Account.md).  
 
 The solvency test under *Canada Business Corporations Act* (CBCA) [s.42](https://laws-lois.justice.gc.ca/eng/acts/C-44/section-42.html) prohibits declaring or paying a dividend if there are reasonable grounds for believing that:

@@ -20,7 +20,7 @@ Limitations:
 - The following is my understanding as of 2026
 
 
-## What You Are Buying
+## Asset Purchase vs Share Purchase
 
 The two structures buy different things:
 - *Asset purchase*: the buyer corporation buys specific assets of the business (equipment, inventory, goodwill, customer lists, sometimes real estate) and assumes only the liabilities it agrees to
@@ -83,7 +83,7 @@ The capital gains inclusion rate is one-half for 2026 (the proposed increase to 
 ## Related
 
 - [Business Acquisition](Business-Acquisition.md)
-- [Preferred-share consideration](Preferred-Share-Consideration.md)
+- [Preferred-Share Consideration](Preferred-Share-Consideration.md)
 - [Capital Cost Allowance](../../Operations/Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md)
 - [Capital Dividend Account](../../Investments/Capital-Dividend-Account/Capital-Dividend-Account.md)
 - [Share Capital](../Corporate-Structure/Share-Capital.md)

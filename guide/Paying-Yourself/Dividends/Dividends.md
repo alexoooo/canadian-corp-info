@@ -120,7 +120,7 @@ The flavour is determined by the source of the distribution for the corporation,
 
 *Eligible dividend*:
 - Paid out of one of:
-  - Corporate income previously taxed at the general (non-SBD, Small Business Deduction) rate
+  - Corporate income previously taxed at the general (non-SBD) rate
   - Eligible dividends received directly from another Canadian corporation (T5)
   - Eligible dividends flowed through a Canadian trust under ITA [s.104(19)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-104.html) (T3 Box 49)
 - Tracked via the *General Rate Income Pool* (GRIP), defined at ITA [s.89(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-89.html)
@@ -150,7 +150,7 @@ For full mechanics of the CDA balance calculation and the T2054 election workflo
 ## Tax Integration
 
 *Integration* aims for the total tax paid on income earned through a corporation and distributed as a dividend to roughly equal the tax the same individual would have paid had they earned the income directly.  
-*Dividend gross-up and tax credit* adjust by flavour to the corporate tax already paid (capital dividends sit outside this framework, they are tax-free to a Canadian-resident shareholder).  
+*Dividend gross-up and tax credit* adjust by flavour to the corporate tax already paid (capital dividends sit outside this framework: they are tax-free to a Canadian-resident shareholder).  
 
 For the full integration mechanics (gross-up and DTC rates per flavour, corp-side preference order, ITA citations), see [Tax-Integration.md](../../Overview/Tax-Integration.md).  
 
@@ -280,7 +280,8 @@ The accounts above determine *which* dividend to pay; the steps to actually decl
   - [s.84](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-84.html) - deemed dividends (s.84(3) on share redemption; s.84(4) on PUC reduction)
   - [s.89(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-89.html) - definitions of "eligible dividend", GRIP, LRIP, CDA, PUC; the GRIP "general rate factor" of 0.72
   - [s.89(14)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-89.html) - eligible dividend designation by written notice to the shareholder at or before payment
-  - [s.104(19)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-104.html) - trust designation that flows the eligible-dividend character of taxable Canadian dividends through to beneficiaries (mechanism behind T3 Box 49)  - [s.120.4](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-120.4.html) - Tax on Split Income (TOSI), including the *excluded business* and *excluded shares* carve-outs that typically take an active owner-manager out of TOSI
+  - [s.104(19)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-104.html) - trust designation that flows the eligible-dividend character of taxable Canadian dividends through to beneficiaries (mechanism behind T3 Box 49)
+  - [s.120.4](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-120.4.html) - Tax on Split Income (TOSI), including the *excluded business* and *excluded shares* carve-outs that typically take an active owner-manager out of TOSI
   - [s.121](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-121.html) - federal dividend tax credit (15.0198% eligible, 9.0301% non-eligible, of the grossed-up amount)
   - [s.125(5.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-125.html) - SBD grind on adjusted aggregate investment income (AAII) over $50,000 ($5 SBD reduction per $1 of AAII excess)
   - [s.129](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-129.html) - dividend refund on taxable dividends paid (s.129(1)); definitions of ERDTOH and NERDTOH (s.129(4))

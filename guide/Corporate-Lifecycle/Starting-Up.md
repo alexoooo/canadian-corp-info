@@ -8,7 +8,7 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
 
 **TLDR**:
 - Incorporation creates the taxpayer; the *business number* (BN) and program accounts are how CRA sees it
-- The first fiscal period can be any length up to 53 weeks; the year-end is chosen simply by filing the first T2 with that date
+- The first fiscal period can be any length up to 53 weeks; the year-end is chosen by filing the first T2 with that date
 - Capitalize with nominal share capital plus a shareholder loan: the loan repays tax-free later
 - Incorporation costs up to $3,000 are deductible immediately; the excess is Class 14.1
 - Assets the owner brings in transfer at fair market value; an appreciated asset can roll in under s.85 instead
@@ -130,7 +130,7 @@ Personal-tax history does not follow the asset in: the corporation's cost starts
 - *GST/HST*: the small-supplier clock counts taxable supplies from the first sale, not from incorporation
   - Registration is required from the sale that crosses $30,000 within a single quarter, or after a one-month grace following the quarter in which the four-quarter total crosses (see [HST — Registration](../Operations/HST.md#registration))
 - *Payroll*: the first remittance is due the 15th of the month after the first salary is paid (see [Payroll](../Paying-Yourself/Payroll.md))
-- *Slips*: the first T4/T5 filings are due the Feb 28 after the first calendar year in which salary or dividends were paid
+- *Slips*: the first T4/T5 filings are due by the last day of February after the first calendar year in which salary or dividends were paid
 - *Corporate registry*: the annual-return clock starts at incorporation (federal: within 60 days of each anniversary; Ontario: within 6 months of year-end)
 
 Keeping the books current from day one is cheaper than reconstructing the first year at T2 time; set up the chart of accounts (see [Ledger and Accounts](../Bookkeeping/Ledger-And-Accounts.md)) before the first transaction.  

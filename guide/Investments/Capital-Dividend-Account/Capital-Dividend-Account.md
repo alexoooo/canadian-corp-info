@@ -15,7 +15,7 @@ Limitations:
 The Capital Dividend Account is not part of the ledger; it can be tracked separately (e.g. in a spreadsheet).  
 The CDA can be used to pay the tax-free portion of the cumulative net capital gain from the corporation to the shareholders with a capital dividend.  
 A capital dividend is one of the three dividend flavours (eligible, non-eligible, capital); for how it sits alongside the others and the steps to declare and pay it, see [Dividends](../../Paying-Yourself/Dividends/Dividends.md).  
-Note: the CDA can also include other amounts such as the tax-free portion of life-insurance proceeds received by the corporation (s.89(1)(d) ITA), but that is outside the scope of this document.  
+Note: the CDA can also include other amounts such as the tax-free portion of life-insurance proceeds received by the corporation (ITA [s.89(1)(d)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-89.html)), but that is outside the scope of this document.  
 
 Maintain a running total of capital gain or loss:
 - Realized Gains/Losses when you sell a security, calculate: T5008 Box 21 - ACB (your independently calculated ACB, not T5008 Box 20)  
@@ -48,7 +48,7 @@ Capital Dividend Account election process:
 Note that CDA is a "point-in-time" calculation.  
 If you sell an investment at a loss after your calculation but before the dividend is technically payable, you could inadvertently overdraw the account and incur Part III tax under ITA s.184(2): 60% of the excess amount.  
 (Under s.184(3) the corporation can elect to treat the excess as a separate taxable dividend instead, but that is rarely preferable.)  
-You may elect to pay less than the calculated CDA balance, e.g. by leaving a $1000 buffer.  
+You may elect to pay less than the calculated CDA balance, e.g. by leaving a $1,000 buffer.  
 
 Since this is a tax-free amount for Canadian residents, the shareholder recipients do not report this income on their T1.  
 If a shareholder is a non-resident, the capital dividend is subject to a Part XIII withholding tax (usually 25%, potentially reduced by a treaty), so it isn't "tax-free" for them.  

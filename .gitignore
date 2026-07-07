@@ -6,5 +6,5 @@
 .claude/cache/
 .claude/logs/
 
-# Transient audit working folder (see docs/Audit-Instructions.md); removed on delivery
+# Transient audit working folder (see docs/Audit-Instructions.md); cleared at the start of the next audit
 audit/wip/

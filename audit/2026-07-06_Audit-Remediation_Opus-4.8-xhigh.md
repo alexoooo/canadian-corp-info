@@ -174,15 +174,46 @@ simplification" fallback.
 
 Gated (held for maintainer): HST-3, HST-6, HST-7, T2S-1, T2S-3, WD-5, PR-6.
 
-### LOW (75) — Phase 4 (pending; gated held)
+### LOW (75) — Phase 4 (done this pass, 2026-07-06; 2 gated held)
 
-R-3, R-4, R-5, R-6, R-7, OV-1, OV-2, CM-1, CM-2/SBT-3, GL-4, FR-3, SBT-1, CL-1, CS-1, SU-2,
-BA-1, AVS-1, PSC-4, EF-1, EF-4, EF-5, BK-1, BK-3, LA-1, LA-2, EC-2, EC-5, FX-1, FX-7, OP-1,
-HST-12, DF-1, DON-2, RPI-3, CCA-4, CCA-5, CCL-2, CCL-3, CCL-4, CCL-5, CCE-1, CCT-3, CCT-4,
-PY-2, PY-3, PR-1, PR-2, PR-4, OCT-1, OCT-3, OCT-5, DIV-2, DIV-3, DIV-6, RD-1, RD-2, RD-4,
-DP-1, T2R-1, DE-2, DE-4, IN-2, ACBT-1, ACBT-3, ACBT-7, T58-1, T1135-1, CDA-1, CDA-4, T2S-2(gated),
-CRA-1(gated), PAY-3, WDR-1, R-1(README, MED), R-2(AGENTS, MED).
-Disposition: pending. Gated: T2S-2, CRA-1.
+All non-gated LOW findings fixed this pass (Opus 4.8), plus the two Phase-4-listed MEDIUMs
+(R-1, R-2). Each edit was followed by a Style-Guide check (bullet/stanza shape, em-dash use,
+Canadian spelling, GIFI-label and citation conventions). Fixed: R-2, R-3, R-4, R-5, R-6, R-7, OV-1,
+OV-2, CM-1, CM-2/SBT-3, GL-4, FR-3, CL-1, CS-1, SU-2, BA-1, AVS-1, PSC-4, EF-1, EF-4, EF-5, BK-1,
+BK-3, LA-1, LA-2, EC-2, EC-5, FX-1, FX-7, OP-1, HST-12, DF-1, DON-2, RPI-3, CCA-4, CCA-5, CCL-2,
+CCL-3, CCL-4, CCL-5, CCE-1, CCT-3, CCT-4, PY-2, PY-3, PR-1, PR-2, PR-4, OCT-1, OCT-3, OCT-5, DIV-2,
+DIV-3, DIV-6, RD-1, RD-2, RD-4, DP-1, T2R-1, DE-2, DE-4, IN-2, ACBT-1, ACBT-3, ACBT-7, T58-1,
+T1135-1, CDA-1, CDA-4, PAY-3, WDR-1.
+
+Gated (held for maintainer): T2S-2, CRA-1.
+
+Notes and judgment calls:
+- **R-1 — n/a (premise stale).** The README `## Audit` section was restructured to delegate to
+  `audit/Audit-Summary.md`, which already indexes the 2026-07-01 Coverage Review (line 29). No edit
+  needed; the defect no longer exists.
+- **SBT-1 — H1 kept deliberately.** "Small Business Tax Overview" is the guide-wide link-text
+  convention (40+ files use it, and the H1 matches); retitling the H1 would desync them. Resolved on
+  the audit's "long title is deliberate" branch by fixing the one genuinely stale hyphenated form
+  (IN-2, `Investments.md:61`). No H1 change.
+- **R-6 — CCA:256 left.** "an expensed item's proceeds are simply income" is the maintainer's-call
+  instance (contrasts with capped recapture); the other three (LA-1 Ledger:32 "really", SU-2
+  Starting-Up:11 "simply", T3B25:173 "simply") removed.
+- **CM-2/SBT-3/PR-1 sweep** also fixed `Starting-Up.md:133` "Feb 28" (not in the finding list) so no
+  slip-deadline "Feb 28" shorthand survives guide-wide; `Payment.md` was already correct.
+- **DE-2 — semicolons, not sub-bullets.** Removed the em-dash-as-connector but kept the parallel
+  S3-line facts (450/455/465/470) inline as `a; b; c`, matching the sibling one-line schedule
+  bullets and the standing "keep parallel enumerations, don't over-split" note.
+- **T2R-1 — folded**, not retitled: dropped the redundant `## T2 Reporting` heading so the intro
+  prose sits directly after the front matter (house shape).
+- **WDR-1 — dropped WDR's Topics block** (the TLDR already carries it); `HST.md`'s Topics block left
+  in place (out of scope; much longer page) — flag if guide-wide Topics-block removal is wanted.
+- **HST-12** cited the precise operative provision `s.172(2)` (appropriation to a shareholder) and
+  dropped the wrong s.190.
+- **FX-7** break-even recomputed on the post-FX-6 inputs (17 bps spread + fixed commissions):
+  ~CAD 1,300 (two-commission) / ~CAD 600–650 (single journal fee), replacing ~1,500 / ~1,000.
+- **Citations/labels:** CDA-1, PSC-4, PR-4, ACBT-7 added or normalized inline citations (CBCA s.34
+  URL web-verified live); DF-1/DON-2 relabelled GIFI accounts to the canonical Ledger-And-Accounts
+  names (2701 → `Loans from Canadian banks`; 2303 → `Canadian shares`).
 
 ### Refuted (no edit)
 

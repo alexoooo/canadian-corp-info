@@ -29,7 +29,7 @@ Equity itself moves with the year's results:
 `Equity = share capital + retained earnings`  
 `Retained earnings = opening + revenue − expenses − dividends`
 
-So revenue, expenses, and dividends are really sub-balances of equity that the books track separately during the year, then fold into retained earnings at year-end (the *close*).  
+So revenue, expenses, and dividends are sub-balances of equity that the books track separately during the year, then fold into retained earnings at year-end (the *close*).  
 
 A transaction travels the same path every time on its way to the T2:
 
@@ -57,8 +57,8 @@ Cost of sales is a sixth label in everyday use, but it is a kind of expense repo
 See [Inventory and COGS](../Operations/Cost-Recovery/Inventory-And-COGS.md).  
 
 Permanent versus temporary accounts:
-- *Permanent* (balance-sheet) accounts — assets, liabilities, equity — carry their balance forward year to year
-- *Temporary* (income-statement) accounts — revenue and expenses — start each year at zero; at year-end their net (the year's net income) is closed into retained earnings, and a declared dividend is closed the same way
+- *Permanent* balance-sheet accounts (assets, liabilities, equity) carry their balance forward year to year
+- *Temporary* income-statement accounts (revenue and expenses) start each year at zero; at year-end their net (the year's net income) is closed into retained earnings, and a declared dividend is closed the same way
 
 
 ## Debits and Credits

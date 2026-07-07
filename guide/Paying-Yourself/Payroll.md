@@ -12,8 +12,8 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
   - An RP payroll program account with CRA
   - *Source deductions* withheld from each pay
   - Remittance to CRA by the 15th of the following month
-  - A T4 slip and T4 Summary by Feb 28
-- A single owner-manager withholds income tax and CPP (both halves); EI usually does not apply
+  - A T4 slip and T4 Summary by the last day of February
+- A single owner-manager withholds income tax and the employee CPP half, and remits both CPP halves; EI usually does not apply
 - Every step posts through three ledger accounts: `Salaries and wages` (`9060`), `Employer's portion of employee benefits` (`8622`), and `Employee deductions payable` (`2627`)
 
 Limitations:
@@ -28,7 +28,7 @@ Limitations:
 
 ## The Payroll Cycle
 
-Each pay splits the gross salary three ways: net cash to the owner, withholdings parked in a liability account, and the full gross (plus the employer CPP half) as a deductible expense.  
+Each pay splits the gross salary two ways: net cash to the owner and withholdings parked in a liability account; the full gross plus the employer CPP half is the corporation's deductible expense.  
 The withholdings leave for CRA by the 15th of the following month; the T4 reconciles the whole year in February.  
 
 ```mermaid
@@ -38,7 +38,7 @@ flowchart TB
     LIAB[("Employee deductions payable:<br/>income tax · CPP both halves")]
     REMIT["PD7A remittance:<br/>15th of following month"]
     EXP["Salary expense:<br/>deductible, reduces ABI"]
-    T4["T4 slip + T4 Summary:<br/>by Feb 28"]
+    T4["T4 slip + T4 Summary:<br/>by the last day of February"]
     T1(["Owner's T1"])
 
     RUN --> NET
@@ -84,7 +84,7 @@ Three amounts are potentially withheld from each pay; for a single owner-manager
 - An arm's-length employee is insurable; the corporation withholds the employee premium and pays 1.4× as the employer share
 - A voluntary opt-in to EI *special* benefits (maternity, parental, sickness) exists for self-employed persons, including a >40% owner-manager, under Part VII.1 of the Employment Insurance Act; once benefits are drawn the opt-in becomes permanent
 
-The withheld amounts are the employee's money held in trust for CRA.  
+The withheld amounts are the employee's money held in trust for CRA (ITA [s.227(4)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-227.html)).  
 Remitting them late or not at all is treated more severely than a late corporate-tax balance (see the penalty note below).  
 
 
@@ -132,7 +132,7 @@ For the account definitions and the chart of accounts, see [Ledger and Accounts]
 
 ## T4 Slip and T4 Summary
 
-After each calendar year the corporation issues a *T4* slip to the employee and files it with a *T4 Summary* by Feb 28.  
+After each calendar year the corporation issues a *T4* slip to the employee and files it with a *T4 Summary* by the last day of February.  
 The Summary totals all slips and reconciles them against the year's remittances; a shortfall is payable with the filing.  
 
 The boxes that matter for an owner-manager:
@@ -195,6 +195,7 @@ Filing:
   - [s.67](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-67.html) - general reasonableness limit on deductions
   - [s.78(4)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-78.html) - remuneration unpaid 180 days after year-end is deductible only when paid
   - [s.153(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-153.html) - withholding obligation on salary and wages paid
+  - [s.227(4)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-227.html) - withheld source deductions deemed held in trust for the Crown
   - [s.227(9)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-227.html) - graduated penalty on late or deficient remittances
 - Income Tax Regulations (C.R.C., c. 945):
   - [s.108](https://laws-lois.justice.gc.ca/eng/regulations/C.R.C.,_c._945/section-108.html) - remittance due dates by remitter category

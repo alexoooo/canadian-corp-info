@@ -35,7 +35,7 @@ What fills each pool:
 - General-rate ABI → GRIP (72% of the general-rate income)
 - Eligible dividend received → GRIP (full amount) + ERDTOH (Part IV tax)
 - Non-eligible dividend received → NERDTOH (Part IV tax)
-- AII → NERDTOH (30⅔% refundable Part I) + CDA (non-taxable ½ of capital gains)
+- AII → NERDTOH (30⅔% refundable Part I); capital gain → taxable ½ into AII, non-taxable ½ → CDA
 
 What each dividend flavour paid does:
 - *Eligible* (s.89(14) designation): draws on GRIP capacity; triggers an ERDTOH refund of 38⅓% × dividend paid
@@ -56,7 +56,7 @@ They are notional T2 pools, tracked by T2 software and reported on T2 Page 7.
 
 ### Transition from RDTOH (pre-2019)
 
-Prior to 2019, there was a single RDTOH, it was split on transition between the two pools based on the source of each dollar.  
+Prior to 2019 there was a single RDTOH; on transition it was split between the two pools by a formula that approximates the source of each dollar.  
 
 Effective: first tax year beginning after 2018 (2019 for a calendar-year corp).  
 Computed from the prior year-end RDTOH and GRIP (ITA [s.129(5)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-129.html)).  
@@ -173,7 +173,7 @@ GRIP, ERDTOH, and NERDTOH cannot be transferred, sold, or rolled out to a shareh
 A corporation that receives eligible dividends but only ever pays non-eligible dividends strands both GRIP and ERDTOH on the corporate books.  
 
 Stranding doesn't cost anything to the corporation, but the shareholder pays more personal taxes:  
-- Either way the corporation recovers the same 38⅓% refund: NERDTOH on a non-eligible dividend, ERDTOH on an eligible one.    
+- Either way the corporation recovers the same 38⅓% refund: NERDTOH on a non-eligible dividend, ERDTOH on an eligible one    
 - Shareholder pays more: non-eligible dividends carry a lower gross-up and dividend tax credit, so the same cash leaves a bigger personal tax bill  
 
 How the two pools strand:

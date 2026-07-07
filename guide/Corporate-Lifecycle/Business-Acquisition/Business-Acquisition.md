@@ -58,7 +58,7 @@ flowchart TB
 
 *Consideration* (how you pay):
 - Cash, or a promissory note (debt the corporation pays down over time)
-- Preferred shares of the buyer corporation, redeemed over time (see [Preferred-share consideration](Preferred-Share-Consideration.md))
+- Preferred shares of the buyer corporation, redeemed over time (see [Preferred-Share Consideration](Preferred-Share-Consideration.md))
 
 
 ## Paying with Preferred Shares
@@ -66,7 +66,7 @@ flowchart TB
 The core of the scenario is the share-consideration route.  
 The buyer corporation issues redeemable, retractable preferred shares to the vendors with a fixed redemption value equal to the agreed price, then redeems them over time as cash allows.  
 
-The detail is on [Preferred-share consideration](Preferred-Share-Consideration.md): the s.85 rollover that defers the vendors' gain, how the shares' paid-up capital is set, and the deemed dividend that arises on each redemption.  
+The detail is on [Preferred-Share Consideration](Preferred-Share-Consideration.md): the s.85 rollover that defers the vendors' gain, how the shares' paid-up capital is set, and the deemed dividend that arises on each redemption.  
 
 
 ## The Family Case
@@ -91,11 +91,11 @@ Get tax and legal advice before:
 ## Related
 
 - [Asset vs Share Purchase](Asset-vs-Share.md)
-- [Preferred-share consideration](Preferred-Share-Consideration.md)
+- [Preferred-Share Consideration](Preferred-Share-Consideration.md)
 - [Estate Freeze](Estate-Freeze.md)
 - [Share Capital](../Corporate-Structure/Share-Capital.md)
 - [Dividends](../../Paying-Yourself/Dividends/Dividends.md)
-- [Owner-corporation transactions](../../Paying-Yourself/Owner-Corporation-Transactions.md)
+- [Owner-Corporation Transactions](../../Paying-Yourself/Owner-Corporation-Transactions.md)
 - [Capital Dividend Account](../../Investments/Capital-Dividend-Account/Capital-Dividend-Account.md)
 
 

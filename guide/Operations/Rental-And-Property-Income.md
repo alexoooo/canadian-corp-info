@@ -20,7 +20,7 @@ Limitations:
 - The following is my understanding as of 2026
 
 
-## Why the Character Matters
+## Rate Gap by Character
 
 The rate gap is the whole story (see [Active vs investment income](../Overview/Small-Business-Tax.md#active-vs-investment-income)):
 - *Active business income*: 12.2% up to the business limit (Ontario 2026)

@@ -102,7 +102,7 @@ The *half-year rule* (Regulation 1100(2)) lets you claim CCA on only half the ne
 Net additions = (cost of additions) − (lesser of proceeds, cost for dispositions).  
 
 Classes exempt from the half-year rule include 12 (most items), 13, 14, 15, 23, 24, 27, 29, 34, and 52.  
-Class 13 is exempt from this Regulation 1100(2) rule, but Schedule III imposes its own first-year limit on leasehold improvements, so the asset register still flags a first-year cap for the class.  
+Class 13 is exempt from this Regulation 1100(2) rule, but Reg 1100(1)(b) caps the first year at 50% of the Schedule III amount, so the asset register still flags a first-year cap for the class.  
 
 The *Accelerated Investment Incentive* (AIIP) enhances the first-year CCA deduction by suspending the half-year rule and applying an uplift.  
 It first applied to property acquired after Nov 20 2018, began phasing out for property available for use after 2023, and was scheduled to end after 2027.  
@@ -330,12 +330,13 @@ T2 schedules involved with CCA:
 - Income Tax Regulations (C.R.C., c. 945): https://laws-lois.justice.gc.ca/eng/regulations/C.R.C.,_c._945/
   - Part XI - capital cost allowances
   - Regulation 1100(1) - prescribed CCA rates by class
-  - Regulation 1100(2) - half-year rule
+  - Regulation 1100(2) - half-year rule; AIIP / DIEP first-year factors and phase-out
   - Regulation 1100(2.5) - half-CCA on Class 10.1 disposition
   - Regulation 1100(3) - short-fiscal-year proration; exceptions
   - Regulation 1101(1af) - separate class prescribed for each Class 10.1 vehicle
   - Regulation 1101(5b.1) - separate-class election for non-residential building additional 2% / 6%
-  - Regulation 1104(4) - AIIP / DIEP phase-out and definitions
+  - Regulation 1104(4), (4.01) - AIIP / reaccelerated-AIIP definitions
+  - Regulation 1104(3.1)-(3.2) - DIEP definitions
   - Schedule II - class definitions
 - CRA T4012 - T2 Corporation Income Tax Guide: https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4012.html
 - CRA T2 SCH8 - Capital Cost Allowance (CCA): https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2sch8.html

@@ -209,7 +209,7 @@ These are the three flavours a corporation can *pay* out to its shareholders.
 Dividends it *receives* (on a T3 or T5) are covered under [Income classification](#income-classification).  
 
 Federal rates shown; a provincial dividend tax credit applies on top:
-- Ontario: 10% eligible, 2.9863% non-eligible of the grossed-up amount in 2026.  
+- Ontario: 10% eligible, 2.9863% non-eligible of the grossed-up amount in 2026
 
 | Attribute | Eligible | Non-eligible | Capital                                                |
 |---|---|---|--------------------------------------------------------|
@@ -310,7 +310,7 @@ Filing a return and paying the tax have separate deadlines; missing either draws
 
 Filings:
 - *T2 return*: 6 months after year-end
-- *T4 and T5 slips*: to CRA and the recipient by Feb 28; late penalty is per filing, not per slip ($10/day, $100 minimum, 100-day cap; ITA s.162(7.01))
+- *T4 and T5 slips*: to CRA and the recipient by the last day of February; late penalty is per filing, not per slip ($10/day, $100 minimum, 100-day cap; ITA s.162(7.01))
 - *GST/HST return*: annual, quarterly, or monthly by revenue band
 - *Corporate annual return*: to the federal or provincial registry (not a tax filing)
 

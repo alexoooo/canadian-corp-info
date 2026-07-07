@@ -113,5 +113,5 @@ TOSI is one of the conditions that pushes the family case onto its own page; see
   - [s.84(3)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-84.html) - redemption proceeds over PUC deemed to be a dividend
   - [s.120.4](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-120.4.html) - Tax on Split Income (TOSI)
 - Canada Business Corporations Act (R.S.C., 1985, c. C-44):
-  - s.34-36 - redemption and purchase of shares, and the solvency tests that limit them
+  - [s.34-36](https://laws-lois.justice.gc.ca/eng/acts/C-44/section-34.html) - redemption and purchase of shares, and the solvency tests that limit them
 - CRA - Form T2057, Election on Disposition of Property by a Taxpayer to a Taxable Canadian Corporation: https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2057.html

@@ -19,7 +19,7 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
 
 Limitations:
 - Focus is on CAD↔USD for a typical owner-managed CCPC consultant or investor; other currency pairs (EUR, GBP, etc.) follow the same mechanics by analogy but specific rates and broker products differ
-- *Functional currency* election (ITA s.261) is mentioned once and excluded from scope; it is a multinational filing aimed at corporations whose primary books-and-records currency is not CAD
+- *Functional currency* election (ITA s.261) is out of scope; it is a multinational filing aimed at corporations whose primary books-and-records currency is not CAD
 - Foreign-securities tax slips (T3 Box 25/34 foreign-income, foreign tax credit on Schedule 21) and ACB mechanics live in [T3](../Investments/T3/T3.md) and [Adjusted Cost Base](../Investments/Adjusted-Cost-Base/Adjusted-Cost-Base.md); this page covers only the FX-conversion layer
 - *Hedging* (forward contracts, currency swaps) and derivative tax mechanics are out of scope
 - Broker support for Norbert's Gambit can change; named brokers below reflect their 2026 state and should be re-verified before relying on them
@@ -269,8 +269,8 @@ Concrete example on USD 50,000:
   - Total all-in: ~CAD 130–140
 - Savings on this size: ~CAD 1,220, about 10× cheaper than the bank
 - Break-even threshold against a 2% bank spread:
-  - Bank broker with $9.95 commissions: ~CAD 1,500
-  - NBDB or Questrade with $9.95 journal fee and $0 commissions: ~CAD 1,000
+  - Bank broker with $9.95 commissions: ~CAD 1,300
+  - NBDB or Questrade with $9.95 journal fee and $0 commissions: ~CAD 600–650
   - Below the break-even, the bank conversion is cheaper because the per-trip Gambit overhead exceeds the spread savings
 
 ### Bookkeeping

@@ -92,6 +92,7 @@ Let the facts stand in order and trust the reader to follow.
   - Write `vs`, not `versus`, and keep it lowercase: `Book Cost vs ACB`, `Asset vs Share Purchase`
 - Noun phrases or concrete operations: `Trading Fees`, `Sources of Law`, `Three Deduction Channels`, `Declaring a Dividend`
 - Never rhetorical or marketing-style: no `Why X matters`, `Understanding Y`, `What you need to know about Z`
+- Name the subject, don't gesture at it: state what the section covers the way a plain table-of-contents entry would, not a placeholder the reader must open the section to decode. `The Two Structures` → `Asset Purchase vs Share Purchase`; `The Freeze Outcome` → `Fixing Value and Shifting Growth`. A count-plus-generic-noun (`The Two Structures`, `The Three Options`) or a bare abstraction (`Key Considerations`, `The Outcome`) is a cliffhanger — `Three Deduction Channels` works only because `deduction channels` already names the subject
 - Short: 2–6 words is typical
 - A trailing status tag on a heading (`\[done]`, `\[meh]`, or the HTML-comment forms `<!-- [done] -->` / `<!-- [wip] -->` / `<!-- [meh] -->`) is the maintainer's progress annotation, not heading text
   - It is the one exception to the noun-phrase rule
@@ -142,7 +143,7 @@ See [`../AGENTS.md`](../AGENTS.md) for the status states and the promotion steps
 ## Worked Examples and Diagrams
 
 - Primer voice grounds terms with small parentheticals: `(e.g. an ETF)`, `(FutureTax, TaxCycle, ProFile)`, `(industry jargon for the main return)`
-- Operational voice carries explicit worked examples: concrete dollar values, a `Year 1 / Year 2 / Year 3` progression where state evolves, `→` arrows for the running result, and debits/credits as labeled ledger lines:
+- Operational voice carries explicit worked examples: concrete dollar values, a `Year 1 / Year 2 / Year 3` progression where state evolves, `→` arrows for the running result, and debits/credits as labelled ledger lines:
   - `Year 1 ROC: $2.00/unit × 100 = $200 → total ACB: $800.00, per-unit ACB: $8.00`
 - Mermaid in fenced ```` ```mermaid ```` blocks for conceptual flow diagrams
 - PNG screenshots only for real CRA / brokerage forms and tooling, co-located in the page's folder, referenced by bare filename, with account numbers and identifying detail redacted
@@ -164,9 +165,11 @@ The before-snippets are quoted as drafted, and may since have been reviewed away
 The frozen drafts under `examples/` preserve raw AI prose in full.  
 
 The tells, ordered by frequency in the pending pages:
-- *Rhetorical heading* → noun phrase
+- *Rhetorical or placeholder heading* → noun phrase that names the subject
   - before: `## Why a corporation has multiple classes` (`Share-Capital.md`)
   - after: `## Multiple Share Classes`
+  - before: `## The Two Structures` (`Asset-vs-Share.md`)
+  - after: `## Asset Purchase vs Share Purchase`
 - *Em-dash appositive or clause chain* → colon, parentheses, or a new sentence
   - before: `…under paragraph (c) of the s.89(1) definition — the anti-avoidance rule for designations one of whose main purposes is to artificially inflate GRIP or deflate LRIP.` (`T2-Reporting.md`)
   - after: end the sentence at `definition`, then start a new one: `That paragraph is the anti-avoidance rule for designations whose main purpose is to inflate GRIP or deflate LRIP.`

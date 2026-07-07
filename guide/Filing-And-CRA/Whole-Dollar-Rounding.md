@@ -6,12 +6,6 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
 - Owners of a Canadian-controlled private corporation (CCPC) who keep books in dollars and cents but file the T2 in whole dollars
 - Especially anyone keeping books in a spreadsheet rather than tax software that rounds and balances automatically
 
-**Topics**:
-- Why naive rounding breaks the accounting equation
-- CRA's whole-dollar requirement and rounding convention
-- Systematic methods that keep the statements tied
-- Where rounding actually bites
-
 **TLDR**:
 - Books are kept to the cent; the T2 and its GIFI schedules are filed in whole dollars, rounded to the nearest dollar
 - Keep the ledger in cents as the source of truth; round only when mapping to GIFI, and never post the rounding back into the books

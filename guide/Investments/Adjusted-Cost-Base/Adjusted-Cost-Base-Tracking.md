@@ -58,7 +58,7 @@ You can keep this as a separate workbook, or as a single sheet within a larger w
 
 Inputs (from investment confirmations and T3):
 - `Date`:
-  - Buy/Sell: trade date (not settlement date); for DRIP entered as Buy, see Notes below; payment/reinvestment date is used instead
+  - Buy/Sell: trade date (not settlement date); a DRIP entered as Buy uses the payment/reinvestment date instead (see Notes below)
   - ROC/Phantom: payment/distribution date
 - `Symbol`: ETF or stock ticker
 - `Action`: Buy, Sell, ROC, Phantom
@@ -128,8 +128,8 @@ Outputs (cumulative per symbol):
 - `ACB` = `Previous ACB` + `ACB Change`
 - `ACB of Units Sold` = IF(`Action` = "Sell", `Quantity` * `Previous ACB Per Unit`, 0)  
   Entered in T2 S6
-- `Capital Gain/Loss` = IF(`Action` = "Sell", `Net Proceeds CAD` - `ACB of Units Sold`, 0)
-- `Deemed Capital Gain` = IF(`Action` = "ROC", MAX(0, `Gross Amount CAD` - `Previous ACB`), 0)  
+- `Capital Gain/Loss` (named `Realized Gain/Loss` in the template) = IF(`Action` = "Sell", `Net Proceeds CAD` - `ACB of Units Sold`, 0)
+- `Deemed Capital Gain` (named `Immediate Capital Gain` in the template) = IF(`Action` = "ROC", MAX(0, `Gross Amount CAD` - `Previous ACB`), 0)  
   Reported in T2 S6 (as a separate line)
 - `Date of Acquisition` =  
   &ensp; IF(AND(`Action` = "Buy", `Previous Remaining Quantity` = 0), `Date`, `Previous Date of Acquisition`)  
@@ -204,4 +204,7 @@ Outputs (cumulative per symbol):
 ## Citations
 
 - ITA [s.47(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-47.html) - pooled average cost (WAC) mandatory for identical properties
+- ITA [s.40(3)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-40.html) - return of capital in excess of ACB is a deemed capital gain
+- ITA [s.40(3.3)-(3.4)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-40.html) - suspended-loss (stop-loss) rule on a loss sale followed by an affiliated repurchase
+- ITA [s.53(1)(f)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-53.html) - superficial loss added to the ACB of the substituted property
 

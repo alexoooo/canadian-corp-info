@@ -68,8 +68,8 @@ Schedule 8 Class 50 row:
 - Here opening UCC is $0, so $0 − $400 = −$400: $400 of recapture (no terminal loss)
 
 Schedule 1 reconciliation for year 3:
-- Add back: book amortization expense for the year and the accounting gain/loss on disposal
-- Deduct: CCA from Schedule 8 (including any terminal loss)
+- Add back: book amortization and any book loss on disposal
+- Deduct: any book gain on disposal, and the CCA from Schedule 8 (including any terminal loss)
 
 
 ## Example 2: Class 8 Floor Polisher (Physical-Service CCPC)

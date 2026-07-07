@@ -13,8 +13,6 @@ Limitations:
 - The Opco-Holdco / connected-corporation structure is mentioned only briefly; the receiving side is in [T3](../../Investments/T3/T3.md)
 
 
-## T2 Reporting
-
 Paying a dividend touches several T2 schedules beyond the bookkeeping entries in [Bookkeeping and information slips](Bookkeeping-And-Slips.md).  
 Most T2 software (FutureTax, TaxCycle) populates these automatically once the dividend amount and designation are entered.  
 Knowing which schedule reports what helps you sanity-check the result.  

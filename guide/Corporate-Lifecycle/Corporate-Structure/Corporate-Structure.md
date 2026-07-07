@@ -61,7 +61,7 @@ The *minute book* is the corporation's permanent legal record.
 It holds the articles of incorporation, the by-laws, the share register, and the directors' and shareholders' resolutions.  
 
 The dividend, share-issuance, and restructuring steps elsewhere in this guide all produce a resolution that belongs in the minute book.  
-A dividend declared without a recorded resolution, or shares issued without a register entry, is a gap CRA and a future buyer will both look for.  
+A dividend declared without a recorded resolution, or a share issuance without a register entry, is a gap CRA and a future buyer will both look for.  
 
 
 ## Share Capital

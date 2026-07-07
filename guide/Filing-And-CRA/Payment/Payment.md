@@ -54,7 +54,7 @@ The withheld amounts sit in the `Employee deductions payable` (2627) control acc
 - Scheduled from CRA My Business Account
   - Free, but takes 5 business days
 - Some banks provide service to remit business taxes
-  - The services typically come with a fee, but they can offer same-day processed
+  - The services typically come with a fee, but they can offer same-day processing
 - Visa Debit
   - Might require calling bank to raise limit (possibly temporary)
 

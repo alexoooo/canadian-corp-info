@@ -35,7 +35,7 @@ This page is a hub; these are the sub-pages:
 - [Starting Up](Starting-Up.md): incorporation choices and first-year setup
 - [Business Acquisition](Business-Acquisition/Business-Acquisition.md): buying or restructuring a business
   - [Asset vs Share Purchase](Business-Acquisition/Asset-vs-Share.md): the two ways to buy a business and who prefers which
-  - [Preferred-share consideration](Business-Acquisition/Preferred-Share-Consideration.md): paying with preferred shares
+  - [Preferred-Share Consideration](Business-Acquisition/Preferred-Share-Consideration.md): paying with preferred shares
   - [Estate Freeze](Business-Acquisition/Estate-Freeze.md): locking in today's value and passing future growth on
 - [Winding Down](Winding-Down.md): dissolution and final returns
 

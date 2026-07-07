@@ -58,7 +58,7 @@ Two habits carry the whole cycle:
 
 ## Related
 
-- [Small-Business-Tax-Overview](../Overview/Small-Business-Tax.md)
+- [Small Business Tax Overview](../Overview/Small-Business-Tax.md)
 - [Concept map](../Overview/Concept-Map.md) (the same territory as a single diagram)
 - [T2 Schedules](../Filing-And-CRA/T2-Schedules.md) (where each slip lands on the return)
 - [Losses](../Filing-And-CRA/Losses.md) (capital losses from the portfolio and their carryover)

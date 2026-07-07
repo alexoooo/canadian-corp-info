@@ -45,7 +45,7 @@ This page is a hub; these are the sub-pages:
 ## Related
 
 - [Bookkeeping](../Bookkeeping/Bookkeeping.md) (where these events are posted)
-- [Filing and CRA](../Filing-And-CRA/T2-Schedules.md) (where they land on the T2)
+- [T2 Schedules](../Filing-And-CRA/T2-Schedules.md) (where they land on the T2)
 - [Overview](../Overview/Overview.md) (how the whole guide fits together)
 
 ## Citations

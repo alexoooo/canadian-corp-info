@@ -21,7 +21,7 @@ Limitations:
 - The following is my understanding as of 2026
 
 
-## What a Freeze Does
+## Fixing Value and Shifting Growth
 
 An *estate freeze* fixes the current owner's stake at today's value and shifts future growth to someone else, usually children or a family trust.  
 
@@ -54,7 +54,7 @@ Where it is still a *sole proprietorship* or *partnership*, there are no shares 
 - The freeze instead rides on the *section 85 rollover* that incorporates the business
 
 The mechanics, on incorporation:
-- The proprietor (or the partners) transfers the business *assets* to a new corporation under ITA [s.85(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-85.html), electing agreed amounts to defer the accrued gains on goodwill (Class 14.1), depreciable property, and inventory
+- The proprietor (or the partners) transfers the business *assets* to a new corporation under ITA [s.85(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-85.html), at *elected amounts* that defer the accrued gains on goodwill (Class 14.1), depreciable property, and inventory
   - Receivables usually pass at face with a joint s.22 election, which preserves the corporation's bad-debt deductions
 - In place of growth shares, the transferor takes back *fixed-value, redeemable, retractable preferred shares* with a redemption value equal to the current worth of what was rolled in
 - The *common (growth) shares* are subscribed for nominal value by the next generation, directly or through a family trust
@@ -65,7 +65,7 @@ For a *partnership*, either each partner transfers their partnership interest un
 Three points differ from the existing-corporation case:
 - *s.84.1 is not engaged at this step*: that rule applies to a transfer of *shares* to a non-arm's-length corporation, and the incorporation freeze transfers *assets*; s.84.1 and its intergenerational exception below bear only on a later transfer of the freeze shares, not on the incorporation
 - *The lifetime capital gains exemption is available but not automatic*: the 24-month QSBC holding period is no bar here, since ITA [s.110.6(14)(f)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-110.6.html) relieves it for shares issued on rolling all or substantially all of an active business into the corporation, so the shares can qualify from issuance despite the business's earlier life as a proprietorship; using the exemption still takes a deliberate *crystallization* that triggers a capital gain on the shares (a reorganization or election, since incorporating alone does not use it), and the corporation must meet the small-business-corporation asset tests
-- *Active business versus property*: the mechanics work for any asset, but a passive rental or investment property earns no QSBC or lifetime-exemption treatment, gives up the principal-residence exemption (available only to individuals, not corporations), and meets the higher, then refundable, tax on passive investment income; the caveat weighs far more heavily for a property than for an operating business
+- *Active business versus property*: the mechanics work for any asset, but a passive rental or investment property earns no QSBC or lifetime-exemption treatment, gives up the principal-residence exemption (available only to individuals, not corporations), and faces the higher (partly refundable) tax on passive investment income; the caveat weighs far more heavily for a property than for an operating business
 
 One point is specific to the freeze rather than to a plain incorporation.  
 It is the transferor's *freeze preferred shares* that must be QSBC shares to carry the exemption, but any gain the s.85 roll-in is elected to trigger falls on the transferred *assets* (goodwill, recapture on depreciable property), not on those shares.  
@@ -76,7 +76,7 @@ Crystallizing the LCGE therefore takes a further, deliberate step — typically 
 ## Funding Retirement by Redeeming the Freeze Shares
 
 The freeze does not by itself put cash in the parent's hands; the preferred shares do that as they are redeemed.  
-The corporation redeems the freeze preferred shares over time, out of retained earnings, on the same basis as any share-funded purchase: each redemption above paid-up capital is a deemed dividend under ITA [s.84(3)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-84.html) (see [Preferred-share consideration](Preferred-Share-Consideration.md)).  
+The corporation redeems the freeze preferred shares over time, out of retained earnings, on the same basis as any share-funded purchase: each redemption above paid-up capital is a deemed dividend under ITA [s.84(3)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-84.html) (see [Preferred-Share Consideration](Preferred-Share-Consideration.md)).  
 
 This is how "paying the previous owner" works in the family case: a stream of redemptions funds the parent's retirement, spread over years.  
 
@@ -124,7 +124,7 @@ This is one more reason a freeze involving a spouse or minor beneficiaries is ad
 ## Related
 
 - [Business Acquisition](Business-Acquisition.md)
-- [Preferred-share consideration](Preferred-Share-Consideration.md)
+- [Preferred-Share Consideration](Preferred-Share-Consideration.md)
 - [Asset vs Share Purchase](Asset-vs-Share.md)
 - [Share Capital](../Corporate-Structure/Share-Capital.md)
 - [Dividends](../../Paying-Yourself/Dividends/Dividends.md)

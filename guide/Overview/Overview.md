@@ -22,7 +22,7 @@ Limitations:
 The overview pages frame the whole guide before you commit to a topic. A CCPC is a separate taxpayer that files its own return, pays corporate tax, and then passes after-tax money to its owner; almost every other page is a detail of that arc. Two pages carry the framing:
 
 - [Small-Business-Tax](Small-Business-Tax.md) is the primer: corporate tax rates, the small business deduction (SBD), the split between active and investment income, and the filing calendar.
-- [Concept map](Concept-Map.md) lays the same territory out as a single map — the kinds of things, the running balances (tax pools), the events, and the yearly flow — and names the page that owns each concept. It is the "start here" page.
+- [Concept map](Concept-Map.md) lays the same territory out as a single map of the kinds of things, the running balances (tax pools), the events, and the yearly flow. It names the page that owns each concept.
 
 [Tax Integration](Tax-Integration.md) then explains the principle that ties the corporate and personal sides together: the gross-up and dividend tax credit are designed so that earning through a corporation and paying it out is roughly tax-neutral against earning the same income personally.
 
@@ -33,7 +33,7 @@ The [glossary](Glossary.md) defines the acronyms (ACB, CDA, GRIP, ERDTOH, NERDTO
 
 This page is a hub; these are the sub-pages:
 - [Small-Business-Tax](Small-Business-Tax.md): the primer — corporate tax rates, the SBD, active versus investment income, and the filing calendar
-- [Concept map](Concept-Map.md): the whole guide as one map, with the page that owns each concept; start here
+- [Concept map](Concept-Map.md): the whole guide as one map, with the page that owns each concept
 - [Tax Integration](Tax-Integration.md): the gross-up and dividend tax credit, and why incorporation is roughly tax-neutral on distributed income
 - [Glossary](Glossary.md): acronyms and tax terms, each cross-referenced to its canonical page
 - [Further Reading](Further-Reading.md): adjacent topics with pointers

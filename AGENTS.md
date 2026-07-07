@@ -7,7 +7,7 @@ This is the single source of truth for project context, editorial conventions, a
 
 ## Repository nature
 
-This is a **documentation-only** repository. There is no build system, test suite, lint tooling, or package manifest. The root holds `README.md`, `AGENTS.md`, `CLAUDE.md`, a `docs/` folder (process docs for agents: the [style guide](docs/Style-Guide.md) and the audit playbook), an `audit/` folder, and a `guide/` folder containing all topic content (with screenshots co-located alongside the pages that reference them). Edits are content edits; "running" the project means previewing Markdown.
+This is a **documentation-only** repository. There is no build system, test suite, lint tooling, or package manifest. The root holds `README.md` and `AGENTS.md`, a `docs/` folder (process docs for agents: the [style guide](docs/Style-Guide.md) and the audit playbook), an `audit/` folder, and a `guide/` folder containing all topic content (with screenshots co-located alongside the pages that reference them); Claude Code's entry point `.claude/CLAUDE.md` points to this file. Edits are content edits; "running" the project means previewing Markdown.
 
 The audience is narrow: owners of a Canadian-controlled private corporation (CCPC), typically holding stocks/ETFs in a corporate trading account. Keep that frame — do not generalize content to personal tax, US filers, or other entity types unless the existing document already does. A brief contrast with sole-proprietor or personal-tax treatment is allowed where it clarifies the corporate treatment and stays clearly secondary (see `guide/Paying-Yourself/Owner-Corporation-Transactions.md`); do not let such a contrast grow into general personal-tax coverage.
 
@@ -24,7 +24,8 @@ The audience is narrow: owners of a Canadian-controlled private corporation (CCP
 - **`guide/Investments/T3/T3-Box-26-Other-Income.md`** — sub-page of `T3.md`, indexed under it in the README
 - **`guide/Investments/Capital-Dividend-Account/Capital-Dividend-Account.md`** — depends on capital gains data produced by the ACB/T3/T5008 workflows
 - **`guide/Overview/Glossary.md`** — short definitions of the acronyms and tax terms used across the guide, each cross-referenced to its canonical page
-- **`guide/Bookkeeping/Foreign-Currency.md`, `guide/Operations/HST.md`, `guide/Filing-And-CRA/Payment/Payment.md`** — stubs covering FX bookkeeping, GST/HST, and corporate-tax payment workflows respectively
+- **`guide/Bookkeeping/Foreign-Currency.md`, `guide/Operations/HST.md`** — mature multi-section pages on FX bookkeeping and GST/HST
+- **`guide/Filing-And-CRA/Payment/Payment.md`** — a stub for the corporate-tax payment workflow
 - **`guide/Paying-Yourself/Dividends/Dividends.md`** — eligible, non-eligible, and capital dividend concepts: which corporate pool each draws on and the T1 gross-up + DTC on the personal side; the hub for the dividend sub-pages
 - **`guide/Paying-Yourself/Dividends/Declaring-And-Paying.md`, `guide/Paying-Yourself/Dividends/Bookkeeping-And-Slips.md`, `guide/Paying-Yourself/Dividends/T2-Reporting.md`, `guide/Paying-Yourself/Dividends/Dividends-Examples.md`** — sub-pages of `Dividends.md` covering the paying-side mechanics (resolution, journal entries, T5/NR4, T2 schedules incl. T2054, worked examples), indexed under it in the README
 - **`guide/Overview/Tax-Integration.md`** — the integration principle, the dividend gross-up + DTC mechanism, per-flavour gross-up/DTC rates, and the corp-side preference order for choosing among the three flavours
@@ -61,7 +62,7 @@ The `<!-- [done] -->` tags are how the maintainer tracks review toward sign-off;
 
 These rules encode actual decisions made across the existing guides. Follow them when editing or adding content.
 
-- **Three distinct registers — keep them separate**: CRA/tax rules (what the law and forms require), bookkeeping conventions (how this guide posts entries), and brokerage-specific behavior (what statements actually show, often inconsistently); several documents explicitly contrast official tax treatment with the pragmatic ledger conventions used to reconcile broker statements; preserve that separation rather than collapsing it
+- **Three distinct registers — keep them separate**: CRA/tax rules (what the law and forms require), bookkeeping conventions (how this guide posts entries), and brokerage-specific behaviour (what statements actually show, often inconsistently); several documents explicitly contrast official tax treatment with the pragmatic ledger conventions used to reconcile broker statements; preserve that separation rather than collapsing it
 - **Cross-link, don't duplicate**: topic pages refer to each other through inline links and a `Related` section near the end; if you find yourself re-explaining ACB inside `T3.md`, link to `Adjusted-Cost-Base.md` instead
 - **Citations are concrete and authoritative**: existing pages cite the Income Tax Act, CRA forms/schedules, CRA guides, and Bank of Canada FX rates directly; match that — no vague "per CRA guidance" without a pointer
 - **Standard page shape** (where the page is mature): audience/scope at the top, walkthrough sections in the middle, then `Related`, `Citations`, and optionally `TODO` near the end

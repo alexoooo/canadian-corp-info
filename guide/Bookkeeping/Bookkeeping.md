@@ -19,7 +19,7 @@ Limitations:
 
 ## What This Covers
 
-Every number elsewhere in the guide eventually becomes a journal entry, and those entries roll up through the general index of financial information (GIFI) onto the T2. This group covers the machinery that makes that work.
+Every number elsewhere in the guide eventually becomes a journal entry, and those entries roll up through the General Index of Financial Information (GIFI) onto the T2. This group covers the machinery that makes that work.
 
 - [Ledger and Accounts](Ledger-And-Accounts.md) is the backbone: a GIFI-aligned chart of accounts, the debit/credit conventions this guide uses, and how the ledger maps onto the T2 schedules
 - [Expense Classification](Expense-Classification.md) answers the recurring question of which account a given cost belongs in, and whether it is a current expense or a capital asset
@@ -38,7 +38,7 @@ This page is a hub; these are the sub-pages:
 
 - [Operations](../Operations/Operations.md) (the tax events these entries record)
 - [Investments](../Investments/Investments.md) (ACB and distributions rely on the FX conventions here)
-- [Filing and CRA](../Filing-And-CRA/T2-Schedules.md) (where the GIFI balances land on the return)
+- [T2 Schedules](../Filing-And-CRA/T2-Schedules.md) (where the GIFI balances land on the return)
 
 ## Citations
 

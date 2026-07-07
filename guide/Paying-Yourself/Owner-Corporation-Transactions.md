@@ -84,8 +84,8 @@ Worked example (per-km allowance):
 - The corp pays $7,670 to the owner, tax-free to the owner and deductible to the corp
 
 Ledger entry for the allowance:  
-Debit: "Motor vehicle expenses" (GIFI 9281) = $7,670  
-Credit: "Cash" (GIFI 1001), or "Due to shareholder" (GIFI 2780 area) if settled later = $7,670  
+Debit: `Vehicle expenses` (`9281`) = $7,670  
+Credit: `Cash` (`1001`), or `Due to shareholder` (`2780`) if settled later = $7,670  
 
 GST/HST on the allowance:
 - An HST-registered corp may claim a *deemed input tax credit* on a reasonable km allowance equal to the tax fraction of the allowance (ETA [s.174](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-174.html))
@@ -140,8 +140,8 @@ Worked example (owner's tool sold to the corp):
 - The owner sells it to the corp at the $5,000 FMV; the corp adds $5,000 to its Class 8 UCC pool
 
 Ledger entry on the corp's books:  
-Debit: "Equipment" (asset, GIFI 1740 area) = $5,000  
-Credit: "Cash" (GIFI 1001), or "Due to shareholder" (GIFI 2780 area) = $5,000  
+Debit: `Equipment` (`1740`) = $5,000  
+Credit: `Cash` (`1001`), or `Due to shareholder` (`2780`) = $5,000  
 
 Personal side of the sale:
 - The equipment is *personal-use property*; a sale at or below cost produces no gain, and a loss on personal-use property is denied
@@ -170,7 +170,7 @@ Worked example (corporate-owned cottage):
 A home office is the most common mixed-use case after the vehicle, and it has its own trap.  
 
 Two routes, paralleling the property section above:
-- *Reimbursement*: the corp reimburses the business-use share (by area) of the home costs the owner pays personally — heat, electricity, a portion of internet, minor maintenance; the home stays a personal asset
+- *Reimbursement*: the corp reimburses the business-use share (by area) of the home costs the owner pays personally (heat, electricity, a portion of internet, minor maintenance); the home stays a personal asset
 - *Rent*: the corp pays the owner rent for the dedicated workspace; the corp deducts the rent (GIFI 8910 area) and the owner reports rental income and deducts the workspace share of home costs against it
 
 What the corp can and cannot pick up:
@@ -227,8 +227,8 @@ The same employee-versus-shareholder framing recurs across a cluster of common i
 - Clear the resulting `Due from shareholder` balance by repayment, salary, or dividend before the s.15(2) repayment window closes (see [Shareholder loans](#shareholder-loans))
 
 Ledger entry for a personal cost run through the corp account:  
-Debit: "Due from shareholder" (GIFI 1300 area) = amount  
-Credit: "Cash" (GIFI 1001) = amount  
+Debit: `Due from shareholder` (`1300`) = amount  
+Credit: `Cash` (`1001`) = amount  
 
 *Salary to family members*:
 - A salary to a spouse or child is deductible only to the extent it is *reasonable* for work actually performed
@@ -237,7 +237,7 @@ Credit: "Cash" (GIFI 1001) = amount
 
 ## Employee Benefits
 
-A benefit provided to the owner *as employee* can be deductible to the corp and tax-free personally — the best of both columns — but only inside the recognized categories below.  
+A benefit provided to the owner *as employee* can be deductible to the corp and tax-free personally, but only inside the recognized categories below.  
 The owner-manager caution runs through all of them: a benefit that would not plausibly be offered to an arm's-length employee in the same job invites recharacterization as a shareholder benefit (s.15(1), taxed with no deduction).  
 
 *Private health services plan (PHSP)*:
@@ -281,7 +281,7 @@ A loan from the corp to its shareholder is added to the owner's income for the y
 
 The repayment exception (ITA [s.15(2.6)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-15.html)) has two conditions, both required:
 - Repaid within *one year after the end of the corporation's tax year in which the loan was made*
-- The repayment is *not part of a series of loans and repayments*
+- The repayment is *not part of a series of loans or other transactions and repayments*
 
 The deadline keys off the corporation's *fiscal year-end*, not 365 days from the advance.  
 A practical test: the loan must not still be outstanding at two consecutive year-end balance sheets.  
@@ -322,8 +322,8 @@ Funding the corp from personal money is the common direction for an owner-manage
 - The attribution rules do not catch an owner funding their own corp in the ordinary case (they target transfers to a spouse or minor; corporate attribution under ITA [s.74.4](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-74.4.html) targets benefiting a designated person)
 
 Ledger entry when the owner lends $5,000 to the corp:  
-Debit: "Cash" (GIFI 1001) = $5,000  
-Credit: "Due to shareholder" (GIFI 2780 area) = $5,000  
+Debit: `Cash` (`1001`) = $5,000  
+Credit: `Due to shareholder` (`2780`) = $5,000  
 
 Repaying the owner later reverses this entry, with no tax to the owner on the principal returned.  
 
@@ -363,7 +363,7 @@ The corporate structure trades this simplicity for the benefit and deduction rul
   - [s.13(7)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-13.html) - change-of-use and partial-use adjustments to capital cost
   - [s.15(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-15.html) - benefit conferred on a shareholder, included in income with no corporate deduction
   - [s.15(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-15.html) - shareholder loan inclusion (one-year repayment rule)
-  - [s.15(2.6)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-15.html) - repayment exception: repaid within one year of the lender's year-end and not part of a series of loans and repayments
+  - [s.15(2.6)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-15.html) - repayment exception: repaid within one year of the lender's year-end and not part of a series of loans or other transactions and repayments
   - [s.18(1)(a)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-18.html) - general limitation: deductible only if incurred to earn income
   - [s.18(1)(l)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-18.html) - recreational facilities, club dues, and yacht/lodge costs denied
   - [s.18(1)(r)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-18.html) - cap on the employer's deduction for a tax-exempt per-km allowance (Reg 7306)

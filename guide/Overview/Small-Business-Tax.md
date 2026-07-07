@@ -279,7 +279,7 @@ You can use either or both in a mix:
 
 *Dividends* are paid to the owner in their capacity as a *shareholder*:
 - *Not* deductible to the corporation (paid out of after-tax retained earnings)
-- Trigger a *T5* slip to the shareholder and a *T5 Summary* to CRA, filed by Feb 28
+- Trigger a *T5* slip to the shareholder and a *T5 Summary* to CRA, filed by the last day of February
 - No source deductions, no CPP, no EI; dividends are not employment income
 - Do not generate RRSP room or CPP credits
 - Eligible for the *dividend gross-up and tax credit* on the personal return, per *Integration*
@@ -390,7 +390,7 @@ Missing them triggers interest, penalties, or both, including failure-to-file pe
 - *Instalments*: required only when both the prior and current year's tax exceed $3,000 (ITA [s.157(2.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-157.html)); quarterly for eligible CCPCs (last day of each fiscal quarter), monthly otherwise
 
 **Information slips (T4 / T5)**:
-- T4 (salary) and T5 (dividends) slips and summaries are due *Feb 28* of the year following the calendar year covered
+- T4 (salary) and T5 (dividends) slips and summaries are due by the *last day of February* of the year following the calendar year covered
 - Late-filing penalties are charged *per return type* (the whole T4 or T5 filing), not per slip: $10 per day, a $100 minimum, and a 100-day cap — higher daily rates apply at higher slip counts — so a single late filing runs $100–$1,000 (ITA s.162(7.01))
 
 **Payroll source deductions** (if paying salary):

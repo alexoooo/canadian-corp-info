@@ -20,7 +20,7 @@ Limitations:
 - *Schedule 125* (S125): the income statement — revenue (codes 8000–8299) and expenses (8300–9369; farming codes 9370–9899 are out of scope here)
 - *Schedule 100* (S100): the balance sheet — assets, liabilities, and equity (codes 1000–3849)
 - Operating expenses occupy the 8520–9369 band; cost of sales sits separately at 8300–8519 (see [Cost of sales is separate](#cost-of-sales-is-separate))
-- *GIFI-Short* (Form T1178): a condensed return for smaller corporations; it uses the same code numbers, so the line you pick here is the same either way
+- *GIFI-Short* (Form T1178): a condensed GIFI form for smaller corporations; it uses the same code numbers, so the line you pick here is the same either way
 - Codes come in rollup and detail pairs: `9150` Computer-related expenses is a rollup, `9152` Internet a detail beneath it; reporting at the rollup level is fine for a small corp
 
 Pick the most specific line that fits, and use the same line for the same kind of cost every year.  
@@ -80,9 +80,10 @@ Titles are from RC4088; the full index has many more.
 | `9281` | Vehicle expenses | fuel, insurance, repairs, and running costs of a business vehicle |
 
 Placement notes:
-- *Salary vs sub-contract vs management fee*: pay to an employee → `9060`; to an arm's-length contractor → `9110`; a management or admin fee to a related service entity → `8871`. The distinction drives source-deduction and T4 / T4A obligations, not just the code.
-- *Telephone and internet*: a standalone connectivity cost can sit at `9225` (telecom) or `9152` (internet, under computer-related); pick one and keep it there.
-- *Other expenses*: use `9270` only when nothing more specific fits; a reviewer reads a large "Other" balance as miscoding.
+- *Salary vs sub-contract vs management fee*: pay to an employee → `9060`; to an arm's-length contractor → `9110`; a management or admin fee to a related service entity → `8871`
+  - The distinction drives source-deduction and T4 / T4A obligations, not just the code
+- *Telephone and internet*: a standalone connectivity cost can sit at `9225` (telecom) or `9152` (internet, under computer-related); pick one and keep it there
+- *Other expenses*: use `9270` only when nothing more specific fits; a reviewer reads a large "Other" balance as miscoding
 
 
 ## Computer and Software Costs

@@ -170,7 +170,7 @@ When the Canadian character is not foreign non-business income, the withholding 
 An uncreditable Box 34 on a T3 gives no Canadian relief:
 - The s.126(1) credit is bounded by the Canadian tax on the foreign non-business income (the Box 25 amount), so with Box 25 nil there is little or no credit room (see [T2 Schedule Mapping](#t2-schedule-mapping) above)
 - There is no s.20(12) fallback for foreign tax flowed through a trust: s.104(22.1) deems the beneficiary to have paid the foreign tax only for the purposes of s.126, and s.104(22) to (22.3) do not extend to the s.20(11) or s.20(12) deductions (CRA position in IT-506 and IT-201R2). This binds a corporate beneficiary the same as an individual; the deeming is scoped by statute to the credit, not to the type of taxpayer
-- The withholding therefore stays a non-deductible cost: add it back on Schedule 1 as in the creditable flow, but with no offsetting credit, so it simply reduces the after-tax return
+- The withholding therefore stays a non-deductible cost: add it back on Schedule 1 as in the creditable flow, but with no offsetting credit, so it reduces the after-tax return
 
 Before treating a Box 34 as lost, pull the fund's annual tax-characterization breakdown (or the CTBS PDF; see [Determining Whether Box 25 Is Interest or Dividends](#determining-whether-box-25-is-interest-or-dividends) above).  
 An interim Box 34 with no Box 25 often resolves into a real Box 25 once the character is finalized, which restores the credit room.  
@@ -192,7 +192,7 @@ An interim Box 34 with no Box 25 often resolves into a real Box 25 once the char
   - [s.108](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-108.html) - trust definitions and the deeming rule in s.108(5) for beneficiary income from a trust interest
   - [s.112(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-112.html) - intercorporate-dividend deduction, limited to dividends from a taxable Canadian corporation (foreign dividends do not qualify)
   - [s.20(12)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-20.html) - deduction for foreign non-business income tax not credited; not available for tax flowed through a trust, since the s.104(22.1) designation applies only for the s.126 credit
-  - [s.125(5.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-125.html) - reduction of the small-business business limit when adjusted aggregate investment income exceeds $50,000
+  - [s.125(5.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-125.html) - reduction of the business limit when adjusted aggregate investment income exceeds $50,000
   - [s.126(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-126.html) - foreign non-business income tax credit
   - [s.129(4)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-129.html) - definitions of aggregate investment income and non-eligible RDTOH
 - CRA Form T3 - Statement of Trust Income Allocations and Designations: https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t3.html

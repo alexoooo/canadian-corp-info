@@ -36,7 +36,7 @@ The tax constants that depend only on the CCA class. One row per `Class`. Column
 - `Method`:
   - `Declining balance`: UCC * (1 - Rate), the most common (default) method
   - `Straight-line`: capital cost / amortization period, classes 13 and 14 only (`Rate` is unused)
-  - `Full expensing`: capital cost, full-expensing classes 53 / 43 (M&P), 54, 55, 56, and 43.1/43.2 under AIIP (`Rate` is unused)
+  - `Full expensing`: capital cost, full-expensing classes 53 / 43 (M&P), 54, 55, 56, and 43.1/43.2 under AIIP (`Rate` applies to any residual)
 - `Tangibility`:
   - `Tangible`: equipment, vehicles, leasehold improvements, etc.
   - `Intangible`: incorporation costs, goodwill, limited-life rights, etc.
@@ -216,7 +216,7 @@ For a declining-balance class in a normal (365-day) year, the columns run left t
 - `Terminal Loss` = `Closing UCC` if `Closing UCC > 0` and no items remain in the class, else `0` (ITA [s.20(16)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-20.html))
   - A deduction; `Closing UCC` then resets to `0`
 
-`Recapture` and `Terminal Loss` are both always columns; at most one is non-zero in a class-year, since the pool cannot be both negative and emptied at once.  
+`Recapture` and `Terminal Loss` are both always columns; at most one is non-zero in a class-year, since one requires a negative closing balance and the other a positive one.  
 
 
 ## Special Cases
@@ -393,10 +393,11 @@ Where that holds the continuity is just the class schedule restated on the books
   - [s.13(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-13.html) - recapture; [s.13(7.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-13.html) - ITC reduction of UCC; [s.13(21)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-13.html) - UCC definition
   - [s.20(16)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-20.html) - terminal loss
 - Income Tax Regulations (C.R.C., c. 945): https://laws-lois.justice.gc.ca/eng/regulations/C.R.C.,_c._945/
-  - Regulation 1100(2) - half-year rule
+  - Regulation 1100(2) - half-year rule; AIIP / DIEP first-year factors and phase-out
   - Regulation 1100(2.5) - half-CCA on Class 10.1 disposition
   - Regulation 1100(3) - short-fiscal-year proration; exceptions
-  - Regulation 1104(4) - AIIP definitions and phase-out
+  - Regulation 1104(4), (4.01) - AIIP / reaccelerated-AIIP definitions
+  - Regulation 1104(3.1)-(3.2) - DIEP definitions
 - CRA T2 SCH8 - Capital Cost Allowance (CCA): https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2sch8.html
 - CRA RC4088 - General Index of Financial Information (GIFI), for the Schedule 100/125 codes: https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4088.html
 

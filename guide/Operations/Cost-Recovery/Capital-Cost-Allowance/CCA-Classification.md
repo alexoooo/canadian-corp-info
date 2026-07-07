@@ -29,10 +29,10 @@ The classes an owner-managed CCPC most often uses:
 |-------|--------------|----------------|-----------|
 | `50` | 55% declining | computers and peripherals (acquired after Mar 18 2007); data network infrastructure equipment is Class 46 (30%), not here | full-expensing to 2026 |
 | `8` | 20% declining | office furniture, photocopiers, equipment not in another class (the catch-all) | yes |
-| `10` | 30% declining | motor vehicles, vans, light and pickup trucks under the passenger-vehicle cost cap; one shared pool | yes |
+| `10` | 30% declining | motor vehicles (any cost), and passenger vehicles under the cost cap; one shared pool | yes |
 | `10.1` | 30% declining | passenger vehicles costing over the cap ($39,000 + sales taxes in 2026); each in its own class | special |
 | `12` | 100% | application software (other than systems software) | mostly no |
-| `13` | straight-line over lease term + first renewal (min 5, max 40 years) | leasehold improvements | exempt (Sch. III first-year limit) |
+| `13` | straight-line over lease term + first renewal (min 5, max 40 years) | leasehold improvements | exempt (Reg 1100(1)(b) 50% cap) |
 | `14` | straight-line over remaining legal life | limited-life intangibles (patents, franchises, term licences) | no |
 | `14.1` | 5% declining | goodwill, incorporation expenses over $3,000, customer lists, unlimited-life intangibles | yes |
 | `54` | 30% declining | zero-emission passenger vehicles (cost capped at $61,000 + taxes) | full-expensing |
@@ -74,13 +74,13 @@ Longer scenarios that walk a classification decision end to end with the full ra
 ### Example 1: Small Wooden Dock <!-- [done] -->
 
 *Scenario*:
-- Waterfront-business CCPC builds a small wooden dock on poles for a few thousand dollars
-- Small fishing boats (under 20 ft) and pontoon boats tie up to it, cost $5,000
+- Waterfront-business CCPC builds a small wooden dock on poles for $5,000
+- Small fishing boats (under 20 ft) and pontoon boats tie up to it
 - It is not used to load or unload cargo
 
 *Decision steps*:
 - Depreciable property used to earn income? Yes, a durable fixed structure used in the business; prorate the CCA for any personal or recreational use
-- Below the capitalization floor (< $500)? No, a built structure is capital, not a current expense
+- Below the capitalization floor (< $500)? No, the build cost is well above the floor
 - Named in Schedule II? Yes, both a dock and a wharf are named, so it doesn't use the Class 8 catch-all or Class 1 building (Class 1 names a bridge, canal, culvert, and dam, not a wharf or dock)
 - Which named item, and what is it made of? The characterization below decides the class
 
@@ -149,7 +149,7 @@ Longer scenarios that walk a classification decision end to end with the full ra
 - *Class 12 with half-year*: application software, films, dies, jigs, moulds, and the cutting or shaping part of a machine *are* subject to the half-year rule even though most of Class 12 is not
 - *Class 13*: straight-line over (lease term + first renewal), minimum 5 years, maximum 40 years; recompute the schedule if the lease is amended
 - *Class 14*: straight-line over the actual remaining legal life of the intangible
-- *Class 14.1*: 5% declining; pre-2017 CEC transitional balances use 7%; the first $3,000 of incorporation expenses is a one-time deduction, not Class 14.1
+- *Class 14.1*: 5% declining; pre-2017 CEC transitional balances use 7% (taxation years ending before 2027; 5% after); the first $3,000 of incorporation expenses is a one-time deduction, not Class 14.1
 - *Class 50 vs Class 12 vs Class 8*: standalone application software is Class 12 (100%); systems software bundled with hardware is Class 50; hardware peripherals not bundled may go to Class 50 or Class 8 depending on durability and the corp's capitalization policy
 
 

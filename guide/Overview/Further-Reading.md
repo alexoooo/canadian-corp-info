@@ -41,7 +41,7 @@ Limitations:
 
 - *Personal T1 mechanics and sole-proprietor treatment*: appear only as brief contrasts where they clarify the corporate case, as in [Owner-Corporation-Transactions](../Paying-Yourself/Owner-Corporation-Transactions.md); the personal return is its own domain
 - *PST and QST*: the guide works federal GST/HST only; provincial sales taxes outside the participating-province HST are not covered
-- *SR&ED, EIFEL, amalgamations, foreign-affiliate reporting (T1134 / T106), and public-company topics*: beyond a typical owner-managed CCPC
+- *SR&ED, EIFEL, amalgamations, cross-border information returns (T1134 foreign affiliates, T106 non-arm's-length transactions with non-residents), and public-company topics*: beyond a typical owner-managed CCPC
 - *Multi-employee HR and payroll*: [Payroll](../Paying-Yourself/Payroll.md) works the single owner-manager case; hiring, multiple employees, and employment-standards obligations are out of scope
 - *US and cross-border income-tax nexus*: [Foreign Currency](../Bookkeeping/Foreign-Currency.md) carries the W-8BEN-E treaty position for billing US clients; US permanent-establishment analysis and state taxes are not covered
 

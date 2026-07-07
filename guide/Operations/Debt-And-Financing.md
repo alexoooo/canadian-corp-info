@@ -8,7 +8,7 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
 
 **TLDR**:
 - Interest is deductible when there is a legal obligation to pay it and the borrowed money is used to earn business or property income (ITA s.20(1)(c)); the test traces what the money *bought*, not what secures the loan
-- A line of credit books to `Short-term debt` (`2701`); a term loan splits between `2701` (due within a year) and `Long-term debt` (`3140`); each blended payment splits into interest (`8710`) and principal
+- A line of credit books to `Loans from Canadian banks` (`2701`); a term loan splits between `2701` (due within a year) and `Long-term debt` (`3140`); each blended payment splits into interest (`8710`) and principal
 - The costs *of borrowing* (arrangement, commitment, and related legal fees) are not interest: they deduct at 20% a year over five years (s.20(1)(e)); recurring annual fees deduct currently (s.20(1)(e.1))
 - Interest paid to the owner on a `Due to shareholder` balance is deductible like any other, but needs a documented obligation, a reasonable rate, and a T5 to the owner
 - Interest owed to the owner but left unpaid too long is added back under the unpaid-amounts rule (s.78)
@@ -39,7 +39,7 @@ Compound interest (interest on unpaid interest) is deductible only when actually
 ## Lines of Credit and Term Loans
 
 *Line of credit*:
-- Draws: Dr `Cash` (`1001`), Cr `Short-term debt` (`2701`); repayments reverse
+- Draws: Dr `Cash` (`1001`), Cr `Loans from Canadian banks` (`2701`); repayments reverse
 - Interest charged monthly: Dr `Interest and bank charges` (`8710`), Cr `1001` (or Cr `2701` when capitalized to the balance)
 
 *Term loan* — $50,000 over 5 years at 7%, blended monthly payment of $990:

@@ -14,7 +14,7 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
 - Political contributions are not donations and are not deductible
 
 Limitations:
-- The corporate-vs-personal giving decision is sketched at the rate level only; the personal donation credit (s.118.1) and its mechanics are out of scope
+- The corporate-vs-personal giving decision is touched on at the rate level only; the personal donation credit (s.118.1) and its mechanics are out of scope
 - Gifts of ecological or cultural property (100% limits, special rules) are out of scope
 - Gifts to US charities and treaty-limited claims are out of scope
 - The following is my understanding as of 2026
@@ -67,7 +67,7 @@ The in-kind entry:
 | Account | Debit | Credit |
 |---|---|---|
 | `Donations` (`8522`) | 10,000.00 | |
-| `Long-term investments` (`2303`) | | 4,000.00 |
+| `Canadian shares` (`2303`) | | 4,000.00 |
 | `Realized gains/losses on sale of investments` (`8211`) | | 6,000.00 |
 
 On the return: the disposition goes on Schedule 6 with the zero inclusion, S1 removes the $6,000 accounting gain and adds back the $10,000 donation, and the deduction is claimed through Schedule 2.  
