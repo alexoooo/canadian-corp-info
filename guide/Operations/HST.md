@@ -87,7 +87,7 @@ The suffix increments when a corp opens additional GST/HST accounts (rare for an
 The standard filing surface:
 - CRA *My Business Account* is the corp-side portal; an *authorized representative* can file on behalf of the corp through *Represent a Client*
 - Form *GST34-2* is the personalized return CRA mails (or makes available electronically) to the corp; the access code on it is required for electronic filing under most channels
-- Form *GST34-3* is the non-personalized version for registrants without a GST34-2 on file
+- Form *GST62* is the non-personalized return for registrants without a GST34-2 on file; registrants who file electronically receive the *GST34-3* electronic filing information sheet (carrying the access code) instead of a GST34-2
 - Mandatory electronic filing applies to all GST/HST registrants for reporting periods beginning on or after 2024-01-01, with limited exceptions for charities and SLFIs (ETA [s.278.1](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-278.1.html))
 - Remittances of $10,000 or more must be paid electronically (ETA [s.278(3)](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-278.html))
 
@@ -223,17 +223,21 @@ Capital property and ITCs:
 ## Quick Method
 
 The *Quick Method* (ETA [s.227](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-227.html); CRA RC4058) is a simplification that lets eligible registrants remit a flat percentage of GST/HST-inclusive revenue and skip per-input ITC tracking on operating purchases.  
-ITCs on *capital purchases* and on *imports* are still claimable separately under the regular method, even after the Quick Method election.  
+ITCs on *capital purchases* (including real property, and including imported capital property) are still claimable separately under the regular method, even after the Quick Method election.  
+Import HST on *operating* inputs earns no ITC while the election is in effect — the kept remittance spread is its only compensation (SOR/91-51 s.17(1)).  
 
 Eligibility requires *all* of the following:
-- Worldwide *taxable supplies* (including those of associated corps) in the previous fiscal year, plus the HST charged on those supplies, total $400,000 or less; this cap and the Quick Method remittance rates are set by the *Streamlined Accounting (GST/HST) Regulations* (the election framework is ETA [s.227](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-227.html); the cap rose from $200,000 for fiscal years beginning on or after 2013-01-01)
+- Worldwide *taxable supplies* (including those of associated corps), plus the HST charged on those supplies, total $400,000 or less over the test window:
+  - *Window*: for a first election, any four consecutive fiscal quarters ending in one of the last two fiscal quarters before the election takes effect (RC4058: "four consecutive fiscal quarters out of your last five"); once elected, continuing eligibility is tested on the previous fiscal year
+  - *Base*: excludes supplies of financial services and sales of real property, capital assets, and goodwill — a year with a large capital-asset sale does not blow eligibility
+  - The cap and the Quick Method remittance rates are set by the *Streamlined Accounting (GST/HST) Regulations* (the election framework is ETA [s.227](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-227.html); the cap rose from $200,000 for fiscal years beginning on or after 2013-01-01)
 - The corp is not in an ineligible designation (per RC4058):
   - Listed financial institutions
   - Accountants, bookkeepers, tax-return preparers (when supplying those services)
   - Lawyers and notaries
   - Financial consultants and actuaries
   - Municipalities, hospital authorities, school authorities, universities, public colleges, charities, and qualifying non-profits
-- The corp is not under an *election to use the Simplified Method for ITCs* (a separate ITC-side simplification, different from the Quick Method)
+- The corp was engaged in commercial activities throughout the 365 days ending immediately before the reporting period (RC4058 accommodates registrants newer than that), and no streamlined-accounting election (the Quick Method or the simplified ITC method) ceased by revocation in that same window (SOR/91-51 s.16(1))
 
 How to elect:
 - File Form *GST74 Election and Revocation of an Election to Use the Quick Method of Accounting*
@@ -257,7 +261,7 @@ When the Quick Method pays:
 
 Income-tax interaction:
 - The kept portion of the HST collected is taxable income to the corp under ITA s.9; book it to `Other revenue` (GIFI 8230) rather than netting it into `HST receivable`
-- Quick-Method ITCs that are still claimed (capital purchases, imports) follow the standard regular-method posting
+- Quick-Method ITCs that are still claimed (capital purchases) follow the standard regular-method posting
 
 
 ## Zero-Rated Supplies
@@ -282,6 +286,7 @@ For the full bookkeeping, invoice presentation, and the W-8BEN-E interaction wit
 Import HST on goods:
 - Collected by *Canada Border Services Agency* (CBSA) at the point of import on the *Commercial Accounting Declaration* (which replaced Form B3 when CARM became the system of record in October 2024; Customs Notice 24-29), calculated on the duty-paid value of the goods
 - If the corp is a GST/HST registrant, the import HST is recoverable as an ITC on the next return; the Commercial Accounting Declaration in the CARM Client Portal (or the broker's statement built from it) is the documentary support
+- Under a *Quick Method* election this holds only for imported capital property — import HST on operating inputs earns no ITC (see [Quick Method](#quick-method))
 - If the corp is not registered, the import HST is permanent landed cost and is capitalized into inventory or capital cost (see [Inventory](Cost-Recovery/Inventory-And-COGS.md#imported-goods-and-fx) and [Capital Cost Allowance](Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md))
 
 Import HST on services and intangibles:
@@ -429,7 +434,7 @@ Quick Method remittance calculation:
 - Net tax: $4,174.80 − $520 = $3,654.80
 
 GST34 annual return for 2026, filed by 2027-03-31:
-- Line 101: $45,000
+- Line 101 (Quick Method: revenue from taxable supplies *including* the GST/HST — RC4058; contrast Example 1's HST-exclusive $45,000): $50,850
 - Line 105 (Quick Method tax): $4,174.80
 - Line 108 (ITCs on capital): $520
 - Line 109 (net tax): $3,654.80
@@ -499,7 +504,7 @@ The break-even point against the regular method on Ontario services is roughly t
   - [s.218.1](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-218.1.html) - self-assessment on imported services and intangibles
   - [s.221](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-221.html) - obligation of a registrant to collect tax on every taxable supply
   - [s.225](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-225.html) - net-tax computation; 4-year ITC time limit (s.225(4))
-  - [s.227](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-227.html) - Quick Method election framework; the $400,000 eligibility cap and the remittance rates are set by the *Streamlined Accounting (GST/HST) Regulations* (SOR/91-51)
+  - [s.227](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-227.html) - Quick Method election framework; the $400,000 eligibility cap and the remittance rates are set by the *Streamlined Accounting (GST/HST) Regulations* (SOR/91-51): [s.2(2)-(3)](https://laws-lois.justice.gc.ca/eng/regulations/SOR-91-51/section-2.html) threshold-amount base and its exclusions, [s.15(3)](https://laws-lois.justice.gc.ca/eng/regulations/SOR-91-51/section-15.html) test windows, [s.16(1)](https://laws-lois.justice.gc.ca/eng/regulations/SOR-91-51/section-16.html) eligibility conditions, [s.17(1)](https://laws-lois.justice.gc.ca/eng/regulations/SOR-91-51/section-17.html) net-tax formula and the capital-property-only ongoing ITCs
   - [s.231](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-231.html) - bad-debt adjustment on a written-off receivable
   - [s.236](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-236.html) - 50% ITC limit on meals and entertainment
   - [s.237](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-237.html) - quarterly instalments for annual filers with net tax of $3,000 or more (base = lesser of prior-year net tax and current-year estimate)

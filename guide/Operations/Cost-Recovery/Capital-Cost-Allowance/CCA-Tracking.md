@@ -97,8 +97,9 @@ Columns:
 - `AIIP Eligible`:
   - True if acquired after 2024 and available for use before 2030 (the reinstated incentive)
   - Not if you or a non-arm's-length party previously owned it, or it came in on a rollover; an arm's-length purchase of used property still qualifies
-  - Leave false for the full-expensing and ZEV classes (M&P Class 53 / 43, 54, 55, 56, 43.1, 43.2), which expense on their own rules
-  - Drives the first-year uplift; Schedule 8 reports these additions in their own column (225)
+  - Set true for the full-expensing and ZEV classes too (M&P Class 53 / 43, clean energy 43.1 / 43.2, ZEV 54 / 55 / 56): qualifying M&P and clean-energy property is AIIP (Reg 1104(4)/(4.01) carve out only Classes 54–56, which have their own 100% rule), and Schedule 8's accelerated column (225) carries AIIP and ZEV additions alike — their expensing runs through that column, not on separate rules
+  - Flagging them false leaves column 225 empty and the software falls back to the half-year rule: in FutureTax, a Class 53 addition entered in 203 alone computes at 25% of cost instead of the enhanced first-year rate
+  - Drives the first-year uplift; Schedule 8 reports these additions in their own column (225); for the full-expensing and ZEV classes the uplift factor is the class's own — 100% under the reinstated incentive, or the original regime's phase-down factors (75% in a 2024–2025 available-for-use year) before it — not the generic +0.5
   - Rules and phase-out: [Half-year rule and AIIP](Capital-Cost-Allowance.md#half-year-rule-and-aiip)
 - `Note`:
   - Free-form text for anything worth recording about the row
@@ -158,7 +159,8 @@ Deferring keeps the balance in the pool, but on AIIP additions it forfeits the a
 
 FutureTax renders the half-year rule as a per-class control on Schedule 8: a *Half Rule* checkbox (column H) in version 2019.2 and earlier, or an automatic 0.5 factor (column 13) in later versions.  
 It applies the standard half-year reduction: with it on, only half of the year's net additions enter the first-year CCA base; with it off, the full additions do.  
-Leave it on for ordinary additions subject to the half-year rule; it should be off for the half-year-exempt classes (12, 13, 14, 15, …) and for AIIP additions, where the half-year rule is suspended and the accelerated uplift applies instead.  
+Leave it on for ordinary additions subject to the half-year rule; it should be off for the half-year-exempt classes (12, 13, 14, 15, …).  
+AIIP and ZEV additions need no override: the column-225 entry removes them from the half-year base automatically and the accelerated uplift applies instead, so a class holding both AIIP and ordinary additions keeps the control on for the ordinary part.  
 It is not a deferral switch — turning it off on a class that *is* subject to the half-year rule drops the mandatory reduction and over-claims first-year CCA; to defer, reduce the discretionary `CCA` claim (column 217) above instead, which is where the AIIP-forfeiture caution applies.  
 
 Recapture and terminal loss are not discretionary.  

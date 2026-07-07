@@ -10,7 +10,7 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
 - On the accrual basis, an invoice is income when the work is billed, not when the cash arrives; the receivable sits in `Trade accounts receivable` (`1062`)
 - *Doubtful* and *bad* are different stages: a doubtful debt supports a reserve (ITA s.20(1)(l)) that re-measures every year; a bad debt is written off once (s.20(1)(p))
 - A write-off requires the amount to have been included in income and the debt to have become bad in the year — document the collection attempts
-- The HST charged on a written-off invoice comes back through a bad-debt adjustment (ETA s.231), claimable within four years
+- Under the regular method, the HST charged on a written-off invoice comes back through a bad-debt adjustment (ETA s.231), claimable within four years; under the *Quick Method* there is no bad-debt adjustment for quick-method supplies — an ordinary consulting invoice gets none
 - A later recovery is income again (s.12(1)(i)), and the HST portion is re-remitted
 
 Limitations:
@@ -58,7 +58,7 @@ A debt is written off when it is *established to have become bad* in the year (I
 - The judgement is the creditor's to make, but document it — the collection emails, the returned mail, the insolvency notice
 - The deduction requires the amount to have been included in income (true for any invoice booked as above)
 
-Writing off the $5,650 invoice:
+Writing off the $5,650 invoice (regular method — under the Quick Method the s.231 line is unavailable for a quick-method supply and the full $5,650 is `Bad debt expense`):
 
 | Account | Debit | Credit |
 |---|---|---|
@@ -72,11 +72,11 @@ Partial write-offs are fine: write off the portion established to be bad and kee
 
 ## HST Bad-Debt Adjustment
 
-The HST remitted on the unpaid invoice is recovered under ETA [s.231](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-231.html) (see [HST — Edge cases](HST.md#edge-cases)):
+Under the regular method, the HST remitted on the unpaid invoice is recovered under ETA [s.231](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-231.html) (see [HST — Edge cases](HST.md#edge-cases)):
 - Conditions: the tax was reported and remitted on a prior return, the debt has been written off in the books, and the sale was to an arm's-length recipient
 - The recovery is the tax fraction of the uncollected amount — 13/113 of the balance written off for an Ontario HST invoice ($650 on the $5,650 above)
 - Claim it as an adjustment on a return filed within four years after the due date of the return for the period in which the debt was written off
-- Under the *Quick Method* the interaction is not the plain s.231 formula; verify the treatment in RC4058 before claiming (see TODO)
+- Under the *Quick Method* there is no bad-debt adjustment (and no recovery re-remittance) for quick-method supplies — the remittance rate is unaffected by the write-off; relief survives only for supplies not eligible for the quick-method calculation, such as sales of capital assets or real property (SOR/91-51 s.17(1); RC4058)
 
 The income-tax write-off and the HST adjustment travel together: both key off the same books-and-records write-off, so make the ledger entry, then claim both from it.  
 
@@ -85,7 +85,7 @@ The income-tax write-off and the HST adjustment travel together: both key off th
 
 Money that arrives after the write-off is income again:
 - The recovered portion is included in the year received (ITA [s.12(1)(i)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-12.html)), booked to `Bad debt recoveries` (`8250`)
-- The tax fraction of the recovery is re-remitted (ETA s.231(3))
+- The tax fraction of the recovery is re-remitted (ETA s.231(3)) — regular method only; under the Quick Method there was no adjustment to reverse, so nothing is re-remitted
 
 Client later pays $2,260 of the written-off $5,650:
 
@@ -115,6 +115,8 @@ Client later pays $2,260 of the written-off $5,650:
   - [s.50(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-50.html) - deemed disposition election for bad capital debts (the loan-side contrast, out of scope)
 - Excise Tax Act (R.S.C., 1985, c. E-15):
   - [s.231](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-231.html) - bad-debt adjustment and the recovery-side re-remittance (s.231(3))
+- Streamlined Accounting (GST/HST) Regulations (SOR/91-51):
+  - [s.17(1)](https://laws-lois.justice.gc.ca/eng/regulations/SOR-91-51/section-17.html) - Quick Method net-tax formula; Division V bad-debt deductions admitted only for supplies other than specified supplies (variable C(b)), with the recovery re-remittance likewise regular-method-only (variable B(b))
 - CRA - IT-442R *Bad debts and reserves for doubtful debts* (archived): https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/it442r.html
 - T2 Schedule 13 - Continuity of Reserves: https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2sch13.html
 
@@ -122,6 +124,5 @@ Client later pays $2,260 of the written-off $5,650:
 ## TODO
 
 - Verify the s.20(1)(l) reserve base for the HST portion of a receivable (the body takes the position that only the net-of-HST share is reservable since HST collected was never income; confirm against IT-442R / current CRA position)
-- Verify the Quick Method × s.231 interaction in RC4058: whether a bad-debt adjustment is available at all under the Quick Method, and on what base
 - Verify the four-year limitation wording in s.231(4) (four years from the end of the reporting period in which the write-off adjustment could first be claimed)
 - Confirm the Schedule 13 lines for a doubtful-debt reserve and name them in the body

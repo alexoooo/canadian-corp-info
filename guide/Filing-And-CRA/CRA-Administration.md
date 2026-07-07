@@ -124,7 +124,7 @@ Handling one:
 A *full audit* is broader: an auditor examines the books and records, and has statutory authority to inspect them and require answers (ITA [s.231.1](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-231.html)).  
 Cooperate on documents, keep answers factual, and involve an accountant early; audit defence is out of scope here.  
 
-Authorizing a representative (an accountant) for the RC account is done in My Business Account; the authorization is per program account and survives until revoked.  
+Authorizing a representative (an accountant) for the RC account is done in My Business Account; the authorization is per program account and survives until it expires (if an expiry date was set when granted) or is revoked.  
 
 
 ## Records Retention
@@ -179,10 +179,13 @@ A nil assessment cannot be objected to; for a loss year, the lever is a loss det
 - Grounds: CRA error or delay, circumstances beyond the corporation's control, or inability to pay
 - Apply on Form RC4288 with the supporting story and documents; the decision is discretionary
 
-*Voluntary Disclosures Program* (VDP):
-- For unfiled returns, unfiled slips or T1135s, or unreported income CRA has not yet asked about
-- A valid disclosure must be voluntary (before CRA contact on the issue), complete, and include payment or a payment arrangement
-- Relief is penalty relief and partial interest relief; the tax is always payable
+*Voluntary Disclosures Program* (VDP), per IC00-1R7 for applications received on or after 2025-10-01:
+- For unfiled returns, unfiled slips or T1135s, or unreported income
+- Applications are classed by what CRA had already said:
+  - *Unprompted*: no CRA communication about the identified issue — an application made after an *education letter* or a notice offering general guidance is still unprompted
+  - *Prompted*: made after CRA communication about the identified issue, such as a specific compliance letter or a notice with a deadline to file or comply (a demand to file lands here, but the application remains eligible)
+- Relief: unprompted gets full penalty relief plus 75% interest relief; prompted gets up to full penalty relief plus 25% interest relief; the tax is always payable
+- An ongoing audit or investigation in respect of the disclosed matter bars the application; the disclosure must be complete and include payment or a payment arrangement
 - Apply on Form RC199; for anything material, have a professional shape the disclosure first
 
 
@@ -220,7 +223,7 @@ A nil assessment cannot be objected to; for a loss year, the lever is a loss det
   - RC199 - Voluntary Disclosures Program Application: https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/rc199.html
   - T137 - Request for Destruction of Records: https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t137.html
   - CRA - Prescribed interest rates: https://www.canada.ca/en/revenue-agency/services/tax/prescribed-interest-rates.html
-  - IC00-1 - Voluntary Disclosures Program: https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/ic00-1r6.html
+  - IC00-1R7 - Voluntary Disclosures Program (applications received on or after 2025-10-01; earlier applications stay under IC00-1R6): https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/ic00-1r7.html
 
 
 ## TODO

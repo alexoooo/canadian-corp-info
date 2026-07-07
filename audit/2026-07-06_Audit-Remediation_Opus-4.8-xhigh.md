@@ -144,12 +144,12 @@ Swept early in Phase 1 (same defect as a CRITICAL): **T3B25-1** (AII→AAII trig
 | T5-2 | T5.md:182/:230 | S7 Part 1 box 032 added | fixed |
 | CDA-2 | Capital-Dividend-Account.md:30/:36 (signed off) | s.83(2)(a) timing (re-verified) | fixed |
 | PAY-1 | Payment.md (Corporate Income Tax section) | added corp-tax "when" group (s.157/s.248) | fixed |
-| HST-5 | HST.md:228/:259/:283 | RC4058 | **deferred-verify** |
-| HST-10 | HST.md:431 | RC4058 line-101 | **deferred-verify** |
-| RBD-1 | Receivables-And-Bad-Debts.md:13/:79 | RC4058 | **deferred-verify** |
-| CRA-3 | CRA-Administration.md:182-221 | IC00-1R7 | **deferred-verify** |
-| T3-1 | T3.md:219-221 + T5008/T5/T5B18 | FutureTax S1-113/S7-V | **deferred-verify** |
-| CCT-1 | CCA-Tracking.md:100 | FutureTax S8-225 | **deferred-verify** |
+| HST-5 | HST.md:228/:259/:283 | RC4058 | fixed (self-verified 2026-07-07, Fable-5) |
+| HST-10 | HST.md:431 | RC4058 line-101 | fixed (self-verified 2026-07-07, Fable-5) |
+| RBD-1 | Receivables-And-Bad-Debts.md:13/:79 | RC4058 | fixed (self-verified 2026-07-07, Fable-5) |
+| CRA-3 | CRA-Administration.md:182-221 | IC00-1R7 | fixed (self-verified 2026-07-07, Fable-5) |
+| T3-1 | T3.md:219-221 + T5008/T5/T5B18 | FutureTax S1-113/S7-V | fixed (maintainer FutureTax capture 2026-07-07; form mapping adopted) |
+| CCT-1 | CCA-Tracking.md:100 | FutureTax S8-225 | fixed (maintainer FutureTax capture 2026-07-07) |
 
 ### MEDIUM (79) — Phase 3 (done; gated held)
 
@@ -185,7 +185,8 @@ PR-3 taken as the GIFI-aligned option: employer CPP half moved to **8622** *Empl
 employee benefits* (TLDR, account list, journal table, TODO), not the "state 9060 as a deliberate
 simplification" fallback.
 
-Gated (held for maintainer): HST-3, HST-6, HST-7, T2S-1, T2S-3, WD-5, PR-6.
+Gated (held for maintainer): HST-3, HST-6, HST-7, T2S-1, T2S-3, WD-5, PR-6 — all self-verified and
+fixed 2026-07-07 (Fable-5); WD-5's audit draft was corrected before applying (see Deferred section).
 
 ### LOW (75) — Phase 4 (done this pass, 2026-07-06; 2 gated held)
 
@@ -198,7 +199,7 @@ CCL-3, CCL-4, CCL-5, CCE-1, CCT-3, CCT-4, PY-2, PY-3, PR-1, PR-2, PR-4, OCT-1, O
 DIV-3, DIV-6, RD-1, RD-2, RD-4, DP-1, T2R-1, DE-2, DE-4, IN-2, ACBT-1, ACBT-3, ACBT-7, T58-1,
 T1135-1, CDA-1, CDA-4, PAY-3, WDR-1.
 
-Gated (held for maintainer): T2S-2, CRA-1.
+Gated (held for maintainer): T2S-2, CRA-1 — both self-verified and fixed 2026-07-07 (Fable-5).
 
 Notes and judgment calls:
 - **R-1 — n/a (premise stale).** The README `## Audit` section was restructured to delegate to
@@ -239,3 +240,40 @@ Notes and judgment calls:
 Held pending the maintainer's own check of canada.ca forms, FutureTax behaviour, and Ontario rules;
 drafted in `audit/wip/verify-checklist.md`. Gated codes: HST-3, HST-5, HST-6, HST-7, HST-10, RBD-1,
 CRA-1, CRA-3, T2S-1, T2S-2, T2S-3, T3-1, CCT-1, WD-5, PR-6.
+
+**Update 2026-07-07 (Fable-5, on maintainer instruction to self-verify what could be verified):**
+13 of the 15 were independently re-verified against primary sources and fixed — SOR/91-51 fetched
+from justice.gc.ca (ss.2, 15, 16, 17 quoted), RC4058 Rev. 20 and the T2 schedule / GST62 forms
+read verbatim from mirror PDFs, IC00-1R7 via directly fetched EY/KPMG/Blakes alerts plus circular
+snippets, the DI chain via s.6(1) verbatim + IT-428 lineage, and Ontario's Director's Notice
+BCA 3-001 fetched verbatim from forms.mgcs.gov.on.ca. Per-item verification notes are on the
+checklist lines; quotes are in `audit/wip/verify-evidence-*.md` (three files).
+
+- Fixed as drafted: HST-3, HST-5, HST-6 (base-exclusion citation corrected to SOR/91-51 s.2(2)/(3)),
+  HST-7, HST-10, RBD-1, T2S-1, T2S-2, T2S-3, PR-6, CRA-1, CRA-3 (with the demand-to-file nuance
+  phrased as an application of the circular's "file or comply" language, not its named category);
+  OCT-4's admin-position hedge firmed and its T4130 TODO discharged.
+- **WD-5 — audit draft REFUTED in its strong form and corrected before applying.** The current
+  Director's Notice BCA 3-001 (effective 2021-10-19) states Minister of Finance consent IS still
+  required for an Ontario voluntary dissolution; the OBR launch eliminated only the obtain-and-file
+  consent-letter step (the registry auto-forwards the request). Winding-Down.md:107 now carries the
+  corrected statement. The gate did its job: the audit's fix text ("has not been required since
+  October 2021") would have introduced a new error.
+- **CCT-1 — closed 2026-07-07 on the maintainer's FutureTax capture** (T2 SCH 8 E(24), Classes 53.0
+  and 43.1, paired rows with/without column 225): with 225 the enhanced first-year applies (75% on
+  both classes — the original regime's 2024–2025 phase-down factors, correct for that
+  available-for-use window; the reinstated incentive's 100% governs post-2024 acquisitions);
+  without 225 the half-year rule applies (25% / 15% of cost). The operative claim confirmed —
+  column 225 drives the enhanced allowance — and the `AIIP Eligible` fix landed in CCA-Tracking.md.
+- **T3-1 — closed 2026-07-07 on the maintainer's FutureTax capture** (S6 Part 4 test gain $1,000):
+  S1 line 113 auto-fills the $500 taxable half from S6, and S7 picks it up on its own — Part 2
+  line 705 = $500 into AAII, Part 6 amount V = $500 from S1-113, out of SBD-eligible income. Branch
+  (a) adopted — the netted 705/395-of-half convention double-counts once 113 auto-fills. The four
+  pages (T3.md, T5008.md, T5.md, T5-Box-18) now carry the form's mapping: line 113 taxable half +
+  full book-side amount backed out (line 401 or a full-amount 705/395), plus T3.md's new S7 note;
+  the T2-Schedules.md recurring-deductions line was aligned. T3.md and T5008.md are signed-off
+  pages — edited on the maintainer-driven evidence, flagged for their re-sign-off.
+
+**All 15 deferred-verify items are now closed** (13 self-verified 2026-07-07; CCT-1 and T3-1 closed
+the same day on the maintainer's FutureTax captures). Nothing remains gated from the 2026-07-04
+audit cycle.

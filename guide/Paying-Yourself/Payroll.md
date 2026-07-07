@@ -147,8 +147,12 @@ The boxes that matter for an owner-manager:
 | 28 | EI-exempt marker |
 | 34 | Automobile benefit (see [Owner-corporation transactions](Owner-Corporation-Transactions.md#vehicles)) |
 | 40 | Other taxable benefits |
+| 45 | Employer-offered dental benefits: code 1 = no coverage offered, codes 2–5 = coverage offered (see below) |
 
-Continuing the example: box 14 $60,000.00, box 16 $3,361.80, box 22 $9,120.00, box 24 0, box 26 $60,000.00, box 28 EI exempt.  
+Box 45 has been mandatory on every T4 since the 2023 slip year; it reports the dental coverage *offered* (1 none; 2 payee only; 3 payee, spouse, and dependants; 4 payee and spouse; 5 payee and dependants), not whether the employee takes it up.  
+A corp with no dental plan enters code 1; an HSA/PHSP that covers dental (see [Owner-corporation transactions](Owner-Corporation-Transactions.md#employee-benefits)) counts as coverage offered.  
+
+Continuing the example: box 14 $60,000.00, box 16 $3,361.80, box 22 $9,120.00, box 24 0, box 26 $60,000.00, box 28 EI exempt, box 45 code 1.  
 
 Filing:
 - File through *Web Forms* in My Business Account (enter the slip online, no software needed) or from T2/payroll software

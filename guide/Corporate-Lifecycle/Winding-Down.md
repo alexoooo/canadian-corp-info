@@ -104,7 +104,7 @@ The clearance certificate governs the timing:
 ## The Final T2 and Dissolution
 
 - The last tax year ends on the dissolution date; the final T2 is due 6 months later, and marks the return as final up to dissolution
-- File the corporate registry's *articles of dissolution* only after the distributions and refunds are done: federally under CBCA [s.210](https://laws-lois.justice.gc.ca/eng/acts/C-44/section-210.html); Ontario has its own consent prerequisites — check the current Ontario Business Registry requirements
+- File the corporate registry's *articles of dissolution* only after the distributions and refunds are done: federally under CBCA [s.210](https://laws-lois.justice.gc.ca/eng/acts/C-44/section-210.html); in Ontario, Minister of Finance consent is still required, but since the Ontario Business Registry launched (2021-10-19) the registry forwards the consent request automatically as part of the filing — there is no separate consent letter to obtain first — and the articles carry the OBCA s.238(1) statements (debts, obligations, and liabilities discharged or provided for)
 - Close the remaining program accounts (RZ after the last T5 filing, RC last of all)
 
 After dissolution:
@@ -157,6 +157,9 @@ Skipping the sweep would have cost real money: the $20,000 CDA (tax-free capacit
   - [s.323](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-323.html) - director liability for unremitted net tax
 - Canada Business Corporations Act (R.S.C., 1985, c. C-44):
   - [s.210](https://laws-lois.justice.gc.ca/eng/acts/C-44/section-210.html) - voluntary dissolution; [s.228](https://laws-lois.justice.gc.ca/eng/acts/C-44/section-228.html) - undistributed property vests in the Crown
+- Ontario Business Corporations Act (R.S.O. 1990, c. B.16):
+  - [s.238](https://www.ontario.ca/laws/statute/90b16) - voluntary dissolution where the corporation has commenced business; the articles' discharged-or-provided-for statements
+  - Director's Notice BCA 3-001 - Dissolution of a Business Corporation (effective 2021-10-19; Minister of Finance consent auto-forwarded by the registry): https://forms.mgcs.gov.on.ca/dataset/994f27bc-c3e6-41fb-9244-22f87221506e/resource/9f4ed416-9b7e-4e42-b2b2-14a9132660d0/download/on00217e.pdf
 - CRA forms:
   - TX19 - Asking for a Clearance Certificate: https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/tx19.html
   - T2054 - Election for a Capital Dividend Under Subsection 83(2): https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2054.html
@@ -167,6 +170,6 @@ Skipping the sweep would have cost real money: the $20,000 CDA (tax-free capacit
 - Verify the s.88(2) deemed-dividend components (capital-dividend election on the wind-up dividend, eligible designation of the remainder) before sign-off; the worked example deliberately sweeps CDA before the final distribution to avoid leaning on it
 - Verify the ETA s.171 deregistration deemed-disposition scope (which property categories self-assess) against CRA guide RC4022
 - Verify the payroll end-of-business deadlines (final remittance within 7 days, T4s within 30 days) against current T4001 and add the figures to the Payroll page
-- Verify the current Ontario dissolution prerequisites (Minister-of-Finance consent letter) and the T2 jacket final-return indicator line number
+- Verify the T2 jacket final-return indicator line number
 - Confirm whether a GST/HST clearance mechanism separate from TX19 applies on dissolution
 - Add a two-year sweep variant to the worked example (splitting the dividends across personal tax years) with personal-tax figures once the Ontario 2026 rates are settled

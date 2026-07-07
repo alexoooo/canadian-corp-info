@@ -25,7 +25,7 @@ Limitations:
 ```mermaid
 flowchart TB
     GL[("General ledger:<br/>trial balance")]
-    GIFI["GIFI statements:<br/>S100 balance sheet<br/>S125 income statement<br/>S141 notes checklist"]
+    GIFI["GIFI statements:<br/>S100 balance sheet<br/>S125 income statement<br/>S141 additional information"]
     S1["S1 net income for tax:<br/>add-backs and deductions"]
     TI["Taxable income:<br/>S4 losses, S2 donations,<br/>S3 dividends received"]
     TAX["Tax calculation:<br/>SBD via S7 and S23,<br/>S21 foreign tax credits,<br/>Ontario tax"]
@@ -65,7 +65,7 @@ Filed with essentially every return of an owner-managed CCPC:
 |---|---|---|---|
 | S100 | Balance Sheet Information | always | [Ledger and Accounts](../Bookkeeping/Ledger-And-Accounts.md) |
 | S125 | Income Statement Information | always | [Expense Classification](../Bookkeeping/Expense-Classification.md), [Ledger and Accounts](../Bookkeeping/Ledger-And-Accounts.md) |
-| S141 | Notes Checklist | always, with the GIFI statements | below |
+| S141 | General Index of Financial Information (GIFI) – Additional Information (formerly Notes Checklist) | always, with the GIFI statements | below |
 | S1 | Net Income (Loss) for Income Tax Purposes | whenever book and tax differ — in practice always | below |
 | S8 | Capital Cost Allowance | any depreciable property on the books | [CCA — Bookkeeping and T2 schedules](../Operations/Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md#bookkeeping-and-t2-schedules) |
 | S50 | Shareholder Information | any shareholder holding 10% or more | below |
@@ -73,7 +73,7 @@ Filed with essentially every return of an owner-managed CCPC:
 
 *S1* is the spine of the tax side:
 - Recurring add-backs for this guide's scenarios: book amortization (CCA replaces it), the non-deductible half of [meals](../Bookkeeping/Expense-Classification.md), arrears interest and penalties (see [CRA Administration](CRA-Administration.md#booking-the-tax-cycle)), the foreign-tax add-back behind [T3 Box 34](../Investments/T3/T3_Box-25-Foreign-Income_Box-34-Foreign-Tax-Withheld.md)
-- Recurring deductions: CCA from S8, the non-taxable half of capital gains booked in full (see [T5008](../Investments/T5008/T5008.md))
+- Recurring deductions: CCA from S8, and the book capital gain backed out in full (line 113 adds the taxable half back from S6; see [T5008](../Investments/T5008/T5008.md))
 - Tax-basis books keep S1 short; that is much of their appeal (see [Ledger and Accounts](../Bookkeeping/Ledger-And-Accounts.md))
 
 *S50* lists every shareholder holding 10% or more of any class: name, SIN (or BN for a corporate shareholder), and percentage of common and preferred shares.  
@@ -92,7 +92,7 @@ Triggered by the corporate investment account (see [Active vs investment income]
 | S3 | Dividends Received, Taxable Dividends Paid, and Part IV Tax Calculation | dividends received (Part IV tax) or paid | receiving: [T5](../Investments/T5/T5.md), [T3](../Investments/T3/T3.md); paying: [T2 reporting — Schedule 3](../Paying-Yourself/Dividends/T2-Reporting.md#schedule-3---dividends-paid-section) |
 | S6 | Summary of Dispositions of Capital Property | any capital disposition — securities, FX on capital account, capital gains dividends | [T5008](../Investments/T5008/T5008.md), [Foreign Currency](../Bookkeeping/Foreign-Currency.md), [T5 Box 18](../Investments/T5/T5-Box-18-Capital-Gains-Dividends.md) |
 | S7 | Aggregate Investment Income and Income Eligible for the Small Business Deduction | any investment income; splits AII from active income | [T5 — Interest Box 13](../Investments/T5/T5.md#interest---box-13), [ERDTOH and NERDTOH](../Paying-Yourself/Dividends/ERDTOH-NERDTOH.md) |
-| S21 | Federal and Provincial or Territorial Foreign Income Tax Credits | foreign withholding tax to credit | [T3 Box 25 / Box 34](../Investments/T3/T3_Box-25-Foreign-Income_Box-34-Foreign-Tax-Withheld.md) |
+| S21 | Federal and Provincial or Territorial Foreign Income Tax Credits and Federal Logging Tax Credit | foreign withholding tax to credit | [T3 Box 25 / Box 34](../Investments/T3/T3_Box-25-Foreign-Income_Box-34-Foreign-Tax-Withheld.md) |
 | S55 | Part III.1 Tax on Excessive Eligible Dividend Designations | only when eligible dividends were designated beyond GRIP | [T2 reporting — Schedule 55](../Paying-Yourself/Dividends/T2-Reporting.md#schedule-55---part-iii1-tax-on-excessive-eligible-dividend-designations) |
 
 S7 does double duty: it computes the *aggregate investment income* that drives the refundable tax and the passive-income grind of the business limit, and the income eligible for the SBD.  
@@ -108,7 +108,7 @@ Filed in the years something happens:
 | S4 | Corporation Loss Continuity and Application | a loss arises, carries back, or carries forward | [Losses](Losses.md) |
 | S2 | Charitable Donations and Gifts | a donation deduction is claimed | [Donations](../Operations/Donations.md) |
 | S13 | Continuity of Reserves | a reserve is claimed (doubtful debts, unearned amounts) | [Receivables and Bad Debts](../Operations/Receivables-And-Bad-Debts.md), [Deferred Revenue](../Operations/Deferred-Revenue.md) |
-| S24 | First-time Filer after Incorporation, Amalgamation, or Winding-up | the first T2 | [Starting Up](../Corporate-Lifecycle/Starting-Up.md) |
+| S24 | First-time Filer after Incorporation, Amalgamation, or Winding-up of a Subsidiary into a Parent | the first T2 | [Starting Up](../Corporate-Lifecycle/Starting-Up.md) |
 | S101 | Opening Balance Sheet Information | the first T2's opening GIFI | [Starting Up — Funding the corporation](../Corporate-Lifecycle/Starting-Up.md#funding-the-corporation) |
 | S9 | Related and Associated Corporations | a second corporation enters the picture | [Corporate Structure](../Corporate-Lifecycle/Corporate-Structure/Corporate-Structure.md) |
 | S23 | Agreement Among Associated CCPCs to Allocate the Business Limit | associated CCPCs share the $500,000 limit | [Small Business Tax Overview](../Overview/Small-Business-Tax.md#what-is-corporate-tax) |
@@ -186,7 +186,6 @@ Not schedules, but part of the same season:
 
 ## TODO
 
-- Verify S141's current title and content against the latest revision (the form was revised recently; confirm "Notes Checklist" is still the official name and whether the preparer questions changed)
 - Verify the Ontario pair: whether S500 is filed by every Ontario-taxable corporation or only in specific cases, and the exact S5 trigger conditions
 - Verify the S50 threshold wording (10% of any class of shares) and what identifiers the current form requires
 - Verify the S44 trigger list (which rollover provisions require it) and whether an s.85 incorporation transfer files it in addition to the T2057 election

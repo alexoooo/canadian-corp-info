@@ -86,7 +86,8 @@ Schedule 6 (S6 - Summary of Dispositions of Capital Property): report the full B
 - Proceeds = Box 18 amount, adjusted cost base = 0, so the full amount is the gain (it is a flow-through of the fund's gain, not a sale of your shares)
 - The capital gains tax is the same regardless of which S6 part is used
 
-Schedule 1 (S1 - Net Income (Loss) for Income Tax Purposes) / Page 4 / Other deductions (Description 705 / Amount 395): deduct the non-taxable half to reconcile the financial-statement income to the tax treatment, since the gain is taxed via S6.  
+Schedule 1 (S1 - Net Income (Loss) for Income Tax Purposes): line 113 (Taxable capital gains from Schedule 6) carries the taxable half — FutureTax fills it from S6 automatically — and an Other-deductions entry (Description 705 / Amount 395) backs out the full Box 18 amount booked to `Capital gains dividends` (8211-3), leaving the 50% inclusion in taxable income.  
+Deducting only the non-taxable half would double-count once line 113 is filled.  
 
 There is no Schedule 3 entry, no s.112 deduction, and no Part IV tax: a capital gains dividend is a capital gain, not a taxable dividend.  
 

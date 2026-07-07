@@ -250,7 +250,7 @@ The owner-manager caution runs through all of them: a benefit that would not pla
 - Employer-paid *group term life* premiums are a taxable benefit to the employee
 - Employer-paid *disability* premiums: the benefit treatment turns on whether the plan is a group plan:
   - Under a *group* sickness or accident plan, the premiums are not a taxable benefit, but they make any eventual disability payments taxable to the recipient (ITA s.6(1)(f))
-  - On an *individual* (non-group) policy, the premiums are a taxable benefit (the s.6(1)(a)(i) exception covers group plans only), which is generally understood to keep the payments tax-free
+  - On an *individual* (non-group) policy, the premiums are a taxable benefit (the s.6(1)(a)(i) exception covers group plans only), which keeps the payments tax-free — premiums taxed as a benefit count as employee-paid, putting the plan outside s.6(1)(f) (IT-428 lineage)
   - Premiums paid personally also keep the payments tax-free, so for an owner-manager paying disability premiums personally is the usual advice
 - Corporate-owned *life insurance* on the owner is a different topic (premiums generally non-deductible; see [Non-deductible perks](#other-mixed-use-and-benefit-situations) above)
 
@@ -384,6 +384,7 @@ The corporate structure trades this simplicity for the benefit and deduction rul
   - s.199, s.201 - capital personal property and passenger-vehicle ITC limits (see [HST](../Operations/HST.md))
 - CRA guides and forms:
   - T4130 - Employers' Guide – Taxable Benefits and Allowances: https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4130.html
+  - IT-428 - Wage Loss Replacement Plans (archived; the employee-pay-all and taxed-premiums-count-as-employee-paid positions): https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/it428.html
   - Gifts, awards, and long-service awards (administrative policy): https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/benefits-allowances/gifts-awards-social-events/gifts-awards-long-service-awards.html
   - Private health services plans: https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/benefits-allowances/private-health-services-plan-premiums.html
   - Automobile and motor vehicle benefits: https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/benefits-allowances/automobile/automobile-motor-vehicle-benefits.html
@@ -400,4 +401,3 @@ The corporate structure trades this simplicity for the benefit and deduction rul
 - Consider a screenshot of the T4 box 34 automobile-benefit entry once a redacted example is available
 - Verify CRA's current position on a single-shareholder-employee PHSP / cost-plus HSA (the qua-employee condition and the reasonable-limit guidance) before sign-off
 - Verify the gifts-and-awards figures ($500 annual non-cash, $500 long-service at five-year intervals) and the shareholder-presumption wording against the current administrative-policy page
-- Verify the disability-premium treatment (employer-paid premiums not a benefit but benefits taxable; personally-paid premiums keep benefits tax-free) against T4130
