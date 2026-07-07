@@ -179,7 +179,7 @@ Stranding doesn't cost anything to the corporation, but the shareholder pays mor
 How the two pools strand:
 - *GRIP*:
   - Eligible dividends received add to GRIP, but the eligible designation has to be made at or before the time the dividend is paid (ITA [s.89(14)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-89.html))
-  - Non-eligible dividends already paid cannot be retroactively redesignated, so an unused GRIP balance accumulates on Schedule 53
+  - Non-eligible dividends already paid cannot in practice be redesignated (a late eligible-dividend designation under s.89(14.1) needs CRA to agree it is just and equitable, within three years: documentation relief, not a planning tool), so an unused GRIP balance accumulates on Schedule 53
 - *ERDTOH*:
   - Part IV tax on dividends received populates ERDTOH
   - Ordering rule: non-eligible draws NERDTOH first, ERDTOH only after NERDTOH is exhausted
@@ -197,6 +197,7 @@ Draining a stranded balance:
 - Designate future dividends as eligible up to the running GRIP balance on Schedule 53, with a current-year catch-up dividend if free retained earnings allow; the eligible dividend draws down both GRIP and ERDTOH
 - GRIP is finalized at year-end, so an in-year catch-up has to forecast the closing balance; over-designating triggers Part III.1 tax (see [Dividends / Schedule 55](T2-Reporting.md#schedule-55---part-iii1-tax-on-excessive-eligible-dividend-designations))
 - ITA [s.185.1(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-185.1.html) lets the corporation and shareholder jointly elect to reclassify a small overshoot as a separate non-eligible dividend
+- With no GRIP to designate against, size a non-eligible dividend past the NERDTOH balance (pay more than NERDTOH ÷ 38⅓%); the excess refund spills into ERDTOH under ITA [s.129(1)(a)(ii)(B)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-129.html), so the corporation recovers the tax and only the personal-side eligible-rate advantage is lost
 
 
 ## Worked Example - ERDTOH Buildup from Corporate ETF Holdings

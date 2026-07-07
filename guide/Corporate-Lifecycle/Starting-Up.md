@@ -127,7 +127,8 @@ Personal-tax history does not follow the asset in: the corporation's cost starts
 
 - *T2*: due 6 months after the chosen year-end; the balance (if any) is due at 3 months
 - *Instalments*: none in the first year — they key off prior-year tax, and there is none (see [Filing deadlines and instalments](../Overview/Small-Business-Tax.md#filing-deadlines-and-instalments))
-- *GST/HST*: the small-supplier clock counts taxable supplies from the first sale, not from incorporation; registration is required from the quarter the $30,000 rolling threshold is crossed (see [HST — Registration](../Operations/HST.md#registration))
+- *GST/HST*: the small-supplier clock counts taxable supplies from the first sale, not from incorporation
+  - Registration is required from the sale that crosses $30,000 within a single quarter, or after a one-month grace following the quarter in which the four-quarter total crosses (see [HST — Registration](../Operations/HST.md#registration))
 - *Payroll*: the first remittance is due the 15th of the month after the first salary is paid (see [Payroll](../Paying-Yourself/Payroll.md))
 - *Slips*: the first T4/T5 filings are due the Feb 28 after the first calendar year in which salary or dividends were paid
 - *Corporate registry*: the annual-return clock starts at incorporation (federal: within 60 days of each anniversary; Ontario: within 6 months of year-end)

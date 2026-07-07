@@ -63,8 +63,10 @@ Settle the debts, including the shareholder loan:
 
 Cancel the RT registration once commercial activity has ceased (see [HST](../Operations/HST.md)):
 - File the final return for the period ending on the cancellation date
-- Property still held on deregistration is deemed disposed at fair market value, with the GST/HST self-assessed on the final return (ETA [s.171](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-171.html)) — deregister after the assets are gone, not before
-- A payroll account closes with its own end-of-business rules: remit the final source deductions and file the final T4s promptly after the last pay (see [Payroll](../Paying-Yourself/Payroll.md); the T4001 end-of-business deadlines are days, not months)
+- Property still held on deregistration triggers GST/HST on the final return, so deregister after the assets are gone, not before:
+  - Non-capital property is deemed sold at fair market value
+  - Capital property (computers, furniture) instead self-assesses on its basic tax content under the change-in-use rules (ETA [s.171(3)](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-171.html))
+- A payroll account closes with its own end-of-business rules: remit the final source deductions and file the final T4s promptly after the last pay (the T4001 end-of-business deadlines are days, not months)
 
 
 ## Sweeping the Tax Pools

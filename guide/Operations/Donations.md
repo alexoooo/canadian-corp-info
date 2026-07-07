@@ -8,7 +8,7 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
 
 **TLDR**:
 - A corporate donation is a *deduction* (ITA s.110.1), not a credit like the personal one, claimed at the taxable-income level after an S1 add-back
-- The annual claim is capped at 75% of net income; the excess carries forward 5 years on T2 Schedule 2
+- The annual claim is capped at 75% of net income (plus 25% of any taxable capital gain and recapture on the gifted property itself); the excess carries forward 5 years on T2 Schedule 2
 - Only gifts to *qualified donees* with an official receipt count; sponsorship with advertising value is an ordinary business expense instead, with no cap
 - Donating appreciated publicly-listed securities in kind is the standout move: the capital gain's inclusion rate drops to zero and the full gain still credits the CDA
 - Political contributions are not donations and are not deductible
@@ -25,7 +25,7 @@ Limitations:
 A corporation deducts charitable gifts in computing taxable income (ITA [s.110.1(1)(a)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-110.1.html)):
 - The gift must be to a *qualified donee* (a registered charity or the other listed categories); check CRA's public list of registered charities
 - An official receipt with the prescribed content (Reg 3501) is the proof; keep it with the year's records
-- The claim in any year is capped at 75% of the year's net income; the unclaimed excess carries forward 5 years
+- The claim in any year is capped at 75% of the year's net income (plus 25% of any taxable capital gain and recapture arising from the gifted property); the unclaimed excess carries forward 5 years
 - The claim is discretionary up to the cap: like losses, a donation can be banked for a year with income to absorb it — but it expires in 5 years, sooner than a non-capital loss (see [Losses](../Filing-And-CRA/Losses.md#carrying-forward))
 
 The books-to-return path takes one add-back:

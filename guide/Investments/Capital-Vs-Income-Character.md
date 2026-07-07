@@ -65,6 +65,7 @@ If that describes the account, the T5008 chain on this guide's pages does not ap
 ITA [s.39(4)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-39.html) lets a taxpayer elect that every *Canadian security* it owns is capital property:
 - Filed once (Form T123 with the return); irrevocable, and it covers all Canadian securities in the election year and every later year
 - *Canadian security* (s.39(6)): a share of a Canadian-resident corporation, a unit of a Canadian-resident mutual fund trust, or a bond or debenture of a Canadian-resident issuer
+  - Excludes a *prescribed security* (Reg 6200: mainly private-company shares and non-arm's-length debt, not listed portfolio holdings)
 - Not available to a *trader or dealer* in securities (s.39(5)) — the election certifies a boundary, it cannot manufacture one for an actual trading business
 
 Its practical limits for this guide's portfolios:

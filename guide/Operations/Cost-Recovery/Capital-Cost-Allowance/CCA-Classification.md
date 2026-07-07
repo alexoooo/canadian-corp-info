@@ -27,7 +27,7 @@ The classes an owner-managed CCPC most often uses:
 
 | Class | Rate / basis | What it covers | Half-year |
 |-------|--------------|----------------|-----------|
-| `50` | 55% declining | computers, peripherals, networking equipment (acquired after Mar 18 2007) | full-expensing to 2026 |
+| `50` | 55% declining | computers and peripherals (acquired after Mar 18 2007); data network infrastructure equipment is Class 46 (30%), not here | full-expensing to 2026 |
 | `8` | 20% declining | office furniture, photocopiers, equipment not in another class (the catch-all) | yes |
 | `10` | 30% declining | motor vehicles, vans, light and pickup trucks under the passenger-vehicle cost cap; one shared pool | yes |
 | `10.1` | 30% declining | passenger vehicles costing over the cap ($39,000 + sales taxes in 2026); each in its own class | special |

@@ -75,7 +75,7 @@ Partial write-offs are fine: write off the portion established to be bad and kee
 The HST remitted on the unpaid invoice is recovered under ETA [s.231](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-231.html) (see [HST — Edge cases](HST.md#edge-cases)):
 - Conditions: the tax was reported and remitted on a prior return, the debt has been written off in the books, and the sale was to an arm's-length recipient
 - The recovery is the tax fraction of the uncollected amount — 13/113 of the balance written off for an Ontario HST invoice ($650 on the $5,650 above)
-- Claim it as an adjustment on a return filed within four years of the period in which the write-off was made
+- Claim it as an adjustment on a return filed within four years after the due date of the return for the period in which the debt was written off
 - Under the *Quick Method* the interaction is not the plain s.231 formula; verify the treatment in RC4058 before claiming (see TODO)
 
 The income-tax write-off and the HST adjustment travel together: both key off the same books-and-records write-off, so make the ledger entry, then claim both from it.  

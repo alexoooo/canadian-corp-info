@@ -17,9 +17,9 @@ Limitations:
 
 ## GIFI and Schedule 125
 
-- *Schedule 125* (S125): the income statement — revenue (codes 8000–8299) and expenses (8300–9899)
+- *Schedule 125* (S125): the income statement — revenue (codes 8000–8299) and expenses (8300–9369; farming codes 9370–9899 are out of scope here)
 - *Schedule 100* (S100): the balance sheet — assets, liabilities, and equity (codes 1000–3849)
-- Operating expenses occupy the 8500–9899 band; cost of sales sits separately at 8300–8519 (see [Cost of sales is separate](#cost-of-sales-is-separate))
+- Operating expenses occupy the 8520–9369 band; cost of sales sits separately at 8300–8519 (see [Cost of sales is separate](#cost-of-sales-is-separate))
 - *GIFI-Short* (Form T1178): a condensed return for smaller corporations; it uses the same code numbers, so the line you pick here is the same either way
 - Codes come in rollup and detail pairs: `9150` Computer-related expenses is a rollup, `9152` Internet a detail beneath it; reporting at the rollup level is fine for a small corp
 
@@ -31,8 +31,8 @@ Consistency matters more than the choice between two defensible lines.
 
 The first decision for any cost is whether it is consumed now or delivers an enduring benefit:
 
-- *Current expense*: consumed within the year (rent, subscriptions, supplies, professional fees) → Schedule 125, deducted in full this year (ITA s.18(1)(a))
-- *Capital asset*: lasting benefit beyond the year (a laptop, equipment, a perpetual software licence) → Schedule 100, deducted over time as CCA (ITA s.18(1)(b), s.20(1)(a))
+- *Current expense*: consumed within the year (rent, subscriptions, supplies, professional fees) → Schedule 125, deducted in full this year (ITA [s.9(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-9.html) profit computation, subject to the income-earning-purpose limitation in [s.18(1)(a)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-18.html))
+- *Capital asset*: lasting benefit beyond the year (a laptop, equipment, a perpetual software licence) → Schedule 100, deducted over time as CCA (ITA [s.18(1)(b)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-18.html), [s.20(1)(a)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-20.html))
 
 A small corp typically sets a *capitalization floor* (commonly $500): purchases below it are expensed even if they last, to avoid tracking trivial assets.  
 The floor is a bookkeeping policy applied consistently, not a statutory threshold.  
@@ -59,7 +59,7 @@ Titles are from RC4088; the full index has many more.
 | Code | Title | What goes here |
 |------|-------|----------------|
 | `8520` | Advertising and promotion | advertising, website and ad spend, promotional material |
-| `8523` | Meals and entertainment | client meals and entertainment (income-tax deduction limited to 50%) |
+| `8523` | Meals and entertainment | client meals and entertainment (income-tax deduction limited to 50%, ITA [s.67.1](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-67.1.html)) |
 | `8690` | Insurance | commercial general liability, professional liability (errors and omissions), property insurance |
 | `8710` | Interest and bank charges | interest, bank fees, credit-card merchant charges (`8715` Bank charges is the detail line) |
 | `8760` | Business taxes, licences, and memberships | business licences, professional dues, association memberships |
@@ -147,7 +147,7 @@ For inventory costing, the COGS identity, and which channel a cost belongs to, s
 - CRA RC4088, *General Index of Financial Information (GIFI)*: the complete code listing
 - CRA T4012, *T2 Corporation Income Tax Guide*: Schedule 125 and Schedule 100 reporting
 - CRA T2 *Schedule 125*, Income Statement Information; Form *T1178*, GIFI-Short
-- Income Tax Act [s.18(1)(a)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-18.html) (current expense), [s.18(1)(b)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-18.html) (capital outlay), [s.20(1)(a)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-20.html) (CCA)
+- Income Tax Act [s.9(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-9.html) (profit computation), [s.18(1)(a)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-18.html) (general limitation, income-earning purpose), [s.18(1)(b)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-18.html) (capital outlay), [s.20(1)(a)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-20.html) (CCA), [s.67.1](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-67.1.html) (meals and entertainment 50% limit)
 - Excise Tax Act [s.227](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-227.html) (Quick Method)
 
 

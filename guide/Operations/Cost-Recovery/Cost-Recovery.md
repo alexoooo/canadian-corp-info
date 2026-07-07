@@ -204,7 +204,7 @@ For non-buildings (s.13(27)), the earliest of:
 
 For buildings (s.13(28)), the earliest of:
 - All or substantially all (~90%) of the building first used for its intended purpose
-- Construction is substantially complete
+- Construction of the building is complete
 - The beginning of the second tax year after the acquisition year (the same 357-day rolling rule, s.13(28)(c))
 
 Two notes on coverage:

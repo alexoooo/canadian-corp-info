@@ -147,7 +147,10 @@ Personal side of the sale:
 - The equipment is *personal-use property*; a sale at or below cost produces no gain, and a loss on personal-use property is denied
 - The $1,000 floor under ITA [s.46](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-46.html) treats cost and proceeds as at least $1,000 each
 - A gain only arises if the asset appreciated above cost, which is uncommon for depreciating equipment
-- A non-arm's-length sale above FMV is capped to FMV under ITA s.69; price the transfer at genuine FMV
+- ITA s.69 makes one-sided adjustments, not a symmetric correction:
+  - Sell to the corp *above* FMV: s.69(1)(a) caps only the corp's cost at FMV, while you are taxed on the full price
+  - Sell *below* FMV: s.69(1)(b) deems your proceeds up to FMV, while the corp's cost stays low
+  - Either way a slice is taxed twice, so price the transfer at genuine FMV
 
 ### Corporate Property Used Personally
 

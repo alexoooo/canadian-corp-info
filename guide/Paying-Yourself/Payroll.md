@@ -14,7 +14,7 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
   - Remittance to CRA by the 15th of the following month
   - A T4 slip and T4 Summary by Feb 28
 - A single owner-manager withholds income tax and CPP (both halves); EI usually does not apply
-- Every step posts through two ledger accounts: `Salaries and wages` (`9060`) and `Employee deductions payable` (`2627`)
+- Every step posts through three ledger accounts: `Salaries and wages` (`9060`), `Employer's portion of employee benefits` (`8622`), and `Employee deductions payable` (`2627`)
 
 Limitations:
 - The corporation's only employee is assumed to be a single Canadian-resident owner-manager; an arm's-length employee follows the same mechanics, but hiring topics (employment contracts, employment standards, EI premiums) are touched on, not worked through
@@ -101,8 +101,9 @@ Late or missing remittances draw a graduated penalty of 3% to 10% of the amount 
 
 ## Pay-Run Bookkeeping
 
-Two accounts carry the whole cycle:
-- `Salaries and wages` (`9060`): expense; gross salary plus the employer CPP half
+Three accounts carry the whole cycle:
+- `Salaries and wages` (`9060`): expense; the gross salary
+- `Employer's portion of employee benefits` (`8622`): expense; the employer CPP half (and the employer EI share, when EI applies)
 - `Employee deductions payable` (`2627`): liability; everything owed to CRA but not yet remitted
 
 Example: $5,000 gross monthly salary, 2026 Ontario, TD1 basic personal amounts only.  
@@ -114,7 +115,7 @@ Pay run (January 31):
 | Account | Debit | Credit |
 |---|---|---|
 | `Salaries and wages` (`9060`) — gross | 5,000.00 | |
-| `Salaries and wages` (`9060`) — employer CPP | 280.15 | |
+| `Employer's portion of employee benefits` (`8622`) — employer CPP | 280.15 | |
 | `Employee deductions payable` (`2627`) | | 1,320.30 |
 | `Cash` (`1001`) — net pay | | 3,959.85 |
 
@@ -125,7 +126,7 @@ Remittance (by February 15):
 | `Employee deductions payable` (`2627`) | 1,320.30 | |
 | `Cash` (`1001`) | | 1,320.30 |
 
-The `2627` balance returns to zero after each on-time remittance; a residual balance at month-end means a missed or short remittance.  
+The `2627` balance returns to zero after each on-time remittance; a month-end balance larger than the latest pay run's withholdings means a missed or short remittance.  
 For the account definitions and the chart of accounts, see [Ledger and Accounts](../Bookkeeping/Ledger-And-Accounts.md).  
 
 
@@ -213,7 +214,7 @@ Filing:
 
 - Split into sub-pages at parity with `Dividends/` as content grows: source-deduction computation walkthrough (PDOC screenshots), T4 box-by-box with a redacted slip, a worked full-year example
 - Verify the 2026 CPP figures ($74,600 YMPE, $85,000 YAMPE, $4,230.45 / $416 maximums) and the illustrative $760 withholding against the current T4032/PDOC; keep consistent with the same figures in [Payment](../Filing-And-CRA/Payment/Payment.md)
-- Verify the GIFI treatment of the employer CPP half (kept in `9060` here) against RC4088; decide whether a detail sub-code convention is needed
+- Consider whether to break the employer CPP/EI share out of `8622` into a detail sub-code, or leave it at the rollup
 - Verify the quarterly-remitter AMWA thresholds and the new-employer criteria against the current T4001
 - Verify the EI special-benefits opt-in description (EIA Part VII.1) and the permanence-once-drawn rule; source the CRA administrative position on owner-manager remuneration reasonableness (Income Tax Technical News No. 22, archived) before sign-off
 - Confirm the mandatory-electronic-filing slip threshold for T4 returns and add it to the filing section

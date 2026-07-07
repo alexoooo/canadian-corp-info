@@ -9,7 +9,7 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
 **TLDR**:
 - This group is the ledger foundation the rest of the guide posts to
 - [Ledger and Accounts](Ledger-And-Accounts.md) sets up the GIFI-aligned chart of accounts and the debit/credit conventions
-- [Expense Classification](Expense-Classification.md) decides which account a cost lands in and whether it is deductible
+- [Expense Classification](Expense-Classification.md) decides which account a cost lands in and whether it is a current expense or a capital asset
 - [Foreign Currency](Foreign-Currency.md) is cross-cutting: it governs how every non-CAD amount is translated, for billing, banking, and investments
 
 Limitations:
@@ -21,9 +21,9 @@ Limitations:
 
 Every number elsewhere in the guide eventually becomes a journal entry, and those entries roll up through the general index of financial information (GIFI) onto the T2. This group covers the machinery that makes that work.
 
-- [Ledger and Accounts](Ledger-And-Accounts.md) is the backbone: a GIFI-aligned chart of accounts, the debit/credit conventions this guide uses, and how the ledger maps onto the T2 schedules.
-- [Expense Classification](Expense-Classification.md) answers the recurring question of which account a given cost belongs in, and where deductibility is limited or denied.
-- [Foreign Currency](Foreign-Currency.md) sits across every other topic: revenue billed in USD, a USD bank account, and a USD investment account all need translation to CAD, and this page sets the rate conventions the rest of the guide relies on.
+- [Ledger and Accounts](Ledger-And-Accounts.md) is the backbone: a GIFI-aligned chart of accounts, the debit/credit conventions this guide uses, and how the ledger maps onto the T2 schedules
+- [Expense Classification](Expense-Classification.md) answers the recurring question of which account a given cost belongs in, and whether it is a current expense or a capital asset
+- [Foreign Currency](Foreign-Currency.md) sits across every other topic: revenue billed in USD, a USD bank account, and a USD investment account all need translation to CAD, and this page sets the rate conventions the rest of the guide relies on
 
 
 ## Sub-Pages

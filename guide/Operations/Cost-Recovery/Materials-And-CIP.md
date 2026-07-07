@@ -51,7 +51,7 @@ Deduction timing by path:
 
 Available-for-use rule for self-constructed assets:
 - A shed under construction sits in CIP and produces no deduction: not inventory (no COGS), not yet available for use (no CCA)
-- *Available for use* for the shed follows the building test in s.13(28), not the non-building limbs of s.13(27): the earlier of substantially all of it being used for its intended purpose, or the beginning of the second tax year after the acquisition year (the rolling-two-year rule)
+- *Available for use* for the shed follows the building test in s.13(28), not the non-building limbs of s.13(27): the earliest of substantially all of it being first used for its intended purpose, the construction being complete, or the beginning of the second tax year after the acquisition year (the rolling-two-year rule)
 - Until that point, accumulated costs sit as a non-deducting asset balance
 - See [Cost Recovery — Available for use](Cost-Recovery.md#available-for-use) for the full cross-channel framing, including the building variant under s.13(28)
 

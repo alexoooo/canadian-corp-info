@@ -24,7 +24,7 @@ At year-end the year's activity is pulled together into the T2 corporate return,
 
 - [T2 Schedules](T2-Schedules.md) is the index of the return: which schedule (S1, S3, S6, S7, S8, S50, S53, S55, and the rest) carries each kind of activity, and how they tie together.
 - [Losses](Losses.md) covers the two carryforward pools — non-capital and net capital losses — and how discretionary deductions interact with a loss year.
-- [CRA Administration](CRA-Administration.md) covers My Business Account, filing and payment deadlines, reassessments and objections, and the statute-barred clock.
+- [CRA Administration](CRA-Administration.md) covers My Business Account, reassessments and objections, the statute-barred clock, penalties and interest, and record retention; the filing and payment deadlines themselves live in the [Overview](../Overview/Small-Business-Tax.md#filing-deadlines-and-instalments) and [Payment](Payment/Payment.md) pages.
 - [Payment](Payment/Payment.md) covers paying the corporate tax balance and instalments.
 - [Whole-dollar rounding](Whole-Dollar-Rounding.md) is the rounding convention applied consistently across the forms.
 
@@ -34,7 +34,7 @@ At year-end the year's activity is pulled together into the T2 corporate return,
 This page is a hub; these are the sub-pages:
 - [T2 Schedules](T2-Schedules.md): which schedule carries each activity onto the return
 - [Losses](Losses.md): non-capital and net capital loss carryforwards
-- [CRA Administration](CRA-Administration.md): My Business Account, deadlines, reassessments, objections, and the statute-barred clock
+- [CRA Administration](CRA-Administration.md): My Business Account, reassessments, objections, the statute-barred clock, penalties and interest, and record retention
 - [Payment](Payment/Payment.md): paying the corporate tax balance and instalments
 - [Whole-dollar rounding](Whole-Dollar-Rounding.md): the rounding convention across the forms
 

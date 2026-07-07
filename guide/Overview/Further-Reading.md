@@ -22,11 +22,11 @@ Limitations:
 - *Corporate-owned life insurance and the CDA credit*: the non-taxable portion of a life-insurance payout to the corporation credits the capital dividend account (ITA [s.89(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-89.html), paragraph (d))
   - Nearest coverage: [Capital Dividend Account](../Investments/Capital-Dividend-Account/Capital-Dividend-Account.md), which works only the capital-gains source and flags this one as out of scope, plus the premium-deductibility note in [Owner-Corporation-Transactions](../Paying-Yourself/Owner-Corporation-Transactions.md)
 - *Corporate income-tax instalment computation*: the three instalment bases (no-calculation, prior-year, current-year) and the exemption when total tax for the current or prior year is small are not worked, only the calendar and how to enter instalments on the return
-  - Nearest coverage: [Payment](../Filing-And-CRA/Payment/Payment.md) and [Small-Business-Tax-Overview](Small-Business-Tax.md#filing-deadlines-and-instalments); further: ITA [s.157](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-157.html), CRA guide T7B-CORP (Corporation Instalment Guide)
-- *Imported-services GST/HST self-assessment*: the ETA [s.218.1](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-218.1.html) self-assessment nets to zero for a CCPC using the imported service entirely in commercial activity; the exempt-supply and mixed-use case is left open
+  - Nearest coverage: [Payment](../Filing-And-CRA/Payment/Payment.md) and [Small-Business-Tax](Small-Business-Tax.md#filing-deadlines-and-instalments); further: ITA [s.157](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-157.html), CRA guide T7B-CORP (Corporation Instalment Guide)
+- *Imported-services GST/HST self-assessment*: the ETA Division IV self-assessment ([s.218](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-218.html), with [s.218.1](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-218.1.html) for the provincial part) nets to zero for a CCPC using the imported service entirely in commercial activity; the exempt-supply and mixed-use case is left open
   - Nearest coverage: [HST](../Operations/HST.md)
 - *Employee-vs-contractor determination*: the multifactor worker-status test the corp applies to people it pays is described only inside the personal-service-business discussion, not as a standalone determination
-  - Nearest coverage: [Small-Business-Tax-Overview](Small-Business-Tax.md) for the factor list and [Expense-Classification](../Bookkeeping/Expense-Classification.md) for sub-contract labour (9110) versus wages (9060) and the T4 / T4A consequence; further: CRA guide RC4110 (Employee or Self-employed?)
+  - Nearest coverage: [Small-Business-Tax](Small-Business-Tax.md) for the factor list and [Expense-Classification](../Bookkeeping/Expense-Classification.md) for sub-contract labour (9110) versus wages (9060) and the T4 / T4A consequence; further: CRA guide RC4110 (Employee or Self-employed?)
 - *Unified Schedule 1 reconciliation*: the book-to-tax add-backs and deductions are listed per topic and at orientation level, not collected into one consolidated reconciliation
   - Nearest coverage: [T2 Schedules](../Filing-And-CRA/T2-Schedules.md) and [Expense-Classification](../Bookkeeping/Expense-Classification.md)
 
@@ -48,7 +48,7 @@ Limitations:
 
 ## Related
 
-- [Small-Business-Tax-Overview](Small-Business-Tax.md)
+- [Small-Business-Tax](Small-Business-Tax.md)
 - [Concept map](Concept-Map.md)
 - [Glossary](Glossary.md)
 
@@ -59,7 +59,7 @@ Limitations:
   - [s.89(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-89.html) - "capital dividend account" definition, including the non-taxable portion of life-insurance proceeds at paragraph (d)
   - [s.157](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-157.html) - corporate instalment bases and balance-due dates
 - Excise Tax Act (R.S.C., 1985, c. E-15):
-  - [s.218.1](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-218.1.html) - self-assessment on imported services and intangibles
+  - [s.218](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-218.html) (and [s.218.1](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-218.1.html) for the provincial part) - Division IV self-assessment on imported taxable supplies (services and intangibles)
 - CRA publications:
   - CRA T7B-CORP - *Corporation Instalment Guide*
   - CRA RC4110 - *Employee or Self-employed?*

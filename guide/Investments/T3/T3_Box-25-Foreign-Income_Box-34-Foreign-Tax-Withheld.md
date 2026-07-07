@@ -147,7 +147,7 @@ Foreign tax credit (only if Box 34 has an amount):
 - Schedule 1 (S1), Other additions: enter the Box 34 amount as a "Foreign tax add-back" to reverse the withholding expensed in `Withholding taxes` (9283), so the credit is not double-counted against the expense. This is the "Other additions" grid on S1 page 3, not the "Other deductions" grid on page 4; the two look alike but have different box numbers and opposite sign:
   - *Column 1* (Description, 605): a label such as "Foreign tax add-back - T3 Box 34"
   - *Column 2* (Amount, 295): the Box 34 amount
-  - The grid totals to box 296, which feeds amount D (line 199 on page 1) and is *added* to income; do not use the page-4 "Other deductions" grid (Description 705, Amount 395, totalling to 396 → amount E → line 113), which subtracts
+  - The grid totals to box 296, which feeds amount D (line 199 on page 1) and is *added* to income; do not use the page-4 "Other deductions" grid (Description 705, Amount 395, totalling to 396 → amount E → line 499), which subtracts
 - If you claim neither the S21 credit nor the S1 add-back, the foreign tax stays a plain expense, which is less tax-efficient
 - An alternative some find simpler: debit only the net amount (skip the `Withholding taxes` expense) and add the gross-up back through the S1 "Other additions" line
 

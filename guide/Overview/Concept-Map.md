@@ -316,7 +316,7 @@ Filings:
 
 Payments:
 - *T2 balance*: 2 months after year-end (3 for an SBD-eligible CCPC)
-- *T2 instalments*: monthly or quarterly once prior-year tax tops $3,000
+- *T2 instalments*: monthly or quarterly once both the prior and current year's tax top $3,000
 - *Payroll remittance*: source deductions by the 15th of the following month
 - *GST/HST remittance*: with the return
 

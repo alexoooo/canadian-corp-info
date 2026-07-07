@@ -52,7 +52,7 @@ Two more consequences turn on the structure rather than the buyer's preference:
 - A share sale carries no GST/HST: a share is a financial instrument and its sale is exempt
 
 *Associated corporation (share route)*:
-- If the buyer is itself a CCPC, buying the target's shares makes the two corporations associated under ITA [s.256(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-256.html): they then share one $500,000 small-business limit (s.125(3)) and their adjusted aggregate investment income aggregates for the AAII grind
+- If the buyer is itself a CCPC, buying the target's shares makes the two corporations associated under ITA [s.256(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-256.html): they then share one $500,000 small-business limit (s.125(3)) and their adjusted aggregate investment income aggregates for the AAII grind ([s.125(5.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-125.html))
 - An asset purchase into the buyer's existing corporation adds no second corporation, so it avoids this
 
 
@@ -63,10 +63,11 @@ The vendor usually prefers a share sale, which is the mirror image.
 *Single layer of tax*:
 - Selling shares produces one capital gain in the vendor's hands
 - Selling assets out of an incorporated target taxes the gains inside the company first (recapture, capital gains, goodwill), and the after-tax proceeds are then taxed again when the vendor extracts them as a dividend or on wind-up
+  - The capital dividend account and the dividend refund soften this second layer, but rarely eliminate it
 
 *Lifetime capital gains exemption*:
 - An individual selling *qualified small business corporation* (QSBC) shares may shelter the gain with the *lifetime capital gains exemption* (LCGE), up to $1,275,000 for 2026 (ITA [s.110.6](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-110.6.html))
-- The exemption applies only to a *share* sale, and only if the QSBC tests are met (broadly: a CCPC, at least 90% active-business assets at the time of sale, and more than 50% active-business assets throughout the preceding 24 months)
+- The exemption applies only to a *share* sale, and only if the QSBC tests are met (broadly: a CCPC, at least 90% active-business assets at the time of sale, more than 50% active-business assets throughout the preceding 24 months, and no unrelated person having owned the shares during those 24 months)
 - It is the single biggest reason a vendor pushes for a share deal
 
 
@@ -95,7 +96,7 @@ The capital gains inclusion rate is one-half for 2026 (the proposed increase to 
   - [s.88(1)(d)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-88.html) - cost bump on certain non-depreciable capital property on a post-acquisition wind-up or amalgamation
   - [s.110.6](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-110.6.html) - lifetime capital gains exemption; definition of "qualified small business corporation share"
   - [s.125(7)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-125.html) - "Canadian-controlled private corporation", a QSBC requirement
-  - [s.256(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-256.html) - association after a share purchase; [s.125(3)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-125.html) sharing of the small-business limit among associated corporations
+  - [s.256(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-256.html) - association after a share purchase; [s.125(3)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-125.html) sharing of the small-business limit among associated corporations; [s.125(5.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-125.html) aggregation of AAII across associated corporations
 - Income Tax Regulations (C.R.C., c. 945):
   - Schedule II, Class 14.1 - goodwill and other unlimited-life intangibles, depreciable at 5% declining balance (replaced the former eligible capital property regime; ITA s.14 was repealed effective 2017)
   - Regulation 1100(1)(a)(xii.1) - the 5% Class 14.1 rate; Regulation 1100(1) generally - prescribed CCA rates by class

@@ -28,7 +28,7 @@ Deduct other credits / line 840 (Tax instalments paid)
 The corp remits the GST34 net tax for each reporting period: the Quick Method flat percentage of tax-inclusive revenue for this corp, or regular-method net tax (tax collected − input tax credits). The calculation and filing are in [HST](../../Operations/HST.md).
 
 - *Account*: the `RT` program account under the business number
-- *When*: an annual filer pays with the return, three months after fiscal year-end; an annual filer with prior-year net tax over $3,000 also pays *quarterly instalments* at one-quarter of the prior-year net tax, reconciled on the year-end return (ETA s.237); see [filing deadlines](../../Overview/Small-Business-Tax.md#filing-deadlines-and-instalments)
+- *When*: an annual filer pays with the return, three months after fiscal year-end; an annual filer with net tax of $3,000 or more also pays *quarterly instalments* at one-quarter of the instalment base (the lesser of the prior year's net tax and the current year's estimate), reconciled on the year-end return (ETA s.237); see [filing deadlines](../../Overview/Small-Business-Tax.md#filing-deadlines-and-instalments)
 - *Electronic*: a remittance of $10,000 or more must be paid electronically (ETA s.278(3)); electronic filing is mandatory for reporting periods beginning on or after 2024-01-01
 - *How*: My Business Account, an online-banking "Federal - GST/HST" payee (banks list the return balance and the instalments as separate payees), or a bank's business tax service; see [Payment methods](#payment-methods) below
 

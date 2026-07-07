@@ -55,7 +55,7 @@ These transactions move money from the corporation to the owner but are not divi
 - *Salary* or management fee paid to the owner-manager:
   - Deductible to the corp (reduces taxable income)
   - Reported on a T4 slip
-  - Taxed in the shareholder's hands at full ordinary rates with CPP/EI obligations
+  - Taxed in the shareholder's hands at full ordinary rates, with CPP obligations (EI generally does not apply to a >40% owner-manager; see [Payroll](../Payroll.md))
   - Does not draw on any of the dividend tax accounts (GRIP, CDA, RDTOH)
 - *Shareholder loan* from the corp: a debt the shareholder owes back, not a distribution
   - If the loan is not repaid within one year after the end of the corp's tax year in which it was made, ITA [s.15(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-15.html) includes the full loan amount in the shareholder's personal income for the year the loan was made
@@ -164,7 +164,8 @@ Calculated each year on Schedule 53 (S53 - *General Rate Income Pool (GRIP) Calc
 GRIP is updated every year:
 - Plus 72% of *general-rate active business income* for the year (active business income above the SBD limit, taxed at the general rate)
 - Plus eligible dividends *received* during the year from other taxable Canadian corporations
-- Minus eligible dividends *paid* during the year
+- Minus eligible dividends *paid in the previous year*
+  - The year-end balance is not reduced by the current year's dividends; they are tested against it, then deducted on next year's Schedule 53
 
 The 72% factor (the "general rate factor") is defined in ITA s.89(1).  
 It is the after-tax remainder of a notional 28% combined corporate tax rate, not the provincial general rate.  
@@ -174,7 +175,7 @@ The only way GRIP grows is through eligible dividends received from other Canadi
 Common sources are public-corp ETFs and direct equity holdings, but also any other CCPC paying out of its own GRIP.  
 This is why most owner-manager dividends end up being non-eligible by default: there is nothing in GRIP to designate against.  
 
-Schedule 53 must still be filed each year to track and carry forward the balance, even when GRIP is zero.  
+File Schedule 53 for any year an eligible dividend was paid or the GRIP balance changed; filing it every year, even at a zero balance, keeps CRA's carry-forward record clean.  
 
 
 ## CDA - Capacity for Capital Dividends
@@ -298,4 +299,3 @@ The accounts above determine *which* dividend to pay; the steps to actually decl
 
 - Add a worked example for an investment-only holdco (no active business income; pure NERDTOH-recovery cycle)
 - Add screenshots for the T5 Web Forms filing flow via CRA My Business Account
-- Watch for enactment of the 2026 Ontario budget (proposed Ontario SBD rate cut to 2.2% effective July 1, 2026; non-eligible DTC drop to 1.9863% effective January 1, 2027) and update worked examples once enacted

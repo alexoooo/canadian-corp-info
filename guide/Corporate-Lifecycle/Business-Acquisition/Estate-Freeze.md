@@ -42,6 +42,7 @@ A freeze is carried out with the same rollover machinery as a share-funded purch
 - *Section 85*: a rollover of the shares to a *new* holding corporation in exchange for preferred shares, on a joint election (Form T2057), where a holdco is wanted in the structure
 
 The preferred shares take a low paid-up capital, and their fixed redemption value is set by a *valuation* of the business.  
+The PUC grind caps that paid-up capital at the old shares' PUC less any boot (ITA [s.86(2.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-86.html) on the s.86 route, [s.85(2.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-85.html) on the s.85 route).  
 A *price-adjustment clause* is normal, so the value can be corrected if CRA later disputes it.  
 
 
@@ -53,7 +54,8 @@ Where it is still a *sole proprietorship* or *partnership*, there are no shares 
 - The freeze instead rides on the *section 85 rollover* that incorporates the business
 
 The mechanics, on incorporation:
-- The proprietor (or the partners) transfers the business *assets* to a new corporation under ITA [s.85(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-85.html), electing agreed amounts to defer the accrued gains on goodwill (Class 14.1), depreciable property, inventory, and receivables
+- The proprietor (or the partners) transfers the business *assets* to a new corporation under ITA [s.85(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-85.html), electing agreed amounts to defer the accrued gains on goodwill (Class 14.1), depreciable property, and inventory
+  - Receivables usually pass at face with a joint s.22 election, which preserves the corporation's bad-debt deductions
 - In place of growth shares, the transferor takes back *fixed-value, redeemable, retractable preferred shares* with a redemption value equal to the current worth of what was rolled in
 - The *common (growth) shares* are subscribed for nominal value by the next generation, directly or through a family trust
 - Future growth accrues to the new common and the transferor's value is capped in the preferred shares: the same result as a freeze inside an existing corporation, reached at the moment of incorporation
@@ -98,6 +100,8 @@ The transfer must follow one of two pathways:
 - *Gradual transfer*: legal control passes immediately and the parent's equity is significantly reduced within ten years; the child must retain control and stay actively involved for at least five years after the transfer (or until the transfer is complete, if later)
 
 A further condition: the parent can use the exception only once for shares deriving their value from the same business.  
+Both pathways also require the parent and child(ren) to jointly elect in prescribed form, filed on or before the parent's filing-due date for the year of the disposition (ITA [s.84.1(2.31)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-84.1.html) for the immediate transfer, [s.84.1(2.32)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-84.1.html) for the gradual one).  
+Without the election the exception is unavailable, however genuine the transfer.  
 The conditions are strict and tested after closing, so this is firmly advisor territory.  
 
 
@@ -112,6 +116,7 @@ A freeze is often timed to *multiply* the exemption across family members holdin
 ## Corporate Attribution Trap
 
 A freeze that benefits a *designated person* (the freezor's spouse, or a trust with minor beneficiaries) can trigger corporate attribution under ITA [s.74.4(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-74.4.html): the freezor is taxed on deemed interest, at the prescribed rate, on the value frozen, reduced by dividends actually paid out.  
+The rule applies only while the corporation is *not* a *small business corporation* (s.74.4(2)(c)), so it mainly bites where the frozen corporation holds investment assets rather than running an active business.  
 A freeze whose growth accrues to *adult* children is not caught, since they are not designated persons (ITA [s.74.5(5)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-74.5.html)).  
 This is one more reason a freeze involving a spouse or minor beneficiaries is advisor territory, checked alongside TOSI (s.120.4) on any dividends the next generation receives.  
 

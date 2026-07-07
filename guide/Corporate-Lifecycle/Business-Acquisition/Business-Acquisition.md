@@ -83,7 +83,7 @@ Everything on these pages is set up by professionals, not as do-it-yourself book
 Get tax and legal advice before:
 - *Valuing* the business; the preferred shares' redemption value depends on a defensible valuation, usually with a *price-adjustment clause* in case CRA disputes it
 - *Choosing the structure*; asset versus share, and the order of the steps, changes the tax for both sides
-- *Filing the elections*; the s.85 rollover (Form T2057) and a s.86 reorganization have strict timing and must be done correctly to defer the gain
+- *Filing the elections*; the s.85 rollover (Form T2057) has a strict filing deadline, and a s.86 reorganization must be structured correctly to defer the gain
 - *Relying on the intergenerational exception or the lifetime capital gains exemption*; both have detailed conditions that must be met before and after closing
 - *Testing for GAAR*; surplus-stripping and freeze transactions are an area CRA scrutinizes
 

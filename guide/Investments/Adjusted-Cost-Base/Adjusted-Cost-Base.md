@@ -43,7 +43,7 @@ Things that increase your ACB:
 
 Selling a security results in a T5008 which decreases the total ACB (the per-share/per-unit ACB is unchanged).  
 
-T3 box 42 (amount resulting in cost base adjustment) typically decreases your ACB but sometimes can increase it:
+T3 box 42 (amount resulting in cost base adjustment) typically decreases your ACB (a return of capital reduces the unit's ACB under ITA [s.53(2)(h)(i.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-53.html)) but sometimes can increase it:
 - Positive amount decreases your ACB, typically this is Return of Capital
 - Negative amount increases your ACB, this is rare but can happen (e.g. an over-distribution correction), always follow the sign  
 
@@ -105,7 +105,7 @@ If you hold USD or other foreign assets, you must convert to CAD when calculatin
 - Purchases and sales: use the exchange rate for the trade date (not settlement date)  
 - Distributions (including ROC and reinvested/phantom amounts such as the non-cash portion of T3 box 21): use exchange rate on payment/distribution date (not when distribution is declared)  
 - Outlays and expenses (e.g. commissions): use exchange rate on trade date (not settlement date)  
-- The income statement uses the average annual exchange rate and the balance sheet uses the end-of-year rate; these rates do not apply to ACB calculations
+- Financial-statement translation rates (the year-end closing rate for monetary items, the average annual rate under a full-translation method) do not apply to ACB calculations; see [Foreign Currency](../../Bookkeeping/Foreign-Currency.md)
 - For ACB purposes, always use the daily exchange rate as specified above  
 
 
@@ -155,7 +155,7 @@ There are limitations on which losses can be claimed, make sure you don't get a 
   - [s.40(3.3), s.40(3.4)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-40.html) - corporate/affiliated stop-loss: a loss on a disposition by a corporation is deemed nil and suspended when an affiliated person reacquires the identical property, released when the affiliated group is out of the position
   - [s.40(2)(g)(i)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-40.html) - denial of a superficial loss (individual seller / corporate reacquirer case)
   - [s.47(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-47.html) - identical properties: pooled average cost rather than FIFO or LIFO
-  - [s.53](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-53.html) - adjustments to cost base (additions and deductions), including s.53(1)(f), which adds a denied superficial loss to the substituted property's ACB
+  - [s.53](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-53.html) - adjustments to cost base (additions and deductions), including s.53(1)(f), which adds a denied superficial loss to the substituted property's ACB, and s.53(2)(h)(i.1), under which a trust-unit return of capital reduces the unit's ACB
   - [s.54](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-54.html) - definitions of "adjusted cost base", "superficial loss", and "proceeds of disposition"
   - [s.251.1](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-251.1.html) - definition of "affiliated persons" (relevant to superficial loss)
 - CRA IT-387R2 (Archived) - *Meaning of "Identical Properties"*: https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/it387r2-consolid/archived-meaning-identical-properties.html

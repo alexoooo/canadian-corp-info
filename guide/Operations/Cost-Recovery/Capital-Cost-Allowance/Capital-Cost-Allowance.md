@@ -139,7 +139,7 @@ For non-buildings (s.13(27)), the earliest of:
 
 For buildings (s.13(28)), the earliest of:
 - All or substantially all (~90%) of the building first used for its intended purpose
-- Construction substantially complete
+- Construction of the building is complete
 - Beginning of the second tax year after the acquisition year (the same 357-day rolling rule, s.13(28)(c))
 
 See [Cost Recovery — Available for use](../Cost-Recovery.md#available-for-use) for the cross-channel framing, including how the same trigger applies to a CIP balance transferring into a CCA class.
@@ -171,7 +171,7 @@ Dispositions:
 
 *Recapture* (ITA [s.13(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-13.html)): if closing UCC is negative at year-end (cumulative proceeds exceeded the remaining UCC), the negative balance is included in income for the year.  
 UCC is reset to zero.  
-Recapture is *active business income* when the asset was used in the active business, so it benefits from the *Small Business Deduction* (SBD) at the same rate as the underlying ABI.
+Recapture is *active business income* when the asset was used in the active business (income incident to the active business under the s.125(7) definition), so it benefits from the *Small Business Deduction* (SBD) at the same rate as the underlying ABI.
 
 *Terminal loss* (ITA s.20(16)): if closing UCC is positive *and* no property remains in the class, the residual UCC is deducted from income for the year.
 
@@ -295,7 +295,7 @@ T2 schedules involved with CCA:
 - *Personal-use proportion* on a vehicle: keep a kilometre log; the personal-use portion of CCA, fuel, insurance, and other vehicle costs is a shareholder benefit under ITA s.6 / s.15 and must be added to the shareholder's personal income; see [Owner-corporation transactions](../../../Paying-Yourself/Owner-Corporation-Transactions.md) for the standby charge, operating cost benefit, and the personal-car allowance alternative
 - *Investment Tax Credit recapture*: ITCs claimed against capital cost reduce UCC in the next year (s.13(7.1)); relevant for SR&ED claimants
 - *Available-for-use 357-day delay*: cost of property bought in the last weeks of a fiscal year is capitalized but ineligible for CCA until next year if not yet in service
-- *Non-arm's-length acquisitions*: deemed-cost rules in s.13(7)(e) cap UCC at the seller's UCC plus a fraction of any gain; common in family-CCPC transfers, share rollovers under s.85, and asset transfers between associated corporations
+- *Non-arm's-length acquisitions*: deemed-cost rules in s.13(7)(e) cap the buyer's capital cost at the seller's capital cost plus half of the seller's gain; common in family-CCPC transfers, share rollovers under s.85, and asset transfers between associated corporations
 
 
 ## Related

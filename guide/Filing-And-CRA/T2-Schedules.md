@@ -69,7 +69,7 @@ Filed with essentially every return of an owner-managed CCPC:
 | S1 | Net Income (Loss) for Income Tax Purposes | whenever book and tax differ — in practice always | below |
 | S8 | Capital Cost Allowance | any depreciable property on the books | [CCA — Bookkeeping and T2 schedules](../Operations/Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md#bookkeeping-and-t2-schedules) |
 | S50 | Shareholder Information | any shareholder holding 10% or more | below |
-| S53 | General Rate Income Pool (GRIP) Calculation | every year, even at a zero balance | [T2 reporting — Schedule 53](../Paying-Yourself/Dividends/T2-Reporting.md#schedule-53---grip-calculation) |
+| S53 | General Rate Income Pool (GRIP) Calculation | any year an eligible dividend is paid or GRIP changes | [T2 reporting — Schedule 53](../Paying-Yourself/Dividends/T2-Reporting.md#schedule-53---grip-calculation) |
 
 *S1* is the spine of the tax side:
 - Recurring add-backs for this guide's scenarios: book amortization (CCA replaces it), the non-deductible half of [meals](../Bookkeeping/Expense-Classification.md), arrears interest and penalties (see [CRA Administration](CRA-Administration.md#booking-the-tax-cycle)), the foreign-tax add-back behind [T3 Box 34](../Investments/T3/T3_Box-25-Foreign-Income_Box-34-Foreign-Tax-Withheld.md)

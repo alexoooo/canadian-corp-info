@@ -17,7 +17,7 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
 - The *small supplier* threshold is $30,000 of worldwide taxable supplies over a rolling four-quarter window, or in any single calendar quarter (ETA [s.148](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-148.html)); voluntary registration is available below the threshold and is often worthwhile when inputs carry recoverable HST
 - *HST provinces*: Ontario (13%), Nova Scotia (14% effective Apr 1 2025; 15% before), New Brunswick (15%), Newfoundland and Labrador (15%), Prince Edward Island (15%); the rest charge 5% GST only, with PST or QST handled separately by the province
 - Two filing methods: *Regular method* remits (output tax collected) − (input tax credits claimed); *Quick Method* (RC4058) remits a fixed percentage of GST/HST-inclusive revenue and lets you keep the rest as taxable income, subject to a $400,000 eligibility cap and a list of ineligible professions
-- Reporting period is assigned by prior-year taxable supplies: annual ≤ $1.5M, quarterly $1.5M–$6M, monthly > $6M; annual filers with prior-year net tax over $3,000 also pay quarterly instalments
+- Reporting period is assigned by prior-year taxable supplies: annual ≤ $1.5M, quarterly $1.5M–$6M, monthly > $6M; annual filers with net tax of $3,000 or more also pay quarterly instalments
 - Mandatory electronic filing for reporting periods beginning on or after 2024-01-01; remittances of $10,000 or more must be paid electronically
 
 Limitations:
@@ -68,7 +68,7 @@ Rate by province as of 2026:
 - *Alberta*: 5% GST only
 - *Quebec*: 5% GST plus 9.975% QST administered by Revenu Québec
 
-The rate charged on a given supply is set by the *place of supply* rule, not by where the supplier is located (ETA Schedule IX; CRA GST/HST Memorandum 3.3):
+The rate charged on a given supply is set by the *place of supply* rule, not by where the supplier is located (ETA Schedule IX for goods; the New Harmonized Value-added Tax System Regulations, SOR/2010-117 s.13, for services and intangible personal property; CRA GST/HST Memorandum 3-3-2 for provincial guidance):
 - *Goods*: rate of the province where the goods are delivered or made available to the recipient
 - *Services*: generally the rate of the province where the recipient's business or home address is, with category-specific rules for real-property services, services in respect of tangible property, and so on
 - *Intangible personal property* (licences, IP rights, digital content): place of supply turns on where the property can be used and the recipient's business address
@@ -105,7 +105,7 @@ Filing and remittance deadlines:
 - *Annual filer*: return and balance due 3 months after fiscal year-end (e.g. Mar 31 for a Dec 31 year-end)
 - *Quarterly filer*: return and balance due 1 month after each calendar quarter-end
 - *Monthly filer*: return and balance due 1 month after each calendar month-end
-- *Annual instalments*: an annual filer with prior-year net tax over $3,000 must pay quarterly instalments at one-quarter of the prior-year net tax, with the year-end return reconciling to the actual figure (ETA [s.237](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-237.html))
+- *Annual instalments*: an annual filer with net tax of $3,000 or more must pay quarterly instalments at one-quarter of the instalment base (the lesser of the prior year's net tax and the current year's estimate), with the year-end return reconciling to the actual figure (ETA [s.237](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-237.html))
 
 For the full overview of CCPC filing-deadline cadence including the T2, T4/T5 slips, and payroll source deductions alongside GST/HST, see [Small Business Tax Overview](../Overview/Small-Business-Tax.md#filing-deadlines-and-instalments).
 
@@ -182,8 +182,6 @@ Under the *Quick Method* the posting pattern differs:
 - The corp still charges 13% HST (or the applicable rate) on each sale and posts the full gross amount to `HST collected`
 - ITCs on operating inputs are *not* claimed and `HST receivable` carries only ITCs on capital purchases (see [Quick Method](#quick-method) below)
 - At period-end, the difference between `HST collected` and the *Quick Method remittance* is credited to `Other revenue` (GIFI 8230) rather than netting through `HST receivable`
-
-GIFI rollup of the two control accounts is verified against CRA RC4088 by the maintainer before sign-off; this draft leaves the specific rollup line as a TODO.
 
 
 ## Regular Method and Input Tax Credits
@@ -268,7 +266,7 @@ Income-tax interaction:
 The corp charges 0% HST on the sale, the sale still counts toward the $30,000 small-supplier threshold, and ITCs on inputs that support the zero-rated supply remain fully claimable.  
 
 Zero-rated categories most relevant to an owner-managed CCPC:
-- *Exports of tangible goods* shipped to a non-resident purchaser outside Canada (Schedule VI, Part V, s.1)
+- *Exports of tangible goods* shipped by the supplier to a destination outside Canada (Schedule VI, Part V, s.12)
 - *Services rendered to a non-resident* with no presence in Canada (Schedule VI, Part V, s.7), with carve-outs for services performed for an individual physically in Canada or services in respect of Canadian real or tangible personal property
 - *Advisory, professional, or consulting services to a non-resident* (Schedule VI, Part V, s.23): the typical category for an IT, management, or design consultant invoicing US clients
 - *Freight transportation services on international shipments* (Schedule VI, Part VII)
@@ -457,7 +455,7 @@ The break-even point against the regular method on Ontario services is roughly t
 
 ## Edge Cases
 
-- *Late registration*: if the corp crossed $30,000 in a past quarter and never registered, register now with the effective date set to the day after the threshold was crossed; the corp owes HST on every taxable supply made since that date and must remit it even if it was not charged to the customer at the time (ETA s.221); collecting it retroactively from customers is usually impractical, so the unbilled HST becomes a cost
+- *Late registration*: if the corp crossed $30,000 in a past quarter and never registered, register now with the effective date set to the day it ceased to qualify as a small supplier (the day of the crossing supply under the single-quarter test, or the first supply after the one-month grace under the four-quarter test); the corp owes HST on every taxable supply made since that date and must remit it even if it was not charged to the customer at the time (ETA s.221); collecting it retroactively from customers is usually impractical, so the unbilled HST becomes a cost
 - *Multiple commercial activities*: a corp running two distinct lines of business under one BN can keep them under a single `RT0001` account or open a separate `RT0002` etc. (ETA s.239); separate accounts allow different reporting periods or different Quick Method statuses per branch
 - *Bad debts*: when an HST-charged invoice is written off as uncollectible, the corp recovers the HST through a *bad-debt adjustment* on a future return (ETA [s.231](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-231.html)); the recovery requires the debt to have been written off in the books and the supply to have been previously taxable
 - *Inter-corporate supplies* between closely related corporations: an election under ETA [s.156](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-156.html) zero-rates most supplies between qualifying members of a closely related group; filed jointly on Form RC4616; useful in an opco/holdco structure and out of scope here
@@ -504,15 +502,15 @@ The break-even point against the regular method on Ontario services is roughly t
   - [s.227](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-227.html) - Quick Method election framework; the $400,000 eligibility cap and the remittance rates are set by the *Streamlined Accounting (GST/HST) Regulations* (SOR/91-51)
   - [s.231](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-231.html) - bad-debt adjustment on a written-off receivable
   - [s.236](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-236.html) - 50% ITC limit on meals and entertainment
-  - [s.237](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-237.html) - quarterly instalments for annual filers with prior-year net tax over $3,000
+  - [s.237](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-237.html) - quarterly instalments for annual filers with net tax of $3,000 or more (base = lesser of prior-year net tax and current-year estimate)
   - [s.238](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-238.html) - filing deadlines by reporting period
   - [s.240](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-240.html) - registration mechanics; voluntary registration (s.240(3)); effective date and 29-day filing window (s.240(2.1))
   - [s.245](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-245.html) - reporting period assignment by prior-year taxable supplies
   - [s.246](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-246.html) - election to file more frequently than the default period
   - [s.278](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-278.html) - $10,000 electronic-payment threshold (s.278(3))
   - [s.278.1](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-278.1.html) - mandatory electronic filing
-  - Schedule VI, Part V - zero-rated exports of services and goods (s.1 goods; s.7 general services to non-residents; s.23 advisory, professional, or consulting services to non-residents)
-  - Schedule IX - place-of-supply rules
+  - Schedule VI, Part V - zero-rated exports of services and goods (s.12 supplier-shipped goods; s.7 general services to non-residents; s.23 advisory, professional, or consulting services to non-residents)
+  - Schedule IX (goods) and the *New Harmonized Value-added Tax System Regulations* (SOR/2010-117) s.13 (services and intangible personal property) - place-of-supply rules
 - Income Tax Act (R.S.C., 1985, c. 1 (5th Supp.)):
   - [s.9](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-9.html) - income from a business is the profit, recognized when earned (accrual)
   - [s.12(1)(b)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-12.html) - amounts receivable for services rendered included when the account is rendered, or would have been but for undue delay

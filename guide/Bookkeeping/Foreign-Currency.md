@@ -33,7 +33,7 @@ The Income Tax Act presumes a Canadian-resident corporation reports in Canadian 
 Foreign-currency amounts are converted to CAD at the rate prevailing on the transaction date (ITA [s.261(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-261.html); CRA Income Tax Folio S5-F4-C1).  
 
 Acceptable sources for the exchange rate, applied consistently across the year:
-- *Bank of Canada single daily exchange rate*: published once per business day by approximately 16:30 ET, replacing the legacy noon rate that was discontinued on 2017-03-01
+- *Bank of Canada single daily exchange rate*: published once per business day by approximately 16:30 ET, replacing the legacy noon rate (last published 2017-04-28)
   - The BoC describes these as *indicative rates* based on aggregated market quotes, and CRA folio S5-F4-C1 names them as the default rate for post-2017-02-28 conversions
 - *Year-average BoC rate*: CRA folio S5-F4-C1 accepts an annual average for income-account items where the rate does not fluctuate significantly through the year; used as a simplification when the per-transaction rate is impractical
 - The corp's *bank's actual settlement rate* on the transaction: acceptable when the bank statement shows the CAD and USD legs of an actual conversion; the only rate that reflects what actually happened in the account
@@ -74,7 +74,7 @@ This is the load-bearing distinction in foreign-currency tax: every FX gain or l
 - Arises from ordinary business operations: USD trade receivables, USD operating cash from invoicing, USD payables to suppliers, USD operating expenses
 - Fully includable in income in the year recognized (no inclusion-rate halving)
 - CRA accepts the *accrual basis*: revalue monetary items at year-end and recognize the resulting unrealized FX gain or loss in income (CRA archived bulletin [IT-95R](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/it95r/archived-foreign-exchange-gains-losses.html), paragraph 8)
-- Reported on Schedule 125 under `Realized gains/losses on foreign exchange` (GIFI 8231)
+- Reported on Schedule 125 under `Foreign exchange gains/losses` (GIFI 8231)
 
 *Capital-account FX*:
 - Arises from dispositions of *capital property*: foreign securities, USD held in an investment account to acquire securities, settlement of a foreign-currency capital obligation
@@ -264,10 +264,10 @@ Concrete example on USD 50,000:
 
 - Bank wire / retail FX at 2% spread: USD 50,000 × 1.36 × 0.02 ≈ CAD 1,360 lost to spread
 - Norbert's Gambit, round-trip, at a flat-commission bank broker:
-  - DLR.U bid-ask spread ~10 bps + DLR bid-ask spread ~7 bps: ≈ CAD 85
+  - DLR.U bid-ask spread ~10 bps + DLR bid-ask spread ~7 bps: ≈ USD 85 (≈ CAD 116)
   - Two commissions of $9.95 (or one journal fee at NBDB / Questrade): ≈ CAD 20
-  - Total all-in: ~CAD 100–120
-- Savings on this size: ~CAD 1,240, about 12× cheaper than the bank
+  - Total all-in: ~CAD 130–140
+- Savings on this size: ~CAD 1,220, about 10× cheaper than the bank
 - Break-even threshold against a 2% bank spread:
   - Bank broker with $9.95 commissions: ~CAD 1,500
   - NBDB or Questrade with $9.95 journal fee and $0 commissions: ~CAD 1,000
@@ -307,8 +307,8 @@ Schedule 6 entry:
 - Half of the loss is an *allowable capital loss* on Schedule 1 in the usual capital-gains pattern; small losses are still reportable
 
 The trading accounts (8231-1, 8231-2) from the buy leg carry the per-currency positions of the FX conversion: 8231-1 has a CAD 13,613.53 credit balance and 8231-2 has a USD 10,009.95 debit balance.  
-At period-end, translate 8231-2 to CAD at the closing rate; the net of 8231-1 and 8231-2 (translated) is the income-account FX gain or loss attributable to having held USD for the journal window.  
-In practice the Gambit window is one or two business days and the FX drift contributes only cents; the capital gain or loss on Schedule 6 dominates the round-trip result.
+At period-end, translate 8231-2 to CAD at the closing rate; the net of 8231-1 and 8231-2 (translated) is the income-account FX gain or loss on the USD from when it arrived until the day-0 DLR.U buy, since the USD is disposed of on day 0 rather than held across the journal window.  
+In full books that residual nets against the bridge entries booked when the USD first came in; the journal-window FX drift itself shows up in the Schedule 6 disposition result, which dominates the round trip, not in 8231.
 
 
 ## Getting Paid in USD (Invoicing US Clients)

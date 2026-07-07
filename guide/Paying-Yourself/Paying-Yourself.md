@@ -23,7 +23,7 @@ Money earned inside a corporation is not yours until it comes out, and there are
 
 - [Payroll](Payroll.md) covers paying yourself a salary: source deductions, remittances, and the T4. Salary is deductible to the corporation and creates RRSP room and CPP entitlement.
 - [Dividends](Dividends/Dividends.md) covers distributing after-tax profit: the three flavours (eligible, non-eligible, capital), which corporate pool each draws on, and how each is taxed in your hands. It is a hub with its own sub-pages for declaring, bookkeeping, and T2 reporting.
-- [Owner-corporation transactions](Owner-Corporation-Transactions.md) covers the shareholder loan account — the running record of money moving between you and the corporation that is neither salary nor dividend, and the rules that keep it from becoming a taxable benefit.
+- [Owner-corporation transactions](Owner-Corporation-Transactions.md) covers the many ways money and assets move between you and the corporation outside salary and dividends: mixed-use vehicles and home office, employee benefits, allowances and reimbursements, rent, asset transfers, and the shareholder loan account, plus the rules that keep each from becoming a taxable benefit.
 
 The salary-versus-dividend decision is where these meet. Because of [tax integration](../Overview/Tax-Integration.md), the headline tax cost is similar either way, so the choice usually turns on CPP, RRSP room, cash-flow timing, and simplicity.
 

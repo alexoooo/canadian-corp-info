@@ -50,7 +50,7 @@ The Opco-Holdco structure itself is out of scope for this page.
 Schedule 53 (S53 - *General Rate Income Pool (GRIP) Calculation*) tracks the running GRIP balance year over year.  
 See the [GRIP section in Dividends.md](Dividends.md#grip---capacity-for-eligible-dividends) for the addition formula and the conceptual treatment.  
 
-S53 must be filed annually even when GRIP is zero.  
+File S53 for any year an eligible dividend was paid or the GRIP balance changed; filing it every year, even at zero, keeps the carry-forward record clean.  
 This is what carries the balance forward and gives CRA a year-by-year audit trail of GRIP capacity.  
 
 Most T2 software auto-populates S53 from the general-rate active business income on Schedule 1 / Schedule 7 plus eligible dividends received and paid.  
@@ -87,7 +87,7 @@ For the receiving-side mechanics that fill ERDTOH/NERDTOH (Part IV tax on divide
 ## Capital Dividend Election - Form T2054
 
 A capital dividend is reported on the capital-dividend line of Schedule 3 (per the S3 section above).  
-*In addition*, the corporation files Form T2054 (*Election for a Capital Dividend Under Subsection 83(2)*) with a certified copy of the directors' resolution, on or before the day the dividend becomes payable (or the first day any part is paid, if earlier).  
+*In addition*, the corporation files Form T2054 (*Election for a Capital Dividend Under Subsection 83(2)*) with a certified copy of the directors' resolution and a schedule showing the CDA computation immediately before the election (Reg 2101), on or before the day the dividend becomes payable (or the first day any part is paid, if earlier).  
 
 The S3 line is information-reporting; the T2054 is what makes the dividend a capital dividend for tax purposes.  
 Both are required.  

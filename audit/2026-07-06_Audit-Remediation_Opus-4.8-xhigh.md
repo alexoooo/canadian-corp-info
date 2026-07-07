@@ -138,17 +138,41 @@ Swept early in Phase 1 (same defect as a CRITICAL): **T3B25-1** (AII→AAII trig
 | T3-1 | T3.md:219-221 + T5008/T5/T5B18 | FutureTax S1-113/S7-V | **deferred-verify** |
 | CCT-1 | CCA-Tracking.md:100 | FutureTax S8-225 | **deferred-verify** |
 
-### MEDIUM (79) — Phase 3 (pending; gated held)
+### MEDIUM (79) — Phase 3 (done; gated held)
 
-CM-3/SBT-4, GL-2, GL-3, GL-5, FR-1, FR-2, SC-1, SU-1, WD-2, WD-3, WD-5(gated), WD-6, BA-2,
-AVS-2, AVS-3, AVS-4, PSC-1, PSC-2, EF-2, EF-3, EF-6, EF-7, BK-2, LA-3, EC-1, EC-3, EC-4,
-FX-2, FX-6, FX-8, HST-1, HST-2, HST-3(gated), HST-4, HST-6(gated), HST-7(gated), HST-9,
-HST-11, RBD-2, DON-1, RPI-1, RPI-2, CRV-1, MAT-1, CCA-3, CCA-6, CCL-1, CCT-2, PY-1, PR-3,
-PR-5, PR-6(gated), OCT-2, DIV-1, DIV-4, DIV-5/T2R-2, RD-5, RD-6, T2R-3, DE-1, IN-1, ACB-1,
-ACB-3, ACBT-2, CIC-2, T3B26-2, T3B25-1, T3B25-2, T5-1, T5-3, CDA-3, FC-1, T2S-1(gated),
-T2S-3(gated), PAY-2.
-(WD-6, T3B25-1, T5-1, DIV-4, DIV-5/T2R-2, T2R-3, CDA-3, DE-1 likely swept early with a joint fix.)
-Disposition: pending. Gated: HST-3, HST-6, HST-7, T2S-1, T2S-3, WD-5, PR-6.
+All non-gated MEDIUM findings fixed this pass (Opus 4.8, 2026-07-06). By group:
+
+- **Overview**: CM-3/SBT-4, GL-2, GL-3, GL-5, FR-1, FR-2, SC-1, SU-1.
+- **Corporate Lifecycle**: WD-2, WD-3, BA-2, AVS-2, AVS-3, AVS-4, PSC-1, PSC-2, EF-2, EF-3, EF-6, EF-7.
+- **Bookkeeping**: BK-2, LA-3, EC-1, EC-3, EC-4, FX-2, FX-3, FX-6, FX-8.
+- **Operations**: HST-1, HST-2, HST-4, HST-9, HST-11, RBD-2, DON-1, RPI-1, RPI-2, CRV-1, MAT-1,
+  CCA-3, CCA-6, CCL-1, CCT-2.
+- **Paying Yourself**: PY-1, PR-3, PR-5, OCT-2, DIV-1, DIV-4, DIV-5/T2R-2, RD-5, RD-6, T2R-3, DE-1.
+- **Investments**: IN-1, ACB-1, ACB-3, ACBT-2, CIC-2, T3B26-2, T3B25-2, T5-3, CDA-3.
+- **Filing and CRA**: FC-1, PAY-2.
+
+Swept-early check (the eight flagged "likely swept"): **WD-6, T3B25-1, T5-1 confirmed already fixed**
+in Phase 1 — no action. **DIV-4, DIV-5/T2R-2, T2R-3, CDA-3, DE-1 were NOT swept** — fixed this pass.
+
+Cross-file sweeps landed together:
+- DE-1 budget "enacted" framing: `Dividends-Examples.md`, `Small-Business-Tax.md`, `Tax-Integration.md`,
+  and the `Dividends.md` watch-TODO cleared (Concept-Map carried no live budget stanza).
+- S53 conditional-filing (file only when an eligible dividend was paid or GRIP changed): `Dividends.md`,
+  `T2-Reporting.md`, `T2-Schedules.md`.
+- T2054 CDA-computation schedule (Reg 2101): `T2-Reporting.md`, `Dividends-Examples.md`,
+  `Capital-Dividend-Account.md`.
+- GST/HST instalment "$3,000 or more" boundary + lesser-of base: `HST.md`, `Payment.md`,
+  `Small-Business-Tax.md` (corporate-tax "exceeds $3,000" left as-is — s.157(2.1) relieves at ≤ $3,000).
+
+**Roster defect caught**: FX-3 (GIFI 8231 title misquoted) is a MEDIUM in the audit but was dropped from
+this file's MEDIUM list. Fixed this pass — `Foreign-Currency.md:77` now uses the exact RC4088 title
+`Foreign exchange gains/losses` (no "Realized").
+
+PR-3 taken as the GIFI-aligned option: employer CPP half moved to **8622** *Employer's portion of
+employee benefits* (TLDR, account list, journal table, TODO), not the "state 9060 as a deliberate
+simplification" fallback.
+
+Gated (held for maintainer): HST-3, HST-6, HST-7, T2S-1, T2S-3, WD-5, PR-6.
 
 ### LOW (75) — Phase 4 (pending; gated held)
 

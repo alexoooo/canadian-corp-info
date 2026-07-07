@@ -56,7 +56,7 @@ The tax constants that depend only on the CCA class. One row per `Class`. Column
 | 13 |  | `Straight-line` | Tangible | True | leasehold improvements |
 | 14 |  | `Straight-line` | Intangible | False | limited-life intangibles (patents, term licences) |
 | 14.1 | `5%` | `Declining balance` | Intangible | True | goodwill, incorp. costs over $3,000, customer lists |
-| 50 | `55%` | `Declining balance` | Tangible | True | computers, peripherals, networking |
+| 50 | `55%` | `Declining balance` | Tangible | True | computers, peripherals (data network gear is Class 46) |
 
 `Rate`, `Method`, and `Tangibility` are functions of the class.  
 `Half-year Default` is the class's usual treatment; the standard flow takes it as given and the software applies it by class. The property ultimately decides, not the class number, so a few items can depart from the default; see [Special cases](#special-cases) for per-item handling.
@@ -229,7 +229,9 @@ Deliberately excluded to keep the standard flow simple, on a convention-over-con
 Cases they do not cover:
 - *Mixed first-year treatments in one class-year*: a class with both AIIP and half-year additions in the same year breaks the single-factor `Adjustment` above; compute the adjustment per addition and sum it (`+0.5 × AIIP additions − 0.5 × half-year additions`); the pool stays one line per class, matching Schedule 8's separate AIIP and regular addition columns
 - *Full-expensing classes* (M&P Class 53 / 43, 54, 55, 56, 43.1 / 43.2 under AIIP; and Classes 44 / 46 / 50 for property available for use before 2027 under the Budget 2024 measure): `CCA (Max) = Net Additions` in the year available for use (100%); any later residual depreciates at the class rate
-- *Class 13 and Class 14* are straight-line, not declining balance: CCA is `Capital Cost ÷ amortization period` (the lease term + first renewal for 13; the remaining legal life for 14), subject to the first-year limit; the declining-balance formula does not apply
+- *Class 13 and Class 14* are straight-line, not declining balance: CCA is `Capital Cost ÷ amortization period` (the lease term + first renewal for 13; the remaining legal life for 14), and the declining-balance formula does not apply
+  - Class 13 is subject to a 50% first-year cap (Reg 1100(1)(b))
+  - Class 14's first year is the apportionment from the acquisition date, with no separate cap
 - *Class 10.1*: half-CCA in the year of disposition; no recapture or terminal loss
 - *Short tax year* (under 365 days): multiply `CCA (Max)` by `days in tax year ÷ 365`, except for classes 14 and 15 (and specialty items: timber limits, industrial mineral mines, Canadian film or video productions, and certain mining allowances)
 - *Investment tax credits* claimed against capital cost reduce next year's `Opening UCC` (ITA s.13(7.1)); relevant only for SR&ED claimants

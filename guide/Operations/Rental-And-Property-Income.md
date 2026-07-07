@@ -72,7 +72,7 @@ Mixed use by the corporation itself:
 
 CCA needs extra care on the rental side:
 - CCA on a rental property cannot create or increase a net rental loss (Reg 1100(11)); the claim is capped at the rental income remaining after expenses
-- Each rental building acquired for $50,000 or more sits in its own CCA class (Reg 1101(1ac)), so one building's CCA cannot shelter another's income past the cap
+- Each rental building acquired for $50,000 or more sits in its own CCA class (Reg 1101(1ac)); the Reg 1100(11) loss cap applies to rental properties in aggregate, so within the cap one building's CCA can shelter another's income, while the separate class instead keeps recapture and terminal loss per building when one is sold
 - The discretionary-claim planning is otherwise as usual: see [Discretionary CCA](Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md#discretionary-cca)
 
 
@@ -120,7 +120,7 @@ Bookkeeping runs through `Real estate rental revenue` (`8141`), with the propert
   - Reg 1100(11) - rental-property CCA limited to net rental income
   - Reg 1101(1ac) - separate class per rental building of $50,000 or more
 - Excise Tax Act (R.S.C., 1985, c. E-15): Schedule V, Part I - exemption for long-term residential rent
-- CRA - Income Tax Folio S4-F15-C1 *Manufacturing and Processing* is not the source here; see IT-73R6 *The Small Business Deduction* (archived) for the SIB discussion: https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/it73r6.html
+- CRA - IT-73R6 *The Small Business Deduction* (archived) - specified investment business and the more-than-five-employees test: https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/it73r6.html
 
 
 ## TODO

@@ -38,7 +38,7 @@ Example (50% inclusion rate):
 Capital Dividend Account election process:
 - Verification: check the CDA balance via Schedule 89 (S89) or My Business Account (the balance shown reflects the last assessed T2, so it typically lags by 6–12 weeks after your year-end while CRA processes the return)
 - Resolution: directors must pass a resolution to pay a dividend and elect for it to be a Capital Dividend under s.83(2)
-- Filing: submit Form T2054 ("Election for a Capital Dividend Under Subsection 83(2)") along with a certified copy of the resolution on or before the day the dividend becomes payable (or the first day any part of it is paid, if earlier)
+- Filing: submit Form T2054 ("Election for a Capital Dividend Under Subsection 83(2)") along with a certified copy of the resolution and a schedule showing the CDA computation immediately before the election (Reg 2101), on or before the day the dividend becomes payable (or the first day any part of it is paid, if earlier)
   - Certification means the Secretary or a Director signs a statement on the resolution attesting that it is a true copy of the resolution passed by the board
 - Reporting:
   - Enter the dividend on T2 Schedule 3 (S3)

@@ -43,7 +43,9 @@ The main tool is the joint election under ITA [s.85(1)](https://laws-lois.justic
 - The vendor transfers the property to the buyer corporation and the two jointly elect an *elected amount*
 - The elected amount, chosen between the property's tax cost and its fair market value, becomes the vendor's proceeds and the corporation's cost
 - Electing at cost defers the whole gain; the consideration must include at least one share of the buyer
-- The election is made on Form T2057, with a strict filing deadline
+  - Any non-share consideration (cash, a note, assumed debt) sets a floor: the elected amount cannot be below the value of that boot (s.85(1)(b)), so full deferral needs boot no greater than the property's tax cost
+- The election is made on Form T2057, with a strict filing deadline: the earliest of the parties' return due dates for the year of the transfer (s.85(6))
+  - A late election is possible for up to three years, with a penalty
 
 A share-for-share exchange between arm's-length parties can instead use ITA s.85.1, which applies automatically without an election.  
 

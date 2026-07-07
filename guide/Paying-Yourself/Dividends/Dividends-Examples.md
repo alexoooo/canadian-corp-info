@@ -23,7 +23,7 @@ The examples below use Ontario rates current as of the first half of 2026:
 - Ontario eligible-dividend tax credit: 10% of the grossed-up amount
 - Ontario non-eligible DTC: 2.9863% of the grossed-up amount
 
-The 2026 Ontario budget proposes:
+The 2026 Ontario budget measures, enacted as Bill 97 (S.O. 2026, c. 2):
 - Cut the Ontario small-business CIT rate from 3.2% to 2.2% effective July 1, 2026 (combined SBD rate 12.2% → 11.2%, prorated for tax years straddling July 1, 2026)
 - Drop the Ontario non-eligible DTC from 2.9863% to 1.9863% effective January 1, 2027
 
@@ -138,7 +138,7 @@ Setup:
 - The non-taxable portion (50% under the current inclusion rate) is **$10,000**, added to the CDA
 
 In 2026 the directors elect under ITA s.83(2) to pay a $10,000 capital dividend.  
-Form T2054 is filed via CRA My Business Account with a certified copy of the resolution attached, on or before the day the dividend becomes payable (or the first day any part is paid, if earlier).  
+Form T2054 is filed via CRA My Business Account with a certified copy of the resolution and a schedule showing the CDA computation immediately before the election (Reg 2101) attached, on or before the day the dividend becomes payable (or the first day any part is paid, if earlier).  
 
 Declaration:  
 Debit: "Capital dividends declared" (GIFI 3700) = $10,000  

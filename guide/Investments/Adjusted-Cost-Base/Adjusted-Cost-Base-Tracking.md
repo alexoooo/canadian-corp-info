@@ -75,7 +75,7 @@ Inputs (from investment confirmations and T3):
   - Can leave blank if zero, which happens with ROC/Phantom, and sometimes for Buy/Sell depending on brokerage and security
 - `FX CAD Rate`:
   - CAD per 1 unit of transaction currency (e.g. if 1 USD = 1.36 CAD, enter 1.36)
-  - If transaction is denominated in CAD, use 1.0 or leave blank
+  - If transaction is denominated in CAD, use 1.0 (a blank multiplies as zero under the `Gross Amount CAD` formula below, which would zero the CAD amount)
   - Source: Bank of Canada indicative midpoint rate for the trade date (or payment date for ROC/Phantom); see [Adjusted-Cost-Base.md](Adjusted-Cost-Base.md) for the rate convention
   - If the BoC does not publish a rate for that date (e.g. a US-only trading day), use the rate from the nearest prior business day on which the BoC did publish
 - `Note`:

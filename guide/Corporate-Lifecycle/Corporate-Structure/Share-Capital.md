@@ -76,10 +76,11 @@ Authorizing a class costs nothing and confers nothing until shares of that class
 
 ## No-Par-Value Shares
 
-Canadian corporate statutes require shares to be issued *without nominal or par value* (CBCA s.24(1)).  
+The CBCA and most provincial statutes require shares to be issued *without nominal or par value* (CBCA s.24(1)).  
+British Columbia still permits par-value shares.  
 The full consideration the corporation receives for a share is added to the *stated capital account* for that class (CBCA s.26).  
 
-There is no "$1 par value" concept as in some other countries.  
+Under these statutes there is no "$1 par value" concept as in some other countries.  
 The amount recorded for a class is what was paid in for it.  
 
 

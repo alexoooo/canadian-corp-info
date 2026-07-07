@@ -227,7 +227,7 @@ Two parts of the *Income Tax Act* drive a CCPC's tax mechanics:
 
 *Active business income* (ABI): income from carrying on an active business (consulting fees, product sales, services rendered).  
 The first $500,000 per year is taxed at the *small-business rate* via the SBD (combined federal + Ontario ≈ 12.2% in 2026); ABI above $500,000 is taxed at the *general rate* (combined ≈ 26.5% in Ontario).  
-The 2026 Ontario budget proposes cutting the Ontario small-business rate to 2.2% (combined 11.2%) effective July 1, 2026; see [Dividends - worked examples](../Paying-Yourself/Dividends/Dividends-Examples.md#worked-examples).  
+The 2026 Ontario budget, enacted as Bill 97 (S.O. 2026, c. 2), cut the Ontario small-business rate to 2.2% (combined 11.2%) effective July 1, 2026; see [Dividends - worked examples](../Paying-Yourself/Dividends/Dividends-Examples.md#worked-examples).  
 The $500,000 SBD *business limit* is not always a flat ceiling. It can be reduced by:
 - Sharing among *associated corporations* under ITA [s.125(3)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-125.html)
 - *Adjusted aggregate investment income* (AAII) over $50,000 under ITA [s.125(5.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-125.html) (the *AAII grind*)
@@ -387,7 +387,7 @@ Missing them triggers interest, penalties, or both, including failure-to-file pe
 - *Return*: 6 months after fiscal year-end (ITA [s.150(1)(a)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-150.html))
 - *Balance due*: 3 months after year-end for SBD-eligible CCPCs; 2 months for all other corporations (ITA [s.157](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-157.html))
   - Balance is due *before* the return: pay the year's tax first, then file within the longer window
-- *Instalments*: required when prior-year tax exceeds $3,000; quarterly for eligible CCPCs (last day of each fiscal quarter), monthly otherwise
+- *Instalments*: required only when both the prior and current year's tax exceed $3,000 (ITA [s.157(2.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-157.html)); quarterly for eligible CCPCs (last day of each fiscal quarter), monthly otherwise
 
 **Information slips (T4 / T5)**:
 - T4 (salary) and T5 (dividends) slips and summaries are due *Feb 28* of the year following the calendar year covered
@@ -401,7 +401,7 @@ Missing them triggers interest, penalties, or both, including failure-to-file pe
 - *Annual* (≤ $1.5M revenue): return + payment 3 months after fiscal year-end
 - *Quarterly* ($1.5M – $6M): 1 month after each quarter end
 - *Monthly* (> $6M): 1 month after each month end
-- Annual filers with prior-year net tax over $3,000 also pay quarterly instalments
+- Annual filers with net tax of $3,000 or more also pay quarterly instalments
 
 **Corporate registry** (not a tax filing):
 - Federal corporations (CBCA): annual return to [Corporations Canada](https://ised-isde.canada.ca/site/corporations-canada/en/annual-return-business-corporations) within 60 days of incorporation anniversary
