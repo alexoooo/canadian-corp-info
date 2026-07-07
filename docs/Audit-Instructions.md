@@ -34,9 +34,11 @@ Work resumably, in bounded checkpointed increments — the audit must survive a 
 The standing rule is no false positives — a wrong finding wastes the maintainer's time and erodes trust in the record:
 
 - Re-verify every CRITICAL and HIGH finding, and every claimed citation discrepancy, against the primary source before including it; drop candidates that don't survive the check
-- `laws-lois.justice.gc.ca` (ITA, ETA, Regulations) is reachable by headless fetch; `canada.ca` and `web.archive.org` return HTTP 403 to fetchers, so confirm CRA forms/folios/guides through the search index or mark them unverified — never assert a fetch that didn't happen
+- `laws-lois.justice.gc.ca` (ITA, ETA, Regulations) is reachable by headless fetch; `canada.ca` and `web.archive.org` return HTTP 403 to fetchers — never assert a fetch that didn't happen. Proven routes around the 403 wall (all used successfully in the 2026-07-04 cycle): verbatim CRA-form mirror PDFs (the `https://www.cchwebsites.com/content/pdf/tax_forms/ca/en/<form>_en.pdf` pattern; solidtax.ca carries RC4058), `forms.mgcs.gov.on.ca` for Ontario Director's Notices, and fetchable firm alerts (EY/KPMG/Blakes) quoting CRA circulars. Check a mirror's revision date against the current form before quoting it; failing all of these, confirm through the search index or mark the claim unverified
 - Treat the maintainer's authoring tags as content, not scaffolding: `\[done]` and `\[meh]` heading annotations are intentional progress markers (AGENTS.md protects them). The 2026-05-28 audit's R-1 flagged them for stripping and was a mis-finding — that is the cautionary tale for this discipline
 - Verify GIFI codes and account-table structure against RC4088 and the hand-written convention pages (`T3.md` defines the indented account-tree shape and the sub-code rules), never against sibling AI-generated pages — consistency with unreviewed pages is not evidence of correctness. The 2026-07-04 audit's FX-5 endorsed renumbering trade receivables to `1060-x` sub-codes because the unreviewed Investments pages used `1060`, when the correct line was `1062` (per RC4088, `1060` is the aggregate); the independent follow-up review reproduced the same blind spot, and the wrong fix was applied before the maintainer caught it (see `audit/2026-07-06_Audit-Remediation_Opus-4.8-xhigh.md`)
+- A finding's suggested fix carries no authority: whoever applies it re-derives the correct statement from the primary source, because an audit can be right that something is wrong yet wrong about the fix. The 2026-07-04 audit's WD-5 said the Minister-of-Finance consent letter for an Ontario dissolution "has not been required since October 2021"; the current Director's Notice BCA 3-001 says consent is still required — the Ontario Business Registry launch only eliminated obtaining and filing the letter yourself. The deferred-verify gate (see [Remediation](#remediation)) caught it before the wrong text landed
+- Maintainer-supplied evidence (software screenshots, account records) can show identifying details — corporation name, Business Number. Committed audit files describe such evidence generically ("the maintainer's FutureTax capture") and never quote identifying details; only the git-ignored `audit/wip/` may hold them, and even there only when necessary
 - Record candidates that were checked and deliberately dropped under "What was NOT flagged", so the next pass doesn't re-litigate them
 
 ## Full-audit document
@@ -73,6 +75,16 @@ Each finding carries:
 
 Coding scheme: a per-page letter prefix plus a sequential number (`CR-1`, `CR-2`, …); repo-wide findings use `R-n`. Codes persist across the cycle so the follow-up can reference them.
 
+## Remediation
+
+Fixes land between the audit and its follow-up, recorded in a dated file under `audit/` (`<YYYY-MM-DD>_Audit-Remediation_<Model>-<effort>.md`, same naming rule) that gives every finding code a disposition:
+
+- Disposition legend: `fixed` / `refuted` / `deferred-verify` (held for maintainer check) / `pending` / `n/a`
+- Deferred-verify gate: a finding whose source the session can't re-pull (403-walled form or registry page, the maintainer's tax software) is not applied on trust — it goes into `audit/wip/verify-checklist.md` stating what needs confirming and why, and the fix waits for verification. In the 2026-07-04 cycle the gate held 15 findings and caught WD-5's wrong fix text before it landed
+- Software-dependent findings: where only the maintainer's software can settle the question (e.g. FutureTax form behaviour), write exact capture steps — which form, what test values, which fields to screenshot — so the maintainer can produce deciding evidence in one pass
+- Signed-off pages: a fix touching a signed-off page is applied only on maintainer-driven evidence, and the remediation record flags the page for the maintainer's re-sign-off
+- Commits are the maintainer's: leave all edits in the working tree; the remediation file records what changed and why
+
 ## Follow-up review
 
 Filename: `<YYYY-MM-DD>_Audit-Followup_<Model>-<effort>.md` — same `<Model>`/`<effort>` rule as the full audit (read programmatically, never guessed). Run it after the audit's fixes have landed (typically a separate commit), to confirm they held and nothing regressed.
@@ -82,16 +94,16 @@ Section skeleton:
 1. Header — `**Date**`, `**Scope**` (verify fixes from the named prior audit), `**Method**`
 2. Severity legend (the same verbatim block)
 3. TL;DR — how many prior findings resolved, any exceptions, any regressions or new issues
-4. Disposition table — each prior code, its status in the current source, and the primary source it was re-verified against
+4. Disposition table — each prior code, its status in the current source, and the primary source it was re-verified against; where the remediation record refuted or corrected a finding, verify the page against the remediation's corrected statement and its evidence, not the audit's original suggested text (scored against the original, a refuted finding would wrongly read as unfixed)
 5. Independent verification detail — load-bearing claims re-checked from scratch, not trusted from the prior audit
 6. Observations on the prior audit — mis-findings or miscounts, flagged explicitly and corrected
 7. Content notes beyond the findings
 8. "What was NOT re-flagged" — confirms no regressions and that the fixes didn't break links
 9. Status of WIP / pending-review pages
 
-Verify, don't trust: trace each prior finding to its line(s), re-check the factual claim against the primary source, and run repo-wide greps to catch stale instances left anywhere in the guide.
+Verify, don't trust: trace each prior finding to its line(s), re-check the factual claim against the primary source, and run repo-wide greps to catch stale instances left anywhere in the guide. Locate each finding by grepping its quoted text — recorded line numbers drift as fixes land, so treat them as hints, not addresses.
 
 ## Closeout
 
-- Add one index line to the `## Audit` section of `README.md` pointing at the new file
-- Confirm `git status` shows only the new audit file plus that README line — no `guide/` page is touched (audits are read-only; fixes land separately)
+- Add one index line to the History list in `audit/Audit-Summary.md` pointing at the new file (`README.md`'s `## Audit` section just points at that summary)
+- Confirm `git status` shows only the new audit file plus that Audit-Summary line — no `guide/` page is touched (audits are read-only; fixes land separately)
