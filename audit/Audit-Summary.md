@@ -31,3 +31,4 @@ History:
 - [2026-07-04 Audit Fable-5-max](2026-07-04_Audit_Fable-5-max.md)
 - [2026-07-06 Audit-Review Opus-4.8-max](2026-07-06_Audit-Review_Opus-4.8-max.md)
 - [2026-07-06 Remediation Opus-4.8-xhigh](2026-07-06_Audit-Remediation_Opus-4.8-xhigh.md)
+- [2026-07-07 Audit-Followup Fable-5-high](2026-07-07_Audit-Followup_Fable-5-high.md)

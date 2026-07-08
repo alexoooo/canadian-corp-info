@@ -80,7 +80,7 @@ These mechanics are used mainly for restructuring transactions (estate freezes, 
 ## Multiple Owner-Managers
 
 The dividend accounts and mechanics in this guide are corporation-level.  
-GRIP, CDA, ERDTOH, NERDTOH, SBD grind, and integration all behave the same whether the CCPC has one owner-manager or several.  
+GRIP, CDA, ERDTOH, NERDTOH, SBD (Small Business Deduction) grind, and integration all behave the same whether the CCPC has one owner-manager or several.  
 
 Two things are specific to a second owner-manager: how a dividend is split across the shares, and whether TOSI applies to the recipient.
 

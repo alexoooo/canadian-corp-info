@@ -342,6 +342,7 @@ Decide the accounts there, then record the debits and credits here.
 - CRA T4012 - T2 Corporation Income Tax Guide: Schedule 100 and Schedule 125 reporting - https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4012/t2-corporation-income-tax-guide.html
 - CRA T2 SCH 100 - Balance Sheet Information: https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2sch100.html
 - CRA T2 SCH 125 - Income Statement Information: https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2sch125.html
+- Income Tax Act [s.67.1](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-67.1.html) - 50% limit on the deduction for meals and entertainment
 - Income Tax Act [s.230](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-230.html) - duty to keep books and records
 
 

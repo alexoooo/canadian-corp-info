@@ -115,7 +115,7 @@ Example of Trade Confirmation (Sell, CAD):
   - Exchange rate might not be shown on trade confirmation
   - Currency is typically specified (as in above example, where "C$" means CAD)
   - If currency is not specified and you are not sure what it is, confirm it with your brokerage
-  - If currency is CAD, then `FX CAD Rate` can be blank (or equivalently 1.0)
+  - If currency is CAD, use 1.0 (a blank multiplies as zero under the `Gross Amount CAD` formula below, which would zero the CAD amount)
   - Exchange rate from CAD to the foreign currency is available on the Bank of Canada website (see [Adjusted-Cost-Base.md](Adjusted-Cost-Base.md) for the rate convention):  
     https://www.bankofcanada.ca/rates/exchange/daily-exchange-rates-lookup/
 
