@@ -449,7 +449,7 @@ When a question gets specific, several layers of authority can apply:
 - [T3](../Investments/T3/T3.md)
 - [T3 - Box 26 Other Income](../Investments/T3/T3-Box-26-Other-Income.md)
 - [T5008](../Investments/T5008/T5008.md)
-- [Foreign Currency](../Bookkeeping/Foreign-Currency.md)
+- [Foreign Currency](../Bookkeeping/Foreign-Currency/Foreign-Currency.md)
 - [HST](../Operations/HST.md)
 - [Payment](../Filing-And-CRA/Payment/Payment.md)
 - [Glossary](Glossary.md)

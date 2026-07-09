@@ -24,7 +24,8 @@ The audience is narrow: owners of a Canadian-controlled private corporation (CCP
 - **`guide/Investments/T3/T3-Box-26-Other-Income.md`** — sub-page of `T3.md`, indexed under it in the README
 - **`guide/Investments/Capital-Dividend-Account/Capital-Dividend-Account.md`** — depends on capital gains data produced by the ACB/T3/T5008 workflows
 - **`guide/Overview/Glossary.md`** — short definitions of the acronyms and tax terms used across the guide, each cross-referenced to its canonical page
-- **`guide/Bookkeeping/Foreign-Currency.md`, `guide/Operations/HST.md`** — mature multi-section pages on FX bookkeeping and GST/HST
+- **`guide/Bookkeeping/Foreign-Currency/Foreign-Currency.md`** — the hub for the foreign-currency sub-pages (FX rates and character, bookkeeping convention, getting paid in USD, bank conversions, Norbert's Gambit, year-end USD deposit), indexed under it in the README
+- **`guide/Operations/HST.md`** — a mature multi-section page on GST/HST
 - **`guide/Filing-And-CRA/Payment/Payment.md`** — a stub for the corporate-tax payment workflow
 - **`guide/Paying-Yourself/Dividends/Dividends.md`** — eligible, non-eligible, and capital dividend concepts: which corporate pool each draws on and the T1 gross-up + DTC on the personal side; the hub for the dividend sub-pages
 - **`guide/Paying-Yourself/Dividends/Declaring-And-Paying.md`, `guide/Paying-Yourself/Dividends/Bookkeeping-And-Slips.md`, `guide/Paying-Yourself/Dividends/T2-Reporting.md`, `guide/Paying-Yourself/Dividends/Dividends-Examples.md`** — sub-pages of `Dividends.md` covering the paying-side mechanics (resolution, journal entries, T5/NR4, T2 schedules incl. T2054, worked examples), indexed under it in the README

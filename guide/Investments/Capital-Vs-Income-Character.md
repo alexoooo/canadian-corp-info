@@ -51,7 +51,7 @@ The same corporation can have both: a long-term portfolio on capital account and
 
 ## Where a Typical Owner-Managed CCPC Lands
 
-The scenario this guide assumes — retained earnings parked in broad ETFs and blue-chip dividend payers, bought with cash, held for years, traded a handful of times a year for rebalancing or [Norbert's Gambit](../Bookkeeping/Foreign-Currency.md) — is squarely capital:
+The scenario this guide assumes — retained earnings parked in broad ETFs and blue-chip dividend payers, bought with cash, held for years, traded a handful of times a year for rebalancing or [Norbert's Gambit](../Bookkeeping/Foreign-Currency/Norberts-Gambit.md) — is squarely capital:
 - Turnover is low and holdings yield income while held
 - The corporation's business is consulting or operations, not trading; nobody spends their days on the book
 - Norbert's Gambit round trips are currency conversion, not a trading pattern, though each is still a disposition
@@ -91,7 +91,7 @@ The CDA exposure is the sharpest edge: character risk should be settled *before*
 - [T5008](T5008/T5008.md)
 - [Capital Dividend Account](Capital-Dividend-Account/Capital-Dividend-Account.md)
 - [Losses](../Filing-And-CRA/Losses.md)
-- [Foreign Currency](../Bookkeeping/Foreign-Currency.md) (income-vs-capital FX character, the same distinction on the currency side)
+- [Foreign Currency](../Bookkeeping/Foreign-Currency/Foreign-Currency.md) (income-vs-capital FX character, the same distinction on the currency side)
 - [Rental and Property Income](../Operations/Rental-And-Property-Income.md) (the parallel character question for rent)
 - [CRA Administration](../Filing-And-CRA/CRA-Administration.md)
 

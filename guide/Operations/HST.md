@@ -125,7 +125,7 @@ Because s.152(1)(a) takes the earlier of the invoice date and the issue date, ba
 The undue-delay rule (s.152(1)(b)) stops a registrant from deferring HST by sitting on an invoice for work already complete.  
 
 This tax point dates every entry in the bookkeeping section below: `HST collected` is recognized in the reporting period that contains the tax point, not when the cash arrives.  
-For a foreign-currency supply, the same tax-point date sets the rate used to convert the HST to CAD (ETA [s.159](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-159.html)); see [Foreign Currency](../Bookkeeping/Foreign-Currency.md#taxable-usd-supplies-and-hst).  
+For a foreign-currency supply, the same tax-point date sets the rate used to convert the HST to CAD (ETA [s.159](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-159.html)); see [Foreign Currency](../Bookkeeping/Foreign-Currency/Getting-Paid-In-USD.md#taxable-usd-supplies-and-hst).  
 
 ### Year-End Straddle: Income vs HST Timing
 
@@ -257,7 +257,7 @@ Remittance rate:
 When the Quick Method pays:
 - *Service consultants with low input HST*: the kept spread (≈2.7% of GST/HST-inclusive revenue for Ontario services, or ≈3.0% of net revenue, before the extra 1% credit on the first $30,000) usually exceeds the ITCs that would have been claimable under the regular method, because the inputs (rent on a home office, a few SaaS subscriptions, a laptop) generate small ITCs
 - *High-input retail or e-commerce*: ITCs on cost of goods sold and on freight-in routinely exceed what the Quick Method would save; stay with the regular method
-- *Zero-rated revenue*: corps with mostly zero-rated revenue (e.g. all-US-client consulting) cannot use the Quick Method to advantage — the remittance rate applies to GST/HST-inclusive revenue, and zero-rated supplies have no HST in their consideration, so the Quick Method math collapses to zero remittance on those supplies; the regular method's ITC refund position is better; see [Foreign Currency](../Bookkeeping/Foreign-Currency.md) for the zero-rated-services workflow
+- *Zero-rated revenue*: corps with mostly zero-rated revenue (e.g. all-US-client consulting) cannot use the Quick Method to advantage — the remittance rate applies to GST/HST-inclusive revenue, and zero-rated supplies have no HST in their consideration, so the Quick Method math collapses to zero remittance on those supplies; the regular method's ITC refund position is better; see [Foreign Currency](../Bookkeeping/Foreign-Currency/Foreign-Currency.md) for the zero-rated-services workflow
 
 Income-tax interaction:
 - The kept portion of the HST collected is taxable income to the corp under ITA s.9; book it to `Other revenue` (GIFI 8230) rather than netting it into `HST receivable`
@@ -278,7 +278,7 @@ Zero-rated categories most relevant to an owner-managed CCPC:
 
 For a CCPC with all-non-resident clients, registration is still required once taxable supplies (including zero-rated) cross $30,000.  
 Once registered, ITCs on Canadian inputs (rent, software, professional fees) are claimable in full, so the corp typically files for a net refund each reporting period.  
-For the full bookkeeping, invoice presentation, and the W-8BEN-E interaction with US-client withholding, see [Foreign Currency](../Bookkeeping/Foreign-Currency.md#zero-rated-gsthst-on-services-to-non-residents).  
+For the full bookkeeping, invoice presentation, and the W-8BEN-E interaction with US-client withholding, see [Foreign Currency](../Bookkeeping/Foreign-Currency/Getting-Paid-In-USD.md#zero-rated-gsthst-on-services-to-non-residents).  
 
 
 ## Imports
@@ -472,7 +472,7 @@ The break-even point against the regular method on Ontario services is roughly t
 ## Related
 
 - [Small Business Tax Overview](../Overview/Small-Business-Tax.md)
-- [Foreign Currency](../Bookkeeping/Foreign-Currency.md)
+- [Foreign Currency](../Bookkeeping/Foreign-Currency/Foreign-Currency.md)
 - [Cost Recovery](Cost-Recovery/Cost-Recovery.md)
   - [Inventory](Cost-Recovery/Inventory-And-COGS.md)
   - [Capital Cost Allowance](Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md)

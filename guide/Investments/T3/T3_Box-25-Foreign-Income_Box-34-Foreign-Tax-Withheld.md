@@ -63,7 +63,7 @@ On the slip:
 This is the simplest version of the Box 25 flow.  
 The fuller flow (a Box 34 amount, and the foreign tax credit) appears with foreign-equity holdings that suffer withholding.  
 
-T3 amounts are reported in Canadian dollars; if you also track the USD distributions during the year, convert them at the payment-date rate (see [Foreign Currency](../../Bookkeeping/Foreign-Currency.md)).  
+T3 amounts are reported in Canadian dollars; if you also track the USD distributions during the year, convert them at the payment-date rate (see [Foreign Currency](../../Bookkeeping/Foreign-Currency/Foreign-Currency.md)).  
 
 
 ## Relevant General Ledger Accounts
@@ -182,7 +182,7 @@ An interim Box 34 with no Box 25 often resolves into a real Box 25 once the char
 - [T3 - Box 26 Other Income](T3-Box-26-Other-Income.md)
 - [Small Business Tax Overview](../../Overview/Small-Business-Tax.md)
 - [ERDTOH and NERDTOH](../../Paying-Yourself/Dividends/ERDTOH-NERDTOH.md)
-- [Foreign Currency](../../Bookkeeping/Foreign-Currency.md)
+- [Foreign Currency](../../Bookkeeping/Foreign-Currency/Foreign-Currency.md)
 
 
 ## Citations

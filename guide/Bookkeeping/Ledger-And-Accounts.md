@@ -187,7 +187,7 @@ Use the most specific line that fits and keep it stable year to year.
 
 Internal sub-codes: the guide sometimes splits one GIFI line into per-currency or per-purpose tracking accounts, written `NNNN-N` — for example `8231-1` and `8231-2` for the CAD and USD sides of foreign-exchange gains, or `1062-1` / `1062-2` for CAD and USD trade receivables.  
 These are bookkeeping sub-accounts only: they roll up to the official parent line (`8231`, `1062`) for filing and are never themselves GIFI codes.  
-See [Foreign Currency](Foreign-Currency.md).  
+See [Foreign Currency](Foreign-Currency/Foreign-Currency.md).  
 
 Assets (Schedule 100):
 
@@ -207,7 +207,7 @@ Assets (Schedule 100):
 | Intangible assets | `2010` | `2012` goodwill, `2018` incorporation costs |
 | Long-term investments | `2300` | `2303` Canadian shares (a corporate brokerage account) |
 
-Cash-line convention used on this page: `1001` Cash is the main operating chequing account; `1002` / `1003` hold any separate savings, second, or foreign-currency account (a corporate brokerage cash balance sits in a `1002` sub-account — see [Foreign Currency](Foreign-Currency.md), which books its own CAD operating account to `1002-1`).  
+Cash-line convention used on this page: `1001` Cash is the main operating chequing account; `1002` / `1003` hold any separate savings, second, or foreign-currency account (a corporate brokerage cash balance sits in a `1002` sub-account — see [Foreign Currency](Foreign-Currency/Foreign-Currency.md), which books its own CAD operating account to `1002-1`).  
 A chequing balance is equally codeable to `1002`, since it is a deposit in a Canadian bank; either mapping is fine, provided it is applied consistently and each account keeps the same code year to year.  
 
 The HST control accounts — `HST receivable` (input tax credits) and `HST collected` — have no dedicated GIFI line; at year-end they net to `1483` Taxes recoverable/refundable, or to `2680` Taxes payable if a net amount is owed.  
@@ -306,7 +306,7 @@ A *plug account* is an account set up to absorb such a residual.
 Plugs are legitimate and common, as long as the residual is small and you know what it represents:
 - *Cost of sales under a periodic system*: with no per-sale inventory update, COGS is plugged at year-end as opening inventory + purchases − closing inventory (from the count); `8518 Cost of sales` is that plug; see [Inventory and COGS](../Operations/Cost-Recovery/Inventory-And-COGS.md)
 - *Whole-dollar rounding residual*: rounding each line to the dollar can throw a subtotal off by a dollar or two, so one designated line (retained earnings `3849` on the balance sheet, net income on the income statement) absorbs the residual; see [Whole-dollar rounding](../Filing-And-CRA/Whole-Dollar-Rounding.md)
-- *Foreign-exchange bridge*: a realized FX gain or loss is the residual between an amount at the transaction-date rate and the settlement-date rate; it lands in `8231 Foreign exchange gains/losses` (the per-currency `8231-1` / `8231-2` bridges); see [Foreign Currency](Foreign-Currency.md)
+- *Foreign-exchange bridge*: a realized FX gain or loss is the residual between an amount at the transaction-date rate and the settlement-date rate; it lands in `8231 Foreign exchange gains/losses` (the per-currency `8231-1` / `8231-2` bridges); see [Foreign Currency](Foreign-Currency/Foreign-Currency.md)
 - *Suspense / clearing account*: a temporary holding account for an entry you cannot yet classify (an unidentified deposit, a pending distribution), cleared to its real account once known
 - *Opening-balance equity*: when first setting up books, the offsetting entry that makes opening assets and liabilities balance lands in an equity plug, then is reclassified to share capital and retained earnings
 
@@ -330,7 +330,7 @@ Decide the accounts there, then record the debits and credits here.
 - [Cost Recovery](../Operations/Cost-Recovery/Cost-Recovery.md)
 - [Inventory and COGS](../Operations/Cost-Recovery/Inventory-And-COGS.md)
 - [HST](../Operations/HST.md)
-- [Foreign Currency](Foreign-Currency.md)
+- [Foreign Currency](Foreign-Currency/Foreign-Currency.md)
 - [Whole-dollar rounding](../Filing-And-CRA/Whole-Dollar-Rounding.md)
 - [Concept map](../Overview/Concept-Map.md)
 - [Glossary](../Overview/Glossary.md)

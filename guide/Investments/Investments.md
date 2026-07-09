@@ -46,7 +46,7 @@ Two habits carry the whole cycle:
 | Character | buy-and-hold produces capital gains; frequent trading turns gains into income and erases the CDA | [Capital vs Income Character](Capital-Vs-Income-Character.md) |
 | Funding | investment income is taxed differently from active income, and too much of it can grind the small business deduction | [Active vs investment income](../Overview/Small-Business-Tax.md#active-vs-investment-income), [Tax Integration](../Overview/Tax-Integration.md) |
 | Buying | ACB per security, averaged across purchases | [Adjusted Cost Base](Adjusted-Cost-Base/Adjusted-Cost-Base.md), [ACB Tracking](Adjusted-Cost-Base/Adjusted-Cost-Base-Tracking.md) |
-| Buying in USD | convert every amount to CAD at the transaction-date rate | [Foreign Currency](../Bookkeeping/Foreign-Currency.md) |
+| Buying in USD | convert every amount to CAD at the transaction-date rate | [Foreign Currency](../Bookkeeping/Foreign-Currency/Foreign-Currency.md) |
 | Holding: fund distributions | trust and ETF distributions by box, including reinvested amounts and return of capital | [T3](T3/T3.md), [Box 26](T3/T3-Box-26-Other-Income.md), [Box 25 / Box 34](T3/T3_Box-25-Foreign-Income_Box-34-Foreign-Tax-Withheld.md) |
 | Holding: dividends and interest | dividends from corporations (stocks, corporate-class funds) and interest by box | [T5](T5/T5.md), [Box 18](T5/T5-Box-18-Capital-Gains-Dividends.md) |
 | Holding: foreign property | the T1135 filing once total cost of specified foreign property exceeds $100,000 | [T1135](T1135.md) |

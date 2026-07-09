@@ -34,7 +34,13 @@ Unmarked pages are reviewed; † = AI generated, not verified yet.
 **[Bookkeeping](guide/Bookkeeping/Bookkeeping.md)** †:
 - [Ledger and Accounts](guide/Bookkeeping/Ledger-And-Accounts.md) †
 - [Expense Classification](guide/Bookkeeping/Expense-Classification.md) †
-- [Foreign Currency](guide/Bookkeeping/Foreign-Currency.md) † (cross-cutting: billing, banking, and investments)
+- [Foreign Currency](guide/Bookkeeping/Foreign-Currency/Foreign-Currency.md) † (cross-cutting: billing, banking, and investments)
+  - [FX Rates and Character](guide/Bookkeeping/Foreign-Currency/FX-Rates-And-Character.md) †
+  - [Bookkeeping Convention](guide/Bookkeeping/Foreign-Currency/Bookkeeping-Convention.md) †
+  - [Getting Paid in USD](guide/Bookkeeping/Foreign-Currency/Getting-Paid-In-USD.md) †
+  - [Bank Conversions](guide/Bookkeeping/Foreign-Currency/Bank-Conversions.md) †
+  - [Norbert's Gambit](guide/Bookkeeping/Foreign-Currency/Norberts-Gambit.md) †
+  - [Year-End USD Deposit](guide/Bookkeeping/Foreign-Currency/Year-End-USD-Deposit.md) †
 
 **[Operations](guide/Operations/Operations.md)** †:
 - [HST](guide/Operations/HST.md) †

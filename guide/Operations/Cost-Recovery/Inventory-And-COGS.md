@@ -439,7 +439,7 @@ Year-end Schedule 125 if 300 units are sold during the year at $70 each:
 - [Ledger and Accounts](../../Bookkeeping/Ledger-And-Accounts.md)
 - [Adjusted Cost Base](../../Investments/Adjusted-Cost-Base/Adjusted-Cost-Base.md)
 - [HST](../HST.md)
-- [Foreign Currency](../../Bookkeeping/Foreign-Currency.md)
+- [Foreign Currency](../../Bookkeeping/Foreign-Currency/Foreign-Currency.md)
 - [Glossary](../../Overview/Glossary.md)
 - [Whole-dollar rounding](../../Filing-And-CRA/Whole-Dollar-Rounding.md)
 
@@ -475,4 +475,4 @@ Year-end Schedule 125 if 300 units are sold during the year at $70 each:
 - Companion tracking-spreadsheet artifact (parallel to [Adjusted Cost Base Tracking](../../Investments/Adjusted-Cost-Base/Adjusted-Cost-Base-Tracking.md)): a worked perpetual weighted-average ledger with running-cost and COGS formulas, plus a year-end LCM column
 - Manufacturing WIP treatment: a section walking conversion-cost build-up under ASPE 3031 / IFRS IAS 2 and the M&P Class 43 CCA tie-in (Class 53 before 2026)
 - s.10(2.1) method-change procedure: format of the written request, supporting evidence, CRA processing timeline
-- Cross-reference with [Foreign Currency](../../Bookkeeping/Foreign-Currency.md) once that page is past the stub phase
+- Cross-reference with [Foreign Currency](../../Bookkeeping/Foreign-Currency/Foreign-Currency.md) once that page is past the stub phase

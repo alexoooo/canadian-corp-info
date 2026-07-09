@@ -98,7 +98,7 @@ A consistent rule avoids the slow upward bias that comes from always rounding a 
 ## Where It Bites
 
 Rounding from cents to whole dollars matters most where a calculation produces many decimal places:
-- *Foreign-currency translation*: Bank of Canada rates carry four decimals, so converted balances rarely land on a whole cent, let alone a whole dollar; see [Foreign Currency](../Bookkeeping/Foreign-Currency.md)
+- *Foreign-currency translation*: Bank of Canada rates carry four decimals, so converted balances rarely land on a whole cent, let alone a whole dollar; see [Foreign Currency](../Bookkeeping/Foreign-Currency/Foreign-Currency.md)
 - *ACB per-unit averages*: pooled average cost divides to fractions of a cent per unit, then multiplies back up on a disposition; see [Adjusted Cost Base - Tracking](../Investments/Adjusted-Cost-Base/Adjusted-Cost-Base-Tracking.md)
 - *Inventory*: weighted-average unit cost and lower-of-cost-or-market write-downs produce fractional cents that must reconcile across the balance sheet and cost of sales; see [Inventory](../Operations/Cost-Recovery/Inventory-And-COGS.md)
 - *Capital cost allowance*: declining-balance rates and the half-year adjustment applied to a UCC pool seldom yield whole dollars; see [Capital Cost Allowance](../Operations/Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md)
@@ -110,7 +110,7 @@ In every case the rule is the same: keep the working figures to the cent, round 
 
 - [Small Business Tax Overview](../Overview/Small-Business-Tax.md) — bookkeeping, the general ledger, and GIFI
 - [Ledger and Accounts](../Bookkeeping/Ledger-And-Accounts.md)
-- [Foreign Currency](../Bookkeeping/Foreign-Currency.md)
+- [Foreign Currency](../Bookkeeping/Foreign-Currency/Foreign-Currency.md)
 - [Adjusted Cost Base - Tracking](../Investments/Adjusted-Cost-Base/Adjusted-Cost-Base-Tracking.md)
 - [Inventory](../Operations/Cost-Recovery/Inventory-And-COGS.md)
 - [Capital Cost Allowance](../Operations/Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md)

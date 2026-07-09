@@ -186,10 +186,10 @@ Excluded from cost (booked elsewhere):
 - Recoverable GST/HST claimed as an *input tax credit* (ITC): booked to `HST receivable`; see [HST](../HST.md)
 - Interest on financing used for the purchase: deductible as `Interest and bank charges` (GIFI 8710) rather than capitalized (the s.21 election to capitalize interest into a depreciable asset is the narrow exception)
 - Storage and handling after the asset reaches the corp's premises
-- Realized FX gain or loss on settlement of the foreign-currency payable: booked to `Realized FX gain/loss` per [Foreign Currency](../../Bookkeeping/Foreign-Currency.md); the landed cost stays at the trade-date figure
+- Realized FX gain or loss on settlement of the foreign-currency payable: booked to `Realized FX gain/loss` per [Foreign Currency](../../Bookkeeping/Foreign-Currency/Foreign-Currency.md); the landed cost stays at the trade-date figure
 - Administrative overhead and indirect costs not attributable to a specific acquisition
 
-The 50%-business-use rule on ITC eligibility for capital property is in [HST](../HST.md#capital-purchases); the FX trade-date convention is in [Foreign Currency](../../Bookkeeping/Foreign-Currency.md#when-to-use-which-rate).
+The 50%-business-use rule on ITC eligibility for capital property is in [HST](../HST.md#capital-purchases); the FX trade-date convention is in [Foreign Currency](../../Bookkeeping/Foreign-Currency/FX-Rates-And-Character.md#when-to-use-which-rate).
 
 
 ## Available for Use
@@ -276,7 +276,7 @@ A CIP balance is never directly disposed of:
 - [Small Business Tax Overview](../../Overview/Small-Business-Tax.md): primer for the rest of the guide
 - [HST](../HST.md): GST/HST mechanics, including ITC eligibility on inputs and the 50%-business-use line on capital property
 - [Expense Classification](../../Bookkeeping/Expense-Classification.md): GIFI lines for operating expenses and the capitalize-vs-expense decision
-- [Foreign Currency](../../Bookkeeping/Foreign-Currency.md): trade-date FX convention used to convert foreign-currency invoices into landed cost
+- [Foreign Currency](../../Bookkeeping/Foreign-Currency/Foreign-Currency.md): trade-date FX convention used to convert foreign-currency invoices into landed cost
 - [Adjusted Cost Base](../../Investments/Adjusted-Cost-Base/Adjusted-Cost-Base.md): the investing-side analogue of inventory pooling, applied to securities rather than goods
 - [Glossary](../../Overview/Glossary.md)
 

@@ -105,7 +105,7 @@ If you hold USD or other foreign assets, you must convert to CAD when calculatin
 - Purchases and sales: use the exchange rate for the trade date (not settlement date)  
 - Distributions (including ROC and reinvested/phantom amounts such as the non-cash portion of T3 box 21): use exchange rate on payment/distribution date (not when distribution is declared)  
 - Outlays and expenses (e.g. commissions): use exchange rate on trade date (not settlement date)  
-- Financial-statement translation rates (the year-end closing rate for monetary items, the average annual rate under a full-translation method) do not apply to ACB calculations; see [Foreign Currency](../../Bookkeeping/Foreign-Currency.md)
+- Financial-statement translation rates (the year-end closing rate for monetary items, the average annual rate under a full-translation method) do not apply to ACB calculations; see [Foreign Currency](../../Bookkeeping/Foreign-Currency/Foreign-Currency.md)
 - For ACB purposes, always use the daily exchange rate as specified above  
 
 
@@ -144,7 +144,7 @@ There are limitations on which losses can be claimed, make sure you don't get a 
 - [Capital Dividend Account](../Capital-Dividend-Account/Capital-Dividend-Account.md)
 - [T3](../T3/T3.md)
 - [T5008](../T5008/T5008.md)
-- [Foreign-Currency](../../Bookkeeping/Foreign-Currency.md)
+- [Foreign-Currency](../../Bookkeeping/Foreign-Currency/Foreign-Currency.md)
 
 
 ## Citations
