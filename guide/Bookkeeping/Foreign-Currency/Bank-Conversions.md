@@ -25,7 +25,7 @@ Typical CAD↔USD conversion spreads observed in practice (rough magnitudes; ver
 - Big-bank retail conversion at a branch teller: 2.0%–3.0% from mid-rate
 - Big-bank business banking USD↔CAD conversion: 1.5%–2.0%
 - Specialty FX services (Wise, OFX): 0.4%–1.0%
-- Norbert's Gambit through a discount broker (see [Norbert's Gambit](Norberts-Gambit.md)): 10–30 basis points all-in
+- Norbert's Gambit through a discount broker (see [Norbert's Gambit](Norberts-Gambit.md)): ~15–20 basis points of bid-ask spread across the two legs, plus flat per-trade commissions; because the commissions are fixed, the all-in cost depends on the amount converted (break-even worked on the sub-page)
 - Interactive Brokers desk FX (FXCONV / IDEALPRO): ~1 basis point plus a small minimum commission
 
 Worked example (internal CAD → USD transfer between two accounts at the same bank):

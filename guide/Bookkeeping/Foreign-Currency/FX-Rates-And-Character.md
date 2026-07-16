@@ -11,7 +11,7 @@ The Income Tax Act presumes a Canadian-resident corporation reports in Canadian 
 Foreign-currency amounts are converted to CAD at the rate prevailing on the transaction date (ITA [s.261(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-261.html); CRA Income Tax Folio S5-F4-C1).  
 
 Acceptable sources for the exchange rate, applied consistently across the year:
-- *Bank of Canada single daily exchange rate*: published once per business day by approximately 16:30 ET, replacing the legacy noon rate (last published 2017-04-28)
+- *Bank of Canada daily exchange rate*: published once per business day by approximately 16:30 ET, replacing the legacy noon rate (last published 2017-04-28)
   - The BoC describes these as *indicative rates* based on aggregated market quotes, and CRA folio S5-F4-C1 names them as the default rate for post-2017-02-28 conversions
 - *Year-average BoC rate*: CRA folio S5-F4-C1 accepts an annual average for income-account items where the rate does not fluctuate significantly through the year; used as a simplification when the per-transaction rate is impractical
 - The corp's *bank's actual settlement rate* on the transaction: acceptable when the bank statement shows the CAD and USD legs of an actual conversion; the only rate that reflects what actually happened in the account
@@ -68,6 +68,7 @@ A corporation has no de minimis: every capital-account FX gain or loss, however 
 Which side of the line a given USD balance sits on:
 - USD operating cash from US-client invoicing → *income account* (revalue at year-end)
 - USD operating cash used to pay USD suppliers → *income account*
+- USD floor balance kept in the operating account to waive the monthly account fee → *income account*: it is working capital that happens to be idle, and fee avoidance is itself an operating purpose; character would flip only if the balance were committed to a capital purpose, such as being moved to a trading account to buy securities
 - USD cash sitting in a corporate trading account waiting to buy USD securities → *capital account* (no year-end revaluation)
 - USD-denominated long-term debt the corp issued → *capital account*
 

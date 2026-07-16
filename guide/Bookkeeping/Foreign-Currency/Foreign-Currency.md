@@ -6,15 +6,12 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
 - Owners of a Canadian-controlled private corporation (CCPC) who hold a USD bank account, invoice US customers in USD, hold USD-denominated investments, or convert between CAD and USD
 
 **TLDR**:
-- The corporation reports in CAD by default; foreign-currency-native accounts (USD bank, USD AR) are translated at year-end to populate Schedule 100 in CAD
-- *Bank of Canada* (BoC) single daily exchange rate is the conventional source; the corp's bank's actual settlement rate is also acceptable if applied consistently
+- The corporation reports in CAD; foreign-currency-native accounts (USD bank, USD AR) are translated at year-end to populate the balance sheet (Schedule 100) in CAD
+- *Bank of Canada* (BoC) daily exchange rate is the conventional source; the corp's bank's actual settlement rate is also acceptable if applied consistently to the same kind of transaction year over year
 - FX rate convention follows the *transaction date*: invoice date for revenue, trade date for securities and commissions, payment date for distributions, year-end closing rate for revaluation of *monetary items*
 - FX gains and losses split into *income account* (operating receivables, payables, cash from operations) and *capital account* (foreign securities, USD held to acquire securities); the character follows the underlying transaction
-- The worked examples use a *multi-currency native* bookkeeping convention (detailed in [Bookkeeping convention](Bookkeeping-Convention.md)):
-  - Each ledger account has one native currency; cross-currency entries split into a CAD leg and a USD leg with `FX gain/loss - CAD` (8231-1) and `FX gain/loss - USD` (8231-2) as per-currency bridge accounts
-  - Year-end revaluation translates the USD-native accounts at the closing rate; the net of 8231-1 + 8231-2 (translated) is the period's FX gain or loss on Schedule 125 GIFI 8231
-- Bank CAD↔USD conversion bakes a 1.5%–3% spread into the rate; the spread surfaces as an FX loss at period-end revaluation
-- *Norbert's Gambit* via *DLR* / *DLR.U* on the TSX moves USD↔CAD at ~10–30 basis points all-in instead of the bank's ~200 bp spread; the round trip is a securities disposition reported on Schedule 6
+- The worked examples use a *multi-currency native* bookkeeping convention: each ledger account has one native currency, cross-currency entries bridge through per-currency FX accounts, and year-end revaluation nets those into the single FX line on the income statement (Schedule 125); details in [Bookkeeping convention](Bookkeeping-Convention.md)
+- Converting CAD↔USD with your bank can be expensive, *Norbert's Gambit* is a way of avoiding the bank spread using a corporate trading account
 - Invoices to a non-resident US customer for services are *zero-rated* GST/HST under the Excise Tax Act, Schedule VI, Part V; see [HST](../../Operations/HST.md) for the full mechanics
 
 Limitations:

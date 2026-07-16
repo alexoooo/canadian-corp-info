@@ -78,7 +78,7 @@ Concrete example on USD 50,000:
 Worked example (convert USD 10,000 of invoice proceeds back to CAD via Gambit at a flat-commission bank broker).  
 Assume: BoC rate on day 0 is 1.36; DLR.U trades at USD 10.00; DLR trades at CAD 13.60 on day 1; two $9.95 trading commissions (one in USD on the buy leg, one in CAD on the sell leg).  
 
-The `Brokerage` account is CAD-native: ACB is defined in ITA s.54 and CAD-denominated by default reporting currency (s.261), so the USD purchase enters the investment account at the trade-date CAD equivalent (USD 10,009.95 × 1.36 = CAD 13,613.53).  
+The `Brokerage` account is CAD-native: ACB is defined in ITA s.54 and computed in the corporation's CAD reporting currency (s.261), so the USD purchase enters the investment account at the trade-date CAD equivalent (USD 10,009.95 × 1.36 = CAD 13,613.53).  
 The USD-side cash outflow is bridged to the CAD-side investment entry via the per-currency FX accounts.  
 
 Day 0, buy 1,000 units of DLR.U at USD 10.00 + USD 9.95 commission = USD 10,009.95:
