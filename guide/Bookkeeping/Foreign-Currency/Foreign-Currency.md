@@ -3,16 +3,24 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
 # Foreign Currency
 
 **Who this is for**:
-- Owners of a Canadian-controlled private corporation (CCPC) who hold a USD bank account, invoice US customers in USD, hold USD-denominated investments, or convert between CAD and USD
+- Owners of a Canadian-controlled private corporation (CCPC) with USD accounts, invoicing, investments, or conversions
 
 **TLDR**:
-- The corporation reports in CAD; foreign-currency-native accounts (USD bank, USD AR) are translated at year-end to populate the balance sheet (Schedule 100) in CAD
-- *Bank of Canada* (BoC) daily exchange rate is the conventional source; the corp's bank's actual settlement rate is also acceptable if applied consistently to the same kind of transaction year over year
-- FX rate convention follows the *transaction date*: invoice date for revenue, trade date for securities and commissions, payment date for distributions, year-end closing rate for revaluation of *monetary items*
-- FX gains and losses split into *income account* (operating receivables, payables, cash from operations) and *capital account* (foreign securities, USD held to acquire securities); the character follows the underlying transaction
-- The worked examples use a *multi-currency native* bookkeeping convention: each ledger account has one native currency, cross-currency entries bridge through per-currency FX accounts, and year-end revaluation nets those into the single FX line on the income statement (Schedule 125); details in [Bookkeeping convention](Bookkeeping-Convention.md)
-- Converting CAD↔USD with your bank can be expensive, *Norbert's Gambit* is a way of avoiding the bank spread using a corporate trading account
-- Invoices to a non-resident US customer for services are *zero-rated* GST/HST under the Excise Tax Act, Schedule VI, Part V; see [HST](../../Operations/HST.md) for the full mechanics
+- Corporate taxes are reported in CAD; USD-native accounts are translated at year-end onto the balance sheet (Schedule 100)
+- When a ledger entry converts a foreign amount to CAD, this guide uses the *Bank of Canada* (BoC) rate
+  - Amounts already converted to CAD (the bank's settlement of a conversion, a T-slip) are booked as-is
+- FX rate convention follows the *transaction date*:
+  - Invoice date for revenue; trade date for securities and commissions; payment date for distributions
+  - Year-end closing rate for revaluation of *monetary items*
+- FX gain/loss *character* follows the underlying transaction:
+  - *Income account*: operating receivables, payables, and cash from operations
+  - *Capital account*: foreign securities and USD held to acquire securities
+- This guide uses a *multi-currency native* bookkeeping convention (see [Bookkeeping convention](Bookkeeping-Convention.md)):
+  - Each ledger account has one native currency; cross-currency entries bridge through per-currency FX accounts
+  - Year-end revaluation nets the FX accounts into *Foreign exchange gains/losses* on the income statement (Schedule 125)
+- Converting CAD↔USD at your bank can be expensive; *Norbert's Gambit* avoids the spread via a corporate trading account
+- Invoices to a non-resident US customer for services are *zero-rated* GST/HST
+  - Excise Tax Act, Schedule VI, Part V; full mechanics in [HST](../../Operations/HST.md)
 
 Limitations:
 - Focus is on CAD↔USD for a typical owner-managed CCPC consultant or investor; other currency pairs (EUR, GBP, etc.) follow the same mechanics by analogy but specific rates and broker products differ
