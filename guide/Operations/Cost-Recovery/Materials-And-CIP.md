@@ -5,19 +5,30 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
 **Who this is for**:
 - Owners of a Canadian-controlled private corporation (CCPC)
 - Buy materials, parts, or contractor labour to build one or more fixed assets for the corp's own use (not for resale)
-- Need to translate those costs into ledger entries, a year-end balance sheet figure, and an eventual transfer into a CCA class
+- Need to translate those costs into ledger entries, a year-end balance sheet figure, and an eventual CCA-class transfer
 
 **TLDR**:
-- Materials bought to build a fixed asset for the corp's own use are *not* inventory; they accumulate in a `Construction in progress` (CIP) general-ledger account (a balance-sheet asset account in the corp's chart of accounts) during construction
+- Materials bought to build a fixed asset for the corp's own use are *not* inventory
+  - They accumulate in a `Construction in progress` (CIP) general-ledger account during construction
+  - CIP is a balance-sheet asset account in the corp's chart of accounts
 - CIP produces *no deduction* while construction is underway: not inventory (so no COGS), and not yet available for use (so no CCA)
-- On completion *and* available for use (ITA [s.13(26)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-13.html)), the accumulated CIP balance transfers into the appropriate CCA class and becomes the *capital cost* for that class
-- From that point on, the cost is deducted year by year through annual CCA claims; see [Capital Cost Allowance](Capital-Cost-Allowance/Capital-Cost-Allowance.md) for the half-year rule, UCC mechanics, recapture, and terminal loss
-- Building several assets at once from a shared stock of materials: track the materials in a running weighted-average pool, charge each build's *bill of materials* (BOM) into its own CIP, and transfer each build to its CCA class on its own available-for-use date (worked through in [Example 2](#example-2-multiple-builds-from-a-shared-materials-pool))
+- On completion *and* available for use (ITA [s.13(26)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-13.html)), the accumulated CIP balance moves
+  - It transfers into the appropriate CCA class and becomes the *capital cost* for that class
+- From that point on, the cost is deducted year by year through annual CCA claims
+  - See [Capital Cost Allowance](Capital-Cost-Allowance/Capital-Cost-Allowance.md) for the half-year rule, UCC mechanics, recapture, and terminal loss
+- Building several assets at once from a shared stock of materials:
+  - Track the materials in a running weighted-average pool
+  - Charge each build's *bill of materials* (BOM) into its own CIP
+  - Transfer each build to its CCA class on its own available-for-use date
+  - Worked through in [Example 2](#example-2-multiple-builds-from-a-shared-materials-pool)
 
 Limitations:
-- Focus is on a typical owner-managed CCPC building one or more tangible fixed assets (shed, leasehold improvement, custom equipment) for its own use
-- Capitalizable cost build-up beyond materials and direct contractor labour (factory overhead, indirect costs, allocated employee salaries on the project) is mentioned at a high level only
-- Soft costs during construction (interest under s.18(3.1), property taxes on the construction site, legal and accounting fees on a capital project) are out of scope
+- Focus is on a typical owner-managed CCPC building one or more tangible fixed assets for its own use
+  - A shed, a leasehold improvement, custom equipment
+- Capitalizable cost build-up beyond materials and direct contractor labour is mentioned at a high level only
+  - Factory overhead, indirect costs, allocated employee salaries on the project
+- Soft costs during construction are out of scope
+  - Interest under s.18(3.1), property taxes on the construction site, legal and accounting fees on a capital project
 - Interest capitalization election under s.21 is out of scope
 - Long-term construction contracts (a CCPC building for a customer) are inventory-side rules and not covered here
 - Real-estate developer construction of land and buildings held for resale is inventory-side and out of scope
@@ -26,7 +37,8 @@ Limitations:
 
 ## In This Folder
 
-- [Cost Recovery](Cost-Recovery.md): overview of the three cost-recovery channels, concept map, and shared acquisition-cost / available-for-use / change-of-use rules
+- [Cost Recovery](Cost-Recovery.md): overview of the three cost-recovery channels and concept map
+  - Also the shared acquisition-cost / available-for-use / change-of-use rules
 - [Inventory](Inventory-And-COGS.md): goods held for resale
 - [Capital Cost Allowance](Capital-Cost-Allowance/Capital-Cost-Allowance.md): depreciable property after the CIP transfer
 

@@ -5,20 +5,25 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
 **Who this is for**:
 - Owners of a Canadian-controlled private corporation (CCPC)
 - Buy goods for resale (retail, e-commerce, parts-and-services), or buy materials for use in its own operations
-- Need to translate those purchases into ledger entries, a year-end valuation, the cost-of-sales section of the income statement (T2 Schedule 125), and the inventory lines of the balance sheet (Schedule 100)
+- Need to translate those purchases into ledger entries, a year-end valuation, and the T2 figures
+  - The cost-of-sales section of the income statement (Schedule 125), and the inventory lines of the balance sheet (Schedule 100)
 
 **TLDR**:
 - *Inventory* is property held for sale, or held for use in producing property held for sale (ITA [s.248(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-248.html))
-- A property is either *inventory* or *depreciable property*, never both at the same time; *purpose at acquisition* decides which
+- A property is either *inventory* or *depreciable property*, never both at the same time
+  - *Purpose at acquisition* decides which
 - Inventory is valued each year-end at the lower of *cost* or *fair market value* (LCM), per ITA [s.10(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-10.html)
-- *Cost* follows a permitted cost-flow assumption (weighted-average, FIFO, or specific identification), applied consistently year over year (s.10(2.1))
-- *Cost of sales* (aka *Cost of goods sold*, COGS) is the matching deduction at the moment a unit is sold; unlike *Capital Cost Allowance* (CCA) for fixed assets, the cost is not spread over multiple years
+- *Cost* follows a permitted cost-flow assumption (weighted-average, FIFO, or specific identification)
+  - Applied consistently year over year (s.10(2.1))
+- *Cost of sales* (aka *Cost of goods sold*, COGS) is the matching deduction at the moment a unit is sold
+  - Unlike *Capital Cost Allowance* (CCA) for fixed assets, the cost is not spread over multiple years
 - Materials bought to build a fixed asset for the corp's own use are *not* inventory; see [Materials and CIP](Materials-And-CIP.md)
 
 Limitations:
 - Focus is on a typical owner-managed CCPC with goods-for-resale or self-use materials inventory
 - Manufacturing inventory with overhead absorption and standard-cost variances is touched on but not worked through
-- Specialized inventory rules for particular industries (long-term construction contracts, commodity traders, real-estate developers, financial institutions) are out of scope
+- Specialized inventory rules for particular industries are out of scope
+  - Long-term construction contracts, commodity traders, real-estate developers, financial institutions
 - Consignment inventory is mentioned briefly; service-business work-in-process under s.10(5)(a) is out of scope
 - Inventory-method change requires the Minister's concurrence (ITA s.10(2.1)) and is not covered here
 - The following is my understanding as of 2026
@@ -26,7 +31,8 @@ Limitations:
 
 ## In This Folder
 
-- [Cost Recovery](Cost-Recovery.md): overview of the three cost-recovery channels, concept map, and shared acquisition-cost / available-for-use / change-of-use rules
+- [Cost Recovery](Cost-Recovery.md): overview of the three cost-recovery channels and concept map
+  - Also the shared acquisition-cost / available-for-use / change-of-use rules
 - [Materials and CIP](Materials-And-CIP.md): self-constructed fixed assets
 - [Capital Cost Allowance](Capital-Cost-Allowance/Capital-Cost-Allowance.md): depreciable property
 
@@ -34,15 +40,18 @@ Limitations:
 ## Inventory vs Other Purchase Types <!-- [done] -->
 
 Purchased property in a CCPC follows one of a few tax treatments (inventory is the most common):
-- *Inventory* (the focus of this page): property held for sale, or held to produce property held for sale; cost flows through `Cost of sales` (COGS) when a unit sells; valued at LCM each year-end
+- *Inventory* (the focus of this page): property held for sale, or held to produce property held for sale
+  - Cost flows through `Cost of sales` (COGS) when a unit sells; valued at LCM each year-end
 - *Materials to build a fixed asset for the corp's own use*: not inventory; see [Materials and CIP](Materials-And-CIP.md)
 - *Consumable supplies* (office paper, packaging, cleaning, lubricants): expensed when used; not capitalized; out of scope here
-- *Spare parts*: inventory if held for resale; expensed or capitalized into the equipment they service otherwise; the non-resale case is out of scope here
+- *Spare parts*: inventory if held for resale; expensed or capitalized into the equipment they service otherwise
+  - The non-resale case is out of scope here
 
 
 ## What Inventory Is <!-- [meh] -->
 
-ITA [s.248(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-248.html) defines *inventory* as "a description of property the cost or value of which is relevant in computing a taxpayer's income from a business for a taxation year".
+ITA [s.248(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-248.html) defines *inventory*.  
+The definition: "a description of property the cost or value of which is relevant in computing a taxpayer's income from a business for a taxation year".
 
 Typical cases:
 - Finished goods bought wholesale for resale
@@ -52,33 +61,45 @@ Typical cases:
 
 A property is *inventory* or *depreciable property*, never both:
 - Inventory is matched to revenue through cost of sales (COGS); the cost is deducted at the moment of sale
-- Depreciable property is held to earn income over time; the cost is deducted over its life through CCA (see [Capital Cost Allowance](Capital-Cost-Allowance/Capital-Cost-Allowance.md))
+- Depreciable property is held to earn income over time
+  - The cost is deducted over its life through CCA (see [Capital Cost Allowance](Capital-Cost-Allowance/Capital-Cost-Allowance.md))
 
 *Purpose at acquisition* determines which category applies:
 - Bought to resell: inventory
 - Bought to use in the business: depreciable property (or operating expense if below the capitalization threshold)
-- Bought as a one-off speculation that you intend to flip: *adventure or concern in the nature of trade*, taxed at cost under ITA [s.10(1.01)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-10.html) rather than at LCM (still inventory in form, but with cost-only valuation)
+- Bought as a one-off speculation that you intend to flip: *adventure or concern in the nature of trade*
+  - Taxed at cost under ITA [s.10(1.01)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-10.html) rather than at LCM
+  - Still inventory in form, but with cost-only valuation
 
-If purpose changes after acquisition (e.g. something purchased to resell is consumed for operations instead), that is a *change in use* event.  
-When inventory is converted to capital property, it carries its inventory cost over as its new capital cost, so no tax arises at the switch (archived IT-102R2).  
+If purpose changes after acquisition, that is a *change in use* event.  
+The typical case: something purchased to resell is consumed for operations instead.  
+When inventory is converted to capital property, it carries its inventory cost over as its new capital cost.  
+No tax arises at the switch (archived IT-102R2).  
 This is rare for a typical CCPC and the details are out of scope here.  
 See [Cost Recovery — Change of use](Cost-Recovery.md#change-of-use) for the cross-channel framing, including the contested s.45 / s.13(7) reading.  
 
 
 ## Cost of Goods Sold
 
-*Cost of sales* (aka *cost of goods sold*, COGS) is the cost of the inventory units that sold during the year, matched against the revenue they produced.  
-It is a deduction from business income under ITA [s.9](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-9.html), recognized at the moment a unit is sold rather than when it is bought; s.9 is the parent rule, not a stand-alone COGS provision.  
-Unlike *Capital Cost Allowance* (CCA), the cost is not spread over years; unlike a *construction in progress* (CIP) balance, it is deductible (see [Cost Recovery](Cost-Recovery.md) for the channel split).  
+*Cost of sales* (aka *cost of goods sold*, COGS) is the cost of the inventory units that sold during the year.  
+It is matched against the revenue those units produced.  
+It is a deduction from business income under ITA [s.9](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-9.html), recognized at the moment a unit is sold.  
+s.9 is the parent rule, not a stand-alone COGS provision.  
+Unlike *Capital Cost Allowance* (CCA), the cost is not spread over years.  
+Unlike a *construction in progress* (CIP) balance, it is deductible (see [Cost Recovery](Cost-Recovery.md) for the channel split).  
 
 The cost-of-sales identity:
 - Opening inventory + purchases (net of returns) + freight-in + other direct costs − closing inventory = COGS
-- Schedule 125 enforces it as lines 8300 + 8320 + 8340 + 8360 + 8450 + 8457 − 8500 = 8518 (direct wages 8340 and subcontracts 8360 are zero for a resale-only CCPC)
-- The closing figure is set by the year-end *lower of cost or fair market value* (LCM) valuation under ITA [s.10(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-10.html), so the valuation method drives COGS directly
-- The cost-flow method is fixed year over year under s.10(2.1); valuing all inventory at FMV instead is the Regulation 1801 alternative
+- Schedule 125 enforces it as lines 8300 + 8320 + 8340 + 8360 + 8450 + 8457 − 8500 = 8518
+  - Direct wages 8340 and subcontracts 8360 are zero for a resale-only CCPC
+- The closing figure is set by the year-end *lower of cost or fair market value* (LCM) valuation
+  - ITA [s.10(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-10.html); the valuation method drives COGS directly
+- The cost-flow method is fixed year over year under s.10(2.1)
+  - Valuing all inventory at FMV instead is the Regulation 1801 alternative
 
 Mechanics, further down this page:
-- The running per-sale figure (units sold × current average cost) and the cost-of-sales GIFI codes (`8300`–`8519`): [Tracking through the year](#tracking-through-the-year)
+- The running per-sale figure (units sold × current average cost) and the cost-of-sales GIFI codes (`8300`–`8519`)
+  - [Tracking through the year](#tracking-through-the-year)
 - The identity check and the Schedule 125 / Schedule 100 posting: [Year-end reconciliation](#year-end-reconciliation), [Bookkeeping and T2 schedules](#bookkeeping-and-t2-schedules)
 - Shrinkage and LCM write-downs run through COGS (`8518`)
 
@@ -86,21 +107,33 @@ Mechanics, further down this page:
 ## Valuation Methods
 
 Cost-flow assumptions permitted by CRA (pick one, apply consistently):
-- *Weighted-average cost* (the focus of this page): each unit's cost is the running pooled average; analogous to the *Adjusted Cost Base* (ACB) pooling used for securities elsewhere in this guide, applied to inventory units instead of share lots
+- *Weighted-average cost* (the focus of this page): each unit's cost is the running pooled average
+  - Analogous to the *Adjusted Cost Base* (ACB) pooling used for securities elsewhere in this guide
+  - Applied to inventory units instead of share lots
 - *First-in, first-out* (FIFO): earliest-purchased units are deemed sold first; later purchases stay in inventory
-- *Specific identification*: each unit is tagged with its actual cost; the only realistic method when units are individually serialized and high-value (vehicles, jewellery, custom machinery)
-- *Standard cost* (not covered here): a predetermined cost per unit, with variances reconciled separately; usable for manufacturing CCPCs but adds variance-account complexity
+- *Specific identification*: each unit is tagged with its actual cost
+  - The only realistic method when units are individually serialized and high-value (vehicles, jewellery, custom machinery)
+- *Standard cost* (not covered here): a predetermined cost per unit, with variances reconciled separately
+  - Usable for manufacturing CCPCs but adds variance-account complexity
 
 The lower of cost or fair market value (LCM) rule:
-- Each year-end, every inventory item is valued at the lower of its cost (per the chosen method above) and its *fair market value* at year-end (ITA [s.10(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-10.html))
-- "Fair market value" for inventory is a case-law / net-realizable-value concept (see archived IT-473R); for a typical resale CCPC it is the net realizable value: what the corp could sell the item for, less selling costs
-- If FMV is below cost, the difference is a *write-down*, deductible in the current year (s.10(1)); if FMV later recovers, the next year-end's re-applied s.10(1) valuation restores the value, to at most original cost (s.10(2) only carries the prior closing value forward as the opening value)
-- LCM is applied item by item, not at the inventory level in aggregate; a write-down on slow-moving SKU A cannot be offset by appreciation on fast-moving SKU B
+- Each year-end, every inventory item is valued at the lower of its cost (per the chosen method above) and its FMV
+  - The year-end *fair market value*, per ITA [s.10(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-10.html)
+- "Fair market value" for inventory is a case-law / net-realizable-value concept (see archived IT-473R)
+  - For a typical resale CCPC it is what the corp could sell the item for, less selling costs
+- If FMV is below cost, the difference is a *write-down*, deductible in the current year (s.10(1))
+  - If FMV later recovers, the next year-end's re-applied s.10(1) valuation restores the value, to at most original cost
+  - s.10(2) only carries the prior closing value forward as the opening value
+- LCM is applied item by item, not at the inventory level in aggregate
+  - A write-down on slow-moving SKU A cannot be offset by appreciation on fast-moving SKU B
 
 Method consistency:
-- The chosen method must be applied year over year (ITA [s.10(2.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-10.html)); s.10(2) separately carries the prior year-end's closing value forward as the opening value
-- A change of method requires the Minister's concurrence under the same s.10(2.1); in practice this means filing a written request with supporting reasons; do not silently switch methods
-- Valuing all inventory at FMV instead of LCM is permitted under Regulation 1801, but it is not the right tool for a typical resale CCPC
+- The chosen method must be applied year over year (ITA [s.10(2.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-10.html))
+  - s.10(2) separately carries the prior year-end's closing value forward as the opening value
+- A change of method requires the Minister's concurrence under the same s.10(2.1)
+  - In practice this means filing a written request with supporting reasons; do not silently switch methods
+- Valuing all inventory at FMV instead of LCM is permitted under Regulation 1801
+  - It is not the right tool for a typical resale CCPC
 
 
 ## What Goes into Cost
@@ -117,22 +150,30 @@ The same capitalize-vs-expense rules apply across all three cost-recovery channe
 
 What does *not* get capitalized into inventory cost:
 - Recoverable HST claimed as an *input tax credit* (ITC), booked to `HST receivable`, not to inventory
-- Storage costs after the inventory reaches the corp's premises; treat as operating expense (GIFI 8810 `Office expenses` or a dedicated `Warehousing` line)
+- Storage costs after the inventory reaches the corp's premises
+  - Treat as operating expense (GIFI 8810 `Office expenses` or a dedicated `Warehousing` line)
 - Sales commission, marketing, packaging-for-shipping-to-customer; these are selling expenses, not inventory cost
-- Administrative overhead (rent for the office, accounting fees, management salary); these are operating expenses regardless of how much of the activity touches inventory
-- Interest on financing used to buy inventory; deductible as `Interest and bank charges` (GIFI 8710), not in inventory cost
-- Abnormal waste, breakage in transit covered by insurance proceeds, or shrinkage; these adjust COGS or appear as a separate loss line, not inventory cost
+- Administrative overhead (rent for the office, accounting fees, management salary)
+  - These are operating expenses regardless of how much of the activity touches inventory
+- Interest on financing used to buy inventory
+  - Deductible as `Interest and bank charges` (GIFI 8710), not in inventory cost
+- Abnormal waste, breakage in transit covered by insurance proceeds, or shrinkage
+  - These adjust COGS or appear as a separate loss line, not inventory cost
 
-For a *manufacturing* CCPC, conversion costs (direct labour, factory overhead) would also enter inventory cost under accounting standards.  
-ITA s.10 defers to the cost figure produced by a properly applied accounting standard, and CRA generally accepts ASPE Section 3031 / IFRS IAS 2.  
+For a *manufacturing* CCPC, conversion costs (direct labour, factory overhead) would also enter inventory cost.  
+ITA s.10 defers to the cost figure produced by a properly applied accounting standard.  
+CRA generally accepts ASPE Section 3031 / IFRS IAS 2.  
 Manufacturing cost build-up is out of scope here; the worked examples below assume buy-and-resell or buy-for-own-use.
 
 
 ## Imported Goods and FX
 
-For inventory bought in a foreign currency, follow the same trade-date FX convention used elsewhere in this guide for ACB purchases (see [Adjusted Cost Base](../../Investments/Adjusted-Cost-Base/Adjusted-Cost-Base.md)):
-- Convert the invoice amount to CAD using the FX rate on the *purchase date* (the date of the supplier invoice, which generally matches the bill-of-lading date for goods crossing the border)
-- Bank of Canada daily rates are the conventional source; some bookkeepers use the corp's bank's actual settlement rate, which is acceptable if applied consistently
+For inventory bought in a foreign currency, follow the same trade-date FX convention used for ACB purchases.  
+The convention is in [Adjusted Cost Base](../../Investments/Adjusted-Cost-Base/Adjusted-Cost-Base.md):
+- Convert the invoice amount to CAD using the FX rate on the *purchase date*
+  - The date of the supplier invoice, which generally matches the bill-of-lading date for goods crossing the border
+- Bank of Canada daily rates are the conventional source
+  - Some bookkeepers use the corp's bank's actual settlement rate, which is acceptable if applied consistently
 
 Landed-cost components, each converted at its own transaction-date FX rate:
 - Foreign-currency purchase invoice: trade-date rate
@@ -142,12 +183,16 @@ Landed-cost components, each converted at its own transaction-date FX rate:
 - Non-recoverable HST or PST in CAD: at face value
 
 FX gain or loss on payable settlement:
-- Booked at the *settlement date* (the date the CAD payment goes out, or the date the foreign-currency payable is funded from a foreign-currency bank account at the spot rate)
-- The realized FX gain or loss is its own P&L line (`Realized FX gain/loss` under operating expenses or other revenue, depending on sign), not an adjustment to inventory cost
-- Reason: the landed cost is fixed at the trade-date rate; subsequent FX movements are a financing outcome, not part of the inventory's acquisition cost
+- Booked at the *settlement date*
+  - The date the CAD payment goes out, or the date the payable is funded from a foreign-currency account at spot
+- The realized FX gain or loss is its own P&L line, not an adjustment to inventory cost
+  - `Realized FX gain/loss` under operating expenses or other revenue, depending on sign
+- Reason: the landed cost is fixed at the trade-date rate
+  - Subsequent FX movements are a financing outcome, not part of the inventory's acquisition cost
 
 GST/HST on imports:
-- Self-assessed and paid to Canada Border Services on the *Commercial Accounting Declaration* (which replaced Form B3 when CARM became the system of record in October 2024) at the point of import
+- Self-assessed and paid to Canada Border Services on the *Commercial Accounting Declaration* at the point of import
+  - The declaration replaced Form B3 when CARM became the system of record in October 2024
   - If the corp is HST-registered, the same amount is reclaimable as an ITC on the next GST/HST return
   - If not, it is a permanent cost addition to inventory
 - See [HST](../HST.md) for the full mechanics
@@ -155,15 +200,21 @@ GST/HST on imports:
 
 ## Tracking Through the Year
 
-Assume a *perpetual* inventory system: the inventory ledger is updated at each purchase and each sale, and the running balance is always current.  
-A *periodic* system (no per-transaction update, COGS plugged at year-end from a physical count) works but obscures shrinkage and complicates LCM testing.  
-Modern e-commerce platforms (Shopify, WooCommerce) produce perpetual inventory by default; spreadsheet tracking can do either.
+Assume a *perpetual* inventory system: the ledger is updated at each purchase and each sale.  
+The running balance is always current.  
+A *periodic* system (no per-transaction update, COGS plugged at year-end from a physical count) works.  
+But it obscures shrinkage and complicates LCM testing.  
+Modern e-commerce platforms (Shopify, WooCommerce) produce perpetual inventory by default.  
+Spreadsheet tracking can do either.
 
 Running weighted-average computation:
 - Maintain one running line per SKU (or per pool, if SKUs are interchangeable)
-- On purchase: new total cost = old total cost + landed cost of new purchase; new total units = old units + new units; new average cost = new total cost / new total units
-- On sale: the COGS for the sale = units sold × current average cost; the average cost itself does not change on a sale, only the unit count and total-cost balance
-- On purchase return: reverse the purchase entry at its original landed cost (not at the current average); recompute the average
+- On purchase: new total cost = old total cost + landed cost of new purchase
+  - New total units = old units + new units; new average cost = new total cost / new total units
+- On sale: the COGS for the sale = units sold × current average cost
+  - The average cost itself does not change on a sale, only the unit count and total-cost balance
+- On purchase return: reverse the purchase entry at its original landed cost (not at the current average)
+  - Recompute the average
 - On sales return: reverse the sale entry; the returned units re-enter the pool at the current average cost
 
 GIFI codes (verified from CRA T2 SCH 125 and RC4088):
@@ -254,43 +305,57 @@ Step 1, physical count:
 - Stop sales and receiving briefly, or hold a *cycle count* across the last week of the year if continuous operations
 - Tag each location (warehouse, retail floor, in-transit not yet received); count every SKU
 - Reconcile in-transit goods using the *FOB terms*:
-  - FOB shipping point: title transferred at the supplier's dock, so the corp owns the goods in transit and they belong in closing inventory
+  - FOB shipping point: title transferred at the supplier's dock
+    - The corp owns the goods in transit and they belong in closing inventory
   - FOB destination: title transfers on receipt, so in-transit goods do not yet belong
 
 Step 2, investigate the variance:
 - Compare physical count to perpetual book balance, by SKU
 - Small variances (sub-2%) typically reflect shrinkage from damage, theft, miscount; book a shrinkage adjustment to COGS
-- Large variances reflect a systemic error (receiving not posted, sales not posted, mis-counted bin) and need to be traced before adjustment
+- Large variances reflect a systemic error and need to be traced before adjustment
+  - Receiving not posted, sales not posted, a mis-counted bin
 
 Step 3, apply LCM to the corrected book balance:
-- For each SKU, compare its weighted-average cost per unit to its current FMV per unit (the price the corp expects to realize at sale, net of selling cost)
+- For each SKU, compare its weighted-average cost per unit to its current FMV per unit
+  - The price the corp expects to realize at sale, net of selling cost
 - If FMV < cost, book a write-down to bring the SKU to FMV
-- Document the FMV evidence (recent selling-price data, supplier quotes for replacement cost, obsolescence assessment, manager sign-off) and keep it with the year-end working papers
+- Document the FMV evidence and keep it with the year-end working papers
+  - Recent selling-price data, supplier quotes for replacement cost, obsolescence assessment, manager sign-off
 - The write-down is deductible in the current year (s.10(1))
-- If a previously written-down SKU is still on hand and its FMV climbs back, the re-applied s.10(1) valuation reverses part or all of the prior write-down, up to original cost; a SKU cannot be written *up* above original cost
+- If a previously written-down SKU is still on hand and its FMV climbs back, the write-down partly reverses
+  - The re-applied s.10(1) valuation restores value up to original cost
+  - A SKU cannot be written *up* above original cost
 
 Step 4, verify the cost-of-sales identity:
 - Opening inventory + purchases (net of returns) + freight-in + other direct costs − closing inventory = COGS
-- This identity is what Schedule 125 enforces: lines 8300 + 8320 + 8340 + 8360 + 8450 + 8457 − 8500 = 8518 (8340 and 8360 are zero for a resale-only CCPC)
+- This identity is what Schedule 125 enforces: lines 8300 + 8320 + 8340 + 8360 + 8450 + 8457 − 8500 = 8518
+  - 8340 and 8360 are zero for a resale-only CCPC
 - If the identity does not hold, the bookkeeping ledger and the schedule disagree; fix the ledger, not the schedule
 
 Step 5, post to the T2 schedules:
-- Schedule 100 closing line for each inventory GIFI code (1121, 1122, 1125, 1126 as applicable) reflects the corrected, LCM-adjusted closing balance
+- Schedule 100 closing line for each inventory GIFI code reflects the corrected, LCM-adjusted closing balance
+  - 1121, 1122, 1125, 1126 as applicable
 - Schedule 125 cost-of-sales section uses the codes shown in [Tracking through the year](#tracking-through-the-year)
 - Schedule 1 is typically clean for inventory
-  - The most common adjustment is when the corp's book inventory differs from its tax inventory because of a one-time accounting change; flag this with the accountant rather than handling silently
+  - The most common adjustment: book inventory differing from tax inventory because of a one-time accounting change
+  - Flag that with the accountant rather than handling it silently
 
 
 ## Bookkeeping and T2 Schedules
 
 Schedule 125 cost-of-sales walkthrough (line by line):
 - `8300 Opening inventory`: closing inventory from the prior year's Schedule 125, line 8500
-- `8320 Purchases/cost of materials`: total of all inventory-purchase debits to the inventory account during the year, net of purchase returns
+- `8320 Purchases/cost of materials`: total of all inventory-purchase debits during the year, net of purchase returns
 - `8340 Direct wages`: factory-floor wages for a manufacturing CCPC; zero for a buy-and-resell CCPC
-- `8360 Trades and sub-contracts`: outsourced production costs (e.g. a contract assembler making the corp's product); usually zero for resale-only operations
-- `8450 Other direct costs`: a catch-all for packaging, freight to a customer if treated as a cost rather than as a selling expense (depends on the corp's policy), and inventory shrinkage if not booked to 8518
-- `8457 Freight-in and duty`: inbound freight, brokerage, and customs duty on imports; split out from 8320 so the inbound-logistics cost is visible
-- `8500 Closing inventory`: year-end inventory balance after physical count, LCM, and write-downs; matches the corresponding Schedule 100 inventory codes
+- `8360 Trades and sub-contracts`: outsourced production costs (e.g. a contract assembler making the corp's product)
+  - Usually zero for resale-only operations
+- `8450 Other direct costs`: a catch-all
+  - Packaging, and freight to a customer if treated as a cost rather than as a selling expense (the corp's policy)
+  - Inventory shrinkage if not booked to 8518
+- `8457 Freight-in and duty`: inbound freight, brokerage, and customs duty on imports
+  - Split out from 8320 so the inbound-logistics cost is visible
+- `8500 Closing inventory`: year-end inventory balance after physical count, LCM, and write-downs
+  - Matches the corresponding Schedule 100 inventory codes
 - `8518 Cost of sales`: the COGS plug, equals 8300 + 8320 + 8340 + 8360 + 8450 + 8457 − 8500
 - `8519 Gross profit/loss`: revenue (typically GIFI 8000 `Trade sales of goods and services`) − 8518
 
@@ -300,7 +365,10 @@ Schedule 100 balance sheet:
 
 Schedule 1 reconciliation:
 - Inventory normally produces no S1 adjustments; the income statement already reflects the tax-basis cost of sales
-- Exceptions: a change in valuation method approved by CRA (the catch-up may be on S1); accounting-vs-tax LCM divergence (rare under ASPE/IFRS, both of which track ITA s.10 LCM); a write-down that the accountant booked but for which CRA disallowed the FMV evidence on audit (also rare)
+- Exceptions:
+  - A change in valuation method approved by CRA (the catch-up may be on S1)
+  - Accounting-vs-tax LCM divergence (rare under ASPE/IFRS, both of which track ITA s.10 LCM)
+  - A write-down that the accountant booked but for which CRA disallowed the FMV evidence on audit (also rare)
 
 Self-constructed-asset materials sit in CIP, not in the inventory GIFI accounts; see [Materials and CIP](Materials-And-CIP.md).
 
@@ -350,7 +418,9 @@ Dec 31, physical count finds 88 units (2 missing, presumed shrinkage):
 - Credit `Inventory - goods for sale` (GIFI 1121) = $86.66
 - Pool: 88 units, total cost $3,813.34, average still $43.33
 
-Dec 31, LCM test: a competitor has just released a similar product and the corp expects to clear the remaining stock at $35 retail; FMV per unit is roughly $30 net of selling cost; FMV < cost, write down:
+Dec 31, LCM test: a competitor has just released a similar product.  
+The corp expects to clear the remaining stock at $35 retail; FMV per unit is roughly $30 net of selling cost.  
+FMV < cost, write down:
 - Debit `Cost of sales` (GIFI 8518) = $3,813.34 − (88 × $30.00) = $1,173.34
 - Credit `Inventory - goods for sale` (GIFI 1121) = $1,173.34
 - Pool after write-down: 88 units, total cost $2,640.00, "average" $30.00
@@ -360,14 +430,18 @@ Schedule 125 year 1 cost-of-sales section:
 - `8320` Purchases: $12,800 ($4,000 + $8,800)
 - `8457` Freight-in and duty: $0 (already in landed cost in this example)
 - `8500` Closing inventory: $2,640.00
-- `8518` Cost of sales = 0 + 12,800 + 0 − 2,640.00 = $10,160.00 (matches the per-unit ledger: $2,400 + $6,500 + $86.66 + $1,173.34 = $10,160.00)
+- `8518` Cost of sales = 0 + 12,800 + 0 − 2,640.00 = $10,160.00
+  - Matches the per-unit ledger: $2,400 + $6,500 + $86.66 + $1,173.34 = $10,160.00
 
 Year 2 (2027):
 
 The 88 remaining units are cleared in Q1 at $35 each; the actual FMV recovery is mild:
 - Sales-side entries omitted
 - COGS at the written-down basis: 88 × $30.00 = $2,640
-- A reversal would be a *year-end valuation* event, not a sale-time one: units sold carry their written-down $30.00 cost into COGS regardless of what FMV does in the meantime; only units still on hand at a year-end with recovered FMV are revalued upward by the re-applied s.10(1) test, to at most the original $43.33 cost
+- A reversal would be a *year-end valuation* event, not a sale-time one
+  - Units sold carry their written-down $30.00 cost into COGS regardless of what FMV does in the meantime
+  - Only units still on hand at a year-end with recovered FMV are revalued upward
+  - The re-applied s.10(1) test restores value to at most the original $43.33 cost
 
 ### Example 2: Imported Goods with FX and Landed Cost
 
@@ -380,17 +454,22 @@ Apr 5 2027, supplier invoice received, BoC rate 1.34 CAD/USD (same day):
 - Debit `Inventory - goods for sale` (GIFI 1121) = $13,400
 - Credit `Accounts payable - USD` = US $10,000 booked at 1.34 = CAD $13,400
 
-Apr 12 2027, freight invoice CAD $850 from the Canadian customs broker (CAD-denominated; includes freight, brokerage, $200 of customs duty):
+Apr 12 2027, freight invoice CAD $850 from the Canadian customs broker:
+- The bill is CAD-denominated; it includes freight, brokerage, and $200 of customs duty
 - Debit `Inventory - goods for sale` (GIFI 1121) = $850
 - Credit `Accounts payable` = $850
-- If any of the brokerage/freight services carry recoverable HST, split it out to `HST receivable` and raise `Accounts payable` by the same amount (the $850 landed cost is unchanged); import HST on the goods is self-assessed separately, not on this broker bill
+- If any of the brokerage/freight services carry recoverable HST, split it out to `HST receivable`
+  - Raise `Accounts payable` by the same amount; the $850 landed cost is unchanged
+  - Import HST on the goods is self-assessed separately, not on this broker bill
 
 Pool: 500 units, landed cost $14,250 (= $13,400 + $850), average $28.50.
 
-May 1 2027, pay the USD invoice from a USD bank account at spot rate 1.37 CAD/USD (CAD has weakened since the invoice was booked):
+May 1 2027, pay the USD invoice from a USD bank account at spot rate 1.37 CAD/USD:
+- CAD has weakened since the invoice was booked
 - Debit `Accounts payable - USD` = $13,400 (the booked CAD amount)
 - Credit `USD bank account` = US $10,000 × 1.37 = $13,700 CAD-equivalent of USD outflow
-- Debit `Realized FX loss` (operating-expense line, GIFI 9270 `Other expenses` or a dedicated `Realized FX gain/loss` sub-account) = $300
+- Debit `Realized FX loss` = $300
+  - An operating-expense line: GIFI 9270 `Other expenses` or a dedicated `Realized FX gain/loss` sub-account
 
 The $300 FX loss is *not* added to inventory cost.  
 Landed cost was fixed at the Apr 5 trade-date rate.  
@@ -410,23 +489,43 @@ Year-end Schedule 125 if 300 units are sold during the year at $70 each:
 
 ## Edge Cases
 
-- *Consignment inventory*: goods physically present on the corp's premises but legally owned by another party (or vice versa) are *not* on the corp's books; book only inventory the corp owns under contract; a clear consignment agreement and a separate count tag are the audit evidence
-- *Related-party purchases*: inventory bought from a non-arm's-length supplier at above-FMV is capped at FMV under ITA [s.69(1)(a)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-69.html); the excess is denied (the corp paid too much, but only gets to deduct the FMV portion)
-- *Inventory appropriated for shareholder use*: a CCPC giving inventory to a shareholder (or to a related person) triggers a deemed disposition at FMV (s.69) and a *shareholder benefit* under ITA [s.15](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-15.html); this also has GST/HST self-supply implications; treat as a sale at FMV in the books and report the benefit on the shareholder's T4A (code 028, Other income), or on a T4 only when it is conferred on them as an employee (out of scope here, see [Dividends](../../Paying-Yourself/Dividends/Dividends.md) for the dividend path)
-- *Software, digital subscriptions, SaaS*: not inventory; SaaS is an operating expense; perpetually licensed software is Class 12 (application software) or Class 50 (systems software bundled with hardware); see [Capital Cost Allowance](Capital-Cost-Allowance/Capital-Cost-Allowance.md)
-- *Trade samples and demo units*: tracked separately from saleable inventory; if eventually scrapped, expense at the point of removal; if eventually sold, restore to inventory at the residual book value
-- *Inventory of a discontinued line*: an obsolescence write-down to expected liquidation value is supportable under s.10(1); document the obsolescence trigger (date the discontinuation decision was made, supplier announcement, etc.)
-- *Sales tax in non-harmonized provinces*: PST is non-recoverable and forms part of inventory cost in those provinces; HST in HST-registered provinces is recoverable and is not part of cost
-- *Service-business "inventory"*: hours of unbilled professional work are not inventory under s.10 in the same way as goods; professional WIP has its own rules under s.10(5)(a) (with s.10(4)(a) supplying the FMV meaning) and is out of scope here
+- *Consignment inventory*: goods on the corp's premises but legally owned by another party (or vice versa) are *not* on the corp's books
+  - Book only inventory the corp owns under contract
+  - A clear consignment agreement and a separate count tag are the audit evidence
+- *Related-party purchases*: inventory bought from a non-arm's-length supplier at above-FMV is capped at FMV
+  - ITA [s.69(1)(a)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-69.html); the excess is denied
+  - The corp paid too much, but only gets to deduct the FMV portion
+- *Inventory appropriated for shareholder use*: a deemed disposition at FMV (s.69), plus a *shareholder benefit*
+  - Giving inventory to a shareholder (or a related person) triggers the benefit under ITA [s.15](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-15.html)
+  - This also has GST/HST self-supply implications
+  - Treat as a sale at FMV in the books and report the benefit on the shareholder's T4A (code 028, Other income)
+    - On a T4 only when it is conferred on them as an employee
+    - Out of scope here; see [Dividends](../../Paying-Yourself/Dividends/Dividends.md) for the dividend path
+- *Software, digital subscriptions, SaaS*: not inventory; SaaS is an operating expense
+  - Perpetually licensed software is Class 12 (application software) or Class 50 (systems software bundled with hardware)
+  - See [Capital Cost Allowance](Capital-Cost-Allowance/Capital-Cost-Allowance.md)
+- *Trade samples and demo units*: tracked separately from saleable inventory
+  - If eventually scrapped, expense at the point of removal
+  - If eventually sold, restore to inventory at the residual book value
+- *Inventory of a discontinued line*: an obsolescence write-down to expected liquidation value is supportable under s.10(1)
+  - Document the obsolescence trigger (date the discontinuation decision was made, supplier announcement, etc.)
+- *Sales tax in non-harmonized provinces*: PST is non-recoverable and forms part of inventory cost in those provinces
+  - HST in HST-registered provinces is recoverable and is not part of cost
+- *Service-business "inventory"*: hours of unbilled professional work are not inventory under s.10 in the same way as goods
+  - Professional WIP has its own rules under s.10(5)(a) (with s.10(4)(a) supplying the FMV meaning); out of scope here
 
 
 ## Out of Scope
 
-- Manufacturing overhead absorption, standard-cost variances, and variable-vs-absorption costing: these require accounting-standard mechanics (ASPE Section 3031 / IFRS IAS 2) that interact with tax through s.10 acceptance
+- Manufacturing overhead absorption, standard-cost variances, and variable-vs-absorption costing
+  - These require accounting-standard mechanics (ASPE Section 3031 / IFRS IAS 2) that interact with tax through s.10 acceptance
 - Long-term construction contracts: percentage-of-completion mechanics under s.9; archived IT-92R2
-- Commodity-pool inventory valued at FMV under Regulation 1801 (e.g. grain elevators) and the mark-to-market security inventories of registered dealers (s.142.5)
-- Real-estate developer inventory of land and partially completed buildings; adjacent to but distinct from typical resale inventory
-- s.10(2.1) inventory-method change application mechanics: the form of the request, supporting reasons, CRA review timeline
+- Commodity-pool inventory valued at FMV under Regulation 1801 (e.g. grain elevators)
+  - Also the mark-to-market security inventories of registered dealers (s.142.5)
+- Real-estate developer inventory of land and partially completed buildings
+  - Adjacent to but distinct from typical resale inventory
+- s.10(2.1) inventory-method change application mechanics
+  - The form of the request, supporting reasons, CRA review timeline
 - The art-business and farm-business special inventory rules (s.10(6), Reg 1802)
 
 
@@ -451,10 +550,12 @@ Year-end Schedule 125 if 300 units are sold during the year at $70 each:
   - [s.10(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-10.html) - inventory valuation at the lower of cost or fair market value
   - [s.10(1.01)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-10.html) - inventory of an adventure or concern in the nature of trade valued at cost (no FMV write-down)
   - [s.10(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-10.html) - continuity rule: opening inventory valued at the prior year-end's closing amount
-  - [s.10(2.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-10.html) - same-method consistency requirement; Minister's concurrence required to change the inventory valuation method
+  - [s.10(2.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-10.html) - same-method consistency requirement
+    - Minister's concurrence required to change the inventory valuation method
   - [s.15](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-15.html) - shareholder benefits triggered by inventory appropriation
   - [s.18(1)(a)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-18.html) - general deductibility test (expense for the purpose of gaining income)
-  - [s.45](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-45.html) - change-of-use deemed dispositions (income↔personal use); on CRA's position (IT-102R2) not engaged by an inventory↔capital conversion
+  - [s.45](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-45.html) - change-of-use deemed dispositions (income↔personal use)
+    - On CRA's position (IT-102R2) not engaged by an inventory↔capital conversion
   - [s.69(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-69.html) - non-arm's-length transactions deemed at FMV
   - [s.248(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-248.html) - definition of "inventory"
 - Income Tax Regulations (C.R.C., c. 945): https://laws-lois.justice.gc.ca/eng/regulations/C.R.C.,_c._945/
@@ -472,7 +573,9 @@ Year-end Schedule 125 if 300 units are sold during the year at $70 each:
 
 ## TODO
 
-- Companion tracking-spreadsheet artifact (parallel to [Adjusted Cost Base Tracking](../../Investments/Adjusted-Cost-Base/Adjusted-Cost-Base-Tracking.md)): a worked perpetual weighted-average ledger with running-cost and COGS formulas, plus a year-end LCM column
-- Manufacturing WIP treatment: a section walking conversion-cost build-up under ASPE 3031 / IFRS IAS 2 and the M&P Class 43 CCA tie-in (Class 53 before 2026)
+- Companion tracking-spreadsheet artifact (parallel to [Adjusted Cost Base Tracking](../../Investments/Adjusted-Cost-Base/Adjusted-Cost-Base-Tracking.md))
+  - A worked perpetual weighted-average ledger with running-cost and COGS formulas, plus a year-end LCM column
+- Manufacturing WIP treatment: a section walking conversion-cost build-up under ASPE 3031 / IFRS IAS 2
+  - Include the M&P Class 43 CCA tie-in (Class 53 before 2026)
 - s.10(2.1) method-change procedure: format of the written request, supporting evidence, CRA processing timeline
 - Cross-reference with [Foreign Currency](../../Bookkeeping/Foreign-Currency/Foreign-Currency.md) once that page is past the stub phase

@@ -17,21 +17,16 @@ Limitations:
 - The following is my understanding as of 2026
 
 
-## What This Covers
-
-Once a corporation is running, most of the tax work is recurring: bill customers, collect and remit sales tax, recognize revenue at the right time, and recover the cost of what the corporation buys. This group collects those operating events.
-
-- [HST](HST.md) covers registration, the Quick Method, input tax credits, and filing the GST/HST return.
-- [Receivables and Bad Debts](Receivables-And-Bad-Debts.md) and [Deferred Revenue](Deferred-Revenue.md) handle revenue recognition — when income is earned versus billed versus received, and the adjustments when a receivable goes bad or a deposit is taken up front.
-- [Cost Recovery](Cost-Recovery/Cost-Recovery.md) is the largest sub-area: every purchase becomes a deduction through one of three channels — inventory and cost of goods sold, materials and construction in progress, or capital cost allowance — and the hub sorts a purchase into the right one.
-- [Debt and Financing](Debt-And-Financing.md), [Donations](Donations.md), and [Rental and Property Income](Rental-And-Property-Income.md) cover interest deductibility, corporate charitable giving, and property income earned inside the corporation.
-
-
 ## Sub-Pages
+
+Once a corporation is running, most of the tax work is recurring.  
+Bill customers, collect and remit sales tax, recognize revenue at the right time, and recover the cost of purchases.  
+This group collects those operating events.  
 
 This page is a hub; these are the sub-pages:
 - [HST](HST.md): registration, the Quick Method, input tax credits, and filing
 - [Receivables and Bad Debts](Receivables-And-Bad-Debts.md): revenue recognition and the bad-debt adjustment
+  - When income is earned vs billed vs received, and the adjustments when a receivable goes bad
 - [Deferred Revenue](Deferred-Revenue.md): the tax point on deposits and prepayments
 - [Cost Recovery](Cost-Recovery/Cost-Recovery.md): the three channels that turn a purchase into a deduction
   - [Inventory and cost of goods sold](Cost-Recovery/Inventory-And-COGS.md)
