@@ -2,14 +2,21 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
 
 # Ledger and Accounts
 
-**Who this is for**: owners of a Canadian-controlled private corporation (CCPC) who keep the corporation's double-entry books themselves.  
+**Who this is for**:
+- Owners of a Canadian-controlled private corporation (CCPC) who keep the corporation's double-entry books themselves
 
-Every figure on the T2 traces back to the corporation's *books*: the running double-entry record of every transaction in the year.  
-This page is the mechanics — how an entry is written, why debits equal credits, how the ledger rolls into a trial balance, and how the chart of accounts maps to the GIFI schedules.  
-For *which* line a given cost belongs on (the GIFI code, and whether it is an expense or a capital asset) see [Expense Classification](Expense-Classification.md).  
+Every figure on the T2 traces back to the corporation's *books*.  
+The books are the running double-entry record of every transaction in the year.  
+This page is the mechanics:
+- How an entry is written, and why debits equal credits
+- How the ledger rolls into a trial balance
+- How the chart of accounts maps to the GIFI schedules
+
+For *which* line a cost belongs on, and whether it is an expense or a capital asset, see [Expense Classification](Expense-Classification.md).  
 
 Limitations:
-- Double-entry and the chart of accounts are bookkeeping conventions, not statutory rules, except where a section is cited (the duty to keep books at all is ITA s.230)
+- Double-entry and the chart of accounts are bookkeeping conventions, not statutory rules, except where cited
+  - The duty to keep books at all is ITA s.230
 - Covers an owner-managed service or consulting CCPC kept on accrual + tax basis; other arrangements are out of scope
 - GIFI codes can change; verify a code against the current RC4088 before filing
 - The following is my understanding as of 2026
@@ -21,7 +28,7 @@ The whole system rests on one identity:
 
 `Assets = Liabilities + Equity`
 
-Everything the corporation owns (assets) is financed either by what it owes (liabilities) or by the owners' stake (equity).  
+Everything the corporation owns (assets) is financed by what it owes (liabilities) or by the owners' stake (equity).  
 The identity holds after *every* transaction, because each transaction is recorded in two places that keep it balanced.  
 
 Equity itself moves with the year's results:
@@ -29,7 +36,8 @@ Equity itself moves with the year's results:
 `Equity = share capital + retained earnings`  
 `Retained earnings = opening + revenue − expenses − dividends`
 
-So revenue, expenses, and dividends are sub-balances of equity that the books track separately during the year, then fold into retained earnings at year-end (the *close*).  
+Revenue, expenses, and dividends are sub-balances of equity that the books track separately during the year.  
+At year-end they fold into retained earnings (the *close*).  
 
 A transaction travels the same path every time on its way to the T2:
 
@@ -53,12 +61,16 @@ The type fixes which financial statement the account lands on and which side inc
 - *Revenue*: amounts earned (sales, investment income); income statement, Schedule 125
 - *Expense*: amounts consumed in earning revenue (rent, software, salaries); income statement, Schedule 125
 
-Cost of sales is a sixth label in everyday use, but it is a kind of expense reported in its own income-statement block (`8300`–`8519`); a pure service consultant usually has none.  
+Cost of sales is a sixth label in everyday use.  
+It is a kind of expense, reported in its own income-statement block (`8300`–`8519`).  
+A pure service consultant usually has none.  
 See [Inventory and COGS](../Operations/Cost-Recovery/Inventory-And-COGS.md).  
 
-Permanent versus temporary accounts:
+Permanent vs temporary accounts:
 - *Permanent* balance-sheet accounts (assets, liabilities, equity) carry their balance forward year to year
-- *Temporary* income-statement accounts (revenue and expenses) start each year at zero; at year-end their net (the year's net income) is closed into retained earnings, and a declared dividend is closed the same way
+- *Temporary* income-statement accounts (revenue and expenses) start each year at zero
+  - At year-end their net (the year's net income) is closed into retained earnings
+  - A declared dividend is closed the same way
 
 
 ## Debits and Credits
@@ -75,13 +87,15 @@ What a debit does depends on the account type:
 | Equity | credit | debit | credit |
 | Revenue | credit | debit | credit |
 
-The pattern mirrors the equation: assets (left of the `=`) grow with debits; liabilities and equity (right of the `=`) grow with credits.  
+The pattern mirrors the equation.  
+Assets (left of the `=`) grow with debits; liabilities and equity (right of the `=`) grow with credits.  
 Expenses are debits because they reduce equity; revenue is a credit because it builds equity.  
 
 The iron rule: on every entry, total debits = total credits.  
 There is no valid one-sided entry; if the two sides differ, the entry is wrong.  
 
-An account's running record is often drawn as a *T-account* — debits on the left, credits on the right, the balance being the net.  
+An account's running record is often drawn as a *T-account*.  
+Debits go on the left, credits on the right; the balance is the net.  
 Paying $500 of office rent in cash touches two of them:
 
 ```
@@ -98,19 +112,22 @@ One debit, one credit, equal sides.
 A *journal entry* records one transaction in the order it happened.  
 This guide writes entries as a dated description followed by the debit and credit lines:
 
-Apr 30 — pay April office rent by cheque:
+Apr 30, pay April office rent by cheque:
 - Debit `Rent` (GIFI 8910) = $500
 - Credit `Cash` = $500
 
-*Posting* copies each line to its account in the *general ledger* — the same entries reorganized by account, so every account shows its running balance.  
+*Posting* copies each line to its account in the *general ledger*.  
+The ledger is the same entries reorganized by account, so every account shows its running balance.  
 The journal is chronological; the ledger is by account; they hold the same data two ways.  
 
 A *trial balance* lists every ledger account with its balance in a debit or credit column, and totals the two columns.  
 Because every entry had equal debits and credits, the two totals must be equal.  
-A trial balance that does not balance signals a posting error, so it is the proof step before anything rolls up to a financial statement.  
+A trial balance that does not balance signals a posting error.  
+The two-column tie is the proof step before anything rolls up to a financial statement.  
 
-At the *year-end close*, the temporary accounts (revenue, expenses, and dividends declared) are zeroed into retained earnings.  
-After the close only permanent accounts carry forward, and `Assets = Liabilities + Equity` holds on the closing balance sheet.  
+At the *year-end close*, the temporary accounts (revenue, expenses, dividends) are zeroed into retained earnings.  
+After the close only permanent accounts carry forward.  
+`Assets = Liabilities + Equity` holds on the closing balance sheet.  
 
 
 ## A Worked Set of Books
@@ -120,7 +137,7 @@ For the Quick Method's effect on the booked amounts, see [HST](../Operations/HST
 
 The year's transactions:
 
-1. Incorporate and inject share capital — the owner subscribes for common shares for $10,000 cash:
+1. Incorporate and inject share capital (the owner subscribes for common shares for $10,000 cash):
    - Debit `Cash` (GIFI 1001) = $10,000
    - Credit `Common shares` (GIFI 3500) = $10,000
 2. Buy a laptop, $2,000 + $260 HST, from the corporate account (a capital asset, not an expense):
@@ -135,7 +152,7 @@ The year's transactions:
    - Debit `Computer-related expenses` (GIFI 9150) = $1,000
    - Debit `HST receivable` = $130
    - Credit `Cash` = $1,130
-5. Collect the client invoice — $9,040 received:
+5. Collect the client invoice, $9,040 received:
    - Debit `Cash` = $9,040
    - Credit `Trade accounts receivable` (GIFI 1062) = $9,040
 6. Declare a $3,000 dividend, not yet paid:
@@ -173,20 +190,28 @@ The two columns tie at $22,040, so the books are internally consistent.
 Reading the result onto the two statements:
 - Income statement: revenue $8,000 − expenses $1,000 = net income $7,000
 - Retained earnings: $0 opening + $7,000 net income − $3,000 dividend = $4,000
-- Balance sheet: assets ($15,650 + $390 + $2,000 = $18,040) = liabilities ($1,040 + $3,000 = $4,040) + equity ($10,000 + $4,000 = $14,000)
+- Balance sheet: assets $18,040 = liabilities $4,040 + equity $14,000
+  - Assets: $15,650 + $390 + $2,000; liabilities: $1,040 + $3,000; equity: $10,000 + $4,000
 
-`HST collected` ($1,040) net of `HST receivable` ($390) leaves $650 owing to CRA — the net HST the regular-method return remits; see [HST](../Operations/HST.md).  
+`HST collected` ($1,040) net of `HST receivable` ($390) leaves $650 owing to CRA.  
+That is the net HST the regular-method return remits; see [HST](../Operations/HST.md).  
 
 
 ## Chart of Accounts
 
-A *chart of accounts* is the corporation's own list of named accounts; the names and structure are your choice, but each account must map to a GIFI code for Schedules 100 and 125.  
-The tables below are a superset of the accounts used across this guide plus the ones a typical owner-managed service or consulting CCPC commonly needs.  
-Titles are from CRA RC4088; the balance sheet (Schedule 100) runs `1000`–`3849`, the income statement (Schedule 125) runs `8000`–`9999`.  
+A *chart of accounts* is the corporation's own list of named accounts.  
+The names and structure are your choice, but each account must map to a GIFI code for Schedules 100 and 125.  
+The tables below hold the accounts used across this guide plus the ones a typical service or consulting CCPC needs.  
+Titles are from CRA RC4088.  
+The balance sheet (Schedule 100) runs `1000`–`3849`; the income statement (Schedule 125) runs `8000`–`9999`.  
 Use the most specific line that fits and keep it stable year to year.  
 
-Internal sub-codes: the guide sometimes splits one GIFI line into per-currency or per-purpose tracking accounts, written `NNNN-N` — for example `8231-1` and `8231-2` for the CAD and USD sides of foreign-exchange gains, or `1062-1` / `1062-2` for CAD and USD trade receivables.  
-These are bookkeeping sub-accounts only: they roll up to the official parent line (`8231`, `1062`) for filing and are never themselves GIFI codes.  
+The guide sometimes splits one GIFI line into per-currency or per-purpose *internal sub-codes*, written `NNNN-N`:
+- `8231-1` and `8231-2` for the CAD and USD sides of foreign-exchange gains
+- `1062-1` / `1062-2` for CAD and USD trade receivables
+
+These are bookkeeping sub-accounts only, never themselves GIFI codes.  
+They roll up to the official parent line (`8231`, `1062`) for filing.  
 See [Foreign Currency](Foreign-Currency/Foreign-Currency.md).  
 
 Assets (Schedule 100):
@@ -197,20 +222,27 @@ Assets (Schedule 100):
 | Deposits in Canadian banks and institutions – Canadian currency | `1002` | a separate CAD savings or second account |
 | Deposits in Canadian banks and institutions – foreign currency | `1003` | a USD account held at a Canadian bank |
 | Trade accounts receivable | `1062` | amounts billed to clients, not yet collected |
-| Allowance for doubtful trade accounts receivable | `1063` | contra-asset for trade receivables unlikely to be collected |
+| Allowance for doubtful trade accounts receivable | `1063` | contra-asset for receivables unlikely to be collected |
 | Inventories | `1120` | rollup; `1121` goods for sale, `1122` parts and supplies, `1125` work in progress, `1126` raw materials |
 | Due from shareholder(s)/director(s) | `1300` | shareholder-loan account when the owner owes the corporation |
-| Other current assets | `1480` | `1483` taxes recoverable/refundable, `1484` prepaid expenses, `1482` accrued investment income |
+| Other current assets | `1480` | `1483` taxes recoverable, `1484` prepaid expenses, `1482` accrued investment income |
 | Machinery, equipment, furniture, and fixtures | `1740` | capitalized equipment; accumulated amortization `1741` |
 | Motor vehicles | `1742` | accumulated amortization `1743` |
 | Computer equipment/software | `1774` | capitalized hardware and systems software; accumulated amortization `1775` |
 | Intangible assets | `2010` | `2012` goodwill, `2018` incorporation costs |
 | Long-term investments | `2300` | `2303` Canadian shares (a corporate brokerage account) |
 
-Cash-line convention used on this page: `1001` Cash is the main operating chequing account; `1002` / `1003` hold any separate savings, second, or foreign-currency account (a corporate brokerage cash balance sits in a `1002` sub-account — see [Foreign Currency](Foreign-Currency/Foreign-Currency.md), which books its own CAD operating account to `1002-1`).  
-A chequing balance is equally codeable to `1002`, since it is a deposit in a Canadian bank; either mapping is fine, provided it is applied consistently and each account keeps the same code year to year.  
+Cash-line convention used on this page:
+- `1001` Cash is the main operating chequing account
+- `1002` / `1003` hold any separate savings, second, or foreign-currency account
+  - A corporate brokerage cash balance sits in a `1002` sub-account
+  - [Foreign Currency](Foreign-Currency/Foreign-Currency.md) books its own CAD operating account to `1002-1`
 
-The HST control accounts — `HST receivable` (input tax credits) and `HST collected` — have no dedicated GIFI line; at year-end they net to `1483` Taxes recoverable/refundable, or to `2680` Taxes payable if a net amount is owed.  
+A chequing balance is equally codeable to `1002`, since it is a deposit in a Canadian bank.  
+Either mapping is fine, provided it is applied consistently and each account keeps the same code year to year.  
+
+The HST control accounts (`HST receivable` for input tax credits, `HST collected`) have no dedicated GIFI line.  
+At year-end they net to `1483` Taxes recoverable/refundable, or to `2680` Taxes payable if a net amount is owed.  
 See [HST](../Operations/HST.md).  
 
 Liabilities (Schedule 100):
@@ -267,7 +299,10 @@ Cost of sales (Schedule 125):
 | Cost of sales | `8518` | the COGS total (a year-end plug; see [Plugs](#plugs-and-plug-accounts)) |
 | Gross profit/loss | `8519` | revenue − cost of sales |
 
-Operating expenses (Schedule 125) — the lines a service or consulting CCPC reaches for; the full reference and the capitalize-vs-expense decision are in [Expense Classification](Expense-Classification.md):
+The lines below are the ones a service or consulting CCPC reaches for.  
+The full reference and the capitalize-vs-expense decision are in [Expense Classification](Expense-Classification.md).  
+
+Operating expenses (Schedule 125):
 
 | Account | GIFI | Notes |
 |---|---|---|
@@ -295,23 +330,37 @@ Operating expenses (Schedule 125) — the lines a service or consulting CCPC rea
 | Vehicle expenses | `9281` | fuel, insurance, repairs of a business vehicle |
 | Withholding taxes | `9283` | foreign withholding tax on investment income |
 
-The income statement then totals to `9367` Total operating expenses, `9368` Total expenses, and `9999` Net income/loss after taxes and extraordinary items; these are computed lines, not accounts you post to, and the balance sheet's `3680` Net income/loss must equal `9999`.  
+The income statement then totals to `9367` Total operating expenses and `9368` Total expenses.  
+The bottom line is `9999` Net income/loss after taxes and extraordinary items.  
+These are computed lines, not accounts you post to.  
+The balance sheet's `3680` Net income/loss must equal `9999`.  
 
 
 ## Plugs and Plug Accounts
 
-A *plug* is a figure you derive as the residual needed to make something balance, rather than recording it directly from a source document.  
+A *plug* is a figure you derive as the residual needed to make something balance.  
+It is not recorded directly from a source document.  
 A *plug account* is an account set up to absorb such a residual.  
 
 Plugs are legitimate and common, as long as the residual is small and you know what it represents:
-- *Cost of sales under a periodic system*: with no per-sale inventory update, COGS is plugged at year-end as opening inventory + purchases − closing inventory (from the count); `8518 Cost of sales` is that plug; see [Inventory and COGS](../Operations/Cost-Recovery/Inventory-And-COGS.md)
-- *Whole-dollar rounding residual*: rounding each line to the dollar can throw a subtotal off by a dollar or two, so one designated line (retained earnings `3849` on the balance sheet, net income on the income statement) absorbs the residual; see [Whole-dollar rounding](../Filing-And-CRA/Whole-Dollar-Rounding.md)
-- *Foreign-exchange bridge*: a realized FX gain or loss is the residual between an amount at the transaction-date rate and the settlement-date rate; it lands in `8231 Foreign exchange gains/losses` (the per-currency `8231-1` / `8231-2` bridges); see [Foreign Currency](Foreign-Currency/Foreign-Currency.md)
-- *Suspense / clearing account*: a temporary holding account for an entry you cannot yet classify (an unidentified deposit, a pending distribution), cleared to its real account once known
-- *Opening-balance equity*: when first setting up books, the offsetting entry that makes opening assets and liabilities balance lands in an equity plug, then is reclassified to share capital and retained earnings
+- *Cost of sales under a periodic system*: with no per-sale inventory update, COGS is plugged at year-end
+  - Opening inventory + purchases − closing inventory (from the count); `8518` Cost of sales is that plug
+  - See [Inventory and COGS](../Operations/Cost-Recovery/Inventory-And-COGS.md)
+- *Whole-dollar rounding residual*: rounding each line to the dollar can throw a subtotal off by a dollar or two
+  - One designated line absorbs it (retained earnings `3849` on the balance sheet, net income on the income statement)
+  - See [Whole-dollar rounding](../Filing-And-CRA/Whole-Dollar-Rounding.md)
+- *Foreign-exchange bridge*: a realized FX gain or loss is the residual between two translations of one amount
+  - The transaction-date rate vs the settlement-date rate
+  - It lands in `8231` Foreign exchange gains/losses (the per-currency `8231-1` / `8231-2` bridges)
+  - See [Foreign Currency](Foreign-Currency/Foreign-Currency.md)
+- *Suspense / clearing account*: a temporary holding account for an entry you cannot yet classify
+  - An unidentified deposit, a pending distribution; cleared to its real account once known
+- *Opening-balance equity*: when first setting up books, the entry that makes opening assets and liabilities balance
+  - It lands in an equity plug, then is reclassified to share capital and retained earnings
 
 The discipline: a plug should be small and explained.  
-A large or growing plug — a suspense account that never clears, a rounding line carrying real dollars — is a symptom of a posting error or a missing entry, not something to bury.  
+A large or growing plug is a symptom of a posting error or a missing entry, not something to bury.  
+Typical cases: a suspense account that never clears, a rounding line carrying real dollars.  
 Investigate it before it reaches the trial balance.  
 
 
@@ -319,7 +368,8 @@ Investigate it before it reaches the trial balance.
 
 Writing the entry and choosing the account are two steps.  
 This page covers the first: making a balanced entry that posts to the ledger.  
-The second — which GIFI line a cost belongs on, and whether it is an operating expense or a capital asset — is [Expense Classification](Expense-Classification.md).  
+The second is [Expense Classification](Expense-Classification.md).  
+That page decides which GIFI line a cost belongs on, and whether it is an operating expense or a capital asset.  
 Decide the accounts there, then record the debits and credits here.  
 
 

@@ -12,11 +12,14 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
 - Capitalize with nominal share capital plus a shareholder loan: the loan repays tax-free later
 - Incorporation costs up to $3,000 are deductible immediately; the excess is Class 14.1
 - Assets the owner brings in transfer at fair market value; an appreciated asset can roll in under s.85 instead
-- No instalments in year one; the other clocks (HST registration, payroll, slips) start from events, not from incorporation
+- No instalments in year one; the other clocks (HST, payroll, slips) start from events, not from incorporation
 
 Limitations:
-- Incorporation mechanics (name search, articles, federal vs provincial, the minute book) are in [Corporate Structure](Corporate-Structure/Corporate-Structure.md); this page starts where the corporation exists
-- Full s.85 rollover mechanics (elected amounts, boot, share consideration) are out of scope; see [Preferred-share consideration](Business-Acquisition/Preferred-Share-Consideration.md) for the machinery and get professional advice for an incorporation rollover
+- Incorporation mechanics (name search, articles, federal vs provincial, the minute book) are in [Corporate Structure](Corporate-Structure/Corporate-Structure.md)
+  - This page starts where the corporation exists
+- Full s.85 rollover mechanics (elected amounts, boot, share consideration) are out of scope
+  - See [Preferred-share consideration](Business-Acquisition/Preferred-Share-Consideration.md) for the machinery
+  - Get professional advice for an incorporation rollover
 - The scenario is a new service or consulting CCPC; buying an existing business is [Business Acquisition](Business-Acquisition/Business-Acquisition.md)
 - Quebec (Revenu Québec runs its own corporate accounts) is out of scope
 - The following is my understanding as of 2026
@@ -44,11 +47,13 @@ Every year from then on needs a T2 and a corporate-registry annual return, nil o
 
 ## Business Number and Program Accounts
 
-Incorporating federally (or in most provinces) feeds the corporate registry data to CRA, which issues the nine-digit *business number* and the corporate-tax account automatically.  
+Incorporating federally (or in most provinces) feeds the corporate registry data to CRA.  
+CRA then issues the nine-digit *business number* and the corporate-tax account automatically.  
 
 The program accounts, and when each is needed (see [Types of accounts](../Overview/Small-Business-Tax.md#types-of-accounts)):
 - `RC` (corporate income tax): created with the BN; nothing to register
-- `RT` (GST/HST): register at the $30,000 small-supplier threshold, or voluntarily from day one — often worthwhile for the ITCs on startup costs (see [HST — Registration](../Operations/HST.md#registration))
+- `RT` (GST/HST): register at the $30,000 small-supplier threshold, or voluntarily from day one
+  - Voluntary is often worthwhile for the ITCs on startup costs (see [HST — Registration](../Operations/HST.md#registration))
 - `RP` (payroll): register before the first salary remittance is due (see [Payroll](../Paying-Yourself/Payroll.md#rp-program-account))
 - `RZ` (information returns): register before filing the first T5 (see [Bookkeeping and information slips](../Paying-Yourself/Dividends/Bookkeeping-And-Slips.md))
 
@@ -58,12 +63,17 @@ Register for CRA My Business Account early; assessments, review letters, and mos
 ## Choosing the Fiscal Year-End
 
 The first fiscal period runs from incorporation to any date up to 53 weeks out (ITA [s.249.1](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-249.1.html)).  
-There is no election form: the year-end is set by the first T2 filed with that date, and after that it is fixed — a change needs CRA's concurrence (s.249.1(7)).  
+There is no election form: the year-end is set by the first T2 filed with that date.  
+After that it is fixed; a change needs CRA's concurrence (s.249.1(7)).  
 
 Considerations, none decisive:
-- *December 31*: aligns with the calendar-year T4/T5 slips, the personal T1, and brokerage reporting; the simplest to keep books for
-- *An off-calendar date* (e.g. July 31): shifts the T2 season away from the personal-tax crunch, and widens the salary-deferral window (a bonus accrued at a July year-end can be paid up to 180 days later, landing in the owner's next calendar year; see [Payroll — Owner-manager remuneration](../Paying-Yourself/Payroll.md#owner-manager-remuneration))
-- An investment-holding corporation leans December 31: the T3/T5 slips it receives are calendar-year, so any other date forces year-end accruals to split slip income across fiscal years
+- *December 31*: aligns with the calendar-year T4/T5 slips, the personal T1, and brokerage reporting
+  - The simplest to keep books for
+- *An off-calendar date* (e.g. July 31): shifts the T2 season away from the personal-tax crunch
+  - It also widens the salary-deferral window (see [Payroll — Owner-manager remuneration](../Paying-Yourself/Payroll.md#owner-manager-remuneration))
+  - A bonus accrued at a July year-end can be paid up to 180 days later, landing in the owner's next calendar year
+- An investment-holding corporation leans December 31: the T3/T5 slips it receives are calendar-year
+  - Any other date forces year-end accruals to split slip income across fiscal years
 
 A deliberately short first year is fine, but it prorates by days:
 - The $500,000 SBD business limit (ITA [s.125(5)(b)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-125.html))
@@ -73,9 +83,13 @@ A deliberately short first year is fine, but it prorates by days:
 ## Funding the Corporation
 
 The standard capitalization for an owner-managed CCPC is nominal share capital plus a shareholder loan:
-- *Shares*: a token subscription (e.g. 100 common shares for $100) into `Common shares` (`3500`); this sets the *paid-up capital*, and keeping it nominal is normal (see [Share Capital — PUC](Corporate-Structure/Share-Capital.md#paid-up-capital-puc))
-- *Shareholder loan*: the working capital lent in as `Due to shareholder` (`2780`); it repays tax-free at any time, needs no interest, and its mechanics are in [Owner-corporation transactions — Shareholder loans](../Paying-Yourself/Owner-Corporation-Transactions.md#shareholder-loans)
-- The split matters at the exit, not the start: share capital comes back tax-free only up to PUC, while the loan balance comes back tax-free in full
+- *Shares*: a token subscription (e.g. 100 common shares for $100) into `Common shares` (`3500`)
+  - This sets the *paid-up capital*; keeping it nominal is normal (see [Share Capital — PUC](Corporate-Structure/Share-Capital.md#paid-up-capital-puc))
+- *Shareholder loan*: the working capital lent in as `Due to shareholder` (`2780`)
+  - It repays tax-free at any time and needs no interest
+  - Mechanics are in [Owner-corporation transactions — Shareholder loans](../Paying-Yourself/Owner-Corporation-Transactions.md#shareholder-loans)
+- The split matters at the exit, not the start
+  - Share capital comes back tax-free only up to PUC, while the loan balance comes back tax-free in full
 
 Opening entries — incorporated May 1, $100 subscription, $10,000 lent in:
 
@@ -93,18 +107,27 @@ Opening entries — incorporated May 1, $100 subscription, $10,000 lent in:
 - The split and the Schedule 8 row are worked in [CCA Examples — Example 3](../Operations/Cost-Recovery/Capital-Cost-Allowance/CCA-Examples.md#example-3-class-141-incorporation-expenses)
 
 *Costs the owner paid personally* before the corporate bank account existed:
-- Reimburse them through an expense report once the corporation is running: Dr the expense account, Cr `Due to shareholder` (`2780`)
-- The corporation deducts them as its own costs when they were incurred for the business it now carries on; keep the receipts in the corporation's records
-- Continuing the example, $1,200 of incorporation costs paid personally: Dr `Professional fees` (`8860`) $1,200, Cr `Due to shareholder` (`2780`) $1,200 (fully deductible, under the $3,000 line)
+- Reimburse them through an expense report once the corporation is running
+  - Dr the expense account, Cr `Due to shareholder` (`2780`)
+- The corporation deducts them as its own costs when they were incurred for the business it now carries on
+  - Keep the receipts in the corporation's records
+- Continuing the example, $1,200 of incorporation costs paid personally
+  - Dr `Professional fees` (`8860`) $1,200, Cr `Due to shareholder` (`2780`) $1,200
+  - Fully deductible, under the $3,000 line
 
-Deductions need a business to deduct against: expenses become deductible once the business has *commenced* (activity directed at earning income — soliciting clients, delivering work), not from some later first-revenue date.  
+Deductions need a business to deduct against.  
+Expenses become deductible once the business has *commenced*, not from some later first-revenue date.  
+Commencement means activity directed at earning income: soliciting clients, delivering work.  
 
 
 ## Bringing in Assets
 
-Equipment the owner already has (a laptop, tools, furniture) can serve the corporation two ways, both covered in [Owner-corporation transactions](../Paying-Yourself/Owner-Corporation-Transactions.md#personal-property-used-by-the-business):
-- *Owner keeps the asset* and the corporation pays a reasonable rent or usage charge — simplest for anything the owner also uses personally
-- *Owner sells it to the corporation at FMV*: the corporation gets a CCA base and the cost credits the shareholder loan; document the transfer (a dated bill of sale and an FMV note)
+Equipment the owner already has (a laptop, tools, furniture) can serve the corporation two ways.  
+Both are covered in [Owner-corporation transactions](../Paying-Yourself/Owner-Corporation-Transactions.md#personal-property-used-by-the-business):
+- *Owner keeps the asset* and the corporation pays a reasonable rent or usage charge
+  - Simplest for anything the owner also uses personally
+- *Owner sells it to the corporation at FMV*: the corporation gets a CCA base and the cost credits the shareholder loan
+  - Document the transfer (a dated bill of sale and an FMV note)
 
 Selling in at FMV, a $900 laptop:
 
@@ -116,24 +139,31 @@ Selling in at FMV, a $900 laptop:
 The Class 50 addition then enters the asset register (see [CCA Tracking](../Operations/Cost-Recovery/Capital-Cost-Allowance/CCA-Tracking.md)).  
 
 Appreciated property is the exception:
-- A sale at FMV triggers the owner's personal gain; an ITA [s.85](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-85.html) rollover defers it by electing a transfer price, taking shares back
-- The same applies to rolling in a whole sole proprietorship (goodwill, client list, equipment): s.85 is the standard route, and it is professional-advice territory
-- On the GST/HST side, the sale of all or substantially all of a business's assets can be relieved by a joint ETA [s.167](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-167.html) election
+- A sale at FMV triggers the owner's personal gain
+  - An ITA [s.85](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-85.html) rollover defers it by electing a transfer price, taking shares back
+- The same applies to rolling in a whole sole proprietorship (goodwill, client list, equipment)
+  - s.85 is the standard route, and it is professional-advice territory
+- The sale of all or substantially all of a business's assets can be relieved of GST/HST by a joint ETA [s.167](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-167.html) election
 
-Personal-tax history does not follow the asset in: the corporation's cost starts at the transfer price, and prior personal use is irrelevant to its books.  
+Personal-tax history does not follow the asset in.  
+The corporation's cost starts at the transfer price; prior personal use is irrelevant to its books.  
 
 
 ## First-Year Clocks
 
 - *T2*: due 6 months after the chosen year-end; the balance (if any) is due at 3 months
-- *Instalments*: none in the first year — they key off prior-year tax, and there is none (see [Filing deadlines and instalments](../Overview/Small-Business-Tax.md#filing-deadlines-and-instalments))
+- *Instalments*: none in the first year
+  - They key off prior-year tax, and there is none (see [Filing deadlines and instalments](../Overview/Small-Business-Tax.md#filing-deadlines-and-instalments))
 - *GST/HST*: the small-supplier clock counts taxable supplies from the first sale, not from incorporation
-  - Registration is required from the sale that crosses $30,000 within a single quarter, or after a one-month grace following the quarter in which the four-quarter total crosses (see [HST — Registration](../Operations/HST.md#registration))
+  - Registration is required from the sale that crosses $30,000 within a single quarter (see [HST — Registration](../Operations/HST.md#registration))
+  - Or after a one-month grace following the quarter in which the four-quarter total crosses
 - *Payroll*: the first remittance is due the 15th of the month after the first salary is paid (see [Payroll](../Paying-Yourself/Payroll.md))
-- *Slips*: the first T4/T5 filings are due by the last day of February after the first calendar year in which salary or dividends were paid
-- *Corporate registry*: the annual-return clock starts at incorporation (federal: within 60 days of each anniversary; Ontario: within 6 months of year-end)
+- *Slips*: the first T4/T5s are due the last day of February after the first calendar year with salary or dividends paid
+- *Corporate registry*: the annual-return clock starts at incorporation
+  - Federal: within 60 days of each anniversary; Ontario: within 6 months of year-end
 
-Keeping the books current from day one is cheaper than reconstructing the first year at T2 time; set up the chart of accounts (see [Ledger and Accounts](../Bookkeeping/Ledger-And-Accounts.md)) before the first transaction.  
+Keeping the books current from day one is cheaper than reconstructing the first year at T2 time.  
+Set up the chart of accounts (see [Ledger and Accounts](../Bookkeeping/Ledger-And-Accounts.md)) before the first transaction.  
 
 
 ## Related
@@ -165,7 +195,9 @@ Keeping the books current from day one is cheaper than reconstructing the first 
 ## TODO
 
 - Verify s.125(5)(b) as the business-limit proration provision and the 51-week trigger wording
-- Verify the business-commencement standard (activity directed at earning income) against CRA's position (IT-364, archived) before sign-off
-- Verify that provincial incorporation feeds the BN automatically for Ontario (the federal path is automatic; provincial registry integration varies)
-- Add a worked first-short-year example (incorporation to Dec 31) tying together the prorated business limit, prorated CCA, and the first T2 dates
+- Verify the business-commencement standard (activity directed at earning income) against CRA's IT-364 (archived)
+- Verify that provincial incorporation feeds the BN automatically for Ontario
+  - The federal path is automatic; provincial registry integration varies
+- Add a worked first-short-year example (incorporation to Dec 31)
+  - Tie together the prorated business limit, prorated CCA, and the first T2 dates
 - Add My Business Account registration screenshots once available (move to a `Starting-Up/` folder when media lands)

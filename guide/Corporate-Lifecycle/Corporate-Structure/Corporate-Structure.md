@@ -14,7 +14,8 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
 - *Share capital* is the foundation the dividend and acquisition pages build on (see [Share Capital](Share-Capital.md))
 
 Limitations:
-- This page is orientation and reference, not legal advice; corporate law is federal or provincial and the details vary by jurisdiction
+- This page is orientation and reference, not legal advice
+  - Corporate law is federal or provincial and the details vary by jurisdiction
 - Incorporation mechanics (name search, articles filing, annual returns) are touched on, not worked through
 - CCPC status and the control tests live in [Small Business Tax Overview](../../Overview/Small-Business-Tax.md) and are not repeated here
 - The following is my understanding as of 2026
@@ -26,7 +27,8 @@ A corporation is a legal person separate from its owners.
 It can own property, owe debts, sign contracts, sue, and be sued in its own name.  
 
 Two consequences follow for an owner-manager:
-- *Limited liability*: the shareholders' financial exposure is normally limited to what they paid for their shares; the corporation's debts are its own
+- *Limited liability*: the shareholders' financial exposure is normally limited to what they paid for their shares
+  - The corporation's debts are its own
 - *Two taxpayers*: the corporation files its own T2 return and the owner files a personal T1
   - Money crossing between them is salary, a dividend, a loan, or a benefit (see [Owner-corporation transactions](../../Paying-Yourself/Owner-Corporation-Transactions.md))
 
@@ -37,37 +39,46 @@ A sole proprietor and their business are one taxpayer; a corporation and its own
 ## Three Roles: Shareholders, Directors, Officers
 
 A corporation is acted on through three roles, each with a different job:
-- *Shareholders*: own the corporation by holding its shares; they elect the directors and vote on fundamental changes, but do not run day-to-day operations
-- *Directors*: govern the corporation; they declare dividends, issue shares, and are accountable for the corporation's affairs
+- *Shareholders*: own the corporation by holding its shares
+  - They elect the directors and vote on fundamental changes, but do not run day-to-day operations
+- *Directors*: govern the corporation
+  - They declare dividends, issue shares, and are accountable for the corporation's affairs
 - *Officers*: run the corporation day to day (president, secretary, treasurer), appointed by the directors
 
 In a single-owner CCPC the same person is the sole shareholder, the sole director, and every officer.  
-The roles still matter, because the *Income Tax Act* taxes the owner differently depending on which hat they are wearing in a given transaction.  
+The roles still matter.  
+The *Income Tax Act* taxes the owner differently depending on which hat they are wearing in a given transaction.  
 
 
 ## Federal or Provincial Incorporation
 
 A corporation is created under one of two regimes:
-- *Federal*: incorporated under the Canada Business Corporations Act (CBCA); can carry on business across Canada subject to extra-provincial registration
-- *Provincial*: incorporated under a provincial statute (e.g. the Ontario Business Corporations Act); tied to that province's regime
+- *Federal*: incorporated under the Canada Business Corporations Act (CBCA)
+  - Can carry on business across Canada subject to extra-provincial registration
+- *Provincial*: incorporated under a provincial statute (e.g. the Ontario Business Corporations Act)
+  - Tied to that province's regime
 
 The choice affects filing fees, residency requirements for directors, and name protection.  
-It does not change the income-tax treatment in this guide: the T2 and the CCPC rules apply the same way to a federal and a provincial corporation.  
+It does not change the income-tax treatment in this guide.  
+The T2 and the CCPC rules apply the same way to a federal and a provincial corporation.  
 
 
 ## The Minute Book
 
 The *minute book* is the corporation's permanent legal record.  
-It holds the articles of incorporation, the by-laws, the share register, and the directors' and shareholders' resolutions.  
+It holds the articles of incorporation, the by-laws, and the share register.  
+It also holds the directors' and shareholders' resolutions.  
 
-The dividend, share-issuance, and restructuring steps elsewhere in this guide all produce a resolution that belongs in the minute book.  
-A dividend declared without a recorded resolution, or a share issuance without a register entry, is a gap CRA and a future buyer will both look for.  
+The dividend, share-issuance, and restructuring steps elsewhere in this guide all produce resolutions.  
+Each belongs in the minute book.  
+A dividend declared without a recorded resolution, or a share issuance without a register entry, is a gap.  
+CRA and a future buyer will both look for it.  
 
 
 ## Share Capital
 
 *Share capital* is how ownership of the corporation is divided and recorded.  
-Share classes, authorized versus issued shares, paid-up capital, and preferred-share features all live on their own page: [Share Capital](Share-Capital.md).  
+Share classes, authorized vs issued shares, paid-up capital, and preferred-share features live in [Share Capital](Share-Capital.md).  
 
 Those concepts are the vocabulary the [Dividends](../../Paying-Yourself/Dividends/Dividends.md) and [Business Acquisition](../Business-Acquisition/Business-Acquisition.md) pages depend on.  
 
