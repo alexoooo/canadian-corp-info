@@ -6,7 +6,8 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
 - Owners of a Canadian-controlled private corporation (CCPC)
 - Buy goods for resale (retail, e-commerce, parts-and-services), or buy materials for use in its own operations
 - Need to translate those purchases into ledger entries, a year-end valuation, and the T2 figures
-  - The cost-of-sales section of the income statement (Schedule 125), and the inventory lines of the balance sheet (Schedule 100)
+  - The cost-of-sales section of the income statement (Schedule 125)
+  - The inventory lines of the balance sheet (Schedule 100)
 
 **TLDR**:
 - *Inventory* is property held for sale, or held for use in producing property held for sale (ITA [s.248(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-248.html))
@@ -43,7 +44,8 @@ Purchased property in a CCPC follows one of a few tax treatments (inventory is t
 - *Inventory* (the focus of this page): property held for sale, or held to produce property held for sale
   - Cost flows through `Cost of sales` (COGS) when a unit sells; valued at LCM each year-end
 - *Materials to build a fixed asset for the corp's own use*: not inventory; see [Materials and CIP](Materials-And-CIP.md)
-- *Consumable supplies* (office paper, packaging, cleaning, lubricants): expensed when used; not capitalized; out of scope here
+- *Consumable supplies* (office paper, packaging, cleaning, lubricants): expensed when used
+  - Not capitalized; out of scope here
 - *Spare parts*: inventory if held for resale; expensed or capitalized into the equipment they service otherwise
   - The non-resale case is out of scope here
 
@@ -112,7 +114,8 @@ Cost-flow assumptions permitted by CRA (pick one, apply consistently):
   - Applied to inventory units instead of share lots
 - *First-in, first-out* (FIFO): earliest-purchased units are deemed sold first; later purchases stay in inventory
 - *Specific identification*: each unit is tagged with its actual cost
-  - The only realistic method when units are individually serialized and high-value (vehicles, jewellery, custom machinery)
+  - The only realistic method when units are individually serialized and high-value
+    - Vehicles, jewellery, custom machinery
 - *Standard cost* (not covered here): a predetermined cost per unit, with variances reconciled separately
   - Usable for manufacturing CCPCs but adds variance-account complexity
 
@@ -146,7 +149,8 @@ A unit's *cost* (the C in LCM) is the *landed cost* at the point the unit become
 - Insurance during transit, where directly attributable to acquisition
 - Trade-date FX conversion for foreign-currency purchases (see [Imported goods and FX](#imported-goods-and-fx) below)
 
-The same capitalize-vs-expense rules apply across all three cost-recovery channels; see [Cost Recovery — Acquisition cost](Cost-Recovery.md#acquisition-cost-what-gets-capitalized).
+The same capitalize-vs-expense rules apply across all three cost-recovery channels.  
+See [Cost Recovery — Acquisition cost](Cost-Recovery.md#acquisition-cost-what-gets-capitalized).  
 
 What does *not* get capitalized into inventory cost:
 - Recoverable HST claimed as an *input tax credit* (ITC), booked to `HST receivable`, not to inventory
@@ -489,7 +493,8 @@ Year-end Schedule 125 if 300 units are sold during the year at $70 each:
 
 ## Edge Cases
 
-- *Consignment inventory*: goods on the corp's premises but legally owned by another party (or vice versa) are *not* on the corp's books
+- *Consignment inventory*: goods on the corp's premises but legally owned by another party (or vice versa)
+  - They are *not* on the corp's books
   - Book only inventory the corp owns under contract
   - A clear consignment agreement and a separate count tag are the audit evidence
 - *Related-party purchases*: inventory bought from a non-arm's-length supplier at above-FMV is capped at FMV
@@ -502,23 +507,26 @@ Year-end Schedule 125 if 300 units are sold during the year at $70 each:
     - On a T4 only when it is conferred on them as an employee
     - Out of scope here; see [Dividends](../../Paying-Yourself/Dividends/Dividends.md) for the dividend path
 - *Software, digital subscriptions, SaaS*: not inventory; SaaS is an operating expense
-  - Perpetually licensed software is Class 12 (application software) or Class 50 (systems software bundled with hardware)
+  - Perpetually licensed software is Class 12 (application software)
+    - Or Class 50 (systems software bundled with hardware)
   - See [Capital Cost Allowance](Capital-Cost-Allowance/Capital-Cost-Allowance.md)
 - *Trade samples and demo units*: tracked separately from saleable inventory
   - If eventually scrapped, expense at the point of removal
   - If eventually sold, restore to inventory at the residual book value
-- *Inventory of a discontinued line*: an obsolescence write-down to expected liquidation value is supportable under s.10(1)
+- *Inventory of a discontinued line*: an obsolescence write-down is supportable under s.10(1)
+  - Write down to expected liquidation value
   - Document the obsolescence trigger (date the discontinuation decision was made, supplier announcement, etc.)
 - *Sales tax in non-harmonized provinces*: PST is non-recoverable and forms part of inventory cost in those provinces
   - HST in HST-registered provinces is recoverable and is not part of cost
-- *Service-business "inventory"*: hours of unbilled professional work are not inventory under s.10 in the same way as goods
+- *Service-business "inventory"*: unbilled professional hours are not inventory under s.10 in the way goods are
   - Professional WIP has its own rules under s.10(5)(a) (with s.10(4)(a) supplying the FMV meaning); out of scope here
 
 
 ## Out of Scope
 
 - Manufacturing overhead absorption, standard-cost variances, and variable-vs-absorption costing
-  - These require accounting-standard mechanics (ASPE Section 3031 / IFRS IAS 2) that interact with tax through s.10 acceptance
+  - These require accounting-standard mechanics (ASPE Section 3031 / IFRS IAS 2)
+    - They interact with tax through s.10 acceptance
 - Long-term construction contracts: percentage-of-completion mechanics under s.9; archived IT-92R2
 - Commodity-pool inventory valued at FMV under Regulation 1801 (e.g. grain elevators)
   - Also the mark-to-market security inventories of registered dealers (s.142.5)

@@ -106,7 +106,8 @@ This guide generally uses *amortization*, but *depreciation* can be used interch
 
 There are two distinct concepts of amortization:
 - *Accounting amortization*: the figure recorded in the corporation's own books
-  - The method and rate are an accounting choice (e.g. geometric, or straight-line over the asset's estimated useful life)
+  - The method and rate are an accounting choice
+    - E.g. geometric, or straight-line over the asset's estimated useful life
 - *Tax amortization* (CCA): the figure allowed on the T2 return
   - The method (geometric) and rate (based on class) are fixed by the Income Tax Act
 
