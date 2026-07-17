@@ -11,7 +11,8 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
 - Materials bought to build a fixed asset for the corp's own use are *not* inventory
   - They accumulate in a `Construction in progress` (CIP) general-ledger account during construction
   - CIP is a balance-sheet asset account in the corp's chart of accounts
-- CIP produces *no deduction* while construction is underway: not inventory (so no COGS), and not yet available for use (so no CCA)
+- CIP produces *no deduction* while construction is underway
+  - Not inventory (so no COGS), and not yet available for use (so no CCA)
 - On completion *and* available for use (ITA [s.13(26)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-13.html)), the accumulated CIP balance moves
   - It transfers into the appropriate CCA class and becomes the *capital cost* for that class
 - From that point on, the cost is deducted year by year through annual CCA claims
@@ -46,8 +47,12 @@ Limitations:
 ## Two Destinations for Materials
 
 Purchased materials follow one of two paths in a CCPC:
-- *Materials held for resale*, or *to be combined into a product for resale*: inventory; cost flows through COGS at sale; no amortization
-- *Materials to be combined into a fixed asset for the corp's own use*: not inventory; the accumulated cost sits in a `Construction in progress` (CIP) asset account during construction; on completion and available-for-use, the cost transfers into the appropriate CCA class and amortizes through annual CCA claims
+- *Materials held for resale*, or *to be combined into a product for resale*: inventory
+  - Cost flows through COGS at sale; no amortization
+- *Materials to be combined into a fixed asset for the corp's own use*: not inventory
+  - The accumulated cost sits in a `Construction in progress` (CIP) asset account during construction
+  - On completion and available-for-use, the cost transfers into the appropriate CCA class
+  - From there it amortizes through annual CCA claims
 
 The same lumber can take either path:
 - Lumber bought by a furniture-maker CCPC to build chairs for sale:
@@ -55,23 +60,36 @@ The same lumber can take either path:
   - Cost flows to COGS as the chairs are sold
 - Lumber bought by a service CCPC to build a shed on the corp's property for its own tool storage:
   - CIP (asset account, typically a sub-account under the relevant fixed-asset line on Schedule 100)
-  - On completion the CIP balance transfers into a CCA class (Class 6 for a frame shed with no support below ground level, otherwise Class 1)
+  - On completion the CIP balance transfers into a CCA class
+    - Class 6 for a frame shed with no support below ground level, otherwise Class 1
 
 Deduction timing by path:
 - Inventory expensed at sale: deduction matches the revenue; no spreading over time
-- Depreciable property via CCA: rate-bounded each year (10% declining for Class 6, 4% for Class 1) and discretionary; nothing is deducted until the property is *available for use* (ITA [s.13(26)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-13.html))
+- Depreciable property via CCA: rate-bounded each year and discretionary
+  - 10% declining for Class 6, 4% for Class 1
+  - Nothing is deducted until the property is *available for use* (ITA [s.13(26)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-13.html))
 
 Available-for-use rule for self-constructed assets:
-- A shed under construction sits in CIP and produces no deduction: not inventory (no COGS), not yet available for use (no CCA)
-- *Available for use* for the shed follows the building test in s.13(28), not the non-building limbs of s.13(27): the earliest of substantially all of it being first used for its intended purpose, the construction being complete, or the beginning of the second tax year after the acquisition year (the rolling-two-year rule)
+- A shed under construction sits in CIP and produces no deduction
+  - Not inventory (no COGS), not yet available for use (no CCA)
+- *Available for use* for the shed follows the building test in s.13(28), not the non-building limbs of s.13(27)
+  - The trigger is the earliest of three events
+    - Substantially all of the building is first used for its intended purpose
+    - The construction is complete
+    - The second tax year after the acquisition year begins (the rolling-two-year rule)
 - Until that point, accumulated costs sit as a non-deducting asset balance
-- See [Cost Recovery — Available for use](Cost-Recovery.md#available-for-use) for the full cross-channel framing, including the building variant under s.13(28)
+- See [Cost Recovery — Available for use](Cost-Recovery.md#available-for-use) for the cross-channel framing
+  - Including the building variant under s.13(28)
 
 Change of use, finished item from the resale shelf into own use:
 - A tool-retailer CCPC pulling a $1,200 saw from inventory into the workshop is a *change in use* event
-- On CRA's position (archived IT-102R2) the conversion is not a disposition: the book entry transfers the unit's *inventory value* from inventory to a Class 8 fixed asset, and that value becomes the capital cost
+- On CRA's position (archived IT-102R2) the conversion is not a disposition
+  - The book entry transfers the unit's *inventory value* from inventory to a Class 8 fixed asset
+  - That value becomes the capital cost
 - CCA mechanics apply from the conversion date
-- See [Cost Recovery — Change of use](Cost-Recovery.md#change-of-use) for the cross-channel framing (including the contested s.45 / s.13(7) reading) and the HST-side adjustment under ETA s.199(3) / s.200(2)
+- See [Cost Recovery — Change of use](Cost-Recovery.md#change-of-use) for the cross-channel framing
+  - Including the contested s.45 / s.13(7) reading
+  - Also the HST-side adjustment under ETA s.199(3) / s.200(2)
 
 See [Capital Cost Allowance](Capital-Cost-Allowance/Capital-Cost-Allowance.md) for the half-year rule, UCC mechanics, recapture, and terminal loss.
 
@@ -79,11 +97,16 @@ See [Capital Cost Allowance](Capital-Cost-Allowance/Capital-Cost-Allowance.md) f
 ## Bookkeeping and T2 Schedules
 
 Self-constructed-asset materials are *not* in any of the 1120-series GIFI inventory codes.  
-They sit in an asset account that rolls up to a fixed-asset GIFI code, typically a `Construction in progress` sub-account presented within the relevant Schedule 100 fixed-asset line until completion.
+They sit in an asset account that rolls up to a fixed-asset GIFI code.  
+Typically that is a `Construction in progress` sub-account within the relevant Schedule 100 fixed-asset line.  
 
-On completion and available-for-use, the CIP balance transfers into the appropriate CCA class line on Schedule 100, and the cost becomes the *capital cost* (the A element in the s.13(21) UCC formula) for that class on Schedule 8.
+On completion and available-for-use, the CIP balance transfers into the appropriate CCA class line on Schedule 100.  
+The cost becomes the *capital cost* (the A element in the s.13(21) UCC formula) for that class on Schedule 8.  
 
-With several builds running at once, each carries its own CIP balance (or a spreadsheet split that reconciles to one CIP control account), and any shared `Materials on hand` pool sits in the same fixed-asset section, likewise outside the 1120-series codes; see [Multiple builds from a shared materials pool](#multiple-builds-from-a-shared-materials-pool).
+With several builds running at once, each carries its own CIP balance.  
+A spreadsheet split that reconciles to one CIP control account works too.  
+Any shared `Materials on hand` pool sits in the same fixed-asset section, likewise outside the 1120-series codes.  
+See [Multiple builds from a shared materials pool](#multiple-builds-from-a-shared-materials-pool).  
 
 During construction:
 - Schedule 100: CIP sits within the fixed-asset section; no inventory line touched
@@ -121,8 +144,11 @@ flowchart TB
 The single-build picture above is the base case: materials bought straight into one CIP balance.  
 A corp building several fixed assets at once from a common stock of materials splits it into three layers.
 
-*Layer 1, the materials pool*: materials bought before they are assigned to a specific build sit in a `Materials on hand` asset account, tracked at a running weighted-average cost per material, exactly as an inventory pool would be.  
-It is *not* inventory: held to build own-use fixed assets, not for resale, so no s.10 valuation, no LCM write-down, and none of the 1120-series GIFI codes apply.
+*Layer 1, the materials pool*: materials bought before they are assigned to a specific build.  
+They sit in a `Materials on hand` asset account, tracked at a running weighted-average cost per material.  
+The tracking works exactly as an inventory pool would.  
+It is *not* inventory: held to build own-use fixed assets, not for resale.  
+So no s.10 valuation, no LCM write-down, and none of the 1120-series GIFI codes apply.
 
 *Layer 2, per-build CIP*: each build is defined by a *bill of materials* (BOM).  
 As a build consumes materials, their cost moves from the pool into that build's CIP at the running average.  
@@ -130,20 +156,32 @@ Build-specific purchases (a motor bought for one machine) are charged straight t
 Contractor labour and other capitalizable costs join the same CIP.  
 Each build's CIP is its own cost balance.
 
-*Layer 3, available-for-use to CCA*: each build transfers its accumulated CIP as a single lump into its CCA class on its *own* available-for-use date.  
-Builds finishing in different years are separate class additions, each subject to the half-year rule in its own year; two builds landing in the same class are two additions to one UCC pool.
+*Layer 3, available-for-use to CCA*: each build transfers its accumulated CIP as a single lump.  
+The lump lands in the build's CCA class on its *own* available-for-use date.  
+Builds finishing in different years are separate class additions, each subject to the half-year rule in its own year.  
+Two builds landing in the same class are two additions to one UCC pool.
 
 Where the averaging lives:
-- The weighted-average sits in Layer 1, on the pooled material, because the pool is drawn down a BOM at a time and each draw needs a cost assigned to it; this is the same reason inventory uses a cost-flow assumption
-- The Layer 3 transfer is still a lump per build; the averaging upstream and the lump transfer downstream are both true, at different layers
-- Weighted-average is a reasonable and consistent choice for the pool; unlike inventory there is no s.10(2.1) method-lock, since these materials are not inventory; specific identification is tighter when materials are individually tagged and high-value
+- The weighted-average sits in Layer 1, on the pooled material
+  - The pool is drawn down a BOM at a time and each draw needs a cost assigned to it
+  - This is the same reason inventory uses a cost-flow assumption
+- The Layer 3 transfer is still a lump per build
+  - The averaging upstream and the lump transfer downstream are both true, at different layers
+- Weighted-average is a reasonable and consistent choice for the pool
+  - Unlike inventory there is no s.10(2.1) method-lock, since these materials are not inventory
+  - Specific identification is tighter when materials are individually tagged and high-value
 
 Year-end, before a build is available for use:
-- Unconsumed pool and in-progress CIP are both non-deducting asset balances: no COGS (never inventory), no CCA (not yet available for use)
-- The only tax event is a build reaching available-for-use; until then the dollars sit, wherever they happen to be parked
+- Unconsumed pool and in-progress CIP are both non-deducting asset balances
+  - No COGS (never inventory), no CCA (not yet available for use)
+- The only tax event is a build reaching available-for-use
+  - Until then the dollars sit, wherever they happen to be parked
 
-Bookkeeping shortcut: a small corp often skips the separate `Materials on hand` account and debits every material purchase straight to a single `Construction in progress` control account, keeping the per-material running average and the per-build BOM split in a spreadsheet that reconciles to the control balance.  
-Both accounts are non-deducting capital-project assets in the same Schedule 100 section, so there is no tax difference; the spreadsheet carries the detail either way.
+Bookkeeping shortcut: a small corp often skips the separate `Materials on hand` account.  
+Every material purchase debits a single `Construction in progress` control account instead.  
+A spreadsheet that reconciles to the control balance keeps the per-material running average and the per-build BOM split.  
+Both accounts are non-deducting capital-project assets in the same Schedule 100 section, so there is no tax difference.  
+The spreadsheet carries the detail either way.  
 
 ```mermaid
 flowchart TB
@@ -177,8 +215,9 @@ Two walkthroughs: a single self-constructed asset, then several builds drawing f
 
 ### Example 1: Self-Constructed Shed
 
-Setup: a small commercial-services CCPC builds a wood-frame storage shed on its rented business property to house tools and equipment.  
-The shed has no support below ground level (skids on gravel pad), placing it in CCA Class 6 (10%, declining).  
+Setup: a small commercial-services CCPC builds a wood-frame storage shed on its rented business property.  
+The shed houses tools and equipment.  
+It has no support below ground level (skids on gravel pad), placing it in CCA Class 6 (10%, declining).  
 Construction spans two fiscal years.  
 Calendar fiscal year (Jan 1 to Dec 31) is assumed.  
 The corp is HST-registered and claims ITCs on all eligible inputs.
@@ -221,7 +260,9 @@ Transfer entry, Sep 1 2027:
 - Debit `Buildings - cost - Class 6` (Schedule 100 fixed-asset line for Class 6) = $11,500
 - Credit `Construction in progress` = $11,500
 
-The Schedule 8 figures below use the plain half-year basis; this 2027 in-service date actually falls under the reinstated AIIP (enhanced first-year CCA, half-year rule suspended), covered in [Capital Cost Allowance](Capital-Cost-Allowance/Capital-Cost-Allowance.md).
+The Schedule 8 figures below use the plain half-year basis.  
+This 2027 in-service date actually falls under the reinstated AIIP (enhanced first-year CCA, half-year rule suspended).  
+AIIP is covered in [Capital Cost Allowance](Capital-Cost-Allowance/Capital-Cost-Allowance.md).  
 
 Schedule 8 year 2 (2027), Class 6 row:
 - Opening UCC: $0
@@ -234,23 +275,30 @@ Schedule 8 year 2 (2027), Class 6 row:
 
 Schedule 125 year 2 (2027):
 - Cost-of-sales section: no entries from the shed project (it never was inventory)
-- Operating expenses: `8670 Amortization of tangible assets` reflects whatever book amortization the corp posted for the shed and any other tangibles
-- Schedule 1 then adds back book amortization and deducts CCA (the $575 from Schedule 8); see [Capital Cost Allowance](Capital-Cost-Allowance/Capital-Cost-Allowance.md) for the reconciliation mechanics
+- Operating expenses: `8670 Amortization of tangible assets` reflects the book amortization posted
+  - For the shed and any other tangibles
+- Schedule 1 then adds back book amortization and deducts CCA (the $575 from Schedule 8)
+  - See [Capital Cost Allowance](Capital-Cost-Allowance/Capital-Cost-Allowance.md) for the reconciliation mechanics
 
 Contrast with [Inventory](Inventory-And-COGS.md):
 - The same dollars as resale inventory would have flowed through COGS within a year or two
-- As own-use construction inputs, the same dollars flow through CCA on the Class 6 geometric tail (10% declining; ~96% of cost expensed by year 30)
+- As own-use construction inputs, the same dollars flow through CCA on the Class 6 geometric tail
+  - 10% declining; ~96% of cost expensed by year 30
 
 ### Example 2: Multiple Builds from a Shared Materials Pool
 
-Setup: a metal-fabrication services CCPC builds two custom machines for its own workshop from a shared stock of steel plate.  
+Setup: a metal-fabrication services CCPC builds two custom machines for its own workshop.  
+Both draw from a shared stock of steel plate.  
 Both machines are destined for CCA Class 8 (20%, declining), the catch-all for equipment.  
 Construction overlaps and the two finish in different years.  
 Calendar fiscal year (Jan 1 to Dec 31) is assumed.  
 The corp is HST-registered and claims ITCs on all eligible inputs.  
-To keep the focus on the pool and the staggered completions, the Schedule 8 figures below use the plain half-year basis; these 2026 and 2027 in-service dates actually fall under the reinstated AIIP (enhanced first-year CCA, half-year rule suspended), covered in [Capital Cost Allowance](Capital-Cost-Allowance/Capital-Cost-Allowance.md).
+To keep the focus on the pool and the staggered completions, the Schedule 8 figures below use the plain half-year basis.  
+These 2026 and 2027 in-service dates actually fall under the reinstated AIIP.  
+AIIP (enhanced first-year CCA, half-year rule suspended) is covered in [Capital Cost Allowance](Capital-Cost-Allowance/Capital-Cost-Allowance.md).  
 
-The corp keeps a `Materials on hand` pool for steel (running weighted-average per kg) and a separate CIP balance per build.
+The corp keeps a `Materials on hand` pool for steel (running weighted-average per kg).  
+Each build carries its own separate CIP balance.  
 
 Year 1 (2026):
 
@@ -276,7 +324,8 @@ Jun 2026, Build B's BOM draws 500 kg of steel:
 - Credit `Materials on hand` = $3,100
 - Pool: 500 kg, $3,100, average still $6.20/kg
 
-The same steel costs Build A $5.00/kg and Build B $6.20/kg: identical material, different cost, set by when each build drew from the pool.  
+The same steel costs Build A $5.00/kg and Build B $6.20/kg.  
+Identical material, different cost, set by when each build drew from the pool.  
 This is the averaging the single-shed example never needed.
 
 Aug 2026, pay a contractor $2,000 for Build A labour:
@@ -322,7 +371,8 @@ Mar 1 2027, Build B complete and available for use:
 - Debit `Equipment - cost - Class 8` = $7,000
 - Credit `Construction in progress - Build B` = $7,000
 
-The 500 kg of steel left in `Materials on hand` ($3,100) carries forward as a non-deducting asset until a future build consumes it.
+The 500 kg of steel left in `Materials on hand` ($3,100) carries forward as a non-deducting asset.  
+It stays there until a future build consumes it.  
 
 Schedule 8 year 2 (2027), Class 8 row:
 - Opening UCC: $4,500 (carried from Build A)
@@ -333,19 +383,33 @@ Schedule 8 year 2 (2027), Class 8 row:
 - CCA: 20% × $8,000 = $1,600
 - Closing UCC: $4,500 + $7,000 − $1,600 = $9,900
 
-Two builds, one class, two staggered additions: each is half-year-adjusted in the year it became available for use, and from year 2 they depreciate together as one Class 8 pool.  
+Two builds, one class, two staggered additions.  
+Each is half-year-adjusted in the year it became available for use.  
+From year 2 they depreciate together as one Class 8 pool.  
 Build B's pre-completion costs produced no deduction in 2026; the trigger was available-for-use, not spend.
 
-On the schedules: no cost-of-sales entries in either year (never inventory); Schedule 8 carries the Class 8 pool above; Schedule 1 reconciles book amortization to CCA if the corp keeps full accounting books rather than a tax basis (see [Capital Cost Allowance](Capital-Cost-Allowance/Capital-Cost-Allowance.md)).
+On the schedules:
+- No cost-of-sales entries in either year (never inventory)
+- Schedule 8 carries the Class 8 pool above
+- Schedule 1 reconciles book amortization to CCA if the corp keeps full accounting books rather than a tax basis
+  - See [Capital Cost Allowance](Capital-Cost-Allowance/Capital-Cost-Allowance.md)
 
 
 ## Out of Scope
 
-- Capitalizable cost build-up beyond direct materials and contractor labour: factory-overhead allocation, employee labour on the project, equipment rental, site preparation
-- Soft costs during construction: interest under ITA s.18(3.1), property taxes on the construction site, legal and accounting fees attributable to a capital project
+- Capitalizable cost build-up beyond direct materials and contractor labour
+  - Factory-overhead allocation, employee labour on the project, equipment rental, site preparation
+- Soft costs during construction
+  - Interest under ITA s.18(3.1), property taxes on the construction site
+  - Legal and accounting fees attributable to a capital project
 - Interest capitalization election under ITA s.21
-- Book-vs-tax impairment differences: ASPE Section 3061 and IFRS IAS 36 allow impairment write-downs on CIP that have no tax effect (the book write-down is added back on Schedule 1, and CCA continues from the unimpaired UCC once the asset is available for use)
-- Long-term construction contracts (a CCPC building for a customer): percentage-of-completion under s.9, with archived IT-92R2 as guidance; inventory-side rules, not the self-constructed-asset path
+- Book-vs-tax impairment differences
+  - ASPE Section 3061 and IFRS IAS 36 allow impairment write-downs on CIP that have no tax effect
+  - The book write-down is added back on Schedule 1
+  - CCA continues from the unimpaired UCC once the asset is available for use
+- Long-term construction contracts (a CCPC building for a customer)
+  - Percentage-of-completion under s.9, with archived IT-92R2 as guidance
+  - Inventory-side rules, not the self-constructed-asset path
 - Real-estate developer construction of land and buildings held for resale (inventory-side rules)
 
 
@@ -366,7 +430,8 @@ On the schedules: no cost-of-sales entries in either year (never inventory); Sch
   - [s.13(26)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-13.html) - available-for-use rule for depreciable property
   - [s.13(27)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-13.html) - rolling-two-year / 357-day deeming rule (non-buildings)
   - [s.13(28)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-13.html) - available-for-use rule for buildings (the 357-day variant; governs the shed)
-  - [s.18(1)(b)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-18.html) - exclusion of capital expenditures (the rule that pushes self-constructed-asset materials out of COGS and into the CCA path)
+  - [s.18(1)(b)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-18.html) - exclusion of capital expenditures
+    - The rule that pushes self-constructed-asset materials out of COGS and into the CCA path
 - CRA T2 SCH 100 - Balance Sheet Information: https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2sch100.html
 - CRA T2 SCH 8 - Capital Cost Allowance: https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2sch8.html
 - CRA Income Tax Folio S3-F4-C1 - General Discussion of Capital Cost Allowance: https://www.canada.ca/en/revenue-agency/services/tax/technical-information/income-tax/income-tax-folios-index/series-3-property-investments-savings-plans/series-3-property-investments-savings-plans-folio-4-capital-cost-allowance/income-tax-folio-s3-f4-c1-general-discussion-capital-cost-allowance.html
@@ -375,8 +440,14 @@ On the schedules: no cost-of-sales entries in either year (never inventory); Sch
 
 ## TODO
 
-- Capitalizable costs into CIP: which categories are added to CIP during construction (direct materials, contractor labour, allocated employee labour on the project, equipment rental, site preparation) versus which stay as period expenses
-- Soft costs under ITA s.18(3.1): treatment of interest, property tax, legal and accounting fees attributable to construction of a capital asset
+- Capitalizable costs into CIP: which categories are added to CIP during construction vs staying period expenses
+  - Direct materials, contractor labour, allocated employee labour on the project, equipment rental, site preparation
+- Soft costs under ITA s.18(3.1)
+  - Treatment of interest, property tax, legal and accounting fees attributable to construction of a capital asset
 - Interest capitalization election under ITA s.21: when it applies, mechanics, interaction with s.18(3.1)
-- Book-vs-tax differences: ASPE Section 3061 and IFRS IAS 36 impairment write-downs on CIP and how Schedule 1 reverses them on the tax side
-- More worked examples: leasehold improvement on rented business premises; a Class 43 M&P-equipment destination (Class 53 before 2026); cost overruns mid-project
+- Book-vs-tax differences
+  - ASPE Section 3061 and IFRS IAS 36 impairment write-downs on CIP and the Schedule 1 tax-side reversal
+- More worked examples
+  - Leasehold improvement on rented business premises
+  - A Class 43 M&P-equipment destination (Class 53 before 2026)
+  - Cost overruns mid-project
