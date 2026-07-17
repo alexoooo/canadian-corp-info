@@ -1,12 +1,12 @@
 STATUS: AI GENERATED, REVIEW IN PROGRESS
 
-# Foreign Currency
+# Foreign Currency <!-- [done] -->
 
 **Who this is for**:
 - Owners of a Canadian-controlled private corporation (CCPC) with USD accounts, invoicing, investments, or conversions
 
 **TLDR**:
-- Corporate taxes are reported in CAD; USD-native accounts are translated at year-end onto the balance sheet (Schedule 100)
+- Corporate tax is reported in CAD; USD-native accounts are translated at year-end to the balance sheet (Schedule 100)
 - When a ledger entry converts a foreign amount to CAD, this guide uses the *Bank of Canada* (BoC) rate
   - Amounts already converted to CAD (the bank's settlement of a conversion, a T-slip) are booked as-is
 - FX rate convention follows the *transaction date*:
@@ -23,12 +23,16 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
   - Excise Tax Act, Schedule VI, Part V; full mechanics in [HST](../../Operations/HST.md)
 
 Limitations:
-- Focus is on CAD↔USD for a typical owner-managed CCPC consultant or investor; other currency pairs (EUR, GBP, etc.) follow the same mechanics by analogy but specific rates and broker products differ
-- *Functional currency* election (ITA s.261) is out of scope; it is a multinational filing aimed at corporations whose primary books-and-records currency is not CAD
-- Foreign-securities tax slips (T3 Box 25/34 foreign-income, foreign tax credit on Schedule 21) and ACB mechanics live in [T3](../../Investments/T3/T3.md) and [Adjusted Cost Base](../../Investments/Adjusted-Cost-Base/Adjusted-Cost-Base.md); this page covers only the FX-conversion layer
+- Focus is on CAD↔USD for a typical owner-managed CCPC consultant or investor
+  - Other currency pairs (EUR, GBP) follow the same mechanics by analogy but specific rates and broker products differ
+- *Functional currency* election (ITA s.261) is out of scope
+  - It is a multinational filing for corporations whose primary books-and-records currency is not CAD
+- Foreign-securities slips and ACB mechanics live in [T3](../../Investments/T3/T3.md) and [Adjusted Cost Base](../../Investments/Adjusted-Cost-Base/Adjusted-Cost-Base.md); this page covers only the FX layer
+  - T3 covers Box 25/34 foreign income and the Schedule 21 foreign tax credit
 - *Hedging* (forward contracts, currency swaps) and derivative tax mechanics are out of scope
-- Broker support for Norbert's Gambit can change; the named brokers on the [Norbert's Gambit](Norberts-Gambit.md) sub-page reflect their 2026 state and should be re-verified before relying on them
-- Tax information can change over time (e.g. the capital gains inclusion rate was going to increase to 2/3, before the proposal was cancelled)
+- Broker support for Norbert's Gambit can change
+  - Broker notes on the [Norbert's Gambit](Norberts-Gambit.md) sub-page reflect their 2026 state
+- Tax rules change over time (e.g. the proposed increase of the capital gains inclusion rate to 2/3 was cancelled)
 - The following is my understanding as of 2026
 
 
@@ -75,14 +79,23 @@ flowchart TB
 
 ## Edge Cases
 
-- *USD-denominated capital assets*: foreign securities held in a corporate trading account follow [Adjusted Cost Base](../../Investments/Adjusted-Cost-Base/Adjusted-Cost-Base.md); trade-date FX for purchases, sales, and commissions; payment-date FX for distributions; the FX layer here is the ACB workflow's mirror image
-- *Foreign tax withheld on USD distributions*: see [T3](../../Investments/T3/T3.md) for the Box 25 / Box 34 walkthrough; foreign withholding tax is grossed up on Schedule 7 and a foreign tax credit is claimed on Schedule 21
-- *USD credit card paying CAD bills*: the foreign-currency liability is settled at the statement-conversion FX; record at the transaction date, recognize FX gain or loss on statement settlement
-- *Triangular conversions* (USD → EUR → CAD): each leg is a separate disposition; the intermediate currency is itself property; out of scope here
-- *Hedging instruments* (forward contracts, currency swaps): can produce both capital-account and income-account FX depending on the underlying purpose; out of scope
+- *USD-denominated capital assets*: foreign securities in a corporate trading account follow [Adjusted Cost Base](../../Investments/Adjusted-Cost-Base/Adjusted-Cost-Base.md)
+  - Trade-date FX for purchases, sales, and commissions; payment-date FX for distributions
+  - The FX layer here is the ACB workflow's mirror image
+- *Foreign tax withheld on USD distributions*: see [T3](../../Investments/T3/T3.md) for the Box 25 / Box 34 walkthrough
+  - Withholding tax is grossed up on Schedule 7; the foreign tax credit is claimed on Schedule 21
+- *USD credit card paying CAD bills*: the foreign-currency liability is settled at the statement-conversion FX
+  - Record at the transaction date; recognize the FX gain or loss on statement settlement
+- *Triangular conversions* (USD → EUR → CAD): each leg is a separate disposition; out of scope here
+  - The intermediate currency is itself property
+- *Hedging instruments* (forward contracts, currency swaps): out of scope
+  - Can produce capital- or income-account FX depending on the underlying purpose
 - *Functional currency election* (ITA s.261): mentioned in [FX rates and character](FX-Rates-And-Character.md); not re-explained here
-- *Same security on US exchanges* (cross-listed equities, e.g. RY on TSX and NYSE): [Norbert's Gambit](Norberts-Gambit.md) also works using these names, but unit-value risk during the journal window is real (the underlying is an equity, not USD cash); DLR / DLR.U avoids this risk and is the practical default
-- *Brokerage cash sweep* in USD: typically pays a small USD-denominated yield; the yield is foreign interest income; the FX on the yield follows payment-date convention
+- *Cross-listed equities* (same security on TSX and NYSE, e.g. RY): [Norbert's Gambit](Norberts-Gambit.md) also works using these names
+  - Unit-value risk during the journal window is real: the underlying is an equity, not USD cash
+  - DLR / DLR.U avoids this risk and is the practical default
+- *Brokerage cash sweep* in USD: typically pays a small USD-denominated yield
+  - The yield is foreign interest income; its FX follows the payment-date convention
 
 
 ## Related
@@ -105,9 +118,10 @@ flowchart TB
 
 - Income Tax Act (R.S.C., 1985, c. 1 (5th Supp.)):
   - [s.38](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-38.html) - taxable capital gain inclusion rate (one-half)
-  - [s.39(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-39.html) - definitions of capital gain and capital loss (including on a disposition of foreign currency held on capital account)
+  - [s.39(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-39.html) - capital gain and loss definitions (including a disposition of foreign currency on capital account)
   - [s.39(1.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-39.html) - $200 personal FX de minimis (individuals only; does not apply to corporations)
-  - [s.39(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-39.html) - capital FX gain or loss arising without a disposition of property, such as settling a foreign-currency capital obligation (a disposition of foreign currency itself is a s.39(1)/s.40 capital gain)
+  - [s.39(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-39.html) - capital FX gain or loss without a disposition, such as settling a foreign-currency capital obligation
+    - A disposition of foreign currency itself is a s.39(1)/s.40 capital gain
   - [s.40(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-40.html) - general capital-gain-on-disposition formula
   - [s.47(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-47.html) - identical-properties pooling (relevant for DLR / DLR.U as the same fund)
   - [s.54](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-54.html) - definition of "adjusted cost base"
@@ -142,7 +156,14 @@ flowchart TB
 
 ## TODO
 
-- Zero-rated and taxable-supply HST notes now cross-link [HST](../../Operations/HST.md) (tax-point and s.159 conversion); revisit the overlap on a maintainer sign-off pass
-- Add FX-specific terms to [Glossary](../../Overview/Glossary.md) on a separate maintainer pass: BoC daily rate, functional currency election, income-account FX, capital-account FX, monetary item, multi-currency bookkeeping convention, FX trading account, Norbert's Gambit, journal (broker), settlement-date rate, realized FX, unrealized FX
-- Worked example for a USD payable to a foreign supplier (the mirror of the USD-AR example); useful for inventory-importing CCPCs and partly covered in [Inventory](../../Operations/Cost-Recovery/Inventory-And-COGS.md) Example 2
-- A short companion section if and when the maintainer signs off this page on the bank-statement-driven workflow (record at the bank's actual settlement rate, reconcile to BoC monthly) vs the BoC-driven workflow (record at BoC daily, reconcile to bank at year-end)
+- Zero-rated and taxable-supply HST notes now cross-link [HST](../../Operations/HST.md) (tax-point and s.159 conversion)
+  - Revisit the overlap on a maintainer sign-off pass
+- Add FX-specific terms to [Glossary](../../Overview/Glossary.md) on a separate maintainer pass:
+  - BoC daily rate, functional currency election, income-account FX, capital-account FX, monetary item
+  - Multi-currency bookkeeping convention, FX trading account, Norbert's Gambit, journal (broker)
+  - Settlement-date rate, realized FX, unrealized FX
+- Worked example for a USD payable to a foreign supplier (the mirror of the USD-AR example)
+  - Useful for inventory-importing CCPCs; partly covered in [Inventory](../../Operations/Cost-Recovery/Inventory-And-COGS.md) Example 2
+- A short companion section, if and when the maintainer signs off this page, comparing two workflows:
+  - Bank-statement-driven: record at the bank's actual settlement rate, reconcile to BoC monthly
+  - BoC-driven: record at the BoC daily rate, reconcile to the bank at year-end
