@@ -7,27 +7,45 @@ Scope and limitations are on the [Foreign Currency hub](Foreign-Currency.md).
 
 ## Multi-Currency Bookkeeping Convention
 
-The worked examples across this topic use a *multi-currency native* convention: each ledger account has a single native currency, cross-currency transactions split into a CAD leg and a USD leg with separate FX bridge accounts per currency, and FX gain or loss is recognized at period-end revaluation rather than at each settlement.  
-This is what GnuCash, Xero, and QuickBooks Multi-Currency produce natively, and it keeps each bank account and AR balance in the currency the underlying account actually holds.  
+The worked examples across this topic use a *multi-currency native* convention.  
+Each ledger account has a single native currency, and cross-currency transactions split into CAD and USD legs.  
+Each leg balances through a per-currency FX bridge account.  
+FX gain or loss is recognized at period-end revaluation rather than at each settlement.  
+This is what GnuCash, Xero, and QuickBooks Multi-Currency produce natively.  
+It keeps each bank account and AR balance in the currency the underlying account actually holds.  
 
-The equivalent *single-currency translated* form (every account holds CAD figures, foreign-currency amounts translated at the transaction-date rate) is also CRA-acceptable and produces identical T2 figures when applied correctly; the choice between the two is a bookkeeping representation, not a tax-method choice.  
+The equivalent *single-currency translated* form is also CRA-acceptable.  
+There, every account holds CAD figures, with foreign-currency amounts translated at the transaction-date rate.  
+Applied correctly, it produces identical T2 figures.  
+The choice between the two forms is a bookkeeping representation, not a tax-method choice.  
 
 How it works:
-- Each ledger account has a single native currency; CAD-native accounts hold CAD, USD-native accounts hold USD, and the two never mix within a single account
-- Cross-currency transactions split into two legs, each balancing within its own currency, with `FX gain/loss - CAD` (8231-1) and `FX gain/loss - USD` (8231-2) acting as the per-currency bridge
-- Same-currency transactions (USD payment closing a USD receivable; CAD payment from `Deposits` to a Canadian supplier) are pure-currency entries with no FX bridge
-- Investment accounts stay *CAD-native* even when the underlying security trades in USD: ACB is defined in ITA [s.54](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-54.html) and, for a Canadian-resident corporation reporting in CAD under [s.261](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-261.html), the figure is CAD-denominated
-  - The investment ledger account holds the CAD ACB, and subsequent USD/CAD movement affects the cash side (`Deposits - USD`) instead of the investment side
+- Each ledger account has a single native currency
+  - CAD-native accounts hold CAD, USD-native accounts hold USD, and the two never mix within a single account
+- Cross-currency transactions split into two legs, each balancing within its own currency
+  - `FX gain/loss - CAD` (8231-1) and `FX gain/loss - USD` (8231-2) act as the per-currency bridge
+- Same-currency transactions are pure-currency entries with no FX bridge
+  - E.g. a USD payment closing a USD receivable, or a CAD payment from `Deposits` to a Canadian supplier
+- Investment accounts stay *CAD-native* even when the underlying security trades in USD
+  - ACB is defined in ITA [s.54](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-54.html)
+  - For a Canadian-resident corporation reporting in CAD under [s.261](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-261.html), the ACB figure is CAD-denominated
+  - The investment ledger account holds the CAD ACB
+  - Subsequent USD/CAD movement affects the cash side (`Deposits - USD`) instead of the investment side
 - Period-end revaluation translates every foreign-currency-native account balance to CAD at the closing BoC rate
-- The net of (8231-1 in CAD + 8231-2 translated to CAD at the closing rate) is the FX gain or loss for the period and flows to Schedule 125 GIFI 8231
+- The net of (8231-1 in CAD + 8231-2 translated to CAD at the closing rate) is the FX gain or loss for the period
+  - It flows to Schedule 125 GIFI 8231
 
-The `FX gain/loss` sub-accounts (8231-1, 8231-2) accumulate per-currency positions through the year and are not separately reported; both roll up to a single GIFI 8231 line on Schedule 125 after the period-end translation.  
+The `FX gain/loss` sub-accounts (8231-1, 8231-2) accumulate per-currency positions through the year.  
+They are not separately reported: both roll up to GIFI 8231 on Schedule 125 after the period-end translation.  
 
 
 ## GIFI Mapping
 
 Account codes used through the worked examples across this topic.  
-Where the guide splits one GIFI line into per-currency or per-purpose sub-accounts, each carries a `-N` suffix (matching the convention in [T3](../../Investments/T3/T3.md)); an account that is the only one on its GIFI line uses the plain code, and every code rolls up to its parent GIFI line at year-end.  
+Where the guide splits one GIFI line into per-currency or per-purpose sub-accounts, each carries a `-N` suffix.  
+The suffix convention matches [T3](../../Investments/T3/T3.md).  
+An account that is the only one on its GIFI line uses the plain code.  
+Every code rolls up to its parent GIFI line at year-end.  
 
 <table>
   <thead>
@@ -60,10 +78,12 @@ Where the guide splits one GIFI line into per-currency or per-purpose sub-accoun
 </table>
 
 Notes on the codes:
-- GIFI 1003 captures USD deposits at a Canadian bank; GIFI 1004 (foreign bank, CAD) and 1005 (foreign bank, foreign currency) are reserved for accounts at foreign banks and are not in scope here
-- GIFI 8231 is the FX-specific line on Schedule 125, covering realized and unrealized FX on income-account monetary items
+- GIFI 1003 captures USD deposits at a Canadian bank
+  - GIFI 1004 (foreign bank, CAD) and 1005 (foreign bank, foreign currency) are not in scope here
+- GIFI 8231 is the FX-specific line on Schedule 125: realized and unrealized FX on income-account monetary items
   - Do not confuse it with GIFI 8210, the broader realized-gains-on-disposal-of-assets line
-- Splitting `FX gain/loss` into 8231-1 (CAD-native) and 8231-2 (USD-native) is what makes the trading-account convention work; both roll up to GIFI 8231 at year-end
+- Splitting `FX gain/loss` into 8231-1 (CAD-native) and 8231-2 (USD-native) makes the trading-account convention work
+  - Both roll up to GIFI 8231 at year-end
 - For broader account-tree conventions (investment accounts, withholding taxes, GIFI rollups), see [T3](../../Investments/T3/T3.md)
 
 

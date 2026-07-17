@@ -15,10 +15,12 @@ Year-end handling depends on whether the USD cash is on income account or capita
 *Investment USD deposit*:
 - Cash sitting in a corporate trading account specifically to acquire USD securities
 - Capital-account character; *no* year-end revaluation (a capital gain under ITA s.39(1) arises on disposition only)
-- The FX gain or loss surfaces when the USD is used to buy a USD security (the security's CAD ACB is the trade-date conversion) or when the USD is converted back to CAD
+- The FX gain or loss surfaces when the USD is used to buy a USD security, or is converted back to CAD
+  - On a security buy, the security's CAD ACB is the trade-date conversion
 - This mirrors the FX convention for purchases and dispositions of foreign securities in [Adjusted Cost Base](../../Investments/Adjusted-Cost-Base/Adjusted-Cost-Base.md)
 
-In practice, for most owner-managed CCPCs the USD balance is on income account: it flows from operations and is used for operations.  
+In practice, for most owner-managed CCPCs the USD balance is on income account.  
+It flows from operations and is used for operations.  
 The capital-account treatment applies narrowly when the USD is held *and intended* for investment.  
 
 ## Worked Example
@@ -51,7 +53,8 @@ Dec 31, year-end revaluation at closing BoC rate 1.38:
 - Translate USD-native balances at the closing rate (1.38):
   - `Deposits - USD` → CAD 4,140 (Schedule 100 GIFI 1003)
   - `FX gain/loss - USD` 8231-2 → CAD 4,140 credit (translated)
-- Schedule 125 GIFI 8231 = net of (8231-1 CAD 4,300 debit) + (8231-2 translated CAD 4,140 credit) = CAD 160 debit → net FX loss CAD 160
+- Schedule 125 GIFI 8231 = net of (8231-1 CAD 4,300 debit) + (8231-2 translated CAD 4,140 credit)
+  - The net is CAD 160 debit → net FX loss CAD 160
 
 Schedule 125 year:
 - Software subscriptions (operating expense): CAD 2,700
@@ -61,11 +64,14 @@ Schedule 1 reconciliation: none required; income-account FX is fully includable.
 
 Economic check:
 - Mar 1: paid CAD 7,000 for USD 5,000; effective USD cost basis CAD 1.40/USD
-- Aug 15: paid USD 2,000 of software, recognized as CAD 2,700 expense at BoC 1.35; original CAD basis on those USD 2,000 was 2,000 × 1.40 = CAD 2,800; realized FX loss CAD 100 on the outflow
-- Dec 31: USD 3,000 remaining, worth CAD 4,140 at year-end (1.38); original CAD basis 3,000 × 1.40 = CAD 4,200; unrealized FX loss CAD 60 on the remaining balance
+- Aug 15: paid USD 2,000 of software, recognized as CAD 2,700 expense at BoC 1.35
+  - Original CAD basis on those USD 2,000 was 2,000 × 1.40 = CAD 2,800; realized FX loss CAD 100 on the outflow
+- Dec 31: USD 3,000 remaining, worth CAD 4,140 at year-end (1.38)
+  - Original CAD basis 3,000 × 1.40 = CAD 4,200; unrealized FX loss CAD 60 on the remaining balance
 - Net economic FX: −100 − 60 = −160 CAD loss ✓ (matches the trading-account result)
 
-The CAD 160 loss is the bank's implicit spread surfacing: the corp paid for USD at 1.40 but the BoC mid never reached 1.40, so the USD never recovered its CAD cost basis.
+The CAD 160 loss is the bank's implicit spread surfacing.  
+The corp paid for USD at 1.40 but the BoC mid never reached 1.40, so the USD never recovered its CAD cost basis.
 
 
 ## Related
