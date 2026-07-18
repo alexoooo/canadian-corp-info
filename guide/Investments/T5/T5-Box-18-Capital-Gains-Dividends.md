@@ -3,30 +3,44 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
 # T5 Box 18 - Capital Gains Dividends
 
 See parent document: [T5](T5.md)  
-**Who this is for**: owners of a Canadian-controlled private corporation (CCPC) who receive a T5 with a Box 18 amount.  
 
-A *capital gains dividend* is called a dividend and reported on a dividend slip, but is taxed as a capital gain, not as a taxable dividend.  
-Treating it as a taxable dividend would wrongly apply the s.112 deduction and Part IV tax, and miss the addition to the Capital Dividend Account.  
+**Who this is for**:
+- Owners of a Canadian-controlled private corporation (CCPC) receiving a T5 with a Box 18 amount
+
+A *capital gains dividend* is called a dividend and reported on a dividend slip.  
+It is taxed as a capital gain, not as a taxable dividend.  
+Treating it as a taxable dividend would wrongly apply the s.112 deduction and Part IV tax.  
+It would also miss the addition to the Capital Dividend Account.  
 
 Limitations:
-- Covers a capital gains dividend paid by a *mutual fund corporation* (a corporate-class fund or a public fund structured as a corporation) to a corporate shareholder
-- A capital gains dividend from a *mortgage investment corporation* (MIC) instead arises under ITA [s.130.1(4)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-130.1.html) and is out of scope
-- Tax information can change over time (e.g. the capital gains inclusion rate was going to increase to 2/3, before the proposal was cancelled)
+- Covers a capital gains dividend paid by a *mutual fund corporation* to a corporate shareholder
+  - A corporate-class fund or a public fund structured as a corporation
+- A capital gains dividend from a *mortgage investment corporation* (MIC) is out of scope
+  - It instead arises under ITA [s.130.1(4)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-130.1.html)
+- Tax information can change over time
+  - One example: the capital gains inclusion rate was going to increase to 2/3, before the proposal was cancelled
 - The following is my understanding as of 2026
 
 
 ## Meaning and Tax Treatment
 
-A mutual fund corporation realizes capital gains inside the fund and flows them out by electing to pay a capital gains dividend.  
-Under ITA [s.131(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-131.html), the amount is deemed to be a capital gain of the shareholder from the disposition of capital property in the year.  
+A mutual fund corporation realizes capital gains inside the fund.  
+It flows them out by electing to pay a capital gains dividend.  
+Under ITA [s.131(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-131.html), the amount is deemed to be a capital gain of the shareholder.  
+The deemed gain is from a disposition of capital property in the year.  
 
 The label is misleading; in substance it is a capital gain:
 - It is not a taxable dividend, so it does not go on Schedule 3, takes no s.112 deduction, and attracts no Part IV tax
 - Only the taxable half is taxed (the capital gains inclusion rate under ITA [s.38](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-38.html))
-- The taxable half is a taxable capital gain: it forms part of Aggregate Investment Income (AII), feeds NERDTOH through ITA [s.129(4)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-129.html), and counts toward the $50,000 adjusted-aggregate-investment-income (AAII) threshold that grinds the small business deduction (ITA [s.125(5.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-125.html))
-- The non-taxable half is added to the Capital Dividend Account (CDA) under ITA [s.89(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-89.html), exactly as with an ordinary capital gain
+- The taxable half is a taxable capital gain:
+  - It forms part of Aggregate Investment Income (AII) and feeds NERDTOH through ITA [s.129(4)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-129.html)
+  - It counts toward the $50,000 adjusted-aggregate-investment-income (AAII) threshold
+    - The threshold grinds the small business deduction (ITA [s.125(5.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-125.html))
+- The non-taxable half is added to the Capital Dividend Account (CDA) under ITA [s.89(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-89.html)
+  - Exactly as with an ordinary capital gain
 
-A capital gains dividend does not change the ACB of your fund shares; it is a current-year gain, not a return of capital.  
+A capital gains dividend does not change the ACB of your fund shares.  
+It is a current-year gain, not a return of capital.  
 
 
 ## Three-Way Contrast
@@ -35,11 +49,12 @@ Three slips can all put a capital gain on Schedule 6, and they are easy to confu
 
 | Slip | Issuer | What happened | Authority |
 | --- | --- | --- | --- |
-| T5 Box 18 capital gains *dividend* | Mutual fund corporation | No disposition; the fund flows out its internal gains | s.131(1) |
+| T5 Box 18 capital gains *dividend* | Mutual fund corporation | No disposition; the fund flows out its gains | s.131(1) |
 | T3 Box 21 capital gains *distribution* | Mutual fund trust | No disposition; the trust allocates its gains | s.104(21) |
 | T5008 *disposition* | Broker | A real sale; gain = proceeds − ACB | s.40(1) |
 
-- T5 Box 18 and T3 Box 21 are economically the same (the fund's gains pushed out to you); the difference is only the issuer's legal structure, corporation versus trust
+- T5 Box 18 and T3 Box 21 are economically the same (the fund's gains pushed out to you)
+  - The difference is only the issuer's legal structure, corporation vs trust
 - For the trust version and its cash-vs-phantom split, see [T3 capital gains distribution - Box 21](../T3/T3.md#capital-gains-distribution---box-21)
 - For an actual sale of a holding, see [T5008](../T5008/T5008.md)
 
@@ -70,26 +85,37 @@ Accounts typically involved in the Box 18 workflow:
 
 ## Ledger Entries
 
-A capital gains dividend from a mutual fund corporation is normally paid in cash, so there is no phantom (non-cash) portion and no ACB adjustment (unlike a T3 Box 21 distribution).  
+A capital gains dividend from a mutual fund corporation is normally paid in cash.  
+There is no phantom (non-cash) portion and no ACB adjustment (unlike a T3 Box 21 distribution).  
 
 For the Box 18 amount:
-- Debit: `Deposits - investment` (1002-2), or `Investment distributions receivable` (1060-1) if declared in December but paid in January
+- Debit: `Deposits - investment` (1002-2)
+  - Or `Investment distributions receivable` (1060-1) if declared in December but paid in January
 - Credit: `Capital gains dividends` (8211-3)
 
-During the year the amount can be parked in `TBD investment distributions` (8090-3) and reclassified to `Capital gains dividends` (8211-3) once the T5 confirms the Box 18 figure.  
+During the year the amount can be parked in `TBD investment distributions` (8090-3).  
+Reclassify to `Capital gains dividends` (8211-3) once the T5 confirms the Box 18 figure.  
 
 
 ## T2 Schedule Mapping
 
-Schedule 6 (S6 - Summary of Dispositions of Capital Property): report the full Box 18 amount as a capital gain.  
-- Use Part 1 (Shares), since a mutual fund corporation issues shares; like T3 Box 21, this is reported as a gain even though no disposition occurred
-- Proceeds = Box 18 amount, adjusted cost base = 0, so the full amount is the gain (it is a flow-through of the fund's gain, not a sale of your shares)
+Report the full Box 18 amount as a capital gain on Schedule 6 (S6 - *Summary of Dispositions of Capital Property*):
+- Use Part 1 (Shares), since a mutual fund corporation issues shares
+  - Like T3 Box 21, this is reported as a gain even though no disposition occurred
+- Proceeds = Box 18 amount, adjusted cost base = 0, so the full amount is the gain
+  - It is a flow-through of the fund's gain, not a sale of your shares
 - The capital gains tax is the same regardless of which S6 part is used
 
-Schedule 1 (S1 - Net Income (Loss) for Income Tax Purposes): line 113 (Taxable capital gains from Schedule 6) carries the taxable half — FutureTax fills it from S6 automatically — and an Other-deductions entry (Description 705 / Amount 395) backs out the full Box 18 amount booked to `Capital gains dividends` (8211-3), leaving the 50% inclusion in taxable income.  
+On Schedule 1 (S1 - *Net Income (Loss) for Income Tax Purposes*):
+- Line 113 (Taxable capital gains from Schedule 6) carries the taxable half
+  - FutureTax fills it from S6 automatically
+- Other deductions (Description 705 / Amount 395): back out the full Box 18 amount booked to 8211-3
+  - This leaves the 50% inclusion in taxable income
+
 Deducting only the non-taxable half would double-count once line 113 is filled.  
 
-There is no Schedule 3 entry, no s.112 deduction, and no Part IV tax: a capital gains dividend is a capital gain, not a taxable dividend.  
+There is no Schedule 3 entry, no s.112 deduction, and no Part IV tax.  
+A capital gains dividend is a capital gain, not a taxable dividend.  
 
 Track the non-taxable half in the Capital Dividend Account; see [Capital Dividend Account](../Capital-Dividend-Account/Capital-Dividend-Account.md).  
 

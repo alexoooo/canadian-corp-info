@@ -1,16 +1,20 @@
 # Adjusted Cost Base (ACB)
 
-**Who this is for**: owners of a Canadian-controlled private corporation (CCPC) who hold investments in a corporate trading account.  
+**Who this is for**:
+- Owners of a Canadian-controlled private corporation (CCPC) who hold investments in a corporate trading account
 
 The ACB is used when you sell a security; this results in a T5008 and needs to be reported on the T2 in Schedule 6 (S6).  
-You are responsible for maintaining your own ACB records and using those to calculate capital gains or losses (i.e. do not just report the T5008 Box 20 amount, which is the Book Cost rather than the ACB).  
+You are responsible for maintaining your own ACB records and using those to calculate capital gains or losses.  
+Do not just report the T5008 Box 20 amount, which is the Book Cost rather than the ACB.  
 
 This document is an overview of ACB concepts.  
 For detailed step-by-step instructions for how to track ACB, see [Adjusted Cost Base Tracking](Adjusted-Cost-Base-Tracking.md).  
 
 Limitations:
-- This document only covers stocks and ETFs; other types of investments (real estate, etc.) are out of scope and might have different or additional rules
-- Tax information can change over time (e.g. the capital gains inclusion rate was going to increase to 2/3, before the proposal was cancelled)
+- This document only covers stocks and ETFs
+  - Other types of investments (real estate, etc.) are out of scope and might have different or additional rules
+- Tax information can change over time
+  - One example: the capital gains inclusion rate was going to increase to 2/3, before the proposal was cancelled
 - The following is my understanding as of 2026
 
 
@@ -18,7 +22,8 @@ Limitations:
 
 Adjusted Cost Base (ACB) is used to calculate capital gains or losses when you sell an asset:  
 - ACB = cost of the property + acquisition costs + adjustments over time
-- Cost of the property: typically the purchase price that you paid to acquire the asset, but can sometimes be different (e.g. gifts, transfers, rollover, etc.)
+- Cost of the property: typically the purchase price that you paid to acquire the asset
+  - Can sometimes be different (e.g. gifts, transfers, rollover, etc.)
 - Acquisition costs: fees paid to buy the asset (e.g. brokerage trading commission)
 - Adjustments over time: ROC, phantom (non-cash) portion of capital gains distribution, stock splits, etc.
 
@@ -37,32 +42,45 @@ Market Value:
 Things that increase your ACB:
 - Purchasing a security
 - DRIP (reinvested distribution): the fund automatically acquires additional units on your behalf instead of paying cash
-  - For tax purposes you are treated as having received the cash and reinvested it, so the reinvested amount increases your ACB like any other Buy
-  - Use the payment/reinvestment date (when the units are credited to your account); this also drives the FX rate per the rule for distributions below
-- Phantom (non-cash) distribution: the fund reports a capital gains distribution on T3 Box 21 but some or all of it is not paid out in cash; you owe tax on it but received nothing, so you increase ACB by that phantom amount to prevent double-taxation on sale  
+  - For tax purposes you are treated as having received the cash and reinvested it
+    - The reinvested amount increases your ACB like any other Buy
+  - Use the payment/reinvestment date (when the units are credited to your account)
+    - This also drives the FX rate per the rule for distributions below
+- Phantom (non-cash) distribution: the fund reports a capital gains distribution on T3 Box 21
+  - Some or all of it is not paid out in cash; you owe tax on it but received nothing
+  - Increase ACB by the phantom amount to prevent double-taxation on sale
 
 Selling a security results in a T5008 which decreases the total ACB (the per-share/per-unit ACB is unchanged).  
 
-T3 box 42 (amount resulting in cost base adjustment) typically decreases your ACB (a return of capital reduces the unit's ACB under ITA [s.53(2)(h)(i.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-53.html)) but sometimes can increase it:
+T3 box 42 (amount resulting in cost base adjustment) typically decreases your ACB, but sometimes can increase it:
 - Positive amount decreases your ACB, typically this is Return of Capital
-- Negative amount increases your ACB, this is rare but can happen (e.g. an over-distribution correction), always follow the sign  
+  - A return of capital reduces the unit's ACB under ITA [s.53(2)(h)(i.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-53.html)
+- Negative amount increases your ACB, this is rare but can happen (e.g. an over-distribution correction)
+  - Always follow the sign
 
 ACB cannot be negative.  
 If ROC would reduce it below zero, the excess becomes an immediate capital gain (ITA [s.40(3)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-40.html)).  
-Report that gain as a separate line in S6 of your T2 software rather than folding it into a normal disposition line for the security.  
+Report that gain as a separate line in S6 of your T2 software.  
+Do not fold it into a normal disposition line for the security.  
 
 Example:
 - Purchase 100 units at $10.00/unit → total ACB: $1,000.00, per-unit ACB: $10.00
 - Year 1 ROC: $2.00/unit × 100 = $200 → total ACB: $800.00, per-unit ACB: $8.00
 - Year 2 ROC: $5.00/unit × 100 = $500 → total ACB: $300.00, per-unit ACB: $3.00
-- Year 3 ROC: $4.00/unit × 100 = $400, but only $300 remaining ACB → ACB reduced to $0, and the $100 excess is an immediate capital gain (ITA s.40(3)); report on S6
+- Year 3 ROC: $4.00/unit × 100 = $400, but only $300 remaining ACB → ACB reduced to $0
+  - The $100 excess is an immediate capital gain (ITA s.40(3)); report on S6
 - Per-unit ACB is now $0.00; all future ROC will similarly be immediate capital gains
 
 Corporate actions can increase or decrease your ACB:
-- Stock split: total ACB stays the same, but it is spread over more shares/units, so the per-share/per-unit ACB decreases proportionally
-- Spin-off (Canadian plan-of-arrangement): allocate the original total ACB between the parent and the new entity by their relative fair market values on the effective date, then track them as two separate pooled positions
-  - Foreign spin-off: the default is a taxable dividend in kind at the shares' FMV, that FMV becomes their ACB (ITA s.52(2)), and the parent's ACB is unchanged
-  - A s.86.1 election, available only where CRA lists the distribution as eligible and you elect in writing with your return, replaces that default with the relative-FMV apportionment above and defers the income inclusion
+- Stock split: total ACB stays the same, but it is spread over more shares/units
+  - The per-share/per-unit ACB decreases proportionally
+- Spin-off (Canadian plan-of-arrangement): allocate the original total ACB between the parent and the new entity
+  - Allocate by their relative fair market values on the effective date
+  - Then track them as two separate pooled positions
+  - Foreign spin-off: the default is a taxable dividend in kind at the shares' FMV
+    - That FMV becomes their ACB (ITA s.52(2)), and the parent's ACB is unchanged
+  - A s.86.1 election replaces that default with the relative-FMV apportionment above and defers the income inclusion
+    - Available only where CRA lists the distribution as eligible and you elect in writing with your return
 
 
 ## Book Cost vs ACB
@@ -70,16 +88,18 @@ Corporate actions can increase or decrease your ACB:
 Ideally Book Cost would equal ACB, but in practice you might see brokerage-dependent differences with the following:
 - Phantom distributions: non-cash portion of T3 Box 21
 - Cost base adjustment: T3 Box 42, typically Return of Capital (ROC)
-- T5008 and T3 amounts might be slightly different from what you see in your investment account (typically in pennies and washes out over time)  
+- T5008 and T3 amounts might be slightly different from what you see in your investment account
+  - Typically in pennies and washes out over time
 
 Depending on your brokerage, you might see:
-- Every change to the ACB could be correctly reflected in the Book Cost, this is ideal  
-- ACB changes might be reflected but delayed (e.g. until following April)  
-- Some ACB changes might be missing entirely  
-- Superficial loss rules and external holdings may not be tracked correctly by your brokerage; see [Capital loss carry forward / back / superficial loss](#capital-loss-carry-forward--back--superficial-loss) below  
-- All brokerages might occasionally miss adjusting the Book Cost and sometimes report the wrong amount  
-- The behaviour can appear inconsistent  
-- It might be possible to raise a discrepancy with your brokerage, and they could re-issue T3 or T5008 slips  
+- Every change to the ACB could be correctly reflected in the Book Cost, this is ideal
+- ACB changes might be reflected but delayed (e.g. until following April)
+- Some ACB changes might be missing entirely
+- Superficial loss rules and external holdings may not be tracked correctly by your brokerage
+  - See [Capital loss carry forward / back / superficial loss](#capital-loss-carry-forward--back--superficial-loss) below
+- All brokerages might occasionally miss adjusting the Book Cost and sometimes report the wrong amount
+- The behaviour can appear inconsistent
+- It might be possible to raise a discrepancy with your brokerage, and they could re-issue T3 or T5008 slips
 
 
 ## Trading Fees
@@ -96,45 +116,66 @@ Trading fees to sell a security:
 
 ACB uses pooled average cost across all identical properties (not FIFO or LIFO) (ITA [s.47(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-47.html)).  
 When you sell and fill out the T2 S6 entry, you will need to specify a "Date of acquisition".  
-For pooled securities, use the date of the very first purchase that contributed to the current pool, a conservative convention in the absence of specific CRA guidance.  
+For pooled securities, use the date of the very first purchase that contributed to the current pool.  
+This is a conservative convention in the absence of specific CRA guidance.  
 
 
 ## Foreign Assets and FX Conversion to CAD
 
-If you hold USD or other foreign assets, you must convert to CAD when calculating ACB (you can use the Bank of Canada daily exchange rate, the indicative midpoint published at approximately 16:30 ET; the legacy noon rate is no longer published):  
-- Purchases and sales: use the exchange rate for the trade date (not settlement date)  
-- Distributions (including ROC and reinvested/phantom amounts such as the non-cash portion of T3 box 21): use exchange rate on payment/distribution date (not when distribution is declared)  
-- Outlays and expenses (e.g. commissions): use exchange rate on trade date (not settlement date)  
-- Financial-statement translation rates (the year-end closing rate for monetary items, the average annual rate under a full-translation method) do not apply to ACB calculations; see [Foreign Currency](../../Bookkeeping/Foreign-Currency/Foreign-Currency.md)
-- For ACB purposes, always use the daily exchange rate as specified above  
+If you hold USD or other foreign assets, you must convert to CAD when calculating ACB.  
+You can use the Bank of Canada daily exchange rate, the indicative midpoint published at approximately 16:30 ET.  
+The legacy noon rate is no longer published.  
+Which day's rate to use:
+- Purchases and sales: use the exchange rate for the trade date (not settlement date)
+- Distributions: use exchange rate on payment/distribution date (not when distribution is declared)
+  - Including ROC and reinvested/phantom amounts such as the non-cash portion of T3 box 21
+- Outlays and expenses (e.g. commissions): use exchange rate on trade date (not settlement date)
+- Financial-statement translation rates do not apply to ACB calculations
+  - The year-end closing rate for monetary items, the average annual rate under a full-translation method
+  - See [Foreign Currency](../../Bookkeeping/Foreign-Currency/Foreign-Currency.md)
+- For ACB purposes, always use the daily exchange rate as specified above
 
 
 ## Corporate vs Personal ACB
 
-If you hold a security in a personal account, as well as in your corporation's account, they are considered assets of two distinct legal entities.  
+You might hold a security in a personal account as well as in your corporation's account.  
+They are considered assets of two distinct legal entities.  
 You track the ACB for each entity separately, even if they hold the identical security.  
 
-Note that while ACB is tracked separately, personal and corporate accounts are "affiliated persons" for the purpose of superficial loss (see below).
+While ACB is tracked separately, personal and corporate accounts are "affiliated persons".  
+That matters for the superficial loss rules (see below).  
 
 
 ## Capital Loss Carry Forward / Back / Superficial Loss
 
 Capital losses can be carried forward indefinitely to offset future capital gains, and they can be carried back 3 years.  
-To carry back a capital loss, a corporation uses T2 Schedule 4 (S4, Corporation Loss Continuity and Application), which triggers a reassessment of the prior-year T2.  
+To carry back a capital loss, a corporation uses T2 Schedule 4 (S4, Corporation Loss Continuity and Application).  
+The carryback triggers a reassessment of the prior-year T2.  
 
 Tax loss harvesting is the technique of realizing a loss, and then potentially investing in a similar security.  
 There are limitations on which losses can be claimed, make sure you don't get a *superficial loss* (ITA [s.54](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-54.html)):  
-- Time window: during the 61-day period that begins 30 days before and ends 30 days after a sale at a loss  
-- Who it applies to: you or an "affiliated person", including a corporation that you control (or a corporation controlled by your spouse/common-law partner)  
-- What is the action: acquisition of an identical property (same issuer, same class, same currency of issue per [CRA IT-387R2 (Archived) - *Meaning of "Identical Properties"*](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/it387r2-consolid/archived-meaning-identical-properties.html); whether two different ETFs tracking the same index are identical is fact-specific)  
-- Condition at end of period: you or an affiliated person still owns that substituted property (or has the right to acquire it)  
-- What happens depends on *who sold at the loss*:  
-  - *The corporation sells at a loss* and the corporation or an affiliated person reacquires the identical property in the window and still holds it at the end: this is **not** a superficial loss (ITA s.54(h) excludes it) but a *suspended loss* under ITA [s.40(3.3)/(3.4)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-40.html)
+- Time window: during the 61-day period that begins 30 days before and ends 30 days after a sale at a loss
+- Who it applies to: you or an "affiliated person", including a corporation that you control
+  - Or a corporation controlled by your spouse/common-law partner
+- What is the action: acquisition of an identical property
+  - Same issuer, same class, same currency of issue per [CRA IT-387R2 (Archived) - *Meaning of "Identical Properties"*](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/it387r2-consolid/archived-meaning-identical-properties.html)
+  - Whether two different ETFs tracking the same index are identical is fact-specific
+- Condition at end of period: you or an affiliated person still owns that substituted property
+  - Or has the right to acquire it
+- What happens depends on *who sold at the loss*:
+  - *The corporation sells at a loss* and the corporation or an affiliated person reacquires the identical property
+    - In the window, still holding it at the end: this is **not** a superficial loss (ITA s.54(h) excludes it)
+    - It is a *suspended loss* under ITA [s.40(3.3)/(3.4)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-40.html)
     - The loss is deemed nil, with **no** s.53(1)(f) ACB addition anywhere
-    - It stays suspended in the corporation, released only once neither it nor any affiliated person has held the property (or an identical one) for a 30-day period (or on the other s.40(3.4)(b) events, such as winding up)  
-  - *You or your spouse sell personally at a loss* and the corporation reacquires the identical property in the window and still holds it: this is a genuine superficial loss (ITA s.40(2)(g)(i))
-    - The denied personal loss is added to the *corporation's* ACB of the repurchased security under ITA s.53(1)(f), recovered when the corporation later sells  
-- The s.53(1)(f) ACB bump only ever runs from an affiliated individual's denied *personal* loss into the *corporation's* ACB, never from a corporate loss into your personal account
+    - It stays suspended in the corporation
+      - Released only once neither it nor any affiliated person has held the property (or an identical one) for 30 days
+      - Or on the other s.40(3.4)(b) events, such as winding up
+  - *You or your spouse sell personally at a loss* and the corporation reacquires the identical property
+    - In the window, still holding it: this is a genuine superficial loss (ITA s.40(2)(g)(i))
+    - The denied personal loss is added to the *corporation's* ACB of the repurchased security under ITA s.53(1)(f)
+      - Recovered when the corporation later sells
+- The s.53(1)(f) ACB bump only ever runs from an affiliated individual's denied *personal* loss into the *corporation's* ACB
+  - Never from a corporate loss into your personal account
 
 
 ## Related
@@ -152,10 +193,15 @@ There are limitations on which losses can be claimed, make sure you don't get a 
 - Income Tax Act (R.S.C., 1985, c. 1 (5th Supp.)):
   - [s.40(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-40.html) - capital gain and capital loss formula, including outlays and expenses on disposition
   - [s.40(3)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-40.html) - deemed capital gain when ACB would be driven below zero (e.g. by excess ROC)
-  - [s.40(3.3), s.40(3.4)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-40.html) - corporate/affiliated stop-loss: a loss on a disposition by a corporation is deemed nil and suspended when an affiliated person reacquires the identical property, released when the affiliated group is out of the position
+  - [s.40(3.3), s.40(3.4)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-40.html) - corporate/affiliated stop-loss
+    - A loss on a disposition by a corporation is deemed nil and suspended
+    - When an affiliated person reacquires the identical property
+    - Released when the affiliated group is out of the position
   - [s.40(2)(g)(i)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-40.html) - denial of a superficial loss (individual seller / corporate reacquirer case)
   - [s.47(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-47.html) - identical properties: pooled average cost rather than FIFO or LIFO
-  - [s.53](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-53.html) - adjustments to cost base (additions and deductions), including s.53(1)(f), which adds a denied superficial loss to the substituted property's ACB, and s.53(2)(h)(i.1), under which a trust-unit return of capital reduces the unit's ACB
+  - [s.53](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-53.html) - adjustments to cost base (additions and deductions)
+    - s.53(1)(f) - adds a denied superficial loss to the substituted property's ACB
+    - s.53(2)(h)(i.1) - a trust-unit return of capital reduces the unit's ACB
   - [s.54](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-54.html) - definitions of "adjusted cost base", "superficial loss", and "proceeds of disposition"
   - [s.251.1](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-251.1.html) - definition of "affiliated persons" (relevant to superficial loss)
 - CRA IT-387R2 (Archived) - *Meaning of "Identical Properties"*: https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/it387r2-consolid/archived-meaning-identical-properties.html
@@ -172,4 +218,4 @@ There are limitations on which losses can be claimed, make sure you don't get a 
 
 ## TODO
 
-- Elaborate on foreign currency conversion, cross-reference with Foreign-Currency.md  
+- Elaborate on foreign currency conversion, cross-reference with Foreign-Currency.md
