@@ -53,7 +53,7 @@ CRA then issues the nine-digit *business number* and the corporate-tax account a
 The program accounts, and when each is needed (see [Types of accounts](../Overview/Small-Business-Tax.md#types-of-accounts)):
 - `RC` (corporate income tax): created with the BN; nothing to register
 - `RT` (GST/HST): register at the $30,000 small-supplier threshold, or voluntarily from day one
-  - Voluntary is often worthwhile for the ITCs on startup costs (see [HST — Registration](../Operations/HST.md#registration))
+  - Voluntary is often worthwhile for the ITCs on startup costs (see [HST — Registration](../Operations/HST/HST-Registration-And-Filing.md#registration))
 - `RP` (payroll): register before the first salary remittance is due (see [Payroll](../Paying-Yourself/Payroll.md#rp-program-account))
 - `RZ` (information returns): register before filing the first T5 (see [Bookkeeping and information slips](../Paying-Yourself/Dividends/Bookkeeping-And-Slips.md))
 
@@ -155,7 +155,7 @@ The corporation's cost starts at the transfer price; prior personal use is irrel
 - *Instalments*: none in the first year
   - They key off prior-year tax, and there is none (see [Filing deadlines and instalments](../Overview/Small-Business-Tax.md#filing-deadlines-and-instalments))
 - *GST/HST*: the small-supplier clock counts taxable supplies from the first sale, not from incorporation
-  - Registration is required from the sale that crosses $30,000 within a single quarter (see [HST — Registration](../Operations/HST.md#registration))
+  - Registration is required from the sale that crosses $30,000 within a single quarter (see [HST — Registration](../Operations/HST/HST-Registration-And-Filing.md#registration))
   - Or after a one-month grace following the quarter in which the four-quarter total crosses
 - *Payroll*: the first remittance is due the 15th of the month after the first salary is paid (see [Payroll](../Paying-Yourself/Payroll.md))
 - *Slips*: the first T4/T5s are due the last day of February after the first calendar year with salary or dividends paid
@@ -173,7 +173,7 @@ Set up the chart of accounts (see [Ledger and Accounts](../Bookkeeping/Ledger-An
 - [Owner-corporation transactions](../Paying-Yourself/Owner-Corporation-Transactions.md)
 - [Ledger and Accounts](../Bookkeeping/Ledger-And-Accounts.md)
 - [Payroll](../Paying-Yourself/Payroll.md)
-- [HST](../Operations/HST.md)
+- [HST](../Operations/HST/HST.md)
 - [Small Business Tax Overview](../Overview/Small-Business-Tax.md)
 - [Winding Down](Winding-Down.md)
 

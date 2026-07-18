@@ -416,7 +416,7 @@ T2 schedules involved with CCA:
 - [Small Business Tax Overview](../../../Overview/Small-Business-Tax.md)
 - [Adjusted Cost Base](../../../Investments/Adjusted-Cost-Base/Adjusted-Cost-Base.md)
 - [Capital Dividend Account](../../../Investments/Capital-Dividend-Account/Capital-Dividend-Account.md)
-- [HST](../../HST.md)
+- [HST](../../HST/HST.md)
 - [Expense Classification](../../../Bookkeeping/Expense-Classification.md)
 - [Owner-corporation transactions](../../../Paying-Yourself/Owner-Corporation-Transactions.md)
 - [Glossary](../../../Overview/Glossary.md)

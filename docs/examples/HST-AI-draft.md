@@ -1,7 +1,7 @@
 # HST (frozen AI-draft specimen)
 
 > FROZEN STYLE SPECIMEN. Not tax guidance, not maintained, do not edit or promote.
-> Curated excerpt of [`../../guide/Operations/HST.md`](../../guide/Operations/HST.md) as drafted (AI generated); snapshot 2026-06-23.
+> Curated excerpt of [`../../guide/Operations/HST/HST.md`](../../guide/Operations/HST/HST.md) as drafted (AI generated); snapshot 2026-06-23.
 > Read it against a reviewed page and the rules in [`../Style-Guide.md`](../Style-Guide.md#reviewing-an-ai-draft).
 
 Tells on display:

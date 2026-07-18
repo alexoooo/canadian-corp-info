@@ -33,7 +33,7 @@ Limitations:
 
 Income is recognized when it is earned (ITA [s.9](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-9.html)).  
 An amount receivable for work billed is included even though uncollected (ITA [s.12(1)(b)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-12.html)).  
-HST follows its own clock — generally the earlier of the invoice date and payment (see [HST — When tax becomes payable](HST.md#when-tax-becomes-payable)).  
+HST follows its own clock — generally the earlier of the invoice date and payment (see [HST — When tax becomes payable](HST/HST-Bookkeeping.md#when-tax-becomes-payable)).  
 
 Invoicing $5,000 of consulting plus 13% HST:
 
@@ -92,7 +92,7 @@ Partial write-offs are fine: write off the portion established to be bad and kee
 
 ## HST Bad-Debt Adjustment
 
-Under the regular method, the HST remitted on the unpaid invoice is recovered under ETA [s.231](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-231.html) (see [HST — Edge cases](HST.md#edge-cases)):
+Under the regular method, the HST remitted on the unpaid invoice is recovered under ETA [s.231](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-231.html) (see [HST — Edge cases](HST/HST.md#edge-cases)):
 - Conditions: the tax was reported and remitted on a prior return, and the debt has been written off in the books
   - The sale must also have been to an arm's-length recipient
 - The recovery is the tax fraction of the uncollected amount
@@ -126,7 +126,7 @@ Client later pays $2,260 of the written-off $5,650:
 
 ## Related
 
-- [HST](HST.md) (tax point, bad-debt adjustment, Quick Method)
+- [HST](HST/HST.md) (tax point, bad-debt adjustment, Quick Method)
 - [Ledger and Accounts](../Bookkeeping/Ledger-And-Accounts.md)
 - [Deferred Revenue](Deferred-Revenue.md) (the mirror problem: cash before income)
 - [T2 Schedules](../Filing-And-CRA/T2-Schedules.md) (Schedule 13 reserves)

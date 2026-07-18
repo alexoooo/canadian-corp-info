@@ -114,7 +114,7 @@ CCA needs extra care on the rental side:
 ## HST
 
 The HST character follows the use of the space, not the corporation's registration:
-- *Commercial rent*: taxable — charge HST on the rent, claim ITCs on the property's inputs (see [HST](HST.md))
+- *Commercial rent*: taxable — charge HST on the rent, claim ITCs on the property's inputs (see [HST](HST/HST.md))
 - *Long-term residential rent*: exempt — no HST charged, and no ITCs on the related inputs
   - A registrant with both kinds of space apportions its ITCs
 - Exempt residential rent also stays out of the Quick Method remittance base and the small-supplier threshold
@@ -144,7 +144,7 @@ Keep a per-property view (sub-accounts or a schedule) so the Reg 1100(11) cap an
 - [Small Business Tax Overview](../Overview/Small-Business-Tax.md) (active vs investment income)
 - [ERDTOH and NERDTOH](../Paying-Yourself/Dividends/ERDTOH-NERDTOH.md) (the refundable-tax cycle the rent joins)
 - [Capital Cost Allowance](Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md)
-- [HST](HST.md)
+- [HST](HST/HST.md)
 - [Owner-corporation transactions](../Paying-Yourself/Owner-Corporation-Transactions.md) (corporate property used personally)
 - [Capital vs Income Character](../Investments/Capital-Vs-Income-Character.md) (the parallel character question for securities)
 - [T2 Schedules](../Filing-And-CRA/T2-Schedules.md)

@@ -8,7 +8,7 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
 
 **TLDR**:
 - This group covers the day-to-day tax events between incorporation and the annual return
-- The revenue side: [HST](HST.md) on what you bill, and revenue recognition through [receivables and bad debts](Receivables-And-Bad-Debts.md) and [deferred revenue](Deferred-Revenue.md)
+- The revenue side: [HST](HST/HST.md) on what you bill, and revenue recognition through [receivables and bad debts](Receivables-And-Bad-Debts.md) and [deferred revenue](Deferred-Revenue.md)
 - The cost side: [cost recovery](Cost-Recovery/Cost-Recovery.md) turns purchases into deductions through inventory, materials, or capital cost allowance
 - Plus [financing](Debt-And-Financing.md), [donations](Donations.md), and [rental and property income](Rental-And-Property-Income.md)
 
@@ -24,7 +24,12 @@ Bill customers, collect and remit sales tax, recognize revenue at the right time
 This group collects those operating events.  
 
 This page is a hub; these are the sub-pages:
-- [HST](HST.md): registration, the Quick Method, input tax credits, and filing
+- [HST](HST/HST.md): registration, the Quick Method, input tax credits, and filing
+  - [HST Registration and Filing](HST/HST-Registration-And-Filing.md)
+  - [HST Bookkeeping](HST/HST-Bookkeeping.md)
+  - [HST Regular Method](HST/HST-Regular-Method.md)
+  - [HST Quick Method](HST/HST-Quick-Method.md)
+  - [HST Worked Examples](HST/HST-Examples.md)
 - [Receivables and Bad Debts](Receivables-And-Bad-Debts.md): revenue recognition and the bad-debt adjustment
   - When income is earned vs billed vs received, and the adjustments when a receivable goes bad
 - [Deferred Revenue](Deferred-Revenue.md): the tax point on deposits and prepayments

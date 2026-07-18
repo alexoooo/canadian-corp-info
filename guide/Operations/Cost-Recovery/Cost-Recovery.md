@@ -214,7 +214,7 @@ Included in cost:
 - Foreign-currency invoice converted at the *trade-date* Bank of Canada rate
 
 Excluded from cost (booked elsewhere):
-- Recoverable GST/HST claimed as an *input tax credit* (ITC): booked to `HST receivable`; see [HST](../HST.md)
+- Recoverable GST/HST claimed as an *input tax credit* (ITC): booked to `HST receivable`; see [HST](../HST/HST.md)
 - Interest on financing for the purchase: deductible as `Interest and bank charges` (GIFI 8710), not capitalized
   - The s.21 election to capitalize interest into a depreciable asset is the narrow exception
 - Storage and handling after the asset reaches the corp's premises
@@ -222,7 +222,7 @@ Excluded from cost (booked elsewhere):
   - Per [Foreign Currency](../../Bookkeeping/Foreign-Currency/Foreign-Currency.md); the landed cost stays at the trade-date figure
 - Administrative overhead and indirect costs not attributable to a specific acquisition
 
-The 50%-business-use rule on ITC eligibility for capital property is in [HST](../HST.md#capital-purchases).  
+The 50%-business-use rule on ITC eligibility for capital property is in [HST](../HST/HST-Regular-Method.md#capital-purchases).  
 The FX trade-date convention is in [Foreign Currency](../../Bookkeeping/Foreign-Currency/FX-Rates-And-Character.md#when-to-use-which-rate).
 
 
@@ -280,7 +280,7 @@ The statutory reading is contested:
   - It keeps s.45 / s.13(7) for actual income↔personal changes of use
 
 The HST-side equivalent is the deemed ITC adjustment under ETA s.199(3) / s.200(2).  
-It applies when business-use proportion crosses 50% on capital personal property; see [HST](../HST.md#capital-purchases).
+It applies when business-use proportion crosses 50% on capital personal property; see [HST](../HST/HST-Regular-Method.md#capital-purchases).
 
 
 ## T2 Schedules Touched
@@ -332,7 +332,7 @@ A CIP balance is never directly disposed of:
 ## Related
 
 - [Small Business Tax Overview](../../Overview/Small-Business-Tax.md): primer for the rest of the guide
-- [HST](../HST.md): GST/HST mechanics, including ITC eligibility on inputs and the 50%-business-use line on capital property
+- [HST](../HST/HST.md): GST/HST mechanics, including ITC eligibility on inputs and the 50%-business-use line on capital property
 - [Expense Classification](../../Bookkeeping/Expense-Classification.md): GIFI lines for operating expenses and the capitalize-vs-expense decision
 - [Foreign Currency](../../Bookkeeping/Foreign-Currency/Foreign-Currency.md): trade-date FX convention used to convert foreign-currency invoices into landed cost
 - [Adjusted Cost Base](../../Investments/Adjusted-Cost-Base/Adjusted-Cost-Base.md): the investing-side analogue of inventory pooling, applied to securities rather than goods

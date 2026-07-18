@@ -198,7 +198,7 @@ A nil assessment cannot be objected to; for a loss year, the lever is a loss det
 - [Payroll](../Paying-Yourself/Payroll.md)
 - [Small Business Tax Overview](../Overview/Small-Business-Tax.md)
 - [Ledger and Accounts](../Bookkeeping/Ledger-And-Accounts.md)
-- [HST](../Operations/HST.md)
+- [HST](../Operations/HST/HST.md)
 
 
 ## Citations

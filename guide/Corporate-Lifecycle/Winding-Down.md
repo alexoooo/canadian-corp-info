@@ -73,7 +73,7 @@ Settle the debts, including the shareholder loan:
 
 ## Closing the GST/HST Account
 
-Cancel the RT registration once commercial activity has ceased (see [HST](../Operations/HST.md)):
+Cancel the RT registration once commercial activity has ceased (see [HST](../Operations/HST/HST.md)):
 - File the final return for the period ending on the cancellation date
 - Property still held on deregistration triggers GST/HST on the final return, so deregister after the assets are gone:
   - Non-capital property is deemed sold at fair market value

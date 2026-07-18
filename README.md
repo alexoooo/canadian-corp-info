@@ -43,7 +43,12 @@ Unmarked pages are reviewed; † = AI generated, not verified yet.
   - [Year-End USD Deposit](guide/Bookkeeping/Foreign-Currency/Year-End-USD-Deposit.md) †
 
 **[Operations](guide/Operations/Operations.md)** †:
-- [HST](guide/Operations/HST.md) †
+- [HST](guide/Operations/HST/HST.md) †
+  - [HST - Registration and Filing](guide/Operations/HST/HST-Registration-And-Filing.md) †
+  - [HST - Bookkeeping](guide/Operations/HST/HST-Bookkeeping.md) †
+  - [HST - Regular Method](guide/Operations/HST/HST-Regular-Method.md) †
+  - [HST - Quick Method](guide/Operations/HST/HST-Quick-Method.md) †
+  - [HST - Worked Examples](guide/Operations/HST/HST-Examples.md) †
 - [Receivables and Bad Debts](guide/Operations/Receivables-And-Bad-Debts.md) †
 - [Deferred Revenue](guide/Operations/Deferred-Revenue.md) †
 - [Cost Recovery](guide/Operations/Cost-Recovery/Cost-Recovery.md) †

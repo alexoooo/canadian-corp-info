@@ -16,7 +16,7 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
 
 Limitations:
 - The whole-dollar filing requirement and the round-half-up convention are stated here as my understanding as of 2026; verify the current wording in CRA's *RC4088* and the schedule instructions before relying on it
-- GST/HST rounding is a separate regime (to the nearest cent, not the nearest dollar); see [GST/HST](../Operations/HST.md)
+- GST/HST rounding is a separate regime (to the nearest cent, not the nearest dollar); see [GST/HST](../Operations/HST/HST.md)
 - This is a bookkeeping convention for presenting whole-dollar statements, not a substitute for the internal balancing your tax software already performs
 - I am not an accountant; this is not financial or tax advice
 
@@ -43,7 +43,7 @@ The methods below make the rounding deterministic.
 
 - *Whole dollars*: GIFI amounts on Schedule 100 (balance sheet) and Schedule 125 (income statement), and the figures on the calculation schedules (Schedule 1, Schedule 6, Schedule 8), are reported in whole dollars with no cents — RC4088 gives the example of reporting cash of $10,500.75 as `10501`
 - *Round to the nearest dollar*: a fractional amount rounds to the nearest whole dollar; an amount exactly halfway rounds up to the higher dollar (round half up) — so $10,500.49 becomes $10,500 and $10,500.50 becomes $10,501
-- *GST/HST is separate*: sales tax is rounded to the nearest cent, not the nearest dollar, and follows its own rules on the GST/HST return; see [GST/HST](../Operations/HST.md)
+- *GST/HST is separate*: sales tax is rounded to the nearest cent, not the nearest dollar, and follows its own rules on the GST/HST return; see [GST/HST](../Operations/HST/HST.md)
 
 Round half up is the convention used across CRA's income-tax calculations, including the annual indexation of tax brackets (ITA [s.117.1(3)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-117.1.html) rounds an equidistant amount to the higher dollar); banker's rounding (round half to even) does not apply here.
 
@@ -114,7 +114,7 @@ In every case the rule is the same: keep the working figures to the cent, round 
 - [Adjusted Cost Base - Tracking](../Investments/Adjusted-Cost-Base/Adjusted-Cost-Base-Tracking.md)
 - [Inventory](../Operations/Cost-Recovery/Inventory-And-COGS.md)
 - [Capital Cost Allowance](../Operations/Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md)
-- [GST/HST](../Operations/HST.md)
+- [GST/HST](../Operations/HST/HST.md)
 - [Glossary](../Overview/Glossary.md)
 
 

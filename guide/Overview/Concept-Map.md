@@ -62,7 +62,7 @@ Details:
 - [Bookkeeping, the general ledger, and GIFI](Small-Business-Tax.md#bookkeeping-the-general-ledger-and-gifi): books → financial statements → GIFI mapping
 - [Ledger and Accounts](../Bookkeeping/Ledger-And-Accounts.md): debits and credits, journal entries, the trial balance, and a full chart of accounts
 - [Paying yourself: salary vs dividends](Small-Business-Tax.md#paying-yourself-salary-vs-dividends): the two ways money leaves the corporation
-- [GST/HST](../Operations/HST.md): the parallel collect-and-remit cycle  
+- [GST/HST](../Operations/HST/HST.md): the parallel collect-and-remit cycle  
 
 
 ## Income Classification
@@ -180,7 +180,7 @@ flowchart LR
 
 Registration is mandatory once taxable supplies pass $30,000 over four quarters; below that it is optional.  
 
-Details: [HST](../Operations/HST.md), [Small Business Tax Overview — HST and other consumption taxes](Small-Business-Tax.md#hst-and-other-consumption-taxes).  
+Details: [HST](../Operations/HST/HST.md), [Small Business Tax Overview — HST and other consumption taxes](Small-Business-Tax.md#hst-and-other-consumption-taxes).  
 
 
 ## Remuneration: Salary vs Dividend
@@ -375,7 +375,7 @@ Details: [Filing deadlines and instalments](Small-Business-Tax.md#filing-deadlin
 - [Adjusted Cost Base](../Investments/Adjusted-Cost-Base/Adjusted-Cost-Base.md)
 - [Owner-corporation transactions](../Paying-Yourself/Owner-Corporation-Transactions.md)
 - [Business Acquisition](../Corporate-Lifecycle/Business-Acquisition/Business-Acquisition.md)
-- [HST](../Operations/HST.md)
+- [HST](../Operations/HST/HST.md)
 - [Payment](../Filing-And-CRA/Payment/Payment.md)
 - [Glossary](Glossary.md)
 

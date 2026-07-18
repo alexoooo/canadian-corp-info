@@ -145,7 +145,7 @@ Quick Method:
 
 Under the Quick Method the deductible expense is $1,130 instead of $1,000.  
 The unclaimed HST rides along in the expense, the trade-off for keeping the remittance spread on the revenue side.  
-For the method rules, eligibility, and the revenue-side mechanics, see [HST](../Operations/HST.md#quick-method).  
+For the method rules, eligibility, and the revenue-side mechanics, see [HST](../Operations/HST/HST-Quick-Method.md).  
 
 
 ## Cost of Sales Is Separate
@@ -163,7 +163,7 @@ For inventory costing, the COGS identity, and which channel a cost belongs to, s
 - [Cost Recovery](../Operations/Cost-Recovery/Cost-Recovery.md)
 - [Capital Cost Allowance](../Operations/Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md)
 - [Inventory and COGS](../Operations/Cost-Recovery/Inventory-And-COGS.md)
-- [HST](../Operations/HST.md)
+- [HST](../Operations/HST/HST.md)
 - [Foreign Currency](Foreign-Currency/Foreign-Currency.md)
 - [Small Business Tax Overview](../Overview/Small-Business-Tax.md)
 - [Glossary](../Overview/Glossary.md)

@@ -199,7 +199,7 @@ GST/HST on imports:
   - The declaration replaced Form B3 when CARM became the system of record in October 2024
   - If the corp is HST-registered, the same amount is reclaimable as an ITC on the next GST/HST return
   - If not, it is a permanent cost addition to inventory
-- See [HST](../HST.md) for the full mechanics
+- See [HST](../HST/HST.md) for the full mechanics
 
 
 ## Tracking Through the Year
@@ -545,7 +545,7 @@ Year-end Schedule 125 if 300 units are sold during the year at $70 each:
 - [Small Business Tax Overview](../../Overview/Small-Business-Tax.md)
 - [Ledger and Accounts](../../Bookkeeping/Ledger-And-Accounts.md)
 - [Adjusted Cost Base](../../Investments/Adjusted-Cost-Base/Adjusted-Cost-Base.md)
-- [HST](../HST.md)
+- [HST](../HST/HST.md)
 - [Foreign Currency](../../Bookkeeping/Foreign-Currency/Foreign-Currency.md)
 - [Glossary](../../Overview/Glossary.md)
 - [Whole-dollar rounding](../../Filing-And-CRA/Whole-Dollar-Rounding.md)

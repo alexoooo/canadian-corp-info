@@ -419,7 +419,7 @@ On the schedules:
 - [Inventory](Inventory-And-COGS.md)
 - [Capital Cost Allowance](Capital-Cost-Allowance/Capital-Cost-Allowance.md)
 - [Small Business Tax Overview](../../Overview/Small-Business-Tax.md)
-- [HST](../HST.md)
+- [HST](../HST/HST.md)
 - [Glossary](../../Overview/Glossary.md)
 
 

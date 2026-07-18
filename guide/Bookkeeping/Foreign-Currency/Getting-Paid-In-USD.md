@@ -77,7 +77,7 @@ Registration and ITC consequences:
   - A CCPC with all-US-client revenue over $30,000 in a rolling four-quarter window must register
 - Once registered, ITCs on Canadian inputs remain claimable even though all output is zero-rated
   - The corp typically files for a GST/HST refund each period
-- See [HST](../../Operations/HST.md) for the full mechanics: registration, reporting periods, ITC tracking, Quick Method
+- See [HST](../../Operations/HST/HST.md) for the full mechanics: registration, reporting periods, ITC tracking, Quick Method
   - A consultant billing only non-resident clients gets no benefit from the Quick Method anyway
     - Zero-rated supplies carry no HST to keep
 
@@ -88,14 +88,14 @@ A *taxable* USD-denominated supply (for example a USD invoice to a Canadian cust
 The HST is converted to CAD at the rate on its *tax-point* date (ETA [s.159](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-159.html)).  
 The tax point is the earlier of the day the consideration is paid and the day it becomes due (ETA [s.168(1)](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-168.html)).  
 For a consultant billing on completion this is normally the invoice date.  
-See [HST / When tax becomes payable](../../Operations/HST.md#when-tax-becomes-payable) for the full s.152 breakdown.  
+See [HST / When tax becomes payable](../../Operations/HST/HST-Bookkeeping.md#when-tax-becomes-payable) for the full s.152 breakdown.  
 
 The HST tax-point rate can differ from the rate date on the revenue:
 - *Revenue*: invoice-date BoC rate, as elsewhere on this page
 - *HST*: tax-point-date BoC rate under s.159
 
 When the invoice is issued the day it is dated, the two coincide and a single rate applies.  
-They diverge across a year-end straddle (see [HST / Year-end straddle](../../Operations/HST.md#year-end-straddle-income-vs-hst-timing)).  
+They diverge across a year-end straddle (see [HST / Year-end straddle](../../Operations/HST/HST-Bookkeeping.md#year-end-straddle-income-vs-hst-timing)).  
 Revenue is accrued in the earlier year at that year-end's rate.  
 The HST is recognized with the next-year invoice at the later rate.  
 
@@ -170,7 +170,7 @@ Economic check:
 ## Related
 
 - [Foreign Currency hub](Foreign-Currency.md)
-- [HST](../../Operations/HST.md)
+- [HST](../../Operations/HST/HST.md)
 - [Bookkeeping convention](Bookkeeping-Convention.md)
 - [Small Business Tax Overview](../../Overview/Small-Business-Tax.md)
 

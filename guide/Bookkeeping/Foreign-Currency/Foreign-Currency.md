@@ -20,7 +20,7 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
   - Year-end revaluation nets the FX accounts into *Foreign exchange gains/losses* on the income statement (Schedule 125)
 - Converting CAD↔USD at your bank can be expensive; *Norbert's Gambit* avoids the spread via a corporate trading account
 - Invoices to a non-resident US customer for services are *zero-rated* GST/HST
-  - Excise Tax Act, Schedule VI, Part V; full mechanics in [HST](../../Operations/HST.md)
+  - Excise Tax Act, Schedule VI, Part V; full mechanics in [HST](../../Operations/HST/HST.md)
 
 Limitations:
 - Focus is on CAD↔USD for a typical owner-managed CCPC consultant or investor
@@ -106,7 +106,7 @@ flowchart TB
 - [T3](../../Investments/T3/T3.md)
 - [T5008](../../Investments/T5008/T5008.md)
 - [T1135](../../Investments/T1135.md)
-- [HST](../../Operations/HST.md)
+- [HST](../../Operations/HST/HST.md)
 - [Ledger and Accounts](../Ledger-And-Accounts.md)
 - [Expense Classification](../Expense-Classification.md)
 - [Inventory](../../Operations/Cost-Recovery/Inventory-And-COGS.md)
@@ -156,7 +156,7 @@ flowchart TB
 
 ## TODO
 
-- Zero-rated and taxable-supply HST notes now cross-link [HST](../../Operations/HST.md) (tax-point and s.159 conversion)
+- Zero-rated and taxable-supply HST notes now cross-link [HST](../../Operations/HST/HST.md) (tax-point and s.159 conversion)
   - Revisit the overlap on a maintainer sign-off pass
 - Add FX-specific terms to [Glossary](../../Overview/Glossary.md) on a separate maintainer pass:
   - BoC daily rate, functional currency election, income-account FX, capital-account FX, monetary item

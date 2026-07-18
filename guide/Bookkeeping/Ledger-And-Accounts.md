@@ -133,7 +133,7 @@ After the close only permanent accounts carry forward.
 ## A Worked Set of Books
 
 A first fiscal year for a one-owner consulting CCPC, regular HST method, 13% HST (Ontario).  
-For the Quick Method's effect on the booked amounts, see [HST](../Operations/HST.md#quick-method) and [Expense Classification](Expense-Classification.md#hst-and-the-booked-amount).  
+For the Quick Method's effect on the booked amounts, see [HST](../Operations/HST/HST-Quick-Method.md) and [Expense Classification](Expense-Classification.md#hst-and-the-booked-amount).  
 
 The year's transactions:
 
@@ -194,7 +194,7 @@ Reading the result onto the two statements:
   - Assets: $15,650 + $390 + $2,000; liabilities: $1,040 + $3,000; equity: $10,000 + $4,000
 
 `HST collected` ($1,040) net of `HST receivable` ($390) leaves $650 owing to CRA.  
-That is the net HST the regular-method return remits; see [HST](../Operations/HST.md).  
+That is the net HST the regular-method return remits; see [HST](../Operations/HST/HST.md).  
 
 
 ## Chart of Accounts
@@ -243,7 +243,7 @@ Either mapping is fine, provided it is applied consistently and each account kee
 
 The HST control accounts (`HST receivable` for input tax credits, `HST collected`) have no dedicated GIFI line.  
 At year-end they net to `1483` Taxes recoverable/refundable, or to `2680` Taxes payable if a net amount is owed.  
-See [HST](../Operations/HST.md).  
+See [HST](../Operations/HST/HST.md).  
 
 Liabilities (Schedule 100):
 
@@ -285,7 +285,7 @@ Revenue (Schedule 125):
 | Subsidies and grants | `8242` | government assistance and grants |
 | Bad debt recoveries | `8250` | collections on debts written off in a prior year |
 
-The Quick Method kept spread is booked to `8230` Other revenue; see [HST](../Operations/HST.md#quick-method).  
+The Quick Method kept spread is booked to `8230` Other revenue; see [HST](../Operations/HST/HST-Quick-Method.md).  
 
 Cost of sales (Schedule 125):
 
@@ -379,7 +379,7 @@ Decide the accounts there, then record the debits and credits here.
 - [Small Business Tax Overview](../Overview/Small-Business-Tax.md)
 - [Cost Recovery](../Operations/Cost-Recovery/Cost-Recovery.md)
 - [Inventory and COGS](../Operations/Cost-Recovery/Inventory-And-COGS.md)
-- [HST](../Operations/HST.md)
+- [HST](../Operations/HST/HST.md)
 - [Foreign Currency](Foreign-Currency/Foreign-Currency.md)
 - [Whole-dollar rounding](../Filing-And-CRA/Whole-Dollar-Rounding.md)
 - [Concept map](../Overview/Concept-Map.md)

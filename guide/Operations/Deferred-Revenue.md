@@ -62,14 +62,14 @@ The dividing line is refundability and application:
 
 HST does not follow the income deferral:
 - Tax is payable on the earlier of the day the consideration is paid and the day it becomes due
-  - Generally the invoice date (ETA [s.168(1)](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-168.html); see [HST — When tax becomes payable](HST.md#when-tax-becomes-payable))
+  - Generally the invoice date (ETA [s.168(1)](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-168.html); see [HST — When tax becomes payable](HST/HST-Bookkeeping.md#when-tax-becomes-payable))
 - A prepayment therefore carries HST in the period it is received, even though the income sits in `2770` until delivery
 - The deposit carve-out: a deposit is *not* consideration until the supplier applies it against the price
   - ETA [s.168(9)](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-168.html); a deposit on a returnable container is excluded from the carve-out
   - A true security deposit therefore carries no HST while it is merely held
 
 The income-vs-HST divergence at year-end is the same straddle pattern as invoicing, just in the opposite direction.  
-See [HST — Year-end straddle](HST.md#year-end-straddle-income-vs-hst-timing).  
+See [HST — Year-end straddle](HST/HST-Bookkeeping.md#year-end-straddle-income-vs-hst-timing).  
 
 
 ## Bookkeeping
@@ -115,7 +115,7 @@ Next year the remaining $6,000 is delivered:
 ## Related
 
 - [Receivables and Bad Debts](Receivables-And-Bad-Debts.md) (the mirror problem: income before cash)
-- [HST](HST.md) (tax point, year-end straddle)
+- [HST](HST/HST.md) (tax point, year-end straddle)
 - [Ledger and Accounts](../Bookkeeping/Ledger-And-Accounts.md)
 - [T2 Schedules](../Filing-And-CRA/T2-Schedules.md) (Schedule 13 reserves)
 - [Small Business Tax Overview](../Overview/Small-Business-Tax.md)

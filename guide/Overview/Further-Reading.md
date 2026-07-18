@@ -24,7 +24,7 @@ Limitations:
 - *Corporate income-tax instalment computation*: the three instalment bases (no-calculation, prior-year, current-year) and the exemption when total tax for the current or prior year is small are not worked, only the calendar and how to enter instalments on the return
   - Nearest coverage: [Payment](../Filing-And-CRA/Payment/Payment.md) and [Small-Business-Tax](Small-Business-Tax.md#filing-deadlines-and-instalments); further: ITA [s.157](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-157.html), CRA guide T7B-CORP (Corporation Instalment Guide)
 - *Imported-services GST/HST self-assessment*: the ETA Division IV self-assessment ([s.218](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-218.html), with [s.218.1](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-218.1.html) for the provincial part) nets to zero for a CCPC using the imported service entirely in commercial activity; the exempt-supply and mixed-use case is left open
-  - Nearest coverage: [HST](../Operations/HST.md)
+  - Nearest coverage: [HST](../Operations/HST/HST.md)
 - *Employee-vs-contractor determination*: the multifactor worker-status test the corp applies to people it pays is described only inside the personal-service-business discussion, not as a standalone determination
   - Nearest coverage: [Small-Business-Tax](Small-Business-Tax.md) for the factor list and [Expense-Classification](../Bookkeeping/Expense-Classification.md) for sub-contract labour (9110) versus wages (9060) and the T4 / T4A consequence; further: CRA guide RC4110 (Employee or Self-employed?)
 - *Unified Schedule 1 reconciliation*: the book-to-tax add-backs and deductions are listed per topic and at orientation level, not collected into one consolidated reconciliation

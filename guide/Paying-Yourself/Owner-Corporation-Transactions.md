@@ -89,7 +89,7 @@ Credit: `Cash` (`1001`), or `Due to shareholder` (`2780`) if settled later = $7,
 
 GST/HST on the allowance:
 - An HST-registered corp may claim a *deemed input tax credit* on a reasonable km allowance equal to the tax fraction of the allowance (ETA [s.174](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-174.html))
-- In a 13% HST province: $7,670 × 13/113 ≈ $882; book the ITC to `HST receivable` and net it out of the expense (see [HST](../Operations/HST.md))
+- In a 13% HST province: $7,670 × 13/113 ≈ $882; book the ITC to `HST receivable` and net it out of the expense (see [HST](../Operations/HST/HST.md))
 
 ### Corporate Car Used Personally
 
@@ -208,7 +208,7 @@ The same employee-versus-shareholder framing recurs across a cluster of common i
 - The corp paying 100% of a plainly mixed-use personal bill creates a taxable benefit on the personal share
 
 *Meals and entertainment*:
-- Deductible at 50% under ITA [s.67.1](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-67.html); the matching 50% ITC limit is in ETA s.236 (see [HST](../Operations/HST.md))
+- Deductible at 50% under ITA [s.67.1](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-67.html); the matching 50% ITC limit is in ETA s.236 (see [HST](../Operations/HST/HST.md))
 - The 50% cap is on the corp's deduction; it is not a personal benefit when the meal is a genuine business meal
 
 *Travel with a personal component*:
@@ -347,7 +347,7 @@ The corporate structure trades this simplicity for the benefit and deduction rul
 - [Dividends](Dividends/Dividends.md)
 - [Business Acquisition](../Corporate-Lifecycle/Business-Acquisition/Business-Acquisition.md)
 - [Capital Cost Allowance](../Operations/Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md)
-- [HST](../Operations/HST.md)
+- [HST](../Operations/HST/HST.md)
 - [Glossary](../Overview/Glossary.md)
 
 
@@ -381,7 +381,7 @@ The corporate structure trades this simplicity for the benefit and deduction rul
 - Excise Tax Act (R.S.C., 1985, c. E-15): https://laws-lois.justice.gc.ca/eng/acts/E-15/
   - [s.173](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-173.html) - GST/HST on a taxable benefit reported by a registrant
   - [s.174](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-174.html) - deemed input tax credit on a reasonable allowance
-  - s.199, s.201 - capital personal property and passenger-vehicle ITC limits (see [HST](../Operations/HST.md))
+  - s.199, s.201 - capital personal property and passenger-vehicle ITC limits (see [HST](../Operations/HST/HST.md))
 - CRA guides and forms:
   - T4130 - Employers' Guide – Taxable Benefits and Allowances: https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4130.html
   - IT-428 - Wage Loss Replacement Plans (archived; the employee-pay-all and taxed-premiums-count-as-employee-paid positions): https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/it428.html
