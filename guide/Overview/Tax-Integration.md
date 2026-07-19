@@ -1,12 +1,19 @@
 # Tax Integration
 
-**Who this is for**: owners of a Canadian-controlled private corporation (CCPC) paying themselves dividends and trying to understand how the corporate-side and personal-side tax fit together.  
+**Who this is for**:
+- Owners of a Canadian-controlled private corporation (CCPC) paying themselves dividends
+  - Trying to understand how the corporate-side and personal-side tax fit together
 
 Limitations:
-- Focus is on a single owner-manager shareholder of a CCPC; multiple share classes, family-trust structures, and estate-freeze arrangements are out of scope (see [Share Capital](../Corporate-Lifecycle/Corporate-Structure/Share-Capital.md) and [Business Acquisition](../Corporate-Lifecycle/Business-Acquisition/Business-Acquisition.md))
-- The shareholder is assumed to be a Canadian-resident *individual*; non-resident treatment is touched on only for capital dividends
-- This page focuses on dividend integration; salary integration is trivial (deductible to the corporation, taxed once on the personal side as employment income)
-- The salary-vs-dividend remuneration tradeoff (CPP, RRSP, payroll, WSIB) is out of scope; this page covers the dividend path only
+- Focus is on a single owner-manager shareholder of a CCPC
+  - Multiple share classes, family-trust structures, and estate-freeze arrangements are out of scope
+  - See [Share Capital](../Corporate-Lifecycle/Corporate-Structure/Share-Capital.md) and [Business Acquisition](../Corporate-Lifecycle/Business-Acquisition/Business-Acquisition.md)
+- The shareholder is assumed to be a Canadian-resident *individual*
+  - Non-resident treatment is touched on only for capital dividends
+- This page focuses on dividend integration; salary integration is trivial
+  - Salary is deductible to the corporation, taxed once on the personal side as employment income
+- The salary-vs-dividend remuneration tradeoff (CPP, RRSP, payroll, WSIB) is out of scope
+  - This page covers the dividend path only
 - Tax information can change over time
 - The following is my understanding as of 2026
 
@@ -30,7 +37,8 @@ When the corporation pays a dividend, the shareholder:
 - Claims a *dividend tax credit* (DTC) calibrated to offset the corporate tax the corporation already paid
 
 The federal gross-up and credit come from ITA [s.82(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-82.html) and [s.121](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-121.html).  
-Each province offers its own DTC at its own rate, so total integration depends on the shareholder's province of residence and marginal personal rate.  
+Each province offers its own DTC at its own rate.  
+Total integration depends on the shareholder's province of residence and marginal personal rate.  
 Integration is approximate; different provinces and income sources produce small over- or under-taxation.  
 
 
@@ -40,20 +48,26 @@ Integration is approximate; different provinces and income sources produce small
 - Gross-up: 38% of cash dividend (ITA s.82(1))
 - Federal DTC: 15.0198% of the grossed-up (taxable) amount (ITA s.121)
 - The gross-up reflects the full general-rate corporate tax (~15% federal + the provincial general rate)
-- Eligible dividends carry the lowest combined corp+personal tax of the two taxable flavours, when the corporation actually paid tax at the general rate
+- Eligible dividends carry the lowest combined corp+personal tax of the two taxable flavours
+  - This holds when the corporation actually paid tax at the general rate
 
 *Non-eligible dividend*:
 - Gross-up: 15% of cash dividend (ITA s.82(1))
 - Federal DTC: 9.0301% of the grossed-up amount (ITA s.121)
 - The smaller gross-up and credit reflect the lower SBD-rate corporate tax the corporation paid before distributing
-- Combined corp+personal tax is calibrated to the SBD corp rate; the actual relative position vs. an eligible dividend depends on the shareholder's province
+- Combined corp+personal tax is calibrated to the SBD corp rate
+  - The actual relative position vs an eligible dividend depends on the shareholder's province
 
 *Capital dividend*:
 - Not included in the shareholder's income at all (ITA [s.83(2)(b)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-83.html))
 - No gross-up, no DTC, not reported on the T1
-- The "tax already paid" at the corporate level is the tax on the *taxable* portion of the underlying capital gain; the *non-taxable* portion is what flows out tax-free as the capital dividend
-- Integration on capital gains earned in a CCPC is imperfect: the AII path (taxable half taxed at ~50%, partly refunded via [NERDTOH](../Paying-Yourself/Dividends/ERDTOH-NERDTOH.md) on payout of a non-eligible dividend) typically leaves a small "tax cost" vs. realizing the gain personally, depending on province
-- For non-resident shareholders this treatment does not apply: Part XIII withholding still applies (default 25%, often reduced by treaty)
+- The "tax already paid" at the corporate level is the tax on the *taxable* portion of the underlying capital gain
+  - The *non-taxable* portion is what flows out tax-free as the capital dividend
+- Integration on capital gains earned in a CCPC is imperfect
+  - The AII path: taxable half taxed at ~50%, partly refunded via [NERDTOH](../Paying-Yourself/Dividends/ERDTOH-NERDTOH.md) on payout of a non-eligible dividend
+  - It typically leaves a small "tax cost" vs realizing the gain personally, depending on province
+- For non-resident shareholders this treatment does not apply
+  - Part XIII withholding still applies (default 25%, often reduced by treaty)
 
 
 ## Corp-Side Preference Order
@@ -70,8 +84,14 @@ Often CDA and GRIP are both empty; the only available option is a non-eligible d
 
 Assumptions: $1,000 of corporate income, Ontario, shareholder at top marginal rate (53.53%).  
 Combined corporate rates: SBD 12.2% (federal 9% + Ontario 3.2%), general 26.5% (federal 15% + Ontario 11.5%).  
-DTC rates as % of the grossed-up (taxable) amount: eligible 25.02% (federal 15.02% + Ontario 10.0%), non-eligible 12.02% (federal 9.03% + Ontario 2.99%).  
-The 2026 Ontario budget, enacted as Bill 97 (S.O. 2026, c. 2), lowered the small-business rate to 2.2% (combined 11.2%) effective July 1, 2026 and the non-eligible DTC to 1.9863% effective January 1, 2027; restate for tax years straddling those dates (see [Dividends - worked examples](../Paying-Yourself/Dividends/Dividends-Examples.md#worked-examples)).  
+DTC rates as % of the grossed-up (taxable) amount:
+- Eligible: 25.02% (federal 15.02% + Ontario 10.0%)
+- Non-eligible: 12.02% (federal 9.03% + Ontario 2.99%)
+
+The 2026 Ontario budget, enacted as Bill 97 (S.O. 2026, c. 2), lowered two rates.  
+The small-business rate drops to 2.2% (combined 11.2%) effective July 1, 2026.  
+The non-eligible DTC drops to 1.9863% effective January 1, 2027.  
+Restate for tax years straddling those dates (see [Dividends - worked examples](../Paying-Yourself/Dividends/Dividends-Examples.md#worked-examples)).  
 
 ```mermaid
 flowchart TB
@@ -102,11 +122,17 @@ Reading the bottom row:
 - Non-eligible: total tax \$541, net \$459 (slight under-integration, ~\$6 leakage)
 - Eligible: total tax \$554, net \$446 (slight under-integration, ~\$19 leakage)
 
-The leakage on the eligible path is larger here because Ontario's combined general corporate rate (26.5%) plus the DTC don't perfectly match the gross-up's notional 27.5% corporate rate, and the DTC isn't fully tuned to the top marginal personal bracket.  
+The leakage on the eligible path is larger here, for two reasons:
+- Ontario's combined general rate (26.5%) plus the DTC don't perfectly match the gross-up's notional 27.5% corporate rate
+- The DTC also isn't fully tuned to the top marginal personal bracket
 In other provinces, or at lower personal rates, the ranking between eligible and non-eligible can flip.  
 
-The two taxable paths model different income streams, not one stream paid two ways: the eligible path assumes the $1,000 was taxed at the general corporate rate (26.5%), the non-eligible path assumes the SBD rate (12.2%).  
-The non-eligible path's lower total tax reflects that lower corporate rate, not a preference for the non-eligible flavour; for the *same* general-rate income, an eligible dividend beats a non-eligible one, which is the ranking the [corp-side preference order](#corp-side-preference-order) gives.  
+The two taxable paths model different income streams, not one stream paid two ways.  
+The eligible path assumes the $1,000 was taxed at the general corporate rate (26.5%).  
+The non-eligible path assumes the SBD rate (12.2%).  
+The non-eligible path's lower total tax reflects that lower corporate rate, not a flavour preference.  
+For the *same* general-rate income, an eligible dividend beats a non-eligible one.  
+That is the ranking the [corp-side preference order](#corp-side-preference-order) gives.  
 
 
 ## Related

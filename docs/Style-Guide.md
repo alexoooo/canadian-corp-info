@@ -106,9 +106,11 @@ Let the facts stand in order and trust the reader to follow.
 
 ## Line Length
 
-- Keep each line under 120 reader-visible characters
+- Keep each line under 120 reader-visible characters; this is a soft maximum
   - Count the rendered text: emphasis markers and backticks are free, a link counts as its display text
   - The bullet prefix and indentation count toward the limit
+  - Under 120 is always safe; over 130 is always too long; 120–130 is a judgement call
+    - Going over 120 needs sufficient justification: splitting or shortening would cost clarity
 - Fix a long line by simplifying, shortening, or splitting into sub-bullets; never by hard-wrapping mid-sentence
 - Exempt: citation and link entries whose length is a bare URL, and before/after specimen lines
   - A URL is one unbreakable token; a specimen must stay verbatim

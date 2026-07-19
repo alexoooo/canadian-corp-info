@@ -78,7 +78,7 @@ How a dollar of corporate income is classified, and which pool it feeds:
   - Eligible → GRIP and ERDTOH
   - Non-eligible → NERDTOH
 
-Details: [Small Business Tax Overview — active vs investment income](Small-Business-Tax.md#active-vs-investment-income).  
+Details: [Small Business Tax Overview - active vs investment income](Small-Business-Tax.md#active-vs-investment-income).  
 
 
 ## Tax Pools: GRIP, CDA, ERDTOH, NERDTOH
@@ -125,14 +125,15 @@ flowchart TB
 
 Details:
 - [ERDTOH and NERDTOH](../Paying-Yourself/Dividends/ERDTOH-NERDTOH.md)
-- [Dividends — GRIP](../Paying-Yourself/Dividends/Dividends.md#grip---capacity-for-eligible-dividends)
+- [Dividends - GRIP](../Paying-Yourself/Dividends/Dividends.md#grip---capacity-for-eligible-dividends)
 - [Capital Dividend Account](../Investments/Capital-Dividend-Account/Capital-Dividend-Account.md)
 
 
 ## Cost-Recovery Channels
 
 Every purchase eventually becomes a tax deduction.  
-How that happens depends on why it was purchased: to resell, to use as a long-term asset, or to build into a long-term asset.  
+How that happens depends on why it was purchased.  
+The purposes: to resell, to use as a long-term asset, or to build into a long-term asset.  
 
 ```mermaid
 flowchart TB
@@ -158,7 +159,7 @@ Details: [Cost Recovery](../Operations/Cost-Recovery/Cost-Recovery.md) (full flo
 
 ## GST/HST Cycle
 
-GST/HST runs parallel to income tax, on its own account and its own return.
+GST/HST runs parallel to income tax, on its own account and its own return.  
 Two methods: the *regular method* (track every ITC) or the *quick method* (remit a flat fraction, keep the rest).  
 
 The regular method nets two tallies over each reporting period, then remits the difference:
@@ -180,7 +181,7 @@ flowchart LR
 
 Registration is mandatory once taxable supplies pass $30,000 over four quarters; below that it is optional.  
 
-Details: [HST](../Operations/HST/HST.md), [Small Business Tax Overview — HST and other consumption taxes](Small-Business-Tax.md#hst-and-other-consumption-taxes).  
+Details: [HST](../Operations/HST/HST.md), [Small Business Tax Overview - HST and other consumption taxes](Small-Business-Tax.md#hst-and-other-consumption-taxes).  
 
 
 ## Remuneration: Salary vs Dividend
@@ -197,7 +198,8 @@ Salary is deductible and paid before corporate tax; dividends are paid from afte
 | Builds RRSP room and CPP | yes | no |
 | Timing | monthly remittance cadence | declared at will, can straddle year-end |
 
-A common pattern is enough salary to build RRSP room or reach CPP maximum pensionable earnings, then retain or pay the rest out as dividends.  
+A common pattern is enough salary to build RRSP room or reach CPP maximum pensionable earnings.  
+The rest is retained or paid out as dividends.  
 Splitting dividends to family members is constrained by *TOSI* (tax on split income).  
 
 Details: [Paying yourself: salary vs dividends](Small-Business-Tax.md#paying-yourself-salary-vs-dividends), [Tax Integration](Tax-Integration.md).  
@@ -214,27 +216,34 @@ Federal rates shown; a provincial dividend tax credit applies on top:
 | Attribute | Eligible | Non-eligible | Capital                                                |
 |---|---|---|--------------------------------------------------------|
 | Source pool | GRIP | SBD-rate retained earnings (default) | CDA                                                    |
-| Corp action required | Designation (s.89(14)), at or before payment | None | Election (s.83(2)) on Form T2054, on or before it becomes payable (or first paid, if earlier) |
+| Corp action required | Designation (s.89(14)), at or before payment | None | Election (s.83(2)) on Form T2054 |
 | Personal gross-up | 38% | 15% | none (tax-free)                                        |
-| Federal DTC | 15.0198% of grossed-up | 9.0301% of grossed-up | none                                                   |
+| Federal DTC | 15.0198% of grossed-up | 9.0301% of grossed-up | none |
 | Refund pool drawn | ERDTOH | NERDTOH, then ERDTOH spillover | none                                                   |
 | Excess-dividend penalty | Part III.1, 20% (s.185.1) | none | Part III, 60% (s.184(2))                               |
 | Slip issued to shareholder | T5 | T5 | none (notify; corporation files T2054)                 |
 
-Details: [Dividends — three flavours](../Paying-Yourself/Dividends/Dividends.md#three-dividend-flavours-eligible-non-eligible-capital), [Tax Integration](Tax-Integration.md) (gross-up and DTC mechanics).  
+Notes:
+- The T2054 election is due on or before the day the dividend becomes payable (or first paid, if earlier)
+
+Details: [Dividends - three flavours](../Paying-Yourself/Dividends/Dividends.md#three-dividend-flavours-eligible-non-eligible-capital), [Tax Integration](Tax-Integration.md) (gross-up and DTC mechanics).  
 
 
 ## Owner-Corporation Transactions
 
 An owner assumes two distinct roles:
-- As *employee*: a reimbursement or a reasonable allowance for business use is tax-free to the owner and deductible to the corp (ITA s.6)
-- As *shareholder*: a benefit the corporation confers is taxed in the owner's hands with no corporate deduction (ITA s.15(1))
+- As *employee*: a reimbursement or a reasonable allowance for business use is tax-free to the owner
+  - Also deductible to the corp (ITA s.6)
+- As *shareholder*: a benefit the corporation confers is taxed in the owner's hands
+  - No corporate deduction (ITA s.15(1))
 
 Money taken out that is neither a salary nor a dividend is tracked in a *shareholder loan account*:
 - *Due from shareholder*: the owner owes the corporation (e.g. a personal cost run through the corp account)
 - *Due to shareholder*: the corporation owes the owner (e.g. a business cost paid personally)
-- A *Due from* balance not repaid by the end of the corporation's next tax year is added to the owner's income (ITA s.15(2); the s.15(2.6) exception is lost if repayments form a series)
-- A *Due from* balance that is interest-free or below the prescribed rate also imputes an interest benefit for the period outstanding (ITA s.80.4)
+- A *Due from* balance not repaid by the end of the corporation's next tax year is added to the owner's income
+  - ITA s.15(2); the s.15(2.6) exception is lost if repayments form a series
+- A *Due from* balance that is interest-free or below the prescribed rate also imputes an interest benefit
+  - For the period outstanding (ITA s.80.4)
 - A *Due to* balance can be interest-free, and its repayment to the owner is tax-free
 
 The shareholder loan account is a running balance carried forward, alongside the tax pools and the asset-cost balances.  
@@ -250,17 +259,17 @@ Here's how each event maps to the pool balance changes:
 - Rows: events
 - Cells: the delta (blank means no change)
 
-| Event | GRIP          | CDA                            | ERDTOH                    | NERDTOH               |
-|---|---------------|--------------------------------|---------------------------|-----------------------|
-| Earn general-rate ABI | + 72% of ABI  |                                |                           |                       |
-| Earn AII (interest, foreign) |               |                                |                           | + 30⅔% of AII         |
-| Realize capital gain |               | + non-taxable ½                |                           | + 30⅔% of taxable ½   |
-| Realize capital loss |               | − non-taxable ½ (floored at 0) |                           |                       |
-| Receive eligible dividend | + full amount |                                | + 38⅓% Part IV            |                       |
-| Receive non-eligible dividend |               |                                |                           | + 38⅓% Part IV        |
-| Pay eligible dividend | − amount      |                                | − 38⅓% refund             |                       |
-| Pay non-eligible dividend |               |                                | − spillover after NERDTOH | − 38⅓% refund (first) |
-| Pay capital dividend |               | − amount                       |                           |                       |
+| Event | GRIP | CDA | ERDTOH | NERDTOH |
+|---|---|---|---|---|
+| Earn general-rate ABI | + 72% of ABI | | | |
+| Earn AII (interest, foreign) | | | | + 30⅔% of AII |
+| Realize capital gain | | + non-taxable ½ | | + 30⅔% of taxable ½ |
+| Realize capital loss | | − non-taxable ½ (floored at 0) | | |
+| Receive eligible dividend | + full amount | | + 38⅓% Part IV | |
+| Receive non-eligible dividend | | | | + 38⅓% Part IV |
+| Pay eligible dividend | − amount | | − 38⅓% refund | |
+| Pay non-eligible dividend | | | − spillover after NERDTOH | − 38⅓% refund (first) |
+| Pay capital dividend | | − amount | | |
 
 Notes:
 - A capital gain's taxable half is part of AII, so it also adds to NERDTOH
@@ -275,13 +284,16 @@ Each row pairs an event with the balance it moves:
 | Buy security | ACB (per security) | + cost and commissions (trade-date FX) | [ACB](../Investments/Adjusted-Cost-Base/Adjusted-Cost-Base.md)         |
 | Return of capital (T3 Box 42) | ACB | − distribution | [ACB](../Investments/Adjusted-Cost-Base/Adjusted-Cost-Base.md)         |
 | Sell security | ACB | remove sold units; realize gain or loss | [T5008](../Investments/T5008/T5008.md)                                 |
-| Acquire depreciable asset | UCC (per class) | + capital cost (half-year on net additions, currently replaced by AIIP's larger first-year claim) | [CCA](../Operations/Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md)          |
+| Acquire depreciable asset | UCC (per class) | + capital cost (see note) | [CCA](../Operations/Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md)          |
 | Claim CCA | UCC | − CCA for the year | [CCA](../Operations/Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md)          |
 | Dispose depreciable asset | UCC | − lesser of proceeds or cost; recapture or terminal loss | [CCA](../Operations/Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md)          |
 | Buy inventory | Inventory | + landed cost | [Inventory](../Operations/Cost-Recovery/Inventory-And-COGS.md)        |
 | Sell inventory | Inventory | − unit cost (to COGS) | [Inventory](../Operations/Cost-Recovery/Inventory-And-COGS.md)        |
 | Incur construction cost | CIP | + materials and labour | [Materials and CIP](../Operations/Cost-Recovery/Materials-And-CIP.md) |
 | Available for use | CIP → UCC | transfer balance to a CCA class | [Materials and CIP](../Operations/Cost-Recovery/Materials-And-CIP.md) |
+
+Notes:
+- Net UCC additions get the half-year rule, currently replaced by AIIP's larger first-year claim
 
 A sale is the only event that changes both sets of balances:
 - It draws down the cost balance (the ACB or UCC)
@@ -292,13 +304,16 @@ A sale is the only event that changes both sets of balances:
 
 ## Loss Carryforwards
 
-A year in which deductions exceed income produces a loss, which the corporation can apply to other years on T2 Schedule 4 (Loss Continuity).  
+A year in which deductions exceed income produces a loss.  
+The corporation can apply it to other years on T2 Schedule 4 (Loss Continuity).  
 There are two kinds of running balance:
 - *Non-capital loss* (an operating loss): carries back 3 years and forward 20 (ITA s.111(1)(a))
-- *Net capital loss* (capital losses beyond the year's capital gains): carries back 3 years and forward indefinitely, usable only against capital gains (ITA s.111(1)(b))
+- *Net capital loss* (capital losses beyond the year's capital gains): carries back 3 years and forward indefinitely
+  - Usable only against capital gains (ITA s.111(1)(b))
 
 Carrying a loss back recovers tax already paid in a prior year; carrying it forward shelters a future one.  
-CCA is discretionary and UCC never expires, so deferring CCA in a loss year avoids deepening a non-capital loss, which does expire after 20 years.  
+CCA is discretionary and UCC never expires.  
+Deferring CCA in a loss year avoids deepening a non-capital loss, which does expire after 20 years.  
 A realized capital loss also draws down CDA by the non-taxable half it removes (see the event table above).  
 
 Details: [Losses](../Filing-And-CRA/Losses.md), [Capital loss carry forward / back](../Investments/Adjusted-Cost-Base/Adjusted-Cost-Base.md#capital-loss-carry-forward--back--superficial-loss), [Capital Cost Allowance](../Operations/Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md) (loss-year CCA timing).  
@@ -310,7 +325,8 @@ Filing a return and paying the tax have separate deadlines; missing either draws
 
 Filings:
 - *T2 return*: 6 months after year-end
-- *T4 and T5 slips*: to CRA and the recipient by the last day of February; late penalty is per filing, not per slip ($10/day, $100 minimum, 100-day cap; ITA s.162(7.01))
+- *T4 and T5 slips*: to CRA and the recipient by the last day of February
+  - Late penalty is per filing, not per slip ($10/day, $100 minimum, 100-day cap; ITA s.162(7.01))
 - *GST/HST return*: annual, quarterly, or monthly by revenue band
 - *Corporate annual return*: to the federal or provincial registry (not a tax filing)
 
@@ -320,8 +336,10 @@ Payments:
 - *Payroll remittance*: source deductions by the 15th of the following month
 - *GST/HST remittance*: with the return
 
-The T2 balance is due before the return: the tax must be paid 2 or 3 months after year-end, but the return that computes it is not due until month 6.  
-In practice the tax is estimated and paid by the earlier date, and the return is filed by the later one; interest accrues on any unpaid balance from the payment date, not the filing date.  
+The T2 balance is due before the return.  
+The tax must be paid 2 or 3 months after year-end, but the return that computes it is not due until month 6.  
+In practice the tax is estimated and paid by the earlier date, and the return is filed by the later one.  
+Interest accrues on any unpaid balance from the payment date, not the filing date.  
 
 Details: [Filing deadlines and instalments](Small-Business-Tax.md#filing-deadlines-and-instalments).  
 
@@ -353,8 +371,10 @@ Details: [Filing deadlines and instalments](Small-Business-Tax.md#filing-deadlin
   - Event-to-pool table
 - *Cross-cutting concepts*:
   - A non-eligible dividend draws its refund from NERDTOH first, then from ERDTOH once NERDTOH runs out
-  - AII fills NERDTOH, shrinks the small-business deduction once adjusted AII (AAII) tops $50,000, and so indirectly fills GRIP
-  - The $500,000 business limit is also shared among associated corporations and pared back for a large-CCPC capital base
+  - AII fills NERDTOH and shrinks the small-business deduction once adjusted AII (AAII) tops $50,000
+    - By shrinking the SBD, it indirectly fills GRIP
+  - The $500,000 business limit is also shared among associated corporations
+    - It is pared back for a large-CCPC capital base
   - TOSI limits splitting dividends to family members not active in the business
   - GST/HST is a parallel cycle on its own account and return
   - Provincial dividend tax credit, applied on top of every federal one
@@ -389,7 +409,8 @@ Full citations live on each page; here are the key provisions behind this page:
   - [s.89(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-89.html) - GRIP and CDA definitions and the 0.72 general-rate factor; [s.89(14)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-89.html) - eligible designation
   - [s.121](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-121.html) - federal dividend tax credit (15.0198% eligible, 9.0301% non-eligible)
   - [s.125(5.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-125.html) - SBD grind on AAII over $50,000
-  - [s.129](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-129.html) - dividend refund (s.129(1)); ERDTOH and NERDTOH definitions, 30⅔% Part I on AII, and the 38⅓% pool rates (s.129(4))
+  - [s.129](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-129.html) - dividend refund (s.129(1))
+    - ERDTOH and NERDTOH definitions, 30⅔% Part I on AII, and the 38⅓% pool rates (s.129(4))
   - [s.185.1](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-185.1.html) - 20% Part III.1 tax on excessive eligible designations
   - [s.186(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-186.html) - 38⅓% Part IV tax on dividends received
   - [s.6](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-6.html) - employee benefits and allowances; [s.15(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-15.html) - shareholder benefit (no corporate deduction)
