@@ -11,13 +11,16 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
 - A non-capital loss carries back 3 years (CRA refunds the earlier year's tax) and forward 20 years, against any income
 - A *net capital loss* carries back 3 years and forward indefinitely, against taxable capital gains only
 - Both carryover amounts are discretionary: you choose how much to apply, but each type applies oldest-first
-- A dollar of loss is worth the tax rate of the income it displaces, so where it lands matters: displacing refundable investment-income tax recovers much less than the headline rate suggests
+- A dollar of loss is worth the tax rate of the income it displaces, so where it lands matters
+  - Displacing refundable investment-income tax recovers much less than the headline rate suggests
 - Claim less CCA before banking a loss: a non-capital loss expires after 20 years, UCC never does
 
 Limitations:
-- Focus is the owner-managed CCPC's two common loss types: non-capital and net capital; farm, restricted-farm, and limited-partnership losses are out of scope
+- Focus is the owner-managed CCPC's two common loss types: non-capital and net capital
+  - Farm, restricted-farm, and limited-partnership losses are out of scope
 - *Allowable business investment losses* (ABIL) are out of scope
-- The loss-streaming rules on an *acquisition of control* (ITA s.111(4)–(5.5)) are out of scope; they matter when the corporation is sold, see [Business Acquisition](../Corporate-Lifecycle/Business-Acquisition/Business-Acquisition.md)
+- The loss-streaming rules on an *acquisition of control* (ITA s.111(4)–(5.5)) are out of scope
+  - They matter when the corporation is sold; see [Business Acquisition](../Corporate-Lifecycle/Business-Acquisition/Business-Acquisition.md)
 - Personal (T1) loss mechanics are out of scope
 - The following is my understanding as of 2026
 
@@ -26,7 +29,7 @@ Limitations:
 
 | Attribute | Non-capital loss | Net capital loss |
 |---|---|---|
-| Source | Operating deductions exceed the year's income | Allowable capital losses exceed the year's taxable capital gains |
+| Source | Operating deductions exceed the year's income | Allowable capital losses exceed taxable capital gains |
 | Statute | ITA [s.111(1)(a)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-111.html) | ITA [s.111(1)(b)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-111.html) |
 | Carry back | 3 years | 3 years |
 | Carry forward | 20 years | Indefinite |
@@ -36,25 +39,33 @@ Limitations:
 
 The two do not mix:
 - An excess of capital losses cannot create or increase a non-capital loss; it becomes a net capital loss instead
-- A non-capital loss can shelter a year's taxable capital gains (they are income), but a net capital loss cannot shelter operating income
+- A non-capital loss can shelter a year's taxable capital gains (they are income)
+  - A net capital loss cannot shelter operating income
 
-The capital-loss side (superficial-loss rule, the realized-loss mechanics, the CDA effect) is covered in [Adjusted Cost Base — Capital loss carry forward / back](../Investments/Adjusted-Cost-Base/Adjusted-Cost-Base.md#capital-loss-carry-forward--back--superficial-loss); this page covers the T2 machinery and the non-capital side.  
+This page covers the T2 machinery and the non-capital side.  
+The capital-loss side (superficial-loss rule, the realized-loss mechanics, the CDA effect) is in [Adjusted Cost Base](../Investments/Adjusted-Cost-Base/Adjusted-Cost-Base.md#capital-loss-carry-forward--back--superficial-loss).  
 
 
 ## The Loss Year on the T2
 
 Taxable income on the T2 has a floor of zero.  
-When the year's deductions exceed income, the return shows nil taxable income and the excess becomes the year's non-capital loss (defined in ITA [s.111(8)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-111.html)).  
+When the year's deductions exceed income, the return shows nil taxable income.  
+The excess becomes the year's non-capital loss (defined in ITA [s.111(8)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-111.html)).  
 
 What still happens in a loss year:
 - The T2 is still due 6 months after year-end; a loss does not remove the filing requirement
-- Schedule 4 (*Corporation Loss Continuity and Application*) records the loss arising and carries the running balances forward
+- Schedule 4 (*Corporation Loss Continuity and Application*) records the loss arising
+  - It carries the running balances forward
 - Schedule 100 shows the retained-earnings hit; the books close normally (see [Ledger and Accounts](../Bookkeeping/Ledger-And-Accounts.md))
-- Instalments for the following year usually stop: with no tax payable, the prior-year total falls under the $3,000 threshold (see [Filing deadlines and instalments](../Overview/Small-Business-Tax.md#filing-deadlines-and-instalments))
+- Instalments for the following year usually stop
+  - With no tax payable, the prior-year total falls under the $3,000 threshold
+  - See [Filing deadlines and instalments](../Overview/Small-Business-Tax.md#filing-deadlines-and-instalments)
 
 CRA's response to a nil return is a *nil assessment*, and a nil assessment cannot be objected to.  
-To lock in a disputed or material loss amount, request a *determination of loss* under ITA [s.152(1.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-152.html); the determination is binding and carries objection rights.  
-For an uncontroversial loss, filing Schedule 4 and carrying the balance is the normal course; the determination is a tool for when the amount is challenged.  
+To lock in a disputed or material loss amount, request a *determination of loss* under ITA [s.152(1.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-152.html).  
+The determination is binding and carries objection rights.  
+For an uncontroversial loss, filing Schedule 4 and carrying the balance is the normal course.  
+The determination is a tool for when the amount is challenged.  
 
 
 ## Carrying Back
@@ -64,7 +75,8 @@ A carryback applies the loss against one of the three preceding tax years; CRA r
 The request:
 - Made on Schedule 4 of the *loss-year* return: enter the amount to apply against each of the three prior years
 - No separate form and no amended prior-year return; the reassessment follows from the S4 entries
-- The refund arises only once the loss-year return is filed; refund interest runs from that point, not from when the prior year's tax was paid (ITA [s.164(5)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-164.html))
+- The refund arises only once the loss-year return is filed
+  - Refund interest runs from that point, not from when the prior year's tax was paid (ITA [s.164(5)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-164.html))
 
 Bookkeeping, in tax-basis books:
 
@@ -90,10 +102,12 @@ Any refund interest CRA adds is interest income in the year received.
 An unapplied loss carries forward as an opening balance on next year's Schedule 4.  
 
 Applying it:
-- Deducted on the T2 jacket in computing taxable income (the non-capital and net-capital loss lines in the taxable-income section)
+- Deducted on the T2 jacket in computing taxable income
+  - The non-capital and net-capital loss lines in the taxable-income section
 - The amount is discretionary: apply any amount up to the smaller of the balance and the year's income
 - Within each type, losses apply oldest-first (ITA [s.111(3)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-111.html)); you cannot save an older loss while spending a newer one
-- A non-capital loss expires at the end of its 20th following tax year (losses from tax years ended before 2006 had shorter limits); a net capital loss never expires
+- A non-capital loss expires at the end of its 20th following tax year; a net capital loss never expires
+  - Losses from tax years ended before 2006 had shorter limits
 
 Track the balances in a small continuity schedule mirroring S4, one row per origin year:
 
@@ -101,12 +115,14 @@ Track the balances in a small continuity schedule mirroring S4, one row per orig
 |---|---|---|---|---|
 | FY2026 | 60,000.00 | 12,000.00 (FY2027) | 48,000.00 | FY2046 |
 
-The expiry column is the point of the schedule: an expiring balance should redirect the [discretionary CCA](../Operations/Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md#discretionary-cca) decision and the salary/bonus level in the years before it dies.  
+The expiry column is the point of the schedule.  
+An expiring balance should redirect the [discretionary CCA](../Operations/Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md#discretionary-cca) decision and the salary/bonus level before it dies.  
 
 
 ## What a Loss Dollar Is Worth
 
-A loss displaces the tax on whichever income it is applied against; income types are taxed at very different permanent rates.  
+A loss displaces the tax on whichever income it is applied against.  
+Income types are taxed at very different permanent rates.  
 Combined Ontario 2026 rates, and what a displaced dollar permanently saves:
 
 | Income displaced | Tax saved now | Refundable portion forfeited | Permanent saving |
@@ -116,14 +132,19 @@ Combined Ontario 2026 rates, and what a displaced dollar permanently saves:
 | AII (investment income) | 50.2% | 30⅔% | ≈ 19.5% |
 
 The AII row is the trap:
-- Investment income's 50.2% headline rate includes the 30⅔% refundable portion that feeds [NERDTOH](../Paying-Yourself/Dividends/ERDTOH-NERDTOH.md) and comes back on paying a non-eligible dividend
-- A loss applied against AII saves the full 50.2% in cash now but shrinks the refundable portion with it, so the permanent saving is only about 19.5%
+- Investment income's 50.2% headline rate includes the 30⅔% refundable portion
+  - The refundable portion feeds [NERDTOH](../Paying-Yourself/Dividends/ERDTOH-NERDTOH.md) and comes back on paying a non-eligible dividend
+- A loss applied against AII saves the full 50.2% in cash now but shrinks the refundable portion with it
+  - The permanent saving is only about 19.5%
 - Displacing general-rate ABI (26.5%, none of it refundable) recovers more permanent tax per loss dollar
-- General-rate ABI displaced also stops feeding GRIP (72¢ of eligible-dividend capacity per dollar), a smaller second-order cost on the personal side
+- General-rate ABI displaced also stops feeding GRIP (72¢ of eligible-dividend capacity per dollar)
+  - A smaller second-order cost on the personal side
 
 The lever is target-year selection, not line-item selection:
-- A loss applied to a year reduces that year's taxable income as a whole; you cannot direct it at one income type within the year
-- But you choose *which* year (three back, twenty forward) and *how much*, so aim it at years whose marginal income is high-permanent-rate
+- A loss applied to a year reduces that year's taxable income as a whole
+  - You cannot direct it at one income type within the year
+- But you choose *which* year (three back, twenty forward) and *how much*
+  - Aim it at years whose marginal income is high-permanent-rate
 - Timing still counts: a 12.2% refund today can beat a 26.5% saving that only materializes years out
 
 Deferring CCA is the other half of the decision (see [Discretionary CCA](../Operations/Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md#discretionary-cca)):
@@ -143,7 +164,8 @@ Carryback (chosen here):
 - S4 closing balance: $0
 
 Carryforward (the alternative):
-- Worth considering if FY2027+ income will be taxed above 12.2%: general-rate ABI from an SBD grind, or a mix with AII (mind the refundable-portion trap above)
+- Worth considering if FY2027+ income will be taxed above 12.2%
+  - General-rate ABI from an SBD grind, or a mix with AII (mind the refundable-portion trap above)
 - At 26.5% the same $60,000 saves $15,900 later instead of $7,320 now
 - The cost is time and risk: the refund is immediate and certain, the higher-rate future income is neither
 
@@ -178,8 +200,14 @@ Carryforward (the alternative):
 
 ## TODO
 
-- Verify the Schedule 4 carryback line numbers (901–903 for a non-capital loss) and the T2 jacket taxable-income deduction lines (331 non-capital, 332 net capital) against the current forms, then name them in the body
-- Verify `9990` Current income taxes against RC4088 and add it to the [Ledger and Accounts](../Bookkeeping/Ledger-And-Accounts.md) chart; the guide has no established convention for booking income-tax expense yet
-- Verify the s.129(4) least-of interaction in the loss-value table: confirm a carryback into an AII year retroactively shrinks that year's NERDTOH addition, and whether CRA reassesses the dividend refund side
-- Confirm the refund-interest start date under s.164(5) (30 days after the latest of the listed dates, including the loss-year filing date)
+- Verify the Schedule 4 carryback line numbers (901–903 for a non-capital loss) against the current forms
+  - Also the T2 jacket taxable-income deduction lines (331 non-capital, 332 net capital)
+  - Then name them in the body
+- Verify `9990` Current income taxes against RC4088 and add it to the [Ledger and Accounts](../Bookkeeping/Ledger-And-Accounts.md) chart
+  - The guide has no established convention for booking income-tax expense yet
+- Verify the s.129(4) least-of interaction in the loss-value table
+  - Confirm a carryback into an AII year retroactively shrinks that year's NERDTOH addition
+  - Also whether CRA reassesses the dividend refund side
+- Confirm the refund-interest start date under s.164(5)
+  - 30 days after the latest of the listed dates, including the loss-year filing date
 - Add a worked S4 screenshot (redacted) once available; move the page into a `Losses/` folder when media lands
