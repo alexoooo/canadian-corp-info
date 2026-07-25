@@ -158,10 +158,10 @@ flowchart TB
 
 - Zero-rated and taxable-supply HST notes now cross-link [HST](../../Operations/HST/HST.md) (tax-point and s.159 conversion)
   - Revisit the overlap on a maintainer sign-off pass
-- Add FX-specific terms to [Glossary](../../Overview/Glossary.md) on a separate maintainer pass:
-  - BoC daily rate, functional currency election, income-account FX, capital-account FX, monetary item
-  - Multi-currency bookkeeping convention, FX trading account, Norbert's Gambit, journal (broker)
+- Add the remaining FX-specific terms to [Glossary](../../Overview/Glossary.md) on a separate maintainer pass:
+  - Multi-currency bookkeeping convention, FX trading account, journal (broker)
   - Settlement-date rate, realized FX, unrealized FX
+  - Already there: BoC, functional currency, FX gain/loss (income- vs capital-account), monetary item, Norbert's Gambit
 - Worked example for a USD payable to a foreign supplier (the mirror of the USD-AR example)
   - Useful for inventory-importing CCPCs; partly covered in [Inventory](../../Operations/Cost-Recovery/Inventory-And-COGS.md) Example 2
 - A short companion section, if and when the maintainer signs off this page, comparing two workflows:

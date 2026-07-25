@@ -19,6 +19,9 @@ For mechanics and worked examples, follow the link to the canonical page where o
   - Reclassified to *Trade accounts receivable* when the invoice issues
   - No dedicated GIFI line: mapped to *Other current assets* (1480) or *Trade accounts receivable* (1062)
   - Distinct from manufacturing WIP (1125); see [HST.md](../Operations/HST/HST-Bookkeeping.md#year-end-straddle-income-vs-hst-timing)
+- Adjusting entry: an entry posted because the period is ending, not because a new transaction happened
+  - Accruals, prepaid releases, amortization, FX retranslation, the tax provision
+  - See [Period-Close.md](../Bookkeeping/Period-Close.md#year-end-adjusting-entries)
 - AII (*Aggregate Investment Income*): passive investment income taxed at a high corporate rate
   - Interest, foreign income, taxable portion of capital gains
   - A portion is refundable via NERDTOH; see [Small-Business-Tax.md](Small-Business-Tax.md)
@@ -60,6 +63,9 @@ For mechanics and worked examples, follow the link to the canonical page where o
   - It deducts nothing during construction
     - Not inventory, so no COGS; not yet available for use, so no CCA
   - Transfers into a CCA class on completion; see [Materials-And-CIP.md](../Operations/Cost-Recovery/Materials-And-CIP.md)
+- Closing entry: a year-end entry zeroing the revenue, expense, and dividend accounts into retained earnings
+  - After the close, only balance-sheet accounts carry a balance forward
+  - See [Period-Close.md](../Bookkeeping/Period-Close.md#closing-the-year)
 - COGS (*Cost of Goods Sold*): the cost of inventory deducted at the moment of sale
   - Recognized on Schedule 125 line 8518; see [Inventory-And-COGS.md](../Operations/Cost-Recovery/Inventory-And-COGS.md)
 - CRA (*Canada Revenue Agency*): administers federal tax (and most provincial corporate tax)
@@ -82,6 +88,10 @@ For mechanics and worked examples, follow the link to the canonical page where o
   - Carries a larger gross-up and DTC than a non-eligible dividend; see [Dividends](../Paying-Yourself/Dividends/Dividends.md)
 - ERDTOH (*Eligible Refundable Dividend Tax on Hand*): refundable tax pool
   - Releases when an eligible dividend is paid; see [ERDTOH-NERDTOH.md](../Paying-Yourself/Dividends/ERDTOH-NERDTOH.md)
+- Exempt supply: a supply that carries no GST/HST and gives the supplier no ITCs on its inputs
+  - ETA Schedule V: financial services, residential rent, most health care
+  - Distinct from zero-rated, where the rate is 0% but ITCs survive
+  - See [HST.md](../Operations/HST/HST.md)
 - FMV (*Fair Market Value*): the price a willing buyer and seller would agree on at arm's length
   - The value an inventory item is written down to when FMV falls below cost in the lower-of-cost-or-market test
   - The deemed proceeds on non-arm's-length transfers; see [Inventory-And-COGS.md](../Operations/Cost-Recovery/Inventory-And-COGS.md)
@@ -135,6 +145,10 @@ For mechanics and worked examples, follow the link to the canonical page where o
   - See [Foreign-Currency.md](../Bookkeeping/Foreign-Currency/Foreign-Currency.md)
 - NERDTOH (*Non-Eligible Refundable Dividend Tax on Hand*): refundable tax pool
   - Releases when a non-eligible dividend is paid; see [ERDTOH-NERDTOH.md](../Paying-Yourself/Dividends/ERDTOH-NERDTOH.md)
+- Net tax: GST/HST collected or collectible minus ITCs claimed, for one reporting period (ETA s.225)
+  - The amount the GST/HST return remits (positive) or refunds (negative)
+  - Under the Quick Method, computed instead as the remittance rate times tax-included sales
+  - See [HST.md](../Operations/HST/HST.md)
 - Non-eligible dividend: default classification for a taxable dividend not designated eligible
   - And not a capital dividend
   - Carries a smaller gross-up and DTC than an eligible dividend; see [Dividends](../Paying-Yourself/Dividends/Dividends.md)
@@ -152,6 +166,9 @@ For mechanics and worked examples, follow the link to the canonical page where o
   - Taxable on the T3 but paid in additional cost rather than cash
   - It increases the units' ACB, so left untracked it double-taxes the gain on sale
   - See [Adjusted-Cost-Base.md](../Investments/Adjusted-Cost-Base/Adjusted-Cost-Base.md)
+- Place of supply: the ETA rules deciding which province's GST/HST rate a supply carries
+  - For most services, keyed to the recipient's address
+  - See [HST-Registration-And-Filing.md](../Operations/HST/HST-Registration-And-Filing.md#rates-and-place-of-supply)
 - Plug / plug account: a figure derived as the residual needed to make the books balance, and its absorbing account
   - The periodic COGS plug, a rounding residual, an FX bridge
   - See [Ledger-And-Accounts.md](../Bookkeeping/Ledger-And-Accounts.md#plugs-and-plug-accounts)
@@ -161,10 +178,20 @@ For mechanics and worked examples, follow the link to the canonical page where o
   - Can drive deemed-dividend mechanics on redemption or capital reduction; see [Dividends](../Paying-Yourself/Dividends/Dividends.md)
 - QSBC (*Qualified Small Business Corporation*): share-level test gating LCGE eligibility
   - Includes a 90% active-business-assets requirement; see [Asset-vs-Share.md](../Corporate-Lifecycle/Business-Acquisition/Asset-vs-Share.md)
+- Quick Method: simplified GST/HST accounting under ETA s.227
+  - Remit a fixed percentage of tax-included revenue, keep the spread, forgo ITCs on most operating purchases
+  - See [HST-Quick-Method.md](../Operations/HST/HST-Quick-Method.md)
 - RDTOH (*Refundable Dividend Tax on Hand*): umbrella term covering the ERDTOH and NERDTOH pools
   - The single pre-2019 RDTOH was split into the two for tax years starting after 2018
   - See [ERDTOH-NERDTOH.md](../Paying-Yourself/Dividends/ERDTOH-NERDTOH.md)
 - Recapture: negative UCC at year-end included in income under ITA s.13(1); see [Capital-Cost-Allowance.md](../Operations/Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md)
+- Reconciling item: a ledger-versus-statement difference explained by timing or an unbooked item
+  - Outstanding cheques, deposits in transit, unbooked bank fees
+  - A difference that survives the known items is a posting error
+  - See [Period-Close.md](../Bookkeeping/Period-Close.md#bank-reconciliation)
+- Registrant: a person registered for GST/HST, or required to be (ETA s.123(1))
+  - A registrant charges tax on taxable supplies and can claim ITCs
+  - See [HST-Registration-And-Filing.md](../Operations/HST/HST-Registration-And-Filing.md)
 - ROC (*Return of Capital*): distribution that reduces ACB rather than producing taxable income
   - T3 Box 42 typically carries ROC; see [Adjusted-Cost-Base.md](../Investments/Adjusted-Cost-Base/Adjusted-Cost-Base.md)
 - Rounding (whole-dollar): books are kept to the cent but the T2 and GIFI schedules are filed in whole dollars
@@ -178,6 +205,9 @@ For mechanics and worked examples, follow the link to the canonical page where o
   - For example a shed, leasehold improvement, or custom equipment
   - Tracked through CIP rather than inventory until available for use
   - See [Materials-And-CIP.md](../Operations/Cost-Recovery/Materials-And-CIP.md)
+- Small supplier: a person whose worldwide taxable supplies stay at or under $30,000 across four consecutive calendar quarters (ETA s.148)
+  - Registration is optional until the threshold is crossed
+  - See [HST-Registration-And-Filing.md](../Operations/HST/HST-Registration-And-Filing.md)
 - Stated capital: corporate-statute measure of contributed capital per share class
   - The corporate-law analogue of PUC; see [Share-Capital.md](../Corporate-Lifecycle/Corporate-Structure/Share-Capital.md)
 - Superficial loss: a capital loss denied because the identical property was reacquired around the sale
@@ -215,3 +245,7 @@ For mechanics and worked examples, follow the link to the canonical page where o
 - WIP (*Work In Progress*): partially completed goods in a manufacturing inventory
   - Sitting between raw materials and finished goods (GIFI 1125)
   - See [Inventory-And-COGS.md](../Operations/Cost-Recovery/Inventory-And-COGS.md)
+- Zero-rated supply: a taxable supply carrying GST/HST at 0%
+  - No tax is charged, but ITCs on related inputs remain claimable
+  - ETA Schedule VI: exports, many services to non-residents, basic groceries
+  - See [HST-Regular-Method.md](../Operations/HST/HST-Regular-Method.md)

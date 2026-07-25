@@ -29,12 +29,6 @@ Limitations:
   - Nearest coverage: [Capital Dividend Account](../Investments/Capital-Dividend-Account/Capital-Dividend-Account.md)
     - It works only the capital-gains source and flags this one as out of scope
     - Plus the premium-deductibility note in [Owner-Corporation-Transactions](../Paying-Yourself/Owner-Corporation-Transactions.md)
-- *Corporate income-tax instalment computation*
-  - The three instalment bases (no-calculation, prior-year, current-year) are not worked
-  - Neither is the exemption when total tax for the current or prior year is small
-  - Only the calendar and how to enter instalments on the return are covered
-  - Nearest coverage: [Payment](../Filing-And-CRA/Payment/Payment.md) and [Small-Business-Tax](Small-Business-Tax.md#filing-deadlines-and-instalments)
-  - Further: ITA [s.157](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-157.html), CRA guide T7B-CORP (Corporation Instalment Guide)
 - *Imported-services GST/HST self-assessment*
   - The ETA Division IV self-assessment: [s.218](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-218.html), with [s.218.1](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-218.1.html) for the provincial part
   - It nets to zero for a CCPC using the imported service entirely in commercial activity
@@ -42,8 +36,8 @@ Limitations:
   - Nearest coverage: [HST](../Operations/HST/HST.md)
 - *Employee-vs-contractor determination*: the multifactor worker-status test the corp applies to people it pays
   - Described only inside the personal-service-business discussion, not as a standalone determination
-  - Nearest coverage: [Small-Business-Tax](Small-Business-Tax.md) for the factor list
-  - Also [Expense-Classification](../Bookkeeping/Expense-Classification.md) for sub-contract labour (9110) vs wages (9060) and the T4 / T4A consequence
+  - The slip and withholding consequences of the answer are worked in [Paying Contractors](../Operations/Paying-Contractors.md)
+  - Nearest coverage for the test itself: [Small-Business-Tax](Small-Business-Tax.md) for the factor list
   - Further: CRA guide RC4110 (Employee or Self-employed?)
 - *Unified Schedule 1 reconciliation*: the book-to-tax add-backs and deductions are listed per topic
   - At orientation level, not collected into one consolidated reconciliation
@@ -57,6 +51,17 @@ Limitations:
   - Verify the current rule before assuming a return is or is not due
   - Nearest coverage: [Rental and Property Income](../Operations/Rental-And-Property-Income.md) and [Owner-Corporation-Transactions](../Paying-Yourself/Owner-Corporation-Transactions.md)
   - Further: the CRA Underused Housing Tax pages and the Underused Housing Tax Act
+- *Inter-corporate dividends beyond safe income*: ITA [s.55(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-55.html) can recharacterize a dividend between connected corporations as a capital gain
+  - Live once a holdco receives dividends from an opco past the opco's *safe income*; professional-advice territory
+  - Nearest coverage: [Corporate Structure](../Corporate-Lifecycle/Corporate-Structure/Corporate-Structure.md#related-and-associated-corporations) for when corporations are connected in the first place
+- *Asset-sale elections on receivables and assumed obligations*: ITA [s.22](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-22.html) (joint election selling receivables at face, preserving bad-debt deductions) and [s.20(24)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-20.html) (payment for assuming deferred-revenue obligations)
+  - Nearest coverage: [Asset vs Share](../Corporate-Lifecycle/Business-Acquisition/Asset-vs-Share.md) for the sale structure; the s.22 election is mentioned in [Estate Freeze](../Corporate-Lifecycle/Business-Acquisition/Estate-Freeze.md); [Deferred Revenue](../Operations/Deferred-Revenue.md) for the obligations being assumed
+- *The sole shareholder's death*: the deemed disposition of the shares, the double-tax problem, the s.164(6) loss carryback, and pipeline planning
+  - [Estate Freeze](../Corporate-Lifecycle/Business-Acquisition/Estate-Freeze.md) covers the succession *plan*; the death itself is professional-advice territory
+  - Further: ITA [s.70(5)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-70.html), [s.164(6)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-164.html)
+- *The first non-owner employee*: the Record of Employment, vacation and statutory-holiday pay accrual, WSIB registration, and the Ontario EHT exemption
+  - Nearest coverage: [Payroll](../Paying-Yourself/Payroll.md) works the owner-manager case and names the EHT/WSIB thresholds
+  - Multi-employee HR stays deliberately out (below)
 
 
 ## Deliberately Out of Scope
@@ -65,6 +70,8 @@ Limitations:
   - As in [Owner-Corporation-Transactions](../Paying-Yourself/Owner-Corporation-Transactions.md); the personal return is its own domain
 - *PST and QST*: the guide works federal GST/HST only
   - Provincial sales taxes outside the participating-province HST are not covered
+  - The trigger to know about: a goods seller shipping into BC, Saskatchewan, Manitoba, or Quebec can be required to register provincially with no physical presence there
+  - Check the destination province's registration rules once goods ship there regularly
 - *SR&ED, EIFEL, amalgamations, and public-company topics*: beyond a typical owner-managed CCPC
 - *Cross-border information returns*: beyond a typical owner-managed CCPC
   - T1134 foreign affiliates, T106 non-arm's-length transactions with non-residents
@@ -72,6 +79,12 @@ Limitations:
   - Hiring, multiple employees, and employment-standards obligations are out of scope
 - *US and cross-border income-tax nexus*: US permanent-establishment analysis and state taxes are not covered
   - [Foreign Currency](../Bookkeeping/Foreign-Currency/Foreign-Currency.md) carries the W-8BEN-E treaty position for billing US clients
+  - State *sales-tax* economic nexus is the same shape on the sales side: shipping into US states can require state registrations with no US income-tax nexus
+  - Paying a non-resident contractor (Reg 105 withholding, T4A-NR) is worked in [Paying Contractors](../Operations/Paying-Contractors.md)
+- *Long-term construction contracts and contract revenue*: progress billings, holdback receivables, and percentage-of-completion accounting
+  - Declared out of scope on [Cost Recovery](../Operations/Cost-Recovery/Cost-Recovery.md), [Inventory and COGS](../Operations/Cost-Recovery/Inventory-And-COGS.md), [Materials and CIP](../Operations/Cost-Recovery/Materials-And-CIP.md), and [Deferred Revenue](../Operations/Deferred-Revenue.md)
+  - The cost side of a construction CCPC is worked in those pages; the revenue side is not, anywhere
+  - The T5018 subcontractor return is worked in [Paying Contractors](../Operations/Paying-Contractors.md)
 
 
 ## Related
@@ -86,12 +99,13 @@ Limitations:
 - Income Tax Act (R.S.C., 1985, c. 1 (5th Supp.)):
   - [s.89(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-89.html) - "capital dividend account" definition
     - Includes the non-taxable portion of life-insurance proceeds at paragraph (d)
-  - [s.157](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-157.html) - corporate instalment bases and balance-due dates
+  - [s.55(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-55.html) - inter-corporate dividends beyond safe income recharacterized
+  - [s.22](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-22.html), [s.20(24)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-20.html) - asset-sale elections on receivables and assumed obligations
+  - [s.70(5)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-70.html), [s.164(6)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-164.html) - deemed disposition at death and the estate's loss carryback
 - Excise Tax Act (R.S.C., 1985, c. E-15):
   - [s.218](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-218.html) (and [s.218.1](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-218.1.html) for the provincial part) - Division IV self-assessment
     - On imported taxable supplies (services and intangibles)
 - CRA publications:
-  - CRA T7B-CORP - *Corporation Instalment Guide*
   - CRA RC4110 - *Employee or Self-employed?*
   - CRA - *Underused Housing Tax* (filing requirement and excluded owners)
 
@@ -102,6 +116,5 @@ Limitations:
   - The review's Tier 1–3 findings are otherwise all drafted as their own pages
 - Promote any entry to its own page when the maintainer works it
   - Remove it here and add its README entry under the right thematic group
-- Re-verify before writing either one up:
-  - The UHT requirement for Canadian-controlled corporations
-  - The corporate instalment small-tax threshold
+- Re-verify before writing it up: the UHT requirement for Canadian-controlled corporations
+- 2026-07-25 coverage cycle: instalment computation promoted into [Payment](../Filing-And-CRA/Payment/Payment.md); contract revenue logged under Deliberately Out of Scope pending the maintainer's admit/keep-out call (Coverage G-15)

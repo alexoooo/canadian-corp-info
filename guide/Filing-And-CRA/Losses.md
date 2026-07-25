@@ -14,11 +14,14 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
 - A dollar of loss is worth the tax rate of the income it displaces, so where it lands matters
   - Displacing refundable investment-income tax recovers much less than the headline rate suggests
 - Claim less CCA before banking a loss: a non-capital loss expires after 20 years, UCC never does
+- A worthless share or bad capital debt has no disposition until an s.50(1) election creates one
+  - If the issuer was a *small business corporation*, the loss may be an ABIL, deductible against any income
 
 Limitations:
 - Focus is the owner-managed CCPC's two common loss types: non-capital and net capital
   - Farm, restricted-farm, and limited-partnership losses are out of scope
-- *Allowable business investment losses* (ABIL) are out of scope
+- *Allowable business investment losses* are covered only as the s.50(1) worthless-holding branch below
+  - The full ABIL regime (s.39(9) exemption grinds, disputes over SBC status) is professional-advice territory
 - The loss-streaming rules on an *acquisition of control* (ITA s.111(4)–(5.5)) are out of scope
   - They matter when the corporation is sold; see [Business Acquisition](../Corporate-Lifecycle/Business-Acquisition/Business-Acquisition.md)
 - Personal (T1) loss mechanics are out of scope
@@ -44,6 +47,42 @@ The two do not mix:
 
 This page covers the T2 machinery and the non-capital side.  
 The capital-loss side (superficial-loss rule, the realized-loss mechanics, the CDA effect) is in [Adjusted Cost Base](../Investments/Adjusted-Cost-Base/Adjusted-Cost-Base.md#capital-loss-carry-forward--back--superficial-loss).  
+
+
+## Worthless Shares and Bad Debts
+
+The capital-loss machinery above assumes a disposition — usually a sale.  
+When an issuer goes bankrupt or a loan the corporation made goes bad, nothing is sold and no T5008 arrives.  
+Without an election there is no disposition, so the loss stays unrealized indefinitely.  
+
+ITA [s.50(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-50.html) supplies the disposition, by election in the return for the year:
+- *A debt*: owing to the corporation at year-end and established to have become bad in the year
+- *A share*: still owned at year-end, where in the year the issuer went bankrupt or was ordered wound up insolvent, or where at year-end the issuer is insolvent, carries on no business, the share is worth nil, and dissolution is reasonably expected
+- The election deems the debt or share disposed of at year-end for nil proceeds and reacquired immediately after at nil cost
+- There is no prescribed form; elect by a signed statement filed with the T2 for the year
+
+The nil-cost reacquisition writes the ACB record down to zero:
+- Close the holding's ACB pool at nil; any later recovery or sale is a gain from a nil base
+- If the issuer resumes business within 24 months while the share is still held, the election reverses at the original ACB (s.50(1.1))
+
+The loss on a plain portfolio holding is a capital loss:
+- Half is allowable, usable against taxable capital gains only, on the net-capital-loss continuity above
+- The non-taxable half reduces the [CDA](../Investments/Capital-Dividend-Account/Capital-Dividend-Account.md)
+
+Where the issuer was a *small business corporation* — a CCPC using all or substantially all of its assets in an active business carried on primarily in Canada — the character improves.  
+ITA [s.39(1)(c)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-39.html) makes the loss a *business investment loss*:
+- Qualifying dispositions: an s.50(1) election, or an actual sale to an arm's-length person
+- Qualifying property: a share of a small business corporation, or a debt owing by a CCPC that is one (or was one when it went bankrupt or into an insolvent winding-up)
+- The allowable half (the *ABIL*) deducts against income from any source, not just capital gains
+- An ABIL the year cannot absorb joins the non-capital loss pool rather than the net-capital one (see TODO for the carryforward clock)
+- The CDA is still reduced: for CDA purposes the business investment loss counts like any other capital loss (ITA [s.89(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-89.html))
+  - A corporation holding CDA capacity can pay the capital dividend out before realizing the ABIL
+
+The debt-side trap: a capital loss on a debt is nil unless the debt was acquired to earn income (ITA [s.40(2)(g)(ii)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-40.html)).  
+An interest-bearing loan qualifies; an interest-free advance to another corporation may not, and needs advice before the loss is claimed.  
+
+A client invoice that will not be paid is none of this.  
+Trade receivables are written off on income account under s.20(1)(p); see [Receivables and Bad Debts](../Operations/Receivables-And-Bad-Debts.md).  
 
 
 ## The Loss Year on the T2
@@ -177,6 +216,8 @@ Carryforward (the alternative):
 - [Capital Cost Allowance](../Operations/Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md) (discretionary CCA in a loss year)
 - [Capital Dividend Account](../Investments/Capital-Dividend-Account/Capital-Dividend-Account.md)
 - [ERDTOH and NERDTOH](../Paying-Yourself/Dividends/ERDTOH-NERDTOH.md)
+- [Receivables and Bad Debts](../Operations/Receivables-And-Bad-Debts.md) (trade receivables, written off on income account)
+- [Capital vs Income Character](../Investments/Capital-Vs-Income-Character.md)
 - [Donations](../Operations/Donations.md) (the other discretionary carryforward, on a shorter 5-year clock)
 - [Small Business Tax Overview](../Overview/Small-Business-Tax.md)
 - [Ledger and Accounts](../Bookkeeping/Ledger-And-Accounts.md)
@@ -190,6 +231,10 @@ Carryforward (the alternative):
   - [s.111(1)(b)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-111.html) - net capital loss carryover: 3 years back, indefinite forward, against taxable capital gains only
   - [s.111(3)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-111.html) - ordering: within a type, losses apply in the order they arose
   - [s.111(8)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-111.html) - definitions of *non-capital loss* and *net capital loss*
+  - [s.50(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-50.html) - deemed disposition election for a bad debt or a worthless share; s.50(1.1) 24-month reversal
+  - [s.39(1)(c)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-39.html) - business investment loss on small-business-corporation shares and debt
+  - [s.40(2)(g)(ii)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-40.html) - loss on a debt is nil unless acquired to earn income
+  - [s.89(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-89.html) - *capital dividend account*: capital losses, including business investment losses, reduce it
   - [s.152(1.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-152.html) - determination of loss on the taxpayer's request; binding and carries objection rights
   - [s.164(5)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-164.html) - effect of a carryback on refund-interest timing
   - [s.129(4)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-129.html) - *refundable portion* of Part I tax, the least-of formula behind the AII row of the loss-value table
@@ -200,6 +245,9 @@ Carryforward (the alternative):
 
 ## TODO
 
+- Verify the ABIL carryforward clock in the s.111(8) *non-capital loss* definition
+  - The understanding: an unapplied ABIL carries as a non-capital loss for 10 years, then reverts to a net capital loss
+  - Confirm against the current definition and CRA Folio S4-F8-C1 (*Business Investment Losses*), then name the clock in the body
 - Verify the Schedule 4 carryback line numbers (901–903 for a non-capital loss) against the current forms
   - Also the T2 jacket taxable-income deduction lines (331 non-capital, 332 net capital)
   - Then name them in the body

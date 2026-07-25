@@ -19,10 +19,12 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
   - Under the *Quick Method* there is no bad-debt adjustment for quick-method supplies
   - An ordinary consulting invoice gets none
 - A later recovery is income again (s.12(1)(i)), and the HST portion is re-remitted
+- A reduced or reversed invoice is a *credit note*, not a bad debt
+  - The HST is credited back under ETA s.232 through the credit-note mechanism
 
 Limitations:
 - Scope is trade receivables of an operating business
-  - Writing off a *loan* or advance is a capital matter (ITA s.50(1)) with different mechanics and is out of scope
+  - Writing off a *loan* or advance is a capital matter (ITA s.50(1)); see [Losses](../Filing-And-CRA/Losses.md#worthless-shares-and-bad-debts)
 - Amounts owed by the owner are the shareholder-loan regime, not bad-debt territory; see [Owner-corporation transactions](../Paying-Yourself/Owner-Corporation-Transactions.md#shareholder-loans)
 - Forgiving a debt (as opposed to failing to collect it) can trigger the debt-forgiveness rules (ITA s.80)
   - Those rules bear on the debtor; out of scope
@@ -124,6 +126,43 @@ Client later pays $2,260 of the written-off $5,650:
 | `HST collected` | | 260.00 |
 
 
+## Refunds, Credit Notes, and Adjustments
+
+A bad debt is an invoice the client will not pay.  
+A *credit note* is an invoice the corporation takes back: a returned product, a cancelled engagement, a price reduced after billing.  
+The entries and the HST mechanics differ, so keep the two apart.  
+
+The paper is a credit note issued to the client, or a debit note the client issues, carrying the prescribed information:
+- That the document is a credit (or debit) note
+- The supplier's name and registration number, the recipient's name, and the date
+- The amount of tax being credited, or a statement that the total includes it
+- Prescribed by the Credit Note and Debit Note Information (GST/HST) Regulations ([SOR/91-44](https://laws-lois.justice.gc.ca/eng/regulations/SOR-91-44/page-1.html))
+
+ETA [s.232](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-232.html) sets two windows for crediting the tax:
+- Tax charged in excess (a billing error): refund or credit within two years after the day it was charged or collected (s.232(1))
+- Consideration later reduced (return, cancellation, negotiated discount): within four years after the end of the reporting period in which the reduction occurred (s.232(2))
+
+The note drives both sides' returns (s.232(3)):
+- The supplier deducts the credited tax from net tax for the period the note issues (if the tax was already reported)
+- The recipient that claimed an ITC on it adds the credited tax back
+
+Crediting $2,000 + $260 HST of a billed engagement against the open receivable (regular method):
+
+| Account | Debit | Credit |
+|---|---|---|
+| `Trade sales of goods and services` (`8000`) | 2,000.00 | |
+| `HST collected` — s.232 adjustment | 260.00 | |
+| `Trade accounts receivable` (`1062`) | | 2,260.00 |
+
+If the invoice was already paid, credit `Cash` (`1001`) instead — the client is refunded, not just relieved of the balance.  
+Revenue is reversed on its own line, not booked to `Bad debt expense`; nothing here was ever uncollectible.  
+
+Quick Method wrinkle: the remittance was a percentage of tax-included revenue, not tax actually collected.  
+A refund therefore reduces the tax-included base the remittance rate applies to in the refund period, rather than running through an actual-tax s.232 deduction (see TODO).  
+
+A forfeited deposit is the mirror case — money kept with no supply made; the [Deferred Revenue](Deferred-Revenue.md) page owns it (ETA s.182).  
+
+
 ## Related
 
 - [HST](HST/HST.md) (tax point, bad-debt adjustment, Quick Method)
@@ -146,6 +185,8 @@ Client later pays $2,260 of the written-off $5,650:
   - [s.50(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-50.html) - deemed disposition election for bad capital debts (the loan-side contrast, out of scope)
 - Excise Tax Act (R.S.C., 1985, c. E-15):
   - [s.231](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-231.html) - bad-debt adjustment and the recovery-side re-remittance (s.231(3))
+  - [s.232](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-232.html) - refund or adjustment of tax: the two-year and four-year windows, the credit-note mechanism
+- Credit Note and Debit Note Information (GST/HST) Regulations ([SOR/91-44](https://laws-lois.justice.gc.ca/eng/regulations/SOR-91-44/page-1.html)) - prescribed credit-note content
 - Streamlined Accounting (GST/HST) Regulations (SOR/91-51):
   - [s.17(1)](https://laws-lois.justice.gc.ca/eng/regulations/SOR-91-51/section-17.html) - Quick Method net-tax formula
     - Division V bad-debt deductions admitted only for supplies other than specified supplies (variable C(b))
@@ -156,6 +197,7 @@ Client later pays $2,260 of the written-off $5,650:
 
 ## TODO
 
+- Verify the Quick Method treatment of a refund against RC4058 (reduce the tax-included base in the refund period vs an actual-tax s.232 deduction)
 - Verify the s.20(1)(l) reserve base for the HST portion of a receivable
   - The body takes the position that only the net-of-HST share is reservable, since HST collected was never income
   - Confirm against IT-442R / current CRA position

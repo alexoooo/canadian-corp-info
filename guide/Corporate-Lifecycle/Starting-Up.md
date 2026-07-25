@@ -79,6 +79,27 @@ A deliberately short first year is fine, but it prorates by days:
 - The $500,000 SBD business limit (ITA [s.125(5)(b)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-125.html))
 - CCA claims (see [CCA — Short fiscal year](../Operations/Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md#short-fiscal-year))
 
+### Changing the Year-End Later
+
+"No change in the time when a fiscal period ends may be made for the purposes of this Act without the concurrence of the Minister" (ITA [s.249.1(7)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-249.1.html)).  
+A reader whose chosen date no longer fits — a seasonal cycle, a group year-end, a buyer's — asks CRA first, not the T2.  
+
+The request:
+- No prescribed form: write to the corporation's tax centre, or through My Business Account correspondence, before the intended change
+  - State the requested new date and the business reasons
+- Sound business reasons pass: aligning to the operating cycle's natural low point, matching a parent's or purchaser's year-end
+- Tax-motivated requests are refused: a change whose main effect is deferring tax or reopening a bonus-deferral window
+
+A granted change runs through a transitional short year, and the short year is where the cost lives:
+- The stub from the old year-end to the new date files its own T2
+- The business limit and CCA prorate by days, exactly as in a short first year (above)
+- Filing and balance-due dates key off the new year-end, so the next cycle arrives early
+- The instalment base recalculates off the short year; see [Payment](../Filing-And-CRA/Payment/Payment.md)
+- The GST/HST fiscal year defaults to the taxation year and moves with it
+  - An elected non-matching GST/HST year (Form GST70) needs its own review
+
+One case needs no request: an acquisition of control forces a deemed year-end (ITA [s.249(4)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-249.html)), and the corporation sets its new fiscal period on the return that follows (see TODO).  
+
 
 ## Funding the Corporation
 
@@ -182,6 +203,7 @@ Set up the chart of accounts (see [Ledger and Accounts](../Bookkeeping/Ledger-An
 
 - Income Tax Act (R.S.C., 1985, c. 1 (5th Supp.)):
   - [s.249.1](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-249.1.html) - fiscal period: up to 53 weeks; s.249.1(7) - change of fiscal period needs CRA's concurrence
+  - [s.249(4)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-249.html) - deemed year-end on an acquisition of control
   - [s.125(5)(b)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-125.html) - business limit prorated for a tax year under 51 weeks
   - [s.20(1)(b)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-20.html) - deduction for the first $3,000 of incorporation expenses
   - [s.85](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-85.html) - rollover of property to a corporation
@@ -194,6 +216,8 @@ Set up the chart of accounts (see [Ledger and Accounts](../Bookkeeping/Ledger-An
 
 ## TODO
 
+- Verify the free choice of a new fiscal period after an s.249(4) deemed year-end (no concurrence needed) against the s.249.1 text
+- Verify the year-end-change request channel (tax centre letter vs My Business Account) and any current CRA guidance naming acceptable reasons
 - Verify s.125(5)(b) as the business-limit proration provision and the 51-week trigger wording
 - Verify the business-commencement standard (activity directed at earning income) against CRA's IT-364 (archived)
 - Verify that provincial incorporation feeds the BN automatically for Ontario

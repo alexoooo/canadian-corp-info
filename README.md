@@ -33,6 +33,7 @@ Unmarked pages are reviewed; † = AI generated, not verified yet.
 
 **[Bookkeeping](guide/Bookkeeping/Bookkeeping.md)** †:
 - [Ledger and Accounts](guide/Bookkeeping/Ledger-And-Accounts.md) †
+- [Period Close](guide/Bookkeeping/Period-Close.md) †
 - [Expense Classification](guide/Bookkeeping/Expense-Classification.md) †
 - [Foreign Currency](guide/Bookkeeping/Foreign-Currency/Foreign-Currency.md) † (cross-cutting: billing, banking, and investments)
   - [FX Rates and Character](guide/Bookkeeping/Foreign-Currency/FX-Rates-And-Character.md) †
@@ -51,6 +52,7 @@ Unmarked pages are reviewed; † = AI generated, not verified yet.
   - [HST - Worked Examples](guide/Operations/HST/HST-Examples.md) †
 - [Receivables and Bad Debts](guide/Operations/Receivables-And-Bad-Debts.md) †
 - [Deferred Revenue](guide/Operations/Deferred-Revenue.md) †
+- [Paying Contractors](guide/Operations/Paying-Contractors.md) †
 - [Cost Recovery](guide/Operations/Cost-Recovery/Cost-Recovery.md) †
   - [Inventory and Cost of Goods Sold](guide/Operations/Cost-Recovery/Inventory-And-COGS.md) †
   - [Materials and CIP](guide/Operations/Cost-Recovery/Materials-And-CIP.md) †
@@ -59,10 +61,12 @@ Unmarked pages are reviewed; † = AI generated, not verified yet.
     - [Capital Cost Allowance - Worked Examples](guide/Operations/Cost-Recovery/Capital-Cost-Allowance/CCA-Examples.md) †
     - [Capital Cost Allowance - Tracking](guide/Operations/Cost-Recovery/Capital-Cost-Allowance/CCA-Tracking.md) †
 - [Debt and Financing](guide/Operations/Debt-And-Financing.md) †
+- [Government Assistance](guide/Operations/Government-Assistance.md) †
 - [Donations](guide/Operations/Donations.md) †
 - [Rental and Property Income](guide/Operations/Rental-And-Property-Income.md) †
 
 **[Paying Yourself](guide/Paying-Yourself/Paying-Yourself.md)** †:
+- [Salary vs Dividends](guide/Paying-Yourself/Salary-Vs-Dividends.md) †
 - [Payroll](guide/Paying-Yourself/Payroll.md) †
 - [Dividends](guide/Paying-Yourself/Dividends/Dividends.md)
   - [ERDTOH and NERDTOH](guide/Paying-Yourself/Dividends/ERDTOH-NERDTOH.md)
@@ -82,6 +86,7 @@ Unmarked pages are reviewed; † = AI generated, not verified yet.
 - [T5](guide/Investments/T5/T5.md) †
   - [T5 - Box 18 Capital Gains Dividends](guide/Investments/T5/T5-Box-18-Capital-Gains-Dividends.md) †
 - [T5008](guide/Investments/T5008/T5008.md)
+- [T5013](guide/Investments/T5013.md) †
 - [T1135](guide/Investments/T1135.md) †
 - [Capital Dividend Account](guide/Investments/Capital-Dividend-Account/Capital-Dividend-Account.md)
 

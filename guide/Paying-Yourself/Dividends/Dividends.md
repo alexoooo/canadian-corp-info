@@ -16,7 +16,7 @@ Limitations:
   - More complex ownership structures (multiple share classes, family trusts, succession planning) are out of scope
 - The shareholder is assumed to be a Canadian-resident *individual*
   - Opco-paying-Holdco and non-resident shareholders are mentioned briefly
-- The salary-vs-dividend remuneration tradeoff (CPP, RRSP, payroll, WSIB) is out of scope
+- The salary-vs-dividend remuneration tradeoff is worked in [Salary vs Dividends](../Salary-Vs-Dividends.md); WSIB stays out of scope
   - This page only covers dividends
 - Tax planning for buying or selling a business (e.g. the lifetime capital gains exemption) is out of scope
   - See [Business Acquisition](../../Corporate-Lifecycle/Business-Acquisition/Business-Acquisition.md) for an orientation

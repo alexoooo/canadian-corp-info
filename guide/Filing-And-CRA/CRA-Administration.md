@@ -131,6 +131,33 @@ The penalties an owner-managed corporation actually meets:
 - *Information-slip and T1135 penalties*: flat-rate, no tax owing required; see [Filing deadlines](../Overview/Small-Business-Tax.md#filing-deadlines-and-instalments) and [T1135](../Investments/T1135.md)
 
 
+## Director Liability
+
+The corporation's tax debts are its own, with one exception aimed straight at the owner-manager.  
+Directors are jointly and severally liable for amounts the corporation failed to withhold or remit:
+- Source deductions and other s.153 withholdings, under ITA [s.227.1](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-227.1.html)
+- GST/HST net tax, under ETA [s.323](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-323.html)
+- Plus the interest and penalties on both
+
+Corporate income tax is not on the list; an unpaid T2 balance stays the corporation's.  
+
+Both provisions run the same machinery:
+- CRA must first exhaust the corporation (s.227.1(2), s.323(2)):
+  - A certificate registered in Federal Court with execution returned unsatisfied
+  - Or a claim proved within six months of a liquidation or dissolution, or of a bankruptcy
+- The *due-diligence defence*: no liability where the director "exercised the degree of care, diligence and skill to prevent the failure that a reasonably prudent person would have exercised in comparable circumstances" (s.227.1(3), s.323(3))
+- The limitation: no assessment more than two years after the person last ceased to be a director (s.227.1(4), s.323(5))
+
+What this means for a single-director CCPC in a cash squeeze:
+- The payroll remittance and the HST are not working capital; a shortfall financed by holding them back is financed personally
+- The amounts are already impressed with a deemed trust for the Crown before any assessment (see [HST](../Operations/HST/HST.md) for ETA s.222)
+- The defence is about *prevention*: a remittance-first payment habit and evidence of monitoring, not explanations after the failure
+- The two-year clock starts only on a genuine cessation
+  - A documented, registry-filed resignation starts it; continuing to manage the corporation as a de facto director does not
+
+The exposure is why the remittance accounts are cleared before anything else in a wind-down; see [Winding Down](../Corporate-Lifecycle/Winding-Down.md).  
+
+
 ## Reviews and Audits
 
 A *desk review* (processing review) is a letter asking for the backup behind specific lines.  
@@ -247,10 +274,11 @@ A nil assessment cannot be objected to; for a loss year, the lever is a loss det
 - [Losses](Losses.md)
 - [T2 Schedules](T2-Schedules.md)
 - [T1135](../Investments/T1135.md)
-- [Payroll](../Paying-Yourself/Payroll.md)
+- [Payroll](../Paying-Yourself/Payroll.md) (the remittances director liability covers)
 - [Small Business Tax Overview](../Overview/Small-Business-Tax.md)
 - [Ledger and Accounts](../Bookkeeping/Ledger-And-Accounts.md)
 - [HST](../Operations/HST/HST.md)
+- [Winding Down](../Corporate-Lifecycle/Winding-Down.md) (clearing the remittance accounts first)
 
 
 ## Citations
@@ -265,8 +293,11 @@ A nil assessment cannot be objected to; for a loss year, the lever is a loss det
   - [s.165(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-165.html) - notice of objection, 90-day deadline; [s.166.1](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-166.1.html) - extension application within one further year
   - [s.220(3.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-220.html) - taxpayer relief: waiver of interest and penalties within 10 years
   - [s.225.1](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-225.1.html) - collection restrictions while an objection or appeal is outstanding
+  - [s.227.1](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-227.1.html) - director liability for unremitted withholdings: preconditions (227.1(2)), due-diligence defence (227.1(3)), two-year limit (227.1(4))
   - [s.230](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-230.html) - duty to keep books and records; s.230(4) - retention period
   - [s.231.1](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-231.html) - audit inspection authority
+- Excise Tax Act (R.S.C., 1985, c. E-15):
+  - [s.323](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-323.html) - director liability for unremitted net tax: the same preconditions, defence, and two-year limit
 - Income Tax Regulations (C.R.C., c. 945):
   - [s.4301](https://laws-lois.justice.gc.ca/eng/regulations/C.R.C.,_c._945/section-4301.html) - prescribed interest rates (arrears = base + 4%; corporate refunds = base)
   - [s.5800](https://laws-lois.justice.gc.ca/eng/regulations/C.R.C.,_c._945/section-5800.html) - retention periods, including permanent corporate records until 2 years after dissolution

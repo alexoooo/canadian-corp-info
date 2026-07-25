@@ -25,10 +25,14 @@ Limitations:
   - An arm's-length employee follows the same mechanics
   - Hiring topics (employment contracts, employment standards, EI premiums) are touched on, not worked through
 - The salary-vs-dividend remuneration tradeoff (RRSP room, CPP credits, integration) is out of scope
-  - See [Paying yourself: salary vs dividends](../Overview/Small-Business-Tax.md#paying-yourself-salary-vs-dividends)
+  - It is worked in [Salary vs Dividends](Salary-Vs-Dividends.md)
 - Valuing taxable benefits (automobile, home office, personal use of corporate property) is out of scope
   - [Owner-corporation transactions](Owner-Corporation-Transactions.md) covers the valuation; this page covers how a benefit is reported once valued
-- Provincial employer levies (Ontario Employer Health Tax, WSIB) are out of scope
+- Provincial employer levies (Ontario Employer Health Tax, WSIB) are out of scope beyond the thresholds that say when to look:
+  - EHT: eligible private-sector employers pay nothing on the first $1,000,000 of annual Ontario payroll (see TODO)
+    - A single owner-manager salary rarely approaches it
+  - WSIB: registration turns on industry classification, not headcount; check the classification when hiring a first non-owner worker
+  - See [Further Reading](../Overview/Further-Reading.md) for the first-employee boundary
 - The owner's personal T1 side (reporting the T4, claiming the CPP credit) is out of scope
 - Withholding rates and CPP limits change every January; figures below are 2026 and the dollar examples are illustrative
 - The following is my understanding as of 2026
@@ -275,7 +279,7 @@ Filing:
 - Source the CRA administrative position on owner-manager remuneration reasonableness before sign-off
   - Income Tax Technical News No. 22 (archived)
 - Confirm the mandatory-electronic-filing slip threshold for T4 returns and add it to the filing section
-- Decide whether Ontario EHT and WSIB stay out of scope or get a named-threshold note
+- Verify the EHT $1,000,000 exemption figure and eligibility (held through 2028 per 2026 summaries) against Ontario's EHT guidance at sign-off
 - Settle the boundary with [Payment](../Filing-And-CRA/Payment/Payment.md) as that page grows past the stub
   - This page owns the payroll concepts and bookkeeping; Payment owns the cash-to-CRA mechanics
   - Move or trim the CPP-figure duplication accordingly

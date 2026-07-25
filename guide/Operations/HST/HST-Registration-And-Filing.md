@@ -82,6 +82,30 @@ PST and QST are not HST:
   - A Quebec-based corp tracks GST and QST separately and files them on a combined Revenu Québec return
 
 
+## Sales Through a Marketplace
+
+A corporation selling goods through Amazon, Etsy, or a similar marketplace is inside the ETA's electronic-commerce rules (Subdivision E of Division II).  
+ETA [s.211.1](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-211.1.html) defines a *distribution platform operator*: the person who controls or sets the essential elements of the transaction between supplier and recipient, or who collects and transmits the consideration.  
+
+Who collects turns on the vendor's registration status:
+- The platform is deemed the supplier only where the third-party vendor is *not* registered under the normal regime (ETA [s.211.23](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-211.23.html))
+- A registered CCPC therefore remains the supplier of its own platform sales
+  - Charge and report the tax at the place-of-supply rate on the corp's own GST34, exactly as for a direct sale
+  - Give the platform the corp's GST/HST registration number so it treats the corp as registered
+- Getting this backwards is expensive in both directions
+  - Assuming "the platform handles it" while registered means under-remitting
+  - A platform also collecting on a registered vendor's sales means the customer is double-charged
+
+The platform's fees are a supply *to* the corporation:
+- Book sales gross: the full selling price to revenue and `HST collected`, the fee as its own expense (`8710` merchant charges)
+- A fee from a Canadian-registered platform carries HST, recoverable as an ITC under the regular method
+- A non-resident platform registered under the *simplified* regime must not be paid tax: tax charged under that regime is not recoverable as an ITC
+  - Provide the registration number and have the platform reverse any simplified-regime tax charged (see TODO)
+
+Marketplace sales are still the corporation's taxable supplies for the $30,000 small-supplier test.  
+An unregistered vendor's goods sales may be collected on by the platform under the deeming rule in the meantime (see TODO).  
+
+
 ## Zero-Rated Supplies
 
 *Zero-rated* supplies are *taxable supplies* at 0% (ETA Schedule VI).  
@@ -170,6 +194,8 @@ It covers the T2, T4/T5 slips, and payroll source deductions alongside GST/HST.
   - [s.237](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-237.html) - quarterly instalments for annual filers with net tax of $3,000 or more
     - Base = lesser of prior-year net tax and current-year estimate
   - [s.238](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-238.html) - filing deadlines by reporting period
+  - [s.211.1](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-211.1.html) - *distribution platform operator* definition
+  - [s.211.23](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-211.23.html) - platform deemed the supplier only for an unregistered third-party vendor's qualifying supplies
   - [s.240](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-240.html) - registration mechanics
     - Voluntary registration (s.240(3)); effective date and 29-day filing window (s.240(2.1))
   - [s.245](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-245.html) - reporting period assignment by prior-year taxable supplies
@@ -203,3 +229,5 @@ It covers the T2, T4/T5 slips, and payroll source deductions alongside GST/HST.
 - Verify the s.148(4) aggregation rule for *associated* corps under the small-supplier test
   - Against current CRA administrative position
   - The statute references "associated" but some CRA publications use a narrower definition than ITA s.256
+- Verify the no-ITC rule for tax charged by a simplified-regime registrant against current CRA guidance, and the recovery route (refund from the supplier)
+- Verify whether supplies deemed made by a platform (s.211.23) still count toward the unregistered vendor's own $30,000 threshold

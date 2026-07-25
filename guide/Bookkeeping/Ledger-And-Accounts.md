@@ -128,6 +128,7 @@ The two-column tie is the proof step before anything rolls up to a financial sta
 At the *year-end close*, the temporary accounts (revenue, expenses, dividends) are zeroed into retained earnings.  
 After the close only permanent accounts carry forward.  
 `Assets = Liabilities + Equity` holds on the closing balance sheet.  
+The full procedure — monthly reconciliations through the closing entries — is on [Period Close](Period-Close.md).  
 
 
 ## A Worked Set of Books
@@ -218,7 +219,7 @@ Assets (Schedule 100):
 
 | Account | GIFI | Notes |
 |---|---|---|
-| Cash | `1001` | the main operating bank account |
+| Cash | `1001` | the main operating bank account; also cash on hand — a petty-cash float is a `1001` sub-account (e.g. `1001-1`) |
 | Deposits in Canadian banks and institutions – Canadian currency | `1002` | a separate CAD savings or second account |
 | Deposits in Canadian banks and institutions – foreign currency | `1003` | a USD account held at a Canadian bank |
 | Trade accounts receivable | `1062` | amounts billed to clients, not yet collected |
@@ -250,6 +251,7 @@ Liabilities (Schedule 100):
 | Account | GIFI | Notes |
 |---|---|---|
 | Amounts payable and accrued liabilities | `2620` | accounts payable and accrued costs; `2621` trade payables |
+| Credit card payable | `2620` sub-account | the corporate credit-card balance (e.g. `2620-2`), reconciled monthly to the card statement |
 | Employee deductions payable | `2627` | source deductions withheld, not yet remitted |
 | Taxes payable | `2680` | corporate income tax owing; also a net HST payable |
 | Short-term debt | `2700` | `2701` loans from Canadian banks; a line of credit |
@@ -330,6 +332,12 @@ Operating expenses (Schedule 125):
 | Vehicle expenses | `9281` | fuel, insurance, repairs of a business vehicle |
 | Withholding taxes | `9283` | foreign withholding tax on investment income |
 
+Income taxes (Schedule 125):
+
+| Account | GIFI | Notes |
+|---|---|---|
+| Current income taxes | `9990` | the year's corporate tax provision, booked against `2680` (see [CRA Administration](../Filing-And-CRA/CRA-Administration.md#booking-the-tax-cycle)) |
+
 The income statement then totals to `9367` Total operating expenses and `9368` Total expenses.  
 The bottom line is `9999` Net income/loss after taxes and extraordinary items.  
 These are computed lines, not accounts you post to.  
@@ -375,6 +383,7 @@ Decide the accounts there, then record the debits and credits here.
 
 ## Related
 
+- [Period Close](Period-Close.md)
 - [Expense Classification](Expense-Classification.md)
 - [Small Business Tax Overview](../Overview/Small-Business-Tax.md)
 - [Cost Recovery](../Operations/Cost-Recovery/Cost-Recovery.md)

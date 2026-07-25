@@ -56,6 +56,7 @@ The return computes in layers, and the schedules are the layers:
 Everything on the schedules is in whole dollars (see [Whole-dollar rounding](Whole-Dollar-Rounding.md)).  
 T2 software generates the schedule set from the data entered.  
 The failure mode is not a mis-filed schedule but a missing one: income or an event the software was never told about.  
+A nil or loss year can qualify for the *T2 Short Return*, a two-page jacket with the same GIFI attachments (see [Every-Year Schedules](#every-year-schedules)).  
 
 
 ## The T2 Jacket
@@ -104,6 +105,14 @@ It asks who prepared them (owner, or an accountant on a compilation, review, or 
 It also asks about the accountant's involvement.  
 Self-prepared statements are a legitimate answer for an owner-managed corporation.  
 Answer the questions accurately rather than aspirationally.  
+
+*S140* (Income Statement Summary) joins the GIFI set only when more than one S125 is filed.  
+Multiple income statements arise from operating distinct businesses; a single-activity CCPC files one S125 and no S140.  
+
+The *T2 Short Return* is a two-page jacket for the simplest returns:
+- Eligibility: a CCPC throughout the year with nil net income or a loss, a permanent establishment in one province, no refundable credits claimed, and no taxable dividends paid or received (see TODO)
+- A dormant or first-year corporation is the typical filer
+- The GIFI statements (S100, S125, S141) still attach; T2 software often files the full jacket regardless, which is equally valid
 
 
 ## Investment-Income Schedules
@@ -226,6 +235,8 @@ Not schedules, but part of the same season:
 
 - Verify the Ontario pair: whether S500 is filed by every Ontario-taxable corporation or only in specific cases
   - Also the exact S5 trigger conditions
+- Verify the T2 Short eligibility list against the current T2 Short guide (nil/loss, single-province PE, no refundable credits, no taxable dividends; any further conditions)
+- Verify the S140 trigger (more than one S125) against RC4088's Schedule 140 description
 - Verify the S50 threshold wording (10% of any class of shares) and what identifiers the current form requires
 - Verify the S44 trigger list (which rollover provisions require it)
   - Also whether an s.85 incorporation transfer files it in addition to the T2057 election

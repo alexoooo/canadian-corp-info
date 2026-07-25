@@ -113,7 +113,7 @@ Under the *Quick Method* the posting pattern differs:
 - [HST Quick Method](HST-Quick-Method.md)
 - [Ledger and Accounts](../../Bookkeeping/Ledger-And-Accounts.md)
 - [Deferred Revenue](../Deferred-Revenue.md) (tax point on deposits and prepayments)
-- [Receivables and Bad Debts](../Receivables-And-Bad-Debts.md)
+- [Receivables and Bad Debts](../Receivables-And-Bad-Debts.md) (incl. credit notes and the ETA s.232 adjustment)
 - [Foreign Currency](../../Bookkeeping/Foreign-Currency/Getting-Paid-In-USD.md) (the tax point sets the FX conversion date)
 
 

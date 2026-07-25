@@ -19,10 +19,15 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
   - Long-term residential rent is exempt (no HST, no ITCs)
 - Co-owned property books each owner's share of costs by their interest
   - A documented, professionally-anchored allocation is what matters
+  - Where title and beneficial ownership diverge, *bare-trust* reporting can apply
+    - Filings resume for tax years ending on or after 2026-12-31
+- Buying taxable real property as a registrant: the vendor does not collect
+  - The corporation self-assesses, usually cash-neutral for commercial use (ETA s.221(2), s.228(4))
 
 Limitations:
 - Buying, holding, and selling the real property itself is out of scope; this page covers the rent's character and flow
   - CCA classes, recapture, and the capital gain on sale are [Cost Recovery](Cost-Recovery/Cost-Recovery.md) and [CCA](Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md) territory
+  - The exception is the HST self-assessment on the purchase, covered under [Buying the Property](#buying-the-property)
 - Principal-residence and personal-use angles of corporately-held property are shareholder-benefit territory
   - The owner living in it; see [Owner-corporation transactions](../Paying-Yourself/Owner-Corporation-Transactions.md)
 - Short-term accommodation (Airbnb-style, HST-taxable, potentially a service business) is out of scope
@@ -110,6 +115,28 @@ CCA needs extra care on the rental side:
   - The separate class instead keeps recapture and terminal loss per building when one is sold
 - The discretionary-claim planning is otherwise as usual: see [Discretionary CCA](Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md#discretionary-cca)
 
+### Bare-Trust Reporting
+
+Shared title carries a trust-reporting question the co-owners must answer, not skip.  
+ITA [s.150(1.3)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-150.html) deems an arrangement to be a trust for filing purposes where a legal owner holds property as agent for the person beneficially entitled to it — the *bare trust*.  
+A deemed trust files a T3 return with the beneficial-ownership schedule (Schedule 15), naming every legal and beneficial owner.  
+
+The status as of 2026:
+- Bare trusts were relieved from filing for the 2023 through 2025 tax years
+- Filings resume for tax years ending on or after 2026-12-31; the first returns are due 2027-03-31
+- The rule has been deferred three times; re-check the current state before relying on any date here
+
+The carve-outs (s.150(1.31)) decide most co-ownership cases:
+- *Same persons on both sides* (s.150(1.31)(a)): where each person on title holds their own beneficial interest — plain tenants-in-common — the legal and beneficial owners are the same persons and no deemed trust arises
+- *Small value*: arrangements whose property stays at or under $50,000 FMV throughout the year are also carved out, among other exceptions
+
+Where title and beneficial ownership diverge, the carve-out fails and a filing may be due:
+- One person on title for financing or registry convenience while another funds and enjoys the property
+- The corporation on title alone while the owners hold beneficial interests, or the reverse
+
+The exposure for missing a required return: the T3 late-filing penalty, and a gross-negligence penalty that can reach 5% of the property's value.  
+Whether a given title arrangement is a bare trust is a legal determination; where the paper does not match the economics, have counsel confirm before the first affected year-end.  
+
 
 ## HST
 
@@ -122,6 +149,24 @@ The HST character follows the use of the space, not the corporation's registrati
 
 A property moving between commercial and residential use can trigger HST self-supply and change-in-use rules.  
 That is professional-advice territory beyond this page.  
+
+### Buying the Property
+
+The purchase is the one HST event on real property that runs backwards from every other purchase.  
+On a taxable sale of real property to a *registrant*, the vendor is relieved from collecting the tax (ETA [s.221(2)](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-221.html)); the purchaser self-assesses it instead (ETA [s.228(4)](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-228.html)).  
+
+How the registrant purchaser self-assesses:
+- Acquired primarily for commercial activities (a unit to be rented commercially, premises for the business): report the tax in the corp's regular GST/HST return for the period (line 205; see TODO)
+  - The offsetting ITC is claimed in the same return, so the common commercial case nets to zero cash
+- Otherwise: file the prescribed return (Form GST60) with payment by the end of the month after the month of acquisition
+
+What it means at closing:
+- The purchase agreement and statement of adjustments should show no GST/HST collected by the vendor; a registrant purchaser who pays tax to the vendor anyway has paid the wrong person
+- The vendor's carve-outs are narrow: an *individual* purchaser of a residential complex or a cemetery plot is still collected from
+- A used residential complex is usually an exempt purchase in the first place — no tax, no self-assessment
+- On shared title, status runs per purchaser: the corporation self-assesses its registrant share, while a non-registrant individual co-purchaser pays the vendor tax on theirs (see TODO)
+
+Missing the self-assessment does not save the tax; it leaves an unfiled return with interest running.  
 
 
 ## Scenario Table
@@ -157,15 +202,22 @@ Keep a per-property view (sub-accounts or a schedule) so the Reg 1100(11) cap an
     - Also *income of the corporation for the year from an active business* (the pertains-to-or-incident-to inclusion)
   - [s.129(6)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-129.html) - rent from an associated corporation's active business deemed active
   - [s.125(5.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-125.html) - passive-income grind of the business limit
+  - [s.150(1.3)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-150.html) - bare-trust arrangements deemed trusts for filing; carve-outs in s.150(1.31)
 - Income Tax Regulations (C.R.C., c. 945):
   - Reg 1100(11) - rental-property CCA limited to net rental income
   - Reg 1101(1ac) - separate class per rental building of $50,000 or more
 - Excise Tax Act (R.S.C., 1985, c. E-15): Schedule V, Part I - exemption for long-term residential rent
+  - [s.221(2)](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-221.html) - vendor relieved from collecting on a taxable sale of real property to a registrant
+  - [s.228(4)](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-228.html) - purchaser self-assessment: regular return if primarily commercial, otherwise the prescribed return
+- CRA Form GST60 - GST/HST Return for Purchase of Real Property or Carbon Emission Allowances: https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/gst60.html
 - CRA - IT-73R6 *The Small Business Deduction* (archived) - specified investment business and the more-than-five-employees test: https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/it73r6.html
 
 
 ## TODO
 
+- Verify the GST34 line for real-property self-assessment (line 205) against the current return
+- Verify the per-purchaser split on shared title (registrant self-assesses its share, vendor collects from non-registrant individuals) against CRA guidance on s.221(2)/s.228(4)
+- Re-pull the bare-trust filing status and penalty amounts before the first affected year-end (2026-12-31); the rule has been deferred three times
 - Verify the more-than-five-full-time-employees jurisprudence summary before sign-off
   - 5.x part-timers do not qualify; the *489599 BC Ltd* / *Baker* line of cases
 - Verify the s.129(6) description; confirm scope and wording

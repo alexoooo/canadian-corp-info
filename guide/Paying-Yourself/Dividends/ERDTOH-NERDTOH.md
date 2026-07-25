@@ -18,7 +18,7 @@ See parent document: [Dividends](Dividends.md)
 Limitations:
 - Focus is on a typical owner-managed CCPC with a Canadian-resident shareholder
 - *Connected*-corporation flow-through Part IV mechanics are touched on but not worked through in depth
-- The salary-vs-dividend tradeoff and TOSI rules are out of scope; see [Dividends](Dividends.md)
+- The salary-vs-dividend tradeoff is worked in [Salary vs Dividends](../Salary-Vs-Dividends.md); TOSI rules are out of scope, see [Dividends](Dividends.md)
 - Tax information can change over time
 - The following is my understanding as of 2026
 

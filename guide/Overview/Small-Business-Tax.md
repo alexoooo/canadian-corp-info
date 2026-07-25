@@ -278,6 +278,7 @@ That makes the combined rate 11.2%, effective July 1, 2026; see [Dividends - wor
 The $500,000 SBD *business limit* is not always a flat ceiling.  
 It can be reduced by:
 - Sharing among *associated corporations* under ITA [s.125(3)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-125.html)
+  - When two corporations are associated, and how the limit is allocated: [Corporate Structure](../Corporate-Lifecycle/Corporate-Structure/Corporate-Structure.md#related-and-associated-corporations)
 - *Adjusted aggregate investment income* (AAII) over $50,000 under ITA [s.125(5.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-125.html) (the *AAII grind*)
 - A large *taxable capital* base (the *large CCPC* rule)
 

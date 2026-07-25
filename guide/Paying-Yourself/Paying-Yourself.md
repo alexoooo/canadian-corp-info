@@ -17,7 +17,7 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
 - The shareholder loan account tracks everything that is neither salary nor dividend
 
 Limitations:
-- The full salary-versus-dividend optimization (CPP, RRSP, WSIB, income splitting) is touched on but not worked through
+- The salary-versus-dividend decision is worked in [Salary vs Dividends](Salary-Vs-Dividends.md); WSIB and income splitting stay out of scope
 - The following is my understanding as of 2026
 
 
@@ -39,12 +39,14 @@ The three levers:
 
 The salary-versus-dividend decision is where these meet.  
 Because of [tax integration](../Overview/Tax-Integration.md), the headline tax cost is similar either way.  
-The choice usually turns on CPP, RRSP room, cash-flow timing, and simplicity.
+The choice turns on CPP, RRSP room, the SBD and GRIP effects, cash-flow timing, and simplicity.  
+It has its own page: [Salary vs Dividends](Salary-Vs-Dividends.md).  
 
 
 ## Sub-Pages
 
 This page is a hub; these are the sub-pages:
+- [Salary vs Dividends](Salary-Vs-Dividends.md): the decision between the two channels, worked
 - [Payroll](Payroll.md): salary, source deductions, remittances, and the T4
 - [Dividends](Dividends/Dividends.md): the three dividend flavours, their corporate pools, and personal taxation (a hub with its own sub-pages)
 - [Owner-corporation transactions](Owner-Corporation-Transactions.md): the shareholder loan account, benefits, and moving money in and out

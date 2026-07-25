@@ -455,6 +455,7 @@ The trade-off is the price of the separate legal entity.
 - [Dividends](Dividends/Dividends.md)
 - [Business Acquisition](../Corporate-Lifecycle/Business-Acquisition/Business-Acquisition.md)
 - [Capital Cost Allowance](../Operations/Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md)
+- [Rental and Property Income](../Operations/Rental-And-Property-Income.md) (co-owned title and bare-trust reporting)
 - [HST](../Operations/HST/HST.md)
 - [Glossary](../Overview/Glossary.md)
 

@@ -10,7 +10,7 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
 - This group covers the day-to-day tax events between incorporation and the annual return
 - The revenue side: [HST](HST/HST.md) on what you bill, and revenue recognition through [receivables and bad debts](Receivables-And-Bad-Debts.md) and [deferred revenue](Deferred-Revenue.md)
 - The cost side: [cost recovery](Cost-Recovery/Cost-Recovery.md) turns purchases into deductions through inventory, materials, or capital cost allowance
-- Plus [financing](Debt-And-Financing.md), [donations](Donations.md), and [rental and property income](Rental-And-Property-Income.md)
+- Plus [paying contractors](Paying-Contractors.md), [financing](Debt-And-Financing.md), [government assistance](Government-Assistance.md), [donations](Donations.md), and [rental and property income](Rental-And-Property-Income.md)
 
 Limitations:
 - These pages cover what happens during the year; pulling it together onto the T2 is under [Filing and CRA](../Filing-And-CRA/Filing-And-CRA.md)
@@ -33,11 +33,13 @@ This page is a hub; these are the sub-pages:
 - [Receivables and Bad Debts](Receivables-And-Bad-Debts.md): revenue recognition and the bad-debt adjustment
   - When income is earned vs billed vs received, and the adjustments when a receivable goes bad
 - [Deferred Revenue](Deferred-Revenue.md): the tax point on deposits and prepayments
+- [Paying Contractors](Paying-Contractors.md): the T4A, T5018, and non-resident slip channels for people who are not employees
 - [Cost Recovery](Cost-Recovery/Cost-Recovery.md): the three channels that turn a purchase into a deduction
   - [Inventory and cost of goods sold](Cost-Recovery/Inventory-And-COGS.md)
   - [Materials and CIP](Cost-Recovery/Materials-And-CIP.md)
   - [Capital Cost Allowance](Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md)
 - [Debt and Financing](Debt-And-Financing.md): interest deductibility and loans
+- [Government Assistance](Government-Assistance.md): grants, subsidies, and forgivable loans — income, expense reduction, or cost-base reduction
 - [Donations](Donations.md): corporate charitable donations and the carryforward
 - [Rental and Property Income](Rental-And-Property-Income.md): property income earned inside the corporation
 

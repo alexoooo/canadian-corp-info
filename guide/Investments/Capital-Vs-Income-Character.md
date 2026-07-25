@@ -124,7 +124,7 @@ Settle character risk *before* a capital-dividend sweep, not after (see [Winding
 - [Adjusted Cost Base](Adjusted-Cost-Base/Adjusted-Cost-Base.md)
 - [T5008](T5008/T5008.md)
 - [Capital Dividend Account](Capital-Dividend-Account/Capital-Dividend-Account.md)
-- [Losses](../Filing-And-CRA/Losses.md)
+- [Losses](../Filing-And-CRA/Losses.md) (incl. the s.50(1) election for worthless shares and bad capital debts)
 - [Foreign Currency](../Bookkeeping/Foreign-Currency/Foreign-Currency.md) (income-vs-capital FX character, the same distinction on the currency side)
 - [Rental and Property Income](../Operations/Rental-And-Property-Income.md) (the parallel character question for rent)
 - [CRA Administration](../Filing-And-CRA/CRA-Administration.md)

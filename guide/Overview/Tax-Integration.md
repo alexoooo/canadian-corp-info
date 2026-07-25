@@ -12,7 +12,7 @@ Limitations:
   - Non-resident treatment is touched on only for capital dividends
 - This page focuses on dividend integration; salary integration is trivial
   - Salary is deductible to the corporation, taxed once on the personal side as employment income
-- The salary-vs-dividend remuneration tradeoff (CPP, RRSP, payroll, WSIB) is out of scope
+- The salary-vs-dividend remuneration tradeoff is worked in [Salary vs Dividends](../Paying-Yourself/Salary-Vs-Dividends.md); WSIB stays out of scope
   - This page covers the dividend path only
 - Tax information can change over time
 - The following is my understanding as of 2026

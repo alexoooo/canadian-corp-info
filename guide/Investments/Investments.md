@@ -14,7 +14,7 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
   - Part is refunded when the corporation pays taxable dividends
 - The notional pools are the plumbing of the round trip: capital dividend account (CDA), ERDTOH, and NERDTOH
 - The recurring paperwork is slips in, schedules out
-  - T3, T5, and T5008 slips feed the books and the ACB records, which feed the T2 investment schedules
+  - T3, T5, T5013, and T5008 slips feed the books and the ACB records, which feed the T2 investment schedules
 - Each step has its own page; this page is the map and adds no mechanics of its own
 
 Limitations:
@@ -58,6 +58,7 @@ Two habits carry the whole cycle:
 | Buying in USD | convert every amount to CAD at the transaction-date rate | [Foreign Currency](../Bookkeeping/Foreign-Currency/Foreign-Currency.md) |
 | Holding: fund distributions | distributions by box, reinvested amounts, return of capital | [T3](T3/T3.md), [Box 26](T3/T3-Box-26-Other-Income.md), [Box 25 / 34](T3/T3_Box-25-Foreign-Income_Box-34-Foreign-Tax-Withheld.md) |
 | Holding: dividends and interest | dividends (stocks, corporate-class funds) and interest by box | [T5](T5/T5.md), [Box 18](T5/T5-Box-18-Capital-Gains-Dividends.md) |
+| Holding: partnership units | income allocated without cash, distributions without income, ACB moving both ways | [T5013](T5013.md) |
 | Holding: foreign property | the T1135 filing once total cost of specified foreign property exceeds $100,000 | [T1135](T1135.md) |
 | Selling | broker-reported proceeds, gain or loss computed against ACB | [T5008](T5008/T5008.md) |
 | Pools | tax-free half of gains accumulates in the CDA; refundable tax in ERDTOH/NERDTOH | [CDA](Capital-Dividend-Account/Capital-Dividend-Account.md), [ERDTOH and NERDTOH](../Paying-Yourself/Dividends/ERDTOH-NERDTOH.md) |

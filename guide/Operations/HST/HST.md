@@ -154,5 +154,6 @@ Topic-specific citations are on the sub-pages; the sources below back this page'
 - Cross-link this page from [Payment](../../Filing-And-CRA/Payment/Payment.md) once that page is past the stub phase
   - This page covers bookkeeping and return preparation
   - Payment covers the cash-to-CRA mechanics (pre-authorized debit, online banking, instalment scheduling)
-- Add GST/HST terms to [Glossary](../../Overview/Glossary.md) on a separate maintainer pass
-  - Zero-rated, exempt, taxable supply, ITC, Quick Method, small supplier, place of supply, RT program account
+- Add the remaining GST/HST terms to [Glossary](../../Overview/Glossary.md) on a maintainer pass
+  - Taxable supply, RT program account
+  - Already there: zero-rated, exempt, ITC, net tax, Quick Method, small supplier, place of supply, registrant, tax point

@@ -62,6 +62,44 @@ flowchart TD
 
 For CCA classes, the half-year rule, and the Accelerated Investment Incentive, see [Capital Cost Allowance](../Operations/Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md).  
 For what gets folded into the cost of an asset or inventory rather than expensed, see [Cost Recovery](../Operations/Cost-Recovery/Cost-Recovery.md).  
+A cost paid ahead of the period it covers takes a third path — neither capitalized nor expensed, but deferred (see [Prepaid Expenses](#prepaid-expenses)).  
+
+
+## Prepaid Expenses
+
+A payment for coverage or services extending past the year-end is a *prepaid expense*.  
+It sits on the balance sheet as an asset until the period it pays for arrives.  
+Almost every corporation has at least one: an annual insurance premium, a subscription, or rent paid ahead.  
+
+The deferral is not optional.  
+ITA [s.18(9)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-18.html) denies the current deduction for four categories of advance payment:
+- Services to be rendered after the end of the year
+- Interest, taxes, rent, or royalties for a period falling after the end of the year
+- Insurance coverage for a period after the end of the year
+- Consideration for a *designated employee benefit* to be provided after the end of the year
+  - The case this audience meets: a PHSP premium covering a later period
+
+The denied portion is deducted in the subsequent year it reasonably relates to.  
+
+The bookkeeping (a 12-month insurance policy, $1,200 premium, paid Nov 1 with a Dec 31 year-end):
+
+At payment, post the premium to `Prepaid expenses` (code 1484, a detail line under `1480` Other current assets):
+- Debit `Prepaid expenses` (1484) = $1,200
+- Credit `Cash` = $1,200
+
+At year-end, release the expired portion — two of twelve months — to its expense line:
+- Debit `Insurance` (GIFI 8690) = $200
+- Credit `Prepaid expenses` (1484) = $200
+
+The remaining $1,000 releases next year as the coverage runs.  
+Posting the full premium to `8690` at payment and reclassifying the unexpired $1,000 to `1484` at year-end reaches the same place.  
+The release is a standard year-end adjusting entry; see [Period Close](Period-Close.md).  
+
+The HST does not wait for the release.  
+On a prepaid cost that carries HST (an annual subscription, prepaid rent), the ITC is claimable for the period the tax became payable — the tax point — not spread over the deferral (see [HST Bookkeeping](../Operations/HST/HST-Bookkeeping.md)).  
+Insurance premiums carry no HST, being exempt financial services.  
+
+The contrast with a capital asset: a prepaid expires into expense on a known schedule as time passes; a capital asset delivers an enduring benefit and is deducted through CCA at declining-balance rates.  
 
 
 ## Operating-Expense Reference (Schedule 125)
@@ -99,6 +137,9 @@ Placement notes:
 - *Telephone and internet*: a standalone connectivity cost can sit at `9225` (telecom) or `9152` (internet)
   - Pick one and keep it there
 - *Other expenses*: use `9270` only when nothing more specific fits; a reviewer reads a large "Other" balance as miscoding
+- *Meetings and conventions*: `9201` takes conference and convention attendance
+  - ITA [s.20(10)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-20.html) allows at most two conventions a year
+  - The organizer must be a business or professional organization, and the location consistent with its territorial scope
 
 
 ## Computer and Software Costs
@@ -160,6 +201,7 @@ For inventory costing, the COGS identity, and which channel a cost belongs to, s
 ## Related
 
 - [Ledger and Accounts](Ledger-And-Accounts.md)
+- [Period Close](Period-Close.md)
 - [Cost Recovery](../Operations/Cost-Recovery/Cost-Recovery.md)
 - [Capital Cost Allowance](../Operations/Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md)
 - [Inventory and COGS](../Operations/Cost-Recovery/Inventory-And-COGS.md)
@@ -178,7 +220,9 @@ For inventory costing, the COGS identity, and which channel a cost belongs to, s
   - [s.9(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-9.html) - profit computation
   - [s.18(1)(a)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-18.html) - general limitation, income-earning purpose
   - [s.18(1)(b)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-18.html) - capital outlay
+  - [s.18(9)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-18.html) - deferral of prepaid expenses to the year they relate to
   - [s.20(1)(a)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-20.html) - CCA
+  - [s.20(10)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-20.html) - convention expenses, at most two a year
   - [s.67.1](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-67.1.html) - meals and entertainment 50% limit
 - Excise Tax Act [s.227](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-227.html) (Quick Method)
 
