@@ -5,8 +5,9 @@ Periodic documentation audits and reviews, oldest first. The filename encodes th
 Pass types:
 - *Audit*: fresh correctness pass over the guide.
 - *Audit-Followup*: verifies fixes from the prior audit.
-- *Coverage-Review*: looks for missing or thin topics rather than errors in existing content.
 - *Audit-Review*: independent check of an audit's own findings by a different model.
+- *Coverage*: looks for missing or thin topics rather than errors in existing content.
+- *Coverage-Review*: independent check of a coverage pass's findings by a different model (the 2026-07-01 file carries this name but predates the split and is a gap pass).
 
 Process: [AGENTS.md § Audits](../AGENTS.md#audits) and [Audit Instructions](../docs/Audit-Instructions.md).
 
@@ -32,3 +33,6 @@ History:
 - [2026-07-06 Audit-Review Opus-4.8-max](2026-07-04/2026-07-06_Audit-Review_Opus-4.8-max.md)
 - [2026-07-06 Remediation Opus-4.8-xhigh](2026-07-04/2026-07-06_Audit-Remediation_Opus-4.8-xhigh.md)
 - [2026-07-07 Audit-Followup Fable-5-high](2026-07-04/2026-07-07_Audit-Followup_Fable-5-high.md)
+---
+- [2026-07-25 Coverage Opus-5-xhigh](2026-07-25/2026-07-25_Coverage_Opus-5-xhigh.md)
+- [2026-07-25 Coverage-Review Fable-5-high](2026-07-25/2026-07-25_Coverage-Review_Fable-5-high.md)
