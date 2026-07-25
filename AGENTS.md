@@ -95,10 +95,13 @@ Screenshots (CRA portals, brokerage trade confirmations, T2/T3/Schedule 6/Schedu
 
 ## Audits
 
-Periodic documentation audits live under `audit/`. Filenames follow the pattern
+Periodic documentation audits live under `audit/`, one folder per cycle named for the date of the
+cycle's first pass (`audit/2026-07-04/`). A cycle's audit, its remediation record, any independent
+review, and its follow-up share that folder; `audit/Audit-Summary.md` indexes every pass across all
+of them. Filenames follow the pattern
 `<YYYY-MM-DD>_Audit_<Model>-<reasoning-effort>.md` for a fresh audit pass, or
 `<YYYY-MM-DD>_Audit-Followup_<Model>-<reasoning-effort>.md` for one that primarily verifies
-fixes from a prior audit. The date is when the audit was run, the model is the one that ran it,
+fixes from a prior audit. The date is when that pass was run, the model is the one that ran it,
 and the reasoning-effort level is the model's setting (e.g. `Opus-4.7-xhigh`). Both the model and
 the reasoning-effort suffix are required; never omit the suffix. Read both tokens programmatically
 from the live session (the same `model.display_name`/`effort.level` the status line consumes) —
