@@ -71,7 +71,17 @@ Economic check:
 - Net economic FX: −100 − 60 = −160 CAD loss ✓ (matches the trading-account result)
 
 The CAD 160 loss is the bank's implicit spread surfacing.  
-The corp paid for USD at 1.40 but the BoC mid never reached 1.40, so the USD never recovered its CAD cost basis.
+The corp paid for USD at 1.40 but the BoC mid never reached 1.40, so the USD never recovered its CAD cost basis.  
+
+Year 2, no USD activity, closing BoC rate 1.42:
+- The bridge accounts carry forward; neither closed to retained earnings at the year-1 close
+- Translate USD-native balances at 1.42:
+  - `Deposits - USD` → CAD 4,260 (Schedule 100 GIFI 1003)
+  - `FX gain/loss - USD` 8231-2 → CAD 4,260 credit (translated)
+- Cumulative net: CAD 4,300 debit (8231-1) − CAD 4,260 credit (8231-2 translated) = CAD 40 debit
+- The cumulative loss falls from CAD 160 to CAD 40, so year 2 shows a gain
+  - Schedule 125 GIFI 8231 for year 2: 160 − 40 = CAD 120 gain
+  - It matches the economics: USD 3,000 × (1.42 − 1.38) = CAD 120
 
 
 ## Related

@@ -44,13 +44,17 @@ This combines a customer settlement with a bank FX conversion in a single transa
 ## Year-End Retranslation
 
 Any USD-native monetary balance (AR or cash) at year-end is translated to CAD at the closing BoC rate.  
-The trading accounts (8231-1, 8231-2) capture the cumulative per-currency positions through the year.  
+The trading accounts (8231-1, 8231-2) capture the cumulative per-currency positions.  
 Period-end revaluation translates 8231-2 to CAD at the closing rate.  
-The net of (8231-1 + translated 8231-2) is the period's FX gain or loss on Schedule 125 GIFI 8231.  
+
+The net of (8231-1 + translated 8231-2) is the cumulative position since those accounts opened.  
+The period's FX gain or loss is the change in that net since the prior year-end.  
+See [Bookkeeping convention](Bookkeeping-Convention.md) for the carry-forward mechanics.  
 
 Mechanically, this is done by:
 - Translating each foreign-currency-native account balance at the closing rate to produce the Schedule 100 figure
-- Translating 8231-2 at the closing rate and netting with 8231-1 to produce the Schedule 125 GIFI 8231 figure
+- Translating 8231-2 at the closing rate and netting with 8231-1 to produce the cumulative position
+  - The Schedule 125 GIFI 8231 figure is the change in that net since the prior year-end
 - For accounting software with built-in multi-currency, this happens automatically when year-end reports are generated
   - For spreadsheet-tracked books, do the translation as a year-end working paper
 
@@ -151,6 +155,7 @@ Dec 31, year-end revaluation at closing BoC rate 1.38:
   - `FX gain/loss - USD` 8231-2 → CAD 20,700 credit (translated)
 - Schedule 125 GIFI 8231 = net of (8231-1 CAD 20,400 debit) + (8231-2 translated CAD 20,700 credit)
   - The net is CAD 300 credit → net FX gain CAD 300
+  - Year 1 opens from zero, so the cumulative net is the period figure
 
 Schedule 125 year 1:
 - Trade sales (GIFI 8000): CAD 20,400

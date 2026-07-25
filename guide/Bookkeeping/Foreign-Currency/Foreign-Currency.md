@@ -40,10 +40,10 @@ Limitations:
 
 This page is a hub; these are the sub-pages:
 - [FX rates and character](FX-Rates-And-Character.md): reporting currency, which rate to use when, and income- vs capital-account FX
-- [Bookkeeping convention](Bookkeeping-Convention.md): the multi-currency native ledger convention and the GIFI account map
+- [Bookkeeping convention](Bookkeeping-Convention.md): the multi-currency and single-currency ledger conventions, and the GIFI account map
 - [Getting paid in USD](Getting-Paid-In-USD.md): invoicing US clients, year-end retranslation, zero-rated/taxable HST, and W-8BEN-E
 - [Bank conversions](Bank-Conversions.md): the embedded CAD↔USD spread and how it surfaces at revaluation
-- [Norbert's Gambit](Norberts-Gambit.md): cheap USD↔CAD conversion via DLR / DLR.U
+- [Norbert's Gambit](Norberts-Gambit.md): efficient USD↔CAD conversion via DLR / DLR.U
 - [Year-end USD deposit](Year-End-USD-Deposit.md): year-end treatment of a USD cash balance
 
 

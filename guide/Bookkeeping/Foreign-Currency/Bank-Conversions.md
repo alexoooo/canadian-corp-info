@@ -55,6 +55,12 @@ Worked example (internal CAD → USD transfer between two accounts at the same b
     - USD 7,210 × 1.36 = CAD 9,805.60 credit
   - Net of 8231 at year-end: CAD 10,000 debit (8231-1) − CAD 9,805.60 credit (8231-2 translated) = CAD 194.40 debit
   - This CAD 194.40 net FX loss flows to Schedule 125 GIFI 8231
+    - Year 1 opens from zero, so the cumulative net is the period figure
+- Year 2, USD 7,210 still held, closing BoC rate 1.40:
+  - Translate 8231-2 at 1.40: USD 7,210 × 1.40 = CAD 10,094 credit
+  - Cumulative net: CAD 10,000 debit − CAD 10,094 credit = CAD 94 credit, a cumulative gain
+  - The prior cumulative was a CAD 194.40 loss, so year 2 shows 194.40 + 94 = CAD 288.40 gain
+    - It matches the economics: USD 7,210 × (1.40 − 1.36) = CAD 288.40
 
 
 ## Related
