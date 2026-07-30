@@ -97,6 +97,13 @@ Unmarked pages are reviewed; † = AI generated, not verified yet.
 - [Payment](guide/Filing-And-CRA/Payment/Payment.md) †
 - [Whole-Dollar Rounding](guide/Filing-And-CRA/Whole-Dollar-Rounding.md) †
 
+**[Sole Proprietorship](guide/Sole-Proprietorship/Sole-Proprietorship.md)** † (side content: the unincorporated contractor, as contrast and on-ramp for the corporate guide):
+- [Becoming a Sole Proprietor](guide/Sole-Proprietorship/Becoming-A-Sole-Proprietor.md) †
+- [T2125 and Expenses](guide/Sole-Proprietorship/T2125-And-Expenses.md) †
+- [HST for Sole Proprietors](guide/Sole-Proprietorship/HST-For-Sole-Proprietors.md) †
+- [CPP and the T1](guide/Sole-Proprietorship/CPP-And-The-T1.md) †
+- [Incorporation vs Sole Proprietorship](guide/Sole-Proprietorship/Incorporation-Vs-Sole-Proprietorship.md) †
+
 
 ## Audit
 

@@ -19,7 +19,7 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
 Limitations:
 - Focus is the single owner-manager CCPC and its sole shareholder-employee
 - Sole-proprietor treatment appears only as a brief contrast
-  - Unincorporated businesses and personal T1 mechanics are otherwise out of scope (see [Small Business Tax Overview](../Overview/Small-Business-Tax.md))
+  - The sole-proprietor side is worked in [Sole Proprietorship](../Sole-Proprietorship/Sole-Proprietorship.md); broader personal T1 mechanics stay out of scope
 - Quebec QST and any province-specific benefit variations are out of scope
 - The dollar and per-kilometre figures are the 2026 amounts
   - CRA resets them annually; verify the current year before relying on them
@@ -257,6 +257,7 @@ Employee route, for contrast (out of scope):
     - A salaried employee also cannot deduct property tax or home insurance
     - A commission employee can deduct a reasonable share of those two, but still not mortgage interest
 - This is a personal-tax path; the corporate reimbursement or rent route above is usually simpler for an owner-manager
+- The sole proprietor's parallel path (s.18(12) business-use-of-home on the T2125) is worked in [T2125 and Expenses](../Sole-Proprietorship/T2125-And-Expenses.md#business-use-of-home)
 
 
 ## Other Mixed-Use and Benefit Situations
@@ -447,6 +448,7 @@ How the same situations collapse:
 
 The corporate structure trades this simplicity for the benefit and deduction rules above.  
 The trade-off is the price of the separate legal entity.  
+The sole-proprietor side is worked in its own group: [T2125 and Expenses](../Sole-Proprietorship/T2125-And-Expenses.md) for the mechanics, [Incorporation vs Sole Proprietorship](../Sole-Proprietorship/Incorporation-Vs-Sole-Proprietorship.md) for the choice between the two.  
 
 
 ## Related
@@ -457,6 +459,7 @@ The trade-off is the price of the separate legal entity.
 - [Capital Cost Allowance](../Operations/Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md)
 - [Rental and Property Income](../Operations/Rental-And-Property-Income.md) (co-owned title and bare-trust reporting)
 - [HST](../Operations/HST/HST.md)
+- [Sole Proprietorship](../Sole-Proprietorship/Sole-Proprietorship.md) (the unincorporated side of these contrasts)
 - [Glossary](../Overview/Glossary.md)
 
 

@@ -164,6 +164,7 @@ Appreciated property is the exception:
   - An ITA [s.85](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-85.html) rollover defers it by electing a transfer price, taking shares back
 - The same applies to rolling in a whole sole proprietorship (goodwill, client list, equipment)
   - s.85 is the standard route, and it is professional-advice territory
+  - Whether to incorporate at all is worked in [Incorporation vs Sole Proprietorship](../Sole-Proprietorship/Incorporation-Vs-Sole-Proprietorship.md#making-the-move)
 - The sale of all or substantially all of a business's assets can be relieved of GST/HST by a joint ETA [s.167](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-167.html) election
 
 Personal-tax history does not follow the asset in.  
@@ -196,6 +197,7 @@ Set up the chart of accounts (see [Ledger and Accounts](../Bookkeeping/Ledger-An
 - [Payroll](../Paying-Yourself/Payroll.md)
 - [HST](../Operations/HST/HST.md)
 - [Small Business Tax Overview](../Overview/Small-Business-Tax.md)
+- [Incorporation vs Sole Proprietorship](../Sole-Proprietorship/Incorporation-Vs-Sole-Proprietorship.md) (the decision this page assumes is made)
 - [Winding Down](Winding-Down.md)
 
 

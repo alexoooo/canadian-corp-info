@@ -24,6 +24,7 @@ Limitations:
 - Focus is on a typical owner-managed CCPC operating in Canada
   - Other corporate forms (public corps, non-residents) are out of scope
 - Unincorporated businesses (sole proprietorship, partnership) and personal T1 mechanics are out of scope
+  - Sole proprietorship is worked as side content in [Sole Proprietorship](../Sole-Proprietorship/Sole-Proprietorship.md); partnerships and the rest of the T1 stay out
 - Tax information can change over time
   - One example: the capital gains inclusion rate was going to increase to 2/3, before the proposal was cancelled
 - The following is my understanding as of 2026
@@ -375,7 +376,7 @@ For dividend mechanics, see [Dividends](../Paying-Yourself/Dividends/Dividends.m
 A *Personal Service Business* (PSB) is a CCPC whose owner-operator is effectively an employee of the client.  
 That is, they would reasonably be considered an *employee* but for the corporation in between.  
 A CCPC classified as a PSB is less tax-efficient than a regular CCPC.  
-It is also less tax-efficient than the same individual operating as an unincorporated *sole proprietor*.  
+It is also less tax-efficient than the same individual operating as an unincorporated *sole proprietor* (see [Incorporation vs Sole Proprietorship](../Sole-Proprietorship/Incorporation-Vs-Sole-Proprietorship.md)).  
 
 The typical case is a consultant indistinguishable from a staff employee except that the corp invoices in between:
 - Working full-time for a single client

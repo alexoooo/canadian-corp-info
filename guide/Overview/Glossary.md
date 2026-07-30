@@ -37,6 +37,9 @@ For mechanics and worked examples, follow the link to the canonical page where o
 - Bill of materials (*BOM*): the list of materials a given build consumes
   - Used to charge pooled materials, at their running weighted-average cost, into that build's CIP
   - See [Materials-And-CIP.md](../Operations/Cost-Recovery/Materials-And-CIP.md#multiple-builds-from-a-shared-materials-pool)
+- BN (*Business Number*): CRA's nine-digit business identifier, extended by program accounts (`RT` GST/HST, `RP` payroll)
+  - Issued to a corporation at incorporation, or to an individual with their first program account
+  - See [HST-Registration-And-Filing.md](../Operations/HST/HST-Registration-And-Filing.md) and [Becoming-A-Sole-Proprietor.md](../Sole-Proprietorship/Becoming-A-Sole-Proprietor.md)
 - BoC (*Bank of Canada exchange rate*): the daily indicative CAD rate published around 16:30 ET
   - CRA's default source for converting foreign-currency amounts on or after 2017-03-01
   - See [Foreign-Currency.md](../Bookkeeping/Foreign-Currency/Foreign-Currency.md)
@@ -200,7 +203,10 @@ For mechanics and worked examples, follow the link to the canonical page where o
   - See [Whole-Dollar-Rounding.md](../Filing-And-CRA/Whole-Dollar-Rounding.md)
 - SBD (*Small Business Deduction*): reduced corporate rate on the first $500,000 of ABI per year
   - ITA s.125; see [Small-Business-Tax.md](Small-Business-Tax.md)
-- Schedule \<N\>, where N is a number: part of T2, often abbreviated as S\<N\>; see [T2-Schedules.md](../Filing-And-CRA/T2-Schedules.md)
+- Schedule 8 (T1) (*Canada Pension Plan Contributions and Overpayment*): computes both CPP halves on self-employment income
+  - Distinct from the T2's Schedule 8 (CCA); see [CPP-And-The-T1.md](../Sole-Proprietorship/CPP-And-The-T1.md)
+- Schedule \<N\>, where N is a number: part of the T2, often abbreviated as S\<N\>; see [T2-Schedules.md](../Filing-And-CRA/T2-Schedules.md)
+  - The T1 has its own schedule numbering; this guide names those explicitly, as in *Schedule 8 (T1)* above
 - Self-constructed asset: a fixed asset the corp builds for its own use from materials and contractor labour
   - For example a shed, leasehold improvement, or custom equipment
   - Tracked through CIP rather than inventory until available for use
@@ -208,6 +214,8 @@ For mechanics and worked examples, follow the link to the canonical page where o
 - Small supplier: a person whose worldwide taxable supplies stay at or under $30,000 across four consecutive calendar quarters (ETA s.148)
   - Registration is optional until the threshold is crossed
   - See [HST-Registration-And-Filing.md](../Operations/HST/HST-Registration-And-Filing.md)
+- Sole proprietorship: an unincorporated business of one individual, who is not a separate taxpayer from it
+  - Income is reported on the T2125 inside the owner's T1; see [Sole-Proprietorship.md](../Sole-Proprietorship/Sole-Proprietorship.md)
 - Stated capital: corporate-statute measure of contributed capital per share class
   - The corporate-law analogue of PUC; see [Share-Capital.md](../Corporate-Lifecycle/Corporate-Structure/Share-Capital.md)
 - Superficial loss: a capital loss denied because the identical property was reacquired around the sale
@@ -220,9 +228,13 @@ For mechanics and worked examples, follow the link to the canonical page where o
 - T2 (*T2 Corporation Income Tax Return*): annual corporate tax return
   - Consists of federal and provincial forms and schedules
   - Typically prepared using T2 software
+- T2125 (*Statement of Business or Professional Activities*): the T1 form carrying a sole proprietor's business income and expenses
+  - See [T2125-And-Expenses.md](../Sole-Proprietorship/T2125-And-Expenses.md)
 - T3 (*Statement of Trust Income Allocations and Designations*): slip issued by trusts
   - Including most Canadian ETFs structured as mutual fund trusts; see [T3.md](../Investments/T3/T3.md)
 - T4 (*Statement of Remuneration Paid*): slip issued by an employer for salary paid to an employee; see [Payroll.md](../Paying-Yourself/Payroll.md)
+- T4A (*Statement of Pension, Retirement, Annuity, and Other Income*): slip whose box 048 carries fees for services
+  - Payer side in [Paying-Contractors.md](../Operations/Paying-Contractors.md); recipient side in [Becoming-A-Sole-Proprietor.md](../Sole-Proprietorship/Becoming-A-Sole-Proprietor.md)
 - T5 (*Statement of Investment Income*): slip for interest and Canadian-corp dividends
   - Also issued by a CCPC paying taxable dividends to its shareholders; see [T5.md](../Investments/T5/T5.md)
 - T5008 (*Statement of Securities Transactions*): slip summarizing securities sales used to compute capital gains

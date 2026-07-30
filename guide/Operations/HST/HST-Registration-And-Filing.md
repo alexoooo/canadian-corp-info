@@ -44,6 +44,7 @@ Voluntary registration is available below the threshold (ETA [s.240(3)](https://
 
 Specific situations override the small-supplier rule:
 - Taxi and ride-share operators must register regardless of revenue (ETA s.240(1.1))
+  - Most relevant to an unincorporated driver; see [HST for Sole Proprietors](../../Sole-Proprietorship/HST-For-Sole-Proprietors.md#ride-share-and-taxi-no-threshold)
 - Non-resident vendors of digital services to Canadian consumers register under the simplified regime
   - ETA Subdivision E of Division II; out of scope for a Canada-resident CCPC
 
@@ -182,6 +183,7 @@ It covers the T2, T4/T5 slips, and payroll source deductions alongside GST/HST.
 - [HST Quick Method](HST-Quick-Method.md)
 - [Small Business Tax Overview](../../Overview/Small-Business-Tax.md)
 - [Starting Up](../../Corporate-Lifecycle/Starting-Up.md) (registering at incorporation)
+- [HST for Sole Proprietors](../../Sole-Proprietorship/HST-For-Sole-Proprietors.md) (registration keyed to the individual)
 - [Foreign Currency](../../Bookkeeping/Foreign-Currency/Foreign-Currency.md) (the zero-rated-services workflow)
 
 

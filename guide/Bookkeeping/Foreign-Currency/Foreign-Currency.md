@@ -36,7 +36,7 @@ Limitations:
 - The following is my understanding as of 2026
 
 
-## Sub-Pages
+## Sub-Pages <!-- [done] -->
 
 This page is a hub; these are the sub-pages:
 - [FX rates and character](FX-Rates-And-Character.md): reporting currency, which rate to use when, and income- vs capital-account FX

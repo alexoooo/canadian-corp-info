@@ -344,6 +344,16 @@ Interest accrues on any unpaid balance from the payment date, not the filing dat
 Details: [Filing deadlines and instalments](Small-Business-Tax.md#filing-deadlines-and-instalments).  
 
 
+## The Sole-Proprietor Side Track
+
+The side group works the unincorporated case; each concept there has one owning page:
+- Default status, the employment-status test, and the T4A: [Becoming a Sole Proprietor](../Sole-Proprietorship/Becoming-A-Sole-Proprietor.md)
+- The T2125 and the mixed-use expense claims (home, vehicle): [T2125 and Expenses](../Sole-Proprietorship/T2125-And-Expenses.md)
+- GST/HST keyed to the individual: [HST for Sole Proprietors](../Sole-Proprietorship/HST-For-Sole-Proprietors.md)
+- Both CPP halves, June 15 vs April 30, and instalments: [CPP and the T1](../Sole-Proprietorship/CPP-And-The-T1.md)
+- The incorporate-or-not decision: [Incorporation vs Sole Proprietorship](../Sole-Proprietorship/Incorporation-Vs-Sole-Proprietorship.md)
+
+
 ## How the Concepts Relate
 
 - *Categorization* (each sorts an item into one of a few fixed types):
@@ -397,6 +407,7 @@ Details: [Filing deadlines and instalments](Small-Business-Tax.md#filing-deadlin
 - [Business Acquisition](../Corporate-Lifecycle/Business-Acquisition/Business-Acquisition.md)
 - [HST](../Operations/HST/HST.md)
 - [Payment](../Filing-And-CRA/Payment/Payment.md)
+- [Sole Proprietorship](../Sole-Proprietorship/Sole-Proprietorship.md)
 - [Glossary](Glossary.md)
 
 

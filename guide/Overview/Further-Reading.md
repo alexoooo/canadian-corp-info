@@ -35,10 +35,10 @@ Limitations:
   - The exempt-supply and mixed-use case is left open
   - Nearest coverage: [HST](../Operations/HST/HST.md)
 - *Employee-vs-contractor determination*: the multifactor worker-status test the corp applies to people it pays
-  - Described only inside the personal-service-business discussion, not as a standalone determination
   - The slip and withholding consequences of the answer are worked in [Paying Contractors](../Operations/Paying-Contractors.md)
-  - Nearest coverage for the test itself: [Small-Business-Tax](Small-Business-Tax.md) for the factor list
-  - Further: CRA guide RC4110 (Employee or Self-employed?)
+  - The worker's own side of the test is worked in [Becoming a Sole Proprietor](../Sole-Proprietorship/Becoming-A-Sole-Proprietor.md)
+  - The corporate analogue is the PSB factor list in [Small-Business-Tax](Small-Business-Tax.md)
+  - Further: CRA's *Employment status: Employee or self-employed* web guidance (formerly guide RC4110, cancelled 2026)
 - *Unified Schedule 1 reconciliation*: the book-to-tax add-backs and deductions are listed per topic
   - At orientation level, not collected into one consolidated reconciliation
   - Nearest coverage: [T2 Schedules](../Filing-And-CRA/T2-Schedules.md) and [Expense-Classification](../Bookkeeping/Expense-Classification.md)
@@ -66,8 +66,9 @@ Limitations:
 
 ## Deliberately Out of Scope
 
-- *Personal T1 mechanics and sole-proprietor treatment*: appear only as brief contrasts clarifying the corporate case
-  - As in [Owner-Corporation-Transactions](../Paying-Yourself/Owner-Corporation-Transactions.md); the personal return is its own domain
+- *Personal T1 mechanics*: the sole-proprietor slice is worked as side content in [Sole Proprietorship](../Sole-Proprietorship/Sole-Proprietorship.md)
+  - The broader personal return (employment income, credits, benefits) stays out; it is its own domain
+  - Corporate pages keep only brief contrasts, as in [Owner-Corporation-Transactions](../Paying-Yourself/Owner-Corporation-Transactions.md)
 - *PST and QST*: the guide works federal GST/HST only
   - Provincial sales taxes outside the participating-province HST are not covered
   - The trigger to know about: a goods seller shipping into BC, Saskatchewan, Manitoba, or Quebec can be required to register provincially with no physical presence there
@@ -106,7 +107,7 @@ Limitations:
   - [s.218](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-218.html) (and [s.218.1](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-218.1.html) for the provincial part) - Division IV self-assessment
     - On imported taxable supplies (services and intangibles)
 - CRA publications:
-  - CRA RC4110 - *Employee or Self-employed?*
+  - CRA - *Employment status: Employee or self-employed* (formerly guide RC4110, cancelled 2026): https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/determine-relationship-employer-payer.html
   - CRA - *Underused Housing Tax* (filing requirement and excluded owners)
 
 

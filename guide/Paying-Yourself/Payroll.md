@@ -102,6 +102,7 @@ Three amounts are potentially withheld from each pay; for a single owner-manager
 - A voluntary opt-in to EI *special* benefits (maternity, parental, sickness) exists for self-employed persons
   - It covers a >40% owner-manager, under Part VII.1 of the Employment Insurance Act
   - Once benefits are drawn the opt-in becomes permanent
+  - The same opt-in serves an unincorporated sole proprietor; see [CPP and the T1](../Sole-Proprietorship/CPP-And-The-T1.md#no-ei-unless-you-opt-in)
 
 The withheld amounts are the employee's money held in trust for CRA (ITA [s.227(4)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-227.html)).  
 Remitting late or not at all is treated more severely than a late corporate-tax balance (see the penalty note below).  

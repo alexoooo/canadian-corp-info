@@ -105,6 +105,7 @@ Eligibility requires *all* of the following:
 - [Expense Classification](../../Bookkeeping/Expense-Classification.md)
 - [Ledger and Accounts](../../Bookkeeping/Ledger-And-Accounts.md)
 - [Foreign Currency](../../Bookkeeping/Foreign-Currency/Foreign-Currency.md) (zero-rated revenue and the Quick Method)
+- [HST for Sole Proprietors](../../Sole-Proprietorship/HST-For-Sole-Proprietors.md) (the election as an individual)
 
 
 ## Citations

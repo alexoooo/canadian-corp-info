@@ -58,6 +58,7 @@ This page is a hub; these are the sub-pages:
 - [Paying Yourself](../Paying-Yourself/Paying-Yourself.md) (salary, dividends, shareholder loans)
 - [Investments](../Investments/Investments.md) (a corporate trading account end to end)
 - [Filing and CRA](../Filing-And-CRA/Filing-And-CRA.md) (the T2 return and dealing with the CRA)
+- [Sole Proprietorship](../Sole-Proprietorship/Sole-Proprietorship.md) (side content: the unincorporated contractor)
 
 ## Citations
 

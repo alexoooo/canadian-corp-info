@@ -98,6 +98,7 @@ The common pattern combines them: a fixed monthly salary sized to the RRSP/CPP t
 ## Related
 
 - [Paying Yourself](Paying-Yourself.md) (the hub)
+- [Incorporation vs Sole Proprietorship](../Sole-Proprietorship/Incorporation-Vs-Sole-Proprietorship.md) (the decision before this one)
 - [Tax Integration](../Overview/Tax-Integration.md)
 - [Payroll](Payroll.md)
 - [Dividends](Dividends/Dividends.md)

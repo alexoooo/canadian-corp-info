@@ -15,7 +15,7 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
   - A non-resident working remotely from outside Canada triggers neither
 
 Limitations:
-- The employee-vs-contractor determination itself is out of scope; CRA's tests are in RC4110 (see [Further Reading](../Overview/Further-Reading.md))
+- The employee-vs-contractor determination itself is out of scope; CRA's tests are in its employment-status guidance, formerly guide RC4110 (see [Further Reading](../Overview/Further-Reading.md))
 - The T4A has many boxes (pensions, RESP, lump sums) that never arise from paying a service contractor; only the contractor boxes are covered
 - Non-resident coverage stops at the Reg 105/T4A-NR branch; treaty waivers and Part XIII royalties/rents are professional-advice territory
 - The following is my understanding as of 2026
@@ -33,7 +33,8 @@ The classification consequence lands before any slip: it decides withholding, CP
 | Expense line | `9060` Salaries and wages | `9110` Sub-contracts |
 
 Misclassifying an employee as a contractor leaves the corporation liable for the deductions it never withheld, both shares of CPP, and penalties.  
-The determination weighs control, tools, chance of profit, and integration; it is CRA's RC4110 framework and stays out of scope here.  
+The determination weighs control, tools, chance of profit, and integration; it is CRA's employment-status framework (formerly guide RC4110) and stays out of scope here.  
+The worker's own side of the determination is worked in [Becoming a Sole Proprietor](../Sole-Proprietorship/Becoming-A-Sole-Proprietor.md#employee-or-contractor).  
 For the expense-line choice see [Expense Classification](../Bookkeeping/Expense-Classification.md#operating-expense-reference-schedule-125).  
 
 
@@ -50,6 +51,7 @@ The conservative course for an owner-managed corporation paying an unincorporate
 
 What the T4A does not do:
 - No withholding accompanies it for a Canadian-resident payee; the contractor remits their own tax and CPP
+  - The receiving side (reporting the T4A, instalments, Schedule 8 CPP) is worked in [CPP and the T1](../Sole-Proprietorship/CPP-And-The-T1.md)
 - It does not decide deductibility; the expense stands or falls on the ordinary rules either way
 
 
@@ -114,7 +116,8 @@ Pay the invoice like any other foreign-currency bill; see [Foreign Currency](../
 - [Expense Classification](../Bookkeeping/Expense-Classification.md) (`9110` vs `9060` vs `8871`)
 - [Materials and CIP](Cost-Recovery/Materials-And-CIP.md) (the construction reader's cost side)
 - [HST Regular Method](HST/HST-Regular-Method.md) (ITCs on contractor invoices)
-- [Further Reading](../Overview/Further-Reading.md) (RC4110, employee vs contractor)
+- [Becoming a Sole Proprietor](../Sole-Proprietorship/Becoming-A-Sole-Proprietor.md) (the contractor's own side of the T4A)
+- [Further Reading](../Overview/Further-Reading.md) (the employee-vs-contractor determination)
 
 
 ## Citations
@@ -128,7 +131,7 @@ Pay the invoice like any other foreign-currency bill; see [Foreign Currency](../
   - [s.200(1)](https://laws-lois.justice.gc.ca/eng/regulations/C.R.C.,_c._945/section-200.html) - information return for s.153(1) payments (the T4A)
   - [s.238](https://laws-lois.justice.gc.ca/eng/regulations/C.R.C.,_c._945/section-238.html) - T5018: construction activities (238(1)), trigger (238(2)), reporting period (238(3)), six-month deadline (238(4)), exceptions (238(5))
 - CRA RC4157 - Deducting Income Tax on Pension and Other Income, and Filing the T4A Slip and Summary: https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4157.html
-- CRA RC4110 - Employee or Self-Employed?: https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4110.html
+- CRA - Employment status: Employee or self-employed (replaces guide RC4110, cancelled 2026-01-30): https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/determine-relationship-employer-payer.html
 - CRA T5018 - Statement of Contract Payments: https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t5018.html
 - CRA RC4445 - T4A-NR – Payments to Non-Residents for Services Provided in Canada: https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4445.html
 

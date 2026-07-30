@@ -130,6 +130,7 @@ flowchart TB
 - [Expense Classification](../../Bookkeeping/Expense-Classification.md)
 - [Receivables and Bad Debts](../Receivables-And-Bad-Debts.md) (the income-tax half of the bad-debt adjustment)
 - [Deferred Revenue](../Deferred-Revenue.md) (tax point on deposits and prepayments)
+- [HST for Sole Proprietors](../../Sole-Proprietorship/HST-For-Sole-Proprietors.md) (the unincorporated delta from these pages)
 - [Payment](../../Filing-And-CRA/Payment/Payment.md)
 - [Glossary](../../Overview/Glossary.md)
 - [Whole-dollar rounding](../../Filing-And-CRA/Whole-Dollar-Rounding.md)
