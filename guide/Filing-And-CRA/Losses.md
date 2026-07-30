@@ -24,7 +24,7 @@ Limitations:
   - The full ABIL regime (s.39(9) exemption grinds, disputes over SBC status) is professional-advice territory
 - The loss-streaming rules on an *acquisition of control* (ITA s.111(4)–(5.5)) are out of scope
   - They matter when the corporation is sold; see [Business Acquisition](../Corporate-Lifecycle/Business-Acquisition/Business-Acquisition.md)
-- Personal (T1) loss mechanics are out of scope
+- Personal (T1) loss mechanics are out of scope; the T1's common situations are worked in [Personal Tax](../Personal-Tax/Personal-Tax.md)
 - The following is my understanding as of 2026
 
 

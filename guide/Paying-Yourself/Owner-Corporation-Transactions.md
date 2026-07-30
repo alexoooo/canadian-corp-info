@@ -19,7 +19,7 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
 Limitations:
 - Focus is the single owner-manager CCPC and its sole shareholder-employee
 - Sole-proprietor treatment appears only as a brief contrast
-  - The sole-proprietor side is worked in [Sole Proprietorship](../Sole-Proprietorship/Sole-Proprietorship.md); broader personal T1 mechanics stay out of scope
+  - The sole-proprietor side is worked in [Sole Proprietorship](../Sole-Proprietorship/Sole-Proprietorship.md); the owner's own T1 situations in [Personal Tax](../Personal-Tax/Personal-Tax.md)
 - Quebec QST and any province-specific benefit variations are out of scope
 - The dollar and per-kilometre figures are the 2026 amounts
   - CRA resets them annually; verify the current year before relying on them
@@ -248,15 +248,13 @@ The principal-residence trap:
   - That can disqualify it from the *principal residence exemption* on a later sale
 - Keep the income-producing use ancillary and make no structural changes
   - The whole home then stays eligible for the exemption
+- The exemption itself is worked in [Home Office and the Principal Residence](../Personal-Tax/Home-Office-And-Principal-Residence.md#change-of-use-and-the-cca-trap)
 
-Employee route, for contrast (out of scope):
-- An employee required to maintain a home office who is *not* reimbursed can deduct workspace-in-the-home costs
-  - Claimed on their own T1 using form T2200 (employer certification) and form T777
-  - Under ITA [s.8(1)(i)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-8.html), as limited by the work-space rule in s.8(13)
-  - Even on this path, mortgage interest and CCA are never deductible
-    - A salaried employee also cannot deduct property tax or home insurance
-    - A commission employee can deduct a reasonable share of those two, but still not mortgage interest
-- This is a personal-tax path; the corporate reimbursement or rent route above is usually simpler for an owner-manager
+Employee route, for contrast:
+- An employee required to maintain a home office who is *not* reimbursed can deduct workspace costs on their own T1
+  - Certified on form T2200 and claimed on form T777, with mortgage interest and CCA never deductible
+  - Worked in [Home Office and the Principal Residence](../Personal-Tax/Home-Office-And-Principal-Residence.md#the-employee-home-office-deduction)
+- The corporate reimbursement or rent route above is usually simpler for an owner-manager
 - The sole proprietor's parallel path (s.18(12) business-use-of-home on the T2125) is worked in [T2125 and Expenses](../Sole-Proprietorship/T2125-And-Expenses.md#business-use-of-home)
 
 
@@ -460,6 +458,7 @@ The sole-proprietor side is worked in its own group: [T2125 and Expenses](../Sol
 - [Rental and Property Income](../Operations/Rental-And-Property-Income.md) (co-owned title and bare-trust reporting)
 - [HST](../Operations/HST/HST.md)
 - [Sole Proprietorship](../Sole-Proprietorship/Sole-Proprietorship.md) (the unincorporated side of these contrasts)
+- [Home Office and the Principal Residence](../Personal-Tax/Home-Office-And-Principal-Residence.md) (the employee route and the exemption)
 - [Glossary](../Overview/Glossary.md)
 
 

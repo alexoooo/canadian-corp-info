@@ -22,6 +22,7 @@ Limitations:
   - Frequent trading changes the character of gains and breaks several of these pages' assumptions
   - See [Capital vs Income Character](Capital-Vs-Income-Character.md)
 - Registered plans, real property, and holding-company structures are out of scope
+  - The owner's personal TFSA and RRSP contribution rules are worked in [TFSA and RRSP Contributions](../Personal-Tax/TFSA-And-RRSP-Contributions.md)
 - The following is my understanding as of 2026
 
 

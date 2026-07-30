@@ -20,7 +20,7 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
 
 Limitations:
 - The corporate-vs-personal giving decision is touched on at the rate level only
-  - The personal donation credit (s.118.1) and its mechanics are out of scope
+  - The personal donation credit (s.118.1) is worked in [Donation and Medical Credits](../Personal-Tax/Donation-And-Medical-Credits.md)
 - Gifts of ecological or cultural property (100% limits, special rules) are out of scope
 - Gifts to US charities and treaty-limited claims are out of scope
 - The following is my understanding as of 2026
@@ -104,6 +104,7 @@ Both routes reach a receipt; the difference is whose tax it reduces:
   - The in-kind securities play above only exists for corporately-held positions
 - *Personal*: a credit worth roughly 40–50% of the gift above the first $200 (province-dependent)
   - Stronger per dollar, but paid with money that already bore personal tax on the way out of the corp
+  - The credit's rate ladder and limits are worked in [Donation and Medical Credits](../Personal-Tax/Donation-And-Medical-Credits.md)
 - The comparison is close to a wash under integration for cash gifts
   - Corporately-held appreciated securities tilt it firmly corporate (zero inclusion plus the CDA credit)
 
@@ -124,6 +125,7 @@ Not a donation at all:
 - [Losses](../Filing-And-CRA/Losses.md) (the other discretionary carryforward at the taxable-income level)
 - [T2 Schedules](../Filing-And-CRA/T2-Schedules.md) (Schedule 2)
 - [Expense Classification](../Bookkeeping/Expense-Classification.md) (sponsorship as advertising)
+- [Donation and Medical Credits](../Personal-Tax/Donation-And-Medical-Credits.md) (the personal side of the give-from-which-pocket decision)
 - [Small Business Tax Overview](../Overview/Small-Business-Tax.md)
 
 
@@ -133,7 +135,7 @@ Not a donation at all:
   - [s.110.1(1)(a)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-110.1.html) - corporate deduction for charitable gifts; the 75%-of-income limit and 5-year carryforward
   - [s.38(a.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-38.html) - zero inclusion rate on gifts of publicly-listed securities to qualified donees
   - [s.89(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-89.html) - *capital dividend account* definition (the non-taxable-portion addition)
-  - [s.118.1](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-118.1.html) - the personal credit, for contrast
+  - [s.118.1](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-118.1.html) - the personal credit, worked in [Donation and Medical Credits](../Personal-Tax/Donation-And-Medical-Credits.md)
 - Income Tax Regulations (C.R.C., c. 945): Reg 3501 - contents of an official receipt
 - T2 Schedule 2 - Charitable Donations and Gifts: https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2sch2.html
 - CRA - List of charities and other qualified donees: https://www.canada.ca/en/revenue-agency/services/charities-giving/list-charities.html

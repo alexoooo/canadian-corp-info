@@ -66,6 +66,7 @@ Only salary is *earned income* for RRSP purposes:
 A salary pitched at the RRSP target is a common anchor:
 - Pay enough salary to fund the intended RRSP contribution; take the rest as dividends
 - The RRSP deduction then shelters part of the salary immediately
+- The plan mechanics (contribution deadline, over-contribution) are worked in [TFSA and RRSP Contributions](../Personal-Tax/TFSA-And-RRSP-Contributions.md)
 
 
 ## SBD, AAII, and GRIP

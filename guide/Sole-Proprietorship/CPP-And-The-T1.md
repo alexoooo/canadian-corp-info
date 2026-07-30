@@ -15,7 +15,8 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
 - Net tax owing over $3,000 in the current year and at least one of the two prior years brings quarterly instalments
 
 Limitations:
-- CPP rates and maximums are cross-linked, not restated; T1 brackets and credits are out of scope
+- CPP rates and maximums are cross-linked, not restated; T1 brackets are out of scope
+  - The T1's common credits are worked in [Donation and Medical Credits](../Personal-Tax/Donation-And-Medical-Credits.md)
 - Quebec differences (QPP, QPIP, the $1,800 instalment threshold) are out of scope
 - The following is my understanding as of 2026
 
@@ -90,6 +91,7 @@ GST/HST has its own parallel instalment stream once registered; see [HST for Sol
 - [Payroll](../Paying-Yourself/Payroll.md) (the employer-side CPP/EI mechanics)
 - [Incorporation vs Sole Proprietorship](Incorporation-Vs-Sole-Proprietorship.md)
 - [Paying Contractors](../Operations/Paying-Contractors.md) (the T4A this return reports)
+- [T1 Filing Basics](../Personal-Tax/T1-Filing-Basics.md) (the general filing side these deadlines sit in)
 
 
 ## Citations

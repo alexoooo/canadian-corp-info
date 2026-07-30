@@ -59,6 +59,7 @@ This page is a hub; these are the sub-pages:
 - [Investments](../Investments/Investments.md) (a corporate trading account end to end)
 - [Filing and CRA](../Filing-And-CRA/Filing-And-CRA.md) (the T2 return and dealing with the CRA)
 - [Sole Proprietorship](../Sole-Proprietorship/Sole-Proprietorship.md) (side content: the unincorporated contractor)
+- [Personal Tax](../Personal-Tax/Personal-Tax.md) (side content: the owner's own T1 in basic situations)
 
 ## Citations
 

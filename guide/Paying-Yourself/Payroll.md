@@ -34,6 +34,7 @@ Limitations:
   - WSIB: registration turns on industry classification, not headcount; check the classification when hiring a first non-owner worker
   - See [Further Reading](../Overview/Further-Reading.md) for the first-employee boundary
 - The owner's personal T1 side (reporting the T4, claiming the CPP credit) is out of scope
+  - The T1's filing mechanics are worked in [T1 Filing Basics](../Personal-Tax/T1-Filing-Basics.md)
 - Withholding rates and CPP limits change every January; figures below are 2026 and the dollar examples are illustrative
 - The following is my understanding as of 2026
 

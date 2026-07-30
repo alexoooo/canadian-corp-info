@@ -24,7 +24,7 @@ Limitations:
 - Focus is on a typical owner-managed CCPC operating in Canada
   - Other corporate forms (public corps, non-residents) are out of scope
 - Unincorporated businesses (sole proprietorship, partnership) and personal T1 mechanics are out of scope
-  - Sole proprietorship is worked as side content in [Sole Proprietorship](../Sole-Proprietorship/Sole-Proprietorship.md); partnerships and the rest of the T1 stay out
+  - Sole proprietorship is worked as side content in [Sole Proprietorship](../Sole-Proprietorship/Sole-Proprietorship.md), common T1 situations in [Personal Tax](../Personal-Tax/Personal-Tax.md); partnerships stay out
 - Tax information can change over time
   - One example: the capital gains inclusion rate was going to increase to 2/3, before the proposal was cancelled
 - The following is my understanding as of 2026
@@ -230,6 +230,7 @@ The word *account* is used in several different senses across this guide:
   - For full mechanics, see [Dividends](../Paying-Yourself/Dividends/Dividends.md), [ERDTOH-NERDTOH.md](../Paying-Yourself/Dividends/ERDTOH-NERDTOH.md), and [Capital-Dividend-Account.md](../Investments/Capital-Dividend-Account/Capital-Dividend-Account.md)
 - *CRA My Business Account*: CRA's online portal for corporate tax filings, payments, and correspondence
   - *CRA My Account* is the personal-tax equivalent and uses the same login (you can associate multiple businesses)
+    - Registration and access recovery are worked in [My Account and Catch-Up Filing](../Personal-Tax/My-Account-And-Catch-Up-Filing.md)
 - *CRA program account*: tracker that CRA maintains, identified by a *Business Number* (BN) plus a program suffix
   - Common accounts: RC for corporate income tax, RT for GST/HST, RP for payroll, RZ for information returns (e.g. T5)
 

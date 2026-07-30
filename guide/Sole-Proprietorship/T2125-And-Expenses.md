@@ -72,6 +72,7 @@ The no-loss rule (s.18(12)(b) and (c)):
 The principal-residence caution is the same as the corporate page's:
 - Do not claim CCA on the home-office portion (CRA Folio S1-F3-C2)
 - CCA converts that portion to income-producing property and risks the *principal residence exemption* on a later sale
+- The exemption and the change-in-use rules are worked in [Home Office and the Principal Residence](../Personal-Tax/Home-Office-And-Principal-Residence.md#change-of-use-and-the-cca-trap)
 
 
 ## Vehicle

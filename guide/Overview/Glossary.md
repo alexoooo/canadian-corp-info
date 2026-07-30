@@ -29,6 +29,8 @@ For mechanics and worked examples, follow the link to the canonical page where o
   - The half-year rule is suspended
   - Reinstated by Bill C-15 for property acquired after 2024 and available for use before 2030
   - Phase-out through 2033; see [Capital-Cost-Allowance.md](../Operations/Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md)
+- Auto-fill my return: CRA service that populates certified tax software with CRA's slip copies and carryover balances
+  - Needs a CRA account; see [T1-Filing-Basics.md](../Personal-Tax/T1-Filing-Basics.md)
 - Available for use: the ITA s.13(26)–(28) trigger that starts CCA on depreciable property
   - For non-buildings, the trigger is first use to earn income (s.13(27))
   - For buildings, substantially all of it first used for its purpose (s.13(28))
@@ -152,9 +154,14 @@ For mechanics and worked examples, follow the link to the canonical page where o
   - The amount the GST/HST return remits (positive) or refunds (negative)
   - Under the Quick Method, computed instead as the remittance rate times tax-included sales
   - See [HST.md](../Operations/HST/HST.md)
+- NETFILE: CRA's electronic-filing channel for individual T1 returns, through certified software
+  - See [T1-Filing-Basics.md](../Personal-Tax/T1-Filing-Basics.md)
 - Non-eligible dividend: default classification for a taxable dividend not designated eligible
   - And not a capital dividend
   - Carries a smaller gross-up and DTC than an eligible dividend; see [Dividends](../Paying-Yourself/Dividends/Dividends.md)
+- Non-refundable credit: a personal credit that reduces tax payable and stops at zero
+  - Most are the credit base times the lowest federal rate
+  - See [Donation-And-Medical-Credits.md](../Personal-Tax/Donation-And-Medical-Credits.md)
 - Norbert's Gambit: converting CAD↔USD through an interlisted security (*DLR* / *DLR.U* on the TSX)
   - A small bid-ask spread plus flat per-trade commissions
   - Far cheaper than a bank's FX spread above a break-even amount
@@ -175,6 +182,9 @@ For mechanics and worked examples, follow the link to the canonical page where o
 - Plug / plug account: a figure derived as the residual needed to make the books balance, and its absorbing account
   - The periodic COGS plug, a rounding residual, an FX bridge
   - See [Ledger-And-Accounts.md](../Bookkeeping/Ledger-And-Accounts.md#plugs-and-plug-accounts)
+- PRE (*Principal Residence Exemption*): shelters the capital gain on a home for its designated years
+  - One property per family unit per year; the sale must still be reported
+  - See [Home-Office-And-Principal-Residence.md](../Personal-Tax/Home-Office-And-Principal-Residence.md)
 - PSB (*Personal Service Business*): a CCPC effectively acting as a disguised employee
   - Most CCPC tax advantages removed; see [Small-Business-Tax.md](Small-Business-Tax.md)
 - PUC (*Paid-Up Capital*): tax-side measure of contributed capital tracked per share class
@@ -201,6 +211,10 @@ For mechanics and worked examples, follow the link to the canonical page where o
   - Round to the nearest dollar
   - Subtotals are summed from the rounded lines; a designated line absorbs the residual so the statements still tie
   - See [Whole-Dollar-Rounding.md](../Filing-And-CRA/Whole-Dollar-Rounding.md)
+- RRSP (*Registered Retirement Savings Plan*): tax-deferred savings plan whose contributions deduct against income
+  - Room accrues at 18% of prior-year *earned income*; salary creates it, dividends do not
+  - Excess beyond a $2,000 buffer is taxed monthly and reported on a T1-OVP return
+  - See [TFSA-And-RRSP-Contributions.md](../Personal-Tax/TFSA-And-RRSP-Contributions.md)
 - SBD (*Small Business Deduction*): reduced corporate rate on the first $500,000 of ABI per year
   - ITA s.125; see [Small-Business-Tax.md](Small-Business-Tax.md)
 - Schedule 8 (T1) (*Canada Pension Plan Contributions and Overpayment*): computes both CPP halves on self-employment income
@@ -225,6 +239,7 @@ For mechanics and worked examples, follow the link to the canonical page where o
   - A loss realized by a corporation is instead a *suspended loss* under s.40(3.3)/(3.4), with no ACB addition
   - ITA s.54; see [Adjusted-Cost-Base.md](../Investments/Adjusted-Cost-Base/Adjusted-Cost-Base.md#capital-loss-carry-forward--back--superficial-loss)
 - T1 (*T1 Income Tax and Benefit Return*): annual personal tax return
+  - Basic filing situations are worked in [T1-Filing-Basics.md](../Personal-Tax/T1-Filing-Basics.md)
 - T2 (*T2 Corporation Income Tax Return*): annual corporate tax return
   - Consists of federal and provincial forms and schedules
   - Typically prepared using T2 software
@@ -244,6 +259,10 @@ For mechanics and worked examples, follow the link to the canonical page where o
   - For an invoiced service: the earlier of the invoice date and the issue date (ETA s.168, s.152)
   - See [HST.md](../Operations/HST/HST-Bookkeeping.md#when-tax-becomes-payable)
 - Terminal loss: residual UCC deducted when a class empties under ITA s.20(16); see [Capital-Cost-Allowance.md](../Operations/Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md)
+- TFSA (*Tax-Free Savings Account*): registered account with tax-free growth and withdrawals; contributions are not deductible
+  - Excess contributions are taxed monthly and reported on Form RC243
+  - A withdrawal restores room only on the following January 1
+  - See [TFSA-And-RRSP-Contributions.md](../Personal-Tax/TFSA-And-RRSP-Contributions.md)
 - TOSI (*Tax on Split Income*, ITA s.120.4): limits income-splitting through dividends
   - Targets family members not active in the business; see [Dividends](../Paying-Yourself/Dividends/Dividends.md)
 - Trial balance: the list of every ledger account balance in a debit or credit column

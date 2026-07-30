@@ -104,6 +104,13 @@ Unmarked pages are reviewed; † = AI generated, not verified yet.
 - [CPP and the T1](guide/Sole-Proprietorship/CPP-And-The-T1.md) †
 - [Incorporation vs Sole Proprietorship](guide/Sole-Proprietorship/Incorporation-Vs-Sole-Proprietorship.md) †
 
+**[Personal Tax](guide/Personal-Tax/Personal-Tax.md)** † (side content: the owner's own T1 in basic common situations):
+- [T1 Filing Basics](guide/Personal-Tax/T1-Filing-Basics.md) †
+- [My Account and Catch-Up Filing](guide/Personal-Tax/My-Account-And-Catch-Up-Filing.md) †
+- [TFSA and RRSP Contributions](guide/Personal-Tax/TFSA-And-RRSP-Contributions.md) †
+- [Donation and Medical Credits](guide/Personal-Tax/Donation-And-Medical-Credits.md) †
+- [Home Office and the Principal Residence](guide/Personal-Tax/Home-Office-And-Principal-Residence.md) †
+
 
 ## Audit
 

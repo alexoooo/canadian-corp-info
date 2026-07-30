@@ -15,7 +15,8 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
 - The exit ramp is [Incorporation vs Sole Proprietorship](Incorporation-Vs-Sole-Proprietorship.md), then [Starting Up](../Corporate-Lifecycle/Starting-Up.md)
 
 Limitations:
-- Partnerships, employment income, and the broader personal return (credits, benefits) are out of scope
+- Partnerships and employment income are out of scope
+  - The broader personal return's common situations are worked in [Personal Tax](../Personal-Tax/Personal-Tax.md)
 - Ontario is the worked province where provincial rules appear
 - The following is my understanding as of 2026
 
@@ -71,6 +72,7 @@ This page is a hub; these are the sub-pages:
 ## Related
 
 - [Overview](../Overview/Overview.md) (the corporate guide's orientation layer)
+- [Personal Tax](../Personal-Tax/Personal-Tax.md) (the sibling side group: the owner's own T1 situations)
 - [Paying Contractors](../Operations/Paying-Contractors.md) (the payer's side of the T4A)
 - [GST/HST](../Operations/HST/HST.md) (the corporate pages these ones delta from)
 - [Owner-Corporation Transactions](../Paying-Yourself/Owner-Corporation-Transactions.md) (the corporate mixed-use rules, with the sole-prop contrast)

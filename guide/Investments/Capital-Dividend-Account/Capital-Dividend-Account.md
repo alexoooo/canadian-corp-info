@@ -91,7 +91,8 @@ CRA allows S89 and Form T2054 to be submitted by:
 - Physical mail
 
 The CRA My Business Account website can change over time, here are steps as of 2026:
-- Log in to CRA My Account and select My Business Account (you will need to set up your login first)
+- Log in to CRA My Account and select My Business Account
+  - Setting up the login is worked in [My Account and Catch-Up Filing](../../Personal-Tax/My-Account-And-Catch-Up-Filing.md)
 - On the left navigation panel, go to "Submit documents" (under "Correspondence")
 - On the "Submitted documents" screen, click "Submit documents"
 - On the "Submit documents" screen:

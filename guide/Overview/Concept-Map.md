@@ -354,6 +354,16 @@ The side group works the unincorporated case; each concept there has one owning 
 - The incorporate-or-not decision: [Incorporation vs Sole Proprietorship](../Sole-Proprietorship/Incorporation-Vs-Sole-Proprietorship.md)
 
 
+## The Personal-Tax Side Track
+
+The second side group works the owner's own T1 in basic common situations; each has one owning page:
+- Deadlines, slips and Auto-fill, NETFILE: [T1 Filing Basics](../Personal-Tax/T1-Filing-Basics.md)
+- The CRA account, catch-up filing, relief: [My Account and Catch-Up Filing](../Personal-Tax/My-Account-And-Catch-Up-Filing.md)
+- Room, over-contributions, RC243 and T1-OVP: [TFSA and RRSP Contributions](../Personal-Tax/TFSA-And-RRSP-Contributions.md)
+- The two big non-refundable credits: [Donation and Medical Credits](../Personal-Tax/Donation-And-Medical-Credits.md)
+- The employee workspace claim and the PRE: [Home Office and the Principal Residence](../Personal-Tax/Home-Office-And-Principal-Residence.md)
+
+
 ## How the Concepts Relate
 
 - *Categorization* (each sorts an item into one of a few fixed types):
@@ -408,6 +418,7 @@ The side group works the unincorporated case; each concept there has one owning 
 - [HST](../Operations/HST/HST.md)
 - [Payment](../Filing-And-CRA/Payment/Payment.md)
 - [Sole Proprietorship](../Sole-Proprietorship/Sole-Proprietorship.md)
+- [Personal Tax](../Personal-Tax/Personal-Tax.md)
 - [Glossary](Glossary.md)
 
 

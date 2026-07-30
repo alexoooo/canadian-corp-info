@@ -66,8 +66,9 @@ Limitations:
 
 ## Deliberately Out of Scope
 
-- *Personal T1 mechanics*: the sole-proprietor slice is worked as side content in [Sole Proprietorship](../Sole-Proprietorship/Sole-Proprietorship.md)
-  - The broader personal return (employment income, credits, benefits) stays out; it is its own domain
+- *Personal T1 mechanics beyond the two side groups*: the self-employment slice is worked in [Sole Proprietorship](../Sole-Proprietorship/Sole-Proprietorship.md)
+  - Basic common situations (filing, CRA account access, TFSA/RRSP contributions, the donation and medical credits, the home) are worked in [Personal Tax](../Personal-Tax/Personal-Tax.md)
+  - The rest of the personal return (employment income at large, benefit programs, T1 brackets) stays out; it is its own domain
   - Corporate pages keep only brief contrasts, as in [Owner-Corporation-Transactions](../Paying-Yourself/Owner-Corporation-Transactions.md)
 - *PST and QST*: the guide works federal GST/HST only
   - Provincial sales taxes outside the participating-province HST are not covered
@@ -119,3 +120,4 @@ Limitations:
   - Remove it here and add its README entry under the right thematic group
 - Re-verify before writing it up: the UHT requirement for Canadian-controlled corporations
 - 2026-07-25 coverage cycle: instalment computation promoted into [Payment](../Filing-And-CRA/Payment/Payment.md); contract revenue logged under Deliberately Out of Scope pending the maintainer's admit/keep-out call (Coverage G-15)
+- 2026-07-30: the personal-T1 exclusion narrowed; basic common situations promoted into the new [Personal Tax](../Personal-Tax/Personal-Tax.md) side group

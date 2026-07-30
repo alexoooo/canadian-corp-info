@@ -70,6 +70,7 @@ Your income is what your books say, not what slips arrive:
 - Consumer clients issue nothing, and payer compliance with box 048 is uneven
 - T4A totals should reconcile to your gross revenue; they do not define it
 - A missing slip does not make income untaxed
+  - The same principle for every slip on the T1 is worked in [A Missing Slip Is Still Income](../Personal-Tax/T1-Filing-Basics.md#a-missing-slip-is-still-income)
 
 The payer's side of the slip is worked in [Paying Contractors](../Operations/Paying-Contractors.md#when-a-t4a-is-required).  
 
