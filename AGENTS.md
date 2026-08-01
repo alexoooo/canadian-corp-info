@@ -7,7 +7,13 @@ This is the single source of truth for project context, editorial conventions, a
 
 ## Repository nature
 
-This is a **documentation-only** repository. There is no build system, test suite, lint tooling, or package manifest. The root holds `README.md` and `AGENTS.md`, a `docs/` folder (process docs for agents: the [style guide](docs/Style-Guide.md) and the audit playbook), an `audit/` folder, and a `guide/` folder containing all topic content (with screenshots co-located alongside the pages that reference them); Claude Code's entry point `.claude/CLAUDE.md` points to this file. Edits are content edits; "running" the project means previewing Markdown.
+This is a **documentation-only** repository. There is no build system, test suite, package manifest, or
+generated output. The root holds `README.md` and `AGENTS.md`, a `docs/` folder (process docs for agents:
+the [style guide](docs/Style-Guide.md) and the audit playbook), an `audit/` folder, and a `guide/` folder
+containing all topic content (with screenshots co-located alongside the pages that reference them);
+Claude Code's entry point `.claude/CLAUDE.md` points to this file. Edits are content edits; "running" the
+project means previewing Markdown. A read-only documentation validator lives at
+`scripts/Validate-Docs.ps1`.
 
 The audience is narrow: owners of a Canadian-controlled private corporation (CCPC), typically holding stocks/ETFs in a corporate trading account. Keep that frame — do not generalize content to personal tax, US filers, or other entity types unless the existing document already does. Two side groups close the README index, and each is the sole sanctioned home for its slice: `guide/Sole-Proprietorship/` (contrast and on-ramp for the unincorporated contractor) and `guide/Personal-Tax/` (the owner's own T1 in basic common situations). Outside those groups, a brief contrast with sole-proprietor or personal-tax treatment is allowed where it clarifies the corporate treatment and stays clearly secondary (see `guide/Paying-Yourself/Owner-Corporation-Transactions.md`); link into the group rather than growing the contrast in place. Personal-tax coverage beyond the Personal-Tax group's worked situations (employment income at large, benefit programs, T1 brackets) stays out everywhere.
 
@@ -106,8 +112,9 @@ of them. Filenames follow the pattern
 fixes from a prior audit. The date is when that pass was run, the model is the one that ran it,
 and the reasoning-effort level is the model's setting (e.g. `Opus-4.7-xhigh`). Both the model and
 the reasoning-effort suffix are required; never omit the suffix. Read both tokens programmatically
-from the live session (the same `model.display_name`/`effort.level` the status line consumes) —
-never guess them; see [Audit Instructions](docs/Audit-Instructions.md) for how. Each audit is a
+from the live session metadata exposed by the active client — never infer them from an old audit or a
+configuration default. If the client does not expose either value to the agent, use the maintainer-supplied
+session-identity fallback in [Audit Instructions](docs/Audit-Instructions.md#session-identity). Each audit is a
 read-only record of findings; fixes land in separate follow-up commits so the audit and the
 response stay separable in git history.
 
@@ -120,3 +127,19 @@ asked to run an audit.
 ## Git hygiene
 
 `.gitignore` excludes `.idea/` and the entire `.github/` directory **except** `copilot-instructions.md`. Don't commit other files under `.github/`.
+
+---
+
+## Validation
+
+After documentation edits, run:
+
+```powershell
+pwsh -NoProfile -File scripts/Validate-Docs.ps1
+```
+
+The script checks local Markdown links in the current guidance, README coverage of `guide/`, and page-status
+markers. Historical audit records and the frozen raw-AI specimens under `docs/examples/` are excluded from
+link enforcement. It also reports reader-visible lines over the style guide's soft maximum when those lines
+are added or changed. Use `-AllLineLengths` to inventory long lines across all reader-facing pages.
+Structural errors return a non-zero exit code; line-length findings are warnings.

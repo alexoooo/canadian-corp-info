@@ -4,8 +4,10 @@ All project context, editorial conventions, and style rules are in [AGENTS.md](.
 
 ## Commands
 
-This repository does not define build, test, or lint tooling. There are no package manifests, test runners, or CI-oriented build scripts.
+This repository does not define build or test tooling. There are no package manifests, test runners, or
+CI-oriented build scripts. It does include a read-only documentation validator.
 
 - **Build:** none
 - **Test:** none
-- **Lint/format:** none
+- **Validate:** `pwsh -NoProfile -File scripts/Validate-Docs.ps1`
+- **Full line-length inventory:** `pwsh -NoProfile -File scripts/Validate-Docs.ps1 -AllLineLengths`

@@ -43,7 +43,43 @@ The standing rule is no false positives — a wrong finding wastes the maintaine
 
 ## Full-audit document
 
-Filename: `<YYYY-MM-DD>_Audit_<Model>-<effort>.md`, in a new cycle folder `audit/<YYYY-MM-DD>/` named for the same date — the audit opens the cycle, and its remediation, any independent review, and its follow-up land beside it. The date is when the audit ran. Both `<Model>` and `<effort>` describe the live session and must be read programmatically — never guessed. They are the same two values the status line prints: Claude Code feeds the `statusLine` command a JSON payload whose `model.display_name` and `effort.level` are exactly these tokens (see `~/.claude/statusline.py`). Read the effort from `~/.claude/settings.json` `effortLevel`; take the model from the session's model identity, normalised to its hyphenated short form (`Fable 5` → `Fable-5`, dropping any `(1M context)` qualifier). A session-only effort override reaches the status line but may not be written to settings.json — if the two could disagree, confirm the live value rather than assuming. Cautionary tale: a prior run named its file `Fable-5-xhigh` from a guessed suffix when the session was running at `high` — the correct name was `Fable-5-high`.
+Filename: `<YYYY-MM-DD>_Audit_<Model>-<effort>.md`, in a new cycle folder `audit/<YYYY-MM-DD>/` named
+for the same date. The audit opens the cycle; its remediation, any independent review, and its follow-up
+land beside it. The date is when the audit ran. Resolve `<Model>` and `<effort>` through the session-identity
+procedure below before creating the file.
+
+### Session identity
+
+Both filename tokens describe the live session. Never infer either token from an old audit, the model family
+named in prose, or a client configuration default.
+
+Identity sources, in order:
+
+1. Read the active client's live session metadata when it exposes the model display name and reasoning-effort
+   level to the agent
+2. In Claude Code, use the `model.display_name` and `effort.level` values supplied to the `statusLine`
+   command; `~/.claude/settings.json` is only a fallback for effort when no session override is active
+3. In Codex or another client that does not expose either live value to the agent, ask the maintainer for the
+   exact values displayed for the current session; save them to the git-ignored
+   `audit/wip/session-identity.json`, then read that file when constructing the filename
+
+Fallback file shape:
+
+```json
+{
+  "model_display_name": "value displayed by the client",
+  "effort_level": "value displayed by the client"
+}
+```
+
+Record the fallback's maintainer-supplied provenance in the audit's `Method` field. This is an explicit
+session value, not permission to guess. If the maintainer cannot see either value, stop before naming the
+deliverable.
+
+Normalise the model to its hyphenated short form (`Fable 5` → `Fable-5`) and drop qualifiers such as
+`(1M context)`. Preserve the effort token as displayed. A session-only override can differ from a settings
+file. Cautionary tale: a prior run guessed `Fable-5-xhigh` while the live session was running at `high`; the
+correct filename was `Fable-5-high`.
 
 Section skeleton:
 
