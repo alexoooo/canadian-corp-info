@@ -37,3 +37,5 @@ History:
 - [2026-07-25 Coverage Opus-5-xhigh](2026-07-25/2026-07-25_Coverage_Opus-5-xhigh.md)
 - [2026-07-25 Coverage-Review Fable-5-high](2026-07-25/2026-07-25_Coverage-Review_Fable-5-high.md)
 - [2026-07-25 Coverage-Remediation Fable-5-xhigh](2026-07-25/2026-07-25_Coverage-Remediation_Fable-5-high.md)
+---
+- [2026-07-31 Audit sol-5.6-xhigh](2026-07-31/2026-07-31_Audit_sol-5.6-xhigh.md)
