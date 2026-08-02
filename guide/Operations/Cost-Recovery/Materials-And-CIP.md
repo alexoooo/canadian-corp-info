@@ -227,12 +227,12 @@ Year 1 (2026):
 Mar 1 2026, buy $4,000 of lumber + framing hardware:
 - Debit `Construction in progress` (asset account; not GIFI 1121) = $4,000
 - Debit `HST receivable` = $520
-- Credit `Cash` = $4,520
+- Credit `Deposits` = $4,520
 
 Sep 1 2026, buy $2,000 of roofing materials and fasteners:
 - Debit `Construction in progress` = $2,000
 - Debit `HST receivable` = $260
-- Credit `Cash` = $2,260
+- Credit `Deposits` = $2,260
 
 Dec 31 2026, shed not yet available for use:
 - CIP balance: $6,000
@@ -247,12 +247,12 @@ Year 2 (2027):
 Mar 1 2027, buy $3,000 more lumber, $500 windows, $500 door:
 - Debit `Construction in progress` = $4,000
 - Debit `HST receivable` = $520
-- Credit `Cash` = $4,520
+- Credit `Deposits` = $4,520
 
 Aug 1 2027, pay a contractor $1,500 for labour to finish the build:
 - Debit `Construction in progress` = $1,500
 - Debit `HST receivable` = $195
-- Credit `Cash` = $1,695
+- Credit `Deposits` = $1,695
 
 Sep 1 2027, available-for-use date (construction complete, shed in service for tool storage).
 
@@ -305,7 +305,7 @@ Year 1 (2026):
 Jan 10 2026, buy 1,000 kg steel at $5.00/kg = $5,000:
 - Debit `Materials on hand` = $5,000
 - Debit `HST receivable` = $650
-- Credit `Cash` = $5,650
+- Credit `Deposits` = $5,650
 - Pool: 1,000 kg, $5,000, average $5.00/kg
 
 Feb to Mar 2026, Build A's BOM draws 600 kg of steel:
@@ -316,7 +316,7 @@ Feb to Mar 2026, Build A's BOM draws 600 kg of steel:
 May 1 2026, buy 600 kg steel at $7.00/kg = $4,200 (supplier price rose):
 - Debit `Materials on hand` = $4,200
 - Debit `HST receivable` = $546
-- Credit `Cash` = $4,746
+- Credit `Deposits` = $4,746
 - Pool: 1,000 kg, $6,200, new average = $6,200 / 1,000 = $6.20/kg
 
 Jun 2026, Build B's BOM draws 500 kg of steel:
@@ -331,13 +331,13 @@ This is the averaging the single-shed example never needed.
 Aug 2026, pay a contractor $2,000 for Build A labour:
 - Debit `Construction in progress - Build A` = $2,000
 - Debit `HST receivable` = $260
-- Credit `Cash` = $2,260
+- Credit `Deposits` = $2,260
 - Build A CIP: $3,000 steel + $2,000 labour = $5,000
 
 Sep 2026, buy a $1,500 motor specific to Build B (charged straight to the build, not pooled):
 - Debit `Construction in progress - Build B` = $1,500
 - Debit `HST receivable` = $195
-- Credit `Cash` = $1,695
+- Credit `Deposits` = $1,695
 - Build B CIP: $3,100 steel + $1,500 motor = $4,600
 
 Oct 1 2026, Build A complete and available for use:
@@ -364,7 +364,7 @@ Year 2 (2027):
 Jan to Feb 2027, pay a contractor $2,400 for Build B labour:
 - Debit `Construction in progress - Build B` = $2,400
 - Debit `HST receivable` = $312
-- Credit `Cash` = $2,712
+- Credit `Deposits` = $2,712
 - Build B CIP: $4,600 + $2,400 = $7,000
 
 Mar 1 2027, Build B complete and available for use:

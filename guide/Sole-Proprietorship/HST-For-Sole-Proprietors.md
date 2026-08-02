@@ -40,8 +40,12 @@ The ETA tests and registers the *person*, and the person is you:
   - Two side businesses cross the $30,000 threshold together, even with separate names and books
 - Registration mechanics are the corporate page's: Business Registration Online, then the `RT` account under your new BN
 
-Incorporating later makes a new person:
-- The corporation gets its own BN and `RT` account and starts its own small-supplier clock
+Incorporating later makes a new person, but not necessarily a fresh $30,000:
+- The corporation gets its own BN and `RT` account
+- The small-supplier calculation does not simply reset: ETA [s.148(1)-(2)](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-148.html) counts the taxable supplies of *associates*, and [s.127(2)](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-127.html) makes a controlling individual an associate of the corporation
+  - So your own prior taxable supplies can enter the corporation's four-quarter and single-quarter tests
+- If you are anywhere near the threshold, establish the corporation's exact effective registration date before
+  moving operations across — guessing it wrong means uncollected tax on real invoices
 - The business-transfer election that can relieve the handover is worked in [Incorporation vs Sole Proprietorship](Incorporation-Vs-Sole-Proprietorship.md#making-the-move)
 
 

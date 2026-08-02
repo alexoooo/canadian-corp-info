@@ -51,8 +51,8 @@ Compound interest (interest on unpaid interest) is deductible only when paid, no
 ## Lines of Credit and Term Loans
 
 *Line of credit*:
-- Draws: Dr `Cash` (`1001`), Cr `Loans from Canadian banks` (`2701`); repayments reverse
-- Interest charged monthly: Dr `Interest and bank charges` (`8710`), Cr `1001` (or Cr `2701` when capitalized to the balance)
+- Draws: Dr `Deposits` (`1002-1`), Cr `Loans from Canadian banks` (`2701`); repayments reverse
+- Interest charged monthly: Dr `Interest and bank charges` (`8710`), Cr `1002-1` (or Cr `2701` when capitalized to the balance)
 
 *Term loan* — $50,000 over 5 years at 7%, blended monthly payment of $990:
 
@@ -62,7 +62,7 @@ First payment:
 |---|---|---|
 | `Interest and bank charges` (`8710`) | 291.67 | |
 | `Long-term debt` (`3140`) | 698.33 | |
-| `Cash` (`1001`) | | 990.00 |
+| `Deposits` (`1002-1`) | | 990.00 |
 
 - The split comes from the lender's amortization schedule: interest = opening balance × 7% ÷ 12, principal is the rest
   - The interest portion shrinks every month

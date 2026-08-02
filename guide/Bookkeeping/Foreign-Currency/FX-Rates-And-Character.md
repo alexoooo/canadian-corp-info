@@ -37,8 +37,12 @@ The election is therefore not available, and it is out of scope here.
 
 ## When to Use Which Rate
 
-CRA folio S5-F4-C1 lets a corporation pick any consistent and appropriate method for income-account items.  
-The accepted methods are current-rate / accrual, settlement, fixed-rate, and average-rate.  
+Four accounting methods have been accepted for income-account items: current-rate / accrual, settlement,
+fixed-rate, and average-rate, each on condition it is applied consistently and is appropriate to the taxpayer.  
+That list comes from *archived* Interpretation Bulletin IT-95R, paragraphs 7 to 9 — an administrative position, not
+current published guidance.  
+Current folio S5-F4-C1 covers a different set of questions: the s.261 reporting currency, the relevant spot rate,
+acceptable independent rate sources, and a limited practical acceptance of period averages.  
 This guide uses the *transaction-date* method throughout, applied per-event as listed below.  
 
 The rate-by-event convention used throughout this guide, with cross-links to where each rule is applied:
@@ -89,15 +93,23 @@ Every FX gain or loss has a character that follows the underlying transaction.
 The $200 personal FX de minimis under ITA [s.39(1.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-39.html) applies only to *individuals*.  
 A corporation has no de minimis: every capital-account FX gain or loss, however small, is reportable on Schedule 6.  
 
-Which side of the line a given USD balance sits on:
+Which side of the line a given USD balance sits on is decided by where the funds came from and what they are for —
+not by which account currently holds them:
 - USD operating cash from US-client invoicing → *income account* (revalue at year-end)
 - USD operating cash used to pay USD suppliers → *income account*
 - USD floor balance kept in the operating account to waive the monthly account fee → *income account*
   - It is working capital that happens to be idle, and fee avoidance is itself an operating purpose
-  - Character would flip only if the balance were committed to a capital purpose
-    - E.g. moved to a trading account to buy securities
-- USD cash in a corporate trading account waiting to buy USD securities → *capital account* (no year-end revaluation)
-- USD-denominated long-term debt the corp issued → *capital account*
+- USD that arose on income account *stays* on income account after it is moved to a trading account or earmarked for
+  securities
+  - Moving or earmarking does not convert character; only the source transaction and the use of the funds do
+  - When those funds buy a security, the income-account FX result crystallizes at that moment, as though the USD had
+    first been converted to CAD (IT-95R paragraph 4)
+  - The security's ACB is still the trade-date CAD conversion; the FX result and the ACB are separate computations
+  - This is the treatment [Norbert's Gambit](Norberts-Gambit.md) already applies to US-client invoice proceeds
+- USD acquired *separately* for a capital purpose — a CAD→USD conversion made to fund a securities portfolio rather
+  than swept over from operating receipts → *capital account* (no year-end revaluation)
+- USD-denominated debt the corp issued → follows the use of the borrowed funds and the surrounding facts, not the
+  term of the loan (IT-95R paragraph 3)
 
 For a typical owner-managed CCPC consultant, almost all USD activity is income-account.  
 Capital-account FX appears only on disposition of USD securities and is handled through the ACB workflow.

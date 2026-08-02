@@ -14,7 +14,8 @@ See parent document: [Corporate Structure](Corporate-Structure.md)
 - *Common* shares carry the growth; *preferred* shares carry a fixed, priority claim
 - *Authorized* shares are what the articles permit; *issued* shares are what is actually outstanding
 - *Paid-up capital* (PUC) is the tax measure of capital contributed for a class
-  - It governs how much can come out tax-free
+  - It sets the line above which money taken out through the shares becomes a deemed dividend
+  - Tax-free is a separate question, answered by the shareholder's adjusted cost base
 - *Redeemable* and *retractable* preferred shares are the building block of freezes and share-funded purchases
   - See [Business Acquisition](../Business-Acquisition/Business-Acquisition.md)
 
@@ -26,7 +27,7 @@ Limitations:
 - The following is my understanding as of 2026
 
 
-## What a Share Represents
+## Share Rights
 
 A *share* is a unit of ownership in the corporation.  
 What that ownership entitles the holder to is not fixed by the word "share".  
@@ -85,10 +86,19 @@ Creating a *new* class later requires an amendment to the articles.
 
 The CBCA and most provincial statutes require shares to be issued *without nominal or par value* (CBCA s.24(1)).  
 British Columbia still permits par-value shares.  
-The full consideration received for a share is added to the class's *stated capital account* (CBCA s.26).  
+Generally the full consideration received for a share is added to the class's *stated capital account*
+(CBCA [s.26(2)](https://laws-lois.justice.gc.ca/eng/acts/C-44/section-26.html)).  
 
 Under these statutes there is no "$1 par value" concept as in some other countries.  
-The amount recorded for a class is what was paid in for it.  
+The amount recorded for a class is normally what was paid in for it.  
+
+CBCA s.26(3) is the exception that matters to this guide's reorganization pages.  
+On a share-for-property exchange with a non-arm's-length person, an amalgamation, or an arrangement, the directors
+may add *all or only part* of the consideration to stated capital.  
+That is what makes a low-stated-capital freeze or rollover share possible.  
+
+So corporate stated capital and tax PUC can diverge for two independent reasons: the corporate statute may permit a
+partial credit, and the *Income Tax Act* may separately grind PUC.  
 
 
 ## Paid-Up Capital (PUC)
@@ -97,11 +107,16 @@ The amount recorded for a class is what was paid in for it.
 It starts from the corporate-law stated capital, then is adjusted by the *Income Tax Act*.  
 It is averaged across all shares of the class.  
 
-PUC is the amount that can be returned to shareholders tax-free.  
-It governs the tax outcome of taking money out through the shares:
-- A distribution up to PUC is a tax-free *return of capital*
+PUC sets the line above which money taken out through the shares becomes a *deemed dividend*.  
+It is not by itself a tax-free allowance:
+- A distribution up to the PUC reduction is a *return of capital*, not a deemed dividend
+  - It reduces the shareholder's ACB in the shares (ITA [s.53(2)(a)(ii)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-53.html))
+  - Once that ACB is exhausted, a further return of capital is a capital gain (ITA [s.40(3)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-40.html))
 - A distribution above PUC is a *deemed dividend* (see [Dividends — Deemed dividends](../../Paying-Yourself/Dividends/Dividends.md#deemed-dividends))
   - A reduction of PUC under ITA s.84(4), or redemption proceeds over PUC under ITA s.84(3)
+
+PUC answers the deemed-dividend question; ACB answers the capital-gain question.  
+Both have to clear before a distribution is genuinely tax-free.  
 
 PUC is distinct from two other numbers it is often confused with:
 - The shareholder's *adjusted cost base* (ACB): what they paid for the shares, used to compute their capital gain

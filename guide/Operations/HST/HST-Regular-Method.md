@@ -113,7 +113,9 @@ Import HST on services and intangibles:
   - When an imported service is acquired for use otherwise than exclusively in commercial activity
 - For a typical CCPC using imported services entirely in commercial activity, no entry is required
   - E.g. AWS hosting, a US-based SaaS subscription supporting taxable Canadian supplies
-  - The self-assessment and the offsetting ITC net to zero
+  - ETA [s.217](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-217.html) excludes a service or intangible
+    acquired *exclusively* for commercial activities from the definition of an imported taxable supply
+  - So no Division IV tax arises at all; it is not tax that arises and is then cancelled by an offsetting ITC
 - Where the imported service supports exempt supplies (wholly or partly), the self-assessment is real
   - Net tax increases; out of scope here
 

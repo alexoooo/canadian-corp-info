@@ -219,7 +219,12 @@ Running weighted-average computation:
   - The average cost itself does not change on a sale, only the unit count and total-cost balance
 - On purchase return: reverse the purchase entry at its original landed cost (not at the current average)
   - Recompute the average
-- On sales return: reverse the sale entry; the returned units re-enter the pool at the current average cost
+- On sales return: reverse the sale entry, which means reversing the *carrying amount that sale charged to COGS*
+  - The units re-enter the pool at their original cost, not at today's average
+  - Then recompute the average on the restored quantity and total cost
+  - Restoring at the current average would leave part of the original COGS sitting in expense and assign the unit a
+    cost it never had — the perpetual identity (opening + purchases − COGS = closing) stops holding
+  - Worth walking through when a purchase lands between the sale and the return, which is when the two figures differ
 
 GIFI codes (verified from CRA T2 SCH 125 and RC4088):
 
@@ -246,7 +251,7 @@ Ledger entries for the typical transactions:
 Purchase from a Canadian HST-registered supplier (perpetual, HST-registered corp):
 - Debit `Inventory - goods for sale` (GIFI 1121) = landed cost net of recoverable HST
 - Debit `HST receivable` = recoverable HST portion
-- Credit `Accounts payable` or `Cash` = invoice total
+- Credit `Accounts payable` or `Deposits` = invoice total
 
 Purchase with freight-in:
 - Debit `Inventory - goods for sale` (GIFI 1121) = invoice cost + freight-in + duty
@@ -254,7 +259,7 @@ Purchase with freight-in:
 - Credit `Accounts payable` = invoice + freight invoice
 
 Sale to a customer (one entry for revenue, one for COGS):
-- Debit `Cash` or `Trade accounts receivable` = sale price + HST collected
+- Debit `Deposits` or `Trade accounts receivable` = sale price + HST collected
 - Credit `Trade sales of goods and services` (GIFI 8000) = sale price net of HST
 - Credit `HST collected` = HST charged
 - Debit `Cost of sales` (GIFI 8518) = units sold × current average cost
@@ -394,11 +399,11 @@ Year 1 (2026):
 Mar 1, buy 100 units at $40 landed each = $4,000:
 - Debit `Inventory - goods for sale` (GIFI 1121) = $4,000
 - Debit `HST receivable` = $520
-- Credit `Cash` = $4,520
+- Credit `Deposits` = $4,520
 - Pool: 100 units, total cost $4,000, average $40.00
 
 Apr to Jun, sell 60 units at $80 each, total $4,800:
-- Debit `Cash` = $5,424 (revenue + 13% HST)
+- Debit `Deposits` = $5,424 (revenue + 13% HST)
 - Credit `Trade sales of goods and services` (GIFI 8000) = $4,800
 - Credit `HST collected` = $624
 - Debit `Cost of sales` (GIFI 8518) = 60 × $40.00 = $2,400
@@ -408,7 +413,7 @@ Apr to Jun, sell 60 units at $80 each, total $4,800:
 Sep 1, buy 200 units, supplier raised price to $44 landed each = $8,800:
 - Debit `Inventory - goods for sale` (GIFI 1121) = $8,800
 - Debit `HST receivable` = $1,144
-- Credit `Cash` = $9,944
+- Credit `Deposits` = $9,944
 - Pool: 240 units, total cost $10,400, new average = $10,400 / 240 = $43.33
 
 Oct to Dec, sell 150 units at $80 each:

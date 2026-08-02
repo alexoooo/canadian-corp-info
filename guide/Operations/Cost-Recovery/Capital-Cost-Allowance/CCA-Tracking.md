@@ -48,25 +48,33 @@ The tax constants that depend only on the CCA class. One row per `Class`. Column
   - `Tangible`: equipment, vehicles, leasehold improvements, etc.
   - `Intangible`: incorporation costs, goodwill, limited-life rights, etc.
 - `Half-year Default`:
-  - The class's usual half-year treatment (`True` for most, `False` where the class is exempt)
+  - Whether a 50% first-year restriction applies to the class (`True` for most, `False` where none does)
   - Applied by the software per class
+- `First-Year Basis`:
+  - Which provision imposes that restriction — two different mechanisms reach the same 50% outcome
+  - Reg 1100(2) is the ordinary half-year rule, computed on net additions to a declining-balance class
+  - Class 13 is outside Reg 1100(2), but Reg 1100(1)(b)(i) caps its first-year claim at 50% of the amount computed
+    under Schedule III, so the halving still happens — by its own route
+  - Keep the two apart when reasoning about AIIP, which suspends the restriction for eligible property in its window
 - `What Goes Here`:
   - A one-line cue for what the class covers, a reminder when classifying an item
   - Optional and informational; the canonical rules are in [CCA Classification](CCA-Classification.md)
 
-| Class | Rate | Method | Tangibility | Half-year Default | What Goes Here |
-|-------|-----|--------|-------------|-------------------|----------------|
-| 8 | `20%` | `Declining balance` | Tangible | True | catch-all: office furniture, equipment, photocopiers |
-| 10 | `30%` | `Declining balance` | Tangible | True | motor vehicles under the cost cap (shared pool) |
-| 10.1 | `30%` | `Declining balance` | Tangible | True | passenger vehicle over the cost cap (own class) |
-| 12 | `100%` | `Declining balance` | Tangible | True | app software bought outright (half-year applies) |
-| 13 |  | `Straight-line` | Tangible | True | leasehold improvements |
-| 14 |  | `Straight-line` | Intangible | False | limited-life intangibles (patents, term licences) |
-| 14.1 | `5%` | `Declining balance` | Intangible | True | goodwill, incorp. costs over $3,000, customer lists |
-| 50 | `55%` | `Declining balance` | Tangible | True | computers, peripherals (data network gear is Class 46) |
+| Class | Rate | Method | Tangibility | Half-year Default | First-Year Basis | What Goes Here |
+|-------|-----|--------|-------------|-------------------|------------------|----------------|
+| 8 | `20%` | `Declining balance` | Tangible | True | `Reg 1100(2)` | catch-all: office furniture, equipment, photocopiers |
+| 10 | `30%` | `Declining balance` | Tangible | True | `Reg 1100(2)` | motor vehicles under the cost cap (shared pool) |
+| 10.1 | `30%` | `Declining balance` | Tangible | True | `Reg 1100(2)` | passenger vehicle over the cost cap (own class) |
+| 12 | `100%` | `Declining balance` | Tangible | True | `Reg 1100(2)` | app software bought outright (half-year applies) |
+| 13 |  | `Straight-line` | Tangible | True | `Reg 1100(1)(b)(i)` | leasehold improvements |
+| 14 |  | `Straight-line` | Intangible | False | — | limited-life intangibles (patents, term licences) |
+| 14.1 | `5%` | `Declining balance` | Intangible | True | `Reg 1100(2)` | goodwill, incorp. costs over $3,000, client lists |
+| 50 | `55%` | `Declining balance` | Tangible | True | `Reg 1100(2)` | computers, peripherals (network gear is Class 46) |
 
 `Rate`, `Method`, and `Tangibility` are functions of the class.  
-`Half-year Default` is the class's usual treatment.  
+`Half-year Default` is the class's usual treatment, and `First-Year Basis` records which provision produces it.  
+Class 13 is the row that catches people out: Reg 1100(2) does not reach it, yet its first-year claim is still
+halved by Reg 1100(1)(b)(i), so `True` is the right flag for the wrong-looking reason.  
 The standard flow takes it as given and the software applies it by class.  
 The property ultimately decides, not the class number, so a few items can depart from the default.  
 See [Special cases](#special-cases) for per-item handling.  
@@ -130,20 +138,22 @@ Columns:
     - Or personal-use percentage, trade-in details, or ITC reductions
   - Can be left blank if there isn't anything noteworthy
 - `In Year`:
-  - Filters the [Pivot for Schedule 8](#pivot-for-schedule-8) to items that add or dispose in its selected `Year`
-  - = `OR(YEAR(Available-for-use Date) = Year, YEAR(Disposal Date) = Year)`
-  - `Year` is the parameter cell on the pivot sheet
+  - Filters the [Pivot for Schedule 8](#pivot-for-schedule-8) to items that add or dispose in the selected tax year
+  - = `OR(AND(Available-for-use Date >= FY Start, Available-for-use Date <= FY End), AND(Disposal Date >= FY Start, Disposal Date <= FY End))`
+  - `FY Start` and `FY End` are the parameter cells on the pivot sheet, holding the tax year's first and last day
 - `Year Additions`:
   - The item's contribution to its class's additions for the year
-  - = `IF(YEAR(Available-for-use Date) = Year, Capital Cost, 0)`
-  - Keyed to the available-for-use year, not the purchase year
+  - = `IF(AND(Available-for-use Date >= FY Start, Available-for-use Date <= FY End), Capital Cost, 0)`
+  - Keyed to the available-for-use date falling inside the tax year, not the purchase date
     - An item bought but not yet in service waits for the year it goes into service
+  - A corporation's taxation year is its *fiscal period* (ITA [s.249(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-249.html)), which is why these test a date range rather than `YEAR(...)`
+    - With a non-December year-end, a calendar-year test mixes activity from two different T2 returns
 - `Year AIIP Additions`:
   - The accelerated subset of `Year Additions`, the Schedule 8 AIIP/ZEV split
-  - = `IF(AND(YEAR(Available-for-use Date) = Year, AIIP Eligible), Capital Cost, 0)`
+  - = `IF(AND(Available-for-use Date >= FY Start, Available-for-use Date <= FY End, AIIP Eligible), Capital Cost, 0)`
 - `Year Dispositions`:
   - The item's contribution to its class's dispositions for the year
-  - = `IF(YEAR(Disposal Date) = Year, MIN(Proceeds, Capital Cost), 0)`
+  - = `IF(AND(Disposal Date >= FY Start, Disposal Date <= FY End), MIN(Proceeds, Capital Cost), 0)`
   - The `MIN` caps each item at its `Capital Cost`, so a sale above cost removes only the cost from the pool
     - The excess is a capital gain on Schedule 6, not recapture
 
@@ -169,9 +179,11 @@ This guide uses the following convention:
 
 T2 Schedule 8 uses one row per class, but the `Asset register` is per item.
 To fill it out, build a `pivot table` that groups the year's additions and dispositions by class:
-- `Year`: a parameter cell on the pivot sheet, set to the fiscal year you are filing
+- `FY Start` and `FY End`: parameter cells on the pivot sheet, holding the first and last day of the tax year you are filing
+  - Key CCA-history rows to the tax-year *end date*, not a four-digit calendar year, so a short year and a
+    year-end change both stay unambiguous
 - `Data`: the whole `Asset register`
-- `Filter`: `In Year` = TRUE, so only items that add or dispose in `Year` appear
+- `Filter`: `In Year` = TRUE, so only items that add or dispose between `FY Start` and `FY End` appear
 - `Rows`: `Class`, which lists exactly the classes with activity that year
 - `Values`:
   - `Sum of Year Additions` = the class's total additions, Schedule 8 "cost of acquisitions" (203)
@@ -179,7 +191,7 @@ To fill it out, build a `pivot table` that groups the year's additions and dispo
   - `Sum of Year Dispositions` = proceeds capped at cost, Schedule 8 "proceeds of dispositions"
 
 The `Year Additions`, `Year AIIP Additions`, `Year Dispositions`, and `In Year` columns are pivot helpers.  
-They live on the `Asset register` above, each keyed to `Year`.  
+They live on the `Asset register` above, each keyed to the `FY Start` / `FY End` pair.  
 Additions key off the available-for-use year and dispositions off the disposal year.  
 One year flag cannot select both, so the helpers settle each item before the pivot sums them.  
 A pivot is a snapshot, so refresh it after the register changes.  
@@ -217,11 +229,12 @@ You can record what it produces in the [CCA history](#cca-history) below.
 The filed Schedule 8 already preserves these figures.  
 Keep a copy only to hold your own per-class `Opening UCC` if you switch software.  
 
-One row per `Class` per fiscal `Year`, holding that pool's year-end figures.  
+One row per `Class` per tax year, holding that pool's year-end figures.  
 
 After Schedule 8 is filed, the software has computed each pool's CCA and carried its UCC forward.  
 Transcribe per class:
-- `Year`
+- `Tax Year End`: the year-end date, not a four-digit calendar year — a short year or a year-end change would
+  otherwise produce two rows that look identical
 - `Class`
 - `Opening UCC`: last year's `Closing UCC` for the class
 - `Additions`
@@ -351,7 +364,7 @@ So the total `Amortization` across accounts equals the total CCA across classes;
 
 At acquisition, `Capital Cost` posts to the cost line as an ordinary purchase, made when you buy rather than at year-end:
 - Debit the account's cost line (e.g. `1774` for a computer)
-- Credit `Cash` or the payable
+- Credit `Deposits` or the payable
 
 At year-end, post each row of the amortization rollup:
 - Debit the `Expense line` (`8670` tangible, `8570` intangible)
@@ -361,7 +374,7 @@ At year-end, post each row of the amortization rollup:
 On disposal, clear the item from the cost line and its contra:
 - Credit the cost line by the item's original `Capital Cost`
 - Debit the contra line by the amortization booked against it
-- Debit `Cash` or the receivable by the proceeds
+- Debit `Deposits` or the receivable by the proceeds
   - The balancing figure is the book gain or loss (GIFI `8210`, a loss entered negative)
 - The tax result (recapture, terminal loss, or capital gain) is separate, not from this entry
   - Computed on Schedule 8 and Schedule 6 and reconciled on Schedule 1
@@ -378,7 +391,8 @@ Let Schedule 1 reconcile it against the CCA claimed (see [Ledger and Accounts](.
 Keep it as the workpaper that proves the Schedule 100 capital-asset lines.  
 It also supplies the opening figures if you ever switch software.  
 
-One row per `Account` per fiscal `Year`; the cost half and the amortization half each roll forward from last year's close:
+One row per `Account` per tax year, keyed the same way by `Tax Year End`; the cost half and the amortization half
+each roll forward from last year's close:
 - `Account`
 - `Opening Cost`: the prior year's `Closing Cost` (`0` for a new account)
 - `Additions`: cost of items acquired this year that post to the account

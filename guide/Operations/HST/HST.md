@@ -103,8 +103,11 @@ flowchart TB
 - *Bad debts*: when an HST-charged invoice is written off as uncollectible, the HST comes back
   - The corp recovers it through a *bad-debt adjustment* on a future return (ETA [s.231](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-231.html))
   - The recovery requires the debt written off in the books and the supply previously taxable
-- *Inter-corporate supplies* between closely related corporations can be zero-rated by election
-  - An election under ETA [s.156](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-156.html) zero-rates most supplies between qualifying members of the group
+- *Inter-corporate supplies* between closely related corporations can be made for *nil consideration* by election
+  - The closely-related-group election under ETA [s.156](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-156.html) deems qualifying taxable supplies between members to have been made for no consideration
+  - It is not zero-rating: the supplies do not enter Schedule VI, and they stay taxable supplies in character
+  - Limits worth knowing: members must be *specified members* of a qualifying group, and sales of real property
+    and supplies of property not used exclusively in commercial activity are excluded
   - Filed jointly on Form RC4616; useful in an opco/holdco structure and out of scope here
 - *Voluntary disclosure*: missed past returns or unclaimed ITCs can be corrected
   - Through the *Voluntary Disclosures Program* (VDP) if the corp comes forward before CRA initiates contact

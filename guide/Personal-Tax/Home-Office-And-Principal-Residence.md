@@ -72,7 +72,10 @@ CRA does not apply the change-in-use rules to a home office when all three condi
 This is why [Owner-Corporation Transactions](../Paying-Yourself/Owner-Corporation-Transactions.md#home-office)
 and [T2125 and Expenses](../Sole-Proprietorship/T2125-And-Expenses.md#business-use-of-home) both warn against CCA:
 - Running costs (utilities, maintenance) stay claimable without consequence for the exemption
-- CCA is the step that converts the portion into depreciable income-producing property
+- CCA is not what causes the income-producing use — the use itself did that, when the space started earning income
+  - What CCA does is forfeit the administrative concession above, which is the only thing keeping the partial-change
+    rule switched off
+  - CRA can then apply that rule from the earlier date the use began, not from the year the CCA was claimed
 - The few dollars of CCA are never worth exposing a share of the home's gain to tax
 
 For a full conversion (the home becomes a rental, or a rental becomes the home), elections can defer

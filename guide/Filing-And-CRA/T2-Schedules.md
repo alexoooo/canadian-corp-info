@@ -110,7 +110,14 @@ Answer the questions accurately rather than aspirationally.
 Multiple income statements arise from operating distinct businesses; a single-activity CCPC files one S125 and no S140.  
 
 The *T2 Short Return* is a two-page jacket for the simplest returns:
-- Eligibility: a CCPC throughout the year with nil net income or a loss, a permanent establishment in one province, no refundable credits claimed, and no taxable dividends paid or received (see TODO)
+- Screening list, not the whole test — confirm against CRA's current conditions before filing the short jacket:
+  - A CCPC throughout the year, with nil net income or a loss
+  - A permanent establishment in one province only
+  - No refundable credits claimed, and no taxable dividends paid or received
+  - Reporting in Canadian currency
+  - No Ontario transitional tax debit
+  - No amount calculated under ITA s.34.2
+- A corporation can satisfy the first four and still be ineligible on the last three
 - A dormant or first-year corporation is the typical filer
 - The GIFI statements (S100, S125, S141) still attach; T2 software often files the full jacket regardless, which is equally valid
 
@@ -146,9 +153,16 @@ Filed in the years something happens:
 | S24 | First-time Filer after Incorporation, Amalgamation, or Wind-up | the first T2 | [Starting Up](../Corporate-Lifecycle/Starting-Up.md) |
 | S101 | Opening Balance Sheet Information | the first T2's opening GIFI | [Starting Up — Funding the corporation](../Corporate-Lifecycle/Starting-Up.md#funding-the-corporation) |
 | S9 | Related and Associated Corporations | a second corporation enters the picture | [Corporate Structure](../Corporate-Lifecycle/Corporate-Structure/Corporate-Structure.md) |
-| S23 | Agreement Among Associated CCPCs to Allocate the Business Limit | associated CCPCs | [Small Business Tax](../Overview/Small-Business-Tax.md#what-is-corporate-tax) |
-| S44 | Non-Arm's Length Transactions | a non-arm's-length rollover (e.g. s.85) | [Starting Up](../Corporate-Lifecycle/Starting-Up.md#bringing-in-assets), [Business Acquisition](../Corporate-Lifecycle/Business-Acquisition/Business-Acquisition.md) |
+| S23 | Agreement Among Associated CCPCs to Allocate the Business Limit | associated CCPCs | [Small Business Tax](../Overview/Small-Business-Tax.md#corporate-tax) |
+| S44 | Non-Arm's Length Transactions | assets to or from a non-arm's-length *corporation* | [Business Acquisition](../Corporate-Lifecycle/Business-Acquisition/Business-Acquisition.md) |
 | S11 | Transactions with Shareholders, Officers or Employees | certain property transactions | [Owner-corporation transactions](../Paying-Yourself/Owner-Corporation-Transactions.md) |
+
+*S44* has a narrower trigger than "any non-arm's-length rollover":
+- It applies where the filer transferred assets to, or received assets from, a non-arm's-length *corporation* and
+  s.85(1), s.85(2), or s.142.7(3) applied
+- Rolling an individual's proprietorship assets into their own corporation is a s.85(1) transfer from a *person*,
+  not from a corporation, so it does not trigger S44
+  - The relevant form there is the T2057 election; see [Starting Up](../Corporate-Lifecycle/Starting-Up.md#bringing-in-assets)
 
 *S2* tracks corporate donations like S4 tracks losses:
 - The deduction (not a credit, at the corporate level) is capped at 75% of net income

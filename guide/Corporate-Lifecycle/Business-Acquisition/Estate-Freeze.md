@@ -111,7 +111,8 @@ Whether to crystallize at all, rather than leave the exemption for a future sale
 ## Funding Retirement by Redeeming the Freeze Shares
 
 The freeze does not by itself put cash in the parent's hands; the preferred shares do that as they are redeemed.  
-The corporation redeems the freeze preferred shares over time, out of retained earnings.  
+The corporation redeems the freeze preferred shares over time, as its cash flow allows and within the corporate-law
+solvency tests; retained earnings measures how much profit has accumulated, not how much cash is available.  
 The basis is the same as any share-funded purchase (see [Preferred-Share Consideration](Preferred-Share-Consideration.md)).  
 Each redemption above paid-up capital is a deemed dividend under ITA [s.84(3)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-84.html).  
 
@@ -167,8 +168,12 @@ This multiplication is one of the freeze's planning attractions.
 ## Corporate Attribution Trap
 
 A freeze benefiting a *designated person* can trigger corporate attribution under ITA [s.74.4(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-74.4.html).  
-A designated person is the freezor's spouse, or a trust with minor beneficiaries.  
-The freezor is taxed on deemed interest at the prescribed rate on the value frozen.  
+A designated person is the freezor's spouse or common-law partner, or a person under 18 who does not deal at arm's
+length with the freezor (or is a niece or nephew) — ITA [s.74.5(5)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-74.5.html).  
+A *trust* is not itself a designated person; s.74.5(9) can treat a transfer to a trust as a transfer for the benefit
+of a designated beneficiary, which is how a family trust reaches these rules.  
+The freezor is taxed on deemed interest at the prescribed rate on the *outstanding amount* defined in s.74.4(3),
+not invariably on the full value frozen.  
 The deemed amount is reduced by dividends actually paid out.  
 The rule applies only while the corporation is *not* a *small business corporation* (s.74.4(2)(c)).  
 It mainly bites where the frozen corporation holds investment assets rather than running an active business.  

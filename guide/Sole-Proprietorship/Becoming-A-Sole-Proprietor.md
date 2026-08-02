@@ -11,7 +11,10 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
 - You and the business are one taxpayer; the income lands on form T2125 inside your T1
 - No Business Number is needed until a program account opens (GST/HST `RT`, payroll `RP`)
   - Until then your SIN is the identifier
-- A client paying you more than $500 of fees in a year reports it on a T4A (box 048); nothing is withheld from it
+- A business client paying you fees may report them on a T4A (box 048); nothing is withheld from it
+  - The threshold and how far CRA presses the requirement are not settled here
+  - See [Paying Contractors](../Operations/Paying-Contractors.md) for the payer's side and the open question
+  - Report the income from your own records either way — a slip that never arrives changes nothing
 - In Ontario, operating under a name other than your own legal name requires a Business Names Act registration
 - Whether you are self-employed at all is CRA's employment-status determination, not the label on the contract
 

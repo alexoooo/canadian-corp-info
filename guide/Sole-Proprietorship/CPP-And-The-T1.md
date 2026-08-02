@@ -55,8 +55,12 @@ Self-employment sits outside regular EI: no premiums and no entitlement to regul
 A voluntary opt-in exists for *special* benefits only (Employment Insurance Act, Part VII.1, [s.152.02](https://laws-lois.justice.gc.ca/eng/acts/E-5.6/section-152.02.html)):
 - Maternity, parental, sickness, and compassionate-care / family-caregiver benefits
 - Enter the agreement through My Service Canada Account
-- Cancelling is only possible *before* any benefits are paid, effective December 31 of the notice year
-  - Once benefits have been paid, the agreement is effectively permanent
+- Two ways out, and the first one is easy to miss:
+  - *Within 60 days of entering the agreement*: give notice and the agreement is deemed never to have been entered
+    into (EIA s.152.02(4))
+  - *After that*: cancellation is possible only while no benefits have been paid, effective December 31 of the
+    notice year (s.152.02(5))
+  - Once benefits have been paid, the agreement is effectively permanent (s.152.02(7))
 - The same regime serves an incorporated >40% owner-manager; see [Payroll](../Paying-Yourself/Payroll.md#source-deductions)
 
 

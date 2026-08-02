@@ -74,7 +74,11 @@ ITA [s.39(1)(c)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-39.html)
 - Qualifying dispositions: an s.50(1) election, or an actual sale to an arm's-length person
 - Qualifying property: a share of a small business corporation, or a debt owing by a CCPC that is one (or was one when it went bankrupt or into an insolvent winding-up)
 - The allowable half (the *ABIL*) deducts against income from any source, not just capital gains
-- An ABIL the year cannot absorb joins the non-capital loss pool rather than the net-capital one (see TODO for the carryforward clock)
+- An ABIL the year cannot absorb joins the non-capital loss pool rather than the net-capital one, but only for a while
+  - It stays in the non-capital loss through the **10** following tax years (ITA [s.111(8)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-111.html), the `non-capital loss` definition, paragraph E(c))
+  - Whatever is still unused then moves into the *net capital loss* computation (amount C of that definition)
+  - After year ten it can shelter only capital gains — the against-any-income advantage is gone
+  - So it is the 10-year clock that governs, not the ordinary 20-year non-capital-loss rule described below
 - The CDA is still reduced: for CDA purposes the business investment loss counts like any other capital loss (ITA [s.89(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-89.html))
   - A corporation holding CDA capacity can pay the capital dividend out before realizing the ABIL
 
@@ -115,7 +119,11 @@ The request:
 - Made on Schedule 4 of the *loss-year* return: enter the amount to apply against each of the three prior years
 - No separate form and no amended prior-year return; the reassessment follows from the S4 entries
 - The refund arises only once the loss-year return is filed
-  - Refund interest runs from that point, not from when the prior year's tax was paid (ITA [s.164(5)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-164.html))
+  - Refund interest does *not* run from when the prior year's tax was paid
+  - Under ITA [s.164(5)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-164.html) the overpayment is deemed
+    to arise 30 days after the *latest* of the listed days, which include the first day after the loss year, the day
+    the loss-year return was filed, and the day any later prescribed form or written request was filed
+  - Filing is one input into that test, not the interest start date
 
 Bookkeeping, in tax-basis books:
 
@@ -130,7 +138,7 @@ Receiving the reassessment refund:
 
 | Account | Debit | Credit |
 |---|---|---|
-| `Cash` (`1001`) | 7,320.00 | |
+| `Deposits` (`1002-1`) | 7,320.00 | |
 | `Taxes recoverable` (`1483`) | | 7,320.00 |
 
 Any refund interest CRA adds is interest income in the year received.  
@@ -147,14 +155,18 @@ Applying it:
 - Within each type, losses apply oldest-first (ITA [s.111(3)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-111.html)); you cannot save an older loss while spending a newer one
 - A non-capital loss expires at the end of its 20th following tax year; a net capital loss never expires
   - Losses from tax years ended before 2006 had shorter limits
+  - An unused *ABIL* inside the non-capital loss is the exception: it converts to a net capital loss after 10 years
 
-Track the balances in a small continuity schedule mirroring S4, one row per origin year:
+Track the balances in a small continuity schedule mirroring S4, one row per origin year *and type* — an ABIL inside
+the non-capital pool runs on its own clock and needs its own row:
 
-| Origin year | Arose | Applied | Balance | Expires after |
-|---|---|---|---|---|
-| FY2026 | 60,000.00 | 12,000.00 (FY2027) | 48,000.00 | FY2046 |
+| Origin year | Type | Arose | Applied | Balance | Expires after |
+|---|---|---|---|---|---|
+| FY2026 | Non-capital | 60,000.00 | 12,000.00 (FY2027) | 48,000.00 | FY2046 |
+| FY2029 | Non-capital (ABIL) | 15,000.00 | 0.00 | 15,000.00 | FY2039, then converts to a net capital loss |
 
 The expiry column is the point of the schedule.  
+The ABIL row does not disappear at its date; it changes character, and from then on can shelter only capital gains.  
 An expiring balance should redirect the [discretionary CCA](../Operations/Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md#discretionary-cca) decision and the salary/bonus level before it dies.  
 
 
@@ -162,11 +174,11 @@ An expiring balance should redirect the [discretionary CCA](../Operations/Cost-R
 
 A loss displaces the tax on whichever income it is applied against.  
 Income types are taxed at very different permanent rates.  
-Combined Ontario 2026 rates, and what a displaced dollar permanently saves:
+Combined Ontario rates for a calendar-2026 tax year, and what a displaced dollar permanently saves:
 
 | Income displaced | Tax saved now | Refundable portion forfeited | Permanent saving |
 |---|---|---|---|
-| SBD-rate ABI | 12.2% | | 12.2% |
+| SBD-rate ABI | ≈ 11.7% | | ≈ 11.7% |
 | General-rate ABI | 26.5% | | 26.5%, less the forfeited GRIP addition |
 | AII (investment income) | 50.2% | 30⅔% | ≈ 19.5% |
 
@@ -184,7 +196,7 @@ The lever is target-year selection, not line-item selection:
   - You cannot direct it at one income type within the year
 - But you choose *which* year (three back, twenty forward) and *how much*
   - Aim it at years whose marginal income is high-permanent-rate
-- Timing still counts: a 12.2% refund today can beat a 26.5% saving that only materializes years out
+- Timing still counts: an 11.7% refund today can beat a 26.5% saving that only materializes years out
 
 Deferring CCA is the other half of the decision (see [Discretionary CCA](../Operations/Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md#discretionary-cca)):
 - Claiming full CCA in a loss year deepens a balance that expires in 20 years
@@ -193,7 +205,7 @@ Deferring CCA is the other half of the decision (see [Discretionary CCA](../Oper
 
 ## Worked Example
 
-FY2025: taxable income $80,000, all SBD-rate ABI → tax at 12.2% = $9,760 paid.  
+FY2025: taxable income $80,000, all SBD-rate ABI → tax at the 2025 combined rate of 12.2% = $9,760 paid.  
 FY2026: deductions exceed income by $60,000 → taxable income nil, non-capital loss $60,000.  
 
 Carryback (chosen here):
@@ -203,7 +215,7 @@ Carryback (chosen here):
 - S4 closing balance: $0
 
 Carryforward (the alternative):
-- Worth considering if FY2027+ income will be taxed above 12.2%
+- Worth considering if FY2027+ income will be taxed above 11.2%, the combined SBD rate from July 1, 2026
   - General-rate ABI from an SBD grind, or a mix with AII (mind the refundable-portion trap above)
 - At 26.5% the same $60,000 saves $15,900 later instead of $7,320 now
 - The cost is time and risk: the refund is immediate and certain, the higher-rate future income is neither

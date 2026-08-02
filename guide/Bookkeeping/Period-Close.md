@@ -40,7 +40,7 @@ flowchart LR
 
 ## Bank Reconciliation
 
-A *bank reconciliation* proves the ledger `Cash` account against the bank statement for the same date.  
+A *bank reconciliation* proves the ledger `Deposits` account against the bank statement for the same date.  
 The two rarely match on their face, because each side knows things the other does not yet:
 - *Outstanding cheques*: written and booked, but not yet cleared by the bank
 - *Deposits in transit*: received and booked, but not yet credited by the bank
@@ -56,7 +56,7 @@ Worked example, April 30:
 | Less: outstanding cheque #42 (rent) | −$700 |
 | Plus: deposit in transit (client e-transfer, Apr 30) | +$500 |
 | **Adjusted bank balance** | **$12,850** |
-| Ledger `Cash` (1001) balance | $12,865 |
+| Ledger `Deposits` (1002-1) balance | $12,865 |
 | Less: April service fee, on the statement only | −$15 |
 | **Adjusted book balance** | **$12,850** |
 
@@ -64,7 +64,7 @@ The two sides tie at $12,850.
 The bank-side items need no entry — they clear on their own.  
 The book-side items do; post the fee the statement revealed:
 - Debit `Interest and bank charges` (GIFI 8710) = $15
-- Credit `Cash` (1001) = $15
+- Credit `Deposits` (1002-1) = $15
 
 A difference that survives the known reconciling items means a posting error: a transposed figure, a missed entry, or a duplicate.  
 Find it in the month it arose — compare the statement line by line against the ledger postings for that account.  
@@ -76,7 +76,7 @@ Carrying an unexplained difference forward as a plug buries the error; see [Plug
 The corporate credit card reconciles the same way, against its own statement:
 - The ledger account is the `Credit card payable` sub-account of `2620` (see [Ledger and Accounts](Ledger-And-Accounts.md#chart-of-accounts))
 - Each statement charge should already be posted as Debit expense / Credit `Credit card payable`
-- The payment to the card is Debit `Credit card payable` / Credit `Cash` — not an expense
+- The payment to the card is Debit `Credit card payable` / Credit `Deposits` — not an expense
   - Booking the card payment to an expense line double-counts every charge; this is the most common card-posting error
 - Reconciling items are charges posted in the ledger but not yet on the statement (timing), plus interest or annual fees on the statement but not yet booked
 

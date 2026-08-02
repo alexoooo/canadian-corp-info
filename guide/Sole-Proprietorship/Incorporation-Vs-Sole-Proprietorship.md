@@ -30,7 +30,7 @@ $100,000 of consulting profit, Ontario:
 | | Sole proprietor | CCPC |
 |---|---|---|
 | Taxpayers | one: you (T1) | two: the corp (T2) plus you (T1) |
-| Tax this year | your marginal rates on the full profit | ≈ 12.2% now; personal tax only on what you take out |
+| Tax this year | your marginal rates on the full profit | ≈ 11.7% in 2026; personal tax only on what you take out |
 | The money you live on | already yours, after tax | extracted as salary or dividends, taxed then |
 | CPP | both halves, mandatory (Schedule 8) | salary: both halves; dividends: none |
 | RRSP room | accrues on the earned income | salary yes, dividends no |
@@ -48,7 +48,8 @@ What follows is the lines that actually differ.
 
 ## Deferral Is the Engine
 
-- The gap: roughly 12.2% small-business rate against personal marginal rates reaching ~53.5% at the Ontario top bracket
+- The gap: a small-business rate of ≈ 11.7% for calendar 2026 (11.2% from July 1, 2026 onward) against personal
+  marginal rates reaching ~53.5% at the Ontario top bracket
 - The gap is deferral, not forgiveness: personal tax comes due when the money comes out
 - It compounds only on profit left in the corp
   - A contractor who spends everything earned gets no deferral, only the structure's costs
@@ -132,7 +133,10 @@ The common path is sequential: start sole, incorporate once deferral or a client
   - It requires substantially all the property needed to carry on the business
   - The buyer must be a registrant where the seller is one
   - Register the corp's `RT` account before the transfer, then close your own
-- The corp starts its own clocks: BN, small-supplier test, first-year T2 (see [Starting Up](../Corporate-Lifecycle/Starting-Up.md#first-year-clocks))
+- The corp starts its own BN and its own first-year T2 clock (see [Starting Up](../Corporate-Lifecycle/Starting-Up.md#first-year-clocks))
+  - The small-supplier test is *not* a fresh clock: you and the corporation are associates under ETA s.127(2), so
+    your prior taxable supplies can count toward its threshold
+    - See [HST for Sole Proprietors](HST-For-Sole-Proprietors.md#registration-keyed-to-you)
 
 
 ## Related
@@ -165,4 +169,6 @@ The common path is sequential: start sole, incorporate once deferral or a client
 
 - Work a full numeric sole-prop-vs-corp example at one or two profit levels with verified 2026 Ontario T1 brackets
   - Align with the Salary-vs-Dividends TODO on the same arithmetic
-- Reconcile the 12.2% SBD figure with the Ontario mid-2026 rate cut once the maintainer settles mid-year quoting
+- Confirm the mid-year rate convention applied here: figures pinned to their period, straddle years prorated by
+  days (calendar 2026 ≈ 11.7%)
+  - Stated canonically in [Small Business Tax Overview](../Overview/Small-Business-Tax.md#corporate-tax)

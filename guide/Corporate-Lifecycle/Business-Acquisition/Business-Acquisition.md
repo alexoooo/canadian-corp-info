@@ -3,14 +3,16 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
 # Business Acquisition
 
 **Who this is for**:
-- Owner of a Canadian-controlled private corporation (CCPC) with retained earnings
+- Owner of a Canadian-controlled private corporation (CCPC) with accumulated profits
 - Want to buy an existing business and pay the previous owners over time
 - The previous owners may be third parties or family, and may take payment in shares rather than cash
 
 **TLDR**:
 - Two structural forks decide the deal: *asset purchase versus share purchase*, and *cash versus share consideration*
-- Paying the vendors with *preferred shares* of the buyer corporation turns the purchase price into equity
-  - The corporation redeems that equity over time from retained earnings
+- Paying the seller with *preferred shares* of the buyer corporation turns the purchase price into equity
+  - The corporation redeems that equity over time as cash allows, subject to the corporate-law solvency tests
+- Who the seller is depends on the structure: the target's shareholders, an unincorporated proprietor, or the
+  *target corporation itself* on an incorporated-target asset sale
 - When the vendors are family, the same machinery is an *estate freeze*
 - These transactions need a tax advisor and a lawyer; this page is orientation, not a procedure
 
@@ -23,43 +25,53 @@ Limitations:
 - The following is my understanding as of 2026
 
 
-## The Scenario
+## Acquisition Scenario
 
 The starting position has two corporations' worth of moving parts:
 - An *existing business* you want to buy; it may or may not be incorporated
-- Your *existing corporation*, holding retained earnings you can put toward the purchase
+- Your *existing corporation*, with accumulated profits and the cash flow to fund a purchase
+  - Retained earnings measures profit earned and not yet distributed; it is an equity balance, not a fund of money
+  - A purchase, a dividend, or a redemption needs actual liquidity, and has to clear the statute's solvency tests
 
-The goal is to buy the business and pay the previous owners, without handing over the whole price in cash on day one.  
-The route this page focuses on is paying the vendors with *preferred shares* of your corporation.  
-The corporation then redeems those shares over the following years out of its earnings.  
+The goal is to buy the business and pay the seller, without handing over the whole price in cash on day one.  
+The route this page focuses on is paying with *preferred shares* of your corporation.  
+The corporation then redeems those shares over the following years as cash permits.  
 
 This is a *vendor take-back* done in equity rather than as a loan.  
 It defers the vendors' tax and spreads the corporation's cash outflow over years.  
 When the vendors are family, it doubles as a succession plan.  
 
 
-## Two Forks
+## Purchase Structure and Consideration
 
 Every version of the deal is a combination of two choices.  
 
 ```mermaid
 flowchart TB
     Target{{"Target business"}}
-    Target -->|"not incorporated"| Asset["Asset purchase"]
+    Target -->|"not incorporated"| AssetU["Asset purchase<br/>from the proprietor or partners"]
     Target -->|"incorporated"| Choose{{"Asset or share purchase"}}
-    Choose --> Asset
-    Choose --> Share["Share purchase"]
-    Asset --> Consid{{"How to pay the vendor"}}
+    Choose --> AssetC["Asset purchase<br/>from the target corporation"]
+    Choose --> Share["Share purchase<br/>from the target's shareholders"]
+    AssetU --> Consid{{"How to pay the seller"}}
+    AssetC --> Consid
     Share --> Consid
     Consid -->|"cash or vendor note"| Cash["Cash / debt"]
     Consid -->|"shares"| Pref["Preferred-share consideration"]
-    Pref -.->|"vendor is family"| Freeze["Estate-freeze variant"]
+    Pref -.->|"seller is family"| Freeze["Estate-freeze variant"]
 ```
 
-*Structure* (what you buy):
-- If the target is not incorporated, there are only assets to buy
-- If the target is incorporated, you can buy its assets or its shares
+*Structure* (what you buy, and from whom):
+- If the target is not incorporated, there are only assets to buy, and the proprietor or partners are the sellers
+- If the target is incorporated, you can buy its shares from its shareholders, or its assets from the corporation
   - The vendor and the buyer usually prefer opposite answers (see [Asset vs Share Purchase](Asset-vs-Share.md))
+- The three routes are not interchangeable, because they have different counterparties:
+  - *Share purchase*: the shareholders sell and receive the consideration
+  - *Unincorporated asset purchase*: the proprietor or partners transfer the assets and receive the consideration
+  - *Incorporated-target asset purchase*: the **target corporation** owns the assets, so it is the transferor and it
+    receives the cash or the s.85 shares — not its shareholders
+    - The target pays tax on its own disposition, and a second layer falls due when its owners extract the proceeds
+    - Preferred shares issued on this route sit on the target's balance sheet
 
 *Consideration* (how you pay):
 - Cash, or a promissory note (debt the corporation pays down over time)

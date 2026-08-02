@@ -107,12 +107,15 @@ Worked example (per-km allowance):
 
 Ledger entry for the allowance:  
 Debit: `Vehicle expenses` (`9281`) = $7,670  
-Credit: `Cash` (`1001`), or `Due to shareholder` (`2780`) if settled later = $7,670  
+Credit: `Deposits` (`1002-1`), or `Due to shareholder` (`2780`) if settled later = $7,670  
 
-GST/HST on the allowance:
+GST/HST on the allowance, *under the regular method*:
 - An HST-registered corp may claim a *deemed input tax credit* on a reasonable km allowance (ETA [s.174](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-174.html))
   - The ITC equals the tax fraction of the allowance
 - In a 13% HST province: $7,670 × 13/113 ≈ $882; book the ITC to `HST receivable` and net it out of the expense (see [HST](../Operations/HST/HST.md))
+- *Under the Quick Method* there is no such claim: the formula already replaces operating-expense ITCs
+  - Post the full $7,670 to `Vehicle expenses` and make no `HST receivable` entry
+  - Only capital purchases keep a separate ITC under the Quick Method (see [HST Quick Method](../Operations/HST/HST-Quick-Method.md))
 
 ### Corporate Car Used Personally
 
@@ -139,9 +142,16 @@ Worked example (corporate car, mostly business):
 - Operating cost benefit: 8,000 personal km × 34¢ = $2,720 (the ½-standby alternative would be ≈ $2,440 if elected)
 - Total taxable benefit on the T4: $4,881 + $2,720 = $7,601
 
-The benefit is a T4-reporting figure, not a separate ledger posting:
-- The corp has already expensed the actual CCA, fuel, and insurance in its books
-- The $7,601 is added to the owner's employment income (T4 box 34, included in box 14); no journal entry moves cash
+The benefit changes no expense account, but it is not slip-only — it runs through the payroll cycle:
+- The corp has already expensed the actual CCA, fuel, and insurance in its books, so nothing moves there
+- The $7,601 is added to the owner's employment income (T4 box 34, included in box 14) and reported in box 26 as
+  CPP pensionable earnings
+- A non-cash taxable benefit is *CPP-pensionable*, so the employer must include it in a pay period, deduct the
+  employee CPP on it where there is enough cash remuneration to withhold from, match it, and remit both halves
+  - Skipping this is the classic route to a PIER assessment after the T4s are filed
+  - Where cash remuneration is too small to withhold the employee's share, the employer still owes and remits its
+    own share; the employee settles the rest on the T1
+  - See [Payroll](Payroll.md) for the pay-run mechanics
 - The HST-registered corp must also remit HST on the benefit (ETA [s.173](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-173.html))
 
 Why the personal-car structure usually wins for an owner-manager:
@@ -170,15 +180,25 @@ Three routes, cleanest first:
 
 Worked example (owner's tool sold to the corp):
 - The owner personally owns a piece of equipment now used entirely in the business; its FMV is $5,000
-- The owner sells it to the corp at the $5,000 FMV; the corp adds $5,000 to its Class 8 UCC pool
+- The owner sells it to the corp at the $5,000 FMV
+- The corp's *ledger* cost is $5,000, but its *capital cost* for CCA is set by ITA s.13(7)(e), because the parties
+  do not deal at arm's length
+  - Pay less than the owner originally paid and the capital cost is the owner's original cost, with the difference
+    deemed already claimed as CCA — so UCC still opens at $5,000, but recapture is measured against the higher figure
+  - Get the owner's original cost before opening the class; see [Starting Up — Bringing in assets](../Corporate-Lifecycle/Starting-Up.md#bringing-in-assets)
 
 Ledger entry on the corp's books:  
 Debit: `Equipment` (`1740`) = $5,000  
-Credit: `Cash` (`1001`), or `Due to shareholder` (`2780`) = $5,000  
+Credit: `Deposits` (`1002-1`), or `Due to shareholder` (`2780`) = $5,000  
 
-Personal side of the sale:
-- The equipment is *personal-use property*: a sale at or below cost produces no gain, and a loss is denied
-- The $1,000 floor under ITA [s.46](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-46.html) treats cost and proceeds as at least $1,000 each
+Personal side of the sale, assuming the owner bought the equipment for personal use and never used it to earn income:
+- On that assumption it is *personal-use property* — ITA [s.54](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-54.html)
+  turns on property "used primarily for the personal use or enjoyment" of the taxpayer, so holding title is not the test
+  - A sale at or below cost produces no gain, and a loss is denied
+  - The $1,000 floor under ITA [s.46](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-46.html) treats cost and proceeds as at least $1,000 each
+- If instead the owner used it to earn income — as a sole proprietor before incorporating, say — it is depreciable
+  or income-producing property, the s.46 floor does not apply, and any earlier change of use has its own consequences
+- Establish which history applies before pricing the transfer
 - A gain only arises if the asset appreciated above cost, which is uncommon for depreciating equipment
 - ITA s.69 makes one-sided adjustments, not a symmetric correction:
   - Sell to the corp *above* FMV: s.69(1)(a) caps only the corp's cost at FMV, while you are taxed on the full price
@@ -292,7 +312,7 @@ The same employee-versus-shareholder framing recurs across a cluster of common i
 
 Ledger entry for a personal cost run through the corp account:  
 Debit: `Due from shareholder` (`1300`) = amount  
-Credit: `Cash` (`1001`) = amount  
+Credit: `Deposits` (`1002-1`) = amount  
 
 *Salary to family members*:
 - A salary to a spouse or child is deductible only to the extent it is *reasonable* for work actually performed
@@ -425,7 +445,7 @@ Funding the corp from personal money is the common direction for an owner-manage
   - Corporate attribution under ITA [s.74.4](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-74.4.html) targets benefiting a designated person
 
 Ledger entry when the owner lends $5,000 to the corp:  
-Debit: `Cash` (`1001`) = $5,000  
+Debit: `Deposits` (`1002-1`) = $5,000  
 Credit: `Due to shareholder` (`2780`) = $5,000  
 
 Repaying the owner later reverses this entry, with no tax to the owner on the principal returned.  

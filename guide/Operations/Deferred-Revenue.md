@@ -78,7 +78,7 @@ Receiving a $10,000 retainer plus 13% HST on December 15:
 
 | Account | Debit | Credit |
 |---|---|---|
-| `Cash` (`1001`) | 11,300.00 | |
+| `Deposits` (`1002-1`) | 11,300.00 | |
 | `Deferred income` (`2770`) | | 10,000.00 |
 | `HST collected` | | 1,300.00 |
 

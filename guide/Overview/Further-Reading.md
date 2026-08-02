@@ -24,15 +24,18 @@ Limitations:
 ## Touched on but Not Worked Through
 
 - *Corporate-owned life insurance and the CDA credit*
-  - The non-taxable portion of a life-insurance payout to the corporation credits the capital dividend account
+  - The CDA credit is the death-benefit proceeds *less the policy's adjusted cost basis immediately before death*,
+    subject to the statutory adjustments — not a taxable/non-taxable split of the payout
   - ITA [s.89(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-89.html), paragraph (d)
   - Nearest coverage: [Capital Dividend Account](../Investments/Capital-Dividend-Account/Capital-Dividend-Account.md)
     - It works only the capital-gains source and flags this one as out of scope
     - Plus the premium-deductibility note in [Owner-Corporation-Transactions](../Paying-Yourself/Owner-Corporation-Transactions.md)
 - *Imported-services GST/HST self-assessment*
   - The ETA Division IV self-assessment: [s.218](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-218.html), with [s.218.1](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-218.1.html) for the provincial part
-  - It nets to zero for a CCPC using the imported service entirely in commercial activity
-  - The exempt-supply and mixed-use case is left open
+  - A service or intangible acquired *exclusively* for commercial activities is excluded from the definition of an
+    imported taxable supply by [s.217](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-217.html), so no
+    Division IV tax arises in the first place — it is not tax that arises and is then recovered by an ITC
+  - Self-assessment is the mixed-use, non-exclusive, and exempt-use case, which is left open here
   - Nearest coverage: [HST](../Operations/HST/HST.md)
 - *Employee-vs-contractor determination*: the multifactor worker-status test the corp applies to people it pays
   - The slip and withholding consequences of the answer are worked in [Paying Contractors](../Operations/Paying-Contractors.md)
@@ -54,7 +57,7 @@ Limitations:
 - *Inter-corporate dividends beyond safe income*: ITA [s.55(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-55.html) can recharacterize a dividend between connected corporations as a capital gain
   - Live once a holdco receives dividends from an opco past the opco's *safe income*; professional-advice territory
   - Nearest coverage: [Corporate Structure](../Corporate-Lifecycle/Corporate-Structure/Corporate-Structure.md#related-and-associated-corporations) for when corporations are connected in the first place
-- *Asset-sale elections on receivables and assumed obligations*: ITA [s.22](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-22.html) (joint election selling receivables at face, preserving bad-debt deductions) and [s.20(24)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-20.html) (payment for assuming deferred-revenue obligations)
+- *Asset-sale elections on receivables and assumed obligations*: ITA [s.22](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-22.html) (joint election on a sale of qualifying receivables for agreed consideration: the vendor deducts face amount less consideration, the purchaser includes the same amount, preserving bad-debt deductions — face value is a common price, not a statutory requirement) and [s.20(24)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-20.html) (payment for assuming deferred-revenue obligations)
   - Nearest coverage: [Asset vs Share](../Corporate-Lifecycle/Business-Acquisition/Asset-vs-Share.md) for the sale structure; the s.22 election is mentioned in [Estate Freeze](../Corporate-Lifecycle/Business-Acquisition/Estate-Freeze.md); [Deferred Revenue](../Operations/Deferred-Revenue.md) for the obligations being assumed
 - *The sole shareholder's death*: the deemed disposition of the shares, the double-tax problem, the s.164(6) loss carryback, and pipeline planning
   - [Estate Freeze](../Corporate-Lifecycle/Business-Acquisition/Estate-Freeze.md) covers the succession *plan*; the death itself is professional-advice territory

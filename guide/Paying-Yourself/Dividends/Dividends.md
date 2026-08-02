@@ -83,7 +83,9 @@ It does not distribute profit out of retained earnings.
 
 Some situations you might encounter:
 - *Return of capital* out of *stated capital* / *paid-up capital* (PUC)
-  - A distribution that reduces PUC is *deemed* to be a dividend under ITA s.84(4), with limited exceptions
+  - On a PUC reduction, only the amount paid *in excess of* the PUC reduction is deemed a dividend under ITA s.84(4)
+    - The PUC portion itself is a genuine return of capital, not a dividend
+    - It reduces the shareholder's ACB in the shares (ITA [s.53(2)(a)(ii)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-53.html)), and once that ACB is exhausted a further return is a capital gain (ITA [s.40(3)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-40.html))
   - In a typical owner-manager CCPC the founder's incorporator shares were issued for $1 or $100
     - That PUC is too small to support a meaningful return-of-capital distribution
 - Share *redemption*: when the corporation buys back shares
@@ -230,7 +232,11 @@ Capital dividends paid reduce it.
 See [Capital-Dividend-Account.md](../../Investments/Capital-Dividend-Account/Capital-Dividend-Account.md) for the mechanics.  
 They cover CDA tracking, the s.83(2) election, Form T2054 filing, and the Part III tax penalty for over-electing.  
 
-The CDA balance is read at the time the s.83(2) election is filed.  
+The CDA balance that caps the dividend is the balance *immediately before the dividend becomes payable*
+(ITA s.83(2)(a)).  
+Filing the election can happen earlier, so gains or losses realized between filing and the payable date change the
+capacity — and an election filed against a balance that has since shrunk becomes excessive.  
+Re-check the balance at the payable date, not just at filing.  
 Any capital losses realized between your last balance check and the election date reduce the available balance.  
 Overdrawing triggers a 60% Part III tax (ITA s.184(2)).  
 
@@ -260,8 +266,14 @@ For the year-end timing, see [Declaring and paying a dividend](Declaring-And-Pay
 ### Stranded GRIP and ERDTOH
 
 A CCPC that receives eligible dividends but only ever pays non-eligible dividends strands both GRIP and ERDTOH.  
-The stranded balances cannot be transferred, sold, or rolled out, and are lost at wind-up.  
-The fix is to designate future dividends as eligible up to the running GRIP balance, draining both pools together.  
+The stranded balances cannot be transferred, sold, or rolled out, and anything still unused when the corporation is
+dissolved is gone.  
+That is not the same as saying a wind-up wastes them: the winding-up distribution itself produces a deemed dividend
+under ITA [s.84(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-84.html), which can be designated
+eligible against GRIP and can trigger a dividend refund out of ERDTOH or NERDTOH.  
+Qualifying amalgamations and wind-ups have their own continuation rules for tax attributes (ITA s.87, s.88).  
+So the fix is to plan the pools *before* dissolution — designate future dividends as eligible up to the running GRIP
+balance, and size the sweep dividends to drain the refundable accounts, watching the refund limitation periods.  
 For the full stranding mechanics and catch-up remediation, see [ERDTOH-NERDTOH.md / Stranding](ERDTOH-NERDTOH.md#stranding).
 
 

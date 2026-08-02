@@ -41,7 +41,7 @@ flowchart TB
     SAL["T4: salary<br/>(deductible, pre-tax)"]
     DEC{{"Dividend decision:<br/>eligible · non-eligible · capital"}}
     T2["Year-end T2:<br/>S3 · S4 · S53 · S55 · S6 · S8"]
-    OUT["Outputs:<br/>dividend refund · T5 / T2054 to shareholder"]
+    OUT["Outputs:<br/>dividend refund · T5 to shareholder<br/>T2054 election to CRA"]
     T1(["Shareholder T1:<br/>salary · gross-up plus DTC"])
 
     OPS --> BILLS --> GL
@@ -56,6 +56,10 @@ flowchart TB
     GIFI -.-> T2
     POOLS -.->|refunds| T2
 ```
+
+Only *taxable* dividends reach the T1 that way. A capital dividend is elected by the corporation on Form T2054,
+filed with CRA rather than issued to the shareholder, and the amount is excluded from a resident shareholder's
+income — no T5, no gross-up, no dividend tax credit.  
 
 Details:
 - [Small Business Tax Overview](Small-Business-Tax.md): more detailed flowchart and other references
@@ -131,7 +135,8 @@ Details:
 
 ## Cost-Recovery Channels
 
-Every purchase eventually becomes a tax deduction.  
+Most purchases eventually become a tax deduction, but not all of them do — land, shares, and outlays denied by the
+*Income Tax Act* never turn into one.  
 How that happens depends on why it was purchased.  
 The purposes: to resell, to use as a long-term asset, or to build into a long-term asset.  
 
@@ -179,7 +184,11 @@ flowchart LR
     Net --> Remit
 ```
 
-Registration is mandatory once taxable supplies pass $30,000 over four quarters; below that it is optional.  
+Registration is mandatory once taxable supplies pass $30,000, on either of two tests: over four consecutive
+calendar quarters, or within a single quarter.  
+The single-quarter test bites immediately, from the supply that crosses the line; the four-quarter test carries a
+grace period.  
+Both count the taxable supplies of *associates*.  
 
 Details: [HST](../Operations/HST/HST.md), [Small Business Tax Overview - HST and other consumption taxes](Small-Business-Tax.md#hst-and-other-consumption-taxes).  
 
@@ -232,10 +241,13 @@ Details: [Dividends - three flavours](../Paying-Yourself/Dividends/Dividends.md#
 ## Owner-Corporation Transactions
 
 An owner assumes two distinct roles:
-- As *employee*: a reimbursement or a reasonable allowance for business use is tax-free to the owner
-  - Also deductible to the corp (ITA s.6)
-- As *shareholder*: a benefit the corporation confers is taxed in the owner's hands
-  - No corporate deduction (ITA s.15(1))
+- As *employee*: a reimbursement, or a reasonable travel or motor-vehicle allowance, is tax-free to the owner
+  - Under the specific exceptions in ITA [s.6(1)(b)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-6.html); an allowance that is not reasonable *is* income
+  - Whether the corporation can deduct it is a separate question
+    - Answered by ITA s.9 and s.18(1)(a) with the s.67 reasonableness test, not by s.6
+- As *shareholder*: a benefit the corporation confers is included in the owner's income (ITA [s.15(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-15.html))
+  - s.15(1) says nothing about the corporation's side
+    - The outlay is normally non-deductible because it fails s.18(1)(a)'s business-purpose test, not because of s.15
 
 Money taken out that is neither a salary nor a dividend is tracked in a *shareholder loan account*:
 - *Due from shareholder*: the owner owes the corporation (e.g. a personal cost run through the corp account)
@@ -284,22 +296,27 @@ Each row pairs an event with the balance it moves:
 | Buy security | ACB (per security) | + cost and commissions (trade-date FX) | [ACB](../Investments/Adjusted-Cost-Base/Adjusted-Cost-Base.md)         |
 | Return of capital (T3 Box 42) | ACB | − distribution | [ACB](../Investments/Adjusted-Cost-Base/Adjusted-Cost-Base.md)         |
 | Sell security | ACB | remove sold units; realize gain or loss | [T5008](../Investments/T5008/T5008.md)                                 |
-| Acquire depreciable asset | UCC (per class) | + capital cost (see note) | [CCA](../Operations/Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md)          |
+| Acquire depreciable asset | Capital assets, AFU pending | + capital cost; nothing enters UCC yet | [CCA](../Operations/Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md)          |
 | Claim CCA | UCC | − CCA for the year | [CCA](../Operations/Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md)          |
 | Dispose depreciable asset | UCC | − lesser of proceeds or cost; recapture or terminal loss | [CCA](../Operations/Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md)          |
 | Buy inventory | Inventory | + landed cost | [Inventory](../Operations/Cost-Recovery/Inventory-And-COGS.md)        |
 | Sell inventory | Inventory | − unit cost (to COGS) | [Inventory](../Operations/Cost-Recovery/Inventory-And-COGS.md)        |
 | Incur construction cost | CIP | + materials and labour | [Materials and CIP](../Operations/Cost-Recovery/Materials-And-CIP.md) |
-| Available for use | CIP → UCC | transfer balance to a CCA class | [Materials and CIP](../Operations/Cost-Recovery/Materials-And-CIP.md) |
+| Available for use | → UCC (per class) | capital cost, or the CIP balance, enters the class | [Materials and CIP](../Operations/Cost-Recovery/Materials-And-CIP.md) |
 
 Notes:
+- ITA [s.13(26)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-13.html) keeps capital cost out of the UCC computation until the property is available for use; buying it is not what starts CCA
 - Net UCC additions get the half-year rule, currently replaced by AIIP's larger first-year claim
 
-A sale is the only event that changes both sets of balances:
+A sale is the usual event that changes both sets of balances:
 - It draws down the cost balance (the ACB or UCC)
 - Resulting gain or loss feeds the tax pools above:
   - A security's capital gain splits into CDA and NERDTOH
   - A depreciable asset's recapture or terminal loss runs through income first  
+
+It is not the only such event:
+- Where ACB reductions — a return of capital, most often — exceed the remaining cost, ITA [s.40(3)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-40.html) deems the excess to be a capital gain and resets ACB to nil
+- A *deemed* disposition (change of use, wind-up, death of a shareholder) produces the same balance movements with no sale  
 
 
 ## Loss Carryforwards
@@ -331,7 +348,7 @@ Filings:
 - *Corporate annual return*: to the federal or provincial registry (not a tax filing)
 
 Payments:
-- *T2 balance*: 2 months after year-end (3 for an SBD-eligible CCPC)
+- *T2 balance*: 2 months after year-end (3 only where the full CCPC/SBD/preceding-year test in [Payment](../Filing-And-CRA/Payment/Payment.md#corporate-income-tax) is met)
 - *T2 instalments*: monthly or quarterly once both the prior and current year's tax top $3,000
 - *Payroll remittance*: source deductions by the 15th of the following month
 - *GST/HST remittance*: with the return

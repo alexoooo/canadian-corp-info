@@ -34,7 +34,8 @@ Limitations:
 
 How corporate income is bucketed, parked in dividend pools or retained earnings, and paid out to the shareholder.  
 Terms in the diagram (*ABI*, *AII*, *GRIP*, *CDA*, *ERDTOH*, *NERDTOH*, *Part IV tax*) are defined in the sections below.  
-*Retained earnings* holds the after-tax balance of corporate profits and is the cash source for the *T5* dividend outputs.  
+*Retained earnings* holds the after-tax balance of corporate profits — an equity measure of how much can be
+declared, not a pot of cash; the money for a dividend comes from the bank account.  
 The dashed lines from *GRIP* / *ERDTOH* / *NERDTOH* are designations and refunds, not cash flow.  
 
 ```mermaid
@@ -63,7 +64,7 @@ flowchart TB
     T4out["T4: salary"]
     T5elig["T5: eligible div"]
     T5neli["T5: non-eligible div"]
-    T2054["T2054: capital div"]
+    T2054["T2054 election<br/>corp to CRA"]
     SH([Shareholder T1])
 
     OP -->|net of salary| ABI
@@ -87,8 +88,8 @@ flowchart TB
     PartIV -->|eligible| ERDTOH
     PartIV -->|non-eligible| NERDTOH
 
-    RE -->|cash| T5elig
-    RE -->|cash| T5neli
+    RE -->|declared| T5elig
+    RE -->|declared| T5neli
     GRIP -.->|designation| T5elig
     ERDTOH -.->|refund| T5elig
     NERDTOH -.->|refund| T5neli
@@ -97,7 +98,7 @@ flowchart TB
     T4out --> SH
     T5elig --> SH
     T5neli --> SH
-    T2054 --> SH
+    T2054 -->|capital dividend:<br/>no slip, not income| SH
 
     style Inputs fill:transparent,stroke:transparent,color:transparent
 ```
@@ -107,7 +108,7 @@ Outputs: T-slips issued by the corp to the shareholder: T4 (salary), T5 (eligibl
 The capital dividend uses the T2054 election form; no T5 is issued.  
 
 
-## What Is Corporate Tax
+## Corporate Tax
 
 A corporation is a separate legal and tax entity from its shareholders.  
 Corporations can be used to limit liability and for tax planning.  
@@ -273,10 +274,14 @@ Two parts of the *Income Tax Act* drive a CCPC's tax mechanics:
 *Active business income* (ABI): income from carrying on an active business.  
 Examples: consulting fees, product sales, services rendered.  
 The first $500,000 per year is taxed at the *small-business rate* via the SBD.  
-The combined federal + Ontario small-business rate is ≈ 12.2% in 2026.  
-ABI above $500,000 is taxed at the *general rate* (combined ≈ 26.5% in Ontario).  
-The 2026 Ontario budget, enacted as Bill 97 (S.O. 2026, c. 2), cut the Ontario small-business rate to 2.2%.  
-That makes the combined rate 11.2%, effective July 1, 2026; see [Dividends - worked examples](../Paying-Yourself/Dividends/Dividends-Examples.md#worked-examples).  
+Ontario's small-business rate changed mid-2026: the 2026 Ontario budget, enacted as Bill 97 (S.O. 2026, c. 2), cut
+it from 3.2% to 2.2% effective July 1, 2026.  
+So the combined federal + Ontario small-business rate is 12.2% to June 30, 2026 and 11.2% from July 1.  
+A tax year straddling that date is prorated by days, so a calendar-2026 year works out to
+9% + 3.2% × 181/365 + 2.2% × 184/365 ≈ **11.7%**.  
+Every rate figure in this guide is pinned to its period; a full-year calendar-2026 example uses the blended 11.7%.  
+ABI above $500,000 is taxed at the *general rate* (combined ≈ 26.5% in Ontario, unchanged by Bill 97).  
+See [Dividends - worked examples](../Paying-Yourself/Dividends/Dividends-Examples.md#worked-examples).  
 The $500,000 SBD *business limit* is not always a flat ceiling.  
 It can be reduced by:
 - Sharing among *associated corporations* under ITA [s.125(3)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-125.html)
@@ -346,12 +351,14 @@ You can use either or both in a mix:
 
 *Dividends* are paid to the owner in their capacity as a *shareholder*:
 - *Not* deductible to the corporation (paid out of after-tax retained earnings)
-- Trigger a *T5* slip to the shareholder and a *T5 Summary* to CRA, filed by the last day of February
 - No source deductions, no CPP, no EI; dividends are not employment income
 - Do not generate RRSP room or CPP credits
-- Eligible for the *dividend gross-up and tax credit* on the personal return, per *Integration*
-- Can be designated *eligible* (from the GRIP pool), *non-eligible*, or *capital* (from the CDA)
-  - Each flavour has its own gross-up and DTC; see [Dividends](../Paying-Yourself/Dividends/Dividends.md)
+- *Taxable* dividends — designated *eligible* (from the GRIP pool) or *non-eligible* — trigger a *T5* slip to the
+  shareholder and a *T5 Summary* to CRA, filed by the last day of February
+  - Each carries its own gross-up and dividend tax credit on the personal return, per *Integration*
+- A *capital* dividend (from the CDA) runs on a different track: the corporation elects under ITA s.83(2) on Form
+  T2054, and the amount is excluded from a resident shareholder's income
+  - No T5, no gross-up, no DTC; see [Dividends](../Paying-Yourself/Dividends/Dividends.md)
 
 Practical tradeoffs:
 - Salary advantages:
@@ -394,9 +401,13 @@ The resulting regime is less tax-efficient:
 - No *general rate reduction*: taxed at the base federal 28% rather than the 15% general rate
 - Plus an *additional 5% federal tax* on PSB income under ITA [s.123.5](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-123.5.html)
   - This brings the federal portion to 33% (combined ≈ 44.5% in Ontario)
-- Almost no deductions allowed under ITA [s.18(1)(p)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-18.html)
-  - Only the incorporated employee's salary and benefits
-  - Not the usual business expenses (rent, supplies, software, professional fees)
+- Deductions severely restricted under ITA [s.18(1)(p)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-18.html), which preserves only four categories:
+  - The incorporated employee's salary and benefits
+  - Expenses connected with selling property or negotiating contracts, where the incorporated employee could have
+    deducted them under an employment contract
+  - Legal expenses incurred to collect amounts owing for services rendered
+  - Amounts otherwise deductible in computing the corporation's income from the business, on the same terms
+- Not the usual business expenses (rent, supplies, software, professional fees)
 
 The PSB determination is fact-based.  
 It uses the same multifactor analysis as the employee-vs-contractor test in personal tax:
@@ -444,8 +455,15 @@ They follow similar mechanics but are administered separately by each provincial
 
 Registration and filing become mandatory once worldwide *taxable supplies* exceed the *small supplier* threshold.  
 The threshold: $30,000 over a rolling 4-quarter window, or $30,000 in any single quarter.  
-Sales to non-resident customers (e.g. US clients) are *zero-rated*: 0% GST/HST is charged.  
-ITCs are still claimable on related inputs, and the sale still counts toward the threshold.  
+Both tests count the taxable supplies of *associates*, and the single-quarter test ends small-supplier status
+immediately before the supply that crosses it; see
+[HST Registration and Filing](../Operations/HST/HST-Registration-And-Filing.md).  
+Exported supplies can be *zero-rated* (0% GST/HST charged), but non-residence alone does not zero-rate a sale.  
+A specific Schedule VI provision and all of its conditions have to be met: consulting and professional services are
+excluded from the general export rule in Part V s.7 and qualify, if at all, under s.23.  
+A non-resident with a permanent establishment in Canada is deemed resident for supplies made through it
+(ETA s.132(2)), so the customer's head-office address does not settle the question.  
+ITCs are still claimable on inputs to a zero-rated supply, and the sale still counts toward the threshold.  
 Below the threshold, voluntary registration is allowed and often worthwhile.  
 It allows ITC refunds even when output tax is small or zero.  
 
@@ -457,7 +475,8 @@ There are two main methods, the *regular method* (the default) and the *quick me
   - More tax-efficient when there are many inputs (e.g. a physical goods business)
 - *Quick method* (requires an election via form GST74, filed through CRA My Business Account):
   - GST/HST charged on sales (the *output tax*)
-  - GST/HST paid on inputs is not tracked
+  - No ITC is claimed on most operating inputs under the formula
+    - ITCs remain available for qualifying capital purchases and real property, and input records must still be kept
   - A portion of the collected amount is remitted; the rest is kept as taxable revenue
   - More tax-efficient when there are few inputs (e.g. consulting service)
 
@@ -473,7 +492,11 @@ Failure-to-file penalties on slips apply even when no tax is owed.
 
 **T2 corporate income tax**:
 - *Return*: 6 months after fiscal year-end (ITA [s.150(1)(a)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-150.html))
-- *Balance due*: 3 months after year-end for SBD-eligible CCPCs; 2 months for all other corporations (ITA [s.157](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-157.html))
+- *Balance due*: 2 months after year-end, the general rule (ITA [s.248(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-248.html) "balance-due day")
+  - 3 months only for a corporation that was a CCPC *throughout* the year, claimed the SBD for that year or the
+    preceding one, and whose *preceding-year* taxable income was within its preceding-year business limit
+    (combined across the associated group where there is one)
+  - See [Payment](../Filing-And-CRA/Payment/Payment.md#corporate-income-tax) for the full test
   - Balance is due *before* the return: pay the year's tax first, then file within the longer window
 - *Instalments*: required only when both the prior and current year's tax exceed $3,000 (ITA [s.157(2.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-157.html))
   - Quarterly for eligible CCPCs (last day of each fiscal quarter), monthly otherwise

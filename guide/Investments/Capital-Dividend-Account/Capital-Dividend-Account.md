@@ -63,8 +63,16 @@ Capital Dividend Account election process:
   - Attach a certified copy of the resolution
     - Certification means the Secretary or a Director signs a statement on the resolution
     - The statement attests that it is a true copy of the resolution passed by the board
-  - Attach a schedule showing the CDA computation immediately before the election (Reg 2101)
+  - Attach a schedule showing the CDA computation immediately before the dividend becomes payable — the time
+    s.83(2) actually tests, which can differ from the filing date (Reg 2101)
   - File on or before the day the dividend becomes payable (or the first day any part of it is paid, if earlier)
+- Missed the deadline: ITA [s.83(3)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-83.html) allows an
+  otherwise valid *late* election
+  - The full prescribed package is filed, plus an estimate of the penalty under s.83(4)
+  - The penalty is based on the amount of the dividend and how late the election is, subject to a statutory cap
+  - CRA can also require the election within 90 days of a demand
+  - Discretionary relief from the penalty is a separate route again, under ITA s.220(3.2)
+  - Late filing is a recovery path, not a plan; the penalty is real money
 - Reporting:
   - Enter the dividend on T2 Schedule 3 (S3)
   - For Canadian residents: do not issue a T5 information slip for this amount (but do notify them, e.g. by email)
@@ -74,9 +82,17 @@ Capital Dividend Account election process:
 The CDA is a "point-in-time" calculation.  
 Selling an investment at a loss between your calculation and the payable date can inadvertently overdraw the account.  
 Overdrawing incurs Part III tax under ITA s.184(2): 60% of the excess amount.  
-Under s.184(3) the corporation can elect to treat the excess as a separate taxable dividend instead.  
-That is rarely preferable.  
-You may elect to pay less than the calculated CDA balance, e.g. by leaving a $1,000 buffer.  
+Under s.184(3) the corporation can elect, with the concurrence of the shareholders who received the excess, to
+treat that excess as a separate *taxable* dividend instead.  
+This is the principal statutory alternative, not a curiosity: which route costs less is arithmetic, not a rule of
+thumb.  
+- Compare the 60% Part III tax against the shareholder's personal tax on a non-eligible taxable dividend
+- For an owner-managed CCPC the taxable-dividend route is often much cheaper than 60%
+- The s.184(3) election has its own conditions and a *90-day* window from the assessment of the Part III tax
+- Use the current version of the election form and get advice before choosing
+
+The cheaper fix is not overdrawing in the first place: elect for less than the calculated balance, leaving a buffer
+(say $1,000), and re-check the balance at the payable date.  
 
 Since this is a tax-free amount for Canadian residents, the shareholders do not report this income on their T1.  
 If a shareholder is a non-resident, the capital dividend is subject to a Part XIII withholding tax.  

@@ -18,7 +18,7 @@ Limitations:
 - The following is my understanding as of 2026
 
 
-## What Is Integration
+## The Integration Principle
 
 *Integration* is the principle linking corporate and personal tax:
 - There are two ways that a dollar of income can be earned:
@@ -61,8 +61,11 @@ Integration is approximate; different provinces and income sources produce small
 *Capital dividend*:
 - Not included in the shareholder's income at all (ITA [s.83(2)(b)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-83.html))
 - No gross-up, no DTC, not reported on the T1
-- The "tax already paid" at the corporate level is the tax on the *taxable* portion of the underlying capital gain
-  - The *non-taxable* portion is what flows out tax-free as the capital dividend
+- Where the CDA balance arose from a capital gain, the "tax already paid" at the corporate level is the tax on the
+  gain's *taxable* portion, and the *non-taxable* portion is what flows out tax-free as the capital dividend
+  - A capital gain is only one of the CDA's statutory sources; life-insurance proceeds net of policy ACB and
+    capital dividends received also add to it (ITA [s.89(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-89.html))
+  - A particular capital dividend need not have an underlying capital gain at all; see [Capital Dividend Account](../Investments/Capital-Dividend-Account/Capital-Dividend-Account.md)
 - Integration on capital gains earned in a CCPC is imperfect
   - The AII path: taxable half taxed at ~50%, partly refunded via [NERDTOH](../Paying-Yourself/Dividends/ERDTOH-NERDTOH.md) on payout of a non-eligible dividend
   - It typically leaves a small "tax cost" vs realizing the gain personally, depending on province
@@ -83,13 +86,15 @@ Often CDA and GRIP are both empty; the only available option is a non-eligible d
 ## Worked Example
 
 Assumptions: $1,000 of corporate income, Ontario, shareholder at top marginal rate (53.53%).  
-Combined corporate rates: SBD 12.2% (federal 9% + Ontario 3.2%), general 26.5% (federal 15% + Ontario 11.5%).  
+Combined corporate rates as at June 30, 2026: SBD 12.2% (federal 9% + Ontario 3.2%), general 26.5%
+(federal 15% + Ontario 11.5%).  
 DTC rates as % of the grossed-up (taxable) amount:
 - Eligible: 25.02% (federal 15.02% + Ontario 10.0%)
 - Non-eligible: 12.02% (federal 9.03% + Ontario 2.99%)
 
 The 2026 Ontario budget, enacted as Bill 97 (S.O. 2026, c. 2), lowered two rates.  
 The small-business rate drops to 2.2% (combined 11.2%) effective July 1, 2026.  
+A calendar-2026 tax year therefore blends to ≈ 11.7%.  
 The non-eligible DTC drops to 1.9863% effective January 1, 2027.  
 Restate for tax years straddling those dates (see [Dividends - worked examples](../Paying-Yourself/Dividends/Dividends-Examples.md#worked-examples)).  
 

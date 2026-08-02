@@ -199,6 +199,8 @@ The same rules govern what counts as part of the asset's cost across all three c
 Below a *de minimis* floor, a long-lived item is expensed immediately rather than capitalized into any channel.  
 The floor is a policy choice for the corporation (commonly $500, sometimes up to $2,500).  
 CRA sets no dollar threshold, but the floor must be reasonable and applied consistently.  
+Expensing below the floor is a book presentation; it does not move the item out of the tax CCA system, and a
+Schedule 1 add-back is what reconciles the two when they diverge.  
 A residual UCC pool is not cleared the same way.  
 Once capitalized, a class pool runs its geometric tail until the asset is disposed of or the business ceases.  
 See [Capital Cost Allowance — Capitalize-vs-expense thresholds](Capital-Cost-Allowance/Capital-Cost-Allowance.md#capitalize-vs-expense-thresholds).  
@@ -325,7 +327,12 @@ Scrapping or retiring an item is a disposition too:
   - Detail in [Capital Cost Allowance — Recapture and terminal loss](Capital-Cost-Allowance/Capital-Cost-Allowance.md#recapture-and-terminal-loss)
 
 A CIP balance is never directly disposed of:
-- *Cancelled project*: write-down (deductible if the project served a business purpose)
+- *Cancelled project*: write-down, but deductibility has to be classified rather than assumed
+  - A business purpose satisfies ITA [s.18(1)(a)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-18.html); it does not displace s.18(1)(b)'s bar on deducting a capital outlay
+  - Current feasibility and investigation work is generally deductible
+  - Costs tied to an identified capital asset or an enduring business right generally are not — they stay capital,
+    may enter Class 14.1, or attach to the cost of land or another property
+  - Get advice on an abandoned capital project before claiming the write-down
 - *Completed project*: transfers to a CCA class and follows the depreciable-property rules from there
 
 

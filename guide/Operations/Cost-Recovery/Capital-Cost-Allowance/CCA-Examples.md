@@ -29,13 +29,15 @@ IT-consulting-specific allocation calls:
   - Never capitalized regardless of annual cost
 - A separate $300 second monitor → Class 50 (computer peripheral), or expensed if below your de minimis floor
   - Pick a convention in the bookkeeping policy and apply it consistently
+  - Expensing it in the books does not take it out of Class 50 for tax; keep it in the asset register and reconcile
+    on Schedule 1
 
 Year 1 (2026):
 
 Mar 1 entry:
 - Debit `Computer equipment - cost` (GIFI 1774) = $4,000
 - Debit `HST receivable` = $520
-- Credit `Cash` = $4,520
+- Credit `Deposits` = $4,520
 
 The laptop is available for use on Mar 1 (turned on, used to deliver consulting that day).  
 
@@ -65,7 +67,7 @@ Schedule 8 Class 50 row:
 Year 3 (2028): laptop sold for $400 cash on Aug 15 2028.
 
 Aug 15 entry (book side, GAAP-style books):
-- Debit `Cash` = $400
+- Debit `Deposits` = $400
 - Debit `Accumulated amortization - computer equipment` for the cumulative book amortization
 - Credit `Computer equipment - cost` (GIFI 1774) = $4,000
 - Plug the residual to `Gain on disposal of capital assets` (GIFI 8210) or `Loss on disposal of capital assets`
@@ -97,7 +99,7 @@ Year 1 (2026):
 Jun 15 entry:
 - Debit `Machinery and equipment - cost` (GIFI 1740) = $1,800
 - Debit `HST receivable` = $234
-- Credit `Cash` = $2,034
+- Credit `Deposits` = $2,034
 
 Schedule 8 Class 8 row:
 - Opening UCC: $0
@@ -133,7 +135,7 @@ Apr 1 entry:
 - Debit `Professional fees` (GIFI 8860) = $3,000
 - Debit `Incorporation costs` (GIFI 2018) = $1,200
   - The incorporation-costs line within the 2010 intangible-assets group; goodwill is 2012
-- Credit `Cash` = $4,200
+- Credit `Deposits` = $4,200
 
 Schedule 8 Class 14.1 row:
 - Opening UCC: $0
@@ -171,9 +173,14 @@ Missing the year-1 deduction:
 - The amortize-it-later path applies only to the excess over $3,000, because only that excess is added to Class 14.1
 
 If the first $3,000 was capitalized instead of expensed:
-- *CCA was claimed on it*: the $3,000 is deducted at 5% a year rather than at once
-  - That under-claims the s.20(1)(b) entitlement, in the CRA's favour, so leave it and let the pool run down
-  - The forbearance is a shield against reassessing a closed under-claim, not proof the $3,000 belongs in the pool
+- *CCA was claimed on it*: the $3,000 never belonged in Class 14.1 at all
+  - ITA [s.20(1)(b)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-20.html) makes the first $3,000 a current
+    deduction, and Income Tax Regulation [1102(1)(a)](https://laws-lois.justice.gc.ca/eng/regulations/C.R.C.,_c._945/section-1102.html)
+    excludes from every prescribed class any property whose cost is otherwise deductible
+  - Stop claiming CCA on that amount going forward
+  - Correct the open years through the ordinary adjustment route; a closed year's under-claim does not authorize a
+    fresh claim in an open one
+  - Get advice for the statute-barred years rather than continuing the claim to unwind the pool
 - *No CCA was ever claimed*: once the year is statute-barred the deduction is forgone
   - The amount lingers as a phantom asset with book value but no tax basis
   - Tidy it off through *retained earnings* as a prior-period correction, not through the income statement
@@ -222,7 +229,7 @@ Year 1 (2026):
 May 1 entry:
 - Debit `Wharves - cost` (GIFI 1906) = $6,000
 - Debit `HST receivable` = $780
-- Credit `Cash` = $6,780
+- Credit `Deposits` = $6,780
 
 Schedule 8 Class 3 row:
 - Opening UCC: $0

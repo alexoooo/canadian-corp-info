@@ -47,6 +47,31 @@ The slip set a CCPC owner typically sees:
 Issuer deadlines: most slips by the end of February; T3s by the end of March.  
 Filing before the T3s arrive invites an amendment, so a personal ETF holder waits for April.  
 
+### T4 and T5 to the T1
+
+The corporation's two owner slips land on specific lines. Certified software fills these from the slip, but the map
+is what lets you check it:
+
+| Slip box | What it holds | T1 line |
+|---|---|---|
+| T4 box 14 | Employment income (salary plus taxable benefits) | 10100 |
+| T4 box 22 | Income tax deducted | 43700 |
+| T4 box 16 / 16A | Employee CPP / CPP2 contributions | base portion at 30800; enhanced portion deducted at 22215 |
+| T5 box 11 | *Taxable* amount of dividends other than eligible | 12010, and into 12000 |
+| T5 box 25 | *Taxable* amount of eligible dividends | 12000 |
+| T5 box 12 + box 26 | Federal dividend tax credit | 40425 |
+
+The trap is the dividend boxes: **boxes 10 and 24 are the actual dividends paid, and are not what goes on the
+return**. Boxes 11 and 25 are those amounts already grossed up, and they are the income figures.  
+Entering the cash instead of the grossed-up amount understates income and, worse, leaves the dividend tax credit
+unclaimed — the credit only makes sense against the grossed-up figure.  
+
+The Ontario dividend tax credit is calculated on the provincial form from the same taxable amounts; the gross-up and
+credit mechanics are worked in [Tax Integration](../Overview/Tax-Integration.md).  
+For the issuing side — how the corporation produces these slips — see [Payroll](../Paying-Yourself/Payroll.md) and
+[Bookkeeping and Slips](../Paying-Yourself/Dividends/Bookkeeping-And-Slips.md).  
+Brokerage slips (T3, T5008) are covered in [Investments](../Investments/Investments.md); they are not duplicated here.  
+
 *Auto-fill my return* downloads CRA's slip copies into certified software:
 - It needs a [CRA account](My-Account-And-Catch-Up-Filing.md) and serves the current year and several prior years
 - It also carries RRSP room and carryover balances

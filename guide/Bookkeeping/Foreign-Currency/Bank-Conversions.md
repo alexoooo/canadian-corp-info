@@ -24,8 +24,14 @@ Explicit fees the bank shows as separate line items:
 - Wire-in fee (e.g. $15 to receive an international wire)
 - Wire-out fee (e.g. $30 to send an international wire)
 - Currency-conversion fee shown as a distinct line on the statement (less common)
-- All of these are bookable: debit `Interest and bank charges` (8710, CAD)
-  - The credit side is `Deposits` (1002-1) or `Deposits - USD` (1003), in the matching currency
+- All of these are bookable, but the entry depends on which account the bank takes the fee from:
+  - *CAD fee from the CAD account*: debit `Interest and bank charges` (8710, CAD), credit `Deposits` (1002-1)
+    - Both legs are CAD-native, so it is a single-currency entry
+  - *USD fee from the USD account*: a cross-currency event under this guide's one-native-currency rule, so it splits
+    - Credit `Deposits - USD` (1003) and debit `FX gain/loss - USD` (8231-2) for the USD amount
+    - Credit `FX gain/loss - CAD` (8231-1) and debit `Interest and bank charges` (8710, CAD) for the CAD
+      equivalent at the transaction-date rate
+  - A CAD-native expense cannot be credited directly against a USD-native bank account; see [Bookkeeping convention](Bookkeeping-Convention.md)
 
 Typical CAD↔USD conversion spreads observed in practice (rough magnitudes; verify against your own bank's posted rates):
 - Big-bank retail conversion at a branch teller: 2.0%–3.0% from mid-rate

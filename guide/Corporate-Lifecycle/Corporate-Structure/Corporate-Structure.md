@@ -109,7 +109,7 @@ What association costs:
   - The group files an allocation agreement on Schedule 23 assigning each corporation a percentage; totals over 100% collapse every limit to nil
   - With no agreement after CRA demands one, the Minister allocates (s.125(4))
 - The taxable-capital and passive-income grinds of the limit also apply at the group level
-  - See [Small Business Tax Overview](../../Overview/Small-Business-Tax.md#what-is-corporate-tax)
+  - See [Small Business Tax Overview](../../Overview/Small-Business-Tax.md#corporate-tax)
 - Schedule 9 discloses the related and associated corporations on each T2; Schedule 23 carries the allocation
   - See [T2 Schedules](../../Filing-And-CRA/T2-Schedules.md#event-driven-schedules)
 - The GST/HST small-supplier threshold also aggregates across associated corporations
@@ -125,10 +125,16 @@ Management fees between related corporations get looked at, not waved through:
 ## Annual Corporate Maintenance
 
 The [minute book](#the-minute-book) is the artifact; this is the cycle that fills it each year:
-- *Annual shareholder resolutions*, normally signed together shortly after the financial statements are ready:
-  - Approving the financial statements
-  - Electing the director(s) and appointing the officer(s) for the coming year
-  - A unanimous resolution dispensing with the appointment of an auditor — required yearly for a private corporation that skips audits
+- *Annual directors' resolutions*, signed once the financial statements are ready:
+  - Approving the financial statements — a board act, not a shareholder one (CBCA [s.158](https://laws-lois.justice.gc.ca/eng/acts/C-44/section-158.html)); a director signs them before they go to the shareholders
+  - Appointing the officers for the coming year (CBCA [s.121](https://laws-lois.justice.gc.ca/eng/acts/C-44/section-121.html))
+  - Any other board approvals for the year
+- *Annual shareholder resolutions*, normally signed at the same sitting:
+  - Electing the director(s) (CBCA [s.106](https://laws-lois.justice.gc.ca/eng/acts/C-44/section-106.html))
+  - Receiving the approved financial statements
+  - A unanimous resolution dispensing with the appointment of an auditor — required yearly for a private corporation that skips audits (CBCA [s.163](https://laws-lois.justice.gc.ca/eng/acts/C-44/section-163.html))
+- In a one-owner CCPC the same person signs in both capacities, but the resolutions are still separate acts
+  - The governing corporate statute controls; provincial acts differ in detail from the CBCA model cited here
 - *Dividend and bonus resolutions* as they happen, not just at year-end; see [Declaring and Paying](../../Paying-Yourself/Dividends/Declaring-And-Paying.md)
 - *Registry annual return*: the corporate-registry filing that is separate from the T2
   - Deadlines and the administrative-dissolution consequence are in [Small Business Tax Overview](../../Overview/Small-Business-Tax.md#filing-deadlines-and-instalments)

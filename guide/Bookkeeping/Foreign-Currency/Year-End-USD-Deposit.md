@@ -13,15 +13,21 @@ Year-end handling depends on whether the USD cash is on income account or capita
 - Fully includable in income; no Schedule 1 adjustment
 
 *Investment USD deposit*:
-- Cash sitting in a corporate trading account specifically to acquire USD securities
+- USD acquired *separately* for a capital purpose — funded by a CAD→USD conversion made to buy securities, not swept
+  over from operating receipts
 - Capital-account character; *no* year-end revaluation (a capital gain under ITA s.39(1) arises on disposition only)
 - The FX gain or loss surfaces when the USD is used to buy a USD security, or is converted back to CAD
   - On a security buy, the security's CAD ACB is the trade-date conversion
 - This mirrors the FX convention for purchases and dispositions of foreign securities in [Adjusted Cost Base](../../Investments/Adjusted-Cost-Base/Adjusted-Cost-Base.md)
 
+Sitting in a brokerage account is not what makes USD capital-account.  
+Operating USD moved into the brokerage account, or earmarked for a purchase, keeps its income-account character; the
+income FX result crystallizes when those funds are spent (see
+[FX rates and character](FX-Rates-And-Character.md#capital-account-vs-income-account-fx)).  
+
 In practice, for most owner-managed CCPCs the USD balance is on income account.  
 It flows from operations and is used for operations.  
-The capital-account treatment applies narrowly when the USD is held *and intended* for investment.  
+The capital-account treatment applies narrowly to USD separately acquired *and* held for investment.  
 
 ## Worked Example
 
@@ -37,13 +43,27 @@ Mar 1, internal CAD → USD bank conversion to fund the float; CAD 7,000 → USD
   - Debit `Deposits - USD` (1003): USD 5,000
   - Credit `FX gain/loss - USD` (8231-2): USD 5,000
 
-Aug 15, pay USD 2,000 to a US software vendor (annual subscription); bill-date BoC rate 1.35:
+Aug 15, pay USD 2,000 to a US software vendor for a subscription covering Aug 15 2026 to Aug 14 2027;
+bill-date BoC rate 1.35:
 - USD-side:
   - Credit `Deposits - USD` (1003): USD 2,000
   - Debit `FX gain/loss - USD` (8231-2): USD 2,000
 - CAD-side (at bill-date BoC 1.35):
   - Credit `FX gain/loss - CAD` (8231-1): CAD 2,700
-  - Debit `Computer-related expenses / Software subscriptions` (GIFI 9150, CAD-native operating-expense line): CAD 2,700
+  - Debit `Prepaid expenses` (GIFI 1484, CAD-native): CAD 2,700
+
+The service runs past the December 31 year-end, so the whole CAD 2,700 cannot be deducted this year.  
+ITA [s.18(9)(a)(i)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-18.html) denies the deduction to the
+extent the payment buys services after year-end, and s.18(9)(b) moves that portion into the later year.  
+Booking it to prepaid first keeps the books and the return on the same footing.
+
+Dec 31, release the consumed portion — 139 of 365 days, Aug 15 to Dec 31:
+- Debit `Computer-related expenses / Software subscriptions` (GIFI 9150): CAD 1,028.22
+- Credit `Prepaid expenses` (1484): CAD 1,028.22
+
+CAD 1,671.78 stays on Schedule 100 as a prepaid asset and releases to expense through 2027.  
+The FX legs are unaffected: the rate date is still the bill date, and the prepaid is a CAD-native balance that never
+gets retranslated.  
 
 Dec 31, year-end revaluation at closing BoC rate 1.38:
 - Account balances before revaluation:
@@ -57,21 +77,27 @@ Dec 31, year-end revaluation at closing BoC rate 1.38:
   - The net is CAD 160 debit → net FX loss CAD 160
 
 Schedule 125 year:
-- Software subscriptions (operating expense): CAD 2,700
+- Software subscriptions (operating expense): CAD 1,028.22, the portion consumed by December 31
 - Foreign exchange gain/loss (GIFI 8231): CAD 160 loss
 
-Schedule 1 reconciliation: none required; income-account FX is fully includable.  
+Schedule 100 also carries `Prepaid expenses` (1484) of CAD 1,671.78.  
+
+Schedule 1 reconciliation: none required.  
+Income-account FX is fully includable, and the prepaid split already puts the book deduction where s.18(9) puts the
+tax one — without it, the CAD 1,671.78 would need adding back.  
 
 Economic check:
 - Mar 1: paid CAD 7,000 for USD 5,000; effective USD cost basis CAD 1.40/USD
-- Aug 15: paid USD 2,000 of software, recognized as CAD 2,700 expense at BoC 1.35
+- Aug 15: paid USD 2,000 of software, recorded as CAD 2,700 of cost at BoC 1.35 (prepaid, then released over time)
   - Original CAD basis on those USD 2,000 was 2,000 × 1.40 = CAD 2,800; realized FX loss CAD 100 on the outflow
 - Dec 31: USD 3,000 remaining, worth CAD 4,140 at year-end (1.38)
   - Original CAD basis 3,000 × 1.40 = CAD 4,200; unrealized FX loss CAD 60 on the remaining balance
 - Net economic FX: −100 − 60 = −160 CAD loss ✓ (matches the trading-account result)
 
-The CAD 160 loss is the bank's implicit spread surfacing.  
-The corp paid for USD at 1.40 but the BoC mid never reached 1.40, so the USD never recovered its CAD cost basis.  
+The CAD 160 is the total economic FX loss against the CAD the bank was paid.  
+The corp bought USD at 1.40 and the BoC mid never reached 1.40, so the position never recovered its CAD cost basis.  
+Splitting that CAD 160 between the bank's initial spread and later market movement needs the March 1 BoC mid-rate,
+which this example does not give: the spread is 1.40 less that day's mid, and everything after is currency movement.  
 
 Year 2, no USD activity, closing BoC rate 1.42:
 - The bridge accounts carry forward; neither closed to retained earnings at the year-1 close

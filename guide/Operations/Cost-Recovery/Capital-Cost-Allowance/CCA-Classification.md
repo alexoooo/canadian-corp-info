@@ -20,7 +20,9 @@ Work the decision in order:
   - Those are cost of sales or an operating expense
   - See [Expense Classification](../../../Bookkeeping/Expense-Classification.md) and [Cost Recovery](../Cost-Recovery.md)
 - *Is it below the capitalization floor?* An item under the corp's de minimis policy (commonly $500) is expensed
-  - Not put in a class; see [Capital Cost Allowance — capitalize-vs-expense](Capital-Cost-Allowance.md#capitalize-vs-expense-thresholds)
+  - That is a book decision, not a tax one: a capital item still has to be classified and tracked for Schedule 8,
+    with a Schedule 1 add-back where the book expense and the CCA claim differ
+  - See [Capital Cost Allowance — capitalize-vs-expense](Capital-Cost-Allowance.md#capitalize-vs-expense-thresholds)
 - *Does a specific class definition in Schedule II name it?* Most owner-managed purchases match a named class
   - A computer is Class 50, a vehicle is Class 10 / 10.1 / 54
   - A leasehold improvement is Class 13, an intangible is Class 14 / 14.1

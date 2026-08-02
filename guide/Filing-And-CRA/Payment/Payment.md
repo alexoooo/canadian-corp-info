@@ -25,7 +25,14 @@ The corp pays its T2 balance, and monthly or quarterly instalments toward it dur
 
 - *Account*: the `RC` corporation-income-tax program account under the business number
 - *Balance-due day*: the balance is due two months after the tax year-end (ITA [s.248(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-248.html) "balance-due day")
-  - Three months for a CCPC that claims the small business deduction with taxable income within the business limit
+  - Three months only where every one of these holds:
+    - The corporation was a *CCPC throughout* the tax year
+    - It claimed the small business deduction for that year *or* the preceding year
+    - Its *preceding-year* taxable income did not exceed its business limit for that preceding year
+      - Associated group: the combined preceding-year taxable incomes against the combined business limits
+  - Current-year income within the business limit is not the test
+  - A first tax year has no preceding year to measure, so the extension cannot be assumed; treat two months as the
+    safe default until the corporation's own balance-due day is confirmed
 - *Instalments*: monthly by default (ITA [s.157(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-157.html)); an eligible small CCPC may instead pay quarterly (s.157(1.1))
   - Quarterly eligibility: claims the SBD and has a clean 12-month filing-and-remittance record
   - Also taxable income of $500,000 or less and taxable capital of $10 million or less across the associated group
@@ -78,9 +85,13 @@ Choosing:
 - The current-year estimate saves cash in a declining year, at the price of instalment interest if the estimate runs low
 - CRA's instalment reminders compute the no-interest options; My Business Account shows the balances paid
 
-Instalments are asset-side prepayments in the books, not expense:
-- Debit `Taxes recoverable` (GIFI 1483) at each payment; the year-end tax provision nets against it
-- See [CRA Administration - Booking the Tax Cycle](../CRA-Administration.md#booking-the-tax-cycle)
+Instalments are prepayments, not expense.  
+This guide books them against the tax liability rather than to a separate asset:
+- Debit `Taxes payable` (GIFI 2680) at each payment, so the account nets to what is still owed
+- The year-end provision credits the same account
+- A *debit* balance at year-end means a refund is due; reclassify it to `Taxes recoverable` (GIFI 1483) for the
+  Schedule 100 presentation
+- See [CRA Administration - Booking the Tax Cycle](../CRA-Administration.md#booking-the-tax-cycle) for the entries
 
 
 ## HST

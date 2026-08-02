@@ -152,8 +152,15 @@ On Schedule 7 (S7), the Box 25 amount is income from property that belongs in tw
 - Part 3, Box 019: total income from property from a source outside Canada (the foreign subset)
   - Feeds foreign investment income to line 445
 
-Enter the full gross Box 25 amount.  
-Despite the Box 019 "net of related expenses" label, expenses are entered separately.  
+Enter the income from that foreign source *net of the expenses attributable to it*.  
+The "net of related expenses" label on Box 019 is operative, and the AII computation behind Box 032 likewise uses
+income from property rather than a raw slip total.  
+For a portfolio holding with no directly attributable costs — the usual case for this guide's reader — net equals
+the gross Box 25 figure, so the slip amount goes in unchanged.  
+Where costs *are* attributable to the foreign source (investment-counsel fees on the foreign holding, interest on
+money borrowed to buy it), allocate them by source and enter the net figure.  
+Do not deduct the same expense here and again on Schedule 125; the filed line 019 has to be the net amount either
+way.  
 
 In FutureTax T2, double-click the field to open the S7 worksheet (S7WS).  
 Its "Income from property" grid has one row per income type and two columns.  

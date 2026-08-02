@@ -110,13 +110,14 @@ The standard capitalization for an owner-managed CCPC is nominal share capital p
   - It repays tax-free at any time and needs no interest
   - Mechanics are in [Owner-corporation transactions — Shareholder loans](../Paying-Yourself/Owner-Corporation-Transactions.md#shareholder-loans)
 - The split matters at the exit, not the start
-  - Share capital comes back tax-free only up to PUC, while the loan balance comes back tax-free in full
+  - Share capital above PUC comes back as a deemed dividend, and the PUC portion itself is tax-free only while the
+    shareholder's share ACB lasts; the loan balance comes back tax-free in full
 
 Opening entries — incorporated May 1, $100 subscription, $10,000 lent in:
 
 | Account | Debit | Credit |
 |---|---|---|
-| `Cash` (`1001`) | 10,100.00 | |
+| `Deposits` (`1002-1`) | 10,100.00 | |
 | `Common shares` (`3500`) | | 100.00 |
 | `Due to shareholder` (`2780`) | | 10,000.00 |
 
@@ -157,7 +158,9 @@ Selling in at FMV, a $900 laptop:
 | `Computer equipment/software` (`1774`) | 900.00 | |
 | `Due to shareholder` (`2780`) | | 900.00 |
 
-The Class 50 addition then enters the asset register (see [CCA Tracking](../Operations/Cost-Recovery/Capital-Cost-Allowance/CCA-Tracking.md)).  
+The Class 50 addition then enters the asset register
+(see [CCA Tracking](../Operations/Cost-Recovery/Capital-Cost-Allowance/CCA-Tracking.md)).  
+It enters at the *tax* capital cost worked out below, which is not always the $900 paid.  
 
 Appreciated property is the exception:
 - A sale at FMV triggers the owner's personal gain
@@ -167,13 +170,30 @@ Appreciated property is the exception:
   - Whether to incorporate at all is worked in [Incorporation vs Sole Proprietorship](../Sole-Proprietorship/Incorporation-Vs-Sole-Proprietorship.md#making-the-move)
 - The sale of all or substantially all of a business's assets can be relieved of GST/HST by a joint ETA [s.167](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-167.html) election
 
-Personal-tax history does not follow the asset in.  
-The corporation's cost starts at the transfer price; prior personal use is irrelevant to its books.  
+Personal-tax history *does* follow depreciable property in.  
+Owner and corporation do not deal at arm's length, so ITA [s.13(7)(e)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-13.html) overrides the transfer price when it sets the corporation's capital cost:
+- *Transfer price below what the owner originally paid* — the usual case for used equipment
+  - The corporation's capital cost is the owner's original cost, and the shortfall is deemed already claimed as CCA
+  - A laptop the owner bought for $1,500 and sells in at $900 opens Class 50 with a capital cost of $1,500 and
+    $600 of deemed prior CCA, so UCC still starts at $900
+  - That higher capital cost is the recapture ceiling on a later sale, so the deemed CCA is not cosmetic
+- *Transfer price above what the owner originally paid* — the owner has a capital gain
+  - The corporation's capital cost is the owner's cost plus half the gain, not the full price paid
+- *s.85 rollover*: ITA [s.85(5)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-85.html) carries the same
+  continuity — capital cost deemed to be the transferor's, with the excess deemed to have been deducted by the
+  corporation as CCA in earlier years
+
+The ledger entry above is unaffected: the corporation records what it paid.  
+The divergence is a tax-side adjustment that lives in the asset register.  
+Get the owner's original cost, and any CCA the owner already claimed, before opening the class.  
+A bill of sale settles the *price*; it does not settle the corporation's *capital cost*.  
 
 
 ## First-Year Clocks
 
-- *T2*: due 6 months after the chosen year-end; the balance (if any) is due at 3 months
+- *T2*: due 6 months after the chosen year-end; the balance (if any) is due at 2 months
+  - The 3-month extension turns on a *preceding-year* taxable-income test, and a first year has no preceding year
+  - Do not assume 3 months in year one; see [Payment](../Filing-And-CRA/Payment/Payment.md#corporate-income-tax)
 - *Instalments*: none in the first year
   - They key off prior-year tax, and there is none (see [Filing deadlines and instalments](../Overview/Small-Business-Tax.md#filing-deadlines-and-instalments))
 - *GST/HST*: the small-supplier clock counts taxable supplies from the first sale, not from incorporation

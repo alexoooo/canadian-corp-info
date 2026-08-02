@@ -16,7 +16,8 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
 - A desk review letter is answered with documents by its deadline, not with arguments
   - An unanswered letter becomes a reassessment
 - Disagreeing with a reassessment has a 90-day clock: file a notice of objection, or the assessment stands
-- Keep books and records 6 years from the end of the last tax year they relate to
+- Keep books and records 6 years from the end of the last tax year they relate to, or 6 years from the filing date
+  where the return went in late
 
 Limitations:
 - Scope is income tax (the RC account)
@@ -75,9 +76,14 @@ Year-end accrual, FY2026 tax estimated at $9,760 with $8,000 of instalments alre
 | `Current income taxes` (`9990`) | 9,760.00 | |
 | `Taxes payable` (`2680`) | | 9,760.00 |
 
-The instalment payments during the year were each booked as Dr `Taxes payable` / Cr `Cash`.  
+The instalment payments during the year were each booked as Dr `Taxes payable` / Cr `Deposits`.  
 `2680` now shows the $1,760 balance due.  
 Paying it by the balance-due date clears the account (see [Payment](Payment/Payment.md)).  
+
+This is the guide's single convention for the tax cycle: instalments go to `2680`, never to a separate prepaid
+asset. Where instalments exceed the year's tax, `2680` ends the year in a debit position; reclassify that amount to
+`Taxes recoverable` (`1483`) for the Schedule 100 presentation and reverse the reclassification when the refund
+lands.  
 
 When the NOA assesses a different amount (say $9,900, $140 more):
 
@@ -186,12 +192,16 @@ It survives until it expires (if an expiry date was set when granted) or is revo
 
 The duty to keep books and records is ITA [s.230](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-230.html).  
 The default retention clock is 6 years from the end of the last tax year the record relates to (s.230(4)(b)).  
+It moves when a return is filed late: ITA s.230(5) requires the records to be kept until six years from the day the
+return for that year is *actually filed*.  
 Certain records prescribed by Income Tax Regulations [s.5800](https://laws-lois.justice.gc.ca/eng/regulations/C.R.C.,_c._945/section-5800.html), the general ledger among them, follow a different clock.  
 They must be kept until 2 years after dissolution (s.230(4)(a)).  
 
 What that means in practice:
 - *Transaction records*: 6 years from the end of the tax year they relate to (s.230(4)(b))
   - Invoices, receipts, bank and brokerage statements, ordinary client contracts
+  - If that year's T2 was filed late, the clock instead runs 6 years from the filing date (s.230(5))
+    - A return filed two years late keeps its records live two years longer than the calendar suggests
 - *Long-lived records*: a record supporting a balance that persists relates to every year the balance is alive
   - Its 6 years start when the balance is finally used up
   - Examples: an [ACB tracker](../Investments/Adjusted-Cost-Base/Adjusted-Cost-Base-Tracking.md), a [CCA asset register](../Operations/Cost-Recovery/Capital-Cost-Allowance/CCA-Tracking.md), the [loss continuity schedule](Losses.md#carrying-forward)
@@ -237,6 +247,12 @@ Mechanics:
 
 Money while the dispute runs:
 - For a CCPC, CRA generally cannot collect the disputed income-tax amount while the objection is open (ITA [s.225.1](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-225.1.html))
+- The exception is the *large corporation* rule: s.225.1(7) lets CRA collect **50%** of the disputed amount despite
+  the objection
+  - s.225.1(8) defines it by the Part I.3 large-corporations test — taxable capital employed in Canada over
+    $10 million, measured across the related group
+  - That is the same $10 million threshold the guide uses for the quarterly-instalment test, so a CCPC is not
+    automatically outside it
 - Arrears interest keeps compounding at prescribed + 4% the whole time
   - Paying the disputed amount stops the interest; it is refunded with interest if the objection succeeds
 - An objection decided against the corporation can be appealed to the Tax Court of Canada
@@ -322,7 +338,9 @@ A nil assessment cannot be objected to; for a loss year, the lever is a loss det
 - Verify the Tax Court informal-procedure monetary limit ($25,000 federal tax per year)
   - Against the current Tax Court of Canada Act figure
 - Verify the s.225.1 collection-restriction scope for a CCPC before sign-off
-  - The large-corporation 50% carve-out does not apply
+  - The premise that the large-corporation 50% carve-out cannot reach a CCPC was wrong: s.225.1(8) keys off taxable
+    capital over $10 million across the related group, which a CCPC can meet
+  - Body text now carries the exception; confirm the threshold's current wording at sign-off
 - Confirm the long-lived-records interpretation against CRA's records-retention guidance (IC78-10)
   - The interpretation: the retention clock starts when the supported balance is exhausted
 - Split candidates once the page matures:

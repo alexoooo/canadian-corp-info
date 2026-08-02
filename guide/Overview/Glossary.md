@@ -32,9 +32,13 @@ For mechanics and worked examples, follow the link to the canonical page where o
 - Auto-fill my return: CRA service that populates certified tax software with CRA's slip copies and carryover balances
   - Needs a CRA account; see [T1-Filing-Basics.md](../Personal-Tax/T1-Filing-Basics.md)
 - Available for use: the ITA s.13(26)–(28) trigger that starts CCA on depreciable property
-  - For non-buildings, the trigger is first use to earn income (s.13(27))
-  - For buildings, substantially all of it first used for its purpose (s.13(28))
-  - In each case, no later than the beginning of the second tax year after acquisition
+  - The *earliest* of several statutory events, not a single test
+  - Non-buildings: when the property is delivered and capable of performing the function it was acquired for, or
+    when first used to earn income (s.13(27))
+  - Buildings: when construction or renovation is complete, or when substantially all of it is first used for its
+    intended purpose (s.13(28))
+  - Long-stop in every case: the beginning of the first taxation year that begins more than 357 days after the end
+    of the taxation year in which the property was acquired
   - No CCA is claimable before it; see [Cost-Recovery.md](../Operations/Cost-Recovery/Cost-Recovery.md#available-for-use)
 - Bill of materials (*BOM*): the list of materials a given build consumes
   - Used to charge pooled materials, at their running weighted-average cost, into that build's CIP
@@ -56,6 +60,8 @@ For mechanics and worked examples, follow the link to the canonical page where o
   - Rather than capitalized and depreciated
   - Commonly $500, up to $2,500, applied consistently
   - A bookkeeping convention, not a CRA rule
+  - Expensing below the floor does not change the item's *tax* character: a tax-capital item still belongs in the
+    CCA schedule, with a Schedule 1 add-back where book and tax diverge
   - See [Capital-Cost-Allowance.md](../Operations/Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md#capitalize-vs-expense-thresholds)
 - CCA (*Capital Cost Allowance*): the federal tax depreciation deduction under ITA s.20(1)(a)
   - See [Capital-Cost-Allowance.md](../Operations/Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md)
@@ -225,7 +231,11 @@ For mechanics and worked examples, follow the link to the canonical page where o
   - For example a shed, leasehold improvement, or custom equipment
   - Tracked through CIP rather than inventory until available for use
   - See [Materials-And-CIP.md](../Operations/Cost-Recovery/Materials-And-CIP.md)
-- Small supplier: a person whose worldwide taxable supplies stay at or under $30,000 across four consecutive calendar quarters (ETA s.148)
+- Small supplier: a person whose worldwide taxable supplies stay at or under $30,000 (ETA s.148)
+  - Two tests, with different effective times: across four consecutive calendar quarters, and within a single quarter
+  - Crossing $30,000 within one quarter ends the status immediately before the crossing supply; the four-quarter
+    test carries a grace period
+  - Both tests count the taxable supplies of *associates*
   - Registration is optional until the threshold is crossed
   - See [HST-Registration-And-Filing.md](../Operations/HST/HST-Registration-And-Filing.md)
 - Sole proprietorship: an unincorporated business of one individual, who is not a separate taxpayer from it

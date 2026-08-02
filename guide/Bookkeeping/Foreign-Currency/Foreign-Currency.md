@@ -12,15 +12,19 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
 - FX rate convention follows the *transaction date*:
   - Invoice date for revenue; trade date for securities and commissions; payment date for distributions
   - Year-end closing rate for revaluation of *monetary items*
-- FX gain/loss *character* follows the underlying transaction:
-  - *Income account*: operating receivables, payables, and cash from operations
-  - *Capital account*: foreign securities and USD held to acquire securities
+- FX gain/loss *character* follows the source transaction and the use of the funds, not the account holding them:
+  - *Income account*: operating receivables, payables, and cash from operations — including operating USD later
+    moved to a trading account or spent on securities
+  - *Capital account*: foreign securities, and USD separately acquired for a capital purpose
 - This guide uses a *multi-currency native* bookkeeping convention (see [Bookkeeping convention](Bookkeeping-Convention.md)):
   - Each ledger account has one native currency; cross-currency entries bridge through per-currency FX accounts
   - Year-end revaluation nets the FX accounts into *Foreign exchange gains/losses* on the income statement (Schedule 125)
 - Converting CAD↔USD at your bank can be expensive; *Norbert's Gambit* avoids the spread via a corporate trading account
-- Invoices to a non-resident US customer for services are *zero-rated* GST/HST
-  - Excise Tax Act, Schedule VI, Part V; full mechanics in [HST](../../Operations/HST/HST.md)
+- Invoices to a non-resident US customer for services are *zero-rated* GST/HST when the export conditions are met
+  - Consulting and professional services are excluded from the general export rule (Excise Tax Act, Schedule VI,
+    Part V, s.7) and qualify under s.23 instead; a non-resident with a Canadian permanent establishment counts as
+    resident for supplies made through it (ETA s.132(2))
+  - Full mechanics in [HST](../../Operations/HST/HST.md)
 
 Limitations:
 - Focus is on CAD↔USD for a typical owner-managed CCPC consultant or investor
@@ -95,7 +99,11 @@ flowchart TB
   - Unit-value risk during the journal window is real: the underlying is an equity, not USD cash
   - DLR / DLR.U avoids this risk and is the practical default
 - *Brokerage cash sweep* in USD: typically pays a small USD-denominated yield
-  - The yield is foreign interest income; its FX follows the payment-date convention
+  - The yield is foreign interest income; its FX follows the payment-date convention for amounts actually received
+  - A corporation must also include interest that *accrued* to year-end, whether or not it was paid (ITA [s.12(3)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-12.html))
+    - Accrue the USD interest receivable and the CAD interest income at the year-end closing rate, and remeasure the
+      receivable with the other monetary items
+    - Reverse the accrual when the cash arrives, so the payment-date entry does not double-count it
 
 
 ## Related

@@ -99,7 +99,7 @@ Debits go on the left, credits on the right; the balance is the net.
 Paying $500 of office rent in cash touches two of them:
 
 ```
-        Rent (8910)                  Cash (1001)
+        Rent (8910)            Deposits (1002-1)
    Dr        |   Cr            Dr         |   Cr
    500       |                            |   500
 ```
@@ -114,7 +114,7 @@ This guide writes entries as a dated description followed by the debit and credi
 
 Apr 30, pay April office rent by cheque:
 - Debit `Rent` (GIFI 8910) = $500
-- Credit `Cash` = $500
+- Credit `Deposits` = $500
 
 *Posting* copies each line to its account in the *general ledger*.  
 The ledger is the same entries reorganized by account, so every account shows its running balance.  
@@ -139,12 +139,12 @@ For the Quick Method's effect on the booked amounts, see [HST](../Operations/HST
 The year's transactions:
 
 1. Incorporate and inject share capital (the owner subscribes for common shares for $10,000 cash):
-   - Debit `Cash` (GIFI 1001) = $10,000
+   - Debit `Deposits` (GIFI 1002-1) = $10,000
    - Credit `Common shares` (GIFI 3500) = $10,000
 2. Buy a laptop, $2,000 + $260 HST, from the corporate account (a capital asset, not an expense):
    - Debit `Computer equipment/software` (GIFI 1774) = $2,000
    - Debit `HST receivable` = $260
-   - Credit `Cash` = $2,260
+   - Credit `Deposits` = $2,260
 3. Invoice a client for $8,000 of services + $1,040 HST, on account:
    - Debit `Trade accounts receivable` (GIFI 1062) = $9,040
    - Credit `Trade sales of goods and services` (GIFI 8000) = $8,000
@@ -152,18 +152,18 @@ The year's transactions:
 4. Pay an annual software subscription, $1,000 + $130 HST (an operating expense):
    - Debit `Computer-related expenses` (GIFI 9150) = $1,000
    - Debit `HST receivable` = $130
-   - Credit `Cash` = $1,130
+   - Credit `Deposits` = $1,130
 5. Collect the client invoice, $9,040 received:
-   - Debit `Cash` = $9,040
+   - Debit `Deposits` = $9,040
    - Credit `Trade accounts receivable` (GIFI 1062) = $9,040
 6. Declare a $3,000 dividend, not yet paid:
    - Debit `Dividends declared` (GIFI 3700) = $3,000
    - Credit `Dividends payable` (GIFI 2962) = $3,000
 
-The `Cash` account, posted to its T-account:
+The `Deposits` account, posted to its T-account:
 
 ```
-                       Cash (1001)
+                   Deposits (1002-1)
    Dr (debit)              |   Cr (credit)
    10,000  (1) capital     |    2,260  (2) laptop
     9,040  (5) collection  |    1,130  (4) software
@@ -175,7 +175,7 @@ The trial balance after all six entries (`Trade accounts receivable` nets to zer
 
 | Account | GIFI | Debit | Credit |
 |---|---|------:|-------:|
-| Cash | `1001` | 15,650 | |
+| Deposits | `1002-1` | 15,650 | |
 | HST receivable | — | 390 | |
 | Computer equipment/software | `1774` | 2,000 | |
 | Computer-related expenses | `9150` | 1,000 | |
@@ -219,9 +219,10 @@ Assets (Schedule 100):
 
 | Account | GIFI | Notes |
 |---|---|---|
-| Cash | `1001` | the main operating bank account; also cash on hand — a petty-cash float is a `1001` sub-account (e.g. `1001-1`) |
-| Deposits in Canadian banks and institutions – Canadian currency | `1002` | a separate CAD savings or second account |
-| Deposits in Canadian banks and institutions – foreign currency | `1003` | a USD account held at a Canadian bank |
+| Cash | `1001` | cash on hand and cash instruments only — a petty-cash float is a `1001` sub-account (e.g. `1001-1`) |
+| Deposits | `1002-1` | the main CAD operating chequing account; RC4088 `1002` is deposits in Canadian banks, CAD |
+| Deposits - investment | `1002-2` | cash sitting in a corporate brokerage account |
+| Deposits - USD | `1003` | a USD account held at a Canadian bank |
 | Trade accounts receivable | `1062` | amounts billed to clients, not yet collected |
 | Allowance for doubtful trade accounts receivable | `1063` | contra-asset for receivables unlikely to be collected |
 | Inventories | `1120` | rollup; `1121` goods for sale, `1122` parts and supplies, `1125` work in progress, `1126` raw materials |
@@ -233,14 +234,18 @@ Assets (Schedule 100):
 | Intangible assets | `2010` | `2012` goodwill, `2018` incorporation costs |
 | Long-term investments | `2300` | `2303` Canadian shares (a corporate brokerage account) |
 
-Cash-line convention used on this page:
-- `1001` Cash is the main operating chequing account
-- `1002` / `1003` hold any separate savings, second, or foreign-currency account
-  - A corporate brokerage cash balance sits in a `1002` sub-account
-  - [Foreign Currency](Foreign-Currency/Foreign-Currency.md) books its own CAD operating account to `1002-1`
+Cash-line convention, used on this page and throughout the guide:
+- `1002-1` Deposits is the main CAD operating chequing account
+- `1002-2` holds a corporate brokerage cash balance; `1003` holds a USD account at a Canadian bank
+- `1001` Cash is reserved for cash on hand and cash instruments — a petty-cash float (`1001-1`), undeposited
+  cheques, money orders
 
-A chequing balance is equally codeable to `1002`, since it is a deposit in a Canadian bank.  
-Either mapping is fine, provided it is applied consistently and each account keeps the same code year to year.  
+RC4088 defines `1001` Cash as bank drafts, bank notes, cheques, coins, currency, money orders, postal notes, and
+post-dated cheques, and defines `1002` as deposits in Canadian banks and institutions in Canadian currency.  
+A chequing balance is a deposit in a Canadian bank, and a generic line is only for items no specific line matches,
+so `1002` is the exact code rather than an equally good alternative.  
+The same tree is used by [Bookkeeping convention](Foreign-Currency/Bookkeeping-Convention.md) and
+[T3](../Investments/T3/T3.md).  
 
 The HST control accounts (`HST receivable` for input tax credits, `HST collected`) have no dedicated GIFI line.  
 At year-end they net to `1483` Taxes recoverable/refundable, or to `2680` Taxes payable if a net amount is owed.  

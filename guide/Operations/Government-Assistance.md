@@ -41,7 +41,7 @@ The result is one taxation of the dollar, at the speed of the thing it funded â€
 ## Assistance Toward Expenses
 
 The default booking, for a $3,000 hiring subsidy received in cash:
-- Debit `Cash` (GIFI 1001) = $3,000
+- Debit `Deposits` (GIFI 1002-1) = $3,000
 - Credit `Subsidies and grants` (GIFI 8242) = $3,000
 
 The gross method above keeps the funded expense on its own line at full cost.  
@@ -57,8 +57,8 @@ A $20,000 Class 8 machine with a $5,000 provincial equipment grant:
 - Capital cost for CCA: $20,000 âˆ’ $5,000 = $15,000
 - The Class 8 addition on Schedule 8 is $15,000, and every year's CCA runs on that reduced base
 - In the books, record the asset net so books and tax agree:
-  - Debit `Machinery and equipment` (GIFI 1740) = $20,000, Credit `Cash` = $20,000 (the purchase)
-  - Debit `Cash` = $5,000, Credit `Machinery and equipment` (1740) = $5,000 (the grant)
+  - Debit `Machinery and equipment` (GIFI 1740) = $20,000, Credit `Deposits` = $20,000 (the purchase)
+  - Debit `Deposits` = $5,000, Credit `Machinery and equipment` (1740) = $5,000 (the grant)
 
 See [Capital Cost Allowance](Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md) for the pool mechanics.  
 An inducement that would otherwise be s.12(1)(x) income can also be elected against the capital cost of related property ([s.13(7.4)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-13.html)).  

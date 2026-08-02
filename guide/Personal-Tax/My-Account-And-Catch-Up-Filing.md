@@ -11,7 +11,7 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
 - New registration requires a return assessed within the last two years
   - The exception: signing in through a provincial partner (BC Services Card, Alberta.ca Account)
   - The *document verification service* makes access immediate once you qualify; the mailed code takes ~10 days
-- File back years oldest-first; a refund reaches back 10 years, an unfiled balance never expires
+- File back years oldest-first; CRA *may* refund back 10 years at its discretion, and an unfiled balance never expires
 - A late-filed year with a balance owing costs 5% plus 1% per month, and interest compounds daily
 - Relief on penalties and interest (RC4288) and the Voluntary Disclosures Program mirror the corporate machinery
 
@@ -58,9 +58,12 @@ An existing CRA account does not get revoked for non-filing; the data behind it 
 
 - NETFILE accepts initial returns back to 2018 (as of the 2026 season); older years go on paper or through a preparer
 - File oldest-first: carryforwards (RRSP room, losses, donation carryforwards) build in sequence
-- A refund is paid only for a return filed within 10 calendar years after the year-end
-  (ITA [s.164(1.5)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-164.html))
-  - Refund years beyond that are simply lost; balance-owing years never expire
+- The ordinary refund rule is *three* years: ITA [s.164(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-164.html) requires the return within three years of the year-end
+- Beyond three years, an individual relies on extended relief: under s.164(1.5)(a) the Minister **may** refund an
+  overpayment where the return was filed within 10 calendar years after the year-end
+  - "May", not "must" — it is discretionary relief, not an entitlement, so an old refund is worth pursuing but
+    should not be counted on
+  - Outside the 10-year window the discretion is gone entirely; balance-owing years never expire
 - Benefits keyed to the T1 (GST/HST credit, CCB) resume only once the missing returns are assessed
 
 

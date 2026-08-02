@@ -12,8 +12,9 @@ See parent document: [Business Acquisition](Business-Acquisition.md)
 - The buyer corporation issues *redeemable, retractable preferred shares* to the vendors
   - Their fixed redemption value equals the price
 - A *section 85 rollover* lets the vendors defer their gain on the exchange
-- The corporation redeems the shares over time from retained earnings
-  - Each redemption above paid-up capital is a *deemed dividend* to the vendor (ITA s.84(3))
+- The corporation redeems the shares over time as cash allows, within the corporate-law solvency tests
+  - Each redemption above paid-up capital is a *deemed dividend* to the holder (ITA s.84(3))
+- On an incorporated-target *asset* sale the shares go to the target corporation, not to its shareholders
 - Redeeming low-PUC shares mostly produces *dividend* treatment, not capital-gain treatment
   - A key planning difference from a cash sale
 
@@ -26,12 +27,21 @@ Limitations:
 
 ## Paying with Shares Instead of Cash
 
-Rather than pay cash on closing, the buyer corporation issues the vendors its *preferred shares* (see [Share Capital](../Corporate-Structure/Share-Capital.md)).  
+Rather than pay cash on closing, the buyer corporation issues the seller its *preferred shares* (see [Share Capital](../Corporate-Structure/Share-Capital.md)).  
 The shares are redeemable and retractable, with a fixed redemption value equal to the agreed purchase price.  
 
-The vendors now hold a fixed, priority claim on the buyer corporation.  
-The corporation redeems that claim over the following years out of its retained earnings.  
-That is how the previous owners get paid.  
+Who the seller is follows the structure, and it changes who holds the shares:
+- *Share purchase*: the target's shareholders hand over their shares and take the preferred shares personally
+- *Unincorporated asset purchase*: the proprietor or partners transfer the assets and take the shares personally
+- *Incorporated-target asset purchase*: the target corporation is the transferor, so the preferred shares are issued
+  to *it*
+  - The target's own tax on the disposition, and the later extraction to its shareholders, both remain to be dealt
+    with (see [Asset vs Share Purchase](Asset-vs-Share.md))
+
+The seller now holds a fixed, priority claim on the buyer corporation.  
+The corporation redeems that claim over the following years as its cash flow allows.  
+Retained earnings measures how much profit has accumulated, not how much cash is on hand; the redemption needs the
+money and the solvency tests both.  
 
 This is a *vendor take-back* in equity rather than debt:
 - As *shares*, the redemptions are dividends, not interest-and-principal; the corporation gets no deduction for them
@@ -41,7 +51,8 @@ This is a *vendor take-back* in equity rather than debt:
 
 ## The Section 85 Rollover
 
-Handing the vendors shares is itself a disposition of what they gave up (their target shares, or the business assets).  
+Handing over shares is itself a disposition of what the seller gave up — the target shares on a share purchase, or
+the business assets on an asset purchase, in which case the transferor is whoever owned them.  
 Without relief it would trigger their gain immediately.  
 A *rollover* defers that gain.  
 
@@ -55,7 +66,10 @@ The main tool is the joint election under ITA [s.85(1)](https://laws-lois.justic
     - Full deferral needs boot no greater than the property's tax cost
 - The election is made on Form T2057, with a strict filing deadline
   - The earliest of the parties' return due dates for the year of the transfer (s.85(6))
-  - A late election is possible for up to three years, with a penalty
+  - Three routes, in order: the normal deadline; a late election within three years of it, with the prescribed
+    penalty (s.85(7)); and, past three years, ministerial acceptance where CRA considers it just and equitable
+    (s.85(7.1)), also subject to the statutory payment
+  - The third route is discretionary relief, not an entitlement — but it is not an absolute bar either
 
 A share-for-share exchange between arm's-length parties can instead use ITA s.85.1.  
 It applies automatically, without an election.  

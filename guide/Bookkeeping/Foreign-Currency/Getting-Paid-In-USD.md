@@ -4,8 +4,17 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
 
 Scope and limitations are on the [Foreign Currency hub](Foreign-Currency.md).
 
-The accrual + tax basis convention (per [Small Business Tax Overview](../../Overview/Small-Business-Tax.md)) recognizes revenue at the invoice date.  
-For a USD invoice, the CAD equivalent is computed at the BoC rate on the invoice date.  
+The accrual + tax basis convention (per [Small Business Tax Overview](../../Overview/Small-Business-Tax.md)) recognizes revenue when it is earned.  
+For a consultant billing on completion that is normally the invoice date, and this guide uses the invoice date as
+the FX rate date for revenue.  
+It is the right date only where the services have been rendered and billing has not been delayed: ITA [s.12(1)(b)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-12.html) deems an amount receivable at the earlier of the day the account was rendered and the day it would have been rendered but for undue delay.  
+For work delivered before it is billed, accrue the revenue in the year it was earned and translate the accrual at
+that year-end's closing rate.  
+The entries are in
+[HST Bookkeeping — Year-end straddle](../../Operations/HST/HST-Bookkeeping.md#year-end-straddle-income-vs-hst-timing).  
+The GST/HST tax point is a separate question on its own timing, and does not move with the income-tax recognition.  
+
+For a USD invoice issued on time, the CAD equivalent is computed at the BoC rate on the invoice date.  
 That figure is the recorded revenue.  
 
 ## Bookkeeping
@@ -64,13 +73,17 @@ The treatment is income-account (IT-95R paragraph 8); fully includable, no inclu
 
 Services rendered to a non-resident customer with no presence in Canada are typically *zero-rated*.  
 The zero-rating comes from the *Excise Tax Act*, Schedule VI, Part V:
-- Section 7 covers general services to a non-resident
+- Section 7 covers general services to a non-resident, but paragraph 7(b) expressly excludes advisory, consulting,
+  and professional services
 - Section 23 covers advisory, professional, or consulting services to a non-resident
-  - The typical category for an IT or management consultant
+  - The typical category for an IT or management consultant, and the operative provision for this guide's reader
 - Both rate the supply at 0% GST/HST while still treating it as a *taxable supply*
 - Each has carve-outs: services rendered to an individual physically in Canada; agency services for the non-resident
   - Also services in respect of Canadian real property or tangible personal property in Canada, among others
 - The non-resident customer's status and the place of supply both need to support the zero-rating
+  - A non-resident with a permanent establishment in Canada is deemed resident for supplies made through it
+    (ETA [s.132(2)](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-132.html)), so a US client with a
+    Canadian branch can fail the non-residence test before Schedule VI is reached
 
 Invoice presentation:
 - Show "GST/HST: $0.00 (zero-rated under Excise Tax Act, Schedule VI, Part V, section 7)" or section 23 as appropriate
@@ -78,7 +91,9 @@ Invoice presentation:
 
 Registration and ITC consequences:
 - Zero-rated revenue still counts as *taxable supplies* for the small-supplier threshold (ETA [s.148](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-148.html))
-  - A CCPC with all-US-client revenue over $30,000 in a rolling four-quarter window must register
+  - A CCPC with all-US-client revenue over $30,000 must register — on the four-consecutive-quarter test, or
+    immediately on the supply that crosses $30,000 within a single quarter
+  - Both tests include the taxable supplies of *associates*
 - Once registered, ITCs on Canadian inputs remain claimable even though all output is zero-rated
   - The corp typically files for a GST/HST refund each period
 - See [HST](../../Operations/HST/HST.md) for the full mechanics: registration, reporting periods, ITC tracking, Quick Method
@@ -105,13 +120,29 @@ The HST is recognized with the next-year invoice at the later rate.
 
 ## US Withholding Tax and W-8BEN-E
 
-US tax law requires a US client to withhold US tax on payments to a foreign person unless an exemption is supported:
-- File Form *W-8BEN-E* with the US client (not with the IRS) to certify the corp's Canadian tax residency
-- Claim Article VII (business profits) of the Canada-US Tax Convention
-  - Business profits of a Canadian enterprise are taxable only in Canada, absent a US *permanent establishment*
-- A remote-from-Canada services CCPC has no US PE under treaty Article V and the US withholding rate is 0%
-- The W-8BEN-E is renewed every three years or sooner on a change of circumstances
-- Full mechanics are out of scope for this guide
+US chapter 3 withholding applies to *US-source* FDAP income paid to a foreign person.  
+For services, the source is where the services are performed — so services performed remotely from Canada are
+ordinarily foreign-source, and no US withholding arises in the first place.  
+The treaty is not what makes the typical remote consulting payment exempt.
+
+The decision boundary:
+- *Services performed in Canada*: foreign-source, outside chapter 3 withholding
+  - A US payer may still ask for Form *W-8BEN-E* to document the corp's foreign status, its chapter 4 (FATCA)
+    status, or an exemption from information reporting
+  - File it with the client, never with the IRS
+- *Services performed in the US*, even partly: source allocation, permanent-establishment and effectively-connected-
+  income analysis, and possibly a different form all become live
+  - This is where Article VII (business profits) and Article V (permanent establishment) of the Canada-US Tax
+    Convention actually do work
+  - Travel to a US client site is the common trigger; get US tax advice before invoicing that work
+- Do not treat Part III / Article VII as a default entry on every W-8BEN-E; the correct parts depend on the payment
+  and on the entity's facts
+- Validity: the form generally lasts to the last day of the third succeeding calendar year, can in some
+  circumstances remain valid indefinitely, and requires notice to the payer within 30 days of a change in
+  circumstances
+- Full mechanics are out of scope for this guide; US tax positions are advice territory
+  - IRS, [Source of income — personal service income](https://www.irs.gov/individuals/international-taxpayers/source-of-income-personal-service-income)
+  - IRS, [Instructions for Form W-8BEN-E](https://www.irs.gov/instructions/iw8bene)
 
 ## Worked Example
 

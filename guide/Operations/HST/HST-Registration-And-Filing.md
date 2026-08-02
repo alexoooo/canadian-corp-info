@@ -28,10 +28,17 @@ Two clocks run once the threshold is crossed, and the effective date depends on 
 - *Filing deadline for the registration application*: 29 days after the corp is first required to be registered
   - ETA [s.240(2.1)](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-240.html)
 
-*Taxable supplies* for this test include zero-rated supplies but exclude *exempt* supplies.  
-Zero-rated includes services to non-residents; see [Zero-rated supplies](#zero-rated-supplies) below.  
-Exempt covers most financial services, residential rent, and basic health and dental care.  
-Most child-care and educational services are exempt too.  
+The threshold base is worldwide taxable supplies (including zero-rated) *minus* three statutory exclusions
+(ETA [s.148(1)](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-148.html)):
+- Supplies of *financial services*
+- Sales of *capital property*
+- Consideration attributable to *goodwill* on a qualifying sale of a business
+
+So selling a capital asset does not push the corp over the threshold, even though the sale itself may be taxable.  
+*Exempt* supplies are outside the base entirely: most financial services, residential rent, and basic health and
+dental care, plus most child-care and educational services.  
+Zero-rated supplies *are* in the base, and include services to non-residents; see
+[Zero-rated supplies](#zero-rated-supplies) below.  
 *Associated* corporations' taxable supplies aggregate with the corp's own when applying the test.  
 The *associate* definition is in ETA [s.148(4)](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-148.html).  
 A group of associated CCPCs cannot stay below the threshold by splitting revenue across entities.  
@@ -118,8 +125,16 @@ Zero-rated categories most relevant to an owner-managed CCPC:
 - *Services rendered to a non-resident* with no presence in Canada (Schedule VI, Part V, s.7)
   - Carve-outs: services performed for an individual physically in Canada
   - Also services in respect of Canadian real or tangible personal property
+  - Paragraph 7(b) expressly excludes advisory, consulting, and professional services, which run through s.23
 - *Advisory, professional, or consulting services to a non-resident* (Schedule VI, Part V, s.23)
   - The typical category for an IT, management, or design consultant invoicing US clients
+
+Non-residence is a condition, never the conclusion: the specific provision and every one of its conditions have to
+be met before a supply is zero-rated.  
+A non-resident with a permanent establishment in Canada is deemed *resident* for supplies made through it
+(ETA [s.132(2)](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-132.html)).  
+A US client with a Canadian branch can therefore fail the non-residence test outright, before Schedule VI is
+reached at all.  
 - *Freight transportation services on international shipments* (Schedule VI, Part VII)
 - *Basic groceries, prescription drugs, certain medical devices*: relevant only to a CCPC in those industries
 
@@ -164,8 +179,15 @@ Useful when the corp consistently runs in a refund position: its inputs carry mo
 
 Filing and remittance deadlines:
 - *Annual filer*: return and balance due 3 months after fiscal year-end (e.g. Mar 31 for a Dec 31 year-end)
-- *Quarterly filer*: return and balance due 1 month after each calendar quarter-end
-- *Monthly filer*: return and balance due 1 month after each calendar month-end
+- *Quarterly filer*: return and balance due 1 month after each *fiscal* quarter-end
+- *Monthly filer*: return and balance due 1 month after each *fiscal* month-end
+
+Reporting periods are fiscal months, fiscal quarters, and fiscal years (ETA
+[ss.243–244](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-243.html)) — not calendar ones.  
+A corporation's GST/HST fiscal year normally follows its income-tax year unless it elects otherwise, so a corp with
+a June 30 year-end has quarters ending September 30, December 31, March 31 and June 30, with returns due one month
+after each.  
+Calendar quarters coincide only where the GST/HST fiscal year is the calendar year.  
 - *Annual instalments*: an annual filer with net tax of $3,000 or more must pay quarterly instalments
   - Each instalment is one-quarter of the instalment base
   - The base is the lesser of the prior year's net tax and the current year's estimate

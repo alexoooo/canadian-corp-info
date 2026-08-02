@@ -24,18 +24,24 @@ Limitations:
 
 ## The Two Routes for the Same Dollar
 
-$100,000 of small-business-rate profit the owner wants out, Ontario:
+$100,000 of small-business-rate profit the owner wants out, Ontario.  
+The two columns are not the same corporate cost: the salary route spends $100,000 *plus* the employer's CPP match,
+the dividend route spends $100,000 flat.  
+To compare equal outlays, solve for the gross salary at which salary plus employer CPP totals $100,000.  
 
 | | Salary route | Dividend route |
 |---|---|---|
 | Corporation deducts | $100,000 (plus employer CPP) | nothing |
-| Corporate tax | $0 on the paid-out amount | ≈ 12.2% → $12,200 (see note) |
-| Cash to the owner | $100,000 gross | $87,800 as a non-eligible dividend |
+| Total corporate outlay | $100,000 + employer CPP | $100,000 |
+| Corporate tax | $0 on the paid-out amount | ≈ 11.7% → $11,700 (see note) |
+| Cash to the owner | $100,000 gross | $88,300 as a non-eligible dividend |
 | Owner's T1 | employment income, at full marginal rates | grossed up 15%, then the dividend tax credit |
 | Owner also pays | employee CPP; corp pays employer CPP | no CPP |
 | Slip | T4 | T5 |
 
-The corporate rate note: the SBD-rate figure moves with the province; Ontario's cut effective 2026-07-01 lowers the combined rate — see [Small Business Tax Overview](../Overview/Small-Business-Tax.md#what-is-corporate-tax) for the current numbers.  
+The corporate rate note: 11.7% is the calendar-2026 Ontario blend — 12.2% to June 30, 11.2% from July 1, prorated
+by days. The figure also moves with the province; see
+[Small Business Tax Overview](../Overview/Small-Business-Tax.md#corporate-tax).  
 Integration is calibrated so the two columns' *combined* corporate-plus-personal tax finishes within a few percentage points of each other; the per-flavour arithmetic is worked on [Tax Integration](../Overview/Tax-Integration.md) and [Dividends - worked examples](Dividends/Dividends-Examples.md).  
 What follows is the lines that actually differ.  
 
@@ -64,8 +70,9 @@ Only salary is *earned income* for RRSP purposes:
 - Dividends create no room at any amount
 
 A salary pitched at the RRSP target is a common anchor:
-- Pay enough salary to fund the intended RRSP contribution; take the rest as dividends
-- The RRSP deduction then shelters part of the salary immediately
+- Pay enough salary to fund the intended RRSP contribution, using room already available; take the rest as dividends
+- The RRSP deduction then shelters part of the salary immediately — but only against room that already exists
+- This year's salary creates next year's new room, so a first-year owner-manager has none to deduct against yet
 - The plan mechanics (contribution deadline, over-contribution) are worked in [TFSA and RRSP Contributions](../Personal-Tax/TFSA-And-RRSP-Contributions.md)
 
 
@@ -125,4 +132,6 @@ The common pattern combines them: a fixed monthly salary sized to the RRSP/CPP t
 - Work a full both-sides numeric example at two or three income levels with verified 2026 Ontario T1 brackets, credits, and dividend rates; the page currently keeps the personal side structural
 - Verify the 2026 RRSP dollar limit ($33,810) and the earned-income threshold against CRA's published limits at sign-off
 - Verify the s.146(1) *earned income* citation carries the salary-vs-dividend distinction stated
-- Reconcile the SBD-rate references (12.2% vs the 11.2% effective 2026-07-01) with [Small Business Tax Overview](../Overview/Small-Business-Tax.md) once the maintainer settles how mid-year rate changes are quoted
+- Confirm the mid-year rate convention applied here: every figure pinned to its period, straddle tax years prorated
+  by days (calendar 2026 ≈ 11.7%)
+  - Stated canonically in [Small Business Tax Overview](../Overview/Small-Business-Tax.md#corporate-tax)

@@ -113,7 +113,7 @@ If CRA recharacterizes gains as income:
   - An election can convert the excessive dividend to a taxable dividend (see [Capital Dividend Account](Capital-Dividend-Account/Capital-Dividend-Account.md))
 - Whether the trading income is *active* business income (SBD-eligible) is contested territory
   - A securities-trading business is not a specified investment business (its income is from trading, not property)
-  - Do not bank the 12.2% rate without advice
+  - Do not bank the small-business rate without advice
 
 The CDA exposure is the sharpest edge.  
 Settle character risk *before* a capital-dividend sweep, not after (see [Winding Down](../Corporate-Lifecycle/Winding-Down.md)).  

@@ -35,7 +35,7 @@ Credit: "Dividends payable" (GIFI 2962) = $X
 
 Payment, when cash transfers.  
 Debit: "Dividends payable" (GIFI 2962) = $X  
-Credit: "Cash" (GIFI 1001, or specific cash account) = $X  
+Credit: "Deposits" (GIFI 1002-1, or whichever bank account pays it) = $X  
 
 Payment via credit to the shareholder loan account. Substitute for the cash credit.  
 The dividend is credited to *Due to shareholder*, increasing the amount the corporation owes the shareholder.  
@@ -56,7 +56,7 @@ The receivable has to actually come off the corporation's books (via the journal
 
 When declaration and payment occur on the same day, the two entries can be collapsed and *Dividends payable* skipped.  
 Debit: "Dividends declared" (GIFI 3700) = $X  
-Credit: "Cash" (GIFI 1001) = $X  
+Credit: "Deposits" (GIFI 1002-1) = $X  
 
 Year-end close. The Statement of Retained Earnings nets dividends declared against opening retained earnings.  
 That derives the closing balance (GIFI 3849); Schedule 100 carries the statement in most T2 software.  

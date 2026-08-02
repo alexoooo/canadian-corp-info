@@ -83,14 +83,14 @@ This account naming is the canonical convention used in [HST Examples](HST-Examp
 Those are on [Inventory](../Cost-Recovery/Inventory-And-COGS.md), [Capital Cost Allowance](../Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md), and [Materials and CIP](../Cost-Recovery/Materials-And-CIP.md).  
 
 Posting pattern on a sale to a Canadian customer (HST-registered Ontario corp):
-- Debit `Cash` or `Trade accounts receivable` = sale price + 13% HST
+- Debit `Deposits` or `Trade accounts receivable` = sale price + 13% HST
 - Credit `Trade sales of goods and services` (GIFI 8000) = sale price (net of HST)
 - Credit `HST collected` = 13% × sale price
 
 Posting pattern on a purchase from an HST-registered supplier:
 - Debit the expense or asset account = invoice net of HST
 - Debit `HST receivable` = HST on the invoice (the future ITC)
-- Credit `Cash` or `Accounts payable` = gross invoice
+- Credit `Deposits` or `Accounts payable` = gross invoice
 
 Posting pattern at the close of a reporting period (regular method):
 - Debit `HST collected` = closing balance

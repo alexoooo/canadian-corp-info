@@ -60,8 +60,10 @@ The Gambit round trip is a *securities disposition*, not an income-account curre
     - This guide stays on trade-date for consistency with the [Adjusted Cost Base](../../Investments/Adjusted-Cost-Base/Adjusted-Cost-Base.md) workflow
 - The disposition produces a small capital gain or loss
   - Equal to (CAD proceeds from the DLR sale) − (CAD ACB of the DLR.U leg) − (outlays and expenses on disposition)
-- Half of the gain (or loss) is taxable (or deductible) at the current 50% inclusion rate
-  - Report on T2 Schedule 6 under capital-property dispositions
+- Report the disposition on T2 Schedule 6 under capital-property dispositions; gains and losses then part company
+  - A net *gain*: half is a *taxable capital gain* and carries to Schedule 1 line 113
+  - A net *loss*: the full amount carries to Schedule 4, the net-capital-loss pool, and can only ever shelter capital
+    gains in another year (ITA [s.111(1)(b)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-111.html) and (1.1))
 - The capital gain is part of *Aggregate Investment Income* (AII) and does not benefit from the *Small Business Deduction*
   - For a small Gambit gain this is immaterial, but the entry is still required
 - The personal $200 FX de minimis (s.39(1.1)) does not apply to a corporation
@@ -122,8 +124,19 @@ Schedule 6 entry:
 - Outlays and expenses on disposition: CAD 9.95 (sell-side commission)
 - ACB: CAD 13,613.53 (USD purchase plus buy-side commission, at trade-date FX)
 - Capital loss: CAD 23.48 (= 13,600 − 9.95 − 13,613.53)
-- Half of the loss is an *allowable capital loss* on Schedule 1 in the usual capital-gains pattern
-  - Small losses are still reportable
+
+Where the CAD 23.48 then goes:
+- *Schedule 1*: add back the full CAD 23.48 book loss (`8211-1`) in the book-to-tax reconciliation
+  - The accounting loss is reversed in full; the tax outcome comes from Schedule 6, not the income statement
+- *Schedule 6*: nets every capital disposition for the year
+  - A net gain sends half to Schedule 1 line 113
+  - A net loss sends the full amount to *Schedule 4*, the net-capital-loss continuity schedule
+- With no other capital gains in the year, the CAD 23.48 lands on Schedule 4 and produces no deduction at all
+  - Net capital losses carry back 3 years and forward indefinitely, usable only against taxable capital gains
+  - A Gambit loss cannot reduce consulting income
+- The 50% factor belongs to the taxable-capital-gain computation and the loss-pool mechanics
+  - It is not a standalone half-deduction on Schedule 1
+- Small losses are still reportable
 
 The trading accounts (8231-1, 8231-2) from the buy leg carry the per-currency positions of the FX conversion.  
 8231-1 has a CAD 13,613.53 credit balance; 8231-2 has a USD 10,009.95 debit balance.  

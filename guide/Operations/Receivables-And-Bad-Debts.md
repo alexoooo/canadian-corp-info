@@ -45,7 +45,7 @@ Invoicing $5,000 of consulting plus 13% HST:
 | `Trade sales of goods and services` (`8000`) | | 5,000.00 |
 | `HST collected` | | 650.00 |
 
-Collection reverses the receivable: Dr `Cash` (`1001`) 5,650, Cr `Trade accounts receivable` (`1062`) 5,650.  
+Collection reverses the receivable: Dr `Deposits` (`1002-1`) 5,650, Cr `Trade accounts receivable` (`1062`) 5,650.  
 The gap between these two entries is where this page lives.  
 Review the open receivables at every year-end (an *aging* by invoice date) and decide which are current, doubtful, or bad.  
 
@@ -57,8 +57,10 @@ A debt that is *doubtful* — collection is uncertain but not yet hopeless — s
   - Dr `Bad debt expense` (`8590`), Cr `1063`
 - The reserve is deductible only against amounts that were included in income
   - It must be a reasonable, debt-by-debt estimate, not a formula percentage of all receivables
-- The invoice's HST portion was never income
+- Under the regular method the invoice's HST portion was never income, being tax collected on CRA's behalf
   - So the supportable reserve is the net-of-HST share of the doubtful balance (see TODO)
+  - The Quick Method works out differently, because the tax-included amount does pass through income; the write-off
+    section below shows the arithmetic
 
 The reserve is annual, not permanent:
 - Last year's reserve is added back to income this year (ITA [s.12(1)(d)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-12.html))
@@ -88,6 +90,15 @@ Writing off the $5,650 invoice under the regular method:
 
 Under the Quick Method the s.231 line is unavailable for a quick-method supply.  
 The full $5,650 is then `Bad debt expense`.  
+
+That looks inconsistent with the reserve above, which is capped at the net-of-HST share, so it is worth seeing why
+both are right:
+- Under the Quick Method the corporation never treated the $650 as tax it was holding for CRA
+- It recognized revenue of $5,000, remitted 8.8% of the tax-included $5,650 in cash, and booked the kept spread as
+  its own revenue under ITA s.9
+- So the whole $5,650 passed through income on the way in, and the whole $5,650 comes back out on the write-off
+- The reserve is different because it is claimed against amounts *included in income* on a regular-method invoice,
+  where the HST portion was collected as tax and never was income
 If the debt had been through the allowance first, the write-off debits `1063` instead of `8590` for the reserved portion.  
 Partial write-offs are fine: write off the portion established to be bad and keep the rest receivable.  
 
@@ -121,7 +132,7 @@ Client later pays $2,260 of the written-off $5,650:
 
 | Account | Debit | Credit |
 |---|---|---|
-| `Cash` (`1001`) | 2,260.00 | |
+| `Deposits` (`1002-1`) | 2,260.00 | |
 | `Bad debt recoveries` (`8250`) | | 2,000.00 |
 | `HST collected` | | 260.00 |
 
@@ -154,7 +165,8 @@ Crediting $2,000 + $260 HST of a billed engagement against the open receivable (
 | `HST collected` — s.232 adjustment | 260.00 | |
 | `Trade accounts receivable` (`1062`) | | 2,260.00 |
 
-If the invoice was already paid, credit `Cash` (`1001`) instead — the client is refunded, not just relieved of the balance.  
+If the invoice was already paid, credit `Deposits` (`1002-1`) instead — the client is refunded, not merely relieved
+of the balance.  
 Revenue is reversed on its own line, not booked to `Bad debt expense`; nothing here was ever uncollectible.  
 
 Quick Method wrinkle: the remittance was a percentage of tax-included revenue, not tax actually collected.  

@@ -35,7 +35,7 @@ flowchart TB
     HST["Close the RT account:<br/>final return, self-assess retained assets"]
     SWEEP["Sweep the pools:<br/>capital dividend · RDTOH-recovery dividends"]
     T2A["T2 for the sweep year:<br/>dividend refund comes back"]
-    DIST["Final distribution:<br/>PUC back tax-free, rest deemed dividend"]
+    DIST["Final distribution:<br/>PUC first, rest deemed dividend"]
     T2B["Final T2 to the dissolution date"]
     CLR["TX19 clearance certificate"]
     DISS(["Articles of dissolution"])
@@ -92,7 +92,10 @@ That is the stranding problem; see [Dividends — Stranded GRIP and ERDTOH](../P
 The sweep, in order of value:
 - *CDA first*: elect and pay a capital dividend for the full balance (Form T2054, see [Capital Dividend Account](../Investments/Capital-Dividend-Account/Capital-Dividend-Account.md))
   - It is tax-free money and the easiest to leave behind by accident
-  - Check the balance immediately before the election: a late capital loss shrinks CDA retroactively
+  - Check the balance immediately before the election, and again immediately before the dividend becomes payable
+    - An *unrecorded pre-election* capital loss reduces the balance that was actually available, and can reveal that
+      the election was excessive
+    - A loss realized *after* the election affects only the later balance; nothing reaches back
 - *NERDTOH and ERDTOH next*: pay taxable dividends sized so the refunds drain both accounts
   - A non-eligible dividend of `NERDTOH ÷ 38⅓%` recovers the full balance (see [ERDTOH and NERDTOH](../Paying-Yourself/Dividends/ERDTOH-NERDTOH.md))
 - *GRIP and the eligible dividend*: size the two flavours separately; each pool answers to a different dividend type:
@@ -111,7 +114,10 @@ The refund needs two live things:
 ## The Final Distribution
 
 What remains after the sweep goes out in two slices:
-- *Paid-up capital* comes back tax-free — typically the nominal $100 subscription (see [Share Capital — PUC](Corporate-Structure/Share-Capital.md#paid-up-capital-puc))
+- *Paid-up capital* comes back first, without a deemed dividend — typically the nominal $100 subscription
+  - See [Share Capital — PUC](Corporate-Structure/Share-Capital.md#paid-up-capital-puc)
+  - It is tax-free only to the extent of the shareholder's ACB in the shares; beyond that it is a capital gain (ITA [s.40(3)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-40.html))
+  - For founder shares subscribed for cash and never touched, ACB equals PUC and nothing arises
 - Everything above PUC is a *deemed dividend* on the winding-up (ITA [s.84(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-84.html))
   - Taxed as a dividend, not as a capital gain on the shares
 - The deemed dividend is non-eligible by default; it can be designated eligible against remaining GRIP
@@ -163,7 +169,8 @@ Year 1 (the sweep year):
 
 Year 2 (the stub year):
 - File TX19 after the sweep-year T2 is assessed; receive the clearance certificate
-- Final distribution: $100 PUC back tax-free; $121,857 deemed non-eligible dividend (s.84(2)), T5 issued
+- Final distribution: $100 PUC back with no deemed dividend, and tax-free here because the founder's share ACB is
+  also $100; $121,857 deemed non-eligible dividend (s.84(2)), T5 issued
 - File the final T2 to the dissolution date (trivial: no income), then articles of dissolution
 
 Skipping the sweep would have cost real money.  

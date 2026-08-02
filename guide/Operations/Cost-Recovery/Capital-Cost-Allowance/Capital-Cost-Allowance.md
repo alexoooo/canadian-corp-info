@@ -22,6 +22,7 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
   - A positive balance with no asset left in the class is a *terminal loss* (deduction)
 - CCA is *discretionary*: you can claim any amount from $0 up to the maximum, and unused UCC carries forward indefinitely
 - Small items below the corp's capitalization policy (often $500) are expensed immediately rather than capitalized
+  - A book policy: an item that is capital for tax still belongs on Schedule 8, reconciled through Schedule 1
   - So are incorporation expenses up to $3,000
 
 Limitations:
@@ -323,10 +324,14 @@ These thresholds matter most for:
   - Standalone application software → Class 12 (100%)
   - SaaS subscriptions → operating expense, GIFI 9150 (no capitalization at all)
 - Home-office equipment: only the business-use portion of cost goes into UCC
-  - The personal-use portion is a shareholder benefit (s.15) or not capitalized
+  - Personal use of corporate property is a shareholder or employee benefit, valued under its own rules rather than
+    by pro-rating cost; an *automobile* uses the standby charge and operating-expense benefit (see below)
 
 For certain classes, you can expense an item in the books rather than capitalize and amortize it.  
-Where a class writes off the whole cost in the first year, both routes give the same deduction in the same year:
+Where a class writes off the whole cost in the first year, both routes give the same *year-one P&L amount* — but the
+book presentation never removes the property from the tax CCA system.  
+ITA s.18(1)(b) denies the current deduction and s.20(1)(a) supplies CCA, so the item still belongs on Schedule 8 and
+in the asset register, with a Schedule 1 add-back where the book expense and the CCA claim differ:
 - *Which classes*: most of Class 12 (its half-year-exempt items) and the *full-expensing* classes under AIIP
   - M&P Class 53 / 43, clean energy 43.1 / 43.2, ZEV 54 / 55 / 56
   - Also Classes 44 / 46 / 50 for property available for use before 2027 (Budget 2024)
@@ -336,8 +341,10 @@ Where a class writes off the whole cost in the first year, both routes give the 
   - Outside the AIIP window it deducts over two years and the equivalence fails
 - *When timing diverges*: only if the alternative is a declining-balance class (Class 8 at 20%, say)
   - The pool releases the cost over years; that gap is what the capitalization floor trades off
-- *On disposal*: a pooled item's proceeds can return as recapture (capped at cost)
-  - An expensed item's proceeds are simply income; rarely material for low-value resales
+- *On disposal*: the ordinary depreciable-property rules apply either way
+  - Proceeds reduce UCC by the lesser of proceeds and original cost, which can produce recapture (income)
+  - Proceeds above original cost are a capital gain on Schedule 6, which also credits the CDA
+  - Book-expensing does not convert those proceeds into ordinary income; the class is simply already at nil UCC
 
 The de minimis floor is a policy choice within limits:
 - The Income Tax Act sets no dollar threshold
@@ -367,7 +374,7 @@ Out of scope here:
 ## Bookkeeping and T2 Schedules
 
 In the books (accrual + tax basis, per [Small Business Tax Overview](../../../Overview/Small-Business-Tax.md)):
-- At acquisition: debit the fixed-asset GIFI account, credit `Cash` or `Accounts payable`
+- At acquisition: debit the fixed-asset GIFI account, credit `Deposits` or `Accounts payable`
   - `Computer equipment` 1774, `Furniture and fixtures` 1787, `Motor vehicles` 1742
   - `Machinery and equipment` 1740, `Goodwill / intangibles` 2010-series, with goodwill at 2012
 - Tax-basis-only convention: skip monthly accounting depreciation entirely
@@ -392,8 +399,13 @@ T2 schedules involved with CCA:
 ## Edge Cases
 
 - *Personal-use proportion* on a vehicle: keep a kilometre log
-  - The personal-use portion of CCA, fuel, insurance, and other vehicle costs is a shareholder benefit
-  - Under ITA s.6 / s.15, it must be added to the shareholder's personal income
+  - For an *automobile* made available by the corporation, the benefit is **not** a pro-rata share of CCA and running
+    costs; it is the prescribed *standby charge* plus the prescribed *operating-expense benefit*
+    - ITA [s.6(1)(e)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-6.html), s.6(1)(k) and s.6(2), reduced
+      by reimbursements and subject to the optional calculations
+    - CCA is expressly outside the operating-cost component
+  - Actual-cost allocation is for vehicles that are not *automobiles* as the Act defines the term
+  - The resulting amount is added to the owner's income on the T4 or as a shareholder benefit
   - See [Owner-corporation transactions](../../../Paying-Yourself/Owner-Corporation-Transactions.md)
     - Covers the standby charge, operating cost benefit, and the personal-car allowance alternative
 - *Investment Tax Credit recapture*: ITCs claimed against capital cost reduce UCC in the next year (s.13(7.1))

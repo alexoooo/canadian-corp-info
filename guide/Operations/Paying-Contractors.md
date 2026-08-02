@@ -48,6 +48,9 @@ CRA's administrative position (RC4157) narrows it in practice:
 
 The requirement reads wide enough to cover most business-to-business service fees, and enforcement of box 048 reporting has been inconsistent; CRA has said for years that the fees-for-services scope is under review (see TODO).  
 The conservative course for an owner-managed corporation paying an unincorporated contractor: file the slip.  
+This page is the canonical statement of the box 048 question; the payee's view of the same slip is in
+[Becoming a Sole Proprietor](../Sole-Proprietorship/Becoming-A-Sole-Proprietor.md), which defers to it rather than
+restating the rule.  
 
 What the T4A does not do:
 - No withholding accompanies it for a Canadian-resident payee; the contractor remits their own tax and CPP
@@ -65,7 +68,7 @@ What the T4A does not do:
 Bookkeeping is unaffected by the slip: the invoice posts when incurred:
 - Debit `Sub-contracts` (GIFI 9110) = fee
 - Debit `HST receivable` = the contractor's HST, recoverable as an ITC under the regular method
-- Credit `Cash` (or `2620` Amounts payable until paid)
+- Credit `Deposits` (or `2620` Amounts payable until paid)
 
 The slip reports the calendar year's *payments*, not the fiscal year's expense; a year-end straddle invoice lands on next year's slip.  
 
@@ -82,12 +85,17 @@ The pieces, each in its own subsection:
 - *Exceptions* (238(5)): payments solely for goods for sale or lease, amounts already under s.212 non-resident withholding, and services rendered outside Canada by non-residents
 
 Mechanics:
-- One T5018 slip per subcontractor, plus the T5018 Summary
-- The reported amount is the total paid or credited for the period, and includes the GST/HST charged (see TODO)
+- A slip is required only where total payments to that subcontractor for the reporting period exceed **$500**
+  - The $500 test is applied *before* GST/HST
+  - Below it, no slip; the payments are still deductible and still belong in the job costing
+- One T5018 slip per subcontractor who crosses the threshold, plus the T5018 Summary
+- The reported amount in Box 22 is the total paid or credited for the period and *includes* the GST/HST charged
+  - So the threshold and the reported figure use different tax bases: $500 net of tax to qualify, gross of tax to report
 - A mixed goods-and-services payment is reported in full; only goods-only payments fall out
 - Amounts on a T5018 are not also reported on a T4A
 
-A construction CCPC costing its jobs through [Materials and CIP](Cost-Recovery/Materials-And-CIP.md) meets this filing for every subcontractor it pays.  
+A construction CCPC costing its jobs through [Materials and CIP](Cost-Recovery/Materials-And-CIP.md) meets this
+filing for every subcontractor it pays more than $500 in the period.  
 
 
 ## Non-Resident Contractors
@@ -102,7 +110,7 @@ Two cases with opposite answers:
 
 Entries for a $10,000 fee subject to Reg 105:
 - Debit `Sub-contracts` (GIFI 9110) = $10,000
-- Credit `Cash` = $8,500
+- Credit `Deposits` = $8,500
 - Credit `Non-resident withholding payable` (a `2680` sub-account) = $1,500
 
 *Services rendered outside Canada*: the case this audience actually meets — a remote US freelancer working from the US.  

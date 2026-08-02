@@ -118,7 +118,7 @@ A capital dividend is reported on the capital-dividend line of Schedule 3 (per t
 
 The filing includes (Reg 2101):
 - A certified copy of the directors' resolution
-- A schedule showing the CDA computation immediately before the election
+- A schedule showing the CDA computation immediately before the dividend becomes payable, the time s.83(2) tests
 
 The deadline is on or before the day the dividend becomes payable (or the first day any part is paid, if earlier).  
 The S3 line is information-reporting; the T2054 is what makes the dividend a capital dividend for tax purposes.  

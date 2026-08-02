@@ -27,7 +27,8 @@ Limitations:
 - The salary-vs-dividend remuneration tradeoff (RRSP room, CPP credits, integration) is out of scope
   - It is worked in [Salary vs Dividends](Salary-Vs-Dividends.md)
 - Valuing taxable benefits (automobile, home office, personal use of corporate property) is out of scope
-  - [Owner-corporation transactions](Owner-Corporation-Transactions.md) covers the valuation; this page covers how a benefit is reported once valued
+  - [Owner-corporation transactions](Owner-Corporation-Transactions.md) covers the valuation; this page covers the
+    pay-run entry, the CPP consequences, and the slip reporting once the benefit is valued
 - Provincial employer levies (Ontario Employer Health Tax, WSIB) are out of scope beyond the thresholds that say when to look:
   - EHT: eligible private-sector employers pay nothing on the first $1,000,000 of annual Ontario payroll (see TODO)
     - A single owner-manager salary rarely approaches it
@@ -114,8 +115,14 @@ Remitting late or not at all is treated more severely than a late corporate-tax 
 - *What*: the income tax withheld, plus both CPP halves (and both EI shares, when EI applies), for all pays in the period
 - *When*: a *regular* remitter pays by the 15th of the month following the month the salary was paid
   - Due date set by Income Tax Regulations [s.108(1)](https://laws-lois.justice.gc.ca/eng/regulations/C.R.C.,_c._945/section-108.html)
-- *Quarterly option*: an employer with an average monthly withholding amount (AMWA) under $3,000 can remit quarterly
-  - A clean compliance record is also required; new small employers can qualify from the start
+- *Quarterly option*: two separate tests, and a new corporation is on the second one
+  - *Established employer*: average monthly withholding amount (AMWA) under $3,000, plus a clean withholding,
+    remitting and filing record over the preceding 12 months
+  - *New small employer*: a *monthly withholding amount* (MWA) under **$1,000**, with the same clean-record
+    requirement, for its first year
+  - The $3,000 AMWA figure needs a prior year to average, so a first-year owner-manager who applies it can remit
+    monthly deductions late
+  - Remit monthly until CRA confirms the assigned frequency on the PD7A
   - See CRA guide T4001 for the current thresholds
 - *Voucher*: CRA issues a *PD7A* (Statement of Account for Current Source Deductions) each period
   - Remit against it through My Business Account, an online-banking payee, or a bank's business tax service
@@ -145,18 +152,50 @@ Pay run (January 31):
 | `Salaries and wages` (`9060`): gross | 5,000.00 | |
 | `Employer's portion of employee benefits` (`8622`): employer CPP | 280.15 | |
 | `Employee deductions payable` (`2627`) | | 1,320.30 |
-| `Cash` (`1001`): net pay | | 3,959.85 |
+| `Deposits` (`1002-1`): net pay | | 3,959.85 |
 
 Remittance (by February 15):
 
 | Account | Debit | Credit |
 |---|---|---|
 | `Employee deductions payable` (`2627`) | 1,320.30 | |
-| `Cash` (`1001`) | | 1,320.30 |
+| `Deposits` (`1002-1`) | | 1,320.30 |
 
 The `2627` balance returns to zero after each on-time remittance.  
 A month-end balance larger than the latest pay run's withholdings means a missed or short remittance.  
 For the account definitions and the chart of accounts, see [Ledger and Accounts](../Bookkeeping/Ledger-And-Accounts.md).  
+
+
+## Non-Cash Taxable Benefits in the Pay Run
+
+A valued benefit — an automobile, personal use of corporate property, a taxable premium — is not a year-end slip
+entry. It joins a pay period and carries payroll liabilities of its own.  
+
+What changes, and what does not:
+- *No expense entry*: the corporation already expensed the underlying costs (the CCA, the fuel, the premium)
+- *No cash moves* for the benefit itself; the employee receives nothing new in the bank
+- *CPP is pensionable on it*: include the benefit in the period's pensionable earnings, deduct the employee's CPP,
+  match it as employer CPP, and remit both halves on the ordinary schedule
+- *Income tax* is withheld on it in the same period
+- *EI* generally does not apply to a non-cash benefit, and an owner-manager controlling more than 40% of the voting
+  shares is EI-exempt regardless
+
+The entry adds the benefit to gross pay and takes it straight back out, so net cash is unchanged:
+
+| Account | Debit | Credit |
+|---|---|---|
+| `Salaries and wages` (`9060`): benefit added to gross | *benefit* | |
+| `Salaries and wages` (`9060`): benefit offset (already expensed elsewhere) | | *benefit* |
+| `Employee deductions payable` (`2627`): extra employee CPP on the benefit | | *CPP* |
+| `Deposits` (`1002-1`): reduced net pay | | *CPP* |
+
+Where cash remuneration in the period is too small to withhold the employee's CPP share, the employer still owes
+and remits its own share, and the employee settles the balance on the T1.  
+Leaving the benefit out of the pay run entirely is what produces a *PIER* assessment after the T4s are filed: CRA
+recomputes CPP from box 26 and bills the difference.  
+
+The valuation itself is on [Owner-corporation transactions](Owner-Corporation-Transactions.md), and the automobile
+figures land in T4 boxes 34 and 26.  
 
 
 ## T4 Slip and T4 Summary

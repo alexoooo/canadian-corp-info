@@ -17,10 +17,12 @@ Limitations:
 - The following is my understanding as of 2026
 
 
-## What This Covers
+## Guide Scope
 
 The overview pages frame the whole guide before you commit to a topic.  
-A CCPC is a separate taxpayer: it files its own return, pays corporate tax, and passes after-tax money to its owner.  
+A CCPC is a separate taxpayer: it files its own return and pays tax on its own taxable income, then pays its owner
+through one of two distinct routes — deductible salary, which comes out before corporate tax, or dividends, which
+come out of after-tax profit.  
 Almost every other page is a detail of that arc.  
 
 Two pages carry the framing:

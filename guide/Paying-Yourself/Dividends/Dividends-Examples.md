@@ -19,7 +19,10 @@ Limitations:
 
 ## Worked Examples
 
-The examples below use Ontario rates current as of the first half of 2026:
+Rate figures below are pinned to their period. Where an example runs a full calendar-2026 tax year it uses the
+prorated blend (≈ 11.7% combined SBD); where it is set in 2025 or the first half of 2026 it uses 12.2%.
+
+The building blocks, as they stood in the first half of 2026:
 - Federal SBD rate: 9%
 - Ontario SBD rate: 3.2% (combined small-business rate 12.2%)
 - Federal general rate: 15%
@@ -55,7 +58,7 @@ Credit: "Dividends payable" (GIFI 2962) = $50,000
 
 Payment:  
 Debit: "Dividends payable" (GIFI 2962) = $50,000  
-Credit: "Cash" (GIFI 1001) = $50,000  
+Credit: "Deposits" (GIFI 1002-1) = $50,000  
 
 T2 (2026) schedule entries:
 - S3 Part 3: line 450 (taxable dividends paid, non-connected) $50,000, all eligible
@@ -75,7 +78,8 @@ Personal-side context:
 
 Setup:
 - The CCPC has been operating entirely under the SBD limit since incorporation
-- 2026 active business income $300,000 (combined 12.2%) → $36,600 corporate tax → $263,400 added to retained earnings
+- 2026 active business income $300,000, calendar tax year (combined ≈ 11.7% after the July 1 proration)
+  - $35,100 corporate tax → $264,900 added to retained earnings
 - GRIP balance is $0 (no general-rate income)
 - NERDTOH balance is $0 (no investment income)
 
@@ -84,7 +88,7 @@ Resolution and payment fall on the same day.
 
 Declaration and payment collapsed:  
 Debit: "Dividends declared - non-eligible" (GIFI 3700) = $80,000  
-Credit: "Cash" (GIFI 1001) = $80,000  
+Credit: "Deposits" (GIFI 1002-1) = $80,000  
 
 T2 (2026) schedule entries:
 - S3 Part 3: line 450 (taxable dividends paid, non-connected) $80,000, all non-eligible
@@ -101,7 +105,7 @@ Personal-side context:
 ### Example C - Year-End Non-Eligible Dividend Sized to Recover NERDTOH (AII / Passive-Income Path)
 
 Setup:
-- A CCPC with $200,000 of active business income in 2026 (under SBD; combined 12.2%)
+- A CCPC with $200,000 of active business income in a calendar-2026 tax year (under SBD; combined ≈ 11.7%)
 - Plus $40,000 of AII from interest, foreign income, and the taxable portion of capital gains on corporate investments
 - The $40,000 is below the $50,000 AAII grind threshold (AAII equals AII here), so SBD is preserved
 
@@ -128,7 +132,7 @@ Credit: "Due to shareholder" (GIFI 2780 area) = $32,000
 
 Cash settlement (Jan 15, 2027, booked in 2027 fiscal year):  
 Debit: "Due to shareholder" (GIFI 2780 area) = $32,000  
-Credit: "Cash" (GIFI 1001) = $32,000  
+Credit: "Deposits" (GIFI 1002-1) = $32,000  
 
 The two declaration-day entries can be collapsed into a single line.  
 Collapsed: Debit "Dividends declared", Credit "Due to shareholder".  
@@ -167,7 +171,7 @@ Setup:
 In 2026 the directors elect under ITA s.83(2) to pay a $10,000 capital dividend.  
 Form T2054 is filed via CRA My Business Account, with two attachments (Reg 2101):
 - A certified copy of the resolution
-- A schedule showing the CDA computation immediately before the election
+- A schedule showing the CDA computation immediately before the dividend becomes payable, the time s.83(2) tests
 
 The deadline is on or before the day the dividend becomes payable (or the first day any part is paid, if earlier).  
 
@@ -177,7 +181,7 @@ Credit: "Dividends payable" (GIFI 2962) = $10,000
 
 Payment:  
 Debit: "Dividends payable" (GIFI 2962) = $10,000  
-Credit: "Cash" (GIFI 1001) = $10,000  
+Credit: "Deposits" (GIFI 1002-1) = $10,000  
 
 T2 (2026) interactions:
 - *No T5 issued* (capital dividend is not income to a Canadian-resident shareholder)

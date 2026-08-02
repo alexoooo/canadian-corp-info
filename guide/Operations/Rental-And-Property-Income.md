@@ -15,6 +15,7 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
   - Rent that is incidental to an active business stays active
   - Rent from an associated corporation's active business is deemed active
 - Rental-property CCA cannot create or increase a rental loss (Reg 1100(11))
+  - Except for a corporation whose principal business is real property, which Reg 1100(12) exempts
 - HST splits by use: commercial rent is taxable (charge HST, claim ITCs)
   - Long-term residential rent is exempt (no HST, no ITCs)
 - Co-owned property books each owner's share of costs by their interest
@@ -37,7 +38,7 @@ Limitations:
 ## Rate Gap by Character
 
 The rate gap is the whole story (see [Active vs investment income](../Overview/Small-Business-Tax.md#active-vs-investment-income)):
-- *Active business income*: 12.2% up to the business limit (Ontario 2026)
+- *Active business income*: ≈ 11.7% up to the business limit (calendar-2026 Ontario blend; 11.2% from July 1, 2026)
 - *Income from property*: 50.2%, of which 30⅔% is refundable through [NERDTOH](../Paying-Yourself/Dividends/ERDTOH-NERDTOH.md) when non-eligible dividends are paid
   - Integration, but with cash locked up until then
 - Property income also feeds the passive-income grind of the business limit
@@ -109,6 +110,12 @@ Mixed use by the corporation itself:
 CCA needs extra care on the rental side:
 - CCA on a rental property cannot create or increase a net rental loss (Reg 1100(11))
   - The claim is capped at the rental income remaining after expenses
+- Reg 1100(12) switches subsection (11) off for a corporation whose *principal business* throughout the year was
+  leasing, renting, developing, or selling real property it owns (or a life insurance corporation)
+  - Such a corporation can claim CCA into a rental loss
+  - Reg 1100(13) claws the exemption back for a leasehold interest leased to the person who owns the land
+  - This is a different test from the ITA s.125(7) more-than-five-employees rule that decides active-business status;
+    a corporation can pass one and fail the other
 - Each rental building acquired for $50,000 or more sits in its own CCA class (Reg 1101(1ac))
   - The Reg 1100(11) loss cap applies to rental properties in aggregate
   - Within the cap, one building's CCA can shelter another's income

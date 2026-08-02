@@ -103,8 +103,14 @@ That timing governs both T5 / T1 *and* the corp-side dividend refund.
 The dividend refund offsets tax payable on the same T2 and is paid out (or credited) when the return is assessed.  
 
 A *Dividends Payable* balance left unpaid for an extended period can attract CRA scrutiny.  
-It may be recharacterized as a constructive shareholder loan, or as evidence the dividend was never genuinely declared.  
-A recharacterized loan carries the s.15(2) consequences noted under [What is not a dividend](Dividends.md#what-is-not-a-dividend).  
+The risk is that the declaration is treated as never having been genuinely made, so the dividend is not a dividend
+paid in that year — which moves the T5, the shareholder's income, and the corp's dividend refund to a later year.  
+It does not become a shareholder loan: a payable is money the *corporation owes the shareholder*, while ITA
+[s.15(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-15.html) addresses the opposite direction, a debt
+the shareholder owes the corporation.  
+s.15(2) is live only where the shareholder has separately drawn from the corporation.  
+An unconditionally withdrawable credit to the shareholder's loan account is different again — that can itself
+constitute payment.  
 There is no bright-line statutory deadline.  
 Settle the declared dividend promptly, typically within a few months of year-end.  
 Settle by cash transfer or by crediting the shareholder's loan account.  

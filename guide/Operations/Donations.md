@@ -99,7 +99,7 @@ Remove the position from the [ACB tracker](../Investments/Adjusted-Cost-Base/Adj
 ## Corporate vs Personal Giving
 
 Both routes reach a receipt; the difference is whose tax it reduces:
-- *Corporate*: a deduction against corporate rates (12.2% SBD-rate Ontario 2026)
+- *Corporate*: a deduction against corporate rates (≈ 11.7% SBD-rate for a calendar-2026 Ontario year)
   - Modest per dollar, but paid with pre-personal-tax corporate dollars
   - The in-kind securities play above only exists for corporately-held positions
 - *Personal*: a credit worth roughly 40–50% of the gift above the first $200 (province-dependent)

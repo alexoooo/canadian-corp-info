@@ -100,11 +100,14 @@ Reclassify to `Capital gains dividends` (8211-3) once the T5 confirms the Box 18
 ## T2 Schedule Mapping
 
 Report the full Box 18 amount as a capital gain on Schedule 6 (S6 - *Summary of Dispositions of Capital Property*):
-- Use Part 1 (Shares), since a mutual fund corporation issues shares
-  - Like T3 Box 21, this is reported as a gain even though no disposition occurred
-- Proceeds = Box 18 amount, adjusted cost base = 0, so the full amount is the gain
-  - It is a flow-through of the fund's gain, not a sale of your shares
-- The capital gains tax is the same regardless of which S6 part is used
+- Use **Part 8, line 875** — capital gains dividends
+  - That is the part built for this: an amount the corporation received as a capital gains dividend, with no
+    disposition of its own
+- Do *not* enter it in Part 1 (Shares) with invented proceeds and a nil ACB
+  - Part 1 is for shares the corporation actually disposed of
+  - The bottom-line gain would come out the same, but the filed return would describe a disposition that never
+    happened
+- It is a flow-through of the fund's gain, not a sale of your shares — which is exactly why Part 8 exists
 
 On Schedule 1 (S1 - *Net Income (Loss) for Income Tax Purposes*):
 - Line 113 (Taxable capital gains from Schedule 6) carries the taxable half

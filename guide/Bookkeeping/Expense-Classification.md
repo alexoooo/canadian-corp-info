@@ -50,6 +50,12 @@ A small corp typically sets a *capitalization floor* (commonly $500).
 Purchases below it are expensed even if they last, to avoid tracking trivial assets.  
 The floor is a bookkeeping policy applied consistently, not a statutory threshold.  
 
+Because it is only a book policy, it settles the *presentation*, not the tax character:
+- ITA s.18(1)(b) denies a current deduction for a capital outlay; s.20(1)(a) supplies CCA instead
+- An item that is capital for tax stays capital for tax, whatever the floor did on the income statement
+- Where the two diverge, the book expense is added back on *Schedule 1* and the CCA claimed on Schedule 8
+- Keep every tax-capital item in the asset register even when it never appeared on Schedule 100  
+
 ```mermaid
 flowchart TD
     Start(["A cost is incurred"]) --> COGS{"Direct cost of<br/>goods or services sold?"}
@@ -85,7 +91,7 @@ The bookkeeping (a 12-month insurance policy, $1,200 premium, paid Nov 1 with a 
 
 At payment, post the premium to `Prepaid expenses` (code 1484, a detail line under `1480` Other current assets):
 - Debit `Prepaid expenses` (1484) = $1,200
-- Credit `Cash` = $1,200
+- Credit `Deposits` = $1,200
 
 At year-end, release the expired portion — two of twelve months — to its expense line:
 - Debit `Insurance` (GIFI 8690) = $200
@@ -178,11 +184,11 @@ Worked example (an annual software subscription billed in CAD at $1,000 + 13% HS
 Regular method:
 - Debit `Computer-related expenses` (GIFI 9150) = $1,000
 - Debit `HST receivable` = $130
-- Credit `Cash` = $1,130
+- Credit `Deposits` = $1,130
 
 Quick Method:
 - Debit `Computer-related expenses` (GIFI 9150) = $1,130
-- Credit `Cash` = $1,130
+- Credit `Deposits` = $1,130
 
 Under the Quick Method the deductible expense is $1,130 instead of $1,000.  
 The unclaimed HST rides along in the expense, the trade-off for keeping the remittance spread on the revenue side.  

@@ -192,7 +192,13 @@ See [Dividends / Declaration date, record date, and payment date](Declaring-And-
 ## Stranding
 
 GRIP, ERDTOH, and NERDTOH cannot be transferred, sold, or rolled out to a shareholder.  
-Any unused balance at wind-up is lost.  
+Whatever is still unused once the corporation is dissolved is gone — but a wind-up is a chance to use them, not
+automatically the moment they die.  
+The winding-up distribution produces a deemed dividend under ITA [s.84(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-84.html),
+which can be designated eligible against GRIP and can trigger a dividend refund out of either RDTOH account, and
+qualifying amalgamations and wind-ups carry attributes forward under ITA s.87 and s.88.  
+Model the deemed dividends, designations, and refund limitation periods before dissolving; see
+[Winding Down](../../Corporate-Lifecycle/Winding-Down.md).  
 A corporation can receive eligible dividends but only ever pay non-eligible dividends.  
 That strands both GRIP and ERDTOH on the corporate books.  
 
