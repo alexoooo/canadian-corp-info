@@ -6,7 +6,7 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
 - Owners of a Canadian-controlled private corporation (CCPC) recording GST/HST in the corp's books
 
 Two things drive every GST/HST ledger entry: the amount, and the reporting period it belongs to.  
-This page covers the *tax point* that dates each entry, the year-end straddle, and the posting patterns.  
+This page covers the *tax point* that dates each entry, the year-end straddle, invoice dating, and the posting patterns.  
 For which rate applies to a supply, see [HST Registration and Filing](HST-Registration-And-Filing.md).  
 For the period-end net tax, see [HST Regular Method](HST-Regular-Method.md) and [HST Quick Method](HST-Quick-Method.md).  
 Scope and limitations are on the [hub](HST.md).  
@@ -70,6 +70,38 @@ Map it to *Other current assets* (1480) to keep it distinct from billed trade AR
 Or fold it into *Trade accounts receivable* (1062) when the accrual reverses within days.  
 Manufacturing WIP (1125) is a different item — partially completed goods, not earned-but-unbilled service fees.  
 
+### Invoice Dating Convention
+
+A standing dating rule avoids the straddle entirely.  
+Date each invoice the last day of the service period, and issue it within the first few business days after.  
+
+What the convention buys:
+- *No split periods*: income and HST land together on every invoice, not only the ones away from year-end
+- *No year-end exception*: the year's last invoice carries a tax point inside that year, so the accrual above never arises
+- *Quick Method spread stays with its fee*: the kept spread (GIFI 8230) falls in the same year as its revenue
+
+The rule only ever accelerates the tax point.  
+The invoice date is the earlier of the two dates s.152(1)(a) compares, so it governs.  
+The deferral s.152(1)(b) targets cannot arise where every invoice is dated on or before its issue date.  
+
+Three conditions keep it defensible:
+- *The work is complete by the date on the invoice*: month-end billing for time worked during that month qualifies
+  - A fixed-fee deliverable finished on the 4th is dated the 4th, not the previous month-end
+- *Issue within days, not weeks*: an invoice dated three weeks before it is sent stops reading as period-end billing
+- *The service period appears on the invoice*: it is what shows the date as a billing convention, not a back-date
+  - "Consulting services, July 2026" on the description line
+
+The cost is one period of float.  
+The last invoice of the fiscal year is dated inside it, so its HST lands on that year's return rather than the next.  
+For an annual filer that is a full year earlier on one month's tax (see [HST Registration and Filing](HST-Registration-And-Filing.md#reporting-periods-and-deadlines)).  
+Dating each invoice the day it is issued trades that float for the straddle entries every year-end.  
+
+A foreign-currency invoice dated at month-end can land on a day with no published Bank of Canada rate.  
+CRA *GST/HST Memorandum 3-6* accepts an average rate for the month in which tax becomes payable as one alternative.  
+That choice binds for at least a year from the end of the reporting period where it was first used.  
+
+The income-side FX rate is a separate question; see [Foreign Currency](../../Bookkeeping/Foreign-Currency/Getting-Paid-In-USD.md).  
+
 
 ## Bookkeeping Accounts
 
@@ -127,6 +159,8 @@ Under the *Quick Method* the posting pattern differs:
   - [s.9](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-9.html) - income from a business is the profit, recognized when earned (accrual)
   - [s.12(1)(b)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-12.html) - amounts receivable for services rendered
     - Included when the account is rendered, or would have been but for undue delay
+- CRA *GST/HST Memorandum 3-6, Conversion of Foreign Currency*: https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/3-6/conversion-foreign-currency.html
+  - Acceptable rate sources, and the average-rate-for-the-month alternative applied consistently for at least a year
 - CRA *RC4088 General Index of Financial Information (GIFI)*: https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4088.html
 
 
