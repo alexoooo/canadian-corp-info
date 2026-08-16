@@ -219,15 +219,11 @@ Details: [Paying yourself: salary vs dividends](Small-Business-Tax.md#paying-you
 These are the three flavours a corporation can *pay* out to its shareholders.  
 Dividends it *receives* (on a T3 or T5) are covered under [Income classification](#income-classification).  
 
-Federal rates shown; a provincial dividend tax credit applies on top:
-- Ontario: 10% eligible, 2.9863% non-eligible of the grossed-up amount in 2026
-
 | Attribute | Eligible | Non-eligible | Capital                                                |
 |---|---|---|--------------------------------------------------------|
 | Source pool | GRIP | SBD-rate retained earnings (default) | CDA                                                    |
 | Corp action required | Designation (s.89(14)), at or before payment | None | Election (s.83(2)) on Form T2054 |
-| Personal gross-up | 38% | 15% | none (tax-free)                                        |
-| Federal DTC | 15.0198% of grossed-up | 9.0301% of grossed-up | none |
+| Personal-side treatment | Grossed up, DTC offsets | Grossed up (smaller), DTC offsets | none (tax-free) |
 | Refund pool drawn | ERDTOH | NERDTOH, then ERDTOH spillover | none                                                   |
 | Excess-dividend penalty | Part III.1, 20% (s.185.1) | none | Part III, 60% (s.184(2))                               |
 | Slip issued to shareholder | T5 | T5 | none (notify; corporation files T2054)                 |
@@ -235,7 +231,7 @@ Federal rates shown; a provincial dividend tax credit applies on top:
 Notes:
 - The T2054 election is due on or before the day the dividend becomes payable (or first paid, if earlier)
 
-Details: [Dividends - three flavours](../Paying-Yourself/Dividends/Dividends.md#three-dividend-flavours-eligible-non-eligible-capital), [Tax Integration](Tax-Integration.md) (gross-up and DTC mechanics).  
+Details: [Dividends - three flavours](../Paying-Yourself/Dividends/Dividends.md#three-dividend-flavours-eligible-non-eligible-capital), [Tax Integration](Tax-Integration.md) (gross-up and DTC rates and mechanics).  
 
 
 ## Owner-Corporation Transactions
@@ -358,7 +354,7 @@ The tax must be paid 2 or 3 months after year-end, but the return that computes 
 In practice the tax is estimated and paid by the earlier date, and the return is filed by the later one.  
 Interest accrues on any unpaid balance from the payment date, not the filing date.  
 
-Details: [Filing deadlines and instalments](Small-Business-Tax.md#filing-deadlines-and-instalments).  
+Details: [Deadlines](../Filing-And-CRA/Deadlines.md).  
 
 
 ## The Sole-Proprietor Side Track

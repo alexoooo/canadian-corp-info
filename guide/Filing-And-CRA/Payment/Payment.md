@@ -106,7 +106,7 @@ The calculation and filing are in [HST](../../Operations/HST/HST.md).
   - An annual filer with net tax of $3,000 or more also pays *quarterly instalments* (ETA s.237)
   - Each instalment is one-quarter of the instalment base
     - The lesser of the prior year's net tax and the current year's estimate
-  - Instalments are reconciled on the year-end return; see [filing deadlines](../../Overview/Small-Business-Tax.md#filing-deadlines-and-instalments)
+  - Instalments are reconciled on the year-end return; see [Deadlines](../Deadlines.md)
 - *Electronic*: a remittance of $10,000 or more must be paid electronically (ETA s.278(3))
   - Electronic filing is mandatory for reporting periods beginning on or after 2024-01-01
 - *How*: My Business Account, an online-banking "Federal - GST/HST" payee, or a bank's business tax service
@@ -129,7 +129,7 @@ The payroll concepts and bookkeeping are in [Payroll](../../Paying-Yourself/Payr
 - *2026 CPP*: 5.95% employee + 5.95% employer on pensionable earnings from the $3,500 basic exemption to the $74,600 YMPE
   - Maximum $4,230.45 each half; the corp remits both halves
   - *CPP2* adds 4% each on earnings from $74,600 to the $85,000 YAMPE (maximum $416 each half)
-  - Rates and limits change every January; check CRA's payroll deductions tables for the current year
+  - Rates and limits change every January; the current figures are on [Payroll](../../Paying-Yourself/Payroll.md)
 - *Frequency*: most owner-managed CCPCs are *regular* (monthly) remitters
   - Due by the *15th of the month following* the month the pay was made
   - A small or new employer can qualify as a *quarterly* remitter
@@ -138,7 +138,7 @@ The payroll concepts and bookkeeping are in [Payroll](../../Paying-Yourself/Payr
   - If no salary was paid in a period, report a *nil remittance* by the due date
     - Through My Business Account or CRA's TeleReply line
 - *Year-end*: issue a *T4* slip to the employee and file the *T4 Summary* with CRA by the last day of February
-  - See [filing deadlines](../../Overview/Small-Business-Tax.md#filing-deadlines-and-instalments)
+  - See [Deadlines](../Deadlines.md)
 - *How*: My Business Account, an online-banking payroll source-deductions payee, or a bank's business tax service
   - See [Payment methods](#payment-methods) below
 
@@ -158,7 +158,8 @@ See [Ledger and Accounts](../../Bookkeeping/Ledger-And-Accounts.md).
 
 ## Related
 
-- [Small Business Tax Overview](../../Overview/Small-Business-Tax.md) (the full deadline calendar)
+- [Deadlines](../Deadlines.md) (the full due-date calendar)
+- [Small Business Tax Overview](../../Overview/Small-Business-Tax.md) (the deadlines in the context of the tax year)
 - [CRA Administration](../CRA-Administration.md) (booking the tax cycle, interest and penalties)
 - [HST Registration and Filing](../../Operations/HST/HST-Registration-And-Filing.md)
 - [Payroll](../../Paying-Yourself/Payroll.md)

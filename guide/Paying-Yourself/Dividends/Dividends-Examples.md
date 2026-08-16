@@ -22,6 +22,9 @@ Limitations:
 Rate figures below are pinned to their period. Where an example runs a full calendar-2026 tax year it uses the
 prorated blend (≈ 11.7% combined SBD); where it is set in 2025 or the first half of 2026 it uses 12.2%.
 
+Current values are owned by [Small Business Tax](../../Overview/Small-Business-Tax.md) (corp rates) and
+[Tax Integration](../../Overview/Tax-Integration.md) (gross-ups and DTCs).  
+
 The building blocks, as they stood in the first half of 2026:
 - Federal SBD rate: 9%
 - Ontario SBD rate: 3.2% (combined small-business rate 12.2%)

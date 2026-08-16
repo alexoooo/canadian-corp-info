@@ -449,6 +449,55 @@ foreach ($repoPath in $guidePages) {
     }
 }
 
+# GIFI account-tree excerpt consistency: every code in a guide page's HTML account tree must
+# appear in the master chart of accounts, and trees must agree on the account name per code.
+# Codes carrying the structural -valid / -calc / -parent markers are tree scaffolding, not accounts.
+$masterChartPath = 'guide/Bookkeeping/Ledger-And-Accounts.md'
+$gifiTreeCodeCount = 0
+if ($markdownFiles -contains $masterChartPath) {
+    $masterCodes = [System.Collections.Generic.HashSet[string]]::new(
+        [System.StringComparer]::Ordinal
+    )
+    foreach ($line in (Get-MarkdownLines -RepoPath $masterChartPath)) {
+        foreach ($match in [regex]::Matches($line, '`(\d{4}(?:-\d+)?)`')) {
+            [void]$masterCodes.Add($match.Groups[1].Value)
+        }
+    }
+
+    $treeRowPattern = [regex]'<tr><td[^>]*>(?<name>.*?)</td><td>(?<code>[0-9]{4}(?:-[0-9A-Za-z]+)?)</td>'
+    $treeNamesByCode = @{}
+    foreach ($repoPath in $guidePages) {
+        $lineNumber = 0
+        foreach ($line in (Get-MarkdownLines -RepoPath $repoPath)) {
+            $lineNumber++
+            foreach ($match in $treeRowPattern.Matches($line)) {
+                $code = $match.Groups['code'].Value
+                if ($code -match '-(valid|calc|parent)$') {
+                    continue
+                }
+                $name = [regex]::Replace($match.Groups['name'].Value, '&ensp;|└', '').Trim()
+                $gifiTreeCodeCount++
+                if (-not $masterCodes.Contains($code)) {
+                    Add-ValidationIssue -Severity Error -Path $repoPath -Line $lineNumber `
+                        -Message "Account-tree code $code is not in the master chart ($masterChartPath)"
+                }
+                if (-not $treeNamesByCode.ContainsKey($code)) {
+                    $treeNamesByCode[$code] = [pscustomobject]@{
+                        Name = $name
+                        Path = $repoPath
+                        Line = $lineNumber
+                    }
+                }
+                elseif ($treeNamesByCode[$code].Name -cne $name) {
+                    $first = $treeNamesByCode[$code]
+                    Add-ValidationIssue -Severity Error -Path $repoPath -Line $lineNumber `
+                        -Message "Account-tree name for ${code} (""$name"") differs from $($first.Path):$($first.Line) (""$($first.Name)"")"
+                }
+            }
+        }
+    }
+}
+
 $fencedLineKeys = Get-FencedLineKeys -MarkdownFiles $markdownFiles
 foreach ($candidate in (Get-LineLengthCandidates -MarkdownFiles $markdownFiles)) {
     if ($fencedLineKeys.Contains("$($candidate.Path):$($candidate.Line)")) {
@@ -486,6 +535,7 @@ Write-Host ''
 Write-Host "Current Markdown files link-checked: $($linkCheckedMarkdownFiles.Count)"
 Write-Host "Guide pages indexed and status-checked: $($guidePages.Count)"
 Write-Host "Local links checked: $linkCount"
+Write-Host "GIFI account-tree codes checked: $gifiTreeCodeCount"
 $lineLengthScope = if ($AllLineLengths) { 'all reader-facing lines' } else { 'changed reader-facing lines' }
 Write-Host "Long lines found ($lineLengthScope): $lineLengthCount"
 

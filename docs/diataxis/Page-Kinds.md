@@ -139,7 +139,8 @@ excerpt marked as such, or a dated example input. Proposed owners:
 | Quick Method remittance rates | HST-Quick-Method |
 | Dividend gross-up / DTC rates | Tax-Integration |
 | Corporate rate figures (federal/Ontario, SBD) | Small-Business-Tax |
-| CPP / YMPE / RRSP limits | Payroll (Salary-Vs-Dividends links) |
+| CPP / YMPE / YAMPE figures | Payroll (Salary-Vs-Dividends links) |
+| TFSA / RRSP dollar limits | Personal-Tax/TFSA-And-RRSP-Contributions |
 | Filing and payment calendar | `Filing-And-CRA/Deadlines.md`, new (decided — [Open Questions](Open-Questions.md) Q2); Concept-Map keeps its visual as an orientation view that links |
 | Terminology | Glossary |
 | Scope register | Further-Reading |

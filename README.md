@@ -95,6 +95,7 @@ Unmarked pages are reviewed; † = AI generated, not verified yet.
 - [Losses](guide/Filing-And-CRA/Losses.md) †
 - [CRA Administration](guide/Filing-And-CRA/CRA-Administration.md) †
 - [Payment](guide/Filing-And-CRA/Payment/Payment.md) †
+- [Deadlines](guide/Filing-And-CRA/Deadlines.md) †
 - [Whole-Dollar Rounding](guide/Filing-And-CRA/Whole-Dollar-Rounding.md) †
 
 **[Sole Proprietorship](guide/Sole-Proprietorship/Sole-Proprietorship.md)** † (side content: the unincorporated contractor, as contrast and on-ramp for the corporate guide):

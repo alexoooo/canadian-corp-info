@@ -92,6 +92,7 @@ For a *non-eligible* dividend:
 
 The gross-up factors (1.38 eligible, 1.15 non-eligible) are set by ITA [s.82(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-82.html).  
 The dividend tax credit rates (15.0198%, 9.0301%) are set by ITA [s.121](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-121.html).  
+How the gross-up and DTC integrate with the corporate tax already paid is on [Tax Integration](../../Overview/Tax-Integration.md).  
 
 If both flavours were paid in the same calendar year, use a single T5 slip with both sets of boxes populated.  
 

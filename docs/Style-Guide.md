@@ -80,7 +80,8 @@ Any other appearance is a link, a verbatim excerpt marked as such, or a dated ex
 | Quick Method remittance rates | `Operations/HST/HST-Quick-Method.md` |
 | Dividend gross-up / DTC rates | `Overview/Tax-Integration.md` |
 | Corporate rate figures (federal/Ontario, SBD) | `Overview/Small-Business-Tax.md` |
-| CPP / YMPE / RRSP limits | `Paying-Yourself/Payroll.md` |
+| CPP / YMPE / YAMPE figures | `Paying-Yourself/Payroll.md` |
+| TFSA / RRSP dollar limits | `Personal-Tax/TFSA-And-RRSP-Contributions.md` |
 | Filing and payment calendar | `Filing-And-CRA/Deadlines.md` (until created: see `diataxis/Migration-Plan.md`) |
 | Terminology | `Overview/Glossary.md` |
 | Scope register | `Overview/Further-Reading.md` |

@@ -57,6 +57,8 @@ Eligibility requires *all* of the following:
 
 ## Remittance Rates
 
+Rates as of 2026; the authoritative province × business-type matrix is the current RC4058 edition.  
+
 - The rate depends on three things (the rate matrix in RC4058 has roughly 30 cells)
   - (a) The corp's province
   - (b) Whether the corp primarily makes supplies of *goods for resale* or of *services*
@@ -119,9 +121,3 @@ Eligibility requires *all* of the following:
 - CRA *RC4058 Quick Method of Accounting for GST/HST*: https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4058.html
   - Eligibility, election mechanics, full province × business-type rate matrix, 1% credit on first $30,000
 - CRA *Form GST74 Election and Revocation of an Election to Use the Quick Method of Accounting*: https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/gst74.html
-
-
-## TODO
-
-- Reproduce or link the current full Quick Method province × business-type rate matrix from RC4058
-  - Once the maintainer confirms which subset is worth carrying inline vs deferring to the CRA page

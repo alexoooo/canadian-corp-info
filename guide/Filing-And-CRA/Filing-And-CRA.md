@@ -10,7 +10,8 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
 - This group is the year-end: assembling the return, paying it, and everything that touches the CRA afterward
 - [T2 Schedules](T2-Schedules.md) is the map of which schedule carries each activity onto the return
 - [Losses](Losses.md) covers carrying non-capital and capital losses across years
-- [CRA Administration](CRA-Administration.md) and [Payment](Payment/Payment.md) cover accounts, deadlines, reassessments, and paying the balance and instalments
+- [CRA Administration](CRA-Administration.md) and [Payment](Payment/Payment.md) cover accounts, reassessments, and paying the balance and instalments
+- [Deadlines](Deadlines.md) is the due-date calendar: T2, GST/HST, payroll, slips, and the registry in one table set
 - [Whole-dollar rounding](Whole-Dollar-Rounding.md) is the small convention that keeps the forms consistent
 
 Limitations:
@@ -31,8 +32,8 @@ This group covers that end of the cycle:
 - [CRA Administration](CRA-Administration.md) covers what comes after the return is filed
   - My Business Account, reassessments and objections, and the statute-barred clock
   - Penalties and interest, and record retention
-  - The filing and payment deadlines themselves live on the [Overview](../Overview/Small-Business-Tax.md#filing-deadlines-and-instalments) and [Payment](Payment/Payment.md) pages
 - [Payment](Payment/Payment.md) covers paying the corporate tax balance and instalments
+- [Deadlines](Deadlines.md) is the consolidated due-date calendar for every recurring CRA and registry obligation
 - [Whole-dollar rounding](Whole-Dollar-Rounding.md) is the rounding convention applied consistently across the forms
 
 
@@ -44,6 +45,7 @@ This page is a hub; these are the sub-pages:
 - [CRA Administration](CRA-Administration.md): My Business Account, reassessments, objections, penalties and interest
   - Also the statute-barred clock and record retention
 - [Payment](Payment/Payment.md): paying the corporate tax balance and instalments
+- [Deadlines](Deadlines.md): the due-date calendar for T2, GST/HST, payroll, slips, and the registry
 - [Whole-dollar rounding](Whole-Dollar-Rounding.md): the rounding convention across the forms
 
 

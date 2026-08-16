@@ -283,7 +283,7 @@ Revenue (Schedule 125):
 | Account | GIFI | Notes |
 |---|---|---|
 | Trade sales of goods and services | `8000` | operating revenue (consulting fees, product sales) |
-| Investment revenue | `8090` | `8094` interest, `8096` Canadian dividends, `8097` foreign dividends |
+| Investment revenue | `8090` | `8094` interest, `8091` foreign interest, `8096` Canadian dividends, `8097` foreign dividends |
 | Real estate rental revenue | `8141` | rent earned on real property (see [Rental and Property Income](../Operations/Rental-And-Property-Income.md)) |
 | Realized gains/losses on disposal of assets | `8210` | gain or loss on selling a capital asset |
 | Realized gains/losses on sale of investments | `8211` | gain or loss on selling securities |
@@ -293,6 +293,14 @@ Revenue (Schedule 125):
 | Bad debt recoveries | `8250` | collections on debts written off in a prior year |
 
 The Quick Method kept spread is booked to `8230` Other revenue; see [HST](../Operations/HST/HST-Quick-Method.md).  
+
+The investment pages carry further internal sub-codes under these lines:
+- `8090-1` investment revenue adjustment plug, `8090-2` other investment income, `8090-3` TBD distributions
+- `8096-1` non-eligible Canadian dividends (T5 box 10)
+- `8211-1` dispositions of capital property, `8211-2` capital gains distributions, `8211-3` capital gains dividends
+- `2303-1` brokerage (Book Cost), `2303-2` brokerage pending; `1060-1` investment distributions receivable
+- The conventions are on [T3](../Investments/T3/T3.md), [T5](../Investments/T5/T5.md), and
+  [T5008](../Investments/T5008/T5008.md); the codes roll up to their official parent lines
 
 Cost of sales (Schedule 125):
 

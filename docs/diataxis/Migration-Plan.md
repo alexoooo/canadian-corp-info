@@ -36,7 +36,9 @@ Deliverable: process-doc edits only; no guide content changes. *Completed 2026-0
 ## Phase 1 — reference single-sourcing
 
 The highest-value, lowest-controversy work: it fixes live duplication hazards without moving any
-page. Steps, in order:
+page. *Completed 2026-08-16*: all steps below are done, including the maintainer-approved edits to
+the signed-off pages (Concept-Map's flavour table and calendar view, Small-Business-Tax's trimmed
+deadlines section) and the new `Filing-And-CRA/Deadlines.md` reference page. Steps, in order:
 
 - *Ontario 2026 (Bill 97) rate duplication*: pick the canonical owner per the
   [owners table](Page-Kinds.md#reference-single-sourcing), reduce other statements to links or

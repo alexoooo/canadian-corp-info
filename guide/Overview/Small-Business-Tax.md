@@ -489,42 +489,33 @@ For the practical workflow, see [HST.md](../Operations/HST/HST.md).
 These are the dates an owner-manager has to track.  
 Missing them triggers interest, penalties, or both.  
 Failure-to-file penalties on slips apply even when no tax is owed.  
+The full due-date calendar, with the statutes, is on [Deadlines](../Filing-And-CRA/Deadlines.md).  
 
 **T2 corporate income tax**:
 - *Return*: 6 months after fiscal year-end (ITA [s.150(1)(a)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-150.html))
 - *Balance due*: 2 months after year-end, the general rule (ITA [s.248(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-248.html) "balance-due day")
-  - 3 months only for a corporation that was a CCPC *throughout* the year, claimed the SBD for that year or the
-    preceding one, and whose *preceding-year* taxable income was within its preceding-year business limit
-    (combined across the associated group where there is one)
-  - See [Payment](../Filing-And-CRA/Payment/Payment.md#corporate-income-tax) for the full test
+  - 3 months for a qualifying CCPC; see [Payment](../Filing-And-CRA/Payment/Payment.md#corporate-income-tax) for the full test
   - Balance is due *before* the return: pay the year's tax first, then file within the longer window
 - *Instalments*: required only when both the prior and current year's tax exceed $3,000 (ITA [s.157(2.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-157.html))
-  - Quarterly for eligible CCPCs (last day of each fiscal quarter), monthly otherwise
+  - Quarterly for eligible CCPCs, monthly otherwise
 
 **Information slips (T4 / T5)**:
 - T4 (salary) and T5 (dividends) slips and summaries are due by the *last day of February*
   - The deadline is in the year following the calendar year covered
 - Late-filing penalties are charged *per return type* (the whole T4 or T5 filing), not per slip
-  - $10 per day, a $100 minimum, and a 100-day cap (ITA s.162(7.01))
-  - Higher daily rates apply at higher slip counts
-  - A single late filing runs $100–$1,000
 
 **Payroll source deductions** (if paying salary):
 - Most owner-managed CCPCs remit *monthly*: income tax + CPP + EI by the 15th of the following month
   - EI applies only when the employee is EI-insurable, which typically excludes the >40%-share owner-manager
-- Larger employers move to twice-monthly or weekly remittance
-  - Based on prior-year *AMWA* (average monthly withholding amount)
+- Larger employers move to twice-monthly or weekly remittance, based on prior-year withholding
 
 **GST/HST** (if registered):
-- *Annual* (≤ $1.5M revenue): return + payment 3 months after fiscal year-end
-- *Quarterly* ($1.5M – $6M): 1 month after each quarter end
-- *Monthly* (> $6M): 1 month after each month end
+- Annual filers: return + payment 3 months after fiscal year-end; quarterly and monthly filers, 1 month after the period
+  - The revenue bands are on [HST Registration and Filing](../Operations/HST/HST-Registration-And-Filing.md)
 - Annual filers with net tax of $3,000 or more also pay quarterly instalments
 
 **Corporate registry** (not a tax filing):
-- Federal corporations (CBCA): annual return to [Corporations Canada](https://ised-isde.canada.ca/site/corporations-canada/en/annual-return-business-corporations) within 60 days of incorporation anniversary
-- Provincial corporation: varies
-  - For example, Ontario annual return through the [Ontario Business Registry](https://www.ontario.ca/page/ontario-business-registry) within 6 months of fiscal year-end
+- The federal (CBCA) or provincial annual return; due dates and registries are on [Deadlines](../Filing-And-CRA/Deadlines.md)
 - Missing the annual return repeatedly can lead to administrative dissolution
 
 

@@ -97,7 +97,7 @@ The input-side ledger entries differ:
 
 Quick Method remittance calculation:
 - *Eligible supplies* for the Quick Method on this profile: $45,000 + HST = $50,850 of GST/HST-inclusive revenue
-- *Ontario service rate*: 8.8% of GST/HST-inclusive revenue
+- *Ontario service rate* (2026, per [HST Quick Method](HST-Quick-Method.md)): 8.8% of GST/HST-inclusive revenue
 - *1% credit on first $30,000 of eligible supplies*: 7.8% on the first $30,000, 8.8% on the remainder
 - Quick Method tax on the supplies: $30,000 × 7.8% + $20,850 × 8.8% = $2,340 + $1,834.80 = $4,174.80
 - *Less ITCs on capital purchases*: $520 (the laptop)
@@ -129,7 +129,8 @@ Side-by-side comparison:
 - *Income-tax cost*: the $1,675.20 kept spread is taxable income, but there is an offset
   - Expensing the software gross (instead of claiming the $234 ITC) adds $234 of deductions
   - Net extra taxable income: $1,675.20 − $234 = $1,441.20 (the same as the cash saved)
-  - Tax at the Ontario CCPC ABI rate (≈11.7% for a calendar-2026 year, on the first $500k) ≈ $169
+  - Tax at the Ontario CCPC ABI rate (≈11.7% for a calendar-2026 year, on the first $500k; see
+    [Small Business Tax](../../Overview/Small-Business-Tax.md)) ≈ $169
 - *Net of corporate tax*: ~$1,272 better than the regular method on this profile (the cash saving × (1 − 11.7%))
 
 For a consulting CCPC with this input profile, the Quick Method wins.  

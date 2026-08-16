@@ -66,6 +66,7 @@ Reading the ~$9,300 combined maximum:
 
 Only salary is *earned income* for RRSP purposes:
 - Room accrues at 18% of the prior year's earned income, up to the dollar limit ($33,810 for 2026)
+  - Current limits: [TFSA and RRSP Contributions](../Personal-Tax/TFSA-And-RRSP-Contributions.md)
 - Maximizing 2026 room takes about $187,800 of 2025 salary
 - Dividends create no room at any amount
 

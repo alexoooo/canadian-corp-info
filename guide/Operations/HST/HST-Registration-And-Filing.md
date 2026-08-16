@@ -193,7 +193,7 @@ Calendar quarters coincide only where the GST/HST fiscal year is the calendar ye
   - The base is the lesser of the prior year's net tax and the current year's estimate
   - The year-end return reconciles to the actual figure (ETA [s.237](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-237.html))
 
-For the full overview of CCPC filing-deadline cadence, see [Small Business Tax Overview](../../Overview/Small-Business-Tax.md#filing-deadlines-and-instalments).  
+For the consolidated due-date calendar across all CCPC obligations, see [Deadlines](../../Filing-And-CRA/Deadlines.md).  
 It covers the T2, T4/T5 slips, and payroll source deductions alongside GST/HST.  
 
 
