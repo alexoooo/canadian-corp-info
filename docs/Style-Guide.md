@@ -13,14 +13,77 @@ The rules below name what the maintainer changes on the way from the second to t
 
 ## Two Voices
 
-The guide has two registers, one per page:
+The guide has two main registers, one per page:
 - *Primer voice*: third-person factual, concept-oriented, no procedure
   - Examples: `../guide/Overview/Small-Business-Tax.md`, `../README.md`
 - *Operational voice*: second-person imperative, procedure-oriented
   - Concrete debit/credit and schedule-entry walkthroughs, with worked numerical examples
   - Per-topic pages: `Adjusted-Cost-Base.md`, `T3.md`, `T5008.md`, `Capital-Dividend-Account.md`
 
-Every rule below applies to both voices unless noted.  
+Reference pages use neither: a descriptive register with no opinion or instruction (see [Page Kinds](#page-kinds)).  
+Every rule below applies to all registers unless noted.  
+
+
+## Page Kinds
+
+Every guide page is one of five kinds; the kind fixes its voice and shape.  
+Kind shows only in the page's name, shape, and README placement, never as a reader-visible label.  
+The taxonomy's rationale and the migration plan live in [`diataxis/`](diataxis/Diataxis.md).  
+
+- *Hub*: orients a group and indexes its pages; primer voice
+  - Shape: who-for → TLDR → one short orienting section → `## Sub-Pages` → `## Related`
+  - Introduces no rules; its `## Citations` line says the rules live on the linked pages
+- *Concept*: explains a topic (context, mechanisms, connections); primer voice
+  - Conceptual noun-phrase headings; no numbered procedures, no spreadsheet mechanics
+  - A small inline numeric illustration is fine where it serves the concept
+- *Task*: walks the reader through doing something; operational voice
+  - Worked debit/credit entries and schedule walkthroughs are the payload
+  - May embed the compact lookup material the task needs at hand
+    - Embedded reference sits in clearly bounded sections and links to its canonical owner
+- *Reference*: lookup material consulted mid-task; descriptive register
+  - Tables and lists over prose; no opinion, no instruction, no digression
+  - Predictable entry format, each entry cross-linked to the page that explains or uses it
+  - States its as-of basis once, near the top
+  - Models: `../guide/Overview/Glossary.md`, `../guide/Filing-And-CRA/T2-Schedules.md`
+- *Examples*: worked instances showing how the rules compose on concrete numbers
+  - Shape: setup → dated journal entries → schedule entries → a year-end or comparison view
+  - Introduces no rules: every rule exercised is cited on a rules page the example links back to
+  - Rates are pinned inputs (`rates as of…`), not current reference
+- *Tutorial*: a guided lesson with checkpoints; defined but not in use
+  - Adopting it would add a tutor voice; see [`diataxis/Page-Kinds.md`](diataxis/Page-Kinds.md)
+
+### Slip Pages
+
+A slip page (`T3.md`, `T5.md`, `T5008.md`, `Bookkeeping-And-Slips.md`) is a task page with embedded reference.  
+Its sections run in one canonical order:
+1. The slip and when it arrives (brief concept framing; deeper concepts link out)
+2. Boxes (the box table, one entry format across all slip pages)
+3. Accounts (the account-tree excerpt, matching the master chart code-for-code)
+4. Posting (per-box debit/credit entries)
+5. T2 reporting (schedule and line per box)
+6. Software notes (software-specific, version-dated)
+
+`AGENTS.md`'s three content registers (CRA rules, bookkeeping conventions, brokerage behaviour)
+map onto these sections instead of interleaving.  
+
+### Reference Owners
+
+Every reference artifact has exactly one canonical owner page.  
+Any other appearance is a link, a verbatim excerpt marked as such, or a dated example input.  
+
+| Artifact | Owner |
+|---|---|
+| GIFI chart of accounts | `Bookkeeping/Chart-Of-Accounts.md` (until extracted: `Bookkeeping/Ledger-And-Accounts.md`) |
+| Per-slip box tables | The slip's own page (`T3.md`, `T5.md`, `T5008.md`) |
+| T2 schedule map and line references | `Filing-And-CRA/T2-Schedules.md` |
+| CCA classes and rates | `Operations/Cost-Recovery/Capital-Cost-Allowance/CCA-Classification.md` |
+| Quick Method remittance rates | `Operations/HST/HST-Quick-Method.md` |
+| Dividend gross-up / DTC rates | `Overview/Tax-Integration.md` |
+| Corporate rate figures (federal/Ontario, SBD) | `Overview/Small-Business-Tax.md` |
+| CPP / YMPE / RRSP limits | `Paying-Yourself/Payroll.md` |
+| Filing and payment calendar | `Filing-And-CRA/Deadlines.md` (until created: see `diataxis/Migration-Plan.md`) |
+| Terminology | `Overview/Glossary.md` |
+| Scope register | `Overview/Further-Reading.md` |
 
 
 ## Write for the Reader, Not the Repo

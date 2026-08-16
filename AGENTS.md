@@ -73,6 +73,7 @@ These rules encode actual decisions made across the existing guides. Follow them
 
 - **Three distinct registers — keep them separate**: CRA/tax rules (what the law and forms require), bookkeeping conventions (how this guide posts entries), and brokerage-specific behaviour (what statements actually show, often inconsistently); several documents explicitly contrast official tax treatment with the pragmatic ledger conventions used to reconcile broker statements; preserve that separation rather than collapsing it
 - **Cross-link, don't duplicate**: topic pages refer to each other through inline links and a `Related` section near the end; if you find yourself re-explaining ACB inside `T3.md`, link to `Adjusted-Cost-Base.md` instead
+- **Single-source the reference material**: each reference artifact (a rate, threshold, table, calendar, or code list) has exactly one canonical owner page; every other appearance is a link, a verbatim excerpt marked as such, or a dated example input; the owners table is in [`docs/Style-Guide.md` — Reference Owners](docs/Style-Guide.md#reference-owners)
 - **Citations are concrete and authoritative**: existing pages cite the Income Tax Act, CRA forms/schedules, CRA guides, and Bank of Canada FX rates directly; match that — no vague "per CRA guidance" without a pointer
 - **Standard page shape** (where the page is mature): audience/scope at the top, walkthrough sections in the middle, then `Related`, `Citations`, and optionally `TODO` near the end
 - **Diagrams**: use Mermaid in fenced ```` ```mermaid ```` blocks for conceptual flow diagrams; PNG screenshots are reserved for actual CRA / brokerage forms and tooling, co-located in the same folder as the page that references them
@@ -88,9 +89,10 @@ These rules encode actual decisions made across the existing guides. Follow them
 
 ## Style
 
-Prose style is canonical in [`docs/Style-Guide.md`](docs/Style-Guide.md): the two voices, section rhythm, bullets, sentences, headings, emphasis, citations, page shape, worked examples, and the tells that separate reviewed prose from raw AI drafts. Follow that file when editing or adding content. This section keeps only the two reminders that interact with the rest of this document.
+Prose style is canonical in [`docs/Style-Guide.md`](docs/Style-Guide.md): the page kinds, the two voices, section rhythm, bullets, sentences, headings, emphasis, citations, page shape, worked examples, and the tells that separate reviewed prose from raw AI drafts. Follow that file when editing or adding content. This section keeps only the reminders that interact with the rest of this document.
 
 - **Two voices, one per page**: *primer* (third-person factual, concept-oriented; `Small-Business-Tax.md`, `README.md`) and *operational* (second-person imperative, with worked debit/credit and schedule-entry walkthroughs; the per-topic pages)
+- **Page kinds**: every guide page is one of five kinds (hub, concept, task, reference, examples) with voice and shape fixed in [`docs/Style-Guide.md` — Page Kinds](docs/Style-Guide.md#page-kinds); the rationale and migration plan live in [`docs/diataxis/Diataxis.md`](docs/diataxis/Diataxis.md)
 - **Heading status tags are maintainer-only**: a trailing `\[done]`, `\[meh]`, or HTML-comment tag (`<!-- [done] -->`, `<!-- [wip] -->`) on a heading is an authoring/progress annotation, not heading text — leave it exactly as written and never "clean it up"
 
 ---
