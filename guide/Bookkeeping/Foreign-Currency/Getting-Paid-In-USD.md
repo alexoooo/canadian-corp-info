@@ -17,58 +17,6 @@ The GST/HST tax point is a separate question on its own timing, and does not mov
 For a USD invoice issued on time, the CAD equivalent is computed at the BoC rate on the invoice date.  
 That figure is the recorded revenue.  
 
-## Bookkeeping
-
-On invoice issue, a cross-currency entry (CAD-side revenue, USD-side AR) with FX bridge accounts:
-- USD-side (balances within USD):
-  - Debit `Trade accounts receivable - USD` (1062-2): USD invoice amount
-  - Credit `FX gain/loss - USD` (8231-2): USD invoice amount
-- CAD-side (balances within CAD, at invoice-date BoC rate):
-  - Debit `FX gain/loss - CAD` (8231-1): USD invoice amount × invoice-date BoC rate
-  - Credit `Trade sales of goods and services` (8000): same CAD amount
-
-On collection, two cases:
-
-Case A: USD payment hits the USD operating account (`Deposits - USD`, 1003).  
-Pure USD entry; no FX bridge because both legs are USD-native:
-- Debit `Deposits - USD` (1003): USD amount received
-- Credit `Trade accounts receivable - USD` (1062-2): same USD amount
-- No FX gain or loss recognized on collection
-  - The FX exposure remains in the trading accounts (8231-1, 8231-2) until period-end revaluation
-
-Case B: USD payment is converted by the bank and lands in the CAD account.  
-This combines a customer settlement with a bank FX conversion in a single transaction:
-- USD-side (balances within USD):
-  - Credit `Trade accounts receivable - USD` (1062-2): USD amount received
-  - Debit `FX gain/loss - USD` (8231-2): USD amount received
-- CAD-side (balances within CAD, at the bank's actual settlement rate):
-  - Debit `Deposits` (1002-1): actual CAD credited (net of explicit fees)
-  - Debit `Interest and bank charges` (8710): explicit wire-in / conversion fees if shown
-  - Credit `FX gain/loss - CAD` (8231-1): USD amount × bank's settlement rate
-    - The CAD value matches the CAD credited plus fees
-- No FX gain or loss recognized on this entry
-  - The bank's implicit spread is the difference between the bank's settlement rate and the BoC mid
-  - It surfaces at period-end revaluation, when 8231-2 is translated at the closing rate
-
-## Year-End Retranslation
-
-Any USD-native monetary balance (AR or cash) at year-end is translated to CAD at the closing BoC rate.  
-The trading accounts (8231-1, 8231-2) capture the cumulative per-currency positions.  
-Period-end revaluation translates 8231-2 to CAD at the closing rate.  
-
-The net of (8231-1 + translated 8231-2) is the cumulative position since those accounts opened.  
-The period's FX gain or loss is the change in that net since the prior year-end.  
-See [Bookkeeping convention](Bookkeeping-Convention.md) for the carry-forward mechanics.  
-
-Mechanically, this is done by:
-- Translating each foreign-currency-native account balance at the closing rate to produce the Schedule 100 figure
-- Translating 8231-2 at the closing rate and netting with 8231-1 to produce the cumulative position
-  - The Schedule 125 GIFI 8231 figure is the change in that net since the prior year-end
-- For accounting software with built-in multi-currency, this happens automatically when year-end reports are generated
-  - For spreadsheet-tracked books, do the translation as a year-end working paper
-
-The treatment is income-account (IT-95R paragraph 8); fully includable, no inclusion-rate halving.
-
 ## Zero-Rated GST/HST on Services to Non-Residents
 
 Services rendered to a non-resident customer with no presence in Canada are typically *zero-rated*.  
@@ -143,6 +91,58 @@ The decision boundary:
 - Full mechanics are out of scope for this guide; US tax positions are advice territory
   - IRS, [Source of income — personal service income](https://www.irs.gov/individuals/international-taxpayers/source-of-income-personal-service-income)
   - IRS, [Instructions for Form W-8BEN-E](https://www.irs.gov/instructions/iw8bene)
+
+## Bookkeeping
+
+On invoice issue, a cross-currency entry (CAD-side revenue, USD-side AR) with FX bridge accounts:
+- USD-side (balances within USD):
+  - Debit `Trade accounts receivable - USD` (1062-2): USD invoice amount
+  - Credit `FX gain/loss - USD` (8231-2): USD invoice amount
+- CAD-side (balances within CAD, at invoice-date BoC rate):
+  - Debit `FX gain/loss - CAD` (8231-1): USD invoice amount × invoice-date BoC rate
+  - Credit `Trade sales of goods and services` (8000): same CAD amount
+
+On collection, two cases:
+
+Case A: USD payment hits the USD operating account (`Deposits - USD`, 1003).  
+Pure USD entry; no FX bridge because both legs are USD-native:
+- Debit `Deposits - USD` (1003): USD amount received
+- Credit `Trade accounts receivable - USD` (1062-2): same USD amount
+- No FX gain or loss recognized on collection
+  - The FX exposure remains in the trading accounts (8231-1, 8231-2) until period-end revaluation
+
+Case B: USD payment is converted by the bank and lands in the CAD account.  
+This combines a customer settlement with a bank FX conversion in a single transaction:
+- USD-side (balances within USD):
+  - Credit `Trade accounts receivable - USD` (1062-2): USD amount received
+  - Debit `FX gain/loss - USD` (8231-2): USD amount received
+- CAD-side (balances within CAD, at the bank's actual settlement rate):
+  - Debit `Deposits` (1002-1): actual CAD credited (net of explicit fees)
+  - Debit `Interest and bank charges` (8710): explicit wire-in / conversion fees if shown
+  - Credit `FX gain/loss - CAD` (8231-1): USD amount × bank's settlement rate
+    - The CAD value matches the CAD credited plus fees
+- No FX gain or loss recognized on this entry
+  - The bank's implicit spread is the difference between the bank's settlement rate and the BoC mid
+  - It surfaces at period-end revaluation, when 8231-2 is translated at the closing rate
+
+## Year-End Retranslation
+
+Any USD-native monetary balance (AR or cash) at year-end is translated to CAD at the closing BoC rate.  
+The trading accounts (8231-1, 8231-2) capture the cumulative per-currency positions.  
+Period-end revaluation translates 8231-2 to CAD at the closing rate.  
+
+The net of (8231-1 + translated 8231-2) is the cumulative position since those accounts opened.  
+The period's FX gain or loss is the change in that net since the prior year-end.  
+See [Bookkeeping convention](Bookkeeping-Convention.md) for the carry-forward mechanics.  
+
+Mechanically, this is done by:
+- Translating each foreign-currency-native account balance at the closing rate to produce the Schedule 100 figure
+- Translating 8231-2 at the closing rate and netting with 8231-1 to produce the cumulative position
+  - The Schedule 125 GIFI 8231 figure is the change in that net since the prior year-end
+- For accounting software with built-in multi-currency, this happens automatically when year-end reports are generated
+  - For spreadsheet-tracked books, do the translation as a year-end working paper
+
+The treatment is income-account (IT-95R paragraph 8); fully includable, no inclusion-rate halving.
 
 ## Worked Example
 

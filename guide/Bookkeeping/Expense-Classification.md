@@ -207,6 +207,7 @@ For inventory costing, the COGS identity, and which channel a cost belongs to, s
 ## Related
 
 - [Ledger and Accounts](Ledger-And-Accounts.md)
+- [Chart of Accounts](Chart-Of-Accounts.md)
 - [Period Close](Period-Close.md)
 - [Cost Recovery](../Operations/Cost-Recovery/Cost-Recovery.md)
 - [Capital Cost Allowance](../Operations/Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md)

@@ -92,7 +92,7 @@ ITCs on the funded purchases are unaffected — the corporation paid the HST on 
 - [Debt and Financing](Debt-And-Financing.md)
 - [Capital Cost Allowance](Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md)
 - [Expense Classification](../Bookkeeping/Expense-Classification.md)
-- [Ledger and Accounts](../Bookkeeping/Ledger-And-Accounts.md) (`8242` in the chart of accounts)
+- [Chart of Accounts](../Bookkeeping/Chart-Of-Accounts.md) (`8242` in the chart)
 - [Adjusted Cost Base](../Investments/Adjusted-Cost-Base/Adjusted-Cost-Base.md)
 
 

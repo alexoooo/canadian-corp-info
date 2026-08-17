@@ -62,7 +62,15 @@ deadlines section) and the new `Filing-And-CRA/Deadlines.md` reference page. Ste
 ## Phase 2 — hybrid cleanups the pages already ask for
 
 Each step here answers an existing page TODO or a known shape defect, so maintainer intent is
-already on record:
+already on record. *Completed 2026-08-16*: all steps below are done. Execution notes: the T3
+split produced four new sub-pages (Box 49, Box 23 — its own page by maintainer decision, to be
+filled out as real slips are observed —, Box 42, Box 21), each in review with a `†` entry, and
+T3.md keeps the box table, account tree, matching workflow, preliminary tracking, and a new
+per-box T2 summary table; Norberts-Gambit needed no edit — its sections were already in the
+target order with the broker list as-of-dated; Bookkeeping-And-Slips also gained its missing
+`## Related`; the maintainer approved the T5008 lifecycle move and the two signed-off
+description fixes (Concept-Map, Small-Business-Tax) that the Chart-Of-Accounts extraction
+required.
 
 - *T3 mode separation and per-box split*: reorder T3.md into the slip-page canonical section
   order and execute the per-box split its TODO floats (decided): each remaining worked box gets a
@@ -113,7 +121,9 @@ Per-page checklist for the sweep:
 
 ## Phase 4 (optional) — tutorials
 
-Deferred by decision (2026-08-16): skipped for now, revisited after Phase 3. If revived:
+Deferred by decision (2026-08-16): skipped for now, revisited after Phase 3. The maintainer has
+endorsed the seed material: recast existing worked examples as tutorials rather than authoring
+from scratch. If revived:
 
 - Add the third (tutor) voice to the Style Guide, scoped to tutorial pages
 - Build the ACB tracker tutorial first (smallest, safest, has a template and a checkable outcome)

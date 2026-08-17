@@ -163,7 +163,8 @@ Revenue and expenses roll into equity through retained earnings at year-end.
 The *general ledger* is a running record of all financial transactions.  
 At year-end, the *trial balance* rolls up into *balance sheet* and *income statement*.  
 For the mechanics, see [Ledger and Accounts](../Bookkeeping/Ledger-And-Accounts.md).  
-That covers debits and credits, journal entries, the trial balance, plug accounts, and a sample chart of accounts.  
+That covers debits and credits, journal entries, the trial balance, and plug accounts.  
+The account list itself is [Chart of Accounts](../Bookkeeping/Chart-Of-Accounts.md).  
 
 Two further conventions govern how transactions are recorded:
 - *Accrual accounting* (required) determines *when* a transaction is recorded:

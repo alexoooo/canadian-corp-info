@@ -263,7 +263,7 @@ Carryforward (the alternative):
 - Verify the Schedule 4 carryback line numbers (901–903 for a non-capital loss) against the current forms
   - Also the T2 jacket taxable-income deduction lines (331 non-capital, 332 net capital)
   - Then name them in the body
-- Verify `9990` Current income taxes against RC4088 and add it to the [Ledger and Accounts](../Bookkeeping/Ledger-And-Accounts.md) chart
+- Verify `9990` Current income taxes against RC4088 and add it to the [Chart of Accounts](../Bookkeeping/Chart-Of-Accounts.md) chart
   - The guide has no established convention for booking income-tax expense yet
 - Verify the s.129(4) least-of interaction in the loss-value table
   - Confirm a carryback into an AII year retroactively shrinks that year's NERDTOH addition

@@ -14,6 +14,39 @@ Limitations:
 - NR4 mechanics are touched on only briefly; full non-resident withholding is out of scope
 
 
+## T5 Slip and T5 Summary
+
+A taxable dividend (eligible or non-eligible) paid to a Canadian-resident shareholder generally requires a T5.  
+The T5 is the *Statement of Investment Income* slip; it is filed with a *T5 Summary*.  
+Capital dividends paid to Canadian residents are NOT reported on a T5.  
+The recipient does not include the amount in income.  
+The corp's T2 Schedule 3 *does* still report the capital dividend.  
+The T5 obligation and the S3 reporting obligation are independent.  
+See [Capital-Dividend-Account.md](../../Investments/Capital-Dividend-Account/Capital-Dividend-Account.md) for the full capital-dividend treatment.  
+
+The de minimis threshold is $50.  
+Taxable dividends totalling less than $50 to a single recipient in a calendar year do not require a T5.  
+Most owner-manager dividends exceed this.  
+
+Box assignments for typical owner-manager dividends (full list in CRA Guide [T4015](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4015.html)).
+
+For an *eligible* dividend:
+- Box 24: Actual amount of eligible dividends (the cash dividend paid)
+- Box 25: Taxable amount of eligible dividends (Box 24 × 1.38)
+- Box 26: Dividend tax credit for eligible dividends (Box 25 × 15.0198%)
+
+For a *non-eligible* dividend:
+- Box 10: Actual amount of dividends other than eligible (the cash dividend paid)
+- Box 11: Taxable amount of dividends other than eligible (Box 10 × 1.15)
+- Box 12: Dividend tax credit for dividends other than eligible (Box 11 × 9.0301%)
+
+The gross-up factors (1.38 eligible, 1.15 non-eligible) are set by ITA [s.82(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-82.html).  
+The dividend tax credit rates (15.0198%, 9.0301%) are set by ITA [s.121](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-121.html).  
+How the gross-up and DTC integrate with the corporate tax already paid is on [Tax Integration](../../Overview/Tax-Integration.md).  
+
+If both flavours were paid in the same calendar year, use a single T5 slip with both sets of boxes populated.  
+
+
 ## Bookkeeping Journal Entries
 
 Standard double-entry treatment for an owner-managed CCPC paying its sole shareholder.  
@@ -64,39 +97,6 @@ Most chart-of-accounts setups do not require an explicit closing journal entry.
 The GIFI mapping handles it via Schedule 100.  
 
 
-## T5 Slip and T5 Summary
-
-A taxable dividend (eligible or non-eligible) paid to a Canadian-resident shareholder generally requires a T5.  
-The T5 is the *Statement of Investment Income* slip; it is filed with a *T5 Summary*.  
-Capital dividends paid to Canadian residents are NOT reported on a T5.  
-The recipient does not include the amount in income.  
-The corp's T2 Schedule 3 *does* still report the capital dividend.  
-The T5 obligation and the S3 reporting obligation are independent.  
-See [Capital-Dividend-Account.md](../../Investments/Capital-Dividend-Account/Capital-Dividend-Account.md) for the full capital-dividend treatment.  
-
-The de minimis threshold is $50.  
-Taxable dividends totalling less than $50 to a single recipient in a calendar year do not require a T5.  
-Most owner-manager dividends exceed this.  
-
-Box assignments for typical owner-manager dividends (full list in CRA Guide [T4015](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4015.html)).
-
-For an *eligible* dividend:
-- Box 24: Actual amount of eligible dividends (the cash dividend paid)
-- Box 25: Taxable amount of eligible dividends (Box 24 × 1.38)
-- Box 26: Dividend tax credit for eligible dividends (Box 25 × 15.0198%)
-
-For a *non-eligible* dividend:
-- Box 10: Actual amount of dividends other than eligible (the cash dividend paid)
-- Box 11: Taxable amount of dividends other than eligible (Box 10 × 1.15)
-- Box 12: Dividend tax credit for dividends other than eligible (Box 11 × 9.0301%)
-
-The gross-up factors (1.38 eligible, 1.15 non-eligible) are set by ITA [s.82(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-82.html).  
-The dividend tax credit rates (15.0198%, 9.0301%) are set by ITA [s.121](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-121.html).  
-How the gross-up and DTC integrate with the corporate tax already paid is on [Tax Integration](../../Overview/Tax-Integration.md).  
-
-If both flavours were paid in the same calendar year, use a single T5 slip with both sets of boxes populated.  
-
-
 ## T5 Filing
 
 Deadline: last day of February of the calendar year following the year of payment.  
@@ -130,6 +130,18 @@ Most Canadian treaties reduce it to 15%.
 Specific cases go to 5%, such as the US treaty for corporate-shareholder dividends meeting ownership thresholds.  
 NR4 deadline: March 31 of the year following payment.  
 See CRA Guide [T4061](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4061.html) for full NR4 mechanics.  
+
+
+## Related
+
+- [Dividends](Dividends.md)
+- [Declaring and Paying a Dividend](Declaring-And-Paying.md)
+- [T2 Reporting](T2-Reporting.md)
+- [Tax Integration](../../Overview/Tax-Integration.md)
+- [Capital Dividend Account](../../Investments/Capital-Dividend-Account/Capital-Dividend-Account.md)
+- [T5](../../Investments/T5/T5.md) (the T5 your corporation receives on its investments)
+- [Deadlines](../../Filing-And-CRA/Deadlines.md)
+
 
 ## Citations
 

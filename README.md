@@ -33,6 +33,7 @@ Unmarked pages are reviewed; † = AI generated, not verified yet.
 
 **[Bookkeeping](guide/Bookkeeping/Bookkeeping.md)** †:
 - [Ledger and Accounts](guide/Bookkeeping/Ledger-And-Accounts.md) †
+  - [Chart of Accounts](guide/Bookkeeping/Chart-Of-Accounts.md) †
 - [Period Close](guide/Bookkeeping/Period-Close.md) †
 - [Expense Classification](guide/Bookkeeping/Expense-Classification.md) †
 - [Foreign Currency](guide/Bookkeeping/Foreign-Currency/Foreign-Currency.md) † (cross-cutting: billing, banking, and investments)
@@ -83,6 +84,10 @@ Unmarked pages are reviewed; † = AI generated, not verified yet.
 - [T3](guide/Investments/T3/T3.md)
   - [T3 - Box 26 Other Income](guide/Investments/T3/T3-Box-26-Other-Income.md)
   - [T3 - Box 25 Foreign Income / Box 34 Foreign Tax Withheld](guide/Investments/T3/T3_Box-25-Foreign-Income_Box-34-Foreign-Tax-Withheld.md) †
+  - [T3 - Box 49 Eligible Dividends](guide/Investments/T3/T3-Box-49-Eligible-Dividends.md) †
+  - [T3 - Box 23 Non-Eligible Dividends](guide/Investments/T3/T3-Box-23-Non-Eligible-Dividends.md) †
+  - [T3 - Box 42 Return of Capital](guide/Investments/T3/T3-Box-42-Return-Of-Capital.md) †
+  - [T3 - Box 21 Capital Gains Distribution](guide/Investments/T3/T3-Box-21-Capital-Gains-Distribution.md) †
 - [T5](guide/Investments/T5/T5.md) †
   - [T5 - Box 18 Capital Gains Dividends](guide/Investments/T5/T5-Box-18-Capital-Gains-Dividends.md) †
 - [T5008](guide/Investments/T5008/T5008.md)

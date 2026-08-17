@@ -163,7 +163,7 @@ Remittance (by February 15):
 
 The `2627` balance returns to zero after each on-time remittance.  
 A month-end balance larger than the latest pay run's withholdings means a missed or short remittance.  
-For the account definitions and the chart of accounts, see [Ledger and Accounts](../Bookkeeping/Ledger-And-Accounts.md).  
+For the account definitions and the chart of accounts, see [Chart of Accounts](../Bookkeeping/Chart-Of-Accounts.md).  
 
 
 ## Non-Cash Taxable Benefits in the Pay Run

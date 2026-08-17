@@ -205,7 +205,7 @@ A bill of sale settles the *price*; it does not settle the corporation's *capita
   - Federal: within 60 days of each anniversary; Ontario: within 6 months of year-end
 
 Keeping the books current from day one is cheaper than reconstructing the first year at T2 time.  
-Set up the chart of accounts (see [Ledger and Accounts](../Bookkeeping/Ledger-And-Accounts.md)) before the first transaction.  
+Set up the chart of accounts (see [Chart of Accounts](../Bookkeeping/Chart-Of-Accounts.md)) before the first transaction.  
 
 
 ## Related

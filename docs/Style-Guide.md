@@ -73,7 +73,7 @@ Any other appearance is a link, a verbatim excerpt marked as such, or a dated ex
 
 | Artifact | Owner |
 |---|---|
-| GIFI chart of accounts | `Bookkeeping/Chart-Of-Accounts.md` (until extracted: `Bookkeeping/Ledger-And-Accounts.md`) |
+| GIFI chart of accounts | `Bookkeeping/Chart-Of-Accounts.md` |
 | Per-slip box tables | The slip's own page (`T3.md`, `T5.md`, `T5008.md`) |
 | T2 schedule map and line references | `Filing-And-CRA/T2-Schedules.md` |
 | CCA classes and rates | `Operations/Cost-Recovery/Capital-Cost-Allowance/CCA-Classification.md` |
@@ -82,7 +82,7 @@ Any other appearance is a link, a verbatim excerpt marked as such, or a dated ex
 | Corporate rate figures (federal/Ontario, SBD) | `Overview/Small-Business-Tax.md` |
 | CPP / YMPE / YAMPE figures | `Paying-Yourself/Payroll.md` |
 | TFSA / RRSP dollar limits | `Personal-Tax/TFSA-And-RRSP-Contributions.md` |
-| Filing and payment calendar | `Filing-And-CRA/Deadlines.md` (until created: see `diataxis/Migration-Plan.md`) |
+| Filing and payment calendar | `Filing-And-CRA/Deadlines.md` |
 | Terminology | `Overview/Glossary.md` |
 | Scope register | `Overview/Further-Reading.md` |
 

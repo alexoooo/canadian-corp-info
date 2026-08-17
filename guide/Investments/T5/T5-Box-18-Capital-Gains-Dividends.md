@@ -55,7 +55,7 @@ Three slips can all put a capital gain on Schedule 6, and they are easy to confu
 
 - T5 Box 18 and T3 Box 21 are economically the same (the fund's gains pushed out to you)
   - The difference is only the issuer's legal structure, corporation vs trust
-- For the trust version and its cash-vs-phantom split, see [T3 capital gains distribution - Box 21](../T3/T3.md#capital-gains-distribution---box-21)
+- For the trust version and its cash-vs-phantom split, see [T3 Box 21 - Capital Gains Distribution](../T3/T3-Box-21-Capital-Gains-Distribution.md)
 - For an actual sale of a holding, see [T5008](../T5008/T5008.md)
 
 

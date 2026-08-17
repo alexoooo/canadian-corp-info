@@ -64,7 +64,8 @@ income — no T5, no gross-up, no dividend tax credit.
 Details:
 - [Small Business Tax Overview](Small-Business-Tax.md): more detailed flowchart and other references
 - [Bookkeeping, the general ledger, and GIFI](Small-Business-Tax.md#bookkeeping-the-general-ledger-and-gifi): books → financial statements → GIFI mapping
-- [Ledger and Accounts](../Bookkeeping/Ledger-And-Accounts.md): debits and credits, journal entries, the trial balance, and a full chart of accounts
+- [Ledger and Accounts](../Bookkeeping/Ledger-And-Accounts.md): debits and credits, journal entries, and the trial balance
+- [Chart of Accounts](../Bookkeeping/Chart-Of-Accounts.md): the full GIFI-aligned account list
 - [Paying yourself: salary vs dividends](Small-Business-Tax.md#paying-yourself-salary-vs-dividends): the two ways money leaves the corporation
 - [GST/HST](../Operations/HST/HST.md): the parallel collect-and-remit cycle  
 

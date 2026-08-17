@@ -371,6 +371,64 @@ Out of scope here:
 - GAAP/ASPE statement presentation, where capitalization affects reported assets and earnings
 
 
+## Misfiled Incorporation Costs
+
+The first $3,000 of incorporation expenses is a current deduction; only the excess is a Class 14.1 addition
+(per [Capitalize-vs-Expense Thresholds](#capitalize-vs-expense-thresholds)).  
+Getting that split wrong in year one has consequences that divide on the same $3,000 line.  
+The worked year-one split is [CCA Examples — Example 3](CCA-Examples.md#example-3-class-141-incorporation-expenses).  
+
+Missing the year-1 deduction:
+- The under-$3,000 slice is *deductible* under s.20(1)(b), so s.13(35) keeps it out of Class 14.1
+  - The test is whether the amount is *deductible*, not whether it was *deducted*
+- It never enters a pool, so it cannot be amortized in a later year
+- The only ways to claim it are in the year incurred, or by adjusting that year's return
+- A CCPC has three years from the original notice of assessment to request that adjustment
+  - Unlike an individual, a corporation cannot use the s.152(4.2) ten-year relief
+  - The deduction is lost once that window closes
+- The amortize-it-later path applies only to the excess over $3,000, because only that excess is added to Class 14.1
+
+If the first $3,000 was capitalized instead of expensed:
+- *CCA was claimed on it*: the $3,000 never belonged in Class 14.1 at all
+  - ITA [s.20(1)(b)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-20.html) makes the first $3,000 a current
+    deduction, and Income Tax Regulation [1102(1)(a)](https://laws-lois.justice.gc.ca/eng/regulations/C.R.C.,_c._945/section-1102.html)
+    excludes from every prescribed class any property whose cost is otherwise deductible
+  - Stop claiming CCA on that amount going forward
+  - Correct the open years through the ordinary adjustment route; a closed year's under-claim does not authorize a
+    fresh claim in an open one
+  - Get advice for the statute-barred years rather than continuing the claim to unwind the pool
+- *No CCA was ever claimed*: once the year is statute-barred the deduction is forgone
+  - The amount lingers as a phantom asset with book value but no tax basis
+  - Tidy it off through *retained earnings* as a prior-period correction, not through the income statement
+    - Debit retained earnings, credit the incorporation-cost asset
+  - Do *not* expense it: the write-off is non-deductible, adds back on Schedule 1, and leaves the books no cleaner
+    - Retained earnings reaches the same tax result with a clean income statement
+
+Starting the 5% now, rather than expensing or tidying off, splits on the same $3,000 line:
+- *The excess over $3,000*: yes
+  - It joined Class 14.1 in year one, and discretionary CCA keeps its full cost in the pool when nothing was claimed
+  - Begin the 5% in any open year off the standing UCC
+    - A current-year deduction, not a reassessment, so the statute bar does not bite
+  - Set the opening UCC from the year-one addition and be ready to substantiate it
+- *The first $3,000*: no
+  - It was never a valid Class 14.1 addition (the deductible-not-deducted test above), so there is no pool to draw down
+  - The leave-it tolerance forgives a completed slow claim, it does not license starting one
+
+So when a phantom incorporation-cost asset bundles both, tidy off only the first-$3,000 slice.  
+The excess is a live pool to start claiming on, not book value to write off.  
+
+An immaterial Class 14.1 pool: continue claiming the geometric tail year by year.  
+There is no CRA "write off below $X" rule; the only ways to clear a Class 14.1 pool are:
+- Acquire more Class 14.1 property and eventually dispose of all of it (rare for owner-managed CCPCs)
+- The corporation ceases business (triggers terminal loss under the s.20(16.1)(c) cessation exception)
+- The corporation winds up
+
+Most owner-managed CCPCs carry the small residual on Schedule 8 indefinitely.  
+Leaving a $50 line on S8 is correct: CRA expects pool continuity.  
+Merging low-balance pools in the corp's own asset register is fine internally.  
+The S8 filing must still show the running UCC by class.  
+
+
 ## Bookkeeping and T2 Schedules
 
 In the books (accrual + tax basis, per [Small Business Tax Overview](../../../Overview/Small-Business-Tax.md)):
@@ -443,6 +501,7 @@ T2 schedules involved with CCA:
     - UCC definition (s.13(21)); available-for-use rules (s.13(26)–(32))
   - [s.18(1)(b)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-18.html) - disallowance of accounting depreciation
   - [s.20(1)(a)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-20.html) - permission to deduct CCA per regulation
+  - [s.20(1)(b)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-20.html) - immediate deduction of the first $3,000 of incorporation expenses
   - [s.20(16)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-20.html) - terminal loss
   - [s.20(16.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-20.html) - terminal-loss exceptions (Class 10.1; s.13(4.3) former property; Class 14.1 unless cessation)
   - [s.44](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-44.html) - replacement-property election (deferring recapture or capital gain)
@@ -456,6 +515,7 @@ T2 schedules involved with CCA:
   - Regulation 1100(3) - short-fiscal-year proration; exceptions
   - Regulation 1101(1af) - separate class prescribed for each Class 10.1 vehicle
   - Regulation 1101(5b.1) - separate-class election for non-residential building additional 2% / 6%
+  - [Regulation 1102(1)(a)](https://laws-lois.justice.gc.ca/eng/regulations/C.R.C.,_c._945/section-1102.html) - otherwise-deductible costs excluded from every prescribed class
   - Regulation 1104(4), (4.01) - AIIP / reaccelerated-AIIP definitions
   - Regulation 1104(3.1)-(3.2) - DIEP definitions
   - Schedule II - class definitions

@@ -65,7 +65,7 @@ The notice of assessment (NOA):
 
 ## Booking the Tax Cycle
 
-The corporation's income tax flows through two accounts (see [Ledger and Accounts](../Bookkeeping/Ledger-And-Accounts.md)):
+The corporation's income tax flows through two accounts (see [Chart of Accounts](../Bookkeeping/Chart-Of-Accounts.md)):
 - `Current income taxes` (`9990`): expense
 - `Taxes payable` (`2680`): liability; instalments post here as debits, so the balance nets to what is still owed
 

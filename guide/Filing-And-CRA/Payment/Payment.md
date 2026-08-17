@@ -143,7 +143,7 @@ The payroll concepts and bookkeeping are in [Payroll](../../Paying-Yourself/Payr
   - See [Payment methods](#payment-methods) below
 
 The withheld amounts sit in the `Employee deductions payable` (2627) control account until remitted.  
-See [Ledger and Accounts](../../Bookkeeping/Ledger-And-Accounts.md).  
+See [Chart of Accounts](../../Bookkeeping/Chart-Of-Accounts.md).  
 
 
 ## Payment Methods

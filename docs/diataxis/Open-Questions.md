@@ -100,7 +100,9 @@ The tutorial quadrant is empty and the audience is a practitioner, not a student
 written anyway (its TODO wants one), writing it *as* a tutorial costs little extra and fills the
 quadrant with the one artifact a newcomer would actually study.
 
-*Decision (2026-08-16)*: skip for now; revisit after Phase 3.
+*Decision (2026-08-16)*: skip for now; revisit after Phase 3. The maintainer has since endorsed
+the direction of recasting worked examples as tutorials when Phase 4 is revived, rather than
+authoring tutorials from scratch.
 
 ## 8. Concept-Map's reference matrices
 

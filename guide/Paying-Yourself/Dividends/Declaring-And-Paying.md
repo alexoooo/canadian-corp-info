@@ -134,6 +134,17 @@ For a single owner-manager shareholder, the typical payment channels are:
 The choice of payment channel does not change the tax treatment of the dividend.  
 Only the bookkeeping entry differs (see [Bookkeeping and information slips](Bookkeeping-And-Slips.md)).  
 
+
+## Related
+
+- [Dividends](Dividends.md)
+- [Bookkeeping and Information Slips](Bookkeeping-And-Slips.md)
+- [T2 Reporting](T2-Reporting.md)
+- [ERDTOH and NERDTOH](ERDTOH-NERDTOH.md)
+- [Capital Dividend Account](../../Investments/Capital-Dividend-Account/Capital-Dividend-Account.md)
+- [Deadlines](../../Filing-And-CRA/Deadlines.md)
+
+
 ## Citations
 
 - Income Tax Act (R.S.C., 1985, c. 1 (5th Supp.)):

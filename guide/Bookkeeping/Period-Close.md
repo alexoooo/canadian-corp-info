@@ -74,7 +74,7 @@ Carrying an unexplained difference forward as a plug buries the error; see [Plug
 ## Credit-Card Reconciliation
 
 The corporate credit card reconciles the same way, against its own statement:
-- The ledger account is the `Credit card payable` sub-account of `2620` (see [Ledger and Accounts](Ledger-And-Accounts.md#chart-of-accounts))
+- The ledger account is the `Credit card payable` sub-account of `2620` (see [Chart of Accounts](Chart-Of-Accounts.md))
 - Each statement charge should already be posted as Debit expense / Credit `Credit card payable`
 - The payment to the card is Debit `Credit card payable` / Credit `Deposits` — not an expense
   - Booking the card payment to an expense line double-counts every charge; this is the most common card-posting error

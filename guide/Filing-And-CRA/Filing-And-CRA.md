@@ -52,7 +52,7 @@ This page is a hub; these are the sub-pages:
 ## Related
 
 - [Overview](../Overview/Overview.md) (the primer and filing calendar)
-- [Bookkeeping](../Bookkeeping/Ledger-And-Accounts.md) (the GIFI balances that feed the schedules)
+- [Chart of Accounts](../Bookkeeping/Chart-Of-Accounts.md) (the GIFI balances that feed the schedules)
 - [Investments](../Investments/Investments.md) (the investment activity that fills several schedules)
 
 ## Citations

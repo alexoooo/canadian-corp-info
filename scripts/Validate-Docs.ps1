@@ -452,7 +452,7 @@ foreach ($repoPath in $guidePages) {
 # GIFI account-tree excerpt consistency: every code in a guide page's HTML account tree must
 # appear in the master chart of accounts, and trees must agree on the account name per code.
 # Codes carrying the structural -valid / -calc / -parent markers are tree scaffolding, not accounts.
-$masterChartPath = 'guide/Bookkeeping/Ledger-And-Accounts.md'
+$masterChartPath = 'guide/Bookkeeping/Chart-Of-Accounts.md'
 $gifiTreeCodeCount = 0
 if ($markdownFiles -contains $masterChartPath) {
     $masterCodes = [System.Collections.Generic.HashSet[string]]::new(

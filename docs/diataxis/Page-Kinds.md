@@ -66,8 +66,8 @@ extends the two-voice rule.
   rates change by budget year); a reference page states its as-of basis once, near the top, the
   way T2-Schedules' TLDR already does
 - *Existing and decided instances*: Glossary; T2-Schedules; Further-Reading (a scope register);
-  `Chart-Of-Accounts.md` (decided extraction from
-  [Ledger-And-Accounts](../../guide/Bookkeeping/Ledger-And-Accounts.md));
+  [Chart-Of-Accounts](../../guide/Bookkeeping/Chart-Of-Accounts.md) (extracted from
+  [Ledger-And-Accounts](../../guide/Bookkeeping/Ledger-And-Accounts.md) in Phase 2);
   `Filing-And-CRA/Deadlines.md` (decided — the consolidated filing and payment calendar); the
   spreadsheet column specs inside the tracking pages
 
@@ -132,7 +132,7 @@ excerpt marked as such, or a dated example input. Proposed owners:
 
 | Artifact | Canonical owner |
 |---|---|
-| GIFI chart of accounts | `Chart-Of-Accounts.md`, extracted from Ledger-And-Accounts (decided — [Open Questions](Open-Questions.md) Q1) |
+| GIFI chart of accounts | `Chart-Of-Accounts.md`, extracted from Ledger-And-Accounts in Phase 2 (decided — [Open Questions](Open-Questions.md) Q1) |
 | Per-slip box tables | The slip's own page (T3, T5, T5008) |
 | T2 schedule map and line references | T2-Schedules |
 | CCA classes and rates | CCA-Classification |

@@ -324,7 +324,7 @@ For the books you group the same register by `Account`.
 Those are the balance-sheet cost lines (Schedule 100) and their accumulated-amortization contra accounts.  
 
 Posting is keyed on each item's `Account`, not its CCA class.  
-The account resolves the GIFI lines from the chart of accounts ([Ledger and Accounts](../../../Bookkeeping/Ledger-And-Accounts.md) is the canonical list).  
+The account resolves the GIFI lines from the canonical [Chart of Accounts](../../../Bookkeeping/Chart-Of-Accounts.md).  
 
 Common accounts:
 
@@ -382,7 +382,7 @@ On disposal, clear the item from the cost line and its contra:
 The ledger records *book* amortization; CCA is the *tax* deduction.  
 Setting book depreciation equal to CCA keeps one set of numbers, so the claim above is what you post.  
 If you keep book amortization on a different basis (say straight-line over useful life), post that figure instead.  
-Let Schedule 1 reconcile it against the CCA claimed (see [Ledger and Accounts](../../../Bookkeeping/Ledger-And-Accounts.md)).  
+Let Schedule 1 reconcile it against the CCA claimed (see [Chart of Accounts](../../../Bookkeeping/Chart-Of-Accounts.md)).  
 
 
 ## Capital Asset Continuity

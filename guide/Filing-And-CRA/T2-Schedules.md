@@ -79,8 +79,8 @@ Filed with essentially every return of an owner-managed CCPC:
 
 | Schedule | Title | When it applies | Details |
 |---|---|---|---|
-| S100 | Balance Sheet Information | always | [Ledger and Accounts](../Bookkeeping/Ledger-And-Accounts.md) |
-| S125 | Income Statement Information | always | [Expense Classification](../Bookkeeping/Expense-Classification.md), [Ledger and Accounts](../Bookkeeping/Ledger-And-Accounts.md) |
+| S100 | Balance Sheet Information | always | [Chart of Accounts](../Bookkeeping/Chart-Of-Accounts.md) |
+| S125 | Income Statement Information | always | [Expense Classification](../Bookkeeping/Expense-Classification.md), [Chart of Accounts](../Bookkeeping/Chart-Of-Accounts.md) |
 | S141 | GIFI – Additional Information (formerly Notes Checklist) | always, with the GIFI statements | below |
 | S1 | Net Income (Loss) for Income Tax Purposes | whenever book and tax differ — in practice always | below |
 | S8 | Capital Cost Allowance | any depreciable property on the books | [CCA — Bookkeeping and T2 schedules](../Operations/Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md#bookkeeping-and-t2-schedules) |
@@ -137,7 +137,7 @@ Triggered by the corporate investment account (see [Active vs investment income]
 S6 collects any capital disposition: securities sales, FX on capital account, and capital gains dividends.  
 S7 does double duty: it computes the *aggregate investment income* (AII) and the income eligible for the SBD.  
 AII drives the refundable tax and the passive-income grind of the business limit.  
-The slip-to-schedule mapping (which T3/T5 box lands on which schedule) is diagrammed on [T5](../Investments/T5/T5.md#t5-boxes).  
+The slip-to-schedule mapping (which T3/T5 box lands on which schedule) is diagrammed on [T5](../Investments/T5/T5.md#corporation-vs-personal-handling).  
 It is worked box-by-box on the T3 and T5 pages.  
 
 
@@ -215,7 +215,7 @@ Not schedules, but part of the same season:
 - *T183 CORP*: authorizes an outside preparer to e-file the return; most corporations are required to file electronically
 - *T106* (non-arm's-length transactions with non-residents): out of scope for this guide's scenarios
   - So is *T1134* (foreign affiliates)
-- The GIFI itself is documented in CRA guide RC4088, the source of the account names in [Ledger and Accounts](../Bookkeeping/Ledger-And-Accounts.md)
+- The GIFI itself is documented in CRA guide RC4088, the source of the account names in [Chart of Accounts](../Bookkeeping/Chart-Of-Accounts.md)
 
 
 ## Related
@@ -223,6 +223,7 @@ Not schedules, but part of the same season:
 - [Small Business Tax Overview](../Overview/Small-Business-Tax.md)
 - [Investments](../Investments/Investments.md) (the investing cycle behind S3, S6, S7, and S21)
 - [Ledger and Accounts](../Bookkeeping/Ledger-And-Accounts.md)
+- [Chart of Accounts](../Bookkeeping/Chart-Of-Accounts.md)
 - [Expense Classification](../Bookkeeping/Expense-Classification.md)
 - [Whole-dollar rounding](Whole-Dollar-Rounding.md)
 - [Capital Cost Allowance](../Operations/Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md)
@@ -242,7 +243,7 @@ Not schedules, but part of the same season:
 - CRA RC4088 - General Index of Financial Information (GIFI): https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4088.html
 - Individual schedule pages are cited on the linked detail pages:
   - S3/S53/S55 on [T2 reporting](../Paying-Yourself/Dividends/T2-Reporting.md), S4 on [Losses](Losses.md)
-  - S8 on [CCA](../Operations/Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md), S100/S125 on [Ledger and Accounts](../Bookkeeping/Ledger-And-Accounts.md)
+  - S8 on [CCA](../Operations/Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md), S100/S125 on [Chart of Accounts](../Bookkeeping/Chart-Of-Accounts.md)
 
 
 ## TODO

@@ -8,7 +8,7 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
 
 **TLDR**:
 - This group is the ledger foundation the rest of the guide posts to
-- [Ledger and Accounts](Ledger-And-Accounts.md) sets up the GIFI-aligned chart of accounts and the debit/credit conventions
+- [Ledger and Accounts](Ledger-And-Accounts.md) sets up the debit/credit conventions; [Chart of Accounts](Chart-Of-Accounts.md) is the GIFI-aligned account list
 - [Period Close](Period-Close.md) runs the routine on top: monthly reconciliations, the year-end adjusting set, and the close
 - [Expense Classification](Expense-Classification.md) decides which account a cost lands in and whether it is a current expense or a capital asset
 - [Foreign Currency](Foreign-Currency/Foreign-Currency.md) is cross-cutting: how every non-CAD amount is translated for billing, banking, and investments
@@ -26,7 +26,9 @@ This group covers the machinery that makes that work.
 
 This page is a hub; these are the sub-pages:
 - [Ledger and Accounts](Ledger-And-Accounts.md): the backbone of the group
-  - A GIFI-aligned chart of accounts, the debit/credit conventions this guide uses, and the map onto the T2 schedules
+  - The debit/credit conventions this guide uses and the map onto the T2 schedules
+- [Chart of Accounts](Chart-Of-Accounts.md): the master account list
+  - Every account used across this guide with its GIFI code; the slip-page account trees are excerpts of it
 - [Period Close](Period-Close.md): the routine that runs on the ledger
   - Monthly bank and card reconciliations, the year-end adjusting entries, proving the trial balance, and closing the year
 - [Expense Classification](Expense-Classification.md): where a given cost lands
