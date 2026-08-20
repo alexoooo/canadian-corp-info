@@ -8,14 +8,15 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
 
 **TLDR**:
 - Net self-employment income triggers *both* halves of CPP, computed on Schedule 8 of the T1
-  - Roughly $9,300 at the 2026 maximums, base plus CPP2
+  - The current CPP, YMPE, and YAMPE figures live on [Payroll](../Paying-Yourself/Payroll.md)
 - The employer half and the enhanced portion are deductions; the remaining employee half is a credit
 - There is no EI unless you opt in to *special* benefits; the opt-in is effectively permanent once benefits are drawn
-- The T1 files by June 15 (you and your spouse), but the balance is still due April 30
-- Net tax owing over $3,000 in the current year and at least one of the two prior years brings quarterly instalments
+- Self-employment extends the T1 filing deadline for you and your spouse, but not the balance-due day
+- The ordinary T1 instalment rules still apply
+  - A first profitable year can therefore create two overlapping cash demands
 
 Limitations:
-- CPP rates and maximums are cross-linked, not restated; T1 brackets are out of scope
+- CPP rates and maximums are cross-linked to [Payroll](../Paying-Yourself/Payroll.md), not restated; T1 brackets are out of scope
   - The T1's common credits are worked in [Donation and Medical Credits](../Personal-Tax/Donation-And-Medical-Credits.md)
 - Quebec differences (QPP, QPIP, the $1,800 instalment threshold) are out of scope
 - The following is my understanding as of 2026
@@ -26,9 +27,9 @@ Limitations:
 An employee splits CPP with the employer; you are both, so you pay both halves on net self-employment earnings.  
 The computation runs on Schedule 8 (*Canada Pension Plan Contributions and Overpayment*) filed with the T1.  
 
-The 2026 rates and ceilings are on [Salary vs Dividends - CPP](../Paying-Yourself/Salary-Vs-Dividends.md#cpp-cost-now-entitlement-later):
-- Base CPP at 5.95% × 2 between the $3,500 exemption and the YMPE; CPP2 at 4% × 2 up to the YAMPE
-- The self-employed maximum is about $8,461 base plus $832 CPP2
+The current rates and ceilings are on [Payroll](../Paying-Yourself/Payroll.md#source-deductions).  
+The self-employed calculation uses the same base-CPP and CPP2 bands, but applies both the employee and employer
+shares through Schedule 8.  
 
 Unlike the corp owner choosing between salary and dividends, you cannot opt out:
 - The contribution follows the net income mechanically
@@ -66,22 +67,20 @@ A voluntary opt-in exists for *special* benefits only (Employment Insurance Act,
 
 ## The June 15 Deadline
 
-- Filing: June 15 of the following year, for you and your cohabiting spouse or common-law partner (ITA [s.150(1)(d)(ii)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-150.html))
-- Payment: the *balance-due day* stays April 30 (ITA [s.248(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-248.html)); interest runs from May 1 on anything unpaid
+Carrying on a business activates the extended filing date for you and your cohabiting spouse or common-law
+partner, but it does not extend the balance-due day. The dates and statutory tests live on
+[T1 Filing Basics](../Personal-Tax/T1-Filing-Basics.md#deadlines-and-the-balance-due-day).  
 
-The June extension defers paper, not money.  
-With a balance owing, estimate and pay by April 30, then file by June 15.  
+The extension defers the return, not the money.  
+With a balance owing, estimate and pay by the ordinary balance-due day, then file by the extended date.  
 
 
 ## T1 Instalments
 
-Instalments are required when *net tax owing* exceeds $3,000 in the current year and at least one of the two prior years.  
-The threshold is ITA [s.156.1](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-156.1.html).  
+The ordinary personal instalment threshold, due dates, and computation options apply to a sole proprietor.  
+They live on [T1 Filing Basics](../Personal-Tax/T1-Filing-Basics.md#deadlines-and-the-balance-due-day).  
 
-- Due March 15, June 15, September 15, and December 15
-- Three computation options: no-calculation (pay CRA's instalment reminders as billed), prior-year, and current-year
-  - Paying the no-calculation amounts as billed never draws instalment interest, even if they prove too low
-- The first good year lands a double hit: last year's April 30 balance plus this year's instalments already running
+- The first good year lands a double hit: last year's balance plus this year's instalments already running
 
 GST/HST has its own parallel instalment stream once registered; see [HST for Sole Proprietors](HST-For-Sole-Proprietors.md#instalments-as-an-annual-filer).  
 
@@ -91,11 +90,11 @@ GST/HST has its own parallel instalment stream once registered; see [HST for Sol
 - [Sole Proprietorship](Sole-Proprietorship.md) (the hub)
 - [T2125 and Expenses](T2125-And-Expenses.md) (the net income Schedule 8 keys off)
 - [HST for Sole Proprietors](HST-For-Sole-Proprietors.md)
-- [Salary vs Dividends](../Paying-Yourself/Salary-Vs-Dividends.md) (the CPP figures, and the corp-side choice)
+- [Salary vs Dividends](../Paying-Yourself/Salary-Vs-Dividends.md) (the corp-side remuneration choice)
 - [Payroll](../Paying-Yourself/Payroll.md) (the employer-side CPP/EI mechanics)
 - [Incorporation vs Sole Proprietorship](Incorporation-Vs-Sole-Proprietorship.md)
 - [Paying Contractors](../Operations/Paying-Contractors.md) (the T4A this return reports)
-- [T1 Filing Basics](../Personal-Tax/T1-Filing-Basics.md) (the general filing side these deadlines sit in)
+- [T1 Filing Basics](../Personal-Tax/T1-Filing-Basics.md) (the filing, payment, and instalment calendar)
 
 
 ## Citations
@@ -104,14 +103,9 @@ GST/HST has its own parallel instalment stream once registered; see [HST for Sol
   - [s.60(e)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-60.html) - self-employed deduction: half the base CPP contribution plus the enhanced contributions
     - s.60(e.1) is the employment-income analogue for enhanced contributions
   - [s.118.7](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-118.7.html) - credit for the remaining base contribution
-  - [s.150(1)(d)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-150.html) - June 15 filing deadline for an individual carrying on a business, extended to the spouse
-  - [s.248(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-248.html) - *balance-due day*: April 30 of the following year
-  - [s.156.1](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-156.1.html) - instalment threshold: net tax owing over $3,000 in the current and at least one of the two preceding years
 - T1 Schedule 8 (5000-S8) - Canada Pension Plan Contributions and Overpayment: https://www.canada.ca/en/revenue-agency/services/forms-publications/tax-packages-years/general-income-tax-benefit-package/5000-s8.html
 - Employment Insurance Act (S.C. 1996, c. 23), Part VII.1:
   - [s.152.02](https://laws-lois.justice.gc.ca/eng/acts/E-5.6/section-152.02.html) - self-employed opt-in agreement and its termination limits
-- CRA - CPP contribution rates, maximums and exemptions: https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/payroll-deductions-contributions/canada-pension-plan-cpp/cpp-contribution-rates-maximums-exemptions.html
-- CRA - Income tax instalments, due dates and calculation options: https://www.canada.ca/en/revenue-agency/services/payments/payments-cra/individual-payments/income-tax-instalments/due-dates.html
 - Service Canada - EI benefits for self-employed people: https://www.canada.ca/en/services/benefits/ei/ei-self-employed-workers.html
 
 

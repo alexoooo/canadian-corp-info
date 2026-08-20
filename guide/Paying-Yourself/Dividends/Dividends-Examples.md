@@ -13,33 +13,16 @@ Limitations:
   - A non-eligible dividend
   - A year-end NERDTOH-recovery dividend
   - A capital dividend
-- Ontario rates current as of the first half of 2026; for other provinces swap in the relevant rates and DTCs
+- Each example pins its Ontario rate inputs to its stated period; for other provinces, swap in the relevant inputs
 - Personal-side tax is shown only briefly for context; the corp-side workflow is the focus
 
 
 ## Worked Examples
 
-Rate figures below are pinned to their period. Where an example runs a full calendar-2026 tax year it uses the
-prorated blend (≈ 11.7% combined SBD); where it is set in 2025 or the first half of 2026 it uses 12.2%.
+Each setup states the rate inputs for its period; they are scenario inputs, not a current rate table.  
+Current corporate rates live on [Small Business Tax](../../Overview/Small-Business-Tax.md), while gross-ups and
+dividend tax credits live on [Tax Integration](../../Overview/Tax-Integration.md).  
 
-Current values are owned by [Small Business Tax](../../Overview/Small-Business-Tax.md) (corp rates) and
-[Tax Integration](../../Overview/Tax-Integration.md) (gross-ups and DTCs).  
-
-The building blocks, as they stood in the first half of 2026:
-- Federal SBD rate: 9%
-- Ontario SBD rate: 3.2% (combined small-business rate 12.2%)
-- Federal general rate: 15%
-- Ontario general rate: 11.5% (combined general rate 26.5%)
-- Ontario eligible-dividend tax credit: 10% of the grossed-up amount
-- Ontario non-eligible DTC: 2.9863% of the grossed-up amount
-
-The 2026 Ontario budget measures, enacted as Bill 97 (S.O. 2026, c. 2):
-- Cut the Ontario small-business CIT rate from 3.2% to 2.2% effective July 1, 2026
-  - Combined SBD rate 12.2% → 11.2%, prorated for tax years straddling July 1, 2026
-- Drop the Ontario non-eligible DTC from 2.9863% to 1.9863% effective January 1, 2027
-
-For tax years or scenarios that straddle these effective dates, restate the rates accordingly.  
-For other provinces, swap in the relevant provincial corp rates and DTCs; the mechanics are identical.  
 Each example focuses on the corp-side workflow.  
 The steps: declaration, journal entries, T2 schedule entries, and the dividend refund (where applicable).  
 Personal-side tax is mentioned briefly for context.  
@@ -209,6 +192,18 @@ For full mechanics, see [Capital-Dividend-Account.md](../../Investments/Capital-
 - The s.184(2) Part III tax penalty for over-electing
 - The S89 CDA balance verification
 - The CRA My Business Account submission workflow
+
+
+## Related
+
+- [Dividends](Dividends.md)
+- [Declaring and Paying](Declaring-And-Paying.md)
+- [Bookkeeping and Slips](Bookkeeping-And-Slips.md)
+- [T2 Reporting](T2-Reporting.md)
+- [Tax Integration](../../Overview/Tax-Integration.md) (gross-up and dividend-tax-credit rate owner)
+- [Small Business Tax](../../Overview/Small-Business-Tax.md) (corporate-rate owner)
+- [Capital Dividend Account](../../Investments/Capital-Dividend-Account/Capital-Dividend-Account.md)
+
 
 ## Citations
 

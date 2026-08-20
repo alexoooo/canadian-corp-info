@@ -3,12 +3,12 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
 # HST for Sole Proprietors
 
 **Who this is for**:
-- Sole proprietors approaching or past the $30,000 small-supplier threshold, or weighing voluntary registration
+- Sole proprietors approaching or past the small-supplier threshold, or weighing voluntary registration
 - Readers of the corporate [HST pages](../Operations/HST/HST.md) wanting the unincorporated differences
 
 **TLDR**:
 - The GST/HST regime is the same for a sole proprietor as for a corporation
-  - Same $30,000 small-supplier test, same rates and place of supply, same two methods, same returns
+  - Same small-supplier test, rates and place of supply, accounting methods, and returns
 - The registrant is you: the BN and `RT` account are issued to you personally, keyed to your SIN
 - All your sole-prop activities aggregate for the threshold; separate business lines cannot each stay under it
 - Ride-share driving is a *taxi business*: registration is mandatory from the first dollar
@@ -23,8 +23,9 @@ Limitations:
 ## What Carries Over Unchanged
 
 Everything on the corporate HST pages applies, reading *you* for *the corp*:
-- The $30,000 small-supplier test, over four rolling calendar quarters or any single quarter (ETA [s.148](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-148.html))
-  - Worked in [HST Registration and Filing](../Operations/HST/HST-Registration-And-Filing.md#registration), with the effective-date and 29-day application clocks
+- The small-supplier threshold and its rolling-quarters and single-quarter tests
+  - Current figures and the effective-date and application clocks live on
+    [HST Registration and Filing](../Operations/HST/HST-Registration-And-Filing.md#registration)
 - Rates by province and the place-of-supply rules; zero-rating of services to non-residents
 - The regular method and the Quick Method, reporting periods, electronic filing
 - Charging tax on every taxable supply once registered, and the deemed trust over tax collected
@@ -37,10 +38,10 @@ This page states only what differs for an unincorporated registrant.
 The ETA tests and registers the *person*, and the person is you:
 - The BN is issued to you against your SIN; the `RT` program account is yours, not the business name's
 - One person, one small-supplier test: the worldwide taxable supplies of *all* your sole-prop activities aggregate
-  - Two side businesses cross the $30,000 threshold together, even with separate names and books
+  - Two side businesses cross the threshold together, even with separate names and books
 - Registration mechanics are the corporate page's: Business Registration Online, then the `RT` account under your new BN
 
-Incorporating later makes a new person, but not necessarily a fresh $30,000:
+Incorporating later makes a new person, but not necessarily a fresh small-supplier threshold:
 - The corporation gets its own BN and `RT` account
 - The small-supplier calculation does not simply reset: ETA [s.148(1)-(2)](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-148.html) counts the taxable supplies of *associates*, and [s.127(2)](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-127.html) makes a controlling individual an associate of the corporation
   - So your own prior taxable supplies can enter the corporation's four-quarter and single-quarter tests
@@ -63,9 +64,10 @@ This is the gig case the threshold surprises most: a part-time driver is a regis
 
 - The Quick Method is open to individuals; the exclusions are activity-based, not entity-based
   - Excluded activities: accounting, bookkeeping, tax preparation, financial consulting, legal, and actuarial services
-- The $400,000 cap counts annual worldwide taxable supplies *including* GST/HST charged and *including* zero-rated supplies
+- Its eligibility cap and revenue calculation are the same as for a corporation
 - The election is the same Form GST74, on the same deadlines
-- The remittance rates, the capital-purchase carve-out, and the when-it-pays arithmetic are worked in [HST Quick Method](../Operations/HST/HST-Quick-Method.md)
+- The current cap, remittance rates, capital-purchase carve-out, and when-it-pays arithmetic live on
+  [HST Quick Method](../Operations/HST/HST-Quick-Method.md)
 
 
 ## Mixed-Use ITCs
@@ -81,9 +83,9 @@ Passenger-vehicle ITCs carry their own caps, tied to the income-tax ceilings; se
 
 ## Instalments as an Annual Filer
 
-- An annual filer whose net tax is $3,000 or more pays quarterly instalments (ETA [s.237](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-237.html))
-  - Each is one quarter of the instalment base, due within one month after each fiscal quarter
-  - An instalment base under $3,000 is deemed nil, so no instalments below that line
+- The annual-filer instalment threshold and quarterly cadence are unchanged
+  - Current figures and the base computation live on
+    [HST Registration and Filing](../Operations/HST/HST-Registration-And-Filing.md#reporting-periods-and-deadlines)
 - These run in parallel with the T1 instalments worked in [CPP and the T1](CPP-And-The-T1.md#t1-instalments)
   - An established sole proprietor can face two quarterly payment streams
 
@@ -104,7 +106,7 @@ Passenger-vehicle ITCs carry their own caps, tied to the income-tax ceilings; se
 - Excise Tax Act (R.S.C., 1985, c. E-15):
   - [s.123(1)](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-123.html) - *taxi business* definition, including platform-arranged passenger transport
   - [s.148](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-148.html) - small-supplier threshold; the person's worldwide taxable supplies
-  - [s.237](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-237.html) - quarterly instalments for annual filers; sub-$3,000 base deemed nil
+  - [s.237](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-237.html) - quarterly instalments for annual filers
   - [s.240(1.1)](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-240.html) - mandatory registration for a taxi business; (2.1) application deadline; (3) voluntary registration
 - CRA RC4058 - Quick Method of Accounting for GST/HST: https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4058/quick-method-accounting-gst-hst.html
 - CRA RC4022 - General Information for GST/HST Registrants: https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4022.html

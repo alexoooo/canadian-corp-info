@@ -123,13 +123,10 @@ The payroll concepts and bookkeeping are in [Payroll](../../Paying-Yourself/Payr
 - *Account*: an `RP` payroll program account under the business number (format `…RP0001`)
 - *What is remitted each period*: the employee's federal and provincial income tax, plus CPP and EI
   - CPP is both the employee and employer halves, since the corp is the employer
+    - Current CPP and CPP2 rates, limits, and pay-run calculations live on [Payroll](../../Paying-Yourself/Payroll.md#source-deductions)
   - EI applies only where the employee is EI-insurable
   - An owner-manager controlling over 40% of the voting shares is *not* EI-insurable on their own pay
     - Employment Insurance Act s.5(2)(b); a single-owner corp remits income tax and CPP only
-- *2026 CPP*: 5.95% employee + 5.95% employer on pensionable earnings from the $3,500 basic exemption to the $74,600 YMPE
-  - Maximum $4,230.45 each half; the corp remits both halves
-  - *CPP2* adds 4% each on earnings from $74,600 to the $85,000 YAMPE (maximum $416 each half)
-  - Rates and limits change every January; the current figures are on [Payroll](../../Paying-Yourself/Payroll.md)
 - *Frequency*: most owner-managed CCPCs are *regular* (monthly) remitters
   - Due by the *15th of the month following* the month the pay was made
   - A small or new employer can qualify as a *quarterly* remitter

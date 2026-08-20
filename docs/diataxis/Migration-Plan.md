@@ -91,6 +91,15 @@ required.
 
 ## Phase 3 — group-by-group compass sweep
 
+*Completed 2026-08-19*: all 94 guide pages were swept without page moves, splits, or status
+changes. Corporate-Lifecycle, Overview, Bookkeeping, and Investments needed no content edits, so
+the signed-off guide pages stayed untouched. The side groups now link to the canonical CPP,
+GST/HST, and T1-calendar owners instead of restating their figures; Payment delegates CPP inputs
+to Payroll; and Dividends-Examples keeps only dated scenario inputs and now has its missing
+`Related` section. `Booking the Tax Cycle` stays in CRA-Administration as sanctioned embedded task
+material, with Period-Close linking to it. Inventory-And-COGS remains one page because its
+two-example section has not grown beyond the 594-line condition recorded below.
+
 After phases 1–2 establish the patterns, sweep the remaining pages one group at a time, in
 ascending order of expected churn:
 
@@ -102,8 +111,8 @@ ascending order of expected churn:
    the orientation page's job), so the sweep only converts its rate table and calendar into
    linking views per Phase 1
 4. *Filing-And-CRA*: mostly settled by Phase 1's calendar work; CRA-Administration's embedded
-   `Booking the Tax Cycle` journal how-to either stays as sanctioned embedded task material or
-   joins Period-Close's orbit
+   `Booking the Tax Cycle` journal how-to stays as sanctioned embedded task material, with
+   Period-Close linking to it
 5. *Bookkeeping*: settled by the Ledger-And-Accounts decision plus Foreign-Currency slip-page
    ordering
 6. *Paying-Yourself*: Dividends sub-pages are already close to a clean type split; verify
