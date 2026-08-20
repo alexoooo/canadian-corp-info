@@ -89,10 +89,10 @@ These rules encode actual decisions made across the existing guides. Follow them
 
 ## Style
 
-Prose style is canonical in [`docs/Style-Guide.md`](docs/Style-Guide.md): the page kinds, the two voices, section rhythm, bullets, sentences, headings, emphasis, citations, page shape, worked examples, and the tells that separate reviewed prose from raw AI drafts. Follow that file when editing or adding content. This section keeps only the reminders that interact with the rest of this document.
+Prose style is canonical in [`docs/Style-Guide.md`](docs/Style-Guide.md): the page kinds, the three voices, section rhythm, bullets, sentences, headings, emphasis, citations, page shape, worked examples, and the tells that separate reviewed prose from raw AI drafts. Follow that file when editing or adding content. This section keeps only the reminders that interact with the rest of this document.
 
-- **Two voices, one per page**: *primer* (third-person factual, concept-oriented; `Small-Business-Tax.md`, `README.md`) and *operational* (second-person imperative, with worked debit/credit and schedule-entry walkthroughs; the per-topic pages)
-- **Page kinds**: every guide page is one of five kinds (hub, concept, task, reference, examples) with voice and shape fixed in [`docs/Style-Guide.md` — Page Kinds](docs/Style-Guide.md#page-kinds); the rationale and migration plan live in [`docs/diataxis/Diataxis.md`](docs/diataxis/Diataxis.md)
+- **Three voices, one per page**: *primer* (third-person factual, concept-oriented; `Small-Business-Tax.md`, `README.md`), *operational* (second-person imperative, with worked debit/credit and schedule-entry walkthroughs; the per-topic pages), and *tutor* (first-person plural, a bounded practice exercise with checkpoints; tutorial pages only)
+- **Page kinds**: every guide page is one of six kinds (hub, concept, task, reference, examples, tutorial) with voice and shape fixed in [`docs/Style-Guide.md` — Page Kinds](docs/Style-Guide.md#page-kinds); the rationale and migration plan live in [`docs/diataxis/Diataxis.md`](docs/diataxis/Diataxis.md)
 - **Heading status tags are maintainer-only**: a trailing `\[done]`, `\[meh]`, or HTML-comment tag (`<!-- [done] -->`, `<!-- [wip] -->`) on a heading is an authoring/progress annotation, not heading text — leave it exactly as written and never "clean it up"
 
 ---

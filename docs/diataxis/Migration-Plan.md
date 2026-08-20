@@ -130,16 +130,16 @@ Per-page checklist for the sweep:
 
 ## Phase 4 (optional) — tutorials
 
-Deferred by decision (2026-08-16): skipped for now, revisited after Phase 3. The maintainer has
-endorsed the seed material: recast existing worked examples as tutorials rather than authoring
-from scratch. If revived:
+*Completed 2026-08-20*: the tutorial kind is now in use. The Style Guide defines its tutor voice,
+bounded exercise shape, and checkpoint convention. The first tutorial recasts the ACB tracker's
+existing template and transaction pattern as a safe exercise with a known result. Existing worked
+examples remain explanation-by-worked-instance; they are source material, not tutorials merely
+because they contain steps or numbers.
 
-- Add the third (tutor) voice to the Style Guide, scoped to tutorial pages
-- Build the ACB tracker tutorial first (smallest, safest, has a template and a checkable outcome)
-- Consider the one-ETF-one-year end-to-end tutorial second; it doubles as the Investments TODO's
-  end-to-end example
-- Placement: within the owning topic folder (e.g. `Investments/Adjusted-Cost-Base/`), named as a
-  walkthrough, indexed under the parent in the README — consistent with topic-first structure
+The one-ETF-one-year tutorial was considered and remains deferred. It crosses brokerage evidence,
+bookkeeping, T3/T5008 reconciliation, Schedule 6, and dividend mechanics; it should be attempted
+only with a complete, internally consistent specimen set. The Investments TODO remains its intake
+point.
 
 ## What this plan deliberately does not do
 

@@ -7,8 +7,8 @@ foldering stays; the kinds repeat within topics.
 
 Page kind is encoded in the page's name and shape, never in reader-visible metadata — guide pages
 address the reader only, and a type badge would be scaffolding. The kind taxonomy lives here and,
-since Phase 0 (2026-08-16), in [Style Guide — Page Kinds](../Style-Guide.md#page-kinds), which
-extends the two-voice rule.
+since Phase 0 (2026-08-16), in [Style Guide — Page Kinds](../Style-Guide.md#page-kinds). Phase 4
+(2026-08-20) added the tutorial-only tutor voice to the primer and operational voices.
 
 ## The six kinds
 
@@ -91,21 +91,21 @@ extends the two-voice rule.
 
 ### Tutorial
 
-- *Diátaxis alignment*: tutorial; the empty quadrant, deliberately deferred
-- *Why deferred*: the audience is a practitioner at work; the guide is consulted, not studied
-  through. The quadrant is worth filling only where a safe, reproducible, guaranteed-outcome
-  exercise exists
-- *The two credible candidates*:
-  - *ACB tracker set-up*: start from the Google Sheets template, enter one contrived ETF's year
-    (buy, distribution with ROC, phantom distribution, sell), and end with the tracker agreeing
-    with a known answer — building on
-    [Adjusted-Cost-Base-Tracking](../../guide/Investments/Adjusted-Cost-Base/Adjusted-Cost-Base-Tracking.md)
-  - *One ETF through one year*: the end-to-end arc the `Investments.md` TODO already asks for —
-    trade confirmations → ledger → T3/T5008 → Schedule 6 — as a guided exercise with checkpoints
-- *Style Guide carve-out required*: tutorials need the tutor's voice ("we"), expected-output
-  checkpoints, and a learning narrative — all currently outside the two sanctioned voices, and in
-  tension with the ban on meta-commentary; adopting the kind means adding a third voice to the
-  Style Guide, scoped to tutorial pages only
+- *Diátaxis alignment*: tutorial; the reader acquires a skill by completing a guided exercise
+- *Voice*: the Style Guide's tutorial-only *tutor* voice ("we"), with direct imperatives for each
+  immediate action
+- *Shape*: stated outcome → prerequisites → sequenced actions → expected-output checkpoint after
+  each stage → next step into the task documentation
+- *Safety boundary*: use contrived or isolated inputs and promise only a reproducible outcome that
+  the guide can verify; real records and branching cases belong on the owning task page
+- *Boundary with examples*: an examples page presents a completed case for study; a tutorial has
+  the reader produce the result. Existing worked examples are seed material only when they can
+  support that learning path without introducing new rules
+- *First implementation*: [Build an ACB Tracker](../../guide/Investments/Adjusted-Cost-Base/ACB-Tracker-Walkthrough.md)
+  starts from the Google Sheets template, enters one contrived ETF's buy, ROC, phantom
+  distribution, and sale, and ends with the tracker agreeing with a known answer
+- *Deferred candidate*: one ETF through one year, from trade confirmations through the ledger,
+  T3/T5008 slips, and Schedule 6, remains a larger tutorial candidate
 
 ## The slip-page shape
 

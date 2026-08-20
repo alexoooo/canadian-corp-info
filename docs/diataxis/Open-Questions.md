@@ -93,7 +93,8 @@ may not pay for itself at this repo's size.
 
 ## 7. Tutorials: invest or skip?
 
-The tutorial quadrant is empty and the audience is a practitioner, not a student
+At the time of the initial decision, the tutorial quadrant was empty and the audience was a
+practitioner, not a student
 ([Page Kinds — Tutorial](Page-Kinds.md#tutorial)).
 
 *Recommendation*: skip for now; revisit after Phase 3. If the Investments end-to-end example gets
@@ -103,6 +104,11 @@ quadrant with the one artifact a newcomer would actually study.
 *Decision (2026-08-16)*: skip for now; revisit after Phase 3. The maintainer has since endorsed
 the direction of recasting worked examples as tutorials when Phase 4 is revived, rather than
 authoring tutorials from scratch.
+
+*Revisited (2026-08-20)*: proceed with Phase 4. The ACB tracker walkthrough is the first tutorial.
+Existing examples pages remain examples; their cases are tutorial seed material only where a
+reader can complete a safe exercise and verify a known result. The broader one-ETF-one-year
+tutorial remains deferred after consideration.
 
 ## 8. Concept-Map's reference matrices
 

@@ -24,9 +24,9 @@ is reader-facing guide content.
 - *Keep the worked-examples genre*: `X-Examples.md` pages are the repo's own invention and Diátaxis
   has no slot for them; classify them as explanation-by-worked-instance, with the existing
   "introduce no new rules" convention promoted to a stated invariant
-- *Treat tutorials as optional, deferred*: nothing in the repo is a tutorial and the audience is a
-  practitioner at work, not a student; one or two genuine tutorials are possible (the ACB tracker
-  set-up, an end-to-end first year) but they are the lowest-priority quadrant
+- *Adopt tutorials narrowly*: Phase 4 adds an ACB tracker walkthrough where a safe, reproducible
+  result exists; worked examples remain explanation-by-worked-instance unless the reader actively
+  produces a known outcome
 - *Migrate in small steps*: no big-bang restructuring; the [Migration Plan](Migration-Plan.md)
   sequences the work as per-page improvements, starting with changes existing page TODOs already
   ask for

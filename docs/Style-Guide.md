@@ -2,7 +2,7 @@
 
 The canonical prose-style rules for the guide: how pages read, not what they cover.  
 Content policy lives in [`../AGENTS.md`](../AGENTS.md).  
-It covers the two registers, ACB conventions, cross-linking, disclaimers, and page-status / promotion machinery.  
+It covers the three voices, ACB conventions, cross-linking, disclaimers, and page-status / promotion machinery.  
 This guide follows its own rules and reads as one worked example of the house style.  
 
 To internalize the style fast, read a signed-off page beside a frozen raw-AI specimen:
@@ -11,17 +11,21 @@ To internalize the style fast, read a signed-off page beside a frozen raw-AI spe
 The rules below name what the maintainer changes on the way from the second to the first.  
 
 
-## Two Voices
+## Three Voices
 
-The guide has two main registers, one per page:
+The guide has three voices, one per page:
 - *Primer voice*: third-person factual, concept-oriented, no procedure
   - Examples: `../guide/Overview/Small-Business-Tax.md`, `../README.md`
 - *Operational voice*: second-person imperative, procedure-oriented
   - Concrete debit/credit and schedule-entry walkthroughs, with worked numerical examples
   - Per-topic pages: `Adjusted-Cost-Base.md`, `T3.md`, `T5008.md`, `Capital-Dividend-Account.md`
+- *Tutor voice*: first-person plural, learning-oriented, and limited to tutorial pages
+  - Leads the reader through one safe, reproducible exercise with a known outcome
+  - Uses expected-output checkpoints so the reader can catch an error before the next step
+  - Model: `../guide/Investments/Adjusted-Cost-Base/ACB-Tracker-Walkthrough.md`
 
 Reference pages use neither: a descriptive register with no opinion or instruction (see [Page Kinds](#page-kinds)).  
-Every rule below applies to all registers unless noted.  
+Every rule below applies to all voices and registers unless noted.  
 
 
 ## Page Kinds
@@ -49,8 +53,12 @@ The taxonomy's rationale and the migration plan live in [`diataxis/`](diataxis/D
   - Shape: setup → dated journal entries → schedule entries → a year-end or comparison view
   - Introduces no rules: every rule exercised is cited on a rules page the example links back to
   - Rates are pinned inputs (`rates as of…`), not current reference
-- *Tutorial*: a guided lesson with checkpoints; defined but not in use
-  - Adopting it would add a tutor voice; see [`diataxis/Page-Kinds.md`](diataxis/Page-Kinds.md)
+- *Tutorial*: a bounded practice exercise that the reader completes; tutor voice
+  - Shape: outcome → prerequisites → sequenced actions → checkpoint after each stage → next step
+  - Uses contrived or safely isolated inputs and ends at one stated, reproducible result
+  - Introduces no rules; it links to the owning concept, task, and reference pages
+  - A worked example becomes tutorial material only when the reader produces the result
+    - A completed case that the reader studies remains an examples page
 
 ### Slip Pages
 
@@ -213,6 +221,9 @@ Let the facts stand in order and trust the reader to follow.
 - Primer voice: third-person factual (`A corporation is…`, `Active business income is taxed at…`)
 - Operational voice: second-person imperative for the reader-as-bookkeeper (`Debit X`, `Maintain a running total`)
   - First-person plural only for shared bookkeeping conventions (`we want to roll up to GIFI codes`)
+- Tutor voice: first-person plural for the shared learning path (`We will enter four rows and check each result`)
+  - Use an imperative for the reader's immediate action (`Enter the purchase row`)
+  - Keep real-world branches out of the exercise; link to the task page that handles them
 - Disclaimers and uncertainty are first-person
   - `The following is my understanding as of 2026.`, `I am not an accountant`
 
@@ -265,6 +276,9 @@ See [`../AGENTS.md`](../AGENTS.md) for the status states and the promotion steps
   - Concrete dollar values; a `Year 1 / Year 2 / Year 3` progression where state evolves
   - `→` arrows for the running result, and debits/credits as labelled ledger lines:
     - `Year 1 ROC: $2.00/unit × 100 = $200 → total ACB: $800.00, per-unit ACB: $8.00`
+- Tutor voice gives the reader actions and immediate expected-output checkpoints
+  - The final checkpoint states the known result promised at the start
+  - Tutorial values are labelled as contrived inputs, not current reference
 - Mermaid in fenced ```` ```mermaid ```` blocks for conceptual flow diagrams
 - PNG screenshots only for real CRA / brokerage forms and tooling
   - Co-located in the page's folder, referenced by bare filename

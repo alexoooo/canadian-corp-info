@@ -55,7 +55,7 @@ Two habits carry the whole cycle:
 |---|---|---|
 | Character | frequent trading turns capital gains into income and erases the CDA | [Capital vs Income Character](Capital-Vs-Income-Character.md) |
 | Funding | excess passive income grinds the small business deduction | [Active vs investment income](../Overview/Small-Business-Tax.md#active-vs-investment-income), [Tax Integration](../Overview/Tax-Integration.md) |
-| Buying | ACB per security, averaged across purchases | [Adjusted Cost Base](Adjusted-Cost-Base/Adjusted-Cost-Base.md), [ACB Tracking](Adjusted-Cost-Base/Adjusted-Cost-Base-Tracking.md) |
+| Buying | ACB per security, averaged across purchases | [Adjusted Cost Base](Adjusted-Cost-Base/Adjusted-Cost-Base.md), [ACB Tracking](Adjusted-Cost-Base/Adjusted-Cost-Base-Tracking.md), [ACB Tracker Walkthrough](Adjusted-Cost-Base/ACB-Tracker-Walkthrough.md) |
 | Buying in USD | convert every amount to CAD at the transaction-date rate | [Foreign Currency](../Bookkeeping/Foreign-Currency/Foreign-Currency.md) |
 | Holding: fund distributions | distributions by box, reinvested amounts, return of capital | [T3](T3/T3.md), [Box 26](T3/T3-Box-26-Other-Income.md), [Box 25 / 34](T3/T3_Box-25-Foreign-Income_Box-34-Foreign-Tax-Withheld.md) |
 | Holding: dividends and interest | dividends (stocks, corporate-class funds) and interest by box | [T5](T5/T5.md), [Box 18](T5/T5-Box-18-Capital-Gains-Dividends.md) |
@@ -81,5 +81,6 @@ Two habits carry the whole cycle:
 
 ## TODO
 
-- Consider a worked end-to-end example: one ETF through one year (buy, distribution, sale, capital dividend out)
+- Create a one-ETF-one-year tutorial once a complete specimen set can support the buy, distribution,
+  sale, T3/T5008 reconciliation, Schedule 6, and capital-dividend checkpoints
 - Link a GIC interest-accrual page from the Holding rows if one is written

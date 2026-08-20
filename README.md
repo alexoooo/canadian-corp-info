@@ -80,6 +80,7 @@ Unmarked pages are reviewed; † = AI generated, not verified yet.
 **[Investments](guide/Investments/Investments.md)** †:
 - [Adjusted Cost Base](guide/Investments/Adjusted-Cost-Base/Adjusted-Cost-Base.md)
   - [Adjusted Cost Base - Tracking](guide/Investments/Adjusted-Cost-Base/Adjusted-Cost-Base-Tracking.md)
+  - [Build an ACB Tracker - Walkthrough](guide/Investments/Adjusted-Cost-Base/ACB-Tracker-Walkthrough.md) †
 - [Capital vs Income Character](guide/Investments/Capital-Vs-Income-Character.md) †
 - [T3](guide/Investments/T3/T3.md)
   - [T3 - Box 26 Other Income](guide/Investments/T3/T3-Box-26-Other-Income.md)
