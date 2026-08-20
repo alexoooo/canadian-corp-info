@@ -136,12 +136,14 @@ excerpt marked as such, or a dated example input. Proposed owners:
 | Per-slip box tables | The slip's own page (T3, T5, T5008) |
 | T2 schedule map and line references | T2-Schedules |
 | CCA classes and rates | CCA-Classification |
+| GST/HST registration thresholds and reporting periods | HST-Registration-And-Filing |
 | Quick Method remittance rates | HST-Quick-Method |
 | Dividend gross-up / DTC rates | Tax-Integration |
 | Corporate rate figures (federal/Ontario, SBD) | Small-Business-Tax |
 | CPP / YMPE / YAMPE figures | Payroll (Salary-Vs-Dividends links) |
 | TFSA / RRSP dollar limits | Personal-Tax/TFSA-And-RRSP-Contributions |
-| Filing and payment calendar | `Filing-And-CRA/Deadlines.md`, new (decided — [Open Questions](Open-Questions.md) Q2); Concept-Map keeps its visual as an orientation view that links |
+| Corporate filing and payment calendar | `Filing-And-CRA/Deadlines.md`, new (decided — [Open Questions](Open-Questions.md) Q2); Concept-Map keeps its visual as an orientation view that links |
+| Personal T1 filing, payment, and instalment calendar | Personal-Tax/T1-Filing-Basics |
 | Terminology | Glossary |
 | Scope register | Further-Reading |
 
