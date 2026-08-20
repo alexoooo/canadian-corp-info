@@ -26,7 +26,7 @@ Every rule below applies to all registers unless noted.
 
 ## Page Kinds
 
-Every guide page is one of five kinds; the kind fixes its voice and shape.  
+Every guide page is one of six kinds; the kind fixes its voice and shape.  
 Kind shows only in the page's name, shape, and README placement, never as a reader-visible label.  
 The taxonomy's rationale and the migration plan live in [`diataxis/`](diataxis/Diataxis.md).  
 
@@ -77,12 +77,14 @@ Any other appearance is a link, a verbatim excerpt marked as such, or a dated ex
 | Per-slip box tables | The slip's own page (`T3.md`, `T5.md`, `T5008.md`) |
 | T2 schedule map and line references | `Filing-And-CRA/T2-Schedules.md` |
 | CCA classes and rates | `Operations/Cost-Recovery/Capital-Cost-Allowance/CCA-Classification.md` |
+| GST/HST registration thresholds and reporting periods | `Operations/HST/HST-Registration-And-Filing.md` |
 | Quick Method remittance rates | `Operations/HST/HST-Quick-Method.md` |
 | Dividend gross-up / DTC rates | `Overview/Tax-Integration.md` |
 | Corporate rate figures (federal/Ontario, SBD) | `Overview/Small-Business-Tax.md` |
 | CPP / YMPE / YAMPE figures | `Paying-Yourself/Payroll.md` |
 | TFSA / RRSP dollar limits | `Personal-Tax/TFSA-And-RRSP-Contributions.md` |
-| Filing and payment calendar | `Filing-And-CRA/Deadlines.md` |
+| Corporate filing and payment calendar | `Filing-And-CRA/Deadlines.md` |
+| Personal T1 filing, payment, and instalment calendar | `Personal-Tax/T1-Filing-Basics.md` |
 | Terminology | `Overview/Glossary.md` |
 | Scope register | `Overview/Further-Reading.md` |
 
