@@ -174,25 +174,32 @@ entry. It joins a pay period and carries payroll liabilities of its own.
 What changes, and what does not:
 - *No expense entry*: the corporation already expensed the underlying costs (the CCA, the fuel, the premium)
 - *No cash moves* for the benefit itself; the employee receives nothing new in the bank
-- *CPP is pensionable on it*: include the benefit in the period's pensionable earnings, deduct the employee's CPP,
-  match it as employer CPP, and remit both halves on the ordinary schedule
-- *Income tax* is withheld on it in the same period
+- *CPP*: include a pensionable benefit in earnings and calculate both shares, subject to the non-cash-only exception below
+- *Income tax*: calculate withholding on the benefit along with cash remuneration
 - *EI* generally does not apply to a non-cash benefit, and an owner-manager controlling more than 40% of the voting
   shares is EI-exempt regardless
 
-The entry adds the benefit to gross pay and takes it straight back out, so net cash is unchanged:
+The benefit and its offset cancel in gross-pay bookkeeping; additional deductions reduce the cash paid.  
+Illustrative adjustment to an ordinary cash pay run: $100 extra employee CPP and $200 extra income tax.  
+Assume sufficient cash pay and $100 matching employer CPP:  
 
 | Account | Debit | Credit |
 |---|---|---|
 | `Salaries and wages` (`9060`): benefit added to gross | *benefit* | |
 | `Salaries and wages` (`9060`): benefit offset (already expensed elsewhere) | | *benefit* |
-| `Employee deductions payable` (`2627`): extra employee CPP on the benefit | | *CPP* |
-| `Deposits` (`1002-1`): reduced net pay | | *CPP* |
+| `Employee deductions payable` (`2627`): employee CPP and income tax | | 300.00 |
+| `Deposits` (`1002-1`): reduction of the original net-pay credit | 300.00 | |
+| `Employer's portion of employee benefits` (`8622`): employer CPP | 100.00 | |
+| `Employee deductions payable` (`2627`): employer CPP | | 100.00 |
 
-Where cash remuneration in the period is too small to withhold the employee's CPP share, the employer still owes
-and remits its own share, and the employee settles the balance on the T1.  
-Leaving the benefit out of the pay run entirely is what produces a *PIER* assessment after the T4s are filed: CRA
-recomputes CPP from box 26 and bills the difference.  
+The adjustment balances at the benefit amount plus $400 on each side.  
+The deposit debit reduces the cash outflow; it does not record money received from the employee.  
+
+If non-cash benefits are the year's only remuneration, neither employee CPP withholding nor employer CPP is required.  
+Security options are excluded from this exception ([CRA T4130](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4130/employers-guide-taxable-benefits-allowances.html)).  
+Report the benefit in T4 boxes 14 and 26 even where no CPP is remitted.  
+Insufficient cash in one pay period is different from non-cash-only remuneration for the whole year.  
+Use CRA's payroll instructions for that case; do not automatically apply the annual exception.  
 
 The valuation itself is on [Owner-corporation transactions](Owner-Corporation-Transactions.md), and the automobile
 figures land in T4 boxes 34 and 26.  

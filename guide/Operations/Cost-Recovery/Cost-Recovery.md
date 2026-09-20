@@ -196,11 +196,9 @@ To *capitalize* a cost is to record it on the balance sheet as part of an asset 
 The dollars sit in that asset until they flow out through one of the three channels above.  
 The same rules govern what counts as part of the asset's cost across all three channels.  
 
-Below a *de minimis* floor, a long-lived item is expensed immediately rather than capitalized into any channel.  
-The floor is a policy choice for the corporation (commonly $500, sometimes up to $2,500).  
-CRA sets no dollar threshold, but the floor must be reasonable and applied consistently.  
-Expensing below the floor is a book presentation; it does not move the item out of the tax CCA system, and a
-Schedule 1 add-back is what reconciles the two when they diverge.  
+Below a bookkeeping *de minimis* floor, a long-lived item may be expensed in the books.  
+The policy does not create a tax deduction threshold.  
+For a tax-capital item, add back the book expense and deduct the CCA separately on Schedule 1.  
 A residual UCC pool is not cleared the same way.  
 Once capitalized, a class pool runs its geometric tail until the asset is disposed of or the business ceases.  
 See [Capital Cost Allowance — Capitalize-vs-expense thresholds](Capital-Cost-Allowance/Capital-Cost-Allowance.md#capitalize-vs-expense-thresholds).  
@@ -237,12 +235,12 @@ The half-year-adjusted base then feeds CCA once the property is in service.
 For non-buildings (s.13(27)), the earliest of:
 - First time the property is used to earn income
 - The property is capable of producing the intended commercially saleable product or service
-- The beginning of the second tax year after the acquisition year (the rolling-two-year / 357-day rule)
+- The [357-day fallback](Capital-Cost-Allowance/Capital-Cost-Allowance.md#the-357-day-fallback), including its short-year limit
 
 For buildings (s.13(28)), the earliest of:
 - All or substantially all (~90%) of the building first used for its intended purpose
 - Construction of the building is complete
-- The beginning of the second tax year after the acquisition year (the same 357-day rolling rule, s.13(28)(c))
+- The same [357-day fallback](Capital-Cost-Allowance/Capital-Cost-Allowance.md#the-357-day-fallback) under s.13(28)(c)
 
 Two notes on coverage:
 - A CIP balance produces no deduction in the interim: not inventory (no COGS), not yet available for use (no CCA)

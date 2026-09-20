@@ -27,8 +27,8 @@ For mechanics and worked examples, follow the link to the canonical page where o
   - A portion is refundable via NERDTOH; see [Small-Business-Tax.md](Small-Business-Tax.md)
 - AIIP (*Accelerated Investment Incentive Property*): property eligible for an enhanced first-year CCA deduction
   - The half-year rule is suspended
-  - Reinstated by Bill C-15 for property acquired after 2024 and available for use before 2030
-  - Phase-out through 2033; see [Capital-Cost-Allowance.md](../Operations/Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md)
+  - The reinstated regime defines *reaccelerated investment incentive property* (RIIP) separately
+  - Eligibility windows and class-specific factors: [Capital Cost Allowance](../Operations/Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md#half-year-rule-and-aiip)
 - Auto-fill my return: CRA service that populates certified tax software with CRA's slip copies and carryover balances
   - Needs a CRA account; see [T1-Filing-Basics.md](../Personal-Tax/T1-Filing-Basics.md)
 - Available for use: the ITA s.13(26)–(28) trigger that starts CCA on depreciable property
@@ -37,8 +37,7 @@ For mechanics and worked examples, follow the link to the canonical page where o
     when first used to earn income (s.13(27))
   - Buildings: when construction or renovation is complete, or when substantially all of it is first used for its
     intended purpose (s.13(28))
-  - Long-stop in every case: the beginning of the first taxation year that begins more than 357 days after the end
-    of the taxation year in which the property was acquired
+  - The [357-day fallback](../Operations/Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md#the-357-day-fallback) includes a short-year limit
   - No CCA is claimable before it; see [Cost-Recovery.md](../Operations/Cost-Recovery/Cost-Recovery.md#available-for-use)
 - Bill of materials (*BOM*): the list of materials a given build consumes
   - Used to charge pooled materials, at their running weighted-average cost, into that build's CIP

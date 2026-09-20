@@ -49,11 +49,11 @@ Limitations:
 
 ## Not Covered but Potentially Relevant
 
-- *Underused Housing Tax (UHT)*: an annual federal filing that can reach a corporation on title of residential property
-  - The requirement for Canadian-controlled corporations narrowed after the first filing years
-  - Verify the current rule before assuming a return is or is not due
+- *Underused Housing Tax (UHT)*: historical compliance for the 2022–2024 calendar years
+  - No UHT return or tax is required for 2025 onward under the amendments enacted March 26, 2026
+  - Earlier-year obligations still depend on the ownership and exemption rules for that year
   - Nearest coverage: [Rental and Property Income](../Operations/Rental-And-Property-Income.md) and [Owner-Corporation-Transactions](../Paying-Yourself/Owner-Corporation-Transactions.md)
-  - Further: the CRA Underused Housing Tax pages and the Underused Housing Tax Act
+  - Further: [CRA UHTN15](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/uhtn15/questions-answers-underused-housing-tax.html) and [UHTA s.1.1](https://laws-lois.justice.gc.ca/eng/acts/U-0.5/page-1.html)
 - *Inter-corporate dividends beyond safe income*: ITA [s.55(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-55.html) can recharacterize a dividend between connected corporations as a capital gain
   - Live once a holdco receives dividends from an opco past the opco's *safe income*; professional-advice territory
   - Nearest coverage: [Corporate Structure](../Corporate-Lifecycle/Corporate-Structure/Corporate-Structure.md#related-and-associated-corporations) for when corporations are connected in the first place
@@ -103,7 +103,7 @@ Limitations:
 
 - Income Tax Act (R.S.C., 1985, c. 1 (5th Supp.)):
   - [s.89(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-89.html) - "capital dividend account" definition
-    - Includes the non-taxable portion of life-insurance proceeds at paragraph (d)
+    - Paragraph (d): qualifying death proceeds less policy adjusted cost basis, subject to statutory adjustments
   - [s.55(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-55.html) - inter-corporate dividends beyond safe income recharacterized
   - [s.22](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-22.html), [s.20(24)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-20.html) - asset-sale elections on receivables and assumed obligations
   - [s.70(5)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-70.html), [s.164(6)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-164.html) - deemed disposition at death and the estate's loss carryback

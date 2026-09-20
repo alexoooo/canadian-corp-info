@@ -99,7 +99,9 @@ flowchart TB
   - Collecting it retroactively from customers is usually impractical, so the unbilled HST becomes a cost
 - *Multiple commercial activities*: two distinct lines of business under one BN have a choice (ETA s.239)
   - Keep them under a single `RT0001` account or open a separate `RT0002` etc.
-  - Separate accounts allow different reporting periods or different Quick Method statuses per branch
+  - CRA approval requires identifiable branches and separate books, records, and accounting systems
+  - Branches retain the parent's fiscal year, reporting periods, and Quick Method election
+    - [CRA GST/HST Memorandum 2-4](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/2-4/branches-divisions.html)
 - *Bad debts*: when an HST-charged invoice is written off as uncollectible, the HST comes back
   - The corp recovers it through a *bad-debt adjustment* on a future return (ETA [s.231](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-231.html))
   - The recovery requires the debt written off in the books and the supply previously taxable
@@ -109,9 +111,10 @@ flowchart TB
   - Limits worth knowing: members must be *specified members* of a qualifying group, and sales of real property
     and supplies of property not used exclusively in commercial activity are excluded
   - Filed jointly on Form RC4616; useful in an opco/holdco structure and out of scope here
-- *Voluntary disclosure*: missed past returns or unclaimed ITCs can be corrected
-  - Through the *Voluntary Disclosures Program* (VDP) if the corp comes forward before CRA initiates contact
-  - Penalty relief and partial interest relief are available
+- *Voluntary disclosure*: past non-compliance may qualify for penalty and partial interest relief
+  - For applications from October 1, 2025, both prompted and unprompted disclosures can qualify
+  - Compliance contact is not an automatic bar; an initiated audit or investigation about the disclosure is
+    - Check the full eligibility test in [CRA GST/HST Memorandum 16-5-1](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/16-5-1/voluntary-disclosures-program.html)
 - *Shareholder benefit and inventory appropriation*: goods given to a shareholder or a related person
   - The *self-supply* and *change-of-use* rules can trigger GST/HST on the deemed disposition (ETA s.172(2))
   - See [Inventory](../Cost-Recovery/Inventory-And-COGS.md#edge-cases) for the income-tax side

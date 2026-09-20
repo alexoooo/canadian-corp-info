@@ -73,6 +73,9 @@ Where the issuer was a *small business corporation* — a CCPC using all or subs
 ITA [s.39(1)(c)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-39.html) makes the loss a *business investment loss*:
 - Qualifying dispositions: an s.50(1) election, or an actual sale to an arm's-length person
 - Qualifying property: a share of a small business corporation, or a debt owing by a CCPC that is one (or was one when it went bankrupt or into an insolvent winding-up)
+  - For a corporate creditor, debt owed by a non-arm's-length corporation is excluded under s.39(1)(c)(iv)
+  - Charging interest does not override this exclusion; an ordinary capital loss may still be available
+  - The share category in s.39(1)(c)(iii) has no equivalent corporate-creditor exclusion
 - The allowable half (the *ABIL*) deducts against income from any source, not just capital gains
 - An ABIL the year cannot absorb joins the non-capital loss pool rather than the net-capital one, but only for a while
   - It stays in the non-capital loss through the **10** following tax years (ITA [s.111(8)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-111.html), the `non-capital loss` definition, paragraph E(c))
@@ -83,7 +86,8 @@ ITA [s.39(1)(c)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-39.html)
   - A corporation holding CDA capacity can pay the capital dividend out before realizing the ABIL
 
 The debt-side trap: a capital loss on a debt is nil unless the debt was acquired to earn income (ITA [s.40(2)(g)(ii)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-40.html)).  
-An interest-bearing loan qualifies; an interest-free advance to another corporation may not, and needs advice before the loss is claimed.  
+Interest-bearing status can satisfy the income-purpose test, but does not establish ABIL eligibility.  
+An interest-free advance needs advice before a loss is claimed.  
 
 A client invoice that will not be paid is none of this.  
 Trade receivables are written off on income account under s.20(1)(p); see [Receivables and Bad Debts](../Operations/Receivables-And-Bad-Debts.md).  

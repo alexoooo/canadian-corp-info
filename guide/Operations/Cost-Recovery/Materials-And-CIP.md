@@ -76,7 +76,7 @@ Available-for-use rule for self-constructed assets:
   - The trigger is the earliest of three events
     - Substantially all of the building is first used for its intended purpose
     - The construction is complete
-    - The second tax year after the acquisition year begins (the rolling-two-year rule)
+    - The [357-day fallback](Capital-Cost-Allowance/Capital-Cost-Allowance.md#the-357-day-fallback), including its short-year limit
 - Until that point, accumulated costs sit as a non-deducting asset balance
 - See [Cost Recovery — Available for use](Cost-Recovery.md#available-for-use) for the cross-channel framing
   - Including the building variant under s.13(28)

@@ -7,7 +7,8 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
   - Rather than relying solely on tax software
 
 This page gives the asset register and the exact per-class formulas for computing or checking CCA by hand.  
-The formulas cover the half-year rule, the Accelerated Investment Incentive (AIIP), and short-year proration.  
+The formulas cover ordinary declining-balance pools, the half-year rule and a bounded accelerated-property case.  
+AIIP and reaccelerated investment incentive property (RIIP) have different acquisition windows and factors.  
 They also cover recapture and terminal loss.  
 For the concepts see [Capital Cost Allowance](Capital-Cost-Allowance.md).  
 For which class an asset goes in see [CCA Classification](CCA-Classification.md).  
@@ -36,14 +37,15 @@ Keep all amounts in dollars and cents; round only when mapping to the whole-doll
 
 ## Class Reference <!-- [done] -->
 
-The tax constants that depend only on the CCA class. One row per `Class`. Columns:
+The normal class rules, before property-specific first-year adjustments. One row per `Class`. Columns:
 - `Class`: the key (`8`, `10`, `10.1`, `12`, `13`, `14`, `14.1`, `50`, etc.)
 - `Rate`: declining-balance rate for the class (blank when `Method` is not declining balance)
 - `Method`:
   - `Declining balance`: UCC * (1 - Rate), the most common (default) method
   - `Straight-line`: capital cost / amortization period, classes 13 and 14 only (`Rate` is unused)
   - `Full expensing`: capital cost (`Rate` applies to any residual)
-    - Full-expensing classes 53 / 43 (M&P), 54, 55, 56, and 43.1/43.2 under AIIP
+    - First-year expensing depends on property eligibility and dates, not just the class
+    - Retain the normal class rate for residual UCC; select the first-year factor separately
 - `Tangibility`:
   - `Tangible`: equipment, vehicles, leasehold improvements, etc.
   - `Intangible`: incorporation costs, goodwill, limited-life rights, etc.
@@ -117,20 +119,17 @@ Columns:
   - Blank until disposal
   - Sale price plus any insurance or compensation
 - `AIIP Eligible`:
-  - True if acquired after 2024 and available for use before 2030 (the reinstated incentive)
-  - Not if you or a non-arm's-length party previously owned it, or it came in on a rollover
-    - An arm's-length purchase of used property still qualifies
-  - Set true for the full-expensing and ZEV classes too (M&P Class 53 / 43, clean energy 43.1 / 43.2, ZEV 54 / 55 / 56)
-    - Qualifying M&P and clean-energy property is AIIP
-      - Reg 1104(4)/(4.01) carve out only Classes 54–56, which have their own 100% rule
-    - Schedule 8's accelerated column (225) carries AIIP and ZEV additions alike
-    - Their expensing runs through that column, not on separate rules
-  - Flagging them false leaves column 225 empty and the software falls back to the half-year rule
-    - In FutureTax, a Class 53 addition entered in 203 alone computes at 25% of cost instead of the enhanced rate
-  - Drives the first-year uplift; Schedule 8 reports these additions in their own column (225)
-    - For the full-expensing and ZEV classes the uplift factor is the class's own, not the generic +0.5
-    - 100% under the reinstated incentive, or the original regime's phase-down factors before it
-      - 75% in a 2024–2025 available-for-use year
+  - A tracker flag for accelerated additions, including RIIP and separately qualifying ZEV property
+  - Record the actual regime in `Note`; this flag alone does not select a deduction factor
+  - AIIP: acquired after November 20, 2018 and before 2025, available for use before 2028
+  - RIIP: acquired after 2024, available for use before 2034
+  - Each definition has two alternative eligibility routes under [Reg 1104(4)/(4.01)](https://laws-lois.justice.gc.ca/eng/regulations/C.R.C.,_c._945/section-1104.html)
+    - No prior CCA or terminal-loss deduction for a taxation year ending before acquisition
+    - Or no specified tax-deferred transfer and no prior ownership by the taxpayer or a non-arm's-length party
+  - Ordinary arm's-length used property can qualify even where the previous owner claimed CCA
+  - Related-party and rollover acquisitions require the full definition and expenditure exclusions checked
+  - Classes 54–56 use their own accelerated rules, outside the AIIP and RIIP definitions
+  - Keep eligibility separate from the class-specific, available-for-use-year factor
   - Rules and phase-out: [Half-year rule and AIIP](Capital-Cost-Allowance.md#half-year-rule-and-aiip)
 - `Note`:
   - Free-form text for anything worth recording about the row
@@ -210,7 +209,9 @@ That is a *Half Rule* checkbox (column H) in version 2019.2 and earlier, or an a
 It applies the standard half-year reduction.  
 With it on, only half of the year's net additions enter the first-year CCA base; with it off, the full additions do.  
 Leave it on for ordinary additions subject to the half-year rule.  
-It should be off for the half-year-exempt classes (12, 13, 14, 15, …).  
+Use the property's statutory treatment to determine whether the ordinary half-year reduction applies.
+Class 12 is not wholly exempt: purchased application software is subject to it unless accelerated relief applies.
+Class 13 has its own first-year restriction; exemption from Reg 1100(2) does not remove that restriction.
 AIIP and ZEV additions need no override.  
 The column-225 entry removes them from the half-year base automatically and the accelerated uplift applies instead.  
 So a class holding both AIIP and ordinary additions keeps the control on for the ordinary part.  
@@ -252,8 +253,8 @@ That by-hand path is the [next section](#computing-the-schedule-yourself), plus 
 Use this when there is no carryforward to lean on.  
 That means the first year (setting opening UCC), a software switch, a paper filing, or a figure to check by hand.  
 
-For a declining-balance class in a normal (365-day) year, the columns run left to right.  
-Each is computed from the columns to its left ([Special cases](#special-cases) cover the rest):
+For an ordinary declining-balance pool in a full year, compute the unadjusted pool first.  
+This flow excludes Class 10.1 and other [special cases](#special-cases).  
 - `Opening UCC` = the prior year's `Closing UCC` for the class
   - `0` for a new class
 - `Additions` = cost of items in this class that become available for use this year
@@ -262,31 +263,60 @@ Each is computed from the columns to its left ([Special cases](#special-cases) c
   - The cap means a sale above original cost removes only the cost from the pool
     - The excess is a capital gain on Schedule 6, not recapture
 - `Net Additions` = `Additions − Dispositions`
-- `Adjustment` = the half-year or AIIP first-year adjustment to the base:
-  - `0` if the class is half-year-exempt, or `Net Additions ≤ 0`
-  - `+0.5 × Net Additions` if AIIP-eligible
-  - `−0.5 × Net Additions` otherwise (half-year rule applies, no AIIP)
-  - Non-zero only in the year an asset becomes available for use
-    - Later years have `Net Additions = 0`, making the half-year rule and AIIP uplift one-time first-year effects
-- `CCA Base` = `Opening UCC + Net Additions + Adjustment`
+- `Pool Before CCA` = `Opening UCC + Net Additions`
+- `Recapture` = `MAX(0, -Pool Before CCA)`
+  - If positive, report it as income and reset `Closing UCC` to zero; claim no CCA
+- `Terminal Loss` = `MAX(0, Pool Before CCA)` if no property remains in the class
+  - Deduct the terminal loss and reset `Closing UCC` to zero; claim no CCA
+- Otherwise, calculate `Adjustment` under the bounded formula below
+- `CCA Base` = `Pool Before CCA + Adjustment`
 - `Rate` = the class rate, from `Class reference`
-- `CCA (Max)` = `Rate × MAX(0, CCA Base)`
+- `CCA (Max)` = `MIN(Pool Before CCA, Rate × MAX(0, CCA Base))`
 - `CCA (Claimed)` = any value from `0` to `CCA (Max)`
   - Discretionary, and the only figure you choose by hand (see [Discretionary CCA](Capital-Cost-Allowance.md#discretionary-cca))
-- `Closing UCC` = `Opening UCC + Net Additions − CCA (Claimed)`
+- `Closing UCC` = `Pool Before CCA − CCA (Claimed)`
   - Carried to next year's `Opening UCC`
-- `Recapture` = `−Closing UCC` if `Closing UCC < 0`, else `0` (ITA [s.13(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-13.html))
-  - An income inclusion; `Closing UCC` then resets to `0`
-- `Terminal Loss` = `Closing UCC` if `Closing UCC > 0` and no items remain in the class, else `0` (ITA [s.20(16)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-20.html))
-  - A deduction; `Closing UCC` then resets to `0`
 
-`Recapture` and `Terminal Loss` are both always columns; at most one is non-zero in a class-year.  
-One requires a negative closing balance and the other a positive one.  
+Recapture and terminal loss are tested before a discretionary CCA claim.  
+CCA must not create a negative UCC and artificial recapture.  
+
+### First-Year Adjustment
+
+Regulation [1100(2)](https://laws-lois.justice.gc.ca/eng/regulations/C.R.C.,_c._945/section-1100.html) uses `A × B + A.1 × B.1 − 0.5 × C`.  
+Use the simplified calculation below only for one accelerated regime and one factor in a class-year.  
+It assumes ordinary acquisitions and dispositions, with no assistance, repayments or special transfer adjustments.  
+
+Inputs and disposition allocation:
+- `Eligible Additions`: additions qualifying under that regime
+- `Ordinary Additions`: other additions subject to the half-year rule
+  - Exclude half-year-exempt property from this input
+- `Ordinary Net` = `MAX(0, Ordinary Additions - Dispositions)`
+- `Eligible Net` = `MAX(0, Eligible Additions - MAX(0, Dispositions - Ordinary Additions))`
+- `Adjustment` = `Factor × Eligible Net - 0.5 × Ordinary Net`
+  - Dispositions first reduce ordinary additions for this adjustment
+  - Use the class-specific factor under element A for AIIP, or A.1 for RIIP
+
+For RIIP available for use in 2026:
+- Class 8 uses factor `0.5`
+- Class 12 uses factor `0`; eligible application software escapes the half-year restriction but gets no uplift
+- Class 50 uses factor `9/11`, giving full first-year cost recovery on qualifying net additions
+  - Normal CCA on the remaining opening UCC is still included in the base calculation
+
+These are dated calculation inputs, not factors for every acquisition year or CCA class.  
+For other years or classes, use the applicable provision and [classification](CCA-Classification.md).  
+
+Checks for a full 2026 year, claiming the maximum and with property remaining in each pool:
+- Class 12: opening $0, eligible software $1,000, no dispositions → CCA $1,000, closing UCC $0
+- Class 8: opening $1,000, eligible $1,000, ordinary $400, dispositions $600
+  - Eligible net $800, ordinary net $0, adjustment $400 → CCA $440, closing UCC $1,360
+- Class 50: opening $1,000, eligible $2,000, no dispositions → CCA $2,550, closing UCC $450
+- Class 8: opening $1,000, ordinary $400, dispositions $600, no eligible additions
+  - Both adjustment inputs are zero → CCA $160, closing UCC $640
 
 
 ## Special Cases
 
-The column formulas above cover a declining-balance class in a normal (365-day) year.
+The column formulas above cover the bounded declining-balance case just described.
 
 Deliberately excluded to keep the standard flow simple, on a convention-over-configuration basis:
 - *Per-item half-year overrides*: the register carries no `Half-year` column
@@ -295,21 +325,19 @@ Deliberately excluded to keep the standard flow simple, on a convention-over-con
   - If you compute CCA by hand and need an exception, add the half-year input yourself
 
 Cases they do not cover:
-- *Mixed first-year treatments in one class-year*: both AIIP and half-year additions in the same year
-  - This breaks the single-factor `Adjustment` above
-  - Compute the adjustment per addition and sum it (`+0.5 × AIIP additions − 0.5 × half-year additions`)
-  - The pool stays one line per class, matching Schedule 8's separate AIIP and regular addition columns
-- *Full-expensing classes*: `CCA (Max) = Net Additions` in the year available for use (100%)
-  - M&P Class 53 / 43, 54, 55, 56, 43.1 / 43.2 under AIIP
-  - Also Classes 44 / 46 / 50 for property available for use before 2027 under the Budget 2024 measure
-  - Any later residual depreciates at the class rate
+- *Mixed AIIP and RIIP, or multiple factors in one class-year*: use the full Reg 1100(2) calculation
+  - Preserve the statutory disposition allocation; do not sum independent per-asset uplifts
+  - Fiscal years straddling factor changes also need Reg 1100(2.01)/(2.011)
+- *Full-expensing property*: apply its class-specific factor to eligible net additions
+  - Retain ordinary CCA on residual opening UCC; `CCA (Max) = Net Additions` omits that deduction
+  - Confirm dates and eligibility before using a 100% first-year result
 - *Class 13 and Class 14* are straight-line, not declining balance
   - CCA is `Capital Cost ÷ amortization period`, and the declining-balance formula does not apply
     - The lease term + first renewal for 13; the remaining legal life for 14
   - Class 13 is subject to a 50% first-year cap (Reg 1100(1)(b))
   - Class 14's first year is the apportionment from the acquisition date, with no separate cap
 - *Class 10.1*: half-CCA in the year of disposition; no recapture or terminal loss
-- *Short tax year* (under 365 days): multiply `CCA (Max)` by `days in tax year ÷ 365`
+- *Short tax year* (less than 12 months): multiply `CCA (Max)` by `days in tax year ÷ 365`
   - Except for classes 14 and 15, plus specialty items
     - Timber limits, industrial mineral mines, Canadian film or video productions, certain mining allowances
 - *Investment tax credits* claimed against capital cost reduce next year's `Opening UCC` (ITA s.13(7.1))
@@ -422,15 +450,18 @@ A gap means an entry was missed or misposted.
 ## Worked Tie-Out
 
 The Class 50 laptop and Class 8 polisher from [CCA Worked examples](CCA-Examples.md), both 2026 acquisitions, run through the schedule.  
-The laptop is under the Budget 2024 100% measure, the polisher under AIIP:
+The laptop uses the Class 50 full-expensing factor; the polisher uses the ordinary RIIP factor:
 
 Class 50 (rate 55%), $4,000 addition in 2026, sold for $400 in 2028:
 
 | Year | Opening UCC | Additions | Disp. | Net Add | Adjustment | CCA Base | CCA (Max) | Closing UCC | Recapture |
 |------|------------:|----------:|------:|--------:|-----------:|---------:|----------:|------------:|----------:|
-| 2026 | 0 | 4,000 | 0 | 4,000 | — | 4,000 | 4,000 | 0 | — |
+| 2026 | 0 | 4,000 | 0 | 4,000 | 3,272.73 | 7,272.73 | 4,000 | 0 | — |
 | 2027 | 0 | 0 | 0 | 0 | — | 0 | 0 | 0 | — |
 | 2028 | 0 | 0 | 400 | −400 | — | — | 0 | 0 | 400 |
+
+The 2026 adjustment is `4,000 × 9/11`; the table rounds its display to cents.
+Keep full precision in the formula: `7,272.727… × 55% = 4,000`.
 
 In 2028, `Opening + Net Add = 0 − 400 = −400`, so the pool goes negative: $400 of recapture, closing UCC reset to 0.  
 

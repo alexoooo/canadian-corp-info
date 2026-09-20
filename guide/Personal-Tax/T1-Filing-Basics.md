@@ -27,13 +27,28 @@ Limitations:
 - Payment: the *balance-due day* is April 30 regardless (ITA [s.248(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-248.html))
   - Interest runs from May 1 on anything unpaid
 
-The June 15 extension and its self-employment trigger are worked in
-[CPP and the T1](../Sole-Proprietorship/CPP-And-The-T1.md#the-june-15-deadline).  
+For the self-employed CPP calculation, see [CPP and the T1](../Sole-Proprietorship/CPP-And-The-T1.md).  
 
 Instalments enter once *net tax owing* tops $3,000 in the current year and at least one of the two prior years
 (ITA [s.156.1](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-156.1.html)):
 - Dividends carry no withholding, so a dividend-paid owner crosses the threshold the same way a sole proprietor does
-- The due dates and computation options are worked in [CPP and the T1](../Sole-Proprietorship/CPP-And-The-T1.md#t1-instalments)
+- Pay on March 15, June 15, September 15, and December 15
+  - A weekend or CRA-recognized public holiday moves the deadline to the next business day
+
+Choose a [calculation option][instalment-options]:
+- *No-calculation*: pay the amounts on CRA's reminders by their due dates
+- *Prior-year*: use last year's net tax owing, CPP contributions payable, and voluntary EI premiums
+- *Current-year*: use estimates of those amounts for this year
+  - For the latter two options, use CRA's calculation chart and normally pay one quarter on each due date
+  - An underestimate can produce instalment interest; preserve the calculation supporting reduced payments
+
+If only an August reminder arrives and it lists no March or June instalment, use
+[CRA's special first-reminder instructions][instalment-reminder]: pay the reminder amounts in September and
+December, or pay 75% in September and 25% in December under the prior-year or current-year option.  
+Instalments prepay the year's liability; any balance still falls due the following April.  
+
+[instalment-options]: https://www.canada.ca/en/revenue-agency/services/payments/payments-cra/individual-payments/income-tax-instalments/options-calculate.html
+[instalment-reminder]: https://www.canada.ca/en/revenue-agency/services/payments/payments-cra/individual-payments/income-tax-instalments/who-pays-instalments.html
 
 
 ## Slips and Auto-Fill My Return
@@ -104,7 +119,7 @@ The corporate analogue of the assessment cycle, objections included, is worked i
 
 - [Personal Tax](Personal-Tax.md) (the hub)
 - [My Account and Catch-Up Filing](My-Account-And-Catch-Up-Filing.md) (the CRA account behind Auto-fill)
-- [CPP and the T1](../Sole-Proprietorship/CPP-And-The-T1.md) (June 15, instalments, and the self-employment side)
+- [CPP and the T1](../Sole-Proprietorship/CPP-And-The-T1.md) (self-employment CPP and the EI opt-in)
 - [Payroll](../Paying-Yourself/Payroll.md) (the corporation issuing the T4)
 - [Bookkeeping and Slips](../Paying-Yourself/Dividends/Bookkeeping-And-Slips.md) (the corporation issuing the T5)
 - [CRA Administration](../Filing-And-CRA/CRA-Administration.md) (the corporate assessment cycle)
@@ -112,6 +127,8 @@ The corporate analogue of the assessment cycle, objections included, is worked i
 
 ## Citations
 
+- CRA - [Personal instalment due dates](https://www.canada.ca/en/revenue-agency/services/payments/payments-cra/individual-payments/income-tax-instalments/due-dates.html) - quarterly dates and next-business-day treatment
+- CRA - [Calculation chart for 2026](https://www.canada.ca/content/dam/cra-arc/migration/cra-arc/tx/ndvdls/tpcs/ncm-tx/pymnts/nstlmnts/Instalment-chart-fill-26e.pdf) - tax, CPP, and EI components of instalments
 - Income Tax Act (R.S.C., 1985, c. 1 (5th Supp.)):
   - [s.150(1)(d)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-150.html) - T1 filing deadline: April 30, or June 15 for an individual (or spouse) carrying on a business
   - [s.248(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-248.html) - *balance-due day*: April 30 of the following year

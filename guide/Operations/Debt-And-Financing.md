@@ -101,8 +101,9 @@ Making the deduction stick:
 - *T5*: the corporation issues one for $50 or more of interest paid in a calendar year
   - See [Bookkeeping and information slips](../Paying-Yourself/Dividends/Bookkeeping-And-Slips.md); the owner reports the interest personally
 - *Pay it*: interest accrued to a non-arm's-length person cannot stay unpaid too long
-  - Unpaid at the end of the *second* following tax year, it is added back to the corp's income (ITA [s.78(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-78.html))
-  - Unless an agreement to treat it as paid is filed
+  - Test whether it remains unpaid at the end of the *second* following taxation year
+  - If so, include it in income in the *third* following taxation year (ITA [s.78(1)(a)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-78.html))
+  - The filed-agreement alternative in s.78(1)(b) treats the amount as paid and lent back, subject to its conditions
 
 Whether to charge interest at all is a compensation-mix question:
 - The corp deducts it and the owner pays full personal rates on it — the same shape as salary

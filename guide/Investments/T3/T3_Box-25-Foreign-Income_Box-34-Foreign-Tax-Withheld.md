@@ -45,7 +45,8 @@ For a CCPC the corporate-tax outcome is the same whether the Box 25 amount is fo
   - s.112 applies only to dividends from a taxable Canadian corporation
   - They create no Part IV tax and no ERDTOH; they are taxable property income, like the interest
 - Both are part of *Aggregate Investment Income* (AII): the refundable portion of Part I tax applies
-  - 30⅔% of AII flows into NERDTOH, recovered when you pay a non-eligible dividend
+  - The refundable Part I addition to NERDTOH is subject to foreign-credit, taxable-income and Part I tax limits
+    - 30⅔% of AII is the result only where those limits do not reduce it (ITA [s.129(4)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-129.html))
     - See [ERDTOH-NERDTOH.md](../../Paying-Yourself/Dividends/ERDTOH-NERDTOH.md)
   - The amount counts toward the *Adjusted Aggregate Investment Income* (AAII)
     - AAII over $50,000 grinds the small business deduction (ITA [s.125(5.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-125.html))
@@ -159,8 +160,9 @@ For a portfolio holding with no directly attributable costs — the usual case f
 the gross Box 25 figure, so the slip amount goes in unchanged.  
 Where costs *are* attributable to the foreign source (investment-counsel fees on the foreign holding, interest on
 money borrowed to buy it), allocate them by source and enter the net figure.  
-Do not deduct the same expense here and again on Schedule 125; the filed line 019 has to be the net amount either
-way.  
+Keep the booked expense in the Schedule 125 income statement.  
+Schedule 7 classifies net property income; it does not deduct the expense a second time from taxable income.  
+Do not claim another deduction for it in the Schedule 1 reconciliation.  
 
 In FutureTax T2, double-click the field to open the S7 worksheet (S7WS).  
 Its "Income from property" grid has one row per income type and two columns.  
@@ -198,7 +200,8 @@ Foreign tax credit (only if Box 34 has an amount):
   - One row per country of source; the columns are:
     - *Column 1A* (100): country of source, e.g. US
     - *Column 1B* (110): net foreign non-business income
-      - The gross Box 25 amount less any related carrying expenses (usually just the Box 25 figure)
+      - Include Box 25 net of related expenses and qualifying foreign taxable gains identified in Box 21 footnotes
+      - Reconcile all qualifying income from the same country before computing the credit limit
     - *Column 1C* (120): foreign tax paid, i.e. the Box 34 amount
     - *Column 1D* (130): leave it blank for a T3 Box 34 amount
       - The column feeds the s.20(12) deduction, the mutually exclusive alternative to the credit
@@ -215,8 +218,8 @@ Foreign tax credit (only if Box 34 has an amount):
   - The grid totals to box 296, which feeds amount D (line 199 on page 1) and is *added* to income
     - Do not use the page-4 "Other deductions" grid, which subtracts
     - That grid is Description 705, Amount 395, totalling to 396 → amount E → line 499
-- If you claim neither the S21 credit nor the S1 add-back, the foreign tax stays a plain expense
-  - That is less tax-efficient
+- Add back the booked T3 withholding even if no S21 credit is claimed or available
+  - Forgoing the credit does not make trust-allocated foreign tax deductible under s.20(12)
 - An alternative some find simpler: debit only the net amount (skip the `Withholding taxes` expense)
   - Add the gross-up back through the S1 "Other additions" line
 
@@ -248,8 +251,9 @@ The slip has no other box for foreign tax; the distribution itself lands elsewhe
   - The two may not line up dollar for dollar until the final numbers arrive
 
 An uncreditable Box 34 on a T3 gives no Canadian relief:
-- The s.126(1) credit is bounded by the Canadian tax on the foreign non-business income (the Box 25 amount)
-  - With Box 25 nil there is little or no credit room (see [T2 Schedule Mapping](#t2-schedule-mapping) above)
+- The s.126(1) credit is bounded by Canadian tax on qualifying foreign non-business income from that country
+  - Box 25 is not the whole calculation; nil Box 25 does not by itself establish nil credit room
+  - Include foreign taxable gains identified by country in the Box 21 footnotes and other qualifying same-country income
 - There is no s.20(12) fallback for foreign tax flowed through a trust
   - s.104(22.1) deems the beneficiary to have paid the foreign tax only for the purposes of s.126
   - s.104(22) to (22.3) do not extend to the s.20(11) or s.20(12) deductions (CRA position in IT-506 and IT-201R2)
@@ -261,7 +265,7 @@ An uncreditable Box 34 on a T3 gives no Canadian relief:
 Before treating a Box 34 as lost, pull the fund's annual tax-characterization breakdown.  
 Or use the CTBS PDF; see [Determining Whether Box 25 Is Interest or Dividends](#determining-whether-box-25-is-interest-or-dividends) above.  
 An interim Box 34 with no Box 25 often resolves into a real Box 25 once the character is finalized.  
-That restores the credit room.  
+Recompute the country-specific credit limit from the final figures.  
 
 
 ## Related
@@ -287,6 +291,7 @@ That restores the credit room.
   - [s.126(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-126.html) - foreign non-business income tax credit
   - [s.129(4)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-129.html) - definitions of aggregate investment income and non-eligible RDTOH
 - CRA Form T3 - Statement of Trust Income Allocations and Designations: https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t3.html
+- [CRA T3 completion instructions](https://www.canada.ca/en/revenue-agency/services/tax/trust-administrators/t3-slip/complete-t3-slip.html) - Box 21 foreign-gain footnotes for the credit calculation
 - CRA IT-201R2 (archived) - Foreign Tax Credit - Trust and Beneficiaries: https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/it201r2/archived-foreign-tax-credit-trust-beneficiaries.html
 - CRA IT-506 (archived) - Foreign Income Taxes as a Deduction from Income (para 11)
   - A beneficiary cannot claim the s.20(11)/(12) deduction for foreign tax allocated by a trust

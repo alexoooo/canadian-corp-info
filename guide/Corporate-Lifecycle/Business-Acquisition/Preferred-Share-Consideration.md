@@ -79,7 +79,9 @@ It applies automatically, without an election.
 
 Two numbers are set when the shares are issued:
 - *Redemption value*: equal to the purchase price; this is what the corporation must pay to redeem the shares
-- *Paid-up capital* (PUC): limited to the elected amount under the s.85(2.1) PUC grind, so it is usually low
+- *Paid-up capital* (PUC): generally limited to the corporation's tax cost less non-share consideration under s.85(2.1)
+  - For a share transfer governed by s.84.1, that section's PUC limit applies instead
+  - See [Estate Freeze — The mechanics](Estate-Freeze.md#the-mechanics) for the different limits
 
 The gap between the high redemption value and the low PUC is deliberate.  
 That gap is the amount that will come out as a deemed dividend as the shares are redeemed.  
@@ -144,7 +146,7 @@ TOSI is one of the conditions that pushes the family case onto its own page; see
 
 - Income Tax Act (R.S.C., 1985, c. 1 (5th Supp.)):
   - [s.85(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-85.html) - joint election for a tax-deferred rollover of property to a taxable Canadian corporation
-  - [s.85(2.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-85.html) - grind limiting the paid-up capital of shares received to the elected amount
+  - [s.85(2.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-85.html) - PUC grind based on tax cost less non-share consideration, excluding s.84.1 transfers
   - [s.85.1](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-85.1.html) - automatic rollover on an arm's-length share-for-share exchange
   - [s.84(3)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-84.html) - redemption proceeds over PUC deemed to be a dividend
   - [s.120.4](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-120.4.html) - Tax on Split Income (TOSI)

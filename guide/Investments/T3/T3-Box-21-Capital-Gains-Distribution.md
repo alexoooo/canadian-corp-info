@@ -15,8 +15,8 @@ Limitations:
 
 ## Meaning and Tax Treatment
 
-Box 21 is the trust's net taxable capital gains designated to the beneficiary
-(ITA [s.104(21)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-104.html)).  
+Box 21 reports the full capital gain, before the inclusion rate is applied.  
+The [CRA instructions](https://www.canada.ca/en/revenue-agency/services/tax/trust-administrators/t3-slip/complete-t3-slip.html) double the designated taxable gain to calculate this box.  
 The designation preserves the capital-gain character: half is taxable, and the non-taxable half adds to the
 corporation's Capital Dividend Account (CDA).  
 

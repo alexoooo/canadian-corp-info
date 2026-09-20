@@ -12,7 +12,7 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
   - Roughly 40–50% combined above $200 for a high-income Ontario donor
 - The donation claim is capped at 75% of net income; the unclaimed rest carries forward 5 years
 - Spouses pool: either can claim gifts made by both
-- Medical: only the slice above the lesser of 3% of net income and $2,890 (2026) earns the credit
+- Federal medical credit: only the slice above the lesser of 3% of net income and $2,890 (2026) earns the credit
   - Claiming the family's pool on the lower-income spouse's return usually clears more of that floor
 
 Limitations:
@@ -29,7 +29,7 @@ A *deduction* reduces income; a *non-refundable credit* reduces the tax computed
 - Most personal credits are the credit base times the lowest federal rate (14% for 2026)
   - The rate was 15% through 2024, then cut (14.5% blended for 2025); older intuition overstates these credits
 - *Non-refundable* means the credit stops at zero tax; unused amounts vanish unless a rule says otherwise
-- Ontario runs a parallel credit at its own rates on the same bases
+- Ontario has parallel credits, with its own rates, indexed thresholds, and limits
 
 The donation credit below is the exception to the lowest-rate pattern: above $200 it pays out near the *top* rates.  
 
@@ -59,11 +59,21 @@ The short version: near a wash for cash under integration; corporately-held appr
 
 ## The Medical Expense Credit
 
-Medical expenses earn the credit only above a floor (ITA [s.118.2](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-118.2.html)):
+Medical expenses earn the federal credit only above a floor (ITA [s.118.2](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-118.2.html)):
 - The floor is the lesser of 3% of net income and an indexed amount ($2,890 for 2026)
 - The claim covers any 12-month period ending in the taxation year; pick the period that clusters the spending
 - One pool for you, your spouse, and children under 18, claimed on line 33099
 - Other dependants (an adult child, a supported parent) go on line 33199, each against their own income's floor
+
+Build the pool from eligible paid expenses not already claimed on an earlier return.  
+Remove amounts that you or anyone else are entitled to have reimbursed, including insurance coverage.  
+The exception is a reimbursement included in income and not deducted elsewhere
+(s.118.2(3)(b); [CRA's medical-expense rules][medical-rules]).  
+Overlapping 12-month periods cannot reuse an expense already claimed.  
+
+Ontario uses its own indexed floor and retains a cap for other-dependant expenses.  
+Use the year's ON428 or tax software for the provincial calculation; the federal figures above do not set it
+([Ontario's tax-provision descriptions][ontario-credits]).  
 
 The lower-income spouse should usually make the family claim:
 - The 3% floor is computed on the claiming spouse's net income, so lower income clears more expenses
@@ -74,6 +84,9 @@ paramedical practitioners, and premiums for a private health plan paid personall
 Premiums the corporation pays under a PHSP are a corporate expense instead, and better than a credit;
 that route is worked in [Owner-Corporation Transactions](../Paying-Yourself/Owner-Corporation-Transactions.md#employee-benefits).  
 
+
+[medical-rules]: https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/lines-33099-33199-eligible-medical-expenses-you-claim-on-your-tax-return.html
+[ontario-credits]: https://budget.ontario.ca/2025/fallstatement/provisions.html
 
 ## Related
 

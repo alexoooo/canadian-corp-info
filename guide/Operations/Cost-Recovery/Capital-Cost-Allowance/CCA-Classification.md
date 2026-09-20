@@ -21,7 +21,7 @@ Work the decision in order:
   - See [Expense Classification](../../../Bookkeeping/Expense-Classification.md) and [Cost Recovery](../Cost-Recovery.md)
 - *Is it below the capitalization floor?* An item under the corp's de minimis policy (commonly $500) is expensed
   - That is a book decision, not a tax one: a capital item still has to be classified and tracked for Schedule 8,
-    with a Schedule 1 add-back where the book expense and the CCA claim differ
+    with the book expense added back and the CCA deducted separately on Schedule 1
   - See [Capital Cost Allowance — capitalize-vs-expense](Capital-Cost-Allowance.md#capitalize-vs-expense-thresholds)
 - *Does a specific class definition in Schedule II name it?* Most owner-managed purchases match a named class
   - A computer is Class 50, a vehicle is Class 10 / 10.1 / 54
@@ -54,7 +54,8 @@ The classes an owner-managed CCPC most often uses:
 
 The "Half-year" column notes only the year-of-acquisition rule.  
 Under the reinstated *Accelerated Investment Incentive Property* (AIIP) rules, the half-year rule is suspended.  
-A regular class gets an enhanced first-year allowance of 1.5× its normal rate.  
+Ordinary classes such as Class 8 can receive a 1.5× first-year base; class-specific exceptions apply.  
+Class 12 receives no generic uplift, although eligibility can suspend its half-year restriction.  
 A full-expensing class deducts 100% in year one.  
 Classes 44, 46, and 50 are fully expensed (100%, not 1.5×) for property available for use before 2027.  
 That is a separate Budget 2024 measure.  
@@ -152,7 +153,7 @@ For the multi-year depreciation of a class once chosen see [CCA Worked examples]
 - *Repair vs capital*: replacing a few deck boards is a current expense
   - Building the dock, or substantially rebuilding it, is a capital addition that adds to the pool
 - *First-year treatment*: a regular declining-balance class, not a full-expensing class, so no 100% write-off in year one
-  - A new build available for use before 2030 is AIIP
+  - For a qualifying RIIP build acquired after 2024 and available for use before 2030
     - The half-year rule is suspended, and year one is 7.5% of cost (1.5× the 5% rate)
   - Without AIIP, the ordinary half-year rule applies: 2.5% of cost in year one
 - *Materiality*: on a small cost base the dollar gap between the 5% and 10% rates is small

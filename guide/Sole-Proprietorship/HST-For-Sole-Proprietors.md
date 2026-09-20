@@ -22,7 +22,7 @@ Limitations:
 
 ## What Carries Over Unchanged
 
-Everything on the corporate HST pages applies, reading *you* for *the corp*:
+The following corporate HST mechanics apply, reading *you* for *the corp*:
 - The small-supplier threshold and its rolling-quarters and single-quarter tests
   - Current figures and the effective-date and application clocks live on
     [HST Registration and Filing](../Operations/HST/HST-Registration-And-Filing.md#registration)
@@ -83,10 +83,19 @@ Passenger-vehicle ITCs carry their own caps, tied to the income-tax ceilings; se
 
 ## Instalments as an Annual Filer
 
+For an individual annual filer with a December 31 fiscal year-end who carried on a business and has a June 15
+T1 filing deadline, the GST/HST return is also due June 15 of the following year
+(ETA [s.238(1)(a)(ii)](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-238.html)).  
+The GST/HST balance is due April 30, even though the return can follow later
+([s.228(2)(a)](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-228.html)).  
+Other annual filers generally file and pay within three months of year-end; monthly and quarterly deadlines
+remain those on the corporate filing page.  
+
 - The annual-filer instalment threshold and quarterly cadence are unchanged
   - Current figures and the base computation live on
     [HST Registration and Filing](../Operations/HST/HST-Registration-And-Filing.md#reporting-periods-and-deadlines)
-- These run in parallel with the T1 instalments worked in [CPP and the T1](CPP-And-The-T1.md#t1-instalments)
+- These run in parallel with the instalments on
+  [T1 Filing Basics](../Personal-Tax/T1-Filing-Basics.md#deadlines-and-the-balance-due-day)
   - An established sole proprietor can face two quarterly payment streams
 
 

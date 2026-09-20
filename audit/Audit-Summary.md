@@ -41,3 +41,7 @@ History:
 - [2026-07-31 Audit sol-5.6-xhigh](2026-07-31/2026-07-31_Audit_sol-5.6-xhigh.md)
 - [2026-08-02 Audit-Review Opus-5-xhigh](2026-07-31/2026-08-02_Audit-Review_Opus-5-xhigh.md)
 - [2026-08-02 Audit-Remediation Opus-5-xhigh](2026-07-31/2026-08-02_Audit-Remediation_Opus-5-xhigh.md)
+---
+- [2026-09-18 Audit gpt-6-astra-medium](2026-09-18/2026-09-18_Audit_gpt-6-astra-medium.md)
+- [2026-09-18 Audit-Review Fable-5.1-medium](2026-09-18/2026-09-18_Audit-Review_Fable-5.1-medium.md)
+- [2026-09-18 Remediation gpt-6-astra-medium](2026-09-18/2026-09-18_Audit-Remediation_gpt-6-astra-medium.md)

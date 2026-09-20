@@ -15,9 +15,10 @@ Scope and limitations are on the [hub](HST.md).
 ## Regular Method and Input Tax Credits
 
 Under the *regular method*, net tax for a reporting period is computed on the GST34 return as:
-- Line 101: total revenue from taxable supplies (sales, including zero-rated, excluding HST charged)
-- Line 105: total GST/HST collected and collectible
-- Line 108: total ITCs claimed
+- Line 101: sales and other revenue, including zero-rated and exempt supplies, excluding GST/HST and PST
+  - Online filing can populate this total from lines 90 and 91 ([CRA RC4022][return-lines])
+- Line 105: GST/HST collected and collectible plus adjustments that increase net tax
+- Line 108: ITCs plus adjustments that reduce net tax
 - Line 109: net tax (line 105 − line 108)
 
 ITC eligibility (ETA [s.169](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-169.html)):
@@ -58,55 +59,62 @@ Time limits:
 - *Specified persons*: 2 years on the same basis
   - Listed financial institutions and registrants with annual taxable supplies over $6M
 
-Capital property and ITCs:
-- Business use over 50%: full ITC on the HST portion at the time of acquisition
-  - The net cost (excluding HST) enters the capital cost for the appropriate CCA class
-  - See [Capital Cost Allowance](../Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md)
-- Business use 50% or less on personal-use-eligible property (passenger vehicles, residences): ITC denied entirely
-  - The full gross cost including HST enters the capital cost
-- A subsequent *change in use* triggers a deemed ITC adjustment under ETA [s.199(3)](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-199.html) / [s.200(2)](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-200.html)
-  - A deemed sale claws back the prior ITC if business use drops to 50% or less
-  - A deemed acquisition grants one if it rises above 50%
-  - Capital *real* property follows ETA [s.206](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-206.html) instead, with a sliding proration
+Capital purchases and later changes in use follow the property-specific rules below.  
 
 
 ## Capital Purchases
 
-A capital purchase by an HST-registered corp follows one of two paths:
-- *Business use over 50% on commercial-activity property*: claim the full ITC on the HST portion at acquisition
+For capital *personal* property, such as computers and vehicles, measure use in commercial activities:
+- *Over 50%*: claim the full ITC on the GST/HST portion at acquisition, subject to the usual ITC conditions
   - Capitalize the net cost (excluding HST) as the *capital cost* for the appropriate CCA class
-- *Business use 50% or less, or property used in making exempt supplies*: no ITC
+- *50% or less*: no ITC
   - Capitalize the full gross cost including HST
 
 For a passenger vehicle in Class 10.1, the ITC is additionally capped under ETA s.201.  
 The prescribed-amount ceiling matches the income-tax capital-cost cap.  
 The formula limits the ITC to the HST that would have applied to the $39,000 ceiling, not the actual price.  
 
-A change in use (s.199(3) / s.200(2)) triggers a deemed ITC adjustment in the year of change:
+A change in commercial use (s.199(3) / s.200(2)) triggers a deemed ITC adjustment in the year of change:
 - Use drops from over 50% to 50% or less: a deemed sale (s.200(2)) claws back the prior ITC
-  - Proportional to the residual fair-market value
+  - The deemed tax is based on the property's *basic tax content* at that time
 - Use rises from 50% or less to over 50%: a deemed acquisition (s.199(3)) grants an ITC
-  - Proportional to the residual fair-market value
-- Capital *real* property follows ETA s.206 instead
-  - A sliding 10%–90% proration rather than the over-50% all-or-nothing test
+  - The deemed tax is based on the property's basic tax content at that time
+
+Capital *real* property has a separate acquisition test for a corporation that is not a financial institution:
+- Commercial use of 10% or less: no ITC
+- Over 10% but under 90%: ITC in proportion to commercial use
+- 90% or more: full ITC, subject to the usual conditions
+
+Only unrecoverable GST/HST forms part of the property's cost.  
+Real-property changes in use follow [ETA s.206](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-206.html).  
+The acquisition percentages are set out in [CRA RC4022, capital real property][return-lines].  
+Residential rental use is generally exempt activity; owning a residence does not invoke the vehicle's 50% test.  
 
 For the per-class CCA mechanics that consume the resulting net capital cost, see [Capital Cost Allowance](../Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md).  
 
 
 ## Imports
 
-Import HST on goods:
-- Collected by *Canada Border Services Agency* (CBSA) at the point of import, on the duty-paid value of the goods
+GST on imported commercial goods:
+- CBSA collects the 5% GST (federal HST component), generally on value including duties and excise taxes
   - Reported on the *Commercial Accounting Declaration*
   - The declaration replaced Form B3 when CARM became the system of record in October 2024 (Customs Notice 24-29)
-- If the corp is a GST/HST registrant, the import HST is recoverable as an ITC on the next return
+- A registered importer can claim an ITC for this GST if the commercial-use and documentation conditions are met
   - The Commercial Accounting Declaration in the CARM Client Portal is the documentary support
   - A broker's statement built from it works too
 - Under a *Quick Method* election this holds only for imported capital property
-  - Import HST on operating inputs earns no ITC (see [HST Quick Method](HST-Quick-Method.md))
-- If the corp is not registered, the import HST is permanent landed cost
+  - Import GST on operating inputs earns no ITC (see [HST Quick Method](HST-Quick-Method.md))
+- If the corp is not registered, import GST forms part of landed cost
   - It is capitalized into inventory or capital cost
   - See [Inventory](../Cost-Recovery/Inventory-And-COGS.md#imported-goods-and-fx) and [Capital Cost Allowance](../Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md)
+
+The provincial HST component is separate from the border GST:
+- A regular-method registrant importing goods exclusively for commercial activities generally need not self-assess it
+  - ETA [s.220.07(2)(a)](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-220.07.html)
+  - The exception excludes specified motor vehicles and Quick Method users
+- If provincial self-assessment is required, a registrant reports it on line 405
+  - Claim an ITC only to the extent the applicable rules allow; it is not automatically a full offset
+- Check [CRA's imports guidance][imports] and the statutory exception before posting provincial tax
 
 Import HST on services and intangibles:
 - *Self-assessed* by the recipient under ETA [s.218.1](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-218.1.html)
@@ -120,9 +128,13 @@ Import HST on services and intangibles:
   - Net tax increases; out of scope here
 
 Imports in foreign currency:
-- The duty-paid value used by CBSA is in Canadian dollars, converted at the *date of accounting* per the *Customs Act*
+- CBSA converts the customs value using the exchange rate on the *date of direct shipment* to Canada
+  - [CBSA Memorandum D13-2-3](https://www.cbsa-asfc.gc.ca/publications/dm-md/d13/d13-2-3-eng.html), paragraph 2
   - This is the dollar figure on the Commercial Accounting Declaration
-- Book the ITC at that figure; do not retranslate at the corp's own FX rate
+- Book the eligible ITC from the actual CAD tax charged, not the customs value; do not retranslate the tax
+
+[return-lines]: https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4022/general-information-gst-hst-registrants.html
+[imports]: https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-imports-exports.html
 
 
 ## Related

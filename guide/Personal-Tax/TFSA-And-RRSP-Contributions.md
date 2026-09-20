@@ -79,8 +79,19 @@ Contributions beyond your deduction limit are tolerated up to a $2,000 lifetime 
 Beyond the buffer, Part X.1 tax runs (ITA [s.204.1(2.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-204.1.html)):
 - 1% of the cumulative excess per month
 - Reported on a T1-OVP return, due with payment within 90 days after the calendar year-end
-- The fix is withdrawing the excess; Form T3012A lets the issuer refund it without withholding tax
-  - Without the form, the issuer withholds, and the withheld amount reconciles on the T1
+- Withdraw the excess to stop future monthly excess tax; this does not erase tax already incurred
+
+Report the RRSP refund on T1 line 12900, even if no tax was withheld.  
+An offsetting deduction on line 23200 is available only for a qualifying refund of unused contributions:
+- Check [CRA's eligibility and timing conditions][unused-rrsp] before withdrawing
+  - The contributions must be undeducted; the permitted withdrawal windows depend on the contribution year
+    and when its assessment or reassessment was sent
+- Before withdrawal, submit Form T3012A for CRA approval if requesting a refund without withholding
+  - The approved waiver does not replace the income inclusion and line 23200 deduction
+- Without an approved waiver, use Form T746 to calculate the deduction; claim tax withheld on line 43700
+  - Withholding is a tax payment, not the offsetting deduction
+
+[unused-rrsp]: https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/rrsps-related-plans/making-withdrawals/withdrawing-unused-contributions.html
 
 The common cause is contributing against the current year's salary instead of the prior year's room.  
 Check the room figure on the latest notice of assessment before a large contribution, not after.  

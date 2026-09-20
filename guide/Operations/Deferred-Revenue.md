@@ -13,7 +13,8 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
 - The book side mirrors the tax side: a `Deferred income` (`2770`) liability draining into revenue as the work is performed
 - HST does not wait for delivery: tax is payable when the prepayment is paid or invoiced, whichever is earlier
 - A true *deposit* is the exception on both sides
-  - Refundable security deposits are not income, and HST applies only when the deposit is applied against the price
+  - Refundable security held as a liability is not income while held
+  - HST can arise on application to the price or on a forfeiture covered by ETA s.182
 - The reserve continuity is reported on T2 Schedule 13, re-measured every year
 
 Limitations:
@@ -46,14 +47,15 @@ The word "deposit" covers three different things; the tax treatment follows the 
 - *Prepayment*: payment on account of the price of future work
   - Income: s.12(1)(a) now, with a s.20(1)(m) reserve for the undelivered part
   - HST: payable when paid or invoiced, whichever is earlier
-- *Retainer* applied against future fees: a prepayment by another name, treated the same
-- *Security deposit*: refundable, held against damage or default
-  - Income: none while refundable; income only if forfeited or applied
-  - HST: none until applied against the price (ETA s.168(9))
+- *Retainer*: determine whether the amount is a fee prepayment or security under the actual agreement
+- *Security deposit*: held to secure performance of an obligation
+  - HST: no tax while held as a deposit, whether refundable or not (ETA s.168(9))
+  - Income: a refundable amount held as security remains a liability while held
 
-The dividing line is refundability and application:
-- Money the client gets back if the engagement ends is a liability, full stop
-- Money that will be applied against invoices is a prepayment from day one, whatever the contract calls it
+The distinction turns on what the payment does under the agreement:
+- A genuine deposit secures performance; a prepayment pays part of the price
+- Later application to an invoice does not make a genuine deposit a prepayment from receipt
+- Refundability alone does not decide the GST/HST treatment ([CRA deposits memorandum, paragraphs 5–10][deposits])
 - A "retainer" that merely reserves availability is earned when the standby period runs
   - A standby fee never applied to invoices is fee revenue, not a deposit
 
@@ -67,6 +69,10 @@ HST does not follow the income deferral:
 - The deposit carve-out: a deposit is *not* consideration until the supplier applies it against the price
   - ETA [s.168(9)](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-168.html); a deposit on a returnable container is excluded from the carve-out
   - A true security deposit therefore carries no HST while it is merely held
+- A forfeiture can trigger tax under [ETA s.182](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-182.html)
+  - It covers amounts forfeited to a registrant on breach, modification, or termination of a qualifying agreement
+  - The agreement must concern a taxable Canadian supply other than a zero-rated supply
+  - The forfeited amount includes the deemed tax; report it for the forfeiture period
 
 The income-vs-HST divergence at year-end is the same straddle pattern as invoicing, just in the opposite direction.  
 See [HST — Year-end straddle](HST/HST-Bookkeeping.md#year-end-straddle-income-vs-hst-timing).  
@@ -95,7 +101,18 @@ A balance expected to unwind beyond the next year belongs on the long-term line 
 For a consulting retainer that is rare.  
 
 A refundable security deposit books to a plain liability (a `2620`-series payable), not `2770`, with no HST line.  
-It moves to revenue only if forfeited or applied.  
+When applied, move it against the invoice, splitting out any tax; recognize service revenue as the work is delivered.  
+
+For a deposit forfeited on April 1, 2026, assume s.182 applies to an Ontario service taxable at 13%.  
+A $1,130 forfeiture includes $130 HST (`$1,130 × 13/113`):
+
+| Account | Debit | Credit |
+|---|---|---|
+| `Security deposits payable` (`2620`-series) | 1,130.00 | |
+| `Other revenue` (`8230`) | | 1,000.00 |
+| `HST collected` | | 130.00 |
+
+[deposits]: https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/g300-6-8/deposits-gst-300-6-8.html
 
 
 ## Worked Example
@@ -130,6 +147,7 @@ Next year the remaining $6,000 is delivered:
 - Excise Tax Act (R.S.C., 1985, c. E-15):
   - [s.168(1)](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-168.html) - tax payable on the earlier of consideration paid and consideration due
   - [s.168(9)](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-168.html) - a deposit is not consideration until applied
+  - [s.182](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-182.html) - tax included in qualifying forfeitures
 - CRA - IT-154R *Special reserves* (archived): https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/it154r.html
 - T2 Schedule 13 - Continuity of Reserves: https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2sch13.html
 
@@ -139,6 +157,4 @@ Next year the remaining $6,000 is delivered:
 - Verify the s.20(1)(m) conditions against IT-154R
   - The reasonableness standard, and the exclusions (guarantees or insurance-like obligations under s.20(7))
 - Verify the standby-retainer characterization (earned as the standby period runs) against CRA guidance or case law
-- Confirm whether a forfeited security deposit carries HST at forfeiture; add the entry if so
-  - ETA s.182 treats certain forfeitures as tax-included
 - Confirm the Schedule 13 lines for a s.20(1)(m) reserve and name them in the body

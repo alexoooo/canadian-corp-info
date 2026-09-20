@@ -39,8 +39,8 @@ The label is misleading; in substance it is a capital gain:
 - The non-taxable half is added to the Capital Dividend Account (CDA) under ITA [s.89(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-89.html)
   - Exactly as with an ordinary capital gain
 
-A capital gains dividend does not change the ACB of your fund shares.  
-It is a current-year gain, not a return of capital.  
+A cash capital gains dividend does not itself change the ACB of your fund shares.  
+A reinvested dividend also acquires additional investment cost and increases ACB.  
 
 
 ## Three-Way Contrast
@@ -85,13 +85,22 @@ Accounts typically involved in the Box 18 workflow:
 
 ## Ledger Entries
 
-A capital gains dividend from a mutual fund corporation is normally paid in cash.  
-There is no phantom (non-cash) portion and no ACB adjustment (unlike a T3 Box 21 distribution).  
+Use the issuer's distribution breakdown to distinguish cash from reinvested capital gains dividends.  
+Reinvestment followed by immediate share consolidation can increase ACB without changing the final share count.  
+Manulife's [June 2026 corporate-class distribution](https://www.newswire.ca/news-releases/manulife-investments-announces-final-reinvested-capital-gains-distributions-for-etf-series-of-manulife-corporate-class-funds-819921186.html) illustrates this treatment.  
 
-For the Box 18 amount:
+For the cash portion of Box 18:
 - Debit: `Deposits - investment` (1002-2)
   - Or `Investment distributions receivable` (1060-1) if declared in December but paid in January
 - Credit: `Capital gains dividends` (8211-3)
+
+For the reinvested portion:
+- Debit the fund investment carrying-value account
+- Credit `Capital gains dividends` (8211-3)
+- Add the reinvested cost to the holding's ACB once, reconciling any broker adjustment already recorded
+- Record any share issue and consolidation from the issuer's statement
+
+Both portions enter the same tax schedule mapping below.  
 
 During the year the amount can be parked in `TBD investment distributions` (8090-3).  
 Reclassify to `Capital gains dividends` (8211-3) once the T5 confirms the Box 18 figure.  
@@ -143,4 +152,5 @@ Track the non-taxable half in the Capital Dividend Account; see [Capital Dividen
   - [s.129(4)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-129.html) - AII and NERDTOH definitions
   - [s.131(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-131.html) - capital gains dividend from a mutual fund corporation, deemed a capital gain of the shareholder
 - CRA Form T5 - Statement of Investment Income: https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t5.html
+- [Manulife, June 22, 2026](https://www.newswire.ca/news-releases/manulife-investments-announces-final-reinvested-capital-gains-distributions-for-etf-series-of-manulife-corporate-class-funds-819921186.html) - reinvested corporate-class gains, consolidation and ACB increase
 - CRA T2 S6 - Summary of Dispositions of Capital Property: https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2sch6.html

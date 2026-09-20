@@ -11,7 +11,7 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
   - These pages work basic common personal situations, not the T1 end to end
 - The situations: filing, CRA account access and catch-up, TFSA and RRSP contributions, the two big credits, the home
 - The self-employment slice of the T1 is the other side group, [Sole Proprietorship](../Sole-Proprietorship/Sole-Proprietorship.md)
-  - June 15, instalments, and Schedule 8 CPP are worked there and cross-linked, not restated
+  - Schedule 8 CPP is worked there; the shared deadlines and instalments live on [T1 Filing Basics](T1-Filing-Basics.md)
 - T1 brackets, employment income at large, and benefit programs stay out
 
 Limitations:
@@ -28,7 +28,7 @@ The corporation's slips and dividends land on the owner's T1, and the corporate 
 This group picks up on the personal side of it, for the situations a CCPC owner actually meets.  
 
 The pages stay at the situation level.  
-Where a rule is already worked elsewhere (instalments, June 15, corporate giving), the pages link rather than restate.  
+Where a rule is already worked elsewhere (Schedule 8 CPP, corporate giving), the pages link rather than restate.  
 The corporate pages remain the guide's centre of gravity.  
 
 

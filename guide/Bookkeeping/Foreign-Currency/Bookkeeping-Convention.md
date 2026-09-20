@@ -95,18 +95,20 @@ Single-currency translated disadvantages:
   - A separate schedule of currency units is needed both to reconcile and to compute the revaluation
 - Each balance is a historical-cost pool at a blended implied rate, matching neither year-end
 - A rate looked up wrong on entry is baked into the balance and hard to find later
-- Accounting software with multi-currency support will not produce this form
+- Software may retain native units while also posting translated amounts and settlement FX
 
 Multi-currency native advantages:
 - Foreign balances reconcile directly to bank and broker statements
 - The rate is applied once at reporting time, so a rate correction re-runs cleanly
-- It is what GnuCash, Xero, and QuickBooks Multi-Currency produce
-  - GnuCash requires the option: File → Properties → Accounts → Use Trading Accounts
 
 Multi-currency native disadvantages:
 - Cross-currency entries are two-legged and need the bridge accounts
 - The bridge accounts carry forward and are read as a period change rather than a balance
-- FX surfaces only at revaluation, not where the underlying transaction happened
+- Under this bridge convention, FX is recognized through revaluation rather than at each settlement
+
+Software can post differently.  
+For example, [Intuit's Canadian multicurrency guide](https://intuitglobal.intuit.com/delivery/cms/prod/sites/default/education.intuit.ca/downloads/qbo/Appendix-B-Multicurrency-in-QuickBooks-Online.pdf) records exchange gains or losses on payment.  
+Reconcile the software's actual entries before adding this guide's bridge or revaluation entries.  
 
 For a handful of USD transactions a year tracked in a spreadsheet, single-currency translated is simpler.  
 Multi-currency native earns its complexity when the software maintains it.  
@@ -176,6 +178,7 @@ Notes on the codes:
 
 ## Citations
 
+- [Intuit, Multicurrency in QuickBooks Online](https://intuitglobal.intuit.com/delivery/cms/prod/sites/default/education.intuit.ca/downloads/qbo/Appendix-B-Multicurrency-in-QuickBooks-Online.pdf) - settlement entries and realized exchange gains/losses
 - Income Tax Act (R.S.C., 1985, c. 1 (5th Supp.)):
   - [s.54](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-54.html) - definition of "adjusted cost base"
   - [s.230](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-230.html) - records and books of account adequate to determine the tax payable

@@ -180,7 +180,7 @@ Handling one:
   - A ledger whose lines trace to filed source documents turns a review into an afternoon
 
 A *full audit* is broader: an auditor examines the books and records.  
-The auditor has statutory authority to inspect them and require answers (ITA [s.231.1](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-231.html)).  
+The auditor has statutory authority to inspect them and require answers (ITA [s.231.1](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-231.1.html)).  
 Cooperate on documents, keep answers factual, and involve an accountant early; audit defence is out of scope here.  
 
 Authorizing a representative (an accountant) for the RC account is done in My Business Account.  
@@ -312,7 +312,7 @@ A nil assessment cannot be objected to; for a loss year, the lever is a loss det
   - [s.225.1](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-225.1.html) - collection restrictions while an objection or appeal is outstanding
   - [s.227.1](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-227.1.html) - director liability for unremitted withholdings: preconditions (227.1(2)), due-diligence defence (227.1(3)), two-year limit (227.1(4))
   - [s.230](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-230.html) - duty to keep books and records; s.230(4) - retention period
-  - [s.231.1](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-231.html) - audit inspection authority
+  - [s.231.1](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-231.1.html) - audit inspection authority
 - Excise Tax Act (R.S.C., 1985, c. E-15):
   - [s.323](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-323.html) - director liability for unremitted net tax: the same preconditions, defence, and two-year limit
 - Income Tax Regulations (C.R.C., c. 945):

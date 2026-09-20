@@ -83,7 +83,12 @@ Schedule 8 Class 50 row:
 
 Schedule 1 reconciliation for year 3:
 - Add back: book amortization and any book loss on disposal
-- Deduct: any book gain on disposal, and the CCA from Schedule 8 (including any terminal loss)
+- Add: the $400 recapture from Schedule 8
+- Deduct: any book gain on disposal
+- Deduct CCA and any terminal loss separately; both are nil in this year-3 example
+
+With book depreciation equal to CCA, book income includes a $400 disposal gain.  
+Removing that gain and adding $400 recapture leaves the same $400 taxable income.  
 
 
 ## Example 2: Class 8 Floor Polisher (Physical-Service CCPC)

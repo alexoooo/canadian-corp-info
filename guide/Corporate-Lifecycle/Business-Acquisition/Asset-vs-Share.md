@@ -63,9 +63,12 @@ The buyer usually prefers an asset purchase, for two reasons.
 - The target corporation remains the taxpayer; the buyer acquires shares, not the target's tax pools
 - Acquiring control triggers a deemed tax year-end for the target (ITA [s.249(4)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-249.html)), which shortens the year and accelerates filings
 - *Net capital losses* and accrued capital losses are effectively lost: ITA [s.111(4)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-111.html) denies their carry-forward past the acquisition, and requires accrued losses on capital property to be recognized
-- *Non-capital losses* survive only on conditions (s.111(5)): the same or a similar business must be carried on with a
-  reasonable expectation of profit, and they can then shelter only income from that business
-- The year-end also restarts loss-expiry clocks and can force or permit inventory and depreciable-property write-downs
+- *Non-capital business losses* survive only on conditions (s.111(5)): the loss business itself must continue
+  throughout the deduction year for profit or with a reasonable expectation of profit
+  - The deduction is limited to income from that business and qualifying other businesses deriving substantially
+    all their income from similar properties or services; a similar business cannot replace the loss business
+- A shortened taxation year consumes a year of the surviving losses' carryforward period; it does not restart it
+  - Acquisition-of-control rules can also force or permit inventory and depreciable-property write-downs
 - So "inherits its tax pools" is the selling point that most often fails due diligence — value the losses only after
   testing them against these rules
 
@@ -75,9 +78,10 @@ Two more consequences turn on the structure rather than the buyer's preference:
 - An asset sale is generally subject to GST/HST on the taxable assets
   - The buyer and vendor can jointly elect under [ETA s.167](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-167.html) so that no GST/HST is payable on the supplies the election covers
     - The election covers the sale of a business or a self-contained part
-    - The buyer must be a registrant
+    - If the vendor is a registrant, the buyer must also be a registrant
     - It must acquire ownership, possession, or use of all or substantially all (90%+) of the business's property
-    - It is filed on Form *GST44* by the recipient, with the return for the period in which the supply is made
+    - A registered buyer files Form *GST44* by the return deadline for its first reporting period in which tax
+      would otherwise become payable on a covered supply, unless CRA permits a later filing
   - It does not make the deal zero-rated or exempt, and it does not reach every supply: s.167(1.1) carves out
     certain services, leases and licences, and real property supplied to a non-registrant
   - Test each excluded supply and the registration condition rather than assuming the whole sale is relieved

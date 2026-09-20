@@ -195,11 +195,12 @@ FX gain or loss on payable settlement:
   - Subsequent FX movements are a financing outcome, not part of the inventory's acquisition cost
 
 GST/HST on imports:
-- Self-assessed and paid to Canada Border Services on the *Commercial Accounting Declaration* at the point of import
+- CBSA collects the federal GST component on commercial imports, recorded on the *Commercial Accounting Declaration*
   - The declaration replaced Form B3 when CARM became the system of record in October 2024
-  - If the corp is HST-registered, the same amount is reclaimable as an ITC on the next GST/HST return
-  - If not, it is a permanent cost addition to inventory
-- See [HST](../HST/HST.md) for the full mechanics
+  - Claim an ITC only where eligible; the Quick Method does not allow inventory ITCs
+  - Unrecoverable import tax forms part of inventory cost
+- Provincial HST self-assessment is separate and has an exception for qualifying exclusive commercial use
+  - See [HST Regular Method — Imports](../HST/HST-Regular-Method.md#imports) for the conditions and Quick Method exclusion
 
 
 ## Tracking Through the Year
@@ -271,8 +272,11 @@ Purchase return (defective stock returned to supplier):
 - Credit `HST receivable` = HST originally claimed
 
 Inventory shrinkage adjustment (between physical count and book balance, after investigation):
-- Debit `Cost of sales` (GIFI 8518) or a dedicated `Inventory shrinkage` line under `Other direct costs` (GIFI 8450)
+- Debit `Cost of sales` (GIFI 8518), optionally using an internal shrinkage sub-account
 - Credit `Inventory - goods for sale` (GIFI 1121)
+
+The lower closing inventory already includes shrinkage in the Schedule 125 cost-of-sales calculation.  
+Do not also add the same shrinkage to `8450 Other direct costs`.  
 
 
 ## Inventory Flow
@@ -339,7 +343,9 @@ Step 4, verify the cost-of-sales identity:
 - Opening inventory + purchases (net of returns) + freight-in + other direct costs − closing inventory = COGS
 - This identity is what Schedule 125 enforces: lines 8300 + 8320 + 8340 + 8360 + 8450 + 8457 − 8500 = 8518
   - 8340 and 8360 are zero for a resale-only CCPC
-- If the identity does not hold, the bookkeeping ledger and the schedule disagree; fix the ledger, not the schedule
+- Reconcile perpetual-ledger expenses to this periodic presentation before investigating any remaining difference
+  - Shrinkage and write-downs already reduce closing inventory; do not add them again as other direct costs
+  - Opening $100, no purchases, shrinkage $10 and closing $90 gives $10 COGS, not $20
 
 Step 5, post to the T2 schedules:
 - Schedule 100 closing line for each inventory GIFI code reflects the corrected, LCM-adjusted closing balance
@@ -360,7 +366,7 @@ Schedule 125 cost-of-sales walkthrough (line by line):
   - Usually zero for resale-only operations
 - `8450 Other direct costs`: a catch-all
   - Packaging, and freight to a customer if treated as a cost rather than as a selling expense (the corp's policy)
-  - Inventory shrinkage if not booked to 8518
+  - Excludes shrinkage and write-downs already reflected in the lower closing inventory
 - `8457 Freight-in and duty`: inbound freight, brokerage, and customs duty on imports
   - Split out from 8320 so the inbound-logistics cost is visible
 - `8500 Closing inventory`: year-end inventory balance after physical count, LCM, and write-downs
@@ -498,9 +504,9 @@ Year-end Schedule 125 if 300 units are sold during the year at $70 each:
 
 ## Edge Cases
 
-- *Consignment inventory*: goods on the corp's premises but legally owned by another party (or vice versa)
-  - They are *not* on the corp's books
-  - Book only inventory the corp owns under contract
+- *Consignment inventory*: ownership, rather than physical location, controls inclusion
+  - Exclude another party's goods held on the corp's premises
+  - Include the corp's own goods held by a consignee elsewhere
   - A clear consignment agreement and a separate count tag are the audit evidence
 - *Related-party purchases*: inventory bought from a non-arm's-length supplier at above-FMV is capped at FMV
   - ITA [s.69(1)(a)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-69.html); the excess is denied
@@ -558,6 +564,7 @@ Year-end Schedule 125 if 300 units are sold during the year at $70 each:
 
 ## Citations
 
+- [CRA Income Tax Audit Manual, chapter 13](https://www.canada.ca/en/revenue-agency/services/tax/technical-information/income-tax-audit-manual-domestic-compliance-programs-branch-dcpb-13.html) - verification of owned inventory held on consignment elsewhere
 - Income Tax Act (R.S.C., 1985, c. 1 (5th Supp.)): https://laws-lois.justice.gc.ca/eng/acts/I-3.3/
   - [s.9](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-9.html) - income from a business or property; the parent rule that makes COGS a deduction from revenue
   - [s.10(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-10.html) - inventory valuation at the lower of cost or fair market value

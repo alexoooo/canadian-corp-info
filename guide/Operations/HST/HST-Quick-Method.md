@@ -10,6 +10,9 @@ Eligible registrants remit a flat percentage of GST/HST-inclusive revenue.
 They skip per-input ITC tracking on operating purchases.  
 ITCs on *capital purchases* are still claimable separately under the regular method, even after the election.  
 That includes real property and imported capital property.  
+Imported commercial goods can require separate provincial HST self-assessment on line 405.  
+The regular-method exclusive-commercial-use exception does not apply to Quick Method users.  
+See [HST Regular Method — Imports](HST-Regular-Method.md#imports) for the border-tax and self-assessment distinction.  
 Import HST on *operating* inputs earns no ITC while the election is in effect (SOR/91-51 s.17(1)).  
 The kept remittance spread is its only compensation.  
 For the default computation, see [HST Regular Method](HST-Regular-Method.md).  

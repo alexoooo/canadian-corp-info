@@ -52,7 +52,7 @@ Assets (Schedule 100):
 | Allowance for doubtful trade accounts receivable | `1063` | contra-asset for receivables unlikely to be collected |
 | Inventories | `1120` | rollup; `1121` goods for sale, `1122` parts, `1125` work in progress, `1126` raw materials |
 | Due from shareholder(s)/director(s) | `1300` | shareholder-loan account when the owner owes the corporation |
-| Other current assets | `1480` | `1483` taxes recoverable, `1484` prepaid expenses, `1482` accrued investment income |
+| Other current assets | `1480` | `1483` taxes recoverable, `1484` prepaid expenses |
 | Machinery, equipment, furniture, and fixtures | `1740` | capitalized equipment; accumulated amortization `1741` |
 | Motor vehicles | `1742` | accumulated amortization `1743` |
 | Computer equipment/software | `1774` | capitalized hardware and systems software; accumulated amortization `1775` |

@@ -40,7 +40,7 @@ flowchart TB
     CLR["TX19 clearance certificate"]
     DISS(["Articles of dissolution"])
 
-    STOP --> ASSETS --> SWEEP --> T2A --> CLR --> DIST --> T2B --> DISS
+    STOP --> ASSETS --> SWEEP --> T2A --> CLR --> DIST --> DISS --> T2B
     ASSETS -.-> HST
 ```
 
@@ -50,7 +50,7 @@ The order exists because each step feeds the next:
 - The final distribution needs the refund cash in the bank
 - The clearance certificate must precede the final distribution
   - Distributing first exposes the directors to personal liability under s.159(3)
-- The dissolution needs everything else done, because it ends the corporation's ability to act
+- Complete the distributions and collect refunds before dissolution; file the dissolution-period T2 afterward
 
 Spreading the sweep dividends over two or three personal tax years can beat one lump.  
 The wind-down horizon is a planning input, not an afterthought.  
@@ -93,9 +93,10 @@ The sweep, in order of value:
 - *CDA first*: elect and pay a capital dividend for the full balance (Form T2054, see [Capital Dividend Account](../Investments/Capital-Dividend-Account/Capital-Dividend-Account.md))
   - It is tax-free money and the easiest to leave behind by accident
   - Check the balance immediately before the election, and again immediately before the dividend becomes payable
-    - An *unrecorded pre-election* capital loss reduces the balance that was actually available, and can reveal that
-      the election was excessive
-    - A loss realized *after* the election affects only the later balance; nothing reaches back
+    - A capital loss realized before the payable time can reduce the available CDA, including a loss realized
+      after an early election filing; an unrecorded loss can therefore reveal an excessive election
+    - A loss realized after the payable time affects the later balance, not this dividend's capacity
+      (ITA [s.83(2)(a)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-83.html))
 - *NERDTOH and ERDTOH next*: pay taxable dividends sized so the refunds drain both accounts
   - A non-eligible dividend of `NERDTOH ÷ 38⅓%` recovers the full balance (see [ERDTOH and NERDTOH](../Paying-Yourself/Dividends/ERDTOH-NERDTOH.md))
 - *GRIP and the eligible dividend*: size the two flavours separately; each pool answers to a different dividend type:
@@ -137,6 +138,8 @@ The clearance certificate governs the timing:
 
 - The last tax year ends on the dissolution date
   - The final T2 is due 6 months later, and marks the return as final up to dissolution
+  - File it after permanent dissolution, using the actual date on the articles; the earlier sweep-year return
+    is not this final return ([CRA T4012, line 078][final-t2])
 - File the corporate registry's *articles of dissolution* only after the distributions and refunds are done
   - Federally under CBCA [s.210](https://laws-lois.justice.gc.ca/eng/acts/C-44/section-210.html)
   - In Ontario, Minister of Finance consent is still required, but the registry requests it automatically
@@ -171,7 +174,9 @@ Year 2 (the stub year):
 - File TX19 after the sweep-year T2 is assessed; receive the clearance certificate
 - Final distribution: $100 PUC back with no deemed dividend, and tax-free here because the founder's share ACB is
   also $100; $121,857 deemed non-eligible dividend (s.84(2)), T5 issued
-- File the final T2 to the dissolution date (trivial: no income), then articles of dissolution
+- File the articles of dissolution after the distributions and refunds are complete
+- After dissolution, file the final T2 for the stub period ending on the actual dissolution date, within 6 months
+  - This example assumes no stub-period income
 
 Skipping the sweep would have cost real money.  
 The $20,000 CDA (tax-free capacity) and the $5,000 NERDTOH refund both die with the corporation.  
@@ -213,15 +218,18 @@ The $20,000 CDA (tax-free capacity) and the $5,000 NERDTOH refund both die with 
   - T2054 - Election for a Capital Dividend Under Subsection 83(2): https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2054.html
 
 
+[final-t2]: https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4012/t2-corporation-income-tax-guide-chapter-1-page-1-t2-return.html
+
 ## TODO
 
+- Reconcile TX19's final-return/assessment documents with the pre-distribution clearance step
+  - Confirm the covered distribution cutoff and the later dissolution-period T2 with CRA or the corporation's adviser
 - Verify the s.88(2) deemed-dividend components before sign-off
   - The capital-dividend election on the wind-up dividend, and the eligible designation of the remainder
   - The worked example deliberately sweeps CDA before the final distribution to avoid leaning on it
 - Verify the ETA s.171 deregistration deemed-disposition scope (which property self-assesses) against CRA guide RC4022
 - Verify the payroll end-of-business deadlines (final remittance within 7 days, T4s within 30 days) against T4001
   - Add the figures to the Payroll page
-- Verify the T2 jacket final-return indicator line number
 - Confirm whether a GST/HST clearance mechanism separate from TX19 applies on dissolution
 - Add a two-year sweep variant to the worked example (splitting the dividends across personal tax years)
   - With personal-tax figures once the Ontario 2026 rates are settled

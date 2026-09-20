@@ -53,8 +53,16 @@ The gain is deferred on the exchange:
   - On a joint election (Form T2057), where a holdco is wanted in the structure
 
 The preferred shares take a low paid-up capital, and their fixed redemption value is set by a *valuation* of the business.  
-The PUC grind caps that paid-up capital at the old shares' PUC less any boot.  
-ITA [s.86(2.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-86.html) applies on the s.86 route, [s.85(2.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-85.html) on the s.85 route.  
+The PUC limit depends on the route:
+- On a s.86 exchange, [s.86(2.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-86.html) limits the new PUC
+  to the old shares' PUC less the fair market value of non-share consideration, with a floor of zero
+- On the individual's non-arm's-length transfer to a holdco, test
+  [s.84.1](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-84.1.html): its PUC limit uses the greater of old
+  PUC and ACB as adjusted under that section, less non-share consideration, with a floor of zero
+- Where s.84.1 does not apply, [s.85(2.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-85.html)
+  generally limits PUC to the corporation's tax cost of the transferred property less non-share consideration
+  - It expressly excludes transfers governed by s.84.1; the two limits are not interchangeable
+
 A *price-adjustment clause* is normal, so the value can be corrected if CRA later disputes it.  
 
 
@@ -174,7 +182,12 @@ A *trust* is not itself a designated person; s.74.5(9) can treat a transfer to a
 of a designated beneficiary, which is how a family trust reaches these rules.  
 The freezor is taxed on deemed interest at the prescribed rate on the *outstanding amount* defined in s.74.4(3),
 not invariably on the full value frozen.  
-The deemed amount is reduced by dividends actually paid out.  
+The offsets in s.74.4(2)(e)–(g) include actual interest received by the freezor and qualifying dividend income.  
+The dividend offset for the freezor requires dividends on the consideration shares (or substituted shares)
+that remain *excluded consideration*, and uses the amount included in income.  
+It excludes s.84 deemed dividends, including the s.84(3) dividend on redeeming freeze shares.  
+Cash paid to redeem those shares can instead reduce the outstanding amount under s.74.4(3).  
+There is also a separate offset for qualifying dividend income of the designated person subject to TOSI.  
 The rule applies only while the corporation is *not* a *small business corporation* (s.74.4(2)(c)).  
 It mainly bites where the frozen corporation holds investment assets rather than running an active business.  
 A freeze whose growth accrues to *adult* children is not caught, since they are not designated persons (ITA [s.74.5(5)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-74.5.html)).  

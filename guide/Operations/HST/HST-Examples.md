@@ -62,7 +62,7 @@ Year-end ledger balances:
   - Less whatever CCA the corp elects on the laptop
 
 GST34 annual return for 2026, filed by 2027-03-31:
-- Line 101 (sales of taxable supplies, excluding HST): $45,000
+- Line 101 (sales and other revenue, excluding HST): $45,000
 - Line 105 (HST collected): $5,850
 - Line 108 (ITCs): $754
 - Line 109 (net tax): $5,096
@@ -106,8 +106,10 @@ Quick Method remittance calculation:
 GST34 annual return for 2026, filed by 2027-03-31:
 - Line 101 (Quick Method: revenue from taxable supplies *including* the GST/HST, per RC4058): $50,850
   - Contrast Example 1's HST-exclusive $45,000
-- Line 105 (Quick Method tax): $4,174.80
-- Line 108 (ITCs on capital): $520
+- Line 105 (Quick Method tax before the credit): $50,850 × 8.8% = $4,474.80
+- Line 106 (ITCs on capital): $520
+- Line 107 (1% credit): $300
+- Line 108 (ITCs and adjustments): $520 + $300 = $820
 - Line 109 (net tax): $3,654.80
 - Remit $3,654.80 to CRA by 2027-03-31
 

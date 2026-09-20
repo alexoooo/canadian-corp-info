@@ -136,7 +136,7 @@ Triggered by the corporate investment account (see [Active vs investment income]
 
 S6 collects any capital disposition: securities sales, FX on capital account, and capital gains dividends.  
 S7 does double duty: it computes the *aggregate investment income* (AII) and the income eligible for the SBD.  
-AII drives the refundable tax and the passive-income grind of the business limit.  
+AII drives refundable tax; *adjusted aggregate investment income* (AAII) drives the passive-income business-limit grind.  
 The slip-to-schedule mapping (which T3/T5 box lands on which schedule) is diagrammed on [T5](../Investments/T5/T5.md#corporation-vs-personal-handling).  
 It is worked box-by-box on the T3 and T5 pages.  
 

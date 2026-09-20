@@ -46,8 +46,9 @@ Re-verify with the broker's current FAQ before relying on it.
   - ~$9.95 plus tax journal fee (waived with Questrade Plus); $0 trading commission
 - *Wealthsimple*: Norbert's Gambit in beta as of 2026
   - Confirm corporate-account availability with the broker before assuming support
-- *Interactive Brokers Canada*: direct interbank FX through FXCONV / IDEALPRO at ~1 basis point with a ~$2 minimum
-  - Cheaper than the Gambit; use that instead unless you need the cash in another broker
+- *Interactive Brokers Canada*: manual spot-FX commission starts at 0.20 basis point, with a US$2 minimum
+  - [Pricing checked September 18, 2026](https://www.interactivebrokers.ca/en/pricing/commissions-spot-currencies.php); lower tiers apply at higher monthly volume
+  - Automatic conversion has separate pricing; compare the route actually used with the Gambit's total cost
 
 ## Tax Characterization
 

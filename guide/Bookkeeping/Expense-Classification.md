@@ -27,8 +27,9 @@ Limitations:
 - *Schedule 100* (S100): the balance sheet — assets, liabilities, and equity (codes 1000–3849)
 - Operating expenses occupy the 8520–9369 band
   - Cost of sales sits separately at 8300–8519 (see [Cost of Sales Is Separate](#cost-of-sales-is-separate))
-- *GIFI-Short* (Form T1178): a condensed GIFI form for smaller corporations
-  - It uses the same code numbers, so the line you pick here is the same either way
+- *GIFI-Short* (Form T1178) is a condensed paper version of GIFI
+  - Taxable CAD-reporting CCPCs must file T2 electronically for tax years starting after 2023 ([CRA filing requirements](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/corporations/corporation-income-tax-return.html))
+  - Use regular GIFI through tax preparation software to meet this requirement
 - Codes come in rollup and detail pairs; reporting at the rollup level is fine for a small corp
   - `9150` Computer-related expenses is a rollup, `9152` Internet a detail beneath it
 
@@ -222,7 +223,8 @@ For inventory costing, the COGS identity, and which channel a cost belongs to, s
 
 - CRA RC4088, *General Index of Financial Information (GIFI)*: the complete code listing
 - CRA T4012, *T2 Corporation Income Tax Guide*: Schedule 125 and Schedule 100 reporting
-- CRA T2 *Schedule 125*, Income Statement Information; Form *T1178*, GIFI-Short
+- CRA T2 *Schedule 125*, Income Statement Information
+- [CRA, Corporation income tax return](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/corporations/corporation-income-tax-return.html) - mandatory electronic filing and exceptions
 - Income Tax Act:
   - [s.9(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-9.html) - profit computation
   - [s.18(1)(a)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-18.html) - general limitation, income-earning purpose

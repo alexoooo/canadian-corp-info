@@ -16,7 +16,8 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
 - The *half-year rule* gives only half-rate CCA on net additions in the year of acquisition
   - Several classes are exempt
   - The *Accelerated Investment Incentive* (AIIP) overrides it with an enhanced first-year deduction
-  - AIIP was reinstated by Bill C-15 for property acquired after 2024 and available for use before 2030
+  - Reinstated eligibility covers post-2024 acquisitions available for use before 2034
+    - The factor depends on the class and available-for-use year; phaseout begins after 2029
 - On disposal, UCC is reduced by the lesser of (proceeds, original cost)
   - A negative ending balance is *recapture* (income)
   - A positive balance with no asset left in the class is a *terminal loss* (deduction)
@@ -131,11 +132,16 @@ It began phasing out for property available for use after 2023 and was scheduled
 The 2024 Fall Economic Statement reinstated it.  
 Bill C-15 (Budget 2025 Implementation Act, No. 1) enacted the reinstatement on Royal Assent, Mar 26 2026.
 
-As reinstated, for property acquired after 2024 (on or after Jan 1 2025) and available for use before 2030:
-- For CCA classes otherwise subject to the half-year rule, the half-year rule is suspended
+Reaccelerated investment incentive property (*RIIP*) is acquired after 2024 and available for use before 2034.  
+Eligibility and the first-year factor are separate tests under Regulations [1104(4.01)](https://laws-lois.justice.gc.ca/eng/regulations/C.R.C.,_c._945/section-1104.html) and [1100(2)](https://laws-lois.justice.gc.ca/eng/regulations/C.R.C.,_c._945/section-1100.html).  
+
+For eligible property available for use before 2030:
+- For ordinary declining-balance classes such as Class 8, the half-year rule is suspended
   - The first-year base is 150% of the net addition
   - Three times the deduction the half-year rule alone would have allowed
-- For classes not subject to the half-year rule, the first-year deduction is one-and-a-half times the normal allowance
+- Class-specific exceptions override that uplift
+  - Class 12 receives no generic uplift, even where eligibility suspends the half-year restriction
+  - Eligible Class 12 application software can therefore deduct its cost, not 150% of cost
 - For *full-expensing* classes, 100% of cost is deductible in the first year
   - M&P equipment in Class 53, or Class 43 for acquisitions after 2025
   - Clean energy 43.1 / 43.2; zero-emission vehicles 54 / 55 / 56
@@ -153,9 +159,14 @@ The reinstated enhancement is available only for property acquired after 2024.
 Earlier acquisitions fall under the original 2018 rules, which had wound down by 2027.  
 
 Eligibility is not only about dates.  
-Previously-owned property qualifies only if no CCA or terminal loss was claimed on it before.  
-That covers property you or a non-arm's-length person previously owned, or that came in on a tax-deferred rollover.  
-An arm's-length purchase of used property still qualifies.  
+The AIIP and RIIP definitions each provide two alternative routes:  
+- No person or partnership deducted CCA or a terminal loss for a taxation year ending before acquisition
+- Otherwise, neither the specified tax-deferred-transfer circumstances nor prior related ownership applies
+  - Prior ownership by the taxpayer or a non-arm's-length person or partnership blocks this second route
+  - Ordinary arm's-length used property can qualify despite CCA claimed by its previous owner
+
+Related-party or rollover property needs the full definition and expenditure exclusions checked.  
+Classes 54–56 are outside those definitions and use their separate accelerated rules.  
 
 A separate *Immediate Expensing Measure* (the "$1.5M rule") let CCPCs fully expense some property.  
 Up to $1.5 million per year of *Designated Immediate Expensing Property* (DIEP) qualified.  
@@ -176,12 +187,20 @@ The half-year-adjusted base then feeds CCA once it is in service.
 For non-buildings (s.13(27)), the earliest of:
 - First time it is used to earn income
 - Capable of producing a commercially saleable product or service
-- Beginning of the second tax year after the acquisition year (the rolling-two-year / 357-day rule)
+- The [357-day fallback](#the-357-day-fallback)
 
 For buildings (s.13(28)), the earliest of:
 - All or substantially all (~90%) of the building first used for its intended purpose
 - Construction of the building is complete
-- Beginning of the second tax year after the acquisition year (the same 357-day rolling rule, s.13(28)(c))
+- The [357-day fallback](#the-357-day-fallback)
+
+### The 357-Day Fallback
+
+Find the first taxation year that starts more than 357 days after the acquisition taxation year's end.  
+The fallback time is immediately after that year's beginning (s.13(27)(b) and s.13(28)(c)).  
+A short intervening year does not make simply counting two tax years sufficient.  
+For a December 31, 2026 acquisition-year end, a July 1, 2027 year start is too early.  
+A January 1, 2028 year start satisfies the elapsed-day test.  
 
 See [Cost Recovery — Available for use](../Cost-Recovery.md#available-for-use) for the cross-channel framing.  
 It includes how the same trigger applies to a CIP balance transferring into a CCA class.  
@@ -198,7 +217,8 @@ What goes into capital cost (the *A* element in the s.13(21) UCC formula):
 What does not get capitalized:
 - Recurring repairs and maintenance: operating expense
 - Software licences with a term of one year or less: operating expense
-- Items priced below the corporation's capitalization threshold policy (the *de minimis* policy, typically $500 to $2,500)
+- Items below a bookkeeping capitalization floor may be expensed in the books
+  - The floor does not determine their tax treatment; see [Capitalize-vs-Expense Thresholds](#capitalize-vs-expense-thresholds)
 
 The same capitalize-vs-expense rules apply across all three cost-recovery channels.  
 See [Cost Recovery — Acquisition cost](../Cost-Recovery.md#acquisition-cost-what-gets-capitalized).  
@@ -254,7 +274,7 @@ It is not a general bar on claiming a terminal loss after replacing a same-class
 
 ## Short Fiscal Year
 
-A tax year shorter than 365 days arises on incorporation, dissolution, or a fiscal-year change.  
+A tax year shorter than 12 months can arise on incorporation, dissolution, or a fiscal-year change.  
 CCA is then prorated under Regulation 1100(3):
 - Maximum CCA × (days in tax year / 365)
 
@@ -310,7 +330,7 @@ The opposite move can also pay:
 
 ## Capitalize-vs-Expense Thresholds
 
-Several thresholds shape what gets onto Schedule 8 in the first place:
+Bookkeeping and tax thresholds serve different purposes:
 - *De minimis bookkeeping policy*: many small CCPCs set a $500 (sometimes $1,000 or $2,500) capitalization floor
   - Below it, items are expensed regardless of useful life
   - This is a bookkeeping convention, not a CRA rule
@@ -327,11 +347,11 @@ These thresholds matter most for:
   - Personal use of corporate property is a shareholder or employee benefit, valued under its own rules rather than
     by pro-rating cost; an *automobile* uses the standby charge and operating-expense benefit (see below)
 
-For certain classes, you can expense an item in the books rather than capitalize and amortize it.  
+For immaterial items, a consistent bookkeeping policy may expense the cost rather than capitalize and amortize it.  
 Where a class writes off the whole cost in the first year, both routes give the same *year-one P&L amount* — but the
 book presentation never removes the property from the tax CCA system.  
 ITA s.18(1)(b) denies the current deduction and s.20(1)(a) supplies CCA, so the item still belongs on Schedule 8 and
-in the asset register, with a Schedule 1 add-back where the book expense and the CCA claim differ:
+in the asset register, with the book expense added back and the CCA deducted on Schedule 1:
 - *Which classes*: most of Class 12 (its half-year-exempt items) and the *full-expensing* classes under AIIP
   - M&P Class 53 / 43, clean energy 43.1 / 43.2, ZEV 54 / 55 / 56
   - Also Classes 44 / 46 / 50 for property available for use before 2027 (Budget 2024)
@@ -339,36 +359,19 @@ in the asset register, with a Schedule 1 add-back where the book expense and the
   - The choice is bookkeeping mechanics, not timing, and expensing such an item directly costs no tax
 - *Software exception*: Class 12 application software stays under the half-year rule
   - Outside the AIIP window it deducts over two years and the equivalence fails
-- *When timing diverges*: only if the alternative is a declining-balance class (Class 8 at 20%, say)
-  - The pool releases the cost over years; that gap is what the capitalization floor trades off
+- *When timing diverges*: the book expense may precede the CCA deduction
+  - Class 8, for example, can leave tax UCC after the books have expensed the whole item
 - *On disposal*: the ordinary depreciable-property rules apply either way
   - Proceeds reduce UCC by the lesser of proceeds and original cost, which can produce recapture (income)
   - Proceeds above original cost are a capital gain on Schedule 6, which also credits the CDA
   - Book-expensing does not convert those proceeds into ordinary income; the class is simply already at nil UCC
 
-The de minimis floor is a policy choice within limits:
-- The Income Tax Act sets no dollar threshold
-  - The test is the general current-vs-capital distinction, and CRA tolerates expensing amounts too small to matter
-- A floor of $500 to $2,500 is accepted if it is reasonable for the size of the business
-  - It must also be applied consistently from year to year
-
-Costs of setting the floor high:
-- Expensing changes only *timing*: both routes deduct the full cost eventually
-  - A higher floor merely pulls the deduction earlier
-  - A small gain on a sub-$2,500 item, smaller still while AIIP front-loads first-year CCA
-- Consistency cuts both ways: a high floor forces immediate expensing even in a loss year
-  - A non-capital loss expires after 20 years while undepreciated CCA never does
-- "immaterial" scales with size: $2,500 is not credibly immaterial for a corp earning $40,000
-- Over-expensing understates assets on any ASPE financial statements a bank or buyer relies on
-
-Simplest tax-basis treatment: set a single $500 floor in a written policy, expense below it, capitalize at or above.  
-$500 is the easiest figure to defend (it matches the Class 12 tools line).  
-It leaves larger items in CCA, where the discretionary claim keeps year-to-year flexibility.  
-
-Out of scope here:
-- A higher floor (toward $2,500) for a larger, steadily-profitable corp with no external-reporting needs
-- Deferring deductions in a loss or low-rate year by capitalizing instead of expensing
-- GAAP/ASPE statement presentation, where capitalization affects reported assets and earnings
+Keep a written bookkeeping policy and apply it consistently.  
+It is not a general tax deduction threshold under ITA [s.18(1)(b)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-18.html).  
+For tax, classify the expenditure and apply its specific deduction or CCA rule under [s.20](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-20.html).  
+The Class 12 rule for qualifying small tools is not a blanket exemption for every inexpensive capital asset.  
+Book expensing does not force a CCA claim in a loss year; the tax claim remains discretionary.  
+Financial-statement materiality and GAAP/ASPE presentation require their own assessment.  
 
 
 ## Misfiled Incorporation Costs

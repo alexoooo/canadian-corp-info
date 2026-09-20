@@ -146,12 +146,10 @@ The benefit changes no expense account, but it is not slip-only — it runs thro
 - The corp has already expensed the actual CCA, fuel, and insurance in its books, so nothing moves there
 - The $7,601 is added to the owner's employment income (T4 box 34, included in box 14) and reported in box 26 as
   CPP pensionable earnings
-- A non-cash taxable benefit is *CPP-pensionable*, so the employer must include it in a pay period, deduct the
-  employee CPP on it where there is enough cash remuneration to withhold from, match it, and remit both halves
-  - Skipping this is the classic route to a PIER assessment after the T4s are filed
-  - Where cash remuneration is too small to withhold the employee's share, the employer still owes and remits its
-    own share; the employee settles the rest on the T1
-  - See [Payroll](Payroll.md) for the pay-run mechanics
+- Include the pensionable benefit in payroll and calculate CPP with the cash remuneration
+  - Non-cash-only remuneration for the whole year has a CPP exception; security options are excluded
+  - Boxes 14 and 26 still include the benefit where the exception applies
+  - See [Payroll](Payroll.md#non-cash-taxable-benefits-in-the-pay-run) for the exception and balanced entries
 - The HST-registered corp must also remit HST on the benefit (ETA [s.173](https://laws-lois.justice.gc.ca/eng/acts/E-15/section-173.html))
 
 Why the personal-car structure usually wins for an owner-manager:
