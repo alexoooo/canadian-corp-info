@@ -32,6 +32,7 @@ Unmarked pages are reviewed; † = AI generated, not verified yet.
 - [Winding Down](guide/Corporate-Lifecycle/Winding-Down.md) †
 
 **[Bookkeeping](guide/Bookkeeping/Bookkeeping.md)** †:
+- [Getting Started With Bookkeeping](guide/Bookkeeping/Getting-Started/Getting-Started.md) †
 - [Ledger and Accounts](guide/Bookkeeping/Ledger-And-Accounts.md) †
   - [Chart of Accounts](guide/Bookkeeping/Chart-Of-Accounts.md) †
 - [Period Close](guide/Bookkeeping/Period-Close.md) †

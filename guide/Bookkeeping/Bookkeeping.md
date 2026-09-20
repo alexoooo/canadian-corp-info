@@ -8,6 +8,7 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
 
 **TLDR**:
 - This group is the ledger foundation the rest of the guide posts to
+- [Getting Started](Getting-Started/Getting-Started.md) sets up a workspace for manual or agent-assisted bookkeeping
 - [Ledger and Accounts](Ledger-And-Accounts.md) sets up the debit/credit conventions; [Chart of Accounts](Chart-Of-Accounts.md) is the GIFI-aligned account list
 - [Period Close](Period-Close.md) runs the routine on top: monthly reconciliations, the year-end adjusting set, and the close
 - [Expense Classification](Expense-Classification.md) decides which account a cost lands in and whether it is a current expense or a capital asset
@@ -25,6 +26,7 @@ Those entries roll up through the General Index of Financial Information (GIFI) 
 This group covers the machinery that makes that work.  
 
 This page is a hub; these are the sub-pages:
+- [Getting Started](Getting-Started/Getting-Started.md): repository setup and CLI access to the shared guide
 - [Ledger and Accounts](Ledger-And-Accounts.md): the backbone of the group
   - The debit/credit conventions this guide uses and the map onto the T2 schedules
 - [Chart of Accounts](Chart-Of-Accounts.md): the master account list
