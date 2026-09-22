@@ -66,7 +66,11 @@ The first fiscal period runs from incorporation to any date up to 53 weeks out (
 There is no election form: the year-end is set by the first T2 filed with that date.  
 After that it is fixed; a change needs CRA's concurrence (s.249.1(7)).  
 
-Considerations, none decisive:
+This guide uses December 31 as the default fiscal year-end convention.  
+Examples and workflows assume this year-end unless stated otherwise.  
+For an existing corporation, use its established fiscal year-end.  
+
+The default and reasons to choose a different year-end:
 - *December 31*: aligns with the calendar-year T4/T5 slips, the personal T1, and brokerage reporting
   - The simplest to keep books for
 - *An off-calendar date* (e.g. July 31): shifts the T2 season away from the personal-tax crunch

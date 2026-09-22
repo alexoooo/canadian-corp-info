@@ -65,6 +65,7 @@ books-<company>/
 
 Keep working context in `context/`, leaving the root for the README and tool entry points.  
 Use the year in which the fiscal year ends for `YYYY`, such as `years/2026/`.  
+For a December 31 year-end, `years/2026/` holds the 2026 calendar year's work.  
 Name each workpaper for its source, using the statement's closing date for `yyyy-mm-dd`.  
 Keep workpapers directly in that folder and record their exact periods inside each file.  
 Add subfolders only when your own workflow needs them.  
@@ -89,11 +90,16 @@ Start with a short pointer to the guide:
 
 - The guide is at ../canadian-corp-info/
 - Read its README.md to find the relevant accounting procedures
+- Use the corporation's recorded facts and the owner's explicit confirmations
+- Do not ask again about a confirmed fact unless conflicting evidence materially affects the current task
+- Identify the specific conflict when clarification is necessary
 - Do not edit the shared guide during bookkeeping
-- Record proposed improvements in the books repository for a separate guide-editing session
+- Append proposed guide improvements to context/Guide-Feedback.md for a separate guide-editing session
 ```
 
 Add corporation-specific instructions as you establish them through actual work.  
+Create `context/Guide-Feedback.md` when the first issue arises.  
+For each issue, identify the guide page or section and describe the problem or proposed correction.  
 
 For Claude Code, create `books-<company>/.claude/CLAUDE.md` with this content:
 
@@ -186,10 +192,10 @@ For this setup, use a bookkeeping session in the books repository with access to
 Save corporation-specific facts, decisions, and unresolved questions in the books repository.  
 Use a separate guide-editing session when a general instruction needs improvement.  
 
-Pass a documentation gap between sessions through a saved record:
-1. Record the actual facts and affected entries in the books repository
-2. Prepare a sanitized description of the gap, excluding private details
-3. Start the guide-editing session in `canadian-corp-info` and provide that description
+Pass a documentation gap between sessions through `context/Guide-Feedback.md`:
+1. Record the affected guide page or section and the problem in that file
+2. Keep the feedback free of private business details
+3. Start the guide-editing session in `canadian-corp-info` and provide the relevant feedback entry
 4. Review the resulting guide change and record the adopted commit ID in your workspace notes
 5. Resume bookkeeping and apply the procedure to the corporation's facts
 
