@@ -127,8 +127,10 @@ Schedule 6 entry:
 - Capital loss: CAD 23.48 (= 13,600 − 9.95 − 13,613.53)
 
 Where the CAD 23.48 then goes:
-- *Schedule 1*: add back the full CAD 23.48 book loss (`8211-1`) in the book-to-tax reconciliation
-  - The accounting loss is reversed in full; the tax outcome comes from Schedule 6, not the income statement
+- *Schedule 1*: the full CAD 23.48 book loss (`8211-1`) is reversed with the rest of GIFI 8211
+  - A net book loss in 8211 adds back on line 111; a net gain is removed on line 401
+  - The tax outcome comes from Schedule 6, not the income statement
+  - See [Schedule 1 Lines](../../Filing-And-CRA/T2-Schedules.md#schedule-1-lines)
 - *Schedule 6*: nets every capital disposition for the year
   - A net gain sends half to Schedule 1 line 113
   - A net loss sends the full amount to *Schedule 4*, the net-capital-loss continuity schedule

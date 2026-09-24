@@ -105,9 +105,11 @@ Equity (Schedule 100):
 | Contributed surplus | `3541` | capital contributed beyond share subscriptions |
 | Retained earnings/deficit | `3600` | accumulated after-tax profit not yet distributed |
 | Dividends declared | `3700` | reduces retained earnings; `3701` Cash dividends is the detail line |
+| Prior period adjustments | `3720` | correction of an earlier year's error, posted to equity rather than income |
 | Retained earnings/deficit — End | `3849` | the closing balance carried to next year's opening |
 
 The retained-earnings continuity runs `3660` Start + `3680` Net income/loss − `3700` Dividends declared = `3849` End.  
+A year with a prior-period correction adds `3720` to the continuity; see [Cutover From Legacy Books](Ledger-And-Accounts.md#cutover-from-legacy-books).  
 
 
 ## Revenue

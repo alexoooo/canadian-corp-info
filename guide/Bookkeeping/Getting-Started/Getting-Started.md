@@ -60,17 +60,22 @@ books-<company>/
   context/
   years/
     YYYY/
-      Bank-Statement_yyyy-mm-dd.md
+      Review_yyyy-mm-dd.md
+      Bank-Statement_1234_yyyy-mm-dd.md
 ```
 
 Keep working context in `context/`, leaving the root for the README and tool entry points.  
 Use the year in which the fiscal year ends for `YYYY`, such as `years/2026/`.  
 For a December 31 year-end, `years/2026/` holds the 2026 calendar year's work.  
-Name each workpaper for its source, using the statement's closing date for `yyyy-mm-dd`.  
+Name each workpaper for its source and account, using the statement's closing date for `yyyy-mm-dd`.  
+Identify the account by the last digits of its number, so statements that close on the same date stay distinct.  
+For a review covering several statements, keep one summary page with each account's status and the proposed entries.  
+Link it from the per-statement pages; entries that affect several statements live only on the summary.  
 Keep workpapers directly in that folder and record their exact periods inside each file.  
 Add subfolders only when your own workflow needs them.  
 
 Start with existing records and add context notes when they help with the work at hand.  
+If earlier years were kept differently, start from a [cutover](../Ledger-And-Accounts.md#cutover-from-legacy-books).  
 Choose their filenames and contents as you use the workspace.  
 Put links to those notes, workpapers, and the document archive in the books README.  
 Keep original statements, receipts, and live application files in a separate archive with its own backup.  

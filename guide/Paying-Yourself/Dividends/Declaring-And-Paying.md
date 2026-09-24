@@ -57,19 +57,88 @@ For an owner-managed CCPC with positive retained earnings and modest short-term 
 The resolution should still recite it.  
 
 
+## Resolution Records
+
+A resolution does not have to be on paper.  
+What makes a record a resolution is its content, adoption, timing, and retention:
+- *Content*: it declares the dividend (amount, class, payment date) and states the eligible designation
+- *Adoption*: the director signs it, by hand or with a typed name or electronic signature
+- *Timing*: it exists before or at the payment
+- *Retention*: it is kept with the corporate records (the minute book)
+
+A payment log is not a resolution.  
+A row with a date, an amount, and "eligible" records a payment but declares nothing.  
+
+For frequent dividends, a spreadsheet can serve as the resolution record:
+- A standing header carries the resolution wording:
+
+> Each row is a resolution of the sole director declaring a dividend on the common shares of the Corporation in
+> the amount in column C, payable on the date in column B.
+> The amount in column D is designated as an eligible dividend under subsection 89(14) of the *Income Tax Act*.
+> The director has determined that the solvency tests are met at the time of each declaration.
+
+- Add each row, with the director's typed full name in a signature column, before making the transfer
+- Version history (Google Sheets, a Git repository) timestamps each row
+- At year-end, export the year's rows to PDF and file the PDF in the minute book as the fixed copy
+- Repeat the designation in the transfer memo: "Dividend per resolution [DATE]; $Y designated eligible"
+
+Fewer, larger dividends mean fewer records.  
+Clearing a year's draws with one year-end dividend also works (see [Payment Methods](#payment-methods)).  
+It carries the s.80.4(2) interest benefit on the draws while they are outstanding.  
+See [Owner Borrows from the Corporation](../Owner-Corporation-Transactions.md#owner-borrows-from-the-corporation).  
+
+### Dividends Paid Without a Resolution
+
+A dividend paid and reported on a T5 without a resolution can be regularized:
+- Pass a ratifying resolution confirming each past dividend, its amount, and its payment date
+  - Date it when it is signed; never backdate it
+- The eligible portion of a past dividend was not designated at payment
+  - It relies on the late-designation relief in [Eligible Dividend Designation](#eligible-dividend-designation)
+- Have the ratification reviewed by an accountant or lawyer
+- Keep a running record from then on, each dividend entered when it is declared
+
+
 ## Eligible Dividend Designation
 
 For an eligible designation, ITA s.89(14) requires a written notice to the shareholder.  
 The notice is due on or before the time the dividend is paid.  
+A portion of a dividend or the whole amount can be designated.  
 The notice can be brief; CRA accepts a clear written statement that names the dividend and identifies it as eligible:
 
 > NOTICE: The dividend of $X paid on [DATE] on the common shares of [Corporation Name] is designated as an
 > "eligible dividend" within the meaning of subsection 89(1) of the *Income Tax Act*.
 
+CRA lists the notice forms it accepts from a private corporation:
+- Letters to shareholders
+- Dividend cheque stubs
+- Where all shareholders are directors, a notation in the minutes
+
 In a sole-shareholder CCPC the director and the shareholder are the same person.  
 There the notice can be combined with the resolution itself.  
 Keep the notice in the corporate minute book; CRA can request it on audit.  
 A non-eligible dividend requires no designation notice.  
+
+A designation made after payment is late.  
+Under ITA [s.89(14.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-89.html) CRA can accept it within three years, if it considers that just and equitable.  
+That relief is discretionary: it repairs a missed designation and is not a routine true-up.  
+
+### Setting the Eligible Portion
+
+The eligible total for the year is tested against the year-end GRIP (see [GRIP](Dividends.md#grip---capacity-for-eligible-dividends)):
+- For a CCPC under the SBD limit, GRIP grows only by eligible dividends received
+  - Estimate them from last year's T3 Box 49 and T5 Box 24, not from the cash distributions
+  - An ETF's cash distribution mixes eligible and non-eligible dividends, foreign income, capital gains, and ROC
+- The year's T3s arrive the following March, after the designations are made
+
+Correcting an estimate afterwards only works in one direction:
+- *Designated too little*: unused GRIP and ERDTOH carry forward to later eligible dividends
+  - Raising a paid dividend to eligible needs the s.89(14.1) relief above
+- *Designated too much*: the s.185.1(2) election treats the excess as a separate non-eligible dividend
+  - See [Schedule 55](T2-Reporting.md#schedule-55---part-iii1-tax-on-excessive-eligible-dividend-designations)
+
+Set the eligible portion on the low side of the expected GRIP.  
+A standing non-eligible portion also recovers NERDTOH, which eligible dividends cannot reach.  
+See the ordering rules in [ERDTOH and NERDTOH](ERDTOH-NERDTOH.md#dividend-refund).  
 
 
 ## Declaration Date, Record Date, and Payment Date
@@ -153,8 +222,20 @@ Only the bookkeeping entry differs (see [Bookkeeping and information slips](Book
   - [s.83(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-83.html) - capital dividend election
     - Filed on Form T2054 on or before the day the dividend becomes payable, or first paid if earlier
   - [s.89(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-89.html) - definition of "eligible dividend" referenced in the designation notice
+  - [s.80.4(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-80.4.html) - interest benefit on a loan to a shareholder
   - [s.89(14)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-89.html) - eligible dividend designation by written notice to the shareholder at or before payment
+  - [s.89(14.1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-89.html) - late designation, at CRA's discretion, within three years
   - [s.129(1)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-129.html) - dividend refund keys off when the dividend is paid, credited, or otherwise made available in the year
+  - [s.185.1(2)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-185.1.html) - election to treat an excessive eligible designation as a separate non-eligible dividend
+- CRA - Designation of eligible dividends (timing, accepted forms of notice): https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/corporations/eligible-dividends/designation-eligible-dividends.html
 - Corporate statutes (solvency test for dividend declaration):
   - Canada Business Corporations Act (CBCA) [s.42](https://laws-lois.justice.gc.ca/eng/acts/C-44/section-42.html)
   - Provincial equivalents (e.g. Ontario Business Corporations Act s.38(3); Alberta Business Corporations Act s.43)
+
+
+## TODO
+
+- Verify against the Ontario Business Corporations Act and the Electronic Commerce Act, 2000:
+  - That the minute book can be kept as electronic records
+  - That a typed or electronic signature adopts a written resolution of the directors
+- Confirm whether CRA requires the designation notice to state a dollar amount, rather than wording such as "up to GRIP"

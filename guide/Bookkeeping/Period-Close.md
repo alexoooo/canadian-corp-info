@@ -5,7 +5,9 @@ STATUS: AI GENERATED, REVIEW IN PROGRESS
 **Who this is for**:
 - Owners of a Canadian-controlled private corporation (CCPC) who keep the books and need the monthly and year-end routine
 
-**TLDR**: reconcile every cash and card account monthly; at year-end post the adjusting set in order, prove the trial balance, and close the temporary accounts into retained earnings.
+**TLDR**:
+- Reconcile every cash, card, and investment account monthly
+- At year-end, post the adjusting set in order, prove the trial balance, and close the temporary accounts
 
 [Ledger and Accounts](Ledger-And-Accounts.md) covers how an entry is written and posted.  
 This page is the routine that runs on top: what to do on the first of the month, and in what order after year-end.  
@@ -22,7 +24,7 @@ Limitations:
 ## The Two Loops
 
 The close runs at two frequencies:
-- *Monthly*: reconcile the cash and card accounts against their statements, and clear anything unexplained
+- *Monthly*: reconcile the cash, card, and investment accounts against their statements, and clear anything unexplained
 - *Year-end*: post the adjusting entries, prove the trial balance, produce the statements, and close the year
 
 The monthly loop is what keeps the year-end small.  
@@ -30,7 +32,7 @@ A difference caught in the month it arises is one statement page to re-check; th
 
 ```mermaid
 flowchart LR
-    M["Monthly loop<br/>(reconcile cash and cards)"] --> A["Year-end<br/>adjusting entries"]
+    M["Monthly loop<br/>(reconcile cash, cards,<br/>and investments)"] --> A["Year-end<br/>adjusting entries"]
     A --> TB["Trial balance<br/>(debits = credits)"]
     TB --> FS["Schedule 100 +<br/>Schedule 125"]
     FS --> C["Close to<br/>retained earnings"]
@@ -84,11 +86,26 @@ A personal charge on the corporate card does not classify as an expense.
 Post it to the shareholder-loan account; see [Owner-Corporation Transactions](../Paying-Yourself/Owner-Corporation-Transactions.md).  
 
 
+## Broker Reconciliation
+
+The corporate investment account reconciles monthly against the broker statement, on two balances:
+- *Cash*: `Deposits - investment` (1002-2) against the statement's cash balance
+  - It moves every month with transfers, trades, and distributions
+- *Holdings*: `Brokerage` (2303-1) against the statement's total book cost
+  - `Brokerage - pending` (2303-2) holds the ACB the brokerage has not applied yet
+  - Check: `Brokerage - pending` equals the ACB tracker's total minus the brokerage's book cost
+
+The two diverge for a stretch each spring.  
+The brokerage applies the prior year's phantom distributions and ROC months after year-end.  
+Until it does, the difference sits in `Brokerage - pending`; see [T3](../Investments/T3/T3.md#classifying-investment-differences).  
+
+
 ## The Monthly Loop
 
 Work down the same short list each month:
 - Pull the month's bank and credit-card statements
 - Reconcile each cash account ([Bank Reconciliation](#bank-reconciliation)) and each card ([Credit-Card Reconciliation](#credit-card-reconciliation))
+- Reconcile the investment account's cash and book cost ([Broker Reconciliation](#broker-reconciliation))
 - Post what the reconciliations revealed (fees, interest, missed entries)
 - Review `Trade accounts receivable` (1062) against outstanding invoices; chase what is overdue
 - Review `Amounts payable` (2620) against unpaid bills
@@ -152,9 +169,17 @@ The *closing entries* zero the temporary accounts into retained earnings:
 The net of the first two steps is the year's net income landing in equity.  
 The GIFI continuity states the same movement: `3660` Start + `3680` Net income − `3700` Dividends declared = `3849` End.  
 On the filed Schedule 100, `3680` must equal Schedule 125's `9999`.  
+A prior-period correction enters the continuity on `3720` (see [Cutover From Legacy Books](Ledger-And-Accounts.md#cutover-from-legacy-books)).  
 
 In a spreadsheet ledger the "entries" may be implicit — a new year's sheet that starts revenue and expenses at zero.  
 The requirement is the result, not the mechanism: temporary accounts at zero, retained earnings carrying the year.  
+
+Ledger software that never posts the closing entries (common in GnuCash) keeps a cumulative `Dividends declared`:
+- Its balance sheet report shows every dividend since the account opened, not the year's
+- Schedule 100 line 3700 (or its sub-line 3701, *Cash dividends*) takes the year's dividend activity, not that balance
+  - Copying the cumulative balance overstates the year's dividends
+  - Deriving `3660` as the balancing figure then hides the error
+- Check: `3660` equals the prior year's filed `3849`, as [Opening the New Year](#opening-the-new-year) requires  
 
 
 ## Opening the New Year

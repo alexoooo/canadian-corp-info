@@ -95,6 +95,8 @@ Year-end close. The Statement of Retained Earnings nets dividends declared again
 That derives the closing balance (GIFI 3849); Schedule 100 carries the statement in most T2 software.  
 Most chart-of-accounts setups do not require an explicit closing journal entry.  
 The GIFI mapping handles it via Schedule 100.  
+Without closing entries, `Dividends declared` accumulates across years; Schedule 100 takes only the year's activity.  
+See [Period Close — Closing the Year](../../Bookkeeping/Period-Close.md#closing-the-year).  
 
 
 ## T5 Filing

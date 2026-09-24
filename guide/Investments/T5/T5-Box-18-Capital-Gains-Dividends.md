@@ -119,12 +119,13 @@ Report the full Box 18 amount as a capital gain on Schedule 6 (S6 - *Summary of 
 - It is a flow-through of the fund's gain, not a sale of your shares — which is exactly why Part 8 exists
 
 On Schedule 1 (S1 - *Net Income (Loss) for Income Tax Purposes*):
+- Line 401 (Gain on disposal of assets per financial statements) removes the book amount
+  - FutureTax fills it from GIFI 8211, which includes `Capital gains dividends` (8211-3)
 - Line 113 (Taxable capital gains from Schedule 6) carries the taxable half
   - FutureTax fills it from S6 automatically
-- Other deductions (Description 705 / Amount 395): back out the full Box 18 amount booked to 8211-3
-  - This leaves the 50% inclusion in taxable income
+- Add no other-deductions row for Box 18: with line 401 filled, any such row removes the amount a second time
 
-Deducting only the non-taxable half would double-count once line 113 is filled.  
+Box 18's net effect on S1 is its taxable half (see [Schedule 1 Lines](../../Filing-And-CRA/T2-Schedules.md#schedule-1-lines)).  
 
 There is no Schedule 3 entry, no s.112 deduction, and no Part IV tax.  
 A capital gains dividend is a capital gain, not a taxable dividend.  

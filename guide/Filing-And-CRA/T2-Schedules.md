@@ -89,11 +89,11 @@ Filed with essentially every return of an owner-managed CCPC:
 
 *S1* is the spine of the tax side:
 - Recurring add-backs for this guide's scenarios:
+  - The income tax provision and any arrears interest and penalties (see [CRA Administration](CRA-Administration.md#booking-the-tax-cycle))
   - Book amortization (CCA replaces it) and the non-deductible half of [meals](../Bookkeeping/Expense-Classification.md)
-  - Arrears interest and penalties (see [CRA Administration](CRA-Administration.md#booking-the-tax-cycle))
   - The foreign-tax add-back behind [T3 Box 34](../Investments/T3/T3_Box-25-Foreign-Income_Box-34-Foreign-Tax-Withheld.md)
-- Recurring deductions: CCA from S8, and the book capital gain backed out in full
-  - Line 113 adds the taxable half back from S6; see [T5008](../Investments/T5008/T5008.md)
+- Recurring deductions: CCA from S8, and the book capital gain backed out once
+  - Line 113 adds the taxable half back from S6; see [Schedule 1 Lines](#schedule-1-lines)
 - Tax-basis books keep S1 short; that is much of their appeal (see [Ledger and Accounts](../Bookkeeping/Ledger-And-Accounts.md))
 
 *S50* lists every shareholder holding 10% or more of any class.  
@@ -120,6 +120,37 @@ The *T2 Short Return* is a two-page jacket for the simplest returns:
 - A corporation can satisfy the first four and still be ineligible on the last three
 - A dormant or first-year corporation is the typical filer
 - The GIFI statements (S100, S125, S141) still attach; T2 software often files the full jacket regardless, which is equally valid
+
+
+## Schedule 1 Lines
+
+The lines this guide's scenarios use, as labelled on form T2 SCH 1 E (25):
+
+| Line | Label | Source in the books |
+|---|---|---|
+| 101 | Provision for income taxes – current | `Current income taxes` (`9990`) |
+| 103 | Interest and penalties on taxes | arrears interest and penalties booked to `8710` |
+| 104 | Amortization of tangible assets | book amortization |
+| 111 | Loss on disposal of assets | a net book loss on dispositions |
+| 113 | Taxable capital gains from Schedule 6 | S6; the software fills it |
+| 121 | Non-deductible meals and entertainment expenses | the non-deductible half of meals |
+| 199 | Other additions (amount D, page 3) | description 605 / amount 295 rows |
+| 401 | Gain on disposal of assets per financial statements | the book gain in GIFI 8211; the software fills it |
+| 403 | Capital cost allowance from Schedule 8 | S8 |
+| 499 | Other deductions (amount E, page 4) | description 705 / amount 395 rows |
+
+Income tax is not deductible (ITA [s.18(1)(t)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-18.html) for amounts payable under the Act):
+- The `9990` provision adds back on line 101; arrears interest and penalties on line 103
+- A tax payment booked to an operating expense reaches neither line
+  - See [Tax Payments Booked as Expenses](CRA-Administration.md#tax-payments-booked-as-expenses)
+
+A capital gain booked to income is removed exactly once:
+- Line 401 removes the whole GIFI 8211 balance
+  - That includes capital gains distributions (8211-2) and capital gains dividends (8211-3), not only sales
+- With line 401 filled, an other-deductions row for the same gain removes it a second time
+  - Whether that row carries the full amount or only the non-taxable half
+- Line 113 then adds the taxable half from S6
+- Check: each gain's net effect on S1 equals its taxable half
 
 
 ## Investment-Income Schedules
@@ -256,6 +287,9 @@ Not schedules, but part of the same season:
 - Verify the S44 trigger list (which rollover provisions require it)
   - Also whether an s.85 incorporation transfer files it in addition to the T2057 election
 - Verify S11's current status and trigger conditions; it is the least-documented schedule in this list
+- Schedule 1 software links: line 401 = GIFI 8211 is confirmed in FutureTax 2025.2
+  - Confirm line 111 on a net book loss, and line 101 from GIFI 9990
+  - Confirm whether GIFI 8210 and 8212 also feed line 401
 - Confirm the jacket's yes/no question line numbers (the T1135 question in particular, coordinating with the [T1135](../Investments/T1135.md) TODO)
 - Confirm the mandatory electronic-filing rule and its exceptions for the current year
 - Consider a redacted screenshot set (S50, S141) once available

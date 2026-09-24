@@ -86,13 +86,14 @@ In addition to the above ledger entries, enter the Box 21 amount in the T2:
   Report the amount as a capital gain  
   Half of it will be taxed instead of the full amount (based on the capital gains inclusion rate)  
   This is reported under "Dispositions" even though no actual disposition occurred (capital gains from a trust)  
-- Schedule 1 (S1: Net Income (Loss) for Income Tax Purposes)  
-  Line 113 (Taxable capital gains from Schedule 6) carries the taxable half; FutureTax fills it from S6 automatically  
-  Page 4 / Other deductions (Description 705 / Amount 395)  
-  "Cap gain dist T3 Box 21 - booked to income, taxed via S6"  
-  Deduct the full Box 21 amount that the ledger booked to `Capital gains distributions` (8211-2)  
-  Only line 113's taxable half then remains in taxable income  
-  Deducting only the non-taxable half would double-count once line 113 is filled  
+- Schedule 1 (S1: Net Income (Loss) for Income Tax Purposes)
+  - Line 401 (Gain on disposal of assets per financial statements) removes the book amount
+    - FutureTax fills it from GIFI 8211, which includes `Capital gains distributions` (8211-2)
+  - Line 113 (Taxable capital gains from Schedule 6) adds the taxable half; FutureTax fills it from S6
+  - Add no other-deductions row for Box 21: with line 401 filled, any such row removes the amount a second time
+    - That holds for a row at the full amount and for one at the non-taxable half
+  - Check: Box 21's net effect on S1 is its taxable half
+  - See [Schedule 1 Lines](../../Filing-And-CRA/T2-Schedules.md#schedule-1-lines)
 - Schedule 7 picks the gain up on its own
   - Part 2 line 705 counts the taxable half in adjusted aggregate investment income
   - Part 6 amount V (from S1 line 113) backs it out of the income eligible for the small business deduction

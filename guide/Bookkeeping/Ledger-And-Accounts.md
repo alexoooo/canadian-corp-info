@@ -233,11 +233,49 @@ Plugs are legitimate and common, as long as the residual is small and you know w
   - An unidentified deposit, a pending distribution; cleared to its real account once known
 - *Opening-balance equity*: when first setting up books, the entry that makes opening assets and liabilities balance
   - It lands in an equity plug, then is reclassified to share capital and retained earnings
+- *Investment differences*: the T3s, the ACB tracker, and the broker statement disagree
+  - Three kinds, each with its own account: cost base, income, and cash or opening-balance true-ups
+  - See [T3 — Classifying Investment Differences](../Investments/T3/T3.md#classifying-investment-differences)
 
 The discipline: a plug should be small and explained.  
 A large or growing plug is a symptom of a posting error or a missing entry, not something to bury.  
-Typical cases: a suspense account that never clears, a rounding line carrying real dollars.  
+Typical cases: a suspense account that never clears, a rounding line carrying real dollars, or one plug mixing kinds.  
 Investigate it before it reaches the trial balance.  
+
+An equity account is not a plug for income or expense.  
+Parking an income item in equity (in `Contributed surplus`, say) to spare a Schedule 1 adjustment misstates income.  
+The misstatement hits both the year it is parked and the year it is released.  
+
+
+## Cutover From Legacy Books
+
+Books kept before adopting this guide's conventions may be only partly explainable.  
+Examples: earlier years in spreadsheets, or years imported into ledger software as summaries.  
+Start the conventions at a cutover date instead of reworking every earlier year.  
+
+1. *Pick the cutover date*: the start of an open year whose opening balances tie to the last filed return
+   - The opening balance sheet equals the closing column of the filed Schedule 100
+   - The filed years' books stay as filed
+2. *Agree each opening balance to a source*: a statement, the ACB tracker, the CCA schedule, a loan agreement
+   - A balance with no source is a *legacy residue*; list it with its origin
+3. *Isolate the residues*: move each into a clearly named legacy account on the same GIFI line
+   - Post nothing new to a legacy account
+   - New differences follow this guide's conventions, in their own accounts
+4. *Mark verified periods*: use the software's reconciliation flags (GnuCash's *Reconcile*, for example)
+   - Verified and legacy postings then stay distinguishable inside the ledger
+5. *Resolve each residue once*: trace it to its cause, or record it as a documented prior-period correction
+
+A prior-period correction:
+- Goes through retained earnings, never through the year's income statement
+  - Schedule 100 carries it on `3720` Prior period adjustments, in the retained-earnings continuity
+  - [Misfiled Incorporation Costs](../Operations/Cost-Recovery/Capital-Cost-Allowance/Capital-Cost-Allowance.md#misfiled-incorporation-costs) applies the same rule to a phantom asset
+- Needs its own equity account in ledger software that never closes the books (GnuCash, for example)
+  - Map it to `3720`, and report only the year's activity, as with [dividends declared](Period-Close.md#closing-the-year)
+- Corrects the books, not a filed return
+  - A `3720` entry changes no taxable income, because Schedule 1 starts from net income
+  - A residue that was a tax error in a filed year needs that year reassessed
+    - For example, unreported income, or a non-deductible cost that was deducted
+    - See [Amending a Filed T2](../Filing-And-CRA/CRA-Administration.md#amending-a-filed-t2)  
 
 
 ## Classifying a Transaction

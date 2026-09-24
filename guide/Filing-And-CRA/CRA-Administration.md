@@ -94,10 +94,30 @@ When the NOA assesses a different amount (say $9,900, $140 more):
 
 Interest and penalties on the notice:
 - Arrears interest and penalties are not deductible (ITA [s.18(1)(t)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-18.html))
-  - Book them to `Interest and bank charges` (`8710`) and add them back on Schedule 1
+  - Book them to `Interest and bank charges` (`8710`) and add them back on Schedule 1 line 103
 - Refund interest CRA pays is taxable interest income in the year received
 
 The true-up posts in the year the notice arrives; do not reopen a closed year's books for it.  
+
+The income tax itself is not deductible either.  
+Schedule 1 adds the year's `9990` balance back on line 101 (see [Schedule 1 Lines](T2-Schedules.md#schedule-1-lines)).  
+
+### Tax Payments Booked as Expenses
+
+Ledgers kept before adopting this convention often post tax payments as an operating expense:
+- The usual landing spot is `Business taxes` (`8762`), under `8760`
+  - Prior-year balance payments, instalments, and arrears interest all end up there
+- Schedule 125 then carries them as operating expenses, and no Schedule 1 line adds them back
+  - They reduce net income for tax purposes, which understates the tax
+
+To migrate:
+- In the open year, reclassify each posting
+  - Instalments and balance payments go to `Taxes payable` (`2680`)
+  - Arrears interest and penalties go to `8710`, added back on line 103
+- Book the year's provision to `9990` as above
+- For a filed year that deducted tax payments, request a reassessment (see [Amending a Filed T2](#amending-a-filed-t2))
+  - A reclassification in the current year's books does not correct the filed return
+- Keep `8760` for deductible business taxes and licences only  
 
 
 ## The Reassessment Clock
